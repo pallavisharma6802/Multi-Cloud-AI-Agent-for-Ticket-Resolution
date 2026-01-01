@@ -64,9 +64,8 @@ infra/
 │   ├── rds.tf                  # PostgreSQL database
 │   └── ec2_ollama.tf           # Ollama EC2 instance
 ├── azure/
-│   └── cognitive_services.tf  # Text Analytics
-└── gcp/
-    └── workflows.tf            # GCP Workflows
+    └── cognitive_services.tf  # Text Analytics
+
 
 tests/
 ├── test_agents.py              # Agent unit tests
