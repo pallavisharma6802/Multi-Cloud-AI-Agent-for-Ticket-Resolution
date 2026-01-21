@@ -114,13 +114,6 @@ The system processes support tickets through a coordinated multi-agent pipeline:
 4. **Audit Trail**: All agent decisions and intermediate outputs logged to database
 5. **Response Delivery**: Client receives drafted response with confidence score, citations, and processing metadata
 
-## Prerequisites
-
-- Python 3.9+
-- Azure subscription with Cognitive Services access
-- AWS account with EC2 and RDS permissions
-- Pinecone account and API key
-- Terraform 1.0+ (for infrastructure deployment)
 
 ## Local Development Setup
 
@@ -310,56 +303,6 @@ Run end-to-end system test:
 python test_ticket.py
 ```
 
-## System Architecture Details
-
-### Agent Pipeline
-
-1. **Azure NLP Agent** (`app/agents/azure_nlp_agent.py`)
-
-   - Entity extraction using Azure Text Analytics
-   - Intent classification via keyword matching and sentiment analysis
-   - Priority determination based on sentiment and urgency indicators
-   - Fallback logic for API failures
-
-2. **Retrieval Agent** (`app/agents/retrieval_agent.py`)
-
-   - Generates semantic embeddings using SentenceTransformers
-   - Performs vector similarity search in Pinecone
-   - Filters results by similarity threshold (0.65)
-   - Returns top-k relevant documents with scores
-
-3. **Drafting Agent** (`app/agents/drafting_agent.py`)
-
-   - Constructs prompts with ticket context and retrieved knowledge
-   - Calls Ollama API for response generation
-   - Calculates confidence based on knowledge base coverage
-   - Handles timeout and error scenarios
-
-4. **Supervisor Agent** (`app/agents/supervisor.py`)
-   - Orchestrates agent workflow using LangGraph state machine
-   - Manages state transitions between processing stages
-   - Evaluates final response quality
-   - Determines human review requirement based on confidence thresholds
-
-### Data Models
-
-**Ticket** (`app/db/models.py`):
-
-- Stores ticket metadata, content, and status
-- Tracks intent classification and priority
-- Links to agent decision logs and drafted responses
-
-**AgentDecisionLog**:
-
-- Records each agent's actions and outputs
-- Maintains processing timestamp and metadata
-- Enables audit trail and debugging
-
-**DraftedResponseLog**:
-
-- Persists LLM-generated responses
-- Stores confidence scores and KB document references
-- Tracks human review flags
 
 ### Configuration Management
 
@@ -400,17 +343,6 @@ Environment variables loaded from `.env` file with validation.
 - Comprehensive test coverage including unit, integration, and end-to-end tests
 - Infrastructure as code enabling reproducible deployments
 - Graceful degradation with fallback logic for cloud service failures
-
-## Project Status
-
-Current implementation includes:
-
-- Functional multi-cloud agent pipeline with Azure NLP, Pinecone RAG, and AWS Ollama
-- Complete REST API with FastAPI
-- Database persistence with SQLAlchemy and PostgreSQL/SQLite support
-- Terraform configurations for AWS and Azure resource deployment
-- Knowledge base seeding and vector indexing
-- End-to-end testing and validation
 
 Future enhancements:
 
