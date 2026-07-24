@@ -1,0 +1,8 @@
+{
+  "id": "contact_customer_service_01",
+  "title": "Contact Customer Service (CONTACT)",
+  "category": "CONTACT",
+  "intent": "contact_customer_service",
+  "content": "I hear you! I'm following you that you need assistance with calling our customer support. I'm here to help! Our customer support team can be reached at {{Customer Support Phone Number}}. They are available during {{Customer Support Hours}}. If you need further assistance or have any other questions, please don't hesitate to ask.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

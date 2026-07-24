@@ -1,0 +1,8 @@
+{
+  "id": "check_invoice_03",
+  "title": "Check Invoice (INVOICE)",
+  "category": "INVOICE",
+  "intent": "check_invoice",
+  "content": "I truly appreciate your quest to locate your bills linked to {{Person Name}}. This is an important search for you, and I'm here to guide you every step of the way. To assist you more efficiently, could you please provide me with additional details such as the specific date range or any relevant information associated with the bills you are looking for? Rest assured, I'm committed to helping you find the information you need.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

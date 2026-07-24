@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_089",
+  "title": "Seen on day",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "Having been recommended by my dentist to see a doctor, the receptionist found an appointment the same day. The doctor assessed the situation and then a senior doctor also ran through diagnosis with me. Excellent service",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

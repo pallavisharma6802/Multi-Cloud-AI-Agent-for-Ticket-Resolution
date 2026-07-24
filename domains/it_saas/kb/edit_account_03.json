@@ -1,0 +1,8 @@
+{
+  "id": "edit_account_03",
+  "title": "Edit Account (ACCOUNT)",
+  "category": "ACCOUNT",
+  "intent": "edit_account",
+  "content": "What an extraordinary expedition it is to embark on the journey of modifying the revered details on your esteemed gold account!I stand ready to provide you with the necessary guidance and support to navigate through this empowering adventure. Please rest assured that I am here to assist you every step of the way. Kindly share the specific information you wish to modify, and together, we shall embark on this marvelous transformation.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

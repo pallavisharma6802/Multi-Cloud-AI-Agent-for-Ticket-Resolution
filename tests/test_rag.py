@@ -1,65 +1,72 @@
+"""Retrieval: chunking and hybrid dense+sparse (mocked embeddings/Pinecone)."""
+from unittest.mock import MagicMock
+
 import pytest
-from app.embeddings.embed import EmbeddingGenerator
-from app.embeddings.pinecone_client import PineconeClient
+
+from app.embeddings.chunking import chunk_text
+
+
+def test_chunk_text_splits_long_documents():
+    words = [f"word{i}" for i in range(1000)]
+    chunks = chunk_text(" ".join(words), max_words=400, overlap_words=60)
+    assert len(chunks) > 1
+    assert chunks[0].split()[-1] in chunks[1].split()
 
 
 @pytest.fixture
-def embedding_generator():
-    return EmbeddingGenerator()
+def retrieval_agent(monkeypatch):
+    mock_embedding_gen = MagicMock()
+    mock_embedding_gen.get_dimension.return_value = 384
+    mock_embedding_gen.generate_embedding.return_value = [0.1] * 384
+    mock_embedding_gen.generate_embeddings_batch.return_value = [[0.1] * 384]
 
-
-@pytest.fixture
-def pinecone_client():
-    client = PineconeClient()
-    client.initialize_index(dimension=384)
-    yield client
-    client.delete_all()
-
-
-def test_embedding_generation(embedding_generator):
-    text = "How do I reset my password?"
-    embedding = embedding_generator.generate_embedding(text)
-    
-    assert isinstance(embedding, list)
-    assert len(embedding) == 384
-    assert all(isinstance(x, float) for x in embedding)
-
-
-def test_embedding_similarity(embedding_generator):
-    text1 = "password reset"
-    text2 = "forgot password"
-    text3 = "weather forecast"
-    
-    emb1 = embedding_generator.generate_embedding(text1)
-    emb2 = embedding_generator.generate_embedding(text2)
-    emb3 = embedding_generator.generate_embedding(text3)
-    
-    import numpy as np
-    
-    def cosine_similarity(a, b):
-        return np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
-    
-    similarity_related = cosine_similarity(emb1, emb2)
-    similarity_unrelated = cosine_similarity(emb1, emb3)
-    
-    assert similarity_related > similarity_unrelated
-
-
-def test_pinecone_upsert_and_query(pinecone_client, embedding_generator):
-    documents = [
+    mock_pinecone = MagicMock()
+    mock_pinecone.query.return_value = [
         {
             "id": "doc1",
-            "text": "To reset your password, go to the login page and click Forgot Password",
-            "embedding": embedding_generator.generate_embedding("password reset instructions"),
-            "category": "password_reset"
-        }
+            "score": 0.9,
+            "text": "how to cancel an order",
+            "source": "kb",
+            "category": "ORDER",
+            "intent": "cancel_order",
+        },
     ]
-    
-    pinecone_client.upsert_documents(documents)
-    
-    query_embedding = embedding_generator.generate_embedding("how to reset password")
-    results = pinecone_client.query(query_embedding, top_k=1)
-    
-    assert len(results) == 1
-    assert results[0]["id"] == "doc1"
-    assert results[0]["score"] > 0.6
+    mock_pinecone.fetch_all_documents.return_value = [
+        {
+            "id": "doc1",
+            "text": "how to cancel an order",
+            "source": "kb",
+            "category": "ORDER",
+            "intent": "cancel_order",
+        },
+        {
+            "id": "doc2",
+            "text": "how to reset your password",
+            "source": "kb",
+            "category": "ACCOUNT",
+            "intent": "password_reset",
+        },
+    ]
+
+    monkeypatch.setattr("app.agents.retrieval_agent.EmbeddingGenerator", lambda: mock_embedding_gen)
+    monkeypatch.setattr("app.agents.retrieval_agent.PineconeClient", lambda: mock_pinecone)
+
+    from app.agents.retrieval_agent import RetrievalAgent
+
+    agent = RetrievalAgent(domain_pack_id="it_saas")
+    agent._pinecone_mock = mock_pinecone
+    return agent
+
+
+def test_retrieval_agent_merges_and_indexes(retrieval_agent):
+    results = retrieval_agent.retrieve_relevant_documents("I want to cancel my order", top_k=5)
+    assert "doc1" in [r.doc_id for r in results]
+    for r in results:
+        assert 0.0 <= r.similarity_score <= 1.0
+
+    retrieval_agent.index_knowledge_base(
+        [{"id": "doc-99", "text": "short doc", "source": "kb", "category": "ORDER", "intent": "cancel_order"}]
+    )
+    retrieval_agent._pinecone_mock.upsert_documents.assert_called_once()
+    _, kwargs = retrieval_agent._pinecone_mock.upsert_documents.call_args
+    assert kwargs.get("namespace") == "it_saas"

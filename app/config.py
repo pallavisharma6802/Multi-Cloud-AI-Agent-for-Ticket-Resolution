@@ -1,28 +1,32 @@
-from pydantic_settings import BaseSettings
-from pydantic import Field, field_validator
-from typing import Optional
 import os
+from typing import Optional
+
+from pydantic import Field, field_validator
+from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
-    
     env: str = Field(default="dev", description="Environment name")
     project_name: str = Field(default="multi-cloud-ai-agent")
-    
-    aws_region: str = Field(..., description="AWS region for resources")
-    aws_access_key_id: str = Field(..., description="AWS access key")
-    aws_secret_access_key: str = Field(..., description="AWS secret key")
+
+    # AWS / Azure account IDs (Terraform / infra only; unused at runtime)
+    aws_region: Optional[str] = Field(default=None, description="AWS region (Terraform-only; unused at runtime)")
+    aws_access_key_id: Optional[str] = Field(default=None, description="AWS access key (Terraform-only; unused at runtime)")
+    aws_secret_access_key: Optional[str] = Field(default=None, description="AWS secret key (Terraform-only; unused at runtime)")
     aws_bedrock_model_id: Optional[str] = Field(None, description="Bedrock model ID if used")
-    
-    azure_subscription_id: str = Field(..., description="Azure subscription ID")
-    azure_resource_group: str = Field(..., description="Azure resource group")
+
+    azure_subscription_id: Optional[str] = Field(default=None, description="Azure subscription ID (Terraform-only; unused at runtime)")
+    azure_resource_group: Optional[str] = Field(default=None, description="Azure resource group (Terraform-only; unused at runtime)")
     azure_location: str = Field(default="eastus", description="Azure region")
+    # Required at runtime for Azure Text Analytics
     azure_text_analytics_endpoint: str = Field(..., description="Azure Text Analytics endpoint URL")
     azure_text_analytics_key: str = Field(..., description="Azure Text Analytics API key")
-    
-    gcp_project_id: str = Field(..., description="GCP project ID")
+
+    # Fallback GCP project for the opt-in BigQuery sink
+    gcp_project_id: Optional[str] = Field(default=None, description="GCP project ID (used by the opt-in BigQuery sink)")
     gcp_region: str = Field(default="us-central1", description="GCP region")
-    google_application_credentials: str = Field(..., description="Path to GCP service account key")
+    # Optional path; ADC also reads GOOGLE_APPLICATION_CREDENTIALS from the env
+    google_application_credentials: Optional[str] = Field(default=None, description="Path to GCP service account key (optional)")
     
     pinecone_api_key: str = Field(..., description="Pinecone API key")
     pinecone_environment: str = Field(..., description="Pinecone environment")
@@ -37,10 +41,39 @@ class Settings(BaseSettings):
     
     log_level: str = Field(default="INFO", description="Logging level")
     request_timeout_seconds: int = Field(default=30, description="HTTP request timeout")
-    
+
+    # Domain pack
+    domain_pack: str = Field(
+        default="it_saas",
+        description="Active domain pack id (directory name under domains/)",
+    )
+    domains_root: str = Field(default="domains", description="Root directory holding domain packs")
+
+    # Per-role models (swap one agent without touching others)
+    model_intent_priority: str = Field(default="qwen2.5:3b")
+    model_grader: str = Field(default="qwen2.5:3b")
+    model_judge: str = Field(default="qwen2.5:3b")
+    model_continuation: str = Field(default="qwen2.5:3b")
+    model_drafting: str = Field(default="qwen2.5:3b")
+    model_supervisor: str = Field(default="qwen2.5:3b")
+
+    # Hard caps on cost/latency if a graph loop runs away (not business rules)
+    max_iterations: int = Field(
+        default=10, description="Absolute hard ceiling on graph loop iterations per ticket"
+    )
+    max_wall_clock_seconds: int = Field(
+        default=300, description="Absolute hard ceiling on wall-clock time per ticket"
+    )
+
+    # BigQuery analytics sink
+    enable_bigquery: bool = Field(default=False, description="Enable async BigQuery event sink")
+    bigquery_project_id: Optional[str] = Field(default=None)
+    bigquery_dataset: str = Field(default="ticket_analytics")
+    bigquery_table: str = Field(default="fact_ticket_events")
+
     @field_validator("google_application_credentials")
     def validate_gcp_credentials(cls, v):
-        if not os.path.exists(v):
+        if v and not os.path.exists(v):
             raise ValueError(f"GCP credentials file not found at {v}")
         return v
     

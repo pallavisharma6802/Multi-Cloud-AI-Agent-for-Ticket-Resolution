@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_105",
+  "title": "Very caring practice",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "I am very satisfied with everything the surgery offers and have great confidence in their service \r\nTheir fixtures, reception and  and nursing  BBC staff are exemplary.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

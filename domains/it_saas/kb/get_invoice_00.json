@@ -1,0 +1,8 @@
+{
+  "id": "get_invoice_00",
+  "title": "Get Invoice (INVOICE)",
+  "category": "INVOICE",
+  "intent": "get_invoice",
+  "content": "I've come to understand that you want to retrieve your bill from {{Person Name}}. Allow me to assist you with that. Could you please provide me with the invoice number or any other relevant details that can help me locate the specific bill for you?",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

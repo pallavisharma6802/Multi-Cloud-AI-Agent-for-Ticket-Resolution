@@ -1,0 +1,25 @@
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+exclude = [
+    "venv",
+    "frontend",
+    ".git",
+    "__pycache__",
+    "data",
+    "eval/datasets",
+]
+
+[tool.ruff.lint]
+# E/F: pyflakes + pycodestyle, I: isort, B: bugbear.
+# UP disabled: venv targets Python 3.9
+select = ["E", "F", "I", "B"]
+ignore = [
+    "E501",  # line length is handled loosely; ruff format isn't run in CI
+    "B008",  # FastAPI's Depends(...) in defaults is idiomatic, not a bug
+    "B905",  # zip(..., strict=) needs Python 3.10+; local venv/dev docs target 3.9+
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["F401", "F841"]
+"eval/*" = ["B008"]

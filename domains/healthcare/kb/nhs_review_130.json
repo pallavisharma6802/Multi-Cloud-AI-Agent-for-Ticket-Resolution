@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_130",
+  "title": "Excellent Professionalism & Courtesy",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "I rang today with a severe kidney infection and was shown excellent professionalism and courtesy by the Receptionist and GP.  The Doctor even rang me back to acquire further information about my symptoms.  This is what it should look like and I am grateful!",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

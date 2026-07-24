@@ -1,0 +1,8 @@
+{
+  "id": "change_shipping_address_00",
+  "title": "Change Shipping Address (SHIPPING)",
+  "category": "SHIPPING",
+  "intent": "change_shipping_address",
+  "content": "I'll do my best! Our customer support team is here to assist you with correcting your delivery address. Please provide us with the necessary details, and we will help you resolve the issue as quickly as possible.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

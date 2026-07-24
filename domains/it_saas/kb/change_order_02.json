@@ -1,0 +1,8 @@
+{
+  "id": "change_order_02",
+  "title": "Change Order (ORDER)",
+  "category": "ORDER",
+  "intent": "change_order",
+  "content": "I acknowledge that you need assistance in changing an item for purchase number {{Order Number}}. We value your satisfaction and are here to help. To ensure we provide accurate support, could you please let us know which specific item you would like to change? Your feedback is crucial in tailoring our services to meet your needs.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

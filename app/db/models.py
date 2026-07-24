@@ -1,9 +1,9 @@
-from sqlalchemy import Column, String, Text, DateTime, Float, Boolean, JSON, ForeignKey
+import uuid
+from datetime import datetime
+
+from sqlalchemy import JSON, Boolean, Column, DateTime, Float, ForeignKey, Integer, String, Text
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
-from datetime import datetime
-import uuid
-
 
 Base = declarative_base()
 
@@ -20,6 +20,7 @@ class Ticket(Base):
     description = Column(Text, nullable=False)
     user_email = Column(String(255), nullable=False, index=True)
     category = Column(String(100), nullable=True)
+    domain_pack = Column(String(50), nullable=True, index=True)
     
     status = Column(String(50), default="open", nullable=False, index=True)
     priority = Column(String(50), default="medium", nullable=False)
@@ -60,6 +61,17 @@ class DraftedResponseLog(Base):
     confidence = Column(Float, nullable=False)
     kb_documents = Column(JSON, nullable=True)
     requires_human_review = Column(Boolean, default=False, nullable=False)
+
+    # Agentic trace fields (explicit columns, not just buried in JSON, so
+    # they're directly queryable -- e.g. "average iteration_count by intent").
+    iteration_count = Column(Integer, nullable=True)
+    intent_rationale = Column(Text, nullable=True)
+    escalation_rationale = Column(Text, nullable=True)
+    final_action = Column(String(50), nullable=True)
+    judge_score_history = Column(JSON, nullable=True)
+    continuation_rationale = Column(JSON, nullable=True)
+    anomaly_flags = Column(JSON, nullable=True)
+    cost_estimate = Column(JSON, nullable=True)
     
     created_at = Column(DateTime, default=datetime.utcnow, nullable=False)
     

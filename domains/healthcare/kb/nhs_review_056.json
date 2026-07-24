@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_056",
+  "title": "Great practice",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "The service that I have received from this practice has been excellent in all respects. The care, thought, timely action and professionalism from all has been consistently high.\nI was offered an appointment the same day that I rang.  \nI found the whole process to be very thorough, delivered by friendly, approachable staff. The initial description of my symptoms was listened to very carefully, further questions were asked, an examination conducted and a diagnosis made. Time was taken to clearly explain the issue and what the remedy would be as well as what any follow up action would be, were it to be needed. I was able to get the appropriate medication and the recovery process was underway.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

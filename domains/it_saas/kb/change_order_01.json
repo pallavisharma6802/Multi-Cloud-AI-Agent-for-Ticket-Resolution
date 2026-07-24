@@ -1,0 +1,8 @@
+{
+  "id": "change_order_01",
+  "title": "Change Order (ORDER)",
+  "category": "ORDER",
+  "intent": "change_order",
+  "content": "We appreciate your request to correct order number {{Order Number}}. We understand the importance of ensuring your order is accurate and meets your expectations. Please provide us with the specific details or changes you would like to make, so we can assist you in rectifying any discrepancies. Our goal is to ensure your complete satisfaction with your order, and we're here to help you every step of the way.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

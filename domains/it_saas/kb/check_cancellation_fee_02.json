@@ -1,0 +1,8 @@
+{
+  "id": "check_cancellation_fee_02",
+  "title": "Check Cancellation Fee (CANCEL)",
+  "category": "CANCEL",
+  "intent": "check_cancellation_fee",
+  "content": "No problem! To check the early exit penalty, you can log in to your account and go to the \"Termination Charges\" section. There, you will find all the information regarding the fees associated with early cancellation. Let me know if you need further assistance.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

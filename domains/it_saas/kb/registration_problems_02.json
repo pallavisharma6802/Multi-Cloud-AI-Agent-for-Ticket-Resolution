@@ -1,0 +1,8 @@
+{
+  "id": "registration_problems_02",
+  "title": "Registration Problems (ACCOUNT)",
+  "category": "ACCOUNT",
+  "intent": "registration_problems",
+  "content": "We appreciate your reaching out for assistance in notifying us of the issues you're experiencing with the sign-up process. Our team is dedicated to ensuring a smooth and seamless registration experience, and we apologize for any inconvenience caused. To assist you better, could you provide specific details about the problems you encountered during the sign-up? This will enable us to address the issues promptly and provide you with the necessary support to complete your registration successfully. Your feedback is instrumental in helping us improve our services, and we genuinely value your participation in our community.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

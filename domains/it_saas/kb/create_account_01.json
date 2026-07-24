@@ -1,0 +1,8 @@
+{
+  "id": "create_account_01",
+  "title": "Create Account (ACCOUNT)",
+  "category": "ACCOUNT",
+  "intent": "create_account",
+  "content": "Not to worry! I'm here to guide you through the process of creating a {{Account Category}} account. To start, you can visit our website or download our app and look for the option to sign up or create an account. Typically, you'll be asked to provide your personal information like your name, email address, and a password. Once you've entered this information, you'll be able to select the {{Account Category}} account option. If you encounter any difficulties along the way, feel free to reach out to our customer support team, who will be more than happy to assist you at any stage. Let's get started on this exciting journey together!",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "contact_human_agent_03",
+  "title": "Contact Human Agent (CONTACT)",
+  "category": "CONTACT",
+  "intent": "contact_human_agent",
+  "content": "We're listening! I'm keyed into the fact that you are looking for guidance on how to connect with a live agent. I'm here to help you with that. To initiate a conversation with an agent, you have a few options. You can try reaching out to our customer support helpline at {{Customer Support Phone Number}}. Alternatively, you can visit our website at {{Website URL}} and look for the \"Contact Us\" section. There, you'll find information on how to access our live chat feature or submit a support ticket to connect with one of our agents. If you prefer, you can also send an email to our support team at {{Customer Support Email}}. Please let me know if there's anything else I can assist you with.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

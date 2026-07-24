@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_078",
+  "title": "Excellent practice",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "I have no hesitation in recommending this Practice.  Access by the online system is easy to use and I have always been contacted on the same day.  The doctors listen to you and take your concerns on board and explain everything in language you can understand.  The whole medical team are friendly, professional and knowledgeable and the reception staff are always polite and helpful.  This Practice is definitely patient centered treating you with dignity and respect.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

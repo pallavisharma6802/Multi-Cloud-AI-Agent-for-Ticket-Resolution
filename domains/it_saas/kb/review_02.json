@@ -1,0 +1,8 @@
+{
+  "id": "review_02",
+  "title": "Review (FEEDBACK)",
+  "category": "FEEDBACK",
+  "intent": "review",
+  "content": "Glad you got in touch to us for assistance with leaving feedback for a product! We appreciate your desire to share your thoughts and experiences. Our goal is to make the process as seamless as possible for you. Could you please provide some additional details about the product you would like to leave feedback for? This will help us guide you through the specific steps and ensure that your feedback reaches the appropriate team.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

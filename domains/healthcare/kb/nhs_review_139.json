@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_139",
+  "title": "Great doctor",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "I had the loveliest doctor made me feel comfortable and was really informative and answered all my questions.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

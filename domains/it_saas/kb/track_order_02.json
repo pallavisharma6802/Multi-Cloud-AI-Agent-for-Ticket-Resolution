@@ -1,0 +1,8 @@
+{
+  "id": "track_order_02",
+  "title": "Track Order (ORDER)",
+  "category": "ORDER",
+  "intent": "track_order",
+  "content": "We're here for you! I'm aware that you need assistance in checking the current status of your order with order number {{Order Number}}. To provide you with the most accurate information, could you please verify the correct order number? Once I have the correct details, I can guide you on how to check the status of your order. Your satisfaction is my top priority, and I'm here to help you every step of the way!",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

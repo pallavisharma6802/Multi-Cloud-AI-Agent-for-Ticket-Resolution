@@ -1,0 +1,8 @@
+{
+  "id": "complaint_01",
+  "title": "Complaint (FEEDBACK)",
+  "category": "FEEDBACK",
+  "intent": "complaint",
+  "content": "I'm sorry to hear that you're unsure of how to make a customer claim. Making a claim is an important process, and I'm here to guide you through it. To initiate a customer claim, you can start by reaching out to our customer support team either through our website or by phone. They will provide you with step-by-step instructions on how to proceed and will assist you throughout the entire process. Remember, your claim is important to us, and we want to ensure that it is resolved in a timely and satisfactory manner. Please let me know if there's anything specific you need assistance with regarding your customer claim.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

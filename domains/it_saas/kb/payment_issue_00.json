@@ -1,0 +1,8 @@
+{
+  "id": "payment_issue_00",
+  "title": "Payment Issue (PAYMENT)",
+  "category": "PAYMENT",
+  "intent": "payment_issue",
+  "content": "I'm sorry to hear that your payment failed. Reporting the error is an important step in resolving the issue. To report the error with your payment, I recommend reaching out to our customer support team. They will be able to assist you in understanding the reason for the payment failure and guide you on the necessary steps to resolve it. You can contact our customer support team through our website or by calling our dedicated support hotline. Remember, we are here to help and will work with you to get this issue resolved as quickly as possible.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "track_refund_01",
+  "title": "Track Refund (REFUND)",
+  "category": "REFUND",
+  "intent": "track_refund",
+  "content": "Sure, I can help you with that. To check for any updates on your refund, you can visit our website and log in to your account. Once you're logged in, navigate to the \"Refunds\" section, where you should be able to see the current status of your refund. If you have any trouble finding it, please let me know, and I'll be more than happy to guide you through the process.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

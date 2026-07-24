@@ -1,0 +1,8 @@
+{
+  "id": "check_cancellation_fee_03",
+  "title": "Check Cancellation Fee (CANCEL)",
+  "category": "CANCEL",
+  "intent": "check_cancellation_fee",
+  "content": "For sure! I can help you with viewing the termination charge. To access this information, you can check your billing statement or reach out to our customer support team for further assistance.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

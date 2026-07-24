@@ -1,0 +1,8 @@
+{
+  "id": "change_shipping_address_01",
+  "title": "Change Shipping Address (SHIPPING)",
+  "category": "SHIPPING",
+  "intent": "change_shipping_address",
+  "content": "Sure! To update your delivery address, you can go to your account settings on our website or app. Look for the \"Account\" or \"Profile\" section, and you should find an option to edit your address. If you're having any trouble finding it, don't hesitate to let us know, and we'll be happy to assist you further.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

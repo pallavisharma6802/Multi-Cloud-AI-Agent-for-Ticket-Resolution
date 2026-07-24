@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_073",
+  "title": "Helpful and understanding practice staff",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "In contacting the surgery for assistance, I have always found the staff helpful and willing to provide assistance, none more so last week, where as usual they were busy but still found time for me and managed to book me in for a future procedure, and called me back once the had managed to confirm details.\nOver the last few years, even with the additional pressure of the pandemic, the staff have continued with their willingness to help - thank you keep up the excellent service.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

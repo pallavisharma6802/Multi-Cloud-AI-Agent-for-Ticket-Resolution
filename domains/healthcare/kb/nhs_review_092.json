@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_092",
+  "title": "Speedy service",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "Completed e consult form and 2 hrs later got telephone call from nurse practitioner, efficient and professional, request I attend to leave sample for testing, was seen within 10 mins of arrival and sample test done. Prescription issued. Very pleased with service. Credit where it's due .thanks",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

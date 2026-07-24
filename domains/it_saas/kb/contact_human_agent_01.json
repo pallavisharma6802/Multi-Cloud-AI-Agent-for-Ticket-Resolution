@@ -1,0 +1,8 @@
+{
+  "id": "contact_human_agent_01",
+  "title": "Contact Human Agent (CONTACT)",
+  "category": "CONTACT",
+  "intent": "contact_human_agent",
+  "content": "We're listening! I'm keyed into the fact that you need to chat with an assistant. Our team of dedicated representatives is always ready to assist you. To connect with an assistant through our chat service, please visit our website at {{Website URL}} and look for the chat icon in the bottom corner. Simply click on it, and you will be connected with a live assistant who will be happy to help you with any questions or concerns you may have. We value your time and are committed to providing you with the best support experience.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

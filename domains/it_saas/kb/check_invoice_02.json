@@ -1,0 +1,8 @@
+{
+  "id": "check_invoice_02",
+  "title": "Check Invoice (INVOICE)",
+  "category": "INVOICE",
+  "intent": "check_invoice",
+  "content": "I truly appreciate your need to see the invoice from {{Salutation}} {{Client Last Name}}. Let's work together to make this happen. Could you kindly provide me with any additional details such as the date range or any specific invoice number? This information will enable me to assist you more effectively. Rest assured, I'm here to guide you every step of the way to ensure your satisfaction.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

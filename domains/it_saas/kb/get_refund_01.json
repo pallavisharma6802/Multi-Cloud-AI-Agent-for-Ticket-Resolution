@@ -1,0 +1,8 @@
+{
+  "id": "get_refund_01",
+  "title": "Get Refund (REFUND)",
+  "category": "REFUND",
+  "intent": "get_refund",
+  "content": "I'm conscious of the reality that you're seeking assistance in requesting compensation for your money. I apologize for any inconvenience you may have experienced. To better understand your situation and provide you with the most appropriate guidance, could you please provide more details about the issue? This will allow me to assist you effectively and ensure that you receive the compensation you deserve. Rest assured, I am here to support you throughout this process and help resolve your concern to your satisfaction.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

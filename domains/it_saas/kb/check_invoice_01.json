@@ -1,0 +1,8 @@
+{
+  "id": "check_invoice_01",
+  "title": "Check Invoice (INVOICE)",
+  "category": "INVOICE",
+  "intent": "check_invoice",
+  "content": "I comprehend your frustration with locating the invoice with the number {{Invoice Number}}. It can be overwhelming when you're unsure of the steps to take. Not to worry, I'm here to guide you through the process! To start, may I suggest checking your email for any digital copies of the invoice? If you don't see it there, you can try reaching out to our customer support team at {{Customer Support Phone Number}} or {{Customer Support Email}}. They will be more than happy to assist you in retrieving the invoice you need. Rest assured, we are committed to making this journey easier for you and ensuring your satisfaction.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

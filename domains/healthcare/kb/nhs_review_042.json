@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_042",
+  "title": "Amazing nurse",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "Me and my partner were extremely impressed with the service that was provided by the nurse performing the smear test. She was very welcoming and made the situation feel calm and supportive. This was thoroughly appreciated and we thank her for this tremendously. I hope she is aware of the fantastic job she is doing. Thank you!",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

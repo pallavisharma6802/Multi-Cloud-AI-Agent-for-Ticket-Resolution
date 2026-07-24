@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_084",
+  "title": "Always caring attentive doctors",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "I know it\u2019s difficult to get an appointment. This is and never has been the fault of any practice. For this we look to resources and funding. I have always found the GP\u2019s, nurses and support staff talented and caring. I have visited today and not been disappointed. A very caring and interested GP. She had time and patience with a very caring attitude. I\u2019m conscious not to take up too much time but I didn\u2019t feel rushed at all. Kindness and compassion from all the staff who work under unimaginable stress and pressure.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

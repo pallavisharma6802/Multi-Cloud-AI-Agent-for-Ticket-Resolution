@@ -1,0 +1,8 @@
+{
+  "id": "set_up_shipping_address_03",
+  "title": "Set Up Shipping Address (SHIPPING)",
+  "category": "SHIPPING",
+  "intent": "set_up_shipping_address",
+  "content": "I'm picking up what you're putting down, your challenges in submitting your new delivery address. It's crucial to ensure a seamless process for our valued customers like you. To assist you better, please provide some additional information about the specific issues you're encountering while trying to submit your new delivery address. Are you experiencing any error messages? Is the system not saving your changes? By sharing these details, we can delve deeper into the problem and find a swift solution. Rest assured, I'm here to guide you every step of the way and make sure your new delivery address is successfully submitted.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

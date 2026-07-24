@@ -1,0 +1,8 @@
+{
+  "id": "check_payment_methods_01",
+  "title": "Check Payment Methods (PAYMENT)",
+  "category": "PAYMENT",
+  "intent": "check_payment_methods",
+  "content": "Thank you for getting in touch to us! We understand the importance of knowing the payment options available to you. To assist with this, we have compiled a comprehensive list of our accepted payment methods. You can find this information on our website by visiting the \"Payment Options\" page. It provides detailed information on each payment method, including credit/debit cards, PayPal, bank transfers, Apple Pay, and Google Wallet. If you have any specific questions or need assistance with any of these methods, please don't hesitate to let us know. We're here to help make your payment experience as smooth and convenient as possible!",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

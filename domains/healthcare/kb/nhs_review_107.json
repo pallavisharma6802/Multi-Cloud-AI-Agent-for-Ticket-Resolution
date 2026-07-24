@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_107",
+  "title": "Excellent service",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "Attended for routine appointment. Practice Nurse went out of her way to undertake further tests that were due but no part of that particular appointment. Extremely grateful for extra time taken during a routine appointment to undertake extra tests. Brilliant service. Thank you.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

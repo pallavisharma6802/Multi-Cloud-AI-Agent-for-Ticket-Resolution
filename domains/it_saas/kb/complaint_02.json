@@ -1,0 +1,8 @@
+{
+  "id": "complaint_02",
+  "title": "Complaint (FEEDBACK)",
+  "category": "FEEDBACK",
+  "intent": "complaint",
+  "content": "I'm sorry to hear that you want to make a reclamation against our business. Our utmost priority is to address and resolve any concerns you may have. I'm here to guide you through the process of making a claim and ensure that your experience is as smooth as possible. Could you please provide me with some details about the issue you're facing? This will help us understand the situation better and provide you with the best possible assistance.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

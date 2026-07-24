@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_039",
+  "title": "Super Medical Centre",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "Just a few words, as per my appointment booked.\nAll went very well the staff Friendly, helpful and my reason for being there went easily, calming, informative and on time.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_005",
+  "title": "Excellent service",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "My recent visits culminating in Surgery at St James\u2019s Hospital have been my first major contact with the practice other than Annual Reviews and recent Covid and Flu Vaccinations.\n\nWithout doubt the specific G.P.s and ancillary staff have dealt with me in an entirely professional and caring manner, either in person or via the telephone consultations that enabled me to receive necessary treatment prior to and after my surgical interventions at St James\u2019s.\n\nI know that on on my visits to the Surgery it has been unusually busy with staff resources stretched. That did not impact on the quality of service in any way. \n\nI a, so grateful to all staff and confident that the practice is doing everything it can to maintain high standards of clinical care - thank you all.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

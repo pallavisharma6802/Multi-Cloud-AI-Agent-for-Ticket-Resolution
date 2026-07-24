@@ -1,0 +1,170 @@
+{
+  "uid": "ops-cost",
+  "title": "Ops & Cost",
+  "description": "Iterations, LLM calls/tokens, latency percentiles, and safety-net trip counts.",
+  "tags": [
+    "ticket-resolution",
+    "ops-cost"
+  ],
+  "timezone": "browser",
+  "schemaVersion": 39,
+  "version": 1,
+  "refresh": "5m",
+  "time": {
+    "from": "now-30d",
+    "to": "now"
+  },
+  "templating": {
+    "list": []
+  },
+  "panels": [
+    {
+      "id": 1,
+      "title": "Iterations per Ticket (Distribution)",
+      "description": "Graph-loop iteration_count per ticket -- since there is no fixed retry cap, this distribution is the real signal for whether the Continuation Agent is looping more than expected.",
+      "type": "histogram",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "datasource": {
+        "type": "grafana-bigquery-datasource",
+        "uid": "bigquery-ticket-analytics"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawSql": "SELECT iteration_count\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts) AND iteration_count IS NOT NULL",
+          "datasource": {
+            "type": "grafana-bigquery-datasource",
+            "uid": "bigquery-ticket-analytics"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Avg LLM Calls & Tokens per Ticket",
+      "description": "Real cost proxies for a self-hosted Ollama pipeline (no per-token billing to report -- see bigquery_sink.py's estimated_cost_usd note).",
+      "type": "timeseries",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "datasource": {
+        "type": "grafana-bigquery-datasource",
+        "uid": "bigquery-ticket-analytics"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "timeseries",
+          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time, AVG(llm_call_count) AS avg_llm_calls\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\nGROUP BY time\nORDER BY time",
+          "datasource": {
+            "type": "grafana-bigquery-datasource",
+            "uid": "bigquery-ticket-analytics"
+          }
+        },
+        {
+          "refId": "B",
+          "format": "timeseries",
+          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time, AVG(total_tokens) AS avg_total_tokens\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\nGROUP BY time\nORDER BY time",
+          "datasource": {
+            "type": "grafana-bigquery-datasource",
+            "uid": "bigquery-ticket-analytics"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Latency Percentiles (p50/p95/p99)",
+      "description": "Total LLM latency per ticket (sum of every agent call's latency_ms, from app/llm/ollama_client.py telemetry).",
+      "type": "timeseries",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 8
+      },
+      "datasource": {
+        "type": "grafana-bigquery-datasource",
+        "uid": "bigquery-ticket-analytics"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "ms"
+        },
+        "overrides": []
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "timeseries",
+          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time,\n  APPROX_QUANTILES(total_latency_ms, 100)[OFFSET(50)] AS p50,\n  APPROX_QUANTILES(total_latency_ms, 100)[OFFSET(95)] AS p95,\n  APPROX_QUANTILES(total_latency_ms, 100)[OFFSET(99)] AS p99\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\nGROUP BY time\nORDER BY time",
+          "datasource": {
+            "type": "grafana-bigquery-datasource",
+            "uid": "bigquery-ticket-analytics"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Wall-Clock / Max-Iteration Safety-Net Trips",
+      "description": "Count of tickets in the selected window where the engineering safety net (not the agentic Continuation Agent) forced escalation -- see anomaly_flags in app/agents/supervisor.py's _safety_net_reason. Should be zero or near-zero in steady state; a nonzero, rising count means real agentic loops aren't converging and needs investigation, not a threshold bump.",
+      "type": "stat",
+      "gridPos": {
+        "h": 6,
+        "w": 24,
+        "x": 0,
+        "y": 16
+      },
+      "datasource": {
+        "type": "grafana-bigquery-datasource",
+        "uid": "bigquery-ticket-analytics"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 1
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawSql": "SELECT COUNTIF(EXISTS(SELECT 1 FROM UNNEST(anomaly_flags) AS flag WHERE flag LIKE '%safety_net%')) AS safety_net_trips\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts)",
+          "datasource": {
+            "type": "grafana-bigquery-datasource",
+            "uid": "bigquery-ticket-analytics"
+          }
+        }
+      ]
+    }
+  ]
+}

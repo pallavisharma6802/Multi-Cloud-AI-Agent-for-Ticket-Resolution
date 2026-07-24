@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_061",
+  "title": "Great Caring Practice",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "Hoveten and wroxham medical Centre ie my Doctors, are such a caring considering practice, from the receptionists who are so qualified and caring to pharmacy to Doctors and all the other people who are behind the scenes that help run the place, are truly caring and dedicated professionals. I feel that thay are not prased highly enough. I thank them all for such a wonderful job thay all do.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

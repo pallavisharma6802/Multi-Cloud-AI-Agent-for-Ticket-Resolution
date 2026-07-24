@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_030",
+  "title": "Great Practice",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "My family and I have been patients of this practice for over 9 years. There is a real personalised service from the GPs.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

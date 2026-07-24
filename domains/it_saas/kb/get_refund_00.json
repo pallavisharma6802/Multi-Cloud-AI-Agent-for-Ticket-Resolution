@@ -1,0 +1,8 @@
+{
+  "id": "get_refund_00",
+  "title": "Get Refund (REFUND)",
+  "category": "REFUND",
+  "intent": "get_refund",
+  "content": "I can tell that you're inquiring about the process to request reimbursements for the money you have paid. To initiate the refund, I recommend reaching out to our customer service team either through our 24/7 helpline at {{Customer Support Phone Number}} or via the Live Chat on our website at {{Website URL}}. Our dedicated agents will guide you through the necessary steps and provide the required assistance to ensure a swift and satisfactory resolution. Rest assured, we value your satisfaction and are committed to resolving this matter promptly for you.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

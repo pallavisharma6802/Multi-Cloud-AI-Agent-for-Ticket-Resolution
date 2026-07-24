@@ -1,122 +1,126 @@
-import requests
-from app.config import settings
-from app.schemas.response import KBDocument
-from typing import List
+"""Drafts the customer-facing support response.
+
+Confidence comes from JudgeAgent. On Reflexion retry, previous draft and
+judge feedback are included so the model can correct specific issues.
+"""
 import logging
-import json
+from typing import List, Optional
+
+from app.config import settings
+from app.llm.ollama_client import LLMCallMetadata, get_llm_client
+from app.schemas.response import KBDocument
 
 logger = logging.getLogger(__name__)
 
 
 class DraftingAgent:
-    
+
     def __init__(self):
+        self.client = get_llm_client()
         self.ollama_url = f"{settings.ollama_base_url}/api/generate"
-        self.model = "qwen2.5:3b"
-    
+
     def draft_response(
         self,
         ticket_title: str,
         ticket_description: str,
         intent: str,
-        kb_documents: List[KBDocument]
-    ) -> tuple[str, float]:
+        kb_documents: List[KBDocument],
+        previous_draft: Optional[str] = None,
+        judge_feedback: Optional[str] = None,
+    ) -> tuple[str, LLMCallMetadata]:
         logger.info(f"Drafting response for intent: {intent}")
-        
+
         prompt = self._build_prompt(
             ticket_title=ticket_title,
             ticket_description=ticket_description,
             intent=intent,
-            kb_documents=kb_documents
+            kb_documents=kb_documents,
+            previous_draft=previous_draft,
+            judge_feedback=judge_feedback,
         )
-        
+
+        import requests
+
         try:
-            response_text = self._call_ollama(prompt)
-            confidence = self._calculate_confidence(kb_documents, response_text)
-            
-            logger.info(f"Response drafted with confidence: {confidence:.2f}")
-            return response_text, confidence
-            
-        except Exception as e:
-            logger.error(f"Failed to draft response: {e}")
-            raise
-    
+            payload = {
+                "model": settings.model_drafting,
+                "prompt": prompt,
+                "stream": False,
+                "options": {"num_predict": 500, "temperature": 0.6, "top_p": 0.9},
+            }
+            import time
+            start = time.monotonic()
+            response = requests.post(self.ollama_url, json=payload, timeout=settings.request_timeout_seconds)
+            response.raise_for_status()
+            result = response.json()
+            response_text = result.get("response", "").strip()
+            latency_ms = (time.monotonic() - start) * 1000
+
+            meta = LLMCallMetadata(
+                model=settings.model_drafting,
+                role="drafting",
+                latency_ms=round(latency_ms, 1),
+                prompt_tokens=result.get("prompt_eval_count", 0),
+                completion_tokens=result.get("eval_count", 0),
+                attempts=1,
+                raw_response_truncated=response_text[:300],
+            )
+            logger.info(f"Response drafted ({len(response_text.split())} words)")
+            return response_text, meta
+
+        except requests.exceptions.Timeout as e:
+            logger.error("Ollama request timed out")
+            raise RuntimeError("LLM request timed out") from e
+        except requests.exceptions.RequestException as e:
+            logger.error(f"Ollama request failed: {e}")
+            raise RuntimeError(f"Failed to connect to LLM: {e}") from e
+
     def _build_prompt(
         self,
         ticket_title: str,
         ticket_description: str,
         intent: str,
-        kb_documents: List[KBDocument]
+        kb_documents: List[KBDocument],
+        previous_draft: Optional[str],
+        judge_feedback: Optional[str],
     ) -> str:
-        context = ""
         if kb_documents:
-            context = "Relevant knowledge base articles:\n\n"
+            context = "Relevant knowledge base articles (grader-approved as relevant to this ticket):\n\n"
             for i, doc in enumerate(kb_documents, 1):
-                context += f"[Article {i}] (Relevance: {doc.similarity_score:.2f})\n"
-                context += f"{doc.content}\n\n"
+                context += f"[Article {i}]\n{doc.content}\n\n"
         else:
-            context = "No specific knowledge base articles found for this issue.\n\n"
-        
-        prompt = f"""You are a customer support agent helping resolve a support ticket.
+            context = (
+                "No knowledge base articles were found relevant to this issue. Acknowledge this honestly "
+                "rather than inventing a solution.\n\n"
+            )
+
+        reflexion_block = ""
+        if previous_draft and judge_feedback:
+            reflexion_block = f"""
+Your previous attempt at this response was reviewed and needs correction:
+
+Previous draft:
+{previous_draft}
+
+Reviewer feedback:
+{judge_feedback}
+
+Write a corrected response that specifically fixes the issues above -- do not repeat unsupported claims.
+"""
+
+        return f"""You are a customer support agent helping resolve a support ticket.
 
 Ticket Title: {ticket_title}
 Ticket Description: {ticket_description}
 Classified Intent: {intent}
 
 {context}
-
+{reflexion_block}
 Instructions:
 - Provide a clear, helpful response to the user's issue
-- Base your answer on the knowledge base articles provided when relevant
+- Base your answer ONLY on the knowledge base articles provided -- do not invent steps, policies, or facts not present in them
 - Be professional, empathetic, and concise
-- If the knowledge base doesn't have sufficient information, acknowledge this and suggest next steps
-- Do not make up information not present in the knowledge base
+- If the knowledge base doesn't have sufficient information, acknowledge this honestly and suggest the customer be connected with a human agent
 - Keep the response under 300 words
 
 Response:"""
-        
-        return prompt
-    
-    def _call_ollama(self, prompt: str, max_tokens: int = 500) -> str:
-        try:
-            payload = {
-                "model": self.model,
-                "prompt": prompt,
-                "stream": False,
-                "options": {
-                    "num_predict": max_tokens,
-                    "temperature": 0.7,
-                    "top_p": 0.9
-                }
-            }
-            
-            response = requests.post(
-                self.ollama_url,
-                json=payload,
-                timeout=settings.request_timeout_seconds
-            )
-            
-            response.raise_for_status()
-            result = response.json()
-            
-            return result.get("response", "").strip()
-            
-        except requests.exceptions.Timeout:
-            logger.error("Ollama request timed out")
-            raise Exception("LLM request timed out")
-        except requests.exceptions.RequestException as e:
-            logger.error(f"Ollama request failed: {e}")
-            raise Exception(f"Failed to connect to LLM: {e}")
-    
-    def _calculate_confidence(self, kb_documents: List[KBDocument], response_text: str) -> float:
-        if not kb_documents:
-            return 0.5
-        
-        avg_similarity = sum(doc.similarity_score for doc in kb_documents) / len(kb_documents)
-        
-        response_length = len(response_text.split())
-        length_score = min(response_length / 200, 1.0)
-        
-        confidence = (avg_similarity * 0.7) + (length_score * 0.3)
-        
-        return round(confidence, 2)

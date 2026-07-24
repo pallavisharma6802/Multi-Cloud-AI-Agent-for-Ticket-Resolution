@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_031",
+  "title": "Understanding",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "I\u2019ve just joined this practice, and so far the service has been exemplary, I\u2019ve had lots of support after the death of my sister from the staff, and the Gp and others on the team have shown a real interest in my health, and well-being.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

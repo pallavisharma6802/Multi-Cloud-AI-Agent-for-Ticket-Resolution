@@ -1,0 +1,8 @@
+{
+  "id": "newsletter_subscription_00",
+  "title": "Newsletter Subscription (SUBSCRIPTION)",
+  "category": "SUBSCRIPTION",
+  "intent": "newsletter_subscription",
+  "content": "I'm not mistaken that you'd like to cancel your subscription to our newsletter. Your preferences and choices matter to us, and we want to ensure you have the best experience possible. To proceed with the cancellation, could you please provide me with the email address you used to subscribe? This will help me locate your subscription details and process the cancellation swiftly. Rest assured, we'll respect your decision and ensure that you stop receiving any further newsletters from us. Thank you for reaching out, and I appreciate your patience in this matter.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

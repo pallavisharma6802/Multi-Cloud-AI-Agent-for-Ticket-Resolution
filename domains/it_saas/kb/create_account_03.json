@@ -1,0 +1,8 @@
+{
+  "id": "create_account_03",
+  "title": "Create Account (ACCOUNT)",
+  "category": "ACCOUNT",
+  "intent": "create_account",
+  "content": "I'm sorry to hear that you're facing difficulties while creating a {{Account Category}} account. I'm here to help you resolve this issue and get you started with your account as soon as possible. To better assist you, could you please provide me with more details about the specific problem you're encountering? This information will allow me to offer you the most accurate guidance and find a suitable solution.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_018",
+  "title": "Timely communication and responsiveness",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "Having visited this GP a number of times myself and my family, have nothing but praise for their professionalism in dealing with queries whether over the phone or face to face. \r\n\r\nSpecial thanks to the reception manager who is always at hand to communicate to the patients for any delays in seeing the reception due to busy times. \r\n\r\nHaving worked in number of hospitals , must admit that this GP and its staff take efforts to provide a sustainable service to its area. \r\n\r\nKeep up the good work.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

@@ -1,0 +1,8 @@
+{
+  "id": "track_refund_03",
+  "title": "Track Refund (REFUND)",
+  "category": "REFUND",
+  "intent": "track_refund",
+  "content": "Absolutely! I completely understand your eagerness to stay informed about any updates regarding your restitution. Allow me to check the current status for you. While I retrieve the most recent information, may I kindly ask if you have received any communication from our team about the reimbursement? Your insights will provide us with a more comprehensive understanding of the situation. Thank you for your patience, and I'll ensure we address your query promptly.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

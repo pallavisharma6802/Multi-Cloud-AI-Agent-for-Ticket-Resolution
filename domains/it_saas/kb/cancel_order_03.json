@@ -1,0 +1,8 @@
+{
+  "id": "cancel_order_03",
+  "title": "Cancel Order (ORDER)",
+  "category": "ORDER",
+  "intent": "cancel_order",
+  "content": "I've realized you have a question regarding canceling order {{Order Number}}. I'm here to provide you with the information you need. Please go ahead and let me know what specific question you have, and I'll be happy to assist you further.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

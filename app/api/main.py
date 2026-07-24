@@ -1,8 +1,10 @@
+import logging
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.api.routes import tickets, health
+
+from app.api.routes import health, tickets
 from app.config import settings
-import logging
 
 logging.basicConfig(
     level=settings.log_level,
@@ -34,6 +36,12 @@ async def startup_event():
     logger.info(f"Starting {settings.project_name} in {settings.env} environment")
     logger.info(f"Azure endpoint: {settings.azure_text_analytics_endpoint}")
     logger.info(f"Ollama URL: {settings.ollama_base_url}")
+
+    # Create missing tables (idempotent).
+    from app.db.init_db import init_db
+
+    init_db()
+    logger.info("Database schema verified/created")
 
 
 @app.on_event("shutdown")

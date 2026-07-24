@@ -1,0 +1,8 @@
+{
+  "id": "set_up_shipping_address_01",
+  "title": "Set Up Shipping Address (SHIPPING)",
+  "category": "SHIPPING",
+  "intent": "set_up_shipping_address",
+  "content": "I'm sorry to hear that you're experiencing troubles while entering your secondary delivery address. I'm here to assist you and ensure a smooth setup process. To efficiently resolve this issue, I kindly request you to provide more specific details about the difficulties you're facing. Are you encountering any error messages? Is the page not loading properly? Any additional information will help me provide you with tailored guidance to resolve this issue promptly. Rest assured, I'm committed to ensuring a successful setup of your secondary delivery address.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_066",
+  "title": "Excellent Practice",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "Needed help as I had injured my back, couldn't walk and in extreme pain. Couldn't get to the practice and didn't get an answer from 111 decided to try to cope. But pain was too severe. Rang the surgery, but wasn't sure I would get help as I couldn't visit. I couldn't have been more wrong. Doctor rang me back, discussed my problem and aware of what medication I was already taking ordered the appropriate medicine and made sure it went to a chemist my daughter could get to for me. Everything was done so well and so quickly. Within a couple of hours of ringing the medication was already starting to work. I couldn't possibly have had better, or more suitable treatment. The only problem was my own. I should have rung sooner. Thank you so much for being there for me. But then again they always are. I just didn't know you could get an emergency telephone appointment. Thanks again",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

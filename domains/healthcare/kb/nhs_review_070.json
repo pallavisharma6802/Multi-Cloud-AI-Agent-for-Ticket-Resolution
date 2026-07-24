@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_070",
+  "title": "Good practice",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "It would be better if the appointment times were kept to,letting people in before you, it just bungs the system up and causes arguments.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

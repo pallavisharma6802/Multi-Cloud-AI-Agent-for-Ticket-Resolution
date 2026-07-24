@@ -1,0 +1,8 @@
+{
+  "id": "complaint_03",
+  "title": "Complaint (FEEDBACK)",
+  "category": "FEEDBACK",
+  "intent": "complaint",
+  "content": "I'm sorry to hear that you're facing a situation that has led you to file a complaint. I want to assure you that your concerns are important to us, and we are committed to resolving them in a timely and fair manner. In order to assist you effectively, I need more information about the nature of your complaint. Could you please provide me with the specific details of your experience? This will enable me to better understand your situation and work towards finding a satisfactory resolution.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

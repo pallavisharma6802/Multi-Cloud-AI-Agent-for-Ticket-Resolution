@@ -31,7 +31,8 @@ resource "aws_security_group" "rds" {
     from_port   = 5432
     to_port     = 5432
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    # Restricted CIDR only — never 0.0.0.0/0 (see variables.tf).
+    cidr_blocks = var.allowed_management_cidr_blocks
   }
 
   egress {
@@ -61,7 +62,8 @@ resource "aws_db_instance" "postgres" {
   vpc_security_group_ids = [aws_security_group.rds.id]
 
   skip_final_snapshot = true
-  publicly_accessible = true
+  # Defaults false; SG still restricts to allowed_management_cidr_blocks.
+  publicly_accessible = var.rds_publicly_accessible
 
   backup_retention_period = 7
   backup_window           = "03:00-04:00"

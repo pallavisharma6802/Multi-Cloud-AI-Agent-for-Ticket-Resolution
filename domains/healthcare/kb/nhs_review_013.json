@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_013",
+  "title": "Immaculate GP Practice",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "Doctor asked me to book appointment for blood test after seeing her, reception first checked next available appointment in about 2 weeks, after explained appointment was urgent, on the spot receptionist spoke to the nurse and nurse conducted my blood test immediately, I have never before in my life seen such fast and excellent service experience, I was so please and proud to be a patient at the GP practice, thank you to the reception team and the nurse team you are wonderful team.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

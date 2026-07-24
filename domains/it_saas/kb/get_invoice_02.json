@@ -1,0 +1,8 @@
+{
+  "id": "get_invoice_02",
+  "title": "Get Invoice (INVOICE)",
+  "category": "INVOICE",
+  "intent": "get_invoice",
+  "content": "Sure! I completely understand that you need assistance with downloading the invoice with the number #{{Invoice Number}}. Give me just a moment to provide you with the necessary steps to download it successfully. In the meantime, if you have any additional questions or concerns, feel free to let me know. I'm here to help!",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

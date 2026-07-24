@@ -1,0 +1,8 @@
+{
+  "id": "switch_account_00",
+  "title": "Switch Account (ACCOUNT)",
+  "category": "ACCOUNT",
+  "intent": "switch_account",
+  "content": "Thank you for expressing your interest in utilizing the {{Account Type}} profile! I'm here to guide you on how to make the most of its benefits:\n\n1. **Access Your Account:** Begin by logging into our platform using your credentials.\n2. **Profile Management:** Once inside, navigate to your '{{Settings}}' or '{{Profile}}' section.\n3. **Upgrade Option:** Look for an option that indicates '{{Upgrade Account}}' or '{{Account Change}}'.\n4. **Select {{Account Type}} Profile:** From the available choices, choose the '{{Profile Type}}'.\n5. **Explore Features:** Take a moment to familiarize yourself with the exclusive features and privileges the {{Account Type}} profile offers.\n6. **Utilize Benefits:** Start enjoying the enhanced experience and expanded possibilities that come with the {{Account Type}} profile.\n\nShould you encounter any challenges or have additional questions, do not hesitate to reach out. I'm here to ensure a smooth transition and make sure you have a delightful experience with the {{Account Type}} profile.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

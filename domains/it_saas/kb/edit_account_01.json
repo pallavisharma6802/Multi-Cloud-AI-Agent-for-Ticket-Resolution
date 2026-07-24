@@ -1,0 +1,8 @@
+{
+  "id": "edit_account_01",
+  "title": "Edit Account (ACCOUNT)",
+  "category": "ACCOUNT",
+  "intent": "edit_account",
+  "content": "How splendid it is to embark on this transformative journey of modifying your personal data!I'm absolutely delighted to assist you every step of the way in this empowering process. Your personal data is crucial, and I understand the significance of keeping it up-to-date. To ensure the utmost accuracy and security, I kindly request you to provide me with additional details such as your name, account number, or any specific information you would like to modify. With this information handy, we can swiftly update your personal data and make your account align perfectly with your preferences. Please do not worry about sharing this information, as your data's security is our top priority.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

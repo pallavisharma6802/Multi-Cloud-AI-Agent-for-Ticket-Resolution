@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_138",
+  "title": "Inclusive healthcare",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "I\u2019m a transgender individual, I\u2019ve been working with my GP over the past 6 months to help progress my transition. The GP has been very accommodating of my needs and has treated me with dignity and respect throughout. \nI feel very privileged to have had such a great experience during this time when many others do not. \nMy sincere thanks to all that have helped me and continue to help me at the practice.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

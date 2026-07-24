@@ -1,0 +1,8 @@
+{
+  "id": "get_refund_03",
+  "title": "Get Refund (REFUND)",
+  "category": "REFUND",
+  "intent": "get_refund",
+  "content": "I'm here to provide you with the necessary assistance to request rebates. It's understandable that you would like to receive your money back, and I'll do my best to guide you through the process. To begin, could you please provide me with some additional details regarding the rebates you're seeking? This information will allow me to provide you with accurate guidance and ensure a smooth experience. Rest assured, I'm committed to helping you obtain the rebates you deserve.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

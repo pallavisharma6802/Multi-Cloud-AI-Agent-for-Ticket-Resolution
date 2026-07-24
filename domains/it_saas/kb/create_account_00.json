@@ -1,0 +1,8 @@
+{
+  "id": "create_account_00",
+  "title": "Create Account (ACCOUNT)",
+  "category": "ACCOUNT",
+  "intent": "create_account",
+  "content": "Thank you for expressing your interest in creating a freemium account with us! We have a simple and straightforward process in place to help you get started. To proceed with the account creation, could you please provide me with your full name, email address, and a preferred username? Once I have these details, I will guide you through the necessary steps, ensuring that you have all the information you need. Rest assured, we take the security and privacy of your data very seriously, and your information will be handled with the utmost care.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

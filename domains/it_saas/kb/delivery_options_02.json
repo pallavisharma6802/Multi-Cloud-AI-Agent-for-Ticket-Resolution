@@ -1,0 +1,8 @@
+{
+  "id": "delivery_options_02",
+  "title": "Delivery Options (DELIVERY)",
+  "category": "DELIVERY",
+  "intent": "delivery_options",
+  "content": "I'll make it happen! We welcome orders from {{Delivery Country}} with open arms. Our goal is to provide a seamless shopping experience for customers like you, no matter where you are located. Let me assure you that we have tailored delivery options specifically for shipments to {{Delivery Country}}. From standard shipping to expedited options, we have got you covered. So go ahead and explore our wide range of products, add them to your cart, and get ready to experience a hassle-free shopping journey. If you have any further questions or need assistance with any aspect of your order, please don't hesitate to reach out. Our dedicated customer support team is always here to help. Happy shopping from {{Delivery Country}}!",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

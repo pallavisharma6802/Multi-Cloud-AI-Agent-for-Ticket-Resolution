@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_054",
+  "title": "Experience when calling the surgery",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "Managed to get through to reception without waiting too long. Spoke to a very pleasant supportive receptionist who explained the process.\nA Dr rang back within 10mins and was able to issue a prescription.\nI know lots of people have not had such a positive experience but I was impressed with the care and attention that received today and felt it worthy of a review.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

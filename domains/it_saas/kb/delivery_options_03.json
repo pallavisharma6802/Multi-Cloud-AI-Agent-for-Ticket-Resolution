@@ -1,0 +1,8 @@
+{
+  "id": "delivery_options_03",
+  "title": "Delivery Options (DELIVERY)",
+  "category": "DELIVERY",
+  "intent": "delivery_options",
+  "content": "No worries, I'm here to guide you through the process! To see the methods for shipping, you can visit our website and follow these simple steps:\n\n1. Go to our homepage and navigate to the \"Shipping\" section.\n2. Click on \"Delivery Options\" or a similar tab/menu item.\n3. You will find a detailed list of our available shipping methods along with their estimated timeframes and costs.\n\nIf you encounter any difficulties or have further questions during the process, don't hesitate to ask. I'll be more than happy to assist you at every step. Let's get you the information you need!",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

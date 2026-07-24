@@ -1,0 +1,8 @@
+{
+  "id": "cancel_order_00",
+  "title": "Cancel Order (ORDER)",
+  "category": "ORDER",
+  "intent": "cancel_order",
+  "content": "Of course, I'm here to assist you in canceling your order with the number {{Order Number}}. Let's get this sorted out for you. \n\nPlease follow these steps:\n\n1. Sign in to your {{Online Company Portal Info}} using your credentials.\n2. Go to your '{{Online Order Interaction}}' or '{{Online Order Interaction}}' section, where you can find a record of all your purchases.\n3. Locate the order associated with the number {{Order Number}} and click on it to view the details.\n4. Look for the option to '{{Online Order Interaction}}' and select it to initiate the cancellation process.\n5. Follow any additional instructions or provide any necessary feedback as prompted by the system.\n\nShould you encounter any difficulties or have further questions, our dedicated support team is available to assist you. You can reach us during {{Customer Support Hours}} at {{Customer Support Phone Number}}, or you can connect with us using the Live Chat feature on our website at {{Website URL}}. We are committed to providing you with a satisfactory resolution and ensuring your utmost satisfaction.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

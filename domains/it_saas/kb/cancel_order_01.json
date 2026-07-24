@@ -1,0 +1,8 @@
+{
+  "id": "cancel_order_01",
+  "title": "Cancel Order (ORDER)",
+  "category": "ORDER",
+  "intent": "cancel_order",
+  "content": "I've got that you need assistance with canceling purchase {{Order Number}}. Rest assured, I am here to help you through the process. To cancel your purchase, please follow these steps:\n\n1. Sign into Your Account: Visit our {{Online Company Portal Info}} and sign in using your credentials.\n2. Locate Your Order History: Once logged in, navigate to the '{{Online Order Interaction}}' or '{{Online Order Interaction}}' section.\n3. Find the Relevant Purchase: Look for the purchase associated with the order number {{Order Number}}.\n4. Initiate the Cancellation: Within the order details page, you should see an option labeled '{{Online Order Interaction}}'. Please click on it.\n5. Confirm Your Cancellation: Our system may ask you to confirm the cancellation, providing feedback would be appreciated.\n6. Cancellation Complete: After completing the cancellation process, you will receive a confirmation email.\n\nIf you encounter any difficulties or have further questions along the way, feel free to reach out to our dedicated support team. They are available during {{Customer Support Hours}} at {{Customer Support Phone Number}} or through the Live Chat feature on our {{Website URL}}. We appreciate your trust in us and are committed to ensuring your satisfaction throughout this process.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

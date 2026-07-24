@@ -1,0 +1,8 @@
+{
+  "id": "contact_human_agent_00",
+  "title": "Contact Human Agent (CONTACT)",
+  "category": "CONTACT",
+  "intent": "contact_human_agent",
+  "content": "Happy to hear from you! I truly understand that you're unsure about the process of speaking to an agent. I'm here to assist you. To speak to a live agent, you can try one of the following options: 1) Listen carefully to the phone menu options and choose the one that connects you to a representative. 2) If you're contacting us through our website, look for a \"Contact Us\" or \"Support\" button and click on it to access the live chat or find the phone number. 3) You can also send us an email explaining your query, and we'll respond with the best way to connect with our team. I hope this information helps! Is there anything else I can assist you with?",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

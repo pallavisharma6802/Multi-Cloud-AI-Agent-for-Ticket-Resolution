@@ -1,0 +1,8 @@
+{
+  "id": "contact_customer_service_03",
+  "title": "Contact Customer Service (CONTACT)",
+  "category": "CONTACT",
+  "intent": "contact_customer_service",
+  "content": "Your input is valuable! I'm picking up that you need assistance in finding out the specific hours during which you can contact our customer support. Our dedicated team is available to assist you during {{Customer Support Hours}}. You can reach us through {{Customer Support Phone Number}} or via live chat on our website at {{Website URL}}. We strive to provide prompt and helpful support within these designated hours. Is there anything else I can help you with?",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

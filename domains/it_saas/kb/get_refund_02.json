@@ -1,0 +1,8 @@
+{
+  "id": "get_refund_02",
+  "title": "Get Refund (REFUND)",
+  "category": "REFUND",
+  "intent": "get_refund",
+  "content": "Unquestionably! I'm here to assist you in receiving refunds. I understand the importance of getting your money back promptly, and I'll do my best to guide you through the process. To get started, could you please provide me with more details about your refund request? This way, I can provide you with the most accurate information and ensure a smooth resolution. Your satisfaction is my top priority, and I'll be with you every step of the way.\"",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

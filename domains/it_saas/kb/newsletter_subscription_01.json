@@ -1,0 +1,8 @@
+{
+  "id": "newsletter_subscription_01",
+  "title": "Newsletter Subscription (SUBSCRIPTION)",
+  "category": "SUBSCRIPTION",
+  "intent": "newsletter_subscription",
+  "content": "I can sense that you are seeking information regarding canceling your subscription to our company newsletter. We appreciate your interest and value your decision to evaluate your subscription preferences. To cancel your newsletter subscription, you can navigate to the email you received and locate the 'unsubscribe' link at the bottom of the email. Simply click on the link, and it will direct you to the unsubscribe page where you can confirm your cancellation. Alternatively, you can reach out to our customer support team through email or phone, and they will be happy to assist you with canceling your subscription. Please keep in mind that canceling your subscription means you won't receive any further updates from us. If you have any further questions or need additional assistance, feel free to let me know!",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

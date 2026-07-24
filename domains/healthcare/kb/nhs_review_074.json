@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_074",
+  "title": "Excellent practice",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "Easy to book an appointment, can always get through on the phone and reception always very helpful. Can usually get an appointment same day or soon after. Easy to park, very pleasant waiting room. Have recently seen doctor and two different nurses or other staff: all have been extremely supportive and positive. I would recommend this surgery to anybody and it is an example of the very best of NHS in my view. Thank you to all the staff there.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

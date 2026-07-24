@@ -1,0 +1,8 @@
+{
+  "id": "delivery_period_02",
+  "title": "Delivery Period (DELIVERY)",
+  "category": "DELIVERY",
+  "intent": "delivery_period",
+  "content": "We understand your need to track and estimate the delivery time of your purchase. To provide you with accurate information, could you please provide us with the {{Tracking Number}} or {{Order Number}}? With that information, we can determine the current status of your purchase and provide you with the estimated delivery timeframe. Your patience and cooperation are greatly appreciated in this process.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

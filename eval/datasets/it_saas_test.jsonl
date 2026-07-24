@@ -1,0 +1,900 @@
+{"text": "how do I delete some bloody products from purchase {{Order Number}}?", "true_intent": "change_order", "true_category": "ORDER"}
+{"text": "I want to write a comment, I need assistance", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "I have to close the {{Account Category}} account", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "I have got to talk to bloody customer support, I need help", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "withdrawal hcarge", "true_intent": "check_cancellation_fee", "true_category": "CANCEL"}
+{"text": "I lost the access key of my account, help me reset it", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "change details on gold account", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "change info on {{Account Category}} account", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "where to give a quick look at the invoice #85632?", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "i need help to notify of payment errors", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "what do I have to do to inform of a registration problem?", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "where do I check the reimbursement current status?", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "assistance to change the personal details", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "checking bill from {{Person Name}}", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "can iu talk to customer support", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "I want help to file a reclamation against your company", "true_intent": "complaint", "true_category": "FEEDBACK"}
+{"text": "assistance trying to edit the shipping address", "true_intent": "change_shipping_address", "true_category": "SHIPPING"}
+{"text": "can you help me submit a new delivery address?", "true_intent": "set_up_shipping_address", "true_category": "SHIPPING"}
+{"text": "need help resetting the password of my user account", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "what do i have to do to locate my bill from {{Person Name}}", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "talk with customer service", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "I have a question about the lost pass", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "how can i check the current status of my restitution", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "i try to check the status of order {{Order Number}}", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "i have a trouble trying to update my address", "true_intent": "change_shipping_address", "true_category": "SHIPPING"}
+{"text": "can you help me correct my goddamn shipping address?", "true_intent": "change_shipping_address", "true_category": "SHIPPING"}
+{"text": "need help with cancelling order {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "neeed assistance setting my secondary shipping address up", "true_intent": "set_up_shipping_address", "true_category": "SHIPPING"}
+{"text": "I have to see order {{Order Number}} status, I need assistance", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "I try to submit the new delivery address", "true_intent": "set_up_shipping_address", "true_category": "SHIPPING"}
+{"text": "I do not know how to reset the pass of my profile", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "help to ask for a restitution of money", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "need to give a quick look at the invoice #85632", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "where do i check the withdrawal fees", "true_intent": "check_cancellation_fee", "true_category": "CANCEL"}
+{"text": "i have got to download the bill #85632 how do i do it", "true_intent": "get_invoice", "true_category": "INVOICE"}
+{"text": "ETA of purchase {{Order Number}}", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "how do I check what hours I can call customer support?", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "help me check what hours i can call customer assistancr", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "I need assistance checking the options for shipment", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "find information about the delivery period", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "i do not know what to do to earn some items", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "I don't know what I need to do to close a {{Account Type}} account", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "can I check at what time I can call customer service?", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "question about my {{Account Type}} account cancellation", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "i have to delete the fucking freemium account i need help", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "need assistance to leave a review about a service", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "changing to {{Account Type}} account", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "I have a trouble correcing the address", "true_intent": "change_shipping_address", "true_category": "SHIPPING"}
+{"text": "create new freemium account", "true_intent": "create_account", "true_category": "ACCOUNT"}
+{"text": "I am trying to cancel purchase {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "filing consumer claim against your business", "true_intent": "complaint", "true_category": "FEEDBACK"}
+{"text": "I have got to call customer service, how to do it?", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "nneed to submit my new delivery address how could i do it", "true_intent": "set_up_shipping_address", "true_category": "SHIPPING"}
+{"text": "I want assistance checking order {{Order Number}} status", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "i want information about the deletion of my {{Account Type}} accounnt", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "find information about lost access key", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "i want assistance canceling order {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "editing order {{Order Number}}", "true_intent": "change_order", "true_category": "ORDER"}
+{"text": "can you help me restore the key of my user profile?", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "can you help md unsubscribing to your company newsletter?", "true_intent": "newsletter_subscription", "true_category": "SUBSCRIPTION"}
+{"text": "I do not know how to list your allowed payment methods", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "I have lost the bill #37777, will you send it to me?", "true_intent": "get_invoice", "true_category": "INVOICE"}
+{"text": "I want assistance to submit another shipping address", "true_intent": "set_up_shipping_address", "true_category": "SHIPPING"}
+{"text": "i dont know how i can see the restitution status", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "I don't know how I can order a few of your article", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "I need assistance to enter another shipping address", "true_intent": "set_up_shipping_address", "true_category": "SHIPPING"}
+{"text": "I want to check in which situations can I request refunds", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "I do not know what I have to do to change to the pro account", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "get money back", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "i have got toreport an issue with online payment", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "where can I receive your company newsletter?", "true_intent": "newsletter_subscription", "true_category": "SUBSCRIPTION"}
+{"text": "creating new {{Account Type}} account", "true_intent": "create_account", "true_category": "ACCOUNT"}
+{"text": "can i open a pro account for my dad", "true_intent": "create_account", "true_category": "ACCOUNT"}
+{"text": "can you help me seeing the ETA of the order {{Order Number}}?", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "updating info on pro account", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "would it be possible to call customer assistance?", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "where can I see what methods for delivery are available?", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "i cant change to the {{Account Category}} account", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "is it possible toreceive refunds of money?", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "ehlp checking your allowed payment options", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "I'm calling to check whenb will my item arrive", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "i do not know what to do to see what shipping options i have", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "where can i switch to  the standard account", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "I do not know what to do to get a compensation", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "want help to cancel purchase {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "I am looking for the delivery options, can you help me?", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "question about cancelling order {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "checking current status of order {{Order Number}}", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "assistance to add a damn article to order {{Order Number}}", "true_intent": "change_order", "true_category": "ORDER"}
+{"text": "where to demand my money back?", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "can i speak with somebody", "true_intent": "contact_human_agent", "true_category": "CONTACT"}
+{"text": "i cant remove an itme from purchase {{Order Number}}", "true_intent": "change_order", "true_category": "ORDER"}
+{"text": "I want help changing to the {{Account Category}} account", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "I need to check my bill #12588, could you help me?", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "i dont know what i need to do to change to the {{Account Type}} account", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "assistance with canceling purchase {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "assistance obtaining a refund", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "switch to  premium account", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "i cant recover the key of my user profile", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "I have to see in which cases can I sak for reimbursements", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "I want to check what hours I can contact customer assistance", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "where do i inform of goddamn problems with online paymnts", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "what do i have todo to find invoice #37777", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "I need assistance to see your money bac guarantee", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "I need assistance to see what methods for delivery you offer", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "how do I use the freemium account?", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "would it be possible to retrieve my user account access key?", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "I'm trying to cancel order {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "I need information about the removal of a gold account", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "need assistance to get my invoice #37777", "true_intent": "get_invoice", "true_category": "INVOICE"}
+{"text": "I need help to check the early termination fee", "true_intent": "check_cancellation_fee", "true_category": "CANCEL"}
+{"text": "assistance with cancelling pucrhase {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "I have to order a bloody product, how can I do it?", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "I do not know what to do to demand my money back", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "need support trying to modifythe address", "true_intent": "change_shipping_address", "true_category": "SHIPPING"}
+{"text": "I need to list th payment methods", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "see the ETA of purchase {{Order Number}}", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "assistance checking what bloody shipping options you offer", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "where can i get information about editing the address", "true_intent": "change_shipping_address", "true_category": "SHIPPING"}
+{"text": "I do not know what I need to do to chat with someone", "true_intent": "contact_human_agent", "true_category": "CONTACT"}
+{"text": "want help cancelling my company newsletter subscriptikon", "true_intent": "newsletter_subscription", "true_category": "SUBSCRIPTION"}
+{"text": "can I place an ordewr from {{Delivery Country}}?", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "is it possible to use the {{Account Type}} profile", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "I have to see the status of the rebate, will you help me?", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "I need assistance trackng purchase {{Order Number}}", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "how can I modify my user information?", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "I expect a refund of {{Refund Amount}} dollars, has it been processed?", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "is there an address to send some feedback for your company?", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "i want assistance asking for a restitution of my money", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "do you have a method to submit some feedback?", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "I can't report an error with a sign-up", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "I try to speak to customer service", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "ya have an address to submit my feedback for ur products", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "assistance to give a quick look at the bill #85632", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "how can i buy a few of ur product", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "how to send some feedback about your company?", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "I need help seeing how son can I expect my order", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "how to contact cutsomer assistance?", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "want assistance retrieving my user account PIN", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "new {{Account Type}} acount", "true_intent": "create_account", "true_category": "ACCOUNT"}
+{"text": "I can no longer afford purchase {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "i want help to change to the {{Account Category}} account", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "I'm waiting for an refund of {{Currency Symbol}}{{Refund Amount}}", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "where can i find infirmation about correcting the address", "true_intent": "change_shipping_address", "true_category": "SHIPPING"}
+{"text": "I want information about opening {{Account Category}} accounts", "true_intent": "create_account", "true_category": "ACCOUNT"}
+{"text": "want help knowing if there are any updates on my refund", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "I am trying to find the delivery periods", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "change details on premium account", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "I don't know how I can see your refund policy", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "I cannot find my invoices from {{Person Name}}", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "I have to see my restitution status, how to do it?", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "I need assistance earning several articles", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "I do not know how I can see the accepted payment options", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "how can I see your reimbursement policy?", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "I cannot report a sign-up error", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "can you help me closing a standard account?", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "my experience with your company was awful, file a complaint", "true_intent": "complaint", "true_category": "FEEDBACK"}
+{"text": "I want to leave an opniion for your company", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "i dont know how i can cancel purchase {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "I have to acquire a bloody item, I need assistance", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "what do i need to do to chat with somebody", "true_intent": "contact_human_agent", "true_category": "CONTACT"}
+{"text": "what time can I contact customer service?", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "I do not know how I can check the available payment options", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "i do not kow how i can create a platinum account", "true_intent": "create_account", "true_category": "ACCOUNT"}
+{"text": "i want assistance cancelling order {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "i dont know what i need to do to cancel a premium accounnt", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "assistance checking what hours I can call customer service", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "i dont know what to do to recover myuser account pin", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "subscribe to company newsletter", "true_intent": "newsletter_subscription", "true_category": "SUBSCRIPTION"}
+{"text": "where do I find the bills from {{Person Name}}?", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "I need to see if there are any updates on the rebate", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "how can i cancel the subscription to the company newsletter", "true_intent": "newsletter_subscription", "true_category": "SUBSCRIPTION"}
+{"text": "I have a question about the removal of a premium account", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "is it possible to check in what cases can I request refunds?", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "do you ship to {{Delivery Country}}?", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "need help to ask for restitutions of my money", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "help checking in what cases can i request to be refunded", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "I need help to set up my secondary delivery address", "true_intent": "set_up_shipping_address", "true_category": "SHIPPING"}
+{"text": "i do not know how to enter a delivery address", "true_intent": "set_up_shipping_address", "true_category": "SHIPPING"}
+{"text": "I don't know how to see when my item is going to arrive", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "i dont know what to do to speak to customer support", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "updating info on standard account", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "I'm waiting for a restitution of {{Refund Amount}} dollars", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "I don't know how to make a claim", "true_intent": "complaint", "true_category": "FEEDBACK"}
+{"text": "update information on {{Account Category}} account", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "can I leave some feedback about a product?", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "whaty do i need to do to check the invoice #00108", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "I have got to track the restitution, how can I do it?", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "where do I order something?", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "report problems creating profile", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "I want help to check purchase {{Order Number}} status", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "hlp to submit feedback for ur products", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "where can I check the payment options?", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "I need to see how soon can I expect my item, help me", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "where to check how soon can I expect the shipment?", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "help me to acquire a few of your item", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "correct data on {{Account Category}} account", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "I don't know what I have to do to delete my {{Account Category}} acount", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "want assistance signing up to the company newsletter", "true_intent": "newsletter_subscription", "true_category": "SUBSCRIPTION"}
+{"text": "need help with canceling order {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "I don't know how to see oder {{Order Number}} status", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "need help taking a quick look at the bill #37777", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "can you help me canceling purchase {{Order Number}}?", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "I have to leave my feedback for a product", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "i need help to switch to the standard account", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "I need assistance to check how soon can I expect my package", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "I don't kmow how I can order several articles", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "help me to earn some of your article", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "where do I check the accepted payment methods?", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "can you help me cancel purchase {{Order Number}}?", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "I have forgotten my user account key, help to restore it", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "show me bill #00108", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "i need assistance to see how soon can i expect the order", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "reimbursing {{Refund Amount}} dollars", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "will you show me how soon canh I expect my parcel?", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "wanna submit the new shipping address how do i do it", "true_intent": "set_up_shipping_address", "true_category": "SHIPPING"}
+{"text": "I bought the same item twice, cancel order {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "i want help notifying of errors with a signup", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "I have to see whay hours I can call customer support", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "can i place an order frim {{Delivery Country}}", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "I do not know what to do to submit feedback for a service", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "I'm trying to notify of payment problems", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "I'm not happy with ur work how do i make a claim", "true_intent": "complaint", "true_category": "FEEDBACK"}
+{"text": "I expect an compensation of {{Refund Amount}} dollars", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "rebating {{Refund Amount}} dollars", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "get bills from {{Person Name}}", "true_intent": "get_invoice", "true_category": "INVOICE"}
+{"text": "I have to edit the address, I need assistance", "true_intent": "change_shipping_address", "true_category": "SHIPPING"}
+{"text": "can I report errors with a fucking sign-up?", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "help me making a reclamation", "true_intent": "complaint", "true_category": "FEEDBACK"}
+{"text": "could you help me change the shipping address?", "true_intent": "change_shipping_address", "true_category": "SHIPPING"}
+{"text": "I want to see if there are any news on my rebate", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "help me to change to the {{Account Category}} account", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "help to check how soon can i expect the item", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "I'm trying to cancel my {{Account Category}} account", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "need assistance with canceling order {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "I don't know what I need to do to change to the {{Account Type}} account", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "i want assistance to list the accepted payment methods", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "how do I get compensations?", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "I need help adding an article to purchase {{Order Number}}", "true_intent": "change_order", "true_category": "ORDER"}
+{"text": "where do i see my bill #00108", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "help to reset my user account ipn code", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "I need to leave a review about a product, how to do it?", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "support correcting my address", "true_intent": "change_shipping_address", "true_category": "SHIPPING"}
+{"text": "I don't know what to do to download the invoice #85632", "true_intent": "get_invoice", "true_category": "INVOICE"}
+{"text": "can ya help me to see the ETA of the purchase {{Order Number}}", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "i need assistance seeing my invoice from {{Person Name}}", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "I can't afford purchase {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "could you give me information about an address correction?", "true_intent": "change_shipping_address", "true_category": "SHIPPING"}
+{"text": "help to demand a goddamn compensation", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "editing information on standard account", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "remove item from order", "true_intent": "change_order", "true_category": "ORDER"}
+{"text": "I can no longer afford purchase {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "I am unhappy with your work, lodge a claim", "true_intent": "complaint", "true_category": "FEEDBACK"}
+{"text": "I have to correct the info included on my profile, help me", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "where to take a quick look at my invoice #85632", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "i have glt to buy a few of ur item help me", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "can you help me camceling the purchase I made?", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "help me to check if there is anything new on the restitution", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "I expect a reufnd of {{Currency Symbol}}{{Refund Amount}}", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "is there a way to submit a comment for your services?", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "where can i send some feedback for ur products", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "help to lodge a customer reclamation against your company", "true_intent": "complaint", "true_category": "FEEDBACK"}
+{"text": "help me to restore the key of my user", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "give me information about my freemium account termination", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "getbills from {{Person Name}}", "true_intent": "get_invoice", "true_category": "INVOICE"}
+{"text": "how to see how long it takes for my delivery to arrive?", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "help me see how soon can i expect the parcel", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "I no longer want purchase {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "what do I need to do to see what shipment methods I have?", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "i do not know how i can leave feedback for ur company", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "I do not know how I ca cancel order {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "problems with canceling purchase {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "I don't know how I can close my platinum account", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "I have got to recover my user pwd", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "I do not know how I can check your allowed payment options", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "I need help to check how long reimburssements take", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "what do i have to do to update my deliverey address", "true_intent": "change_shipping_address", "true_category": "SHIPPING"}
+{"text": "needx help to check the ETA of purchase {{Order Number}}", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "assistance to recover the key of my user profile", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "is there an e-mail to send a review for your products?", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "I want to know about cancelling my newsletter subscription", "true_intent": "newsletter_subscription", "true_category": "SUBSCRIPTION"}
+{"text": "refund {{Currency Symbol}}{{Refund Amount}}", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "want help to switch several items of purchase {{Order Number}}", "true_intent": "change_order", "true_category": "ORDER"}
+{"text": "help restoring the password of my profile", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "I do not know how to order something", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "have a problem with creating my platinum account", "true_intent": "create_account", "true_category": "ACCOUNT"}
+{"text": "i need help to ask for a refund of my money", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "can i check in which cases can i request reimbursements", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "I want help to make a customer complaint", "true_intent": "complaint", "true_category": "FEEDBACK"}
+{"text": "how could I track my restitution?", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "how do I see how long it takes for my damn parcel to arrive?", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "is it possible to check what shipping methods I have?", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "where do I correct the fucking shipping address?", "true_intent": "change_shipping_address", "true_category": "SHIPPING"}
+{"text": "help with creating my standard account", "true_intent": "create_account", "true_category": "ACCOUNT"}
+{"text": "I'd like informatoin about opening platinum accounts", "true_intent": "create_account", "true_category": "ACCOUNT"}
+{"text": "I don'tknow how to cancel my newsletter subscription", "true_intent": "newsletter_subscription", "true_category": "SUBSCRIPTION"}
+{"text": "i call to download my bills from {{Person Name}}", "true_intent": "get_invoice", "true_category": "INVOICE"}
+{"text": "I am waiting for a compensation of {{Currency Symbol}}{{Refund Amount}}", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "what are the fees for breaking the contract?", "true_intent": "check_cancellation_fee", "true_category": "CANCEL"}
+{"text": "can you help me speaking with a human agent ?", "true_intent": "contact_human_agent", "true_category": "CONTACT"}
+{"text": "want help to check your damn money back guarantee", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "issues entering a different delivery address", "true_intent": "set_up_shipping_address", "true_category": "SHIPPING"}
+{"text": "help me seeing what delivery methods I can choose", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "can I place an order from {{Delivery Country}}?", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "I try to see the status of my newsletter subscription", "true_intent": "newsletter_subscription", "true_category": "SUBSCRIPTION"}
+{"text": "want assistance to see how soon can i expect the shipment", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "i have to check how long reimbursements take i need help", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "I need to check how long it takes for the delivery to arrive", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "i have got to change to the {{Account Type}} account i need help", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "is it possible to inmform of errors with a registration", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "where do I order an article?", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "need assistance to see how soon can I expect my article", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "I want information about my standard account termination", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "help to check the ETA of order {{Order Number}}", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "can uhelp me seeing the termination fee", "true_intent": "check_cancellation_fee", "true_category": "CANCEL"}
+{"text": "my experience with uwas too bad help to file a reclqmation", "true_intent": "complaint", "true_category": "FEEDBACK"}
+{"text": "help me seeing what hours customer assistance available is", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "I don't know what I need to do to speak to someone", "true_intent": "contact_human_agent", "true_category": "CONTACT"}
+{"text": "I am trying to get in touch with customer service", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "check order {{Order Number}} current status", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "I can't remember my bloody access key, can I restore it?", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "i have to purchase some items", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "assistance canceling purchase {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "I have a problem witrh cancelling purchase {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "how do I request a compensation of money?", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "you are not helpful, how to chat with an agent?", "true_intent": "contact_human_agent", "true_category": "CONTACT"}
+{"text": "I want assistance receiving a refund of my money", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "information about the deletion of a {{Account Type}} account", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "how to unsubscribe from your company newsletter?", "true_intent": "newsletter_subscription", "true_category": "SUBSCRIPTION"}
+{"text": "need to see the damn eta of the purchase {{Order Number}} help me", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "i ned assistance to ask for a reimbursement", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "i want assistance to list ur available payment modalities", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "want help to use the {{Account Category}} account", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "I dl not know what to do to delete the {{Account Category}} account", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "I call to see how long it takes for my package to arrive", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "hlw do i check the ETA of purchase {{Order Number}}", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "I want to submit my new delivery address, how do I do it?", "true_intent": "set_up_shipping_address", "true_category": "SHIPPING"}
+{"text": "i have got to check the accepted payment options", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "I do not know how to request a refund of my money", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "reporting issue creating account", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "where do I find my invoices from {{Person Name}}?", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "i want help to use the {{Account Category}} profile", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "i want help checking what methods for delivery uoffer", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "i do not know what i need to do to purchase several products", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "help me to set the delivery address up", "true_intent": "set_up_shipping_address", "true_category": "SHIPPING"}
+{"text": "I want help to file a reclamation against your business", "true_intent": "complaint", "true_category": "FEEDBACK"}
+{"text": "get reimbursement of money", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "help me to see what delivery options I can choose", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "can you help me asking for rebates of my money?", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "help me acquire some products", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "I want help cancellkng purchase {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "I'd like to use the {{Account Type}} account", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "can I use the freemium profile?", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "what do I need to do to ask for rebates?", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "where to ask for reimbursements of money ?", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "I need help to  report problems with registrations", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "I have to file a customer reclamation", "true_intent": "complaint", "true_category": "FEEDBACK"}
+{"text": "new pro account for wife", "true_intent": "create_account", "true_category": "ACCOUNT"}
+{"text": "need to write anopinion for ur services", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "how tolodge a customer complaint", "true_intent": "complaint", "true_category": "FEEDBACK"}
+{"text": "help me to see invoice #37777", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "assistance shopping some of your article", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "I try tosubmit my secondary delivery address", "true_intent": "set_up_shipping_address", "true_category": "SHIPPING"}
+{"text": "shipping to {{Delivery Country}}", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "can ya hrlp me make a claim against ur organization", "true_intent": "complaint", "true_category": "FEEDBACK"}
+{"text": "I try to retrieve the PIN code of my account", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "ik do not know how i can notify of a sign-up problem", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "find information about the methods for shipment", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "I want assistance giving a quick look at the invoice #00108", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "is it possible to obtaih rebates", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "I need help tracking purchase {{Order Number}}", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "problem with cancelling order {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "where to cancel my company newsletter subscription?", "true_intent": "newsletter_subscription", "true_category": "SUBSCRIPTION"}
+{"text": "where do I see what shipping options I can choose?", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "get refund", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "i have to see the eta of order {{Order Number}}", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "can i place an oeder from {{Delivery City}}", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "i have a problem with the termination of my {{Account Category}} account", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "I have to set my delivery address up, I need assistance", "true_intent": "set_up_shipping_address", "true_category": "SHIPPING"}
+{"text": "help purchasing some bloody articles", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "where to check te termination charges", "true_intent": "check_cancellation_fee", "true_category": "CANCEL"}
+{"text": "how do i recover the pin code of my user account", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "my shipping address changed, can you update it?", "true_intent": "change_shipping_address", "true_category": "SHIPPING"}
+{"text": "I can no longer afford order {{Order Number}}, cancel it", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "support entering a new shipping address", "true_intent": "set_up_shipping_address", "true_category": "SHIPPING"}
+{"text": "I do not know how to talk with a live agent", "true_intent": "contact_human_agent", "true_category": "CONTACT"}
+{"text": "editing gold account", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "were to sign up to the newsletter?", "true_intent": "newsletter_subscription", "true_category": "SUBSCRIPTION"}
+{"text": "I need assistance to report an error with registrations", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "I have problems entering my new delivery address", "true_intent": "set_up_shipping_address", "true_category": "SHIPPING"}
+{"text": "modiby data on {{Account Type}} account", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "can ya tell me about an address correction", "true_intent": "change_shipping_address", "true_category": "SHIPPING"}
+{"text": "trouble setting up my new delivery address", "true_intent": "set_up_shipping_address", "true_category": "SHIPPING"}
+{"text": "I can't pay for this item, can I cancel order {{Order Number}}?", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "why I can't set up a secondary delivery address valid", "true_intent": "set_up_shipping_address", "true_category": "SHIPPING"}
+{"text": "I am trying to check the options for shipping", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "need help using the platinum profile", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "i dont know what i need to do to speak to customer service", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "how to unsubscribe to your newsletter?", "true_intent": "newsletter_subscription", "true_category": "SUBSCRIPTION"}
+{"text": "how can I leave some feedback about your products?", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "I want assistance trying to change my shipping address", "true_intent": "change_shipping_address", "true_category": "SHIPPING"}
+{"text": "hsipping to {{Delivery Country}}", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "need help filing a claim against your organization", "true_intent": "complaint", "true_category": "FEEDBACK"}
+{"text": "i want help to check ur available payment options", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "I want information about the termination of a {{Account Type}} account", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "help to see in which casescan i request reimbursements", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "is it possible to place a bloody order from {{Delivery City}}", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "I have got to reuqest rebates of money", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "can you help me to acquire an few of your product?", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "I cannot inform of an issue with a signup", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "I need assistance seeing when will my parcel arrive", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "I want to track my restitution", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "open a platinum acocunt", "true_intent": "create_account", "true_category": "ACCOUNT"}
+{"text": "i have problems with canceling order {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "how to lodge a complaint against your organization?", "true_intent": "complaint", "true_category": "FEEDBACK"}
+{"text": "is it possible to take a quick look at my invoice #37777", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "I don't know what I have to do to see the early exit fee", "true_intent": "check_cancellation_fee", "true_category": "CANCEL"}
+{"text": "i have a question about creating a freemium account", "true_intent": "create_account", "true_category": "ACCOUNT"}
+{"text": "assistance to use the {{Account Category}} profile", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "I need to inform of sign-up issues", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "is it possible to get rebates of my money", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "I want information about the removal of my {{Account Type}} account", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "how couldi see how long it takes for my package to arrive", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "I have got to request a refund", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "I want to check when my item is going to arrivd", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "how do I use the {{Account Category}} profile?", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "where could I create a {{Account Category}} account?", "true_intent": "create_account", "true_category": "ACCOUNT"}
+{"text": "assistnace cancelling order {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "i dont know how to resetthe damn pwd of my user account", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "is htere an address to submit an opinion for a product", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "check invoice from last purchase", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "checkbill #37777", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "help seeing the termination charges", "true_intent": "check_cancellation_fee", "true_category": "CANCEL"}
+{"text": "I need to modify the data on my profile, could you help me?", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "can ya show me in which cases can i request a refund", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "check the bill from {{Person Name}}", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "I do not know how to talk to damn customer support", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "I need to update the address", "true_intent": "change_shipping_address", "true_category": "SHIPPING"}
+{"text": "I want  assistance downloading the invoice #00108", "true_intent": "get_invoice", "true_category": "INVOICE"}
+{"text": "I don't know what to do to notify of registration issues", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "create {{Account Type}} account for wife", "true_intent": "create_account", "true_category": "ACCOUNT"}
+{"text": "changing data on {{Account Type}} account", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "how do I use the standard account?", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "help me canceling my subscription to ur corporate newsletter", "true_intent": "newsletter_subscription", "true_category": "SUBSCRIPTION"}
+{"text": "show me the bill from {{Person Name}}", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "could you help me obtain rebates of money?", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "is it possible to order from {{Delivery City}} ?", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "where can I check my invoices from {{Person Name}}?", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "i have got to obtain a rebate of my money", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "where to acquire several of your article?", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "help me to get in touch with bloody customer support", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "send me my bill from {{Person Name}}", "true_intent": "get_invoice", "true_category": "INVOICE"}
+{"text": "I have to speak with customer support, can you help me?", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "tell me about unsubscribing from your newslewtter", "true_intent": "newsletter_subscription", "true_category": "SUBSCRIPTION"}
+{"text": "leaving review for your company", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "could you help me cancelling the standard account?", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "i need help to use the fucking {{Account Type}} profile", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "what do i have to do to correct order {{Order Number}}", "true_intent": "change_order", "true_category": "ORDER"}
+{"text": "need to know if there are any updates on the ocmpensation", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "I want assistance to cancel order {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "how could I cancel purchase {{Order Number}}?", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "need help to see what shipment options I can choose", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "need help to see what shipping methods are there", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "I lost bill #85632, could you find it for me?", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "help me getting in touch with customer assistance", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "I want help to talk to an assistant", "true_intent": "contact_human_agent", "true_category": "CONTACT"}
+{"text": "I want to sign up to your corporate newsletter, help me", "true_intent": "newsletter_subscription", "true_category": "SUBSCRIPTION"}
+{"text": "where to see how soon can I expect my product?", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "how can I check what hours I can reach customer service?", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "I want to speak with customer assistance", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "can you help me filing a complaiont?", "true_intent": "complaint", "true_category": "FEEDBACK"}
+{"text": "I want help changing to the premium account", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "add item to order {{Order Number}}", "true_intent": "change_order", "true_category": "ORDER"}
+{"text": "I need to see your reimbusrement policy, how to do it?", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "check bills from {{Person Name}}", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "i dont know how to give a quick look at bill #37777", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "where to check what hours i can contact customer assistance", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "wanna see what shipment methods i can choose how do i do it", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "assistance to see purchase {{Order Number}} status", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "how can i see the current status of order {{Order Number}}", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "I do not know how to retrieve my bloody account PIN code", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "I have got to check your allowed payment options", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "I want to see what shipping options I can choose, help me", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "can ya help me change a product of purchase {{Order Number}}", "true_intent": "change_order", "true_category": "ORDER"}
+{"text": "can i see under what circumstances can i ask for a refund", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "i dont know how to switch to the platinum account", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "I have to check the ETA of the purchase {{Order Number}}", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "I do not know what I have to do to find my bill #37777", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "I need to switch some items of purchase {{Order Number}}", "true_intent": "change_order", "true_category": "ORDER"}
+{"text": "i do not know how i can download my invoice #00108", "true_intent": "get_invoice", "true_category": "INVOICE"}
+{"text": "shipping to {{Delivery Country}}", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "how can i ese the cancellation penalties", "true_intent": "check_cancellation_fee", "true_category": "CANCEL"}
+{"text": "i aint registered yet help me opening an {{Account Type}} account", "true_intent": "create_account", "true_category": "ACCOUNT"}
+{"text": "i need assistance to order a few of ur prodcut", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "I want to locate order {{Order Number}}, could I get some help?", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "i need help with canceling purchase {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "I expect an compensation of {{Refund Amount}} dollars", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "need assistance to switch to the {{Account Type}} account", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "I am not registered, help me open a gold account with you", "true_intent": "create_account", "true_category": "ACCOUNT"}
+{"text": "I have to download my bill from {{Person Name}}", "true_intent": "get_invoice", "true_category": "INVOICE"}
+{"text": "I need assistamce to inform of a payment issue", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "is it possibleto place an order from {{Delivery City}}", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "will you give me information about my PIN retrieval?", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "i do not know what to do toreset the pwd of my user", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "can oyu help me receive the company newsletter?", "true_intent": "newsletter_subscription", "true_category": "SUBSCRIPTION"}
+{"text": "I do not know what I have to do to download bill #12588", "true_intent": "get_invoice", "true_category": "INVOICE"}
+{"text": "I don't know how I can talk with customer assistance", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "how can I see the accepted payment options?", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "check my last parcel eta", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "where could I retrieve my profile access key?", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "I do not know what to do to change to the {{Account Category}} account", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "I can't pay, how do I inform of payment errors?", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "i bought some damn item help to cancep order {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "I do not know what I need to do to notify of sign-up issues", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "want help to talk to customer service", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "I do not know what to do to ask for refunds", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "where to sign up to your newsletter?", "true_intent": "newsletter_subscription", "true_category": "SUBSCRIPTION"}
+{"text": "can I change to the {{Account Category}} account?", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "i cannot switch to the premium account", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "I cannot pay, I want to notify of a trouble with payments", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "how to use the premium profile?", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "need to leave an opinion for a pfoduct can i get some help", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "what do i need to do to give a quick look at the bill #00108", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "I have got to check what payment methods are available", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "cancelling pro account", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "I try to check in which situations can I request refunds", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "want assistance to request a restitution of money", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "i try to talk to an agent", "true_intent": "contact_human_agent", "true_category": "CONTACT"}
+{"text": "can you help me demand a reimbursement of money?", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "is it possible to retrieve my user account password?", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "I want assistance solving errors with payments", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "i have paid {{Currency Symbol}}{{Refund Amount}} for this order i ened to get a refund", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "I have to list your damn allowed payment modalities", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "help demanding rebates of money", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "I can't inform of prblems with sign-up", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "I want assistance to make a customer reclamation", "true_intent": "complaint", "true_category": "FEEDBACK"}
+{"text": "removing {{Account Category}} account", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "how to check the shipping options?", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "would it be possible to close a {{Account Category}} cacount", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "I want help to see what bloody payment options are accepted", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "I do not know how to see your money back guarantee", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "I try to modify my address", "true_intent": "change_shipping_address", "true_category": "SHIPPING"}
+{"text": "help changing to the standard account", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "I don't know how to get the bill #00108", "true_intent": "get_invoice", "true_category": "INVOICE"}
+{"text": "I don't know how to talk to customer service", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "can ya help me checking the cancellation charges", "true_intent": "check_cancellation_fee", "true_category": "CANCEL"}
+{"text": "I want help notifying of issues with a sign-up", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "I have errors with my registration", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "can you help me reporting a payment problem?", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "i need help seeing ur payment methods", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "list the allowed payment modalities", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "track purchase {{Order Number}}", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "update information on gold account", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "I cannot edit my shipping address", "true_intent": "change_shipping_address", "true_category": "SHIPPING"}
+{"text": "i want assistance getting my invoice #00108", "true_intent": "get_invoice", "true_category": "INVOICE"}
+{"text": "is it possible to receive reimbursements?", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "there is an issue modifying my address", "true_intent": "change_shipping_address", "true_category": "SHIPPING"}
+{"text": "i have to use the standard account i need help", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "I don't know how to change to the {{Account Type}} account", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "uhave a free number to get in touch with customer assistance", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "assistance to see how long reimbursements usually take", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "swap several articles of purchase {{Order Number}}", "true_intent": "change_order", "true_category": "ORDER"}
+{"text": "open {{Account Category}} cacount for wife", "true_intent": "create_account", "true_category": "ACCOUNT"}
+{"text": "I want assistance retrieving my user access key", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "need help to check if there are any news on the restitution", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "i need help to download my blls from {{Person Name}}", "true_intent": "get_invoice", "true_category": "INVOICE"}
+{"text": "how can i see how long the shipping takes", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "i want help to check how soon can i expect my order", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "I don't know what I have to do to wsitch to the {{Account Type}} account", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "i need supports correcting the address", "true_intent": "change_shipping_address", "true_category": "SHIPPING"}
+{"text": "problem with the pass recovery", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "wanna  use the {{Account Type}} profile help me", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "i dont know how to see how soon can i expect my item", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "assistance changing to the platinum account", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "show me purchase {{Order Number}} status", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "need help checking if there are any updates on the refund", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "i need help to cancel purchase {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "I'm trying to retrieve the access key of my account", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "wanna inform of issues with payment", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "help me cancelling purchase {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "how to cancel purchase {{Order Number}}?", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "how can I find bill #00108?", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "I want help canceling order {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "I have to see if there is anything new on my refund, help me", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "i need help seeing the withdrawal fee", "true_intent": "check_cancellation_fee", "true_category": "CANCEL"}
+{"text": "consumer claim against your business", "true_intent": "complaint", "true_category": "FEEDBACK"}
+{"text": "want assistance notifying of an error with payments", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "i need assistance to enter m secondary delivery address", "true_intent": "set_up_shipping_address", "true_category": "SHIPPING"}
+{"text": "is it possible to order from {{Delivery City}}", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "check status of order {{Order Number}}", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "could you show me what shipping options are there?", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "help me check in which cases canI request reimbursements", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "assistance seeing how soon can i expect the delivery", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "help setting up the secondary shipping address", "true_intent": "set_up_shipping_address", "true_category": "SHIPPING"}
+{"text": "i need help to contact somebody", "true_intent": "contact_human_agent", "true_category": "CONTACT"}
+{"text": "I need help to see the early exit fees", "true_intent": "check_cancellation_fee", "true_category": "CANCEL"}
+{"text": "clsoe {{Account Type}} account", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "help to restore my profile password", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "how to ask for my money back", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "what do i have to do to restore the pwd of my user account", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "I need to give a quick look at the invoice from {{Person Name}}", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "where can i lodge a bloody consumer claim against ur company", "true_intent": "complaint", "true_category": "FEEDBACK"}
+{"text": "I want to report a problem with payment", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "is it possibleto place an order from {{Delivery City}}", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "what do i have to do to earn a few of ur product", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "i have got to unsubscribe to ur newsletter", "true_intent": "newsletter_subscription", "true_category": "SUBSCRIPTION"}
+{"text": "refunding {{Currency Symbol}}{{Refund Amount}}", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "help me to check what shipping methods you offer", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "what do I have to do to request a restitution of money?", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "i expect a refund of {{Currency Symbol}}{{Refund Amount}}", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "I cannot find the termination penalties", "true_intent": "check_cancellation_fee", "true_category": "CANCEL"}
+{"text": "shipmetns to {{Delivery City}}", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "I need help to give a quick look at the bill #85632", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "i dont know how i can ask for compensations of money", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "i want help retrieving the pass of my profile", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "assistance cancelling purchase {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "need help obtaining rebates", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "can you help me take a quick look at the invoice #85632?", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "I have got to see how long refunds take, I need help", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "I am having problems with my registration", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "track order {{Order Number}}", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "do ya ship to {{Delivery Country}}", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "help notifying of a fucking error with online payments", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "I need assistance to inform of issues with online payments", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "help me requesting compensations", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "I am unhappy with your service, help to make a claim", "true_intent": "complaint", "true_category": "FEEDBACK"}
+{"text": "help me to check the current status of purchase {{Order Number}}", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "I have got to chat with someone", "true_intent": "contact_human_agent", "true_category": "CONTACT"}
+{"text": "I cannot afford purchase {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "I want to check what hours customer support available is", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "edit purchase {{Order Number}}", "true_intent": "change_order", "true_category": "ORDER"}
+{"text": "I want to change to the freemium account, can you help me?", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "refunding{{Currency Symbol}}{{Refund Amount}}", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "I don't know how I can talk with customer support", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "I have paid {{Currency Symbol}}{{Refund Amount}} for this item, help me to obtain a rebate", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "help me solving troubles with payment", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "can you help me to speak to a person?", "true_intent": "contact_human_agent", "true_category": "CONTACT"}
+{"text": "need to report an issue with signup", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "I need assistance to receive a rebate of money", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "see what hours customer service available is", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "I don't know what I have to do to close a standard account", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "assistance to report an error with payment", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "ETA of order {{Order Number}}", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "can you help me switching to the pro account?", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "what is order {{Order Number}} status", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "can you help me speak with a live agent?", "true_intent": "contact_human_agent", "true_category": "CONTACT"}
+{"text": "could ya help me cancel order {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "can uhelp me to get my bill from {{Person Name}}", "true_intent": "get_invoice", "true_category": "INVOICE"}
+{"text": "assistance with canceling purchase {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "do ya deoiver to {{Delivery City}}", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "can uhelp me leaving a comment about ur services", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "updating freemium account", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "I need to unsubscribe from the newsletter, can yyou help me?", "true_intent": "newsletter_subscription", "true_category": "SUBSCRIPTION"}
+{"text": "need assistance speaking with customer support", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "can  uhelp me canceling order {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "I want to see what shipment options I can choose, help me", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "I would like to order an item, I need assistance", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "do you have a free number to talk with customer service?", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "where to check at what time I can reach customer support?", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "what do I have to do to see the early exit fee?", "true_intent": "check_cancellation_fee", "true_category": "CANCEL"}
+{"text": "I have to see your refund policy", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "can you show me in which situations can I ask for refunds?", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "I do not know how to reset my user profile PIN code", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "I can't remember my bloody user key, how to reset it?", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "where do I obtain reimbursements of money?", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "I am unhappy with your services, help filing a claim", "true_intent": "complaint", "true_category": "FEEDBACK"}
+{"text": "where can I see when my item is going to arrive?", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "where can I report a problem with online payments?", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "i have to get the damn invoice from {{Person Name}} i need help", "true_intent": "get_invoice", "true_category": "INVOICE"}
+{"text": "help checking the status of the restitution", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "i lost the bills from {{Person Name}} show them to me", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "I do not know what to do to see the withdrawal penalties", "true_intent": "check_cancellation_fee", "true_category": "CANCEL"}
+{"text": "want help to check if there are any news on my refund", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "how can I inform of a trouble with payments?", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "can I see under which circumstances can I ask for refunds?", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "need help with canceling purchase {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "rebating {{Refund Amount}} dollars", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "can uhelp me swap some items of order {{Order Number}}", "true_intent": "change_order", "true_category": "ORDER"}
+{"text": "i expect a compensqtion of {{Refund Amount}} dollars", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "what is ur customer support mail", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "I need help checking what fucking shipping options I have", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "I do not know what to do to get the invoice #12588", "true_intent": "get_invoice", "true_category": "INVOICE"}
+{"text": "can uhelp me cancelling purchase {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "i need assistance informing of payment issues", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "I want to change the information on my account, I need help", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "show me ur accepted payment methods", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "can ya help me see u refund policy", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "how do I look for my bills from {{Person Name}}?", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "looking for bill #37777", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "I do not know how to get in touch with customer service", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "I don't know what I have to do to modify my delivery address", "true_intent": "change_shipping_address", "true_category": "SHIPPING"}
+{"text": "using pro accouny", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "correcting information on gold account", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "can you show me what shipment options are available?", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "is it possible toorder from {{Delivery City}}", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "show cancellation charges", "true_intent": "check_cancellation_fee", "true_category": "CANCEL"}
+{"text": "how do i obtain a reimbursement of money", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "is it possible to see purchase {{Order Number}} current status", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "can you give me information about opening {{Account Type}} accounts?", "true_intent": "create_account", "true_category": "ACCOUNT"}
+{"text": "need assistance demanding my money back", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "modify platinum account", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "edit info on {{Account Category}} account", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "I have issues entering a new delivery address", "true_intent": "set_up_shipping_address", "true_category": "SHIPPING"}
+{"text": "I do not know how to update the info included on my profile", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "where do I retrieve my user password?", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "problem with cancelling order {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "wanna find the invoices from {{Person Name}} how can i do it", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "I want to cancle purchase {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "I want help changing the bloody delivery address", "true_intent": "change_shipping_address", "true_category": "SHIPPING"}
+{"text": "can ya help me seeing the terminatio penalties", "true_intent": "check_cancellation_fee", "true_category": "CANCEL"}
+{"text": "could you help me cancelling order {{Order Number}} ?", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "I am having an error with the registration", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "where doi check how soon can i expect my order", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "what do I need to do to check your allowed payment options?", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "problem with {{Account Category}} account terminations", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "how to see order {{Order Number}} damn status", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "is it possible to ask for a rebate?", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "where do i notify of issues with signup", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "i need help buying some of ur item", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "i want assistance to report issues with payments", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "I want to leave a comment for your services", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "i want help talking with an agent", "true_intent": "contact_human_agent", "true_category": "CONTACT"}
+{"text": "can i write a review about ur products", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "i dont know what i have to do to contact a person", "true_intent": "contact_human_agent", "true_category": "CONTACT"}
+{"text": "I do not know what to do to report an error with payments", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "notifying of payment problem", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "could I use the {{Account Category}} profile?", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "i want help to cancel order {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "how can I report troubles with online payment?", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "want assistance to reporta payment error", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "tracking order {{Order Number}}", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "I lost my bill #37777, will you mail it to me?", "true_intent": "get_invoice", "true_category": "INVOICE"}
+{"text": "can ya help me send feedback for ur products", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "I want help to submit my secondary shipping address", "true_intent": "set_up_shipping_address", "true_category": "SHIPPING"}
+{"text": "need help to take an quick look at my invoice #12588", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "i dont know how i can get refunds", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "find information about opening {{Account Category}} accounts", "true_intent": "create_account", "true_category": "ACCOUNT"}
+{"text": "I want assistance to request my money back", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "i need assistance to cancel order {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "I have paid {{Currency Symbol}}{{Refund Amount}} for this order, I want my reimbursement", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "i dont know what i have to do to inform of signup issues", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "I'm trying to get my damn bills from {{Person Name}}", "true_intent": "get_invoice", "true_category": "INVOICE"}
+{"text": "is it possible to reset my user account key?", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "where doi check how soon can i expect my article", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "see the invoice #12588", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "i have to check in what cases can i request a reimbursement", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "I am trying to order several of your item", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "can you help me cancel my subscription to the newsletter?", "true_intent": "newsletter_subscription", "true_category": "SUBSCRIPTION"}
+{"text": "i have paid {{Currency Symbol}}{{Refund Amount}} for an item i have to obtain a refund", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "I need assistance to see what payment methods are available", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "I ordered some article, cancel purchase {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "what do i need to do to edit the details on my user profile", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "I want assistance to leave feedback about a service", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "need help to check what methods for delivery i have", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "wanna see the eta of order {{Order Number}} how can i do it", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "I have to see my damn bills from {{Person Name}}", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "can i see under which circjmstances can i ask for refunds", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "what do i have to do to request restitutions of money", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "can you help me to restore my damn user account access key?", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "how to use the {{Account Type}} profile", "true_intent": "switch_account", "true_category": "ACCOUNT"}
+{"text": "can uhelp me to talk to customer assistance", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "add item to order {{Order Number}}", "true_intent": "change_order", "true_category": "ORDER"}
+{"text": "showing me purchase {{Order Number}} current status", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "I don't know how to request a refund of money", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "is it possible to set up the secondary shipping address", "true_intent": "set_up_shipping_address", "true_category": "SHIPPING"}
+{"text": "what do i have to do to report a trouble with payments", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "I'm trying to contact customer service", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "updating informtaion on standard account", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "how can i see the early exit charge", "true_intent": "check_cancellation_fee", "true_category": "CANCEL"}
+{"text": "i want help checking the ETA of purchase {{Order Number}}", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "how to check at what time I can call customer service?", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "what is the customer service mail", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "notifying of issue creating user account", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "i dont know what i need to do to download my bill #00108", "true_intent": "get_invoice", "true_category": "INVOICE"}
+{"text": "how do I speak with a fucking operator?", "true_intent": "contact_human_agent", "true_category": "CONTACT"}
+{"text": "how to ask for reimbursements of money", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "what hours can I call customer assistance?", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "I need to swap some items of purchase {{Order Number}}", "true_intent": "change_order", "true_category": "ORDER"}
+{"text": "can ya help me to check the bill #37777", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "can you tell me more about correcting my delivery address?", "true_intent": "change_shipping_address", "true_category": "SHIPPING"}
+{"text": "want assistance to inform of troubles with payments", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "i want help to see in which cases can i request a refund", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "help canceling purchase {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "another {{Account Type}} account for father", "true_intent": "create_account", "true_category": "ACCOUNT"}
+{"text": "someone stole my user key, help me retrieving it", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "want help to recover my user profile password", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "i need assistance locating invoice #12588", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "can you help me check the allowed payment methods?", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "wanna see order {{Order Number}} damn current status help me", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "I do not have a bloody pro account, need help to open one", "true_intent": "create_account", "true_category": "ACCOUNT"}
+{"text": "I have got to speak to a person", "true_intent": "contact_human_agent", "true_category": "CONTACT"}
+{"text": "I have got to see the early exit penalpties", "true_intent": "check_cancellation_fee", "true_category": "CANCEL"}
+{"text": "I want help to cancel order {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "how do I give a quick look at the invoice from {{Person Name}}?", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "I lost my access key, help me retrieving it", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "I need assistance checking your reimbursement policy", "true_intent": "check_refund_policy", "true_category": "REFUND"}
+{"text": "need to report troubles with online payment", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "i need help to change my shipping address", "true_intent": "change_shipping_address", "true_category": "SHIPPING"}
+{"text": "i have to check the status of order {{Order Number}}", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "I want help recovering my PIN code", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "I have an error entering my fucking new shipping address", "true_intent": "set_up_shipping_address", "true_category": "SHIPPING"}
+{"text": "what do i need to do to recover my user account pin code", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "could I edit my personal information?", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "I do not need my {{Account Category}} account, I want help to delete it", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "I have to check the shipping options, will you help me?", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "know if there is anything new on the rebate", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "modify data on {{Account Type}} account", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "I'm trying to check what options for delivery are there", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "were do I see the early termination charges?", "true_intent": "check_cancellation_fee", "true_category": "CANCEL"}
+{"text": "i do not understand anything ya say direct tome someone", "true_intent": "contact_human_agent", "true_category": "CONTACT"}
+{"text": "help correcting the address", "true_intent": "change_shipping_address", "true_category": "SHIPPING"}
+{"text": "what do i need to do to get in touch with customer service", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "i want help to send feedback for ur services", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "chat with assistant", "true_intent": "contact_human_agent", "true_category": "CONTACT"}
+{"text": "I do not know what I have to do to cal customer assistance", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "is it possible to place a order from {{Delivery Country}}?", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "I am trying to cancel purchaes {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "I need to check if there are any news on my restitution", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "can I place an order from {{Delivery City}}?", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "i dont know what to do to download invoice #37777", "true_intent": "get_invoice", "true_category": "INVOICE"}
+{"text": "I have to check the cancellation charge", "true_intent": "check_cancellation_fee", "true_category": "CANCEL"}
+{"text": "I want assistance to subscribe to your company newsletter", "true_intent": "newsletter_subscription", "true_category": "SUBSCRIPTION"}
+{"text": "what do I need to do to recover my user account PIN code?", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "I don't know how I could give a quick look at invoice #00108", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "I want assistance to check the termination fees", "true_intent": "check_cancellation_fee", "true_category": "CANCEL"}
+{"text": "i have to check the termination fees", "true_intent": "check_cancellation_fee", "true_category": "CANCEL"}
+{"text": "I cannot retrieve my account key", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "how do I report an error with sign-up?", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "help me see the ETA  of purchase {{Order Number}}", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "edit info on {{Account Type}} account", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "tell accepted payment options", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "i dont know how i can take a quick look at my invoice #85632", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "I do not know what to do to set my shipping address up", "true_intent": "set_up_shipping_address", "true_category": "SHIPPING"}
+{"text": "close platinum account", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "I would like to shop an item, can I get some help?", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "is it possible to download invoice #00108", "true_intent": "get_invoice", "true_category": "INVOICE"}
+{"text": "help me talk to customer support", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "can you help me see the ETA of the order {{Order Number}}?", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "assistance seeing what shipment methods you offer", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "assistance to see what payment options are allowed", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "how to see at what time i can contact customer support", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "I don't know how I could look for invoice #85632", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "i need assistance to retrieve the pwd of my user profile", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "i need assistance removing my {{Account Category}} account", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "assistance to contact goddamn customer support", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "I do not know what I need to do to contact an operator", "true_intent": "contact_human_agent", "true_category": "CONTACT"}
+{"text": "is it possible to place an order from {{Delivery City}}", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "i need help sollving a trouble with payments", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "purchase {{Order Number}} current status", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "help me to remove a product from purchase {{Order Number}}", "true_intent": "change_order", "true_category": "ORDER"}
+{"text": "chnge data on gold account", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "I need assistance to see what shipment options you offer", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "i need assistance to inform of errors with signup", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "help locating my bill from {{Person Name}}", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "how could I speak to an agent?", "true_intent": "contact_human_agent", "true_category": "CONTACT"}
+{"text": "I don't know how I can see my compensation status", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "look for invoices from {{Person Name}}", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "i do not know how to get a refund of my money", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "I want to shop a few of your product", "true_intent": "place_order", "true_category": "ORDER"}
+{"text": "I want help restoring the access key of my user", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "I don't know what I haqve to do to close a pro account", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "modiby data on {{Account Type}} account", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "will you tell me what hours I can call customer service ?", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "help me to retrieve the access key of my user", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "i need help canceling purchase {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "i need help to report a problem with online payments", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "i want help adding an item to purchase {{Order Number}}", "true_intent": "change_order", "true_category": "ORDER"}
+{"text": "can I get my bill from {{Person Name}}?", "true_intent": "get_invoice", "true_category": "INVOICE"}
+{"text": "i do not know what i have to do to get my bill #12588", "true_intent": "get_invoice", "true_category": "INVOICE"}
+{"text": "help me speaking with customer assistance", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "i need information about the cancellation of a gold acocunt", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "I need help informing of sign-up errors", "true_intent": "registration_problems", "true_category": "ACCOUNT"}
+{"text": "obtain money back", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "change details on {{Account Category}} account", "true_intent": "edit_account", "true_category": "ACCOUNT"}
+{"text": "i need help checking how soon can i expect my parcel", "true_intent": "delivery_period", "true_category": "DELIVERY"}
+{"text": "I try to talk to damn customer support", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "where do i check the termination penalty", "true_intent": "check_cancellation_fee", "true_category": "CANCEL"}
+{"text": "i dont know what to do to restore the pass of my account", "true_intent": "recover_password", "true_category": "ACCOUNT"}
+{"text": "help to see at what time i  can reach customer assistance", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "chek order {{Order Number}} status", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "want help getting goddamn reimbursements of money", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "I need assistance to list the allowed payment options", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "want help to know if there are any updates on my restitution", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "order {{Order Number}} status", "true_intent": "track_order", "true_category": "ORDER"}
+{"text": "report issue with payment", "true_intent": "payment_issue", "true_category": "PAYMENT"}
+{"text": "checking invoice from 4 purchases ago", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "I bought some articles, help me to cancel order {{Order Number}}", "true_intent": "cancel_order", "true_category": "ORDER"}
+{"text": "assistance to submit feedback about a service", "true_intent": "review", "true_category": "FEEDBACK"}
+{"text": "I try to ask for a compensation of my money", "true_intent": "get_refund", "true_category": "REFUND"}
+{"text": "can i place an order frim {{Delivery Country}}", "true_intent": "delivery_options", "true_category": "DELIVERY"}
+{"text": "I want help to open a {{Account Type}} account", "true_intent": "create_account", "true_category": "ACCOUNT"}
+{"text": "I never use my pro account, I do not know how to remove it", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "wanna see at what time customer service available is", "true_intent": "contact_customer_service", "true_category": "CONTACT"}
+{"text": "I have to check what payment methods are accepted, help me", "true_intent": "check_payment_methods", "true_category": "PAYMENT"}
+{"text": "i need help to swap something of purchase {{Order Number}}", "true_intent": "change_order", "true_category": "ORDER"}
+{"text": "I ned help checking the rebate current status", "true_intent": "track_refund", "true_category": "REFUND"}
+{"text": "problems with the removal of my gold account", "true_intent": "delete_account", "true_category": "ACCOUNT"}
+{"text": "is it possible to check the early termination charges", "true_intent": "check_cancellation_fee", "true_category": "CANCEL"}
+{"text": "i need help to see my bill from {{Person Name}}", "true_intent": "check_invoice", "true_category": "INVOICE"}
+{"text": "i want assistance to chexk the early exit penalties", "true_intent": "check_cancellation_fee", "true_category": "CANCEL"}

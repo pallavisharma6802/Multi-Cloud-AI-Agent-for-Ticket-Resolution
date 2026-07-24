@@ -1,0 +1,8 @@
+{
+  "id": "set_up_shipping_address_02",
+  "title": "Set Up Shipping Address (SHIPPING)",
+  "category": "SHIPPING",
+  "intent": "set_up_shipping_address",
+  "content": "I've realized that you're facing an issue with a shipping address that is not valid. I apologize for the inconvenience caused. To resolve this, I recommend the following steps:\n\n1. Double-check the information you entered for the shipping address. Ensure that the address is accurate and complete, including the street name, building number, city, state, and postal code.\n\n2. Check if there are any formatting errors, such as missing spaces, incorrect abbreviations, or special characters. Make sure the address format matches the requirements of the shipping service provider.\n\n3. If you are still unable to proceed, try clearing your browser cache and cookies, and then attempt to enter the shipping address again.\n\n4. If the issue persists, reach out to our customer support team. They will be able to assist you further and provide real-time help in resolving the problem.\n\nI apologize for any inconvenience caused, and I appreciate your patience while we work to resolve this matter.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

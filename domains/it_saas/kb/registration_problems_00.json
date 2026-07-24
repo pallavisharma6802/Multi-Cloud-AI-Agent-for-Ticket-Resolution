@@ -1,0 +1,8 @@
+{
+  "id": "registration_problems_00",
+  "title": "Registration Problems (ACCOUNT)",
+  "category": "ACCOUNT",
+  "intent": "registration_problems",
+  "content": "Thank you for bringing this issue to our attention. We understand the importance of resolving registration problems promptly. To report a problem with registrations, you can reach out to our dedicated support team through our customer service hotline at {{Customer Support Phone Number}} or by sending an email to {{Customer Support Email}}. Our support team is available {{Support Hours}} to assist you and ensure a smooth registration process. Additionally, you can also visit our website and submit a support ticket through the 'Contact Us' page. Your feedback is vital in helping us identify and address any issues that may arise, so please don't hesitate to contact us.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

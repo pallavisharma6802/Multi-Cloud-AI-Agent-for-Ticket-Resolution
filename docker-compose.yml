@@ -1,0 +1,129 @@
+networks:
+  ticket-net:
+    driver: bridge
+
+services:
+  # Local stack: Postgres, Ollama, backend, frontend, Grafana.
+  # Azure Text Analytics, Pinecone, and optional BigQuery stay external APIs
+  # (configure via .env — see README.md "Running locally").
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: ticket-postgres
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER:-ticket_admin}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-ticket_local_dev}
+      - POSTGRES_DB=${POSTGRES_DB:-tickets_db}
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-ticket_admin}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    networks:
+      - ticket-net
+    restart: unless-stopped
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ticket-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+    networks:
+      - ticket-net
+    restart: unless-stopped
+
+  # One-shot: pull default model into ollama volume, then exit (safe to re-run).
+  ollama-pull:
+    image: ollama/ollama:latest
+    container_name: ticket-ollama-pull
+    depends_on:
+      - ollama
+    entrypoint: ["/bin/sh", "-c"]
+    environment:
+      - OLLAMA_HOST=ollama:11434
+    command:
+      - >
+        until ollama list >/dev/null 2>&1; do sleep 2; done;
+        ollama list | grep -q "^${OLLAMA_MODEL:-qwen2.5:3b} " ||
+        ollama pull ${OLLAMA_MODEL:-qwen2.5:3b}
+    networks:
+      - ticket-net
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ticket-backend
+    env_file:
+      - .env
+    environment:
+      # In-network service names (override host ports from .env).
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-ticket_admin}:${POSTGRES_PASSWORD:-ticket_local_dev}@postgres:5432/${POSTGRES_DB:-tickets_db}
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - ENABLE_BIGQUERY=${ENABLE_BIGQUERY:-false}
+    ports:
+      - "8000:8000"
+    volumes:
+      # GCP key from GOOGLE_APPLICATION_CREDENTIALS=./gcp-key.json (WORKDIR=/srv).
+      - ./gcp-key.json:/srv/gcp-key.json:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+      ollama-pull:
+        condition: service_completed_successfully
+    networks:
+      - ticket-net
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL:-http://localhost:8000}
+        - NEXT_PUBLIC_GRAFANA_URL=${NEXT_PUBLIC_GRAFANA_URL:-http://localhost:3001}
+    container_name: ticket-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - ticket-net
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana-oss:11.3.0
+    container_name: ticket-grafana
+    ports:
+      - "3001:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_ADMIN_PASSWORD:-admin}
+      - GF_INSTALL_PLUGINS=grafana-bigquery-datasource
+      - GF_USERS_ALLOW_SIGN_UP=false
+      # Anonymous Viewer for iframe embeds (local/demo only; tighten if exposed).
+      - GF_SECURITY_ALLOW_EMBEDDING=true
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Viewer
+      # Optional; consumed by grafana/provisioning/datasources/bigquery.yaml.
+      - BIGQUERY_PROJECT_ID=${GCP_PROJECT_ID:-}
+      - BIGQUERY_CLIENT_EMAIL=${BIGQUERY_CLIENT_EMAIL:-}
+      - BIGQUERY_PRIVATE_KEY=${BIGQUERY_PRIVATE_KEY:-}
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./grafana/dashboards:/var/lib/grafana/dashboards:ro
+    networks:
+      - ticket-net
+    restart: unless-stopped
+
+volumes:
+  postgres-data:
+  ollama-data:
+  grafana-data:

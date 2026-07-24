@@ -1,0 +1,8 @@
+{
+  "id": "check_payment_methods_03",
+  "title": "Check Payment Methods (PAYMENT)",
+  "category": "PAYMENT",
+  "intent": "check_payment_methods",
+  "content": "Certainly! I'm here to assist you in listing our available payment modalities. Please find the comprehensive list below:\n\n- **Credit/Debit Card:** We accept major cards such as Visa, Mastercard, and American Express.\n- **PayPal:** A widely recognized and secure online payment method.\n- **Bank Transfer:** You can make direct payments from your bank account.\n- **Apple Pay:** This option is available for Apple users, allowing for quick and convenient payments.\n- **Google Wallet:** A payment system provided by Google that offers fast and easy checkouts.\n\nIf you have any questions about any of these payment methods or need further assistance, please feel free to let me know. Your satisfaction is our priority, and we're here to support you every step of the way!",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

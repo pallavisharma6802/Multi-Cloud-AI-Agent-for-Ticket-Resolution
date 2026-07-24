@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_140",
+  "title": "Amazing!!",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "My daughter was born in January and I have had nothing but great service from Dr Rasib! My daughter wasn\u2019t taking to her milk as it was making her constipated and straight away he changed her milk and now she is so much better.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

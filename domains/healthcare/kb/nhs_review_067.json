@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_067",
+  "title": "Fantastic service",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "Have had numerous occasions the past few months where either I, or family members have needed to obtain appointments.\nA short wait to get through, various helpful navigators have listened and offered either telephone calls or face to face appointments (our choice)\nEach clinician has responded in a comprehensive manner, following up when needed.\nHonestly I can not fault the service we have been given.\nKeep up the good work, during continuing hard times, you\u2019re all doing an amazing job.\nThank you",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

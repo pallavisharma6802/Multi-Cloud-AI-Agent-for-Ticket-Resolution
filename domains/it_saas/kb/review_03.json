@@ -1,0 +1,8 @@
+{
+  "id": "review_03",
+  "title": "Review (FEEDBACK)",
+  "category": "FEEDBACK",
+  "intent": "review",
+  "content": "Thank you for your interest in providing feedback on our products! We greatly value your opinion and appreciate your willingness to share your thoughts. To leave feedback about our products, you can visit our website and navigate to the \"Reviews\" section. There, you will find a form where you can leave your feedback, rating, and any comments you'd like to share. We take every piece of feedback seriously and use it to continuously improve our offerings. If you have any further questions or need assistance with leaving feedback, please feel free to let me know.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

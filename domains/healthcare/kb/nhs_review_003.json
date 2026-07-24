@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_003",
+  "title": "Good practice",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "I have been with the practice for over 30 years and on the whole I've no complaints. Phoning in the morning is a nightmare, the same as most practices. However, I have found using the NHS app you can contact by email to ask a question etc, and receive a quick response, getting an appointment if necessary. Repeat prescriptions are quick and easy to do.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

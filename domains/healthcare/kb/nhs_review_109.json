@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_109",
+  "title": "Very responsive GP practice",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "The office staff, GPs and nurses are all very helpful and responsive to questions, queries and requests.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_077",
+  "title": "Wonderful",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "Just had a marvellous experience with a chap in Prescriptions.\nI put in a renewal. He called me out of the blue and asked why I had put in my request. I told him why. He then spent a good half hour plus, sussing out my symptoms. He made a few suggestions and then rang off. Good service I thought, suitably impressed.\n\nThe same chap then called me back to advise me he had arranged for me to see a doctor. \n\nHow good is that?\n\nHe did not just tick the box in front of him, he not only questioned what was in front of him, he not only reviewed it, he actually put a great deal of totally voluntary effort in dealing with it.\n\nHow can anyone moan about these people.\n\nNot me.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

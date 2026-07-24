@@ -1,0 +1,8 @@
+{
+  "id": "track_refund_00",
+  "title": "Track Refund (REFUND)",
+  "category": "REFUND",
+  "intent": "track_refund",
+  "content": "We understand how important it is for you to stay updated on the current status of your compensation. Rest assured, we are here to assist you in tracking it. Please provide me with your {{Order/Claim Number}} or any other relevant details, and I will personally look into it for you. Your satisfaction is our top priority, and we appreciate your patience as we gather the necessary information to provide you with an accurate update.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

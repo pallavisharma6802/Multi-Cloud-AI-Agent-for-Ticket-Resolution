@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_099",
+  "title": "Great Support",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "Recently had my annual Diabetic review which was great experience from start to finish. From:\n- the e-mail/text prompting me to make my annual appointment,\n- to the ease of making the appointment which was the following week, \n- attending the appointment the reception and nursing staff were lovely\n-  to the text confirming my bloods were fine.\nEasy and efficient, i was amazed with the follow up text reassuring me the results were good. I had expected to have to chase this by phone.\nStreamlined and efficient, using technology to provide quick and simple prompts and updates.\nThank you !",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

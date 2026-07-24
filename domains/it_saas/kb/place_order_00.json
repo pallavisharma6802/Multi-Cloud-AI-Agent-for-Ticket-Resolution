@@ -1,0 +1,8 @@
+{
+  "id": "place_order_00",
+  "title": "Place Order (ORDER)",
+  "category": "ORDER",
+  "intent": "place_order",
+  "content": "Thank you for expressing your interest in purchasing our products! I'm here to guide you through the process and make it as seamless as possible. To assist you better, could you please provide me with more details about the specific products you would like to purchase? This will enable me to provide you with accurate information and personalized recommendations. Let's make sure you have a smooth and satisfying shopping experience!",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

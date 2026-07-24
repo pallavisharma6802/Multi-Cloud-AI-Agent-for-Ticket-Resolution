@@ -1,0 +1,8 @@
+{
+  "id": "set_up_shipping_address_00",
+  "title": "Set Up Shipping Address (SHIPPING)",
+  "category": "SHIPPING",
+  "intent": "set_up_shipping_address",
+  "content": "I've been informed that you're trying to enter your secondary shipping address. Let's make sure you're able to do so smoothly! Here are the steps you can follow:\n\n1. Start by logging into your account.\n2. Look for the section that says \"Shipping Addresses\" or something similar.\n3. Once you've found it, click on the option to \"Add a New Address\" or \"Edit Shipping Addresses\".\n4. Fill in all the necessary details for your secondary shipping address, such as the street name, city, state, and ZIP code.\n5. Double-check all the information you've entered to ensure its accuracy.\n6. Finally, save your changes, and your secondary shipping address should now be successfully entered.\n\nIf you encounter any issues during this process or if you need further assistance, please don't hesitate to let me know. I'll be glad to help you out!",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "delete_account_02",
+  "title": "Delete Account (ACCOUNT)",
+  "category": "ACCOUNT",
+  "intent": "delete_account",
+  "content": "I've deduced from your message that you're unsure about the process of deleting your premium account. I'm here to guide you through the steps and provide the necessary assistance. Deleting your premium account involves a specific procedure to ensure the security of your data. To initiate the account deletion process, please follow these steps:\n\n1. Visit our website and log into your premium account.\n2. Navigate to the account settings or preferences section.\n3. Look for the option to \"Delete Account\" or \"Cancel Subscription.\"\n4. Click on that option to proceed with the deletion process.\n5. You may be asked to provide a reason for canceling. Feel free to provide feedback if you'd like.\n6. Confirm the deletion process by following any additional prompts or steps provided.\n\nPlease note that once your premium account is deleted, all your data, settings, and access to premium features will be permanently removed. If you have any remaining concerns or encounter any difficulties during the deletion process, please don't hesitate to reach out to our customer support team for further assistance. We're here to help you every step of the way.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

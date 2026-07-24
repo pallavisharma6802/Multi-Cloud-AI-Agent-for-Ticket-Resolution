@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_136",
+  "title": "Excellent doctors and staff",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "I was overwhelmed by the excellent care and attention I was given by the GP I saw yesterday. Every doctor I have seen at this surgery has been exemplary in their professionalism and diagnostic skills, and their tremendous empathy. The receptionists and nurses are great, too. I highly recommend this practice.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

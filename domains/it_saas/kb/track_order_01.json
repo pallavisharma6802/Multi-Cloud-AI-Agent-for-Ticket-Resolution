@@ -1,0 +1,8 @@
+{
+  "id": "track_order_01",
+  "title": "Track Order (ORDER)",
+  "category": "ORDER",
+  "intent": "track_order",
+  "content": "Certainly! I'm here to assist you in checking the status of purchase number {{Order Number}}. To do so, please follow these steps:\n\n1. Visit our website at {{Website URL}}.\n2. Log in to your account using your credentials.\n3. Navigate to the \"Order History\" section.\n4. Look for the specific purchase with the order number {{Order Number}}.\n5. Click on the purchase details to view its status.\n\nIf you encounter any difficulties during the process or have any additional questions, please don't hesitate to let me know. I'm here to ensure that you receive all the support you need.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

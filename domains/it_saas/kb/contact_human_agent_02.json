@@ -1,0 +1,8 @@
+{
+  "id": "contact_human_agent_02",
+  "title": "Contact Human Agent (CONTACT)",
+  "category": "CONTACT",
+  "intent": "contact_human_agent",
+  "content": "We're here to help! I take note that you need help chatting with a human agent. Our team of dedicated representatives is here to assist you. Please allow me just a moment to connect you with the right person who can address your concerns. Stay with me, and I will ensure you receive prompt and personalized assistance.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

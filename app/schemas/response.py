@@ -1,6 +1,7 @@
-from pydantic import BaseModel, Field
-from typing import List, Optional
 from datetime import datetime
+from typing import List, Optional
+
+from pydantic import BaseModel, Field
 
 
 class KBDocument(BaseModel):
@@ -21,11 +22,17 @@ class AgentDecision(BaseModel):
 class DraftedResponse(BaseModel):
     ticket_id: str = Field(..., description="Associated ticket ID")
     draft_text: str = Field(..., description="AI-generated response draft")
-    confidence: float = Field(..., ge=0.0, le=1.0, description="Overall confidence in response")
+    confidence: float = Field(..., ge=0.0, le=1.0, description="Overall confidence in response (from judge_agent + supervisor final_decision only)")
     kb_documents: List[KBDocument] = Field(default_factory=list, description="Supporting KB documents")
     agent_decisions: List[AgentDecision] = Field(default_factory=list, description="Audit trail of agent decisions")
     requires_human_review: bool = Field(default=False, description="Flag if human review needed")
     created_at: datetime = Field(default_factory=datetime.utcnow)
+    trace: dict = Field(
+        default_factory=dict,
+        description="Full agentic trace: domain_pack, intent/priority + rationale, iteration_count, "
+        "judge_score_history, continuation_rationale, escalation_rationale, anomaly_flags, cost_estimate. "
+        "Persisted verbatim to DraftedResponseLog for the UI trace view and BigQuery analytics sink.",
+    )
 
 
 class TicketResolutionResponse(BaseModel):
@@ -36,7 +43,8 @@ class TicketResolutionResponse(BaseModel):
     supporting_documents: List[KBDocument]
     processing_time_seconds: float
     requires_human_review: bool
-    
+    trace: dict = Field(default_factory=dict, description="Full agentic trace (see DraftedResponse.trace)")
+
     class Config:
         json_schema_extra = {
             "example": {
@@ -46,6 +54,7 @@ class TicketResolutionResponse(BaseModel):
                 "confidence_score": 0.92,
                 "supporting_documents": [],
                 "processing_time_seconds": 2.34,
-                "requires_human_review": False
+                "requires_human_review": False,
+                "trace": {}
             }
         }

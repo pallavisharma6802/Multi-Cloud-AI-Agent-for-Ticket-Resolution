@@ -1,4 +1,5 @@
 gcp-key.json
+grafana-key.json
 .env
 venv/
 __pycache__/
@@ -19,8 +20,16 @@ htmlcov/
 *.tfstate
 *.tfstate.backup
 .terraform.lock.hcl
+# Secrets / local credentials — never commit
+terraform.tfvars
+!terraform.tfvars.example
 multi-cloud-ai-agent-key.pem
+*_accessKeys.csv
+*.csv.credentials
 setup_and_run.sh
+start_server.sh
+start.sh
+deploy_infrastructure.sh
 tickets.db
 infra/gcp/
-start_server.sh
+.ruff_cache/

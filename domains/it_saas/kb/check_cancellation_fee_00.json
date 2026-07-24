@@ -1,0 +1,8 @@
+{
+  "id": "check_cancellation_fee_00",
+  "title": "Check Cancellation Fee (CANCEL)",
+  "category": "CANCEL",
+  "intent": "check_cancellation_fee",
+  "content": "I'll make it happen! I can provide you with information on the cancellation fees. Please give me a moment to check that for you.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "review_01",
+  "title": "Review (FEEDBACK)",
+  "category": "FEEDBACK",
+  "intent": "review",
+  "content": "We appreciate your intention to provide feedback about our company! Your insights and experiences are incredibly valuable to us as we continuously strive to improve our services. I would be more than happy to assist you in submitting your feedback. Could you please provide me with some more details regarding the specific area or aspect of our company you would like to provide feedback on? This will help me guide you through the process and ensure that your feedback reaches the right department.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

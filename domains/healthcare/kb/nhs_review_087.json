@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_087",
+  "title": "Excellent Prescription Service",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "Last Thursday morning my wife and I submitted repeat monthly prescription requests to the Surgery Prescriptions Team. In less than 24 hours later, the prescription requests had been swiftly processed and delivered by the Chemists concerned. Excellent service from Elbury Moor Surgery and the brilliant Prescriptions Team. We are so thankful for all of your professional expertise and support.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

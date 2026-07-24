@@ -1,0 +1,153 @@
+{
+  "uid": "ticket-trends",
+  "title": "Ticket Trends",
+  "description": "Ticket volume, domain/priority mix, and rolling escalation rate from fact_ticket_events.",
+  "tags": [
+    "ticket-resolution",
+    "trends"
+  ],
+  "timezone": "browser",
+  "schemaVersion": 39,
+  "version": 1,
+  "refresh": "5m",
+  "time": {
+    "from": "now-30d",
+    "to": "now"
+  },
+  "templating": {
+    "list": []
+  },
+  "panels": [
+    {
+      "id": 1,
+      "title": "Ticket Volume Over Time",
+      "type": "timeseries",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "datasource": {
+        "type": "grafana-bigquery-datasource",
+        "uid": "bigquery-ticket-analytics"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "timeseries",
+          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time, COUNT(*) AS tickets\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\nGROUP BY time\nORDER BY time",
+          "datasource": {
+            "type": "grafana-bigquery-datasource",
+            "uid": "bigquery-ticket-analytics"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Volume by Domain Pack",
+      "type": "timeseries",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "datasource": {
+        "type": "grafana-bigquery-datasource",
+        "uid": "bigquery-ticket-analytics"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "timeseries",
+          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time, COALESCE(domain_pack, 'unknown') AS domain_pack, COUNT(*) AS tickets\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\nGROUP BY time, domain_pack\nORDER BY time",
+          "datasource": {
+            "type": "grafana-bigquery-datasource",
+            "uid": "bigquery-ticket-analytics"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Volume by Priority",
+      "type": "timeseries",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 8
+      },
+      "datasource": {
+        "type": "grafana-bigquery-datasource",
+        "uid": "bigquery-ticket-analytics"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "timeseries",
+          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time, COALESCE(priority, 'unknown') AS priority, COUNT(*) AS tickets\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\nGROUP BY time, priority\nORDER BY time",
+          "datasource": {
+            "type": "grafana-bigquery-datasource",
+            "uid": "bigquery-ticket-analytics"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "7-Day Rolling Escalation Rate",
+      "description": "Rolling window so a real upward trend is visible before a single bad day would show it -- pair with an alert rule on this panel to catch a rising escalation rate early.",
+      "type": "timeseries",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 8
+      },
+      "datasource": {
+        "type": "grafana-bigquery-datasource",
+        "uid": "bigquery-ticket-analytics"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit",
+          "max": 1,
+          "min": 0
+        },
+        "overrides": []
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "timeseries",
+          "rawSql": "WITH daily AS (\n  SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS day,\n    COUNTIF(final_action = 'escalate') AS escalated,\n    COUNT(*) AS total\n  FROM `ticket_analytics.fact_ticket_events`\n  WHERE $__timeFilter(event_ts)\n  GROUP BY day\n)\nSELECT day AS time,\n  SAFE_DIVIDE(\n    SUM(escalated) OVER (ORDER BY UNIX_DATE(DATE(day)) RANGE BETWEEN 6 PRECEDING AND CURRENT ROW),\n    SUM(total) OVER (ORDER BY UNIX_DATE(DATE(day)) RANGE BETWEEN 6 PRECEDING AND CURRENT ROW)\n  ) AS rolling_7d_escalation_rate\nFROM daily\nORDER BY day",
+          "datasource": {
+            "type": "grafana-bigquery-datasource",
+            "uid": "bigquery-ticket-analytics"
+          }
+        }
+      ]
+    }
+  ]
+}

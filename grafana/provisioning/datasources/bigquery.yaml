@@ -1,0 +1,22 @@
+# BigQuery datasource (plugin via GF_INSTALL_PLUGINS in docker-compose.yml).
+# Use $VAR_NAME (not ${VAR_NAME}) for JWT fields — safer for PEM keys.
+# BIGQUERY_* may be unset at compose-up; datasource still loads, queries fail
+# until credentials are set (see grafana/README.md).
+apiVersion: 1
+
+datasources:
+  - name: BigQuery
+    uid: bigquery-ticket-analytics
+    type: grafana-bigquery-datasource
+    access: proxy
+    editable: true
+    isDefault: true
+    jsonData:
+      authenticationType: jwt
+      clientEmail: $BIGQUERY_CLIENT_EMAIL
+      defaultProject: $BIGQUERY_PROJECT_ID
+      tokenUri: https://oauth2.googleapis.com/token
+      # Must match app/analytics/bigquery_sink.py dataset location (default us-central1).
+      processingLocation: us-central1
+    secureJsonData:
+      privateKey: $BIGQUERY_PRIVATE_KEY

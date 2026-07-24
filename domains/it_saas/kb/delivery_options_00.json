@@ -1,0 +1,8 @@
+{
+  "id": "delivery_options_00",
+  "title": "Delivery Options (DELIVERY)",
+  "category": "DELIVERY",
+  "intent": "delivery_options",
+  "content": "Sure! We are thrilled to fulfill your order from {{Delivery Country}} as well. Our delivery options are available internationally, allowing you to place an order and have it shipped right to your doorstep. Whether you choose standard shipping, expedited shipping, or even overnight shipping, we are committed to delivering your order safely and efficiently. If you have any specific questions or concerns about placing an order from {{Delivery Country}}, feel free to let me know. I'm here to assist you every step of the way!",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

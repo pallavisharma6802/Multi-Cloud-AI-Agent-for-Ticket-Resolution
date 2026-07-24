@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_137",
+  "title": "Very helpful receptionist",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "I needed to sort out a registration issue with the NHS app very rapidly, so I called and spoke to a receptionist. They were so helpful and approachable, and my issue was sorted out very quickly. Thank you!",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

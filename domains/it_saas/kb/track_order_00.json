@@ -1,0 +1,8 @@
+{
+  "id": "track_order_00",
+  "title": "Track Order (ORDER)",
+  "category": "ORDER",
+  "intent": "track_order",
+  "content": "We're here to help to us! I understand that you need assistance with checking the status of your purchase with the purchase number {{Order Number}}. To provide you with the most accurate information, could you please let me know the platform or website through which you made the purchase? This will help me guide you on how to track your purchase and provide any necessary updates. I look forward to assisting you further! Remember, your satisfaction is our top priority.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

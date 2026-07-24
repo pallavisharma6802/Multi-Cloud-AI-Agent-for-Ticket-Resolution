@@ -1,0 +1,8 @@
+{
+  "id": "check_payment_methods_00",
+  "title": "Check Payment Methods (PAYMENT)",
+  "category": "PAYMENT",
+  "intent": "check_payment_methods",
+  "content": "Appreciate your message to us! I'm here to assist you in accessing our payment options. To view our available payment methods, you can visit our website and navigate to the \"Payment Methods\" section. If you have any questions or need further clarification, please feel free to let me know.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

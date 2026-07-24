@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_116",
+  "title": "Great practice",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "I have been with the practice for many years now and have always found it very accessible. I have not had to wait weeks for treatment whether by phone or in person. The follow up on new medication or tests has always been thorough. The staff have always been helpful. I\u2019m happy.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

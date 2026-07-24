@@ -1,0 +1,8 @@
+{
+  "id": "delete_account_03",
+  "title": "Delete Account (ACCOUNT)",
+  "category": "ACCOUNT",
+  "intent": "delete_account",
+  "content": "I understood that you're unsure about the process of closing your {{Account Type}} account, and I'm here to help. Closing an account can be a significant decision, and I want to ensure that you have the support and guidance you need. To close your {{Account Type}} account, you can follow these steps:\n\n1. Log in to your account on our website.\n2. Navigate to the account settings or profile section.\n3. Look for the option to close or deactivate your account.\n4. Click on the close or deactivate button and follow any additional prompts or instructions.\n\nPlease keep in mind that closing your account may result in the loss of any saved data or information associated with it. If you have any specific concerns or questions during the process, feel {{Account Type}} to reach out to our customer support team who will be happy to assist you further. We appreciate your time with us and will do our best to make this closure as smooth as possible for you.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

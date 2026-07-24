@@ -1,0 +1,8 @@
+{
+  "id": "change_order_00",
+  "title": "Change Order (ORDER)",
+  "category": "ORDER",
+  "intent": "change_order",
+  "content": "We understand your frustration with not being able to swap an item in your purchase with order number {{Order Number}}. Our team is here to assist you in finding the best solution. Could you please provide more details about the item you would like to swap and the reason for the swap? This information will help us better understand your needs and work towards resolving the issue. We appreciate your patience and look forward to assisting you further.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

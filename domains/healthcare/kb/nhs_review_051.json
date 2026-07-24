@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_051",
+  "title": "Accessible and professional",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "Julia Engwell Clinic is always accessible both through telephone calls and when you walk into the centre even without appointment. \n\nThe staff always act in a polite manner, every professional, full attention is given to patients and all concerns dealt with accordingly.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

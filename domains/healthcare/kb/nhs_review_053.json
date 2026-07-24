@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_053",
+  "title": "Improving",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "The medical staff remain excellent and the administration is slowly improving as the practice comes to terms with the new information technology systems. Unfortunately the experience today was marred as before by an inflexible receptionist with an inclination to talk down to patients.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

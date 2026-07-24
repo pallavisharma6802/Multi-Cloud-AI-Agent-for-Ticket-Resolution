@@ -1,0 +1,193 @@
+{
+  "uid": "agent-performance",
+  "title": "Agent Performance",
+  "description": "Confidence distributions and escalation rate from Supervisor decisions.",
+  "tags": [
+    "ticket-resolution",
+    "agent-performance"
+  ],
+  "timezone": "browser",
+  "schemaVersion": 39,
+  "version": 1,
+  "refresh": "5m",
+  "time": {
+    "from": "now-30d",
+    "to": "now"
+  },
+  "templating": {
+    "list": []
+  },
+  "panels": [
+    {
+      "id": 1,
+      "title": "Intent Classification Confidence Distribution",
+      "type": "histogram",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "datasource": {
+        "type": "grafana-bigquery-datasource",
+        "uid": "bigquery-ticket-analytics"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawSql": "SELECT intent_confidence\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts) AND intent_confidence IS NOT NULL",
+          "datasource": {
+            "type": "grafana-bigquery-datasource",
+            "uid": "bigquery-ticket-analytics"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Final Decision Confidence Distribution",
+      "type": "histogram",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "datasource": {
+        "type": "grafana-bigquery-datasource",
+        "uid": "bigquery-ticket-analytics"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawSql": "SELECT final_confidence\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts) AND final_confidence IS NOT NULL",
+          "datasource": {
+            "type": "grafana-bigquery-datasource",
+            "uid": "bigquery-ticket-analytics"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Human-Override (Escalation) Rate Over Time",
+      "description": "Share of tickets escalated to a human, by day.",
+      "type": "timeseries",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 8
+      },
+      "datasource": {
+        "type": "grafana-bigquery-datasource",
+        "uid": "bigquery-ticket-analytics"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit",
+          "max": 1,
+          "min": 0
+        },
+        "overrides": []
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "timeseries",
+          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time,\n  SAFE_DIVIDE(COUNTIF(requires_human_review), COUNT(*)) AS human_override_rate\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\nGROUP BY time\nORDER BY time",
+          "datasource": {
+            "type": "grafana-bigquery-datasource",
+            "uid": "bigquery-ticket-analytics"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Intent Self-Consistency Agreement Over Time",
+      "description": "Average agreement across the intent/priority agent's self-consistency samples (see intent_priority_agent.py). A sustained drop signals the taxonomy or few-shot examples for the active domain pack need attention.",
+      "type": "timeseries",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 8
+      },
+      "datasource": {
+        "type": "grafana-bigquery-datasource",
+        "uid": "bigquery-ticket-analytics"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit",
+          "max": 1,
+          "min": 0
+        },
+        "overrides": []
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "timeseries",
+          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time, AVG(intent_self_consistency) AS avg_self_consistency\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\nGROUP BY time\nORDER BY time",
+          "datasource": {
+            "type": "grafana-bigquery-datasource",
+            "uid": "bigquery-ticket-analytics"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Escalation Rate (selected period)",
+      "type": "stat",
+      "gridPos": {
+        "h": 6,
+        "w": 24,
+        "x": 0,
+        "y": 16
+      },
+      "datasource": {
+        "type": "grafana-bigquery-datasource",
+        "uid": "bigquery-ticket-analytics"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "orange",
+                "value": 0.3
+              },
+              {
+                "color": "red",
+                "value": 0.5
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawSql": "SELECT SAFE_DIVIDE(COUNTIF(requires_human_review), COUNT(*)) AS escalation_rate\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts)",
+          "datasource": {
+            "type": "grafana-bigquery-datasource",
+            "uid": "bigquery-ticket-analytics"
+          }
+        }
+      ]
+    }
+  ]
+}

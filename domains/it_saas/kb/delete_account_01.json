@@ -1,0 +1,8 @@
+{
+  "id": "delete_account_01",
+  "title": "Delete Account (ACCOUNT)",
+  "category": "ACCOUNT",
+  "intent": "delete_account",
+  "content": "Thank you for trusting to us regarding the removal of your {{Account Type}} account. We appreciate your decision and are here to assist you. To proceed with the deletion, we kindly ask you to provide us with the necessary account details for verification purposes. Once we have verified your identity, we will ensure your {{Account Type}} account is removed from our system securely. Please let us know how we can assist you further with this process.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

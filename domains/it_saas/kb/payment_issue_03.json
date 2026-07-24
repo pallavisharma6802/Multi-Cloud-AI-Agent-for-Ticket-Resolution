@@ -1,0 +1,8 @@
+{
+  "id": "payment_issue_03",
+  "title": "Payment Issue (PAYMENT)",
+  "category": "PAYMENT",
+  "intent": "payment_issue",
+  "content": "Thank you for seeking our support in notifying the trouble you are experiencing with your payments. We are here to assist you throughout this process and ensure a seamless resolution. To better understand the issue, could you please provide more details about the trouble you encountered? Your input is highly valuable to us, and together we will work towards finding a solution. We appreciate your patience and trust in our ability to address this matter promptly.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

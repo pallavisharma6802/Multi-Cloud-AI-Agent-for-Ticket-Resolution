@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_079",
+  "title": "Great practice",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "A quick and efficient service delivered by nurse gifty. Very Professional and polite. Always a great service given by reception staff and medical staff.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

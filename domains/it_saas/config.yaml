@@ -1,0 +1,118 @@
+id: it_saas
+display_name: IT / SaaS Customer Support
+description: 'Generic SaaS/IT product support taxonomy sourced from the Bitext customer-support intent
+  corpus: 27 real, human-authored intents across 10 categories (orders, accounts, billing, refunds, shipping,
+  subscriptions, and general contact/feedback).'
+source_dataset:
+  name: bitext/Bitext-customer-support-llm-chatbot-training-dataset
+  url: https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset
+  license: cdla-sharing-1.0
+  real_data: true
+  num_source_rows: 26872
+  limitations: Sampled 3400 of 26872 real rows (strided across the full dataset for intent coverage) rather
+    than the full corpus, for pipeline build speed. No priority labels exist in the source data -- priority_guidance
+    below is advisory prose for the LLM, not a derived label.
+intents:
+- id: create_account
+  category: ACCOUNT
+  description: 'Customer inquiries about create account (category: ACCOUNT).'
+- id: delete_account
+  category: ACCOUNT
+  description: 'Customer inquiries about delete account (category: ACCOUNT).'
+- id: edit_account
+  category: ACCOUNT
+  description: 'Customer inquiries about edit account (category: ACCOUNT).'
+- id: recover_password
+  category: ACCOUNT
+  description: 'Customer inquiries about recover password (category: ACCOUNT).'
+- id: registration_problems
+  category: ACCOUNT
+  description: 'Customer inquiries about registration problems (category: ACCOUNT).'
+- id: switch_account
+  category: ACCOUNT
+  description: 'Customer inquiries about switch account (category: ACCOUNT).'
+- id: check_cancellation_fee
+  category: CANCEL
+  description: 'Customer inquiries about check cancellation fee (category: CANCEL).'
+- id: contact_customer_service
+  category: CONTACT
+  description: 'Customer inquiries about contact customer service (category: CONTACT).'
+- id: contact_human_agent
+  category: CONTACT
+  description: 'Customer inquiries about contact human agent (category: CONTACT).'
+- id: delivery_options
+  category: DELIVERY
+  description: 'Customer inquiries about delivery options (category: DELIVERY).'
+- id: delivery_period
+  category: DELIVERY
+  description: 'Customer inquiries about delivery period (category: DELIVERY).'
+- id: complaint
+  category: FEEDBACK
+  description: 'Customer inquiries about complaint (category: FEEDBACK).'
+- id: review
+  category: FEEDBACK
+  description: 'Customer inquiries about review (category: FEEDBACK).'
+- id: check_invoice
+  category: INVOICE
+  description: 'Customer inquiries about check invoice (category: INVOICE).'
+- id: get_invoice
+  category: INVOICE
+  description: 'Customer inquiries about get invoice (category: INVOICE).'
+- id: cancel_order
+  category: ORDER
+  description: 'Customer inquiries about cancel order (category: ORDER).'
+- id: change_order
+  category: ORDER
+  description: 'Customer inquiries about change order (category: ORDER).'
+- id: place_order
+  category: ORDER
+  description: 'Customer inquiries about place order (category: ORDER).'
+- id: track_order
+  category: ORDER
+  description: 'Customer inquiries about track order (category: ORDER).'
+- id: check_payment_methods
+  category: PAYMENT
+  description: 'Customer inquiries about check payment methods (category: PAYMENT).'
+- id: payment_issue
+  category: PAYMENT
+  description: 'Customer inquiries about payment issue (category: PAYMENT).'
+- id: check_refund_policy
+  category: REFUND
+  description: 'Customer inquiries about check refund policy (category: REFUND).'
+- id: get_refund
+  category: REFUND
+  description: 'Customer inquiries about get refund (category: REFUND).'
+- id: track_refund
+  category: REFUND
+  description: 'Customer inquiries about track refund (category: REFUND).'
+- id: change_shipping_address
+  category: SHIPPING
+  description: 'Customer inquiries about change shipping address (category: SHIPPING).'
+- id: set_up_shipping_address
+  category: SHIPPING
+  description: 'Customer inquiries about set up shipping address (category: SHIPPING).'
+- id: newsletter_subscription
+  category: SUBSCRIPTION
+  description: 'Customer inquiries about newsletter subscription (category: SUBSCRIPTION).'
+priority_guidance: 'Reason about urgency from the customer''s own words and the entities/sentiment already
+  extracted, not from the intent category alone. Signals that typically indicate higher urgency: the customer
+  states they cannot access something they are paying for right now (e.g. a blocked account, a failed
+  payment blocking service, an active service outage), strongly negative sentiment combined with an explicit
+  deadline or threat to cancel, or repeated contact about the same unresolved issue. Signals that typically
+  indicate lower urgency: general how-to questions, feedback/suggestions, or requests that have no stated
+  time pressure. Category alone (e.g. ''REFUND'') does not determine priority -- a calm, no-deadline refund
+  question is not automatically high priority, and a calmly-worded account lockout during a paid trial
+  can still be urgent.'
+kb_categories:
+- ACCOUNT
+- CANCEL
+- CONTACT
+- DELIVERY
+- FEEDBACK
+- INVOICE
+- ORDER
+- PAYMENT
+- REFUND
+- SHIPPING
+- SUBSCRIPTION
+intent_eval_available: true

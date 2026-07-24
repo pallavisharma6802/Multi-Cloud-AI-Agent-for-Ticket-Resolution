@@ -1,0 +1,8 @@
+{
+  "id": "delivery_options_01",
+  "title": "Delivery Options (DELIVERY)",
+  "category": "DELIVERY",
+  "intent": "delivery_options",
+  "content": "I'll take care of it! I'm here to guide you through the available shipping options tailored for your convenience. \n\n1. Standard Shipping: This option typically arrives within a {{Date Range}} business days, perfect for non-urgent items.\n2. Expedited Shipping: If you need your items faster, this option ensures delivery within {{Date Range}} business days.\n3. Overnight Shipping: For those urgent needs, this option guarantees next business day delivery.\n4. In-Store Pickup: If you prefer a more hands-on approach, you can choose to pick up your items personally from our {{Store Location}}.\n\nThese options may vary depending on your location and other factors, so please feel free to reach out if you have any specific questions or if there's anything else I can assist with. Creating the perfect shipping experience for you is our top priority!",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

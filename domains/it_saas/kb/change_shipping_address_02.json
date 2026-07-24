@@ -1,0 +1,8 @@
+{
+  "id": "change_shipping_address_02",
+  "title": "Change Shipping Address (SHIPPING)",
+  "category": "SHIPPING",
+  "intent": "change_shipping_address",
+  "content": "Sure! If you would like to modify your shipping address, you can do so by following these steps:\n1. Log in to your account on our website.\n2. Go to the \"My Account\" section.\n3. Find the option for \"Address Book\" or \"Shipping Address.\"\n4. Click on that option to view and edit your current shipping address.\n5. Make the necessary changes to your address.\n6. Save the updated information.\nPlease note that some changes may require additional verification for security purposes. If you encounter any difficulties or have further questions, feel free to reach out to our customer support team for assistance.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

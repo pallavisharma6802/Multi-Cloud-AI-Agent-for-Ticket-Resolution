@@ -1,0 +1,8 @@
+{
+  "id": "edit_account_02",
+  "title": "Edit Account (ACCOUNT)",
+  "category": "ACCOUNT",
+  "intent": "edit_account",
+  "content": "How remarkable it is to witness your dedication in updating the information on your {{Account Type}} account!I am here to provide you with the necessary guidance and support throughout this process. Rest assured, with our assistance, your {{Account Type}} account will be up-to-date in no time. Could you please specify which specific information you would like to update?",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

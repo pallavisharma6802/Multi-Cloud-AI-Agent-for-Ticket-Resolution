@@ -1,0 +1,162 @@
+{
+  "uid": "rag-health",
+  "title": "RAG Health",
+  "description": "Judge faithfulness/relevance trends and retrieval-miss rate from document grading.",
+  "tags": [
+    "ticket-resolution",
+    "rag-health"
+  ],
+  "timezone": "browser",
+  "schemaVersion": 39,
+  "version": 1,
+  "refresh": "5m",
+  "time": {
+    "from": "now-30d",
+    "to": "now"
+  },
+  "templating": {
+    "list": []
+  },
+  "panels": [
+    {
+      "id": 1,
+      "title": "Faithfulness Score Trend",
+      "description": "Average Self-RAG faithfulness score (are drafted claims grounded in graded-relevant KB documents?) per day.",
+      "type": "timeseries",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "datasource": {
+        "type": "grafana-bigquery-datasource",
+        "uid": "bigquery-ticket-analytics"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit",
+          "max": 1,
+          "min": 0
+        },
+        "overrides": []
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "timeseries",
+          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time, AVG(judge_faithfulness_score) AS avg_faithfulness\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts) AND judge_faithfulness_score IS NOT NULL\nGROUP BY time\nORDER BY time",
+          "datasource": {
+            "type": "grafana-bigquery-datasource",
+            "uid": "bigquery-ticket-analytics"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Relevance Score Trend",
+      "description": "Average Self-RAG relevance score (does the drafted response actually address the ticket?) per day.",
+      "type": "timeseries",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "datasource": {
+        "type": "grafana-bigquery-datasource",
+        "uid": "bigquery-ticket-analytics"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit",
+          "max": 1,
+          "min": 0
+        },
+        "overrides": []
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "timeseries",
+          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time, AVG(judge_relevance_score) AS avg_relevance\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts) AND judge_relevance_score IS NOT NULL\nGROUP BY time\nORDER BY time",
+          "datasource": {
+            "type": "grafana-bigquery-datasource",
+            "uid": "bigquery-ticket-analytics"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Retrieval-Miss Rate",
+      "description": "Share of tickets where the CRAG grader found zero relevant documents among all retrieved+rewritten-query candidates -- these are the tickets a KB-coverage gap, not a model problem, is most likely to explain.",
+      "type": "timeseries",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 8
+      },
+      "datasource": {
+        "type": "grafana-bigquery-datasource",
+        "uid": "bigquery-ticket-analytics"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit",
+          "max": 1,
+          "min": 0
+        },
+        "overrides": []
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "timeseries",
+          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time,\n  SAFE_DIVIDE(COUNTIF(num_relevant_documents = 0), COUNT(*)) AS retrieval_miss_rate\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\nGROUP BY time\nORDER BY time",
+          "datasource": {
+            "type": "grafana-bigquery-datasource",
+            "uid": "bigquery-ticket-analytics"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Relevant / Candidate Document Ratio",
+      "description": "Average fraction of retrieved candidates the CRAG grader actually marked relevant -- a proxy for retrieval precision independent of the judge's downstream faithfulness score.",
+      "type": "timeseries",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 8
+      },
+      "datasource": {
+        "type": "grafana-bigquery-datasource",
+        "uid": "bigquery-ticket-analytics"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit",
+          "max": 1,
+          "min": 0
+        },
+        "overrides": []
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "timeseries",
+          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time,\n  AVG(SAFE_DIVIDE(num_relevant_documents, num_kb_candidates)) AS avg_relevant_ratio\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts) AND num_kb_candidates > 0\nGROUP BY time\nORDER BY time",
+          "datasource": {
+            "type": "grafana-bigquery-datasource",
+            "uid": "bigquery-ticket-analytics"
+          }
+        }
+      ]
+    }
+  ]
+}

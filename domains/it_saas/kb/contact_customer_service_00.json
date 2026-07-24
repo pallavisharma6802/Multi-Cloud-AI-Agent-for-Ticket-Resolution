@@ -1,0 +1,8 @@
+{
+  "id": "contact_customer_service_00",
+  "title": "Contact Customer Service (CONTACT)",
+  "category": "CONTACT",
+  "intent": "contact_customer_service",
+  "content": "Thank you for trusting us! I'm fully aware of you would like to know the available contact hours for our customer support team. You can find the contact hours on our website at {{Website URL}}. Simply navigate to the customer support section, and you will find the hours of operation listed there. If you have any other questions or concerns, feel free to let me know, and I'll be happy to assist you further.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

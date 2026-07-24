@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_072",
+  "title": "Poor appointment waiting times",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "appointments are always running late .. appointments need to stick to the time slot and not go beyond ! The doctors should be fast and efficient not make people wait hours and hours ! Time is valuable and they should stick to that time! They need to ensure all the medicines are signed of in time and not take weeks ! Please solve your controlled medications out and your repeat medications and the blood tests out! Its a waste of time for a doctor to do blood forms they should just allow reception to be able to print of blood forms!! They need to also allow reception to be able to do letters and medical hisotry print offs !!   Everything in this surgery is delayed they need 2 secataries not just 1 !! Open up your wallet guys not put pressure on to your existing staffs !! Believe me take all this into consideration and yoh will see us patients as happy",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

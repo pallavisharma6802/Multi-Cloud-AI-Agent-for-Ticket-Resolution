@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_142",
+  "title": "Kind and efficient practice",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "Having been with Park Lane Surgery for many years I have seen many changes.  I was worried after covid, with systems changing, and more online services from our GP, that all personal and prompt medical attention would fail. Park Lane Surgery have proved me wrong. With easy to use on line services, replies usually received within the hour and, where needed, telephone consultation/appointments arranged, the service is still excellent. Caring and professional staff offer assurance that you are being well looked after and getting the best advice and care when needed. Thank you",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

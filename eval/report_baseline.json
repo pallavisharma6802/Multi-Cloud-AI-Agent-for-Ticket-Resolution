@@ -1,0 +1,5 @@
+{
+  "generated_at": null,
+  "thresholds": {},
+  "notes": "Empty until populated by `python eval/run_eval.py --update-baseline` against a live Ollama + seeded Pinecone setup. CI treats a missing baseline as non-fatal."
+}

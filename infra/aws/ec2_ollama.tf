@@ -7,7 +7,8 @@ resource "aws_security_group" "ollama_ec2" {
     from_port   = 11434
     to_port     = 11434
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    # Restricted CIDR only — Ollama has no auth; never 0.0.0.0/0.
+    cidr_blocks = var.allowed_management_cidr_blocks
     description = "Ollama API"
   }
 
@@ -15,7 +16,8 @@ resource "aws_security_group" "ollama_ec2" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    # Restricted CIDR only — never 0.0.0.0/0.
+    cidr_blocks = var.allowed_management_cidr_blocks
     description = "SSH"
   }
 

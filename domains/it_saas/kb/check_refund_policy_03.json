@@ -1,0 +1,8 @@
+{
+  "id": "check_refund_policy_03",
+  "title": "Check Refund Policy (REFUND)",
+  "category": "REFUND",
+  "intent": "check_refund_policy",
+  "content": "Unquestionably! I completely understand your curiosity about the situations in which you can request refunds. Let me enlighten you:\n\n1. **Product/Service Defect:** If the product or service you've purchased has a defect or doesn't meet its description, you're usually eligible for a refund.\n2. **Cancellation within Grace Period:** Changing your mind within the given grace period? Rest assured, you should be entitled to a refund.\n3. **Unauthorized Charges:** If you notice any charges that you didn't authorize or seem unfamiliar, we'll certainly look into it and assist you.\n4. **Event Cancellation:** It can be disappointing to buy tickets for an event only to have it canceled. If it isn't rescheduled, you would generally qualify for a refund.\n5. **Duplicate Charges:** Sometimes mistakes happen, and you may be charged more than once for the same item. Please inform us, and we'll rectify it promptly.\n6. **Non-receipt of Goods:** Haven't received your ordered product within the expected time frame? Let us know, as you may be eligible for a refund in such cases.\n\nPlease note that individual vendors or service providers may have specific refund policies or nuances. It's always advisable to review their terms and conditions or contact them directly for further details. If you have a specific order or concern, please provide me with the necessary details, such as the order number, and I'd be happy to assist you further.\n\nIs there anything else I can help you with?",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

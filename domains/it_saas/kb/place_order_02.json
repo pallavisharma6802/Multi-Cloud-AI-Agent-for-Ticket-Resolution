@@ -1,0 +1,8 @@
+{
+  "id": "place_order_02",
+  "title": "Place Order (ORDER)",
+  "category": "ORDER",
+  "intent": "place_order",
+  "content": "Thank you for your inquiry on how to purchase several items. I'm here to guide you through the process and make it as convenient and seamless as possible. To get started, I recommend visiting our website or app and browsing through our extensive collection of products. Once you find the items you wish to purchase, simply add them to your shopping cart. When you're ready, proceed to the checkout page where you can review your order and provide your shipping and payment details. After confirming your purchase, you will receive an order confirmation with the estimated delivery date. If you have any specific preferences or requirements regarding your order, feel free to let me know, and I'll ensure your needs are met. Happy shopping!",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

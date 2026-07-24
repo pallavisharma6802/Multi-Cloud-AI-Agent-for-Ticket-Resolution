@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_037",
+  "title": "Improved patient support",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "I have had great difficulty getting appointments as the current system does not suit a single parent or a person with adhd & autism. In the past, calling the reception has been fruitless & I have not felt like the reception staff cared. But even in september 2021 when I had covid I was helped & most importantly listened to with respect. My distress was evident & I was helped to get back onto my meds. Also the technician who saw me offered me a blood test which was very helpful & supportive.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

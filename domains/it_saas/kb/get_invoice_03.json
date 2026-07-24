@@ -1,0 +1,8 @@
+{
+  "id": "get_invoice_03",
+  "title": "Get Invoice (INVOICE)",
+  "category": "INVOICE",
+  "intent": "get_invoice",
+  "content": "I've been informed that you need assistance with downloading the bill from {{Client Name}}. Let me guide you through the process to ensure you can access it smoothly. First, could you please confirm the specific bill number or any other details that could help us locate the desired invoice? Once we have that information, I'll provide you with step-by-step instructions on how to download it.",
+  "source": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "nhs_review_082",
+  "title": "Wonderful Doctors",
+  "category": "FEEDBACK",
+  "intent": null,
+  "content": "The doctors there are very patient and polite. They heard my problem and provided very good treatment for the same.",
+  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
+  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
+}

@@ -1,0 +1,488 @@
+[
+  {
+    "text": "create freemium account",
+    "intent": "create_account",
+    "category": "ACCOUNT",
+    "priority_hint": null
+  },
+  {
+    "text": "i do not know how to create a {{Account Category}} account",
+    "intent": "create_account",
+    "category": "ACCOUNT",
+    "priority_hint": null
+  },
+  {
+    "text": "create account",
+    "intent": "create_account",
+    "category": "ACCOUNT",
+    "priority_hint": null
+  },
+  {
+    "text": "i no longer use my bloody pro account how cani delete it",
+    "intent": "delete_account",
+    "category": "ACCOUNT",
+    "priority_hint": null
+  },
+  {
+    "text": "I no longer use my {{Account Type}} account, I need help removing it",
+    "intent": "delete_account",
+    "category": "ACCOUNT",
+    "priority_hint": null
+  },
+  {
+    "text": "i do not know what i have to do to delete my premium account",
+    "intent": "delete_account",
+    "category": "ACCOUNT",
+    "priority_hint": null
+  },
+  {
+    "text": "can you help me to edit my account?",
+    "intent": "edit_account",
+    "category": "ACCOUNT",
+    "priority_hint": null
+  },
+  {
+    "text": "need to modify my personal data can uhelp me",
+    "intent": "edit_account",
+    "category": "ACCOUNT",
+    "priority_hint": null
+  },
+  {
+    "text": "updating pro account",
+    "intent": "edit_account",
+    "category": "ACCOUNT",
+    "priority_hint": null
+  },
+  {
+    "text": "is it possible to restore my profile key?",
+    "intent": "recover_password",
+    "category": "ACCOUNT",
+    "priority_hint": null
+  },
+  {
+    "text": "question about the lost pin code",
+    "intent": "recover_password",
+    "category": "ACCOUNT",
+    "priority_hint": null
+  },
+  {
+    "text": "I try to restore my user profile PIN",
+    "intent": "recover_password",
+    "category": "ACCOUNT",
+    "priority_hint": null
+  },
+  {
+    "text": "how to report a problem with registrations?",
+    "intent": "registration_problems",
+    "category": "ACCOUNT",
+    "priority_hint": null
+  },
+  {
+    "text": "I need support with my sign-up",
+    "intent": "registration_problems",
+    "category": "ACCOUNT",
+    "priority_hint": null
+  },
+  {
+    "text": "assistance to notify of issues with a sign-up",
+    "intent": "registration_problems",
+    "category": "ACCOUNT",
+    "priority_hint": null
+  },
+  {
+    "text": "how do I use the gold profile?",
+    "intent": "switch_account",
+    "category": "ACCOUNT",
+    "priority_hint": null
+  },
+  {
+    "text": "want help using the {{Account Type}} account",
+    "intent": "switch_account",
+    "category": "ACCOUNT",
+    "priority_hint": null
+  },
+  {
+    "text": "changkng to {{Account Type}} account",
+    "intent": "switch_account",
+    "category": "ACCOUNT",
+    "priority_hint": null
+  },
+  {
+    "text": "is it possible to see the cancellation fees?",
+    "intent": "check_cancellation_fee",
+    "category": "CANCEL",
+    "priority_hint": null
+  },
+  {
+    "text": "I need help seeing the cancellation penalty",
+    "intent": "check_cancellation_fee",
+    "category": "CANCEL",
+    "priority_hint": null
+  },
+  {
+    "text": "i  dont know how to check the early exit penalty",
+    "intent": "check_cancellation_fee",
+    "category": "CANCEL",
+    "priority_hint": null
+  },
+  {
+    "text": "how casn i check at what time i can contact customer support",
+    "intent": "contact_customer_service",
+    "category": "CONTACT",
+    "priority_hint": null
+  },
+  {
+    "text": "can you help me calling customer support?",
+    "intent": "contact_customer_service",
+    "category": "CONTACT",
+    "priority_hint": null
+  },
+  {
+    "text": "help me speaking to customer support",
+    "intent": "contact_customer_service",
+    "category": "CONTACT",
+    "priority_hint": null
+  },
+  {
+    "text": "I do not know how I can speak to an agent",
+    "intent": "contact_human_agent",
+    "category": "CONTACT",
+    "priority_hint": null
+  },
+  {
+    "text": "I need to chat with an assistant",
+    "intent": "contact_human_agent",
+    "category": "CONTACT",
+    "priority_hint": null
+  },
+  {
+    "text": "neerd help chatting with a human agent",
+    "intent": "contact_human_agent",
+    "category": "CONTACT",
+    "priority_hint": null
+  },
+  {
+    "text": "can I place an ordewr from {{Delivery Country}}?",
+    "intent": "delivery_options",
+    "category": "DELIVERY",
+    "priority_hint": null
+  },
+  {
+    "text": "I want assistance to see what shipping options I have",
+    "intent": "delivery_options",
+    "category": "DELIVERY",
+    "priority_hint": null
+  },
+  {
+    "text": "can i order from {{Delivery Country}}",
+    "intent": "delivery_options",
+    "category": "DELIVERY",
+    "priority_hint": null
+  },
+  {
+    "text": "could utell me about the shipping periods",
+    "intent": "delivery_period",
+    "category": "DELIVERY",
+    "priority_hint": null
+  },
+  {
+    "text": "help me check how long it takes for the package to arrive",
+    "intent": "delivery_period",
+    "category": "DELIVERY",
+    "priority_hint": null
+  },
+  {
+    "text": "I need to see how long it takes for the purchase to arrive",
+    "intent": "delivery_period",
+    "category": "DELIVERY",
+    "priority_hint": null
+  },
+  {
+    "text": "need to file an fucking consumer claim can i get some help",
+    "intent": "complaint",
+    "category": "FEEDBACK",
+    "priority_hint": null
+  },
+  {
+    "text": "I do not know how I can make a customerr claim",
+    "intent": "complaint",
+    "category": "FEEDBACK",
+    "priority_hint": null
+  },
+  {
+    "text": "want assistance to make a reclamation against ur business",
+    "intent": "complaint",
+    "category": "FEEDBACK",
+    "priority_hint": null
+  },
+  {
+    "text": "I have got to leave my feedback about your services",
+    "intent": "review",
+    "category": "FEEDBACK",
+    "priority_hint": null
+  },
+  {
+    "text": "I have got to submitmy feedback, help me",
+    "intent": "review",
+    "category": "FEEDBACK",
+    "priority_hint": null
+  },
+  {
+    "text": "I have to leave feedback for a product, I need help",
+    "intent": "review",
+    "category": "FEEDBACK",
+    "priority_hint": null
+  },
+  {
+    "text": "I don't know how to check my invoice from {{Person Name}}",
+    "intent": "check_invoice",
+    "category": "INVOICE",
+    "priority_hint": null
+  },
+  {
+    "text": "I don't know what to do to find the invoice #37777",
+    "intent": "check_invoice",
+    "category": "INVOICE",
+    "priority_hint": null
+  },
+  {
+    "text": "see invoicefrom {{Person Name}}",
+    "intent": "check_invoice",
+    "category": "INVOICE",
+    "priority_hint": null
+  },
+  {
+    "text": "wanna get my bill from {{Person Name}}",
+    "intent": "get_invoice",
+    "category": "INVOICE",
+    "priority_hint": null
+  },
+  {
+    "text": "where can I get the invoices from {{Person Name}}?",
+    "intent": "get_invoice",
+    "category": "INVOICE",
+    "priority_hint": null
+  },
+  {
+    "text": "I want help to download the invoice #85632",
+    "intent": "get_invoice",
+    "category": "INVOICE",
+    "priority_hint": null
+  },
+  {
+    "text": "can you help me cancel order {{Order Number}}?",
+    "intent": "cancel_order",
+    "category": "ORDER",
+    "priority_hint": null
+  },
+  {
+    "text": "help with cancelling purchase {{Order Number}}",
+    "intent": "cancel_order",
+    "category": "ORDER",
+    "priority_hint": null
+  },
+  {
+    "text": "I need help canceling purchase {{Order Number}}",
+    "intent": "cancel_order",
+    "category": "ORDER",
+    "priority_hint": null
+  },
+  {
+    "text": "I can't swap an item of purchase {{Order Number}}",
+    "intent": "change_order",
+    "category": "ORDER",
+    "priority_hint": null
+  },
+  {
+    "text": "I have to correct order {{Order Number}}, can I get some help?",
+    "intent": "change_order",
+    "category": "ORDER",
+    "priority_hint": null
+  },
+  {
+    "text": "can ya help me to change an article of purchase {{Order Number}}",
+    "intent": "change_order",
+    "category": "ORDER",
+    "priority_hint": null
+  },
+  {
+    "text": "i try to purchase some of ur product",
+    "intent": "place_order",
+    "category": "ORDER",
+    "priority_hint": null
+  },
+  {
+    "text": "assistance to buiy some of your product",
+    "intent": "place_order",
+    "category": "ORDER",
+    "priority_hint": null
+  },
+  {
+    "text": "how to purchase several items?",
+    "intent": "place_order",
+    "category": "ORDER",
+    "priority_hint": null
+  },
+  {
+    "text": "help me see purchase {{Order Number}} status",
+    "intent": "track_order",
+    "category": "ORDER",
+    "priority_hint": null
+  },
+  {
+    "text": "how can I see the status of purchae {{Order Number}}?",
+    "intent": "track_order",
+    "category": "ORDER",
+    "priority_hint": null
+  },
+  {
+    "text": "help to see order {{Order Number}} status",
+    "intent": "track_order",
+    "category": "ORDER",
+    "priority_hint": null
+  },
+  {
+    "text": "I want assistance seeing your bloody payment options",
+    "intent": "check_payment_methods",
+    "category": "PAYMENT",
+    "priority_hint": null
+  },
+  {
+    "text": "I am trying to check what payment options are accepted",
+    "intent": "check_payment_methods",
+    "category": "PAYMENT",
+    "priority_hint": null
+  },
+  {
+    "text": "can you help me seeing the payment options?",
+    "intent": "check_payment_methods",
+    "category": "PAYMENT",
+    "priority_hint": null
+  },
+  {
+    "text": "the payment failed, how to report an error with payment?",
+    "intent": "payment_issue",
+    "category": "PAYMENT",
+    "priority_hint": null
+  },
+  {
+    "text": "i want help to solve an issue with payments",
+    "intent": "payment_issue",
+    "category": "PAYMENT",
+    "priority_hint": null
+  },
+  {
+    "text": "my card was declined i wanna inform of troubles with payment",
+    "intent": "payment_issue",
+    "category": "PAYMENT",
+    "priority_hint": null
+  },
+  {
+    "text": "help me to see in which cases can I ask for a refund",
+    "intent": "check_refund_policy",
+    "category": "REFUND",
+    "priority_hint": null
+  },
+  {
+    "text": "I have to see in which cases can I ask to be reimbursed",
+    "intent": "check_refund_policy",
+    "category": "REFUND",
+    "priority_hint": null
+  },
+  {
+    "text": "I want help to see in what situations can I ask for refunds",
+    "intent": "check_refund_policy",
+    "category": "REFUND",
+    "priority_hint": null
+  },
+  {
+    "text": "what do I have to do to demand reimbursements of my money?",
+    "intent": "get_refund",
+    "category": "REFUND",
+    "priority_hint": null
+  },
+  {
+    "text": "can uhelp me ot request a damn compensation of money",
+    "intent": "get_refund",
+    "category": "REFUND",
+    "priority_hint": null
+  },
+  {
+    "text": "can you help me receiving refunds?",
+    "intent": "get_refund",
+    "category": "REFUND",
+    "priority_hint": null
+  },
+  {
+    "text": "could you help me see my compensation current status?",
+    "intent": "track_refund",
+    "category": "REFUND",
+    "priority_hint": null
+  },
+  {
+    "text": "where to see if there are any updates on the refund?",
+    "intent": "track_refund",
+    "category": "REFUND",
+    "priority_hint": null
+  },
+  {
+    "text": "I have to check the reimbursement current status, help me",
+    "intent": "track_refund",
+    "category": "REFUND",
+    "priority_hint": null
+  },
+  {
+    "text": "I want support trying to correct my delivery address",
+    "intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "priority_hint": null
+  },
+  {
+    "text": "where do I update my delivery address ?",
+    "intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "priority_hint": null
+  },
+  {
+    "text": "I need information about modifying my shipping address",
+    "intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "priority_hint": null
+  },
+  {
+    "text": "I'm trying to enter the secodnary shipping address",
+    "intent": "set_up_shipping_address",
+    "category": "SHIPPING",
+    "priority_hint": null
+  },
+  {
+    "text": "troubles entering the secondary delivery address",
+    "intent": "set_up_shipping_address",
+    "category": "SHIPPING",
+    "priority_hint": null
+  },
+  {
+    "text": "the shipping address is njot valid what can i do",
+    "intent": "set_up_shipping_address",
+    "category": "SHIPPING",
+    "priority_hint": null
+  },
+  {
+    "text": "need asisstance to cancel my subscription to the newsletter",
+    "intent": "newsletter_subscription",
+    "category": "SUBSCRIPTION",
+    "priority_hint": null
+  },
+  {
+    "text": "information about cancel the company newsletter subscription",
+    "intent": "newsletter_subscription",
+    "category": "SUBSCRIPTION",
+    "priority_hint": null
+  },
+  {
+    "text": "would it be possible to sign up to the newsletter?",
+    "intent": "newsletter_subscription",
+    "category": "SUBSCRIPTION",
+    "priority_hint": null
+  }
+]
