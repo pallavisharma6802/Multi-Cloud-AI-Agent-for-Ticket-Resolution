@@ -1,4 +1,5 @@
-# FastAPI backend image (app/). Wired with postgres/ollama/grafana via docker-compose.yml.
+# FastAPI backend image (app/). Wired with postgres/grafana via docker-compose.yml;
+# LLM calls go to Amazon Bedrock (external).
 FROM python:3.11-slim AS base
 
 WORKDIR /srv

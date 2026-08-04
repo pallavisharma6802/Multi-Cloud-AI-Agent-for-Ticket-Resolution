@@ -109,7 +109,15 @@ class RetrievalAgent:
         logger.info(f"Retrieving candidates for query: {query_text[:80]}...")
 
         query_embedding = self.embedding_generator.generate_embedding(query_text)
-        filter_dict = {"intent": {"$eq": intent}} if intent else None
+        # Healthcare KB articles have intent=null — intent $eq filters match nothing.
+        # Also skip empty intent strings. IT keeps intent filter when present.
+        filter_dict = None
+        use_intent_filter = (
+            bool(intent and str(intent).strip())
+            and self.domain_pack_id != "healthcare"
+        )
+        if use_intent_filter:
+            filter_dict = {"intent": {"$eq": intent}}
 
         dense_results = self.pinecone_client.query(
             query_embedding=query_embedding,
@@ -117,6 +125,17 @@ class RetrievalAgent:
             filter=filter_dict,
             namespace=self.domain_pack_id,
         )
+        # If the intent filter zeroes dense hits, retry unfiltered (wrong intent).
+        if filter_dict and not dense_results:
+            logger.warning(
+                f"Dense retrieval returned 0 with intent filter intent={intent!r}; retrying unfiltered"
+            )
+            dense_results = self.pinecone_client.query(
+                query_embedding=query_embedding,
+                top_k=top_k,
+                filter=None,
+                namespace=self.domain_pack_id,
+            )
         sparse_results = self._bm25_search(query_text, top_k=top_k)
 
         merged: Dict[str, Dict] = {}

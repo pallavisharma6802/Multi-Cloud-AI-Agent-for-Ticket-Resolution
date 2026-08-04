@@ -18,6 +18,8 @@ def test_domain_packs_load():
     assert len(it.config.intents) > 10
     assert len({i.id for i in it.config.intents}) == len(it.config.intents)
     assert glob.glob(os.path.join(it.kb_dir, "*.json"))
+    track = next(i for i in it.config.intents if i.id == "track_order")
+    assert "invoice" in track.description.lower() or "shipment" in track.description.lower()
 
     hc = load_domain_pack("healthcare")
     assert hc.config.intent_eval_available is False

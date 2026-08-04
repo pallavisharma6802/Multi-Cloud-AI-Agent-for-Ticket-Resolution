@@ -15,85 +15,85 @@ source_dataset:
 intents:
 - id: create_account
   category: ACCOUNT
-  description: 'Customer inquiries about create account (category: ACCOUNT).'
+  description: Help signing up or creating a new user account / workspace.
 - id: delete_account
   category: ACCOUNT
-  description: 'Customer inquiries about delete account (category: ACCOUNT).'
+  description: Permanently close or delete an existing account (privacy / leave the service).
 - id: edit_account
   category: ACCOUNT
-  description: 'Customer inquiries about edit account (category: ACCOUNT).'
+  description: Change profile details, email, username, or account settings (not password reset).
 - id: recover_password
   category: ACCOUNT
-  description: 'Customer inquiries about recover password (category: ACCOUNT).'
+  description: Forgot password, reset link, cannot log in because credentials are lost.
 - id: registration_problems
   category: ACCOUNT
-  description: 'Customer inquiries about registration problems (category: ACCOUNT).'
+  description: Signup/registration failed, verification email issues, or blocked registration flow.
 - id: switch_account
   category: ACCOUNT
-  description: 'Customer inquiries about switch account (category: ACCOUNT).'
+  description: Switch between multiple accounts/workspaces or change the active logged-in account.
 - id: check_cancellation_fee
   category: CANCEL
-  description: 'Customer inquiries about check cancellation fee (category: CANCEL).'
+  description: Ask what cancellation fee applies before cancelling a subscription or plan.
 - id: contact_customer_service
   category: CONTACT
-  description: 'Customer inquiries about contact customer service (category: CONTACT).'
+  description: General request to reach support / customer service (not explicitly demanding a human).
 - id: contact_human_agent
   category: CONTACT
-  description: 'Customer inquiries about contact human agent (category: CONTACT).'
+  description: Explicitly wants a human agent / live person; bot or FAQ is not enough.
 - id: delivery_options
   category: DELIVERY
-  description: 'Customer inquiries about delivery options (category: DELIVERY).'
+  description: Ask which shipping/delivery methods are available (standard, express, pickup).
 - id: delivery_period
   category: DELIVERY
-  description: 'Customer inquiries about delivery period (category: DELIVERY).'
+  description: Ask how long delivery usually takes / ETA windows (not tracking a specific order).
 - id: complaint
   category: FEEDBACK
-  description: 'Customer inquiries about complaint (category: FEEDBACK).'
+  description: Negative complaint about service quality or experience (not a specific how-to).
 - id: review
   category: FEEDBACK
-  description: 'Customer inquiries about review (category: FEEDBACK).'
+  description: Leaving a product/service review or rating (often positive or mixed feedback).
 - id: check_invoice
   category: INVOICE
-  description: 'Customer inquiries about check invoice (category: INVOICE).'
+  description: View or look up an existing invoice/bill (not order shipment status).
 - id: get_invoice
   category: INVOICE
-  description: 'Customer inquiries about get invoice (category: INVOICE).'
+  description: Download, resend, or obtain a copy of an invoice/bill PDF.
 - id: cancel_order
   category: ORDER
-  description: 'Customer inquiries about cancel order (category: ORDER).'
+  description: Cancel a purchase/order before or after placement (stop the order).
 - id: change_order
   category: ORDER
-  description: 'Customer inquiries about change order (category: ORDER).'
+  description: Modify items/quantity on an existing order (not just shipping address).
 - id: place_order
   category: ORDER
-  description: 'Customer inquiries about place order (category: ORDER).'
+  description: Help placing a new order / completing checkout.
 - id: track_order
   category: ORDER
-  description: 'Customer inquiries about track order (category: ORDER).'
+  description: Where is my order / shipment status / tracking for a specific order id (not invoices).
 - id: check_payment_methods
   category: PAYMENT
-  description: 'Customer inquiries about check payment methods (category: PAYMENT).'
+  description: Which payment methods are accepted (cards, PayPal, etc.).
 - id: payment_issue
   category: PAYMENT
-  description: 'Customer inquiries about payment issue (category: PAYMENT).'
+  description: Payment failed, double charge, declined card, or billing/charge problems.
 - id: check_refund_policy
   category: REFUND
-  description: 'Customer inquiries about check refund policy (category: REFUND).'
+  description: Ask about refund policy rules/eligibility (not starting a refund yet).
 - id: get_refund
   category: REFUND
-  description: 'Customer inquiries about get refund (category: REFUND).'
+  description: Request money back / start a refund for a returned or cancelled purchase.
 - id: track_refund
   category: REFUND
-  description: 'Customer inquiries about track refund (category: REFUND).'
+  description: Status of an existing refund already in progress.
 - id: change_shipping_address
   category: SHIPPING
-  description: 'Customer inquiries about change shipping address (category: SHIPPING).'
+  description: Change the delivery address on an existing order that is packing/shipping.
 - id: set_up_shipping_address
   category: SHIPPING
-  description: 'Customer inquiries about set up shipping address (category: SHIPPING).'
+  description: Add or configure a shipping address on the account (not changing an in-flight order).
 - id: newsletter_subscription
   category: SUBSCRIPTION
-  description: 'Customer inquiries about newsletter subscription (category: SUBSCRIPTION).'
+  description: Subscribe/unsubscribe from marketing newsletter emails.
 priority_guidance: 'Reason about urgency from the customer''s own words and the entities/sentiment already
   extracted, not from the intent category alone. Signals that typically indicate higher urgency: the customer
   states they cannot access something they are paying for right now (e.g. a blocked account, a failed

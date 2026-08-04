@@ -9,11 +9,11 @@ class Settings(BaseSettings):
     env: str = Field(default="dev", description="Environment name")
     project_name: str = Field(default="multi-cloud-ai-agent")
 
-    # AWS / Azure account IDs (Terraform / infra only; unused at runtime)
-    aws_region: Optional[str] = Field(default=None, description="AWS region (Terraform-only; unused at runtime)")
-    aws_access_key_id: Optional[str] = Field(default=None, description="AWS access key (Terraform-only; unused at runtime)")
-    aws_secret_access_key: Optional[str] = Field(default=None, description="AWS secret key (Terraform-only; unused at runtime)")
-    aws_bedrock_model_id: Optional[str] = Field(None, description="Bedrock model ID if used")
+    # AWS / Bedrock (sole LLM transport)
+    aws_region: str = Field(default="us-east-1", description="AWS region for Bedrock Runtime")
+    aws_access_key_id: Optional[str] = Field(default=None, description="AWS access key (optional; ADC/IAM role also work)")
+    aws_secret_access_key: Optional[str] = Field(default=None, description="AWS secret key (optional; ADC/IAM role also work)")
+    aws_bedrock_model_id: Optional[str] = Field(None, description="Legacy single Bedrock model ID (prefer per-role fields)")
 
     azure_subscription_id: Optional[str] = Field(default=None, description="Azure subscription ID (Terraform-only; unused at runtime)")
     azure_resource_group: Optional[str] = Field(default=None, description="Azure resource group (Terraform-only; unused at runtime)")
@@ -32,15 +32,14 @@ class Settings(BaseSettings):
     pinecone_environment: str = Field(..., description="Pinecone environment")
     pinecone_index_name: str = Field(default="ticket-kb", description="Pinecone index name")
     
-    ollama_base_url: str = Field(..., description="Ollama server URL on EC2")
-    
     database_url: str = Field(..., description="PostgreSQL connection string")
     
     kb_backend: str = Field(default="local", description="Knowledge base backend type")
     kb_path: str = Field(default="./knowledge_base", description="Path to local KB files")
     
     log_level: str = Field(default="INFO", description="Logging level")
-    request_timeout_seconds: int = Field(default=30, description="HTTP request timeout")
+    # Used by Bedrock boto3 connect/read timeouts (and any remaining HTTP clients)
+    request_timeout_seconds: int = Field(default=30, description="Request timeout for Bedrock and HTTP clients")
 
     # Domain pack
     domain_pack: str = Field(
@@ -49,20 +48,30 @@ class Settings(BaseSettings):
     )
     domains_root: str = Field(default="domains", description="Root directory holding domain packs")
 
-    # Per-role models (swap one agent without touching others)
-    model_intent_priority: str = Field(default="qwen2.5:3b")
-    model_grader: str = Field(default="qwen2.5:3b")
-    model_judge: str = Field(default="qwen2.5:3b")
-    model_continuation: str = Field(default="qwen2.5:3b")
-    model_drafting: str = Field(default="qwen2.5:3b")
-    model_supervisor: str = Field(default="qwen2.5:3b")
+    # Per-role Bedrock model IDs (Converse)
+    model_intent_priority: str = Field(default="amazon.nova-lite-v1:0")
+    model_grader: str = Field(default="amazon.nova-lite-v1:0")
+    model_judge: str = Field(default="amazon.nova-lite-v1:0")
+    model_continuation: str = Field(default="amazon.nova-lite-v1:0")
+    model_drafting: str = Field(default="amazon.nova-lite-v1:0")
+    model_supervisor: str = Field(default="amazon.nova-lite-v1:0")
 
     # Hard caps on cost/latency if a graph loop runs away (not business rules)
     max_iterations: int = Field(
         default=10, description="Absolute hard ceiling on graph loop iterations per ticket"
     )
     max_wall_clock_seconds: int = Field(
-        default=300, description="Absolute hard ceiling on wall-clock time per ticket"
+        default=900, description="Absolute hard ceiling on wall-clock time per ticket"
+    )
+    # Latency knobs
+    intent_num_samples: int = Field(
+        default=1, description="Self-consistency samples for intent/priority (1 = fastest)"
+    )
+    retrieval_top_k: int = Field(
+        default=3, description="Candidate docs retrieved/graded per retrieval pass"
+    )
+    max_query_rewrites: int = Field(
+        default=1, description="Max CRAG query rewrites before forcing proceed/escalate"
     )
 
     # BigQuery analytics sink

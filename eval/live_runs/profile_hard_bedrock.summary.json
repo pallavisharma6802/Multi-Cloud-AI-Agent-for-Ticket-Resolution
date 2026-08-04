@@ -1,0 +1,454 @@
+{
+  "generated_at": "2026-08-04T00:50:29.683556+00:00",
+  "settings": {
+    "intent_num_samples": 1,
+    "retrieval_top_k": 3,
+    "max_query_rewrites": 1,
+    "max_wall_clock_seconds": 900,
+    "max_iterations": 10,
+    "aws_region": "us-east-1",
+    "model_drafting": "amazon.nova-lite-v1:0",
+    "enable_bigquery": false
+  },
+  "node_totals": {
+    "judge_response": {
+      "calls": 28,
+      "total_s": 46.942,
+      "mean_s": 1.677,
+      "max_s": 2.143
+    },
+    "draft_response": {
+      "calls": 28,
+      "total_s": 46.597,
+      "mean_s": 1.664,
+      "max_s": 2.616
+    },
+    "continuation_post_judging": {
+      "calls": 28,
+      "total_s": 27.973,
+      "mean_s": 0.999,
+      "max_s": 1.314
+    },
+    "continuation_post_grading": {
+      "calls": 14,
+      "total_s": 16.724,
+      "mean_s": 1.195,
+      "max_s": 2.114
+    },
+    "retrieve_documents": {
+      "calls": 14,
+      "total_s": 14.772,
+      "mean_s": 1.055,
+      "max_s": 5.389
+    },
+    "grade_documents": {
+      "calls": 14,
+      "total_s": 12.04,
+      "mean_s": 0.86,
+      "max_s": 1.054
+    },
+    "analyze_ticket": {
+      "calls": 8,
+      "total_s": 10.852,
+      "mean_s": 1.357,
+      "max_s": 2.086
+    },
+    "final_decision": {
+      "calls": 8,
+      "total_s": 9.26,
+      "mean_s": 1.158,
+      "max_s": 1.365
+    }
+  },
+  "sum_node_dt_s": 185.16,
+  "tickets": [
+    {
+      "suite_id": "smoke-it-09",
+      "ticket_id": "PROF-smoke-it-09",
+      "domain_pack": "it_saas",
+      "wall_s": 54.716,
+      "node_total_s": 54.624,
+      "node_calls": {
+        "analyze_ticket": 1,
+        "retrieve_documents": 1,
+        "grade_documents": 1,
+        "continuation_post_grading": 1,
+        "draft_response": 10,
+        "judge_response": 10,
+        "continuation_post_judging": 10,
+        "final_decision": 1
+      },
+      "node_seconds": {
+        "judge_response": 17.543,
+        "draft_response": 17.271,
+        "continuation_post_judging": 9.369,
+        "retrieve_documents": 5.389,
+        "analyze_ticket": 2.086,
+        "final_decision": 1.114,
+        "grade_documents": 1.02,
+        "continuation_post_grading": 0.832
+      },
+      "grade_modes": [
+        {
+          "ts": "2026-08-04T00:47:32.627894+00:00",
+          "mode": "batch",
+          "n_docs": 3,
+          "dt_s": 1.02
+        }
+      ],
+      "safety_net_trips": [],
+      "ok": true,
+      "final_action": "escalate",
+      "intent": "cancel_order",
+      "priority": "high",
+      "anomaly_flags": [],
+      "iteration_count": 9,
+      "cost_estimate": {
+        "llm_call_count": 34,
+        "total_tokens": 43052,
+        "total_latency_ms": 48357.0
+      }
+    },
+    {
+      "suite_id": "smoke-hc-09",
+      "ticket_id": "PROF-smoke-hc-09",
+      "domain_pack": "healthcare",
+      "wall_s": 11.257,
+      "node_total_s": 11.226,
+      "node_calls": {
+        "analyze_ticket": 1,
+        "retrieve_documents": 2,
+        "grade_documents": 2,
+        "continuation_post_grading": 2,
+        "final_decision": 1
+      },
+      "node_seconds": {
+        "retrieve_documents": 4.675,
+        "continuation_post_grading": 2.674,
+        "grade_documents": 1.666,
+        "analyze_ticket": 1.29,
+        "final_decision": 0.921
+      },
+      "grade_modes": [
+        {
+          "ts": "2026-08-04T00:48:25.479659+00:00",
+          "mode": "batch",
+          "n_docs": 3,
+          "dt_s": 0.954
+        },
+        {
+          "ts": "2026-08-04T00:48:28.358603+00:00",
+          "mode": "batch",
+          "n_docs": 3,
+          "dt_s": 0.711
+        }
+      ],
+      "safety_net_trips": [],
+      "ok": true,
+      "final_action": "escalate",
+      "intent": "clinical_concern",
+      "priority": "urgent",
+      "anomaly_flags": [],
+      "iteration_count": 1,
+      "cost_estimate": {
+        "llm_call_count": 7,
+        "total_tokens": 4217,
+        "total_latency_ms": 6083.8
+      }
+    },
+    {
+      "suite_id": "smoke-it-10",
+      "ticket_id": "PROF-smoke-it-10",
+      "domain_pack": "it_saas",
+      "wall_s": 19.408,
+      "node_total_s": 19.366,
+      "node_calls": {
+        "analyze_ticket": 1,
+        "retrieve_documents": 2,
+        "grade_documents": 2,
+        "continuation_post_grading": 2,
+        "draft_response": 3,
+        "judge_response": 3,
+        "continuation_post_judging": 3,
+        "final_decision": 1
+      },
+      "node_seconds": {
+        "draft_response": 5.156,
+        "judge_response": 4.678,
+        "continuation_post_judging": 2.789,
+        "continuation_post_grading": 2.114,
+        "grade_documents": 1.61,
+        "final_decision": 1.181,
+        "analyze_ticket": 1.077,
+        "retrieve_documents": 0.761
+      },
+      "grade_modes": [
+        {
+          "ts": "2026-08-04T00:48:32.530298+00:00",
+          "mode": "batch",
+          "n_docs": 3,
+          "dt_s": 0.86
+        },
+        {
+          "ts": "2026-08-04T00:48:35.685008+00:00",
+          "mode": "batch",
+          "n_docs": 3,
+          "dt_s": 0.75
+        }
+      ],
+      "safety_net_trips": [],
+      "ok": true,
+      "final_action": "escalate",
+      "intent": "payment_issue",
+      "priority": "urgent",
+      "anomaly_flags": [],
+      "iteration_count": 3,
+      "cost_estimate": {
+        "llm_call_count": 15,
+        "total_tokens": 11251,
+        "total_latency_ms": 18106.3
+      }
+    },
+    {
+      "suite_id": "smoke-hc-10",
+      "ticket_id": "PROF-smoke-hc-10",
+      "domain_pack": "healthcare",
+      "wall_s": 46.166,
+      "node_total_s": 46.077,
+      "node_calls": {
+        "analyze_ticket": 1,
+        "retrieve_documents": 2,
+        "grade_documents": 2,
+        "continuation_post_grading": 2,
+        "draft_response": 9,
+        "judge_response": 9,
+        "continuation_post_judging": 9,
+        "final_decision": 1
+      },
+      "node_seconds": {
+        "judge_response": 15.102,
+        "draft_response": 13.511,
+        "continuation_post_judging": 9.972,
+        "continuation_post_grading": 2.022,
+        "grade_documents": 2.014,
+        "analyze_ticket": 1.409,
+        "final_decision": 1.237,
+        "retrieve_documents": 0.81
+      },
+      "grade_modes": [
+        {
+          "ts": "2026-08-04T00:48:52.466242+00:00",
+          "mode": "batch",
+          "n_docs": 3,
+          "dt_s": 1.053
+        },
+        {
+          "ts": "2026-08-04T00:48:55.785825+00:00",
+          "mode": "batch",
+          "n_docs": 3,
+          "dt_s": 0.959
+        }
+      ],
+      "safety_net_trips": [],
+      "ok": true,
+      "final_action": "escalate",
+      "intent": "communication_issue",
+      "priority": "high",
+      "anomaly_flags": [],
+      "iteration_count": 9,
+      "cost_estimate": {
+        "llm_call_count": 33,
+        "total_tokens": 25885,
+        "total_latency_ms": 44619.2
+      }
+    },
+    {
+      "suite_id": "smoke-it-11",
+      "ticket_id": "PROF-smoke-it-11",
+      "domain_pack": "it_saas",
+      "wall_s": 8.02,
+      "node_total_s": 8.005,
+      "node_calls": {
+        "analyze_ticket": 1,
+        "retrieve_documents": 2,
+        "grade_documents": 2,
+        "continuation_post_grading": 2,
+        "final_decision": 1
+      },
+      "node_seconds": {
+        "continuation_post_grading": 2.708,
+        "grade_documents": 1.484,
+        "retrieve_documents": 1.383,
+        "analyze_ticket": 1.235,
+        "final_decision": 1.195
+      },
+      "grade_modes": [
+        {
+          "ts": "2026-08-04T00:49:38.850161+00:00",
+          "mode": "batch",
+          "n_docs": 3,
+          "dt_s": 0.856
+        },
+        {
+          "ts": "2026-08-04T00:49:41.596438+00:00",
+          "mode": "batch",
+          "n_docs": 3,
+          "dt_s": 0.628
+        }
+      ],
+      "safety_net_trips": [],
+      "ok": true,
+      "final_action": "escalate",
+      "intent": "contact_human_agent",
+      "priority": "urgent",
+      "anomaly_flags": [],
+      "iteration_count": 1,
+      "cost_estimate": {
+        "llm_call_count": 7,
+        "total_tokens": 4962,
+        "total_latency_ms": 6053.1
+      }
+    },
+    {
+      "suite_id": "smoke-hc-11",
+      "ticket_id": "PROF-smoke-hc-11",
+      "domain_pack": "healthcare",
+      "wall_s": 7.83,
+      "node_total_s": 7.81,
+      "node_calls": {
+        "analyze_ticket": 1,
+        "retrieve_documents": 2,
+        "grade_documents": 2,
+        "continuation_post_grading": 2,
+        "final_decision": 1
+      },
+      "node_seconds": {
+        "continuation_post_grading": 2.764,
+        "grade_documents": 1.645,
+        "final_decision": 1.365,
+        "analyze_ticket": 1.33,
+        "retrieve_documents": 0.706
+      },
+      "grade_modes": [
+        {
+          "ts": "2026-08-04T00:49:46.326282+00:00",
+          "mode": "batch",
+          "n_docs": 3,
+          "dt_s": 0.933
+        },
+        {
+          "ts": "2026-08-04T00:49:49.435765+00:00",
+          "mode": "batch",
+          "n_docs": 3,
+          "dt_s": 0.712
+        }
+      ],
+      "safety_net_trips": [],
+      "ok": true,
+      "final_action": "escalate",
+      "intent": "appointment_access",
+      "priority": "high",
+      "anomaly_flags": [],
+      "iteration_count": 1,
+      "cost_estimate": {
+        "llm_call_count": 7,
+        "total_tokens": 4394,
+        "total_latency_ms": 6688.4
+      }
+    },
+    {
+      "suite_id": "smoke-it-12",
+      "ticket_id": "PROF-smoke-it-12",
+      "domain_pack": "it_saas",
+      "wall_s": 30.595,
+      "node_total_s": 30.535,
+      "node_calls": {
+        "analyze_ticket": 1,
+        "retrieve_documents": 1,
+        "grade_documents": 1,
+        "continuation_post_grading": 1,
+        "draft_response": 6,
+        "judge_response": 6,
+        "continuation_post_judging": 6,
+        "final_decision": 1
+      },
+      "node_seconds": {
+        "draft_response": 10.659,
+        "judge_response": 9.619,
+        "continuation_post_judging": 5.843,
+        "analyze_ticket": 1.365,
+        "final_decision": 1.142,
+        "grade_documents": 0.766,
+        "continuation_post_grading": 0.762,
+        "retrieve_documents": 0.379
+      },
+      "grade_modes": [
+        {
+          "ts": "2026-08-04T00:49:54.063700+00:00",
+          "mode": "batch",
+          "n_docs": 3,
+          "dt_s": 0.765
+        }
+      ],
+      "safety_net_trips": [],
+      "ok": true,
+      "final_action": "escalate",
+      "intent": "get_refund",
+      "priority": "urgent",
+      "anomaly_flags": [],
+      "iteration_count": 5,
+      "cost_estimate": {
+        "llm_call_count": 22,
+        "total_tokens": 20499,
+        "total_latency_ms": 29684.4
+      }
+    },
+    {
+      "suite_id": "smoke-hc-12",
+      "ticket_id": "PROF-smoke-hc-12",
+      "domain_pack": "healthcare",
+      "wall_s": 7.535,
+      "node_total_s": 7.517,
+      "node_calls": {
+        "analyze_ticket": 1,
+        "retrieve_documents": 2,
+        "grade_documents": 2,
+        "continuation_post_grading": 2,
+        "final_decision": 1
+      },
+      "node_seconds": {
+        "continuation_post_grading": 2.848,
+        "grade_documents": 1.835,
+        "final_decision": 1.105,
+        "analyze_ticket": 1.06,
+        "retrieve_documents": 0.669
+      },
+      "grade_modes": [
+        {
+          "ts": "2026-08-04T00:50:24.699743+00:00",
+          "mode": "batch",
+          "n_docs": 3,
+          "dt_s": 1.02
+        },
+        {
+          "ts": "2026-08-04T00:50:27.516923+00:00",
+          "mode": "batch",
+          "n_docs": 3,
+          "dt_s": 0.815
+        }
+      ],
+      "safety_net_trips": [],
+      "ok": true,
+      "final_action": "escalate",
+      "intent": "clinical_concern",
+      "priority": "urgent",
+      "anomaly_flags": [],
+      "iteration_count": 1,
+      "cost_estimate": {
+        "llm_call_count": 7,
+        "total_tokens": 4261,
+        "total_latency_ms": 6328.3
+      }
+    }
+  ]
+}

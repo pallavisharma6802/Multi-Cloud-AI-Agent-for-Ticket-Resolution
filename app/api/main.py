@@ -35,13 +35,24 @@ app.include_router(tickets.router, prefix="/api/v1", tags=["Tickets"])
 async def startup_event():
     logger.info(f"Starting {settings.project_name} in {settings.env} environment")
     logger.info(f"Azure endpoint: {settings.azure_text_analytics_endpoint}")
-    logger.info(f"Ollama URL: {settings.ollama_base_url}")
+    logger.info(f"Bedrock region: {settings.aws_region}")
 
     # Create missing tables (idempotent).
     from app.db.init_db import init_db
 
     init_db()
     logger.info("Database schema verified/created")
+
+    try:
+        from app.llm.model_router import routing_summary
+
+        summary = routing_summary()
+        logger.info(
+            f"LLM backend={summary['backend']} region={summary['region']} "
+            f"assignments={summary['assignments']}"
+        )
+    except Exception as e:
+        logger.warning(f"Model routing summary unavailable: {e}")
 
 
 @app.on_event("shutdown")

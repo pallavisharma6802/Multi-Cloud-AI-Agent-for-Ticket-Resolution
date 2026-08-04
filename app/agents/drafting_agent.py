@@ -7,7 +7,7 @@ import logging
 from typing import List, Optional
 
 from app.config import settings
-from app.llm.ollama_client import LLMCallMetadata, get_llm_client
+from app.llm.bedrock_client import LLMCallMetadata, get_llm_client
 from app.schemas.response import KBDocument
 
 logger = logging.getLogger(__name__)
@@ -17,7 +17,6 @@ class DraftingAgent:
 
     def __init__(self):
         self.client = get_llm_client()
-        self.ollama_url = f"{settings.ollama_base_url}/api/generate"
 
     def draft_response(
         self,
@@ -39,41 +38,19 @@ class DraftingAgent:
             judge_feedback=judge_feedback,
         )
 
-        import requests
+        from app.llm.model_router import resolve_model_for_role
 
-        try:
-            payload = {
-                "model": settings.model_drafting,
-                "prompt": prompt,
-                "stream": False,
-                "options": {"num_predict": 500, "temperature": 0.6, "top_p": 0.9},
-            }
-            import time
-            start = time.monotonic()
-            response = requests.post(self.ollama_url, json=payload, timeout=settings.request_timeout_seconds)
-            response.raise_for_status()
-            result = response.json()
-            response_text = result.get("response", "").strip()
-            latency_ms = (time.monotonic() - start) * 1000
-
-            meta = LLMCallMetadata(
-                model=settings.model_drafting,
-                role="drafting",
-                latency_ms=round(latency_ms, 1),
-                prompt_tokens=result.get("prompt_eval_count", 0),
-                completion_tokens=result.get("eval_count", 0),
-                attempts=1,
-                raw_response_truncated=response_text[:300],
-            )
-            logger.info(f"Response drafted ({len(response_text.split())} words)")
-            return response_text, meta
-
-        except requests.exceptions.Timeout as e:
-            logger.error("Ollama request timed out")
-            raise RuntimeError("LLM request timed out") from e
-        except requests.exceptions.RequestException as e:
-            logger.error(f"Ollama request failed: {e}")
-            raise RuntimeError(f"Failed to connect to LLM: {e}") from e
+        model = resolve_model_for_role("drafting")
+        response_text, meta = self.client.generate_text(
+            prompt=prompt,
+            model=model,
+            role="drafting",
+            temperature=0.6,
+            num_predict=500,
+            timeout=settings.request_timeout_seconds,
+        )
+        logger.info(f"Response drafted ({len(response_text.split())} words)")
+        return response_text, meta
 
     def _build_prompt(
         self,

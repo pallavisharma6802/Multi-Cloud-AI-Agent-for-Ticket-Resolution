@@ -3,9 +3,9 @@ networks:
     driver: bridge
 
 services:
-  # Local stack: Postgres, Ollama, backend, frontend, Grafana.
-  # Azure Text Analytics, Pinecone, and optional BigQuery stay external APIs
-  # (configure via .env — see README.md "Running locally").
+  # Local stack: Postgres, backend, frontend, Grafana.
+  # LLM inference is Amazon Bedrock (external). Azure Text Analytics,
+  # Pinecone, and optional BigQuery stay external APIs (configure via .env).
 
   postgres:
     image: postgres:16-alpine
@@ -27,34 +27,6 @@ services:
       - ticket-net
     restart: unless-stopped
 
-  ollama:
-    image: ollama/ollama:latest
-    container_name: ticket-ollama
-    ports:
-      - "11434:11434"
-    volumes:
-      - ollama-data:/root/.ollama
-    networks:
-      - ticket-net
-    restart: unless-stopped
-
-  # One-shot: pull default model into ollama volume, then exit (safe to re-run).
-  ollama-pull:
-    image: ollama/ollama:latest
-    container_name: ticket-ollama-pull
-    depends_on:
-      - ollama
-    entrypoint: ["/bin/sh", "-c"]
-    environment:
-      - OLLAMA_HOST=ollama:11434
-    command:
-      - >
-        until ollama list >/dev/null 2>&1; do sleep 2; done;
-        ollama list | grep -q "^${OLLAMA_MODEL:-qwen2.5:3b} " ||
-        ollama pull ${OLLAMA_MODEL:-qwen2.5:3b}
-    networks:
-      - ticket-net
-
   backend:
     build:
       context: .
@@ -65,8 +37,9 @@ services:
     environment:
       # In-network service names (override host ports from .env).
       - DATABASE_URL=postgresql://${POSTGRES_USER:-ticket_admin}:${POSTGRES_PASSWORD:-ticket_local_dev}@postgres:5432/${POSTGRES_DB:-tickets_db}
-      - OLLAMA_BASE_URL=http://ollama:11434
       - ENABLE_BIGQUERY=${ENABLE_BIGQUERY:-false}
+      - AWS_REGION=${AWS_REGION:-us-east-1}
+      - MAX_WALL_CLOCK_SECONDS=${MAX_WALL_CLOCK_SECONDS:-900}
     ports:
       - "8000:8000"
     volumes:
@@ -75,8 +48,6 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
-      ollama-pull:
-        condition: service_completed_successfully
     networks:
       - ticket-net
     restart: unless-stopped
@@ -125,5 +96,4 @@ services:
 
 volumes:
   postgres-data:
-  ollama-data:
   grafana-data:

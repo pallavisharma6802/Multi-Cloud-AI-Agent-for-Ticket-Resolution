@@ -118,5 +118,4 @@ def test_list_domain_packs(client):
     response = client.get("/api/v1/domain-packs")
     assert response.status_code == 200
     ids = [p["id"] for p in response.json()["packs"]]
-    assert "it_saas" in ids
-    assert "healthcare" in ids
+    assert "it_saas" in ids and "healthcare" in ids

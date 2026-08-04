@@ -91,6 +91,52 @@ def test_happy_path_auto_resolves(supervisor):
     result = supervisor.process_ticket("TKT-1", "Cancel order", "Please cancel order #123", domain_pack_id="it_saas")
     assert result.requires_human_review is False
     assert result.trace["final_action"] == "auto_resolve"
+    supervisor.llm_client.generate_structured.assert_called()
+    supervisor.continuation.decide_post_judging.assert_called_once()
+
+
+def test_judge_exhaustion_with_draft_forces_escalate(supervisor):
+    """Draft exists but judge RuntimeError → must escalate; final LLM must not auto_resolve."""
+    supervisor.document_grader.grade_documents = MagicMock(
+        return_value=(
+            [
+                GradedDocument(
+                    document=KBDocument(doc_id="d1", content="how to cancel an order", similarity_score=0.9, metadata={}),
+                    relevant=True,
+                    rationale="matches",
+                )
+            ],
+            [make_metadata()],
+        )
+    )
+    supervisor.continuation.decide_post_grading = MagicMock(
+        return_value=(PostGradingDecision(action="proceed", rationale="enough relevant docs"), make_metadata())
+    )
+    supervisor.drafting.draft_response = MagicMock(
+        return_value=("Here's how to cancel your order...", make_metadata())
+    )
+    supervisor.judge.judge = MagicMock(
+        side_effect=RuntimeError("[judge] LLM call failed after 3 attempt(s) model=amazon.nova-lite-v1:0: validation error")
+    )
+    supervisor.continuation.decide_post_judging = MagicMock()
+    # If the bug regresses, this mock would let the final LLM choose auto_resolve.
+    _mock_final(supervisor, action="auto_resolve", confidence=0.99)
+
+    result = supervisor.process_ticket(
+        "TKT-JUDGE-FAIL", "Cancel order", "Please cancel order #123", domain_pack_id="it_saas"
+    )
+
+    assert result.requires_human_review is True
+    assert result.trace["final_action"] == "escalate"
+    assert result.draft_text.startswith("Here's how to cancel")
+    supervisor.continuation.decide_post_judging.assert_not_called()
+    supervisor.llm_client.generate_structured.assert_not_called()
+    assert any(
+        d.agent_name == "supervisor"
+        and d.action == "final_decision"
+        and (d.output or {}).get("judge_failed") is True
+        for d in result.agent_decisions
+    )
 
 
 def test_escalate_and_rewrite_loop(supervisor):

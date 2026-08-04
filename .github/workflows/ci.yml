@@ -1,9 +1,10 @@
 name: CI
 
 # Lint → tests → eval gate → Docker build (each needs the previous).
-# Lint/test mock external services (tests/conftest.py). Eval-gate installs
-# Ollama and runs real intent/priority F1; RAG eval is --skip-rag (needs
-# seeded Pinecone).
+# Lint/test mock Bedrock/Azure/Pinecone (tests/conftest.py). Eval-gate runs
+# live Bedrock intent/priority F1 when AWS credentials are present; otherwise
+# skips with a clear log so PRs without secrets still go green. RAG eval is
+# --skip-rag (needs seeded Pinecone + a Bedrock-wired ragas judge).
 
 on:
   push:
@@ -51,7 +52,7 @@ jobs:
           AZURE_TEXT_ANALYTICS_KEY: ci-placeholder-key
           PINECONE_API_KEY: ci-placeholder-key
           PINECONE_ENVIRONMENT: us-east-1
-          OLLAMA_BASE_URL: http://localhost:11434
+          AWS_REGION: us-east-1
           DOMAIN_PACK: it_saas
           ENABLE_BIGQUERY: "false"
 
@@ -67,21 +68,24 @@ jobs:
           cache: pip
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Install and start Ollama
+      - name: Check Bedrock credentials
+        id: creds
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         run: |
-          curl -fsSL https://ollama.com/install.sh | sh
-          ollama serve &
-          for i in $(seq 1 30); do
-            curl -sf http://localhost:11434/api/tags >/dev/null && break
-            sleep 2
-          done
-      - name: Pull judge/agent model
-        run: ollama pull qwen2.5:3b
+          if [ -z "$AWS_ACCESS_KEY_ID" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "No AWS_ACCESS_KEY_ID secret — skipping live Bedrock eval gate"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
       - name: Run evaluation harness against baseline
-        # Real Ollama F1 for it_saas; healthcare intent reported N/A; RAG skipped.
+        if: steps.creds.outputs.skip != 'true'
         run: python eval/run_eval.py --pack all --skip-rag --max-examples 20
         env:
-          OLLAMA_BASE_URL: http://localhost:11434
+          AWS_REGION: us-east-1
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           DATABASE_URL: sqlite:///./ci_eval.db
           AZURE_TEXT_ANALYTICS_ENDPOINT: https://example.cognitiveservices.azure.com/
           AZURE_TEXT_ANALYTICS_KEY: ci-placeholder-key
@@ -90,7 +94,7 @@ jobs:
           DOMAIN_PACK: it_saas
           ENABLE_BIGQUERY: "false"
       - name: Upload eval report
-        if: always()
+        if: always() && steps.creds.outputs.skip != 'true'
         uses: actions/upload-artifact@v4
         with:
           name: eval-report

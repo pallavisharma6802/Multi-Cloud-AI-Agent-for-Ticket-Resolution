@@ -11,7 +11,7 @@ from typing import List
 from pydantic import BaseModel, Field
 
 from app.config import settings
-from app.llm.ollama_client import LLMCallMetadata, get_llm_client
+from app.llm.bedrock_client import LLMCallMetadata, get_llm_client
 from app.schemas.response import KBDocument
 
 logger = logging.getLogger(__name__)

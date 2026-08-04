@@ -14,7 +14,7 @@ from pydantic import BaseModel, Field
 
 from app.config import settings
 from app.domain.schema import DomainPack
-from app.llm.ollama_client import LLMCallMetadata, get_llm_client
+from app.llm.bedrock_client import LLMCallMetadata, get_llm_client
 
 logger = logging.getLogger(__name__)
 
@@ -45,17 +45,37 @@ class IntentPriorityResult(BaseModel):
 
 
 class IntentPriorityAgent:
-    def __init__(self, num_samples: int = 3):
+    def __init__(self, num_samples: int | None = None):
         self.client = get_llm_client()
-        self.num_samples = num_samples
+        self.num_samples = num_samples if num_samples is not None else settings.intent_num_samples
+
+    def _stratified_fewshots(self, pack: DomainPack, k: int = 10) -> list:
+        """Prefer one example per intent (coverage), then fill randomly."""
+        pool = list(pack.few_shot_examples or [])
+        if not pool:
+            return []
+        by_intent: dict[str, list] = {}
+        for ex in pool:
+            by_intent.setdefault(ex.intent, []).append(ex)
+        picked = []
+        intents = list(by_intent.keys())
+        random.shuffle(intents)
+        for intent in intents:
+            if len(picked) >= k:
+                break
+            picked.append(random.choice(by_intent[intent]))
+        if len(picked) < k:
+            remaining = [ex for ex in pool if ex not in picked]
+            random.shuffle(remaining)
+            picked.extend(remaining[: k - len(picked)])
+        return picked
 
     def _build_prompt(self, pack: DomainPack, title: str, description: str, signals) -> str:
         intents_block = "\n".join(
             f"- {i.id} (category: {i.category}): {i.description}" for i in pack.config.intents
         )
 
-        fewshot_pool = pack.few_shot_examples
-        sampled = random.sample(fewshot_pool, k=min(10, len(fewshot_pool))) if fewshot_pool else []
+        sampled = self._stratified_fewshots(pack, k=min(12, max(10, len(pack.config.intents))))
         fewshot_block = "\n".join(
             f'  Text: "{ex.text}" -> intent: {ex.intent}' for ex in sampled
         ) or "  (no few-shot examples available for this pack)"

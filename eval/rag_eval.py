@@ -1,9 +1,8 @@
 """RAG quality evaluation via ragas (reference-free metrics).
 
-Needs a live Ollama server and a seeded KB (`python seed_kb.py --pack <id>`).
-Reports faithfulness and answer_relevancy. context_precision / context_recall
-need human reference answers and are left unavailable unless collected later.
-Uses project Ollama + local sentence-transformers (no OpenAI key).
+Requires a seeded KB (`python seed_kb.py --pack <id>`) and a Bedrock-backed
+judge once wired. Until then ``evaluate_rag`` reports ``available: false``
+honestly — the LangchainOllama path was removed with the Ollama runtime.
 """
 from __future__ import annotations
 
@@ -17,7 +16,6 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from app.agents.document_grader import DocumentGrader
 from app.agents.drafting_agent import DraftingAgent
 from app.agents.retrieval_agent import RetrievalAgent
-from app.config import settings
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -55,43 +53,15 @@ def build_rag_dataset(pack_id: str, max_examples: int = 30) -> dict:
 
 
 def evaluate_rag(pack_id: str, max_examples: int = 30) -> dict:
-    try:
-        from datasets import Dataset
-        from langchain_community.embeddings import HuggingFaceEmbeddings
-        from langchain_community.llms import Ollama as LangchainOllama
-        from ragas import evaluate as ragas_evaluate
-        from ragas.embeddings import LangchainEmbeddingsWrapper
-        from ragas.llms import LangchainLLMWrapper
-        from ragas.metrics import answer_relevancy, faithfulness
-    except ImportError as e:
-        return {"metric": "rag_quality", "available": False, "reason": f"ragas/langchain deps not installed: {e}"}
-
-    data = build_rag_dataset(pack_id, max_examples)
-    if not data["question"]:
-        return {"metric": "rag_quality", "available": False, "reason": "no eval examples found"}
-
-    dataset = Dataset.from_dict(data)
-
-    judge_llm = LangchainLLMWrapper(LangchainOllama(base_url=settings.ollama_base_url, model=settings.model_judge))
-    embeddings = LangchainEmbeddingsWrapper(HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2"))
-
-    result = ragas_evaluate(
-        dataset, metrics=[faithfulness, answer_relevancy], llm=judge_llm, embeddings=embeddings
-    )
-    scores = result.to_pandas()[["faithfulness", "answer_relevancy"]].mean().to_dict()
-
+    """Report RAG metrics unavailable until a Bedrock judge is wired into ragas."""
+    _ = max_examples
     return {
         "pack": pack_id,
         "metric": "rag_quality",
-        "available": True,
-        "num_examples": len(data["question"]),
-        "faithfulness": round(float(scores.get("faithfulness", 0.0)), 4),
-        "answer_relevancy": round(float(scores.get("answer_relevancy", 0.0)), 4),
-        "context_precision": None,
-        "context_recall": None,
-        "context_metrics_note": (
-            "context_precision/context_recall require reference answers; not computed "
-            "(see module docstring)."
+        "available": False,
+        "reason": (
+            "RAGAS judge not yet wired to Amazon Bedrock (LangchainOllama removed). "
+            "Use live smoke / intent eval against Bedrock instead; see README."
         ),
     }
 

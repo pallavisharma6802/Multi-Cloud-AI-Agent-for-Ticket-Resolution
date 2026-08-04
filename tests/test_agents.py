@@ -3,7 +3,7 @@ import pytest
 
 from app.agents.azure_nlp_agent import AzureNLPAgent
 from app.agents.continuation_agent import ContinuationAgent, PostGradingDecision
-from app.agents.document_grader import DocumentGrader, RelevanceGrade
+from app.agents.document_grader import BatchRelevanceGrades, DocumentGrader
 from app.agents.intent_priority_agent import IntentPriorityAgent, IntentPrioritySample
 from app.agents.judge_agent import JudgeAgent, JudgeResult
 from app.domain.loader import load_domain_pack
@@ -46,18 +46,38 @@ def test_intent_priority_agent_majority_vote(mock_llm_client):
     assert len(metas) == 3
 
 
-def test_document_grader_fails_closed_and_marks_relevance(mock_llm_client):
+def test_document_grader_batch_and_fail_closed(mock_llm_client):
     docs = [
         KBDocument(doc_id="d1", content="how to cancel an order", similarity_score=0.9, metadata={}),
         KBDocument(doc_id="d2", content="password reset", similarity_score=0.5, metadata={}),
     ]
+    mock_llm_client.generate_structured.return_value = (
+        BatchRelevanceGrades(
+            relevant=[True, False],
+            rationales=["matches", "off topic"],
+        ),
+        make_metadata(),
+    )
+    graded, metas = DocumentGrader().grade_documents("I want to cancel my order", docs)
+    assert graded[0].relevant is True
+    assert graded[1].relevant is False
+    assert len(metas) == 1
+
+
+def test_document_grader_sequential_fallback_on_batch_error(mock_llm_client):
+    docs = [
+        KBDocument(doc_id="d1", content="how to cancel an order", similarity_score=0.9, metadata={}),
+        KBDocument(doc_id="d2", content="password reset", similarity_score=0.5, metadata={}),
+    ]
+    from app.agents.document_grader import RelevanceGrade
     mock_llm_client.generate_structured.side_effect = [
+        RuntimeError("batch schema fail"),
         (RelevanceGrade(relevant=True, rationale="matches"), make_metadata()),
         RuntimeError("LLM down"),
     ]
     graded, metas = DocumentGrader().grade_documents("I want to cancel my order", docs)
     assert graded[0].relevant is True
-    assert graded[1].relevant is False  # fail closed on error
+    assert graded[1].relevant is False
     assert len(metas) == 1
 
 

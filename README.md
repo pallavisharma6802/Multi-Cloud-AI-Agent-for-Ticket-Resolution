@@ -29,8 +29,8 @@ asserted.
 ```mermaid
 flowchart TB
     subgraph domainPacks ["Domain Packs (config-driven, swappable)"]
-        itPack["it_saas: 27 intents, priority\nguidance, KB, few-shot"]
-        healthPack["healthcare: 7 intents, priority\nguidance, KB, few-shot"]
+        itPack["it_saas: 27 intents — resolution assist"]
+        healthPack["healthcare: 7 intents — feedback triage"]
     end
 
     subgraph agenticGraph ["LangGraph Supervisor (cyclic, conditional edges)"]
@@ -79,11 +79,13 @@ decision path. See [`app/agents/supervisor.py`](app/agents/supervisor.py) for th
 | Continuation Agent | [`app/agents/continuation_agent.py`](app/agents/continuation_agent.py) | Reads the full trace and decides `rewrite_query` / `proceed` / `retry` / `accept` / `escalate`. |
 | Supervisor | [`app/agents/supervisor.py`](app/agents/supervisor.py) | Owns the LangGraph state machine; `final_decision` is itself an LLM call reasoning over the whole trace, not a hardcoded boolean check. |
 
-Shared infrastructure: [`app/llm/ollama_client.py`](app/llm/ollama_client.py) wraps every Ollama call with
-structured-output validation (Pydantic schema + retry-on-malformed-output) and per-role model configuration
+Shared infrastructure: [`app/llm/bedrock_client.py`](app/llm/bedrock_client.py) wraps every Amazon Bedrock
+Converse call with structured-output validation (Pydantic schema + retry-on-malformed-output), throttle
+backoff, and fail-fast on access-denied. Per-role model IDs
 (`model_intent_priority`, `model_grader`, `model_judge`, `model_continuation`, `model_drafting`,
-`model_supervisor` in [`app/config.py`](app/config.py)) — so any single role's model can be swapped independently
-once an eval run shows it needs a stronger model.
+`model_supervisor` in [`app/config.py`](app/config.py)) are resolved by a flat lookup in
+[`app/llm/model_router.py`](app/llm/model_router.py) — any single role's Bedrock model can be swapped
+independently once an eval run shows it needs a different SKU (e.g. Nova Micro vs Lite).
 
 **Engineering safety net, not a business rule**: `max_iterations` and `max_wall_clock_seconds`
 (`app/config.py`) put a hard ceiling on worst-case cost/latency if a bug causes runaway looping. Trips are logged
@@ -106,49 +108,37 @@ plus a real evaluation harness (below) so "agentic" is a measured property, not 
 
 ## Domain packs
 
-Two domain packs ship under [`domains/`](domains/), each fully config-driven — no code changes needed to add a
-third:
+Two packs ship under [`domains/`](domains/). Same LangGraph; different success criteria.
 
-- **`it_saas`** — 27 real, human-authored intents across 10 categories (accounts, orders, billing, refunds,
-  shipping, subscriptions, feedback), sourced from the
-  [Bitext customer-support LLM chatbot training dataset](https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset)
-  (26,872 real rows; 3,400 sampled for pipeline build speed — see `domains/it_saas/config.yaml`'s
-  `source_dataset.limitations`). `intent_eval_available: true` — the held-out test set has real labels, so
-  intent-classification F1 is a genuine number (see [Evaluation](#evaluation)).
-- **`healthcare`** — a 7-intent taxonomy (new_patient_inquiry, appointment_request, billing_inquiry,
-  clinical_concern, complaint, price_shopper, existing_patient_question). `intent_eval_available: false` —
-  documented explicitly in `domains/healthcare/config.yaml` because the source data doesn't carry the same kind
-  of clean intent labels; rather than fabricate a score, `eval/intent_priority_eval.py` reports this pack's
-  intent metric as `"available": false` with the reason stated. A separate, real signal — priority vs. the
-  source dataset's actual `star_rating` field — is measured instead (`evaluate_healthcare_priority_correlation`
-  in `eval/agreement_eval.py`).
+- **`it_saas`** — resolution assist. 27 Bitext intents with labeled eval + intent-tagged FAQ KB.
+  `intent_eval_available: true`.
+- **`healthcare`** — patient-feedback **triage** (NHS GP reviews). 7 advisory intents; KB is reviews
+  (not clinical policy). Score intent/priority/escalate quality — not “closed from SOPs.”
+  `intent_eval_available: false`; priority↔`star_rating` correlation is the offline HC metric.
 
-Each pack directory contains:
-- `config.yaml` — intent taxonomy, priority guidance (advisory prose fed to the LLM, never a hardcoded rule), KB
-  category map, source-dataset provenance/limitations.
-- `few_shot_examples.json` — real examples used in agent prompts.
-- `kb/` — knowledge-base articles indexed into a pack-specific Pinecone namespace by
-  [`seed_kb.py`](seed_kb.py).
+Each pack directory contains `config.yaml`, `few_shot_examples.json`, and `kb/`.
 
-Loaded and validated by [`app/domain/loader.py`](app/domain/loader.py) /
-[`app/domain/schema.py`](app/domain/schema.py); selected per-request via `domain_pack` on ticket submission, or
-globally via the `DOMAIN_PACK` env var.
+### Per-role Bedrock models
+
+[`app/llm/model_router.py`](app/llm/model_router.py) maps each agent role to a Bedrock model ID from settings
+(`MODEL_INTENT_PRIORITY`, `MODEL_GRADER`, `MODEL_JUDGE`, `MODEL_CONTINUATION`, `MODEL_DRAFTING`,
+`MODEL_SUPERVISOR`). Defaults are `amazon.nova-lite-v1:0`; pin Micro on cheaper roles if you want.
+`GET /health` returns the current assignments under `model_routing`.
 
 ## Running locally
 
-Everything below is free and runs entirely on your machine.
+Compose brings up local Postgres / API / UI / Grafana. **LLM inference is Amazon Bedrock** (external) —
+enable Nova access in the Bedrock console for your AWS account/region and provide credentials via
+`aws configure`, env vars, or an instance role.
 
 ### Option A — Docker Compose (recommended)
 
-Brings up Postgres, Ollama (auto-pulls the configured model), the FastAPI backend, the Next.js frontend, and
-Grafana in one command.
-
 ```bash
 cp .env.example .env
-# Fill in the two real managed-service credentials Docker Compose can't
-# stand up locally (see "What Docker Compose does NOT provide" below):
+# Fill in managed-service credentials Compose can't stand up locally:
 #   AZURE_TEXT_ANALYTICS_ENDPOINT / AZURE_TEXT_ANALYTICS_KEY
 #   PINECONE_API_KEY / PINECONE_ENVIRONMENT
+#   AWS credentials + AWS_REGION (Bedrock)
 
 docker compose up --build
 ```
@@ -158,16 +148,19 @@ docker compose up --build
 - Grafana: http://localhost:3001 (admin/admin by default; anonymous viewer access is also enabled for the
   frontend's embedded analytics page)
 
-Then seed the knowledge base into Pinecone (one time, per pack):
+Then seed both knowledge bases:
 
 ```bash
-docker compose exec backend python seed_kb.py --pack it_saas
-docker compose exec backend python seed_kb.py --pack healthcare
+docker compose exec backend python seed_kb.py --pack all
+# or: --pack it_saas / --pack healthcare
 ```
 
-**What Docker Compose does *not* provide**, because they're real external managed services, not something
-Compose can stand up locally: Azure Text Analytics (real NLP signals) and Pinecone (vector storage). Both have
-free tiers — see their signup pages. BigQuery analytics is also opt-in and off by default (`ENABLE_BIGQUERY=false`).
+**What Docker Compose does *not* provide**, because they're real external managed services: Amazon Bedrock
+(LLM), Azure Text Analytics (NLP signals), and Pinecone (vector storage). BigQuery analytics is opt-in and
+off by default (`ENABLE_BIGQUERY=false`).
+
+The EC2/Ollama Terraform under [`infra/aws/`](infra/aws/) is a **legacy artifact** (self-hosted Ollama is no
+longer a runtime option). See [`infra/README.md`](infra/README.md).
 
 ### Option B — Native Python (no Docker)
 
@@ -175,14 +168,11 @@ free tiers — see their signup pages. BigQuery analytics is also opt-in and off
 python3 -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 
-cp .env.example .env   # fill in Azure/Pinecone credentials; point OLLAMA_BASE_URL/DATABASE_URL at your own instances
-
-# Ollama running natively:
-ollama serve &
-ollama pull qwen2.5:3b
+cp .env.example .env   # Azure, Pinecone, AWS/Bedrock, DATABASE_URL
+# aws configure   # or export AWS_ACCESS_KEY_ID / AWS_SECRET_ACCESS_KEY
 
 python app/db/init_db.py
-python seed_kb.py --pack it_saas
+python seed_kb.py --pack all
 uvicorn app.api.main:app --reload
 ```
 
@@ -192,8 +182,8 @@ uvicorn app.api.main:app --reload
 pytest tests/ -v
 ```
 
-50 tests, all fully mocked (Ollama, Azure, Pinecone, BigQuery — see `tests/conftest.py`) so they run in a few
-seconds with zero live credentials or network access.
+Tests are fully mocked (Bedrock via MagicMock / boto3 stub, Azure, Pinecone, BigQuery — see
+`tests/conftest.py`) so they run in a few seconds with zero live credentials or network access.
 
 ## Evaluation
 
@@ -201,26 +191,31 @@ seconds with zero live credentials or network access.
 
 | Script | Metric | What it measures |
 |---|---|---|
-| [`eval/intent_priority_eval.py`](eval/intent_priority_eval.py) | Macro-F1, precision, recall | `IntentPriorityAgent` against each pack's held-out labels. Packs without labels report `"available": false`. |
-| [`eval/ner_eval.py`](eval/ner_eval.py) | Entity-level P/R/F1 (`seqeval`) | Azure NER against a CoNLL gold file when `--gold-file` is provided. |
-| [`eval/rag_eval.py`](eval/rag_eval.py) | Faithfulness, answer relevancy (`ragas`) | Retrieval + drafting quality via a local Ollama judge and `all-MiniLM-L6-v2` embeddings. |
-| [`eval/agreement_eval.py`](eval/agreement_eval.py) | Cohen's kappa; Spearman correlation | Supervisor escalate/auto-resolve vs human labels (`eval/human_review/`). Also correlates healthcare priority with `star_rating`. |
-| [`eval/run_eval.py`](eval/run_eval.py) | Orchestrator + CI gate | Runs the above, compares to `eval/report_baseline.json`, fails on regression. |
+| [`eval/intent_priority_eval.py`](eval/intent_priority_eval.py) | Macro-F1 | IT intent labels; HC reports unavailable |
+| [`eval/ner_eval.py`](eval/ner_eval.py) | Entity P/R/F1 | Azure NER when gold CoNLL provided |
+| [`eval/rag_eval.py`](eval/rag_eval.py) | Faithfulness / relevancy | ragas against seeded KB |
+| [`eval/agreement_eval.py`](eval/agreement_eval.py) | Kappa; HC Spearman | Human escalate labels; HC priority↔star_rating |
+| [`eval/run_eval.py`](eval/run_eval.py) | CI gate | Orchestrates + baseline compare |
+| [`eval/live_smoke_runner.py`](eval/live_smoke_runner.py) | Live continuous smoke | IT + HC labeled suite via `POST /api/v1/tickets` |
+| [`eval/score_live_run.py`](eval/score_live_run.py) | Live spot-check | Scores smoke JSONL vs suite labels |
 
 ```bash
-python eval/run_eval.py                        # run + compare to baseline
-python eval/run_eval.py --update-baseline       # run + overwrite the baseline with current real numbers
-python eval/run_eval.py --skip-rag              # skip ragas (needs a live Ollama + seeded Pinecone)
-python eval/run_eval.py --pack it_saas          # single pack instead of all
+python eval/run_eval.py --pack all --skip-rag
+python eval/run_eval.py --pack it_saas --update-baseline
 ```
 
-**Baseline**: `eval/report_baseline.json` starts empty. Populate it with
-`python eval/run_eval.py --update-baseline` against a live Ollama + seeded
-Pinecone setup. CI treats a missing baseline as non-fatal.
+### Live smoke (continuous)
 
-**Human review loop**: `eval/human_review/review_template.csv` + `eval/human_review/README.md` document how to
-manually adjudicate "should this ticket have been escalated" on a sample of real tickets, which is what
-`agreement_eval.py`'s Cohen's kappa is computed against.
+Labeled suite: [`eval/datasets/live_smoke_suite.jsonl`](eval/datasets/live_smoke_suite.jsonl) (IT + healthcare, easy→hard).
+HC rows measure **triage** (intent/priority/escalate), not policy auto-resolve.
+
+```bash
+python eval/live_smoke_runner.py --once
+python eval/live_smoke_runner.py --interval 10    # continuous
+python eval/score_live_run.py --run eval/live_runs/run_YYYYMMDD.jsonl
+```
+
+Latency knobs: `INTENT_NUM_SAMPLES`, `RETRIEVAL_TOP_K`, `MAX_QUERY_REWRITES`. Per-role models: `MODEL_*`.
 
 ## Analytics (BigQuery + Grafana)
 
@@ -268,11 +263,10 @@ npm run dev   # http://localhost:3000, expects the backend at NEXT_PUBLIC_API_UR
 
 1. **Lint** — `ruff check .` (config in `pyproject.toml`).
 2. **Test** — `pytest tests/` with mocked cloud clients (see `tests/conftest.py`) — no real credentials needed.
-3. **Eval gate** — installs real Ollama on the runner, pulls `qwen2.5:3b`, and runs
-   `eval/run_eval.py --pack all --skip-rag` — a genuine LLM evaluation, not a mock, gated against
-   `eval/report_baseline.json`. `--skip-rag` is the one metric family skipped in CI, since `ragas` additionally
-   needs a seeded Pinecone index with no free ephemeral CI equivalent; that gap is reported honestly by
-   `eval/rag_eval.py`, not faked.
+3. **Eval gate** — when `AWS_ACCESS_KEY_ID` / `AWS_SECRET_ACCESS_KEY` repo secrets are set, runs
+   `eval/run_eval.py --pack all --skip-rag` against Bedrock and gates on `eval/report_baseline.json`.
+   Without those secrets the job skips the live LLM step (unit tests still block merges). `--skip-rag`
+   remains: ragas needs a seeded Pinecone index and a Bedrock-wired judge (not yet restored).
 4. **Build** — builds both the backend and frontend Docker images (no push).
 
 A separate, optional Terraform plan/Checkov workflow for `infra/` (targeting only free-tier-eligible resources)
@@ -291,17 +285,17 @@ app/
 ├── db/                 # SQLAlchemy models/session/init
 ├── domain/             # Domain-pack loader + schema
 ├── embeddings/         # SentenceTransformers + chunking + Pinecone client
-├── llm/                # Shared Ollama client (structured output, per-role models)
+├── llm/                # Bedrock client (structured output, per-role model IDs)
 ├── schemas/            # Pydantic request/response schemas
 └── config.py           # Central Pydantic settings
 
-domains/                # it_saas/, healthcare/ — config.yaml, few-shot examples, KB
+domains/                # it_saas/ — config.yaml, few-shot examples, KB
 eval/                   # Evaluation harness — see Evaluation above
 frontend/               # Next.js UI
 grafana/                # Dashboards + provisioning
 infra/                  # Optional/legacy Terraform (see infra/README.md)
-tests/                  # 50 tests, fully mocked external services
-docker-compose.yml      # Full local stack: postgres, ollama, backend, frontend, grafana
+tests/                  # Fully mocked Bedrock/Azure/Pinecone/BigQuery
+docker-compose.yml      # Local stack: postgres, backend, frontend, grafana (Bedrock external)
 ```
 
 ## Multimodal: considered and rejected
@@ -321,8 +315,7 @@ multimodal ticket dataset surfaces, this is the first place to revisit — not b
 2. Add `domains/<your_pack>/few_shot_examples.json` and `domains/<your_pack>/kb/*.json` (or similar) knowledge
    base articles.
 3. If you have labeled ground-truth intents, add `eval/datasets/<your_pack>_test.jsonl` and set
-   `intent_eval_available: true`; otherwise set it to `false` with a `limitations` string explaining why — see
-   `domains/healthcare/config.yaml` for the pattern.
+   `intent_eval_available: true`; otherwise set it to `false` with a `limitations` string explaining why.
 4. `python seed_kb.py --pack <your_pack>` to index the KB into its own Pinecone namespace.
 5. `python eval/run_eval.py --pack <your_pack>` to get real numbers before shipping it.
 

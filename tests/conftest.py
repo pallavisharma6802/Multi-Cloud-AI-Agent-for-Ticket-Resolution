@@ -1,7 +1,12 @@
 """Shared pytest fixtures.
 
-Mocks Ollama, Azure Text Analytics, and heavy deps (rank_bm25, sentence_transformers)
-so the suite runs in CI without cloud credentials or torch.
+Mocks the shared Bedrock LLM client (via ``get_llm_client`` singleton), Azure
+Text Analytics, and heavy deps (rank_bm25, sentence_transformers) so the suite
+runs in CI without AWS/Azure credentials or torch.
+
+Every test gets a MagicMock Bedrock client by default (no boto3 Converse calls).
+``tests/test_bedrock_client.py`` constructs a real ``BedrockStructuredClient``
+with its own boto3.client patch when it needs to exercise Converse error paths.
 """
 import sys
 import types
@@ -48,22 +53,49 @@ if "sentence_transformers" not in sys.modules:
 
 import pytest
 
-import app.llm.ollama_client as ollama_client_module
-from app.llm.ollama_client import LLMCallMetadata
+import app.llm.bedrock_client as bedrock_client_module
+from app.llm.bedrock_client import LLMCallMetadata
 
 
-def make_metadata(role: str = "test", model: str = "qwen2.5:3b") -> LLMCallMetadata:
+def make_metadata(role: str = "test", model: str = "amazon.nova-lite-v1:0") -> LLMCallMetadata:
     return LLMCallMetadata(
         model=model, role=role, latency_ms=12.5, prompt_tokens=50, completion_tokens=30, attempts=1
     )
 
 
-@pytest.fixture
-def mock_llm_client(monkeypatch):
-    """Replace the process-wide Ollama client with a MagicMock."""
+@pytest.fixture(autouse=True)
+def _default_mock_bedrock_client(monkeypatch):
+    """Inject a MagicMock as the process-wide LLM client (zero AWS calls).
+
+    Also stub ``boto3.client`` so accidental ``BedrockStructuredClient()``
+    construction cannot reach the network. Tests that need a real client
+    (test_bedrock_client) re-patch boto3.client in their own fixtures.
+    Pin Nova model IDs so a developer `.env` with legacy Ollama tags cannot
+    leak into assertions.
+    """
+    from app.config import settings
+
+    bedrock_client_module.reset_llm_client()
+    for attr in (
+        "model_intent_priority",
+        "model_grader",
+        "model_judge",
+        "model_continuation",
+        "model_drafting",
+        "model_supervisor",
+    ):
+        monkeypatch.setattr(settings, attr, "amazon.nova-lite-v1:0")
     mock = MagicMock()
-    monkeypatch.setattr(ollama_client_module, "_client", mock)
-    return mock
+    monkeypatch.setattr(bedrock_client_module, "_client", mock)
+    monkeypatch.setattr("boto3.client", lambda *args, **kwargs: MagicMock())
+    yield mock
+    bedrock_client_module.reset_llm_client()
+
+
+@pytest.fixture
+def mock_llm_client(_default_mock_bedrock_client):
+    """Alias for the autouse Bedrock MagicMock (agent tests configure return values)."""
+    return _default_mock_bedrock_client
 
 
 @pytest.fixture
