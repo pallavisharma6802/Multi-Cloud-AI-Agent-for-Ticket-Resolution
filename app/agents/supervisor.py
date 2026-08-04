@@ -24,7 +24,7 @@ from app.agents.retrieval_agent import RetrievalAgent
 from app.analytics.bigquery_sink import get_bigquery_sink
 from app.config import settings
 from app.domain.loader import get_domain_pack
-from app.llm.ollama_client import LLMCallMetadata, get_llm_client
+from app.llm.bedrock_client import LLMCallMetadata, get_llm_client
 from app.schemas.response import AgentDecision, DraftedResponse, KBDocument
 
 logger = logging.getLogger(__name__)
@@ -70,6 +70,7 @@ class TicketState(TypedDict, total=False):
     judge_feedback_text: Optional[str]
     drafting_iteration: int
     post_judging_action: str
+    post_judging_rationale: str
 
     continuation_rationale: List[str]
     iteration_count: int
@@ -87,6 +88,8 @@ class TicketState(TypedDict, total=False):
 
     agent_decisions: List[AgentDecision]
     error: Optional[str]
+    # True when judge_response exhausted/failed — draft must not be auto-resolved without Self-RAG scores.
+    judge_failed: bool
 
 
 def _record_calls(state: TicketState, metadatas: List[LLMCallMetadata]):
@@ -117,7 +120,7 @@ def _safety_net_reason(state: TicketState) -> Optional[str]:
 class SupervisorAgent:
     def __init__(self):
         self.azure_nlp = AzureNLPAgent()
-        self.intent_priority = IntentPriorityAgent()
+        self.intent_priority = IntentPriorityAgent(num_samples=settings.intent_num_samples)
         self.document_grader = DocumentGrader()
         self.judge = JudgeAgent()
         self.continuation = ContinuationAgent()
@@ -230,7 +233,9 @@ class SupervisorAgent:
         try:
             agent = self._get_retrieval_agent(state["domain_pack_id"])
             candidates = agent.retrieve_relevant_documents(
-                query_text=state["query"], intent=state.get("intent"), top_k=8,
+                query_text=state["query"],
+                intent=state.get("intent"),
+                top_k=settings.retrieval_top_k,
             )
             state["kb_candidates"] = candidates
             state["retrieval_iteration"] = state.get("retrieval_iteration", 0) + 1
@@ -282,11 +287,31 @@ class SupervisorAgent:
         if safety_reason:
             logger.warning(f"[continuation_post_grading] SAFETY NET tripped: {safety_reason}")
             state.setdefault("anomaly_flags", []).append(f"post_grading_safety_net: {safety_reason}")
-            state["post_grading_action"] = "escalate"
+            # Prefer drafting with whatever we have over hard-escalating mid-loop when docs exist.
+            if state.get("relevant_documents"):
+                state["post_grading_action"] = "proceed"
+                state.setdefault("continuation_rationale", []).append(
+                    f"[safety net] wall/iter cap hit; proceeding to draft with "
+                    f"{len(state['relevant_documents'])} relevant docs: {safety_reason}"
+                )
+            else:
+                state["post_grading_action"] = "escalate"
+                state.setdefault("continuation_rationale", []).append(
+                    f"[safety net, not agentic] escalated: {safety_reason}"
+                )
+            return state
+
+        # Cap CRAG rewrites — further loops mostly burn wall-clock on small models.
+        retrieval_iters = state.get("retrieval_iteration", 0)
+        if retrieval_iters > settings.max_query_rewrites and state.get("relevant_documents"):
+            state["post_grading_action"] = "proceed"
             state.setdefault("continuation_rationale", []).append(
-                f"[safety net, not agentic] escalated: {safety_reason}"
+                f"[rewrite cap] max_query_rewrites={settings.max_query_rewrites} reached; proceeding to draft"
             )
             return state
+        if retrieval_iters > settings.max_query_rewrites and not state.get("relevant_documents"):
+            # One more chance via continuation LLM, but default bias to escalate without another rewrite.
+            pass
 
         try:
             decision, meta = self.continuation.decide_post_grading(
@@ -299,23 +324,39 @@ class SupervisorAgent:
                 llm_calls_so_far=state.get("llm_call_count", 0),
             )
             _record_calls(state, [meta])
-            state["post_grading_action"] = decision.action
-            state.setdefault("continuation_rationale", []).append(f"[post_grading] {decision.action}: {decision.rationale}")
+            action = decision.action
+            if action == "rewrite_query" and retrieval_iters > settings.max_query_rewrites:
+                action = "proceed" if state.get("relevant_documents") else "escalate"
+                state.setdefault("continuation_rationale", []).append(
+                    f"[rewrite cap] coerced {decision.action} -> {action}: {decision.rationale}"
+                )
+            else:
+                state.setdefault("continuation_rationale", []).append(
+                    f"[post_grading] {action}: {decision.rationale}"
+                )
+            state["post_grading_action"] = action
 
             _log_decision(state, "continuation_agent", "decide_post_grading", {
-                "action": decision.action, "rationale": decision.rationale,
+                "action": action, "rationale": decision.rationale,
             })
 
-            if decision.action == "rewrite_query":
+            if action == "rewrite_query":
                 rewritten, meta2 = self.document_grader.rewrite_query(state["query"], state["graded_documents"])
                 _record_calls(state, [meta2])
-                state["query"] = rewritten.rewritten_query
-                state["iteration_count"] = state.get("iteration_count", 0) + 1
-                _log_decision(state, "document_grader", "rewrite_query", {
-                    "new_query": rewritten.rewritten_query, "rationale": rewritten.rationale,
-                })
+                # If rewrite was rejected (same as original), don't loop forever.
+                if rewritten.rewritten_query.strip() == (state.get("query") or "").strip():
+                    state["post_grading_action"] = "proceed" if state.get("relevant_documents") else "escalate"
+                    state.setdefault("continuation_rationale", []).append(
+                        "[rewrite rejected/noop] skipping another retrieval loop"
+                    )
+                else:
+                    state["query"] = rewritten.rewritten_query
+                    state["iteration_count"] = state.get("iteration_count", 0) + 1
+                    _log_decision(state, "document_grader", "rewrite_query", {
+                        "new_query": rewritten.rewritten_query, "rationale": rewritten.rationale,
+                    })
 
-            logger.info(f"[continuation_post_grading] action={decision.action}")
+            logger.info(f"[continuation_post_grading] action={state['post_grading_action']}")
         except Exception as e:
             logger.error(f"[continuation_post_grading] failed: {e}")
             state["post_grading_action"] = "escalate"
@@ -369,12 +410,14 @@ class SupervisorAgent:
                     if result.unsupported_claims else result.rationale
                 )
 
+            state["judge_failed"] = False
             _log_decision(state, "judge_agent", "judge_response", judge_dict, confidence=result.confidence)
             logger.info(f"[judge_response] faithfulness={result.faithfulness_score:.2f} "
                         f"relevance={result.relevance_score:.2f} confidence={result.confidence:.2f}")
         except Exception as e:
             logger.error(f"[judge_response] failed: {e}")
             state["error"] = f"Judging failed: {e}"
+            state["judge_failed"] = True
         return state
 
     def _continuation_post_judging_node(self, state: TicketState) -> TicketState:
@@ -383,6 +426,7 @@ class SupervisorAgent:
             logger.warning(f"[continuation_post_judging] SAFETY NET tripped: {safety_reason}")
             state.setdefault("anomaly_flags", []).append(f"post_judging_safety_net: {safety_reason}")
             state["post_judging_action"] = "escalate"
+            state["post_judging_rationale"] = safety_reason
             state.setdefault("continuation_rationale", []).append(
                 f"[safety net, not agentic] escalated: {safety_reason}"
             )
@@ -403,6 +447,7 @@ class SupervisorAgent:
             )
             _record_calls(state, [meta])
             state["post_judging_action"] = decision.action
+            state["post_judging_rationale"] = decision.rationale
             state.setdefault("continuation_rationale", []).append(f"[post_judging] {decision.action}: {decision.rationale}")
 
             _log_decision(state, "continuation_agent", "decide_post_judging", {
@@ -471,6 +516,23 @@ class SupervisorAgent:
             self._emit_analytics_event(state)
             return state
 
+        # Judge exhaustion / failure: never auto-resolve an unscored draft via the final LLM.
+        if state.get("judge_failed"):
+            state["final_action"] = "escalate"
+            state["final_rationale"] = (
+                "Judge stage failed; cannot auto-resolve a draft without Self-RAG scores. "
+                f"{state.get('error') or ''}"
+            ).strip()
+            state["final_confidence"] = 0.0
+            state["requires_human_review"] = True
+            _log_decision(state, "supervisor", "final_decision", {
+                "final_action": "escalate",
+                "rationale": state["final_rationale"],
+                "judge_failed": True,
+            })
+            self._emit_analytics_event(state)
+            return state
+
         try:
             judge_result = state.get("judge_result", {})
             anomalies = state.get("anomaly_flags", [])
@@ -496,10 +558,15 @@ Full pipeline trace:
 {trace_summary}
 
 Decide: should this drafted response be sent to the customer automatically (auto_resolve), or should this ticket \
-be escalated to a human agent instead (escalate)? Consider faithfulness/relevance scores, whether any engineering \
-safety-net anomaly occurred (that alone is a strong signal to escalate, since it means normal reasoning didn't \
-reach a clean conclusion), the ticket's priority, and whether the Continuation Agent's own history shows \
-unresolved doubt."""
+be escalated to a human agent instead (escalate)?
+
+Guidance:
+- Prefer auto_resolve when a draft exists, judge faithfulness/relevance are reasonable (>= ~0.5), \
+and the reply gives concrete next steps for a routine FAQ (track/cancel/password/refund/shipping).
+- Escalate when the customer asked for a human, the issue is high-risk/billing dispute with missing facts, \
+the draft is empty/ungrounded, or judge scores are clearly poor.
+- Engineering safety-net anomalies mean the run was slow or hit a cap — that alone is NOT a reason to escalate \
+if the draft and judge scores look adequate. Use them as a weak signal only."""
 
             decision, meta = self.llm_client.generate_structured(
                 prompt=prompt, schema=FinalDecision, model=settings.model_supervisor,
