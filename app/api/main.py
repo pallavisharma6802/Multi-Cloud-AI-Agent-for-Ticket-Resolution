@@ -1,4 +1,5 @@
 import logging
+import os
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -36,6 +37,11 @@ async def startup_event():
     logger.info(f"Starting {settings.project_name} in {settings.env} environment")
     logger.info(f"Azure endpoint: {settings.azure_text_analytics_endpoint}")
     logger.info(f"Bedrock region: {settings.aws_region}")
+
+    # Bridge the parsed .env value into the real process env var -- google-cloud
+    # libraries' ADC resolution reads os.environ directly, not pydantic-settings.
+    if settings.google_application_credentials:
+        os.environ.setdefault("GOOGLE_APPLICATION_CREDENTIALS", settings.google_application_credentials)
 
     # Create missing tables (idempotent).
     from app.db.init_db import init_db

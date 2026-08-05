@@ -90,6 +90,24 @@ Domain: {pack.config.description}
 Available intents (choose exactly one id from this list):
 {intents_block}
 
+Intent precedence guidance (for tickets that raise more than one request): if a ticket contains \
+multiple distinct requests, classify by the ticket's primary blocking need, not whichever request \
+happens to be mentioned first or stated most literally. In particular, if the customer explicitly \
+asks to speak with a human agent or to escalate, and that ask isn't clearly secondary to an issue \
+that's simple to resolve on its own, prefer the intent reflecting that escalation over a narrower \
+sub-request intent.
+
+A separate, narrower case: when the customer needs a specific concrete outcome (a document, record, \
+authorization, or access) that is being withheld, and no path to that outcome exists without someone \
+at the organization actively releasing or authorizing it -- not simply a delay, or frustration with \
+how the request has been handled -- classify by the withheld outcome itself, not by the communication \
+friction described around trying to obtain it (e.g. being put on hold, staff being reluctant or \
+unresponsive). Both conditions must hold for this to apply; ordinary delays without a required \
+gatekeeping action don't qualify. This clause does not apply when the ticket's dominant complaint \
+is a billing, payment, or refund dispute -- in that context, mentions of account access being \
+restored or a written confirmation describe resolving the financial issue itself, not a separate \
+document or record being withheld, even if the wording overlaps.
+
 Priority reasoning guidance (this is advisory reasoning guidance, not a rule table -- use judgment):
 {pack.config.priority_guidance}
 

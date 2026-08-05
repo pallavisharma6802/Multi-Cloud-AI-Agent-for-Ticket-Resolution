@@ -378,6 +378,12 @@
     "priority_hint": null
   },
   {
+    "text": "i cancelled my subscription but got charged again this month, please fix the billing",
+    "intent": "payment_issue",
+    "category": "PAYMENT",
+    "priority_hint": null
+  },
+  {
     "text": "help me to see in which cases can I ask for a refund",
     "intent": "check_refund_policy",
     "category": "REFUND",
