@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_083",
-  "title": "The best Practice",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "understanding, caring, feeling you have been listened to. professional in every way. Reception staff fantastic and such a clean surgery. The best surgery in Thanet. I feel safe knowing I am with such a caring practice.",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

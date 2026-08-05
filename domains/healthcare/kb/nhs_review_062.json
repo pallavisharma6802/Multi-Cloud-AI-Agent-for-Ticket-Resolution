@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_062",
-  "title": "Excellent professional service, always",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "I have been registered with this practice for over twenty years. When I ring the surgery to ask to speak with the duty doctor/see my usual doctor I always receive a callback, usually within two hours.  The staff who answer the phones/take information from callers are always courteous and helpful. If the doctor who responds to the call feels that I need to be seen I am invited to come to the surgery on the same day.  The doctors in the practice always refer onwards to specialist hospital services if and when required.  I highly recommend registration with this practice.",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_134",
-  "title": "Brilliant doctors and staff",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "We recently had the unfortunate and very sad loss of a close family member at home.\r\nSt George's Medical Centre doctor and staff were extremely helpful and timely in their approach to numerous home visits needed. Everyone involved from the practise was compassionate and caring. I would recommend this practise to anyone. Many thanks",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

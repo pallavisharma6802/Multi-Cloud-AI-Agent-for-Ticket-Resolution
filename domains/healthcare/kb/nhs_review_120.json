@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_120",
-  "title": "Improved practice",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "At this moment the surgery in general is in my opinion providing the best services me and my family have been receiving I would especially thank the reception staff whom deserve a lot of praise as unfair reviews often get highlighted is wrong staff at reception and GP including all clinicians working very hard I\u2019m a very demanding area",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

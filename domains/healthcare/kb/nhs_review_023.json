@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_023",
-  "title": "Excellent Service",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "I rang to get an appointment as our local walk in centre had closed down and my GP was closed.  A GP called me back within 30 mins after I\u2019d submitted some photos. Got a prescription sent to my local chemist within minutes. This is an excellent service and I highly recommend",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

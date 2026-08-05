@@ -20,7 +20,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # Heavy deps (sklearn/ragas/numpy) are imported lazily inside run_full_eval so
 # pure helpers used by tests/test_eval.py stay importable without them.
 from app.domain.loader import list_available_packs
-from eval.agreement_eval import evaluate_healthcare_priority_correlation, evaluate_human_agreement
+from eval.agreement_eval import evaluate_human_agreement
 from eval.ner_eval import evaluate_ner
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -78,12 +78,6 @@ def run_full_eval(packs: list[str], skip_rag: bool, max_examples: int) -> dict:
     report["human_agreement"] = evaluate_human_agreement(
         os.path.join(REPO_ROOT, "eval", "human_review", "review_template.csv")
     )
-
-    if "healthcare" in packs:
-        print("=== Healthcare priority vs. real star_rating correlation ===")
-        report["healthcare_priority_correlation"] = evaluate_healthcare_priority_correlation(
-            max_examples=max_examples
-        )
 
     return report
 

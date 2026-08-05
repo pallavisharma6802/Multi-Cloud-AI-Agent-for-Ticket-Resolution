@@ -3,7 +3,7 @@
 An agentic support-ticket resolution system: a cyclic [LangGraph](https://github.com/langchain-ai/langgraph) of six
 LLM agents (intent/priority classification, CRAG document grading, Self-RAG response judging, and an agentic
 Continuation Agent that replaces every fixed retry-cap/threshold with a reasoned decision), running against two
-real, labeled domain packs (IT/SaaS and Healthcare), with a from-scratch evaluation harness, a BigQuery/Grafana
+real, labeled domain pack (IT/SaaS), with a from-scratch evaluation harness, a BigQuery/Grafana
 analytics layer, and a Next.js UI — all runnable for free on a laptop via Docker Compose.
 
 This is a rebuild of an earlier keyword-heuristic pipeline. See [Why this rebuild](#why-this-rebuild) for what
@@ -30,7 +30,6 @@ asserted.
 flowchart TB
     subgraph domainPacks ["Domain Packs (config-driven, swappable)"]
         itPack["it_saas: 27 intents — resolution assist"]
-        healthPack["healthcare: 7 intents — feedback triage"]
     end
 
     subgraph agenticGraph ["LangGraph Supervisor (cyclic, conditional edges)"]
@@ -108,13 +107,11 @@ plus a real evaluation harness (below) so "agentic" is a measured property, not 
 
 ## Domain packs
 
-Two packs ship under [`domains/`](domains/). Same LangGraph; different success criteria.
+Packs ship under [`domains/`](domains/) and are auto-discovered — the LangGraph is generic and swappable
+across whichever packs are present.
 
 - **`it_saas`** — resolution assist. 27 Bitext intents with labeled eval + intent-tagged FAQ KB.
   `intent_eval_available: true`.
-- **`healthcare`** — patient-feedback **triage** (NHS GP reviews). 7 advisory intents; KB is reviews
-  (not clinical policy). Score intent/priority/escalate quality — not “closed from SOPs.”
-  `intent_eval_available: false`; priority↔`star_rating` correlation is the offline HC metric.
 
 Each pack directory contains `config.yaml`, `few_shot_examples.json`, and `kb/`.
 
@@ -148,11 +145,11 @@ docker compose up --build
 - Grafana: http://localhost:3001 (admin/admin by default; anonymous viewer access is also enabled for the
   frontend's embedded analytics page)
 
-Then seed both knowledge bases:
+Then seed the knowledge base:
 
 ```bash
 docker compose exec backend python seed_kb.py --pack all
-# or: --pack it_saas / --pack healthcare
+# or: --pack it_saas
 ```
 
 **What Docker Compose does *not* provide**, because they're real external managed services: Amazon Bedrock
@@ -206,7 +203,7 @@ python eval/run_eval.py --pack it_saas --update-baseline
 
 ### Live smoke (continuous)
 
-Labeled suite: [`eval/datasets/live_smoke_suite.jsonl`](eval/datasets/live_smoke_suite.jsonl) (IT + healthcare, easy→hard).
+Labeled suite: [`eval/datasets/live_smoke_suite.jsonl`](eval/datasets/live_smoke_suite.jsonl) (IT/SaaS, easy→hard).
 HC rows measure **triage** (intent/priority/escalate), not policy auto-resolve.
 
 ```bash

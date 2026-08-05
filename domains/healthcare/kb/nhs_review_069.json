@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_069",
-  "title": "Caring GP",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "I felt listened to and involved in the treatment plan. GP apologised for the wait for a review. Such a shame this GP is leaving.",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

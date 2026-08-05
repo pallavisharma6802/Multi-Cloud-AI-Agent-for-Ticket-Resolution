@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_080",
-  "title": "excellent medical care",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "Always excellent care from GPs and nurses every time I or my family have visited this practice. \nMuch easier to get through by phone, now only usually 2 or 3 ahead of me in a queue, not long to wait, and receptionists have been helpful and sorted out just what I needed every time. Thank you.",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

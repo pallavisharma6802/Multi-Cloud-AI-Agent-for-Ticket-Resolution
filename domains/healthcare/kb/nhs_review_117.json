@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_117",
-  "title": "My experience",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "The appointment at Medic house\nWas for 12.25 On the 11 01 2024\nWith the ,practice nurse\nFor a. Blood pressure chrck\nAll carried out in a professional\nManner",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

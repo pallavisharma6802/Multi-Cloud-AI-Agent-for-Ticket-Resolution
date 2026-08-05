@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_006",
-  "title": "Great practice",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "Recently I sent an email requesting some medication which I needed relatively quickly but still allowing time for it to be processed. \nThis was actioned really quickly and efficiently without any problems and also letting me know how the process was going.\nI would have to say that whenever I have rung for various reasons everyone has been very helpful, listened carefully and dealt with queries in a professional and caring way.\nThank you very much.",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

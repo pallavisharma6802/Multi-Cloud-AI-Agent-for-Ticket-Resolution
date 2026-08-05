@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_132",
-  "title": "Excellent Practice",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "I newly transferred to this practice.  I have found every member of staff diligent and helpful.  They helped discover my cancer and set me on the right path. My gratitude knows no bounds for this care.",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

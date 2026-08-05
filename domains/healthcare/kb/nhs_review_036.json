@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_036",
-  "title": "Good interaction and answered wuestions",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "Appointment for injection I was not expecting but offered due to reaching a certain age. Easy to make appointment and administer of injection spot on time, professional and talked with ease, friendly courteous and answered questions I asked. Thank you and great service",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

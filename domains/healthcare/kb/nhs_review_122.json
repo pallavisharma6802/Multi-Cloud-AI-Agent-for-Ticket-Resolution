@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_122",
-  "title": "Very good Practice",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "Excellent service, everything was very well explained, very clean practice.  The doctor and nurse were very confident and had  very good communication skills as the procedure was carried out.",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

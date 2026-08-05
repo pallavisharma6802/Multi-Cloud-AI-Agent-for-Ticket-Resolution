@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_146",
-  "title": "A fantastic practice with doctors who actually listen",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "I cannot rate this surgery highly enough.  They are responsive, polite, caring and go the extra mile to ensure that the patients' needs are met.  Even the reception staff go the extra mile, very friendly and helpful.  Every telephone appointment is kept, referrals are made quickly, and every effort is made to assist where they can.  This practice has been brilliant and i am so glad that i registered with them when i moved to the area.  \nThank you - and keep up the good work!",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

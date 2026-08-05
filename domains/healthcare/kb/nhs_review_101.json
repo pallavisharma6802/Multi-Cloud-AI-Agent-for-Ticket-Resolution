@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_101",
-  "title": "Great experience",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "Although not easy to get appointment Probably  very challenging if your not online Once I had spoken to Gp invited for face to face consultation I was seen and physically examined  Felt like I was listened to by empathic GP Didn\u2019t feel like  I was  being a nuisance even though it was late on Friday afternoon I expect after a long week Tests arranged and called back  one week later and hospital outpatient appointment arranged I feel there is a great deal of criticism of the NHS currently and feel that it is important to give positive feedback when appropriate In a previous professional capacity I worked in NHS and had exposure to many doctors I would like to praise the GPs professionalism and efficiency and say thankyou",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

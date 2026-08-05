@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_081",
-  "title": "Wonderful Outside Care",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "My late Brother was 92 and had no children or nearby relatives to look after him but he was determined to live his remaining time in his own home. This meant three care visits a day and various health checks and treatments which was difficult for me to organise as I live 100 miles away. However, the Monks Park senior social prescriber was on hand to help with invaluable advice and guidance and generally keep an eye on my Brother which, because of distance, I was unable to do. Even at the end, when he was in hospital and then his final resting care home under the local practice, they still popped in to see him so that he would have a visitor. Thank you so much. What would he or I done without you.",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

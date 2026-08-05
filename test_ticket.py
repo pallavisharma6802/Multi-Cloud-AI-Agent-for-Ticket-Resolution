@@ -69,7 +69,7 @@ def test_ticket_processing(domain_pack: str, title: str, description: str):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--pack", default="it_saas", choices=["it_saas", "healthcare"])
+    parser.add_argument("--pack", default="it_saas", choices=["it_saas"])
     parser.add_argument("--title", default="Cannot access VPN")
     parser.add_argument(
         "--description",

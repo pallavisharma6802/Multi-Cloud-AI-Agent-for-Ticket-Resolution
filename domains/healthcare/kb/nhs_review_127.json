@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_127",
-  "title": "great practice",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "i for one love the online consultation. i appreciate some can't do it. i can now get an appointment, if needed, the next day. previously booked up for weeks. \nthe receptionist was great to me, even after the person before me in the queue was rude to her. the doctor was great and found the solution to my health issue. everything worked perfectly for me and the appointment was slightly early too!\ncan't recommend more highly. \n\nplease note no capitals anywhere as the slightest capital apparently contravenes nhs policy! maybe they just don't like complements.",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

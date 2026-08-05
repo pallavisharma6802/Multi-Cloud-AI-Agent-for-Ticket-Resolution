@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_015",
-  "title": "Excellent service",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "I went to help someone talk about their illness. The doctor was absolutely amazing and I didn't really need to be there at all because she gave the person time to talk.\nThe reception team have also been very helpful when I was registering and making appointments etc.\nThe new modern building is clean and well designed.",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

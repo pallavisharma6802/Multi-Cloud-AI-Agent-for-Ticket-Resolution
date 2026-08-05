@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_007",
-  "title": "Amazing",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "After a terrible experience from my old surgery - told to go private after not even examining the problem- this was place is an absolute breath of fresh air. \r\nI didn\u2019t feel as though I was an annoyance to the surgery. The receptionists were pleasant and didn\u2019t try and diagnose me themselves with an unwelcoming scowl.  The appointment booking is fantastic and quick and the Dr I saw made me feel listened to. I came out, feeling that for the first time since I moved to Malvern, that I was actually taken seriously and that I was worth the time. I feel that now I can book and appointment when I start to show symptoms of something, rather than waiting until it has gotten so bad that it affects my day to day in fear that I would be an annoyance to the surgery like I was made to feel previously. \r\nIf you are looking for a surgery in Malvern I highly recommend this one.",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

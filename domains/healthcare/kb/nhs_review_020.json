@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_020",
-  "title": "Fantastic Practice",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "I have dealt with this practice for many years and have been meaning to write a review. Having attended today I felt that I had to make the effort to go on record to say that everybody in the practice - Doctors, Receptionists, Practice Manager, Nurses etc are all absolutely amazing. Always so polite and so helpful. I hear from friends and relatives about experiences they have had with their GP Practices and I felt the need to let everbody know just how lucky all the patients that attend this practice are and how grateful we should all be at being fortunate to be accepted as a patient there. I cannot praise all the staff enough and a big \"thank you\" to you all.",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

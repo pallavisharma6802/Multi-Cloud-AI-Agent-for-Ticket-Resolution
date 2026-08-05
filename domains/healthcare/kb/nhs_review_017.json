@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_017",
-  "title": "Reception and Doctor",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "On arriving at the clinic the receptionist was very helpful. The Doctor I saw listened to my medical problem and provided me with suggestions and medications. Overall I was happy.",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

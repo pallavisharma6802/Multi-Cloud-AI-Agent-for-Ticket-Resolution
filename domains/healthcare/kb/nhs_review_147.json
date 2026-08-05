@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_147",
-  "title": "Felt very welcoming",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "Felt at ease staff very efficient and friendly perfect environment. \nPuts all your nerves at ease explain everything to you and make sure you understand everything you must do after returning home after surgery. They make sure that you understand that should you have any problems you can always ring them and speak to someone.",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

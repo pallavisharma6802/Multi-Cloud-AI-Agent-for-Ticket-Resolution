@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_058",
-  "title": "Glimmer of hope",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "This surgery has been declining for several years but I am not sure what has happened recently but there is a glimmer of hope that is is on the road to recovery.  Not sure what has changed but my last two experiences in December and January have been much more positive with staff actually listening and trying to help instead of just fobbing you off, there seems a totally different atmosphere about the place so please Springhill, whatever it is you have changed, keep doing it.",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

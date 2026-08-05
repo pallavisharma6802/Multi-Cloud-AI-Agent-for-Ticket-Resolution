@@ -2,13 +2,12 @@
 """Domain-pack-aware knowledge base seeding.
 
 Loads every KB article from `domains/<pack>/kb/*.json` (real data -- see
-data/prepare_it_saas.py and data/prepare_healthcare.py for provenance) and
-indexes it into Pinecone under a namespace matching the pack id, with proper
-chunking (app/embeddings/chunking.py) instead of single-blob documents.
+data/prepare_it_saas.py for provenance) and indexes it into Pinecone under
+a namespace matching the pack id, with proper chunking
+(app/embeddings/chunking.py) instead of single-blob documents.
 
 Usage:
     python seed_kb.py --pack it_saas
-    python seed_kb.py --pack healthcare
     python seed_kb.py --pack all
 """
 from __future__ import annotations
@@ -73,7 +72,6 @@ def main():
     targets = available if args.pack == "all" else [args.pack]
     test_queries = {
         "it_saas": "I want to cancel my order, how do I do that?",
-        "healthcare": "I've been waiting weeks for an appointment and no one calls back",
     }
 
     for pack_id in targets:

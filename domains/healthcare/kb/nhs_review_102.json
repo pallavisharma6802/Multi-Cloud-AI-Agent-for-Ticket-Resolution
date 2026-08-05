@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_102",
-  "title": "Great practice",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "Have had amazing service from this practice, gp\u2019s are all very caring and very informative and explain treatments precisely and would highly recommend this practice.\nWouldn\u2019t go anywhere else",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

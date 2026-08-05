@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_086",
-  "title": "Very good practice",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "It has been an extraordinary few years and been difficult to get the help we\u2019re used to from our surgery. However, I have nothing but respect for the hard work that our health service has provided during these difficult times.\nNow things are getting back to \u201cnormal\u201d I have been at Longrove Surgery twice over the last 10 days and the staff there have been wonderful. From booking my appointment to reception staff and doctor and, just yesterday, the most wonderful, patient, sympathetic nurse.\nWould recommend this surgery",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

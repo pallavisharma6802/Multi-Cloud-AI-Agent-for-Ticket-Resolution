@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_114",
-  "title": "Great Practice",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "I needed to phone Millway yesterday, I got a phone back almost immediately and a really helpful receptionist. I was referred to a Doctor who phoned me within a short time and then attended a clinic that morning. So efficient and helpful. Thank you Millway Medical Practice.",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

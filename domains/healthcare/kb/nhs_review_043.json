@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_043",
-  "title": "Great Staff",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "I suffer from white coat syndrome and consequently I hate the annual blood pressure checks. The HCA I saw today completely relaxed me and made me feel at ease with the procedure. Made the world of difference to me. Staff like this are worth their weight in gold.",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

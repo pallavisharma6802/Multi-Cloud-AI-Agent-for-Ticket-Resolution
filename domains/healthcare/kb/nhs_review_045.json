@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_045",
-  "title": "Great ongoing support",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "I have recently had to see the doctor a few times and I only have the highest regards for the care I\u2019ve received. The doctor went out of his way to listen and support me and I cannot thank him enough.",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

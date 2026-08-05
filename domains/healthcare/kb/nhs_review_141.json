@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_141",
-  "title": "Thank you Willows Medical!",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "I was at an urgent care clinic in Moorfields and they urgently needed to see some test results that the Willows practice had organised. I had to call to get them emailed to me.  I was a bit reticent as in the past, the phone system wasn't great.  But they now have a new phone system and it worked!  The receptionist immediately dealt with my first request for recent test results and I received the email within minutes.  My second call for more tests results which were done a few years back was also dealt with very speedily and this really helped the doctor at Moorfields. I was really impressed and very grateful.",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

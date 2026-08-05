@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_047",
-  "title": "Excellent practice",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "I have never been disappointed with the care from this practice. Seen GP today problem sorted there and then. All the staff I have ever  delt with here have all been outstanding",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

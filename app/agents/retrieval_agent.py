@@ -109,13 +109,9 @@ class RetrievalAgent:
         logger.info(f"Retrieving candidates for query: {query_text[:80]}...")
 
         query_embedding = self.embedding_generator.generate_embedding(query_text)
-        # Healthcare KB articles have intent=null — intent $eq filters match nothing.
-        # Also skip empty intent strings. IT keeps intent filter when present.
+        # Skip empty intent strings.
         filter_dict = None
-        use_intent_filter = (
-            bool(intent and str(intent).strip())
-            and self.domain_pack_id != "healthcare"
-        )
+        use_intent_filter = bool(intent and str(intent).strip())
         if use_intent_filter:
             filter_dict = {"intent": {"$eq": intent}}
 

@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_055",
-  "title": "Quick help",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "My daughter with temperature 3 days and I'm was struggle to keep down, to visit our GP was very helpful and hopefully we can get better soon. My daughter having throat infection.",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

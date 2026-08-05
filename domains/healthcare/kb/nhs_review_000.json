@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_000",
-  "title": "Booking Appointments",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "I don't have any issues with the quality of care given once you eventually obtain an appointment. \nSomething has got to be done to improve the way an appointment to see a Doctor can be obtained. Many people have very real concerns about there health problems and need that Face to Face with a medical expert for that all important life saving early diagnosis so the relevant treatment can be prescribed.",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_035",
-  "title": "Repeat Prescription",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "Visited reception to ask about repeat prescription to treat back pain/inflammation for tablets last prescribed Nov 2000. Request taken for referal to GP and duly authorised. Appreciated acceptance of request without need to book appointment to check/discuss etc.  Thanks to receptionist/GP.",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

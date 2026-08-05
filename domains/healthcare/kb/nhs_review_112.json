@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_112",
-  "title": "Great consultation",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "Had a face to face appointment at this surgery today- I felt heard and understood, was not rushed in any way. This was at the end of the day, and staff and doctor were still friendly, helpful and patient (no pun intended!). The doctor explained clearly what was going on and my options for treatment. Really pleased, would recommend.",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

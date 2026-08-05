@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_033",
-  "title": "Helpful and proactive",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "I came in for an ECG with a nurse on 21/12/23 and my experience was brilliant. They were on time, calmed any nerves and were extremely knowledgeable about what potential causes for an elevated heart rate may be. We discussed various potential causes and proactively sought to resolve and find a solution which was extremely useful for me. The service was the upmost friendly and calming experience. Cannot thank the individual enough for helping me. I came away from my appointment with confidence we would find a resolution which is ultimately all anyone wants from an appointment.",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}

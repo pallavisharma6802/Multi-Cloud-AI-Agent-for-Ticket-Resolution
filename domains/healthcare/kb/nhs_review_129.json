@@ -1,9 +1,0 @@
-{
-  "id": "nhs_review_129",
-  "title": "Professional practice",
-  "category": "FEEDBACK",
-  "intent": null,
-  "content": "I have been a patient with Friarsgate for nearly forty years and I can honestly say the exemplary service has always been consistently caring and professional. \nI have often spoken to friends and colleagues in other areas of the country and quickly realised they are unable to see a doctor at short notice and sadly have become  completely disillusioned .\nWe are so fortunate to have our wonderful and super efficient Friarsgate Practice in Winchester. \nThank you .",
-  "source": "https://huggingface.co/datasets/janduplessis886/england-nhs-gp-reviews",
-  "real_data_note": "Verbatim real patient review (4-5 star), used as a positive practice exemplar for retrieval grounding. Not an authored policy document."
-}
