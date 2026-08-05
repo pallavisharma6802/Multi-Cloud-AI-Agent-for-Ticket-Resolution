@@ -33,7 +33,6 @@ os.environ.setdefault("ENABLE_BIGQUERY", "false")
 
 from langgraph.graph import END, StateGraph  # noqa: E402
 
-from app.agents.document_grader import DocumentGrader  # noqa: E402
 from app.agents.supervisor import SupervisorAgent, TicketState  # noqa: E402
 from app.config import settings  # noqa: E402
 

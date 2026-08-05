@@ -9,7 +9,7 @@ import json
 import logging
 import time
 import typing
-from typing import Optional, Type, TypeVar
+from typing import Type, TypeVar
 
 from botocore.config import Config as BotoConfig
 from botocore.exceptions import BotoCoreError, ClientError
