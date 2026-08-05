@@ -1,6 +1,6 @@
 """Evaluate IntentPriorityAgent against each pack's held-out test set.
 
-Requires a live Ollama server. Packs with intent_eval_available=False report
+Requires live Bedrock access. Packs with intent_eval_available=False report
 the metric as unavailable (see domains/*/config.yaml).
 """
 from __future__ import annotations
@@ -53,7 +53,7 @@ def evaluate_intent_priority(pack_id: str, max_examples: int | None = None, num_
 
     if not y_true:
         return {"pack": pack_id, "metric": "intent_classification_f1", "available": False,
-                "reason": "all classification calls failed -- is Ollama reachable?"}
+                "reason": "all classification calls failed -- is Bedrock reachable?"}
 
     precision, recall, f1, _ = precision_recall_fscore_support(
         y_true, y_pred, average="macro", zero_division=0

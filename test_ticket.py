@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Manual live smoke-test script -- NOT part of the pytest suite.
 
-Requires real credentials in .env (Azure Text Analytics, Pinecone, a running
-Ollama server) and a seeded knowledge base (`python seed_kb.py --pack it_saas`).
+Requires real credentials in .env (Azure Text Analytics, Pinecone, AWS Bedrock)
+and a seeded knowledge base (`python seed_kb.py --pack it_saas`).
 Automated tests that don't need live services live in tests/ (see
 tests/test_supervisor_graph.py for the mocked equivalent of this flow).
 """

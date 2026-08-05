@@ -1,2 +1,0 @@
-shell-init: error retrieving current directory: getcwd: cannot access parent directories: Operation not permitted
-/bin/bash: /Users/pallavisharma/Desktop/projects/Multi-Cloud-AI-Agent-for-Ticket-Resolution/eval/live_smoke_hourly.sh: Operation not permitted

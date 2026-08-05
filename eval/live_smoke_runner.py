@@ -72,7 +72,7 @@ def check_health(api_base: str, timeout_s: float = 10.0) -> None:
     except requests.RequestException as exc:
         raise SystemExit(
             f"Backend health check failed ({url}): {exc}\n"
-            "Start the stack with `docker compose up -d` and ensure Ollama is reachable."
+            "Start the stack with `docker compose up -d` and ensure Bedrock is reachable."
         ) from exc
     if resp.status_code != 200:
         raise SystemExit(

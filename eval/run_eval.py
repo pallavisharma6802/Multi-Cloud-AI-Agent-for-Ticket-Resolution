@@ -102,7 +102,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--pack", default="all")
     parser.add_argument("--max-examples", type=int, default=100)
-    parser.add_argument("--skip-rag", action="store_true", help="Skip ragas metrics (needs live Ollama + seeded Pinecone)")
+    parser.add_argument("--skip-rag", action="store_true", help="Skip ragas metrics (needs live Bedrock + seeded Pinecone)")
     parser.add_argument("--update-baseline", action="store_true")
     args = parser.parse_args()
 

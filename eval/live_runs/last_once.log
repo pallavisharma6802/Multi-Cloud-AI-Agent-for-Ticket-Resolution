@@ -1,5 +1,0 @@
-Health OK: http://localhost:8000/health
-[1/24] Submitting smoke-it-01 (easy, it_saas) …
-  ok=True http=201 latency=332.114s intent=check_invoice priority=medium action=escalate ticket_id=TKT-E5DBCF0E
-  anomaly_flags=['post_grading_safety_net: max_wall_clock_seconds (300) reached (321s elapsed)']
-  appended → /Users/pallavisharma/Desktop/projects/Multi-Cloud-AI-Agent-for-Ticket-Resolution/eval/live_runs/run_20260724.jsonl

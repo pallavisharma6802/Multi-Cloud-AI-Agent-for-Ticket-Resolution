@@ -50,7 +50,7 @@ def _fact_table_schema():
         bigquery.SchemaField("total_tokens", "INTEGER", mode="NULLABLE"),
         bigquery.SchemaField("total_latency_ms", "FLOAT64", mode="NULLABLE"),
         bigquery.SchemaField("wall_clock_seconds", "FLOAT64", mode="NULLABLE"),
-        # Self-hosted Ollama has no per-token billing; left unused.
+        # Bedrock is billed per-token (see total_tokens); nothing computes a $ estimate here yet.
         bigquery.SchemaField("estimated_cost_usd", "FLOAT64", mode="NULLABLE"),
     ]
 

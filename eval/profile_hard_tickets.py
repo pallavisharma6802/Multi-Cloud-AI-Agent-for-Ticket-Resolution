@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Profile the LangGraph supervisor on hard smoke tickets — no FastAPI / UI / BQ.
 
-Usage (from repo root, against a live Ollama+creds stack):
+Usage (from repo root, against a live Bedrock+creds stack):
 
     # Prefer inside the backend container (same env as production):
     docker cp eval/profile_hard_tickets.py ticket-backend:/tmp/profile_hard_tickets.py
@@ -220,18 +220,19 @@ class ProfilingSupervisor(SupervisorAgent):
 
 
 def load_hard_tickets(suite_path: Path) -> list[dict[str, Any]]:
-    rows = []
+    all_rows, hard_rows = [], []
     with suite_path.open() as f:
         for line in f:
             line = line.strip()
             if not line:
                 continue
             row = json.loads(line)
+            all_rows.append(row)
             if row.get("difficulty") == "hard":
-                rows.append(row)
-    if len(rows) != 8:
-        _print(f"WARN: expected 8 hard tickets, got {len(rows)}")
-    return rows
+                hard_rows.append(row)
+    if not hard_rows:
+        _print(f"WARN: no hard-difficulty tickets found in {len(all_rows)} suite rows")
+    return hard_rows
 
 
 def summarize(all_events: list[dict[str, Any]], ticket_summaries: list[dict[str, Any]]) -> dict[str, Any]:

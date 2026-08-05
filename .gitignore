@@ -33,8 +33,7 @@ deploy_infrastructure.sh
 tickets.db
 infra/gcp/
 .ruff_cache/
-# Live smoke soak artifacts (suite + scripts are tracked)
-eval/live_runs/run_*.jsonl
-eval/live_runs/score_*.json
-eval/live_runs/state.json
+# Live smoke soak artifacts (suite + scripts are tracked, run output is not)
+eval/live_runs/*
+!eval/live_runs/.gitkeep
 eval/human_review/live_smoke_review.csv

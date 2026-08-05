@@ -188,12 +188,12 @@ Tests are fully mocked (Bedrock via MagicMock / boto3 stub, Azure, Pinecone, Big
 
 | Script | Metric | What it measures |
 |---|---|---|
-| [`eval/intent_priority_eval.py`](eval/intent_priority_eval.py) | Macro-F1 | IT intent labels; HC reports unavailable |
+| [`eval/intent_priority_eval.py`](eval/intent_priority_eval.py) | Macro-F1 | IT intent labels |
 | [`eval/ner_eval.py`](eval/ner_eval.py) | Entity P/R/F1 | Azure NER when gold CoNLL provided |
 | [`eval/rag_eval.py`](eval/rag_eval.py) | Faithfulness / relevancy | ragas against seeded KB |
-| [`eval/agreement_eval.py`](eval/agreement_eval.py) | Kappa; HC Spearman | Human escalate labels; HC priority↔star_rating |
+| [`eval/agreement_eval.py`](eval/agreement_eval.py) | Kappa | Human escalate labels |
 | [`eval/run_eval.py`](eval/run_eval.py) | CI gate | Orchestrates + baseline compare |
-| [`eval/live_smoke_runner.py`](eval/live_smoke_runner.py) | Live continuous smoke | IT + HC labeled suite via `POST /api/v1/tickets` |
+| [`eval/live_smoke_runner.py`](eval/live_smoke_runner.py) | Live continuous smoke | IT/SaaS labeled suite via `POST /api/v1/tickets` |
 | [`eval/score_live_run.py`](eval/score_live_run.py) | Live spot-check | Scores smoke JSONL vs suite labels |
 
 ```bash
@@ -204,7 +204,6 @@ python eval/run_eval.py --pack it_saas --update-baseline
 ### Live smoke (continuous)
 
 Labeled suite: [`eval/datasets/live_smoke_suite.jsonl`](eval/datasets/live_smoke_suite.jsonl) (IT/SaaS, easy→hard).
-HC rows measure **triage** (intent/priority/escalate), not policy auto-resolve.
 
 ```bash
 python eval/live_smoke_runner.py --once
