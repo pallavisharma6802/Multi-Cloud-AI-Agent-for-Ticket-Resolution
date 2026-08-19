@@ -58,15 +58,52 @@
   .section-head h2 { font-size: 26px; margin: 0; font-weight: 700; }
   .section-head .hint { font-size: 13px; color: var(--muted-soft); }
 
-  .idea-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
-  .idea-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
+  .dest-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+  .dest-pick-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
     cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease; display: flex; flex-direction: column; }
-  .idea-card:hover { transform: translateY(-5px); box-shadow: 0 18px 40px rgba(28,27,24,0.12); }
-  .idea-card .img { height: 150px; background-size: cover; background-position: center; position: relative; }
-  .idea-card .tag { position: absolute; top: 12px; left: 12px; background: rgba(255,255,255,0.92); padding: 4px 11px; border-radius: 20px; font-size: 11px; font-weight: 700; color: var(--teal-dark); }
-  .idea-card .body { padding: 16px 18px 18px; }
-  .idea-card h3 { font-size: 16.5px; margin: 0 0 5px; font-weight: 700; }
-  .idea-card p { font-size: 13px; color: var(--muted); margin: 0; line-height: 1.4; }
+  .dest-pick-card:hover { transform: translateY(-5px); box-shadow: 0 18px 40px rgba(28,27,24,0.12); }
+  .dest-pick-card .img { height: 170px; background-size: cover; background-position: center; position: relative; }
+  .dest-pick-card .body { padding: 16px 18px 18px; }
+  .dest-pick-card h3 { font-size: 17px; margin: 0 0 5px; font-weight: 700; }
+  .dest-pick-card p { font-size: 13px; color: var(--muted); margin: 0; line-height: 1.4; }
+
+  /* -- mandatory landing gate -- */
+  .gate-view { z-index: 300; background: var(--bg); align-items: center; justify-content: center; }
+  .gate-view.open { display: flex; }
+  .gate-inner { max-width: 340px; width: 100%; padding: 30px; text-align: center; }
+  .gate-sub { font-size: 13.5px; color: var(--muted); margin: 10px 0 26px; line-height: 1.5; }
+  .guest-link { display: block; font-size: 13px; color: var(--muted-soft); font-weight: 600; cursor: pointer; text-decoration: underline; }
+  .guest-link:hover { color: var(--text); }
+
+  /* -- explore page -- */
+  .explore-tabs { display: flex; gap: 8px; padding: 14px 24px; border-bottom: 1px solid var(--border); background: var(--surface); overflow-x: auto; }
+  .explore-tab { flex-shrink: 0; background: var(--surface-2); border: 1.5px solid transparent; padding: 9px 16px; border-radius: 20px;
+    font-size: 13px; font-weight: 700; cursor: pointer; color: var(--muted); }
+  .explore-tab:hover { color: var(--text); }
+  .explore-tab.active { background: var(--teal-soft); border-color: var(--teal); color: var(--teal-dark); }
+
+  .browse-form { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; margin-bottom: 20px; }
+  .browse-form .row { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
+  .browse-form label { flex: 1; min-width: 120px; font-size: 11.5px; font-weight: 700; color: var(--muted); display: block; margin-bottom: 5px; }
+  .browse-form input, .browse-form select { width: 100%; padding: 9px 11px; border-radius: 8px; border: 1.5px solid var(--border);
+    font-size: 13px; font-family: 'Manrope', sans-serif; background: var(--bg); color: var(--text); }
+  .browse-form .btn-submit { width: 100%; background: var(--teal); color: white; border: none; padding: 12px; border-radius: 10px; font-size: 13.5px; font-weight: 700; cursor: pointer; margin-top: 4px; }
+  .browse-form .btn-submit:hover:not(:disabled) { background: var(--teal-dark); }
+
+  .browse-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; }
+  .browse-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); overflow: hidden;
+    cursor: pointer; transition: transform 0.15s ease, box-shadow 0.15s ease; }
+  .browse-card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(28,27,24,0.1); }
+  .browse-card.trap { border-color: var(--fail); }
+  .browse-card img { width: 100%; height: 120px; object-fit: cover; display: block; }
+  .browse-card .body { padding: 13px 14px; }
+  .browse-card h4 { font-size: 13.5px; margin: 0 0 4px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .browse-card p { font-size: 12px; color: var(--muted); margin: 1px 0; }
+  .browse-card .price { font-size: 14px; font-weight: 800; margin-top: 6px; }
+  .browse-card .flags { display: flex; gap: 5px; margin-top: 7px; flex-wrap: wrap; }
+  .browse-card .flag { font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 8px; text-transform: uppercase; }
+  .browse-card .flag.ok { background: var(--pass-soft); color: var(--pass); }
+  .browse-card .flag.bad { background: var(--fail-soft); color: var(--fail); }
 
   .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
   .feature-card { background: var(--surface-2); border-radius: var(--radius); padding: 22px; }
@@ -289,7 +326,7 @@
   .assumptions { font-size: 12px; color: var(--muted-soft); margin-top: 12px; }
 
   /* -- detail modal -- */
-  .modal-overlay { position: fixed; inset: 0; background: rgba(28,27,24,0.55); z-index: 200; display: flex;
+  .modal-overlay { position: fixed; inset: 0; background: rgba(28,27,24,0.55); z-index: 400; display: flex;
     align-items: center; justify-content: center; padding: 20px; opacity: 0; pointer-events: none; transition: opacity 0.2s ease; }
   .modal-overlay.open { opacity: 1; pointer-events: auto; }
   .modal-panel { background: var(--surface); border-radius: 20px; max-width: 480px; width: 100%; max-height: 84vh; overflow-y: auto;
@@ -318,6 +355,17 @@
 </head>
 <body>
 
+<!-- ============ MANDATORY LANDING GATE ============ -->
+<div id="gate-view" class="page-view gate-view">
+  <div class="gate-inner">
+    <div class="logo" style="justify-content:center;margin-bottom:8px"><span class="dot"></span> Travel Desk</div>
+    <p class="gate-sub">Sign in to save trips and plan with friends, or jump straight in as a guest.</p>
+    <button class="btn-primary" style="width:100%;justify-content:center;margin-bottom:10px" onclick="gateSignIn()">Sign in</button>
+    <button class="btn-ghost" style="width:100%;justify-content:center;margin-bottom:18px" onclick="gateSignUp()">Create an account</button>
+    <a class="guest-link" onclick="continueAsGuest()">Continue as guest →</a>
+  </div>
+</div>
+
 <!-- ============ LANDING VIEW ============ -->
 <div id="landing-view">
   <nav id="nav">
@@ -332,20 +380,33 @@
     <div class="hero-inner">
       <div class="eyebrow">✦ Multi-agent trip planning</div>
       <h1 class="serif">Find a trip that <em>actually</em> works.</h1>
-      <p>Tell it what you need — it checks that the flight and hotel actually work together (arrival time, budget, amenities, room size) before ever calling anything verified. Real live flight & hotel data.</p>
+      <p>Browse real hotels or flights on their own, or let it plan and verify a full trip together (arrival time, budget, amenities, room size) before calling anything verified.</p>
       <div class="cta-row">
-        <button class="btn-primary" onclick="openChatPage()">Start planning →</button>
-        <button class="btn-ghost" onclick="document.getElementById('ideas').scrollIntoView({behavior:'smooth'})">Browse trip ideas</button>
+        <button class="btn-primary" onclick="document.getElementById('destinations').scrollIntoView({behavior:'smooth'})">Explore destinations ↓</button>
+        <button class="btn-ghost" onclick="openChatPage()">Or just tell it what you need</button>
       </div>
     </div>
   </section>
 
-  <section class="section" id="ideas">
+  <section class="section" id="destinations">
     <div class="section-head">
-      <h2 class="serif">Trip ideas to get you started</h2>
-      <span class="hint">tap one to prefill the chat</span>
+      <h2 class="serif">Where to?</h2>
+      <span class="hint">pick a place, then browse hotels, flights, or both</span>
     </div>
-    <div class="idea-grid" id="idea-grid"></div>
+    <div class="dest-grid">
+      <div class="dest-pick-card" onclick="openExplore('AUS')">
+        <div class="img" style="background-image:url('/images/hotels/H-AUS-06.jpg')"></div>
+        <div class="body"><h3>Austin, TX</h3><p>Live music, breweries, keep it weird</p></div>
+      </div>
+      <div class="dest-pick-card" onclick="openExplore('DEN')">
+        <div class="img" style="background-image:url('/images/hotels/H-DEN-06.jpg')"></div>
+        <div class="body"><h3>Denver, CO</h3><p>Mountains, breweries, mile-high air</p></div>
+      </div>
+      <div class="dest-pick-card" onclick="openExplore('MIA')">
+        <div class="img" style="background-image:url('/images/hotels/H-MIA-01.jpg')"></div>
+        <div class="body"><h3>Miami, FL</h3><p>Beaches, art deco, year-round sun</p></div>
+      </div>
+    </div>
   </section>
 
   <section class="section">
@@ -359,6 +420,20 @@
   </section>
 
   <footer>Travel Desk — a local demo. Real flight/hotel data via Google Flights &amp; Hotels.</footer>
+</div>
+
+<!-- ============ EXPLORE PAGE (real browse, not chat) ============ -->
+<div id="explore-view" class="page-view">
+  <div class="chat-header">
+    <button class="back-btn" onclick="closePage('explore-view')">←</button>
+    <span class="title" id="explore-title">Explore</span>
+  </div>
+  <div class="explore-tabs">
+    <button class="explore-tab active" data-tab="hotels" onclick="switchExploreTab('hotels')">🏨 Hotels only</button>
+    <button class="explore-tab" data-tab="flights" onclick="switchExploreTab('flights')">✈️ Flights only</button>
+    <button class="explore-tab" data-tab="both" onclick="switchExploreTab('both')">🔗 Full verified trip</button>
+  </div>
+  <div class="page-body"><div class="page-body-inner" id="explore-body"></div></div>
 </div>
 
 <!-- ============ CHAT PAGE VIEW ============ -->
@@ -422,29 +497,159 @@
 </div>
 
 <script>
-/* ---------- trip ideas (same 3 real destinations, more variety) ---------- */
-const IDEAS = [
-  { img: "/images/hotels/H-AUS-06.jpg", tag: "AUSTIN, TX", title: "Family getaway in Austin", sub: "Live music, breweries, a pool to come back to.", prefill: "Family of 4 to Austin, need a pool, 3 nights, budget $2000 total" },
-  { img: "/images/hotels/H-AUS-01.jpg", tag: "AUSTIN, TX", title: "Solo weekend downtown", sub: "Work trip or just you — wifi and a gym, nothing fussy.", prefill: "Solo trip to Austin, need wifi and a gym, 3 nights" },
-  { img: "/images/hotels/H-DEN-06.jpg", tag: "DENVER, CO", title: "Mile-high mountain break", sub: "Fresh air, breweries, easy access to the foothills.", prefill: "Solo trip to Denver, need wifi and a gym, budget $250 a night" },
-  { img: "/images/hotels/H-DEN-02.jpg", tag: "DENVER, CO", title: "Family resort weekend", sub: "A heated pool and room for everyone.", prefill: "Family of 4 to Denver, need a pool, 3 nights, budget $2000 total" },
-  { img: "/images/hotels/H-MIA-01.jpg", tag: "MIAMI, FL", title: "South Beach family trip", sub: "Two-bedroom suites, a pool, two blocks from the sand.", prefill: "Family of 6 to Miami, need pool and family_friendly, 4 nights, budget $2500 total" },
-  { img: "/images/hotels/H-MIA-05.jpg", tag: "MIAMI, FL", title: "Wynwood art & gym weekend", sub: "Galleries by day, gym before dinner.", prefill: "Solo trip to Miami, need a gym, 3 nights, budget $200 a night" },
-];
-
-const grid = document.getElementById("idea-grid");
-IDEAS.forEach(idea => {
-  const card = document.createElement("div");
-  card.className = "idea-card";
-  card.innerHTML = `<div class="img" style="background-image:url('${idea.img}')"><span class="tag">${idea.tag}</span></div>
-    <div class="body"><h3>${idea.title}</h3><p>${idea.sub}</p></div>`;
-  card.addEventListener("click", () => openChatPage(idea.prefill));
-  grid.appendChild(card);
-});
+/* ---------- per-destination prefill for the "full verified trip" tab ---------- */
+const DEST_PREFILL = {
+  AUS: "Trip to Austin, TX -- ",
+  DEN: "Trip to Denver, CO -- ",
+  MIA: "Trip to Miami, FL -- ",
+};
 
 window.addEventListener("scroll", () => document.getElementById("nav").classList.toggle("scrolled", window.scrollY > 30));
 
-/* ---------- view switching ---------- */
+/* =========================================================================
+   EXPLORE -- real browse: hotels only, flights only, or the full chat flow.
+   This is what fixes "everywhere I click opens the chat" -- these are three
+   genuinely different, independent things, not the same funnel in disguise.
+   ========================================================================= */
+const DEST_FULL_NAMES = { AUS: "Austin, TX", DEN: "Denver, CO", MIA: "Miami, FL" };
+let EXPLORE_DEST = null;
+let EXPLORE_TAB = "hotels";
+let BROWSE_HOTEL_RESULTS = [];
+let BROWSE_FLIGHT_RESULTS = [];
+
+function openExplore(destCode) {
+  EXPLORE_DEST = destCode;
+  EXPLORE_TAB = "hotels";
+  document.getElementById("explore-title").textContent = "Explore " + (DEST_FULL_NAMES[destCode] || destCode);
+  document.querySelectorAll(".explore-tab").forEach(t => t.classList.toggle("active", t.dataset.tab === "hotels"));
+  openPageEl("explore-view");
+  renderExploreTab();
+}
+
+function switchExploreTab(tab) {
+  EXPLORE_TAB = tab;
+  document.querySelectorAll(".explore-tab").forEach(t => t.classList.toggle("active", t.dataset.tab === tab));
+  renderExploreTab();
+}
+
+function renderExploreTab() {
+  const body = document.getElementById("explore-body");
+  if (EXPLORE_TAB === "hotels") body.innerHTML = renderHotelBrowseForm();
+  else if (EXPLORE_TAB === "flights") body.innerHTML = renderFlightBrowseForm();
+  else {
+    body.innerHTML = `<div class="empty-state">
+      <div class="big">🔗</div>
+      A full trip pairs a specific flight with a specific hotel and checks they actually work
+      together -- arrival time vs. check-in, combined budget, amenities, room size.
+      <div style="margin-top:18px"><button class="btn-primary" onclick="openChatPage(DEST_PREFILL['${EXPLORE_DEST}'])">Plan a verified trip to ${DEST_FULL_NAMES[EXPLORE_DEST]} →</button></div>
+    </div>`;
+  }
+}
+
+function renderHotelBrowseForm() {
+  const amenityChips = AMENITY_OPTIONS.map(a => `<label class="filter-chip"><input type="checkbox" value="${a}" /> ${a.replace('_', ' ')}</label>`).join("");
+  return `<div class="browse-form">
+    <div class="row">
+      <label>Check-in date<input type="text" id="bh-date" placeholder="2026-10-05" /></label>
+      <label>Nights<input type="number" id="bh-nights" value="3" min="1" /></label>
+      <label>Guests<input type="number" id="bh-party" value="2" min="1" /></label>
+    </div>
+    <div class="row">
+      <label>Budget<input type="number" id="bh-budget" placeholder="e.g. 150" /></label>
+      <label>Scope
+        <select id="bh-scope"><option value="per_night_hotel">Per night</option><option value="total_trip">Total stay</option></select>
+      </label>
+    </div>
+    <div class="chip-row" style="margin-bottom:10px">${amenityChips}</div>
+    <button class="btn-submit" onclick="runHotelBrowse()">Search hotels</button>
+  </div>
+  <div class="browse-grid" id="browse-results"></div>`;
+}
+
+function renderFlightBrowseForm() {
+  return `<div class="browse-form">
+    <div class="row">
+      <label>Date<input type="text" id="bf-date" placeholder="2026-10-05" /></label>
+      <label>Passengers<input type="number" id="bf-party" value="1" min="1" /></label>
+      <label>Budget per passenger<input type="number" id="bf-budget" placeholder="e.g. 250" /></label>
+    </div>
+    <button class="btn-submit" onclick="runFlightBrowse()">Search flights</button>
+  </div>
+  <div class="browse-grid" id="browse-results"></div>`;
+}
+
+async function runHotelBrowse() {
+  const results = document.getElementById("browse-results");
+  results.innerHTML = `<div class="empty-state">Searching real hotels…</div>`;
+  const body = {
+    destination_code: EXPLORE_DEST,
+    date_range_start: document.getElementById("bh-date").value || "2026-10-05",
+    nights: parseInt(document.getElementById("bh-nights").value) || 3,
+    party_size: parseInt(document.getElementById("bh-party").value) || 1,
+    budget_amount: parseFloat(document.getElementById("bh-budget").value) || null,
+    budget_scope: document.getElementById("bh-scope").value,
+    required_amenities: Array.from(document.querySelectorAll(".browse-form input[type=checkbox]:checked")).map(el => el.value),
+  };
+  try {
+    const res = await fetch("/api/browse/hotels", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+    BROWSE_HOTEL_RESULTS = data.results.map(r => r.record);
+    if (!data.results.length) { results.innerHTML = `<div class="empty-state">No hotels found for these dates.</div>`; return; }
+    results.innerHTML = data.results.map((r, i) => {
+      const h = r.record;
+      const img = h.image_url || `/images/hotels/${h.id}.jpg`;
+      const flags = r.checks.filter(c => c.data_available !== false).map(c =>
+        `<span class="flag ${c.passed ? 'ok' : 'bad'}">${c.passed ? '✓' : '✕'} ${c.name}</span>`).join("");
+      return `<div class="browse-card ${r.passed_all ? '' : 'trap'}" onclick="showDetailRecord('hotel', BROWSE_HOTEL_RESULTS[${i}])">
+        <img src="${img}" onerror="this.style.display='none'" />
+        <div class="body">
+          <h4>${h.name}</h4>
+          <p>${h.destination_name || ''}${h.rating ? ' · ★ ' + h.rating.toFixed(1) : ''}</p>
+          <div class="price">$${h.price_per_night}/night</div>
+          <div class="flags">${flags}</div>
+        </div>
+      </div>`;
+    }).join("");
+  } catch (err) {
+    results.innerHTML = `<div class="error-bubble">Search failed: ${err.message}</div>`;
+  }
+}
+
+async function runFlightBrowse() {
+  const results = document.getElementById("browse-results");
+  results.innerHTML = `<div class="empty-state">Searching real flights…</div>`;
+  const body = {
+    destination_code: EXPLORE_DEST,
+    date_range_start: document.getElementById("bf-date").value || "2026-10-05",
+    party_size: parseInt(document.getElementById("bf-party").value) || 1,
+    budget_amount: parseFloat(document.getElementById("bf-budget").value) || null,
+  };
+  try {
+    const res = await fetch("/api/browse/flights", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+    BROWSE_FLIGHT_RESULTS = data.results.map(r => r.record);
+    if (!data.results.length) { results.innerHTML = `<div class="empty-state">No flights found for that date.</div>`; return; }
+    results.innerHTML = data.results.map((r, i) => {
+      const f = r.record;
+      const img = f.image_url || `/images/flights/${f.id}.jpg`;
+      return `<div class="browse-card" onclick="showDetailRecord('flight', BROWSE_FLIGHT_RESULTS[${i}])">
+        <img src="${img}" onerror="this.style.display='none'" />
+        <div class="body">
+          <h4>${f.airline} ${f.flight_number}</h4>
+          <p>${f.origin} → ${f.destination}, ${f.date}</p>
+          <p>${f.departure_time} → ${f.arrival_time}${f.arrives_next_day ? ' (+1d)' : ''}</p>
+          <div class="price">$${f.price}/passenger${r.total_for_party !== f.price ? ' · $' + r.total_for_party + ' total' : ''}</div>
+          <div class="flags">${r.within_stated_budget ? '<span class="flag ok">✓ within budget</span>' : '<span class="flag bad">✕ over budget</span>'}</div>
+        </div>
+      </div>`;
+    }).join("");
+  } catch (err) {
+    results.innerHTML = `<div class="error-bubble">Search failed: ${err.message}</div>`;
+  }
+}
+
 function openChatPage(prefill) {
   document.getElementById("chat-view").classList.add("open");
   document.body.style.overflow = "hidden";
@@ -758,6 +963,11 @@ async function applyFilters() {
 function showDetail(kind) {
   const r = kind === "hotel" ? LAST_HOTEL : LAST_FLIGHT;
   if (!r) return;
+  showDetailRecord(kind, r);
+}
+
+function showDetailRecord(kind, r) {
+  if (!r) return;
   const overlay = document.getElementById("modal-overlay");
   const panel = document.getElementById("modal-panel");
   const img = r.image_url || `/images/${kind === 'hotel' ? 'hotels' : 'flights'}/${r.id}.jpg`;
@@ -853,6 +1063,24 @@ async function checkAuth() {
   } catch { CURRENT_USER = null; }
   updateNavForAuth();
   refreshFriendBadge();
+  updateGate();
+}
+
+/* ---------- mandatory landing gate: sign in, sign up, or explicitly continue as guest ---------- */
+function updateGate() {
+  const isGuest = localStorage.getItem("travelDeskGuest") === "1";
+  const gate = document.getElementById("gate-view");
+  if (CURRENT_USER || isGuest) {
+    gate.classList.remove("open");
+  } else {
+    gate.classList.add("open");
+  }
+}
+function gateSignIn() { openAuthModal("login"); }
+function gateSignUp() { openAuthModal("signup"); }
+function continueAsGuest() {
+  localStorage.setItem("travelDeskGuest", "1");
+  document.getElementById("gate-view").classList.remove("open");
 }
 
 function updateNavForAuth() {
@@ -918,6 +1146,7 @@ async function submitAuth() {
     CURRENT_USER = data.user;
     updateNavForAuth();
     closeAuthModal();
+    updateGate();
   } catch (err) {
     renderAuthForm("Couldn't reach the server: " + err.message);
   } finally {

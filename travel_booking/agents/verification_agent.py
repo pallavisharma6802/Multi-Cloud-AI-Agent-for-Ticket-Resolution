@@ -139,6 +139,43 @@ def check_budget(hotel: dict, flight: dict, constraints: ResolvedConstraints) ->
     )
 
 
+def check_hotel_only_budget(hotel: dict, constraints: ResolvedConstraints) -> CheckResult:
+    """Budget check for browsing hotels with no paired flight -- there's no
+    total-trip cost to compute without one, so this only ever checks the
+    hotel's own nightly/stay cost, never claiming to check a "total" that
+    isn't knowable yet."""
+    hotel_nightly = hotel["price_per_night"] + (hotel.get("resort_fee_per_night") or 0)
+    fee_note = ""
+    if hotel.get("resort_fee_per_night"):
+        fee_note = f" (${hotel['price_per_night']} listed rate + ${hotel['resort_fee_per_night']} mandatory resort fee)"
+
+    if constraints.budget_amount is None:
+        return CheckResult(
+            name="budget", passed=True,
+            detail=f"No budget was stated; this hotel is ${hotel_nightly:.2f}/night{fee_note}.",
+            expected="no budget stated", actual=f"${hotel_nightly:.2f}/night",
+        )
+
+    if constraints.budget_scope == "per_night_hotel":
+        passed = hotel_nightly <= constraints.budget_amount
+        return CheckResult(
+            name="budget", passed=passed,
+            detail=f"Effective hotel rate is ${hotel_nightly:.2f}/night{fee_note} against a stated budget "
+            f"of ${constraints.budget_amount:.2f}/night -- " + ("within budget." if passed else "OVER budget."),
+            expected=f"<= ${constraints.budget_amount:.2f}/night", actual=f"${hotel_nightly:.2f}/night",
+        )
+
+    stay_total = hotel_nightly * constraints.nights
+    passed = stay_total <= constraints.budget_amount
+    return CheckResult(
+        name="budget", passed=passed,
+        detail=f"{constraints.nights} nights at ${hotel_nightly:.2f}/night{fee_note} = ${stay_total:.2f} "
+        f"(hotel only, no flight priced yet) against a stated total budget of ${constraints.budget_amount:.2f} -- "
+        + ("within budget." if passed else "OVER budget, before a flight is even added."),
+        expected=f"<= ${constraints.budget_amount:.2f} for the stay", actual=f"${stay_total:.2f} for the stay",
+    )
+
+
 # Real data sources (e.g. SerpApi/Google Hotels) return free-text amenity names
 # ("Outdoor pool", "Free Wi-Fi") instead of the simulated dataset's exact controlled
 # vocabulary -- match by substring against these known real-world phrasings.

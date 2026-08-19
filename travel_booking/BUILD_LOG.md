@@ -1353,3 +1353,82 @@ fixing (not just re-read and assumed correct):
 **Bedrock calls this round**: 0 (every fix and its verification was
 either pure logic, SQLite, or the group-trip path, which is
 Bedrock-free by design). **Running total unchanged: 78/80.**
+
+## Real fix, not a reskin: every click funneled into chat
+
+User feedback, verified before doing anything about it: "when i click
+anywhere it opens the chat option." Grepped every `onclick=` in
+`index.html` -- confirmed it was true. The hero CTA, "Start planning,"
+all 6 trip-idea cards, and the nav "Plan a trip" button all called the
+exact same `openChatPage()`. There was no way to look at hotels, look
+at flights, or browse anything without going through one conversational
+funnel wearing different labels. Also confirmed: auth was fully
+optional and invisible, no forced choice at all, matching the second
+complaint ("login is compulsory in the beginning or continue as a
+guest").
+
+This was an information-architecture problem, not a cosmetic one, so
+the fix is structural, not a reskin:
+
+**1. Mandatory landing gate** (`#gate-view`, z-index above everything
+else including the auth modal, which needed its own z-index bump from
+200 to 400 to actually render above the gate). On load, if there's no
+logged-in user AND no `localStorage.travelDeskGuest` flag, the gate is
+the only thing visible -- Sign in / Create an account / Continue as
+guest. Guest choice persists across reloads (checked by navigating
+away and back). Signing in or up from inside the gate closes it via
+the same `updateGate()` call the auth flow already runs through.
+
+**2. A real Explore page, not another chat entry point.** Picking a
+destination now opens `#explore-view` with three genuinely different
+tabs: **Hotels only**, **Flights only**, **Full verified trip** (the
+existing chat flow, now one option among three instead of the only
+option). Landing page simplified from 6 near-duplicate "trip idea"
+cards down to 3 clear destination cards -- clicking one opens Explore,
+not chat.
+
+**3. New backend for standalone browsing**
+(`travel_booking/agents/browse.py`, `POST /api/browse/hotels`,
+`POST /api/browse/flights`) -- structured filters only (destination,
+dates, budget, amenities), never freeform text, so trying any of this
+costs zero Bedrock calls, same discipline as the group-trip work.
+Hotels-only browsing still runs real per-listing checks where they
+make sense without a paired flight: budget, amenities, capacity.
+Added `check_hotel_only_budget()` to `verification_agent.py` since the
+existing `check_budget()` requires a flight to compute a total-trip
+cost that doesn't exist yet in browse mode -- this new one only ever
+checks the hotel's own cost, never claiming to check a "total" it
+can't know. Flights-only browsing shows real listings sorted by price
+with a plain within-budget flag (there's nothing meaningful to
+cross-verify for a single flight with no paired hotel).
+
+**4. `showDetail()` refactored into `showDetailRecord(kind, record)`**
+so the existing Airbnb-style detail modal (built for chat results)
+works identically for a browse card -- same modal, same real fields,
+no duplicated UI.
+
+**Verified end to end against the real running server** (JS
+invocation + DOM inspection, per this session's now-established
+pattern given the Browser pane's synthetic-click unreliability --
+screenshots used where they happened to render correctly, confirmed
+via `getBoundingClientRect`-style checks where they didn't):
+- Fresh load -> gate is the only visible thing, screenshot-confirmed.
+- `continueAsGuest()` -> gate closes, landing page (3 destination
+  cards, not 6 idea cards) renders, screenshot-confirmed.
+- Clicking Austin -> opens Explore (`exploreOpen: true`), confirmed
+  `chatOpen` stayed `false` -- this is the actual regression test for
+  the original complaint.
+- Hotels tab: real search against live SerpApi data, 16 real hotels
+  with real photos/prices/check badges, screenshot-confirmed.
+  Clicking a result card opened the real detail modal with the
+  correct hotel's real name.
+- Flights tab: real search, 11 real flights returned.
+- Full-trip tab: correctly explains the difference and hands off to
+  the existing verified chat flow.
+- Reloaded the page after choosing guest -- gate correctly stayed
+  closed (`localStorage` persisted the choice).
+
+14/14 -> unaffected, 40/40 pytest still passing (no logic in the
+verification/aggregator/auth layers changed, only additive: one new
+standalone check function). **Bedrock calls this round: 0. Running
+total unchanged: 78/80.**

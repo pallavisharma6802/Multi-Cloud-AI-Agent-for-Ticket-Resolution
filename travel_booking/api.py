@@ -23,6 +23,7 @@ from fastapi.responses import FileResponse  # noqa: E402
 from pydantic import BaseModel  # noqa: E402
 
 from travel_booking import auth as auth_mod  # noqa: E402
+from travel_booking.agents import browse as browse_mod  # noqa: E402
 from travel_booking.agents.explanation import build_explanation, build_explanation_for_option  # noqa: E402
 from travel_booking.agents.intent_agent import IntentAgent  # noqa: E402
 from travel_booking.agents.orchestrator import TravelAgent, TravelAgentState, TripOption  # noqa: E402
@@ -219,6 +220,47 @@ def run_search(conversation_id: str, filters: Optional[SearchFilters] = None):
 
     outcome = travel_agent.run_from_state(state)
     return _outcome_response(outcome)
+
+
+# ---------------------------------------------------------------------------
+# Browse -- hotels-only / flights-only, no chat, no paired-leg verification.
+# Structured filters only, zero Bedrock calls.
+# ---------------------------------------------------------------------------
+
+class BrowseHotelsRequest(BaseModel):
+    destination_code: str
+    date_range_start: str
+    nights: int = 3
+    party_size: int = 1
+    budget_amount: Optional[float] = None
+    budget_scope: str = "per_night_hotel"
+    required_amenities: List[str] = []
+
+
+class BrowseFlightsRequest(BaseModel):
+    destination_code: str
+    date_range_start: str
+    party_size: int = 1
+    budget_amount: Optional[float] = None
+
+
+@app.post("/api/browse/hotels")
+def browse_hotels(req: BrowseHotelsRequest):
+    if req.destination_code not in ("AUS", "DEN", "MIA"):
+        raise HTTPException(400, "destination_code must be AUS, DEN, or MIA")
+    return {"results": browse_mod.browse_hotels(
+        req.destination_code, req.date_range_start, req.nights, req.party_size,
+        req.budget_amount, req.budget_scope, req.required_amenities,
+    )}
+
+
+@app.post("/api/browse/flights")
+def browse_flights(req: BrowseFlightsRequest):
+    if req.destination_code not in ("AUS", "DEN", "MIA"):
+        raise HTTPException(400, "destination_code must be AUS, DEN, or MIA")
+    return {"results": browse_mod.browse_flights(
+        req.destination_code, req.date_range_start, req.party_size, req.budget_amount,
+    )}
 
 
 # ---------------------------------------------------------------------------
