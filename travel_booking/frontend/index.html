@@ -112,6 +112,83 @@
 
   .error-bubble { background: var(--fail-soft); color: var(--fail); border: 1px solid rgba(224,71,44,0.3); padding: 12px 16px; border-radius: 14px; font-size: 13.5px; max-width: 82%; }
 
+  /* -- nav auth area -- */
+  .nav-right { display: flex; align-items: center; gap: 10px; }
+  .nav-link { background: none; border: none; font-size: 13.5px; font-weight: 700; color: var(--text); cursor: pointer; padding: 8px 6px; }
+  .nav-link:hover { color: var(--teal); }
+  .user-chip { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; }
+  .user-chip .avatar { width: 26px; height: 26px; border-radius: 50%; background: var(--teal); color: white; display: flex; align-items: center; justify-content: center; font-size: 12px; }
+
+  /* -- generic full-screen page (planner, groups) -- */
+  .page-view { display: none; position: fixed; inset: 0; z-index: 100; background: var(--bg); flex-direction: column; }
+  .page-view.open { display: flex; }
+  .page-body { flex: 1; overflow-y: auto; }
+  .page-body-inner { max-width: 680px; margin: 0 auto; padding: 28px 20px 60px; }
+
+  .empty-state { text-align: center; padding: 60px 20px; color: var(--muted-soft); }
+  .empty-state .big { font-size: 34px; margin-bottom: 10px; }
+
+  .saved-trip-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm);
+    padding: 16px; margin-bottom: 12px; display: flex; gap: 14px; align-items: center; }
+  .saved-trip-card img { width: 70px; height: 70px; object-fit: cover; border-radius: 8px; flex-shrink: 0; }
+  .saved-trip-card .info { flex: 1; min-width: 0; }
+  .saved-trip-card .info h4 { font-size: 14.5px; margin: 0 0 3px; }
+  .saved-trip-card .info p { font-size: 12.5px; color: var(--muted); margin: 1px 0; }
+  .saved-trip-card .delete-btn { background: var(--fail-soft); color: var(--fail); border: none; padding: 8px 12px; border-radius: 8px; font-size: 12px; font-weight: 700; cursor: pointer; }
+
+  .save-to-planner-btn { background: var(--surface); border: 1.5px solid var(--teal); color: var(--teal-dark);
+    padding: 9px 16px; border-radius: 20px; font-size: 12.5px; font-weight: 700; cursor: pointer; margin-top: 10px; width: 100%; }
+  .save-to-planner-btn:hover { background: var(--teal-soft); }
+  .save-to-planner-btn:disabled { opacity: 0.6; cursor: default; }
+
+  /* -- groups -- */
+  .groups-actions { display: flex; gap: 10px; margin-bottom: 22px; }
+  .groups-actions button { flex: 1; padding: 13px; border-radius: 12px; font-size: 13.5px; font-weight: 700; cursor: pointer; border: 1.5px solid var(--border); background: var(--surface); }
+  .groups-actions button:hover { border-color: var(--teal); }
+  .group-list-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 16px; margin-bottom: 10px; cursor: pointer; }
+  .group-list-card:hover { border-color: var(--teal); }
+  .group-list-card h4 { margin: 0 0 3px; font-size: 14.5px; }
+  .group-list-card p { margin: 0; font-size: 12px; color: var(--muted); }
+
+  .inline-form { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 18px; margin-bottom: 20px; }
+  .inline-form label { display: block; font-size: 12px; font-weight: 700; color: var(--muted); margin-bottom: 6px; }
+  .inline-form input, .inline-form select { width: 100%; padding: 10px 12px; border-radius: 8px; border: 1.5px solid var(--border);
+    font-size: 13.5px; font-family: 'Manrope', sans-serif; background: var(--bg); color: var(--text); margin-bottom: 14px; }
+  .inline-form .btn-submit { width: 100%; background: var(--teal); color: white; border: none; padding: 12px; border-radius: 10px; font-size: 13.5px; font-weight: 700; cursor: pointer; }
+  .inline-form .btn-submit:hover { background: var(--teal-dark); }
+
+  .join-code-display { background: var(--teal-soft); color: var(--teal-dark); padding: 14px 18px; border-radius: 12px;
+    text-align: center; margin-bottom: 20px; }
+  .join-code-display .code { font-size: 26px; font-weight: 800; letter-spacing: 0.08em; margin-top: 4px; }
+
+  .member-row { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--border-soft); }
+  .member-row:last-child { border-bottom: none; }
+  .member-row .avatar { width: 30px; height: 30px; border-radius: 50%; background: var(--surface-2); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; }
+  .member-row .name { flex: 1; font-size: 13.5px; font-weight: 600; }
+  .member-badge { font-size: 10.5px; font-weight: 700; padding: 3px 9px; border-radius: 10px; }
+  .member-badge.submitted { background: var(--pass-soft); color: var(--pass); }
+  .member-badge.waiting { background: var(--surface-2); color: var(--muted-soft); }
+
+  .strategy-banner { background: var(--coral-soft); color: #a33d1f; padding: 12px 16px; border-radius: 12px; font-size: 13px; margin-bottom: 16px; }
+  .feedback-row { display: flex; gap: 10px; margin-top: 16px; }
+  .feedback-row button { flex: 1; padding: 12px; border-radius: 10px; font-size: 13.5px; font-weight: 700; cursor: pointer; border: none; }
+  .feedback-row .accept-btn { background: var(--pass); color: white; }
+  .feedback-row .reject-btn { background: var(--surface-2); color: var(--text); }
+
+  /* -- auth modal -- */
+  .auth-panel { max-width: 380px; padding: 30px; }
+  .auth-panel h2 { font-size: 22px; margin: 0 0 6px; }
+  .auth-panel .sub { font-size: 13px; color: var(--muted); margin-bottom: 22px; }
+  .auth-panel label { display: block; font-size: 12px; font-weight: 700; color: var(--muted); margin-bottom: 6px; }
+  .auth-panel input { width: 100%; padding: 11px 13px; border-radius: 8px; border: 1.5px solid var(--border);
+    font-size: 13.5px; font-family: 'Manrope', sans-serif; background: var(--bg); color: var(--text); margin-bottom: 14px; }
+  .auth-panel .btn-submit { width: 100%; background: var(--teal); color: white; border: none; padding: 13px; border-radius: 10px; font-size: 14px; font-weight: 700; cursor: pointer; margin-top: 4px; }
+  .auth-panel .btn-submit:hover:not(:disabled) { background: var(--teal-dark); }
+  .auth-panel .btn-submit:disabled { opacity: 0.5; }
+  .auth-panel .switch-mode { text-align: center; margin-top: 16px; font-size: 12.5px; color: var(--muted); }
+  .auth-panel .switch-mode a { color: var(--teal-dark); font-weight: 700; cursor: pointer; }
+  .auth-panel .auth-error { background: var(--fail-soft); color: var(--fail); padding: 10px 13px; border-radius: 8px; font-size: 12.5px; margin-bottom: 14px; }
+
   .chat-input-bar { border-top: 1px solid var(--border); background: var(--surface); padding: 16px 20px 20px; flex-shrink: 0; }
   .chat-input-inner { max-width: 680px; margin: 0 auto; display: flex; gap: 10px; align-items: center; }
   input[type=text] { flex: 1; padding: 14px 18px; border-radius: 26px; border: 1.5px solid var(--border); font-size: 15px;
@@ -230,7 +307,10 @@
 <div id="landing-view">
   <nav id="nav">
     <div class="logo"><span class="dot"></span> Travel Desk</div>
-    <button class="nav-cta" onclick="openChatPage()">Plan a trip</button>
+    <div class="nav-right" id="nav-right">
+      <button class="nav-link" onclick="openAuthModal()" id="nav-signin-btn">Sign in</button>
+      <button class="nav-cta" onclick="openChatPage()">Plan a trip</button>
+    </div>
   </nav>
 
   <section class="hero">
@@ -289,9 +369,32 @@
   </div>
 </div>
 
+<!-- ============ PLANNER PAGE ============ -->
+<div id="planner-view" class="page-view">
+  <div class="chat-header">
+    <button class="back-btn" onclick="closePage('planner-view')">←</button>
+    <span class="title">My Planner</span>
+  </div>
+  <div class="page-body"><div class="page-body-inner" id="planner-body"></div></div>
+</div>
+
+<!-- ============ GROUPS PAGE ============ -->
+<div id="groups-view" class="page-view">
+  <div class="chat-header">
+    <button class="back-btn" onclick="closePage('groups-view')">←</button>
+    <span class="title">Group Trips</span>
+  </div>
+  <div class="page-body"><div class="page-body-inner" id="groups-body"></div></div>
+</div>
+
 <!-- ============ DETAIL MODAL ============ -->
 <div class="modal-overlay" id="modal-overlay" onclick="if(event.target===this) closeModal()">
   <div class="modal-panel" id="modal-panel"></div>
+</div>
+
+<!-- ============ AUTH MODAL ============ -->
+<div class="modal-overlay" id="auth-overlay" onclick="if(event.target===this) closeAuthModal()">
+  <div class="modal-panel auth-panel" id="auth-panel"></div>
 </div>
 
 <script>
@@ -549,6 +652,9 @@ function renderSelectedOption() {
       </div>`;
     }
     html += `</div>`;
+    if (exp.status === 'verified') {
+      html += `<button class="save-to-planner-btn" onclick="saveCurrentOptionToPlanner(this)">☆ Save this trip to my planner</button>`;
+    }
   }
 
   html += `<div class="verify-card">
@@ -708,6 +814,359 @@ chatSend.addEventListener("click", sendMessage);
 chatInput.addEventListener("keydown", e => {
   if (e.key === "Enter" || e.keyCode === 13) { e.preventDefault(); sendMessage(); }
 });
+
+/* =========================================================================
+   AUTH
+   ========================================================================= */
+let CURRENT_USER = null;
+let authMode = "login";
+
+async function checkAuth() {
+  try {
+    const res = await fetch("/api/auth/me");
+    if (res.ok) { CURRENT_USER = (await res.json()).user; }
+    else { CURRENT_USER = null; }
+  } catch { CURRENT_USER = null; }
+  updateNavForAuth();
+}
+
+function updateNavForAuth() {
+  const el = document.getElementById("nav-right");
+  if (CURRENT_USER) {
+    const initial = (CURRENT_USER.display_name || CURRENT_USER.username)[0].toUpperCase();
+    el.innerHTML = `
+      <button class="nav-link" onclick="openPlanner()">My planner</button>
+      <button class="nav-link" onclick="openGroups()">Group trips</button>
+      <div class="user-chip"><div class="avatar">${initial}</div>${CURRENT_USER.display_name}</div>
+      <button class="nav-link" onclick="doLogout()">Log out</button>
+    `;
+  } else {
+    el.innerHTML = `
+      <button class="nav-link" onclick="openAuthModal()" id="nav-signin-btn">Sign in</button>
+      <button class="nav-cta" onclick="openChatPage()">Plan a trip</button>
+    `;
+  }
+}
+
+function openAuthModal(mode) {
+  authMode = mode || "login";
+  renderAuthForm();
+  document.getElementById("auth-overlay").classList.add("open");
+}
+function closeAuthModal() { document.getElementById("auth-overlay").classList.remove("open"); }
+
+function renderAuthForm(errorMsg) {
+  const panel = document.getElementById("auth-panel");
+  const isLogin = authMode === "login";
+  panel.innerHTML = `
+    <h2>${isLogin ? "Welcome back" : "Create your account"}</h2>
+    <div class="sub">${isLogin ? "Sign in to save trips and plan with friends." : "Takes 10 seconds. No email needed for this demo."}</div>
+    ${errorMsg ? `<div class="auth-error">${errorMsg}</div>` : ""}
+    ${!isLogin ? `<label>Display name</label><input type="text" id="auth-display-name" placeholder="e.g. Alex" />` : ""}
+    <label>Username</label><input type="text" id="auth-username" placeholder="e.g. alex123" />
+    <label>Password</label><input type="password" id="auth-password" placeholder="At least 8 characters" />
+    <button class="btn-submit" id="auth-submit-btn" onclick="submitAuth()">${isLogin ? "Sign in" : "Create account"}</button>
+    <div class="switch-mode">
+      ${isLogin ? `New here? <a onclick="authMode='signup'; renderAuthForm()">Create an account</a>`
+                : `Already have one? <a onclick="authMode='login'; renderAuthForm()">Sign in</a>`}
+    </div>
+  `;
+}
+
+async function submitAuth() {
+  const isLogin = authMode === "login";
+  const username = document.getElementById("auth-username").value.trim();
+  const password = document.getElementById("auth-password").value;
+  const btn = document.getElementById("auth-submit-btn");
+  btn.disabled = true; btn.textContent = isLogin ? "Signing in…" : "Creating account…";
+
+  try {
+    const body = isLogin ? { username, password } : {
+      username, password, display_name: document.getElementById("auth-display-name").value.trim() || username,
+    };
+    const res = await fetch(isLogin ? "/api/auth/login" : "/api/auth/signup", {
+      method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body),
+    });
+    const data = await res.json();
+    if (!res.ok) { renderAuthForm(data.detail || "Something went wrong."); return; }
+    CURRENT_USER = data.user;
+    updateNavForAuth();
+    closeAuthModal();
+  } catch (err) {
+    renderAuthForm("Couldn't reach the server: " + err.message);
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+async function doLogout() {
+  await fetch("/api/auth/logout", { method: "POST" });
+  CURRENT_USER = null;
+  updateNavForAuth();
+}
+
+/* =========================================================================
+   GENERIC PAGE HELPERS
+   ========================================================================= */
+function closePage(id) {
+  document.getElementById(id).classList.remove("open");
+  document.body.style.overflow = "";
+}
+function openPageEl(id) {
+  document.getElementById(id).classList.add("open");
+  document.body.style.overflow = "hidden";
+}
+function requireAuthOrPrompt() {
+  if (!CURRENT_USER) { openAuthModal("login"); return false; }
+  return true;
+}
+
+/* =========================================================================
+   PLANNER
+   ========================================================================= */
+async function openPlanner() {
+  if (!requireAuthOrPrompt()) return;
+  openPageEl("planner-view");
+  const body = document.getElementById("planner-body");
+  body.innerHTML = `<div class="empty-state">Loading…</div>`;
+  const res = await fetch("/api/planner");
+  const data = await res.json();
+  if (!data.trips || !data.trips.length) {
+    body.innerHTML = `<div class="empty-state"><div class="big">✈️🏨</div>No saved trips yet.<br/>Verify a trip in chat and tap "Save to my planner."</div>`;
+    return;
+  }
+  body.innerHTML = data.trips.map(t => `
+    <div class="saved-trip-card">
+      <img src="${(t.hotel && t.hotel.image_url) || (t.hotel && '/images/hotels/' + t.hotel.id + '.jpg') || ''}" onerror="this.style.display='none'" />
+      <div class="info">
+        <h4>${t.label || (t.hotel ? t.hotel.name : 'Saved trip')}</h4>
+        <p>${t.hotel ? t.hotel.name : ''}${t.flight ? ' · ' + t.flight.airline + ' ' + t.flight.flight_number : ''}</p>
+        <p>Total: $${t.verification && t.verification.total_cost ? t.verification.total_cost.toFixed(2) : '—'}</p>
+      </div>
+      <button class="delete-btn" onclick="deleteSavedTrip(${t.id})">Remove</button>
+    </div>
+  `).join("");
+}
+
+async function saveCurrentOptionToPlanner(btn) {
+  if (!requireAuthOrPrompt()) return;
+  const opt = ALL_OPTIONS[SELECTED_OPTION];
+  btn.disabled = true; btn.textContent = "Saving…";
+  try {
+    const res = await fetch("/api/planner/save", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ hotel: opt.hotel, flight: opt.flight, verification: opt.explanation, label: opt.hotel ? opt.hotel.name : null }),
+    });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    btn.textContent = "★ Saved to planner";
+  } catch (err) {
+    btn.textContent = "☆ Save this trip to my planner";
+    btn.disabled = false;
+    showError("Couldn't save this trip: " + err.message);
+  }
+}
+
+async function deleteSavedTrip(id) {
+  await fetch(`/api/planner/${id}`, { method: "DELETE" });
+  openPlanner();
+}
+
+/* =========================================================================
+   GROUP TRIPS
+   ========================================================================= */
+let CURRENT_GROUP_ID = null;
+const DEST_NAMES = { AUS: "Austin, TX", DEN: "Denver, CO", MIA: "Miami, FL" };
+
+async function openGroups() {
+  if (!requireAuthOrPrompt()) return;
+  CURRENT_GROUP_ID = null;
+  openPageEl("groups-view");
+  await renderGroupsHome();
+}
+
+async function renderGroupsHome() {
+  const body = document.getElementById("groups-body");
+  body.innerHTML = `<div class="empty-state">Loading…</div>`;
+  const res = await fetch("/api/groups");
+  const data = await res.json();
+  let html = `<div class="groups-actions">
+    <button onclick="showCreateGroupForm()">+ Create a group trip</button>
+    <button onclick="showJoinGroupForm()">Join with a code</button>
+  </div><div id="groups-inline-form"></div>`;
+  if (!data.groups || !data.groups.length) {
+    html += `<div class="empty-state"><div class="big">👥</div>No group trips yet -- create one and invite friends with the join code.</div>`;
+  } else {
+    html += data.groups.map(g => `
+      <div class="group-list-card" onclick="openGroupDetail(${g.id})">
+        <h4>${g.name}</h4>
+        <p>${DEST_NAMES[g.destination_code] || g.destination_code} · code ${g.join_code} · ${g.status}</p>
+      </div>
+    `).join("");
+  }
+  body.innerHTML = html;
+}
+
+function showCreateGroupForm() {
+  document.getElementById("groups-inline-form").innerHTML = `
+    <div class="inline-form">
+      <label>Trip name</label><input type="text" id="grp-name" placeholder="e.g. Austin Bachelorette" />
+      <label>Destination</label>
+      <select id="grp-dest"><option value="AUS">Austin, TX</option><option value="DEN">Denver, CO</option><option value="MIA">Miami, FL</option></select>
+      <button class="btn-submit" onclick="submitCreateGroup()">Create trip</button>
+    </div>`;
+}
+
+async function submitCreateGroup() {
+  const name = document.getElementById("grp-name").value.trim();
+  const destination_code = document.getElementById("grp-dest").value;
+  if (!name) return;
+  const res = await fetch("/api/groups", {
+    method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ name, destination_code }),
+  });
+  const data = await res.json();
+  if (res.ok) openGroupDetail(data.group_id);
+}
+
+function showJoinGroupForm() {
+  document.getElementById("groups-inline-form").innerHTML = `
+    <div class="inline-form">
+      <label>Join code</label><input type="text" id="grp-join-code" placeholder="e.g. AF0507" style="text-transform:uppercase" />
+      <button class="btn-submit" onclick="submitJoinGroup()">Join trip</button>
+    </div>`;
+}
+
+async function submitJoinGroup() {
+  const join_code = document.getElementById("grp-join-code").value.trim();
+  if (!join_code) return;
+  const res = await fetch("/api/groups/join", {
+    method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ join_code }),
+  });
+  const data = await res.json();
+  if (res.ok) openGroupDetail(data.group_id);
+  else document.getElementById("groups-inline-form").innerHTML += `<div class="auth-error">${data.detail || "Couldn't join."}</div>`;
+}
+
+async function openGroupDetail(groupId) {
+  CURRENT_GROUP_ID = groupId;
+  const body = document.getElementById("groups-body");
+  body.innerHTML = `<div class="empty-state">Loading…</div>`;
+  const res = await fetch(`/api/groups/${groupId}`);
+  if (!res.ok) { body.innerHTML = `<div class="empty-state">Couldn't load this group.</div>`; return; }
+  const data = await res.json();
+  const g = data.group;
+  const me = data.members.find(m => m.username === CURRENT_USER.username);
+  const iSubmitted = me && me.submitted > 0;
+
+  let html = `<button class="nav-link" onclick="renderGroupsHome()" style="margin-bottom:14px">← All group trips</button>
+    <h2 class="serif" style="margin-bottom:4px">${g.name}</h2>
+    <p style="color:var(--muted);font-size:13.5px;margin-bottom:16px">${DEST_NAMES[g.destination_code] || g.destination_code}</p>
+    <div class="join-code-display">Share this code to invite friends<div class="code">${g.join_code}</div></div>
+    <div class="pair-label">Who's in</div>`;
+  data.members.forEach(m => {
+    html += `<div class="member-row">
+      <div class="avatar">${(m.display_name || m.username)[0].toUpperCase()}</div>
+      <div class="name">${m.display_name}${m.username === CURRENT_USER.username ? ' (you)' : ''}</div>
+      <span class="member-badge ${m.submitted > 0 ? 'submitted' : 'waiting'}">${m.submitted > 0 ? 'Preferences in' : 'Waiting'}</span>
+    </div>`;
+  });
+
+  html += `<div style="margin-top:22px" id="group-pref-area"></div><div id="group-results-area"></div>`;
+  body.innerHTML = html;
+
+  const prefArea = document.getElementById("group-pref-area");
+  if (!iSubmitted) {
+    prefArea.innerHTML = renderGroupPreferenceForm();
+  } else {
+    prefArea.innerHTML = `<button class="save-to-planner-btn" onclick="runGroupSearch(${groupId})" style="border-color:var(--teal);background:var(--teal);color:white">🔎 Find a trip for the group</button>`;
+  }
+}
+
+function renderGroupPreferenceForm() {
+  const amenityChips = AMENITY_OPTIONS.map(a => `<label class="filter-chip"><input type="checkbox" value="${a}" /> ${a.replace('_', ' ')}</label>`).join("");
+  return `<div class="inline-form">
+    <div class="pair-label" style="margin-bottom:14px">Your preferences for this trip</div>
+    <label>From</label><input type="text" id="gp-date-start" placeholder="2026-10-05" />
+    <label>To</label><input type="text" id="gp-date-end" placeholder="2026-10-08" />
+    <label>How many people are you bringing (incl. you)</label><input type="number" id="gp-party" value="1" min="1" />
+    <label>Your budget</label><input type="number" id="gp-budget" placeholder="e.g. 200" />
+    <label>Scope</label>
+    <select id="gp-scope"><option value="total_trip">Total trip</option><option value="per_night_hotel">Per night (hotel)</option></select>
+    <label>Amenities you want</label><div class="chip-row" style="margin-bottom:14px">${amenityChips}</div>
+    <button class="btn-submit" onclick="submitGroupPreferences()">Submit my preferences</button>
+  </div>`;
+}
+
+async function submitGroupPreferences() {
+  const body = {
+    date_range_start: document.getElementById("gp-date-start").value,
+    date_range_end: document.getElementById("gp-date-end").value,
+    party_size: parseInt(document.getElementById("gp-party").value) || 1,
+    budget_amount: parseFloat(document.getElementById("gp-budget").value) || null,
+    budget_scope: document.getElementById("gp-scope").value,
+    required_amenities: Array.from(document.querySelectorAll("#group-pref-area input[type=checkbox]:checked")).map(el => el.value),
+  };
+  const res = await fetch(`/api/groups/${CURRENT_GROUP_ID}/preferences`, {
+    method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body),
+  });
+  if (res.ok) openGroupDetail(CURRENT_GROUP_ID);
+}
+
+async function runGroupSearch(groupId) {
+  const resultsArea = document.getElementById("group-results-area");
+  resultsArea.innerHTML = `<div class="searching-pill" style="margin-top:14px"><div class="dots"><span></span><span></span><span></span></div>Combining everyone's preferences and searching…</div>`;
+  try {
+    const res = await fetch(`/api/groups/${groupId}/search`, { method: "POST" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+    renderGroupResults(data);
+  } catch (err) {
+    resultsArea.innerHTML = `<div class="error-bubble">Group search failed: ${err.message}</div>`;
+  }
+}
+
+function renderGroupResults(data) {
+  const resultsArea = document.getElementById("group-results-area");
+  const options = [{ hotel: data.hotel, flight: data.flight, explanation: data.explanation }, ...(data.options || []).filter(o => !data.hotel || o.hotel.id !== data.hotel.id)];
+  let html = `<div class="strategy-banner">🤖 Combined ${data.members_count} people's preferences using the <b>${data.strategy}</b> strategy — ${data.explanation ? '' : ''}${data.strategy_description}.</div>`;
+
+  const opt = options[0];
+  const exp = opt.explanation;
+  if (opt.hotel || opt.flight) {
+    html += `<div class="itinerary">`;
+    if (opt.hotel) {
+      html += `<div class="itin-item"><img src="${opt.hotel.image_url || '/images/hotels/' + opt.hotel.id + '.jpg'}" onerror="this.style.display='none'" />
+        <div class="itin-body"><div class="itin-kind">🏨 Hotel</div><h3>${opt.hotel.name}</h3><p>${opt.hotel.destination_name}</p><div class="price-line">$${opt.hotel.price_per_night}/night</div></div></div>`;
+    }
+    if (opt.flight) {
+      html += `<div class="itin-item"><img src="${opt.flight.image_url || '/images/flights/' + opt.flight.id + '.jpg'}" onerror="this.style.display='none'" />
+        <div class="itin-body"><div class="itin-kind">✈️ Flight</div><h3>${opt.flight.airline} ${opt.flight.flight_number}</h3><p>${opt.flight.origin} → ${opt.flight.destination}</p><div class="price-line">$${opt.flight.price}/passenger</div></div></div>`;
+    }
+    html += `</div>`;
+  }
+  html += `<div class="verify-card"><div class="verify-title">Verification</div>
+    <div class="banner ${exp.status}"><div class="badge">${exp.status === 'verified' ? '✓' : '!'}</div><div>${exp.headline}</div></div>`;
+  if (exp.checklist.length) html += exp.checklist.map(checkRow).join("");
+  if (exp.total_cost) html += `<div class="total-cost"><span class="lbl">Total trip cost</span><span class="amt">$${exp.total_cost.toFixed(2)}</span></div>`;
+  html += `</div>`;
+
+  if (exp.status === 'verified') {
+    html += `<div class="feedback-row">
+      <button class="accept-btn" onclick="submitGroupFeedback(${CURRENT_GROUP_ID}, true, this)">👍 Group likes this</button>
+      <button class="reject-btn" onclick="submitGroupFeedback(${CURRENT_GROUP_ID}, false, this)">👎 Keep looking</button>
+    </div>`;
+  }
+  resultsArea.innerHTML = html;
+}
+
+async function submitGroupFeedback(groupId, accepted, btn) {
+  btn.closest(".feedback-row").querySelectorAll("button").forEach(b => b.disabled = true);
+  await fetch(`/api/groups/${groupId}/feedback`, {
+    method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ accepted }),
+  });
+  btn.closest(".feedback-row").innerHTML = `<div style="color:var(--muted);font-size:13px;text-align:center;width:100%">Thanks -- noted for next time.</div>`;
+}
+
+checkAuth();
 </script>
 </body>
 </html>

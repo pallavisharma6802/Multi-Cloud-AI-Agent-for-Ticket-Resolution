@@ -389,6 +389,21 @@ class GroupFeedbackRequest(BaseModel):
     accepted: bool
 
 
+@app.get("/api/groups")
+def list_my_groups(session_token: Optional[str] = Cookie(None)):
+    user = _require_user(session_token)
+    conn = get_connection()
+    try:
+        rows = conn.execute(
+            """SELECT g.* FROM trip_groups g JOIN trip_group_members m ON m.group_id = g.id
+               WHERE m.user_id = ? ORDER BY g.created_at DESC""",
+            (user["id"],),
+        ).fetchall()
+        return {"groups": [dict(r) for r in rows]}
+    finally:
+        conn.close()
+
+
 @app.post("/api/groups")
 def create_group(req: CreateGroupRequest, session_token: Optional[str] = Cookie(None)):
     user = _require_user(session_token)

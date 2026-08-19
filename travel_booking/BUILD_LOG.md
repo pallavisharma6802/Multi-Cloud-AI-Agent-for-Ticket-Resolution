@@ -1165,3 +1165,93 @@ frontend, rather than continuing to add another few hundred lines of
 UI without a checkpoint.
 
 **Bedrock calls this round**: 0. **Running total unchanged: 78/80.**
+
+## Frontend for accounts, planner, and group trips -- DONE, all backend features now have real UI
+
+User confirmed: build the frontend for everything. Added a
+"list my groups" endpoint that was missing (`GET /api/groups`,
+needed so the frontend can show a user's groups without knowing IDs
+in advance) before starting on the UI itself.
+
+**Auth**: nav bar is now auth-aware -- logged out shows "Sign in"; logged
+in shows "My planner" / "Group trips" / a user-initial avatar chip with
+display name / "Log out", replacing the static nav entirely
+(`updateNavForAuth()`, called once on page load via `checkAuth()` and
+again after any login/signup/logout). Sign-in/signup is a modal
+(reusing the existing `.modal-overlay` pattern from the detail-view
+modal, as a separate `#auth-overlay` instance) with a toggle between
+login/signup modes, inline error display, and a disabled+"Signing
+in..."/"Creating account..." button state during the request --
+consistent with the earlier `sendMessage()` fix's discipline of always
+giving visible feedback and never leaving a button stuck.
+
+**Planner** (`openPlanner()`): full-screen page (reused the `#chat-view`
+full-screen pattern as a generic `.page-view` class so `#planner-view`
+and `#groups-view` share it) listing saved trips as cards with a real
+image, name, price, and a working delete button. Added a real
+"☆ Save this trip to my planner" button to the chat results view
+(`renderSelectedOption()`) that only appears on a verified option, and
+prompts the auth modal instead of silently failing if the user isn't
+logged in yet (`requireAuthOrPrompt()`, reused by planner and groups
+both).
+
+**Group trips**: the most involved addition --
+- `openGroups()` lists the user's groups (via the newly-added list
+  endpoint) plus "Create a group trip" / "Join with a code" actions
+  that expand an inline form in place, no separate page needed.
+- Group detail view shows the real join code prominently (so it's
+  actually shareable), a member list with a live "Preferences in" vs.
+  "Waiting" badge per person, and -- if the current user hasn't
+  submitted their own preferences yet -- a structured preference form
+  (dates, party size, budget+scope, amenity checkboxes, reusing the
+  same `AMENITY_OPTIONS` list the solo-search refine panel already
+  uses). Once submitted, that form is replaced by a "Find a trip for
+  the group" button.
+- Running the group search shows a `strategy-banner` naming exactly
+  which bandit arm was chosen and why ("Combined N people's
+  preferences using the `conservative` strategy -- tightest budget
+  across the group, only amenities everyone asked for"), then the same
+  itinerary-card + verification-checklist rendering style as solo
+  search, plus a 👍/👎 feedback row that POSTs the real reward signal
+  back to the bandit and confirms it was recorded.
+
+**Verified end to end via direct JS invocation against the real running
+server** (same method as prior UI passes, since this session's Browser
+pane still doesn't register synthetic clicks/typing reliably --
+confirmed once more by checking real DOM state after each call, not
+trusting screenshots that repeatedly lagged behind actual state):
+1. Signed up a real new user ("Charlie") through the actual signup
+   form -- `CURRENT_USER` populated correctly, modal closed, nav
+   updated to the logged-in state (verified `nav-right`'s real
+   innerHTML).
+2. Opened the Planner while empty -- correct empty state.
+3. Created a real group trip ("Austin Weekend", AUS) through the
+   actual create-group form -- got a real join code, member list showed
+   Charlie as "Waiting".
+4. Submitted real structured preferences through the actual form
+   (2 people, $200/night, wants a pool) -- member badge flipped to
+   "Preferences in", form replaced by the search button.
+5. Ran the real group search through the actual UI -- bandit picked
+   `conservative` (the only arm with any real preference to combine
+   yet), correctly rendered the strategy banner, a real hotel with a
+   real Google-hosted photo, and the full verification checklist with
+   the feedback row present.
+6. Saved a trip to the planner through the real `saveCurrentOptionToPlanner()`
+   path and confirmed it round-tripped through `POST /api/planner/save`
+   correctly, then confirmed the Planner page's real (non-mocked)
+   fetch of `GET /api/planner` correctly listed it -- **screenshot-
+   confirmed this one visually** (not just DOM inspection), showing the
+   saved-trip card with delete button rendering correctly on screen.
+
+Cleaned up the test SQLite database (`travel_booking/data/travel.db`,
+gitignored, not committed) after verification so the repo doesn't ship
+test user "Charlie."
+
+**Bedrock calls this round**: 0 (group search uses structured
+preferences by design, so trying the whole feature set costs nothing
+against the session's Bedrock budget). **Running total unchanged:
+78/80.** 14/14 pytest still passing.
+
+All 4 new-feature tasks (accounts, planner, group trips, RL
+aggregation) are now genuinely complete end to end -- real backend,
+real persistence, real frontend, all verified working together.
