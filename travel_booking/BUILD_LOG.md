@@ -576,3 +576,74 @@ the closest real options are paid third-party services like SerpApi's
 Google Hotels/Flights scraping endpoints or Amadeus for Developers,
 both of which are new paid billing relationships) -- needs the user's
 explicit direction before any code changes, not an assumption.
+
+## User feedback resolved: visual direction + real-API decision
+
+Asked two follow-up questions to get specifics (the first round of
+feedback was "it looks bad" with no detail, and "Google hotels and
+flights" isn't an API that actually exists). Answers:
+- Visual: "Clean modern travel-app style" -- bright, simple,
+  Airbnb/Kayak-like cards, no thematic concept. Explicit rejection of
+  the ticket/departure-board direction from the prior pass.
+- Data: "use a real booking api on free tier" -- confirmed they do want
+  live real-world data, any provider, free tier.
+
+**Visual redesign v2**: full rewrite of `frontend/index.html`, dropped
+the departure-board dark section, the 3-typeface system, and all the
+per-role accent hues entirely. Now: single Inter typeface, white cards
+on a light gray background, one confident blue brand accent
+(`#1967d2`), standard green/red pass-fail treatment, plain checkmark/x
+icons instead of flip-board animation, simple fade-free rendering. This
+is a deliberate move AWAY from the frontend-design skill's "take one
+real risk" posture, because the user explicitly asked for the opposite
+-- a familiar, unremarkable consumer-app look, which is itself a valid
+design brief the skill doesn't override.
+
+**Real bug fixed in the same pass**: caught via the user's own testing
+-- the dates-clarification question explicitly offers "search the whole
+month" as an answer, but replying with almost exactly that phrase got
+the identical question re-asked instead of proceeding (see the
+dedicated bug-fix entry above, committed separately as `0822814` before
+this visual pass). Re-verified live through the actual redesigned UI
+(not just the isolated repro test) -- reproduced the user's exact
+conversation (Miami, "not too expensive", "whole month") end to end:
+correctly resolved to the full `2026-10-01..2026-10-31` range, correct
+assumption text ("searching the whole available month, as you asked"),
+no repeated question, and the search that followed correctly proposed
+an itinerary and correctly flagged it as `unsatisfiable` (a pool-less
+budget hotel was the closest match; amenities check correctly failed
+while the other 3 checks correctly passed).
+
+**Secondary fix found via this same test**: Enter-to-send wasn't firing
+reliably when driven through the Browser pane's synthetic key events
+(`e.key` check alone). Added a `e.keyCode === 13` fallback alongside it
+in `index.html` -- low-risk, additive, real keyboards fire both
+properties correctly so this doesn't change behavior for actual users,
+just hardens against however that event was being dispatched.
+
+**Bedrock calls this round**: 3 (the live 3-turn UI reproduction).
+**Running total: 68 + 3 = 71/80.**
+
+**Real booking API -- next step, not yet started**: needs a decision on
+provider before any code changes. Recommending **Amadeus for
+Developers** (their free "Self-Service" tier covers Flight Offers
+Search and Hotel Search, no credit card required to sign up) over
+SerpApi's Google-scraping endpoints, since Amadeus is a real airline/GDS
+data provider rather than a scraper, and its free tier is actually
+usable for a demo rather than a 100-search/month trial. This requires
+the user to create their own free Amadeus for Developers account and
+provide an API key + secret (cannot be done on their behalf -- account
+creation and credential handling are both outside what this session can
+do directly). Proposed next steps once credentials are available: (1)
+build an `amadeus_client.py` module (OAuth2 client-credentials token
+flow + Flight Offers Search + Hotel Search calls) behind a config flag,
+(2) keep the existing simulated Search Agent as a fallback/demo mode
+rather than deleting it outright, since Stage 1-3's entire verification
+methodology (the 7 hand-built traps, the 100% catch-rate battery) was
+built and proven against it, (3) re-evaluate what "trap" testing even
+means against live real-world data, which won't have engineered flaws
+the way the simulated dataset does, but will have real naturally-
+occurring edge cases (real check-in policies, real fees, real capacity
+limits) that the same 4-check Verification Agent logic should still
+catch correctly without modification, since it operates on whatever
+structured fields the data source provides, real or simulated.
