@@ -260,6 +260,12 @@ calls `boto3` directly rather than a LangChain-wrapped LLM client, so a node's s
 but not a nested per-call LLM trace (prompt, token counts, etc.) — that would need explicit `@traceable`
 instrumentation, not done here.
 
+Verified working against a live run: submitting a real ticket through the running backend with
+`LANGSMITH_TRACING=true` produced a full node-by-node trace in the LangSmith UI (`analyze_ticket` →
+`retrieve_documents` → `grade_documents` → `continuation_post_grading` → `draft_response` ↔ `judge_response` →
+`continuation_post_judging`, looping to `max_iterations`), with correct intent/final_action and judge scores
+all visible per span — zero code changes, as predicted above.
+
 ## Frontend
 
 `frontend/` is a Next.js 15 (App Router) + Tailwind app calling the FastAPI backend directly:
