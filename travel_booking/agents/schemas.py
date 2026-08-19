@@ -108,6 +108,8 @@ class ResolvedConstraints(BaseModel):
     date_range_start: str
     date_range_end: str
     dates_defaulted: bool
+    dates_flexible: bool = False  # True: date_range is a wide window to scan for the cheapest workable day,
+    # not a literal single date -- see orchestrator._build_candidate_queue_serpapi's date-scan branch.
     budget_amount: Optional[float]
     budget_scope: Optional[BudgetScope]
     required_amenities: List[str]

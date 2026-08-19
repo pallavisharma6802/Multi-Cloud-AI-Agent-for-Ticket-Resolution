@@ -34,6 +34,7 @@ from travel_booking.agents.verification_agent import VerificationAgent  # noqa: 
 
 MAX_ATTEMPTS = 12  # bound on how many ranked pairs we'll actually verify
 MAX_OPTIONS = 3  # how many distinct passing itineraries to collect before stopping
+FLEX_SCAN_SAMPLES = 6  # how many candidate days to price out when searching flexibly (bounded -- see _scan_for_best_date)
 
 ORIGIN_AIRPORT = "ORD"  # matches the simulated dataset's fixed origin; live mode uses constraints.origin_code instead
 DESTINATION_HOTEL_QUERY = {code: f"hotels in {name}" for code, name in DESTINATIONS.items()}
@@ -172,20 +173,62 @@ class TravelAgent:
         return workflow.compile()
 
     # -- candidate generation --------------------------------------------------
+    def _scan_for_best_date(self, constraints: ResolvedConstraints, origin: str) -> str:
+        """When the user asked us to search flexibly, actually price out
+        several real candidate days across the resolved window and pick the
+        cheapest -- not one arbitrary guessed date. Bounded to FLEX_SCAN_SAMPLES
+        candidates (not literally every day in the window) since each one is a
+        real, metered SerpApi call. Only outbound flight price is used to pick
+        the day: it's the dominant date-sensitive cost lever, and hotel rates
+        barely move day-to-day, so scanning hotels per candidate too would
+        double the API cost for little benefit -- the full hotel+flight+return
+        search still runs once, for real, on the winning date."""
+        from travel_booking.agents import serpapi_client
+
+        start = date.fromisoformat(constraints.date_range_start)
+        end = date.fromisoformat(constraints.date_range_end)
+        span_days = (end - start).days
+        n_samples = max(1, min(FLEX_SCAN_SAMPLES, span_days + 1))
+        step = span_days / max(1, n_samples - 1) if n_samples > 1 else 0
+        candidate_dates = sorted({(start + timedelta(days=round(i * step))).isoformat() for i in range(n_samples)})
+
+        best_date, best_price = None, None
+        for d in candidate_dates:
+            try:
+                flights = serpapi_client.search_flights(origin, constraints.destination_code, d, adults=constraints.party_size)
+            except Exception:
+                continue
+            if not flights:
+                continue
+            cheapest = min(f["price"] for f in flights)
+            if best_price is None or cheapest < best_price:
+                best_price, best_date = cheapest, d
+        return best_date or candidate_dates[0]
+
     def _build_candidate_queue_serpapi(self, constraints: ResolvedConstraints) -> tuple[list[tuple[dict, dict]], int, int]:
         """Real-data mode. Unlike the simulated mode, this does NOT search across
-        every day in a wide date range -- real flight search is per-date and
-        costs one API call each, so a wide/whole-month range would burn the
-        free-tier quota fast. Uses exactly date_range_start for the flight
-        search and one hotel search across the full stay -- 2 API calls total
-        per request, regardless of how wide the resolved date range is."""
+        every day in a wide date range by default -- real flight search is
+        per-date and costs one API call each. If constraints.dates_flexible is
+        set (user asked us to find the best day), _scan_for_best_date runs a
+        bounded real search across the window first and resolves it down to
+        one concrete date; otherwise this uses exactly date_range_start."""
         from travel_booking.agents import serpapi_client
-        from datetime import date, timedelta
 
-        checkin = constraints.date_range_start
+        origin = constraints.origin_code or ORIGIN_AIRPORT
+
+        if constraints.dates_flexible:
+            checkin = self._scan_for_best_date(constraints, origin)
+            # Resolve the wide window down to the winning date so the rest of
+            # the pipeline, and anything the caller reads off `constraints`
+            # afterward (UI, saved trips, confirmation text), reflects the
+            # actual chosen date instead of the original scan window.
+            constraints.date_range_start = checkin
+            constraints.date_range_end = checkin
+            constraints.dates_flexible = False
+        else:
+            checkin = constraints.date_range_start
         checkout = (date.fromisoformat(checkin) + timedelta(days=constraints.nights)).isoformat()
         hotel_query = DESTINATION_HOTEL_QUERY.get(constraints.destination_code, constraints.destination_raw)
-        origin = constraints.origin_code or ORIGIN_AIRPORT
 
         hotels = serpapi_client.search_hotels(hotel_query, checkin, checkout, adults=constraints.party_size)
         flights = serpapi_client.search_flights(origin, constraints.destination_code, checkin, adults=constraints.party_size)

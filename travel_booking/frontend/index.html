@@ -570,6 +570,18 @@
 </div>
 
 <script>
+/* HTML-escape any untrusted string before interpolating it into an
+   innerHTML template literal. Needed everywhere: hotel/flight names and
+   descriptions come from live external data (SerpApi/Google), and
+   usernames/display names/group names/trip labels come straight from
+   other users -- both are real stored/reflected XSS vectors if inserted
+   raw (e.g. a group name of "<img src=x onerror=...>" rendered to every
+   member's friends/groups list). */
+function esc(s) {
+  if (s === null || s === undefined) return "";
+  return String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
 /* ---------- destinations this app searches real live flight/hotel data for ----------
    Not an exhaustive list of everywhere the backend can handle (any real IATA code
    works against live Google Flights/Hotels) -- just the ones surfaced in the UI. */
@@ -724,20 +736,20 @@ async function runHotelBrowse() {
       const h = r.record;
       const img = h.image_url || `/images/hotels/${h.id}.jpg`;
       const flags = r.checks.filter(c => c.data_available !== false).map(c =>
-        `<span class="flag ${c.passed ? 'ok' : 'bad'}">${c.passed ? '✓' : '✕'} ${c.name}</span>`).join("");
+        `<span class="flag ${c.passed ? 'ok' : 'bad'}">${c.passed ? '✓' : '✕'} ${esc(c.name)}</span>`).join("");
       return `<div class="browse-card ${r.passed_all ? '' : 'trap'}" onclick="showDetailRecord('hotel', BROWSE_HOTEL_RESULTS[${i}])">
-        <img src="${img}" onerror="this.style.display='none'" />
+        <img src="${esc(img)}" onerror="this.style.display='none'" />
         <div class="body">
-          <h4>${h.name}</h4>
-          <p>${h.destination_name || ''}${h.rating ? ' · ★ ' + h.rating.toFixed(1) : ''}</p>
+          <h4>${esc(h.name)}</h4>
+          <p>${esc(h.destination_name || '')}${h.rating ? ' · ★ ' + h.rating.toFixed(1) : ''}</p>
           <div class="price">$${h.price_per_night}/night</div>
           <div class="flags">${flags}</div>
-          ${h.booking_link ? `<a class="book-link" href="${h.booking_link}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Book this hotel ↗</a>` : ''}
+          ${h.booking_link ? `<a class="book-link" href="${esc(h.booking_link)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Book this hotel ↗</a>` : ''}
         </div>
       </div>`;
     }).join("");
   } catch (err) {
-    results.innerHTML = `<div class="error-bubble">Search failed: ${err.message}</div>`;
+    results.innerHTML = `<div class="error-bubble">Search failed: ${esc(err.message)}</div>`;
   }
 }
 
@@ -761,19 +773,19 @@ async function runFlightBrowse() {
       const f = r.record;
       const img = f.image_url || f.airline_logo || `/images/flights/${f.id}.jpg`;
       return `<div class="browse-card" onclick="showDetailRecord('flight', BROWSE_FLIGHT_RESULTS[${i}])">
-        <img src="${img}" onerror="this.style.display='none'" style="${f.airline_logo ? 'object-fit:contain;background:var(--surface-2);padding:14px' : ''}" />
+        <img src="${esc(img)}" onerror="this.style.display='none'" style="${f.airline_logo ? 'object-fit:contain;background:var(--surface-2);padding:14px' : ''}" />
         <div class="body">
-          <h4>${f.airline} ${f.flight_number}</h4>
-          <p>${f.origin} → ${f.destination}, ${f.date}</p>
-          <p>${f.departure_time} → ${f.arrival_time}${f.arrives_next_day ? ' (+1d)' : ''}</p>
+          <h4>${esc(f.airline)} ${esc(f.flight_number)}</h4>
+          <p>${esc(f.origin)} → ${esc(f.destination)}, ${esc(f.date)}</p>
+          <p>${esc(f.departure_time)} → ${esc(f.arrival_time)}${f.arrives_next_day ? ' (+1d)' : ''}</p>
           <div class="price">${f._source === 'serpapi_google_flights' ? '$' + f.price + ' total' : '$' + f.price + '/passenger' + (r.total_for_party !== f.price ? ' · $' + r.total_for_party + ' total' : '')}</div>
           <div class="flags">${r.within_stated_budget ? '<span class="flag ok">✓ within budget</span>' : '<span class="flag bad">✕ over budget</span>'}</div>
-          ${f.booking_link ? `<a class="book-link" href="${f.booking_link}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Book on Google Flights ↗</a>` : ''}
+          ${f.booking_link ? `<a class="book-link" href="${esc(f.booking_link)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Book on Google Flights ↗</a>` : ''}
         </div>
       </div>`;
     }).join("");
   } catch (err) {
-    results.innerHTML = `<div class="error-bubble">Search failed: ${err.message}</div>`;
+    results.innerHTML = `<div class="error-bubble">Search failed: ${esc(err.message)}</div>`;
   }
 }
 
@@ -926,8 +938,8 @@ function checkRow(c, i) {
     return `<div class="check-row" ${style}>
       <div class="check-icon unknown">?</div>
       <div class="check-body">
-        <div class="check-label">${c.label} <span class="unknown-tag">not verifiable</span></div>
-        <div class="check-detail">${c.detail}</div>
+        <div class="check-label">${esc(c.label)} <span class="unknown-tag">not verifiable</span></div>
+        <div class="check-detail">${esc(c.detail)}</div>
       </div>
     </div>`;
   }
@@ -935,9 +947,9 @@ function checkRow(c, i) {
   return `<div class="check-row" ${style}>
     <div class="check-icon ${cls}">${c.passed ? '✓' : '✕'}</div>
     <div class="check-body">
-      <div class="check-label">${c.label}</div>
-      <div class="check-compare"><span class="actual ${cls}">${c.actual}</span><span class="vs">vs</span><span class="limit">${c.expected}</span></div>
-      <div class="check-detail">${c.detail}</div>
+      <div class="check-label">${esc(c.label)}</div>
+      <div class="check-compare"><span class="actual ${cls}">${esc(c.actual)}</span><span class="vs">vs</span><span class="limit">${esc(c.expected)}</span></div>
+      <div class="check-detail">${esc(c.detail)}</div>
     </div>
   </div>`;
 }
@@ -984,13 +996,13 @@ function renderSelectedOption() {
     if (opt.hotel) {
       const hotelImg = opt.hotel.image_url || `/images/hotels/${opt.hotel.id}.jpg`;
       html += `<div class="itin-item" onclick="showDetail('hotel')">
-        <img src="${hotelImg}" alt="${opt.hotel.name}" onerror="this.style.display='none'" />
+        <img src="${esc(hotelImg)}" alt="${esc(opt.hotel.name)}" onerror="this.style.display='none'" />
         <div class="itin-body">
           <div class="itin-kind">🏨 Hotel</div>
-          <h3>${opt.hotel.name}</h3>
-          <p>${opt.hotel.destination_name}${opt.hotel.rating ? ' · ★ ' + opt.hotel.rating.toFixed(1) : ''}</p>
+          <h3>${esc(opt.hotel.name)}</h3>
+          <p>${esc(opt.hotel.destination_name)}${opt.hotel.rating ? ' · ★ ' + opt.hotel.rating.toFixed(1) : ''}</p>
           <div class="price-line">$${opt.hotel.price_per_night}/night</div>
-          ${opt.hotel.booking_link ? `<a class="book-link" href="${opt.hotel.booking_link}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Book this hotel ↗</a><br/>` : ''}
+          ${opt.hotel.booking_link ? `<a class="book-link" href="${esc(opt.hotel.booking_link)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Book this hotel ↗</a><br/>` : ''}
           <div class="view-more">View details →</div>
         </div>
       </div>`;
@@ -998,17 +1010,17 @@ function renderSelectedOption() {
     if (opt.flight) {
       const flightImg = opt.flight.image_url || opt.flight.airline_logo || `/images/flights/${opt.flight.id}.jpg`;
       const ret = opt.flight.return;
-      const routeLine = ret ? `${opt.flight.origin} ⇄ ${opt.flight.destination} (round trip)` : `${opt.flight.origin} → ${opt.flight.destination} (one-way -- no return flight found)`;
+      const routeLine = ret ? `${esc(opt.flight.origin)} ⇄ ${esc(opt.flight.destination)} (round trip)` : `${esc(opt.flight.origin)} → ${esc(opt.flight.destination)} (one-way -- no return flight found)`;
       const unit = opt.flight._source === 'serpapi_google_flights' ? ' total' : '/passenger';
       const priceLine = ret ? `$${opt.flight.price} out + $${ret.price} return = $${opt.flight.price + ret.price}${unit}` : `$${opt.flight.price}${unit}`;
       html += `<div class="itin-item" onclick="showDetail('flight')">
-        <img src="${flightImg}" alt="${opt.flight.flight_number}" onerror="this.style.display='none'" style="${opt.flight.airline_logo && !opt.flight.image_url ? 'object-fit:contain;background:var(--surface-2);padding:10px' : ''}" />
+        <img src="${esc(flightImg)}" alt="${esc(opt.flight.flight_number)}" onerror="this.style.display='none'" style="${opt.flight.airline_logo && !opt.flight.image_url ? 'object-fit:contain;background:var(--surface-2);padding:10px' : ''}" />
         <div class="itin-body">
           <div class="itin-kind">✈️ Flight</div>
-          <h3>${opt.flight.airline} ${opt.flight.flight_number}${ret ? ' + ' + ret.airline + ' ' + ret.flight_number : ''}</h3>
+          <h3>${esc(opt.flight.airline)} ${esc(opt.flight.flight_number)}${ret ? ' + ' + esc(ret.airline) + ' ' + esc(ret.flight_number) : ''}</h3>
           <p>${routeLine}</p>
           <div class="price-line">${priceLine}</div>
-          ${opt.flight.booking_link ? `<a class="book-link" href="${opt.flight.booking_link}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Book on Google Flights ↗</a><br/>` : ''}
+          ${opt.flight.booking_link ? `<a class="book-link" href="${esc(opt.flight.booking_link)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Book on Google Flights ↗</a><br/>` : ''}
           <div class="view-more">View details →</div>
         </div>
       </div>`;
@@ -1021,7 +1033,7 @@ function renderSelectedOption() {
 
   html += `<div class="verify-card">
     <div class="verify-title">Verification</div>
-    <div class="banner ${exp.status}"><div class="badge">${exp.status === 'verified' ? '✓' : '!'}</div><div>${exp.headline}</div></div>`;
+    <div class="banner ${exp.status}"><div class="badge">${exp.status === 'verified' ? '✓' : '!'}</div><div>${esc(exp.headline)}</div></div>`;
   if (exp.checklist.length) html += exp.checklist.map(checkRow).join("");
   if (exp.total_cost) html += `<div class="total-cost"><span class="lbl">Total trip cost</span><span class="amt">$${exp.total_cost.toFixed(2)}</span></div>`;
   html += `</div>`;
@@ -1106,47 +1118,47 @@ function showDetailRecord(kind, r) {
   const img = r.image_url || r.airline_logo || `/images/${kind === 'hotel' ? 'hotels' : 'flights'}/${r.id}.jpg`;
 
   let html = `<button class="modal-close" onclick="closeModal()">✕</button>
-    <img class="modal-img" src="${img}" onerror="this.style.display='none'" style="${r.airline_logo && !r.image_url ? 'object-fit:contain;background:var(--surface-2);padding:24px' : ''}" />
+    <img class="modal-img" src="${esc(img)}" onerror="this.style.display='none'" style="${r.airline_logo && !r.image_url ? 'object-fit:contain;background:var(--surface-2);padding:24px' : ''}" />
     <div class="modal-body">`;
 
   if (kind === "hotel") {
     html += `<div class="kind">🏨 Hotel</div>
-      <h2>${r.name}</h2>
-      <div class="sub">${r.destination_name}${r.rating ? ' · ★ ' + r.rating.toFixed(1) + (r.reviews ? ' (' + r.reviews + ' reviews)' : '') : ''}</div>`;
-    if (r.description) html += `<div class="desc">${r.description}</div>`;
+      <h2>${esc(r.name)}</h2>
+      <div class="sub">${esc(r.destination_name)}${r.rating ? ' · ★ ' + r.rating.toFixed(1) + (r.reviews ? ' (' + r.reviews + ' reviews)' : '') : ''}</div>`;
+    if (r.description) html += `<div class="desc">${esc(r.description)}</div>`;
     html += `<div class="modal-facts">
       <div class="modal-fact"><div class="k">Price</div><div class="v">$${r.price_per_night}/night${r.resort_fee_per_night ? ' +$' + r.resort_fee_per_night + ' fee' : ''}</div></div>
-      <div class="modal-fact"><div class="k">Check-in</div><div class="v">${r.check_in_time || '—'}</div></div>
-      <div class="modal-fact"><div class="k">Check-out</div><div class="v">${r.check_out_time || '—'}</div></div>
-      <div class="modal-fact"><div class="k">Front desk</div><div class="v">${r.front_desk_24hr ? '24-hour' : (r.front_desk_closes || 'Not available')}</div></div>
+      <div class="modal-fact"><div class="k">Check-in</div><div class="v">${esc(r.check_in_time) || '—'}</div></div>
+      <div class="modal-fact"><div class="k">Check-out</div><div class="v">${esc(r.check_out_time) || '—'}</div></div>
+      <div class="modal-fact"><div class="k">Front desk</div><div class="v">${r.front_desk_24hr ? '24-hour' : esc(r.front_desk_closes || 'Not available')}</div></div>
     </div>`;
     if (r.amenities && r.amenities.length) {
-      html += `<div class="chip-row">${r.amenities.map(a => `<span class="chip">${a}</span>`).join("")}</div>`;
+      html += `<div class="chip-row">${r.amenities.map(a => `<span class="chip">${esc(a)}</span>`).join("")}</div>`;
     }
-    if (r.booking_link) html += `<a class="book-link" style="display:block;margin-top:14px;font-size:14px" href="${r.booking_link}" target="_blank" rel="noopener">Book this hotel ↗</a>`;
+    if (r.booking_link) html += `<a class="book-link" style="display:block;margin-top:14px;font-size:14px" href="${esc(r.booking_link)}" target="_blank" rel="noopener">Book this hotel ↗</a>`;
   } else {
     const ret = r.return;
     const unit = r._source === 'serpapi_google_flights' ? ' total' : '/passenger';
     html += `<div class="kind">✈️ Flight${ret ? ' (round trip)' : ''}</div>
-      <h2>${r.airline} ${r.flight_number}</h2>
-      <div class="sub">${r.origin_name || r.origin} → ${r.destination_name || r.destination}</div>`;
-    if (r.description) html += `<div class="desc">${r.description}</div>`;
+      <h2>${esc(r.airline)} ${esc(r.flight_number)}</h2>
+      <div class="sub">${esc(r.origin_name || r.origin)} → ${esc(r.destination_name || r.destination)}</div>`;
+    if (r.description) html += `<div class="desc">${esc(r.description)}</div>`;
     html += `<div class="modal-facts">
       <div class="modal-fact"><div class="k">Price (outbound)</div><div class="v">$${r.price}${unit}</div></div>
-      <div class="modal-fact"><div class="k">Date</div><div class="v">${r.date}</div></div>
-      <div class="modal-fact"><div class="k">Departs</div><div class="v">${r.departure_time}</div></div>
-      <div class="modal-fact"><div class="k">Arrives</div><div class="v">${r.arrival_time}${r.arrives_next_day ? ' (+1 day)' : ''}</div></div>
+      <div class="modal-fact"><div class="k">Date</div><div class="v">${esc(r.date)}</div></div>
+      <div class="modal-fact"><div class="k">Departs</div><div class="v">${esc(r.departure_time)}</div></div>
+      <div class="modal-fact"><div class="k">Arrives</div><div class="v">${esc(r.arrival_time)}${r.arrives_next_day ? ' (+1 day)' : ''}</div></div>
     </div>`;
     if (typeof r.layovers === "number") {
       html += `<div class="chip-row"><span class="chip">${r.layovers === 0 ? 'Nonstop' : r.layovers + ' stop(s)'}</span></div>`;
     }
     if (ret) {
-      html += `<div class="sub" style="margin-top:16px">Return: ${ret.airline} ${ret.flight_number}, ${ret.origin_name || ret.origin} → ${ret.destination_name || ret.destination}</div>
+      html += `<div class="sub" style="margin-top:16px">Return: ${esc(ret.airline)} ${esc(ret.flight_number)}, ${esc(ret.origin_name || ret.origin)} → ${esc(ret.destination_name || ret.destination)}</div>
       <div class="modal-facts">
         <div class="modal-fact"><div class="k">Price (return)</div><div class="v">$${ret.price}${unit}</div></div>
-        <div class="modal-fact"><div class="k">Date</div><div class="v">${ret.date}</div></div>
-        <div class="modal-fact"><div class="k">Departs</div><div class="v">${ret.departure_time}</div></div>
-        <div class="modal-fact"><div class="k">Arrives</div><div class="v">${ret.arrival_time}${ret.arrives_next_day ? ' (+1 day)' : ''}</div></div>
+        <div class="modal-fact"><div class="k">Date</div><div class="v">${esc(ret.date)}</div></div>
+        <div class="modal-fact"><div class="k">Departs</div><div class="v">${esc(ret.departure_time)}</div></div>
+        <div class="modal-fact"><div class="k">Arrives</div><div class="v">${esc(ret.arrival_time)}${ret.arrives_next_day ? ' (+1 day)' : ''}</div></div>
       </div>`;
     } else if (r._source === 'serpapi_google_flights') {
       html += `<div class="chip-row"><span class="chip" style="color:var(--fail)">⚠ no return flight found -- one-way only</span></div>`;
@@ -1239,7 +1251,7 @@ function updateNavForAuth() {
       <button class="nav-link" onclick="openPlanner()">My planner</button>
       <button class="nav-link" onclick="openFriends()">Friends<span id="friend-badge" class="nav-badge hidden">0</span></button>
       <button class="nav-link" onclick="openGroups()">Group trips</button>
-      <div class="user-chip"><div class="avatar">${initial}</div>${CURRENT_USER.display_name}</div>
+      <div class="user-chip"><div class="avatar">${esc(initial)}</div>${esc(CURRENT_USER.display_name)}</div>
       <button class="nav-link" onclick="doLogout()">Log out</button>
     `;
   } else {
@@ -1375,7 +1387,7 @@ async function renderFriends() {
   try {
     const res = await authedFetch("/api/friends");
     data = await res.json();
-  } catch (err) { body.innerHTML = `<div class="error-bubble">${err.message}</div>`; return; }
+  } catch (err) { body.innerHTML = `<div class="error-bubble">${esc(err.message)}</div>`; return; }
 
   let html = `<div class="inline-form">
     <label>Add a friend by username</label>
@@ -1388,8 +1400,8 @@ async function renderFriends() {
     html += `<div class="section-sub">Requests waiting on you</div>`;
     html += data.incoming_requests.map(r => `
       <div class="friend-row">
-        <div class="avatar">${(r.display_name || r.username)[0].toUpperCase()}</div>
-        <div class="who"><div class="name">${r.display_name}</div><div class="handle">@${r.username}</div></div>
+        <div class="avatar">${esc((r.display_name || r.username)[0].toUpperCase())}</div>
+        <div class="who"><div class="name">${esc(r.display_name)}</div><div class="handle">@${esc(r.username)}</div></div>
         <button class="accept-btn" onclick="acceptFriend(${r.request_id})">Accept</button>
       </div>`).join("");
   }
@@ -1400,8 +1412,8 @@ async function renderFriends() {
   } else {
     html += data.friends.map(f => `
       <div class="friend-row">
-        <div class="avatar">${(f.display_name || f.username)[0].toUpperCase()}</div>
-        <div class="who"><div class="name">${f.display_name}</div><div class="handle">@${f.username}</div></div>
+        <div class="avatar">${esc((f.display_name || f.username)[0].toUpperCase())}</div>
+        <div class="who"><div class="name">${esc(f.display_name)}</div><div class="handle">@${esc(f.username)}</div></div>
       </div>`).join("");
   }
   body.innerHTML = html;
@@ -1434,11 +1446,11 @@ async function sendFriendRequest() {
       method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ username }),
     });
     const data = await res.json();
-    if (!res.ok) { msg.innerHTML = `<div class="auth-error" style="margin-top:12px">${data.detail}</div>`; return; }
+    if (!res.ok) { msg.innerHTML = `<div class="auth-error" style="margin-top:12px">${esc(data.detail)}</div>`; return; }
     if (data.auto_accepted) msg.innerHTML = `<div style="color:var(--pass);font-size:12.5px;margin-top:12px;font-weight:700">They'd already requested you — you're now friends.</div>`;
     await renderFriends();
   } catch (err) {
-    msg.innerHTML = `<div class="auth-error" style="margin-top:12px">${err.message}</div>`;
+    msg.innerHTML = `<div class="auth-error" style="margin-top:12px">${esc(err.message)}</div>`;
   }
 }
 
@@ -1459,7 +1471,7 @@ async function openPlanner() {
   try {
     const res = await authedFetch("/api/planner");
     data = await res.json();
-  } catch (err) { body.innerHTML = `<div class="error-bubble">${err.message}</div>`; return; }
+  } catch (err) { body.innerHTML = `<div class="error-bubble">${esc(err.message)}</div>`; return; }
   if (!data.trips || !data.trips.length) {
     body.innerHTML = `<div class="empty-state"><div class="big">✈️🏨</div>No saved trips yet.<br/>Verify a trip in chat and tap "Save to my planner."</div>`;
     return;
@@ -1468,7 +1480,7 @@ async function openPlanner() {
     <div class="saved-trip-card">
       <img src="${(t.hotel && t.hotel.image_url) || (t.hotel && '/images/hotels/' + t.hotel.id + '.jpg') || ''}" onerror="this.style.display='none'" />
       <div class="info">
-        <h4>${t.label || (t.hotel ? t.hotel.name : 'Saved trip')}</h4>
+        <h4>${esc(t.label || (t.hotel ? t.hotel.name : 'Saved trip'))}</h4>
         <p>${t.hotel ? t.hotel.name : ''}${t.flight ? ' · ' + t.flight.airline + ' ' + t.flight.flight_number : ''}</p>
         <p>Total: $${t.verification && t.verification.total_cost ? t.verification.total_cost.toFixed(2) : '—'}</p>
       </div>
@@ -1519,7 +1531,7 @@ async function renderGroupsHome() {
   try {
     const res = await authedFetch("/api/groups");
     data = await res.json();
-  } catch (err) { body.innerHTML = `<div class="error-bubble">${err.message}</div>`; return; }
+  } catch (err) { body.innerHTML = `<div class="error-bubble">${esc(err.message)}</div>`; return; }
   let html = `<div class="groups-actions">
     <button onclick="showCreateGroupForm()">+ Create a group trip</button>
     <button onclick="showJoinGroupForm()">Join with a code</button>
@@ -1529,7 +1541,7 @@ async function renderGroupsHome() {
   } else {
     html += data.groups.map(g => `
       <div class="group-list-card" onclick="openGroupDetail(${g.id})">
-        <h4>${g.name}</h4>
+        <h4>${esc(g.name)}</h4>
         <p>${DEST_NAMES[g.destination_code] || g.destination_code} · code ${g.join_code} · ${g.status}</p>
       </div>
     `).join("");
@@ -1589,14 +1601,14 @@ async function openGroupDetail(groupId) {
   const iSubmitted = me && me.submitted > 0;
 
   let html = `<button class="nav-link" onclick="renderGroupsHome()" style="margin-bottom:14px">← All group trips</button>
-    <h2 class="serif" style="margin-bottom:4px">${g.name}</h2>
+    <h2 class="serif" style="margin-bottom:4px">${esc(g.name)}</h2>
     <p style="color:var(--muted);font-size:13.5px;margin-bottom:16px">${DEST_NAMES[g.destination_code] || g.destination_code}</p>
     <div class="join-code-display">Share this code to invite friends<div class="code">${g.join_code}</div></div>
     <div class="pair-label">Who's in</div>`;
   data.members.forEach(m => {
     html += `<div class="member-row">
-      <div class="avatar">${(m.display_name || m.username)[0].toUpperCase()}</div>
-      <div class="name">${m.display_name}${m.username === CURRENT_USER.username ? ' (you)' : ''}</div>
+      <div class="avatar">${esc((m.display_name || m.username)[0].toUpperCase())}</div>
+      <div class="name">${esc(m.display_name)}${m.username === CURRENT_USER.username ? ' (you)' : ''}</div>
       <span class="member-badge ${m.submitted > 0 ? 'submitted' : 'waiting'}">${m.submitted > 0 ? 'Preferences in' : 'Waiting'}</span>
     </div>`;
   });
@@ -1653,7 +1665,7 @@ async function runGroupSearch(groupId) {
     const data = await res.json();
     renderGroupResults(data);
   } catch (err) {
-    resultsArea.innerHTML = `<div class="error-bubble">Group search failed: ${err.message}</div>`;
+    resultsArea.innerHTML = `<div class="error-bubble">Group search failed: ${esc(err.message)}</div>`;
   }
 }
 
@@ -1668,21 +1680,21 @@ function renderGroupResults(data) {
   if (opt.hotel || opt.flight) {
     html += `<div class="itinerary">`;
     if (opt.hotel) {
-      html += `<div class="itin-item"><img src="${opt.hotel.image_url || '/images/hotels/' + opt.hotel.id + '.jpg'}" onerror="this.style.display='none'" />
-        <div class="itin-body"><div class="itin-kind">🏨 Hotel</div><h3>${opt.hotel.name}</h3><p>${opt.hotel.destination_name}</p><div class="price-line">$${opt.hotel.price_per_night}/night</div></div></div>`;
+      html += `<div class="itin-item"><img src="${esc(opt.hotel.image_url || '/images/hotels/' + opt.hotel.id + '.jpg')}" onerror="this.style.display='none'" />
+        <div class="itin-body"><div class="itin-kind">🏨 Hotel</div><h3>${esc(opt.hotel.name)}</h3><p>${esc(opt.hotel.destination_name)}</p><div class="price-line">$${opt.hotel.price_per_night}/night</div></div></div>`;
     }
     if (opt.flight) {
       const ret = opt.flight.return;
-      const routeLine = ret ? `${opt.flight.origin} ⇄ ${opt.flight.destination} (round trip)` : `${opt.flight.origin} → ${opt.flight.destination} (one-way -- no return flight found)`;
+      const routeLine = ret ? `${esc(opt.flight.origin)} ⇄ ${esc(opt.flight.destination)} (round trip)` : `${esc(opt.flight.origin)} → ${esc(opt.flight.destination)} (one-way -- no return flight found)`;
       const unit = opt.flight._source === 'serpapi_google_flights' ? ' total' : '/passenger';
       const priceLine = ret ? `$${opt.flight.price} out + $${ret.price} return = $${opt.flight.price + ret.price}${unit}` : `$${opt.flight.price}${unit}`;
-      html += `<div class="itin-item"><img src="${opt.flight.image_url || opt.flight.airline_logo || '/images/flights/' + opt.flight.id + '.jpg'}" onerror="this.style.display='none'" />
-        <div class="itin-body"><div class="itin-kind">✈️ Flight</div><h3>${opt.flight.airline} ${opt.flight.flight_number}${ret ? ' + ' + ret.airline + ' ' + ret.flight_number : ''}</h3><p>${routeLine}</p><div class="price-line">${priceLine}</div></div></div>`;
+      html += `<div class="itin-item"><img src="${esc(opt.flight.image_url || opt.flight.airline_logo || '/images/flights/' + opt.flight.id + '.jpg')}" onerror="this.style.display='none'" />
+        <div class="itin-body"><div class="itin-kind">✈️ Flight</div><h3>${esc(opt.flight.airline)} ${esc(opt.flight.flight_number)}${ret ? ' + ' + esc(ret.airline) + ' ' + esc(ret.flight_number) : ''}</h3><p>${routeLine}</p><div class="price-line">${priceLine}</div></div></div>`;
     }
     html += `</div>`;
   }
   html += `<div class="verify-card"><div class="verify-title">Verification</div>
-    <div class="banner ${exp.status}"><div class="badge">${exp.status === 'verified' ? '✓' : '!'}</div><div>${exp.headline}</div></div>`;
+    <div class="banner ${exp.status}"><div class="badge">${exp.status === 'verified' ? '✓' : '!'}</div><div>${esc(exp.headline)}</div></div>`;
   if (exp.checklist.length) html += exp.checklist.map(checkRow).join("");
   if (exp.total_cost) html += `<div class="total-cost"><span class="lbl">Total trip cost</span><span class="amt">$${exp.total_cost.toFixed(2)}</span></div>`;
   html += `</div>`;
