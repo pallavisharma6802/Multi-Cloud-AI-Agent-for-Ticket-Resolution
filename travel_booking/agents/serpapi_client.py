@@ -111,6 +111,15 @@ def search_flights(
         "gl": "us",
     })
 
+    # A per-flight booking link needs a second, separate SerpApi call per
+    # offer (engine=google_flights + booking_token) -- not worth burning a
+    # whole extra API call per result just for a link. `google_flights_url`
+    # is the real link to this exact search on Google Flights (correct
+    # route/date/passengers), already returned for free with every response,
+    # so every result links out to real bookable results for that search
+    # rather than nothing at all.
+    search_link = data.get("search_metadata", {}).get("google_flights_url")
+
     results = []
     for group in ("best_flights", "other_flights"):
         for offer in data.get(group, []):
@@ -131,6 +140,7 @@ def search_flights(
                 "destination_name": last_leg.get("arrival_airport", {}).get("name", ""),
                 "date": dep_date,
                 "airline": first_leg.get("airline", ""),
+                "airline_logo": offer.get("airline_logo"),
                 "flight_number": first_leg.get("flight_number", ""),
                 "departure_time": dep_time,
                 "arrival_time": arr_time,
@@ -138,6 +148,7 @@ def search_flights(
                 "price": offer.get("price"),
                 "layovers": max(0, len(legs) - 1),
                 "description": f"{first_leg.get('airline', 'Flight')}, {max(0, len(legs) - 1)} stop(s).",
+                "booking_link": search_link,
                 "image_seed": None,
                 "_source": "serpapi_google_flights",
             })
@@ -202,6 +213,7 @@ def search_hotels(
             "reviews": h.get("reviews"),
             "image_url": images[0].get("thumbnail") if images else None,
             "image_seed": None,
+            "booking_link": h.get("link"),  # real link to book this exact property, straight from the API
             "_source": "serpapi_google_hotels",
         })
     return results

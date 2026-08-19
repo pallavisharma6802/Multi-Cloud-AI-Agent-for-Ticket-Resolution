@@ -80,8 +80,27 @@ def check_arrival_vs_checkin(hotel: dict, flight: dict) -> CheckResult:
     )
 
 
+def _leg_cost_for_party(leg: dict, party_size: int) -> float:
+    """SerpApi's google_flights price is already the TOTAL for the number of
+    adults the search was run with (search_flights is always called with
+    adults=constraints.party_size) -- confirmed empirically: searching the
+    same route with adults=2 returns exactly 2x the adults=1 price. So a real
+    (serpapi) leg must NOT be multiplied by party_size again, or every
+    multi-traveler trip gets its flight cost doubled/tripled/etc. and fails
+    the budget check for a price nobody would actually be charged. The
+    simulated dataset (data/flights.json) has no such per-party pricing --
+    each listing is a single-passenger fare -- so THOSE still need the
+    multiplication. `_source` (set only by serpapi_client) is what tells
+    the two apart."""
+    if leg.get("_source") == "serpapi_google_flights":
+        return leg["price"]
+    return leg["price"] * party_size
+
+
 def compute_total_cost(hotel: dict, flight: dict, constraints: ResolvedConstraints) -> float:
-    flight_total = flight["price"] * constraints.party_size
+    flight_total = _leg_cost_for_party(flight, constraints.party_size)
+    if flight.get("return"):
+        flight_total += _leg_cost_for_party(flight["return"], constraints.party_size)
     hotel_nightly = hotel["price_per_night"] + (hotel.get("resort_fee_per_night") or 0)
     hotel_total = hotel_nightly * constraints.nights
     return round(flight_total + hotel_total, 2)
@@ -90,13 +109,21 @@ def compute_total_cost(hotel: dict, flight: dict, constraints: ResolvedConstrain
 def check_budget(hotel: dict, flight: dict, constraints: ResolvedConstraints) -> CheckResult:
     total_cost = compute_total_cost(hotel, flight, constraints)
     hotel_nightly = hotel["price_per_night"] + (hotel.get("resort_fee_per_night") or 0)
+    is_real = flight.get("_source") == "serpapi_google_flights"
+    party_note = f" for {constraints.party_size} traveler(s)" if is_real else f" x{constraints.party_size} travelers"
+    if flight.get("return"):
+        flight_note = f"flight (${flight['price']} out + ${flight['return']['price']} return){party_note}"
+    elif is_real:
+        flight_note = f"flight ${flight['price']}{party_note} (one-way only -- no return flight found for this route/date)"
+    else:
+        flight_note = f"flight ${flight['price']}{party_note}"
 
     if constraints.budget_amount is None:
         return CheckResult(
             name="budget",
             passed=True,
             detail=f"No budget was stated; total trip cost would be ${total_cost:.2f} "
-            f"(flight ${flight['price']}x{constraints.party_size} + hotel ${hotel_nightly:.2f}/night "
+            f"({flight_note} + hotel ${hotel_nightly:.2f}/night "
             f"x{constraints.nights} nights).",
             expected="no budget stated",
             actual=f"${total_cost:.2f} total",
@@ -128,9 +155,8 @@ def check_budget(hotel: dict, flight: dict, constraints: ResolvedConstraints) ->
         name="budget",
         passed=passed,
         detail=(
-            f"Total trip cost is ${total_cost:.2f} (flight ${flight['price']} x "
-            f"{constraints.party_size} travelers + hotel ${hotel_nightly:.2f}/night x "
-            f"{constraints.nights} nights) against a stated total budget of "
+            f"Total trip cost is ${total_cost:.2f} ({flight_note} + hotel "
+            f"${hotel_nightly:.2f}/night x {constraints.nights} nights) against a stated total budget of "
             f"${constraints.budget_amount:.2f} -- "
             + ("within budget." if passed else "OVER budget.")
         ),

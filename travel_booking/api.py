@@ -28,7 +28,7 @@ from travel_booking.agents.explanation import build_explanation, build_explanati
 from travel_booking.agents.intent_agent import IntentAgent  # noqa: E402
 from travel_booking.agents.orchestrator import TravelAgent, TravelAgentState, TripOption  # noqa: E402
 from travel_booking.agents.preference_aggregator import MemberPreference, aggregate, record_reward  # noqa: E402
-from travel_booking.agents.schemas import ConversationState, ItineraryOutcome, ResolvedConstraints  # noqa: E402
+from travel_booking.agents.schemas import DESTINATIONS, ConversationState, ItineraryOutcome, ResolvedConstraints  # noqa: E402
 from travel_booking.agents.verification_agent import VerificationAgent  # noqa: E402
 from travel_booking.db import get_connection, init_db, now  # noqa: E402
 
@@ -242,12 +242,13 @@ class BrowseFlightsRequest(BaseModel):
     date_range_start: str
     party_size: int = 1
     budget_amount: Optional[float] = None
+    origin_code: Optional[str] = None
 
 
 @app.post("/api/browse/hotels")
 def browse_hotels(req: BrowseHotelsRequest):
-    if req.destination_code not in ("AUS", "DEN", "MIA"):
-        raise HTTPException(400, "destination_code must be AUS, DEN, or MIA")
+    if req.destination_code not in DESTINATIONS:
+        raise HTTPException(400, f"destination_code must be one of: {', '.join(DESTINATIONS)}")
     return {"results": browse_mod.browse_hotels(
         req.destination_code, req.date_range_start, req.nights, req.party_size,
         req.budget_amount, req.budget_scope, req.required_amenities,
@@ -256,10 +257,10 @@ def browse_hotels(req: BrowseHotelsRequest):
 
 @app.post("/api/browse/flights")
 def browse_flights(req: BrowseFlightsRequest):
-    if req.destination_code not in ("AUS", "DEN", "MIA"):
-        raise HTTPException(400, "destination_code must be AUS, DEN, or MIA")
+    if req.destination_code not in DESTINATIONS:
+        raise HTTPException(400, f"destination_code must be one of: {', '.join(DESTINATIONS)}")
     return {"results": browse_mod.browse_flights(
-        req.destination_code, req.date_range_start, req.party_size, req.budget_amount,
+        req.destination_code, req.date_range_start, req.party_size, req.budget_amount, req.origin_code,
     )}
 
 
@@ -429,7 +430,7 @@ def list_friends(session_token: Optional[str] = Cookie(None)):
 
 class CreateGroupRequest(BaseModel):
     name: str
-    destination_code: str  # AUS | DEN | MIA -- same 3 destinations the rest of the app supports
+    destination_code: str  # any code in schemas.DESTINATIONS
 
 
 class JoinGroupRequest(BaseModel):
@@ -471,8 +472,8 @@ def list_my_groups(session_token: Optional[str] = Cookie(None)):
 @app.post("/api/groups")
 def create_group(req: CreateGroupRequest, session_token: Optional[str] = Cookie(None)):
     user = _require_user(session_token)
-    if req.destination_code not in ("AUS", "DEN", "MIA"):
-        raise HTTPException(400, "destination_code must be AUS, DEN, or MIA")
+    if req.destination_code not in DESTINATIONS:
+        raise HTTPException(400, f"destination_code must be one of: {', '.join(DESTINATIONS)}")
     conn = get_connection()
     try:
         join_code = secrets.token_hex(3).upper()
@@ -603,6 +604,7 @@ def search_group_trip(group_id: int, session_token: Optional[str] = Cookie(None)
         conn.close()
 
     constraints = ResolvedConstraints(
+        origin_defaulted=True,  # group trips don't collect a per-member origin yet -- always the app default
         destination_code=dest, destination_raw=dest,
         party_size=agg["party_size"], nights=agg["nights"],
         nights_defaulted=False, date_range_start=agg["date_range_start"], date_range_end=agg["date_range_end"],

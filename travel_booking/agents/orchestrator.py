@@ -22,6 +22,7 @@ from langgraph.graph import END, StateGraph  # noqa: E402
 from app.config import settings  # noqa: E402
 from travel_booking.agents.intent_agent import IntentAgent  # noqa: E402
 from travel_booking.agents.schemas import (  # noqa: E402
+    DESTINATIONS,
     ConversationState,
     ItineraryOutcome,
     ResolvedConstraints,
@@ -34,12 +35,8 @@ from travel_booking.agents.verification_agent import VerificationAgent  # noqa: 
 MAX_ATTEMPTS = 12  # bound on how many ranked pairs we'll actually verify
 MAX_OPTIONS = 3  # how many distinct passing itineraries to collect before stopping
 
-ORIGIN_AIRPORT = "ORD"  # matches the simulated dataset's fixed origin
-DESTINATION_HOTEL_QUERY = {
-    "AUS": "hotels in Austin, TX",
-    "DEN": "hotels in Denver, CO",
-    "MIA": "hotels in Miami, FL",
-}
+ORIGIN_AIRPORT = "ORD"  # matches the simulated dataset's fixed origin; live mode uses constraints.origin_code instead
+DESTINATION_HOTEL_QUERY = {code: f"hotels in {name}" for code, name in DESTINATIONS.items()}
 
 
 def _date_range_overlaps_blackout(start: str, nights: int, blackout: list[str]) -> bool:
@@ -188,19 +185,38 @@ class TravelAgent:
         checkin = constraints.date_range_start
         checkout = (date.fromisoformat(checkin) + timedelta(days=constraints.nights)).isoformat()
         hotel_query = DESTINATION_HOTEL_QUERY.get(constraints.destination_code, constraints.destination_raw)
+        origin = constraints.origin_code or ORIGIN_AIRPORT
 
         hotels = serpapi_client.search_hotels(hotel_query, checkin, checkout, adults=constraints.party_size)
-        flights = serpapi_client.search_flights(ORIGIN_AIRPORT, constraints.destination_code, checkin, adults=constraints.party_size)
+        flights = serpapi_client.search_flights(origin, constraints.destination_code, checkin, adults=constraints.party_size)
+
+        # Round-trip cost, not one-way -- a stay has to actually end with a flight
+        # home. Modeled as two separate one-way fares (outbound on checkin,
+        # return on checkout) rather than SerpApi's stateful round-trip flow,
+        # since that's a simpler, honest (if occasionally slightly pricier than
+        # a bundled fare) way to get a real return-leg price and time. The
+        # cheapest available return flight is paired onto every outbound
+        # candidate as `flight["return"]` -- if none is found for that route/date,
+        # `return` is left None and the budget check says so rather than quietly
+        # pricing the trip as one-way.
+        return_flights = sorted(
+            serpapi_client.search_flights(constraints.destination_code, origin, checkout, adults=constraints.party_size),
+            key=lambda f: f["price"],
+        )
+        cheapest_return = return_flights[0] if return_flights else None
 
         hotels = sorted(hotels, key=lambda h: h["price_per_night"])[:8]
         flights = sorted(flights, key=lambda f: f["price"])[:8]
+        for f in flights:
+            f["return"] = cheapest_return
         self._last_hotels_by_id = {h["id"]: h for h in hotels}
         self._last_flights_by_id = {f["id"]: f for f in flights}
 
         pairs = []
         for f in flights:
+            round_trip_price = f["price"] + (f["return"]["price"] if f["return"] else 0)
             for h in hotels:
-                pairs.append((h["price_per_night"] + f["price"], h, f))
+                pairs.append((h["price_per_night"] + round_trip_price, h, f))
         pairs.sort(key=lambda p: p[0])
         queue = [(h, f) for _, h, f in pairs]
         return queue, len(hotels), len(flights)

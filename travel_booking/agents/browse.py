@@ -26,16 +26,12 @@ if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
 from app.config import settings  # noqa: E402
-from travel_booking.agents.schemas import ResolvedConstraints  # noqa: E402
+from travel_booking.agents.schemas import DESTINATIONS, ResolvedConstraints  # noqa: E402
 from travel_booking.agents.search_agent import SearchAgent  # noqa: E402
 from travel_booking.agents.verification_agent import check_amenities, check_capacity, check_hotel_only_budget  # noqa: E402
 
 ORIGIN_AIRPORT = "ORD"
-DESTINATION_HOTEL_QUERY = {
-    "AUS": "hotels in Austin, TX",
-    "DEN": "hotels in Denver, CO",
-    "MIA": "hotels in Miami, FL",
-}
+DESTINATION_HOTEL_QUERY = {code: f"hotels in {name}" for code, name in DESTINATIONS.items()}
 
 _search_agent: Optional[SearchAgent] = None
 
@@ -88,10 +84,12 @@ def browse_flights(
     date_range_start: str,
     party_size: int = 1,
     budget_amount: Optional[float] = None,
+    origin_code: Optional[str] = None,
 ) -> List[dict]:
+    origin_code = origin_code or ORIGIN_AIRPORT
     if settings.travel_data_source == "serpapi":
         from travel_booking.agents import serpapi_client
-        flights = serpapi_client.search_flights(ORIGIN_AIRPORT, destination_code, date_range_start, adults=party_size)
+        flights = serpapi_client.search_flights(origin_code, destination_code, date_range_start, adults=party_size)
         flights = sorted(flights, key=lambda f: f["price"])[:16]
     else:
         agent = _get_search_agent()
@@ -100,10 +98,15 @@ def browse_flights(
 
     results = []
     for f in flights:
-        within_budget = budget_amount is None or (f["price"] * party_size) <= budget_amount
+        # SerpApi's price is already the total for `party_size` adults (that's
+        # what was passed as `adults` above) -- multiplying by party_size again
+        # would double-count it. Only the simulated dataset's per-passenger
+        # fares need multiplying. See verification_agent._leg_cost_for_party.
+        total_for_party = f["price"] if f.get("_source") == "serpapi_google_flights" else f["price"] * party_size
+        within_budget = budget_amount is None or total_for_party <= budget_amount
         results.append({
             "record": f,
             "within_stated_budget": within_budget,
-            "total_for_party": round(f["price"] * party_size, 2),
+            "total_for_party": round(total_for_party, 2),
         })
     return results

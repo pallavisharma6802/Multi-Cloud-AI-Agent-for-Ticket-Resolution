@@ -6,21 +6,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #fbf9f4; --surface: #ffffff; --surface-2: #f4f1ea; --border: #e6e0d3;
-    --text: #1c1b18; --muted: #6b675c; --muted-soft: #9b9686;
-    --teal: #0f8a7e; --teal-soft: #e2f4f1; --teal-dark: #0b6a61;
-    --coral: #f4623a; --coral-soft: #fde7de;
-    --pass: #1a9b6c; --pass-soft: #e6f6ee;
-    --fail: #e0472c; --fail-soft: #fdeae6;
+    --bg: #ffffff; --surface: #ffffff; --surface-2: #f7f7f7; --border: #dddddd;
+    --text: #222222; --muted: #6a6a6a; --muted-soft: #9a9a9a;
+    --teal: #00848a; --teal-soft: #e0f2f2; --teal-dark: #006b70;
+    --coral: #ff385c; --coral-soft: #ffe4e9; --coral-dark: #d90b63;
+    --amber: #ffb400;
+    --pass: #1a9c5c; --pass-soft: #e5f7ec;
+    --fail: #c13515; --fail-soft: #fdece7;
     --radius: 16px; --radius-sm: 10px;
+    --grad: linear-gradient(90deg, #ff385c 0%, #e61e4d 50%, #d70466 100%);
+    --grad-soft: linear-gradient(135deg, #fff0f3 0%, #fef6e9 100%);
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   body { margin: 0; background: var(--bg); color: var(--text); font-family: 'Manrope', -apple-system, sans-serif; }
-  .serif { font-family: 'Fraunces', serif; }
+  .serif { font-family: 'Poppins', sans-serif; }
   ::-webkit-scrollbar { width: 8px; height: 8px; }
   ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
 
@@ -28,44 +31,95 @@
   #landing-view { display: block; }
 
   nav { position: sticky; top: 0; z-index: 30; display: flex; align-items: center; justify-content: space-between;
-    padding: 20px 44px; background: rgba(251,249,244,0.9); backdrop-filter: blur(8px); border-bottom: 1px solid transparent; }
+    padding: 16px 44px; background: rgba(255,255,255,0.92); backdrop-filter: blur(10px); border-bottom: 1px solid transparent; }
   nav.scrolled { border-bottom-color: var(--border); }
-  nav .logo { font-size: 20px; font-weight: 800; display: flex; align-items: center; gap: 8px; }
-  nav .logo .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--coral); }
-  nav .nav-cta { background: var(--text); color: var(--bg); padding: 10px 20px; border-radius: 30px; font-size: 13.5px; font-weight: 700; border: none; cursor: pointer; }
+  nav .logo { font-family: 'Poppins', sans-serif; font-size: 20px; font-weight: 800; display: flex; align-items: center; gap: 8px; letter-spacing: -0.01em; color: var(--coral); }
+  nav .logo .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--teal); }
+  nav .nav-cta { background: var(--coral); color: white; padding: 11px 22px; border-radius: 10px; font-size: 13.5px; font-weight: 700; border: none; cursor: pointer;
+    box-shadow: 0 4px 12px rgba(255,56,92,0.3); }
+  nav .nav-link { color: var(--text); }
 
-  .hero { position: relative; padding: 70px 44px 60px; overflow: hidden; }
-  .hero::before { content: ""; position: absolute; top: -140px; right: -160px; width: 480px; height: 480px; border-radius: 50%;
-    background: radial-gradient(circle, var(--teal-soft) 0%, transparent 70%); z-index: 0; }
-  .hero::after { content: ""; position: absolute; bottom: -180px; left: -140px; width: 420px; height: 420px; border-radius: 50%;
-    background: radial-gradient(circle, var(--coral-soft) 0%, transparent 70%); z-index: 0; }
-  .hero-inner { position: relative; z-index: 1; max-width: 680px; }
-  .hero .eyebrow { display: inline-flex; align-items: center; gap: 7px; background: var(--surface); border: 1px solid var(--border);
-    padding: 6px 14px; border-radius: 30px; font-size: 12.5px; font-weight: 700; color: var(--teal-dark); margin-bottom: 22px; }
-  .hero h1 { font-size: 56px; line-height: 1.04; margin: 0 0 20px; font-weight: 700; }
-  .hero h1 em { font-style: normal; color: var(--teal); }
-  .hero p { font-size: 17px; color: var(--muted); line-height: 1.55; margin: 0 0 30px; max-width: 520px; }
+  /* ===========================================================
+     HERO -- a real, full-bleed destination photograph (the thing
+     every travel brand actually leads with -- Airbnb, Booking,
+     Expedia all open on a place, not an abstract gradient), with
+     a warm editorial headline and an Airbnb-style rounded search
+     pill overlaid on the photo.
+     =========================================================== */
+  .hero { position: relative; padding: 120px 24px 64px; overflow: hidden; min-height: 560px; display: flex;
+    align-items: flex-end; background-image: linear-gradient(180deg, rgba(20,15,10,0.15) 0%, rgba(20,15,10,0.05) 30%, rgba(15,10,10,0.86) 100%),
+    url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg/1280px-Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg');
+    background-size: cover; background-position: center 65%; }
+  .hero-inner { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; width: 100%; text-align: left; }
+  .hero .eyebrow { display: inline-flex; align-items: center; gap: 7px; background: rgba(255,255,255,0.92); color: var(--coral-dark);
+    padding: 7px 14px; border-radius: 30px; font-size: 12.5px; font-weight: 700; margin-bottom: 16px; }
+  .hero h1 { font-family: 'Poppins', sans-serif; font-size: clamp(30px, 4.6vw, 46px); line-height: 1.1; margin: 0 0 12px; font-weight: 700; color: white;
+    letter-spacing: -0.01em; text-shadow: 0 2px 16px rgba(0,0,0,0.25); }
+  .hero h1 .cycle-word { display: inline-block; position: relative; min-width: 1ch; color: #ffd166; }
+  .hero h1 .cycle-word span { display: inline-block; animation: word-in 0.5s cubic-bezier(.2,.8,.2,1); }
+  @keyframes word-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  .hero p { font-size: 16px; color: rgba(255,255,255,0.88); line-height: 1.5; margin: 0 0 28px; max-width: 480px; }
+
+  /* Airbnb-style rounded search pill */
+  .search-bar { display: flex; align-items: stretch; background: white; border-radius: 60px; padding: 6px;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.28); max-width: 820px; gap: 0; flex-wrap: wrap; }
+  .sb-field { flex: 1; min-width: 120px; padding: 9px 22px; text-align: left; border-radius: 60px; transition: background 0.15s; }
+  .sb-field:hover, .sb-field:focus-within { background: var(--surface-2); }
+  .sb-field label { display: block; font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text); margin-bottom: 2px; }
+  .sb-field input { width: 100%; border: none; outline: none; font-size: 13.5px; font-weight: 500; color: var(--text); background: transparent; font-family: 'Manrope', sans-serif; }
+  .sb-field input::placeholder { color: var(--muted-soft); font-weight: 400; }
+  .sb-field-sm { max-width: 92px; flex: 0 0 92px; }
+  .sb-div { width: 1px; background: var(--border); margin: 10px 0; flex-shrink: 0; }
+  .sb-submit { flex-shrink: 0; background: var(--coral); color: white; border: none; border-radius: 50%; width: 48px; height: 48px; margin: 2px;
+    font-weight: 800; font-size: 16px; cursor: pointer; display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 12px rgba(255,56,92,0.4); transition: transform 0.15s, border-radius 0.2s; }
+  .sb-submit:hover { transform: scale(1.06); background: var(--coral-dark); }
+  .hero-chips { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 16px; font-size: 12.5px; color: rgba(255,255,255,0.75); }
+  .chip-quick { background: rgba(255,255,255,0.16); border: 1px solid rgba(255,255,255,0.32); color: white; padding: 6px 13px;
+    border-radius: 20px; font-size: 12.5px; font-weight: 600; cursor: pointer; }
+  .chip-quick:hover { background: rgba(255,255,255,0.28); }
+
   .cta-row { display: flex; gap: 12px; align-items: center; }
-  .btn-primary { display: inline-flex; align-items: center; gap: 9px; background: var(--teal); color: white;
-    padding: 15px 28px; border-radius: 30px; font-weight: 700; font-size: 15px; border: none; cursor: pointer; box-shadow: 0 10px 24px rgba(15,138,126,0.28); }
-  .btn-primary:hover { background: var(--teal-dark); }
+  .btn-primary { display: inline-flex; align-items: center; gap: 9px; background: var(--coral); color: white;
+    padding: 15px 28px; border-radius: 12px; font-weight: 700; font-size: 15px; border: none; cursor: pointer; box-shadow: 0 8px 20px rgba(255,56,92,0.3); }
+  .btn-primary:hover { background: var(--coral-dark); }
   .btn-ghost { display: inline-flex; align-items: center; gap: 8px; background: transparent; color: var(--text);
-    padding: 15px 22px; border-radius: 30px; font-weight: 700; font-size: 15px; border: 1.5px solid var(--border); cursor: pointer; }
+    padding: 15px 22px; border-radius: 12px; font-weight: 700; font-size: 15px; border: 1.5px solid var(--border); cursor: pointer; }
   .btn-ghost:hover { border-color: var(--text); }
 
-  .section { padding: 10px 44px 56px; }
+  .section { padding: 44px 44px; }
   .section-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 20px; }
-  .section-head h2 { font-size: 26px; margin: 0; font-weight: 700; }
+  .section-head h2 { font-family: 'Poppins', sans-serif; font-size: 23px; margin: 0; font-weight: 700; letter-spacing: -0.01em; color: var(--text); }
   .section-head .hint { font-size: 13px; color: var(--muted-soft); }
 
-  .dest-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
-  .dest-pick-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
-    cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease; display: flex; flex-direction: column; }
-  .dest-pick-card:hover { transform: translateY(-5px); box-shadow: 0 18px 40px rgba(28,27,24,0.12); }
-  .dest-pick-card .img { height: 170px; background-size: cover; background-position: center; position: relative; }
-  .dest-pick-card .body { padding: 16px 18px 18px; }
-  .dest-pick-card h3 { font-size: 17px; margin: 0 0 5px; font-weight: 700; }
-  .dest-pick-card p { font-size: 13px; color: var(--muted); margin: 0; line-height: 1.4; }
+  /* ===========================================================
+     DESTINATION GRID -- Airbnb listing-card language: photo fills
+     the card, rounded on all corners, plain white space below for
+     name + description, subtle lift on hover. Uniform, dense,
+     photo-first -- not abstract chrome.
+     =========================================================== */
+  .bento-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 26px 20px; }
+  .bento-tile { position: relative; cursor: pointer; }
+  .bento-tile .tile-photo { position: relative; aspect-ratio: 1 / 1; border-radius: var(--radius); overflow: hidden;
+    background-size: cover; background-position: center; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .bento-tile:hover .tile-photo { transform: translateY(-4px); box-shadow: 0 16px 32px rgba(0,0,0,0.18); }
+  .bento-tile .tile-tag { position: absolute; top: 12px; left: 12px; z-index: 2; background: rgba(255,255,255,0.95); color: var(--text);
+    font-size: 10.5px; font-weight: 800; padding: 4px 9px; border-radius: 8px; letter-spacing: 0.03em; }
+  .bento-tile .tile-body { padding: 12px 2px 0; }
+  .bento-tile h3 { font-family: 'Poppins', sans-serif; font-size: 15px; margin: 0 0 3px; font-weight: 600; color: var(--text); display: flex; align-items: center; justify-content: space-between; gap: 6px; }
+  .bento-tile h3 .go-arrow { color: var(--coral); font-weight: 800; opacity: 0; transform: translateX(-4px); transition: opacity 0.15s, transform 0.15s; }
+  .bento-tile:hover h3 .go-arrow { opacity: 1; transform: translateX(0); }
+  .bento-tile p { font-size: 13px; margin: 0; color: var(--muted); line-height: 1.35; }
+
+  @media (max-width: 900px) {
+    .hero { padding: 90px 18px 44px; min-height: 460px; }
+    .search-bar { border-radius: 22px; }
+    .sb-field { border-radius: 14px; }
+    .sb-submit { border-radius: 14px; width: 100%; height: 46px; }
+    .sb-div { display: none; }
+    .sb-field-sm { max-width: none; flex: 1; }
+    .bento-grid { grid-template-columns: repeat(2, 1fr); }
+  }
 
   /* -- mandatory landing gate -- */
   .gate-view { z-index: 300; background: var(--bg); align-items: center; justify-content: center; }
@@ -105,10 +159,11 @@
   .browse-card .flag.ok { background: var(--pass-soft); color: var(--pass); }
   .browse-card .flag.bad { background: var(--fail-soft); color: var(--fail); }
 
+  .section.tint { background: var(--grad-soft); }
   .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
-  .feature-card { background: var(--surface-2); border-radius: var(--radius); padding: 22px; }
-  .feature-card .icon { width: 42px; height: 42px; border-radius: 12px; background: var(--surface); display: flex; align-items: center; justify-content: center; font-size: 19px; margin-bottom: 14px; }
-  .feature-card h4 { font-size: 15px; margin: 0 0 6px; font-weight: 700; }
+  .feature-card { background: var(--surface); border-radius: var(--radius); padding: 24px; box-shadow: 0 2px 10px rgba(23,21,40,0.05); }
+  .feature-card .icon { width: 44px; height: 44px; border-radius: 12px; background: var(--grad); display: flex; align-items: center; justify-content: center; font-size: 19px; margin-bottom: 16px; box-shadow: 0 6px 14px rgba(91,61,240,0.25); }
+  .feature-card h4 { font-size: 15.5px; margin: 0 0 6px; font-weight: 700; }
   .feature-card p { font-size: 13px; color: var(--muted); line-height: 1.5; margin: 0; }
 
   footer { padding: 30px 44px; text-align: center; color: var(--muted-soft); font-size: 12.5px; }
@@ -121,6 +176,12 @@
   .back-btn:hover { background: var(--border); }
   .chat-header .title { font-weight: 800; font-size: 16px; }
   .chat-header .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--pass); margin-left: 2px; }
+  .quick-nav { display: flex; align-items: center; gap: 4px; margin-left: auto; }
+  .qn-btn { background: transparent; border: none; width: 34px; height: 34px; border-radius: 8px; font-size: 16px;
+    cursor: pointer; display: flex; align-items: center; justify-content: center; opacity: 0.65; transition: background 0.15s, opacity 0.15s; }
+  .qn-btn:hover { background: var(--surface-2); opacity: 1; }
+  .book-link { display: inline-block; margin-top: 9px; font-size: 12px; font-weight: 700; color: var(--coral); text-decoration: none; }
+  .book-link:hover { text-decoration: underline; }
   .new-search-btn { margin-left: auto; background: none; border: 1px solid var(--border); padding: 8px 16px; border-radius: 20px; font-size: 12.5px; font-weight: 700; cursor: pointer; }
   .new-search-btn:hover { border-color: var(--text); }
 
@@ -379,37 +440,49 @@
   <section class="hero">
     <div class="hero-inner">
       <div class="eyebrow">✦ Multi-agent trip planning</div>
-      <h1 class="serif">Find a trip that <em>actually</em> works.</h1>
-      <p>Browse real hotels or flights on their own, or let it plan and verify a full trip together (arrival time, budget, amenities, room size) before calling anything verified.</p>
-      <div class="cta-row">
-        <button class="btn-primary" onclick="document.getElementById('destinations').scrollIntoView({behavior:'smooth'})">Explore destinations ↓</button>
-        <button class="btn-ghost" onclick="openChatPage()">Or just tell it what you need</button>
+      <h1>Verified trips to <span class="cycle-word" id="cycle-word"><span>Austin</span></span></h1>
+      <p>Real flights and real hotels, checked against each other -- arrival time, combined budget, amenities, room size -- before anything gets called verified.</p>
+
+      <form class="search-bar" onsubmit="return submitHeroSearch(event)">
+        <div class="sb-field">
+          <label>From</label>
+          <input type="text" id="hero-origin" placeholder="Chicago (ORD)" />
+        </div>
+        <div class="sb-div"></div>
+        <div class="sb-field">
+          <label>To</label>
+          <input type="text" id="hero-dest" placeholder="Where to?" />
+        </div>
+        <div class="sb-div"></div>
+        <div class="sb-field">
+          <label>Dates</label>
+          <input type="text" id="hero-dates" placeholder="e.g. Oct 10-15" />
+        </div>
+        <div class="sb-div"></div>
+        <div class="sb-field sb-field-sm">
+          <label>Travelers</label>
+          <input type="number" id="hero-travelers" min="1" value="1" />
+        </div>
+        <button class="sb-submit" type="submit" title="Search">→</button>
+      </form>
+      <div class="hero-chips">
+        <span>Try:</span>
+        <button type="button" class="chip-quick" onclick="quickFillHero('Family of 4 to Miami, need a pool, budget $2000 total, 3 nights')">Family trip to Miami</button>
+        <button type="button" class="chip-quick" onclick="quickFillHero('Weekend in Austin for 2, budget $150 a night')">Weekend in Austin</button>
+        <button type="button" class="chip-quick" onclick="quickFillHero('Trip to Paris for 2, budget $3000 total, 5 nights')">Paris getaway</button>
       </div>
     </div>
   </section>
 
-  <section class="section" id="destinations">
+  <section class="section" id="all-destinations">
     <div class="section-head">
-      <h2 class="serif">Where to?</h2>
-      <span class="hint">pick a place, then browse hotels, flights, or both</span>
+      <h2 class="serif">Popular destinations</h2>
+      <span class="hint">real live flight + hotel data -- tap to browse or plan a verified trip</span>
     </div>
-    <div class="dest-grid">
-      <div class="dest-pick-card" onclick="openExplore('AUS')">
-        <div class="img" style="background-image:url('/images/hotels/H-AUS-06.jpg')"></div>
-        <div class="body"><h3>Austin, TX</h3><p>Live music, breweries, keep it weird</p></div>
-      </div>
-      <div class="dest-pick-card" onclick="openExplore('DEN')">
-        <div class="img" style="background-image:url('/images/hotels/H-DEN-06.jpg')"></div>
-        <div class="body"><h3>Denver, CO</h3><p>Mountains, breweries, mile-high air</p></div>
-      </div>
-      <div class="dest-pick-card" onclick="openExplore('MIA')">
-        <div class="img" style="background-image:url('/images/hotels/H-MIA-01.jpg')"></div>
-        <div class="body"><h3>Miami, FL</h3><p>Beaches, art deco, year-round sun</p></div>
-      </div>
-    </div>
+    <div class="bento-grid" id="dest-grid"></div>
   </section>
 
-  <section class="section">
+  <section class="section tint">
     <div class="section-head"><h2 class="serif">What makes a trip "verified"</h2></div>
     <div class="feature-grid">
       <div class="feature-card"><div class="icon">🕐</div><h4>Arrival vs. check-in</h4><p>Does your flight land in time to actually check in, given the hotel's real hours?</p></div>
@@ -452,7 +525,7 @@
   </div>
   <div class="chat-input-bar">
     <div class="chat-input-inner">
-      <input type="text" id="chat-input" placeholder="e.g. Family of 4 to Austin, need a pool, budget $2000 total, 3 nights" />
+      <input type="text" id="chat-input" placeholder="e.g. Family of 4 from Chicago to Austin, need a pool, budget $2000 total, 3 nights" />
       <button class="send-btn" id="chat-send">Send</button>
     </div>
     <div class="input-hint" id="input-hint">Press Enter or click Send</div>
@@ -497,21 +570,69 @@
 </div>
 
 <script>
-/* ---------- per-destination prefill for the "full verified trip" tab ---------- */
-const DEST_PREFILL = {
-  AUS: "Trip to Austin, TX -- ",
-  DEN: "Trip to Denver, CO -- ",
-  MIA: "Trip to Miami, FL -- ",
+/* ---------- destinations this app searches real live flight/hotel data for ----------
+   Not an exhaustive list of everywhere the backend can handle (any real IATA code
+   works against live Google Flights/Hotels) -- just the ones surfaced in the UI. */
+const DESTINATIONS = {
+  AUS: { name: "Austin, TX",         tag: "AUS\nTX", blurb: "Live music, keep it weird",     img: "/images/hotels/H-AUS-06.jpg" },
+  DEN: { name: "Denver, CO",         tag: "DEN\nCO", blurb: "Mountains, mile-high air",       img: "/images/hotels/H-DEN-06.jpg" },
+  MIA: { name: "Miami, FL",          tag: "MIA\nFL", blurb: "Beaches, art deco, sun",         img: "/images/hotels/H-MIA-01.jpg" },
+  CDG: { name: "Paris, France",      tag: "CDG\nFR", blurb: "Cafes, art, the Seine",          img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/330px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" },
+  HND: { name: "Tokyo, Japan",       tag: "HND\nJP", blurb: "Neon, ramen, bullet trains",     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg/330px-Skyscrapers_of_Shinjuku_2009_January.jpg" },
+  LHR: { name: "London, UK",         tag: "LHR\nUK", blurb: "Pubs, museums, grey skies",      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/London_Skyline_%28125508655%29.jpeg/330px-London_Skyline_%28125508655%29.jpeg" },
+  MEX: { name: "Mexico City, Mexico", tag: "MEX\nMX", blurb: "Street food, history, art",     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Sobrevuelos_CDMX_HJ2A4913_%2825514321687%29_%28cropped%29.jpg/330px-Sobrevuelos_CDMX_HJ2A4913_%2825514321687%29_%28cropped%29.jpg" },
+  SYD: { name: "Sydney, Australia",  tag: "SYD\nAU", blurb: "Harbour, beaches, opera house",  img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg/330px-Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg" },
 };
+const DEST_FULL_NAMES = Object.fromEntries(Object.entries(DESTINATIONS).map(([code, d]) => [code, d.name]));
+const DEST_NAMES = DEST_FULL_NAMES;
+/* ---------- per-destination prefill for the "full verified trip" tab ---------- */
+const DEST_PREFILL = Object.fromEntries(Object.entries(DESTINATIONS).map(([code, d]) => [code, `Trip to ${d.name} -- `]));
 
 window.addEventListener("scroll", () => document.getElementById("nav").classList.toggle("scrolled", window.scrollY > 30));
+
+/* ---------- hero: cycling destination word ---------- */
+(function cycleHeroWord() {
+  const el = document.getElementById("cycle-word");
+  if (!el) return;
+  const names = Object.values(DESTINATIONS).map(d => d.name.split(",")[0]);
+  let i = 0;
+  setInterval(() => {
+    i = (i + 1) % names.length;
+    el.innerHTML = `<span>${names[i]}</span>`;
+  }, 2200);
+})();
+
+document.getElementById("dest-grid").innerHTML = Object.entries(DESTINATIONS).map(([code, d]) => `
+  <div class="bento-tile" onclick="openExplore('${code}')">
+    <div class="tile-photo" style="background-image:url('${d.img}')"><div class="tile-tag">${code}</div></div>
+    <div class="tile-body"><h3>${d.name} <span class="go-arrow">→</span></h3><p>${d.blurb}</p></div>
+  </div>
+`).join("");
+
+/* ---------- hero search bar -- a real functional multi-field search,
+   not just decoration: builds a natural-language request and hands it
+   straight to the same chat/intent pipeline every other entry point uses. ---------- */
+function submitHeroSearch(e) {
+  e.preventDefault();
+  const origin = document.getElementById("hero-origin").value.trim();
+  const dest = document.getElementById("hero-dest").value.trim();
+  const dates = document.getElementById("hero-dates").value.trim();
+  const travelers = parseInt(document.getElementById("hero-travelers").value) || 1;
+  const parts = [];
+  parts.push(`Trip for ${travelers} ${travelers === 1 ? "traveler" : "travelers"}`);
+  if (origin) parts.push(`from ${origin}`);
+  if (dest) parts.push(`to ${dest}`);
+  if (dates) parts.push(`on ${dates}`);
+  openChatPage(parts.join(" ") + " -- ");
+  return false;
+}
+function quickFillHero(text) { openChatPage(text); }
 
 /* =========================================================================
    EXPLORE -- real browse: hotels only, flights only, or the full chat flow.
    This is what fixes "everywhere I click opens the chat" -- these are three
    genuinely different, independent things, not the same funnel in disguise.
    ========================================================================= */
-const DEST_FULL_NAMES = { AUS: "Austin, TX", DEN: "Denver, CO", MIA: "Miami, FL" };
 let EXPLORE_DEST = null;
 let EXPLORE_TAB = "hotels";
 let BROWSE_HOTEL_RESULTS = [];
@@ -569,9 +690,12 @@ function renderHotelBrowseForm() {
 function renderFlightBrowseForm() {
   return `<div class="browse-form">
     <div class="row">
+      <label>Flying from (airport code)<input type="text" id="bf-origin" placeholder="ORD" maxlength="3" style="text-transform:uppercase" /></label>
       <label>Date<input type="text" id="bf-date" placeholder="2026-10-05" /></label>
       <label>Passengers<input type="number" id="bf-party" value="1" min="1" /></label>
-      <label>Budget per passenger<input type="number" id="bf-budget" placeholder="e.g. 250" /></label>
+    </div>
+    <div class="row">
+      <label>Budget total<input type="number" id="bf-budget" placeholder="e.g. 250" /></label>
     </div>
     <button class="btn-submit" onclick="runFlightBrowse()">Search flights</button>
   </div>
@@ -608,6 +732,7 @@ async function runHotelBrowse() {
           <p>${h.destination_name || ''}${h.rating ? ' · ★ ' + h.rating.toFixed(1) : ''}</p>
           <div class="price">$${h.price_per_night}/night</div>
           <div class="flags">${flags}</div>
+          ${h.booking_link ? `<a class="book-link" href="${h.booking_link}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Book this hotel ↗</a>` : ''}
         </div>
       </div>`;
     }).join("");
@@ -621,6 +746,7 @@ async function runFlightBrowse() {
   results.innerHTML = `<div class="empty-state">Searching real flights…</div>`;
   const body = {
     destination_code: EXPLORE_DEST,
+    origin_code: (document.getElementById("bf-origin").value || "").trim().toUpperCase() || null,
     date_range_start: document.getElementById("bf-date").value || "2026-10-05",
     party_size: parseInt(document.getElementById("bf-party").value) || 1,
     budget_amount: parseFloat(document.getElementById("bf-budget").value) || null,
@@ -633,15 +759,16 @@ async function runFlightBrowse() {
     if (!data.results.length) { results.innerHTML = `<div class="empty-state">No flights found for that date.</div>`; return; }
     results.innerHTML = data.results.map((r, i) => {
       const f = r.record;
-      const img = f.image_url || `/images/flights/${f.id}.jpg`;
+      const img = f.image_url || f.airline_logo || `/images/flights/${f.id}.jpg`;
       return `<div class="browse-card" onclick="showDetailRecord('flight', BROWSE_FLIGHT_RESULTS[${i}])">
-        <img src="${img}" onerror="this.style.display='none'" />
+        <img src="${img}" onerror="this.style.display='none'" style="${f.airline_logo ? 'object-fit:contain;background:var(--surface-2);padding:14px' : ''}" />
         <div class="body">
           <h4>${f.airline} ${f.flight_number}</h4>
           <p>${f.origin} → ${f.destination}, ${f.date}</p>
           <p>${f.departure_time} → ${f.arrival_time}${f.arrives_next_day ? ' (+1d)' : ''}</p>
-          <div class="price">$${f.price}/passenger${r.total_for_party !== f.price ? ' · $' + r.total_for_party + ' total' : ''}</div>
+          <div class="price">${f._source === 'serpapi_google_flights' ? '$' + f.price + ' total' : '$' + f.price + '/passenger' + (r.total_for_party !== f.price ? ' · $' + r.total_for_party + ' total' : '')}</div>
           <div class="flags">${r.within_stated_budget ? '<span class="flag ok">✓ within budget</span>' : '<span class="flag bad">✕ over budget</span>'}</div>
+          ${f.booking_link ? `<a class="book-link" href="${f.booking_link}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Book on Google Flights ↗</a>` : ''}
         </div>
       </div>`;
     }).join("");
@@ -863,19 +990,25 @@ function renderSelectedOption() {
           <h3>${opt.hotel.name}</h3>
           <p>${opt.hotel.destination_name}${opt.hotel.rating ? ' · ★ ' + opt.hotel.rating.toFixed(1) : ''}</p>
           <div class="price-line">$${opt.hotel.price_per_night}/night</div>
+          ${opt.hotel.booking_link ? `<a class="book-link" href="${opt.hotel.booking_link}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Book this hotel ↗</a><br/>` : ''}
           <div class="view-more">View details →</div>
         </div>
       </div>`;
     }
     if (opt.flight) {
-      const flightImg = opt.flight.image_url || `/images/flights/${opt.flight.id}.jpg`;
+      const flightImg = opt.flight.image_url || opt.flight.airline_logo || `/images/flights/${opt.flight.id}.jpg`;
+      const ret = opt.flight.return;
+      const routeLine = ret ? `${opt.flight.origin} ⇄ ${opt.flight.destination} (round trip)` : `${opt.flight.origin} → ${opt.flight.destination} (one-way -- no return flight found)`;
+      const unit = opt.flight._source === 'serpapi_google_flights' ? ' total' : '/passenger';
+      const priceLine = ret ? `$${opt.flight.price} out + $${ret.price} return = $${opt.flight.price + ret.price}${unit}` : `$${opt.flight.price}${unit}`;
       html += `<div class="itin-item" onclick="showDetail('flight')">
-        <img src="${flightImg}" alt="${opt.flight.flight_number}" onerror="this.style.display='none'" />
+        <img src="${flightImg}" alt="${opt.flight.flight_number}" onerror="this.style.display='none'" style="${opt.flight.airline_logo && !opt.flight.image_url ? 'object-fit:contain;background:var(--surface-2);padding:10px' : ''}" />
         <div class="itin-body">
           <div class="itin-kind">✈️ Flight</div>
-          <h3>${opt.flight.airline} ${opt.flight.flight_number}</h3>
-          <p>${opt.flight.origin} → ${opt.flight.destination}</p>
-          <div class="price-line">$${opt.flight.price}/passenger</div>
+          <h3>${opt.flight.airline} ${opt.flight.flight_number}${ret ? ' + ' + ret.airline + ' ' + ret.flight_number : ''}</h3>
+          <p>${routeLine}</p>
+          <div class="price-line">${priceLine}</div>
+          ${opt.flight.booking_link ? `<a class="book-link" href="${opt.flight.booking_link}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Book on Google Flights ↗</a><br/>` : ''}
           <div class="view-more">View details →</div>
         </div>
       </div>`;
@@ -970,10 +1103,10 @@ function showDetailRecord(kind, r) {
   if (!r) return;
   const overlay = document.getElementById("modal-overlay");
   const panel = document.getElementById("modal-panel");
-  const img = r.image_url || `/images/${kind === 'hotel' ? 'hotels' : 'flights'}/${r.id}.jpg`;
+  const img = r.image_url || r.airline_logo || `/images/${kind === 'hotel' ? 'hotels' : 'flights'}/${r.id}.jpg`;
 
   let html = `<button class="modal-close" onclick="closeModal()">✕</button>
-    <img class="modal-img" src="${img}" onerror="this.style.display='none'" />
+    <img class="modal-img" src="${img}" onerror="this.style.display='none'" style="${r.airline_logo && !r.image_url ? 'object-fit:contain;background:var(--surface-2);padding:24px' : ''}" />
     <div class="modal-body">`;
 
   if (kind === "hotel") {
@@ -990,13 +1123,16 @@ function showDetailRecord(kind, r) {
     if (r.amenities && r.amenities.length) {
       html += `<div class="chip-row">${r.amenities.map(a => `<span class="chip">${a}</span>`).join("")}</div>`;
     }
+    if (r.booking_link) html += `<a class="book-link" style="display:block;margin-top:14px;font-size:14px" href="${r.booking_link}" target="_blank" rel="noopener">Book this hotel ↗</a>`;
   } else {
-    html += `<div class="kind">✈️ Flight</div>
+    const ret = r.return;
+    const unit = r._source === 'serpapi_google_flights' ? ' total' : '/passenger';
+    html += `<div class="kind">✈️ Flight${ret ? ' (round trip)' : ''}</div>
       <h2>${r.airline} ${r.flight_number}</h2>
       <div class="sub">${r.origin_name || r.origin} → ${r.destination_name || r.destination}</div>`;
     if (r.description) html += `<div class="desc">${r.description}</div>`;
     html += `<div class="modal-facts">
-      <div class="modal-fact"><div class="k">Price</div><div class="v">$${r.price}/passenger</div></div>
+      <div class="modal-fact"><div class="k">Price (outbound)</div><div class="v">$${r.price}${unit}</div></div>
       <div class="modal-fact"><div class="k">Date</div><div class="v">${r.date}</div></div>
       <div class="modal-fact"><div class="k">Departs</div><div class="v">${r.departure_time}</div></div>
       <div class="modal-fact"><div class="k">Arrives</div><div class="v">${r.arrival_time}${r.arrives_next_day ? ' (+1 day)' : ''}</div></div>
@@ -1004,6 +1140,18 @@ function showDetailRecord(kind, r) {
     if (typeof r.layovers === "number") {
       html += `<div class="chip-row"><span class="chip">${r.layovers === 0 ? 'Nonstop' : r.layovers + ' stop(s)'}</span></div>`;
     }
+    if (ret) {
+      html += `<div class="sub" style="margin-top:16px">Return: ${ret.airline} ${ret.flight_number}, ${ret.origin_name || ret.origin} → ${ret.destination_name || ret.destination}</div>
+      <div class="modal-facts">
+        <div class="modal-fact"><div class="k">Price (return)</div><div class="v">$${ret.price}${unit}</div></div>
+        <div class="modal-fact"><div class="k">Date</div><div class="v">${ret.date}</div></div>
+        <div class="modal-fact"><div class="k">Departs</div><div class="v">${ret.departure_time}</div></div>
+        <div class="modal-fact"><div class="k">Arrives</div><div class="v">${ret.arrival_time}${ret.arrives_next_day ? ' (+1 day)' : ''}</div></div>
+      </div>`;
+    } else if (r._source === 'serpapi_google_flights') {
+      html += `<div class="chip-row"><span class="chip" style="color:var(--fail)">⚠ no return flight found -- one-way only</span></div>`;
+    }
+    if (r.booking_link) html += `<a class="book-link" style="display:block;margin-top:14px;font-size:14px" href="${r.booking_link}" target="_blank" rel="noopener">Book on Google Flights ↗</a>`;
   }
   html += `</div>`;
   panel.innerHTML = html;
@@ -1171,6 +1319,25 @@ function openPageEl(id) {
   document.getElementById(id).classList.add("open");
   document.body.style.overflow = "hidden";
 }
+/* Every sub-page (chat/explore/planner/friends/groups) was a dead-end you
+   could only leave by going back to the landing page one step at a time --
+   no way to jump straight from e.g. Explore to Planner. goHome()/navTo()
+   back every quick-nav button in every page header. */
+function goHome() {
+  document.querySelectorAll(".page-view.open, #chat-view.open").forEach(el => el.classList.remove("open"));
+  document.body.style.overflow = "";
+}
+function navTo(fn) { goHome(); fn(); }
+function quickNavHTML() {
+  return `<div class="quick-nav">
+    <button class="qn-btn" onclick="goHome()" title="Home">🏠</button>
+    <button class="qn-btn" onclick="navTo(openChatPage)" title="Plan a trip">💬</button>
+    <button class="qn-btn" onclick="navTo(openPlanner)" title="My planner">📋</button>
+    <button class="qn-btn" onclick="navTo(openFriends)" title="Friends">👥</button>
+    <button class="qn-btn" onclick="navTo(openGroups)" title="Group trips">🤝</button>
+  </div>`;
+}
+document.querySelectorAll(".chat-header").forEach(h => h.insertAdjacentHTML("beforeend", quickNavHTML()));
 function requireAuthOrPrompt() {
   if (!CURRENT_USER) { openAuthModal("login"); return false; }
   return true;
@@ -1337,7 +1504,6 @@ async function deleteSavedTrip(id) {
    GROUP TRIPS
    ========================================================================= */
 let CURRENT_GROUP_ID = null;
-const DEST_NAMES = { AUS: "Austin, TX", DEN: "Denver, CO", MIA: "Miami, FL" };
 
 async function openGroups() {
   if (!requireAuthOrPrompt()) return;
@@ -1376,7 +1542,7 @@ function showCreateGroupForm() {
     <div class="inline-form">
       <label>Trip name</label><input type="text" id="grp-name" placeholder="e.g. Austin Bachelorette" />
       <label>Destination</label>
-      <select id="grp-dest"><option value="AUS">Austin, TX</option><option value="DEN">Denver, CO</option><option value="MIA">Miami, FL</option></select>
+      <select id="grp-dest">${Object.entries(DESTINATIONS).map(([code, d]) => `<option value="${code}">${d.name}</option>`).join("")}</select>
       <button class="btn-submit" onclick="submitCreateGroup()">Create trip</button>
     </div>`;
 }
@@ -1506,8 +1672,12 @@ function renderGroupResults(data) {
         <div class="itin-body"><div class="itin-kind">🏨 Hotel</div><h3>${opt.hotel.name}</h3><p>${opt.hotel.destination_name}</p><div class="price-line">$${opt.hotel.price_per_night}/night</div></div></div>`;
     }
     if (opt.flight) {
-      html += `<div class="itin-item"><img src="${opt.flight.image_url || '/images/flights/' + opt.flight.id + '.jpg'}" onerror="this.style.display='none'" />
-        <div class="itin-body"><div class="itin-kind">✈️ Flight</div><h3>${opt.flight.airline} ${opt.flight.flight_number}</h3><p>${opt.flight.origin} → ${opt.flight.destination}</p><div class="price-line">$${opt.flight.price}/passenger</div></div></div>`;
+      const ret = opt.flight.return;
+      const routeLine = ret ? `${opt.flight.origin} ⇄ ${opt.flight.destination} (round trip)` : `${opt.flight.origin} → ${opt.flight.destination} (one-way -- no return flight found)`;
+      const unit = opt.flight._source === 'serpapi_google_flights' ? ' total' : '/passenger';
+      const priceLine = ret ? `$${opt.flight.price} out + $${ret.price} return = $${opt.flight.price + ret.price}${unit}` : `$${opt.flight.price}${unit}`;
+      html += `<div class="itin-item"><img src="${opt.flight.image_url || opt.flight.airline_logo || '/images/flights/' + opt.flight.id + '.jpg'}" onerror="this.style.display='none'" />
+        <div class="itin-body"><div class="itin-kind">✈️ Flight</div><h3>${opt.flight.airline} ${opt.flight.flight_number}${ret ? ' + ' + ret.airline + ' ' + ret.flight_number : ''}</h3><p>${routeLine}</p><div class="price-line">${priceLine}</div></div></div>`;
     }
     html += `</div>`;
   }

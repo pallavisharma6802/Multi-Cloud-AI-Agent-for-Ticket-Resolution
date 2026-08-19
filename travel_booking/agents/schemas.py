@@ -5,20 +5,52 @@ from typing import List, Literal, Optional
 
 from pydantic import BaseModel, Field
 
-KNOWN_DESTINATIONS = ("AUS", "DEN", "MIA")
+# destination airport code -> display name. Real-data mode (SerpApi) isn't actually
+# limited to this list -- any valid IATA code works against live Google Flights/Hotels --
+# but the LLM is steered toward these as reliably-known major destinations rather than
+# guessing an airport code for every place on earth.
+DESTINATIONS = {
+    "AUS": "Austin, TX",
+    "DEN": "Denver, CO",
+    "MIA": "Miami, FL",
+    "CDG": "Paris, France",
+    "HND": "Tokyo, Japan",
+    "LHR": "London, UK",
+    "MEX": "Mexico City, Mexico",
+    "SYD": "Sydney, Australia",
+}
+KNOWN_DESTINATIONS = tuple(DESTINATIONS.keys())
 KNOWN_AMENITIES = ("wifi", "pool", "gym", "parking", "breakfast", "pet_friendly", "family_friendly")
 
 BudgetScope = Literal["total_trip", "per_night_hotel"]
 CheckName = Literal["arrival_vs_checkin", "budget", "amenities", "capacity"]
 
+DEFAULT_ORIGIN_CODE = "ORD"
+DEFAULT_ORIGIN_NAME = "Chicago O'Hare (ORD)"
+
 
 class TravelConstraints(BaseModel):
     """Structured output of the Intent Agent's Bedrock call."""
 
-    destination_code: Optional[Literal["AUS", "DEN", "MIA"]] = Field(
+    origin_code: Optional[str] = Field(
         default=None,
-        description="3-letter destination airport code if the request clearly names Austin (AUS), "
-        "Denver (DEN), or Miami (MIA); null if the destination is unclear or not one of these three.",
+        description="3-letter IATA airport code for where the traveler is DEPARTING FROM, if stated "
+        "(e.g. 'flying from Chicago', 'departing NYC', 'from Boston'). Null if not stated -- do not guess "
+        "an origin the user never mentioned.",
+    )
+    origin_raw: Optional[str] = Field(
+        default=None, description="The origin exactly as the user phrased it, verbatim. Null if not stated."
+    )
+    destination_code: Optional[str] = Field(
+        default=None,
+        description="3-letter IATA airport code for the destination, if the request clearly names one "
+        "of the supported destinations or another major world city/airport recognizable with confidence; "
+        "null if the destination is unclear, ambiguous, or not confidently resolvable to a real airport.",
+    )
+    destination_name: Optional[str] = Field(
+        default=None,
+        description="Clean display name for the destination_code, e.g. 'Paris, France'. Null if "
+        "destination_code is null.",
     )
     destination_raw: str = Field(description="The destination exactly as the user phrased it, verbatim.")
     party_size: int = Field(ge=1, description="Number of travelers. Default to 1 only if nothing implies a group.")
@@ -64,7 +96,11 @@ class TravelConstraints(BaseModel):
 class ResolvedConstraints(BaseModel):
     """TravelConstraints after code-level defaults are applied (nights, party_size, dates)."""
 
+    origin_code: str = DEFAULT_ORIGIN_CODE
+    origin_name: str = DEFAULT_ORIGIN_NAME
+    origin_defaulted: bool = False
     destination_code: Optional[str]
+    destination_name: Optional[str] = None
     destination_raw: str
     party_size: int
     nights: int

@@ -17,7 +17,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
-from travel_booking.agents.schemas import ItineraryOutcome, VerificationResult  # noqa: E402
+from travel_booking.agents.schemas import DESTINATIONS, ItineraryOutcome, VerificationResult  # noqa: E402
 
 CHECK_LABELS = {
     "arrival_vs_checkin": "Arrival time vs. check-in window",
@@ -82,10 +82,11 @@ def build_explanation(outcome: ItineraryOutcome) -> dict:
         }
 
     if outcome.constraints.destination_code is None:
+        known = ", ".join(DESTINATIONS.values())
         return {
             "headline": (
-                f"Couldn't search at all -- \"{outcome.constraints.destination_raw}\" isn't a destination "
-                "this system currently serves (only Austin, Denver, and Miami)."
+                f"Couldn't search at all -- \"{outcome.constraints.destination_raw}\" wasn't recognized as "
+                f"a destination. Specifically tuned for: {known}; other major world cities may also work."
             ),
             "status": "unsatisfiable",
             "checklist": [],
