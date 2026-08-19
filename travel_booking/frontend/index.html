@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Travel Booking Demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  :root {
+    --bg: #f7f7f5; --surface: #ffffff; --border: #e2e0db; --text: #1f1e1c; --muted: #6b6862;
+    --accent: #2f6f4f; --accent-bg: #eaf3ee; --pass: #1e7d43; --fail: #b23b2e; --fail-bg: #fdecea; --pass-bg: #eaf6ee;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+  h1 { font-size: 22px; margin-bottom: 4px; }
+  .sub { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 18px; margin-bottom: 20px; }
+  .chat-log { display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; max-height: 360px; overflow-y: auto; }
+  .msg { padding: 10px 14px; border-radius: 14px; max-width: 80%; font-size: 14px; line-height: 1.4; }
+  .msg.user { align-self: flex-end; background: var(--accent); color: white; border-bottom-right-radius: 4px; }
+  .msg.agent { align-self: flex-start; background: var(--accent-bg); color: var(--text); border-bottom-left-radius: 4px; }
+  .chat-input-row { display: flex; gap: 8px; }
+  input[type=text] { flex: 1; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--border); font-size: 14px; }
+  button { padding: 10px 16px; border-radius: 8px; border: none; background: var(--accent); color: white; font-size: 14px; cursor: pointer; }
+  button:disabled { opacity: 0.4; cursor: default; }
+  .hidden { display: none; }
+  .headline { padding: 14px 16px; border-radius: 10px; font-size: 15px; font-weight: 600; margin-bottom: 16px; }
+  .headline.verified { background: var(--pass-bg); color: var(--pass); }
+  .headline.unsatisfiable { background: var(--fail-bg); color: var(--fail); }
+  .itinerary { display: flex; gap: 16px; margin-bottom: 16px; flex-wrap: wrap; }
+  .itin-item { flex: 1; min-width: 220px; }
+  .itin-item img { width: 100%; height: 140px; object-fit: cover; border-radius: 8px; margin-bottom: 8px; }
+  .itin-item h3 { font-size: 15px; margin: 0 0 4px; }
+  .itin-item p { font-size: 13px; color: var(--muted); margin: 2px 0; }
+  .checklist { display: flex; flex-direction: column; gap: 8px; }
+  .check-row { display: flex; gap: 10px; padding: 10px 12px; border-radius: 8px; font-size: 13px; align-items: flex-start; }
+  .check-row.pass { background: var(--pass-bg); }
+  .check-row.fail { background: var(--fail-bg); }
+  .check-icon { font-weight: 700; }
+  .check-row.pass .check-icon { color: var(--pass); }
+  .check-row.fail .check-icon { color: var(--fail); }
+  .check-label { font-weight: 600; margin-bottom: 2px; }
+  .total-cost { margin-top: 14px; font-size: 14px; font-weight: 600; }
+  .assumptions { font-size: 12px; color: var(--muted); margin-top: 10px; }
+  #status-line { font-size: 12px; color: var(--muted); margin-top: 8px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Travel Booking Demo</h1>
+  <p class="sub">Tell it what you're looking for -- it may ask a clarifying question before searching.</p>
+
+  <div class="card" id="chat-card">
+    <div class="chat-log" id="chat-log"></div>
+    <div class="chat-input-row">
+      <input type="text" id="chat-input" placeholder="e.g. Family of 4 to Austin, need a pool, budget $2000 total, 3 nights" />
+      <button id="chat-send">Send</button>
+    </div>
+    <div id="status-line"></div>
+  </div>
+
+  <div class="card hidden" id="results-card"></div>
+</div>
+
+<script>
+const API = "";
+let conversationId = null;
+let searched = false;
+
+const chatLog = document.getElementById("chat-log");
+const chatInput = document.getElementById("chat-input");
+const chatSend = document.getElementById("chat-send");
+const statusLine = document.getElementById("status-line");
+const resultsCard = document.getElementById("results-card");
+
+function addMessage(role, text) {
+  const div = document.createElement("div");
+  div.className = "msg " + role;
+  div.textContent = text;
+  chatLog.appendChild(div);
+  chatLog.scrollTop = chatLog.scrollHeight;
+}
+
+function renderState(data) {
+  // Render only the newest turn(s) we haven't shown yet -- simplest: just
+  // clear and re-render the whole transcript, transcripts are short here.
+  chatLog.innerHTML = "";
+  data.turns.forEach(t => addMessage(t.role, t.text));
+  statusLine.textContent = "status: " + data.status + (data.missing.length ? " (missing: " + data.missing.join(", ") + ")" : "");
+
+  if ((data.status === "ready" || data.status === "best_effort") && !searched) {
+    searched = true;
+    chatInput.disabled = true;
+    chatSend.disabled = true;
+    runSearch();
+  }
+}
+
+async function runSearch() {
+  statusLine.textContent = "status: searching...";
+  const res = await fetch(`/api/search/${conversationId}`, { method: "POST" });
+  const data = await res.json();
+  statusLine.textContent = "status: done (" + data.status + ")";
+  renderResults(data);
+}
+
+function checkRow(c) {
+  return `<div class="check-row ${c.passed ? 'pass' : 'fail'}">
+    <span class="check-icon">${c.passed ? '✓' : '✗'}</span>
+    <div><div class="check-label">${c.label}</div><div>${c.detail}</div></div>
+  </div>`;
+}
+
+function renderResults(data) {
+  resultsCard.classList.remove("hidden");
+  const exp = data.explanation;
+  let html = `<div class="headline ${exp.status}">${exp.headline}</div>`;
+
+  if (data.hotel || data.flight) {
+    html += `<div class="itinerary">`;
+    if (data.hotel) {
+      html += `<div class="itin-item">
+        <img src="/images/hotels/${data.hotel.id}.jpg" alt="${data.hotel.name}" />
+        <h3>${data.hotel.name}</h3>
+        <p>${data.hotel.destination_name}</p>
+        <p>$${data.hotel.price_per_night}/night${data.hotel.resort_fee_per_night ? ' + $' + data.hotel.resort_fee_per_night + '/night resort fee' : ''}</p>
+        <p>Check-in ${data.hotel.check_in_time}, ${data.hotel.front_desk_24hr ? '24-hour front desk' : 'desk closes ' + data.hotel.front_desk_closes}</p>
+      </div>`;
+    }
+    if (data.flight) {
+      html += `<div class="itin-item">
+        <img src="/images/flights/${data.flight.id}.jpg" alt="${data.flight.flight_number}" />
+        <h3>${data.flight.airline} ${data.flight.flight_number}</h3>
+        <p>${data.flight.origin} → ${data.flight.destination}, ${data.flight.date}</p>
+        <p>Departs ${data.flight.departure_time}, arrives ${data.flight.arrival_time}${data.flight.arrives_next_day ? ' (next day)' : ''}</p>
+        <p>$${data.flight.price}/passenger</p>
+      </div>`;
+    }
+    html += `</div>`;
+  }
+
+  if (exp.checklist.length) {
+    html += `<div class="checklist">` + exp.checklist.map(checkRow).join("") + `</div>`;
+  }
+  if (exp.total_cost) {
+    html += `<div class="total-cost">Total trip cost: $${exp.total_cost.toFixed(2)}</div>`;
+  }
+  if (data.constraints.assumptions && data.constraints.assumptions.length) {
+    html += `<div class="assumptions">Assumed: ${data.constraints.assumptions.join("; ")}.</div>`;
+  }
+  resultsCard.innerHTML = html;
+}
+
+async function sendMessage() {
+  const text = chatInput.value.trim();
+  if (!text) return;
+  chatInput.value = "";
+  chatSend.disabled = true;
+
+  let res, data;
+  if (!conversationId) {
+    res = await fetch("/api/chat/start", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message: text }),
+    });
+    data = await res.json();
+    conversationId = data.conversation_id;
+  } else {
+    res = await fetch("/api/chat/reply", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ conversation_id: conversationId, message: text }),
+    });
+    data = await res.json();
+  }
+  chatSend.disabled = false;
+  renderState(data);
+}
+
+chatSend.addEventListener("click", sendMessage);
+chatInput.addEventListener("keydown", e => { if (e.key === "Enter") sendMessage(); });
+</script>
+</body>
+</html>

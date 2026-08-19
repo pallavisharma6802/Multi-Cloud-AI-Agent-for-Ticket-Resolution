@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "travel-booking-api",
+      "url": "http://localhost:8200",
+      "port": 8200,
+      "autoPort": false
+    }
+  ]
+}

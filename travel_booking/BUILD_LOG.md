@@ -302,3 +302,128 @@ likely factor, worth a look if it gets worse under heavier use.
 No test case expectations needed correcting -- all 15 scenarios were
 verified by hand against the real dataset before running, and all 30
 runs matched on the first execution of the battery.
+
+## Stage 4: local UI
+
+Single-view FastAPI + vanilla HTML/CSS/JS (`travel_booking/api.py`,
+`travel_booking/frontend/index.html`) -- no Next.js/framer-motion this
+time, deliberately: the brief explicitly said "not split-screen... more
+like a normal booking result page," and this UI has no interception
+moment to pace or dramatize the way the MCP firewall demo did, so a
+heavier frontend stack would add nothing. One process, one port (8200),
+serves the JSON API and the static page.
+
+**Flow**: a real multi-turn chat (`POST /api/chat/start`,
+`POST /api/chat/reply`, in-memory `ConversationState` per
+`conversation_id`) drives intake through `IntentAgent.start()`/
+`continue_conversation()` exactly as built and tested in Stage 2 -- not a
+single input box. Once status reaches `ready`/`best_effort`, the frontend
+automatically calls `POST /api/search/{conversation_id}`, which runs
+`TravelAgent.run_from_state()` and returns the real `ItineraryOutcome`
+plus a `build_explanation()` payload (`travel_booking/agents/
+explanation.py`) -- template-only, assembled directly from each
+`CheckResult`'s already-human-readable `detail` string (written by
+Verification for exactly this purpose), never hardcoded copy and never a
+second LLM call.
+
+**Images**: served locally from `travel_booking/data/images/` via a
+mounted static route (`/images/hotels/{id}.jpg`, `/images/flights/{id}.jpg`)
+-- same Stage 1 Picsum files, cosmetic only.
+
+**End-to-end verification** (3+ required battery scenarios, tested against
+the real running server, not mocked):
+
+1. `clean_austin_family` (verified path) -- via curl against the real
+   API: chat reached `ready` in one turn, search returned
+   `status=verified`, Congress Ave Grand Hotel + LA401, all 4 checks
+   shown passing with real detail text, total cost $1575.00 matched the
+   hand-computed figure. Both hotel and flight images confirmed
+   reachable (`HTTP 200`) at their `/images/...` URLs.
+2. `trap_aus02_pool_closed` (trap/unsatisfiable path) -- correctly
+   returned `status=unsatisfiable` with a real per-field checklist
+   (3 pass, 1 fail). Worth noting honestly: the "closest attempt" surfaced
+   was `H-AUS-05` (the resort-fee trap) rather than `H-AUS-02` (the
+   pool-closed trap) -- both are legitimately "one check away" for this
+   request (H-AUS-05's listed $189 is itself already over the stated
+   $150 budget, independent of its fee), and the orchestrator's
+   closest-attempt tracker keeps whichever tie it finds first rather than
+   preferring one arbitrarily. Not a bug -- both are real traps and the
+   UI correctly showed one of them being caught with an honest headline
+   and full explanation.
+3. `unsat_no_destination` ("Seattle") -- interesting real interaction:
+   this exact wording has no explicit date range ("3 nights" is a
+   duration, not dates), so the real interactive chat correctly asked a
+   clarifying question about dates FIRST, before ever reaching the
+   destination check (the battery's one-shot `run()` bypasses
+   clarification entirely, so this distinction only shows up when
+   driven through the real conversational API, which is exactly what
+   Stage 4 is supposed to test). Answered "Oct 10-13", conversation
+   reached `ready`, search then correctly returned
+   `status=unsatisfiable`, `attempts_tried=0`, headline: "Couldn't search
+   at all -- \"Seattle\" isn't a destination this system currently serves
+   (only Austin, Denver, and Miami)."
+4. `clean_denver_solo`, driven through an actual browser tab (not curl)
+   via the Claude Browser tools -- typed the request, clicked Send,
+   watched the chat confirm understanding, watched it auto-trigger
+   search, and got back a fully rendered result card: hotel photo,
+   flight photo, green "Verified" headline, and all 4 checks listed with
+   real text ("Union Station Grand Hotel has a 24-hour front desk, so
+   the 10:45 arrival on LA512 can check in at any time", etc.).
+   Screenshot-verified. Console checked, zero errors.
+
+**One real bug found and fixed via this browser test**: the status line
+stayed on "searching..." after results rendered (never updated on
+completion) -- fixed by setting it to "status: done (...)" right after
+the search response lands, in `frontend/index.html`. Re-verified the fix
+loads (fresh page load confirmed the corrected JS is served -- didn't
+re-spend a Bedrock call re-running the full flow for a one-line
+cosmetic-only text update with no logic change).
+
+**Environment note, not an app defect**: `preview_start`/`navigate`
+against `localhost:8200` initially failed with a spurious "port 3000 in
+use by com.docker.backend" error, unrelated to this app's actual port
+config (tried `port`, `autoPort:false`, and `autoPort:true` in
+`.claude/launch.json`, all hit the same error). Worked around by opening
+a fresh tab (`tabs_create`) and navigating directly, which succeeded and
+was used for verification #4 above. Not investigated further since a
+working path was found quickly.
+
+**Bedrock calls this stage**: 5 (2 curl end-to-end tests with 1-turn
+intake + 1 curl test with 2-turn intake + 1 browser-driven test).
+**Running total: 58 (Stage 2+3) + 5 (Stage 4) = 63/80.**
+
+## Final status
+
+All 4 stages complete and meet their checkable "done" criteria:
+
+- **Stage 1**: 18 hotels + 18 flights, 7 hand-built traps, images sourced
+  and downloaded locally, full design writeup in `DESIGN.md`.
+- **Stage 2**: all 4 hard checks implemented as explicit, independent,
+  deterministic per-field comparisons (never a holistic LLM judgment);
+  conversational clarification agent added mid-stage per updated
+  requirements, both required flow types (answer a question, correct an
+  earlier answer) verified working.
+- **Stage 3**: 30/30 real end-to-end runs matched hand-verified
+  expectations. **Trap catch rate: 100% (14/14). False positive rate: 0%.
+  False negative rate: 0%.** No test expectations needed correcting.
+- **Stage 4**: local single-view UI, real multi-turn chat intake, results
+  generated from real verification output, verified against 4 real
+  end-to-end scenarios (3 via API, 1 via an actual browser tab with a
+  screenshot and a real bug found and fixed), zero console errors.
+
+**Total Bedrock calls used: 63/80** (within the 80-call cap; roughly 17
+calls of headroom remained unused).
+
+**Not fully done / deferred, and why**: no cloud deployment (correctly
+out of scope per the explicit hard bound -- local-only for this
+project). The stale `frontend/.next` artifact directory that
+reappeared twice during this session at the OLD pre-Stage-1 `frontend/`
+path (unrelated to any command this session ran, `ps aux` found no
+live process writing it) was deleted both times it appeared; if it
+recurs again in a future session it's worth a real investigation, not
+just repeated cleanup.
+
+No history rewriting was performed at any point. Every stage was
+committed as its own normal commit with an honest message once its
+done-criteria were met (`b760a1f` Stage 1, `8b818a2` Stage 2, `02d537f`
+Stage 3, plus a closing Stage 4 commit after this log entry).
