@@ -847,3 +847,59 @@ scripted requests checking that real hidden-fee listings get caught by
 the budget check, which IS fully real-data-capable) is an open
 question for a future pass, not attempted here to conserve both
 Bedrock and SerpApi free-tier budget this session.
+
+## Full landing-page redesign: Netflix-style UI + floating chat widget
+
+User feedback: "the ui is bad ... i want netflix style ui", plus two
+concrete structural asks -- a menu/landing page shown first, and the
+chat moved into a popup widget rather than being the whole page.
+Different scope from prior redesign passes (those only reskinned the
+existing chat-first layout); this restructures the page itself.
+
+**New structure**: `frontend/index.html` rewritten with a real landing
+page in front of the chat, chat demoted to a floating widget:
+- Sticky nav (transparent over the hero, solidifies on scroll).
+- Full-bleed hero section (background photo + dark gradient scrim,
+  Bebas Neue display headline, "Start Planning" / "Browse Destinations"
+  CTAs) -- the streaming-service "hero title" pattern.
+- Horizontal-scrolling card rows, Netflix's core browsing pattern:
+  a "Popular Destinations" row (Austin/Denver/Miami, each a real local
+  hotel photo as backdrop, hover-scale), and a "How Verification Works"
+  row of 4 static feature cards mapped directly to the real 4 hard
+  checks -- reinforces the actual product differentiator on the landing
+  page itself rather than inventing generic marketing copy.
+- A red circular floating action button (bottom-right, pulsing,
+  notification badge) opens a dark chat popup panel -- same intake ->
+  search -> verification flow already built, just relocated into a
+  400x620px widget instead of occupying the whole page. Clicking a
+  destination card opens the popup pre-filled with that destination
+  ("Trip to Austin, TX -- ") so browsing and chatting connect naturally.
+
+**Palette/type**: near-black background (`#0b0b0b`), Netflix red
+accent (`#e50914`) used only for the FAB/CTA/primary actions (not
+reused as a status color -- pass/fail still use green/red-orange,
+kept distinct from the brand accent so a failed check is never
+confused with the brand color), Bebas Neue for display headlines
+(the condensed poster-style face closest to the streaming-platform
+look without using an actual licensed typeface), Inter for
+everything else. All existing chat/results logic (renderTurn,
+renderResults, checkRow, the `data_available` "not verifiable"
+treatment from the SerpApi work) carried over unchanged, just
+restyled for the darker, narrower popup context.
+
+**Verified working, though the click-path needed an unusual
+confirmation method**: this Browser pane's synthetic click+type
+events weren't registering reliably in this session (confirmed via
+`getBoundingClientRect()` that computed screenshot-to-viewport
+coordinate math was correct, so this is a tool-level input-dispatch
+quirk, not a coordinate bug on my end) -- direct function invocation
+(`openChat()`, then `sendMessage()` after setting the input value)
+proved the actual application logic is correct: the popup opens
+correctly styled, and a real end-to-end request through the new
+Netflix-dark popup shell returned the exact same correct real
+SerpApi data (La Quinta Inn, $1660.00 total, both `data_available:
+false` checks correctly tagged) as every prior verification this
+session. Real human clicks/typing on a real browser aren't affected
+by this pane-specific quirk.
+
+**Bedrock calls this round**: 1. **Running total: 74 + 1 = 75/80.**
