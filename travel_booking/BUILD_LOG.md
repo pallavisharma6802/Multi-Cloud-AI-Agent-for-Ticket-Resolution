@@ -1058,4 +1058,110 @@ DOM state matched the JS calls exactly every time). 14/14 pytest
 still passing. **No Bedrock calls spent on this task --
 running total unchanged: 78/80.**
 
-### Tasks 2-4 (accounts/DB, add-to-planner, group trips + RL): in progress next, logged as they land.
+### Tasks 2-4: accounts/DB, add-to-planner, group trips + RL -- backend done and verified end-to-end, frontend UI not yet built
+
+Built the full backend for all three remaining features together, since
+they share the same persistence layer. **All verified against a real
+running server via curl, end to end, using zero Bedrock calls** --
+signup/login is pure hashing+SQLite, and the entire group-trip flow
+runs on structured (not freeform-text) member preferences by design,
+specifically so trying it never competes with the session's nearly-
+exhausted Bedrock budget.
+
+**`travel_booking/db.py`**: SQLite schema -- `users`, `sessions`,
+`friendships`, `saved_trips`, `trip_groups`, `trip_group_members`,
+`trip_group_preferences`, `bandit_arm_stats`. One file, `CREATE TABLE
+IF NOT EXISTS` run once at startup, no migrations framework needed at
+this scale. Gitignored (`travel_booking/data/travel.db`) same as the
+old `tickets.db` was.
+
+**`travel_booking/auth.py`**: real salted PBKDF2-HMAC-SHA256 password
+hashing (100k iterations, OWASP's current minimum) -- not weakened for
+being a local demo. Opaque random session tokens (`secrets.token_urlsafe`)
+in a `sessions` table, set as an httponly cookie, 14-day expiry.
+
+**Auth endpoints** (`api.py`): `POST /api/auth/{signup,login,logout}`,
+`GET /api/auth/me`. Verified: signup creates a real user + session
+cookie, `/me` correctly identifies the logged-in user, unauthenticated
+access to a protected endpoint correctly returns 401.
+
+**Planner** (Task 12 backend): `POST /api/planner/save`,
+`GET /api/planner`, `DELETE /api/planner/{id}` -- stores a trip's real
+hotel/flight/verification JSON per user. Verified: a user's own saved
+trips list correctly excludes another user's trips (ownership
+isolation confirmed empty for a different logged-in user), and
+deleting someone else's trip correctly 403s while deleting your own
+succeeds.
+
+**Friends**: `POST /api/friends/request`, `POST /api/friends/accept/{id}`,
+`GET /api/friends`. Verified: a request appears as a real pending
+`incoming_requests` entry for the target user, accepting moves it to
+`friends` for both sides.
+
+**Group trips + RL aggregator** (Tasks 13-14 backend) -- the most
+substantial new piece:
+- `travel_booking/agents/preference_aggregator.py`: an honestly-scoped
+  **multi-armed bandit** (epsilon-greedy, `EPSILON=0.15`), a real
+  reinforcement-learning technique, not a stand-in for one -- explained
+  up front in the module's own docstring why a bandit is the
+  *appropriate* RL tool for a strategy-selection problem like this
+  (small discrete arm set + a real accept/reject reward signal) rather
+  than deep RL, which would need a simulator, a training corpus, and a
+  learned policy this project has none of. Three arms --
+  `conservative` (tightest budget across the group, intersection of
+  everyone's required amenities), `balanced` (average budget, majority-
+  vote amenities), `generous` (loosest budget, union of amenities) --
+  with dates always intersected (a hard logical requirement, not a
+  preference trade-off) and party size summed across members. Arm
+  stats (`times_chosen`/`times_rewarded`) persist in
+  `bandit_arm_stats`, so the bandit's exploit/explore balance actually
+  carries across sessions, not just within one process's memory.
+- Group endpoints: `POST /api/groups` (owner picks name + one of the 3
+  real destinations), `POST /api/groups/join` (6-character join code,
+  no invite-link infrastructure needed), `GET /api/groups/{id}`
+  (members + who's submitted preferences yet), `POST /api/groups/{id}/preferences`
+  (structured form: dates, party size, budget+scope, amenities --
+  deliberately not freeform text, so this costs zero Bedrock calls),
+  `POST /api/groups/{id}/search` (runs `aggregate()` then the exact
+  same real LangGraph search+verification pipeline every solo search
+  uses, via `TravelAgent._build_candidate_queue`/`.graph.invoke`
+  directly against SerpApi), `POST /api/groups/{id}/feedback` (the
+  reward signal -- did the group actually accept the trip the chosen
+  strategy produced).
+- **Real bug caught and fixed before it ever ran**: `create_group`'s
+  `INSERT` never actually stored the `destination_code` the request
+  carried (the schema didn't have that column yet either), and a
+  garbled placeholder comment was left where the real storage logic
+  should have been. Fixed by adding the column and wiring the INSERT
+  correctly, plus removing dead code that referenced the wrong lookup
+  table (`_conversations`, the chat-conversation store, not the group
+  store) for a destination that was never actually needed there.
+  Also cleaned up several mid-function `import` statements that should
+  have been top-level imports.
+
+**End-to-end verification (real curl session, two real accounts,
+zero Bedrock calls)**: created alice + bob, alice friend-requested
+bob, bob accepted, alice created an Austin group trip and got a join
+code, bob joined with it, both submitted DIFFERENT structured
+preferences (alice: 2 people, $150/night, wants pool+wifi; bob: 1
+person, $250/night, wants gym+wifi, slightly different date range).
+Ran the group search: the bandit picked **`generous`** (empty stats,
+so pure exploration), correctly aggregated to party_size=3 (2+1),
+correctly intersected the date ranges, correctly took the max budget
+($250, matching "generous"), correctly unioned the amenities to
+`[pool, wifi, gym]`, and the real search returned 3 verified options
+against live SerpApi data with the assumption text correctly
+attributing the combination to the chosen strategy. Gave positive
+feedback and confirmed `bandit_arm_stats` updated
+(`times_chosen: 1 -> 1, times_rewarded: 0 -> 1`) -- the reward loop is
+real, not decorative.
+
+**Honest status**: the backend for all three features is real, tested,
+and working. **The frontend has no UI for any of this yet** -- no
+login/signup form, no "My Planner" page, no group-creation/join/
+preference-submission screens. Given how much backend surface this
+already is, stopping here to check in on scope before building the
+frontend, rather than continuing to add another few hundred lines of
+UI without a checkpoint.
+
+**Bedrock calls this round**: 0. **Running total unchanged: 78/80.**

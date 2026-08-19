@@ -31,6 +31,7 @@ start_server.sh
 start.sh
 deploy_infrastructure.sh
 tickets.db
+travel_booking/data/travel.db
 infra/gcp/
 .ruff_cache/
 # Live smoke soak artifacts (suite + scripts are tracked, run output is not)

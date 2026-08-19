@@ -5,8 +5,11 @@ Run: uvicorn travel_booking.api:app --reload --port 8200
 """
 from __future__ import annotations
 
+import json
+import secrets
 import sys
 import uuid
+from datetime import date as _date
 from pathlib import Path
 from typing import List, Optional
 
@@ -14,16 +17,20 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
-from fastapi import FastAPI, HTTPException  # noqa: E402
+from fastapi import Cookie, FastAPI, HTTPException, Response  # noqa: E402
 from fastapi.middleware.cors import CORSMiddleware  # noqa: E402
 from fastapi.staticfiles import StaticFiles  # noqa: E402
 from fastapi.responses import FileResponse  # noqa: E402
 from pydantic import BaseModel  # noqa: E402
 
+from travel_booking import auth as auth_mod  # noqa: E402
 from travel_booking.agents.explanation import build_explanation, build_explanation_for_option  # noqa: E402
 from travel_booking.agents.intent_agent import IntentAgent  # noqa: E402
-from travel_booking.agents.orchestrator import TravelAgent  # noqa: E402
-from travel_booking.agents.schemas import ConversationState  # noqa: E402
+from travel_booking.agents.orchestrator import TravelAgent, TravelAgentState, TripOption  # noqa: E402
+from travel_booking.agents.preference_aggregator import MemberPreference, aggregate, record_reward  # noqa: E402
+from travel_booking.agents.schemas import ConversationState, ItineraryOutcome, ResolvedConstraints  # noqa: E402
+from travel_booking.agents.verification_agent import VerificationAgent  # noqa: E402
+from travel_booking.db import get_connection, init_db, now  # noqa: E402
 
 app = FastAPI(title="Travel Booking Demo")
 app.add_middleware(
@@ -31,7 +38,9 @@ app.add_middleware(
     allow_origins=["http://localhost:8200", "http://127.0.0.1:8200"],
     allow_methods=["*"],
     allow_headers=["*"],
+    allow_credentials=True,
 )
+init_db()
 
 _travel_agent: Optional[TravelAgent] = None
 _intent_agent: Optional[IntentAgent] = None
@@ -44,6 +53,73 @@ def _agents() -> tuple[TravelAgent, IntentAgent]:
         _travel_agent = TravelAgent()
         _intent_agent = _travel_agent.intent_agent
     return _travel_agent, _intent_agent
+
+
+def _require_user(session_token: Optional[str]) -> dict:
+    user = auth_mod.get_user_from_session(session_token)
+    if user is None:
+        raise HTTPException(401, "not logged in")
+    return user
+
+
+# ---------------------------------------------------------------------------
+# Auth
+# ---------------------------------------------------------------------------
+
+class SignupRequest(BaseModel):
+    username: str
+    password: str
+    display_name: str
+
+
+class LoginRequest(BaseModel):
+    username: str
+    password: str
+
+
+def _set_session_cookie(response: Response, token: str) -> None:
+    response.set_cookie("session_token", token, httponly=True, samesite="lax", max_age=60 * 60 * 24 * 14)
+
+
+@app.post("/api/auth/signup")
+def signup(req: SignupRequest, response: Response):
+    if len(req.password) < 8:
+        raise HTTPException(400, "password must be at least 8 characters")
+    if not req.username.strip():
+        raise HTTPException(400, "username required")
+    try:
+        user = auth_mod.create_user(req.username.strip(), req.password, req.display_name.strip() or req.username.strip())
+    except ValueError as e:
+        raise HTTPException(409, str(e))
+    token = auth_mod.create_session(user["id"])
+    _set_session_cookie(response, token)
+    return {"user": user}
+
+
+@app.post("/api/auth/login")
+def login(req: LoginRequest, response: Response):
+    user = auth_mod.authenticate(req.username.strip(), req.password)
+    if user is None:
+        raise HTTPException(401, "invalid username or password")
+    token = auth_mod.create_session(user["id"])
+    _set_session_cookie(response, token)
+    return {"user": user}
+
+
+@app.post("/api/auth/logout")
+def logout(response: Response, session_token: Optional[str] = Cookie(None)):
+    if session_token:
+        auth_mod.delete_session(session_token)
+    response.delete_cookie("session_token")
+    return {"ok": True}
+
+
+@app.get("/api/auth/me")
+def me(session_token: Optional[str] = Cookie(None)):
+    user = auth_mod.get_user_from_session(session_token)
+    if user is None:
+        raise HTTPException(401, "not logged in")
+    return {"user": user}
 
 
 class StartRequest(BaseModel):
@@ -144,6 +220,365 @@ def run_search(conversation_id: str, filters: Optional[SearchFilters] = None):
 
     outcome = travel_agent.run_from_state(state)
     return _outcome_response(outcome)
+
+
+# ---------------------------------------------------------------------------
+# Planner (saved trips)
+# ---------------------------------------------------------------------------
+
+class SaveTripRequest(BaseModel):
+    hotel: dict
+    flight: dict
+    verification: dict
+    label: Optional[str] = None
+
+
+@app.post("/api/planner/save")
+def save_trip(req: SaveTripRequest, session_token: Optional[str] = Cookie(None)):
+    user = _require_user(session_token)
+    conn = get_connection()
+    try:
+        cur = conn.execute(
+            "INSERT INTO saved_trips (user_id, hotel_json, flight_json, verification_json, label, created_at) VALUES (?, ?, ?, ?, ?, ?)",
+            (user["id"], json.dumps(req.hotel), json.dumps(req.flight), json.dumps(req.verification), req.label, now()),
+        )
+        conn.commit()
+        return {"id": cur.lastrowid}
+    finally:
+        conn.close()
+
+
+@app.get("/api/planner")
+def list_saved_trips(session_token: Optional[str] = Cookie(None)):
+    user = _require_user(session_token)
+    conn = get_connection()
+    try:
+        rows = conn.execute(
+            "SELECT * FROM saved_trips WHERE user_id = ? ORDER BY created_at DESC", (user["id"],)
+        ).fetchall()
+        return {
+            "trips": [
+                {
+                    "id": r["id"],
+                    "hotel": json.loads(r["hotel_json"]),
+                    "flight": json.loads(r["flight_json"]),
+                    "verification": json.loads(r["verification_json"]),
+                    "label": r["label"],
+                    "created_at": r["created_at"],
+                }
+                for r in rows
+            ]
+        }
+    finally:
+        conn.close()
+
+
+@app.delete("/api/planner/{trip_id}")
+def delete_saved_trip(trip_id: int, session_token: Optional[str] = Cookie(None)):
+    user = _require_user(session_token)
+    conn = get_connection()
+    try:
+        row = conn.execute("SELECT user_id FROM saved_trips WHERE id = ?", (trip_id,)).fetchone()
+        if row is None:
+            raise HTTPException(404, "not found")
+        if row["user_id"] != user["id"]:
+            raise HTTPException(403, "not your trip")
+        conn.execute("DELETE FROM saved_trips WHERE id = ?", (trip_id,))
+        conn.commit()
+        return {"ok": True}
+    finally:
+        conn.close()
+
+
+# ---------------------------------------------------------------------------
+# Friends
+# ---------------------------------------------------------------------------
+
+class FriendRequest(BaseModel):
+    username: str
+
+
+@app.post("/api/friends/request")
+def send_friend_request(req: FriendRequest, session_token: Optional[str] = Cookie(None)):
+    user = _require_user(session_token)
+    conn = get_connection()
+    try:
+        target = conn.execute("SELECT id FROM users WHERE username = ?", (req.username.strip(),)).fetchone()
+        if target is None:
+            raise HTTPException(404, "no user with that username")
+        if target["id"] == user["id"]:
+            raise HTTPException(400, "can't friend yourself")
+        try:
+            conn.execute(
+                "INSERT INTO friendships (requester_id, addressee_id, status, created_at) VALUES (?, ?, 'pending', ?)",
+                (user["id"], target["id"], now()),
+            )
+            conn.commit()
+        except Exception:
+            raise HTTPException(409, "already requested or already friends")
+        return {"ok": True}
+    finally:
+        conn.close()
+
+
+@app.post("/api/friends/accept/{request_id}")
+def accept_friend_request(request_id: int, session_token: Optional[str] = Cookie(None)):
+    user = _require_user(session_token)
+    conn = get_connection()
+    try:
+        row = conn.execute("SELECT * FROM friendships WHERE id = ?", (request_id,)).fetchone()
+        if row is None or row["addressee_id"] != user["id"]:
+            raise HTTPException(404, "no such request")
+        conn.execute("UPDATE friendships SET status = 'accepted' WHERE id = ?", (request_id,))
+        conn.commit()
+        return {"ok": True}
+    finally:
+        conn.close()
+
+
+@app.get("/api/friends")
+def list_friends(session_token: Optional[str] = Cookie(None)):
+    user = _require_user(session_token)
+    conn = get_connection()
+    try:
+        accepted = conn.execute(
+            """SELECT u.id, u.username, u.display_name FROM friendships f
+               JOIN users u ON u.id = (CASE WHEN f.requester_id = ? THEN f.addressee_id ELSE f.requester_id END)
+               WHERE (f.requester_id = ? OR f.addressee_id = ?) AND f.status = 'accepted'""",
+            (user["id"], user["id"], user["id"]),
+        ).fetchall()
+        incoming = conn.execute(
+            """SELECT f.id as request_id, u.username, u.display_name FROM friendships f
+               JOIN users u ON u.id = f.requester_id
+               WHERE f.addressee_id = ? AND f.status = 'pending'""",
+            (user["id"],),
+        ).fetchall()
+        return {
+            "friends": [dict(r) for r in accepted],
+            "incoming_requests": [dict(r) for r in incoming],
+        }
+    finally:
+        conn.close()
+
+
+# ---------------------------------------------------------------------------
+# Group trips -- multiple friends submit structured preferences, an RL
+# (multi-armed bandit) agent picks a combination strategy, then the real
+# search+verification pipeline runs on the aggregated constraints.
+# ---------------------------------------------------------------------------
+
+class CreateGroupRequest(BaseModel):
+    name: str
+    destination_code: str  # AUS | DEN | MIA -- same 3 destinations the rest of the app supports
+
+
+class JoinGroupRequest(BaseModel):
+    join_code: str
+
+
+class GroupPreferenceRequest(BaseModel):
+    date_range_start: str
+    date_range_end: str
+    party_size: int = 1
+    budget_amount: Optional[float] = None
+    budget_scope: str = "total_trip"
+    required_amenities: List[str] = []
+
+
+class GroupFeedbackRequest(BaseModel):
+    accepted: bool
+
+
+@app.post("/api/groups")
+def create_group(req: CreateGroupRequest, session_token: Optional[str] = Cookie(None)):
+    user = _require_user(session_token)
+    if req.destination_code not in ("AUS", "DEN", "MIA"):
+        raise HTTPException(400, "destination_code must be AUS, DEN, or MIA")
+    conn = get_connection()
+    try:
+        join_code = secrets.token_hex(3).upper()
+        t = now()
+        cur = conn.execute(
+            "INSERT INTO trip_groups (name, owner_id, destination_code, join_code, status, created_at) VALUES (?, ?, ?, ?, 'collecting', ?)",
+            (req.name, user["id"], req.destination_code, join_code, t),
+        )
+        group_id = cur.lastrowid
+        conn.execute(
+            "INSERT INTO trip_group_members (group_id, user_id, joined_at) VALUES (?, ?, ?)",
+            (group_id, user["id"], t),
+        )
+        conn.commit()
+        return {"group_id": group_id, "join_code": join_code, "destination_code": req.destination_code}
+    finally:
+        conn.close()
+
+
+@app.post("/api/groups/join")
+def join_group(req: JoinGroupRequest, session_token: Optional[str] = Cookie(None)):
+    user = _require_user(session_token)
+    conn = get_connection()
+    try:
+        group = conn.execute("SELECT * FROM trip_groups WHERE join_code = ?", (req.join_code.strip().upper(),)).fetchone()
+        if group is None:
+            raise HTTPException(404, "no group with that join code")
+        conn.execute(
+            "INSERT OR IGNORE INTO trip_group_members (group_id, user_id, joined_at) VALUES (?, ?, ?)",
+            (group["id"], user["id"], now()),
+        )
+        conn.commit()
+        return {"group_id": group["id"], "name": group["name"]}
+    finally:
+        conn.close()
+
+
+def _group_or_404(conn, group_id: int, user_id: int) -> dict:
+    group = conn.execute("SELECT * FROM trip_groups WHERE id = ?", (group_id,)).fetchone()
+    if group is None:
+        raise HTTPException(404, "no such group")
+    member = conn.execute(
+        "SELECT 1 FROM trip_group_members WHERE group_id = ? AND user_id = ?", (group_id, user_id)
+    ).fetchone()
+    if member is None:
+        raise HTTPException(403, "not a member of this group")
+    return dict(group)
+
+
+@app.get("/api/groups/{group_id}")
+def get_group(group_id: int, session_token: Optional[str] = Cookie(None)):
+    user = _require_user(session_token)
+    conn = get_connection()
+    try:
+        group = _group_or_404(conn, group_id, user["id"])
+        members = conn.execute(
+            """SELECT u.id, u.username, u.display_name,
+                      (SELECT COUNT(*) FROM trip_group_preferences p WHERE p.group_id = ? AND p.user_id = u.id) as submitted
+               FROM trip_group_members m JOIN users u ON u.id = m.user_id WHERE m.group_id = ?""",
+            (group_id, group_id),
+        ).fetchall()
+        return {
+            "group": group,
+            "members": [dict(r) for r in members],
+        }
+    finally:
+        conn.close()
+
+
+@app.post("/api/groups/{group_id}/preferences")
+def submit_group_preferences(group_id: int, req: GroupPreferenceRequest, session_token: Optional[str] = Cookie(None)):
+    user = _require_user(session_token)
+    conn = get_connection()
+    try:
+        _group_or_404(conn, group_id, user["id"])
+        prefs = req.model_dump()
+        conn.execute(
+            """INSERT INTO trip_group_preferences (group_id, user_id, preferences_json, submitted_at) VALUES (?, ?, ?, ?)
+               ON CONFLICT(group_id, user_id) DO UPDATE SET preferences_json = excluded.preferences_json, submitted_at = excluded.submitted_at""",
+            (group_id, user["id"], json.dumps(prefs), now()),
+        )
+        conn.commit()
+        return {"ok": True}
+    finally:
+        conn.close()
+
+
+_group_search_cache: dict[int, str] = {}  # group_id -> strategy used, for feedback
+
+
+@app.post("/api/groups/{group_id}/search")
+def search_group_trip(group_id: int, session_token: Optional[str] = Cookie(None)):
+    """Aggregates every member's submitted preferences via the bandit
+    strategy-selection agent, then runs the SAME real search+verification
+    pipeline as a solo search -- zero Bedrock calls, since preferences are
+    already structured (no freeform text to parse)."""
+    user = _require_user(session_token)
+    conn = get_connection()
+    try:
+        group = _group_or_404(conn, group_id, user["id"])
+        rows = conn.execute(
+            "SELECT preferences_json FROM trip_group_preferences WHERE group_id = ?", (group_id,)
+        ).fetchall()
+        if not rows:
+            raise HTTPException(400, "no group members have submitted preferences yet")
+        dest = group["destination_code"]
+    finally:
+        conn.close()
+
+    members = []
+    for r in rows:
+        p = json.loads(r["preferences_json"])
+        members.append(MemberPreference(
+            date_range_start=p["date_range_start"], date_range_end=p["date_range_end"],
+            party_size=p["party_size"], budget_amount=p.get("budget_amount"),
+            budget_scope=p.get("budget_scope", "total_trip"), required_amenities=p.get("required_amenities", []),
+        ))
+
+    agg = aggregate(members)
+    _group_search_cache[group_id] = agg["strategy"]
+
+    constraints = ResolvedConstraints(
+        destination_code=dest, destination_raw=dest,
+        party_size=agg["party_size"], nights=max(1, (
+            _date.fromisoformat(agg["date_range_end"]) - _date.fromisoformat(agg["date_range_start"])
+        ).days),
+        nights_defaulted=False, date_range_start=agg["date_range_start"], date_range_end=agg["date_range_end"],
+        dates_defaulted=False, budget_amount=agg["budget_amount"], budget_scope=agg["budget_scope"],
+        required_amenities=agg["required_amenities"], raw_request=f"group trip #{group_id}",
+        assumptions=[f"combined via the '{agg['strategy']}' strategy: {agg['strategy_description']}"],
+    )
+
+    travel_agent, _ = _agents()
+    queue, n_hotels, n_flights = travel_agent._build_candidate_queue(constraints)
+    init_state: TravelAgentState = {
+        "constraints": constraints, "queue": queue, "current": None, "attempts": 0,
+        "unavailable_skipped": 0, "best_failed": None, "best_failed_count": 99,
+        "final": None, "accepted": None, "accepted_options": [], "attempt_log": [],
+    }
+    final_state = travel_agent.graph.invoke(init_state, config={"recursion_limit": 200})
+    if final_state.get("accepted"):
+        options = final_state.get("accepted_options", [])
+        top_options = [
+            TripOption(
+                hotel_record=travel_agent._last_hotels_by_id[o.hotel_id],
+                flight_record=travel_agent._last_flights_by_id[o.flight_id],
+                verification=o,
+            ) for o in options
+        ]
+        outcome = travel_agent._finalize(constraints, options[0], n_hotels, n_flights, final_state["attempts"])
+        outcome.top_options = top_options
+    else:
+        outcome = _unsatisfiable_outcome(travel_agent, constraints, final_state, n_hotels, n_flights)
+
+    resp = _outcome_response(outcome)
+    resp["strategy"] = agg["strategy"]
+    resp["strategy_description"] = agg["strategy_description"]
+    resp["members_count"] = len(members)
+    return resp
+
+
+@app.post("/api/groups/{group_id}/feedback")
+def group_feedback(group_id: int, req: GroupFeedbackRequest, session_token: Optional[str] = Cookie(None)):
+    """The reward signal for the bandit: did the group actually accept the
+    trip the chosen strategy produced?"""
+    _require_user(session_token)
+    strategy = _group_search_cache.get(group_id)
+    if strategy is None:
+        raise HTTPException(400, "no search has been run for this group yet")
+    record_reward(strategy, req.accepted)
+    return {"ok": True, "strategy": strategy, "accepted": req.accepted}
+
+
+def _unsatisfiable_outcome(travel_agent, constraints, final_state, n_hotels, n_flights):
+    return ItineraryOutcome(
+        status="unsatisfiable",
+        constraints=constraints,
+        closest_attempt=final_state.get("best_failed"),
+        attempts_tried=final_state.get("attempts", 0),
+        candidates_hotels=n_hotels,
+        candidates_flights=n_flights,
+        hotel_record=travel_agent._last_hotels_by_id.get(final_state["best_failed"].hotel_id) if final_state.get("best_failed") else None,
+        flight_record=travel_agent._last_flights_by_id.get(final_state["best_failed"].flight_id) if final_state.get("best_failed") else None,
+        all_attempts=final_state.get("attempt_log", []),
+    )
 
 
 FRONTEND_DIR = Path(__file__).resolve().parent / "frontend"
