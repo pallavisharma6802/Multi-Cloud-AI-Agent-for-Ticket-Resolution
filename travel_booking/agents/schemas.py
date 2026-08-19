@@ -128,3 +128,4 @@ class ItineraryOutcome(BaseModel):
     candidates_flights: int = 0
     hotel_record: Optional[dict] = None
     flight_record: Optional[dict] = None
+    all_attempts: List[VerificationResult] = Field(default_factory=list)

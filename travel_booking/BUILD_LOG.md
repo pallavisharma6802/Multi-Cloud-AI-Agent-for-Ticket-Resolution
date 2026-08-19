@@ -209,3 +209,96 @@ before Stage 3 begins. The battery (Stage 3) will use `TravelAgent.run()`
 specified requests, not the interactive clarification loop -- that loop
 is exercised directly above and will be exercised again end-to-end in
 Stage 4's UI testing.
+
+## Stage 3: test battery
+
+`travel_booking/eval/battery.py` -- 15 hand-designed scenarios x 2 runs =
+30 real end-to-end runs (real Bedrock intent parse, real Pinecone/BM25
+search, deterministic verify/retry). Results: `travel_booking/eval/battery_results.jsonl`
+(30 lines, one per run, full attempt log + check-level detail per run),
+summary: `travel_booking/eval/summary.json`.
+
+Before writing the battery, added `attempt_log`/`all_attempts` to the
+orchestrator/schemas (`orchestrator.py`, `schemas.py`) so every attempted
+combination is recorded, not just the final accepted/closest-failed one --
+needed to precisely assert "was this specific trap combo tried and
+correctly rejected" rather than inferring it from the final booking
+outcome, since a request can succeed on a later, different combination
+after an earlier one is correctly rejected.
+
+**Scenario design**: every trap scenario is constructed so the trap hotel
+is the ONLY candidate matching the stated amenities within the stated
+budget/date window (worked out by hand against the real `hotels.json`
+data before running anything) -- Stage 2's own smoke tests showed the
+semantic ranker often prefers well-rounded clean listings over a trap
+even when the trap is a plausible surface match, so relying on ranking
+luck to force contention would have under-tested the battery. Combination
+scenarios (2) instead assert on the attempt log directly: at least one
+attempt in the whole run failed ONLY `arrival_vs_checkin` while the other
+3 checks passed on that same attempt -- proof of a genuine
+combination-only rejection, independent of whatever the final booking
+outcome ends up being.
+
+### Results
+
+| Category | Runs | Matched expectation |
+|---|---|---|
+| clean (3 scenarios x2) | 6 | 6/6 |
+| trap (7 scenarios x2) | 14 | 14/14 |
+| combination-only (2 scenarios x2) | 4 | 4/4 |
+| unsatisfiable (3 scenarios x2) | 6 | 6/6 |
+| **Total** | **30** | **30/30 (100%)** |
+
+**Trap catch rate: 14/14 = 100%.** Every one of the 7 designed traps
+(pool-tagged-but-closed x2, gym-inaccessible, pet-restricted-seasonally,
+resort-fee-hidden-cost x2, capacity) was correctly rejected on exactly
+the expected check, both runs, with every other check on that same
+attempt correctly passing (no check fired that shouldn't have).
+
+**False positives: 0.** No clean scenario failed to verify; no trap
+scenario had an unexpected second check fail alongside the intended one.
+
+**False negatives: 0.** No trap's specific check passed when it should
+have failed -- no trap slipped through.
+
+**Combination-only failures: confirmed real, both scenarios, both runs.**
+`H-AUS-03 + F-AUS-03` and `H-DEN-02 + F-DEN-06` each showed an attempt
+that failed ONLY `arrival_vs_checkin` with budget/amenities/capacity all
+passing on that same attempt -- exactly the "neither record is wrong
+alone" case the dataset was built to exercise. Both of these specific
+requests ended in `unsatisfiable` overall (their date range was too wide
+for a same-hotel early-flight alternative to also clear every other
+check within the attempt cap), which is itself an honest, correct result,
+not a test artifact.
+
+**Unsatisfiable-with-no-valid-combination: confirmed, all 3 mechanisms
+distinct and correctly identified**:
+- `unsat_blackout_collision`: the availability *gate* (not verification)
+  correctly skipped H-AUS-05 for Oct 19-21 without ever calling Verify on
+  it, while the other 5 Austin hotels were verified and correctly
+  rejected on amenities (missing pet_friendly) -- closest attempt
+  reported was H-AUS-06, the best partial match.
+- `unsat_no_destination`: correctly short-circuited before any search at
+  all (`attempts_tried=0`), since Seattle isn't a served destination.
+- `unsat_impossible_amenity_combo`: correctly explored all 6 Denver
+  hotels (12 attempts across both flights) and correctly reported none
+  could ever satisfy pool+pet_friendly together, regardless of budget.
+
+**One honest observation, not a correctness bug**: 12 of the 30 runs hit
+a transient empty-response retry from Bedrock (`Bedrock output failed
+schema validation... Expecting value: line 1 column 1`), auto-recovered
+by `bedrock_client.py`'s existing retry logic (all 30 runs still
+succeeded on retry). This roughly doubles some requests' real Bedrock
+call count. Didn't chase the root cause further -- self-resolved every
+single time, well below the "stop and log" threshold for a recurring
+blocking error (bound #2), and the longer transcript-based prompt used
+for the multi-turn-capable `_parse_transcript` (vs. the shorter one-shot
+prompt from the Stage 2 smoke tests, which never hit this) is the most
+likely factor, worth a look if it gets worse under heavier use.
+
+**Bedrock calls**: 30 base + 12 retries = 42 for the battery.
+**Running total: 16 (Stage 2) + 42 (Stage 3) = 58/80.**
+
+No test case expectations needed correcting -- all 15 scenarios were
+verified by hand against the real dataset before running, and all 30
+runs matched on the first execution of the battery.

@@ -60,6 +60,7 @@ class TravelAgentState(TypedDict, total=False):
     best_failed_count: int
     final: Optional[str]  # "accept" | "escalate"
     accepted: Optional[VerificationResult]
+    attempt_log: list[VerificationResult]
 
 
 class TravelAgent:
@@ -92,6 +93,7 @@ class TravelAgent:
         result = self.verification_agent.verify(hotel, flight, state["constraints"])
         state["last_result"] = result
         state["attempts"] = state.get("attempts", 0) + 1
+        state.setdefault("attempt_log", []).append(result)
         return state
 
     def _decide_node(self, state: TravelAgentState) -> TravelAgentState:
@@ -207,12 +209,16 @@ class TravelAgent:
             "best_failed_count": 99,
             "final": None,
             "accepted": None,
+            "attempt_log": [],
         }
         final_state: Any = self.graph.invoke(init_state, config={"recursion_limit": 200})
+        attempt_log = final_state.get("attempt_log", [])
 
         if final_state.get("accepted"):
             result: VerificationResult = final_state["accepted"]
-            return self._finalize(constraints, result, n_hotels, n_flights, final_state["attempts"])
+            outcome = self._finalize(constraints, result, n_hotels, n_flights, final_state["attempts"])
+            outcome.all_attempts = attempt_log
+            return outcome
 
         return ItineraryOutcome(
             status="unsatisfiable",
@@ -223,6 +229,7 @@ class TravelAgent:
             candidates_flights=n_flights,
             hotel_record=self.search_agent.hotels.get(final_state["best_failed"].hotel_id) if final_state.get("best_failed") else None,
             flight_record=self.search_agent.flights.get(final_state["best_failed"].flight_id) if final_state.get("best_failed") else None,
+            all_attempts=attempt_log,
         )
 
     def _finalize(self, constraints, result: VerificationResult, n_hotels, n_flights, attempts) -> ItineraryOutcome:
