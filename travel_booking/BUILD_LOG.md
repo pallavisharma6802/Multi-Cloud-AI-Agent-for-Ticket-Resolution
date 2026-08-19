@@ -734,3 +734,116 @@ error-path both confirmed working, `pytest` unaffected (14/14 still
 pass) -- this is purely additive, no existing code path changed. Zero
 Bedrock calls this step (pure research + scaffolding). **Running total
 unchanged: 71/80.**
+
+## Real SerpApi data wired in and verified live
+
+User added `SERPAPI_API_KEY` to `.env` and asked to wire it up. Verified
+the key works with two direct live calls before touching the pipeline
+(`search_flights('ORD','AUS','2026-10-05')` returned 11 real United
+flights with real prices; `search_hotels('hotels in Austin, TX', ...)`
+returned 20 real listings with real amenities/ratings/images) --
+confirmed the client module built in the last commit actually works
+against a real key, not just that it imports cleanly.
+
+**Two real bugs found and fixed while wiring, before any live pipeline
+test**:
+1. `verification_agent.py` used `hotel.get("resort_fee_per_night", 0)`
+   in two places -- `dict.get(key, default)` only falls back when the
+   KEY is missing, not when it's present and `None`. SerpApi-sourced
+   hotels always set that key (to `None` when uncomputable), so this
+   would have crashed with `price + None` the first time budget was
+   checked against real data. Fixed to `(hotel.get(...) or 0)`.
+2. `serpapi_client.py` could pass a listing through with a `None`
+   price/arrival-time if SerpApi didn't return one for some property --
+   would have broken the budget/arrival checks downstream. Fixed by
+   skipping any flight/hotel result missing a usable price or parseable
+   times at the source, rather than letting a null leak into
+   Verification.
+
+**Made the "data gap" honest instead of silently working around it**
+(the gap flagged in the prior commit -- no front-desk-hours or
+room-capacity fields in real Google Hotels data): added
+`CheckResult.data_available: bool` (default `True`, so every existing
+Stage 2/3 result and the battery's 100% catch rate are completely
+unaffected). When a check genuinely can't be evaluated from the data
+source, it now returns `passed=True` (a placeholder that never wrongly
+blocks a booking) with `data_available=False`, and both
+`explanation.py` and the frontend render that as a distinct
+"not verifiable" state -- gray "?" icon, no fake comparison numbers,
+never shown as a real green pass. The top-level "Verified" headline
+also changes wording when this happens ("Verified everything this data
+source could check -- X, Y couldn't be confirmed...") instead of
+claiming full verification it didn't actually do.
+
+**Amenity matching made fuzzy for real data**: real Google Hotels
+amenities are free text ("Outdoor pool", "Free Wi-Fi", "Fitness
+center"), not the simulated dataset's exact controlled vocabulary.
+Added a small synonym table + substring matching
+(`_amenity_present()`), falling back to exact match first so the
+simulated dataset's behavior is completely unchanged.
+
+**Orchestrator now branches on `settings.travel_data_source`**:
+- `_build_candidate_queue_serpapi()` -- deliberately does NOT search
+  every day across a wide/whole-month range the way simulated mode
+  does, since real flight search is one API call per date and the free
+  tier has a real monthly cap. Uses exactly `date_range_start` for the
+  flight search and one hotel search across the full stay -- 2 API
+  calls per user request, regardless of how wide the resolved date
+  range is. This is a deliberate simplification, documented in the
+  method's own docstring, not a silent limitation.
+- `_hotel_available_for()` (the pre-verification availability gate)
+  now recognizes real-data records (`"available_from" not in hotel`)
+  and always passes them through -- the live search call was already
+  scoped to the requested dates, so there's no separate blackout/
+  availability window to gate on the way the simulated dataset has.
+- Hotel/flight record lookups (`_finalize`, the unsatisfiable path)
+  used to read from `self.search_agent.hotels`/`.flights`, which only
+  exist for simulated mode. Replaced with a request-scoped
+  `self._last_hotels_by_id`/`_last_flights_by_id` cache populated by
+  whichever candidate-queue builder ran, so both modes share the same
+  lookup path.
+
+**Frontend updated**: prefers a hotel's real `image_url` (a genuine
+Google-hosted photo) over the local Picsum path when present, with an
+`onerror` fallback that hides the `<img>` entirely rather than showing
+a broken-image icon (real flight search returns no photos at all, and
+some real hotel image URLs turned out not to load in one test run --
+this fallback handles both gracefully). Added a distinct "not
+verifiable" check-row style (gray "?" icon, "NOT VERIFIABLE" tag, no
+fabricated comparison values) for `data_available: false` checks.
+Fixed the front-desk-hours display line, which would have shown
+"Desk closes null" for real hotels without a three-way branch.
+
+**Verified end to end, twice, both through the real pipeline and
+through the actual browser UI** (not mocked):
+- `TravelAgent.run('Family of 4 to Austin, need a pool, 3 nights, Oct
+  5-8, budget $2000 total')` -> real La Quinta Inn ($68/night, real
+  pool amenity confirmed), real Frontier flight ($364/passenger),
+  budget correctly computed at $1660 total from real prices, amenities
+  check correctly passed against real free-text data, both
+  arrival-vs-checkin and capacity correctly reported as
+  not-verifiable rather than a false pass.
+- Same request driven through the actual redesigned browser UI --
+  screenshot-confirmed: real hotel/flight names and prices rendering,
+  the green "Verified everything this data source could check..."
+  headline with the two caveated checks correctly named, gray "NOT
+  VERIFIABLE" tags rendering distinctly from the green pass rows, all
+  matching what the backend actually computed.
+
+**Bedrock calls this round**: 3 (2 `run()` calls + 1 browser-driven
+test). **Running total: 71 + 3 = 74/80.**
+**SerpApi calls this round**: 8 (2 direct verification + 2+2+2 across
+the three end-to-end tests) -- worth keeping an eye on against the free
+tier's monthly cap, no built-in usage tracking on this side yet.
+
+**Still not done, flagged rather than silently skipped**: the Stage 3
+battery (100% trap catch rate) was built entirely around the simulated
+dataset's engineered traps and has NOT been re-run or re-validated
+against real SerpApi data -- real listings won't have the same
+purpose-built flaws, and 2 of the 4 checks are structurally
+not-verifiable against this data source regardless of which listing
+comes back. Whether/how to build an equivalent real-data battery (e.g.
+scripted requests checking that real hidden-fee listings get caught by
+the budget check, which IS fully real-data-capable) is an open
+question for a future pass, not attempted here to conserve both
+Bedrock and SerpApi free-tier budget this session.

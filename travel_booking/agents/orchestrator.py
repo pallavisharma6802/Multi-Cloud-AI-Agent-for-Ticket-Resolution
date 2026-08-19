@@ -19,6 +19,7 @@ if str(REPO_ROOT) not in sys.path:
 
 from langgraph.graph import END, StateGraph  # noqa: E402
 
+from app.config import settings  # noqa: E402
 from travel_booking.agents.intent_agent import IntentAgent  # noqa: E402
 from travel_booking.agents.schemas import (  # noqa: E402
     ConversationState,
@@ -31,6 +32,13 @@ from travel_booking.agents.verification_agent import VerificationAgent  # noqa: 
 
 MAX_ATTEMPTS = 12  # bound on how many ranked pairs we'll actually verify
 
+ORIGIN_AIRPORT = "ORD"  # matches the simulated dataset's fixed origin
+DESTINATION_HOTEL_QUERY = {
+    "AUS": "hotels in Austin, TX",
+    "DEN": "hotels in Denver, CO",
+    "MIA": "hotels in Miami, FL",
+}
+
 
 def _date_range_overlaps_blackout(start: str, nights: int, blackout: list[str]) -> bool:
     start_d = date.fromisoformat(start)
@@ -39,6 +47,12 @@ def _date_range_overlaps_blackout(start: str, nights: int, blackout: list[str]) 
 
 
 def _hotel_available_for(hotel: dict, flight: dict, nights: int) -> tuple[bool, str]:
+    if "available_from" not in hotel:
+        # Real data source (e.g. SerpApi) -- the hotel search itself was already
+        # scoped to the requested check-in/check-out dates, so there's no separate
+        # availability window or blackout list to check here; the API call already
+        # did that filtering.
+        return True, "available (date-scoped by the live search itself)"
     flight_date = flight["date"]
     if not (hotel["available_from"] <= flight_date <= hotel["available_to"]):
         return False, f"{hotel['name']} isn't offered on {flight_date} (available {hotel['available_from']}..{hotel['available_to']})."
@@ -69,6 +83,8 @@ class TravelAgent:
         self.search_agent = SearchAgent()
         self.verification_agent = VerificationAgent()
         self.graph = self._build_graph()
+        self._last_hotels_by_id: dict = {}
+        self._last_flights_by_id: dict = {}
 
     # -- graph nodes --------------------------------------------------------
     def _propose_node(self, state: TravelAgentState) -> TravelAgentState:
@@ -143,7 +159,40 @@ class TravelAgent:
         return workflow.compile()
 
     # -- candidate generation --------------------------------------------------
+    def _build_candidate_queue_serpapi(self, constraints: ResolvedConstraints) -> tuple[list[tuple[dict, dict]], int, int]:
+        """Real-data mode. Unlike the simulated mode, this does NOT search across
+        every day in a wide date range -- real flight search is per-date and
+        costs one API call each, so a wide/whole-month range would burn the
+        free-tier quota fast. Uses exactly date_range_start for the flight
+        search and one hotel search across the full stay -- 2 API calls total
+        per request, regardless of how wide the resolved date range is."""
+        from travel_booking.agents import serpapi_client
+        from datetime import date, timedelta
+
+        checkin = constraints.date_range_start
+        checkout = (date.fromisoformat(checkin) + timedelta(days=constraints.nights)).isoformat()
+        hotel_query = DESTINATION_HOTEL_QUERY.get(constraints.destination_code, constraints.destination_raw)
+
+        hotels = serpapi_client.search_hotels(hotel_query, checkin, checkout, adults=constraints.party_size)
+        flights = serpapi_client.search_flights(ORIGIN_AIRPORT, constraints.destination_code, checkin, adults=constraints.party_size)
+
+        hotels = sorted(hotels, key=lambda h: h["price_per_night"])[:8]
+        flights = sorted(flights, key=lambda f: f["price"])[:8]
+        self._last_hotels_by_id = {h["id"]: h for h in hotels}
+        self._last_flights_by_id = {f["id"]: f for f in flights}
+
+        pairs = []
+        for f in flights:
+            for h in hotels:
+                pairs.append((h["price_per_night"] + f["price"], h, f))
+        pairs.sort(key=lambda p: p[0])
+        queue = [(h, f) for _, h, f in pairs]
+        return queue, len(hotels), len(flights)
+
     def _build_candidate_queue(self, constraints: ResolvedConstraints) -> tuple[list[tuple[dict, dict]], int, int]:
+        if settings.travel_data_source == "serpapi":
+            return self._build_candidate_queue_serpapi(constraints)
+
         query_bits = [f"for {constraints.party_size} guests"]
         if constraints.budget_amount:
             query_bits.append(f"budget around ${constraints.budget_amount} ({constraints.budget_scope or 'unspecified scope'})")
@@ -161,6 +210,8 @@ class TravelAgent:
         # defaulted-to-whole-month) date range. Not negotiable by ranking --
         # a flight on a date the user didn't ask for isn't a candidate at all.
         flights = [f for f in flights if constraints.date_range_start <= f["date"] <= constraints.date_range_end]
+        self._last_hotels_by_id = {h["id"]: h for h in hotels}
+        self._last_flights_by_id = {f["id"]: f for f in flights}
 
         # Rank pairs by combined search relevance, cheapest-first as tiebreak.
         pairs = []
@@ -227,14 +278,14 @@ class TravelAgent:
             attempts_tried=final_state.get("attempts", 0),
             candidates_hotels=n_hotels,
             candidates_flights=n_flights,
-            hotel_record=self.search_agent.hotels.get(final_state["best_failed"].hotel_id) if final_state.get("best_failed") else None,
-            flight_record=self.search_agent.flights.get(final_state["best_failed"].flight_id) if final_state.get("best_failed") else None,
+            hotel_record=self._last_hotels_by_id.get(final_state["best_failed"].hotel_id) if final_state.get("best_failed") else None,
+            flight_record=self._last_flights_by_id.get(final_state["best_failed"].flight_id) if final_state.get("best_failed") else None,
             all_attempts=attempt_log,
         )
 
     def _finalize(self, constraints, result: VerificationResult, n_hotels, n_flights, attempts) -> ItineraryOutcome:
-        hotel = self.search_agent.hotels[result.hotel_id]
-        flight = self.search_agent.flights[result.flight_id]
+        hotel = self._last_hotels_by_id[result.hotel_id]
+        flight = self._last_flights_by_id[result.flight_id]
         return ItineraryOutcome(
             status="verified",
             constraints=constraints,

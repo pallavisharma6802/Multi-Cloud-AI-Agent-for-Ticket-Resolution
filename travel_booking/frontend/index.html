@@ -80,6 +80,8 @@
   .check-icon { flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; margin-top: 1px; }
   .check-icon.pass { background: var(--pass-soft); color: var(--pass); }
   .check-icon.fail { background: var(--fail-soft); color: var(--fail); }
+  .check-icon.unknown { background: #f1f3f5; color: var(--muted-soft); }
+  .unknown-tag { font-size: 11px; font-weight: 600; color: var(--muted-soft); background: #f1f3f5; padding: 2px 7px; border-radius: 10px; margin-left: 6px; text-transform: uppercase; letter-spacing: 0.02em; }
   .check-body { flex: 1; min-width: 0; }
   .check-label { font-size: 14px; font-weight: 600; margin-bottom: 2px; }
   .check-compare { font-size: 13px; font-weight: 600; margin-bottom: 3px; }
@@ -180,6 +182,15 @@ async function runSearch() {
 }
 
 function checkRow(c) {
+  if (c.data_available === false) {
+    return `<div class="check-row">
+      <div class="check-icon unknown">?</div>
+      <div class="check-body">
+        <div class="check-label">${c.label} <span class="unknown-tag">not verifiable</span></div>
+        <div class="check-detail">${c.detail}</div>
+      </div>
+    </div>`;
+  }
   const cls = c.passed ? 'pass' : 'fail';
   return `<div class="check-row">
     <div class="check-icon ${cls}">${c.passed ? '✓' : '✕'}</div>
@@ -199,20 +210,26 @@ function renderResults(data) {
   if (data.hotel || data.flight) {
     html += `<div class="pair-label">Proposed itinerary</div><div class="itinerary">`;
     if (data.hotel) {
+      const hotelImg = data.hotel.image_url || `/images/hotels/${data.hotel.id}.jpg`;
+      let deskLine;
+      if (data.hotel.front_desk_24hr) deskLine = "24-hour front desk";
+      else if (data.hotel.front_desk_closes) deskLine = "Desk closes " + data.hotel.front_desk_closes;
+      else deskLine = "Front-desk hours not available";
       html += `<div class="itin-item">
-        <img src="/images/hotels/${data.hotel.id}.jpg" alt="${data.hotel.name}" />
+        <img src="${hotelImg}" alt="${data.hotel.name}" onerror="this.style.display='none'" />
         <div class="itin-body">
           <div class="itin-kind">🏨 Hotel</div>
           <h3>${data.hotel.name}</h3>
-          <p>${data.hotel.destination_name}</p>
-          <p>${data.hotel.front_desk_24hr ? '24-hour front desk' : 'Desk closes ' + data.hotel.front_desk_closes}</p>
+          <p>${data.hotel.destination_name}${data.hotel.rating ? ' · ★ ' + data.hotel.rating.toFixed(1) : ''}</p>
+          <p>${deskLine}</p>
           <div class="price-line">$${data.hotel.price_per_night}/night${data.hotel.resort_fee_per_night ? ' + $' + data.hotel.resort_fee_per_night + ' fee' : ''}</div>
         </div>
       </div>`;
     }
     if (data.flight) {
+      const flightImg = data.flight.image_url || `/images/flights/${data.flight.id}.jpg`;
       html += `<div class="itin-item">
-        <img src="/images/flights/${data.flight.id}.jpg" alt="${data.flight.flight_number}" />
+        <img src="${flightImg}" alt="${data.flight.flight_number}" onerror="this.style.display='none'" />
         <div class="itin-body">
           <div class="itin-kind">✈️ Flight</div>
           <h3>${data.flight.airline} ${data.flight.flight_number}</h3>

@@ -109,6 +109,13 @@ class CheckResult(BaseModel):
     detail: str
     expected: str
     actual: str
+    data_available: bool = Field(
+        default=True,
+        description="False when this check could not actually be evaluated because the data source "
+        "doesn't provide the needed field (e.g. real Google Hotels data has no room-capacity field). "
+        "When False, `passed` is a placeholder (True) so it never blocks a booking on missing data, "
+        "but the UI must show this as 'not verifiable', never as a real pass.",
+    )
 
 
 class VerificationResult(BaseModel):

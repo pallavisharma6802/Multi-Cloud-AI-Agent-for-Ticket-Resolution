@@ -32,6 +32,7 @@ def _checklist(result: VerificationResult) -> List[dict]:
         {
             "label": CHECK_LABELS[c.name],
             "passed": c.passed,
+            "data_available": c.data_available,
             "detail": c.detail,
             "actual": c.actual,
             "expected": c.expected,
@@ -43,10 +44,19 @@ def _checklist(result: VerificationResult) -> List[dict]:
 def build_explanation(outcome: ItineraryOutcome) -> dict:
     if outcome.status == "verified":
         result = outcome.verification
+        checklist = _checklist(result)
+        unverifiable = [c["label"] for c in checklist if not c["data_available"]]
+        if unverifiable:
+            headline = (
+                "Verified everything this data source could check -- "
+                + ", ".join(unverifiable) + " couldn't be confirmed (not available from this data source)."
+            )
+        else:
+            headline = "Verified -- this itinerary satisfies every constraint together, not just separately."
         return {
-            "headline": "Verified -- this itinerary satisfies every constraint together, not just separately.",
+            "headline": headline,
             "status": "verified",
-            "checklist": _checklist(result),
+            "checklist": checklist,
             "total_cost": result.total_cost,
         }
 

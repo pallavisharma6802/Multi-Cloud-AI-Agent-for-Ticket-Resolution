@@ -115,11 +115,13 @@ def search_flights(
     for group in ("best_flights", "other_flights"):
         for offer in data.get(group, []):
             legs = offer.get("flights", [])
-            if not legs:
-                continue
+            if not legs or offer.get("price") is None:
+                continue  # can't run the budget check without a price
             first_leg, last_leg = legs[0], legs[-1]
             dep_date, dep_time = _split_datetime(first_leg.get("departure_airport", {}).get("time"))
             arr_date, arr_time = _split_datetime(last_leg.get("arrival_airport", {}).get("time"))
+            if not (dep_date and dep_time and arr_date and arr_time):
+                continue  # can't run the arrival-time check without parseable times
 
             results.append({
                 "id": offer.get("booking_token") or f"{first_leg.get('flight_number', 'FL')}-{dep_date}",
@@ -171,6 +173,8 @@ def search_hotels(
     results = []
     for h in data.get("properties", []):
         rate = (h.get("rate_per_night") or {}).get("extracted_lowest")
+        if rate is None:
+            continue  # can't run the budget check without a price -- skip rather than pass a null through
         total = (h.get("total_rate") or {}).get("extracted_lowest")
         resort_fee = None
         if rate is not None and total is not None:

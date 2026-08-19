@@ -28,6 +28,20 @@ def _parse_hhmm(s: str) -> dtime:
 
 
 def check_arrival_vs_checkin(hotel: dict, flight: dict) -> CheckResult:
+    if hotel.get("front_desk_24hr") is None and hotel.get("front_desk_closes") is None:
+        # Real data source (e.g. SerpApi/Google Hotels) doesn't expose front-desk
+        # hours at all -- don't invent a proxy check, be honest that this can't
+        # be verified rather than silently passing it off as checked.
+        return CheckResult(
+            name="arrival_vs_checkin",
+            passed=True,
+            data_available=False,
+            detail=f"{hotel.get('name', 'This hotel')}'s front-desk hours aren't available from this data "
+            f"source, so whether the {flight['arrival_time']} arrival on {flight['flight_number']} can "
+            f"actually check in couldn't be verified.",
+            expected="front-desk hours data",
+            actual="not available from this data source",
+        )
     if hotel["front_desk_24hr"]:
         return CheckResult(
             name="arrival_vs_checkin",
@@ -68,14 +82,14 @@ def check_arrival_vs_checkin(hotel: dict, flight: dict) -> CheckResult:
 
 def compute_total_cost(hotel: dict, flight: dict, constraints: ResolvedConstraints) -> float:
     flight_total = flight["price"] * constraints.party_size
-    hotel_nightly = hotel["price_per_night"] + hotel.get("resort_fee_per_night", 0)
+    hotel_nightly = hotel["price_per_night"] + (hotel.get("resort_fee_per_night") or 0)
     hotel_total = hotel_nightly * constraints.nights
     return round(flight_total + hotel_total, 2)
 
 
 def check_budget(hotel: dict, flight: dict, constraints: ResolvedConstraints) -> CheckResult:
     total_cost = compute_total_cost(hotel, flight, constraints)
-    hotel_nightly = hotel["price_per_night"] + hotel.get("resort_fee_per_night", 0)
+    hotel_nightly = hotel["price_per_night"] + (hotel.get("resort_fee_per_night") or 0)
 
     if constraints.budget_amount is None:
         return CheckResult(
@@ -125,6 +139,28 @@ def check_budget(hotel: dict, flight: dict, constraints: ResolvedConstraints) ->
     )
 
 
+# Real data sources (e.g. SerpApi/Google Hotels) return free-text amenity names
+# ("Outdoor pool", "Free Wi-Fi") instead of the simulated dataset's exact controlled
+# vocabulary -- match by substring against these known real-world phrasings.
+_AMENITY_SYNONYMS = {
+    "wifi": ["wifi", "wi-fi"],
+    "pool": ["pool"],
+    "gym": ["gym", "fitness"],
+    "parking": ["parking"],
+    "breakfast": ["breakfast"],
+    "pet_friendly": ["pet-friendly", "pet friendly", "pets allowed"],
+    "family_friendly": ["kid-friendly", "kid friendly", "family-friendly", "family friendly"],
+}
+
+
+def _amenity_present(required: str, hotel_amenities: list[str]) -> bool:
+    if required in hotel_amenities:  # exact match -- simulated dataset's controlled vocabulary
+        return True
+    synonyms = _AMENITY_SYNONYMS.get(required, [required])
+    lowered = [a.lower() for a in hotel_amenities]
+    return any(syn in a for a in lowered for syn in synonyms)
+
+
 def check_amenities(hotel: dict, constraints: ResolvedConstraints) -> CheckResult:
     if not constraints.required_amenities:
         return CheckResult(
@@ -138,7 +174,7 @@ def check_amenities(hotel: dict, constraints: ResolvedConstraints) -> CheckResul
     missing = []
     unavailable = []
     for a in constraints.required_amenities:
-        if a not in hotel["amenities"]:
+        if not _amenity_present(a, hotel["amenities"]):
             missing.append(a)
         elif a in hotel.get("amenity_notes", {}):
             unavailable.append((a, hotel["amenity_notes"][a]))
@@ -165,6 +201,16 @@ def check_amenities(hotel: dict, constraints: ResolvedConstraints) -> CheckResul
 
 
 def check_capacity(hotel: dict, constraints: ResolvedConstraints) -> CheckResult:
+    if hotel.get("max_occupancy") is None:
+        return CheckResult(
+            name="capacity",
+            passed=True,
+            data_available=False,
+            detail=f"Room-capacity data isn't available from this data source, so whether a party of "
+            f"{constraints.party_size} fits at {hotel.get('name', 'this hotel')} couldn't be verified.",
+            expected=f"max_occupancy >= {constraints.party_size}",
+            actual="not available from this data source",
+        )
     passed = constraints.party_size <= hotel["max_occupancy"]
     return CheckResult(
         name="capacity",
