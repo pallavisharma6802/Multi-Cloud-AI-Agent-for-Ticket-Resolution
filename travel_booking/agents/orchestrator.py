@@ -25,12 +25,14 @@ from travel_booking.agents.schemas import (  # noqa: E402
     ConversationState,
     ItineraryOutcome,
     ResolvedConstraints,
+    TripOption,
     VerificationResult,
 )
 from travel_booking.agents.search_agent import SearchAgent  # noqa: E402
 from travel_booking.agents.verification_agent import VerificationAgent  # noqa: E402
 
 MAX_ATTEMPTS = 12  # bound on how many ranked pairs we'll actually verify
+MAX_OPTIONS = 3  # how many distinct passing itineraries to collect before stopping
 
 ORIGIN_AIRPORT = "ORD"  # matches the simulated dataset's fixed origin
 DESTINATION_HOTEL_QUERY = {
@@ -74,6 +76,7 @@ class TravelAgentState(TypedDict, total=False):
     best_failed_count: int
     final: Optional[str]  # "accept" | "escalate"
     accepted: Optional[VerificationResult]
+    accepted_options: list[VerificationResult]
     attempt_log: list[VerificationResult]
 
 
@@ -114,9 +117,19 @@ class TravelAgent:
 
     def _decide_node(self, state: TravelAgentState) -> TravelAgentState:
         result = state["last_result"]
+        options = state.setdefault("accepted_options", [])
+
         if result.passed:
-            state["final"] = "accept"
-            state["accepted"] = result
+            # Keep options distinct by hotel, so 3 results means 3 genuinely
+            # different hotels, not the same hotel with 3 different flights.
+            already_have_hotel = any(o.hotel_id == result.hotel_id for o in options)
+            if not already_have_hotel:
+                options.append(result)
+            if len(options) >= MAX_OPTIONS or not state["queue"] or state["attempts"] >= MAX_ATTEMPTS:
+                state["final"] = "accept"
+                state["accepted"] = options[0]
+            else:
+                state["final"] = None
             return state
 
         failed_count = len(result.failed_checks())
@@ -124,10 +137,13 @@ class TravelAgent:
             state["best_failed"] = result
             state["best_failed_count"] = failed_count
 
-        if not state["queue"]:
-            state["final"] = "escalate"
-        elif state["attempts"] >= MAX_ATTEMPTS:
-            state["final"] = "escalate"
+        if not state["queue"] or state["attempts"] >= MAX_ATTEMPTS:
+            # Exhausted the queue -- if we already found at least 1 passing
+            # option along the way, that's still a real "accept", just with
+            # fewer than MAX_OPTIONS choices.
+            state["final"] = "accept" if options else "escalate"
+            if options:
+                state["accepted"] = options[0]
         else:
             state["final"] = None
         return state
@@ -260,15 +276,26 @@ class TravelAgent:
             "best_failed_count": 99,
             "final": None,
             "accepted": None,
+            "accepted_options": [],
             "attempt_log": [],
         }
         final_state: Any = self.graph.invoke(init_state, config={"recursion_limit": 200})
         attempt_log = final_state.get("attempt_log", [])
 
         if final_state.get("accepted"):
-            result: VerificationResult = final_state["accepted"]
+            options = final_state.get("accepted_options", [])
+            top_options = [
+                TripOption(
+                    hotel_record=self._last_hotels_by_id[o.hotel_id],
+                    flight_record=self._last_flights_by_id[o.flight_id],
+                    verification=o,
+                )
+                for o in options
+            ]
+            result: VerificationResult = options[0]
             outcome = self._finalize(constraints, result, n_hotels, n_flights, final_state["attempts"])
             outcome.all_attempts = attempt_log
+            outcome.top_options = top_options
             return outcome
 
         return ItineraryOutcome(

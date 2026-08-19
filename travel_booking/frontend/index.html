@@ -128,6 +128,30 @@
 
   /* -- results (inside chat page) -- */
   .pair-label { font-size: 11.5px; color: var(--muted-soft); margin: 4px 0 10px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; }
+
+  .option-tabs { display: flex; gap: 8px; margin-bottom: 18px; flex-wrap: wrap; }
+  .option-tab { background: var(--surface); border: 1.5px solid var(--border); padding: 9px 16px; border-radius: 20px;
+    font-size: 13px; font-weight: 700; cursor: pointer; color: var(--muted); }
+  .option-tab:hover { border-color: var(--teal); }
+  .option-tab.active { background: var(--teal); border-color: var(--teal); color: white; }
+
+  .refine-panel { margin-top: 18px; }
+  .refine-toggle { background: var(--surface-2); border: 1px solid var(--border); padding: 10px 16px; border-radius: 12px;
+    font-size: 13px; font-weight: 700; cursor: pointer; width: 100%; text-align: left; }
+  .refine-toggle:hover { border-color: var(--teal); }
+  .refine-body { background: var(--surface); border: 1px solid var(--border); border-top: none; border-radius: 0 0 12px 12px;
+    padding: 16px; margin-top: -1px; }
+  .refine-body.hidden { display: none; }
+  .refine-row { display: flex; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+  .refine-row label { flex: 1; min-width: 140px; font-size: 12px; color: var(--muted); font-weight: 600; display: flex; flex-direction: column; gap: 5px; }
+  .refine-row input[type=text], .refine-row input[type=number], .refine-row select {
+    padding: 9px 12px; border-radius: 8px; border: 1.5px solid var(--border); font-size: 13.5px; font-family: 'Manrope', sans-serif; background: var(--bg); color: var(--text); }
+  .filter-chip { display: inline-flex; align-items: center; gap: 6px; background: var(--surface-2); padding: 6px 12px;
+    border-radius: 20px; font-size: 12.5px; font-weight: 600; cursor: pointer; margin: 3px 4px 3px 0; }
+  .btn-refine-apply { background: var(--teal); color: white; border: none; padding: 11px 20px; border-radius: 20px;
+    font-size: 13.5px; font-weight: 700; cursor: pointer; width: 100%; }
+  .btn-refine-apply:hover:not(:disabled) { background: var(--teal-dark); }
+  .btn-refine-apply:disabled { opacity: 0.5; }
   .itinerary { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
   .itin-item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); overflow: hidden; cursor: pointer;
     transition: transform 0.15s ease, box-shadow 0.15s ease; }
@@ -460,37 +484,66 @@ function checkRow(c, i) {
 }
 
 let LAST_HOTEL = null, LAST_FLIGHT = null;
+let ALL_OPTIONS = [];   // [{hotel, flight, explanation}, ...] up to 3, client-side only -- no new API call to switch
+let SELECTED_OPTION = 0;
+let LAST_CONSTRAINTS = null;
 
 function renderResults(data) {
   resultsWrap.classList.remove("hidden");
-  LAST_HOTEL = data.hotel; LAST_FLIGHT = data.flight;
-  const exp = data.explanation;
+  LAST_CONSTRAINTS = data.constraints;
+
+  // Build the option list: the primary result plus any additional top_options,
+  // deduped so the primary isn't shown twice.
+  ALL_OPTIONS = [{ hotel: data.hotel, flight: data.flight, explanation: data.explanation }];
+  (data.options || []).forEach(o => {
+    if (!o.hotel || o.hotel.id !== data.hotel?.id) ALL_OPTIONS.push(o);
+  });
+  SELECTED_OPTION = 0;
+  renderSelectedOption();
+}
+
+function renderSelectedOption() {
+  const opt = ALL_OPTIONS[SELECTED_OPTION];
+  if (!opt) return;
+  LAST_HOTEL = opt.hotel; LAST_FLIGHT = opt.flight;
+  const exp = opt.explanation;
   let html = "";
 
-  if (data.hotel || data.flight) {
+  if (ALL_OPTIONS.length > 1) {
+    html += `<div class="pair-label">${ALL_OPTIONS.length} verified options found — tap to compare</div><div class="option-tabs">`;
+    ALL_OPTIONS.forEach((o, i) => {
+      const cost = o.explanation.total_cost;
+      html += `<button class="option-tab ${i === SELECTED_OPTION ? 'active' : ''}" onclick="selectOption(${i})">
+        Option ${i + 1}${cost ? ' · $' + cost.toFixed(0) : ''}
+      </button>`;
+    });
+    html += `</div>`;
+  }
+
+  if (opt.hotel || opt.flight) {
     html += `<div class="pair-label">Proposed itinerary — tap either card for full details</div><div class="itinerary">`;
-    if (data.hotel) {
-      const hotelImg = data.hotel.image_url || `/images/hotels/${data.hotel.id}.jpg`;
+    if (opt.hotel) {
+      const hotelImg = opt.hotel.image_url || `/images/hotels/${opt.hotel.id}.jpg`;
       html += `<div class="itin-item" onclick="showDetail('hotel')">
-        <img src="${hotelImg}" alt="${data.hotel.name}" onerror="this.style.display='none'" />
+        <img src="${hotelImg}" alt="${opt.hotel.name}" onerror="this.style.display='none'" />
         <div class="itin-body">
           <div class="itin-kind">🏨 Hotel</div>
-          <h3>${data.hotel.name}</h3>
-          <p>${data.hotel.destination_name}${data.hotel.rating ? ' · ★ ' + data.hotel.rating.toFixed(1) : ''}</p>
-          <div class="price-line">$${data.hotel.price_per_night}/night</div>
+          <h3>${opt.hotel.name}</h3>
+          <p>${opt.hotel.destination_name}${opt.hotel.rating ? ' · ★ ' + opt.hotel.rating.toFixed(1) : ''}</p>
+          <div class="price-line">$${opt.hotel.price_per_night}/night</div>
           <div class="view-more">View details →</div>
         </div>
       </div>`;
     }
-    if (data.flight) {
-      const flightImg = data.flight.image_url || `/images/flights/${data.flight.id}.jpg`;
+    if (opt.flight) {
+      const flightImg = opt.flight.image_url || `/images/flights/${opt.flight.id}.jpg`;
       html += `<div class="itin-item" onclick="showDetail('flight')">
-        <img src="${flightImg}" alt="${data.flight.flight_number}" onerror="this.style.display='none'" />
+        <img src="${flightImg}" alt="${opt.flight.flight_number}" onerror="this.style.display='none'" />
         <div class="itin-body">
           <div class="itin-kind">✈️ Flight</div>
-          <h3>${data.flight.airline} ${data.flight.flight_number}</h3>
-          <p>${data.flight.origin} → ${data.flight.destination}</p>
-          <div class="price-line">$${data.flight.price}/passenger</div>
+          <h3>${opt.flight.airline} ${opt.flight.flight_number}</h3>
+          <p>${opt.flight.origin} → ${opt.flight.destination}</p>
+          <div class="price-line">$${opt.flight.price}/passenger</div>
           <div class="view-more">View details →</div>
         </div>
       </div>`;
@@ -505,11 +558,70 @@ function renderResults(data) {
   if (exp.total_cost) html += `<div class="total-cost"><span class="lbl">Total trip cost</span><span class="amt">$${exp.total_cost.toFixed(2)}</span></div>`;
   html += `</div>`;
 
-  if (data.constraints.assumptions && data.constraints.assumptions.length) {
-    html += `<div class="assumptions">Assumed: ${data.constraints.assumptions.join("; ")}.</div>`;
+  if (LAST_CONSTRAINTS.assumptions && LAST_CONSTRAINTS.assumptions.length) {
+    html += `<div class="assumptions">Assumed: ${LAST_CONSTRAINTS.assumptions.join("; ")}.</div>`;
   }
+
+  html += renderRefinePanel();
+
   resultsWrap.innerHTML = html;
   scrollToBottom();
+}
+
+function selectOption(i) { SELECTED_OPTION = i; renderSelectedOption(); }
+
+/* ---------- refine/filter panel ---------- */
+const AMENITY_OPTIONS = ["wifi", "pool", "gym", "parking", "breakfast", "pet_friendly", "family_friendly"];
+
+function renderRefinePanel() {
+  const c = LAST_CONSTRAINTS;
+  const amenityChips = AMENITY_OPTIONS.map(a => {
+    const checked = (c.required_amenities || []).includes(a) ? "checked" : "";
+    return `<label class="filter-chip"><input type="checkbox" value="${a}" ${checked} /> ${a.replace('_', ' ')}</label>`;
+  }).join("");
+  return `<div class="refine-panel">
+    <button class="refine-toggle" onclick="document.getElementById('refine-body').classList.toggle('hidden')">⚙ Refine this search</button>
+    <div id="refine-body" class="refine-body hidden">
+      <div class="refine-row">
+        <label>From<input type="text" id="f-date-start" value="${c.date_range_start}" placeholder="YYYY-MM-DD" /></label>
+        <label>To<input type="text" id="f-date-end" value="${c.date_range_end}" placeholder="YYYY-MM-DD" /></label>
+      </div>
+      <div class="refine-row">
+        <label>Budget<input type="number" id="f-budget" value="${c.budget_amount || ''}" placeholder="e.g. 2000" /></label>
+        <label>Scope
+          <select id="f-scope">
+            <option value="total_trip" ${c.budget_scope === 'total_trip' ? 'selected' : ''}>Total trip</option>
+            <option value="per_night_hotel" ${c.budget_scope === 'per_night_hotel' ? 'selected' : ''}>Per night (hotel)</option>
+          </select>
+        </label>
+      </div>
+      <div class="refine-row"><label style="width:100%">Amenities<div class="chip-row">${amenityChips}</div></label></div>
+      <button class="btn-refine-apply" onclick="applyFilters()">Apply & search again</button>
+    </div>
+  </div>`;
+}
+
+async function applyFilters() {
+  const body = {
+    date_range_start: document.getElementById("f-date-start").value || null,
+    date_range_end: document.getElementById("f-date-end").value || null,
+    budget_amount: parseFloat(document.getElementById("f-budget").value) || null,
+    budget_scope: document.getElementById("f-scope").value,
+    required_amenities: Array.from(document.querySelectorAll("#refine-body input[type=checkbox]:checked")).map(el => el.value),
+  };
+  const btn = document.querySelector(".btn-refine-apply");
+  btn.textContent = "Searching…"; btn.disabled = true;
+  try {
+    const res = await fetch(`/api/search/${conversationId}`, {
+      method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body),
+    });
+    if (!res.ok) throw new Error(`Search failed (HTTP ${res.status})`);
+    const data = await res.json();
+    renderResults(data);
+  } catch (err) {
+    showError("Refine search failed: " + err.message);
+    btn.textContent = "Apply & search again"; btn.disabled = false;
+  }
 }
 
 /* ---------- detail modal ---------- */

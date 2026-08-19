@@ -8,7 +8,7 @@ from __future__ import annotations
 import sys
 import uuid
 from pathlib import Path
-from typing import Optional
+from typing import List, Optional
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 if str(REPO_ROOT) not in sys.path:
@@ -20,7 +20,7 @@ from fastapi.staticfiles import StaticFiles  # noqa: E402
 from fastapi.responses import FileResponse  # noqa: E402
 from pydantic import BaseModel  # noqa: E402
 
-from travel_booking.agents.explanation import build_explanation  # noqa: E402
+from travel_booking.agents.explanation import build_explanation, build_explanation_for_option  # noqa: E402
 from travel_booking.agents.intent_agent import IntentAgent  # noqa: E402
 from travel_booking.agents.orchestrator import TravelAgent  # noqa: E402
 from travel_booking.agents.schemas import ConversationState  # noqa: E402
@@ -55,6 +55,17 @@ class ReplyRequest(BaseModel):
     message: str
 
 
+class SearchFilters(BaseModel):
+    """Optional overrides for refining a search without starting a new
+    conversation -- e.g. the user widens the budget or changes dates after
+    seeing the first set of results."""
+    date_range_start: Optional[str] = None
+    date_range_end: Optional[str] = None
+    budget_amount: Optional[float] = None
+    budget_scope: Optional[str] = None
+    required_amenities: Optional[List[str]] = None
+
+
 def _conversation_response(conv_id: str, state: ConversationState) -> dict:
     return {
         "conversation_id": conv_id,
@@ -85,8 +96,27 @@ def chat_reply(req: ReplyRequest):
     return _conversation_response(req.conversation_id, state)
 
 
+def _outcome_response(outcome) -> dict:
+    return {
+        "status": outcome.status,
+        "constraints": outcome.constraints.model_dump(),
+        "hotel": outcome.hotel_record,
+        "flight": outcome.flight_record,
+        "explanation": build_explanation(outcome),
+        "attempts_tried": outcome.attempts_tried,
+        "options": [
+            {
+                "hotel": o.hotel_record,
+                "flight": o.flight_record,
+                "explanation": build_explanation_for_option(o.verification),
+            }
+            for o in outcome.top_options
+        ],
+    }
+
+
 @app.post("/api/search/{conversation_id}")
-def run_search(conversation_id: str):
+def run_search(conversation_id: str, filters: Optional[SearchFilters] = None):
     travel_agent, _ = _agents()
     state = _conversations.get(conversation_id)
     if state is None:
@@ -94,16 +124,26 @@ def run_search(conversation_id: str):
     if state.status not in ("ready", "best_effort"):
         raise HTTPException(400, f"conversation not ready yet (status={state.status})")
 
+    if filters is not None:
+        # Apply overrides directly on the parsed TravelConstraints before
+        # resolving -- lets a user refine dates/budget/amenities without
+        # re-running the whole clarification conversation.
+        c = state.constraints
+        if filters.date_range_start is not None:
+            c.date_range_start = filters.date_range_start
+            c.dates_whole_month_ok = False
+        if filters.date_range_end is not None:
+            c.date_range_end = filters.date_range_end
+        if filters.budget_amount is not None:
+            c.budget_amount = filters.budget_amount
+            c.budget_mentioned_vague = False
+        if filters.budget_scope is not None:
+            c.budget_scope = filters.budget_scope
+        if filters.required_amenities is not None:
+            c.required_amenities = filters.required_amenities
+
     outcome = travel_agent.run_from_state(state)
-    explanation = build_explanation(outcome)
-    return {
-        "status": outcome.status,
-        "constraints": outcome.constraints.model_dump(),
-        "hotel": outcome.hotel_record,
-        "flight": outcome.flight_record,
-        "explanation": explanation,
-        "attempts_tried": outcome.attempts_tried,
-    }
+    return _outcome_response(outcome)
 
 
 FRONTEND_DIR = Path(__file__).resolve().parent / "frontend"

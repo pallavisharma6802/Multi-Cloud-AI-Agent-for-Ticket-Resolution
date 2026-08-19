@@ -989,3 +989,73 @@ approaching the session cap.** Per the hard bound, no further live
 Bedrock-backed testing performed after this; remaining verification
 for any future changes should budget carefully against the last 2
 calls or wait for a fresh session.
+
+## New feature wave: profiles, group trips, add-to-planner, RL-scoped
+
+User asked for a large batch of new product features in one message:
+create-a-profile, friends, group trip planning by aggregating multiple
+people's preferences, filters + top-3 results in chat, add-to-planner,
+and explicitly "use RL" for the friends/group-matching piece.
+
+Flagged before building rather than starting blind, since two parts
+were real scope/architecture decisions: (1) real accounts + friends
+needs the database/auth layer this session deliberately removed
+earlier (`app/db`, `app/api`), and (2) RL is a specific, heavy
+technical commitment (reward signal, training loop, data) that's
+worth confirming rather than assuming. Asked the user directly:
+**they chose real accounts + database, and RL** (not the lighter
+session-code or deterministic-aggregator alternatives offered). Also
+asked what to build first given the size of the ask: **all three**
+(top-3 + filters, add-to-planner, group trips) were selected.
+
+Implementation call made without asking (a technical detail, not a
+policy question): **SQLite**, not the full Postgres/Docker stack
+removed earlier -- same real-accounts-and-persistence outcome,
+appropriately scoped for a local-only demo with no deployment.
+
+### Task 1 of 4: top-3 results + refine/filter panel -- DONE
+
+**Orchestrator** (`orchestrator.py`): `_decide_node` no longer stops at
+the first passing combination. It now collects up to `MAX_OPTIONS=3`
+passing itineraries, deliberately kept distinct by hotel (won't show
+the same hotel 3 times with different flights), continuing until 3
+are found, the candidate queue is exhausted, or `MAX_ATTEMPTS` is hit.
+If the queue exhausts with 1-2 (not 3) passing options already found,
+that's still a real "verified" outcome, just with fewer choices --
+never padded with a repeat or a non-passing combo to hit a round
+number. Added `TripOption` (hotel + flight + verification) and
+`ItineraryOutcome.top_options: List[TripOption]` to `schemas.py`;
+`explanation.py` gained `build_explanation_for_option()` so each
+option gets its own real checklist, not a shared one.
+
+**Filters** (`api.py`): `POST /api/search/{conversation_id}` now
+accepts an optional `SearchFilters` body (date range, budget +scope,
+amenities). When present, these override the conversation's already-
+parsed constraints before re-running search on the SAME conversation
+-- no need to restart the whole clarification flow to widen a budget
+or change dates.
+
+**Frontend**: results now show an "Option 1 · $X / Option 2 · $Y /
+Option 3 · $Z" tab row (switching is pure client-side re-render, no
+new network call, since all 3 options' full data already came back in
+one response) plus a collapsible "Refine this search" panel (date
+inputs, budget + scope, amenity checkboxes) that re-POSTs to the same
+endpoint with overrides and replaces the results in place.
+
+**Verified with care given the Bedrock budget is nearly exhausted
+(78/80)**: the core 3-option collection logic was verified with
+**zero Bedrock calls** by driving the LangGraph directly with a hand-
+built `ResolvedConstraints` (bypassing intent parsing entirely) --
+confirmed 3 distinct-hotel options collected correctly against live
+SerpApi data. The frontend (option-tab switching, refine panel
+toggle) was verified with a fully mocked response injected via direct
+JS call to `renderResults()` -- zero network calls, zero cost, and
+confirmed via direct DOM inspection (`textContent`/`classList`, not
+screenshots, since this session's Browser pane has repeatedly shown
+stale cached frames after JS-driven state changes -- confirmed once
+more this is a pane rendering quirk, not an app bug, by checking real
+DOM state matched the JS calls exactly every time). 14/14 pytest
+still passing. **No Bedrock calls spent on this task --
+running total unchanged: 78/80.**
+
+### Tasks 2-4 (accounts/DB, add-to-planner, group trips + RL): in progress next, logged as they land.

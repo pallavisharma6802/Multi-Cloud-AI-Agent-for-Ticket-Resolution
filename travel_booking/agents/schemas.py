@@ -129,8 +129,19 @@ class VerificationResult(BaseModel):
         return [c for c in self.checks if not c.passed]
 
 
+class TripOption(BaseModel):
+    """One candidate itinerary: a specific hotel+flight pair and its full
+    verification result. `run_from_state` collects up to 3 of these,
+    deliberately kept distinct by hotel."""
+
+    hotel_record: dict
+    flight_record: dict
+    verification: VerificationResult
+
+
 class ItineraryOutcome(BaseModel):
-    """Final result of one full run: either a verified itinerary, or the closest miss."""
+    """Final result of one full run: either up to 3 verified itineraries, or
+    the closest miss."""
 
     status: Literal["verified", "unsatisfiable"]
     constraints: ResolvedConstraints
@@ -142,3 +153,9 @@ class ItineraryOutcome(BaseModel):
     hotel_record: Optional[dict] = None
     flight_record: Optional[dict] = None
     all_attempts: List[VerificationResult] = Field(default_factory=list)
+    top_options: List[TripOption] = Field(
+        default_factory=list,
+        description="Up to 3 distinct-hotel passing itineraries, ranked in the order they were found "
+        "(cheapest/most-relevant-first, since the candidate queue is pre-sorted that way). Empty when "
+        "status is unsatisfiable -- see closest_attempt instead.",
+    )
