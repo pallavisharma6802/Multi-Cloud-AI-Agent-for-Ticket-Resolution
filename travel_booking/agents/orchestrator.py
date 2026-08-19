@@ -225,6 +225,7 @@ class TravelAgent:
             constraints.date_range_start = checkin
             constraints.date_range_end = checkin
             constraints.dates_flexible = False
+            constraints.dates_were_scanned = True
         else:
             checkin = constraints.date_range_start
         checkout = (date.fromisoformat(checkin) + timedelta(days=constraints.nights)).isoformat()

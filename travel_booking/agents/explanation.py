@@ -74,6 +74,20 @@ def build_explanation(outcome: ItineraryOutcome) -> dict:
             "Couldn't fully satisfy this request -- here's the closest option and exactly what doesn't match: "
             + "; ".join(failed) + "."
         )
+        budget_check = next((c for c in result.checks if c.name == "budget"), None)
+        budget_amount = outcome.constraints.budget_amount
+        if budget_check and not budget_check.passed and budget_amount is not None:
+            gap = round(result.total_cost - budget_amount, 2)
+            headline += (
+                f" The cheapest real combination found still costs ${result.total_cost:.2f}, "
+                f"${gap:.2f} over your ${budget_amount:.2f} budget"
+            )
+            if outcome.attempts_tried > 1:
+                headline += f" (checked {outcome.attempts_tried} hotel/flight combinations"
+                headline += ", after already scanning multiple candidate dates for the cheapest one" if outcome.constraints.dates_were_scanned else ""
+                headline += ") -- raising the budget, shortening the trip, or flying from a bigger/closer airport are the levers that would actually change this, not retrying the same search."
+            else:
+                headline += "."
         return {
             "headline": headline,
             "status": "unsatisfiable",
