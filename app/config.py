@@ -55,6 +55,8 @@ class Settings(BaseSettings):
     model_continuation: str = Field(default="amazon.nova-lite-v1:0")
     model_drafting: str = Field(default="amazon.nova-lite-v1:0")
     model_supervisor: str = Field(default="amazon.nova-lite-v1:0")
+    model_security_agent: str = Field(default="amazon.nova-lite-v1:0")
+    model_travel_intent: str = Field(default="amazon.nova-lite-v1:0")
 
     # Hard caps on cost/latency if a graph loop runs away (not business rules)
     max_iterations: int = Field(

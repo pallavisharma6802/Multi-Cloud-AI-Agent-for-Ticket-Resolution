@@ -19,6 +19,8 @@ _ROLE_TO_SETTINGS_ATTR = {
     "continuation_post_judging": "model_continuation",
     "drafting": "model_drafting",
     "final_decision": "model_supervisor",
+    "security_agent": "model_security_agent",
+    "travel_intent": "model_travel_intent",
 }
 
 
