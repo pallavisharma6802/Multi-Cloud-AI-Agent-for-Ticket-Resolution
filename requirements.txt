@@ -23,6 +23,7 @@ langgraph>=0.0.26
 
 requests==2.31.0
 httpx==0.26.0
+requests==2.31.0
 
 python-dotenv==1.0.0
 pyyaml==6.0.1
