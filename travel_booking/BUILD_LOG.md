@@ -521,3 +521,58 @@ test, both driven through the real browser). **Running total: 63 + 2 =
 Committed as its own follow-up commit after this log entry, since the
 user's redesign request landed after Stage 4's functional commit was
 already made.
+
+## Bug found via live user testing: clarification loop re-asked its own question
+
+User tried the redesigned UI, asked for Miami "sometime in October", got
+asked "...or should I search across the whole month?", answered "whole
+month" -- and got asked the exact same question again instead of
+proceeding. Real bug, not a misunderstanding: the question itself
+offers "whole month" as a valid path, but nothing in the schema let the
+LLM represent "user explicitly declined to narrow" as a resolved state
+distinct from "still vague" -- so `_evaluate_completeness` kept
+flagging dates as missing no matter what the user said in response to
+that specific question.
+
+**Fix**: added `dates_whole_month_ok: bool` to `TravelConstraints`
+(`schemas.py`), with explicit prompt guidance in `intent_agent.py`'s
+`SYSTEM_CONTEXT` telling the model to set it when the user was asked
+this exact question and chose the whole-month path. Completeness
+checking and constraint resolution both updated to treat that as
+resolved (defaults to the full `2026-10-01..2026-10-31` range, same as
+before, but the assumption message now correctly says "searching the
+whole available month, as you asked" instead of the misleading
+"no specific dates given").
+
+**Verified**: reconstructed the exact failing transcript (asked about
+dates, replied "whole month") and confirmed `dates_whole_month_ok=true`
+is now set and `dates` no longer appears in `missing`. 1 Bedrock call
+used for this reproduction test (2 more were spent on an earlier
+un-forced `start()`+`continue_conversation()` run before I isolated the
+repro this way, whose turn-1 extraction happened to resolve dates
+differently than the user's original run due to normal temperature-0.1
+variance -- not itself a bug, just not a controlled reproduction, so I
+discarded that path once I had a clean isolated repro). Did not re-run
+the full 30-run Stage 3 battery for this -- the change only activates
+when `dates_whole_month_ok` is set, which requires a two-turn
+conversational context none of the battery's one-shot requests produce,
+so the existing battery results aren't affected by this change; noting
+that reasoning here rather than spending ~30 more Bedrock calls to
+reconfirm something structurally unreachable by those requests.
+
+**Bedrock calls this fix**: 3. **Running total: 65 + 3 = 68/80.**
+
+**Still open, pending user input** (raised in the same message as the
+bug report, not yet actioned): (1) general "it looks bad" feedback on
+the redesign with no specifics yet -- asked the user what specifically
+isn't working since guessing and re-redesigning blind would waste their
+time; (2) a request to replace the simulated dataset with a real
+"Google hotels and flights implementation" -- flagged rather than
+started, since this directly reverses the project's original explicit
+constraint ("fully simulated data, no real travel APIs, no new billing
+relationships") that Stage 1 was built around, and no such public
+Google API actually exists for this (Google Flights has no public API;
+the closest real options are paid third-party services like SerpApi's
+Google Hotels/Flights scraping endpoints or Amadeus for Developers,
+both of which are new paid billing relationships) -- needs the user's
+explicit direction before any code changes, not an assumption.

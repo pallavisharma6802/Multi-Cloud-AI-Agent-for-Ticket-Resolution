@@ -35,6 +35,12 @@ class TravelConstraints(BaseModel):
     date_range_end: Optional[str] = Field(
         default=None, description="ISO date (YYYY-MM-DD) the trip could start by (end of the acceptable range). Equal to date_range_start if a single exact date was given."
     )
+    dates_whole_month_ok: bool = Field(
+        default=False,
+        description="True if the user was asked whether to narrow dates or search the whole month, and "
+        "explicitly chose to search the whole month (e.g. replied 'whole month', 'search the whole month', "
+        "'any time works', 'no preference'). This is a resolved answer, not a missing one.",
+    )
     budget_amount: Optional[float] = Field(default=None, description="Numeric budget amount if stated, else null.")
     budget_scope: Optional[BudgetScope] = Field(
         default=None,

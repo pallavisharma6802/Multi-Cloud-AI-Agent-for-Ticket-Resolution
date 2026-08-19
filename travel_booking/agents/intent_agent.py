@@ -59,7 +59,10 @@ destination_code null -- do not guess the closest match.
 Dates: this system only has inventory for October 2026. If the user gives an exact date or a narrow range \
 (10 days or fewer), set date_range_start/date_range_end to those ISO dates. If they only give a vague \
 month/season reference ("sometime in October", "next month") with no narrowing, leave both null -- do NOT \
-invent a narrow range yourself.
+invent a narrow range yourself. HOWEVER, if the user was asked whether to narrow the dates or search the \
+whole month, and they explicitly chose the whole month (e.g. "whole month", "search the whole month", "any \
+time works", "no preference", "doesn't matter"), that is a resolved answer, not a missing one -- set \
+dates_whole_month_ok=true (leave date_range_start/end null, the whole-month default will be applied in code).
 
 Budget: distinguish carefully between a per-night hotel rate ("under $200/night", "hotel under 150 a \
 night") and a total trip budget ("$1500 total", "budget of 2000 for everything"). If the request gives a \
@@ -83,7 +86,8 @@ def _render_transcript(turns: List[ClarificationTurn]) -> str:
 def _evaluate_completeness(c: TravelConstraints) -> List[str]:
     missing = []
     if c.date_range_start is None or c.date_range_end is None:
-        missing.append("dates")
+        if not c.dates_whole_month_ok:
+            missing.append("dates")
     else:
         try:
             span = (date.fromisoformat(c.date_range_end) - date.fromisoformat(c.date_range_start)).days
@@ -195,7 +199,10 @@ class IntentAgent:
 
         date_start, date_end = c.date_range_start, c.date_range_end
         dates_defaulted = date_start is None or date_end is None
-        if dates_defaulted:
+        if dates_defaulted and c.dates_whole_month_ok:
+            date_start, date_end = DATASET_MIN_DATE, DATASET_MAX_DATE
+            assumptions.append("searching the whole available month, as you asked")
+        elif dates_defaulted:
             date_start, date_end = DATASET_MIN_DATE, DATASET_MAX_DATE
             assumptions.append("no specific dates given, searching the whole available month")
         elif "dates" in state.missing:
