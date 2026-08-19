@@ -18,6 +18,7 @@ asserted.
 - [Running locally](#running-locally)
 - [Evaluation](#evaluation)
 - [Analytics (BigQuery + Grafana)](#analytics-bigquery--grafana)
+- [Observability (LangSmith)](#observability-langsmith)
 - [Frontend](#frontend)
 - [CI/CD](#cicd)
 - [Project structure](#project-structure)
@@ -233,6 +234,31 @@ Four Grafana dashboards are provisioned automatically (`grafana/dashboards/`, wi
 - **`agent-performance.json`** — confidence distributions, escalation rate, intent self-consistency.
 - **`rag-health.json`** — faithfulness/relevance trend, retrieval-miss rate, relevant/candidate ratio.
 - **`ops-cost.json`** — iterations, LLM calls/tokens, latency percentiles, safety-net trip counts.
+
+## Observability (LangSmith)
+
+Optional, opt-in, alongside (not instead of) the BigQuery/Grafana analytics above — traces the LangGraph
+supervisor's node-by-node execution at [smith.langchain.com](https://smith.langchain.com). The app runs
+identically with this unset.
+
+1. Sign up and create an API key at smith.langchain.com if you don't already have one.
+2. Set in `.env`: `LANGSMITH_TRACING=true`, `LANGSMITH_API_KEY=<your-key>`, `LANGSMITH_PROJECT=ticket-agent`
+   (see `.env.example`).
+3. **These must reach the real process environment, not just `.env`.** Like `GOOGLE_APPLICATION_CREDENTIALS`
+   for BigQuery, the LangSmith SDK reads `os.environ` directly — pydantic-settings parsing `.env` into
+   `Settings` does not populate that. Export them in the shell before starting the server (or set them under
+   Docker Compose's `environment:` block), e.g.:
+   ```bash
+   export LANGSMITH_TRACING=true LANGSMITH_API_KEY=<your-key> LANGSMITH_PROJECT=ticket-agent
+   python3 -m uvicorn app.api.main:app --host 0.0.0.0 --port 8000
+   ```
+
+No code changes are required for node-level tracing — LangGraph wraps every node (including plain Python
+functions) in its own traced `Runnable`, so each node in a run shows up as its own span automatically. What's
+**not** captured automatically: the individual Bedrock calls inside each node. [`app/llm/bedrock_client.py`](app/llm/bedrock_client.py)
+calls `boto3` directly rather than a LangChain-wrapped LLM client, so a node's span shows its input/output state
+but not a nested per-call LLM trace (prompt, token counts, etc.) — that would need explicit `@traceable`
+instrumentation, not done here.
 
 ## Frontend
 
