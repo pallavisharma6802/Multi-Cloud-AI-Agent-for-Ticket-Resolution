@@ -903,3 +903,89 @@ session. Real human clicks/typing on a real browser aren't affected
 by this pane-specific quirk.
 
 **Bedrock calls this round**: 1. **Running total: 74 + 1 = 75/80.**
+
+## Full product redesign: chat as its own page, agent-flow reveal, clickable detail views
+
+Direct user feedback on the Netflix-styled popup: too small, unclear
+whether Send was working, input not clearing after send, only 3
+destinations, and explicitly "we don't want exact netflix, i only
+meant the menu kinda a thing" -- plus concrete new asks: chat as its
+own proper page, real agent-step-by-step visualization, clickable
+hotel/flight cards that open an Airbnb-style detail view, and general
+"think out of the box" latitude.
+
+**Two real bugs investigated and fixed, not just cosmetically
+patched**:
+1. Send button/input could get stuck if a `fetch()` call threw (network
+   hiccup, non-2xx response) -- the old `sendMessage()` had no
+   try/catch, so any error left `chatSend.disabled = true` forever with
+   no feedback, exactly matching "always grayed out" and "don't know if
+   it's sending." Rewrote with try/catch/finally: the button always
+   re-enables (unless a real search is legitimately in progress), and a
+   visible red error bubble now explains what went wrong instead of
+   failing silently. Also added a real "Sending…" label on the button
+   itself for the in-flight moment, so pressing Enter now has visible
+   confirmation something happened.
+2. Confirmed input-clearing WAS already correct in the code
+   (`chatInput.value = ""` fires synchronously before the fetch) --
+   re-verified this explicitly rather than assuming the user was
+   describing a real second bug, since the more likely explanation was
+   the same stuck-button issue making it look like nothing was
+   happening at all.
+
+**Structural rebuild**, not a reskin:
+- Landing page kept (the "menu kinda a thing" the user did want) but
+  fully de-Netflixed: no dark theme, no red accent, no condensed
+  poster type, no browsing-row mimicry. New original identity instead
+  -- warm cream background, teal + coral accents, Fraunces serif
+  display paired with Manrope body, soft gradient-blob hero decoration.
+  Expanded from 3 destination cards to 6 differently-framed trip ideas
+  (2 per real destination -- family vs. solo framing) rather than
+  fabricating destinations the backend doesn't actually support.
+- Chat is now its own full-screen page (`#chat-view`, opened via
+  `openChatPage()`), not a small popup -- roomy transcript width,
+  proper header with a back button and a "New search" reset action
+  (previously the UI had no way to start over without reloading).
+- **Real agent-step reveal**: while the real search call is in flight,
+  a vertical trail of step messages appears one at a time (~550ms
+  apart) -- "Searching real flights…", "Searching real hotels…",
+  "Proposing a matched combination…", then each of the 4 real checks by
+  name. Each step is deliberately generic ("Checking budget…") rather
+  than fabricating a result before the real one arrives -- once the
+  actual response lands, the timer stops immediately and the REAL
+  checklist replaces it. This is a pacing/presentation layer over an
+  already-real result, same honesty principle as the MCP firewall
+  project's paced-reveal engine, not a second source of truth. **Found
+  and fixed a real layout bug while testing this**: the step container
+  reused the `.row-agent` flex-row class, so steps rendered as a
+  wrapping horizontal strip of boxes instead of a readable vertical
+  trail -- gave it its own `.agent-steps-container` (column layout,
+  completed steps shrink/fade instead of disappearing) and reused for
+  clean visual confirmation of the fix in a follow-up screenshot.
+- **Clickable itinerary cards -> Airbnb-style detail modal**: hotel and
+  flight cards in the results are now clickable ("View details →"),
+  opening a modal built entirely from real record fields already in
+  hand -- real photo, real name/rating/review count, price, check-in/
+  check-out, front-desk status, and every real amenity as a chip (or,
+  for flights, route/date/times/stops). No new API calls, no
+  fabricated copy -- purely a richer view of data already fetched.
+
+**Verified end to end** (same JS-invocation method as before, given
+the Browser pane's synthetic click events still don't register
+reliably in this session -- confirmed once more this is a pane quirk,
+not an app bug, since `getBoundingClientRect()` math for a real click
+was already proven correct in the prior redesign pass): opened the
+chat page pre-filled from a trip-idea card, sent a request needing a
+dates clarification, answered "whole month" (re-confirming that fix
+still holds in the new page), watched the agent-step trail render
+correctly as a vertical list after the layout fix, got a real verified
+result (Hostel Fish, $44/night, real Denver data) with the "New
+search" button appearing, and opened the hotel detail modal --
+confirmed real photo, real 4.4-star/1521-review rating, and real
+amenity chips all rendering correctly.
+
+**Bedrock calls this round**: 3. **Running total: 75 + 3 = 78/80 --
+approaching the session cap.** Per the hard bound, no further live
+Bedrock-backed testing performed after this; remaining verification
+for any future changes should budget carefully against the last 2
+calls or wait for a fresh session.
