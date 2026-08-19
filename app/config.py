@@ -76,6 +76,10 @@ class Settings(BaseSettings):
         default=1, description="Max CRAG query rewrites before forcing proceed/escalate"
     )
 
+    # Travel booking: real-data source (opt-in; simulated dataset is the default/fallback)
+    serpapi_api_key: Optional[str] = Field(default=None, description="SerpApi key for Google Flights/Hotels APIs (optional)")
+    travel_data_source: str = Field(default="simulated", description="'simulated' or 'serpapi'")
+
     # BigQuery analytics sink
     enable_bigquery: bool = Field(default=False, description="Enable async BigQuery event sink")
     bigquery_project_id: Optional[str] = Field(default=None)

@@ -647,3 +647,90 @@ occurring edge cases (real check-in policies, real fees, real capacity
 limits) that the same 4-check Verification Agent logic should still
 catch correctly without modification, since it operates on whatever
 structured fields the data source provides, real or simulated.
+
+## Real-API decision revised: Amadeus dead, going with SerpApi Google Flights/Hotels
+
+The user visited developers.amadeus.com directly and found the free
+self-service portal was decommissioned July 2026 -- what's left is an
+"Enterprise API Portal" requiring a sales/access-request process, not a
+quick free signup. My earlier recommendation was stale. Re-researched
+live via WebSearch rather than relying on memory a second time:
+
+- Kiwi.com Tequila: no longer self-serve, invite-only now.
+- Skyscanner API: partner-only, no public free tier.
+- Duffel: genuinely free self-serve signup, but test mode returns
+  Duffel's own mock airline data, not live real-world fares; real fares
+  require a paid pay-as-you-go tier.
+- StayAPI: real free tier (50 requests, no card) for hotels only,
+  aggregates several real platforms.
+
+None of these matched the user's literal original ask ("Google hotels
+and flights") until checking **SerpApi's Google Flights API and Google
+Hotels API** specifically -- not an official Google product (none
+exists), but SerpApi legitimately queries Google's own real travel
+search results and returns them as structured JSON, so the underlying
+data genuinely is what Google Flights/Hotels shows. Free tier is
+~100-250 searches/month, self-serve. User confirmed: go with this.
+
+**Verified real request/response shapes via WebFetch against SerpApi's
+own docs pages before writing any code** (given the Amadeus miss, did
+not rely on memory this time):
+- `GET https://serpapi.com/search?engine=google_flights&departure_id=...&arrival_id=...&outbound_date=...`
+  -> `best_flights`/`other_flights` arrays, each with `flights[]` legs
+  (`departure_airport.time`, `arrival_airport.time`, `airline`,
+  `flight_number`), `price`, `booking_token`.
+- `GET https://serpapi.com/search?engine=google_hotels&q=...&check_in_date=...&check_out_date=...`
+  -> `properties[]`, each with `rate_per_night.extracted_lowest`,
+  `total_rate.extracted_lowest`, `amenities[]` (free text),
+  `check_in_time`/`check_out_time` (12h string), `images[].thumbnail`,
+  `overall_rating`, `property_token`.
+
+**Built `travel_booking/agents/serpapi_client.py`**: `search_flights()`
+and `search_hotels()`, normalizing real responses toward the same shape
+`data/flights.json`/`data/hotels.json` already use, so the rest of the
+pipeline (constraints, verification) doesn't need to know which source
+it's looking at. Added `serpapi_api_key`/`travel_data_source` to
+`app/config.py` (defaults: unset / `"simulated"` -- nothing changes for
+existing runs) and documented both in `.env.example`.
+
+**Honest, important gap found while building this, not glossed over**:
+the real Google Hotels search response does NOT include front-desk
+hours or room/max-occupancy data at all -- both are fields the
+simulated dataset invented specifically to exercise the
+arrival-vs-check-in and capacity checks. Against real data:
+- `arrival_vs_checkin` could only compare against `check_in_time`, not
+  "does the desk close before a late arrival" -- that whole trap
+  mechanism (H-AUS-03, H-DEN-02 in the simulated set) has no real-data
+  equivalent from this endpoint.
+- `capacity` cannot run at all against this data as retrieved here (no
+  occupancy field in the search response).
+- `amenities` still works, but amenity strings are free text ("Air
+  conditioning", "Free Wifi") rather than the simulated dataset's exact
+  controlled vocabulary, so matching has to be fuzzy/substring-based,
+  not exact membership.
+- `budget` translates cleanly, and better than expected: comparing
+  `rate_per_night` against `total_rate / nights` reveals real mandatory
+  fees not in the headline rate -- a naturally-occurring real-world
+  equivalent of the simulated resort-fee trap, discovered rather than
+  invented.
+
+Marked each of these clearly in the module docstring and inline in the
+normalized hotel dict (`front_desk_24hr`/`front_desk_closes`/
+`max_occupancy` all explicitly `None` when sourced from SerpApi,
+`resort_fee_inferred: true` flag on the computed fee) rather than
+silently defaulting them to something that would make the checks look
+like they still work the same way against real data. **Not yet
+resolved**: whether to drop the capacity check entirely in `serpapi`
+mode, degrade `arrival_vs_checkin` to a weaker check-in-time-only
+comparison, or find a different real data source/endpoint that does
+expose these -- needs a decision, flagged for next session/turn rather
+than silently picked.
+
+**Not yet wired into `TravelAgent`/the orchestrator, and not yet tested
+against live data** -- no API key exists yet (user needs to sign up
+free at serpapi.com and provide it). The module raises a clear
+`SerpApiError` if called without a key, verified working. Import and
+error-path both confirmed working, `pytest` unaffected (14/14 still
+pass) -- this is purely additive, no existing code path changed. Zero
+Bedrock calls this step (pure research + scaffolding). **Running total
+unchanged: 71/80.**
