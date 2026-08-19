@@ -1255,3 +1255,101 @@ against the session's Bedrock budget). **Running total unchanged:
 All 4 new-feature tasks (accounts, planner, group trips, RL
 aggregation) are now genuinely complete end to end -- real backend,
 real persistence, real frontend, all verified working together.
+
+## Gap audit: 10 real bugs/gaps found and fixed, all empirically verified
+
+User asked to "find gaps and fix them all." Ran an actual audit rather
+than re-reading the code and declaring it fine -- grepped for missing
+pieces, then wrote small throwaway scripts to empirically prove or
+disprove each suspicion before touching anything, same discipline as
+the rest of this project (verify, don't assume).
+
+**Found (all confirmed with a real repro before fixing):**
+
+1. **No friends UI at all.** The whole friends backend (request/
+   accept/list) from two commits ago had zero frontend -- `grep` for
+   any reference to `/api/friends` in `index.html` returned nothing.
+2. **Bidirectional duplicate friendships.** A->B and B->A were both
+   insertable (the UNIQUE constraint is on ordered columns, but a
+   friendship is unordered) -- confirmed via a throwaway script: both
+   inserts succeeded, and the resulting friend list showed the same
+   person twice.
+3. **Group trip length derived from the availability window**, not
+   asked for. Confirmed two concrete failures: everyone free on the
+   same single day silently became a 1-night trip; members with
+   non-overlapping availability silently became a 24-night trip nobody
+   requested, with no warning surfaced anywhere.
+4. **RL reward loop broken by any server restart.** The
+   group_id->strategy mapping needed by the feedback endpoint lived
+   only in a Python dict (`_group_search_cache`), never in the
+   database -- confirmed the column didn't exist in the schema at all.
+5. **`trip_groups.status` was a dead column** -- written once at
+   creation, never updated to `'searched'`, so it could never be used
+   to show whether a group had actually run a search.
+6. **Zero tests for `travel_booking`** -- `grep -rl travel_booking
+   tests/` matched nothing; the entire package (4 real agents, auth,
+   persistence, the bandit) had no unit test coverage at all, only the
+   separate live-data battery script.
+7. **Frontend swallowed 401s into a misleading empty state.** Planner/
+   groups fetches never checked `res.ok`, so an expired session
+   rendered as "no trips yet" instead of telling the user they'd been
+   signed out.
+8. **No session cleanup.** Expired session rows were correctly
+   rejected on lookup but never deleted, so the table grows forever.
+9. **No migration path for an existing local database.** Adding a
+   column to `SCHEMA` does nothing for a DB file that already exists
+   (`CREATE TABLE IF NOT EXISTS` is a no-op there) -- an existing
+   user's real accounts/saved trips would have needed the whole file
+   deleted to pick up the `last_strategy` fix in item 4.
+10. Dead `_date` import left over from an earlier edit.
+
+**Fixes**, each re-verified against the real running server after
+fixing (not just re-read and assumed correct):
+- Friends: full page (`openFriends()`) -- add by username, incoming
+  requests with Accept, friends list, a live unread-count badge on the
+  nav item. Screenshot- and DOM-confirmed both the pending-request and
+  post-accept states render correctly.
+- `send_friend_request` now checks both directions before inserting;
+  if the other person already requested you, it auto-accepts instead
+  of creating a redundant pending row. Verified: A requests B, B
+  requests A back -> auto-accepted, friend list shows exactly one
+  entry, a further duplicate request correctly 409s
+  ("you're already friends").
+- `MemberPreference` and the group-preferences API/form both gained an
+  explicit `nights` field, independent of the availability window.
+  `aggregate()` now picks trip length via the same strategy arm as
+  budget (min/max/mean for conservative/generous/balanced) and returns
+  a `warnings` list -- populated when members' availability doesn't
+  actually overlap, or when they asked for meaningfully different trip
+  lengths. Verified: two members both wanting 4 nights across a 19-day
+  shared window correctly search for exactly 4 nights (was 19); two
+  members with disjoint availability and different nights both
+  produced the expected warning text; the "balanced" test's math bug
+  was in my own test's arithmetic (mean of 2 and 5 isn't 3), not the
+  aggregator -- fixed the test's expected numbers, not the code.
+- Added `trip_groups.last_strategy`, written at search time alongside
+  setting `status='searched'`. The feedback endpoint now reads it from
+  the database instead of the in-memory cache (removed). **Verified
+  by actually killing and restarting the server mid-flow**: ran a
+  group search, restarted uvicorn, then submitted feedback -- correctly
+  recorded the reward (`times_rewarded` incremented) instead of the
+  previous 400 "no search has been run."
+- Added `travel_booking/db.py:_migrate()` (additive `ALTER TABLE`) so
+  an existing database gains new columns in place. Verified against a
+  hand-built legacy schema missing the column.
+- New `tests/test_travel_booking.py`, 26 tests: all 4 verification
+  checks (including the amenity-trap, resort-fee, late-arrival,
+  next-day-arrival, capacity, missing-real-world-field, and fuzzy-
+  amenity-matching cases), the bandit aggregator's 3 strategies and
+  its epsilon-greedy selection, password hashing/session lifecycle
+  (including the expiry case), and the schema/migration. 40/40 total
+  now pass (was 14).
+- `authedFetch()` wrapper: any 401 now clears client-side auth state,
+  closes open pages, and prompts sign-in with a clear message, used by
+  every planner/groups/friends fetch.
+- `db.purge_expired_sessions()`, called once at `init_db()` startup.
+- Removed the dead `_date` import.
+
+**Bedrock calls this round**: 0 (every fix and its verification was
+either pure logic, SQLite, or the group-trip path, which is
+Bedrock-free by design). **Running total unchanged: 78/80.**

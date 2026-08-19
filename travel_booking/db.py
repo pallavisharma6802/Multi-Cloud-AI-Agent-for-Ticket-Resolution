@@ -63,6 +63,10 @@ CREATE TABLE IF NOT EXISTS trip_groups (
     destination_code TEXT NOT NULL,
     join_code TEXT UNIQUE NOT NULL,
     status TEXT NOT NULL DEFAULT 'collecting',  -- collecting | searched
+    -- Which bandit arm the last search used. Persisted (not just held in
+    -- memory) so the feedback/reward endpoint still works after a restart --
+    -- otherwise the RL reward loop silently breaks and every 👍/👎 is lost.
+    last_strategy TEXT,
     created_at REAL NOT NULL
 );
 
@@ -97,11 +101,40 @@ def get_connection() -> sqlite3.Connection:
     return conn
 
 
+def _migrate(conn: sqlite3.Connection) -> None:
+    """Additive column migrations for databases created by an earlier version.
+
+    `CREATE TABLE IF NOT EXISTS` silently does nothing when a table already
+    exists, so a column added to SCHEMA later never lands on an existing local
+    DB. Rather than telling people to delete their database (which would throw
+    away their real accounts and saved trips), add missing columns in place.
+    """
+    existing = {r["name"] for r in conn.execute("PRAGMA table_info(trip_groups)")}
+    if existing and "last_strategy" not in existing:
+        conn.execute("ALTER TABLE trip_groups ADD COLUMN last_strategy TEXT")
+
+
+def purge_expired_sessions(conn: Optional[sqlite3.Connection] = None) -> int:
+    """Delete sessions past their expiry. Without this the table grows forever;
+    expired rows are already treated as logged-out, they were just never removed."""
+    owned = conn is None
+    conn = conn or get_connection()
+    try:
+        cur = conn.execute("DELETE FROM sessions WHERE expires_at < ?", (now(),))
+        conn.commit()
+        return cur.rowcount
+    finally:
+        if owned:
+            conn.close()
+
+
 def init_db() -> None:
     conn = get_connection()
     try:
         conn.executescript(SCHEMA)
+        _migrate(conn)
         conn.commit()
+        purge_expired_sessions(conn)
     finally:
         conn.close()
 

@@ -170,6 +170,21 @@
   .member-badge.waiting { background: var(--surface-2); color: var(--muted-soft); }
 
   .strategy-banner { background: var(--coral-soft); color: #a33d1f; padding: 12px 16px; border-radius: 12px; font-size: 13px; margin-bottom: 16px; }
+  .warning-banner { background: #fff6e0; color: #8a5b00; border: 1px solid #f0d391; padding: 11px 15px; border-radius: 10px; font-size: 12.5px; margin-bottom: 12px; }
+
+  .nav-badge { display: inline-flex; align-items: center; justify-content: center; min-width: 17px; height: 17px;
+    padding: 0 5px; margin-left: 5px; border-radius: 9px; background: var(--coral); color: white; font-size: 10.5px; font-weight: 800; }
+  .friend-row { display: flex; align-items: center; gap: 11px; background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius-sm); padding: 13px 15px; margin-bottom: 9px; }
+  .friend-row .avatar { width: 34px; height: 34px; border-radius: 50%; background: var(--teal-soft); color: var(--teal-dark);
+    display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 800; flex-shrink: 0; }
+  .friend-row .who { flex: 1; min-width: 0; }
+  .friend-row .who .name { font-size: 14px; font-weight: 700; }
+  .friend-row .who .handle { font-size: 12px; color: var(--muted); }
+  .friend-row .accept-btn { background: var(--pass); color: white; border: none; padding: 8px 15px; border-radius: 18px; font-size: 12.5px; font-weight: 700; cursor: pointer; }
+  .section-sub { font-size: 11.5px; font-weight: 700; color: var(--muted-soft); text-transform: uppercase;
+    letter-spacing: 0.05em; margin: 24px 0 10px; }
+  .section-sub:first-child { margin-top: 0; }
   .feedback-row { display: flex; gap: 10px; margin-top: 16px; }
   .feedback-row button { flex: 1; padding: 12px; border-radius: 10px; font-size: 13.5px; font-weight: 700; cursor: pointer; border: none; }
   .feedback-row .accept-btn { background: var(--pass); color: white; }
@@ -376,6 +391,15 @@
     <span class="title">My Planner</span>
   </div>
   <div class="page-body"><div class="page-body-inner" id="planner-body"></div></div>
+</div>
+
+<!-- ============ FRIENDS PAGE ============ -->
+<div id="friends-view" class="page-view">
+  <div class="chat-header">
+    <button class="back-btn" onclick="closePage('friends-view')">←</button>
+    <span class="title">Friends</span>
+  </div>
+  <div class="page-body"><div class="page-body-inner" id="friends-body"></div></div>
 </div>
 
 <!-- ============ GROUPS PAGE ============ -->
@@ -828,6 +852,7 @@ async function checkAuth() {
     else { CURRENT_USER = null; }
   } catch { CURRENT_USER = null; }
   updateNavForAuth();
+  refreshFriendBadge();
 }
 
 function updateNavForAuth() {
@@ -836,6 +861,7 @@ function updateNavForAuth() {
     const initial = (CURRENT_USER.display_name || CURRENT_USER.username)[0].toUpperCase();
     el.innerHTML = `
       <button class="nav-link" onclick="openPlanner()">My planner</button>
+      <button class="nav-link" onclick="openFriends()">Friends<span id="friend-badge" class="nav-badge hidden">0</span></button>
       <button class="nav-link" onclick="openGroups()">Group trips</button>
       <div class="user-chip"><div class="avatar">${initial}</div>${CURRENT_USER.display_name}</div>
       <button class="nav-link" onclick="doLogout()">Log out</button>
@@ -921,6 +947,110 @@ function requireAuthOrPrompt() {
   return true;
 }
 
+/* Shared fetch wrapper: a 401 (expired/cleared session) used to fall through
+   and render a misleading "nothing here yet" empty state instead of telling
+   the user they'd been signed out. Now it re-syncs auth state and prompts. */
+async function authedFetch(url, opts) {
+  const res = await fetch(url, opts);
+  if (res.status === 401) {
+    CURRENT_USER = null;
+    updateNavForAuth();
+    document.querySelectorAll(".page-view.open").forEach(el => el.classList.remove("open"));
+    document.body.style.overflow = "";
+    openAuthModal("login");
+    throw new Error("Your session expired -- please sign in again.");
+  }
+  return res;
+}
+
+/* =========================================================================
+   FRIENDS
+   ========================================================================= */
+async function openFriends() {
+  if (!requireAuthOrPrompt()) return;
+  openPageEl("friends-view");
+  await renderFriends();
+}
+
+async function renderFriends() {
+  const body = document.getElementById("friends-body");
+  body.innerHTML = `<div class="empty-state">Loading…</div>`;
+  let data;
+  try {
+    const res = await authedFetch("/api/friends");
+    data = await res.json();
+  } catch (err) { body.innerHTML = `<div class="error-bubble">${err.message}</div>`; return; }
+
+  let html = `<div class="inline-form">
+    <label>Add a friend by username</label>
+    <input type="text" id="friend-username" placeholder="e.g. bob" />
+    <button class="btn-submit" onclick="sendFriendRequest()">Send friend request</button>
+    <div id="friend-msg"></div>
+  </div>`;
+
+  if (data.incoming_requests && data.incoming_requests.length) {
+    html += `<div class="section-sub">Requests waiting on you</div>`;
+    html += data.incoming_requests.map(r => `
+      <div class="friend-row">
+        <div class="avatar">${(r.display_name || r.username)[0].toUpperCase()}</div>
+        <div class="who"><div class="name">${r.display_name}</div><div class="handle">@${r.username}</div></div>
+        <button class="accept-btn" onclick="acceptFriend(${r.request_id})">Accept</button>
+      </div>`).join("");
+  }
+
+  html += `<div class="section-sub">Your friends</div>`;
+  if (!data.friends || !data.friends.length) {
+    html += `<div class="empty-state" style="padding:34px 20px"><div class="big">🧑‍🤝‍🧑</div>No friends yet — add someone by username above, then plan a trip together.</div>`;
+  } else {
+    html += data.friends.map(f => `
+      <div class="friend-row">
+        <div class="avatar">${(f.display_name || f.username)[0].toUpperCase()}</div>
+        <div class="who"><div class="name">${f.display_name}</div><div class="handle">@${f.username}</div></div>
+      </div>`).join("");
+  }
+  body.innerHTML = html;
+  updateFriendBadge(data.incoming_requests ? data.incoming_requests.length : 0);
+}
+
+function updateFriendBadge(count) {
+  const badge = document.getElementById("friend-badge");
+  if (!badge) return;
+  badge.textContent = count;
+  badge.classList.toggle("hidden", !count);
+}
+
+async function refreshFriendBadge() {
+  if (!CURRENT_USER) return;
+  try {
+    const res = await fetch("/api/friends");
+    if (!res.ok) return;
+    const data = await res.json();
+    updateFriendBadge((data.incoming_requests || []).length);
+  } catch {}
+}
+
+async function sendFriendRequest() {
+  const username = document.getElementById("friend-username").value.trim();
+  const msg = document.getElementById("friend-msg");
+  if (!username) return;
+  try {
+    const res = await authedFetch("/api/friends/request", {
+      method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ username }),
+    });
+    const data = await res.json();
+    if (!res.ok) { msg.innerHTML = `<div class="auth-error" style="margin-top:12px">${data.detail}</div>`; return; }
+    if (data.auto_accepted) msg.innerHTML = `<div style="color:var(--pass);font-size:12.5px;margin-top:12px;font-weight:700">They'd already requested you — you're now friends.</div>`;
+    await renderFriends();
+  } catch (err) {
+    msg.innerHTML = `<div class="auth-error" style="margin-top:12px">${err.message}</div>`;
+  }
+}
+
+async function acceptFriend(requestId) {
+  await authedFetch(`/api/friends/accept/${requestId}`, { method: "POST" });
+  await renderFriends();
+}
+
 /* =========================================================================
    PLANNER
    ========================================================================= */
@@ -929,8 +1059,11 @@ async function openPlanner() {
   openPageEl("planner-view");
   const body = document.getElementById("planner-body");
   body.innerHTML = `<div class="empty-state">Loading…</div>`;
-  const res = await fetch("/api/planner");
-  const data = await res.json();
+  let data;
+  try {
+    const res = await authedFetch("/api/planner");
+    data = await res.json();
+  } catch (err) { body.innerHTML = `<div class="error-bubble">${err.message}</div>`; return; }
   if (!data.trips || !data.trips.length) {
     body.innerHTML = `<div class="empty-state"><div class="big">✈️🏨</div>No saved trips yet.<br/>Verify a trip in chat and tap "Save to my planner."</div>`;
     return;
@@ -987,8 +1120,11 @@ async function openGroups() {
 async function renderGroupsHome() {
   const body = document.getElementById("groups-body");
   body.innerHTML = `<div class="empty-state">Loading…</div>`;
-  const res = await fetch("/api/groups");
-  const data = await res.json();
+  let data;
+  try {
+    const res = await authedFetch("/api/groups");
+    data = await res.json();
+  } catch (err) { body.innerHTML = `<div class="error-bubble">${err.message}</div>`; return; }
   let html = `<div class="groups-actions">
     <button onclick="showCreateGroupForm()">+ Create a group trip</button>
     <button onclick="showJoinGroupForm()">Join with a code</button>
@@ -1085,8 +1221,9 @@ function renderGroupPreferenceForm() {
   const amenityChips = AMENITY_OPTIONS.map(a => `<label class="filter-chip"><input type="checkbox" value="${a}" /> ${a.replace('_', ' ')}</label>`).join("");
   return `<div class="inline-form">
     <div class="pair-label" style="margin-bottom:14px">Your preferences for this trip</div>
-    <label>From</label><input type="text" id="gp-date-start" placeholder="2026-10-05" />
-    <label>To</label><input type="text" id="gp-date-end" placeholder="2026-10-08" />
+    <label>I'm available from</label><input type="text" id="gp-date-start" placeholder="2026-10-05" />
+    <label>…until</label><input type="text" id="gp-date-end" placeholder="2026-10-12" />
+    <label>How many nights do you want to stay?</label><input type="number" id="gp-nights" value="3" min="1" />
     <label>How many people are you bringing (incl. you)</label><input type="number" id="gp-party" value="1" min="1" />
     <label>Your budget</label><input type="number" id="gp-budget" placeholder="e.g. 200" />
     <label>Scope</label>
@@ -1100,6 +1237,7 @@ async function submitGroupPreferences() {
   const body = {
     date_range_start: document.getElementById("gp-date-start").value,
     date_range_end: document.getElementById("gp-date-end").value,
+    nights: parseInt(document.getElementById("gp-nights").value) || 3,
     party_size: parseInt(document.getElementById("gp-party").value) || 1,
     budget_amount: parseFloat(document.getElementById("gp-budget").value) || null,
     budget_scope: document.getElementById("gp-scope").value,
@@ -1127,7 +1265,8 @@ async function runGroupSearch(groupId) {
 function renderGroupResults(data) {
   const resultsArea = document.getElementById("group-results-area");
   const options = [{ hotel: data.hotel, flight: data.flight, explanation: data.explanation }, ...(data.options || []).filter(o => !data.hotel || o.hotel.id !== data.hotel.id)];
-  let html = `<div class="strategy-banner">🤖 Combined ${data.members_count} people's preferences using the <b>${data.strategy}</b> strategy — ${data.explanation ? '' : ''}${data.strategy_description}.</div>`;
+  let html = `<div class="strategy-banner">🤖 Combined ${data.members_count} ${data.members_count === 1 ? "person's" : "people's"} preferences using the <b>${data.strategy}</b> strategy — ${data.strategy_description}. Searching ${data.nights} night${data.nights === 1 ? '' : 's'}.</div>`;
+  (data.warnings || []).forEach(w => { html += `<div class="warning-banner">⚠️ ${w}</div>`; });
 
   const opt = options[0];
   const exp = opt.explanation;

@@ -38,35 +38,50 @@ EPSILON = 0.15  # exploration rate: fraction of the time we try a non-greedy arm
 
 ARMS = ("conservative", "balanced", "generous")
 ARM_DESCRIPTIONS = {
-    "conservative": "tightest budget across the group, only amenities everyone asked for",
-    "balanced": "average budget across the group, amenities most of the group asked for",
-    "generous": "loosest budget across the group, any amenity anyone asked for",
+    "conservative": "tightest budget across the group, shortest trip length, only amenities everyone asked for",
+    "balanced": "average budget and trip length across the group, amenities most of the group asked for",
+    "generous": "loosest budget across the group, longest trip length, any amenity anyone asked for",
 }
 
 
 class MemberPreference:
     def __init__(self, date_range_start: str, date_range_end: str, party_size: int,
-                 budget_amount: Optional[float], budget_scope: str, required_amenities: List[str]):
+                 budget_amount: Optional[float], budget_scope: str, required_amenities: List[str],
+                 nights: int = 3):
         self.date_range_start = date_range_start
         self.date_range_end = date_range_end
         self.party_size = party_size
         self.budget_amount = budget_amount
         self.budget_scope = budget_scope
         self.required_amenities = required_amenities
+        # How long THIS member wants the trip to be. Deliberately separate from
+        # the date range, which is the window they're available within -- the
+        # two are different things, and conflating them (deriving trip length
+        # from window width) produced badly wrong stays: everyone free on the
+        # same single day became a 1-night trip, and members with disjoint
+        # availability became a 24-night trip nobody asked for.
+        self.nights = nights
 
 
-def _intersect_dates(members: List[MemberPreference]) -> tuple[str, str]:
-    """Overlapping date range across every member. Falls back to the widest
-    member's range if there's genuinely no overlap (search will then likely
-    come back unsatisfiable, honestly, rather than silently picking one
-    person's dates over everyone else's)."""
+def _intersect_dates(members: List[MemberPreference]) -> tuple[str, str, Optional[str]]:
+    """Overlapping availability window across every member.
+
+    Returns (start, end, warning). When there's genuinely no overlap we fall
+    back to the union of everyone's windows, but return a warning so the
+    caller can surface it -- silently searching a window nobody actually
+    agreed on is exactly the kind of quiet wrong answer this project's
+    verification discipline exists to avoid."""
     starts = [date.fromisoformat(m.date_range_start) for m in members]
     ends = [date.fromisoformat(m.date_range_end) for m in members]
     latest_start, earliest_end = max(starts), min(ends)
     if latest_start > earliest_end:
-        # no real overlap -- use the union instead of pretending one exists
-        return min(starts).isoformat(), max(ends).isoformat()
-    return latest_start.isoformat(), earliest_end.isoformat()
+        return (
+            min(starts).isoformat(),
+            max(ends).isoformat(),
+            "Your group's available dates don't actually overlap, so this searched everyone's "
+            "combined window instead. Agree on shared dates for a result everyone can make.",
+        )
+    return latest_start.isoformat(), earliest_end.isoformat(), None
 
 
 def _select_arm() -> str:
@@ -129,9 +144,29 @@ def aggregate(members: List[MemberPreference]) -> dict:
 
     strategy = _select_arm()
     record_chosen(strategy)
+    warnings: List[str] = []
 
-    date_start, date_end = _intersect_dates(members)
+    date_start, date_end, date_warning = _intersect_dates(members)
+    if date_warning:
+        warnings.append(date_warning)
     party_size = sum(m.party_size for m in members)
+
+    # Trip length is a real preference trade-off between members, so it's
+    # decided by the same strategy arm as budget/amenities rather than by an
+    # arbitrary fixed rule.
+    nights_requested = [max(1, m.nights) for m in members]
+    if strategy == "conservative":
+        nights = min(nights_requested)
+    elif strategy == "generous":
+        nights = max(nights_requested)
+    else:
+        nights = round(sum(nights_requested) / len(nights_requested))
+    nights = max(1, int(nights))
+    if len(set(nights_requested)) > 1:
+        warnings.append(
+            f"Group members asked for different trip lengths ({min(nights_requested)}-"
+            f"{max(nights_requested)} nights); the '{strategy}' strategy used {nights}."
+        )
 
     budgets = [m.budget_amount for m in members if m.budget_amount is not None]
     if strategy == "conservative":
@@ -162,8 +197,10 @@ def aggregate(members: List[MemberPreference]) -> dict:
         "strategy_description": ARM_DESCRIPTIONS[strategy],
         "date_range_start": date_start,
         "date_range_end": date_end,
+        "nights": nights,
         "party_size": party_size,
         "budget_amount": budget_amount,
         "budget_scope": budget_scope,
         "required_amenities": required_amenities,
+        "warnings": warnings,
     }

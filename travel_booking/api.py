@@ -9,7 +9,6 @@ import json
 import secrets
 import sys
 import uuid
-from datetime import date as _date
 from pathlib import Path
 from typing import List, Optional
 
@@ -308,15 +307,34 @@ def send_friend_request(req: FriendRequest, session_token: Optional[str] = Cooki
             raise HTTPException(404, "no user with that username")
         if target["id"] == user["id"]:
             raise HTTPException(400, "can't friend yourself")
-        try:
-            conn.execute(
-                "INSERT INTO friendships (requester_id, addressee_id, status, created_at) VALUES (?, ?, 'pending', ?)",
-                (user["id"], target["id"], now()),
-            )
+
+        # A friendship is an UNORDERED pair, but the table's UNIQUE constraint is
+        # on the ordered (requester, addressee) columns -- so A->B and B->A were
+        # both insertable, producing two rows for one relationship and listing
+        # that friend twice. Check both directions explicitly.
+        existing = conn.execute(
+            """SELECT id, requester_id, status FROM friendships
+               WHERE (requester_id = ? AND addressee_id = ?) OR (requester_id = ? AND addressee_id = ?)""",
+            (user["id"], target["id"], target["id"], user["id"]),
+        ).fetchone()
+
+        if existing:
+            if existing["status"] == "accepted":
+                raise HTTPException(409, "you're already friends")
+            if existing["requester_id"] == user["id"]:
+                raise HTTPException(409, "you've already sent them a request")
+            # They already requested US -- requesting back is mutual consent, so
+            # accept it rather than making them wait on a redundant approval.
+            conn.execute("UPDATE friendships SET status = 'accepted' WHERE id = ?", (existing["id"],))
             conn.commit()
-        except Exception:
-            raise HTTPException(409, "already requested or already friends")
-        return {"ok": True}
+            return {"ok": True, "auto_accepted": True}
+
+        conn.execute(
+            "INSERT INTO friendships (requester_id, addressee_id, status, created_at) VALUES (?, ?, 'pending', ?)",
+            (user["id"], target["id"], now()),
+        )
+        conn.commit()
+        return {"ok": True, "auto_accepted": False}
     finally:
         conn.close()
 
@@ -342,7 +360,7 @@ def list_friends(session_token: Optional[str] = Cookie(None)):
     conn = get_connection()
     try:
         accepted = conn.execute(
-            """SELECT u.id, u.username, u.display_name FROM friendships f
+            """SELECT DISTINCT u.id, u.username, u.display_name FROM friendships f
                JOIN users u ON u.id = (CASE WHEN f.requester_id = ? THEN f.addressee_id ELSE f.requester_id END)
                WHERE (f.requester_id = ? OR f.addressee_id = ?) AND f.status = 'accepted'""",
             (user["id"], user["id"], user["id"]),
@@ -379,6 +397,10 @@ class JoinGroupRequest(BaseModel):
 class GroupPreferenceRequest(BaseModel):
     date_range_start: str
     date_range_end: str
+    # How long this member wants the trip to be. Separate from the date range,
+    # which is the window they're AVAILABLE within -- deriving one from the
+    # other produced badly wrong stays (see preference_aggregator).
+    nights: int = 3
     party_size: int = 1
     budget_amount: Optional[float] = None
     budget_scope: str = "total_trip"
@@ -496,9 +518,6 @@ def submit_group_preferences(group_id: int, req: GroupPreferenceRequest, session
         conn.close()
 
 
-_group_search_cache: dict[int, str] = {}  # group_id -> strategy used, for feedback
-
-
 @app.post("/api/groups/{group_id}/search")
 def search_group_trip(group_id: int, session_token: Optional[str] = Cookie(None)):
     """Aggregates every member's submitted preferences via the bandit
@@ -525,16 +544,25 @@ def search_group_trip(group_id: int, session_token: Optional[str] = Cookie(None)
             date_range_start=p["date_range_start"], date_range_end=p["date_range_end"],
             party_size=p["party_size"], budget_amount=p.get("budget_amount"),
             budget_scope=p.get("budget_scope", "total_trip"), required_amenities=p.get("required_amenities", []),
+            nights=p.get("nights", 3),
         ))
 
     agg = aggregate(members)
-    _group_search_cache[group_id] = agg["strategy"]
+    # Persist the chosen arm so the feedback/reward endpoint still works after a
+    # server restart -- an in-memory dict silently dropped every 👍/👎 on restart.
+    conn = get_connection()
+    try:
+        conn.execute(
+            "UPDATE trip_groups SET last_strategy = ?, status = 'searched' WHERE id = ?",
+            (agg["strategy"], group_id),
+        )
+        conn.commit()
+    finally:
+        conn.close()
 
     constraints = ResolvedConstraints(
         destination_code=dest, destination_raw=dest,
-        party_size=agg["party_size"], nights=max(1, (
-            _date.fromisoformat(agg["date_range_end"]) - _date.fromisoformat(agg["date_range_start"])
-        ).days),
+        party_size=agg["party_size"], nights=agg["nights"],
         nights_defaulted=False, date_range_start=agg["date_range_start"], date_range_end=agg["date_range_end"],
         dates_defaulted=False, budget_amount=agg["budget_amount"], budget_scope=agg["budget_scope"],
         required_amenities=agg["required_amenities"], raw_request=f"group trip #{group_id}",
@@ -567,6 +595,8 @@ def search_group_trip(group_id: int, session_token: Optional[str] = Cookie(None)
     resp["strategy"] = agg["strategy"]
     resp["strategy_description"] = agg["strategy_description"]
     resp["members_count"] = len(members)
+    resp["nights"] = agg["nights"]
+    resp["warnings"] = agg["warnings"]
     return resp
 
 
@@ -574,9 +604,14 @@ def search_group_trip(group_id: int, session_token: Optional[str] = Cookie(None)
 def group_feedback(group_id: int, req: GroupFeedbackRequest, session_token: Optional[str] = Cookie(None)):
     """The reward signal for the bandit: did the group actually accept the
     trip the chosen strategy produced?"""
-    _require_user(session_token)
-    strategy = _group_search_cache.get(group_id)
-    if strategy is None:
+    user = _require_user(session_token)
+    conn = get_connection()
+    try:
+        group = _group_or_404(conn, group_id, user["id"])
+        strategy = group.get("last_strategy")
+    finally:
+        conn.close()
+    if not strategy:
         raise HTTPException(400, "no search has been run for this group yet")
     record_reward(strategy, req.accepted)
     return {"ok": True, "strategy": strategy, "accepted": req.accepted}
