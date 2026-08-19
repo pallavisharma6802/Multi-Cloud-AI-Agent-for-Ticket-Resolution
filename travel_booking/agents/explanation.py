@@ -29,7 +29,13 @@ CHECK_LABELS = {
 
 def _checklist(result: VerificationResult) -> List[dict]:
     return [
-        {"label": CHECK_LABELS[c.name], "passed": c.passed, "detail": c.detail}
+        {
+            "label": CHECK_LABELS[c.name],
+            "passed": c.passed,
+            "detail": c.detail,
+            "actual": c.actual,
+            "expected": c.expected,
+        }
         for c in result.checks
     ]
 

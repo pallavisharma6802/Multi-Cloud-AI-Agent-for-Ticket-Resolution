@@ -426,4 +426,98 @@ just repeated cleanup.
 No history rewriting was performed at any point. Every stage was
 committed as its own normal commit with an honest message once its
 done-criteria were met (`b760a1f` Stage 1, `8b818a2` Stage 2, `02d537f`
-Stage 3, plus a closing Stage 4 commit after this log entry).
+Stage 3, `ce5caa1` Stage 4 functional).
+
+## Stage 4 visual redesign (post-functional pass)
+
+Requested after Stage 4's functionality was already confirmed and
+committed -- explicitly scoped as visual-only, no logic changes except
+one: `explanation.py`'s `_checklist()` was missing `actual`/`expected`
+from each `CheckResult` (only `label`/`passed`/`detail` were exposed),
+which the new design needs to show a real numeric/text comparison per
+check instead of only a prose sentence. Added those two fields through
+to the frontend; this is additive (new fields), nothing existing changed
+shape.
+
+**Design process**: read the same `frontend-design` skill used for the
+MCP firewall redesign
+(`~/.claude/plugins/marketplaces/claude-plugins-official/plugins/frontend-design/skills/frontend-design/SKILL.md`,
+not separately invocable as a slash-skill in this session, read directly
+as source). Brainstormed a token system before writing any code and
+checked it against the skill's three named AI-design-default clusters
+(cream+serif+terracotta; near-black+one neon accent; broadsheet
+newspaper) to make sure this wasn't defaulting to one of them.
+
+**Concept**: "ticket/departure-board," grounded in the subject itself
+(travel documents, boarding passes, airport signage) rather than reusing
+the MCP firewall project's dark-terminal identity, which is a different
+project with a different personality (adversarial/security vs.
+transactional/booking). Most of the page is a warm ivory "ticket stock"
+zone with a faint ruled-paper background and a dashed perforation
+divider (a structural device that's actually true of the subject --
+ticket stock is perforated -- not decoration for its own sake). The
+verification section breaks from that into a dark charcoal "departure
+board" zone -- a deliberate, justified risk per the skill's "take one
+real risk" guidance, reserved for the one section the user explicitly
+named as the signature moment.
+
+**Type**: Archivo (700/800) for display/headings, Inter for body copy,
+Space Mono for all data -- flight numbers, times, prices, the board's
+comparison values -- since ticket data is classically monospace-stamped.
+Three distinct accent hues, each scoped to one semantic role only
+(never reused across roles, same discipline as the firewall project's
+verdict colors): steel blue for transit, terracotta for lodging, amber
+for the board/confirmation moments.
+
+**Requirement-by-requirement**:
+1. Skill followed as above, concept and tokens chosen before code.
+2. Chat now has 3 visually distinct message treatments: a question
+   (paper bubble, amber-tagged, asymmetric corner) vs. a confirmation
+   (bordered "stub" with a stamp icon and monospace receipt-style text,
+   not a bubble at all) vs. searching (a dark pill with 3 amber pulsing
+   flap-dots, replacing the old static gray "status: searching..." text
+   entirely) -- confirmed live: the searching pill was caught mid-render
+   in an actual test run (screenshot in this session's browser history).
+3. Hotel and flight cards now carry distinct icon/accent tags (🏨
+   terracotta "Lodging" vs. ✈ blue "Transit") but share one joined frame
+   with a circular link-icon badge straddling the seam between them --
+   reads as one evaluated pair, not two unrelated cards.
+4. The verification board is the dominant element on the page once it
+   lands: dark zone, large glowing banner (amber for verified, red for
+   unsatisfiable -- deliberately equal visual weight, differentiated only
+   by hue/glow-color, not by one being louder than the other), each
+   check row shows the actual compared value against the limit as two
+   distinct styled tokens (e.g. `$224.00/night` in a red pill vs.
+   `<= $150.00/night`) alongside the prose detail, and rows reveal with a
+   staggered 3D flip-in animation (160ms apart) rather than appearing at
+   once. `prefers-reduced-motion` is respected (animations disabled,
+   final state shown immediately).
+
+**Verification**: ran 2 real end-to-end requests through the actual
+redesigned UI in a real browser tab (not curl this time, since this was
+a visual pass) -- one clean pass (`clean_austin_family`-equivalent,
+green "Verified" banner, all 4 checks passing with real values) and one
+trap (`trap_aus02_pool_closed`-equivalent, red "Couldn't fully satisfy"
+banner, the resort-fee trap's real $224.00-vs-$150.00 comparison visibly
+failing while the other 3 checks correctly show passing). Screenshot-
+verified both states at desktop width (800x1700, to see the full board
+without needing to scroll) and confirmed the layout holds up at mobile
+width (375x812) with no horizontal overflow.
+
+**Tooling hiccup, not an app bug**: the Browser pane's `scroll` action
+hung/timed out repeatedly in this session, and one screenshot briefly
+returned a stale cached frame after a scroll timeout (confirmed via
+`get_page_text` and a direct `getComputedStyle` check that the real DOM
+state was already correct -- `opacity: 1`, correct color, correct
+layout -- while the screenshot lagged behind). Worked around by resizing
+the viewport tall enough to avoid scrolling entirely, and by closing and
+reopening a fresh tab, both of which resolved it cleanly. Not a defect
+in `index.html`.
+
+**Bedrock calls this pass**: 2 (one verified-path test, one trap-path
+test, both driven through the real browser). **Running total: 63 + 2 =
+65/80.**
+
+Committed as its own follow-up commit after this log entry, since the
+user's redesign request landed after Stage 4's functional commit was
+already made.
