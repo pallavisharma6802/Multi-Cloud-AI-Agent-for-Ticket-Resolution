@@ -56,7 +56,6 @@ class Settings(BaseSettings):
     model_drafting: str = Field(default="amazon.nova-lite-v1:0")
     model_supervisor: str = Field(default="amazon.nova-lite-v1:0")
     model_security_agent: str = Field(default="amazon.nova-lite-v1:0")
-    model_travel_intent: str = Field(default="amazon.nova-lite-v1:0")
 
     # Hard caps on cost/latency if a graph loop runs away (not business rules)
     max_iterations: int = Field(
@@ -75,9 +74,6 @@ class Settings(BaseSettings):
     max_query_rewrites: int = Field(
         default=1, description="Max CRAG query rewrites before forcing proceed/escalate"
     )
-
-    # Travel booking: live flight/hotel search
-    serpapi_api_key: Optional[str] = Field(default=None, description="SerpApi key for Google Flights/Hotels APIs")
 
     # BigQuery analytics sink
     enable_bigquery: bool = Field(default=False, description="Enable async BigQuery event sink")

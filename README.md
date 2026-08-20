@@ -23,7 +23,6 @@ asserted.
 - [CI/CD](#cicd)
 - [Project structure](#project-structure)
 - [Extending with a new domain pack](#extending-with-a-new-domain-pack)
-- [Travel Desk](#travel-desk)
 
 ## Architecture
 
@@ -156,9 +155,6 @@ docker compose exec backend python seed_kb.py --pack all
 **What Docker Compose does *not* provide**, because they're real external managed services: Amazon Bedrock
 (LLM), Azure Text Analytics (NLP signals), and Pinecone (vector storage). BigQuery analytics is opt-in and
 off by default (`ENABLE_BIGQUERY=false`).
-
-[`infra/aws/`](infra/aws/) provisions RDS + EC2 for deploying the Travel Desk app (see below); it's unrelated
-to this app's own Docker Compose stack. See [`infra/README.md`](infra/README.md).
 
 ### Option B — Native Python (no Docker)
 
@@ -320,15 +316,8 @@ frontend/               # Next.js UI
 grafana/                # Dashboards + provisioning
 infra/                  # Terraform (see infra/README.md)
 tests/                  # Fully mocked Bedrock/Azure/Pinecone/BigQuery
-travel_booking/         # Separate app: trip planner with real flight/hotel verification (see travel_booking/README.md)
 docker-compose.yml      # Local stack: postgres, backend, frontend, grafana (Bedrock external)
 ```
-
-## Travel Desk
-
-A second, self-contained app in this repo: a trip planner that checks a proposed hotel and flight against each
-other (arrival time vs. check-in, budget, amenities, room capacity) before calling anything verified, using real
-live flight/hotel data. See [`travel_booking/README.md`](travel_booking/README.md).
 
 ## Extending with a new domain pack
 
