@@ -1,13 +1,7 @@
-"""Verification Agent: does a PROPOSED hotel+flight combination actually
-satisfy every hard constraint TOGETHER, not each in isolation?
-
-Deterministic, not an LLM call -- see travel_booking/BUILD_LOG.md for why.
-Every check is 100% mechanically decidable from the structured data, so an
-LLM judgment call would add nothing but latency, cost, and hallucination
-risk. Four explicit per-field checks, each returned individually -- never
-collapsed into one holistic verdict. This is the direct fix for the exact
-bug class the MCP firewall project found and fixed (a single coarse
-judgment instead of forced per-field reasoning).
+"""Checks whether a proposed hotel+flight pair satisfies every hard
+constraint together, not each in isolation. Deterministic, not an LLM call --
+every check here is decidable directly from the structured data. Each of the
+four checks is returned separately rather than collapsed into one verdict.
 """
 from __future__ import annotations
 
@@ -29,9 +23,8 @@ def _parse_hhmm(s: str) -> dtime:
 
 def check_arrival_vs_checkin(hotel: dict, flight: dict) -> CheckResult:
     if hotel.get("front_desk_24hr") is None and hotel.get("front_desk_closes") is None:
-        # Real data source (e.g. SerpApi/Google Hotels) doesn't expose front-desk
-        # hours at all -- don't invent a proxy check, be honest that this can't
-        # be verified rather than silently passing it off as checked.
+        # front-desk hours aren't in the real data source -- flag as unverifiable
+        # instead of guessing.
         return CheckResult(
             name="arrival_vs_checkin",
             passed=True,
@@ -81,17 +74,10 @@ def check_arrival_vs_checkin(hotel: dict, flight: dict) -> CheckResult:
 
 
 def _leg_cost_for_party(leg: dict, party_size: int) -> float:
-    """SerpApi's google_flights price is already the TOTAL for the number of
-    adults the search was run with (search_flights is always called with
-    adults=constraints.party_size) -- confirmed empirically: searching the
-    same route with adults=2 returns exactly 2x the adults=1 price. So a real
-    (serpapi) leg must NOT be multiplied by party_size again, or every
-    multi-traveler trip gets its flight cost doubled/tripled/etc. and fails
-    the budget check for a price nobody would actually be charged. The
-    simulated dataset (data/flights.json) has no such per-party pricing --
-    each listing is a single-passenger fare -- so THOSE still need the
-    multiplication. `_source` (set only by serpapi_client) is what tells
-    the two apart."""
+    """SerpApi's price is already the total for the party (search_flights
+    always passes adults=party_size), so don't multiply it again. The
+    simulated dataset's fares are per-passenger and still need multiplying.
+    `_source` tells the two apart."""
     if leg.get("_source") == "serpapi_google_flights":
         return leg["price"]
     return leg["price"] * party_size
@@ -166,10 +152,8 @@ def check_budget(hotel: dict, flight: dict, constraints: ResolvedConstraints) ->
 
 
 def check_hotel_only_budget(hotel: dict, constraints: ResolvedConstraints) -> CheckResult:
-    """Budget check for browsing hotels with no paired flight -- there's no
-    total-trip cost to compute without one, so this only ever checks the
-    hotel's own nightly/stay cost, never claiming to check a "total" that
-    isn't knowable yet."""
+    """Budget check for hotels browsed without a paired flight -- checks the
+    hotel's own cost only, no total-trip figure to compare against yet."""
     hotel_nightly = hotel["price_per_night"] + (hotel.get("resort_fee_per_night") or 0)
     fee_note = ""
     if hotel.get("resort_fee_per_night"):

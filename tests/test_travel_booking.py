@@ -17,15 +17,37 @@ from pathlib import Path
 
 import pytest
 
+TEST_DATABASE_URL = "postgresql://postgres:test@localhost:5433/travel"
+
 
 @pytest.fixture()
-def tmp_db(tmp_path, monkeypatch):
-    """Point the whole travel_booking persistence layer at a throwaway SQLite
-    file so tests never touch a real user's travel.db."""
+def tmp_db(monkeypatch):
+    """Point the whole travel_booking persistence layer at a real (local,
+    disposable) Postgres and start each test from a clean set of tables --
+    needs TRAVEL_DATABASE_URL, or falls back to a local docker Postgres at
+    TEST_DATABASE_URL (see README/DEPLOY notes for how to start one:
+    `docker run -d -e POSTGRES_PASSWORD=test -e POSTGRES_DB=travel -p 5433:5432 postgres:16-alpine`).
+    Requires a real Postgres reachable at import time -- this package no
+    longer supports SQLite (see db.py's migration-to-Postgres docstring)."""
+    import os
+
+    url = os.environ.get("TRAVEL_DATABASE_URL", TEST_DATABASE_URL)
+    monkeypatch.setenv("TRAVEL_DATABASE_URL", url)
+
     import travel_booking.db as db
 
-    monkeypatch.setattr(db, "DB_PATH", tmp_path / "test.db")
-    db.init_db()
+    try:
+        db.init_db()
+    except Exception as e:  # pragma: no cover
+        pytest.skip(f"no reachable Postgres for tests at {url}: {e}")
+
+    conn = db.get_connection()
+    conn.execute(
+        "TRUNCATE users, sessions, friendships, saved_trips, trip_groups, "
+        "trip_group_members, trip_group_preferences, bandit_arm_stats RESTART IDENTITY CASCADE"
+    )
+    conn.commit()
+    conn.close()
     return db
 
 
@@ -341,7 +363,12 @@ def test_unknown_or_empty_session_token_is_rejected(tmp_db, monkeypatch):
 
 def test_schema_creates_every_expected_table(tmp_db):
     conn = tmp_db.get_connection()
-    names = {r["name"] for r in conn.execute("SELECT name FROM sqlite_master WHERE type='table'")}
+    names = {
+        r["table_name"]
+        for r in conn.execute(
+            "SELECT table_name FROM information_schema.tables WHERE table_schema = 'public'"
+        ).fetchall()
+    }
     conn.close()
     assert {
         "users", "sessions", "friendships", "saved_trips",
@@ -353,30 +380,35 @@ def test_trip_groups_has_last_strategy_so_reward_survives_restart(tmp_db):
     """Regression: the strategy lived only in an in-memory dict, so every
     restart silently broke the RL reward loop."""
     conn = tmp_db.get_connection()
-    cols = {r["name"] for r in conn.execute("PRAGMA table_info(trip_groups)")}
+    cols = {
+        r["column_name"]
+        for r in conn.execute(
+            "SELECT column_name FROM information_schema.columns WHERE table_name = 'trip_groups'"
+        ).fetchall()
+    }
     conn.close()
     assert "last_strategy" in cols
 
 
-def test_migration_adds_last_strategy_to_an_older_database(tmp_path, monkeypatch):
-    """An existing local DB must gain the column in place, not require deletion
-    (which would throw away real accounts and saved trips)."""
-    import sqlite3
+def test_migration_adds_last_strategy_to_an_older_database(tmp_db):
+    """An existing deployed DB must gain the column in place, not require
+    dropping the table (which would throw away real accounts and saved trips)."""
     import travel_booking.db as db
 
-    path = tmp_path / "legacy.db"
-    conn = sqlite3.connect(path)
-    conn.execute(
-        """CREATE TABLE trip_groups (id INTEGER PRIMARY KEY, name TEXT, owner_id INTEGER,
-           destination_code TEXT, join_code TEXT, status TEXT, created_at REAL)"""
-    )
+    conn = db.get_connection()
+    # Simulate a pre-migration deployment: drop back to the old column set.
+    conn.execute("ALTER TABLE trip_groups DROP COLUMN last_strategy")
     conn.commit()
     conn.close()
 
-    monkeypatch.setattr(db, "DB_PATH", path)
     db.init_db()
 
     conn = db.get_connection()
-    cols = {r["name"] for r in conn.execute("PRAGMA table_info(trip_groups)")}
+    cols = {
+        r["column_name"]
+        for r in conn.execute(
+            "SELECT column_name FROM information_schema.columns WHERE table_name = 'trip_groups'"
+        ).fetchall()
+    }
     conn.close()
     assert "last_strategy" in cols

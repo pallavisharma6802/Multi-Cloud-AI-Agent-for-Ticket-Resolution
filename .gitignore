@@ -24,6 +24,7 @@ htmlcov/
 terraform.tfvars
 !terraform.tfvars.example
 multi-cloud-ai-agent-key.pem
+*.pem
 *_accessKeys.csv
 *.csv.credentials
 setup_and_run.sh
@@ -37,4 +38,6 @@ infra/gcp/
 # Live smoke soak artifacts (suite + scripts are tracked, run output is not)
 eval/live_runs/*
 !eval/live_runs/.gitkeep
+travel_booking/eval/battery_results.jsonl
+travel_booking/eval/summary.json
 eval/human_review/live_smoke_review.csv

@@ -1,24 +1,8 @@
 """Combines a group's individually-submitted preferences into one set of
-search constraints, using a multi-armed bandit -- a real, honestly-scoped
-reinforcement learning technique, not a stand-in for deep RL.
-
-Why a bandit, not deep RL: combining N people's budget/amenity trade-offs
-into one search is a strategy-SELECTION problem (which of a few well-
-defined compromise strategies to use), not a sequential decision process
-needing a learned policy over a large state space. A contextual/multi-armed
-bandit is the standard RL tool for exactly this shape of problem: a small
-set of discrete "arms" (strategies), a reward signal (did the group accept
-the resulting trip), and online learning from that feedback -- with none of
-deep RL's requirements (a simulator, a training corpus, a neural policy)
-that this project genuinely doesn't have. This is the same "explicit,
-inspectable, no black box" discipline as the rest of this project's agents
-(see verification_agent.py) applied to a genuinely stochastic-selection
-problem, where it actually is the appropriate tool.
-
-Group members submit STRUCTURED preferences (budget/dates/amenities via a
-form), not freeform text -- this whole module runs with zero Bedrock calls,
-deliberately, so trying group trips doesn't compete with the session's
-Bedrock budget at all.
+search constraints, using an epsilon-greedy multi-armed bandit to pick
+between conservative/balanced/generous strategies. Members submit
+structured preferences via a form, not freeform text, so this runs with
+zero Bedrock calls.
 """
 from __future__ import annotations
 
@@ -54,23 +38,15 @@ class MemberPreference:
         self.budget_amount = budget_amount
         self.budget_scope = budget_scope
         self.required_amenities = required_amenities
-        # How long THIS member wants the trip to be. Deliberately separate from
-        # the date range, which is the window they're available within -- the
-        # two are different things, and conflating them (deriving trip length
-        # from window width) produced badly wrong stays: everyone free on the
-        # same single day became a 1-night trip, and members with disjoint
-        # availability became a 24-night trip nobody asked for.
+        # trip length, kept separate from the availability window -- deriving
+        # one from the other produced badly wrong stays
         self.nights = nights
 
 
 def _intersect_dates(members: List[MemberPreference]) -> tuple[str, str, Optional[str]]:
-    """Overlapping availability window across every member.
-
-    Returns (start, end, warning). When there's genuinely no overlap we fall
-    back to the union of everyone's windows, but return a warning so the
-    caller can surface it -- silently searching a window nobody actually
-    agreed on is exactly the kind of quiet wrong answer this project's
-    verification discipline exists to avoid."""
+    """Overlapping availability window across every member. Returns (start,
+    end, warning) -- falls back to the union of everyone's windows if there's
+    no real overlap, with a warning rather than searching silently."""
     starts = [date.fromisoformat(m.date_range_start) for m in members]
     ends = [date.fromisoformat(m.date_range_end) for m in members]
     latest_start, earliest_end = max(starts), min(ends)
@@ -110,7 +86,7 @@ def record_chosen(strategy: str) -> None:
     try:
         conn.execute(
             """INSERT INTO bandit_arm_stats (strategy, times_chosen, times_rewarded) VALUES (?, 1, 0)
-               ON CONFLICT(strategy) DO UPDATE SET times_chosen = times_chosen + 1""",
+               ON CONFLICT(strategy) DO UPDATE SET times_chosen = bandit_arm_stats.times_chosen + 1""",
             (strategy,),
         )
         conn.commit()
@@ -127,7 +103,7 @@ def record_reward(strategy: str, accepted: bool) -> None:
     try:
         conn.execute(
             """INSERT INTO bandit_arm_stats (strategy, times_chosen, times_rewarded) VALUES (?, 0, 1)
-               ON CONFLICT(strategy) DO UPDATE SET times_rewarded = times_rewarded + 1""",
+               ON CONFLICT(strategy) DO UPDATE SET times_rewarded = bandit_arm_stats.times_rewarded + 1""",
             (strategy,),
         )
         conn.commit()

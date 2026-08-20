@@ -1,14 +1,17 @@
-"""Stage 3 test battery: 15 hand-designed scenarios x 2 runs each = 30 real
-runs (real Bedrock intent parse, real Pinecone/BM25 search, deterministic
-verification). Same format discipline as mcp_firewall's RESULTS.md: real
-numbers, saved jsonl + summary, honest about any false positives/negatives.
+"""Two deterministic evals against hand-crafted fixtures -- no Bedrock,
+SerpApi, or Pinecone calls, so this is fast, free, and reproducible in CI.
 
-Every trap scenario is constructed so the trap hotel is the ONLY candidate
-that matches the stated amenities within the stated budget/date window --
-this forces it into contention deterministically instead of hoping the
-semantic ranker surfaces it (Stage 2's smoke tests showed the ranker often
-prefers well-rounded clean listings, so relying on chance would under-test
-this).
+1. Verification correctness: does the 4-check verifier catch every
+   deliberately-planted trap (a resort fee, a tag that's actually
+   unavailable, a late arrival, an over-capacity room) without also
+   flagging clean combinations? Reports precision/recall/catch-rate over
+   named checks, not a single pass/fail count.
+
+2. Ranking quality: score_candidates() sorting a pool by its own score is a
+   tautology (of course the top score is the top score) -- so each ranking
+   scenario instead hand-designs which candidate SHOULD win under a given
+   preset (e.g. "best_value" should pick the well-rounded mid-price option,
+   not the cheapest dump or the priciest suite) and checks whether it does.
 """
 from __future__ import annotations
 
@@ -16,243 +19,302 @@ import json
 import sys
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Callable, Optional
 
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
-from travel_booking.agents.orchestrator import TravelAgent  # noqa: E402
-from travel_booking.agents.schemas import ItineraryOutcome  # noqa: E402
+from travel_booking.agents import ranking  # noqa: E402
+from travel_booking.agents.schemas import ResolvedConstraints  # noqa: E402
+from travel_booking.agents.verification_agent import VerificationAgent  # noqa: E402
 
 EVAL_DIR = Path(__file__).resolve().parent
 RESULTS_PATH = EVAL_DIR / "battery_results.jsonl"
 SUMMARY_PATH = EVAL_DIR / "summary.json"
-RUNS_PER_SCENARIO = 2
 
+
+def _constraints(**overrides) -> ResolvedConstraints:
+    base = dict(
+        destination_code="AUS", destination_raw="Austin", party_size=2, nights=3,
+        nights_defaulted=False, date_range_start="2026-10-05", date_range_end="2026-10-08",
+        dates_defaulted=False, budget_amount=2000.0, budget_scope="total_trip",
+        required_amenities=[], raw_request="eval", assumptions=[],
+    )
+    base.update(overrides)
+    return ResolvedConstraints(**base)
+
+
+def _hotel(**overrides) -> dict:
+    base = dict(
+        id="H1", name="Test Hotel", destination="AUS", destination_name="Austin, TX",
+        price_per_night=100, resort_fee_per_night=0, check_in_time="15:00",
+        front_desk_24hr=True, front_desk_closes=None, check_out_time="11:00",
+        max_occupancy=4, amenities=["wifi", "pool"], amenity_notes={}, rating=4.0,
+    )
+    base.update(overrides)
+    return base
+
+
+def _flight(**overrides) -> dict:
+    base = dict(
+        id="F1", origin="ORD", destination="AUS", date="2026-10-05", airline="Test Air",
+        flight_number="TA1", departure_time="08:00", arrival_time="10:45",
+        arrives_next_day=False, price=200, layovers=0,
+    )
+    base.update(overrides)
+    return base
+
+
+# ---------------------------------------------------------------------------
+# 1. Verification correctness
+# ---------------------------------------------------------------------------
 
 @dataclass
-class Scenario:
+class VerificationScenario:
     id: str
-    category: str  # clean | trap | combo | unsatisfiable
-    request: str
-    check: Callable[[ItineraryOutcome], dict]
+    hotel: dict
+    flight: dict
+    constraints: ResolvedConstraints
+    expected_failed: set  # check names that MUST fail
+    expected_unverifiable: set = field(default_factory=set)  # check names that must be data_available=False
     note: str = ""
 
 
-def _attempt_for_hotel(outcome: ItineraryOutcome, hotel_id: str):
-    for a in outcome.all_attempts:
-        if a.hotel_id == hotel_id:
-            return a
-    if outcome.closest_attempt and outcome.closest_attempt.hotel_id == hotel_id:
-        return outcome.closest_attempt
-    return None
-
-
-def _check_result(attempt, name: str) -> Optional[bool]:
-    if attempt is None:
-        return None
-    for c in attempt.checks:
-        if c.name == name:
-            return c.passed
-    return None
-
-
-# ---------------------------------------------------------------------------
-# Scenario checkers -- each returns {"matched": bool, "detail": str}
-# ---------------------------------------------------------------------------
-
-def clean_should_verify(outcome: ItineraryOutcome) -> dict:
-    matched = outcome.status == "verified"
-    return {"matched": matched, "detail": f"status={outcome.status}, attempts={outcome.attempts_tried}"}
-
-
-def trap_check(hotel_id: str, expected_failed_check: str):
-    def _check(outcome: ItineraryOutcome) -> dict:
-        attempt = _attempt_for_hotel(outcome, hotel_id)
-        if attempt is None:
-            return {"matched": False, "detail": f"{hotel_id} never appeared in attempts or closest_attempt -- trap not tried"}
-        target = _check_result(attempt, expected_failed_check)
-        others_ok = all(
-            c.passed for c in attempt.checks if c.name != expected_failed_check
-        )
-        matched = (target is False) and others_ok
-        detail = (
-            f"{hotel_id}: {expected_failed_check}={target} (expected False), "
-            f"other checks all pass={others_ok}, final status={outcome.status}"
-        )
-        return {"matched": matched, "detail": detail}
-    return _check
-
-
-def combo_only_failure_check(outcome: ItineraryOutcome) -> dict:
-    for a in outcome.all_attempts:
-        by_name = {c.name: c.passed for c in a.checks}
-        if by_name.get("arrival_vs_checkin") is False and by_name.get("budget") is True and by_name.get("amenities") is True and by_name.get("capacity") is True:
-            return {
-                "matched": True,
-                "detail": f"combination-only failure observed: {a.hotel_id}+{a.flight_id} failed ONLY arrival_vs_checkin, final status={outcome.status}",
-            }
-    return {
-        "matched": False,
-        "detail": f"no attempt showed an arrival-only failure (attempts={len(outcome.all_attempts)}), final status={outcome.status}",
-    }
-
-
-def unsatisfiable_no_destination(outcome: ItineraryOutcome) -> dict:
-    matched = outcome.status == "unsatisfiable" and outcome.attempts_tried == 0 and outcome.constraints.destination_code is None
-    return {"matched": matched, "detail": f"status={outcome.status}, attempts={outcome.attempts_tried}, destination_code={outcome.constraints.destination_code}"}
-
-
-def unsatisfiable_generic(outcome: ItineraryOutcome) -> dict:
-    matched = outcome.status == "unsatisfiable"
-    return {"matched": matched, "detail": f"status={outcome.status}, attempts={outcome.attempts_tried}, closest={outcome.closest_attempt.hotel_id if outcome.closest_attempt else None}"}
-
-
-SCENARIOS = [
-    # -- clean (3) --
-    Scenario("clean_austin_family", "clean",
-             "Family of 4 to Austin, need a pool, 3 nights, Oct 5-8, budget $2000 total",
-             clean_should_verify),
-    Scenario("clean_denver_solo", "clean",
-             "Solo trip to Denver, 3 nights, Oct 10-13, need wifi and gym, budget $250 a night",
-             clean_should_verify),
-    Scenario("clean_miami_family6", "clean",
-             "Family of 6 to Miami, need pool and family_friendly, 4 nights, Oct 8-12, budget $2500 total",
-             clean_should_verify),
-
-    # -- trap (7), one per DESIGN.md trap --
-    Scenario("trap_aus02_pool_closed", "trap",
-             "Party of 2 to Austin, need a pool, budget $150 a night, 3 nights, Oct 5-9",
-             trap_check("H-AUS-02", "amenities"),
-             "H-AUS-02 is the only Austin pool hotel at or under $150/night"),
-    Scenario("trap_aus04_capacity", "trap",
-             "Party of 3 to Austin, need family_friendly, budget $130 a night, 3 nights, Oct 5-9",
-             trap_check("H-AUS-04", "capacity"),
-             "H-AUS-04 is the only Austin family_friendly hotel at or under $130/night"),
-    Scenario("trap_aus05_resort_fee", "trap",
-             "Party of 4 to Austin, need pool, gym, and pet_friendly, budget $200 a night, 3 nights, Oct 5-9",
-             trap_check("H-AUS-05", "budget"),
-             "H-AUS-05 is the only Austin hotel with pool+gym+pet_friendly"),
-    Scenario("trap_den03_gym_inaccessible", "trap",
-             "Party of 2 to Denver, need pool and gym, budget $205 a night, 3 nights, Oct 6-9",
-             trap_check("H-DEN-03", "amenities"),
-             "H-DEN-06 also has pool+gym but is $220/night, excluded by the $205 budget"),
-    Scenario("trap_den05_pet_restricted", "trap",
-             "Party of 2 to Denver, need wifi and pet_friendly, budget $200 a night, 3 nights, Oct 6-9, traveling with our dog",
-             trap_check("H-DEN-05", "amenities"),
-             "H-DEN-05 is the only pet_friendly hotel in Denver"),
-    Scenario("trap_mia03_resort_fee", "trap",
-             "Party of 2 to Miami, need pool and pet_friendly, budget $240 a night, 3 nights, Oct 8-11",
-             trap_check("H-MIA-03", "budget"),
-             "H-MIA-03 is the only pool+pet_friendly hotel in Miami"),
-    Scenario("trap_mia05_pool_closed", "trap",
-             "Party of 2 to Miami, need pool and gym, budget $185 a night, 3 nights, Oct 8-11",
-             trap_check("H-MIA-05", "amenities"),
-             "H-MIA-06 and H-MIA-03 also have pool+gym but cost more than $185/night"),
-
-    # -- combination-only failures (2) --
-    Scenario("combo_aus03_late_arrivals", "combo",
-             "Party of 2 to Austin, need family_friendly and gym, no pool needed, budget $220 a night, sometime in October",
-             combo_only_failure_check,
-             "H-AUS-03 (desk closes 22:00) is the only family_friendly+gym hotel <= $220/night; some AUS flights arrive after 22:00"),
-    Scenario("combo_den02_late_arrivals", "combo",
-             "Party of 2 to Denver, need family_friendly, budget $180 a night, sometime in October",
-             combo_only_failure_check,
-             "H-DEN-02 (desk closes 21:00) is the only family_friendly hotel <= $180/night; F-DEN-06 arrives 00:05 next day"),
-
-    # -- unsatisfiable, no valid combination at all (3) --
-    Scenario("unsat_blackout_collision", "unsatisfiable",
-             "Party of 2 to Austin, need pool, gym, and pet_friendly, budget $300 a night, Oct 19-21",
-             unsatisfiable_generic,
-             "H-AUS-05 (only pool+gym+pet_friendly match) is blacked out exactly Oct 19-21"),
-    Scenario("unsat_no_destination", "unsatisfiable",
-             "Family trip to Seattle, need a pool, 3 nights, budget $200 a night",
-             unsatisfiable_no_destination,
-             "Seattle isn't a served destination (only AUS/DEN/MIA)"),
-    Scenario("unsat_impossible_amenity_combo", "unsatisfiable",
-             "Party of 2 to Denver, need pool and pet_friendly, budget $300 a night, 3 nights, Oct 6-9",
-             unsatisfiable_generic,
-             "No Denver hotel has both pool and pet_friendly, regardless of budget"),
+VERIFICATION_SCENARIOS = [
+    VerificationScenario(
+        "clean_pass", _hotel(), _flight(), _constraints(),
+        expected_failed=set(), note="nothing should trip",
+    ),
+    VerificationScenario(
+        "clean_pass_family", _hotel(max_occupancy=6, amenities=["wifi", "pool", "family_friendly"]),
+        _flight(), _constraints(party_size=5, required_amenities=["pool", "family_friendly"]),
+        expected_failed=set(), note="larger party, more required amenities, still clean",
+    ),
+    VerificationScenario(
+        "amenity_tagged_but_unavailable",
+        _hotel(amenity_notes={"pool": "Closed for renovation."}), _flight(),
+        _constraints(required_amenities=["pool"]),
+        expected_failed={"amenities"}, note="tag present, note says otherwise",
+    ),
+    VerificationScenario(
+        "resort_fee_breaks_per_night_budget",
+        _hotel(price_per_night=189, resort_fee_per_night=35), _flight(),
+        _constraints(budget_amount=200.0, budget_scope="per_night_hotel"),
+        expected_failed={"budget"}, note="headline rate is in budget, effective rate isn't",
+    ),
+    VerificationScenario(
+        "late_arrival_desk_closed",
+        _hotel(front_desk_24hr=False, front_desk_closes="22:00"), _flight(arrival_time="23:55"),
+        _constraints(), expected_failed={"arrival_vs_checkin"},
+    ),
+    VerificationScenario(
+        "next_day_arrival_looks_early",
+        _hotel(front_desk_24hr=False, front_desk_closes="22:00"),
+        _flight(arrival_time="00:05", arrives_next_day=True),
+        _constraints(), expected_failed={"arrival_vs_checkin"},
+        note="00:05 is numerically before 22:00; only +1-day flag makes it wrong",
+    ),
+    VerificationScenario(
+        "capacity_trap",
+        _hotel(max_occupancy=2), _flight(), _constraints(party_size=4),
+        expected_failed={"capacity"},
+    ),
+    VerificationScenario(
+        "real_data_gaps_are_unverifiable_not_passed",
+        _hotel(front_desk_24hr=None, front_desk_closes=None, max_occupancy=None), _flight(),
+        _constraints(), expected_failed=set(),
+        expected_unverifiable={"arrival_vs_checkin", "capacity"},
+        note="missing fields must report data_available=False, never a silent pass",
+    ),
+    VerificationScenario(
+        "fuzzy_real_world_amenity_names",
+        _hotel(amenities=["Outdoor pool", "Free Wi-Fi", "Fitness center"]), _flight(),
+        _constraints(required_amenities=["pool", "wifi", "gym"]),
+        expected_failed=set(), note="SerpApi free text should still match the controlled vocabulary",
+    ),
+    VerificationScenario(
+        "double_trap_amenity_and_capacity",
+        _hotel(max_occupancy=2, amenity_notes={"pool": "Seasonal, closed in October."}),
+        _flight(), _constraints(party_size=5, required_amenities=["pool"]),
+        expected_failed={"amenities", "capacity"}, note="two independent failures at once",
+    ),
+    VerificationScenario(
+        "over_total_budget_with_return_flight",
+        _hotel(price_per_night=150), _flight(price=300, **{"return": {"price": 320, "_source": None}}),
+        _constraints(budget_amount=1000.0, budget_scope="total_trip", nights=3),
+        expected_failed={"budget"}, note="outbound+return+hotel must all count toward total",
+    ),
+    VerificationScenario(
+        "under_total_budget_with_return_flight",
+        _hotel(price_per_night=100), _flight(price=150, **{"return": {"price": 150, "_source": None}}),
+        _constraints(budget_amount=1000.0, budget_scope="total_trip", nights=3),
+        expected_failed=set(), note="same shape as above, priced to actually fit",
+    ),
 ]
 
 
-def run_battery():
-    agent = TravelAgent()
-    results = []
-    bedrock_calls = 0
+def _run_verification_scenario(s: VerificationScenario) -> dict:
+    result = VerificationAgent().verify(s.hotel, s.flight, s.constraints)
+    by_name = {c.name: c for c in result.checks}
+    actually_failed = {name for name, c in by_name.items() if not c.passed}
+    actually_unverifiable = {name for name, c in by_name.items() if not c.data_available}
 
-    for scenario in SCENARIOS:
-        for run_idx in range(1, RUNS_PER_SCENARIO + 1):
-            outcome = agent.run(scenario.request)
-            bedrock_calls += 1
-            verdict = scenario.check(outcome)
-            record = {
-                "scenario_id": scenario.id,
-                "category": scenario.category,
-                "run_index": run_idx,
-                "request": scenario.request,
-                "note": scenario.note,
-                "status": outcome.status,
-                "attempts_tried": outcome.attempts_tried,
-                "matched_expectation": verdict["matched"],
-                "detail": verdict["detail"],
-                "hotel_id": outcome.hotel_record["id"] if outcome.hotel_record else None,
-                "flight_id": outcome.flight_record["id"] if outcome.flight_record else None,
-                "all_attempts": [a.model_dump() for a in outcome.all_attempts],
-                "closest_attempt": outcome.closest_attempt.model_dump() if outcome.closest_attempt else None,
-            }
-            results.append(record)
-            print(f"[{scenario.category:14}] {scenario.id:32} run{run_idx}: matched={verdict['matched']} | {verdict['detail'][:100]}")
+    failed_match = actually_failed == s.expected_failed
+    unverifiable_match = actually_unverifiable == s.expected_unverifiable
+    return {
+        "id": s.id,
+        "note": s.note,
+        "expected_failed": sorted(s.expected_failed),
+        "actual_failed": sorted(actually_failed),
+        "expected_unverifiable": sorted(s.expected_unverifiable),
+        "actual_unverifiable": sorted(actually_unverifiable),
+        "matched": failed_match and unverifiable_match,
+    }
 
-    with RESULTS_PATH.open("w") as f:
-        for r in results:
-            f.write(json.dumps(r) + "\n")
 
-    by_category = {}
-    for r in results:
-        by_category.setdefault(r["category"], {"total": 0, "matched": 0})
-        by_category[r["category"]]["total"] += 1
-        if r["matched_expectation"]:
-            by_category[r["category"]]["matched"] += 1
+def _verification_metrics(rows: list[dict], scenarios: list[VerificationScenario]) -> dict:
+    """Precision/recall over individual named checks across all scenarios,
+    not just whole-scenario pass/fail -- a scenario expecting 2 failed
+    checks that only catches 1 is a real miss, not a match."""
+    tp = fp = fn = 0
+    for s, row in zip(scenarios, rows):
+        expected = s.expected_failed
+        actual = set(row["actual_failed"])
+        tp += len(expected & actual)
+        fp += len(actual - expected)
+        fn += len(expected - actual)
+    precision = tp / (tp + fp) if (tp + fp) else 1.0
+    recall = tp / (tp + fn) if (tp + fn) else 1.0
+    return {
+        "true_positive_checks": tp, "false_positive_checks": fp, "false_negative_checks": fn,
+        "precision": round(precision, 3), "recall_trap_catch_rate": round(recall, 3),
+        "scenarios_fully_matched": sum(r["matched"] for r in rows),
+        "scenarios_total": len(rows),
+    }
 
-    total = len(results)
-    matched = sum(1 for r in results if r["matched_expectation"])
 
-    trap_records = [r for r in results if r["category"] == "trap"]
-    trap_catch_rate = sum(1 for r in trap_records if r["matched_expectation"]) / len(trap_records) if trap_records else None
+# ---------------------------------------------------------------------------
+# 2. Ranking quality -- hand-designed "intended winner" per scenario
+# ---------------------------------------------------------------------------
 
-    # False positives: a clean scenario that failed to verify, or a trap
-    # scenario where a check that should have passed instead failed.
-    false_positives = []
-    for r in results:
-        if r["category"] == "clean" and not r["matched_expectation"]:
-            false_positives.append(r)
-        if r["category"] == "trap" and not r["matched_expectation"] and "other checks all pass=False" in r["detail"]:
-            false_positives.append(r)
+@dataclass
+class RankingScenario:
+    id: str
+    candidates: list  # list of (hotel, flight)
+    constraints: ResolvedConstraints
+    intended_winner_id: str  # hotel id that SHOULD be #1 under `preset`
+    preset: str
+    note: str = ""
 
-    # False negatives (misses): trap scenarios where the expected check did NOT fail.
-    false_negatives = [r for r in trap_records if not r["matched_expectation"]]
+
+RANKING_SCENARIOS = [
+    RankingScenario(
+        "best_value_avoids_the_cheap_dump",
+        candidates=[
+            (_hotel(id="cheap", price_per_night=60, rating=2.5, amenities=["wifi"]), _flight(layovers=1)),
+            (_hotel(id="balanced", price_per_night=110, rating=4.3, amenities=["wifi", "pool", "gym"]), _flight(layovers=0)),
+            (_hotel(id="luxury", price_per_night=340, rating=4.8, amenities=["wifi", "pool", "gym", "breakfast"]), _flight(layovers=0)),
+        ],
+        constraints=_constraints(budget_amount=None),
+        intended_winner_id="balanced", preset="best_value",
+        note="cheapest is low-rated, priciest is a big premium for marginal gain -- the well-rounded middle option should win",
+    ),
+    RankingScenario(
+        "cheapest_preset_ignores_quality",
+        candidates=[
+            (_hotel(id="cheap", price_per_night=60, rating=2.5), _flight(layovers=1)),
+            (_hotel(id="balanced", price_per_night=110, rating=4.3), _flight(layovers=0)),
+        ],
+        constraints=_constraints(),
+        intended_winner_id="cheap", preset="cheapest",
+        note="preset name is a promise -- cheapest must mean cheapest",
+    ),
+    RankingScenario(
+        "highest_rated_preset_ignores_price",
+        candidates=[
+            (_hotel(id="cheap", price_per_night=60, rating=3.0), _flight()),
+            (_hotel(id="best_rated", price_per_night=280, rating=4.9), _flight()),
+        ],
+        constraints=_constraints(),
+        intended_winner_id="best_rated", preset="highest_rated",
+    ),
+    RankingScenario(
+        "most_convenient_prefers_nonstop_and_buffer",
+        candidates=[
+            (_hotel(id="tight", front_desk_24hr=False, front_desk_closes="21:00", price_per_night=100),
+             _flight(layovers=1, arrival_time="20:30")),
+            (_hotel(id="easy", front_desk_24hr=False, front_desk_closes="23:00", price_per_night=100),
+             _flight(layovers=0, arrival_time="14:00")),
+        ],
+        constraints=_constraints(),
+        intended_winner_id="easy", preset="most_convenient",
+        note="nonstop landing 9 hours before the desk closes vs. a layover landing 30 min before",
+    ),
+    RankingScenario(
+        "amenity_match_breaks_a_near_tie",
+        candidates=[
+            (_hotel(id="bare", price_per_night=120, rating=4.0, amenities=["wifi", "pool"]), _flight()),
+            (_hotel(id="loaded", price_per_night=125, rating=4.0, amenities=["wifi", "pool", "gym", "breakfast", "parking"]), _flight()),
+        ],
+        constraints=_constraints(required_amenities=["pool"]),
+        intended_winner_id="loaded", preset="best_value",
+        note="same price and rating -- bonus amenities should tip it",
+    ),
+]
+
+
+def _run_ranking_scenario(s: RankingScenario) -> dict:
+    scored = ranking.score_candidates(s.candidates, s.constraints, preset=s.preset)
+    winner = scored[0].hotel["id"]
+    return {
+        "id": s.id,
+        "note": s.note,
+        "preset": s.preset,
+        "intended_winner": s.intended_winner_id,
+        "actual_winner": winner,
+        "ranking": [(c.hotel["id"], round(c.score, 3)) for c in scored],
+        "matched": winner == s.intended_winner_id,
+    }
+
+
+def _ranking_metrics(rows: list[dict]) -> dict:
+    matched = sum(r["matched"] for r in rows)
+    return {
+        "intended_winner_match_rate": round(matched / len(rows), 3) if rows else None,
+        "scenarios_matched": matched,
+        "scenarios_total": len(rows),
+    }
+
+
+# ---------------------------------------------------------------------------
+# Runner
+# ---------------------------------------------------------------------------
+
+def run_battery() -> dict:
+    verification_rows = [_run_verification_scenario(s) for s in VERIFICATION_SCENARIOS]
+    ranking_rows = [_run_ranking_scenario(s) for s in RANKING_SCENARIOS]
 
     summary = {
-        "total_runs": total,
-        "total_matched_expectation": matched,
-        "overall_match_rate": round(matched / total, 3) if total else None,
-        "by_category": by_category,
-        "trap_catch_rate": round(trap_catch_rate, 3) if trap_catch_rate is not None else None,
-        "false_positive_count": len(false_positives),
-        "false_positive_scenario_ids": [r["scenario_id"] + f"#{r['run_index']}" for r in false_positives],
-        "false_negative_count": len(false_negatives),
-        "false_negative_scenario_ids": [r["scenario_id"] + f"#{r['run_index']}" for r in false_negatives],
-        "bedrock_calls_used": bedrock_calls,
+        "verification": _verification_metrics(verification_rows, VERIFICATION_SCENARIOS),
+        "ranking": _ranking_metrics(ranking_rows),
     }
-    with SUMMARY_PATH.open("w") as f:
-        json.dump(summary, f, indent=2)
 
-    print("\n=== SUMMARY ===")
-    print(json.dumps(summary, indent=2))
+    with RESULTS_PATH.open("w") as f:
+        for row in verification_rows:
+            f.write(json.dumps({"kind": "verification", **row}) + "\n")
+        for row in ranking_rows:
+            f.write(json.dumps({"kind": "ranking", **row}) + "\n")
+    SUMMARY_PATH.write_text(json.dumps(summary, indent=2) + "\n")
+
     return summary
 
 
 if __name__ == "__main__":
-    run_battery()
+    result = run_battery()
+    print(json.dumps(result, indent=2))
+    v, r = result["verification"], result["ranking"]
+    ok = v["scenarios_fully_matched"] == v["scenarios_total"] and r["scenarios_matched"] == r["scenarios_total"]
+    if not ok:
+        print("\nFAILED -- see", RESULTS_PATH, "for per-scenario detail")
+        sys.exit(1)
+    print("\nAll scenarios matched.")

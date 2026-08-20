@@ -1,29 +1,26 @@
-# Infrastructure (optional / legacy)
+# Infrastructure
 
-**Prefer the root `docker-compose.yml`** for local Postgres, Grafana,
-backend, and frontend. LLM inference is Amazon Bedrock (not self-hosted).
-This Terraform is an optional/deprecated path for a real cloud deployment
-(AWS RDS + historical EC2 Ollama host, Azure Text Analytics). It is not
-required and is not exercised by CI.
+`infra/aws/` and `infra/azure/` are separate Terraform stacks, applied independently.
 
-- `infra/aws/` — RDS Postgres + EC2 that formerly ran Ollama. **No longer
-  used for inference** (Bedrock replaced it); keep only if you still want
-  managed Postgres via Terraform. Alternative to the Compose `postgres`
-  service.
-- `infra/azure/` — Azure Text Analytics (Cognitive Services). Needed for
-  real NER/sentiment; no local equivalent. Uses the `F0` (free tier) SKU.
+- `infra/aws/` — VPC, RDS Postgres, and an EC2 instance that hosts the
+  Travel Desk app (see [`../travel_booking/README.md`](../travel_booking/README.md)).
+  Not used by the root ticket-resolution app, which runs on the Compose
+  stack instead (`docker-compose.yml`) with Bedrock for inference.
+- `infra/azure/` — Azure Text Analytics (Cognitive Services), used by the
+  ticket-resolution app for NER/sentiment. Uses the `F0` (free tier) SKU.
 
 ## Security notice
 
-1. **Security groups must not be `0.0.0.0/0`.** Postgres (5432) and SSH (22)
-   require an explicit `allowed_management_cidr_blocks`
-   (no default — `terraform plan` fails until set to your IP/VPN CIDR).
-   RDS `publicly_accessible` defaults to `false`. Port 11434 (legacy Ollama)
-   should remain closed if the EC2 module is still applied.
-2. **Never commit real `*.tfvars`.** `terraform.tfvars` files are gitignored;
-   use `*.tfvars.example` templates. If an old password was ever committed
-   and applied publicly, rotate the RDS password and consider purging it
-   from git history.
+1. **Security groups must not be `0.0.0.0/0`.** SSH (22) and direct Postgres
+   access (5432) require an explicit `allowed_management_cidr_blocks` (no
+   default — `terraform plan` fails until it's set to your IP/VPN CIDR).
+   RDS `publicly_accessible` defaults to `false`; the app reaches it over
+   the private network instead. The app's own HTTP port is intentionally
+   open to the internet — it's a public web app.
+2. **Never commit real `*.tfvars` or `*.pem` files.** Both are gitignored;
+   use the `*.tfvars.example` templates. If a real password was ever
+   committed and applied publicly, rotate it and consider purging it from
+   git history.
 
 ## Usage
 

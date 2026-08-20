@@ -5,10 +5,8 @@ from typing import List, Literal, Optional
 
 from pydantic import BaseModel, Field
 
-# destination airport code -> display name. Real-data mode (SerpApi) isn't actually
-# limited to this list -- any valid IATA code works against live Google Flights/Hotels --
-# but the LLM is steered toward these as reliably-known major destinations rather than
-# guessing an airport code for every place on earth.
+# destination airport code -> display name. Any valid IATA code works against
+# live search; this list is just what the LLM is steered toward first.
 DESTINATIONS = {
     "AUS": "Austin, TX",
     "DEN": "Denver, CO",
@@ -108,10 +106,8 @@ class ResolvedConstraints(BaseModel):
     date_range_start: str
     date_range_end: str
     dates_defaulted: bool
-    dates_flexible: bool = False  # True: date_range is a wide window to scan for the cheapest workable day,
-    # not a literal single date -- see orchestrator._build_candidate_queue_serpapi's date-scan branch.
-    dates_were_scanned: bool = False  # set True once the scan above actually ran and picked a real date
-    # (dates_flexible itself gets reset to False right after, so this is what explanation.py checks).
+    dates_flexible: bool = False  # date_range is a window to scan for the cheapest day, not a literal date
+    dates_were_scanned: bool = False  # set once the scan above has run and resolved a real date
     budget_amount: Optional[float]
     budget_scope: Optional[BudgetScope]
     required_amenities: List[str]

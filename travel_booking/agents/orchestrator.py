@@ -1,10 +1,7 @@
-"""TravelAgent: LangGraph orchestrator wiring Intent -> Search -> Verify ->
-retry/escalate, mirroring mcp_firewall/target_agent.py's graph shape.
-
-propose -> availability_gate -> verify -> decide, looping until a
-combination passes all 4 hard checks or every ranked candidate pair is
-exhausted (honest "can't satisfy this" outcome with the closest attempt
-reported, never a silently-broken itinerary).
+"""LangGraph orchestrator: propose -> availability_gate -> verify -> decide,
+looping until a combination passes all 4 hard checks or every ranked
+candidate pair is exhausted. Reports the closest attempt if nothing passes,
+never a silently-broken itinerary.
 """
 from __future__ import annotations
 
@@ -19,7 +16,7 @@ if str(REPO_ROOT) not in sys.path:
 
 from langgraph.graph import END, StateGraph  # noqa: E402
 
-from app.config import settings  # noqa: E402
+from travel_booking.agents import ranking  # noqa: E402
 from travel_booking.agents.intent_agent import IntentAgent  # noqa: E402
 from travel_booking.agents.schemas import (  # noqa: E402
     DESTINATIONS,
@@ -29,14 +26,13 @@ from travel_booking.agents.schemas import (  # noqa: E402
     TripOption,
     VerificationResult,
 )
-from travel_booking.agents.search_agent import SearchAgent  # noqa: E402
 from travel_booking.agents.verification_agent import VerificationAgent  # noqa: E402
 
 MAX_ATTEMPTS = 12  # bound on how many ranked pairs we'll actually verify
-MAX_OPTIONS = 3  # how many distinct passing itineraries to collect before stopping
+MAX_OPTIONS = 3  # how many distinct passing itineraries to surface, ranked, once verification is done
 FLEX_SCAN_SAMPLES = 6  # how many candidate days to price out when searching flexibly (bounded -- see _scan_for_best_date)
 
-ORIGIN_AIRPORT = "ORD"  # matches the simulated dataset's fixed origin; live mode uses constraints.origin_code instead
+ORIGIN_AIRPORT = "ORD"  # fallback if no origin was resolved
 DESTINATION_HOTEL_QUERY = {code: f"hotels in {name}" for code, name in DESTINATIONS.items()}
 
 
@@ -48,10 +44,7 @@ def _date_range_overlaps_blackout(start: str, nights: int, blackout: list[str]) 
 
 def _hotel_available_for(hotel: dict, flight: dict, nights: int) -> tuple[bool, str]:
     if "available_from" not in hotel:
-        # Real data source (e.g. SerpApi) -- the hotel search itself was already
-        # scoped to the requested check-in/check-out dates, so there's no separate
-        # availability window or blackout list to check here; the API call already
-        # did that filtering.
+        # live search was already scoped to the requested dates
         return True, "available (date-scoped by the live search itself)"
     flight_date = flight["date"]
     if not (hotel["available_from"] <= flight_date <= hotel["available_to"]):
@@ -81,7 +74,6 @@ class TravelAgentState(TypedDict, total=False):
 class TravelAgent:
     def __init__(self):
         self.intent_agent = IntentAgent()
-        self.search_agent = SearchAgent()
         self.verification_agent = VerificationAgent()
         self.graph = self._build_graph()
         self._last_hotels_by_id: dict = {}
@@ -118,12 +110,14 @@ class TravelAgent:
         options = state.setdefault("accepted_options", [])
 
         if result.passed:
-            # Keep options distinct by hotel, so 3 results means 3 genuinely
-            # different hotels, not the same hotel with 3 different flights.
+            # Keep options distinct by hotel. Collects every passing option
+            # up to MAX_ATTEMPTS (not just the first MAX_OPTIONS found) so
+            # ranking afterward has a real pool to pick the best 3 from,
+            # instead of just the first 3 in price order.
             already_have_hotel = any(o.hotel_id == result.hotel_id for o in options)
             if not already_have_hotel:
                 options.append(result)
-            if len(options) >= MAX_OPTIONS or not state["queue"] or state["attempts"] >= MAX_ATTEMPTS:
+            if not state["queue"] or state["attempts"] >= MAX_ATTEMPTS:
                 state["final"] = "accept"
                 state["accepted"] = options[0]
             else:
@@ -174,15 +168,11 @@ class TravelAgent:
 
     # -- candidate generation --------------------------------------------------
     def _scan_for_best_date(self, constraints: ResolvedConstraints, origin: str) -> str:
-        """When the user asked us to search flexibly, actually price out
-        several real candidate days across the resolved window and pick the
-        cheapest -- not one arbitrary guessed date. Bounded to FLEX_SCAN_SAMPLES
-        candidates (not literally every day in the window) since each one is a
-        real, metered SerpApi call. Only outbound flight price is used to pick
-        the day: it's the dominant date-sensitive cost lever, and hotel rates
-        barely move day-to-day, so scanning hotels per candidate too would
-        double the API cost for little benefit -- the full hotel+flight+return
-        search still runs once, for real, on the winning date."""
+        """Prices FLEX_SCAN_SAMPLES candidate days across the window and
+        returns the cheapest, instead of guessing one date. Only checks
+        outbound flight price (the main date-sensitive cost, and cheaper
+        than also scanning hotels per candidate) -- the full hotel+flight
+        search still runs once on the winning date."""
         from travel_booking.agents import serpapi_client
 
         start = date.fromisoformat(constraints.date_range_start)
@@ -205,23 +195,21 @@ class TravelAgent:
                 best_price, best_date = cheapest, d
         return best_date or candidate_dates[0]
 
-    def _build_candidate_queue_serpapi(self, constraints: ResolvedConstraints) -> tuple[list[tuple[dict, dict]], int, int]:
-        """Real-data mode. Unlike the simulated mode, this does NOT search across
-        every day in a wide date range by default -- real flight search is
-        per-date and costs one API call each. If constraints.dates_flexible is
-        set (user asked us to find the best day), _scan_for_best_date runs a
-        bounded real search across the window first and resolves it down to
-        one concrete date; otherwise this uses exactly date_range_start."""
+    def _build_candidate_queue(self, constraints: ResolvedConstraints) -> tuple[list[tuple[dict, dict]], int, int]:
+        """Doesn't search across every day in a wide date range by default --
+        real flight search is per-date and costs one API call each. If
+        constraints.dates_flexible is set (user asked us to find the best
+        day), _scan_for_best_date runs a bounded search across the window
+        first and resolves it down to one concrete date; otherwise this uses
+        exactly date_range_start."""
         from travel_booking.agents import serpapi_client
 
         origin = constraints.origin_code or ORIGIN_AIRPORT
 
         if constraints.dates_flexible:
             checkin = self._scan_for_best_date(constraints, origin)
-            # Resolve the wide window down to the winning date so the rest of
-            # the pipeline, and anything the caller reads off `constraints`
-            # afterward (UI, saved trips, confirmation text), reflects the
-            # actual chosen date instead of the original scan window.
+            # narrow the wide window down to the winning date so downstream
+            # reads (UI, saved trips, confirmation text) see the real date
             constraints.date_range_start = checkin
             constraints.date_range_end = checkin
             constraints.dates_flexible = False
@@ -234,15 +222,12 @@ class TravelAgent:
         hotels = serpapi_client.search_hotels(hotel_query, checkin, checkout, adults=constraints.party_size)
         flights = serpapi_client.search_flights(origin, constraints.destination_code, checkin, adults=constraints.party_size)
 
-        # Round-trip cost, not one-way -- a stay has to actually end with a flight
-        # home. Modeled as two separate one-way fares (outbound on checkin,
-        # return on checkout) rather than SerpApi's stateful round-trip flow,
-        # since that's a simpler, honest (if occasionally slightly pricier than
-        # a bundled fare) way to get a real return-leg price and time. The
-        # cheapest available return flight is paired onto every outbound
-        # candidate as `flight["return"]` -- if none is found for that route/date,
-        # `return` is left None and the budget check says so rather than quietly
-        # pricing the trip as one-way.
+        # round trip, not one-way: two separate one-way fares (outbound on
+        # checkin, return on checkout) rather than SerpApi's stateful
+        # round-trip flow. Cheapest return is paired onto every outbound
+        # candidate as `flight["return"]`; None if no return flight exists
+        # for that route/date, so the budget check doesn't silently price it
+        # as one-way.
         return_flights = sorted(
             serpapi_client.search_flights(constraints.destination_code, origin, checkout, adults=constraints.party_size),
             key=lambda f: f["price"],
@@ -265,40 +250,6 @@ class TravelAgent:
         queue = [(h, f) for _, h, f in pairs]
         return queue, len(hotels), len(flights)
 
-    def _build_candidate_queue(self, constraints: ResolvedConstraints) -> tuple[list[tuple[dict, dict]], int, int]:
-        if settings.travel_data_source == "serpapi":
-            return self._build_candidate_queue_serpapi(constraints)
-
-        query_bits = [f"for {constraints.party_size} guests"]
-        if constraints.budget_amount:
-            query_bits.append(f"budget around ${constraints.budget_amount} ({constraints.budget_scope or 'unspecified scope'})")
-        if constraints.required_amenities:
-            query_bits.append(f"needs amenities: {', '.join(constraints.required_amenities)}")
-        query_suffix = ", ".join(query_bits)
-
-        hotels = self.search_agent.search_hotels(
-            constraints.destination_code, f"Hotel in {constraints.destination_raw} {query_suffix}.", top_k=6
-        )
-        flights = self.search_agent.search_flights(
-            constraints.destination_code, f"Flight to {constraints.destination_raw} {query_suffix}.", top_k=6
-        )
-        # Hard filter: the flight's date must fall within the user's (possibly
-        # defaulted-to-whole-month) date range. Not negotiable by ranking --
-        # a flight on a date the user didn't ask for isn't a candidate at all.
-        flights = [f for f in flights if constraints.date_range_start <= f["date"] <= constraints.date_range_end]
-        self._last_hotels_by_id = {h["id"]: h for h in hotels}
-        self._last_flights_by_id = {f["id"]: f for f in flights}
-
-        # Rank pairs by combined search relevance, cheapest-first as tiebreak.
-        pairs = []
-        for f in flights:
-            for h in hotels:
-                combined_score = f["_search_score"] + h["_search_score"]
-                pairs.append((combined_score, h["price_per_night"] + f["price"], h, f))
-        pairs.sort(key=lambda p: (-p[0], p[1]))
-        queue = [(h, f) for _, _, h, f in pairs]
-        return queue, len(hotels), len(flights)
-
     # -- public API --------------------------------------------------------
     def run(self, raw_request: str) -> ItineraryOutcome:
         """One-shot convenience entry point: parses the request and resolves
@@ -310,9 +261,21 @@ class TravelAgent:
         state = self.intent_agent.start(raw_request)
         return self.run_from_state(state)
 
-    def run_from_state(self, state: ConversationState) -> ItineraryOutcome:
+    def _rank_options(
+        self, options: list[VerificationResult], constraints: ResolvedConstraints, rank_by: str
+    ) -> list[VerificationResult]:
+        if len(options) <= 1:
+            return options
+        pairs = [(self._last_hotels_by_id[o.hotel_id], self._last_flights_by_id[o.flight_id]) for o in options]
+        scored = ranking.score_candidates(pairs, constraints, preset=rank_by)
+        by_ids = {(o.hotel_id, o.flight_id): o for o in options}
+        return [by_ids[(sc.hotel["id"], sc.flight["id"])] for sc in scored]
+
+    def run_from_state(self, state: ConversationState, rank_by: str = ranking.DEFAULT_PRESET) -> ItineraryOutcome:
         """Run search+verify from an already-parsed ConversationState (status
-        'ready' or 'best_effort'). Does not make any further clarification calls."""
+        'ready' or 'best_effort'). Does not make any further clarification calls.
+        rank_by picks a weight preset from ranking.WEIGHT_PRESETS for ordering
+        the verified options (default: "best_value")."""
         constraints = self.intent_agent.resolve_from_conversation(state)
 
         if constraints.destination_code is None:
@@ -343,7 +306,7 @@ class TravelAgent:
         attempt_log = final_state.get("attempt_log", [])
 
         if final_state.get("accepted"):
-            options = final_state.get("accepted_options", [])
+            options = self._rank_options(final_state.get("accepted_options", []), constraints, rank_by)[:MAX_OPTIONS]
             top_options = [
                 TripOption(
                     hotel_record=self._last_hotels_by_id[o.hotel_id],

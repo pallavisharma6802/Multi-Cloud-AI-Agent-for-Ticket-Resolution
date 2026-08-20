@@ -1,16 +1,11 @@
-"""Intent Agent: freeform travel request -> structured TravelConstraints,
-via a multi-turn clarification conversation rather than one-shot parsing.
+"""Turns a freeform travel request into structured TravelConstraints via a
+multi-turn clarification conversation, rather than one-shot parsing.
 
-Direct Bedrock structured call (see travel_booking/BUILD_LOG.md for why this
-isn't routed through Azure NLP). Reuses app.llm.bedrock_client.generate_structured
-as-is, same pattern as every other agent in this codebase.
-
-Completeness (are dates/budget/party-size specific enough to run the 4 hard
-checks against) is evaluated with deterministic code, not the LLM's own
-self-assessment -- same "don't trust a holistic self-judgment" principle
-applied to the Verification Agent. Each turn re-parses the ENTIRE transcript
-(not just the latest message) so a later correction ("actually make that
-$250") naturally overrides an earlier answer without manual field-diffing.
+Completeness (are dates/budget/party size specific enough to search on) is
+checked with plain code, not left to the LLM's own judgment. Each turn
+re-parses the full transcript, not just the latest message, so a later
+correction ("actually make that $250") naturally overrides an earlier
+answer.
 """
 from __future__ import annotations
 
@@ -25,7 +20,6 @@ if str(REPO_ROOT) not in sys.path:
 
 from app.config import settings  # noqa: E402
 from app.llm.bedrock_client import LLMCallMetadata, get_llm_client  # noqa: E402
-
 from travel_booking.agents.schemas import (  # noqa: E402
     DEFAULT_ORIGIN_CODE,
     DEFAULT_ORIGIN_NAME,
@@ -39,43 +33,28 @@ from travel_booking.agents.schemas import (  # noqa: E402
 
 MAX_CLARIFICATION_EXCHANGES = 5
 MAX_NARROW_RANGE_DAYS = 10
-# Only meaningful in simulated-dataset mode, where data/flights.json and
-# data/hotels.json literally only have rows for this month. In live (serpapi)
-# mode there's no such inventory window -- see _default_date_range below,
-# which is what actually runs when settings.travel_data_source == "serpapi".
-DATASET_MIN_DATE = "2026-10-01"
-DATASET_MAX_DATE = "2026-10-31"
-LIVE_MODE = settings.travel_data_source == "serpapi"
-# Bounds for the "search flexibly for the best day" window in live mode --
-# a real scan across this range picks the cheapest workable day (see
-# orchestrator._build_candidate_queue_serpapi), not one arbitrary date.
+# "Search flexibly" window -- orchestrator scans this range for the
+# cheapest workable day rather than guessing one date.
 FLEXIBLE_WINDOW_START_DAYS = 10
 FLEXIBLE_WINDOW_END_DAYS = 270
-# Single-date fallback used ONLY when clarification exchanges ran out without
-# the user ever confirming dates or "search flexibly" -- deliberately NOT the
-# same as the flexible scan above, since burning several extra live searches
-# on a request nobody actually confirmed isn't reasonable.
+# Fallback used only if clarification exchanges run out with dates still
+# unresolved -- separate from the flexible scan so an unconfirmed request
+# doesn't trigger a bunch of extra live searches.
 BEST_EFFORT_DAYS_OUT = 21
 
 
 def _default_date_range() -> tuple[str, str]:
-    """Best-effort single-date fallback (max clarification exchanges hit with
-    dates still unresolved). NOT used for the "search flexibly" path -- see
-    _flexible_date_range."""
-    if LIVE_MODE:
-        d = (date.today() + timedelta(days=BEST_EFFORT_DAYS_OUT)).isoformat()
-        return d, d
-    return DATASET_MIN_DATE, DATASET_MAX_DATE
+    """Best-effort single-date fallback; see _flexible_date_range for the
+    "search flexibly" path."""
+    d = (date.today() + timedelta(days=BEST_EFFORT_DAYS_OUT)).isoformat()
+    return d, d
 
 
 def _flexible_date_range() -> tuple[str, str]:
-    """User explicitly asked us to pick -- a real wide window the orchestrator
-    scans for the cheapest workable day, not a single guessed date."""
-    if LIVE_MODE:
-        start = (date.today() + timedelta(days=FLEXIBLE_WINDOW_START_DAYS)).isoformat()
-        end = (date.today() + timedelta(days=FLEXIBLE_WINDOW_END_DAYS)).isoformat()
-        return start, end
-    return DATASET_MIN_DATE, DATASET_MAX_DATE
+    """Wide window the orchestrator scans for the cheapest workable day."""
+    start = (date.today() + timedelta(days=FLEXIBLE_WINDOW_START_DAYS)).isoformat()
+    end = (date.today() + timedelta(days=FLEXIBLE_WINDOW_END_DAYS)).isoformat()
+    return start, end
 
 
 SYSTEM_CONTEXT = f"""You extract structured travel-booking constraints from a conversation between a user \
@@ -105,7 +84,8 @@ display name, but only when you are confident of the correct airport code. If th
 ambiguous, or you are not confident of the airport code, leave destination_code and destination_name null \
 rather than guessing.
 
-Dates: {"this system searches LIVE flight/hotel availability, so any real future date works -- there is no fixed inventory month." if LIVE_MODE else "this system only has inventory for October 2026."} If the user gives an exact date or a narrow range \
+Dates: this system searches LIVE flight/hotel availability, so any real future date works -- there is no \
+fixed inventory month. If the user gives an exact date or a narrow range \
 (10 days or fewer), set date_range_start/date_range_end to those ISO dates. If they only give a vague \
 month/season reference ("sometime in October", "next month") with no narrowing, leave both null -- do NOT \
 invent a narrow range yourself. HOWEVER, if the user was asked whether to narrow the dates or have this \
@@ -171,9 +151,7 @@ def _next_question(missing: List[str], c: TravelConstraints) -> Optional[str]:
                 f"You mentioned a window starting around {c.date_range_start} -- can you narrow that to a "
                 f"specific range of {MAX_NARROW_RANGE_DAYS} days or fewer, or give an exact date?"
             )
-        if LIVE_MODE:
-            return "Do you have specific dates in mind, or should I search for the cheapest days that work?"
-        return "Do you have specific dates in mind (e.g. Oct 10-15), or should I search across the whole month?"
+        return "Do you have specific dates in mind, or should I search for the cheapest days that work?"
     if "budget" in missing:
         return "What's your budget? A per-night hotel rate (e.g. '$200/night') or a total trip amount both work."
     if "party_size" in missing:
@@ -267,10 +245,7 @@ class IntentAgent:
         nights = c.nights
         nights_defaulted = nights is None
         if nights is None:
-            # Only reached if MAX_CLARIFICATION_EXCHANGES ran out without the
-            # user ever answering "how many nights" -- an honest best-effort
-            # fallback, not a silent assumption during normal flow (that
-            # question is asked before this can happen -- see _next_question).
+            # only reached if clarification exchanges ran out unanswered
             nights = 3
             assumptions.append("no trip length given after asking, assumed 3 nights")
 
@@ -278,28 +253,16 @@ class IntentAgent:
         dates_defaulted = date_start is None or date_end is None
         dates_flexible = False
         if dates_defaulted and c.dates_whole_month_ok:
-            if LIVE_MODE:
-                date_start, date_end = _flexible_date_range()
-                dates_flexible = True
-                assumptions.append(
-                    f"no specific date given -- searching {FLEXIBLE_WINDOW_START_DAYS}-{FLEXIBLE_WINDOW_END_DAYS} "
-                    "days out for the cheapest day that actually works, as you asked"
-                )
-            else:
-                date_start, date_end = _default_date_range()
-                assumptions.append("searching the whole available month, as you asked")
-        elif dates_defaulted:
-            # best_effort cutoff hit with dates still unresolved and no "search
-            # flexibly" confirmation either -- fall back to one reasonable date
-            # rather than run the (much more expensive) flexible scan on a
-            # request the user never actually confirmed.
-            date_start, date_end = _default_date_range()
+            date_start, date_end = _flexible_date_range()
+            dates_flexible = True
             assumptions.append(
-                f"no specific dates given, defaulted to {date_start} (~{BEST_EFFORT_DAYS_OUT} days out)"
-                if LIVE_MODE else "no specific dates given, searching the whole available month"
+                f"no specific date given -- searching {FLEXIBLE_WINDOW_START_DAYS}-{FLEXIBLE_WINDOW_END_DAYS} "
+                "days out for the cheapest day that actually works, as you asked"
             )
+        elif dates_defaulted:
+            date_start, date_end = _default_date_range()
+            assumptions.append(f"no specific dates given, defaulted to {date_start} (~{BEST_EFFORT_DAYS_OUT} days out)")
         elif "dates" in state.missing:
-            # best_effort cutoff hit with a stated-but-too-wide range -- keep it, just note it
             assumptions.append(f"date range {date_start}..{date_end} was wider than ideal but used as given")
 
         party_size = c.party_size

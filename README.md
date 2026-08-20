@@ -22,8 +22,8 @@ asserted.
 - [Frontend](#frontend)
 - [CI/CD](#cicd)
 - [Project structure](#project-structure)
-- [Multimodal: considered and rejected](#multimodal-considered-and-rejected)
 - [Extending with a new domain pack](#extending-with-a-new-domain-pack)
+- [Travel Desk](#travel-desk)
 
 ## Architecture
 
@@ -157,8 +157,8 @@ docker compose exec backend python seed_kb.py --pack all
 (LLM), Azure Text Analytics (NLP signals), and Pinecone (vector storage). BigQuery analytics is opt-in and
 off by default (`ENABLE_BIGQUERY=false`).
 
-The EC2/Ollama Terraform under [`infra/aws/`](infra/aws/) is a **legacy artifact** (self-hosted Ollama is no
-longer a runtime option). See [`infra/README.md`](infra/README.md).
+[`infra/aws/`](infra/aws/) provisions RDS + EC2 for deploying the Travel Desk app (see below); it's unrelated
+to this app's own Docker Compose stack. See [`infra/README.md`](infra/README.md).
 
 ### Option B — Native Python (no Docker)
 
@@ -260,11 +260,9 @@ calls `boto3` directly rather than a LangChain-wrapped LLM client, so a node's s
 but not a nested per-call LLM trace (prompt, token counts, etc.) — that would need explicit `@traceable`
 instrumentation, not done here.
 
-Verified working against a live run: submitting a real ticket through the running backend with
-`LANGSMITH_TRACING=true` produced a full node-by-node trace in the LangSmith UI (`analyze_ticket` →
-`retrieve_documents` → `grade_documents` → `continuation_post_grading` → `draft_response` ↔ `judge_response` →
-`continuation_post_judging`, looping to `max_iterations`), with correct intent/final_action and judge scores
-all visible per span — zero code changes, as predicted above.
+Each node in the graph (`analyze_ticket` → `retrieve_documents` → `grade_documents` →
+`continuation_post_grading` → `draft_response` ↔ `judge_response` → `continuation_post_judging`) shows up as its
+own span in the LangSmith UI, with intent/final_action and judge scores visible per span.
 
 ## Frontend
 
@@ -298,8 +296,7 @@ npm run dev   # http://localhost:3000, expects the backend at NEXT_PUBLIC_API_UR
 4. **Build** — builds both the backend and frontend Docker images (no push).
 
 A separate, optional Terraform plan/Checkov workflow for `infra/` (targeting only free-tier-eligible resources)
-is intentionally not wired up as a merge-blocking gate, since the Terraform path itself is now optional/legacy —
-see [`infra/README.md`](infra/README.md).
+is not wired up as a merge-blocking gate — see [`infra/README.md`](infra/README.md).
 
 ## Project structure
 
@@ -321,19 +318,17 @@ domains/                # it_saas/ — config.yaml, few-shot examples, KB
 eval/                   # Evaluation harness — see Evaluation above
 frontend/               # Next.js UI
 grafana/                # Dashboards + provisioning
-infra/                  # Optional/legacy Terraform (see infra/README.md)
+infra/                  # Terraform (see infra/README.md)
 tests/                  # Fully mocked Bedrock/Azure/Pinecone/BigQuery
+travel_booking/         # Separate app: trip planner with real flight/hotel verification (see travel_booking/README.md)
 docker-compose.yml      # Local stack: postgres, backend, frontend, grafana (Bedrock external)
 ```
 
-## Multimodal: considered and rejected
+## Travel Desk
 
-Image and voice input were researched and explicitly rejected for this build. The "real" image datasets found
-(`ImageR` Bugzilla screenshots, `SROIE` receipts) don't actually pair with ticket text — using them would mean
-synthetically stapling unrelated data together, which conflicts with the no-guessing/no-fabrication standard
-applied everywhere else in this rebuild (see [Evaluation](#evaluation)). Voice has real transcripts
-(`CallCenterEN`) but no free raw audio to evaluate speech-to-text on this domain. If a real, paired
-multimodal ticket dataset surfaces, this is the first place to revisit — not before.
+A second, self-contained app in this repo: a trip planner that checks a proposed hotel and flight against each
+other (arrival time vs. check-in, budget, amenities, room capacity) before calling anything verified, using real
+live flight/hotel data. See [`travel_booking/README.md`](travel_booking/README.md).
 
 ## Extending with a new domain pack
 

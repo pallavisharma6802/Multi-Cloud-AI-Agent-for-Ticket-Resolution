@@ -1,18 +1,9 @@
 """Standalone hotel/flight browsing -- no paired leg, no full verification
 pipeline. Structured filters only (destination, dates, budget, amenities),
-never freeform text, so this costs zero Bedrock calls.
-
-This exists because the original UI only ever offered one path: a full
-conversational search that verifies a paired hotel+flight combination
-together. There was no way to just look at what hotels or flights exist for
-a destination -- every click funneled into that one flow. This module backs
-the real "Hotels only" / "Flights only" browse tabs that fixes that.
-
-Each listing still gets real per-field checks where they make sense without
-a pairing partner (budget/amenities/capacity for hotels; nothing meaningful
-to check for a lone flight beyond it existing), rather than turning into an
-unverified plain catalog -- the whole point of this project is not
-pretending a listing is fine just because it surfaced in search.
+never freeform text, so this costs zero Bedrock calls. Backs the "Hotels
+only" / "Flights only" tabs. Each listing still gets the per-field checks
+that make sense without a pairing partner (budget/amenities/capacity for
+hotels), rather than becoming an unverified plain catalog.
 """
 from __future__ import annotations
 
@@ -25,22 +16,16 @@ REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
-from app.config import settings  # noqa: E402
+from travel_booking.agents import serpapi_client  # noqa: E402
 from travel_booking.agents.schemas import DESTINATIONS, ResolvedConstraints  # noqa: E402
-from travel_booking.agents.search_agent import SearchAgent  # noqa: E402
-from travel_booking.agents.verification_agent import check_amenities, check_capacity, check_hotel_only_budget  # noqa: E402
+from travel_booking.agents.verification_agent import (  # noqa: E402
+    check_amenities,
+    check_capacity,
+    check_hotel_only_budget,
+)
 
 ORIGIN_AIRPORT = "ORD"
 DESTINATION_HOTEL_QUERY = {code: f"hotels in {name}" for code, name in DESTINATIONS.items()}
-
-_search_agent: Optional[SearchAgent] = None
-
-
-def _get_search_agent() -> SearchAgent:
-    global _search_agent
-    if _search_agent is None:
-        _search_agent = SearchAgent()
-    return _search_agent
 
 
 def browse_hotels(
@@ -61,16 +46,11 @@ def browse_hotels(
         required_amenities=required_amenities, raw_request="browse", assumptions=[],
     )
 
-    if settings.travel_data_source == "serpapi":
-        from travel_booking.agents import serpapi_client
-        checkin = date_range_start
-        checkout = (date.fromisoformat(checkin) + timedelta(days=nights)).isoformat()
-        query = DESTINATION_HOTEL_QUERY.get(destination_code, destination_code)
-        hotels = serpapi_client.search_hotels(query, checkin, checkout, adults=party_size)
-        hotels = sorted(hotels, key=lambda h: h["price_per_night"])[:16]
-    else:
-        agent = _get_search_agent()
-        hotels = agent.search_hotels(destination_code, f"Hotels in {destination_code}", top_k=16)
+    checkin = date_range_start
+    checkout = (date.fromisoformat(checkin) + timedelta(days=nights)).isoformat()
+    query = DESTINATION_HOTEL_QUERY.get(destination_code, destination_code)
+    hotels = serpapi_client.search_hotels(query, checkin, checkout, adults=party_size)
+    hotels = sorted(hotels, key=lambda h: h["price_per_night"])[:16]
 
     results = []
     for h in hotels:
@@ -87,22 +67,13 @@ def browse_flights(
     origin_code: Optional[str] = None,
 ) -> List[dict]:
     origin_code = origin_code or ORIGIN_AIRPORT
-    if settings.travel_data_source == "serpapi":
-        from travel_booking.agents import serpapi_client
-        flights = serpapi_client.search_flights(origin_code, destination_code, date_range_start, adults=party_size)
-        flights = sorted(flights, key=lambda f: f["price"])[:16]
-    else:
-        agent = _get_search_agent()
-        flights = agent.search_flights(destination_code, f"Flights to {destination_code}", top_k=16)
-        flights = [f for f in flights if f["date"] == date_range_start] or flights[:16]
+    flights = serpapi_client.search_flights(origin_code, destination_code, date_range_start, adults=party_size)
+    flights = sorted(flights, key=lambda f: f["price"])[:16]
 
     results = []
     for f in flights:
-        # SerpApi's price is already the total for `party_size` adults (that's
-        # what was passed as `adults` above) -- multiplying by party_size again
-        # would double-count it. Only the simulated dataset's per-passenger
-        # fares need multiplying. See verification_agent._leg_cost_for_party.
-        total_for_party = f["price"] if f.get("_source") == "serpapi_google_flights" else f["price"] * party_size
+        # SerpApi's price is already the total for `party_size` adults
+        total_for_party = f["price"]
         within_budget = budget_amount is None or total_for_party <= budget_amount
         results.append({
             "record": f,

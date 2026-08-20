@@ -1,35 +1,16 @@
 """Real Google Flights / Google Hotels data via SerpApi.
 
-SerpApi legitimately queries Google's own travel search results and
-returns them as structured JSON -- there is no official Google API for
-this, SerpApi is the closest real equivalent. Docs verified directly
-before writing this (not from memory): https://serpapi.com/google-flights-api
-and https://serpapi.com/google-hotels-api.
+Requires SERPAPI_API_KEY in .env.
 
-Requires SERPAPI_API_KEY in .env (free self-serve signup at serpapi.com,
-~100-250 free searches/month). Not wired into TravelAgent yet -- this
-module is independently callable/testable, but hasn't been given a real
-key to verify against live data yet. See travel_booking/BUILD_LOG.md for
-the honest list of fields the simulated dataset has that this real API
-does NOT provide (front-desk hours, room capacity), and how each of the
-4 Verification checks is affected.
-
-IMPORTANT GAPS vs. the simulated dataset (read before wiring this in):
-- No front-desk-hours / 24hr-desk field exists in Google Hotels search
-  results. arrival_vs_checkin can only compare against check_in_time,
-  not "does the desk close before a late arrival" -- that whole trap
-  mechanism has no real-data equivalent from this endpoint.
-- No room/max-occupancy field in these search results either -- the
-  capacity check cannot run against this data as retrieved here.
-- Amenities come back as free-text strings ("Air conditioning", "Free
-  Wifi"), not a controlled vocabulary -- matched here by substring, not
-  exact membership, which is fuzzier than the simulated dataset's exact
-  tags.
-- A resort-fee-style hidden cost IS naturally observable though:
-  comparing rate_per_night vs (total_rate / nights) reveals mandatory
-  fees not in the headline nightly rate -- this maps cleanly onto the
-  same budget check the simulated dataset's H-AUS-05/H-MIA-03 traps
-  exercise, without needing to invent anything.
+Real-data gaps vs. the simulated dataset:
+- No front-desk-hours field, so arrival_vs_checkin can only compare against
+  check_in_time, not desk-closing time.
+- No room/max-occupancy field, so the capacity check can't run against this
+  data.
+- Amenities come back as free-text ("Air conditioning", "Free Wifi"), matched
+  here by substring rather than an exact controlled vocabulary.
+- Mandatory resort fees are still observable: rate_per_night vs.
+  (total_rate / nights) reveals fees not in the headline nightly rate.
 """
 from __future__ import annotations
 
@@ -97,8 +78,8 @@ def search_flights(
     adults: int = 1,
     currency: str = "USD",
 ) -> List[dict]:
-    """Real one-way Google Flights search, normalized toward the same
-    shape as data/flights.json (see module docstring for real gaps)."""
+    """Real one-way Google Flights search, normalized to a consistent
+    record shape (see module docstring for real gaps)."""
     data = _get({
         "engine": "google_flights",
         "departure_id": departure_id,
@@ -111,13 +92,8 @@ def search_flights(
         "gl": "us",
     })
 
-    # A per-flight booking link needs a second, separate SerpApi call per
-    # offer (engine=google_flights + booking_token) -- not worth burning a
-    # whole extra API call per result just for a link. `google_flights_url`
-    # is the real link to this exact search on Google Flights (correct
-    # route/date/passengers), already returned for free with every response,
-    # so every result links out to real bookable results for that search
-    # rather than nothing at all.
+    # a per-offer booking link needs a separate paid call per result; this
+    # link to the same search on Google Flights comes free with the response
     search_link = data.get("search_metadata", {}).get("google_flights_url")
 
     results = []
@@ -162,10 +138,9 @@ def search_hotels(
     adults: int = 1,
     currency: str = "USD",
 ) -> List[dict]:
-    """Real Google Hotels search, normalized toward the same shape as
-    data/hotels.json (see module docstring for real gaps -- notably
-    front_desk_24hr/front_desk_closes and max_occupancy are NOT
-    available from this endpoint and are returned as None)."""
+    """Real Google Hotels search, normalized to a consistent record shape
+    (see module docstring -- front_desk_24hr/front_desk_closes and
+    max_occupancy are NOT available from this endpoint, returned as None)."""
     from datetime import date as _date
 
     nights = max(1, (_date.fromisoformat(check_out_date) - _date.fromisoformat(check_in_date)).days)

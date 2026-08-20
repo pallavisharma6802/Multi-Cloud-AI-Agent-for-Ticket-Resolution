@@ -39,13 +39,7 @@
     box-shadow: 0 4px 12px rgba(255,56,92,0.3); }
   nav .nav-link { color: var(--text); }
 
-  /* ===========================================================
-     HERO -- a real, full-bleed destination photograph (the thing
-     every travel brand actually leads with -- Airbnb, Booking,
-     Expedia all open on a place, not an abstract gradient), with
-     a warm editorial headline and an Airbnb-style rounded search
-     pill overlaid on the photo.
-     =========================================================== */
+  /* hero: full-bleed destination photo with a rounded search pill overlaid */
   .hero { position: relative; padding: 120px 24px 64px; overflow: hidden; min-height: 560px; display: flex;
     align-items: flex-end; background-image: linear-gradient(180deg, rgba(20,15,10,0.15) 0%, rgba(20,15,10,0.05) 30%, rgba(15,10,10,0.86) 100%),
     url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg/1280px-Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg');
@@ -92,12 +86,7 @@
   .section-head h2 { font-family: 'Poppins', sans-serif; font-size: 23px; margin: 0; font-weight: 700; letter-spacing: -0.01em; color: var(--text); }
   .section-head .hint { font-size: 13px; color: var(--muted-soft); }
 
-  /* ===========================================================
-     DESTINATION GRID -- Airbnb listing-card language: photo fills
-     the card, rounded on all corners, plain white space below for
-     name + description, subtle lift on hover. Uniform, dense,
-     photo-first -- not abstract chrome.
-     =========================================================== */
+  /* destination grid: photo-first listing cards, subtle lift on hover */
   .bento-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 26px 20px; }
   .bento-tile { position: relative; cursor: pointer; }
   .bento-tile .tile-photo { position: relative; aspect-ratio: 1 / 1; border-radius: var(--radius); overflow: hidden;
@@ -570,13 +559,7 @@
 </div>
 
 <script>
-/* HTML-escape any untrusted string before interpolating it into an
-   innerHTML template literal. Needed everywhere: hotel/flight names and
-   descriptions come from live external data (SerpApi/Google), and
-   usernames/display names/group names/trip labels come straight from
-   other users -- both are real stored/reflected XSS vectors if inserted
-   raw (e.g. a group name of "<img src=x onerror=...>" rendered to every
-   member's friends/groups list). */
+/* escape untrusted text (hotel/user data) before it goes into innerHTML */
 function esc(s) {
   if (s === null || s === undefined) return "";
   return String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -586,9 +569,9 @@ function esc(s) {
    Not an exhaustive list of everywhere the backend can handle (any real IATA code
    works against live Google Flights/Hotels) -- just the ones surfaced in the UI. */
 const DESTINATIONS = {
-  AUS: { name: "Austin, TX",         tag: "AUS\nTX", blurb: "Live music, keep it weird",     img: "/images/hotels/H-AUS-06.jpg" },
-  DEN: { name: "Denver, CO",         tag: "DEN\nCO", blurb: "Mountains, mile-high air",       img: "/images/hotels/H-DEN-06.jpg" },
-  MIA: { name: "Miami, FL",          tag: "MIA\nFL", blurb: "Beaches, art deco, sun",         img: "/images/hotels/H-MIA-01.jpg" },
+  AUS: { name: "Austin, TX",         tag: "AUS\nTX", blurb: "Live music, keep it weird",     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Skyline_of_Austin%2C_Texas_%28cropped%29.jpg/330px-Skyline_of_Austin%2C_Texas_%28cropped%29.jpg" },
+  DEN: { name: "Denver, CO",         tag: "DEN\nCO", blurb: "Mountains, mile-high air",       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Denver%2C_Colorado_skyline_%28cropped_3x5%29.jpg/330px-Denver%2C_Colorado_skyline_%28cropped_3x5%29.jpg" },
+  MIA: { name: "Miami, FL",          tag: "MIA\nFL", blurb: "Beaches, art deco, sun",         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Villa_Vizcaya_20110228.jpg/330px-Villa_Vizcaya_20110228.jpg" },
   CDG: { name: "Paris, France",      tag: "CDG\nFR", blurb: "Cafes, art, the Seine",          img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/330px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" },
   HND: { name: "Tokyo, Japan",       tag: "HND\nJP", blurb: "Neon, ramen, bullet trains",     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg/330px-Skyscrapers_of_Shinjuku_2009_January.jpg" },
   LHR: { name: "London, UK",         tag: "LHR\nUK", blurb: "Pubs, museums, grey skies",      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/London_Skyline_%28125508655%29.jpeg/330px-London_Skyline_%28125508655%29.jpeg" },
@@ -621,9 +604,7 @@ document.getElementById("dest-grid").innerHTML = Object.entries(DESTINATIONS).ma
   </div>
 `).join("");
 
-/* ---------- hero search bar -- a real functional multi-field search,
-   not just decoration: builds a natural-language request and hands it
-   straight to the same chat/intent pipeline every other entry point uses. ---------- */
+/* hero search bar -- builds a natural-language request for the chat pipeline */
 function submitHeroSearch(e) {
   e.preventDefault();
   const origin = document.getElementById("hero-origin").value.trim();
@@ -640,11 +621,7 @@ function submitHeroSearch(e) {
 }
 function quickFillHero(text) { openChatPage(text); }
 
-/* =========================================================================
-   EXPLORE -- real browse: hotels only, flights only, or the full chat flow.
-   This is what fixes "everywhere I click opens the chat" -- these are three
-   genuinely different, independent things, not the same funnel in disguise.
-   ========================================================================= */
+/* explore: hotels only, flights only, or the full chat flow */
 let EXPLORE_DEST = null;
 let EXPLORE_TAB = "hotels";
 let BROWSE_HOTEL_RESULTS = [];
@@ -734,7 +711,7 @@ async function runHotelBrowse() {
     if (!data.results.length) { results.innerHTML = `<div class="empty-state">No hotels found for these dates.</div>`; return; }
     results.innerHTML = data.results.map((r, i) => {
       const h = r.record;
-      const img = h.image_url || `/images/hotels/${h.id}.jpg`;
+      const img = h.image_url || "";
       const flags = r.checks.filter(c => c.data_available !== false).map(c =>
         `<span class="flag ${c.passed ? 'ok' : 'bad'}">${c.passed ? '✓' : '✕'} ${esc(c.name)}</span>`).join("");
       return `<div class="browse-card ${r.passed_all ? '' : 'trap'}" onclick="showDetailRecord('hotel', BROWSE_HOTEL_RESULTS[${i}])">
@@ -771,7 +748,7 @@ async function runFlightBrowse() {
     if (!data.results.length) { results.innerHTML = `<div class="empty-state">No flights found for that date.</div>`; return; }
     results.innerHTML = data.results.map((r, i) => {
       const f = r.record;
-      const img = f.image_url || f.airline_logo || `/images/flights/${f.id}.jpg`;
+      const img = f.image_url || f.airline_logo || "";
       return `<div class="browse-card" onclick="showDetailRecord('flight', BROWSE_FLIGHT_RESULTS[${i}])">
         <img src="${esc(img)}" onerror="this.style.display='none'" style="${f.airline_logo ? 'object-fit:contain;background:var(--surface-2);padding:14px' : ''}" />
         <div class="body">
@@ -857,10 +834,7 @@ function showError(message) {
   scrollToBottom();
 }
 
-/* Real agent pipeline steps, revealed one at a time while the real search
-   call is in flight -- these are genuine steps the backend performs
-   (real SerpApi/simulated search, then 4 real verification checks), just
-   paced for readability instead of dumping a spinner + instant result. */
+/* paced display of what the backend is actually doing while the search runs */
 const AGENT_STEPS = [
   "Searching real flights…",
   "Searching real hotels…",
@@ -994,7 +968,7 @@ function renderSelectedOption() {
   if (opt.hotel || opt.flight) {
     html += `<div class="pair-label">Proposed itinerary — tap either card for full details</div><div class="itinerary">`;
     if (opt.hotel) {
-      const hotelImg = opt.hotel.image_url || `/images/hotels/${opt.hotel.id}.jpg`;
+      const hotelImg = opt.hotel.image_url || "";
       html += `<div class="itin-item" onclick="showDetail('hotel')">
         <img src="${esc(hotelImg)}" alt="${esc(opt.hotel.name)}" onerror="this.style.display='none'" />
         <div class="itin-body">
@@ -1008,7 +982,7 @@ function renderSelectedOption() {
       </div>`;
     }
     if (opt.flight) {
-      const flightImg = opt.flight.image_url || opt.flight.airline_logo || `/images/flights/${opt.flight.id}.jpg`;
+      const flightImg = opt.flight.image_url || opt.flight.airline_logo || "";
       const ret = opt.flight.return;
       const routeLine = ret ? `${esc(opt.flight.origin)} ⇄ ${esc(opt.flight.destination)} (round trip)` : `${esc(opt.flight.origin)} → ${esc(opt.flight.destination)} (one-way -- no return flight found)`;
       const unit = opt.flight._source === 'serpapi_google_flights' ? ' total' : '/passenger';
@@ -1052,6 +1026,13 @@ function selectOption(i) { SELECTED_OPTION = i; renderSelectedOption(); }
 
 /* ---------- refine/filter panel ---------- */
 const AMENITY_OPTIONS = ["wifi", "pool", "gym", "parking", "breakfast", "pet_friendly", "family_friendly"];
+const RANK_PRESETS = [
+  { value: "best_value", label: "Best value" },
+  { value: "cheapest", label: "Cheapest" },
+  { value: "highest_rated", label: "Highest rated" },
+  { value: "most_convenient", label: "Most convenient" },
+];
+let LAST_RANK_BY = "best_value";
 
 function renderRefinePanel() {
   const c = LAST_CONSTRAINTS;
@@ -1059,9 +1040,13 @@ function renderRefinePanel() {
     const checked = (c.required_amenities || []).includes(a) ? "checked" : "";
     return `<label class="filter-chip"><input type="checkbox" value="${a}" ${checked} /> ${a.replace('_', ' ')}</label>`;
   }).join("");
+  const rankOptions = RANK_PRESETS.map(p => `<option value="${p.value}" ${p.value === LAST_RANK_BY ? "selected" : ""}>${p.label}</option>`).join("");
   return `<div class="refine-panel">
     <button class="refine-toggle" onclick="document.getElementById('refine-body').classList.toggle('hidden')">⚙ Refine this search</button>
     <div id="refine-body" class="refine-body hidden">
+      <div class="refine-row">
+        <label>Sort by<select id="f-rank-by">${rankOptions}</select></label>
+      </div>
       <div class="refine-row">
         <label>From<input type="text" id="f-date-start" value="${c.date_range_start}" placeholder="YYYY-MM-DD" /></label>
         <label>To<input type="text" id="f-date-end" value="${c.date_range_end}" placeholder="YYYY-MM-DD" /></label>
@@ -1082,12 +1067,14 @@ function renderRefinePanel() {
 }
 
 async function applyFilters() {
+  LAST_RANK_BY = document.getElementById("f-rank-by").value;
   const body = {
     date_range_start: document.getElementById("f-date-start").value || null,
     date_range_end: document.getElementById("f-date-end").value || null,
     budget_amount: parseFloat(document.getElementById("f-budget").value) || null,
     budget_scope: document.getElementById("f-scope").value,
     required_amenities: Array.from(document.querySelectorAll("#refine-body input[type=checkbox]:checked")).map(el => el.value),
+    rank_by: LAST_RANK_BY,
   };
   const btn = document.querySelector(".btn-refine-apply");
   btn.textContent = "Searching…"; btn.disabled = true;
@@ -1115,7 +1102,7 @@ function showDetailRecord(kind, r) {
   if (!r) return;
   const overlay = document.getElementById("modal-overlay");
   const panel = document.getElementById("modal-panel");
-  const img = r.image_url || r.airline_logo || `/images/${kind === 'hotel' ? 'hotels' : 'flights'}/${r.id}.jpg`;
+  const img = r.image_url || r.airline_logo || "";
 
   let html = `<button class="modal-close" onclick="closeModal()">✕</button>
     <img class="modal-img" src="${esc(img)}" onerror="this.style.display='none'" style="${r.airline_logo && !r.image_url ? 'object-fit:contain;background:var(--surface-2);padding:24px' : ''}" />
@@ -1331,10 +1318,7 @@ function openPageEl(id) {
   document.getElementById(id).classList.add("open");
   document.body.style.overflow = "hidden";
 }
-/* Every sub-page (chat/explore/planner/friends/groups) was a dead-end you
-   could only leave by going back to the landing page one step at a time --
-   no way to jump straight from e.g. Explore to Planner. goHome()/navTo()
-   back every quick-nav button in every page header. */
+/* lets any sub-page jump directly to another instead of only going back */
 function goHome() {
   document.querySelectorAll(".page-view.open, #chat-view.open").forEach(el => el.classList.remove("open"));
   document.body.style.overflow = "";
@@ -1355,9 +1339,7 @@ function requireAuthOrPrompt() {
   return true;
 }
 
-/* Shared fetch wrapper: a 401 (expired/cleared session) used to fall through
-   and render a misleading "nothing here yet" empty state instead of telling
-   the user they'd been signed out. Now it re-syncs auth state and prompts. */
+/* fetch wrapper: on 401, re-sync auth state and prompt instead of showing an empty state */
 async function authedFetch(url, opts) {
   const res = await fetch(url, opts);
   if (res.status === 401) {
@@ -1478,7 +1460,7 @@ async function openPlanner() {
   }
   body.innerHTML = data.trips.map(t => `
     <div class="saved-trip-card">
-      <img src="${(t.hotel && t.hotel.image_url) || (t.hotel && '/images/hotels/' + t.hotel.id + '.jpg') || ''}" onerror="this.style.display='none'" />
+      <img src="${(t.hotel && t.hotel.image_url) || ''}" onerror="this.style.display='none'" />
       <div class="info">
         <h4>${esc(t.label || (t.hotel ? t.hotel.name : 'Saved trip'))}</h4>
         <p>${t.hotel ? t.hotel.name : ''}${t.flight ? ' · ' + t.flight.airline + ' ' + t.flight.flight_number : ''}</p>
@@ -1680,7 +1662,7 @@ function renderGroupResults(data) {
   if (opt.hotel || opt.flight) {
     html += `<div class="itinerary">`;
     if (opt.hotel) {
-      html += `<div class="itin-item"><img src="${esc(opt.hotel.image_url || '/images/hotels/' + opt.hotel.id + '.jpg')}" onerror="this.style.display='none'" />
+      html += `<div class="itin-item"><img src="${esc(opt.hotel.image_url || '')}" onerror="this.style.display='none'" />
         <div class="itin-body"><div class="itin-kind">🏨 Hotel</div><h3>${esc(opt.hotel.name)}</h3><p>${esc(opt.hotel.destination_name)}</p><div class="price-line">$${opt.hotel.price_per_night}/night</div></div></div>`;
     }
     if (opt.flight) {
@@ -1688,7 +1670,7 @@ function renderGroupResults(data) {
       const routeLine = ret ? `${esc(opt.flight.origin)} ⇄ ${esc(opt.flight.destination)} (round trip)` : `${esc(opt.flight.origin)} → ${esc(opt.flight.destination)} (one-way -- no return flight found)`;
       const unit = opt.flight._source === 'serpapi_google_flights' ? ' total' : '/passenger';
       const priceLine = ret ? `$${opt.flight.price} out + $${ret.price} return = $${opt.flight.price + ret.price}${unit}` : `$${opt.flight.price}${unit}`;
-      html += `<div class="itin-item"><img src="${esc(opt.flight.image_url || opt.flight.airline_logo || '/images/flights/' + opt.flight.id + '.jpg')}" onerror="this.style.display='none'" />
+      html += `<div class="itin-item"><img src="${esc(opt.flight.image_url || opt.flight.airline_logo || '')}" onerror="this.style.display='none'" />
         <div class="itin-body"><div class="itin-kind">✈️ Flight</div><h3>${esc(opt.flight.airline)} ${esc(opt.flight.flight_number)}${ret ? ' + ' + esc(ret.airline) + ' ' + esc(ret.flight_number) : ''}</h3><p>${routeLine}</p><div class="price-line">${priceLine}</div></div></div>`;
     }
     html += `</div>`;

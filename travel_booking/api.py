@@ -1,5 +1,5 @@
-"""FastAPI backend for the travel-booking demo. Local only, single process
-serves both the JSON API and the static frontend (no separate dev server).
+"""FastAPI backend for the travel-booking app. One process serves both the
+JSON API and the static frontend -- no separate dev server.
 
 Run: uvicorn travel_booking.api:app --reload --port 8200
 """
@@ -18,18 +18,32 @@ if str(REPO_ROOT) not in sys.path:
 
 from fastapi import Cookie, FastAPI, HTTPException, Response  # noqa: E402
 from fastapi.middleware.cors import CORSMiddleware  # noqa: E402
-from fastapi.staticfiles import StaticFiles  # noqa: E402
 from fastapi.responses import FileResponse  # noqa: E402
+from fastapi.staticfiles import StaticFiles  # noqa: E402
 from pydantic import BaseModel  # noqa: E402
 
 from travel_booking import auth as auth_mod  # noqa: E402
 from travel_booking.agents import browse as browse_mod  # noqa: E402
+from travel_booking.agents import ranking  # noqa: E402
 from travel_booking.agents.explanation import build_explanation, build_explanation_for_option  # noqa: E402
 from travel_booking.agents.intent_agent import IntentAgent  # noqa: E402
-from travel_booking.agents.orchestrator import TravelAgent, TravelAgentState, TripOption  # noqa: E402
-from travel_booking.agents.preference_aggregator import MemberPreference, aggregate, record_reward  # noqa: E402
-from travel_booking.agents.schemas import DESTINATIONS, ConversationState, ItineraryOutcome, ResolvedConstraints  # noqa: E402
-from travel_booking.agents.verification_agent import VerificationAgent  # noqa: E402
+from travel_booking.agents.orchestrator import (  # noqa: E402
+    MAX_OPTIONS,
+    TravelAgent,
+    TravelAgentState,
+    TripOption,
+)
+from travel_booking.agents.preference_aggregator import (  # noqa: E402
+    MemberPreference,
+    aggregate,
+    record_reward,
+)
+from travel_booking.agents.schemas import (  # noqa: E402
+    DESTINATIONS,
+    ConversationState,
+    ItineraryOutcome,
+    ResolvedConstraints,
+)
 from travel_booking.db import get_connection, init_db, now  # noqa: E402
 
 app = FastAPI(title="Travel Booking Demo")
@@ -90,7 +104,7 @@ def signup(req: SignupRequest, response: Response):
     try:
         user = auth_mod.create_user(req.username.strip(), req.password, req.display_name.strip() or req.username.strip())
     except ValueError as e:
-        raise HTTPException(409, str(e))
+        raise HTTPException(409, str(e)) from e
     token = auth_mod.create_session(user["id"])
     _set_session_cookie(response, token)
     return {"user": user}
@@ -140,6 +154,7 @@ class SearchFilters(BaseModel):
     budget_amount: Optional[float] = None
     budget_scope: Optional[str] = None
     required_amenities: Optional[List[str]] = None
+    rank_by: Optional[str] = None  # one of ranking.WEIGHT_PRESETS; default applied if unset
 
 
 def _conversation_response(conv_id: str, state: ConversationState) -> dict:
@@ -200,6 +215,7 @@ def run_search(conversation_id: str, filters: Optional[SearchFilters] = None):
     if state.status not in ("ready", "best_effort"):
         raise HTTPException(400, f"conversation not ready yet (status={state.status})")
 
+    rank_by = ranking.DEFAULT_PRESET
     if filters is not None:
         # Apply overrides directly on the parsed TravelConstraints before
         # resolving -- lets a user refine dates/budget/amenities without
@@ -217,8 +233,10 @@ def run_search(conversation_id: str, filters: Optional[SearchFilters] = None):
             c.budget_scope = filters.budget_scope
         if filters.required_amenities is not None:
             c.required_amenities = filters.required_amenities
+        if filters.rank_by in ranking.WEIGHT_PRESETS:
+            rank_by = filters.rank_by
 
-    outcome = travel_agent.run_from_state(state)
+    outcome = travel_agent.run_from_state(state, rank_by=rank_by)
     return _outcome_response(outcome)
 
 
@@ -502,7 +520,8 @@ def join_group(req: JoinGroupRequest, session_token: Optional[str] = Cookie(None
         if group is None:
             raise HTTPException(404, "no group with that join code")
         conn.execute(
-            "INSERT OR IGNORE INTO trip_group_members (group_id, user_id, joined_at) VALUES (?, ?, ?)",
+            "INSERT INTO trip_group_members (group_id, user_id, joined_at) VALUES (?, ?, ?) "
+            "ON CONFLICT (group_id, user_id) DO NOTHING",
             (group["id"], user["id"], now()),
         )
         conn.commit()
@@ -622,7 +641,8 @@ def search_group_trip(group_id: int, session_token: Optional[str] = Cookie(None)
     }
     final_state = travel_agent.graph.invoke(init_state, config={"recursion_limit": 200})
     if final_state.get("accepted"):
-        options = final_state.get("accepted_options", [])
+        options = travel_agent._rank_options(final_state.get("accepted_options", []), constraints, ranking.DEFAULT_PRESET)
+        options = options[:MAX_OPTIONS]
         top_options = [
             TripOption(
                 hotel_record=travel_agent._last_hotels_by_id[o.hotel_id],
@@ -676,7 +696,6 @@ def _unsatisfiable_outcome(travel_agent, constraints, final_state, n_hotels, n_f
 
 
 FRONTEND_DIR = Path(__file__).resolve().parent / "frontend"
-app.mount("/images", StaticFiles(directory=str(Path(__file__).resolve().parent / "data" / "images")), name="images")
 app.mount("/static", StaticFiles(directory=str(FRONTEND_DIR)), name="static")
 
 
