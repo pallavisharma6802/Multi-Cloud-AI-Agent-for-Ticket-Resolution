@@ -41,3 +41,5 @@ eval/live_runs/*
 travel_booking/eval/battery_results.jsonl
 travel_booking/eval/summary.json
 eval/human_review/live_smoke_review.csv
+
+.DS_Store

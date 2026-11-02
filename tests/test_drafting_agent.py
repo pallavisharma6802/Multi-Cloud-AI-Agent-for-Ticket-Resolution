@@ -80,3 +80,27 @@ def test_draft_response_retries_via_shared_client_on_throttle(monkeypatch):
     assert text == "Retry succeeded draft."
     assert meta.attempts == 2
     assert mock_runtime.converse.call_count == 2
+
+
+def test_reflexion_keeps_evidence_and_specific_review_feedback(mock_llm_client):
+    """The next model call must retain the evidence and the actual defect to fix."""
+    mock_llm_client.generate_text.return_value = (
+        "A support specialist needs to supply the verified support contact.",
+        make_metadata(role="drafting"),
+    )
+    article = "Use the official help page at {{Website URL}} to contact support."
+    previous = "I transferred you. Visit {{Website URL}}."
+    feedback = "No transfer tool was used and the website address is unknown."
+    text, _ = DraftingAgent().draft_response(
+        ticket_title="Contact support",
+        ticket_description="I need to speak to a person.",
+        intent="contact_human_agent",
+        kb_documents=[KBDocument(doc_id="contact", content=article, similarity_score=0.9)],
+        previous_draft=previous,
+        judge_feedback=feedback,
+    )
+    prompt = mock_llm_client.generate_text.call_args.kwargs["prompt"]
+    assert article in prompt
+    assert previous in prompt
+    assert feedback in prompt
+    assert "A support specialist" in text

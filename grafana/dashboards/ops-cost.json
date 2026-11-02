@@ -37,7 +37,7 @@
         {
           "refId": "A",
           "format": "table",
-          "rawSql": "SELECT iteration_count\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts) AND iteration_count IS NOT NULL",
+          "rawSql": "SELECT iteration_count\nFROM `ticket_analytics_live.fact_ticket_events`\nWHERE $__timeFilter(event_ts) AND iteration_count IS NOT NULL",
           "datasource": {
             "type": "grafana-bigquery-datasource",
             "uid": "bigquery-ticket-analytics"
@@ -70,7 +70,7 @@
         {
           "refId": "A",
           "format": "timeseries",
-          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time, AVG(llm_call_count) AS avg_llm_calls\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\nGROUP BY time\nORDER BY time",
+          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time, AVG(llm_call_count) AS avg_llm_calls\nFROM `ticket_analytics_live.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\nGROUP BY time\nORDER BY time",
           "datasource": {
             "type": "grafana-bigquery-datasource",
             "uid": "bigquery-ticket-analytics"
@@ -79,7 +79,7 @@
         {
           "refId": "B",
           "format": "timeseries",
-          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time, AVG(total_tokens) AS avg_total_tokens\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\nGROUP BY time\nORDER BY time",
+          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time, AVG(total_tokens) AS avg_total_tokens\nFROM `ticket_analytics_live.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\nGROUP BY time\nORDER BY time",
           "datasource": {
             "type": "grafana-bigquery-datasource",
             "uid": "bigquery-ticket-analytics"
@@ -112,7 +112,7 @@
         {
           "refId": "A",
           "format": "timeseries",
-          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time,\n  APPROX_QUANTILES(total_latency_ms, 100)[OFFSET(50)] AS p50,\n  APPROX_QUANTILES(total_latency_ms, 100)[OFFSET(95)] AS p95,\n  APPROX_QUANTILES(total_latency_ms, 100)[OFFSET(99)] AS p99\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\nGROUP BY time\nORDER BY time",
+          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time,\n  APPROX_QUANTILES(total_latency_ms, 100)[OFFSET(50)] AS p50,\n  APPROX_QUANTILES(total_latency_ms, 100)[OFFSET(95)] AS p95,\n  APPROX_QUANTILES(total_latency_ms, 100)[OFFSET(99)] AS p99\nFROM `ticket_analytics_live.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\nGROUP BY time\nORDER BY time",
           "datasource": {
             "type": "grafana-bigquery-datasource",
             "uid": "bigquery-ticket-analytics"
@@ -158,7 +158,7 @@
         {
           "refId": "A",
           "format": "table",
-          "rawSql": "SELECT COUNTIF(EXISTS(SELECT 1 FROM UNNEST(anomaly_flags) AS flag WHERE flag LIKE '%safety_net%')) AS safety_net_trips\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts)",
+          "rawSql": "SELECT COUNTIF(EXISTS(SELECT 1 FROM UNNEST(anomaly_flags) AS flag WHERE flag LIKE '%safety_net%')) AS safety_net_trips\nFROM `ticket_analytics_live.fact_ticket_events`\nWHERE $__timeFilter(event_ts)",
           "datasource": {
             "type": "grafana-bigquery-datasource",
             "uid": "bigquery-ticket-analytics"

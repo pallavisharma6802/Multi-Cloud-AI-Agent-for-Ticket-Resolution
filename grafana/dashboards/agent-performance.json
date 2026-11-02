@@ -36,7 +36,7 @@
         {
           "refId": "A",
           "format": "table",
-          "rawSql": "SELECT intent_confidence\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts) AND intent_confidence IS NOT NULL",
+          "rawSql": "SELECT intent_confidence\nFROM `ticket_analytics_live.fact_ticket_events`\nWHERE $__timeFilter(event_ts) AND intent_confidence IS NOT NULL",
           "datasource": {
             "type": "grafana-bigquery-datasource",
             "uid": "bigquery-ticket-analytics"
@@ -62,7 +62,7 @@
         {
           "refId": "A",
           "format": "table",
-          "rawSql": "SELECT final_confidence\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts) AND final_confidence IS NOT NULL",
+          "rawSql": "SELECT final_confidence\nFROM `ticket_analytics_live.fact_ticket_events`\nWHERE $__timeFilter(event_ts) AND final_confidence IS NOT NULL",
           "datasource": {
             "type": "grafana-bigquery-datasource",
             "uid": "bigquery-ticket-analytics"
@@ -97,7 +97,7 @@
         {
           "refId": "A",
           "format": "timeseries",
-          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time,\n  SAFE_DIVIDE(COUNTIF(requires_human_review), COUNT(*)) AS human_override_rate\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\nGROUP BY time\nORDER BY time",
+          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time,\n  SAFE_DIVIDE(COUNTIF(requires_human_review), COUNT(*)) AS human_override_rate\nFROM `ticket_analytics_live.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\nGROUP BY time\nORDER BY time",
           "datasource": {
             "type": "grafana-bigquery-datasource",
             "uid": "bigquery-ticket-analytics"
@@ -132,7 +132,7 @@
         {
           "refId": "A",
           "format": "timeseries",
-          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time, AVG(intent_self_consistency) AS avg_self_consistency\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\nGROUP BY time\nORDER BY time",
+          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time, AVG(intent_self_consistency) AS avg_self_consistency\nFROM `ticket_analytics_live.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\nGROUP BY time\nORDER BY time",
           "datasource": {
             "type": "grafana-bigquery-datasource",
             "uid": "bigquery-ticket-analytics"
@@ -181,7 +181,7 @@
         {
           "refId": "A",
           "format": "table",
-          "rawSql": "SELECT SAFE_DIVIDE(COUNTIF(requires_human_review), COUNT(*)) AS escalation_rate\nFROM `ticket_analytics.fact_ticket_events`\nWHERE $__timeFilter(event_ts)",
+          "rawSql": "SELECT SAFE_DIVIDE(COUNTIF(requires_human_review), COUNT(*)) AS escalation_rate\nFROM `ticket_analytics_live.fact_ticket_events`\nWHERE $__timeFilter(event_ts)",
           "datasource": {
             "type": "grafana-bigquery-datasource",
             "uid": "bigquery-ticket-analytics"

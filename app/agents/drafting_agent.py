@@ -95,9 +95,13 @@ Classified Intent: {intent}
 {reflexion_block}
 Instructions:
 - Provide a clear, helpful response to the user's issue
-- Base your answer ONLY on the knowledge base articles provided -- do not invent steps, policies, or facts not present in them
-- Be professional, empathetic, and concise
-- If the knowledge base doesn't have sufficient information, acknowledge this honestly and suggest the customer be connected with a human agent
+- Base self-service guidance ONLY on the provided articles. Do not invent steps, policies, URLs, phone numbers, email addresses, or account-specific facts.
+- These articles are generic examples, not proof of this company's actual settings. Template variables such as {{{{Order Number}}}}, {{{{Website URL}}}}, and [Your Name] are missing information. Never copy unresolved template variables into the response, and never fill them with guessed values. Omit an unavailable detail or explain that a support specialist must supply it.
+- No action tools have been invoked. You cannot look up a live order, issue a refund, create or modify an account, reset a password, cancel an order, or actually connect the customer to another agent. Never claim an action was performed, a transfer was completed, or a result was verified. Offer evidence-backed self-service instructions; otherwise explain that human follow-up is needed without pretending it has happened.
+- A request for additional information is a clarification, not a resolution. If facts needed to resolve the issue are missing, state what remains unknown. Ask only for necessary non-sensitive information; never request passwords, access tokens, or full payment credentials.
+- Respect an explicit request for a human. Acknowledge the request and say that the issue requires human follow-up instead of declaring it resolved.
+- Be professional, empathetic, and concise. Normal courtesy does not need to be copied from an article. Avoid placeholder greetings or signatures.
+- If the knowledge base lacks reliable actionable instructions, acknowledge that limit and recommend human review rather than inventing a solution.
 - Keep the response under 300 words
 
 Response:"""

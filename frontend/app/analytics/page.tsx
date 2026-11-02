@@ -1,75 +1,120 @@
 "use client";
-
-const GRAFANA_URL = process.env.NEXT_PUBLIC_GRAFANA_URL || "http://localhost:3001";
-
-// Dashboard UIDs match grafana/dashboards/*.json's top-level "uid" field --
-// see grafana/provisioning/dashboards/dashboards.yaml for how they get
-// loaded into the "Ticket Resolution Analytics" folder on Grafana startup.
-const DASHBOARDS = [
+import { useState } from "react";
+import Icon from "@/components/Icon";
+const BASE = process.env.NEXT_PUBLIC_GRAFANA_URL || "http://localhost:3001";
+const boards = [
   {
     uid: "ticket-trends",
-    slug: "ticket-trends",
-    title: "Ticket Trends",
-    description: "Volume over time, by domain pack, by priority, and the 7-day rolling escalation-rate panel.",
+    title: "Ticket trends",
+    sub: "Volume & escalation",
+    icon: "chart",
   },
   {
     uid: "agent-performance",
-    slug: "agent-performance",
-    title: "Agent Performance",
-    description: "Confidence distributions and the human-override (escalation) rate -- the primary safety-net view.",
+    title: "Agent performance",
+    sub: "Confidence & decisions",
+    icon: "spark",
   },
   {
     uid: "rag-health",
-    slug: "rag-health",
-    title: "RAG Health",
-    description: "Self-RAG faithfulness/relevance trends and CRAG retrieval-miss rate.",
+    title: "Knowledge quality",
+    sub: "Relevance & faithfulness",
+    icon: "shield",
   },
   {
     uid: "ops-cost",
-    slug: "ops-cost",
-    title: "Ops & Cost",
-    description: "Iterations per ticket, LLM calls/tokens, latency percentiles, and the safety-net trip-wire counter.",
+    title: "Operations",
+    sub: "Latency & token usage",
+    icon: "bolt",
   },
 ];
-
-export default function AnalyticsPage() {
+export default function Analytics() {
+  const [active, setActive] = useState(0);
+  const [range, setRange] = useState("7d");
+  const [version, setVersion] = useState(0);
+  const b = boards[active];
+  const url = `${BASE}/d/${b.uid}/${b.uid}?orgId=1&from=now-${range}&to=now&refresh=30s&theme=light`;
   return (
-    <div className="space-y-8">
-      <div>
-        <h1 className="text-xl font-bold text-slate-900">Analytics</h1>
-        <p className="mt-1 text-sm text-slate-600">
-          Embeds the Grafana dashboards provisioned in <code>grafana/dashboards/</code>, reading from
-          BigQuery&apos;s <code>fact_ticket_events</code> table (see{" "}
-          <code>app/analytics/bigquery_sink.py</code>). Requires{" "}
-          <code>docker compose up grafana</code> with real GCP credentials configured -- see{" "}
-          <code>grafana/README.md</code>. If the panels below don&apos;t load, that setup step hasn&apos;t
-          been done yet in this environment.
-        </p>
-      </div>
-
-      {DASHBOARDS.map((d) => (
-        <div key={d.uid} className="rounded-lg border border-slate-200 bg-white p-4">
-          <div className="mb-3 flex items-center justify-between">
-            <div>
-              <h2 className="font-semibold text-slate-900">{d.title}</h2>
-              <p className="text-sm text-slate-500">{d.description}</p>
-            </div>
-            <a
-              href={`${GRAFANA_URL}/d/${d.uid}/${d.slug}?orgId=1&from=now-30d&to=now`}
-              target="_blank"
-              rel="noreferrer"
-              className="text-sm font-medium text-indigo-600 hover:underline"
-            >
-              Open in Grafana &rarr;
-            </a>
-          </div>
-          <iframe
-            src={`${GRAFANA_URL}/d/${d.uid}/${d.slug}?orgId=1&from=now-30d&to=now&kiosk=tv&theme=light`}
-            className="h-[500px] w-full rounded-md border border-slate-100"
-            title={d.title}
-          />
+    <div className="page-enter">
+      <div className="page-heading">
+        <div>
+          <div className="eyebrow">FROM ACTIVITY TO INSIGHT</div>
+          <h1>Support analytics</h1>
+          <p className="subtle">
+            Understand your volume, your agents, and the quality of every
+            answer.
+          </p>
         </div>
-      ))}
+        <div className="button-row">
+          <select
+            className="btn"
+            aria-label="Analytics time range"
+            value={range}
+            onChange={(e) => setRange(e.target.value)}
+          >
+            <option value="24h">Last 24 hours</option>
+            <option value="7d">Last 7 days</option>
+            <option value="30d">Last 30 days</option>
+            <option value="90d">Last 90 days</option>
+          </select>
+          <button
+            className="btn"
+            aria-label="Refresh dashboard"
+            onClick={() => setVersion((v) => v + 1)}
+          >
+            <Icon name="refresh" size={14} />
+          </button>
+        </div>
+      </div>
+      <div className="cloud-strip">
+        <Icon name="cloud" size={16} />
+        <span>
+          Cloud analytics · BigQuery ticket events · Grafana dashboards
+        </span>
+        <a
+          className="text-link"
+          style={{ marginLeft: "auto" }}
+          href={url}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Open Grafana <Icon name="external" size={12} />
+        </a>
+      </div>
+      <div className="dashboard-options">
+        {boards.map((d, i) => (
+          <button
+            key={d.uid}
+            onClick={() => setActive(i)}
+            className={`dashboard-option ${active === i ? "active" : ""}`}
+          >
+            <Icon name={d.icon} size={20} />
+            <span>
+              <strong>{d.title}</strong>
+              <small>{d.sub}</small>
+            </span>
+          </button>
+        ))}
+      </div>
+      <section className="panel">
+        <div className="panel-head">
+          <div>
+            <h2>{b.title}</h2>
+            <p>Live queries against your cloud event history</p>
+          </div>
+          <span className="badge green">Refreshes every 30s</span>
+        </div>
+        <iframe
+          key={`${active}-${range}-${version}`}
+          className="analytics-frame"
+          title={b.title}
+          src={`${url}&kiosk=tv`}
+        />
+      </section>
+      <div className="footer-note">
+        <span>Switch views above to explore all four dashboards.</span>
+        <span>Queries use the selected time range.</span>
+      </div>
     </div>
   );
 }

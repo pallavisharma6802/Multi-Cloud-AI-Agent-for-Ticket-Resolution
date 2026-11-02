@@ -10,7 +10,10 @@ class EmbeddingGenerator:
     
     def __init__(self, model_name: str = "all-MiniLM-L6-v2"):
         logger.info(f"Loading embedding model: {model_name}")
-        self.model = SentenceTransformer(model_name)
+        try:
+            self.model = SentenceTransformer(model_name, local_files_only=True)
+        except OSError:
+            self.model = SentenceTransformer(model_name)
         self.dimension = self.model.get_sentence_embedding_dimension()
         logger.info(f"Model loaded. Embedding dimension: {self.dimension}")
     

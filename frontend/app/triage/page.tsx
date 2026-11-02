@@ -1,148 +1,199 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Icon from "@/components/Icon";
+import TicketTable from "@/components/TicketTable";
 import { TicketSummary, listTickets } from "@/lib/api";
-
-const PRIORITY_STYLES: Record<string, string> = {
-  low: "bg-green-100 text-green-700",
-  medium: "bg-yellow-100 text-yellow-700",
-  high: "bg-orange-100 text-orange-700",
-  urgent: "bg-red-100 text-red-700",
-};
-
-export default function TriagePage() {
+export default function Inbox() {
   const [tickets, setTickets] = useState<TicketSummary[]>([]);
-  const [statusFilter, setStatusFilter] = useState("");
-  const [priorityFilter, setPriorityFilter] = useState("");
-  const [domainFilter, setDomainFilter] = useState("");
+  const [tab, setTab] = useState("");
+  const [search, setSearch] = useState("");
+  const [priority, setPriority] = useState("");
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
-  function load() {
+  const [error, setError] = useState("");
+  const load = () => {
     setLoading(true);
-    setError(null);
-    listTickets({
-      status_filter: statusFilter || undefined,
-      priority_filter: priorityFilter || undefined,
-      domain_pack_filter: domainFilter || undefined,
-      limit: 100,
-    })
-      .then(setTickets)
-      .catch((e) => setError(`Could not load tickets -- is the backend running? (${e.message})`))
+    listTickets({ limit: 500 })
+      .then((t) => {
+        setTickets(t);
+        setError("");
+      })
+      .catch((e) => setError(e.message))
       .finally(() => setLoading(false));
-  }
-
-  useEffect(load, [statusFilter, priorityFilter, domainFilter]);
-
-  return (
-    <div className="space-y-6">
-      <div className="flex items-center justify-between">
-        <h1 className="text-xl font-bold text-slate-900">Triage Queue</h1>
-        <button
-          onClick={load}
-          className="rounded-md border border-slate-300 px-3 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-100"
-        >
-          Refresh
-        </button>
-      </div>
-
-      <div className="flex gap-4">
-        <FilterSelect
-          label="Status"
-          value={statusFilter}
-          onChange={setStatusFilter}
-          options={["open", "in_progress", "resolved", "closed"]}
-        />
-        <FilterSelect
-          label="Priority"
-          value={priorityFilter}
-          onChange={setPriorityFilter}
-          options={["low", "medium", "high", "urgent"]}
-        />
-        <FilterSelect
-          label="Domain Pack"
-          value={domainFilter}
-          onChange={setDomainFilter}
-          options={["it_saas", "healthcare"]}
-        />
-      </div>
-
-      {error && <div className="rounded-md border border-red-200 bg-red-50 p-4 text-sm text-red-700">{error}</div>}
-
-      <div className="overflow-hidden rounded-lg border border-slate-200 bg-white">
-        <table className="min-w-full divide-y divide-slate-200 text-sm">
-          <thead className="bg-slate-50 text-left text-xs font-semibold uppercase text-slate-500">
-            <tr>
-              <th className="px-4 py-3">Ticket</th>
-              <th className="px-4 py-3">Title</th>
-              <th className="px-4 py-3">Domain</th>
-              <th className="px-4 py-3">Intent</th>
-              <th className="px-4 py-3">Priority</th>
-              <th className="px-4 py-3">Status</th>
-              <th className="px-4 py-3">Created</th>
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-slate-100">
-            {!loading && tickets.length === 0 && (
-              <tr>
-                <td colSpan={7} className="px-4 py-8 text-center text-slate-400">
-                  No tickets found.
-                </td>
-              </tr>
-            )}
-            {tickets.map((t) => (
-              <tr key={t.ticket_id} className="hover:bg-slate-50">
-                <td className="px-4 py-3 font-mono text-xs text-slate-500">
-                  <Link href={`/tickets/${t.ticket_id}`} className="text-indigo-600 hover:underline">
-                    {t.ticket_id}
-                  </Link>
-                </td>
-                <td className="px-4 py-3 text-slate-900">{t.title}</td>
-                <td className="px-4 py-3 text-slate-600">{t.domain_pack ?? "-"}</td>
-                <td className="px-4 py-3 text-slate-600">{t.intent ?? "-"}</td>
-                <td className="px-4 py-3">
-                  <span className={`rounded-full px-2 py-0.5 text-xs font-semibold ${PRIORITY_STYLES[t.priority] ?? "bg-slate-100 text-slate-700"}`}>
-                    {t.priority}
-                  </span>
-                </td>
-                <td className="px-4 py-3 text-slate-600">{t.status}</td>
-                <td className="px-4 py-3 text-slate-500">{new Date(t.created_at).toLocaleString()}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </div>
+  };
+  useEffect(() => {
+    load();
+    const t = setInterval(load, 30000);
+    return () => clearInterval(t);
+  }, []);
+  const filtered = tickets.filter(
+    (t) =>
+      (!tab || t.status === tab) &&
+      (!priority || t.priority === priority) &&
+      `${t.title} ${t.ticket_id} ${t.user_email} ${t.intent}`
+        .toLowerCase()
+        .includes(search.toLowerCase()),
   );
-}
-
-function FilterSelect({
-  label,
-  value,
-  onChange,
-  options,
-}: {
-  label: string;
-  value: string;
-  onChange: (v: string) => void;
-  options: string[];
-}) {
+  function exportCsv() {
+    const rows = [
+      ["Ticket", "Title", "Requester", "Status", "Priority", "Intent"],
+      ...filtered.map((t) => [
+        t.ticket_id,
+        t.title,
+        t.user_email,
+        t.status,
+        t.priority,
+        t.intent || "",
+      ]),
+    ];
+    const csv = rows
+      .map((r) =>
+        r.map((v) => '"' + String(v).replaceAll('"', '""') + '"').join(","),
+      )
+      .join("\n");
+    const url = URL.createObjectURL(new Blob([csv], { type: "text/csv" }));
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "resolve-tickets.csv";
+    a.click();
+    URL.revokeObjectURL(url);
+  }
   return (
-    <div>
-      <label className="block text-xs font-medium text-slate-500">{label}</label>
-      <select
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        className="mt-1 rounded-md border border-slate-300 px-2 py-1 text-sm"
-      >
-        <option value="">All</option>
-        {options.map((o) => (
-          <option key={o} value={o}>
-            {o}
-          </option>
+    <div className="page-enter">
+      <div className="page-heading">
+        <div>
+          <div className="eyebrow">EVERY CONVERSATION COUNTS</div>
+          <h1>Ticket inbox</h1>
+          <p className="subtle">
+            Find the signal. Review the evidence. Keep things moving.
+          </p>
+        </div>
+        <Link href="/submit" className="btn btn-primary">
+          <Icon name="plus" size={15} />
+          Create ticket
+        </Link>
+      </div>
+      <div className="stats-grid">
+        {[
+          { label: "All tickets", value: tickets.length, icon: "inbox" },
+          {
+            label: "Needs review",
+            value: tickets.filter((t) => t.status === "in_progress").length,
+            icon: "clock",
+          },
+          {
+            label: "Resolved",
+            value: tickets.filter((t) => t.status === "resolved").length,
+            icon: "check",
+          },
+          {
+            label: "High priority",
+            value: tickets.filter((t) =>
+              ["high", "urgent"].includes(t.priority),
+            ).length,
+            icon: "bolt",
+          },
+        ].map((s) => (
+          <div className="stat-card" key={s.label}>
+            <div className="stat-top">
+              {s.label}
+              <Icon name={s.icon} size={16} />
+            </div>
+            <div className="stat-value">
+              {loading && !tickets.length ? "—" : s.value}
+            </div>
+          </div>
         ))}
-      </select>
+      </div>
+      {error && (
+        <div className="error-box">
+          {error}
+          <button className="btn" onClick={load}>
+            Retry
+          </button>
+        </div>
+      )}
+      <section className="panel">
+        <div className="queue-toolbar">
+          <div className="tabs">
+            {[
+              { v: "", l: "All tickets" },
+              { v: "in_progress", l: "Needs review" },
+              { v: "resolved", l: "Resolved" },
+              { v: "open", l: "Open" },
+            ].map((t) => (
+              <button
+                key={t.v}
+                className={`tab ${tab === t.v ? "active" : ""}`}
+                onClick={() => setTab(t.v)}
+              >
+                {t.l}
+                <span className="tab-count">
+                  {tickets.filter((x) => !t.v || x.status === t.v).length}
+                </span>
+              </button>
+            ))}
+          </div>
+          <label className="search-field">
+            <Icon name="search" size={14} />
+            <input
+              aria-label="Search tickets"
+              placeholder="Search tickets…"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+          </label>
+        </div>
+        <div className="filters">
+          <Icon name="filter" size={13} />
+          <select
+            aria-label="Filter by priority"
+            value={priority}
+            onChange={(e) => setPriority(e.target.value)}
+          >
+            <option value="">All priorities</option>
+            {["urgent", "high", "medium", "low"].map((p) => (
+              <option key={p} value={p}>
+                {p.charAt(0).toUpperCase() + p.slice(1)}
+              </option>
+            ))}
+          </select>
+          {(search || priority || tab) && (
+            <button
+              className="text-link"
+              onClick={() => {
+                setSearch("");
+                setPriority("");
+                setTab("");
+              }}
+            >
+              Clear filters
+            </button>
+          )}
+          <span className="subtle" style={{ marginLeft: "auto", fontSize: 10 }}>
+            {filtered.length} tickets
+          </span>
+          <button
+            className="btn"
+            onClick={exportCsv}
+            disabled={!filtered.length}
+          >
+            Export CSV
+          </button>
+          <button className="btn" aria-label="Refresh tickets" onClick={load}>
+            <Icon
+              name="refresh"
+              size={13}
+              className={loading ? "spinner" : ""}
+            />
+          </button>
+        </div>
+        <TicketTable tickets={filtered} loading={loading} />
+      </section>
+      <div className="footer-note">
+        <span>Showing up to 500 most recent tickets</span>
+        <span>Auto-refresh every 30 seconds</span>
+      </div>
     </div>
   );
 }

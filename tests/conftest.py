@@ -37,7 +37,7 @@ if "sentence_transformers" not in sys.modules:
             return list(self)
 
     class _FakeSentenceTransformer:
-        def __init__(self, model_name: str = "all-MiniLM-L6-v2"):
+        def __init__(self, model_name: str = "all-MiniLM-L6-v2", **kwargs):
             self.model_name = model_name
 
         def get_sentence_embedding_dimension(self):
@@ -76,6 +76,7 @@ def _default_mock_bedrock_client(monkeypatch):
     from app.config import settings
 
     bedrock_client_module.reset_llm_client()
+    monkeypatch.setattr(settings, "enable_bigquery", False)
     for attr in (
         "model_intent_priority",
         "model_grader",

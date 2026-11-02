@@ -1,200 +1,316 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
-import { AgentDecisionEntry, TicketTraceResponse, getTicketTrace } from "@/lib/api";
-
-export default function TicketDetailPage() {
-  const params = useParams<{ id: string }>();
+import Link from "next/link";
+import Icon from "@/components/Icon";
+import { Status, Priority } from "@/components/TicketTable";
+import { TicketTraceResponse, getTicketTrace, retryTicket, resolveTicket } from "@/lib/api";
+export default function TicketDetail() {
+  const { id } = useParams<{ id: string }>();
   const [data, setData] = useState<TicketTraceResponse | null>(null);
-  const [error, setError] = useState<string | null>(null);
-
+  const [error, setError] = useState("");
+  const [tab, setTab] = useState("conversation");
+  const [copied, setCopied] = useState(false);
+  const [working, setWorking] = useState(false);
+  const [actionError, setActionError] = useState("");
+  async function act(action:"retry"|"resolve") {
+    setWorking(true); setActionError("");
+    try { if(action==="retry") await retryTicket(id); else await resolveTicket(id); setData(await getTicketTrace(id)); }
+    catch(e:any){setActionError(e.message)} finally{setWorking(false)}
+  }
   useEffect(() => {
-    if (!params?.id) return;
-    getTicketTrace(params.id)
+    getTicketTrace(id)
       .then(setData)
       .catch((e) => setError(e.message));
-  }, [params?.id]);
-
-  if (error) {
-    return <div className="rounded-md border border-red-200 bg-red-50 p-4 text-sm text-red-700">{error}</div>;
-  }
-  if (!data) {
-    return <p className="text-sm text-slate-500">Loading trace...</p>;
-  }
-
-  const { ticket, agent_decisions, drafted_response } = data;
-  const gradeDecision = agent_decisions.find((d) => d.agent_name === "document_grader" && d.action === "grade_documents");
-  const gradedDocuments: Array<{ doc_id: string; relevant: boolean; rationale: string; content_preview: string }> =
-    gradeDecision?.output?.graded_documents ?? [];
-
-  return (
-    <div className="space-y-6">
-      <div>
-        <div className="flex items-center gap-3">
-          <h1 className="text-xl font-bold text-slate-900">{ticket.title}</h1>
-          <StatusBadge action={drafted_response?.final_action} requiresHuman={drafted_response?.requires_human_review} />
-        </div>
-        <p className="mt-1 text-sm text-slate-500">
-          {ticket.id} &middot; {ticket.domain_pack} &middot; priority: {ticket.priority} &middot; sentiment:{" "}
-          {ticket.sentiment ?? "n/a"} &middot; {new Date(ticket.created_at).toLocaleString()}
-        </p>
-        <p className="mt-3 whitespace-pre-wrap rounded-md bg-white p-4 text-sm text-slate-700 border border-slate-200">
-          {ticket.description}
-        </p>
+  }, [id]);
+  if (error)
+    return (
+      <div className="error-box">
+        {error}
+        <Link className="btn" href="/triage">
+          Back to inbox
+        </Link>
       </div>
-
-      {drafted_response && (
-        <Section title="Final Supervisor Decision">
-          <p className="text-sm text-slate-700">
-            <span className="font-semibold">{drafted_response.final_action}</span> with confidence{" "}
-            {(drafted_response.confidence * 100).toFixed(0)}% after {drafted_response.iteration_count ?? 0}{" "}
-            loop iteration(s).
+    );
+  if (!data)
+    return (
+      <section className="panel">
+        <div className="empty-state">Loading ticket and decision trail…</div>
+      </section>
+    );
+  const { ticket: t, drafted_response: r, agent_decisions: decisions } = data;
+  const relevant = decisions.flatMap((d) => d.output?.graded_documents || []);
+  async function copy() {
+    try {
+      await navigator.clipboard.writeText(r?.draft_text || "");
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2500);
+    } catch {
+      setError(
+        "Clipboard is unavailable. You can select and copy the response text.",
+      );
+    }
+  }
+  return (
+    <div className="page-enter">
+      <Link href="/triage" className="text-link" style={{ marginBottom: 20 }}>
+        ← Back to inbox
+      </Link>
+      <div className="page-heading">
+        <div>
+          <div className="eyebrow">
+            {t.id} · {(t.domain_pack || "Support").replaceAll("_", " ")}
+          </div>
+          <h1 style={{ fontSize: 25 }}>{t.title}</h1>
+          <p className="subtle">
+            Opened{" "}
+            {new Date(
+              t.created_at + (/Z$/.test(t.created_at) ? "" : "Z"),
+            ).toLocaleString()}
           </p>
-          {drafted_response.escalation_rationale && (
-            <p className="mt-2 rounded-md bg-orange-50 p-3 text-sm text-orange-800">
-              <span className="font-semibold">Escalation rationale: </span>
-              {drafted_response.escalation_rationale}
-            </p>
-          )}
-          {drafted_response.anomaly_flags && drafted_response.anomaly_flags.length > 0 && (
-            <p className="mt-2 rounded-md bg-red-50 p-3 text-sm text-red-800">
-              <span className="font-semibold">Engineering safety-net anomalies: </span>
-              {drafted_response.anomaly_flags.join("; ")}
-            </p>
-          )}
-          {drafted_response.cost_estimate && (
-            <p className="mt-2 text-xs text-slate-500">
-              LLM calls: {drafted_response.cost_estimate.llm_call_count} &middot; tokens:{" "}
-              {drafted_response.cost_estimate.total_tokens} &middot; latency:{" "}
-              {drafted_response.cost_estimate.total_latency_ms}ms
-            </p>
-          )}
-        </Section>
-      )}
-
-      {drafted_response?.intent_rationale && (
-        <Section title="Intent / Priority Classification">
-          <p className="text-sm text-slate-700">
-            Intent: <span className="font-medium">{ticket.intent}</span>
-          </p>
-          <p className="mt-1 text-sm text-slate-600">{drafted_response.intent_rationale}</p>
-        </Section>
-      )}
-
-      {gradedDocuments.length > 0 && (
-        <Section title="CRAG Document Grading (per-document rationale)">
-          <div className="space-y-2">
-            {gradedDocuments.map((doc) => (
-              <div
-                key={doc.doc_id}
-                className={`rounded-md border p-3 text-sm ${
-                  doc.relevant ? "border-green-200 bg-green-50" : "border-slate-200 bg-slate-50"
-                }`}
+        </div>
+        <Status status={t.status} />
+      </div>
+      {actionError&&<div className="error-box">{actionError}</div>}
+      {t.status==="open"&&<div className="cloud-strip"><Icon name="clock" size={16}/><span>This ticket has not finished processing. Retry it to resume an assessment using the same ticket ID.</span><button className="btn btn-primary" style={{marginLeft:"auto"}} disabled={working} onClick={()=>act("retry")}>{working?"Processing…":"Retry assessment"}</button></div>}
+      {t.status==="in_progress"&&<div className="cloud-strip"><Icon name="shield" size={16}/><span>This ticket needs your team’s review. After checking the response and addressing the request, mark it resolved.</span><button className="btn btn-primary" style={{marginLeft:"auto"}} disabled={working} onClick={()=>act("resolve")}>{working?"Saving…":"Mark resolved"}</button></div>}
+      <div className="ticket-layout">
+        <div>
+          <div className="tabs detail-tabs">
+            {[
+              { id: "conversation", label: "Conversation" },
+              { id: "trace", label: `Agent activity (${decisions.length})` },
+              { id: "evidence", label: "Knowledge & quality" },
+            ].map((v) => (
+              <button
+                className={`tab ${tab === v.id ? "active" : ""}`}
+                key={v.id}
+                onClick={() => setTab(v.id)}
               >
-                <div className="flex items-center justify-between">
-                  <span className="font-mono text-xs text-slate-500">{doc.doc_id}</span>
-                  <span className={`text-xs font-semibold ${doc.relevant ? "text-green-700" : "text-slate-500"}`}>
-                    {doc.relevant ? "relevant" : "not relevant"}
-                  </span>
+                {v.label}
+              </button>
+            ))}
+          </div>
+          {tab === "conversation" && (
+            <>
+              <section className="panel detail-card">
+                <div className="detail-label">CUSTOMER REQUEST</div>
+                <p className="response-text">{t.description}</p>
+              </section>
+              <section className="panel detail-card">
+                <div
+                  className="panel-head"
+                  style={{ padding: 0, marginBottom: 22 }}
+                >
+                  <div className="button-row">
+                    <span className="stat-icon">
+                      <Icon name="spark" size={16} />
+                    </span>
+                    <div>
+                      <h2>AI response</h2>
+                      <p>Grounded in your knowledge sources</p>
+                    </div>
+                  </div>
+                  {r?.draft_text && (
+                    <button className="btn" onClick={copy}>
+                      <Icon name={copied ? "check" : "copy"} size={13} />
+                      {copied ? "Copied" : "Copy"}
+                    </button>
+                  )}
                 </div>
-                <p className="mt-1 text-slate-700">{doc.rationale}</p>
-                <p className="mt-1 text-xs italic text-slate-400">&ldquo;{doc.content_preview}&hellip;&rdquo;</p>
-              </div>
-            ))}
-          </div>
-        </Section>
-      )}
-
-      {drafted_response?.judge_score_history && drafted_response.judge_score_history.length > 0 && (
-        <Section title="Self-RAG Judge Scores (per drafting iteration)">
-          <div className="space-y-2">
-            {drafted_response.judge_score_history.map((judge, i) => (
-              <div key={i} className="rounded-md border border-slate-200 bg-slate-50 p-3 text-sm">
-                <p className="font-medium text-slate-800">
-                  Iteration {i + 1}: faithfulness {(judge.faithfulness_score * 100).toFixed(0)}%, relevance{" "}
-                  {(judge.relevance_score * 100).toFixed(0)}%, confidence {(judge.confidence * 100).toFixed(0)}%
+                <p className="response-text">
+                  {r?.draft_text ||
+                    "No response was drafted. This ticket requires a support specialist."}
                 </p>
-                <p className="mt-1 text-slate-600">{judge.rationale}</p>
-                {judge.unsupported_claims?.length > 0 && (
-                  <p className="mt-1 text-red-700">Unsupported claims: {judge.unsupported_claims.join("; ")}</p>
+                {r?.escalation_rationale && (
+                  <div className="detail-section">
+                    <div className="detail-label">WHY THIS NEEDS A PERSON</div>
+                    <p className="response-text">{r.escalation_rationale}</p>
+                  </div>
                 )}
+                {r?.intent_rationale && (
+                  <div className="detail-section">
+                    <div className="detail-label">
+                      HOW WE UNDERSTOOD THE ISSUE
+                    </div>
+                    <p className="response-text">{r.intent_rationale}</p>
+                  </div>
+                )}
+              </section>
+            </>
+          )}
+          {tab === "trace" && (
+            <section className="panel detail-card">
+              <div className="detail-label">A COMPLETE DECISION TRAIL</div>
+              <p className="subtle" style={{ marginBottom: 26 }}>
+                Expand any step to inspect its recorded inputs, outputs, and
+                rationale.
+              </p>
+              {decisions.map((d, i) => (
+                <details className="timeline-item" key={i}>
+                  <summary>
+                    <span>
+                      <strong
+                        style={{
+                          display: "block",
+                          marginBottom: 6,
+                          fontWeight: 500,
+                        }}
+                      >
+                        {d.agent_name.replaceAll("_", " ")}
+                      </strong>
+                      <small>
+                        {d.action.replaceAll("_", " ")} ·{" "}
+                        {d.confidence === null
+                          ? "No confidence reported"
+                          : `${Math.round(d.confidence * 100)}% confidence`}
+                      </small>
+                    </span>
+                    <Icon name="chevron" size={13} />
+                  </summary>
+                  <pre>{JSON.stringify(d.output, null, 2)}</pre>
+                </details>
+              ))}
+            </section>
+          )}
+          {tab === "evidence" && (
+            <>
+              <section className="panel detail-card">
+                <div className="detail-label">SUPPORTING KNOWLEDGE</div>
+                {r?.kb_documents?.length ? (
+                  r.kb_documents.map((d) => (
+                    <details key={d.doc_id} className="detail-section" open>
+                      <summary style={{ cursor: "pointer", fontSize: 12 }}>
+                        {String(d.metadata?.source || d.doc_id)}
+                        <span
+                          className="badge green"
+                          style={{ float: "right" }}
+                        >
+                          {Math.round(d.similarity_score * 100)}% match
+                        </span>
+                      </summary>
+                      <p className="response-text" style={{ marginTop: 15 }}>
+                        {d.content}
+                      </p>
+                    </details>
+                  ))
+                ) : (
+                  <p className="subtle">
+                    No supporting documents were attached to this response.
+                  </p>
+                )}
+                {relevant.length > 0 && (
+                  <div className="detail-section">
+                    <div className="detail-label">
+                      DOCUMENT RELEVANCE REVIEW
+                    </div>
+                    {relevant.map((d: any, i: number) => (
+                      <div className="detail-section" key={i}>
+                        <span
+                          className={`badge ${d.relevant ? "green" : "amber"}`}
+                        >
+                          {d.relevant ? "Relevant" : "Excluded"}
+                        </span>
+                        <p className="subtle" style={{ marginTop: 10 }}>
+                          {d.rationale}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </section>
+              <section className="panel detail-card">
+                <div className="detail-label">RESPONSE QUALITY CHECKS</div>
+                {r?.judge_score_history?.length ? (
+                  r.judge_score_history.map((j, i) => (
+                    <div key={i} className="detail-section">
+                      <div className="button-row">
+                        <span className="badge">Review {i + 1}</span>
+                        <span className="badge green">
+                          {Math.round((j.faithfulness_score || 0) * 100)}%
+                          faithful
+                        </span>
+                        <span className="badge blue">
+                          {Math.round((j.relevance_score || 0) * 100)}% relevant
+                        </span>
+                      </div>
+                      <p className="response-text" style={{ marginTop: 12 }}>
+                        {j.rationale}
+                      </p>
+                      {j.unsupported_claims?.length > 0 && (
+                        <div className="error-box">
+                          Claims to check: {j.unsupported_claims.join("; ")}
+                        </div>
+                      )}
+                    </div>
+                  ))
+                ) : (
+                  <p className="subtle">
+                    No quality scores are available for this ticket.
+                  </p>
+                )}
+              </section>
+            </>
+          )}
+        </div>
+        <aside>
+          <section className="panel detail-card">
+            <div className="detail-label">TICKET DETAILS</div>
+            <div className="metric-row">
+              <span>Status</span>
+              <Status status={t.status} />
+            </div>
+            <div className="metric-row">
+              <span>Priority</span>
+              <Priority priority={t.priority} />
+            </div>
+            <div className="metric-row">
+              <span>Intent</span>
+              <strong
+                style={{ fontSize: 10, maxWidth: 130, textAlign: "right" }}
+              >
+                {t.intent?.replaceAll("_", " ") || "Unclassified"}
+              </strong>
+            </div>
+            <div className="metric-row">
+              <span>Sentiment</span>
+              <strong style={{ fontSize: 10 }}>
+                {t.sentiment || "Not available"}
+              </strong>
+            </div>
+          </section>
+          <section className="panel detail-card">
+            <div className="detail-label">ASSESSMENT</div>
+            <div style={{ fontSize: 34, fontWeight: 500, letterSpacing: -1 }}>
+              {r ? Math.round(r.confidence * 100) : "—"}
+              <span style={{ fontSize: 16, color: "#91a083" }}>%</span>
+            </div>
+            <p className="subtle" style={{ fontSize: 10, marginTop: 5 }}>
+              Supervisor confidence
+            </p>
+            <div className="detail-section">
+              <div className="metric-row">
+                <span>LLM calls</span>
+                <strong>{r?.cost_estimate?.llm_call_count ?? "—"}</strong>
               </div>
-            ))}
+              <div className="metric-row">
+                <span>Tokens used</span>
+                <strong>
+                  {r?.cost_estimate?.total_tokens?.toLocaleString() ?? "—"}
+                </strong>
+              </div>
+              <div className="metric-row">
+                <span>Review loops</span>
+                <strong>{r?.iteration_count ?? "—"}</strong>
+              </div>
+            </div>
+          </section>
+          <div className="cloud-strip">
+            <Icon name="shield" size={18} />
+            <span>Decision trail recorded with this ticket.</span>
           </div>
-        </Section>
-      )}
-
-      {drafted_response?.continuation_rationale && drafted_response.continuation_rationale.length > 0 && (
-        <Section title="Continuation Agent History">
-          <ul className="list-inside list-disc space-y-1 text-sm text-slate-700">
-            {drafted_response.continuation_rationale.map((r, i) => (
-              <li key={i}>{r}</li>
-            ))}
-          </ul>
-        </Section>
-      )}
-
-      {drafted_response && (
-        <Section title="Drafted Response">
-          <p className="whitespace-pre-wrap rounded-md bg-white p-4 text-sm text-slate-700 border border-slate-200">
-            {drafted_response.draft_text}
-          </p>
-        </Section>
-      )}
-
-      <Section title="Full Agent Decision Log">
-        <AgentDecisionTable decisions={agent_decisions} />
-      </Section>
-    </div>
-  );
-}
-
-function StatusBadge({ action, requiresHuman }: { action?: string | null; requiresHuman?: boolean }) {
-  if (!action) return null;
-  return (
-    <span
-      className={`rounded-full px-3 py-1 text-xs font-semibold ${
-        requiresHuman ? "bg-orange-100 text-orange-700" : "bg-green-100 text-green-700"
-      }`}
-    >
-      {requiresHuman ? "Escalated to human" : "Auto-resolved"}
-    </span>
-  );
-}
-
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <div>
-      <h2 className="mb-2 text-sm font-semibold uppercase tracking-wide text-slate-500">{title}</h2>
-      {children}
-    </div>
-  );
-}
-
-function AgentDecisionTable({ decisions }: { decisions: AgentDecisionEntry[] }) {
-  return (
-    <div className="overflow-hidden rounded-lg border border-slate-200 bg-white">
-      <table className="min-w-full divide-y divide-slate-200 text-sm">
-        <thead className="bg-slate-50 text-left text-xs font-semibold uppercase text-slate-500">
-          <tr>
-            <th className="px-4 py-2">Agent</th>
-            <th className="px-4 py-2">Action</th>
-            <th className="px-4 py-2">Confidence</th>
-            <th className="px-4 py-2">Timestamp</th>
-          </tr>
-        </thead>
-        <tbody className="divide-y divide-slate-100">
-          {decisions.map((d, i) => (
-            <tr key={i} className="align-top hover:bg-slate-50">
-              <td className="px-4 py-2 font-medium text-slate-800">{d.agent_name}</td>
-              <td className="px-4 py-2 text-slate-600">{d.action}</td>
-              <td className="px-4 py-2 text-slate-600">{d.confidence != null ? `${(d.confidence * 100).toFixed(0)}%` : "-"}</td>
-              <td className="px-4 py-2 text-slate-400">{new Date(d.created_at).toLocaleTimeString()}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+        </aside>
+      </div>
     </div>
   );
 }

@@ -12,7 +12,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
+# CPU inference is sufficient for MiniLM; avoid downloading NVIDIA GPU libraries.
+RUN pip install --no-cache-dir torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
 RUN pip install --no-cache-dir -r requirements.txt
+# datasets 2.18 uses the older Arrow API and this stack pins NumPy 1.x.
+RUN pip install --no-cache-dir pyarrow==16.1.0
 
 COPY app/ ./app/
 COPY domains/ ./domains/

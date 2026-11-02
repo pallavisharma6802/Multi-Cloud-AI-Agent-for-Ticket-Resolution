@@ -1,14 +1,17 @@
 """Async fire-and-forget BigQuery sink for ticket analytics.
 
 Fed from the Supervisor's final_decision node (one row per completed ticket).
-Uses streaming inserts; never blocks or fails ticket resolution. The
+Uses sandbox-compatible load jobs; never blocks or fails ticket resolution. The
 google-cloud-bigquery import is lazy so local/test runs without GCP stay light.
 """
+
 from __future__ import annotations
 
+import hashlib
+import json
 import logging
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from typing import Any, Optional
 
 from app.config import settings
@@ -90,6 +93,8 @@ class BigQuerySink:
         except NotFound:
             dataset = bigquery.Dataset(f"{client.project}.{table_ref.dataset_id}")
             dataset.location = settings.gcp_region
+            dataset.default_table_expiration_ms = 59 * 24 * 60 * 60 * 1000
+            dataset.default_partition_expiration_ms = 59 * 24 * 60 * 60 * 1000
             client.create_dataset(dataset)
             logger.info(f"[bigquery_sink] created dataset {table_ref.dataset_id}")
 
@@ -98,9 +103,12 @@ class BigQuerySink:
         except NotFound:
             table = bigquery.Table(table_ref, schema=_fact_table_schema())
             table.time_partitioning = bigquery.TimePartitioning(
-                type_=bigquery.TimePartitioningType.DAY, field="event_ts"
+                type_=bigquery.TimePartitioningType.DAY,
+                field="event_ts",
+                expiration_ms=59 * 24 * 60 * 60 * 1000,
             )
             table.clustering_fields = ["category", "priority"]
+            table.expires = datetime.now(timezone.utc) + timedelta(days=59)
             client.create_table(table)
             logger.info(f"[bigquery_sink] created table {settings.bigquery_table}")
 
@@ -151,9 +159,32 @@ class BigQuerySink:
             if not self._table_ready:
                 self.ensure_table()
             client, table_ref = self._client_and_table()
-            errors = client.insert_rows_json(table_ref, [row])
-            if errors:
-                logger.warning(f"[bigquery_sink] insert_rows_json returned errors: {errors}")
+            from google.cloud import bigquery
+            from google.cloud.exceptions import Conflict
+
+            # Stable job IDs make retry/backfill of the same ticket idempotent.
+            version = hashlib.sha256(
+                json.dumps(
+                    {key: value for key, value in row.items() if key != "event_ts"}, sort_keys=True
+                ).encode()
+            ).hexdigest()[:20]
+            job_id = "ticket_event_" + row["ticket_id"].replace("-", "_") + "_" + version
+            try:
+                job = client.load_table_from_json(
+                    [row],
+                    table_ref,
+                    job_id=job_id,
+                    job_config=bigquery.LoadJobConfig(
+                        schema=_fact_table_schema(),
+                        write_disposition=bigquery.WriteDisposition.WRITE_APPEND,
+                    ),
+                    location=settings.gcp_region,
+                    timeout=20,
+                )
+            except Conflict:
+                job = client.get_job(job_id, location=settings.gcp_region, timeout=20)
+            job.result(timeout=45)
+            logger.info("[bigquery_sink] loaded ticket event %s", row["ticket_id"])
         except Exception as e:
             # Any insert failure is non-fatal; lose the event, not the ticket.
             logger.warning(f"[bigquery_sink] failed to record ticket event (non-fatal): {e}")

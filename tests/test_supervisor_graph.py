@@ -1,4 +1,5 @@
 """LangGraph supervisor path tests with mocked sub-agents."""
+
 from unittest.mock import MagicMock
 
 import pytest
@@ -59,7 +60,9 @@ def test_happy_path_auto_resolves(supervisor):
         return_value=(
             [
                 GradedDocument(
-                    document=KBDocument(doc_id="d1", content="how to cancel an order", similarity_score=0.9, metadata={}),
+                    document=KBDocument(
+                        doc_id="d1", content="how to cancel an order", similarity_score=0.9, metadata={}
+                    ),
                     relevant=True,
                     rationale="matches",
                 )
@@ -68,9 +71,14 @@ def test_happy_path_auto_resolves(supervisor):
         )
     )
     supervisor.continuation.decide_post_grading = MagicMock(
-        return_value=(PostGradingDecision(action="proceed", rationale="enough relevant docs"), make_metadata())
+        return_value=(
+            PostGradingDecision(action="proceed", rationale="enough relevant docs"),
+            make_metadata(),
+        )
     )
-    supervisor.drafting.draft_response = MagicMock(return_value=("Here's how to cancel your order...", make_metadata()))
+    supervisor.drafting.draft_response = MagicMock(
+        return_value=("Here's how to cancel your order...", make_metadata())
+    )
     supervisor.judge.judge = MagicMock(
         return_value=(
             JudgeResult(
@@ -88,7 +96,9 @@ def test_happy_path_auto_resolves(supervisor):
     )
     _mock_final(supervisor, action="auto_resolve", confidence=0.92)
 
-    result = supervisor.process_ticket("TKT-1", "Cancel order", "Please cancel order #123", domain_pack_id="it_saas")
+    result = supervisor.process_ticket(
+        "TKT-1", "Cancel order", "Please cancel order #123", domain_pack_id="it_saas"
+    )
     assert result.requires_human_review is False
     assert result.trace["final_action"] == "auto_resolve"
     supervisor.llm_client.generate_structured.assert_called()
@@ -101,7 +111,9 @@ def test_judge_exhaustion_with_draft_forces_escalate(supervisor):
         return_value=(
             [
                 GradedDocument(
-                    document=KBDocument(doc_id="d1", content="how to cancel an order", similarity_score=0.9, metadata={}),
+                    document=KBDocument(
+                        doc_id="d1", content="how to cancel an order", similarity_score=0.9, metadata={}
+                    ),
                     relevant=True,
                     rationale="matches",
                 )
@@ -110,13 +122,18 @@ def test_judge_exhaustion_with_draft_forces_escalate(supervisor):
         )
     )
     supervisor.continuation.decide_post_grading = MagicMock(
-        return_value=(PostGradingDecision(action="proceed", rationale="enough relevant docs"), make_metadata())
+        return_value=(
+            PostGradingDecision(action="proceed", rationale="enough relevant docs"),
+            make_metadata(),
+        )
     )
     supervisor.drafting.draft_response = MagicMock(
         return_value=("Here's how to cancel your order...", make_metadata())
     )
     supervisor.judge.judge = MagicMock(
-        side_effect=RuntimeError("[judge] LLM call failed after 3 attempt(s) model=amazon.nova-lite-v1:0: validation error")
+        side_effect=RuntimeError(
+            "[judge] LLM call failed after 3 attempt(s) model=amazon.nova-lite-v1:0: validation error"
+        )
     )
     supervisor.continuation.decide_post_judging = MagicMock()
     # If the bug regresses, this mock would let the final LLM choose auto_resolve.
@@ -153,7 +170,10 @@ def test_escalate_and_rewrite_loop(supervisor):
         )
     )
     supervisor.document_grader.rewrite_query = MagicMock(
-        return_value=(RewrittenQuery(rewritten_query="cancel subscription refund", rationale="broaden"), make_metadata())
+        return_value=(
+            RewrittenQuery(rewritten_query="cancel subscription refund", rationale="broaden"),
+            make_metadata(),
+        )
     )
     supervisor.continuation.decide_post_grading = MagicMock(
         side_effect=[
@@ -176,7 +196,9 @@ def test_analytics_and_safety_net(supervisor, monkeypatch):
         return_value=(
             [
                 GradedDocument(
-                    document=KBDocument(doc_id="d1", content="how to cancel", similarity_score=0.9, metadata={}),
+                    document=KBDocument(
+                        doc_id="d1", content="how to cancel", similarity_score=0.9, metadata={}
+                    ),
                     relevant=True,
                     rationale="matches",
                 )
@@ -209,8 +231,43 @@ def test_analytics_and_safety_net(supervisor, monkeypatch):
     supervisor.bq_sink.record_ticket_event.assert_called_once()
 
     monkeypatch.setattr(settings, "max_iterations", 0)
-    supervisor.continuation.decide_post_grading = MagicMock(side_effect=AssertionError("should not be called"))
+    supervisor.continuation.decide_post_grading = MagicMock(
+        side_effect=AssertionError("should not be called")
+    )
     _mock_final(supervisor, action="escalate", confidence=0.1)
     result = supervisor.process_ticket("TKT-5", "Some ticket", "Some description", domain_pack_id="it_saas")
     assert result.requires_human_review is True
     assert any("safety_net" in flag for flag in result.trace["anomaly_flags"])
+
+
+def test_explicit_human_request_cannot_be_auto_resolved(supervisor):
+    _mock_final(supervisor, action="auto_resolve", confidence=0.99)
+    supervisor._emit_analytics_event = MagicMock()
+    state = {
+        "ticket_id": "TKT-HUMAN",
+        "intent": "contact_human_agent",
+        "intent_confidence": 0.97,
+        "drafted_response": "Here is the support contact information.",
+        "agent_decisions": [],
+    }
+    result = supervisor._final_decision_node(state)
+    assert result["requires_human_review"] is True
+    assert result["final_action"] == "escalate"
+    supervisor.llm_client.generate_structured.assert_not_called()
+    assert result["agent_decisions"][-1].output["handoff_policy"] == "customer_requested_human"
+
+
+def test_unfinished_template_cannot_be_auto_resolved(supervisor):
+    _mock_final(supervisor, action="auto_resolve", confidence=0.99)
+    supervisor._emit_analytics_event = MagicMock()
+    state = {
+        "ticket_id": "TKT-TEMPLATE",
+        "intent": "track_order",
+        "intent_confidence": 0.95,
+        "drafted_response": "Your tracking number is {{Tracking Number}}.",
+        "agent_decisions": [],
+    }
+    result = supervisor._final_decision_node(state)
+    assert result["requires_human_review"] is True
+    assert result["final_action"] == "escalate"
+    supervisor.llm_client.generate_structured.assert_not_called()

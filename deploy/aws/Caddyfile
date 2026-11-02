@@ -1,0 +1,20 @@
+{$APP_HOST} {
+    encode zstd gzip
+    basic_auth {
+        {$DEMO_USER} {$DEMO_PASSWORD_HASH}
+    }
+    header {
+        X-Content-Type-Options nosniff
+        Referrer-Policy strict-origin-when-cross-origin
+    }
+    # Sending API traffic directly avoids Next.js proxy timeouts for long agent runs.
+    handle_path /backend/* {
+        reverse_proxy backend:8000
+    }
+    handle /grafana* {
+        reverse_proxy grafana:3000
+    }
+    handle {
+        reverse_proxy frontend:3000
+    }
+}

@@ -1,0 +1,7 @@
+region      = "us-east-1"
+aws_profile = "infra-deploy"
+name        = "resolve-mvp"
+# Choose explicitly. Public HTTPS needs public ACME validation and visitor access.
+# web_cidrs = ["0.0.0.0/0"]
+# For a private allowlist, arrange DNS-based certificate validation separately.
+web_cidrs = ["203.0.113.10/32"] # REPLACE; documentation address cannot reach your app.

@@ -39,12 +39,18 @@ services:
       - DATABASE_URL=postgresql://${POSTGRES_USER:-ticket_admin}:${POSTGRES_PASSWORD:-ticket_local_dev}@postgres:5432/${POSTGRES_DB:-tickets_db}
       - ENABLE_BIGQUERY=${ENABLE_BIGQUERY:-false}
       - AWS_REGION=${AWS_REGION:-us-east-1}
+      - AWS_PROFILE=${AWS_PROFILE:-default}
+      - AWS_SHARED_CREDENTIALS_FILE=/root/.aws/credentials
+      - AWS_CONFIG_FILE=/root/.aws/config
+      - GOOGLE_APPLICATION_CREDENTIALS=/srv/gcp-key.json
       - MAX_WALL_CLOCK_SECONDS=${MAX_WALL_CLOCK_SECONDS:-900}
     ports:
       - "8000:8000"
     volumes:
       # GCP key from GOOGLE_APPLICATION_CREDENTIALS=./gcp-key.json (WORKDIR=/srv).
       - ./gcp-key.json:/srv/gcp-key.json:ro
+      # Reuse the host AWS profile without copying keys into .env or the image.
+      - ${HOME}/.aws:/root/.aws:ro
     depends_on:
       postgres:
         condition: service_healthy
@@ -61,7 +67,7 @@ services:
         - NEXT_PUBLIC_GRAFANA_URL=${NEXT_PUBLIC_GRAFANA_URL:-http://localhost:3001}
     container_name: ticket-frontend
     ports:
-      - "3000:3000"
+      - "${FRONTEND_PORT:-3000}:3000"
     depends_on:
       - backend
     networks:

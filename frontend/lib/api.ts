@@ -1,6 +1,6 @@
 // Fetch helpers for FastAPI routes in app/api/routes/tickets.py.
 
-export const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+export const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "/backend";
 
 export interface DomainPack {
   id: string;
@@ -96,7 +96,10 @@ async function apiFetch<T>(path: string, init?: RequestInit): Promise<T> {
   return res.json() as Promise<T>;
 }
 
-export function getDomainPacks(): Promise<{ packs: DomainPack[]; default: string }> {
+export function getDomainPacks(): Promise<{
+  packs: DomainPack[];
+  default: string;
+}> {
   return apiFetch("/api/v1/domain-packs");
 }
 
@@ -107,15 +110,20 @@ export function submitTicket(data: {
   category?: string;
   domain_pack?: string;
 }): Promise<TicketResolutionResponse> {
-  return apiFetch("/api/v1/tickets", { method: "POST", body: JSON.stringify(data) });
+  return apiFetch("/api/v1/tickets", {
+    method: "POST",
+    body: JSON.stringify(data),
+  });
 }
 
-export function listTickets(filters: {
-  status_filter?: string;
-  priority_filter?: string;
-  domain_pack_filter?: string;
-  limit?: number;
-} = {}): Promise<TicketSummary[]> {
+export function listTickets(
+  filters: {
+    status_filter?: string;
+    priority_filter?: string;
+    domain_pack_filter?: string;
+    limit?: number;
+  } = {},
+): Promise<TicketSummary[]> {
   const params = new URLSearchParams();
   Object.entries(filters).forEach(([k, v]) => {
     if (v !== undefined && v !== "") params.set(k, String(v));
@@ -127,3 +135,21 @@ export function listTickets(filters: {
 export function getTicketTrace(ticketId: string): Promise<TicketTraceResponse> {
   return apiFetch(`/api/v1/tickets/${ticketId}/trace`);
 }
+
+export interface Overview {
+  total: number;
+  open: number;
+  ai_resolved: number;
+  human_resolved: number;
+  resolved: number;
+  needs_review: number;
+  as_of: string;
+  daily: Array<{ date: string; total: number; resolved: number }>;
+  recent: TicketSummary[];
+}
+export function getOverview(days: number = 7): Promise<Overview> {
+  return apiFetch(`/api/v1/overview?days=${days}`);
+}
+
+export function retryTicket(id:string):Promise<TicketResolutionResponse>{return apiFetch(`/api/v1/tickets/${id}/retry`,{method:"POST"})}
+export function resolveTicket(id:string):Promise<{status:string;cloud_record_saved:boolean}>{return apiFetch(`/api/v1/tickets/${id}/resolve`,{method:"POST"})}

@@ -1,4 +1,5 @@
 """API integration tests with in-memory SQLite and a mocked Supervisor."""
+
 from unittest.mock import MagicMock
 
 import pytest
@@ -119,3 +120,109 @@ def test_list_domain_packs(client):
     assert response.status_code == 200
     ids = [p["id"] for p in response.json()["packs"]]
     assert "it_saas" in ids
+
+
+def test_resolved_ticket_is_counted_in_workspace_overview(client):
+    response = client.post(
+        "/api/v1/tickets",
+        json={
+            "title": "Help recover my password",
+            "description": "I forgot my password and need the reset instructions.",
+            "user_email": "demo@example.com",
+            "domain_pack": "it_saas",
+        },
+    )
+    assert response.status_code == 201
+    assert response.json()["status"] == "resolved"
+    overview = client.get("/api/v1/overview?days=7").json()
+    assert overview["total"] == 1
+    assert overview["resolved"] == 1
+    assert overview["needs_review"] == 0
+    assert sum(day["total"] for day in overview["daily"]) == 1
+    assert overview["recent"][0]["ticket_id"] == response.json()["ticket_id"]
+    assert client.get("/api/v1/overview?days=0").status_code == 422
+
+
+def test_failed_open_ticket_can_be_retried_without_duplicate(client):
+    import app.api.routes.tickets as tickets_module
+
+    processor = tickets_module.supervisor.process_ticket
+    processor.side_effect = RuntimeError("Transient model failure")
+    payload = {
+        "title": "Recover my account",
+        "description": "I forgot my password and need help signing in.",
+        "user_email": "demo@example.com",
+        "domain_pack": "it_saas",
+    }
+    failed = client.post("/api/v1/tickets", json=payload)
+    assert failed.status_code == 500
+    tickets = client.get("/api/v1/tickets").json()
+    assert len(tickets) == 1
+    assert tickets[0]["status"] == "open"
+    ticket_id = tickets[0]["ticket_id"]
+    processor.side_effect = None
+    retried = client.post(f"/api/v1/tickets/{ticket_id}/retry")
+    assert retried.status_code == 200
+    assert retried.json()["ticket_id"] == ticket_id
+    assert retried.json()["status"] == "resolved"
+    assert len(client.get("/api/v1/tickets").json()) == 1
+    assert client.post(f"/api/v1/tickets/{ticket_id}/retry").status_code == 409
+
+
+def test_retry_rejects_ticket_that_is_already_processing(client):
+    import app.api.routes.tickets as tickets_module
+
+    processor = tickets_module.supervisor.process_ticket
+    processor.side_effect = RuntimeError("Transient failure")
+    client.post(
+        "/api/v1/tickets",
+        json={
+            "title": "Recover my account",
+            "description": "I need help resetting my password.",
+            "user_email": "demo@example.com",
+        },
+    )
+    ticket_id = client.get("/api/v1/tickets").json()[0]["ticket_id"]
+    tickets_module._claim_ticket(ticket_id)
+    try:
+        assert client.post(f"/api/v1/tickets/{ticket_id}/retry").status_code == 409
+    finally:
+        tickets_module._release_ticket(ticket_id)
+
+
+def test_human_resolution_preserves_original_ai_assessment(client):
+    import app.api.routes.tickets as tickets_module
+
+    result = tickets_module.supervisor.process_ticket.return_value
+    result.requires_human_review = True
+    result.trace["final_action"] = "escalate"
+    created = client.post(
+        "/api/v1/tickets",
+        json={
+            "title": "Investigate duplicate charge",
+            "description": "Please have a human investigate two identical subscription charges.",
+            "user_email": "demo@example.com",
+        },
+    )
+    assert created.status_code == 201
+    assert created.json()["status"] == "in_progress"
+    ticket_id = created.json()["ticket_id"]
+    before = client.get("/api/v1/overview").json()
+    assert before["needs_review"] == 1
+    resolved = client.post(f"/api/v1/tickets/{ticket_id}/resolve")
+    assert resolved.status_code == 200
+    assert resolved.json()["resolution_source"] == "human"
+    trace = client.get(f"/api/v1/tickets/{ticket_id}/trace").json()
+    assert trace["ticket"]["status"] == "resolved"
+    assert trace["drafted_response"]["final_action"] == "escalate"
+    assert trace["drafted_response"]["requires_human_review"] is True
+    assert any(
+        d["agent_name"] == "human_reviewer" and d["action"] == "mark_resolved"
+        for d in trace["agent_decisions"]
+    )
+    after = client.get("/api/v1/overview").json()
+    assert after["resolved"] == 1
+    assert after["human_resolved"] == 1
+    assert after["ai_resolved"] == 0
+    assert after["needs_review"] == 0
+    assert client.post(f"/api/v1/tickets/{ticket_id}/resolve").status_code == 409

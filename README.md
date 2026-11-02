@@ -135,17 +135,22 @@ cp .env.example .env
 # Fill in managed-service credentials Compose can't stand up locally:
 #   AZURE_TEXT_ANALYTICS_ENDPOINT / AZURE_TEXT_ANALYTICS_KEY
 #   PINECONE_API_KEY / PINECONE_ENVIRONMENT
-#   AWS credentials + AWS_REGION (Bedrock)
+#   AWS_REGION (Bedrock); AWS_PROFILE defaults to your working local default profile
+# Compose mounts ~/.aws read-only; do not put AWS access keys in .env.
 
 docker compose up --build
 ```
 
 - Backend API: http://localhost:8000/docs
-- Frontend: http://localhost:3000
+- Frontend: http://localhost:3000 (or `FRONTEND_PORT` from `.env`; this Mac uses http://localhost:3002)
 - Grafana: http://localhost:3001 (admin/admin by default; anonymous viewer access is also enabled for the
   frontend's embedded analytics page)
 
-Then seed the knowledge base:
+To start again later, run `docker compose up -d` from this directory with Docker Desktop running.
+Use `docker compose logs -f backend` to inspect startup, and `docker compose stop` to stop the stack
+while keeping its data.
+
+Then seed the knowledge base if the active Pinecone namespace is empty:
 
 ```bash
 docker compose exec backend python seed_kb.py --pack all
@@ -332,3 +337,13 @@ docker-compose.yml      # Local stack: postgres, backend, frontend, grafana (Bed
 5. `python eval/run_eval.py --pack <your_pack>` to get real numbers before shipping it.
 
 No code changes required — the agents, graph, and eval harness are all pack-agnostic by construction.
+
+## MVP workflow and deployment status
+
+The refreshed workspace includes live overview counts, inbox search/filter/CSV export, ticket retry, explicit human resolution, and expandable CRAG/Self-RAG evidence. Open tickets do not run in the background: use Retry assessment. Needs review means a human must act; Mark resolved records that action separately from AI resolution.
+
+[AWS deployment instructions](deploy/aws/README.md) are prepared. No AWS deployment has been performed. Localhost is not a hosted deployment. Vercel can host the frontend, Render can host an appropriately sized API, and GitHub Pages cannot run this Python backend. Each external host requires an account and authorized access.
+
+BigQuery sandbox writes use load jobs, with a 59-day retention limit, in `ticket_analytics_live`. The six completed live demo tickets are stored both as analytics events and full snapshots. Historical 122-row data was recovered into `ticket_analytics_live.fact_ticket_events_legacy_backup_20261102` after a retention mistake expired the original partitions. Recovery was verified by an exact row-multiset checksum; this archive also has sandbox retention. PostgreSQL plus the AWS backup plan is the long-term system of record.
+
+The IT/SaaS pack currently contains 108 knowledge articles, 82 few-shot examples, and 900 evaluation tickets, prepared from a 3,400-row sample of Bitext's 26,872-row corpus. This uses a pretrained model; it does not train a custom model.
