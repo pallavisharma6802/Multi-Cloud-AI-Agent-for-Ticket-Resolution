@@ -29,3 +29,5 @@ Keep the local database until the remote app has been verified. For rollback, st
 ## Keep the Mac responsive
 
 The local stack has per-service CPU and memory limits. Start only PostgreSQL for migration, then stop the local database once Neon has been verified. Avoid parallel Docker image builds; ordinary startup reuses built images. Backend model inference runs one ticket at a time.
+
+The local Neon override reuses the existing MiniLM model cache read-only, preventing model downloads during startup. Operational records are read from and written to Neon; the stopped local PostgreSQL container is retained as the pre-migration backup.

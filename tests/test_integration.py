@@ -33,6 +33,8 @@ def client(monkeypatch):
             db.close()
 
     app.dependency_overrides[get_db] = override_get_db
+    # Startup must never create tables in the developer's configured cloud database.
+    monkeypatch.setattr("app.db.init_db.init_db", lambda: None)
 
     mock_result = DraftedResponse(
         ticket_id="TKT-TEST",

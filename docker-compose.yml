@@ -40,7 +40,7 @@ services:
       - .env
     environment:
       # In-network service names (override host ports from .env).
-      - DATABASE_URL=postgresql://${POSTGRES_USER:-ticket_admin}:${POSTGRES_PASSWORD:-ticket_local_dev}@postgres:5432/${POSTGRES_DB:-tickets_db}
+      - DATABASE_URL=${CLOUD_DATABASE_URL:-postgresql://${POSTGRES_USER:-ticket_admin}:${POSTGRES_PASSWORD:-ticket_local_dev}@postgres:5432/${POSTGRES_DB:-tickets_db}}
       - ENABLE_BIGQUERY=${ENABLE_BIGQUERY:-false}
       - AWS_REGION=${AWS_REGION:-us-east-1}
       - OMP_NUM_THREADS=1

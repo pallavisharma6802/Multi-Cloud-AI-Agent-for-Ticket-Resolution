@@ -347,3 +347,15 @@ The refreshed workspace includes live overview counts, inbox search/filter/CSV e
 BigQuery sandbox writes use load jobs, with a 59-day retention limit, in `ticket_analytics_live`. The six completed live demo tickets are stored both as analytics events and full snapshots. Historical 122-row data was recovered into `ticket_analytics_live.fact_ticket_events_legacy_backup_20261102` after a retention mistake expired the original partitions. Recovery was verified by an exact row-multiset checksum; this archive also has sandbox retention. PostgreSQL plus the AWS backup plan is the long-term system of record.
 
 The IT/SaaS pack currently contains 108 knowledge articles, 82 few-shot examples, and 900 evaluation tickets, prepared from a 3,400-row sample of Bitext's 26,872-row corpus. This uses a pretrained model; it does not train a custom model.
+
+### Active Neon database
+
+The local operational database has been migrated to Neon project `resolve-support` in AWS US East 1. Migration verified all 66 original tickets, 725 decision rows, and 57 response rows using exact content hashes. The local Postgres container is stopped and retained as a backup. Keep connection URLs in ignored `.env` only.
+
+Start the app without the local database using:
+
+```bash
+docker compose -f docker-compose.yml -f docker-compose.neon.yml up -d --no-deps backend frontend grafana
+```
+
+The web frontend and API are still hosted locally; moving the database online does not publish the app itself.

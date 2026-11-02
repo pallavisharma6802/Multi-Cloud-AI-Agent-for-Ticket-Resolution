@@ -3,6 +3,9 @@ services:
   backend:
     environment:
       - DATABASE_URL=${CLOUD_DATABASE_URL:?Set the pooled Neon URL in .env after migration}
+      - HF_HUB_OFFLINE=1
+    volumes:
+      - ${HOME}/.cache/huggingface/hub/models--sentence-transformers--all-MiniLM-L6-v2:/root/.cache/huggingface/hub/models--sentence-transformers--all-MiniLM-L6-v2:ro
     depends_on: !reset {}
   postgres:
     profiles: [local-database]
