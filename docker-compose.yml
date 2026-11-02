@@ -8,6 +8,8 @@ services:
   # Pinecone, and optional BigQuery stay external APIs (configure via .env).
 
   postgres:
+    mem_limit: 256m
+    cpus: 0.50
     image: postgres:16-alpine
     container_name: ticket-postgres
     environment:
@@ -28,6 +30,8 @@ services:
     restart: unless-stopped
 
   backend:
+    mem_limit: 1536m
+    cpus: 1.00
     build:
       context: .
       dockerfile: Dockerfile
@@ -39,6 +43,9 @@ services:
       - DATABASE_URL=postgresql://${POSTGRES_USER:-ticket_admin}:${POSTGRES_PASSWORD:-ticket_local_dev}@postgres:5432/${POSTGRES_DB:-tickets_db}
       - ENABLE_BIGQUERY=${ENABLE_BIGQUERY:-false}
       - AWS_REGION=${AWS_REGION:-us-east-1}
+      - OMP_NUM_THREADS=1
+      - MKL_NUM_THREADS=1
+      - TOKENIZERS_PARALLELISM=false
       - AWS_PROFILE=${AWS_PROFILE:-default}
       - AWS_SHARED_CREDENTIALS_FILE=/root/.aws/credentials
       - AWS_CONFIG_FILE=/root/.aws/config
@@ -59,6 +66,8 @@ services:
     restart: unless-stopped
 
   frontend:
+    mem_limit: 256m
+    cpus: 0.50
     build:
       context: ./frontend
       dockerfile: Dockerfile
@@ -75,6 +84,8 @@ services:
     restart: unless-stopped
 
   grafana:
+    mem_limit: 384m
+    cpus: 0.50
     image: grafana/grafana-oss:11.3.0
     container_name: ticket-grafana
     ports:

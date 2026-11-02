@@ -25,3 +25,7 @@ Neon provides the managed Postgres database. AWS hosts the application; AWS cred
 Defaults match local Compose: `127.0.0.1:5433`, user `ticket_admin`, database `tickets_db`; the password comes from `POSTGRES_PASSWORD` or the local-development default. If your source uses a different address, set `MIGRATION_SOURCE_DATABASE_URL` in `.env`. The script uses only the application's three SQLAlchemy tables (`tickets`, `agent_decisions`, `drafted_responses`).
 
 Keep the local database until the remote app has been verified. For rollback, stop accepting writes first; pointing back to the unchanged local database omits any newer Neon-only records, so migrate or export those records before switching back.
+
+## Keep the Mac responsive
+
+The local stack has per-service CPU and memory limits. Start only PostgreSQL for migration, then stop the local database once Neon has been verified. Avoid parallel Docker image builds; ordinary startup reuses built images. Backend model inference runs one ticket at a time.
