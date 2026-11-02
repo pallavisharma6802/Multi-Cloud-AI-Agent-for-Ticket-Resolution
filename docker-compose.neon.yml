@@ -1,0 +1,8 @@
+# Use after the verified migration. Local PostgreSQL remains available as a backup.
+services:
+  backend:
+    environment:
+      - DATABASE_URL=${CLOUD_DATABASE_URL:?Set the pooled Neon URL in .env after migration}
+    depends_on: !reset {}
+  postgres:
+    profiles: [local-database]
