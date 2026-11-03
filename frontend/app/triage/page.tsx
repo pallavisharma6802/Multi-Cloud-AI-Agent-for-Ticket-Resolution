@@ -8,7 +8,7 @@ import TicketRow from "@/components/TicketRow";
 
 const TABS = [
   { v: "", l: "All" },
-  { v: "needs_review", l: "Needs review" },
+  { v: "in_progress", l: "Needs review" },
   { v: "resolved", l: "Resolved" },
   { v: "open", l: "Open" },
 ];
@@ -77,7 +77,7 @@ export default function Inbox() {
 
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
         <StatCard label="All tickets" value={tickets.length} tone="brand" />
-        <StatCard label="Needs review" value={tickets.filter((t) => t.status === "needs_review").length} tone="amber" />
+        <StatCard label="Needs review" value={tickets.filter((t) => t.status === "in_progress").length} tone="amber" />
         <StatCard label="Resolved" value={tickets.filter((t) => t.status === "resolved").length} tone="teal" />
         <StatCard label="High priority" value={tickets.filter((t) => ["high", "urgent"].includes(t.priority)).length} />
       </div>

@@ -9,7 +9,7 @@ function initials(email: string) {
 }
 
 export default function TicketRow({ ticket }: { ticket: TicketSummary }) {
-  const needsReview = ticket.status?.toLowerCase() === "needs_review";
+  const needsReview = ticket.status?.toLowerCase() === "in_progress";
   return (
     <Link
       href={`/tickets/${ticket.ticket_id}`}

@@ -60,12 +60,19 @@ export function PriorityBadge({ priority }: { priority: string }) {
   );
 }
 
+// Real backend enum (app/schemas/ticket.py TicketStatus): open, in_progress,
+// resolved, closed. in_progress specifically means "drafted a response but it
+// needs human review" (set in app/api/routes/tickets.py when
+// requires_human_review is true) -- there is no separate "needs_review" status.
 const STATUS_STYLES: Record<string, string> = {
   open: "bg-slate-100 text-ink-soft",
+  in_progress: "bg-amber-50 text-amber-600",
   resolved: "bg-teal-100 text-teal-500",
-  ai_resolved: "bg-brand-50 text-brand-500",
-  needs_review: "bg-amber-50 text-amber-600",
-  escalated: "bg-rose-50 text-priority-urgent",
+  closed: "bg-slate-100 text-ink-soft",
+};
+
+export const STATUS_LABELS: Record<string, string> = {
+  in_progress: "Needs review",
 };
 
 export function StatusBadge({ status }: { status: string }) {
@@ -76,7 +83,7 @@ export function StatusBadge({ status }: { status: string }) {
         STATUS_STYLES[key] || "bg-slate-100 text-ink-soft"
       }`}
     >
-      {(status || "—").replace(/_/g, " ")}
+      {STATUS_LABELS[key] || (status || "—").replace(/_/g, " ")}
     </span>
   );
 }

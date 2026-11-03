@@ -102,7 +102,7 @@ export default function TicketDetail() {
           </Button>
         </Card>
       )}
-      {t.status === "needs_review" && (
+      {t.status === "in_progress" && (
         <Card className="mb-6 flex items-center gap-3 border-amber-200 bg-amber-50 p-4 text-sm text-amber-700">
           <ShieldCheck size={16} />
           <span>Needs your team&apos;s review. After checking the response, mark it resolved.</span>

@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
-import { Clock, Plus, ArrowRight, RefreshCw } from "lucide-react";
+import { Clock, Plus, ArrowRight, RefreshCw, Tag, Search, PenLine, ShieldCheck } from "lucide-react";
 import { getOverview, Overview } from "@/lib/api";
 import { Card, PageHeading, StatCard, Button } from "@/components/ui";
 import TicketRow from "@/components/TicketRow";
@@ -29,6 +29,29 @@ export default function Home() {
     return () => clearInterval(t);
   }, [load]);
 
+  const steps = [
+    {
+      icon: Tag,
+      title: "Classify",
+      body: "An intent agent reads the ticket and assigns category + priority.",
+    },
+    {
+      icon: Search,
+      title: "Retrieve & grade (CRAG)",
+      body: "Pulls candidate docs from your knowledge base, then an LLM grades each one relevant or not and rewrites the search if retrieval missed.",
+    },
+    {
+      icon: PenLine,
+      title: "Draft & judge (self-RAG)",
+      body: "Drafts a grounded answer, then a judge agent scores faithfulness and relevance and sends it back for a redraft if it's not good enough.",
+    },
+    {
+      icon: ShieldCheck,
+      title: "Resolve or escalate",
+      body: "Confident, well-grounded answers go out. Anything uncertain is routed to your team with the full evidence trail attached.",
+    },
+  ];
+
   return (
     <div>
       <PageHeading
@@ -47,6 +70,25 @@ export default function Home() {
           </div>
         }
       />
+
+      <Card className="mb-8 p-6">
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-ink-faint">How it works</h2>
+        <div className="mt-4 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {steps.map((s, i) => (
+            <div key={s.title} className="flex gap-3">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-50 text-brand-500">
+                <s.icon size={16} />
+              </span>
+              <div>
+                <div className="text-sm font-semibold text-ink">
+                  {i + 1}. {s.title}
+                </div>
+                <p className="mt-1 text-xs leading-relaxed text-ink-soft">{s.body}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </Card>
 
       {error && (
         <Card className="mb-6 border-rose-200 bg-rose-50 p-4 text-sm text-rose-700">
