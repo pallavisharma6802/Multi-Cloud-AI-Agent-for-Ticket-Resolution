@@ -166,8 +166,8 @@ class SupervisorAgent:
 
         workflow.add_conditional_edges(
             "analyze_ticket",
-            self._route_on_error,
-            {"error": "final_decision", "ok": "retrieve_documents"},
+            self._route_after_analysis,
+            {"error": "final_decision", "human": "final_decision", "ok": "retrieve_documents"},
         )
         workflow.add_conditional_edges(
             "retrieve_documents",
@@ -210,6 +210,14 @@ class SupervisorAgent:
     @staticmethod
     def _route_on_error(state: TicketState) -> str:
         return "error" if state.get("error") else "ok"
+
+    @staticmethod
+    def _route_after_analysis(state: TicketState) -> str:
+        if state.get("error"):
+            return "error"
+        if state.get("intent") == "contact_human_agent":
+            return "human"
+        return "ok"
 
     # Nodes
     def _analyze_ticket_node(self, state: TicketState) -> TicketState:
@@ -521,6 +529,12 @@ class SupervisorAgent:
                 llm_calls_so_far=state.get("llm_call_count", 0),
             )
             _record_calls(state, [meta])
+            if decision.action == "retry" and state.get("drafting_iteration", 0) >= 2:
+                decision.action = "escalate"
+                decision.rationale = (
+                    "The answer still needs correction after one revision. "
+                    "Stopping repeated drafts for human review. " + decision.rationale
+                )
             state["post_judging_action"] = decision.action
             state["post_judging_rationale"] = decision.rationale
             state.setdefault("continuation_rationale", []).append(

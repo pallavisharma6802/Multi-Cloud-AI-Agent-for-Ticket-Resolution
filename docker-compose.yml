@@ -93,7 +93,7 @@ services:
     environment:
       - GF_SECURITY_ADMIN_USER=admin
       - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_ADMIN_PASSWORD:-admin}
-      - GF_INSTALL_PLUGINS=grafana-bigquery-datasource
+      - GF_INSTALL_PLUGINS=grafana-bigquery-datasource 2.2.1
       - GF_USERS_ALLOW_SIGN_UP=false
       # Anonymous Viewer for iframe embeds (local/demo only; tighten if exposed).
       - GF_SECURITY_ALLOW_EMBEDDING=true

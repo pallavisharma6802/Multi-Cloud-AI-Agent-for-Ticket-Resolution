@@ -5,9 +5,12 @@ BM25 catches exact terms (order numbers, error codes).
 """
 from __future__ import annotations
 
+import json
 import logging
 import re
+from pathlib import Path
 from typing import Dict, List, Optional
+from urllib.parse import urljoin
 
 from rank_bm25 import BM25Okapi
 
@@ -134,17 +137,18 @@ class RetrievalAgent:
             )
         sparse_results = self._bm25_search(query_text, top_k=top_k)
 
+        # Reciprocal rank fusion avoids comparing unbounded BM25 scores to cosine scores.
         merged: Dict[str, Dict] = {}
-        for r in dense_results:
-            merged[r["id"]] = {**r, "retrieval_method": "dense"}
-        for r in sparse_results:
-            if r["id"] in merged:
-                merged[r["id"]]["retrieval_method"] = "hybrid"
-                merged[r["id"]]["score"] = max(merged[r["id"]]["score"], r["score"])
-            else:
-                merged[r["id"]] = {**r, "retrieval_method": "sparse"}
-
-        candidates = sorted(merged.values(), key=lambda x: x["score"], reverse=True)[:top_k]
+        fusion_scores: Dict[str, float] = {}
+        for method, results in (("dense", dense_results), ("sparse", sparse_results)):
+            for rank, result in enumerate(results, 1):
+                key = result["id"]
+                fusion_scores[key] = fusion_scores.get(key, 0.0) + 1.0 / (60 + rank)
+                if key in merged:
+                    merged[key]["retrieval_method"] = "hybrid"
+                else:
+                    merged[key] = {**result, "retrieval_method": method}
+        candidates = sorted(merged.values(), key=lambda x: fusion_scores[x["id"]], reverse=True)[:top_k]
 
         kb_documents = [
             KBDocument(
@@ -162,6 +166,31 @@ class RetrievalAgent:
             for c in candidates
             if min_similarity is None or c["score"] >= min_similarity
         ]
+
+        # Recover neighboring context from the same versioned local article, not another product.
+        for document in kb_documents:
+            article_id = document.doc_id.split("__chunk", 1)[0]
+            if not re.fullmatch(r"[A-Za-z0-9_-]+", article_id):
+                continue
+            article_path = Path(settings.domains_root) / self.domain_pack_id / "kb" / f"{article_id}.json"
+            if not article_path.is_file():
+                continue
+            article = json.loads(article_path.read_text())
+            if article.get("source") != document.metadata.get("source"):
+                continue
+            text = article.get("content", "")
+            if len(text.split()) <= 2000:
+                document.content = text
+            elif "__chunk" in document.doc_id:
+                chunks = chunk_text(text, max_words=400, overlap_words=60)
+                index = int(document.doc_id.rsplit("__chunk", 1)[1])
+                document.content = "\n".join(chunks[max(0, index - 1):index + 2])
+            source = document.metadata["source"]
+            document.content = re.sub(
+                r"\]\((/[^)\s]+)\)",
+                lambda match, source=source: "](" + urljoin(source, match.group(1)) + ")",
+                document.content,
+            )
 
         logger.info(f"Retrieved {len(kb_documents)} candidate documents (pre-grading)")
         return kb_documents

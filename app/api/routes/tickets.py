@@ -100,15 +100,20 @@ def submit_ticket(ticket_data: TicketCreate, db: Session = Depends(get_db)):
         ) from e
 
 
-def _process_ticket(ticket: Ticket, db: Session) -> TicketResolutionResponse:
+def _process_ticket(ticket: Ticket, db: Session, *, allow_review: bool = False) -> TicketResolutionResponse:
     """Process an existing ticket once, retaining its ID and prior audit history."""
     ticket_id = ticket.id
     _claim_ticket(ticket_id)
     start_time = time.time()
     try:
         db.refresh(ticket)
-        if ticket.status != "open":
-            raise HTTPException(status_code=409, detail="Only open tickets can be processed")
+        if ticket.status != "open" and not (allow_review and ticket.status == "in_progress"):
+            raise HTTPException(status_code=409, detail="Only open or review tickets can be processed")
+        if ticket.status == "in_progress":
+            db.add(AgentDecisionLog(
+                ticket_id=ticket.id, agent_name="retry_controller", action="reassess_review",
+                output_data={"previous_status": ticket.status, "reason": "Requested AI reassessment; prior traces preserved"},
+            ))
         with _pipeline_capacity:
             result = supervisor.process_ticket(
                 ticket_id=ticket.id,
@@ -202,9 +207,9 @@ def _process_ticket(ticket: Ticket, db: Session) -> TicketResolutionResponse:
 @router.post("/tickets/{ticket_id}/retry", response_model=TicketResolutionResponse)
 def retry_ticket(ticket_id: str, db: Session = Depends(get_db)):
     ticket = _ticket_or_404(db, ticket_id)
-    if ticket.status != "open":
-        raise HTTPException(status_code=409, detail="Only open tickets can be retried")
-    return _process_ticket(ticket, db)
+    if ticket.status not in ("open", "in_progress"):
+        raise HTTPException(status_code=409, detail="Only open or review tickets can be retried")
+    return _process_ticket(ticket, db, allow_review=True)
 
 
 @router.post("/tickets/{ticket_id}/resolve")

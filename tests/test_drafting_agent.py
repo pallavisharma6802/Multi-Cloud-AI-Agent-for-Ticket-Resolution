@@ -38,7 +38,7 @@ def test_draft_response_calls_generate_text_with_expected_args(mock_llm_client, 
     kwargs = mock_llm_client.generate_text.call_args.kwargs
     assert kwargs["model"] == "amazon.nova-lite-v1:0"
     assert kwargs["role"] == "drafting"
-    assert kwargs["temperature"] == 0.6
+    assert kwargs["temperature"] == 0.2
     assert kwargs["num_predict"] == 500
     assert kwargs["timeout"] == settings.request_timeout_seconds
     assert "Cancel" in kwargs["prompt"]
@@ -104,3 +104,14 @@ def test_reflexion_keeps_evidence_and_specific_review_feedback(mock_llm_client):
     assert previous in prompt
     assert feedback in prompt
     assert "A support specialist" in text
+
+
+def test_trailing_author_placeholder_removed_but_factual_placeholder_preserved(mock_llm_client):
+    agent = DraftingAgent()
+    for raw, expected in [
+        ('Open Settings.\n\nBest regards,\n[Your Name]', 'Open Settings.'),
+        ('Contact [your support URL]', 'Contact [your support URL]'),
+    ]:
+        mock_llm_client.generate_text.return_value = (raw, make_metadata(role='drafting', model='test'))
+        text, _ = agent.draft_response('Settings', 'Help with settings', 'settings', [])
+        assert text == expected
