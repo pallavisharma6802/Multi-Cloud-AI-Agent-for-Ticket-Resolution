@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_spring_boot__prerequisites",
+  "title": "java spring boot / Prerequisites",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Prerequisites\n\nTo develop a Spring Boot application in {% data variables.product.prodname_vscode %}, you need to install the following:\n\n* [Java Development Kit (JDK)](https://www.microsoft.com/openjdk)\n* [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)\n* [Spring Boot Extension Pack](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-boot-dev-pack)\n\n<a class=\"install-extension-btn\" href=\"vscode:extension/vscjava.vscode-java-pack\">Install the Extension Pack for Java</a>\n\n<a class=\"install-extension-btn\" href=\"vscode:extension/vmware.vscode-boot-dev-pack\">Install the Spring Boot Extension Pack</a>\n\n>**Note**: More information about how to get started can be found at [Getting Started with Java](/docs/java/java-tutorial.md) tutorial.\n\nTo help get you started with Java Spring Boot development, you can use the [Java Spring profile template](/docs/configure/profiles.md#java-spring-profile-template) that includes useful extensions, settings, and Java Spring Boot code snippets.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-spring-boot.md"
+}

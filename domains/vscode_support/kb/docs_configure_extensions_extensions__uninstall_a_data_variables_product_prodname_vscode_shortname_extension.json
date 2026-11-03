@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_extensions_extensions__uninstall_a_data_variables_product_prodname_vscode_shortname_extension",
+  "title": "extensions / Uninstall a {% data variables.product.prodname_vscode_shortname %} extension",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Uninstall a {% data variables.product.prodname_vscode_shortname %} extension\n\nYou can uninstall an extension from the Extensions view in {% data variables.product.prodname_vscode_shortname %}. If you want to temporarily disable an extension, you might choose to disable the extension instead of uninstalling it.\n\n1. Open the Extensions view (`kb(workbench.view.extensions)`).\n1. Select the gear icon or right-click on the extension's tile, and then select **Uninstall**.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/extensions/extensions.md"
+}

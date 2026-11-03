@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_faq__how_to_troubleshoot_and_contribute_to_the_java_language_server",
+  "title": "java faq / How to troubleshoot and contribute to the Java Language Server",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## How to troubleshoot and contribute to the Java Language Server\n\nYou can visit the [Java for {% data variables.product.prodname_vscode %} wiki](https://github.com/redhat-developer/vscode-java/wiki) to find answers regarding:\n\n1. [\"Classpath is incomplete\" warning](https://github.com/redhat-developer/vscode-java/wiki/%22Classpath-is-incomplete%22-warning)\n2. [Annotation Processing support for Maven projects](https://github.com/redhat-developer/vscode-java/wiki/Annotation-Processing-support-for-Maven-projects)\n3. [Contribute a Java extension](https://github.com/redhat-developer/vscode-java/wiki/Contribute-a-Java-Extension)\n4. [Formatter settings](https://github.com/redhat-developer/vscode-java/wiki/Formatter-settings)\n5. [Lombok Support](https://github.com/redhat-developer/vscode-java/wiki/Lombok-support)\n6. [Using a Proxy](https://github.com/redhat-developer/vscode-java/wiki/Using-a-Proxy)\n7. [Troubleshooting](https://github.com/redhat-developer/vscode-java/wiki/Troubleshooting)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-faq.md"
+}

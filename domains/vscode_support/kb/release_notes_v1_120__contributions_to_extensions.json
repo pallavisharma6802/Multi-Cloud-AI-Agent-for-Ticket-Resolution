@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_120__contributions_to_extensions",
+  "title": "v1_120 / Contributions to extensions",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Contributions to extensions\n\n### GitHub Pull Requests\n\nThere has been more progress on the [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) extension, which enables you to work on, create, and manage pull requests and issues. New features include:\n\n* Uploading images to pull request comments through copy/paste and an upload button.\n* More descriptive folder name when checkout out pull requests in a worktree.\n* `\"githubIssues.issueBranchTitle\"` now supports the `${issueType}` template variable.\n\nReview the [changelog for the 0.144.0](https://github.com/microsoft/vscode-pull-request-github/blob/main/CHANGELOG.md#01440) release of the extension to learn about everything in the release.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_120.md"
+}

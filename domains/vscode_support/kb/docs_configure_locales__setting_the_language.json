@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_locales__setting_the_language",
+  "title": "locales / Setting the Language",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Setting the Language\n\nIf you want to use a specific language for a {% data variables.product.prodname_vscode_shortname %} session, you can use the command-line switch `--locale` to specify a locale when you launch {% data variables.product.prodname_vscode_shortname %}.\n\nBelow is an example of using the `--locale` command-line switch to set the {% data variables.product.prodname_vscode_shortname %} display language to French:\n\n```bash\ncode . --locale=fr\n```\n\n**Note**: You must have the appropriate Language Pack installed for the language you specify with the command-line switch. If the matching Language Pack is not installed, {% data variables.product.prodname_vscode_shortname %} will display English.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/locales.md"
+}

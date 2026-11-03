@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_98__proposed_apis",
+  "title": "v1_98 / Proposed APIs",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Proposed APIs\n\n### Text Encodings\n\nWe added new proposed API to work with [text encodings](https://github.com/microsoft/vscode/blob/501ee833b16b8e83ba656c46e0888aadd9d2db04/src/vscode-dts/vscode.proposed.textDocumentEncoding.d.ts#L1) in VS Code.\n\nSpecifically, this new API allows to:\n\n* Get the current `encoding` of a `TextDocument`\n* Open a `TextDocument` with a specific `encoding`\n* Encode a `string` to a `Uint8Array` with a specific `encoding`\n* Decode a `Uint8Array` to a `string` using a specific `encoding`\n\nTry it out and let us know what you think [in this GitHub issue](https://github.com/microsoft/vscode/issues/241449).\n\n### Shell environment\n\nExtensions are able to access the user's currently active shell environment information for pwsh, zsh, bash, and fish shell that are opened from the VS Code integrated terminal. This is only available when `setting(terminal.integrated.shellIntegration.enabled)` is enabled.\n\nThe user can decide whether or not to report their shell environment information with `setting(terminal.integrated.shellIntegration.environmentReporting)`.\n\nGive it a try and let us know what you think [in this GitHub issue](https://github.com/microsoft/vscode/issues/227467).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_98.md"
+}

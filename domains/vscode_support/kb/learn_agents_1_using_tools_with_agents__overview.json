@@ -1,0 +1,8 @@
+{
+  "id": "learn_agents_1_using_tools_with_agents__overview",
+  "title": "1 using tools with agents",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "# Using tools with agents\n\n<!-- IMAGE PLACEHOLDER - YouTube thumbnail embed showing the Customization UI -->\n[![Watch Using Tools with Agents on YouTube (opens in new tab).](images/1-using-tools-with-agents/youtube-wZrQ0TAfpFg.jpg)](https://www.youtube.com/watch?v=wZrQ0TAfpFg)\n\nTools are how agents act on your request. They search your workspace, read files, edit code, run terminal commands, fetch web content, and call external services. In this guide, you will start with a small task, choose only the tools the task needs, and decide when to use a tool set, approvals, or sandboxing.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/1-using-tools-with-agents.md"
+}

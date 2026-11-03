@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_tree_view__overview",
+  "title": "tree view",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "# Tree View API\n\nThe Tree View API allows extensions to show content in the sidebar in Visual Studio Code. This content is structured as a tree and conforms to the style of the [built-in views](/docs/editing/getting-started/userinterface.md#views) of VS Code.\n\nFor example, the built-in References Search View extension shows reference search results as a separate view.\n\n![References Search View](images/tree-view/references-search-tree-view.png)\n\nThe **Find All References** results are displayed in a **References: Results** Tree View, which is in the **References** View Container.\n\nThis guide teaches you how to write an extension that contributes Tree Views and View Containers to Visual Studio Code.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/tree-view.md"
+}

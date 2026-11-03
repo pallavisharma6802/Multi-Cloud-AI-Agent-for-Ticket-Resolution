@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_userdefinedsnippets__overview",
+  "title": "userdefinedsnippets",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "# Snippets in {% data variables.product.prodname_vscode %}\n\nCode snippets are templates that make it easier to enter repeating code patterns, such as loops or conditional-statements.\n\nIn {% data variables.product.prodname_vscode %}, snippets appear in IntelliSense (`kb(editor.action.triggerSuggest)`) mixed with other suggestions, as well as in a dedicated snippet picker (**Insert Snippet** in the Command Palette). There is also support for tab-completion: Enable it with `\"editor.tabCompletion\": \"on\"`, type a **snippet prefix** (trigger text), and press `kb(insertSnippet)` to insert a snippet.\n\nThe snippet syntax follows the [TextMate snippet syntax](https://manual.macromates.com/en/snippets) with the exceptions of 'interpolated shell code' and the use of `\\u`; both are not supported.\n\n<video src=\"images/userdefinedsnippets/ajax-snippet.mp4\" title=\"Video showing ajax snippet.\" autoplay loop controls muted></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/userdefinedsnippets.md"
+}

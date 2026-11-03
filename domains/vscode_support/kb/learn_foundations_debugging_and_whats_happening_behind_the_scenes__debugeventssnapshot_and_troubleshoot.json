@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundations_debugging_and_whats_happening_behind_the_scenes__debugeventssnapshot_and_troubleshoot",
+  "title": "debugging and whats happening behind the scenes / `#debugEventsSnapshot` and `/troubleshoot`",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## `#debugEventsSnapshot` and `/troubleshoot`\n\nOnce you are looking at the debug panel for a session, you can attach a snapshot of those events directly to a chat message.\n\n### `#debugEventsSnapshot`\n\nType `#debugEventsSnapshot` in the chat input to attach a snapshot of the current debug events as context.\n\nExamples:\n\n```prompt\n#debugEventsSnapshot how many tokens did this session use?\n```\n\n```prompt\n#debugEventsSnapshot which customization files were loaded?\n```\n\n```prompt\n#debugEventsSnapshot why did it call that tool twice?\n```\n\nThe agent reads the snapshot and answers based on what actually happened - not based on general knowledge, but on the actual event data from your session.\n\nYou can also click the sparkle icon in the top-right corner of the Agent Debug panel to attach the snapshot to the chat composer automatically.\n\n### `/troubleshoot`\n\n`/troubleshoot` is a dedicated slash command for in-depth log analysis.\n\nExamples:\n\n```prompt\n/troubleshoot list all paths you tried to load customizations from\n```\n\n```prompt\n/troubleshoot the agent made an unexpected file edit in the last response, why?\n```\n\n> [!NOTE]\n> This command requires the `github.copilot.chat.agentDebugLog.enabled` setting.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/debugging-and-whats-happening-behind-the-scenes.md"
+}

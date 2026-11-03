@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_editing__type_hierarchy",
+  "title": "java editing / Type Hierarchy",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Type Hierarchy\n\nA Type Hierarchy view shows the inheritance relationships between Java Objects. You can right-click on a type and pick **Show Type Hierarchy**.\n\n<video src=\"images/java-editing/type-hierarchy.mp4\" autoplay loop muted playsinline controls title=\"Type hierarchy\">\n</video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-editing.md"
+}

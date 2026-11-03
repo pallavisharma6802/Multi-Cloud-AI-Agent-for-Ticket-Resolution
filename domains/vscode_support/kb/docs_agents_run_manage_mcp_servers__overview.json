@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_manage_mcp_servers__overview",
+  "title": "manage mcp servers",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Manage and troubleshoot MCP servers\n\nChange, stop, share, or troubleshoot an existing MCP server in {% data variables.product.prodname_vscode %}. For first-time setup, see [Add MCP servers](/docs/agent-customization/mcp-servers.md). For formats and properties, see the [MCP configuration reference](/docs/agents/reference/mcp-configuration.md).\n\nUse the [Agent Customizations editor](/docs/agent-customization/overview.md#agent-customizations-editor) to edit connections, start or stop servers, change their enabled state, and view output. The editor is scoped to the selected agent harness. The configuration form steps below use the {% data variables.product.prodname_copilot_short %} harness. For differences in server support and configuration, see [Agent harnesses](/docs/agents/run/agent-harnesses.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/manage-mcp-servers.md"
+}

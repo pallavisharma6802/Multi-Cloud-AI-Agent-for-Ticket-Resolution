@@ -1,0 +1,8 @@
+{
+  "id": "docs_editor_whyvscode__overview",
+  "title": "whyvscode",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "# Why did we build {% data variables.product.prodname_vscode %}?\n\n{% data variables.product.prodname_vscode %} combines the simplicity of a source code editor with powerful developer tooling, like IntelliSense code completion and debugging.\n\nFirst and foremost, it is an editor that gets out of your way. The delightfully frictionless edit-build-debug cycle means less time fiddling with your environment, and more time executing on your ideas.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editor/whyvscode.md"
+}

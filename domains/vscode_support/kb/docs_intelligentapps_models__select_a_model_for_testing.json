@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_models__select_a_model_for_testing",
+  "title": "models / Select a model for testing",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Select a model for testing\n\nAfter you deploy, connect, or download a model, select it in the tool that matches your next task:\n\n* Use the [chat playground](/docs/intelligentapps/playground.md#test-a-model) to test prompts, inspect model-specific input capabilities, compare chat responses, and generate client code.\n* Select a configured Foundry image-generation model to open **Image Playground** automatically. Follow [Generate images with Image Playground](/docs/intelligentapps/playground.md#generate-images-with-image-playground) to create images, try a supported reference image, and save the output.\n* Use [Agent Builder](/docs/intelligentapps/agentbuilder.md) to select a model while you configure an agent. Model availability depends on the selected Foundry project and workflow.\n\nTesting confirms the behavior of the selected model and endpoint. Catalog labels alone do not confirm that every advertised feature works with every deployment or connection.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/models.md"
+}

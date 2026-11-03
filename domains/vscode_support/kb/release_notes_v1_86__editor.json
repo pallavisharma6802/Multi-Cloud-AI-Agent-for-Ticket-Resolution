@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_86__editor",
+  "title": "v1_86 / Editor",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Editor\n\n### Paste text/html content\n\nThe **Paste As...** command now lets you paste `text/html` content in the clipboard:\n\n![Using 'Paste As' to paste HTML content.](images/1_86/paste-html.png)\n\nWhen you copy content from a web page for example, you can use this to paste the content's HTML instead of pasting it as plain text:\n\n<video src=\"images/1_86/paste-html.mp4\" title=\"Pasting content copied from a webpage into a html file. The Live Preview extension is being used to show a preview of the HTML.\" autoplay loop controls muted></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_86.md"
+}

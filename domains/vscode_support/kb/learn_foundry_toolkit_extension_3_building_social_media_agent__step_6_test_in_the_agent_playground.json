@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_3_building_social_media_agent__step_6_test_in_the_agent_playground",
+  "title": "3 building social media agent / Step 6: Test in the Agent Playground",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Step 6: Test in the Agent Playground\n\nWith instructions and tools configured, run realistic prompts directly in Agent Builder playground. Use prompts that reflect actual campaign requests your team receives, not synthetic one-liners.\n\nBehavior quality becomes visible quickly in this step.\n\nFor example, ask for a LinkedIn post about the GitHub Copilot app for a developer audience and check whether the assistant both retrieves trusted context and asks useful follow-up questions.\n\nHere's what to look for when testing:\n\n- **Tool verification**: Confirm docs search is invoked against Microsoft Learn.\n- **Response quality**: Check draft usefulness, structure, and call-to-action placement.\n- **Follow-up behavior**: Ensure the agent asks clarifying questions when needed.\n- **Transparency**: Validate that rationale is shown when requested.\n\nSee below image that shows a typed prompt, which tools are invoked and the final output from the agent.\n\n![Testing in Playground](../images/foundry-toolkit/ch3-testing.png)\n\n**Fig 07: Test the agent in the playground with realistic prompts.**\n\nManual testing is useful, but the next step is where quality becomes measurable.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/3-building-social-media-agent.md"
+}

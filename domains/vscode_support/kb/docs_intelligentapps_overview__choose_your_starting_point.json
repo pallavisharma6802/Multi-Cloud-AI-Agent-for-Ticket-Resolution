@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_overview__choose_your_starting_point",
+  "title": "overview / Choose your starting point",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Choose your starting point\n\nStart with the task that matches your project, whether you are creating an agent, exploring an idea, or investigating an existing application.\n\n| Goal | Toolkit capabilities | Get started |\n| --- | --- | --- |\n| Build an application or agent. | Agent Builder, hosted-agent samples, and {% data variables.product.prodname_copilot_short %} tools and skills. | [Choose an agent development route](/docs/intelligentapps/create-agents.md). |\n| Connect an agent to information and actions. | Tool Catalog, configured connections, and knowledge resources. | [Discover and configure tools](/docs/intelligentapps/tool-catalog.md). |\n| Explore a model's capabilities. | Model Catalog, chat and image playgrounds, and model client samples. | [Discover and set up a model](/docs/intelligentapps/models.md). |\n| Investigate behavior and measure quality. | Agent Inspector, tracing, and dataset-based evaluation. | [Debug an agent](/docs/intelligentapps/agent-inspector.md) or [run evaluations](/docs/intelligentapps/evaluation.md). |\n| Deploy and test an agent in Foundry. | Hosted-agent deployment, remote playgrounds, and project resource management. | [Deploy a hosted agent](/docs/intelligentapps/hosted-agents.md#deploy-your-hosted-agent). |",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/overview.md"
+}

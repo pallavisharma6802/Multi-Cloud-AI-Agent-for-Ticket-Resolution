@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_99__enterprise",
+  "title": "v1_99 / Enterprise",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Enterprise\n\n### macOS device management\n\nVS Code now supports device management on macOS in addition to Windows.  This allows system administrators to push policies from a centralized management system, like Microsoft Intune.\n\nSee the [Enterprise Support](https://code.visualstudio.com/docs/setup/enterprise#_device-management) documentation for more details.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_99.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_ai_settings__notebook_settings",
+  "title": "ai settings / Notebook settings",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Notebook settings\n\n| Setting and Description | Default |\n|------------------------|---------------|\n| `setting(notebook.experimental.generate)` _(Experimental)_<br/>Enable the **Generate** action to create code cells with notebook inline chat. | `true` |\n| `setting(github.copilot.chat.edits.newNotebook.enabled)` _(Experimental)_<br/>Enable the notebook tool in Edit mode (deprecated) to create a new notebook file. | `true` |\n| `setting(github.copilot.chat.notebook.followCellExecution.enabled)` _(Experimental)_<br/>Show the currently executing cell in the editor. | `false` |",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/ai-settings.md"
+}

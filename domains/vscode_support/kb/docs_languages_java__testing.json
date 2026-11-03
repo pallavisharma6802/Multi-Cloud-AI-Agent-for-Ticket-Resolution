@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_java__testing",
+  "title": "java / Testing",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Testing\n\nWith the support from the [Test Runner for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-test) extension, you can easily run, debug, and manage your JUnit and TestNG test cases.\n\n<video autoplay loop muted playsinline controls title=\"Running tests and investigating a failed test\">\n  <source src=\"images/java/testng.mp4\" type=\"video/mp4\">\n</video>\n\nFor more about testing, read [Testing Java](/docs/java/java-testing.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/java.md"
+}

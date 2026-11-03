@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vdecember__persisted_zoom_level",
+  "title": "vDecember / Persisted Zoom Level",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Persisted Zoom Level\n\nA new setting `window.zoomLevel` allows you to change and persist the zoom level of the window. The default value is 0 and each increment increases the zoom level by 20% similar to the effect of the `View` menu `Zoom in` command.  Unlike the zoom level set with the `Zoom in` and `Zoom out` commands, the `window.zoomLevel` is a setting persisted across VS Code sessions.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vDecember.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_37__new_documentation",
+  "title": "v1_37 / New documentation",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## New documentation\n\n### Remote Development tutorials\n\nThere are new introductory tutorials to walk you through running Visual Studio Code with the Remote Development extensions.\n\n* [Remote via SSH](https://code.visualstudio.com/docs/remote/ssh-tutorial) - Connect to remote and virtual machines with Visual Studio Code via SSH.\n* [Working in WSL](https://code.visualstudio.com/docs/remote/wsl-tutorial) - Run Visual Studio Code in Windows Subsystem for Linux.\n* [Dev Containers](https://code.visualstudio.com/docs/devcontainers/tutorial) - Run Visual Studio Code in a Docker Container.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_37.md"
+}

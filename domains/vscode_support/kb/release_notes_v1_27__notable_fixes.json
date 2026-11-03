@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_27__notable_fixes",
+  "title": "v1_27 / Notable Fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable Fixes\n\n* [6363](https://github.com/microsoft/vscode/issues/6363): Alternate data streams are removed when saving\n* [25919](https://github.com/microsoft/vscode/issues/25919): New command to force open a new window as native tab\n* [49021](https://github.com/microsoft/vscode/issues/49021): Do not reset WSL permissions metadata on save\n* [49403](https://github.com/microsoft/vscode/issues/49403): Auto attach causing issues when debugging in integrated terminal\n* [55025](https://github.com/microsoft/vscode/issues/55025): Allow to continue debug when extension host restarts\n* [56084](https://github.com/microsoft/vscode/issues/56084): Open Editors: revisit order of groups to be based on visual order\n* [56691](https://github.com/microsoft/vscode/issues/56691): Error launching vscode when a # exists in the path\n* [57018](https://github.com/microsoft/vscode/issues/57018): Stopping/Restarting debugger fails to stop babel-node",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_27.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_2_exploring_models__step_4_review_the_model_card",
+  "title": "2 exploring models / Step 4: Review the Model Card",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Step 4: Review the Model Card\n\nBefore deployment, open each model card and verify what the provider actually guarantees. This prevents hidden mismatch later, especially around pricing, input constraints, and capability assumptions.\n\nThink of this as your pre-deployment check.\n\nIn practice, model-card review should answer: can this model do what we need, at acceptable cost, with the expected behavior profile?\n\n- **Capabilities**: Confirm required modalities and strengths.\n- **Use cases**: Check whether your scenario aligns with intended usage.\n- **Pricing**: Understand expected token-cost behavior.\n- **Technical specs**: Review limits, context details, and operational constraints.\n\nTo review a model card:\n\n1. Select one filtered model.\n2. Open its model card page.\n3. Check capabilities and pricing before moving to deployment.\n\n![Model card review details](../images/foundry-toolkit/ch2-model-card.png)\n\nAfter you're satisfied with the model card review, you are ready to deploy the candidates into your Foundry project for side-by-side comparison.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/2-exploring-models.md"
+}

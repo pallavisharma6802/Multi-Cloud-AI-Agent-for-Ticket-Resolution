@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_delegate_two_tasks__related_resources",
+  "title": "delegate two tasks / Related resources",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related resources\n\n* [Manage agent sessions](/docs/agents/run/sessions/manage-sessions.md)\n* [Git branches and worktrees](/docs/sourcecontrol/branches-worktrees.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/delegate-two-tasks.md"
+}

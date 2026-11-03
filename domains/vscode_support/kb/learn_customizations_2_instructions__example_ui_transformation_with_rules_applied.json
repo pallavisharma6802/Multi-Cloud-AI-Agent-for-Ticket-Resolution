@@ -1,0 +1,8 @@
+{
+  "id": "learn_customizations_2_instructions__example_ui_transformation_with_rules_applied",
+  "title": "2 instructions / Example: UI transformation with rules applied",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Example: UI transformation with rules applied\n\nIf you ask the AI to redesign your UI, for example:\n\n- making it look like an 80s arcade\n\n| Before                                                                                                                                        | After                                                                                                                   |\n| --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |\n| <img src=\"/assets/learn/customizations/ep-2-7-calc-norm.png\" alt=\"Screenshot of the calculator app before applying the arcade theme\" width=\"85%\"> | ![Screenshot of the calculator app after applying the 80s arcade theme](../images/customizations/ep-2-8-calc-retro.png) |\n\nThe AI will:\n\n- apply your design request\n- enforce accessibility rules at the same time\n\nThis shows how instructions persist across tasks, not just specific prompts.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/2-instructions.md"
+}

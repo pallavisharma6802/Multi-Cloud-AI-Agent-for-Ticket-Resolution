@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_debug_common__node_js",
+  "title": "debug common / Node.js",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Node.js\n\nMore information about debugging Node.js applications within containers can be found at [Debug Node.js within a container](/docs/containers/debug-node.md).\n\nExample `launch.json` configuration for debugging a Node.js application:\n\n```json\n{\n    \"configurations\": [\n        {\n            \"name\": \"Containers: Node.js Launch\",\n            \"type\": \"docker\",\n            \"request\": \"launch\",\n            \"preLaunchTask\": \"docker-run: debug\",\n            \"platform\": \"node\"\n        }\n    ]\n}\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/debug-common.md"
+}

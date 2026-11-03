@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vapril__setup",
+  "title": "vApril / Setup",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Setup\n\n### Portability improvements on Linux\n\nThe zip archive now included the CLI (`./bin/code`) and has been improved to support custom install locations and work when symlinked to.\n\n### Launch your preferred shell\n\nYou can now specify which external shell VS Code will launch when you use commands like **Open in Command Prompt** (or **Open in Terminal** on OS X or Linux).  Set the `terminal.external` user or workspace setting for your platform (`windowsExec`, `linuxExec`) to the executable to launch (`cmd` is the default for Windows).\n\nFor example, to set PowerShell as your external shell on Windows and Terminator on Linux, use:\n\n```json\n{\n    \"terminal.external.windowsExec\": \"powershell\",\n    \"terminal.external.linuxExec\": \"terminator\"\n}\n```\n\nOS X support has not been implemented yet ([#5462](https://github.com/microsoft/vscode/issues/5462)).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vApril.md"
+}

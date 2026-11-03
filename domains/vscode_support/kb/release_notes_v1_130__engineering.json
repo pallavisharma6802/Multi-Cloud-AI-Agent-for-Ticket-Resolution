@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_130__engineering",
+  "title": "v1_130 / Engineering",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Engineering\n\nThe VS Code repository is compiled using the release version of TypeScript 7. We also switched to the release version of the TypeScript 7 extension. Read the [TypeScript 7.0 release announcement](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/) from the TypeScript team.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_130.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_javascript__snippets",
+  "title": "javascript / Snippets",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Snippets\n\n{% data variables.product.prodname_vscode_shortname %} includes basic JavaScript [snippets](/docs/editing/userdefinedsnippets.md) that are suggested as you type;\n\n<video src=\"images/javascript/snippets.mp4\" placeholder=\"images/javascript/snippets-placeholder.png\" autoplay loop controls muted>\n    Sorry, your browser doesn't support HTML 5 video.\n</video>\n\nThere are many extensions that provide additional snippets, including snippets for popular frameworks such as Redux or Angular. You can even [define your own snippets](/docs/editing/userdefinedsnippets.md).\n\n> [!TIP]\n> To disable snippets suggestions, set `setting(editor.snippetSuggestions)` to `\"none\"` in your [settings](/docs/configure/settings.md) file. The `setting(editor.snippetSuggestions)` setting also lets you change where snippets appear in the suggestions: at the top (`\"top\"`), at the bottom (`\"bottom\"`), or inlined ordered alphabetically (`\"inline\"`). The default is `\"inline\"`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/javascript.md"
+}

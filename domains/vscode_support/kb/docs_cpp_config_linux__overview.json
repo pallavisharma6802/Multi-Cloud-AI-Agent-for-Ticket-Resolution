@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_config_linux__overview",
+  "title": "config linux",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Using C++ on Linux in {% data variables.product.prodname_vscode_shortname %}\n\nIn this tutorial, you will configure {% data variables.product.prodname_vscode %} to use the GCC C++ compiler (g++) and GDB debugger on Linux. GCC stands for GNU Compiler Collection; GDB is the GNU debugger.\n\nAfter configuring {% data variables.product.prodname_vscode_shortname %}, you will compile and debug a simple C++ program in {% data variables.product.prodname_vscode_shortname %}. This tutorial does not teach you GCC, GDB, Ubuntu or the C++ language. For those subjects, there are many good resources available on the Web.\n\nIf you have trouble, feel free to file an issue for this tutorial in the [{% data variables.product.prodname_vscode_shortname %} documentation repository](https://github.com/microsoft/vscode-docs/issues).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/config-linux.md"
+}

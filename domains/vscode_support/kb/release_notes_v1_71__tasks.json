@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_71__tasks",
+  "title": "v1_71 / Tasks",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Tasks\n\n### Reconnection on window reload\n\nWatch tasks now get reconnected to on window reload, enabling uninterrupted work when VS Code is updated or an extension's state changes. Task reconnection is enabled by default, but can be disabled with the `task.reconnection` setting.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_71.md"
+}

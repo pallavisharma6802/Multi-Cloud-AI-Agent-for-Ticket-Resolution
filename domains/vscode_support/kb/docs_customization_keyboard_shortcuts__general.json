@@ -1,0 +1,8 @@
+{
+  "id": "docs_customization_keyboard_shortcuts__general",
+  "title": "keyboard shortcuts / General",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## General\n\nKey|Command\n---|---\n`kb(workbench.action.showCommands)`, `kbstyle(F1)`|Show Command Palette\n`kb(workbench.action.quickOpen)`|Quick Open\n`kb(workbench.action.newWindow)`|New window/instance\n`kb(workbench.action.closeWindow)`|Close window/instance",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/customization/keyboard-shortcuts.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_84__debug",
+  "title": "v1_84 / Debug",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debug\n\n### JavaScript Debugger\n\n#### Improved Event Listener Breakpoints view\n\nThe Event Listener Breakpoints view is friendlier and is now presented as a tree with checkboxes:\n\n![Event Listener Breakpoints view shown as a tree with the Canvas WebGL Error Fired event checked](images/1_84/js-debug-event-listener-bps.png)\n\n#### Better handling of sourcemap renames\n\nWhen code is compiled with a bundler, variables can be renamed. This is especially common with imports in all bundlers, and certain local identifiers in [esbuild](https://esbuild.github.io). The debugger is now aware of scopes each rename applies to, which fixes many snags users historically hit.\n\nThis requires the debugger to parse the syntax tree of compiled modules. This is done in a background thread and only when renames are detected, but the behavior can be disabled by setting `\"sourceMapRenames\": false` in your `launch.json` to avoid any performance impact.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_84.md"
+}

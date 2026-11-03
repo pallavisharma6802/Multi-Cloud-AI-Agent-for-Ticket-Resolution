@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_8__new_commands",
+  "title": "v1_8 / New Commands",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## New Commands\n\nKey|Command|Command id\n---|-------|----------\n`kb(workbench.action.quickOpenView)`|Quick Open View|`workbench.action.quickOpenView`\n`kb(workbench.action.nextEditorInGroup)`|Open Next Editor in Group|`workbench.action.nextEditorInGroup`\n`kb(workbench.action.previousEditorInGroup)`|Open Previous Editor in Group|`workbench.action.previousEditorInGroup`\n`kb(workbench.action.toggleZenMode)`|Enable Zen Mode|`workbench.action.toggleZenMode`\n`kb(workbench.action.exitZenMode)`|Leave Zen Mode|`workbench.action.exitZenMode`\n`kb(workbench.action.closePanel)`|Close active Panel|`workbench.action.closePanel`\n`kb(workbench.action.git.clone)`|Clone from a Git URL|`workbench.action.git.clone`\n`kb(workbench.action.toggleActivityBarVisibility)`|Toggle Visibility of Activity Bar|`workbench.action.toggleActivityBarVisibility`\n`kb(workbench.action.quit)`|Quit VS Code|`workbench.action.quit`\n`kb(editor.action.joinLines)`|Join Lines|`editor.action.joinLines`\n`kb(editor.action.transpose)`|Transpose characters around the cursor|`editor.action.transpose`\n`kb(editor.action.transformToUppercase)`|Transform to Uppercase|`editor.action.transformToUppercase`\n`kb(editor.action.transformToLowercase)`|Transform to Lowercase|`editor.action.transformToLowercase`",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_8.md"
+}

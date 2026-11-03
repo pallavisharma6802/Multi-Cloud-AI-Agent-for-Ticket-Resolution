@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_30__git_integration",
+  "title": "v1_30 / Git integration",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Git integration\n\n### Change default click action\n\nYou can now change the default action when you click on a file in the Source Control view. By default, VS Code will open the Diff view but by setting `git.openDiffOnClick` to `false`, the file will open in a regular editor.\n\n### Push or sync on commit\n\nA new setting `git.postCommitCommand` allows you to either push or sync your repository after a commit. The available values are `none` (default), `push`, and `sync`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_30.md"
+}

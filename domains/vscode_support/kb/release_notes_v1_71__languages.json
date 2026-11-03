@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_71__languages",
+  "title": "v1_71 / Languages",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Languages\n\n### TypeScript 4.8\n\nVS Code now ships with TypeScript 4.8.2. This major update brings language improvements for type checking and inference. On the tooling side, you also should see some nice performance improvements and bug fixes!\n\nCheck out the [TypeScript 4.8 announcement](https://devblogs.microsoft.com/typescript/announcing-typescript-4-8/) for more about this update.\n\n### TypeScript livestreams\n\nAnd if you missed the VS Code [livestreams](https://code.visualstudio.com/livestream) on TypeScript, have a look at two recent sessions with [Matt Pocock](https://twitter.com/mattpocockuk).\n\n* [TypeScript Crash Course](https://www.youtube.com/watch?v=p6dO9u0M7MQ)\n* [TypeScript Tips and Tricks](https://www.youtube.com/watch?v=hBk4nV7q6-w)\n\n![VS Code livestreams page](images/1_71/livestream.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_71.md"
+}

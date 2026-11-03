@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_virtual_workspaces__review_that_the_extension_code_is_ready_for_virtual_resources",
+  "title": "virtual workspaces / Review that the extension code is ready for virtual resources",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Review that the extension code is ready for virtual resources\n\nThe VS Code API support for virtual file systems has been around for quite a while. You can check out the [file system provider API](/api/extension-guides/virtual-documents#file-system-api).\n\nA file system provider is registered for a new URI scheme (for example, `vscode-vfs`) and resources on that file system will be represented by URIs using that schema (`vscode-vfs://github/microsoft/vscode/package.json`)\n\nCheck how your extension deals with URIs returned from the VS Code APIs:\n\n* Never assume that the URI scheme is `file`. `URI.fsPath` can only be used when the URI scheme is `file`.\n* Look out for usages of the `fs` node module for file system operations. If possible, use the `vscode.workspace.fs` API, which delegates to the appropriate file system provider.\n* Check for third-party components that depend on a `fs` access (for example, a language server or a node module).\n* If you run executables and tasks from commands, check whether these commands make sense in a virtual workspace window or whether they should be disabled.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/virtual-workspaces.md"
+}

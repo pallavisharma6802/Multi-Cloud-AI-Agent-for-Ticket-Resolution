@@ -1,0 +1,8 @@
+{
+  "id": "docs_terminal_profiles__unsafe_profile_detection",
+  "title": "profiles / Unsafe profile detection",
+  "category": "TERMINAL",
+  "intent": "terminal",
+  "content": "## Unsafe profile detection\n\nCertain shells are installed in unsafe paths by default, like a path that could be written to by another user on a Windows environment. {% data variables.product.prodname_vscode_shortname %} will still detect these but not expose them as a proper profile until they have been explicitly configured via the **Terminal: Select Default Profile** command. When configuring an unsafe profile, there will be a warning before it's added:\n\n![Shells with unsafe paths like c:\\msys64 will show a warning before you can use the detected profile](images/profiles/unsafe-profile-warning.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/profiles.md"
+}

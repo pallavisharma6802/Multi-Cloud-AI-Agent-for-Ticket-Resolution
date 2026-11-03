@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_cmake_linux__debug_hello_world",
+  "title": "cmake linux / Debug hello world",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Debug hello world\n\nTo run and debug your project, open `main.cpp` and put a breakpoint on the `std::cout` line.\nThen open the Command Palette (`kb(workbench.action.showCommands)`) and run **CMake: Debug**. The debugger will stop on the `std::cout` line:\n\n![Debug](images/cpp/cmake-debug.png)\n\nGo ahead and press `kb(workbench.action.debug.start)` to continue.\n\nYou've now used the {% data variables.product.prodname_vscode_shortname %} CMake Tools extension to use CMake to build and debug a C++ app on Ubuntu. The steps are the same for other platforms; the difference being how you install CMake and the compiler/debugger for the platform of your choice. For instructions on setting up compilers/debuggers for other platforms, see the following:\n\n* [Microsoft C++ on Windows](/docs/cpp/config-msvc.md)\n* [Clang on macOS](/docs/cpp/config-clang-mac.md)\n* [GCC on Windows Subsystem for Linux](/docs/cpp/config-wsl.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/cmake-linux.md"
+}

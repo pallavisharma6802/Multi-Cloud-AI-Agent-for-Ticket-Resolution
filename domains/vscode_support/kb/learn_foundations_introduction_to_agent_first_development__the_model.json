@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundations_introduction_to_agent_first_development__the_model",
+  "title": "introduction to agent first development / The model",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## The model\n\nGitHub Copilot gives you a choice of models through the model picker. The model is the AI that does the reasoning and generates the code.\n\nYou can control how deeply the model thinks through thinking effort levels.\n\n* **Low**, less reasoning and faster responses. Best for formatting, boilerplate, and simple fixes.\n* **Medium**, balanced reasoning and speed. Good for refactoring, code reviews, and standard implementations.\n* **High**, maximum reasoning depth. Best for architecture decisions, multi-file refactors, and difficult debugging.\n\nThere's also **Auto**, which selects the best available model based on capacity and performance - reducing rate limiting, latency, and errors.\n\n![Model picker in VS Code chat showing available AI models and thinking effort options.](../images/foundations/model-picker.png)\n\nMatch thinking effort to the task. Simple work? Low. Standard coding? Medium. Hard problem? High.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/introduction-to-agent-first-development.md"
+}

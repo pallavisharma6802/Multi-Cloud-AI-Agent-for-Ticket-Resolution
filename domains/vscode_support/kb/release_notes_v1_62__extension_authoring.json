@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_62__extension_authoring",
+  "title": "v1_62 / Extension authoring",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Extension authoring\n\n### Emoji support in file decorations\n\nThe [file decorations](https://github.com/microsoft/vscode/blob/9430f7848503b25ff1a629f2cb81b705e11672f5/src/vs/vscode.d.ts#L6071) API now supports emojis as badge texts.\n\n![Files decorated with emojis in the File Explorer](images/1_62/emoji_decorations.png)\n\n### MarkdownString.supportHtml\n\nThe new `supportHtml` property on `MarkdownString` enables rendering of a safe subset of raw HTML that appears inside the Markdown text.\n\nThe `supportHtml` property defaults to `false`. When disabled, VS Code will strip out any raw HTML tags that appear in the Markdown text.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_62.md"
+}

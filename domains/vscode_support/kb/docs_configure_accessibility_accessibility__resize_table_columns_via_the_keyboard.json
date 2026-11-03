@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_accessibility_accessibility__resize_table_columns_via_the_keyboard",
+  "title": "accessibility / Resize table columns via the keyboard",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Resize table columns via the keyboard\n\nThe `list.resizeColumn` command enables you to resize columns by using the keyboard. You can [assign a keyboard shortcut](#keyboard-navigation) to trigger this command.\n\nWhen you trigger this command, select the column you want to resize, and provide a percentage of the width you want to set. The following video shows how to apply this to resize a column in the Keyboard Shortcuts editor.\n\n<video src=\"images/accessibility/resize-columns.mp4\" title=\"Resize columns in the Keyboard Shortcuts editor via the keyboard.\" autoplay loop controls muted></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/accessibility/accessibility.md"
+}

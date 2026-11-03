@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_copilot_smart_actions__generate_alt_text_for_images_in_markdown",
+  "title": "copilot smart actions / Generate alt text for images in Markdown",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Generate alt text for images in Markdown\n\nUse AI to generate or update alt text for images in Markdown files. To generate alt text:\n\n1. Open a Markdown file.\n1. Put the cursor on an image link.\n1. Select the Code Action (lightbulb) icon and select **Generate alt text**.\n\n    ![Screenshot that shows a Code Action menu with Generate alt text option for a Markdown image link.](images/copilot-smart-actions/generate-alt-text.png)\n\n1. If you already have an alt text, select the Code Action, and select **Refine alt text**.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/copilot-smart-actions.md"
+}

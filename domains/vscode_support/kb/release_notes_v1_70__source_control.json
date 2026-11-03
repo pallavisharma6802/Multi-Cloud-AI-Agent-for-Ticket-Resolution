@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_70__source_control",
+  "title": "v1_70 / Source Control",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Source Control\n\n### Action button improvements\n\nWe continued to polish the Source Control action button based on user feedback:\n\n* The **Sync Changes** action button is only shown when there is a high degree of certainty that the local branch is either ahead or behind the remote tracking branch.\n* The **Commit** action button is only enabled based on the list of changed resources while factoring in the smart commit settings:\n  * `git.enableSmartCommit`\n  * `git.suggestSmartCommit`\n  * `git.smartCommitChanges`\n* The **Commit** action button icon is updated based on the branch protection settings:\n  * `git.branchProtection`\n  * `git.branchProtectionPrompt`\n\n### Improved rebase conflict resolution\n\nThis milestone we addressed some smaller issues in the rebase flow when resolving merge conflicts. Users should now be able to continue the rebase operation using the **Commit** button in the Source Control view after resolving all merge conflicts.\n\n### Commit input field spell checking\n\nThis milestone we confirmed that all the necessary extension APIs are available to support spell checking in the commit input field. We reached out to the authors of two popular spell checking extensions and submitted pull requests illustrating how to update their extensions to provide spell checking for commit description text.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_70.md"
+}

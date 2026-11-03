@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_66__debugger_extension_authoring",
+  "title": "v1_66 / Debugger extension authoring",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debugger extension authoring\n\n### Support for CompletionItem.detail\n\nLast month, the Debug Adapter Protocol added a `detail` property to the `CompletionItem` object. This property is now supported in VS Code. You will see the detail in the suggest widget in the Debug Console.\n\n![Debug Console example displaying detail field](images/1_66/debug-detail.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_66.md"
+}

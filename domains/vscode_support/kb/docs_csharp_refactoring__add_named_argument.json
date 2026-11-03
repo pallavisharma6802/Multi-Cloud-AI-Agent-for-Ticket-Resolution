@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_refactoring__add_named_argument",
+  "title": "refactoring / Add named argument",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Add named argument\n\n**What:** Append a named argument to the specified parameter value in a function call.\n\n**When:** If you have a method with a lot of parameters, you can add named arguments to make your code more readable.\n\n**How-to:**\n\n1. Place your cursor in a parameter within your function call.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select **Add argument name &lt;parameter name&gt;**.\n\n![Add named argument example](images/refactoring/add-named-argument.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_ai_ai_extensibility_overview__overview",
+  "title": "ai extensibility overview",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "# AI extensibility in VS Code\n\nThis article provides an overview of AI extensibility options in Visual Studio Code, helping you choose the right approach for your extension.\n\nVS Code includes powerful AI features that enhance the coding experience:\n\n- **Code completion**: Offers inline code suggestions as you type\n- **Agent mode**: Enables AI to autonomously plan and execute development tasks with specialized tools\n- **Chat**: Lets developers use natural language to ask questions or make edits in codebase through chat interfaces\n- **Smart actions**: Use AI-enhanced actions for common development tasks, integrated throughout the editor\n\nYou can extend and customize each of these built-in capabilities to create tailored AI experiences that meet the specific needs of your users.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/ai-extensibility-overview.md"
+}

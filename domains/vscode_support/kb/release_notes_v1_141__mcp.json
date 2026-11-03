@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_141__mcp",
+  "title": "v1_141 / MCP",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## MCP\n\n### See discovered MCP servers in Customizations editor (Preview)\n\nFind MCP servers supplied by plugins, extensions, and built-in integrations alongside your configured servers in the **MCP Servers** section of the Agent Customizations editor. Servers discovered outside your workspace's `mcp.json` are visible in the UI, so you don't have to use **MCP: List Servers** to find them.\n\nRun **Chat: Open Customizations** from the Command Palette and select **MCP Servers** to inspect the available integrations. Learn more about [adding and managing MCP servers](https://code.visualstudio.com/docs/agent-customization/mcp-servers).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_141.md"
+}

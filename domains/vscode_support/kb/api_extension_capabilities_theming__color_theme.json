@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_capabilities_theming__color_theme",
+  "title": "theming / Color Theme",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Color Theme\n\n![color-theme](images/theming/color-theme.png)\n\nAs you can see in the illustration, Color Theme defines colors for UI components as well as for highlighting in the editor:\n\n- The `colors` mapping that controls colors for UI Components.\n- The `tokenColors` define the color and styles for highlighting in the editor. The [Syntax Highlight guide](/api/language-extensions/syntax-highlight-guide) has more information on that topic.\n- The `semanticTokenColors` mappings as well as the `semanticHighlighting` setting allow enhancing the highlighting in the editor. The [Semantic Highlight guide](/api/language-extensions/semantic-highlight-guide) explains the APIs related to that.\n\nWe have a [Color Theme guide](/api/extension-guides/color-theme) and a [Color Theme sample](https://github.com/microsoft/vscode-extension-samples/tree/main/theme-sample) that illustrates how to create a theme.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-capabilities/theming.md"
+}

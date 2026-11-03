@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_145__october_30_2026",
+  "title": "v1_145 / October 30, 2026",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## October 30, 2026\n\n* Add stable API support for extensions to contribute file, folder, and workspace history to the **Timeline** view. _[microsoft/vscode#84297: API support for Timeline view](https://github.com/microsoft/vscode/issues/84297)_\n\n* Add support for `!`-prefixed exception patterns in `setting(files.exclude)` and `setting(search.exclude)` to restore excluded files and folders in the **Explorer** and built-in search. _[microsoft/vscode#869: Exclude all files except for...](https://github.com/microsoft/vscode/issues/869)_\n\n* Round keyboard focus outlines on the **Dictation** and **Voice Mode** buttons (Experimental) in editor chat and the Agents window. _[microsoft/vscode#330524: Add corner rounding to dictation and voice mode buttons focus outline](https://github.com/microsoft/vscode/issues/330524)_\n\n* Use Agents window without GitHub sign-in or an opt-in setting. Individual agents and models can still require credentials or setup. _[microsoft/vscode#345254: Agents window is usable without GitHub sign-in by default](https://github.com/microsoft/vscode/issues/345254)_",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_145.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_references_theme_color__snippets_colors",
+  "title": "theme color / Snippets colors",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Snippets colors\n\nThe theme colors for snippets:\n\n- `editor.snippetTabstopHighlightBackground`: Highlight background color of a snippet tabstop.\n- `editor.snippetTabstopHighlightBorder`: Highlight border color of a snippet tabstop.\n- `editor.snippetFinalTabstopHighlightBackground`: Highlight background color of the final tabstop of a snippet.\n- `editor.snippetFinalTabstopHighlightBorder`: Highlight border color of the final tabstop of a snippet.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+}

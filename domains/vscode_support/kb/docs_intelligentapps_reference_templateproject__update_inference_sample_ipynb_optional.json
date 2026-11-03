@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_reference_templateproject__update_inference_sample_ipynb_optional",
+  "title": "TemplateProject / Update inference_sample.ipynb (optional)",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Update inference_sample.ipynb (optional)\nWrite your own code to load and test the output model. This file will be copied into history folder so you could using different ipynb to compare models from different histories.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/reference/TemplateProject.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_compare_models__continue_with_a_result",
+  "title": "compare models / Continue with a result",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Continue with a result\n\nOpen the attempt or synthesized session that you want to continue. For a folderless comparison, continue the conversation in the chat you choose. For code changes, review all changed and untracked files, run the relevant tests, and make any needed revisions.\n\nWhen a repository result is ready, follow the [agent change review and worktree integration workflow](/docs/agents/run/review-code-edits.md). Comparison doesn't automatically merge, push, or create a pull request for the selected result.\n\nEach attempt, judge evaluation, and synthesis is separate model work. Consider the additional model usage when you choose the number of attempts and whether to enable evaluation or synthesis.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/compare-models.md"
+}

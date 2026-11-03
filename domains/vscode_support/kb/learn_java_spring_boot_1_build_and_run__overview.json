@@ -1,0 +1,8 @@
+{
+  "id": "learn_java_spring_boot_1_build_and_run__overview",
+  "title": "1 build and run",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "# Build and run your first Spring Boot app in Visual Studio Code\n\n[![Watch Getting started with your first Java app in VS Code on YouTube (opens in new tab).](images/1-build-and-run/youtube-ZX8LEQpKPx0.jpg)](https://www.youtube.com/watch?v=ZX8LEQpKPx0)\n\nYou know that moment when you clone a Java repository, open it, and nothing happens? No\nrun button, no green ticks, no clue which of the two hundred files is the one that\nstarts. Just a folder.\n\nThat gap is almost never about Java being hard. It is about tooling that has not been\nswitched on yet.\n\nIn this chapter, we'll switch it on. Two extension packs, one build, one run \u2014 and the\nfolder turns into an application you can click around in.\n\nBy the end, you will have a Spring Boot web app running on your machine, and you will\nknow which file does what and how the tooling found it.\n\nNo terminal gymnastics required.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/1-build-and-run.md"
+}

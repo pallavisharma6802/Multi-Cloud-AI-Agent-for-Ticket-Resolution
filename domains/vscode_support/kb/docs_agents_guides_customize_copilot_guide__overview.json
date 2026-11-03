@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_customize_copilot_guide__overview",
+  "title": "customize copilot guide",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Configure AI for your codebase\n\nAI agents can produce better results when they understand how your codebase is structured, which commands to run, and which conventions to follow. Configure this information once as repository customizations instead of repeating it in every prompt.\n\nThis guide helps you configure the {% data variables.product.prodname_copilot %}, {% data variables.product.prodname_anthropic_claude %}, or {% data variables.product.prodname_openai_codex %} harness in {% data variables.product.prodname_vscode %}. Start with an observed project problem and a representative task. Make the smallest useful customization, confirm that it applies, repeat the task, and compare the results before you share the configuration. The workflow is shared, with tabs for harness-specific formats and behavior.\n\nTo understand how the customization types differ and work together, see [Agent customization](/docs/agents/concepts/customization.md).\n\nFor ready-made workflows and integrations, [browse customization marketplaces](/docs/agent-customization/overview.md#discover-and-install-existing-customizations-preview) before authoring your own. You can reuse an existing skill or plugin and still follow this guide to add repository-specific instructions.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/customize-copilot-guide.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_13__notable_changes",
+  "title": "v1_13 / Notable Changes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable Changes\n\n* [25789](https://github.com/microsoft/vscode/issues/25789): Can't split file when dragging from Explorer\n* [19644](https://github.com/microsoft/vscode/issues/19644): Cursor does not go to the maximum line column when pressing \"End\" twice with word wrap enabled\n* [6661](https://github.com/microsoft/vscode/issues/6661): Ctrl+D/Cmd+D merges adjacent selections.\n* [4271](https://github.com/microsoft/vscode/issues/4271): Mac Insert Emoji Duplicates Text\n* [3623](https://github.com/microsoft/vscode/issues/3623): Match whole word does not work for not latin characters (at least for cyrillic)\n* [17534](https://github.com/microsoft/vscode/issues/17534): Search: not possible to remove individual search results in a file\n* [16580](https://github.com/microsoft/vscode/issues/16580): Unable to write to settings should offer an action to open settings\n* [17609](https://github.com/microsoft/vscode/issues/17609): Line wrapping problem in bash on ubuntu on windows\n* [23484](https://github.com/microsoft/vscode/issues/23484): \"Ctrl +click to follow link\" hover appears only on the last link in the terminal\n* [25664](https://github.com/microsoft/vscode/issues/25664): Terminal panel is not properly restored after restarting",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_13.md"
+}

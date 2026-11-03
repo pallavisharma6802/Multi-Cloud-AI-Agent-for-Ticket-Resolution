@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_5__debugging",
+  "title": "v1_5 / Debugging",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debugging\n\n### Suggestions in Debug Console\n\nThe **Debug Console** now shows suggestions while typing. Currently this is only available for Node.js debugging, but other debuggers can implement suggestions as well through the debug protocol.\n\n![Debug Console Suggest](images/1_5/debug_repl_suggest.png)\n\n### MultiLine Debug Console Input\n\nThe **Debug Console** input now expands to multiple lines when needed. The expansion can be triggered using `kbstyle(Shift + Enter)`.\n\n![Debug Console Multiline](images/1_5/debug_repl_multiline.png)\n\n### Multi-Level Variable Paging\n\nData structures with a large number of children are displayed in multi-level chunks. This results in better performance and makes it easier to traverse a large number of children.\n\n![Variable Multi Level Paging](images/1_5/debug_variable_paging.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_5.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_125__agents",
+  "title": "v1_125 / Agents",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Agents\n\n### View your additional spend usage in VS Code\n\nTo make sure you stay ahead of overage charges, the Copilot status dashboard now shows the percentage of your additional Copilot budget that you've consumed, so you can adjust your usage before you hit your configured limit.\n\n![Screenshot showing additional spend limits in the Copilot status dashboard.](images/1_125/additional_budget.webp)\n\nYou can view detailed usage and manage your additional spend in the [Copilot settings](https://github.com/settings/copilot/features).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_125.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_dotnet__overview",
+  "title": "dotnet",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Using .NET in {% data variables.product.prodname_vscode %}\n\n[.NET](https://dotnet.microsoft.com) provides a fast and modular platform for creating many different types of applications that run on Windows, Linux, and macOS. Use {% data variables.product.prodname_vscode %} with the C# and F# extensions to get a powerful editing experience with [C# IntelliSense](https://learn.microsoft.com/visualstudio/ide/visual-csharp-intellisense), F# IntelliSense (smart code completion), and debugging.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/dotnet.md"
+}

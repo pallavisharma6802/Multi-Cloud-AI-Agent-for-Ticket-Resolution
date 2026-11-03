@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_overview__editing_docker_files",
+  "title": "overview / Editing Docker files",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Editing Docker files\n\nYou can get [IntelliSense](/docs/editing/intellisense.md) by clicking `kb(editor.action.triggerSuggest)` when editing your `Dockerfile` and `docker-compose.yml` files, with completions and syntax help for common commands.\n\n![IntelliSense for Dockerfiles](images/overview/dockerfile-intellisense.png)\n\nIn addition, you can use the Problems panel (`kb(workbench.actions.view.problems)`) to view common errors for `Dockerfile` and `docker-compose.yml` files.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/overview.md"
+}

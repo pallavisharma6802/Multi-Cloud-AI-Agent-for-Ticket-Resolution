@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_jupyter_notebooks__create_or_open_a_jupyter_notebook",
+  "title": "jupyter notebooks / Create or open a Jupyter Notebook",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Create or open a Jupyter Notebook\n\nYou can create a Jupyter Notebook by running the **Create: New Jupyter Notebook** command from the Command Palette (`kb(workbench.action.showCommands)`) or by creating a new `.ipynb` file in your workspace.\n\n![Blank Jupyter Notebook](images/jupyter/native-code-cells-01.png)\n\nNext, select a kernel using the kernel picker in the top right.\n\n![Kernel Picker](images/jupyter/native-kernel-picker.png)\n\nAfter selecting a kernel, the language picker located in the bottom right of each code cell will automatically update to the language supported by the kernel.\n\n![Language Picker](images/jupyter/native-language-picker-01.png)\n\nIf you have an existing Jupyter Notebook, you can open it by right-clicking on the file and opening with {% data variables.product.prodname_vscode_shortname %}, or through the {% data variables.product.prodname_vscode_shortname %} File Explorer.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/jupyter-notebooks.md"
+}

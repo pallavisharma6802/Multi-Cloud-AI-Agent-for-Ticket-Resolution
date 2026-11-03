@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_swift__language_features",
+  "title": "swift / Language features",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Language features\n\nThe Swift extension uses [SourceKit LSP](https://github.com/apple/sourcekit-lsp)\nto power language features. SourceKit LSP provides the following features in the\neditor. Use these links to see the {% data variables.product.prodname_vscode_shortname %} documentation for each topic:\n\n- [Code completion](/docs/editing/intellisense.md)\n- [Go to definition](/docs/editing/editingevolved.md#go-to-definition)\n- [Find all references](/docs/editing/editingevolved.md#peek)\n- [Rename refactoring](/docs/editing/refactoring.md#rename-symbol)\n- [Diagnostics](/docs/editing/editingevolved.md#errors--warnings)\n- [Quick Fixes](/docs/editing/editingevolved.md#code-action)\n\nSourceKit LSP also provides code actions to automate common tasks. Code actions in {% data variables.product.prodname_vscode_shortname %}\nappear as a light bulb near the editor margin (see the below screenshot for an\nexample of this). Clicking on the light bulb will show you the available actions\nwhich can include:\n\n- Adding targets to your `Package.swift`\n- Converting JSON to protocols\n- Adding documentation to your functions\n\n![Package swift actions](images/swift/package_actions.png)\n\n> [!IMPORTANT]\n> Prior to Swift 6.1 you must perform a `swift build` command on your project either\n> on the command line or using a task in {% data variables.product.prodname_vscode_shortname %} before language features can be used.\n> This populates the index in SourceKit-LSP.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/swift.md"
+}

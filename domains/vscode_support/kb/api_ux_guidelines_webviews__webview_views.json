@@ -1,0 +1,8 @@
+{
+  "id": "api_ux_guidelines_webviews__webview_views",
+  "title": "webviews / Webview views",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Webview views\n\nYou can also place webviews into any view container (sidebar or panel) and these elements are called [webview views](/api/references/vscode-api#WebviewView). The same webview guidance applies to webview views.\n\n![Webview View](images/examples/webview-view.png)\n\n*This webview view shows content for creating a pull request that uses dropdowns, inputs, and buttons.*",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/webviews.md"
+}

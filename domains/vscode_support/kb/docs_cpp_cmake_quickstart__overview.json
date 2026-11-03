@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_cmake_quickstart__overview",
+  "title": "cmake quickstart",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Create a CMake hello world project with CMake Quick Start\n\nIn this article, you'll learn how to create a CMake hello world project from scratch using the CMake Tools extension in {% data variables.product.prodname_vscode_shortname %}.\n\nIf you have an existing CMake project that already has a `CMakeLists.txt` file in the root directory but no CMake presets, you can skip to [Create a `CMakePresets.json` file](#create-a-cmakepresetsjson-file) to configure your project with CMake presets.\n\nOtherwise, create a folder for a new project. From the Terminal window, create an empty folder called `HelloWorld`, navigate into it, and open {% data variables.product.prodname_vscode_shortname %} in that folder by entering the following commands:\n\n```bash\nmkdir helloworld\ncd helloworld\ncode .\n```\nThe `code .` command opens {% data variables.product.prodname_vscode_shortname %} in the current working folder, which becomes your \"workspace\".",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/cmake-quickstart.md"
+}

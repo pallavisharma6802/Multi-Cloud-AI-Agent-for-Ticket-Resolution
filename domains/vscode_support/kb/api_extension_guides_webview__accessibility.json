@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_webview__accessibility",
+  "title": "webview / Accessibility",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Accessibility\n\nThe class `vscode-using-screen-reader` will be added to your webview's main body in contexts where the user is operating VS Code with a screen reader. Additionally, the class `vscode-reduce-motion` will be added to the document's main body element in cases where the user has expressed a preference to reduce the amount of motion in the window. By observing these classes and adjusting your rendering accordingly, your webview content can better reflect the user's preferences.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/webview.md"
+}

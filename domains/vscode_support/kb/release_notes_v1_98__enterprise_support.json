@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_98__enterprise_support",
+  "title": "v1_98 / Enterprise support",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Enterprise support\n\n### Multi-line support for allowed extensions\n\nYou can now configure allowed extensions in the group policy on Windows using a multi-line string. This allows for more flexible and extensive configuration of allowed extensions. Learn more about [configuring allowed extensions](https://code.visualstudio.com/docs/setup/enterprise#_configure-allowed-extensions).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_98.md"
+}

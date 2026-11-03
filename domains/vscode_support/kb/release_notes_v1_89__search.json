@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_89__search",
+  "title": "v1_89 / Search",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Search\n\n### Quick Search\n\nQuick Search enables you to quickly perform a text search across your workspace files. Quick Search is no longer experimental, so give it a try by using the **Search: Quick Search** command in the Command Palette (`kb(workbench.action.showCommands)`)! \u2728\ud83d\udd0d\n\n<video src=\"images/1_89/quick-search.mp4\" title=\"Quick Search demo\" autoplay loop controls muted></video>\n_Theme: [Night Owl Light](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl) (preview on [vscode.dev](https://vscode.dev/editor/theme/sdras.night-owl))_\n\nNote that all Quick Search commands and settings no longer have the \"experimental\" keyword in their identifier. For example, the command ID `workbench.action.experimental.quickTextSearch` became `workbench.action.quickTextSearch`. This might be relevant if you have settings or keybindings that use these old IDs.\n\n### Search tree recursive expansion\n\nWe have a new context menu option that enables you to recursively open a selected tree node in the search tree.\n\n<video src=\"images/1_89/search-tree-recurse-open.mp4\" title=\"Recursively open search tree nodes\" autoplay loop controls muted></video>\n_Theme: [Night Owl Light](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl) (preview on [vscode.dev](https://vscode.dev/editor/theme/sdras.night-owl))_",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_89.md"
+}

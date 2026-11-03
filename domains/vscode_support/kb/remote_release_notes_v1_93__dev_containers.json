@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_93__dev_containers",
+  "title": "v1_93 / Dev Containers",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Dev Containers\n\n### Optional paths for Templates\n\nDuring publishing, [Dev Container Template](https://containers.dev/templates) authors can now indicate optional files or folders within the Template. This uses a new property on the Template metadata called ['optionalPaths'](https://github.com/devcontainers/spec/blob/e2d850e48292b19b8beb3575b7e538a7bfdad981/docs/specs/devcontainer-templates.md#the-optionalpaths-property). End users of the Template can decide whether or not to apply those files to their workspace.\n\nFor example, a Template author might want to let a user choose to include/exclude starter code or platform-specific files.\n\nThe Dev Containers extension prompts users to select which files or directories should be included when applying the Template.\n\n![Optional path prompt from Dev Containers extension](images/1_93/optionalPaths.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_93.md"
+}

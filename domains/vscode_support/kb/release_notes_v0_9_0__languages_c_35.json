@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v0_9_0__languages_c_35",
+  "title": "v0_9_0 / Languages - C&#35;",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Languages - C&#35;\nThe status of the OmniSharp server is now using a new language status indicator in the lower right corner. This makes it much easier to see the context OmniSharp is running under and any issues.\n\n![Language Status indicator](images/0_9_0/lang-status.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_9_0.md"
+}

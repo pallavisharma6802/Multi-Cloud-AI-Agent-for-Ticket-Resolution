@@ -2,7 +2,7 @@
 """Manual live smoke-test script -- NOT part of the pytest suite.
 
 Requires real credentials in .env (Azure Text Analytics, Pinecone, AWS Bedrock)
-and a seeded knowledge base (`python seed_kb.py --pack it_saas`).
+and a seeded knowledge base (`python seed_kb.py --pack vscode_support`).
 Automated tests that don't need live services live in tests/ (see
 tests/test_supervisor_graph.py for the mocked equivalent of this flow).
 """
@@ -69,7 +69,7 @@ def test_ticket_processing(domain_pack: str, title: str, description: str):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--pack", default="it_saas", choices=["it_saas"])
+    parser.add_argument("--pack", default="vscode_support", choices=["vscode_support"])
     parser.add_argument("--title", default="Cannot access VPN")
     parser.add_argument(
         "--description",

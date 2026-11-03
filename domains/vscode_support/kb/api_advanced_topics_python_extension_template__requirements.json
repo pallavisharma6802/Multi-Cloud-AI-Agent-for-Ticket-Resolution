@@ -1,0 +1,8 @@
+{
+  "id": "api_advanced_topics_python_extension_template__requirements",
+  "title": "python extension template / Requirements",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Requirements\n\n1. VS Code 1.64.0 or greater\n1. Python 3.7 or greater\n1. node >= 14.19.0\n1. npm >= 8.3.0 (`npm` is installed with node, check npm version, use `npm install -g npm@8.3.0` to update)\n1. [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) extension for VS Code\n\nYou should know how to create and work with Python virtual environments.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/advanced-topics/python-extension-template.md"
+}

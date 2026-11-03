@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_reference_migrate_from_visualizer__what_you_learned",
+  "title": "migrate from visualizer / What you learned",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## What you learned\n\nIn this article, you learned how to:\n\n- Migrate from Local Agent Playground and Local Visualizer to Agent Inspector.\n- Update your agent code and {% data variables.product.prodname_vscode_shortname %} configuration for the new debugging experience.\n- Use the new capabilities of Agent Inspector to improve your agent development workflow.\n- Troubleshoot common issues during migration and setup.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/reference/migrate-from-visualizer.md"
+}

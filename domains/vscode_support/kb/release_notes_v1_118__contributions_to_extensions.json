@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_118__contributions_to_extensions",
+  "title": "v1_118 / Contributions to extensions",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Contributions to extensions\n\n### Chat Customizations Evaluation extension\n\nWe added a new extension, **Chat Customizations Evaluations** (extension ID `ms-vscode.vscode-chat-customizations-evaluations`) to help analyze and improve your chat customizations, like prompt files, custom agents, instructions, and skills. After analyzing a customization file, the extension generates diagnostics for issues it detects in the file and gives recommendations to improve it.\n\nOpen a prompt, agent, instructions, or skill definition file and select **Analyze** to evaluate it. After the diagnostics appear, use the customization evaluations fix skill to apply the recommended changes.\n\n<video src=\"images/1_118/customization-evaluations.mp4\" title=\"Video showing the Chat Customizations Evaluations extension in action.\" autoplay loop controls muted></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_118.md"
+}

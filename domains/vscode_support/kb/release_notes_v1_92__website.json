@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_92__website",
+  "title": "v1_92 / Website",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Website\n\nWe refreshed the design of the [VS Code website](https://code.visualstudio.com/) and added support for light and dark themes.\n\n![VS Code website light mode.](images/1_92/landing-page-light.png)\n\nThe website's new design defaults to your system's theme (light or dark mode), and you can also toggle it manually by using the sun/moon icon in the top right.\n\n![VS Code website dark mode.](images/1_92/landing-page-dark.png)\n\nWe look forward to getting your feedback! File any feature requests or bugs in the [vscode-docs repo](https://github.com/microsoft/vscode-docs/issues).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_92.md"
+}

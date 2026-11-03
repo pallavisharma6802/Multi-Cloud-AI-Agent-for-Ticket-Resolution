@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_getting_started_tips_and_tricks__extensions",
+  "title": "tips and tricks / Extensions",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Extensions\n\nKeyboard Shortcut: `kb(workbench.view.extensions)`\n\n### Find extensions\n\nYou can use multiple sources to find extensions:\n\n* In the {% data variables.product.prodname_vscode_shortname %} [Marketplace](https://marketplace.visualstudio.com/vscode).\n* Search inside {% data variables.product.prodname_vscode_shortname %} in the **Extensions** view.\n* View extension recommendations\n* Community curated extension lists, such as [awesome-vscode](https://github.com/viatsko/awesome-vscode).\n\n### Find popular extensions\n\nIn the **Extensions** view, select the **Filter** control, and then either select **Most Popular** or **Sort By** > **Install Count**.\n\n![install extensions](../images/tips-and-tricks/show-popular-extensions.png)\n\n### Extension recommendations\n\nIn the **Extensions** view, select the **Filter** control, and then select **Recommended** to view the list of recommended extensions.\n\n![show recommended extensions](../images/tips-and-tricks/show-recommended-extensions.png)\n\n### Create your own extension\n\nAre you interested in creating your own extension? You can learn how to do this in the [Extension API documentation](/api), specifically check out the [documentation on contribution points](/api/references/contribution-points.md).\n\n* configuration\n* commands\n* keyboard shortcuts\n* languages\n* debuggers\n* grammars\n* themes\n* snippets\n* jsonValidation",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/tips-and-tricks.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_2_exploring_models__step_7_refine_behavior_with_prompt_and_parameters",
+  "title": "2 exploring models / Step 7: Refine Behavior with Prompt and Parameters",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Step 7: Refine Behavior with Prompt and Parameters\n\nModel choice is only part of quality. You still need to shape output behavior with system instructions and generation controls.\n\nThis step aligns responses with voice, audience, and channel constraints before you move deeper into agent workflows.\n\nA typical refinement pass adds a system prompt and tunes generation controls in small increments, then re-tests with the same scenario prompts.\n\n- **System prompt**: Set role, tone, and output boundaries.\n- **Max response tokens**: Control response length.\n- **Temperature**: Tune creativity versus determinism.\n- **Top-p**: Adjust token sampling behavior.\n\nHere's a simple refinement loop you can use to tune behavior:\n\n1. Add a system prompt in Playground.\n2. Tune one generation setting at a time.\n3. Evaluate each change before adjusting the next setting.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/2-exploring-models.md"
+}

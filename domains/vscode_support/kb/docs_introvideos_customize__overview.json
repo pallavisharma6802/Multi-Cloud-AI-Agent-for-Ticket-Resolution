@@ -1,0 +1,8 @@
+{
+  "id": "docs_introvideos_customize__overview",
+  "title": "customize",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "# Customize {% data variables.product.prodname_vscode %}\n\nIn this {% data variables.product.prodname_vscode %} tutorial, we show you how to customize {% data variables.product.prodname_vscode %} with settings and keyboard shortcuts.\n\n[![Watch Customize {% data variables.product.prodname_vscode %} on YouTube (opens in new tab).](images/customize/youtube-nORT3-kONgA.jpg)](https://www.youtube.com/watch?v=nORT3-kONgA)\n\nPick another video from the list: [Introductory Videos](/docs/getstarted/introvideos.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/introvideos/customize.md"
+}

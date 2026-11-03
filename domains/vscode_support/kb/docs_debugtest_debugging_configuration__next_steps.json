@@ -1,0 +1,8 @@
+{
+  "id": "docs_debugtest_debugging_configuration__next_steps",
+  "title": "debugging configuration / Next steps",
+  "category": "DEBUGGING",
+  "intent": "debugging",
+  "content": "## Next steps\n\n* [Debug code in {% data variables.product.prodname_vscode %}](/docs/debugtest/debugging.md) - Work with breakpoints, step controls, variables, and the Debug Console.\n* [Integrate tasks with debugging](/docs/debugtest/tasks.md) - Configure build or preparation tasks for a debug workflow.\n* [Variables reference](/docs/reference/variables-reference.md) - Review variables available in `launch.json` and `tasks.json`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/debugging-configuration.md"
+}

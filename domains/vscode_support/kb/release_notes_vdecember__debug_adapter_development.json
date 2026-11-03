@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vdecember__debug_adapter_development",
+  "title": "vDecember / Debug Adapter Development",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debug Adapter Development\n\nFor Node.js based debug adapter development, we've made the VS Code Debug Protocol and an adapter default implementation available as npm modules:\n\n* [vscode-debugprotocol](https://www.npmjs.com/package/vscode-debugprotocol)\n* [vscode-debugadapter](https://www.npmjs.com/package/vscode-debugadapter)\n\nThe source for these modules lives in the GitHub repository [vscode-debugadapter-node](https://github.com/microsoft/vscode-debugadapter-node). Both [mock-debug](https://github.com/microsoft/vscode-mock-debug) and [node-debug](https://github.com/microsoft/vscode-node-debug) have been updated to use the npm modules.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vDecember.md"
+}

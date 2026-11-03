@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_38__debug_adapter_protocol",
+  "title": "v1_38 / Debug Adapter Protocol",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debug Adapter Protocol\n\n### Improvements for completion proposals\n\nA debug adapter can now use the new capability `completionTriggerCharacters` for announcing the characters that a frontend UI should use to trigger the completion proposals UI in a REPL or debug console. If none is specified, the frontend UI should use the '.' character to trigger the proposal UI.\n\nIn addition, we've added an optional `sortText` attribute to the `CompletionItem` type. With this attribute, a debug adapter can control how the frontend UI sorts the completion proposals returned by the adapter. If the attribute is missing, the frontend may sort items based on the `label` attribute.\n\n### Fixed a type issue in DAP's JSON schema\n\nIn the [Debug Adapter Protocol JSON schema](https://github.com/microsoft/debug-adapter-protocol/blob/gh-pages/debugAdapterProtocol.json), we've changed the use of the type specifier `number` to `integer` in those places where a float type makes no sense, for example for IDs.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_38.md"
+}

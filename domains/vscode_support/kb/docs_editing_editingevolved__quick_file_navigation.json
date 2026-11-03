@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_editingevolved__quick_file_navigation",
+  "title": "editingevolved / Quick file navigation",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Quick file navigation\n\n>**Tip:** You can open any file by its name when you type `kb(workbench.action.quickOpen)` (**Quick Open**).\n\nThe Explorer is great for navigating between files when you are exploring a project. However, when you are working on a task, you will find yourself quickly jumping between the same set of files. {% data variables.product.prodname_vscode_shortname %} provides two powerful commands to navigate in and across files with easy-to-use keyboard shortcuts.\n\nHold `kbstyle(Ctrl)` and press `kbstyle(Tab)` to view a list of all files open in an editor group. To open one of these files, use `kbstyle(Tab)` again to pick the file you want to navigate to, then release `kbstyle(Ctrl)` to open it.\n\n![Quick Navigation](images/editingevolved/quicknav.png)\n\nAlternatively, you can use `kb(workbench.action.navigateBack)` and `kb(workbench.action.navigateForward)` to navigate between files and edit locations. If you are jumping around between different lines of the same file, these shortcuts allow you to navigate between those locations easily.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/editingevolved.md"
+}

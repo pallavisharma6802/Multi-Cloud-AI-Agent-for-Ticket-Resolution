@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundations_agent_sessions_and_where_agents_run__copilot_sessions",
+  "title": "agent sessions and where agents run / Copilot sessions",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Copilot sessions\n\nCopilot runs the agent in the Agent Host process on your machine while you keep working in the editor. You can run multiple Copilot sessions in parallel.\n\nCopilot sessions show up in the Agent Sessions sidebar alongside local sessions - one place to view everything.\n\nLearn more about [Copilot sessions](/docs/agents/run/agent-harnesses.md#copilot).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/agent-sessions-and-where-agents-run.md"
+}

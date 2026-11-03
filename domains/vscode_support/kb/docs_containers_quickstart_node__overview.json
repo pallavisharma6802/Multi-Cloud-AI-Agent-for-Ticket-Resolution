@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_quickstart_node__overview",
+  "title": "quickstart node",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "# Node.js in a container\n\nIn this guide you will learn how to:\n\n- Create a `Dockerfile` file for an [Express](https://expressjs.com/) Node.js service container\n- Build, run, and verify the functionality of the service\n- Debug the service running within a container",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/quickstart-node.md"
+}

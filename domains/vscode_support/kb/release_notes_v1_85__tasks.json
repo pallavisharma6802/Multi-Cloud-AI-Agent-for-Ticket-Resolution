@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_85__tasks",
+  "title": "v1_85 / Tasks",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Tasks\n\nThe `npm.packageManager` setting can now be set to `bun` to enable detection and running of [Bun](https://bun.sh) scripts defined in `package.json`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_85.md"
+}

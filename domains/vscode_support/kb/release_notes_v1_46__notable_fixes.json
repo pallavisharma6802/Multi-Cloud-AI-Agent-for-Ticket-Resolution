@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_46__notable_fixes",
+  "title": "v1_46 / Notable fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable fixes\n\n* [10144](https://github.com/microsoft/vscode/issues/10144): Use system-ui as font on Linux\n* [63068](https://github.com/microsoft/vscode/issues/63068): macOS dock icon is minuscule\n* [69163](https://github.com/microsoft/vscode/issues/69163): Reveal Active File in Side Bar is throwing an exception\n* [95367](https://github.com/microsoft/vscode/issues/95367): DAP \"evaluate\" request issued for invalid frameId\n* [95856](https://github.com/microsoft/vscode/issues/95856): Go To Line should include \"filename.extension:line number\" format\n* [96713](https://github.com/microsoft/vscode/issues/96713): Stopping a session from call stack actions view always goes to the active session\n* [96914](https://github.com/microsoft/vscode/issues/96914): Typing is laggy when outline is visible\n* [96987](https://github.com/microsoft/vscode/issues/96987): Orca does not read the line number in the breakpoint view\n* [97444](https://github.com/microsoft/vscode/issues/97444): Copying a long value from debug watch results in pasting partial value\n* [97471](https://github.com/microsoft/vscode/issues/97471): Debug hover is too narrow and horizontal scrolling useless\n* [97731](https://github.com/microsoft/vscode/issues/97731): VS code freezes when typing and scrolling\n* [96643](https://github.com/microsoft/vscode/issues/96643): Tasks (and TaskExecutions) are not === in the onDid(Start|End)Task callbacks",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_46.md"
+}

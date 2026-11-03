@@ -1,0 +1,8 @@
+{
+  "id": "api_advanced_topics_python_extension_template__examples",
+  "title": "python extension template / Examples",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Examples\n\nThere are several example implementations created from the template:\n\n* [Pylint](https://github.com/microsoft/vscode-pylint/tree/main/bundled/tool) - implements linting and Code Actions on file `open`, `save`, and `close`.\n* [Flake8](https://github.com/microsoft/vscode-flake8/tree/main/bundled/tool) - implements linting and Code Actions.\n* [Black Formatter](https://github.com/microsoft/vscode-black-formatter/tree/main/bundled/tool) - integrates the [*Black*](https://github.com/python/black) formatter.\n* [autopep8](https://github.com/microsoft/vscode-autopep8/tree/main/bundled/tool) - integrates the [autopep8](https://pypi.org/project/autopep8) formatter.\n* [isort](https://github.com/microsoft/vscode-isort/blob/main/bundled/tool) - adds Code Actions to sort imports.\n\nYou can also review the [Language Server Protocol specification](https://microsoft.github.io/language-server-protocol/specifications/specification-3-16) to better understand the `pygls` language server integration.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/advanced-topics/python-extension-template.md"
+}

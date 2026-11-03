@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_webview__should_i_use_a_webview",
+  "title": "webview / Should I use a webview?",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Should I use a webview?\n\nWebviews are pretty amazing, but they should also be used sparingly and only when VS Code's native API is inadequate. Webviews are resource heavy and run in a separate context from normal extensions. A poorly designed webview can also easily feel out of place within VS Code.\n\nBefore using a webview, please consider the following:\n\n- Does this functionality really need to live within VS Code? Would it be better as a separate application or website?\n\n- Is a webview the only way to implement your feature? Can you use the regular VS Code APIs instead?\n\n- Will your webview add enough user value to justify its high resource cost?\n\nRemember: Just because you can do something with webviews, doesn't mean you should. However, if you are confident that you need to use webviews, then this document is here to help. Let's get started.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/webview.md"
+}

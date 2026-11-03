@@ -1,0 +1,8 @@
+{
+  "id": "docs_agent_customization_custom_agents__related_resources",
+  "title": "custom agents / Related resources",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related resources\n\n* [Custom agent file reference](/docs/agents/reference/custom-agent-file-reference.md)\n* [Configure AI for your codebase](/docs/agents/guides/customize-copilot-guide.md)\n* [Coordinate research and implementation with subagents](/docs/agents/run/subagents.md#delegate-implementation-to-a-worker)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/custom-agents.md"
+}

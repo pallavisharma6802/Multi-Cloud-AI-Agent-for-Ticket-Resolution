@@ -1,0 +1,8 @@
+{
+  "id": "learn_java_spring_boot_4_test_with_playwright__what_s_next",
+  "title": "4 test with playwright / What's Next",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## What's Next\n\nYou have taken this sample from an unopened folder to a Spring Boot application that\nCopilot can both call and test \u2014 a web UI, a debugger session, an MCP tool surface, and a\nbrowser-driven test, all from Visual Studio Code.\n\nThe natural next step is your own project. The pattern transfers directly: put the logic\nin a service, expose the operations you trust as MCP tools, keep stable hooks and\naccessible labels in your markup, and describe journeys with assertions attached rather\nthan clicks.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/4-test-with-playwright.md"
+}

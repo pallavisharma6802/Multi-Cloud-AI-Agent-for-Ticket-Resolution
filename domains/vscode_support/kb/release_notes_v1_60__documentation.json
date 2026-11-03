@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_60__documentation",
+  "title": "v1_60 / Documentation",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Documentation\n\n### Julia in VS Code\n\nThere is a new [Julia in Visual Studio Code](https://code.visualstudio.com/docs/languages/julia) topic describing [Julia programming language](https://julialang.org) support in VS Code with the [Julia extension](https://marketplace.visualstudio.com/items?itemName=julialang.language-julia). The Julia extension includes rich language features such as code completions, code navigation, and debugging as well as an integrated REPL and plot navigator.\n\n![Julia extension](images/1_60/julia-extension.png)\n\n### Azure Machine Learning\n\nYou can read the [Azure Machine Learning in VS Code](https://code.visualstudio.com/docs/datascience/azure-machine-learning) overview to learn how the [Azure Machine Learning extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vscode-ai) lets you work with Azure Machine Learning cloud-based [machine learning models](https://learn.microsoft.com/azure/machine-learning/overview-what-is-azure-machine-learning) directly from VS Code.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_60.md"
+}

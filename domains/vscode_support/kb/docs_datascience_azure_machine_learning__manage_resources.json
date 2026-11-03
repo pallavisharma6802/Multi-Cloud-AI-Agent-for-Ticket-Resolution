@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_azure_machine_learning__manage_resources",
+  "title": "azure machine learning / Manage resources",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Manage resources\n\nYou can create and manage Azure Machine Learning resources directly from {% data variables.product.prodname_vscode_shortname %}. For more information, see [how to manage resources in {% data variables.product.prodname_vscode_shortname %}](https://learn.microsoft.com/azure/machine-learning/how-to-manage-resources-vscode).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/azure-machine-learning.md"
+}

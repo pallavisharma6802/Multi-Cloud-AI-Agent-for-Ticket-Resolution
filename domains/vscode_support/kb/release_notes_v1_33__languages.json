@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_33__languages",
+  "title": "v1_33 / Languages",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Languages\n\n### TypeScript 3.4\n\nVS Code now ships with [TypeScript 3.4.1](https://devblogs.microsoft.com/typescript/announcing-typescript-3-4/). This update adds support for some new TypeScript language features\u2014such as improved inference and new `const` assertions\u2014as well as bringing tooling improvements and bug fixes.\n\n### Convert to destructured parameters refactoring\n\nThe new **Convert to named parameters** refactoring for TypeScript lets you quickly organize long function parameter lists by converting the function to take a single named parameter object.\n\n<video src=\"images/1_33/ts-named-paramters.mp4\" title=\"Video showing Cleaning up a long parameter list.\" autoplay loop controls muted></video>\n\n### Option to disable CSS property value completion\n\nA new setting, `css.completion.triggerPropertyValueCompletion`, allows you to disable property value completion. For example, if you choose `position` from `p` and have this setting set to `false`, VS Code will not trigger the `static | absolute | sticky | ...` completions for the property value.\n\nThis is useful if you would like to use `Tab/Shift + Tab` to select previous and next completion items.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_33.md"
+}

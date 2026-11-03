@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_debugging__overview",
+  "title": "debugging",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Debugging\n\nYou can debug C# applications in {% data variables.product.prodname_vscode %} using the [Microsoft C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) extension.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/debugging.md"
+}

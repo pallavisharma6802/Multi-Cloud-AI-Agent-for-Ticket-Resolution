@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_faq_cpp__what_is_the_difference_between_includepath_and_browse_path",
+  "title": "faq cpp / What is the difference between includePath and browse.path?",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## What is the difference between includePath and browse.path?\n\nThese two settings are available in `c_cpp_properties.json` and can be confusing.\n\n### includePath\n\nThis array of path strings is used by the \"Default\" IntelliSense engine, which provides semantic-aware IntelliSense features. The include paths are the same paths that you would send to your compiler via the `-I` switch. When your source files are parsed, the IntelliSense engine will prepend these paths to the files specified by your #include directives while attempting to resolve them. These paths are **not** searched recursively unless they end with `/**`.\n\n### browse.path\n\nThis array of path strings is used by the \"Tag Parser\" (\"browse engine\"), which populates a database with global symbol information. This engine will **recursively** enumerate all files under the paths specified and track them as potential includes while tag parsing your project folder. To disable recursive enumeration of a path, you can append a `/*` to the path string.\n\nWhen you open a workspace for the first time, the extension adds `${workspaceFolder}/**` to the `includePath` and the `browse.path` is left undefined (so it defaults to the `includePath`). If this is undesirable, you can open your **c_cpp_properties.json** file and change it.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/faq-cpp.md"
+}

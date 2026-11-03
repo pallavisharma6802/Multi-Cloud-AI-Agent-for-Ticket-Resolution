@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_62__notable_fixes",
+  "title": "v1_62 / Notable fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable fixes\n\n* [73061](https://github.com/microsoft/vscode/issues/73061): Enumerable properties mixed with regular properties\n* [130868](https://github.com/microsoft/vscode/issues/130868): Emmet suggestions list missing entries after adding custom snippets.json\n* [131966](https://github.com/microsoft/vscode/issues/131966): Emmet unable to expand abbreviation with onclick attribute\n* [135110](https://github.com/microsoft/vscode/issues/135110): Support different border settings for vertical or horizontal layouts, for in-group editor splitting",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_62.md"
+}

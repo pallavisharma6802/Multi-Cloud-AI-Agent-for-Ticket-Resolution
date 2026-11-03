@@ -1,0 +1,8 @@
+{
+  "id": "docs_agent_customization_migrate_customizations__related_resources",
+  "title": "migrate customizations / Related resources",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related resources\n\n* [Create and manage agent customizations](/docs/agent-customization/overview.md)\n* [Choose and configure an agent harness](/docs/agents/run/agent-harnesses.md)\n* [Agent customization concepts](/docs/agents/concepts/customization.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/migrate-customizations.md"
+}

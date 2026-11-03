@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_add_a_feature__5_verify_the_feature_and_existing_behavior",
+  "title": "add a feature / 5. Verify the feature and existing behavior",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## 5. Verify the feature and existing behavior\n\nA completion message isn't evidence that the feature works. Inspect the tests and their output, then exercise the behavior yourself.\n\nFor the example API:\n\n1. Use known test data with mixed-case titles, nonmatching titles, and enough matches for more than one page.\n1. Compare a request without `q` with the baseline. Existing clients should receive the same behavior.\n1. Check empty, whitespace-only, and padded filter values against the agreed rules.\n1. Request each page of the filtered results. Verify the expected issue IDs, ordering, total count, and absence of gaps or duplicates.\n1. Check a filter with no matches and confirm the response shape is unchanged.\n1. Repeat the existing invalid-page checks to confirm that the feature didn't weaken validation.\n\nRun the project's required build, type check, or lint checks as appropriate. If a check can't run, record the reason and arrange verification in the required environment before treating the feature as complete.\n\nWhen a test fails, compare the result with the feature brief before changing either the test or implementation. Don't accept weakened assertions or skipped tests merely to obtain a passing result.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/add-a-feature.md"
+}

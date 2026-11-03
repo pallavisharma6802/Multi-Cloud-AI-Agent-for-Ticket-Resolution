@@ -1,0 +1,8 @@
+{
+  "id": "learn_agents_1_using_tools_with_agents__choose_tools_for_the_first_pass",
+  "title": "1 using tools with agents / Choose tools for the first pass",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Choose tools for the first pass\n\n1. Open the Chat view.\n\n1. Select **Agent** from the agent picker.\n\n1. Select **Configure Tools** in the chat input.\n\n1. Keep repository search and file-reading tools enabled.\n\n1. Leave terminal, web, and external service tools off for this first pass.\n\n1. Send the prompt.\n\n![Screenshot showing the Chat view with the Configure Tools button in the chat input.](../images/agents/agent-mode-select-tools.png)\n\nStarting small helps the agent stay focused. It also reduces tool definitions in the model context window. VS Code can expose some groups as virtual tools to keep tool counts manageable, but a smaller active set still makes the task easier for the model to reason about.\n\n> [!TIP]\n> If the agent says it needs to run tests or inspect generated output, add the terminal tool for the next request instead of restarting with every tool enabled.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/1-using-tools-with-agents.md"
+}

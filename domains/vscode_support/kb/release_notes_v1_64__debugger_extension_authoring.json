@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_64__debugger_extension_authoring",
+  "title": "v1_64 / Debugger extension authoring",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debugger extension authoring\n\n### VS Code now implements the memory-related features of the Debug Adapter Protocol\n\nIn this release, VS Code has started to support viewing and editing binary data by supporting the following memory-related features of the [Debug Adapter Protocol](https://microsoft.github.io/debug-adapter-protocol):\n\n* VS Code honor's the `memoryReference` attribute on DAP variables and announces this by passing the client capability `supportsMemoryReferences` to the debug adapter.\n* If VS Code receives the capability `supportsReadMemoryRequest` from a debug adapter, it will enable the UI for viewing binary data and will issue `readMemory` requests to retrieve the data.\n* If VS Code receives the capability `supportsWriteMemoryRequest` from a debug adapter, it will enable the UI for editing binary data and will issue `writeMemory` requests to store the data.\n* VS Code handles the `memory` event and announces this by passing the client capability `supportsMemoryEvent` to the debug adapter.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_64.md"
+}

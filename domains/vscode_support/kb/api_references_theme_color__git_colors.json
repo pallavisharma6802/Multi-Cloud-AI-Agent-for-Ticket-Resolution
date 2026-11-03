@@ -1,0 +1,8 @@
+{
+  "id": "api_references_theme_color__git_colors",
+  "title": "theme color / Git colors",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Git colors\n\n- `gitDecoration.addedResourceForeground`: Color for added Git resources. Used for file labels and the SCM viewlet.\n- `gitDecoration.modifiedResourceForeground`: Color for modified Git resources. Used for file labels and the SCM viewlet.\n- `gitDecoration.deletedResourceForeground`: Color for deleted Git resources. Used for file labels and the SCM viewlet.\n- `gitDecoration.renamedResourceForeground`: Color for renamed or copied Git resources. Used for file labels and the SCM viewlet.\n- `gitDecoration.stageModifiedResourceForeground`: Color for staged modifications git decorations.  Used for file labels and the SCM viewlet.\n- `gitDecoration.stageDeletedResourceForeground`: Color for staged deletions git decorations.  Used for file labels and the SCM viewlet.\n- `gitDecoration.untrackedResourceForeground`: Color for untracked Git resources. Used for file labels and the SCM viewlet.\n- `gitDecoration.ignoredResourceForeground`: Color for ignored Git resources. Used for file labels and the SCM viewlet.\n- `gitDecoration.conflictingResourceForeground`: Color for conflicting Git resources. Used for file labels and the SCM viewlet.\n- `gitDecoration.submoduleResourceForeground`: Color for submodule resources.\n- `git.blame.editorDecorationForeground`: Color for the blame editor decoration.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+}

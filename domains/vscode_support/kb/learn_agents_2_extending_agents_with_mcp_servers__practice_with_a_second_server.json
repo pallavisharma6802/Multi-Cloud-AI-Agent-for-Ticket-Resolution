@@ -1,0 +1,8 @@
+{
+  "id": "learn_agents_2_extending_agents_with_mcp_servers__practice_with_a_second_server",
+  "title": "2 extending agents with mcp servers / Practice with a second server",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Practice with a second server\n\nAfter you try Playwright, install a documentation or API-focused MCP server and compare the workflow.\n\n1. Select the **Copilot** harness, then run **Chat: Open Customizations** and select **Browse**.\n\n1. Select **GitHub Feed** and use the `@type:mcp` filter to find a server for documentation, issue tracking, or another system you use.\n\n1. Review its publisher and setup requirements, then install it in a supported personal or workspace destination.\n\n1. Complete setup and enable its tools in the **Tools** section of the Agent Customizations editor.\n\n1. Ask a prompt that requires that external source.\n\nFor example, with a documentation MCP server enabled, ask a question that should be grounded in that documentation instead of the model's general knowledge.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/2-extending-agents-with-mcp-servers.md"
+}

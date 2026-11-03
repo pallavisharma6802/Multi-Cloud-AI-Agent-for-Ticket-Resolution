@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_52__snippets",
+  "title": "v1_52 / Snippets",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Snippets\n\n### Hide extension snippet\n\nSnippets contributed by extensions can now be hidden from IntelliSense. This feature is available from the Insert Snippet picker when you run **Insert Snippet**. Find an extension snippet that you want to hide, and select the eye-icon on the right.\n\n![Hide Extension Snippet](images/1_52/snippet-hide.png)\n\nHidden snippets aren't showing in IntelliSense but can still be used via **Insert Snippet**. Last, when using Settings Sync, the hidden snippet preferences will be synchronized across your devices.\n\n### Snippets without prefix\n\nWhen authoring snippets, you can now omit the prefix property. Snippets without a prefix don't show in IntelliSense but can be used via **Insert Snippet**.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_52.md"
+}

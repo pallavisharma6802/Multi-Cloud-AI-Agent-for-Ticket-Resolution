@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_cpp__documentation",
+  "title": "cpp / Documentation",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Documentation\n\nYou can find more documentation on using the Microsoft C/C++ extension under the [C++ section](/docs/cpp) of the {% data variables.product.prodname_vscode_shortname %} website, where you can find articles on:\n\n- [Debugging](/docs/cpp/cpp-debug.md)\n- [Editing](/docs/cpp/cpp-ide.md)\n- [Settings](/docs/cpp/customize-default-settings-cpp.md)\n- [FAQ](/docs/cpp/faq-cpp.md)\n\n![C++ TOC on code.visualstudio.com](images/cpp/cpp-toc.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/cpp.md"
+}

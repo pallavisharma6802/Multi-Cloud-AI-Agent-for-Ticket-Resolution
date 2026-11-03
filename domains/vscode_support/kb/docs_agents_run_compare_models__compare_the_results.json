@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_compare_models__compare_the_results",
+  "title": "compare models / Compare the results",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Compare the results\n\nAfter the attempts finish, compare them manually or, for repository comparisons, use the judge scorecard:\n\n* Review the responses and, for repository comparisons, changed files for each attempt.\n* Check whether each result meets the prompt's constraints. For code changes, also check that the implementation follows the repository's conventions.\n* For code changes, run the relevant tests and checks in promising attempts.\n\nIf you configured a judge, evaluation starts automatically after the attempts finish. The scorecard includes a recommendation, time and token usage for each attempt, and expandable rationale with validation evidence. Select **Open Attempt N** to inspect an attempt's full session and changes.\n\nToken values can be lower bounds rather than complete totals. The scorecard doesn't measure credit or currency costs.\n\n![Screenshot showing the judge scorecard with the recommended attempt, time and token usage, validation evidence, and Synthesize action.](../images/compare-models/bake-off-results.png)\n\n> [!IMPORTANT]\n> A judge's assessment isn't proof that an implementation is correct. Review the code, verify the evidence, and run the project's tests before you integrate a result.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/compare-models.md"
+}

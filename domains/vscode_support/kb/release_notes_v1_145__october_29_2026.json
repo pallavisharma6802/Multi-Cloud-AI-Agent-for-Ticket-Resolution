@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_145__october_29_2026",
+  "title": "v1_145 / October 29, 2026",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## October 29, 2026\n\n* Add support for disabling Copilot's `Co-authored-by` commit trailer in new or resumed agent-host sessions with `setting(chat.agentHost.copilot.includeCoAuthoredBy)` set to `false`. _[microsoft/vscode#342213: Allow disabling Copilot's Co-authored-by trailer in agent-host sessions](https://github.com/microsoft/vscode/issues/342213)_",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_145.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_reference_default_keybindings__file_management",
+  "title": "default keybindings / File Management",
+  "category": "REFERENCE",
+  "intent": "reference",
+  "content": "## File Management\n\nCommand|Key|Command id\n-------|---|----------\nNew File|`kb(workbench.action.files.newUntitledFile)`|`workbench.action.files.newUntitledFile`\nOpen File...|`kb(workbench.action.files.openFile)`|`workbench.action.files.openFile`\nSave|`kb(workbench.action.files.save)`|`workbench.action.files.save`\nSave All|`kb(saveAll)`|`saveAll`\nSave As...|`kb(workbench.action.files.saveAs)`|`workbench.action.files.saveAs`\nClose|`kb(workbench.action.closeActiveEditor)`|`workbench.action.closeActiveEditor`\nClose Group|`kb(workbench.action.closeEditorsInGroup)`|`workbench.action.closeEditorsInGroup`\nClose All|`kb(workbench.action.closeAllEditors)`|`workbench.action.closeAllEditors`\nReopen Closed Editor|`kb(workbench.action.reopenClosedEditor)`|`workbench.action.reopenClosedEditor`\nKeep Open|`kb(workbench.action.keepEditor)`|`workbench.action.keepEditor`\nCopy Path of Active File|`kb(workbench.action.files.copyPathOfActiveFile)`|`workbench.action.files.copyPathOfActiveFile`\nReveal Active File in Windows|`kb(workbench.action.files.revealActiveFileInWindows)`|`workbench.action.files.revealActiveFileInWindows`",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/reference/default-keybindings.md"
+}

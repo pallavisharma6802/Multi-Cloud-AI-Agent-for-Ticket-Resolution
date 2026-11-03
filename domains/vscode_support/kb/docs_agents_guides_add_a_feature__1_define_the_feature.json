@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_add_a_feature__1_define_the_feature",
+  "title": "add a feature / 1. Define the feature",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## 1. Define the feature\n\nDescribe what should change, what must stay the same, and how you will check the result. Avoid requests such as \"add search\" that leave important behavior for the agent to invent.\n\nFor the example API, the feature brief is:\n\n| Requirement | Expected behavior |\n|---|---|\n| Optional filter | `GET /issues?q=<text>` returns issues whose titles contain the text, ignoring case. |\n| Empty filter | A missing, empty, or whitespace-only `q` preserves the unfiltered result. Leading and trailing whitespace is trimmed. |\n| Pagination | Filtering happens before pagination. The existing `total` field counts all matching issues, not only the current page. |\n| No matches | Return the existing response shape with an empty issues list and `total` equal to zero. |\n| Compatibility | Keep the existing ordering, page numbering, page size, validation, and response fields. |\n| Scope | Reuse the current API and test framework. Don't add a UI, dependencies, or a new search service. |\n\nCheck that these assumptions match your API before using the prompts. For example, if your API doesn't expose a `total` field, decide how clients should determine the result count rather than adding a field unintentionally.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/add-a-feature.md"
+}

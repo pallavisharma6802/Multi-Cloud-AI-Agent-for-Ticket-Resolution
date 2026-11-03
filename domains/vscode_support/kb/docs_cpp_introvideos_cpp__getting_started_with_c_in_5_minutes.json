@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_introvideos_cpp__getting_started_with_c_in_5_minutes",
+  "title": "introvideos cpp / Getting started with C++ in 5 minutes",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Getting started with C++ in 5 minutes\n\nThis video shows you how to install the C/C++ extension and a C++ compiler. You then learn how to run and debug your code by using the run or debug play button.\n\n[![Watch Getting Started with C++ in 5 minutes on YouTube (opens in new tab).](images/introvideos-cpp/youtube-qeEcV6u1kV4.jpg)](https://www.youtube.com/watch?v=qeEcV6u1kV4)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/introvideos-cpp.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_61__core",
+  "title": "v1_61 / Core",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Core\n\n### Port protocol for 443 and 8443 defaults to https\n\nSince ports 443 and 8443 are often `https`, VS Code will now default them to use `https`. This can be overridden with the `\"remote.portsAttributes\"` setting if the new behavior is not wanted.\n\n### DNS names in forwarded ports\n\nDNS names can now be specified when forwarding a port. For example, if you have a MongoDB database available at `db:1234` on your remote, you can enter `\"db:1234\"` in the **Ports** view and your remote `db:1234` will be available locally at `localhost:1234`. For remotes with a `devcontainer.json`, you can also specify the DNS name in `forwardPorts`:\n\n```json\n{\n    \"forwardPorts\": [ \"db:5432\" ]\n}\n```\n\nForwarded ports that include a non-localhost DNS name show the name in the **Ports** view:\n\n![Forwarded port with a DNS name](images/1_61/forwarded_port_dns.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_61.md"
+}

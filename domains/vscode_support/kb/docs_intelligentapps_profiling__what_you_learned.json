@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_profiling__what_you_learned",
+  "title": "profiling / What you learned",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## What you learned\n\nIn this article, you learned how to:\n\n- Start profiling in different ways\n- Inspect the Resource Usage view\n- Inspect the Windows ML Events view",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/profiling.md"
+}

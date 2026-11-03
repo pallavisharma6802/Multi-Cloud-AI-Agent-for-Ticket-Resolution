@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_quickstart_aspnet_core__build_the_image",
+  "title": "quickstart aspnet core / Build the image",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Build the image\n\n1. Open the Command Palette (`kb(workbench.action.showCommands)`) and issue **Container Images: Build Image...** command.\n1. Open the Container Explorer and verify that the new image is visible in the Images tree:\n\n   ![Verify Docker image exists](images/quickstarts/aspnetcore-verify-image.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/quickstart-aspnet-core.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_15__tasks",
+  "title": "v1_15 / Tasks",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Tasks\n\n### Less and Sass compiler problem matchers\n\nWe added two new problem matchers to parse the output of the [less](https://www.npmjs.com/package/less) and [node-sass](https://www.npmjs.com/package/node-sass) compilers to detect and display problems from within VS Code. They are named `$lessc` and `$node-sass`.\n\n### Tasks Status Bar display\n\nWe also added a Status Bar item for tasks which becomes visible as soon as a task is executed. Clicking on the tasks Status Bar display guides you to the output of an executed task.\n\n![tasks status bar](images/1_15/tasks-status-bar.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_15.md"
+}

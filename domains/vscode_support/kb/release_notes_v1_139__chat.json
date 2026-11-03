@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_139__chat",
+  "title": "v1_139 / Chat",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Chat\n\n### Pet naming contest update (Experimental)\n\nThank you to everyone who submitted a name for the VS Code pet. The naming contest closed on September 17, 2026, and we're reviewing the eligible entries. We'll announce the winner and the pet's new name soon.\n\nWhile you wait, enter `/vscode-pet` in chat to meet your companion and [explore all its interactions and reactions](https://code.visualstudio.com/docs/agents/reference/chat-pet).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_139.md"
+}

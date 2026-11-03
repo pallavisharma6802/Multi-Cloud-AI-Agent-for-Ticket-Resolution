@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_github__setting_up_a_repository",
+  "title": "github / Setting up a repository",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## Setting up a repository\n\n### Cloning a repository\n\nYou can search for and clone a repository from GitHub using the **Git: Clone** command in the Command Palette (`kb(workbench.action.showCommands)`) or by using the **Clone Repository** button in the Source Control view (available when you have no folder open).\n\nFrom the GitHub repository dropdown you can filter and pick the repository you want to clone locally.\n\n![Screenshot showing the GitHub repository Quick Pick filtered on microsoft/vscode.](images/github/github-repo-dropdown.png)\n\nLearn more about [cloning repositories and working with remotes](/docs/sourcecontrol/repos-remotes.md#clone-repositories).\n\n> [!NOTE]\n> If you'd like to work on a repository without cloning the contents to your local machine, you can install the [GitHub Repositories](https://marketplace.visualstudio.com/items?itemName=github.remotehub) extension to browse and edit directly on GitHub. Learn more about the [GitHub Repositories extension](/docs/sourcecontrol/github.md#github-repositories-extension).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/github.md"
+}

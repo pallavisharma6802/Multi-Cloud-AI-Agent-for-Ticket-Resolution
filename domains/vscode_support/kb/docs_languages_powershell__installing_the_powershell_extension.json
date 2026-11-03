@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_powershell__installing_the_powershell_extension",
+  "title": "powershell / Installing the PowerShell extension",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Installing the PowerShell extension\n\nThe PowerShell extension can be installed from the {% data variables.product.prodname_vscode %} Marketplace by clicking the\n[Install Button][44]. You can also install the PowerShell extension from within {% data variables.product.prodname_vscode_shortname %} by opening\nthe **Extensions** view with keyboard shortcut `kb(workbench.view.extensions)`, typing _PowerShell_,\nand selecting the PowerShell extension:\n\n![PowerShell extension][40]",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/powershell.md"
+}

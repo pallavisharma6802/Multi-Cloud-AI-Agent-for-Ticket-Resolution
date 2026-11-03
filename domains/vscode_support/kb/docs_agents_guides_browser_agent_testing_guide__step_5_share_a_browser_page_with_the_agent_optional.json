@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_browser_agent_testing_guide__step_5_share_a_browser_page_with_the_agent_optional",
+  "title": "browser agent testing guide / Step 5: Share a browser page with the agent (optional)",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Step 5: Share a browser page with the agent (optional)\n\nYou can also manually open web pages and explicitly share them with the agent for analysis or interaction. By default, the agent can only interact with web pages it opened itself.\n\n1. Open the integrated browser by running the **Browser: Open Integrated Browser** command from the Command Palette (`kb(workbench.action.showCommands)`).\n\n1. Navigate to a web page you want the agent to analyze or interact with.\n\n1. Select the **Share with Agent** button in the browser toolbar.\n\n    A visual indicator on the browser tab shows that the page is actively shared with the agent.\n\n1. Ask the agent to perform actions on the shared page:\n\n    ```prompt\n    What is the main heading on this page? Click the first link and tell me where it goes.\n    ```\n\nThe agent can now access the shared page and perform interactions on your behalf. When you're done, select the **Share with Agent** button again to revoke access.\n\n> [!TIP]\n> Shared pages use your existing browser session, including cookies and login state. Pages opened by the agent use isolated ephemeral sessions, so they don't share cookies or storage with your other browser tabs.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/browser-agent-testing-guide.md"
+}

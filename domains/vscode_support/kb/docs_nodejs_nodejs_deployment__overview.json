@@ -1,0 +1,8 @@
+{
+  "id": "docs_nodejs_nodejs_deployment__overview",
+  "title": "nodejs deployment",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Deploy Node.js Web Apps\n\nThe [Azure Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) extensions for {% data variables.product.prodname_vscode %} make it easy to deploy Node.js applications.\n\n![Azure Tools extension](images/azure/azure-tools.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/nodejs-deployment.md"
+}

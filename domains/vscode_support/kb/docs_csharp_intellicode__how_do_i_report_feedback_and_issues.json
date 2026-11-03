@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_intellicode__how_do_i_report_feedback_and_issues",
+  "title": "intellicode / How do I report feedback and issues",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## How do I report feedback and issues\n\nYou can file an issue on our IntelliCode for {% data variables.product.prodname_vscode_shortname %} extension [GitHub feedback repo](https://github.com/MicrosoftDocs/intellicode/issues).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/intellicode.md"
+}

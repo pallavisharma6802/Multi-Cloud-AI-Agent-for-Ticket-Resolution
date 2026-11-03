@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_june_2016__downloads",
+  "title": "June_2016 / Downloads",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Downloads\n\nDownloads: [Windows](https://az764295.vo.msecnd.net/stable/e724f269ded347b49fcf1657fc576399354e6703/VSCodeSetup-stable.exe) |\n[OS X](https://az764295.vo.msecnd.net/stable/e724f269ded347b49fcf1657fc576399354e6703/VSCode-darwin-stable.zip) | Linux 64-bit [.zip](https://az764295.vo.msecnd.net/stable/e724f269ded347b49fcf1657fc576399354e6703/VSCode-linux-x64-stable.zip) [.deb](https://az764295.vo.msecnd.net/stable/e724f269ded347b49fcf1657fc576399354e6703/code_1.3.0-1467909982_amd64.deb) [.rpm](https://az764295.vo.msecnd.net/stable/e724f269ded347b49fcf1657fc576399354e6703/code-1.3.0-1467909982.el7.x86_64.rpm) | Linux 32-bit [.zip](https://az764295.vo.msecnd.net/stable/e724f269ded347b49fcf1657fc576399354e6703/VSCode-linux-ia32-stable.zip) [.deb](https://az764295.vo.msecnd.net/stable/e724f269ded347b49fcf1657fc576399354e6703/code_1.3.0-1467910772_i386.deb) [.rpm](https://az764295.vo.msecnd.net/stable/e724f269ded347b49fcf1657fc576399354e6703/code-1.3.0-1467910772.el7.i386.rpm)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/June_2016.md"
+}

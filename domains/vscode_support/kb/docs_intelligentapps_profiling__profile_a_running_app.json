@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_profiling__profile_a_running_app",
+  "title": "profiling / Profile a running app",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Profile a running app\n\nIn this mode, the profiling tool starts profiling an already running app. You can select a process based on these criteria:\n\n- Process ID: like 12345\n- Process name: usually the name of app without `.exe`. The first match will be profiled.\n- Process path: like `c:\\Users\\xxx\\Inference.Service.Agent.exe`. The first match will be profiled.\n\nThis option is ideal for profiling an app that is already running and you're unable to restart it for profiling purposes.\n\n![Screenshot that shows how to start by process id or name](./images/profiling/by-process-id-or-name-2.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/profiling.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_84__notable_fixes",
+  "title": "v1_84 / Notable fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable fixes\n\n* [194812](https://github.com/microsoft/vscode/issues/194812) ToC shows up while doing search while `workbench.settings.settingsSearchTocBehavior` set to `hide`\n* [195722](https://github.com/microsoft/vscode/issues/195722) Blank settings editor when having network issues",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_84.md"
+}

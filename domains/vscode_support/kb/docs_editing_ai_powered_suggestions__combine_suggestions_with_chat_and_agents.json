@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_ai_powered_suggestions__combine_suggestions_with_chat_and_agents",
+  "title": "ai powered suggestions / Combine suggestions with chat and agents",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Combine suggestions with chat and agents\n\nInline suggestions are one way to work with AI, not a choice that locks you out of other approaches:\n\n* For a focused edit described in your own words, use [inline chat](/docs/chat/inline-chat.md#use-editor-inline-chat).\n\n* To ask questions or work through a larger change beside your code, use the [{% data variables.copilot.chat_view %}](/docs/agents/run/chat-view.md).\n\n* To assign tasks and manage agent sessions across projects, use the [{% data variables.copilot.agents_window %}](/docs/agents/run/agents-window.md).\n\nYou can keep using inline suggestions while working with chat or agents. If you already have an agent conversation, see how to [continue a supported session in another interface](/docs/agents/run/sessions/manage-sessions.md#continue-an-existing-session).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/ai-powered-suggestions.md"
+}

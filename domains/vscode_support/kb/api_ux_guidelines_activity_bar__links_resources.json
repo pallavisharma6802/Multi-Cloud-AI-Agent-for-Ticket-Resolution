@@ -1,0 +1,8 @@
+{
+  "id": "api_ux_guidelines_activity_bar__links_resources",
+  "title": "activity bar / Links Resources",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Links Resources\n\n- [View Container contribution point](/api/references/contribution-points#contributes.viewsContainers)\n- [View contribution point](/api/references/contribution-points#contributes.views)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/activity-bar.md"
+}

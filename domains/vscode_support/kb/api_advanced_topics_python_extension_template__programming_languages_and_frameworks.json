@@ -1,0 +1,8 @@
+{
+  "id": "api_advanced_topics_python_extension_template__programming_languages_and_frameworks",
+  "title": "python extension template / Programming languages and frameworks",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Programming languages and frameworks\n\nThe extension template has two parts, the extension part and language server part. The extension part is written in TypeScript, and language server part is written in Python over the `pygls` (Python language server) library.\n\nYou will mostly be working on the Python part of the code when using this template. You will be integrating your tool with the extension part using the [Language Server Protocol](https://microsoft.github.io/language-server-protocol). `pygls` currently works on the [version 3.16 of LSP](https://microsoft.github.io/language-server-protocol/specifications/specification-3-16).\n\nThe TypeScript part handles working with VS Code and its UI. The extension template comes with a few settings built-in that can be used by your tool. If you need to add new settings to support your tool, you will have to work with a bit of TypeScript. The extension template has examples for a few settings and you can also look at [extensions developed](#examples) by our team for some of the popular tools.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/advanced-topics/python-extension-template.md"
+}

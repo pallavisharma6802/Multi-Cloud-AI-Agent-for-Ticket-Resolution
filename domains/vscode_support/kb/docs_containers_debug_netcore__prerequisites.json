@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_debug_netcore__prerequisites",
+  "title": "debug netcore / Prerequisites",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Prerequisites\n\n1. Install the [.NET SDK](https://www.microsoft.com/net/download), which includes support for attaching to the .NET debugger. With .NET SDK 7 or later, you have the option of debugging without a Dockerfile.\n\n1. Install the {% data variables.product.prodname_vscode %} [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp), which includes support for attaching to the .NET debugger with {% data variables.product.prodname_vscode_shortname %}.\n\n1. macOS users only: Add `/usr/local/share/dotnet/sdk/NuGetFallbackFolder` as a shared folder in your Docker preferences.\n\n    ![dockerSharedFolders](images/debug/mac-folders.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/debug-netcore.md"
+}

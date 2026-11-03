@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_custom_layout__tool_bars",
+  "title": "custom layout / Tool bars",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Tool bars\n\nMost {% data variables.product.prodname_vscode_shortname %} views and panels have tool bars displayed on the top right of their UI. For example, the Search view has a tool bar with actions such as **Refresh**, **Clear Search Results**, etc.:\n\n![Search view tool bar with hover over Clear Search Results action](images/custom-layout/search-view-toolbar.png)\n\n### Hide items in tool bars\n\nIf you think a tool bar is too busy and you'd like to hide less frequently used actions, you can right-click on any action and select its **Hide** command (for example **Hide 'Clear Search Results'**) or uncheck any of the actions from the dropdown. Hidden actions are moved to the `...` **More Actions** menu and can be invoked from there.\n\nTo restore an action to the tool bar, right-click the tool bar button area and select the **Reset Menu** command or recheck the hidden action. To restore all menus in {% data variables.product.prodname_vscode_shortname %}, run **View: Reset All Menus** from the Command Palette (`kb(workbench.action.showCommands)`).\n\n![Search tool bar context menu with Reset menu command](images/custom-layout/reset-tool-bar-menu.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/custom-layout.md"
+}

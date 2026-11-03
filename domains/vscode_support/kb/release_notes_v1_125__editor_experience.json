@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_125__editor_experience",
+  "title": "v1_125 / Editor Experience",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Editor Experience\n\n### Extension auto-update setting\n\n**Setting**: `setting(extensions.autoUpdate)`\n\nYou can enable or disable automatic extension updates with the `setting(extensions.autoUpdate)` setting. In this release, we simplified the setting to use `on` and `off` values. Previous values such as `true`, `false`, `onlyEnabledExtensions`, and `delayed` are migrated automatically.\n\nWhen auto-update is enabled, VS Code updates only enabled extensions. Disabled extensions are no longer updated automatically. They update the next time you enable them.\n\n> **Note**: Administrators can centrally manage the `setting(extensions.autoUpdate)` and `setting(extensions.autoUpdateDelay)` settings with [enterprise policies](https://code.visualstudio.com/docs/enterprise/policies).\n\n### Configurable extension auto-update delay\n\n**Setting**: `setting(extensions.autoUpdateDelay)`\n\nTo give you more control over when extension updates are installed, you can now configure a delay for automatic extension updates. This builds on the [delayed extension auto-updates](https://code.visualstudio.com/updates/v1_123#_delayed-extension-autoupdates) feature introduced in the previous release.\n\nUse the `setting(extensions.autoUpdateDelay)` setting to configure the delay in hours. By default, VS Code waits two hours before installing extension updates. The delay only applies when auto-update is enabled.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_125.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_setup_additional_components__additional_tools",
+  "title": "additional components / Additional tools",
+  "category": "INSTALLATION",
+  "intent": "installation",
+  "content": "## Additional tools\n\n{% data variables.product.prodname_vscode %} integrates with existing tool chains.  We think the following tools will enhance your development experiences.\n\n* [Yeoman](https://yeoman.io/) - An application scaffolding tool, a command line version of **File** > **New Project**.\n* [generator-hottowel](https://github.com/johnpapa/generator-hottowel) - A Yeoman generator for quickly creating AngularJS applications.\n* [Express](https://expressjs.com/) - An application framework for Node.js applications using the Pug template engine.\n* [Gulp](https://gulpjs.com/) - A streaming task runner system which integrates easily with {% data variables.product.prodname_vscode_shortname %} tasks.\n* [Mocha](https://mochajs.org/) - A JavaScript test framework that runs on Node.js.\n* [Yarn](https://yarnpkg.com/) - A dependency manager and alternative to npm.\n\n>**Note:** Most of these tools require Node.js and the npm package manager to install and use.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/additional-components.md"
+}

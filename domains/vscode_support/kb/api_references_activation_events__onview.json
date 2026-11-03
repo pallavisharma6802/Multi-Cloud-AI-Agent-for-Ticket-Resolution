@@ -1,0 +1,8 @@
+{
+  "id": "api_references_activation_events__onview",
+  "title": "activation events / onView",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## onView\n\nThis activation event is emitted and interested extensions will be activated whenever a view of the specified id is expanded in the VS Code sidebar. Built-in views do not emit an activation event.\n\nThe activation event below will fire whenever a view with the `nodeDependencies` id is visible:\n\n```json\n\"activationEvents\": [\n    \"onView:nodeDependencies\"\n]\n```\n\n> **Note**: Beginning with VS Code 1.74.0, views contributed by your extension do not require a corresponding `onView` activation event declaration for your extension to be activated.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/activation-events.md"
+}

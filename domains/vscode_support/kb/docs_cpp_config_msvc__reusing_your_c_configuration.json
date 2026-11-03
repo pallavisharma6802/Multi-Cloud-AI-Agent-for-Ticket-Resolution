@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_config_msvc__reusing_your_c_configuration",
+  "title": "config msvc / Reusing your C++ configuration",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Reusing your C++ configuration\n\n{% data variables.product.prodname_vscode_shortname %} is now configured to use the Microsoft C++ compiler. The configuration applies to the current workspace. To reuse the configuration, just copy the JSON files to a `.vscode` folder in a new project folder (workspace) and change the names of the source file(s) and executable as needed.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/config-msvc.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_tsql__view_and_save_results",
+  "title": "tsql / View and Save Results",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## View and Save Results\n\nView results and messages when you execute your T-SQL code. Save results as a JSON or CSV file to use the data in your applications with just a few clicks.\n\n<video src=\"images/tsql/save.mp4\" title=\"Video showing Save T-SQL.\" autoplay loop controls muted></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/tsql.md"
+}

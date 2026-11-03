@@ -1,0 +1,8 @@
+{
+  "id": "learn_agents_3_agent_plugins__browse_and_inspect_a_plugin",
+  "title": "3 agent plugins / Browse and inspect a plugin",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Browse and inspect a plugin\n\nAfter you enable `setting(chat.plugins.enabled)`, VS Code discovers plugins from the [copilot-plugins](https://github.com/github/copilot-plugins) and [awesome-copilot](https://github.com/github/awesome-copilot/) marketplaces by default. You can add more with `setting(chat.plugins.marketplaces)`.\n\n1. Open the Chat view.\n\n1. Select the cog, then open **Agent Customizations**.\n\n1. Select **Plugins** in the left menu.\n\n1. Pick a plugin that matches a workflow you recognize, such as testing, code review, or documentation.\n\n1. Before installing, inspect what it includes. Look for skills, agents, hooks, and MCP servers.\n\n1. Install it only if you trust the source and understand what it adds.\n\nFrom there, you can:\n\n* Browse the marketplace.\n* Install a plugin from source.\n* Create your own plugin.\n* Review which customizations are already installed.\n\nAfter installation, the plugin's customizations appear alongside your local ones in the **Agent Plugins - Installed** section of the Extensions view.\n\n![Screenshot of browsing agent plugins in the Extensions sidebar.](../images/agents/extensions-view.png)\n\n![Screenshot of the Agent Plugins - Installed view in the Extensions view.](../images/agents/installed-plugins.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/3-agent-plugins.md"
+}

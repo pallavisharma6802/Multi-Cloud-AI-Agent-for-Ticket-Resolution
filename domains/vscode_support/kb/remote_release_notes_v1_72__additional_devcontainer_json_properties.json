@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_72__additional_devcontainer_json_properties",
+  "title": "v1_72 / Additional devcontainer.json Properties",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Additional devcontainer.json Properties\n\nWe have added support to `devcontainer.json` for `init`, `privileged`, `capAdd`, and `securityOpt`, and when using Docker Compose, we now also support `mounts`, `containerEnv`, and `containerUser`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_72.md"
+}

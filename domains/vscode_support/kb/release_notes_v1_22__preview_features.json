@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_22__preview_features",
+  "title": "v1_22 / Preview Features",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Preview Features\n\nPreview features are not ready for release but are functional enough to use. We welcome your early feedback while they are under development.\n\n### Organize imports for JavaScript and TypeScript\n\nThe new **Organize Imports** command (`kb(typescript.organizeImports)`) removes unused imports and sorts the remaining imports:\n\n<video src=\"images/1_22/ts-organize-imports.mp4\" title=\"Video showing Organize Imports.\" autoplay loop controls muted></video>\n\nThe command works in ES6 modules for both JavaScript and TypeScript.\n\n### Electron 2.0 exploration\n\nDuring this milestone, we explored bundling Electron 2.0.0 into VS Code. This is a major Electron release and comes with Chrome 61 and Node.js 8.x (a major leap forward compared to our current version that has Chrome 58 and Node.js 7.x). We plan to push out the update to our Insiders users early in April to gather additional feedback. If you are interested in helping out, make sure to install VS Code [Insiders](https://code.visualstudio.com/insiders).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_22.md"
+}

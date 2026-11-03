@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_editingevolved__peek",
+  "title": "editingevolved / Peek",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Peek\n\nWe think there's nothing worse than a big context switch when all you want is to quickly check something. That's why we support peeked editors. When you execute a **Go to References** search (via `kb(editor.action.goToReferences)`), or a **Peek Definition** (via `kb(editor.action.peekDefinition)`), we embed the result inline:\n\n![Peek References](images/editingevolved/references.png)\n\nYou can navigate between different references in the peeked editor and make quick edits right there. Clicking on the peeked editor filename or double-clicking in the result list will open the reference in the outer editor.\n\n> **Tip:** Additionally, the peek window is closed if you press `kbstyle(Escape)` or double-click in the peek editor region. You can disable this behavior with the `setting(editor.stablePeek)` [setting](/docs/configure/settings.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/editingevolved.md"
+}

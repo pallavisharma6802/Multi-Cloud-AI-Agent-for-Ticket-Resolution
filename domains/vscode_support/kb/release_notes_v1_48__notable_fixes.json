@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_48__notable_fixes",
+  "title": "v1_48 / Notable fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable fixes\n\n* [33720](https://github.com/microsoft/vscode/issues/33720): Wrong guess encoding as Windows 1252\n* [102037](https://github.com/microsoft/vscode/issues/102037): If a debug adapter fails to send a `terminated` event, VS Code gets stuck in debug mode\n* [103463](https://github.com/microsoft/vscode/issues/103463): When docked, the \"disconnect\" and \"stop\" icons in the debug toolbar don't update properly",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_48.md"
+}

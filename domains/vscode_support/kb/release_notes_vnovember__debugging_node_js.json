@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vnovember__debugging_node_js",
+  "title": "vNovember / Debugging - Node.js",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debugging - Node.js\nStarting with this release, we are now launching the Node.js debug target in the internal VS Code Debug Console. This eliminates the tedious management of external console windows and brings program output and the Node.js REPL closer together. Since the Debug Console does not support programs that need to read input from the console, the external console is still available and you can enable it by setting the attribute `externalConsole` to `true` in your launch configuration.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vNovember.md"
+}

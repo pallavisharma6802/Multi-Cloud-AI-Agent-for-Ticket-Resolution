@@ -1,0 +1,8 @@
+{
+  "id": "api_working_with_extensions_bundling_extension__migrate_an_existing_extension",
+  "title": "bundling extension / Migrate an existing extension",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Migrate an existing extension\n\nMigrating an existing extension to use esbuild or webpack is easy and similar to the getting started guide above. A real world sample that adopted webpack is the VS Code's References view through this [pull request](https://github.com/microsoft/vscode-references-view/pull/50).\n\nThere you can see:\n\n* Add `esbuild` resp. `webpack`, `webpack-cli`, and `ts-loader` as `devDependencies`.\n* Update npm scripts to use the bundlers as shown above\n* Update the task configuration `tasks.json` file.\n* Add and tweak the `esbuild.js` or `webpack.config.js` build file.\n* Update `.vscodeignore` to exclude `node_modules` and intermediate output files.\n* Enjoy an extension that installs and loads much faster!",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/working-with-extensions/bundling-extension.md"
+}

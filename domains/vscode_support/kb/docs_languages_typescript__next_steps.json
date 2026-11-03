@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_typescript__next_steps",
+  "title": "typescript / Next steps",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Next steps\n\nTo learn more, see:\n\n* [TypeScript tutorial](/docs/typescript/typescript-tutorial.md) - Create a simple Hello World TypeScript in {% data variables.product.prodname_vscode_shortname %}.\n* [Editing TypeScript](/docs/typescript/typescript-editing.md) - Specific editing features for TypeScript.\n* [Refactoring TypeScript](/docs/typescript/typescript-refactoring.md) - Useful refactorings from the TypeScript language service.\n* [Transpiling TypeScript](/docs/typescript/typescript-transpiling.md) - Compile TypeScript to a JavaScript target version.\n* [Debugging TypeScript](/docs/typescript/typescript-debugging.md) - Learn about debugging TypeScript both server and client-side with {% data variables.product.prodname_vscode_shortname %}.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/typescript.md"
+}

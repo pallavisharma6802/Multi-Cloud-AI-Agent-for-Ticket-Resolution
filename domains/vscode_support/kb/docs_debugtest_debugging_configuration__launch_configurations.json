@@ -1,0 +1,8 @@
+{
+  "id": "docs_debugtest_debugging_configuration__launch_configurations",
+  "title": "debugging configuration / Launch configurations",
+  "category": "DEBUGGING",
+  "intent": "debugging",
+  "content": "## Launch configurations\n\n{% data variables.product.prodname_vscode_shortname %} stores debug configurations in a `launch.json` file. For a project-specific configuration, place the file in the `.vscode` folder at the root of your workspace.\n\nYou can also define configurations in:\n\n* The `setting(launch)` user setting, which makes configurations available across workspaces.\n* [Workspace folder settings](/docs/editing/workspaces/multi-root-workspaces.md#workspace-launch-configurations) in a multi-root workspace.\n\nThe following `launch.json` example starts a Node.js application:\n\n```json\n{\n    \"version\": \"0.2.0\",\n    \"configurations\": [\n        {\n            \"type\": \"node\",\n            \"request\": \"launch\",\n            \"name\": \"Launch Program\",\n            \"skipFiles\": [\n                \"<node_internals>/**\"\n            ],\n            \"program\": \"${workspaceFolder}/app.js\"\n        }\n    ]\n}\n```\n\nEach object in the `configurations` array appears in the configuration dropdown in the **Run and Debug** view. You can add multiple configurations for different entry points, environments, or debugging modes.\n\n> [!NOTE]\n> You can debug a supported active file without opening a folder. To create and manage a workspace `launch.json` file, open a folder or workspace.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/debugging-configuration.md"
+}

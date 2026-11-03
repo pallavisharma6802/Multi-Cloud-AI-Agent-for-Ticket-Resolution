@@ -1,0 +1,8 @@
+{
+  "id": "docs_terminal_profiles__cmder",
+  "title": "profiles / Cmder",
+  "category": "TERMINAL",
+  "intent": "terminal",
+  "content": "## Cmder\n\nCmder itself is a terminal, but you can use the [Cmder](https://cmder.app) shell in {% data variables.product.prodname_vscode_shortname %} with the following profile:\n\n```json\n{\n  \"terminal.integrated.profiles.windows\": {\n    \"cmder\": {\n      \"path\": \"C:\\\\WINDOWS\\\\System32\\\\cmd.exe\",\n      \"args\": [\"/K\", \"C:\\\\cmder\\\\vendor\\\\bin\\\\vscode_init.cmd\"]\n    }\n  },\n  \"terminal.integrated.defaultProfile.windows\": \"cmder\"\n}\n```\n\nThis profile should be picked up automatically when the `CMDER_ROOT` environment variable is set. It will also be detected as an [unsafe profile](#unsafe-profile-detection) if installed at `C:\\cmder`. You may refer to [Cmder's wiki](https://github.com/cmderdev/cmder/wiki/Seamless-VS-Code-Integration) for more information.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/profiles.md"
+}

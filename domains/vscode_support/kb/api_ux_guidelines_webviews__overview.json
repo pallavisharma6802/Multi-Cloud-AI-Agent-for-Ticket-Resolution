@@ -1,0 +1,8 @@
+{
+  "id": "api_ux_guidelines_webviews__overview",
+  "title": "webviews",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "# Webviews\n\nIf you need to display custom functionality that is beyond what the VS Code API supports, you can use [webviews](/api/extension-guides/webview), which are fully customizable. It's important to understand that webviews should only be used if you absolutely need them.\n\n**\u2714\ufe0f Do**\n\n* Only use webviews when absolutely necessary\n* Activate your extension only when contextually appropriate\n* Open webviews only for the active window\n* Ensure all elements in the view are themeable (see the [webview-view-sample](https://github.com/microsoft/vscode-extension-samples/blob/main/webview-view-sample/media/main.css) and [color tokens](/api/references/theme-color) documentation)\n* Ensure your views follow [accessibility guidance](/docs/configure/accessibility/accessibility) (color contrast, ARIA labels, keyboard navigation)\n* Use command actions in the toolbar and in the view\n\n\u274c Don't\n\n* Use for promotions (upgrades, sponsors, etc.)\n* Use for wizards\n* Open on every window\n* Open on extension updates (ask via a Notification instead)\n* Add functionality that is unrelated to the editor or workspace\n* Repeat existing functionality (Welcome page, Settings, configuration, etc.)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/webviews.md"
+}

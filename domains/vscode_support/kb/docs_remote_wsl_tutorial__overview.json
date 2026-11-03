@@ -1,0 +1,8 @@
+{
+  "id": "docs_remote_wsl_tutorial__overview",
+  "title": "wsl tutorial",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "# Remote development in WSL\n\nThis tutorial walks you through enabling [Windows Subsystem for Linux](https://learn.microsoft.com/windows/wsl/install) (WSL) and running {% data variables.product.prodname_vscode %} in WSL using the [WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) extension.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/wsl-tutorial.md"
+}

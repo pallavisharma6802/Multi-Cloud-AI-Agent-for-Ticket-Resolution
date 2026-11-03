@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_june_2016__june_release_summary",
+  "title": "June_2016 / June Release Summary",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## June Release Summary\n\nWe're really excited about the June release of VS Code. We've made some big changes to Extension management (dedicated Extensions View) and added Tabs (tabbed editor panes). Other new features include global Search and Replace, improved Drag and Drop and optional indentation guides. All of this along with enhancements to existing features like the Integrated Terminal and delivering a set of important bug fixes.\n\nHere are the highlights:\n\n* **Tabs**: Tabbed editor panes allow you to quickly navigate to your files and organize your workbench.\n* **Extensions**: New in-product Extensions View to quickly find, install and manage your extensions.\n* **Workbench**: Enhanced Drag and Drop, Preview Editors to conserve your editor panes, and multiple Integrated Terminals.\n* **Editor**: Global Search and Replace, Indent Guides, Problems panel to view errors and warnings.\n* **Languages**: Better, more complete Emmet support, Atom JavaScript grammar extension.\n* **Debugging**: Lots of improvements including support for attaching to running Node.js processes and changing variable values during a debug session.\n* **Extension Authoring**: A new contribution point for menu bars and context menus. New APIs to open non-text resources and add editor decorator attachments.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/June_2016.md"
+}

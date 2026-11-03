@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_4_building_hosted_agent__step_5_configure_agent_inspector_integration",
+  "title": "4 building hosted agent / Step 5: Configure Agent Inspector Integration",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Step 5: Configure Agent Inspector Integration\n\nTo inspect and troubleshoot deeply, configure the project for Agent Inspector. The chapter flow uses GitHub Copilot to verify HTTP serving requirements, install dependencies, and prepare Visual Studio Code debug configuration.\n\nThis is where your project becomes easy to debug repeatedly, not just runnable once.\n\n1. Set up the inspector by running a prompt in GitHub Copilot Chat that describes how to wire the local agent to the inspector.\n\n   See below image, but in short, you need to tell it to install a tool and configure tasks.json and launch.json for Visual Studio Code.\n\n   ![Setup Agent Inspector](../images/foundry-toolkit/ch4-setup-inspector.png)\n\nOnce inspector wiring is in place, you can evaluate cause and effect directly instead of guessing from final output text.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
+}

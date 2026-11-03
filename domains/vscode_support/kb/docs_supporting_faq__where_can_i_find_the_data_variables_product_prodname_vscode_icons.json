@@ -1,0 +1,8 @@
+{
+  "id": "docs_supporting_faq__where_can_i_find_the_data_variables_product_prodname_vscode_icons",
+  "title": "faq / Where can I find the {% data variables.product.prodname_vscode %} icons?",
+  "category": "REFERENCE",
+  "intent": "reference",
+  "content": "## Where can I find the {% data variables.product.prodname_vscode %} icons?\n\n**Are there guidelines for using the icons and names?**\n\nYou can download the official {% data variables.product.prodname_vscode %} icons and read the usage guidelines at [Icons and names usage guidelines](/brand).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/supporting/faq.md"
+}

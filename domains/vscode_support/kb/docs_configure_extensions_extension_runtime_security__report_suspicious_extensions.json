@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_extensions_extension_runtime_security__report_suspicious_extensions",
+  "title": "extension runtime security / Report suspicious extensions",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Report suspicious extensions\n\nIf you do see an extension that looks suspicious, report the extension to the Marketplace team. The Marketplace team provides an initial response within one business day.\n\nTo report an extension:\n\n1. Open the extension's page in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vscode).\n\n1. Select the **Report a concern** link at the bottom of the extension **More Info** section.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/extensions/extension-runtime-security.md"
+}

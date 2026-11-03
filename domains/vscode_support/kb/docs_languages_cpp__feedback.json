@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_cpp__feedback",
+  "title": "cpp / Feedback",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Feedback\n\nIf you run into any issues or have suggestions for the Microsoft C/C++ extension, please file [issues and suggestions on GitHub](https://github.com/microsoft/vscode-cpptools/issues). If you haven't already provided feedback, you can take this [quick survey](https://www.research.net/r/VBVV6C6).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/cpp.md"
+}

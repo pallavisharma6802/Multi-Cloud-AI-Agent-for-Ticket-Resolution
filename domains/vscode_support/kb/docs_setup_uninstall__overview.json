@@ -1,0 +1,8 @@
+{
+  "id": "docs_setup_uninstall__overview",
+  "title": "uninstall",
+  "category": "INSTALLATION",
+  "intent": "installation",
+  "content": "# Uninstall {% data variables.product.prodname_vscode %}\n\nThe steps for uninstalling {% data variables.product.prodname_vscode %} will depend on your platform (Windows, macOS, or Linux) and the install option that you used. For example on Windows, you can use the System or User Windows Installers or download a `.zip` file and extract the contents anywhere on your machine.\n\nIn general, you would uninstall {% data variables.product.prodname_vscode_shortname %} as you would any other desktop application and follow your platform's recommended flow for uninstalling software. Specific platform guidance is provided below as well as how to [completely clean up](#clean-uninstall) any remaining {% data variables.product.prodname_vscode_shortname %} configuration files.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/uninstall.md"
+}

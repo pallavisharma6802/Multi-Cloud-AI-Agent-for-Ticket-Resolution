@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_128__enterprise",
+  "title": "v1_128 / Enterprise",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Enterprise\n\n### Manage Copilot telemetry export with OpenTelemetry\n\nOrganizations can mandate where GitHub Copilot sends [OpenTelemetry](https://opentelemetry.io/) (OTel) data, so that telemetry flows to an approved collector without each developer setting `OTEL_*` environment variables. The managed configuration applies to both the Copilot Chat extension and the agent host process.\n\nAdministrators deliver these settings through the `telemetry` block in [Copilot managed settings](https://code.visualstudio.com/docs/enterprise/manage-ai-settings#_deploy-copilot-managed-settings), using any of the supported delivery channels. The block controls:\n\n* The OTLP export endpoint and protocol.\n* The OTel service name and resource attributes.\n* Exporter headers, such as an authentication token for the collector.\n* Whether prompt and response content is captured, and whether developers can change that.\n\nA managed value always wins, taking precedence over environment variables and user settings.\n\nTo learn more, see [Configure telemetry export with OpenTelemetry](https://code.visualstudio.com/docs/enterprise/manage-ai-settings#_configure-telemetry-export-with-opentelemetry) and [Monitor agent usage with OpenTelemetry](https://code.visualstudio.com/docs/agents/guides/monitoring-agents).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_128.md"
+}

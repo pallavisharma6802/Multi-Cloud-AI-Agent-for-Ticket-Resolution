@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_124__enterprise",
+  "title": "v1_124 / Enterprise",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Enterprise\n\n### Enterprise-managed Copilot plugin policies (Experimental)\n\nVS Code now reads policy from the same configuration file that already drives [enterprise plugin standards for Copilot CLI](https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/configure-enterprise-plugin-standards), so a single policy definition applies to both clients. In the future, VS Code and the CLI will align further on policy management from this shared source.\n\nEnterprise admins can now centrally control which chat plugins and plugin marketplaces are available to developers, instead of asking each developer to configure them locally.\n\nIntroduced in 1.123, three new policy-backed settings can be configured through the Copilot enterprise settings file or via existing MDM solutions:\n\n* `setting(chat.plugins.enabledPlugins)`: an allowlist of plugin IDs that the organization explicitly enables or disables.\n* `setting(chat.plugins.extraMarketplaces)`: additional plugin marketplaces the organization wants to make available.\n* `setting(chat.plugins.strictMarketplaces)`: when enabled, only marketplaces supplied by policy are trusted.\n\nPlugins that are blocked by policy remain visible but appear disabled. Marketplaces that are managed by policy are tagged as such in the marketplace picker.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_124.md"
+}

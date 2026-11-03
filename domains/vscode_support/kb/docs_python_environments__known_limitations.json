@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_environments__known_limitations",
+  "title": "environments / Known limitations",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Known limitations\n\n### Pylance and multi-project workspaces\n\nPylance does not support multiple Python projects with different interpreters in the same workspace. Even if you configure separate environments for different folders using [Python Projects](#python-projects), Pylance uses a single interpreter for the entire workspace\u2014typically the one associated with the workspace root. To use different interpreters for different folders, add them as workspace folders in a [multi-root workspace](/docs/editing/workspaces/multi-root-workspaces.md) (**File** > **Add Folder to Workspace**), since Pylance runs independently per workspace folder.\n\n### Jupyter notebooks\n\nJupyter notebooks do not use the Python Environments API for environment discovery. Instead, they rely on the older Python extension API. This means notebook kernel selection may show a different set of environments than the **Environment Managers** view.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/environments.md"
+}

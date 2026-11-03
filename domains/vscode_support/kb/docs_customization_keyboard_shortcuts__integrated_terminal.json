@@ -1,0 +1,8 @@
+{
+  "id": "docs_customization_keyboard_shortcuts__integrated_terminal",
+  "title": "keyboard shortcuts / Integrated Terminal",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Integrated Terminal\n\nKey|Command\n---|---\n`kb(workbench.action.terminal.toggleTerminal)`|Show integrated terminal\n`kb(workbench.action.terminal.new)`|Create new terminal\n`kb(workbench.action.terminal.copySelection)`|Copy selection\n`kb(workbench.action.terminal.paste)`|Paste into active terminal\n`kb(workbench.action.terminal.scrollup)`|Scroll up\n`kb(workbench.action.terminal.scrolldown)`|Scroll down\n`kb(workbench.action.terminal.scrollupPage)`|Scroll page up\n`kb(workbench.action.terminal.scrolldownPage)`|Scroll page down\n`kb(workbench.action.terminal.scrollToTop)`|Scroll to top\n`kb(workbench.action.terminal.scrollToBottom)`|Scroll to bottom",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/customization/keyboard-shortcuts.md"
+}

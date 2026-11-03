@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_46__vs_code_remote_core",
+  "title": "v1_46 / VS Code Remote Core",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## VS Code Remote Core\n\nWith this release, we allow you to install an already installed multi-kind (that can run locally or remotely) extension in its preferred location using  **Install in Remote** or **Install Locally** action. For example, the [Docker extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) prefers to run remotely but it is currently installed and running locally. In this case we show the **Install in Remote** action for the Docker extension. This will install and run the Docker extension remotely:\n\n![Install in Remote for Docker Extension](images/1_46/extensions-install-preferred.png)\n\n*Theme: GitHub Sharp with Customizations*\n\nThe command **Remote: Install Local Extensions in Remote** now also includes the multi-kind extensions.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_46.md"
+}

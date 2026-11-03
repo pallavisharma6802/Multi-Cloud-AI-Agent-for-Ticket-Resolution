@@ -1,0 +1,8 @@
+{
+  "id": "docs_nodejs_reactjs_tutorial__overview",
+  "title": "reactjs tutorial",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Using React in {% data variables.product.prodname_vscode %}\n\n[React](https://reactjs.org) is a popular JavaScript library developed by Facebook for building user interfaces. The {% data variables.product.prodname_vscode %} editor supports React.js IntelliSense and code navigation out of the box.\n\n![Welcome to React](images/reactjs/welcome-to-react.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/reactjs-tutorial.md"
+}

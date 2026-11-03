@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_17__tasks",
+  "title": "v1_17 / Tasks",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Tasks\n\nWe added multi folder support to tasks. If you have created a workspace with multiple folders, tasks from all workspace folders using task version \"2.0.0\" are collected and presented in the corresponding **Run** commands. Launch configuration can also reference tasks as preLaunch tasks from the same workspace folder.\n\n![Task Multi Root](images/1_17/tasks-multi-root.png)\n\nTasks auto detection for Gulp, Grunt, Jake and npm now also support multi-root workspaces. In addition, the [task contribution API](#tasks-contribution-api) was enhanced to support contributing tasks for different workspace folders.\n\nPlease note that multi folder support still requires the [Insiders](https://code.visualstudio.com/insiders) build.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_17.md"
+}

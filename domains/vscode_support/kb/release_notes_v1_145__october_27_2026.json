@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_145__october_27_2026",
+  "title": "v1_145 / October 27, 2026",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## October 27, 2026\n\n* Preview web apps running on remote agent hosts in the Agents window's integrated browser (Experimental). _[microsoft/vscode#331926: Integrated browser remote proxy should support remote AHP hosts in Agents window](https://github.com/microsoft/vscode/issues/331926)_\n\n\n* Fix keyboard access to MCP authentication prompts in agent-host sessions when screen reader mode is enabled. _[microsoft/vscode#343890: MCP authentication inline hint is not keyboard accessible in screen reader mode](https://github.com/microsoft/vscode/issues/343890)_\n\n\n* Move the default **Agent** picker into **Add Context** in editor-window chat with the experimental `setting(sessions.chat.experimental.agentsPickerInAttachContextMenu)` setting. _[microsoft/vscode#344606: Apply the Agent picker Add Context setting to editor-window chat](https://github.com/microsoft/vscode/issues/344606)_\n\n\n* Add support for breadcrumbs in untitled files when `setting(breadcrumbs.showInUntitledFiles)` is enabled and the language provides symbols. _[microsoft/vscode#84746: Enable breadcrumbs for unsaved files](https://github.com/microsoft/vscode/issues/84746)_\n\n* Run saved automations with **Chat: Run Automation...** in the Agents window **Command Palette**. _[microsoft/vscode#344445: Add a \"Chat: Run Automation...\" action](https://github.com/microsoft/vscode/issues/344445)_",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_145.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_dotnet__installing_the_net_software_development_kit",
+  "title": "dotnet / Installing the .NET Software Development Kit",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Installing the .NET Software Development Kit\n\nIf you download the extensions separately, ensure that you also have the .NET SDK on your local environment. The .NET SDK is a software development environment used for developing .NET applications.\n\n<a class=\"install-extension-btn\" href=\"https://aka.ms/vscDocs/dotnet/download\">Install the .NET SDK</a>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/dotnet.md"
+}

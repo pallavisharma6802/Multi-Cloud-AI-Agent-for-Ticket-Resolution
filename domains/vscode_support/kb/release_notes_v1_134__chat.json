@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_134__chat",
+  "title": "v1_134 / Chat",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Chat\n\n### Find in chat\n\nFinding information from earlier in a long conversation previously required scrolling through the transcript. Use `kb(workbench.action.chat.find)` to search conversations in the Chat view, chat editors, and the Agents window.\n\nSearch includes the entire conversation, even content that is not currently rendered on screen. As you move between matches, VS Code scrolls each match into view and expands a collapsed work summary if it contains the match. You can also match case, match whole words, or use regular expressions.\n\n<video src=\"images/1_134/chat-find.mp4\" title=\"Video showing searching a chat conversation and stepping through the matches.\" autoplay loop controls muted></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_134.md"
+}

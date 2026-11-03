@@ -1,0 +1,8 @@
+{
+  "id": "docs_supporting_troubleshoot_terminal_launch__additional_troubleshooting_steps",
+  "title": "troubleshoot terminal launch / Additional troubleshooting steps",
+  "category": "REFERENCE",
+  "intent": "reference",
+  "content": "## Additional troubleshooting steps\n\nIf the problem persists, use **Help** > **Report Issue** and include:\n\n* The complete error message and the last terminal output.\n* Your {% data variables.product.prodname_vscode_shortname %} version, operating system version, and shell executable and version.\n* Whether the terminal runs locally, in WSL, over SSH, or in a container.\n* Whether it was created from the terminal panel, a task, a debugger, or an extension.\n* Whether the same shell works outside the editor, without startup customization, or with automatic shell integration disabled.\n* Relevant profile settings and redacted Terminal and Pty Host logs.\n\nIf only an extension-created terminal fails, select that extension in the issue reporter. For more reporting guidance, see [Creating great terminal issues](https://github.com/microsoft/vscode/wiki/Terminal-Issues#creating-great-terminal-issues).\n\n<a name=\"integrated-terminal-user-guide\"></a>\n<a id=\"_integrated-terminal-user-guide\"></a>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/supporting/troubleshoot-terminal-launch.md"
+}

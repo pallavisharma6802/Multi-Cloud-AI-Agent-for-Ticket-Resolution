@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_python_web__prerequisites",
+  "title": "python web / Prerequisites",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Prerequisites\n\nThe following prerequisites are needed to use the extension:\n\n* You need to have the [GitHub Repositories](https://marketplace.visualstudio.com/items?itemName=GitHub.remotehub) extension installed.\n* You need to authenticate with GitHub.\n* You need to use a browser that supports [cross-origin isolation](https://developer.chrome.com/docs/extensions/mv3/cross-origin-isolation/). The extension has been tested with the Microsoft Edge and Google Chrome browsers.\n* You need to use the insider version of [{% data variables.product.prodname_vscode_shortname %} for the Web](/docs/remote/vscode-web.md) (for example `https://insiders.vscode.dev/`)\n* Your source code must be hosted either on your local file system or a GitHub repository that is accessed through the [GitHub Repositories](https://marketplace.visualstudio.com/items?itemName=GitHub.remotehub) extension.\n* When starting [{% data variables.product.prodname_vscode_shortname %} for the Web](/docs/remote/vscode-web.md), you need to add the following query parameter to the end of the URL: `?vscode-coi=`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/python-web.md"
+}

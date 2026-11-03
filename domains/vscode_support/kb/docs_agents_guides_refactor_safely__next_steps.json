@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_refactor_safely__next_steps",
+  "title": "refactor safely / Next steps",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Next steps\n\n* [Add new behavior as a separate feature](/docs/agents/guides/add-a-feature.md).\n* [Set up a test-driven development workflow](/docs/agents/guides/test-driven-development-guide.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/refactor-safely.md"
+}

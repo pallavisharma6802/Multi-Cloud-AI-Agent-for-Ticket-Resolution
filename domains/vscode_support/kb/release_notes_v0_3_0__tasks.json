@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v0_3_0__tasks",
+  "title": "v0_3_0 / Tasks",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Tasks\n\nWe have defined three new problem matchers:\n\n* `$jshint-stylish`: To detect jshint problems produced by the stylish reporter.\n* `$eslint-compact`: To detect eslint problems produced by the compact reporter.\n* `$eslint-stylish`: To detect eslint problems produced by the stylish reporter.\n\nMultiline problem matchers have been added to the task system to capture stylish output from several linting tools. You can see an example in [Tasks](/docs/debugtest/tasks.md).\n\nYou can now consistently redefine global properties per operating system and per explicit task. See [operating specific values](/docs/debugtest/tasks.md#operating-system-specific-properties) and [task specific values](/docs/debugtest/tasks.md#task-specific-properties) for details.\n\nA new property, `suppressTaskName`, can be specified globally, per operating system, or per task, to indicate whether the task name is added to the arguments when a task command is executed. See more details in the Appendix of [Tasks](/docs/debugtest/tasks.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_3_0.md"
+}

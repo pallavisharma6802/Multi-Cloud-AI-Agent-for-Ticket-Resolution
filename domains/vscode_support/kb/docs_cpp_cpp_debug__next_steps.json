@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_cpp_debug__next_steps",
+  "title": "cpp debug / Next steps",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Next steps\n\nRead on to find out about:\n\n* [Configure {% data variables.product.prodname_vscode_shortname %} for Windows Subsystem for Linux](/docs/cpp/config-wsl.md)\n* [Configure {% data variables.product.prodname_vscode_shortname %} for Mingw-w64 and GCC](/docs/cpp/config-mingw.md)\n* [Configure {% data variables.product.prodname_vscode_shortname %} for macOS](/docs/cpp/config-clang-mac.md)\n* [Configure C/C++ debugging](/docs/cpp/launch-json-reference.md) - Learn about additional debugger configuration options.\n* [Basic Editing](/docs/editing/codebasics.md) - Learn about the powerful {% data variables.product.prodname_vscode %} editor.\n* [Code Navigation](/docs/editing/editingevolved.md) - Move quickly through your source code.\n* [Tasks](/docs/debugtest/tasks.md) - use tasks to build your project and more.\n* [Debugging](/docs/debugtest/debugging.md) - find out about the {% data variables.product.prodname_vscode %} debugger.\n\nIf you have any other questions or run into any issues, please file an issue on [GitHub](https://github.com/microsoft/vscode-cpptools/issues).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/cpp-debug.md"
+}

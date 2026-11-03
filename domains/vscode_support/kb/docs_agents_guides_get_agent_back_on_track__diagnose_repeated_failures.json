@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_get_agent_back_on_track__diagnose_repeated_failures",
+  "title": "get agent back on track / Diagnose repeated failures",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Diagnose repeated failures\n\nIf the agent understands the task but can't make progress, stop automatic retries and investigate the underlying failure.\n\n1. Ask the agent to report the exact command or tool that failed, the first error, and the evidence it used to diagnose the error.\n1. Verify prerequisites such as the working directory, installed dependencies, required services, authentication, and permissions.\n1. Ask for recovery options that don't repeat the failed action.\n1. If debug logging was active for the session, use `/troubleshoot` to analyze the captured logs when you need to understand ignored instructions, unexpected tool behavior, or slow responses.\n1. For deeper inspection, use the Agent Debug Log panel (Preview) to review model requests, tool calls, prompt-file discovery, and errors.\n\nFor connectivity, extension, customization, and MCP server problems, follow the [AI troubleshooting procedures](/docs/agents/agent-troubleshooting/troubleshooting.md). To inspect an agent interaction, see [Debug chat interactions](/docs/agents/agent-troubleshooting/chat-debug-view.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/get-agent-back-on-track.md"
+}

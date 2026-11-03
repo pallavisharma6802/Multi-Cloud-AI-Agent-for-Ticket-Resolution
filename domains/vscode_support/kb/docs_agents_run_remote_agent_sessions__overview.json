@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_remote_agent_sessions__overview",
+  "title": "remote agent sessions",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Run and manage remote agent sessions\n\nContinue agent work from another app or device while your workspace, tools, and running sessions stay on your development machine. Use GitHub Environments to make that machine available across supported {% data variables.product.prodname_copilot_short %} clients, or use SSH and dev tunnels to connect from {% data variables.product.prodname_vscode_shortname %}.\n\nThis guide helps you choose a connection, share a host, manage remote environments, and continue an existing remote session without starting over.\n\nTo prevent this client from connecting to remote agent hosts, turn off `setting(chat.remoteAgentHostsEnabled)`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/remote-agent-sessions.md"
+}

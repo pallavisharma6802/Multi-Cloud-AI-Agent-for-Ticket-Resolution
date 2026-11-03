@@ -43,7 +43,7 @@ class Settings(BaseSettings):
 
     # Domain pack
     domain_pack: str = Field(
-        default="it_saas",
+        default="vscode_support",
         description="Active domain pack id (directory name under domains/)",
     )
     domains_root: str = Field(default="domains", description="Root directory holding domain packs")

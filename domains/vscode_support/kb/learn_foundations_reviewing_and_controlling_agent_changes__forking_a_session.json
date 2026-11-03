@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundations_reviewing_and_controlling_agent_changes__forking_a_session",
+  "title": "reviewing and controlling agent changes / Forking a session",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Forking a session\n\nNext to Restore Checkpoint is **Fork**.\n\n* Restore takes you back. Everything after that checkpoint is gone, and you continue in the same session.\n* Fork creates a new independent session starting from that checkpoint. The original session stays intact.\n\n![Fork control in VS Code chat for creating a new session from an earlier checkpoint](../images/foundations/fork.png)\n\nAfter forking, you have two sessions: the original, continuing as it was, and the fork, starting fresh from that checkpoint and going in a new direction. Neither session affects the other.\n\nYou can also type `/fork` in the chat input to fork from the current point.\n\n![Using the /fork command in the VS Code chat input to create a new session from the current point](../images/foundations/slash-fork.png)\n\nWhen to fork:\n\n* Explore a different architectural direction without losing current work.\n* Take the project toward an API while keeping a CLI version intact.\n* Compare two approaches side by side.\n\nForks don't just protect against losing work - they change how boldly you can experiment. When you know you can always go back or branch off, you're free to try riskier approaches.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/reviewing-and-controlling-agent-changes.md"
+}

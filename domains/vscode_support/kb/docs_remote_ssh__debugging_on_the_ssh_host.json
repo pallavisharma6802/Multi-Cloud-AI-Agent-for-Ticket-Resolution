@@ -1,0 +1,8 @@
+{
+  "id": "docs_remote_ssh__debugging_on_the_ssh_host",
+  "title": "ssh / Debugging on the SSH host",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Debugging on the SSH host\n\nOnce you are connected to a remote host, you can use {% data variables.product.prodname_vscode_shortname %}'s debugger in the same way you would when running the application locally. For example, if you select a launch configuration in `launch.json` and start debugging (`kb(workbench.action.debug.start)`), the application will start on remote host and attach the debugger to it.\n\nSee the [debugging](/docs/debugtest/debugging.md) documentation for details on configuring {% data variables.product.prodname_vscode_shortname %}'s debugging features in `.vscode/launch.json`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/ssh.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_themes__color_themes_from_the_marketplace",
+  "title": "themes / Color Themes from the Marketplace",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Color Themes from the Marketplace\n\nThere are several out-of-the-box color themes in {% data variables.product.prodname_vscode_shortname %} for you to try. Many more themes have been uploaded to the {% data variables.product.prodname_vscode_shortname %} [Extension Marketplace](/docs/configure/extensions/extension-marketplace.md) by the community.\n\nYou can select Color Themes from the {% data variables.product.prodname_vs_marketplace %} directly from the Color Theme picker by selecting **Browse Additional Color Themes...**.\n\n![Screenshot of Color Theme picker, highlighting the option to browse themes from the {% data variables.product.prodname_vs_marketplace %}.](images/themes/additional-color-themes.png)\n\nAlternately, you can search for themes in the Extensions view (`kb(workbench.view.extensions)`) search box by using the `@category:\"themes\"` filter.\n\n![Searching for themes in the Extensions view](images/themes/category-themes.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/themes.md"
+}

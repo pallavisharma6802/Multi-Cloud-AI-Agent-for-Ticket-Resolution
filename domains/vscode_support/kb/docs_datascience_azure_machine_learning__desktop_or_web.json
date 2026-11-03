@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_azure_machine_learning__desktop_or_web",
+  "title": "azure machine learning / Desktop or web",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Desktop or web\n\nYou can use Azure Machine Learning in {% data variables.product.prodname_vscode_shortname %} Desktop or [{% data variables.product.prodname_vscode_shortname %} for the Web](/docs/remote/vscode-web.md). {% data variables.product.prodname_vscode_shortname %} for the Web provides a free, zero-install {% data variables.product.prodname_vscode_shortname %} experience running entirely in your browser at [https://vscode.dev](https://vscode.dev). Check out the [guide on launching Azure Machine Learning](https://learn.microsoft.com/azure/machine-learning/how-to-launch-vs-code-remote?view=azureml-api-2&tabs=vscode-web) to learn more.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/azure-machine-learning.md"
+}

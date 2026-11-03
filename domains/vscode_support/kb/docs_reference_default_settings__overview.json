@@ -1,0 +1,8 @@
+{
+  "id": "docs_reference_default_settings__overview",
+  "title": "default settings",
+  "category": "REFERENCE",
+  "intent": "reference",
+  "content": "# Default settings reference\n\n{% data variables.product.prodname_vscode %} comes with a set of default settings that can be overridden by user or workspace settings. You can change the default settings by using the Settings editor or by editing the `settings.json` file directly.\n\nTo view the list of default settings, run the **Preferences: Open Default Settings (JSON)** command from the Command Palette (`kb(workbench.action.showCommands)`). This opens a read-only file named `defaultSettings.json` that contains all the default settings in JSON format.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/reference/default-settings.md"
+}

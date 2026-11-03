@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_testing__faq",
+  "title": "java testing / FAQ",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## FAQ\n\nIf you meet any problem when using the extension, you can review the [FAQ](https://github.com/microsoft/vscode-java-test/wiki/FAQ) and our [issue list](https://github.com/microsoft/vscode-java-test/issues) to check if there is an answer to your problem.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-testing.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_lldb_mi__prerequisites",
+  "title": "lldb mi / Prerequisites",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Prerequisites\n\nThe `lldb-mi` executable requires `LLDB.framework` to run.\n\n### How to obtain the LLDB.framework\n\nYou can get the `LLDB.framework` one of two ways.\n\nXcode:\n\n   1. Open the **Apple App Store**.\n   2. Search for 'Xcode'.\n   3. Select the **Xcode** application and then **Install**.\n\nXcode Command Line Tools:\n\n   1. Open a terminal.\n   2. Run `xcode-select --install`.\n   3. Confirm the prompt.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/lldb-mi.md"
+}

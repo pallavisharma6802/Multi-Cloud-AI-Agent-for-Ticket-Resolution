@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_74__notebooks",
+  "title": "v1_74 / Notebooks",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notebooks\n\n### Kernel picker experiment: most recently used kernels\n\nThere is a new notebook kernel picker that shows the most recently used kernels at the top of the picker. This is an opt-in experiment that can be enabled by setting the `notebook.kernelPicker.type` setting to `mru`.\n\nKernels that are not used will be moved into a secondary picker **Select Another Kernel...**. This picker will group all kernels by their source (for example: Jupyter Kernel, Python Environment, etc.) when you have latest [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) installed.\n\n![Kernel picker with most recently used kernels](images/1_74/kernel-picker.gif)\n\nWe would love to hear your feedback and you can create issues in the [VS Code repository](https://github.com/microsoft/vscode/issues).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_74.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_refactoring__use_explicit_type",
+  "title": "refactoring / Use explicit type",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Use explicit type\n\n**What:** Use this refactoring to replace `var` in a local variable declaration with an explicit type.\n\n**Why:** To improve the code's readability or when you don't want to initialize the variable in the declaration.\n\nHowever, [var](https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/var) must be used when a variable is initialized with an anonymous type and the properties of the object are accessed at a later point. For more information, see [Implicitly typed local variables (C#)](https://learn.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables).\n\n**How-to:**\n\n1. Place the caret on the `var` keyword.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select **Use explicit type instead of `var`**.\n\n![Use explicit type instead of `var` example](images/refactoring/use-explicit-type.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+}

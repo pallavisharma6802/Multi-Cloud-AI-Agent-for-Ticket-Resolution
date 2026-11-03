@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_optimize_usage__start_new_chats_for_new_tasks",
+  "title": "optimize usage / Start new chats for new tasks",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Start new chats for new tasks\n\nAs a conversation grows, it accumulates context from previous messages, tool outputs, and file contents. When you switch to an unrelated task in the same session, the model still processes all that irrelevant history, which consumes tokens without improving results.\n\nStart a [new agent session](/docs/agents/run/sessions/manage-sessions.md) (`kb(workbench.action.chat.newChat)`) when you change topics. This gives the model a clean context window focused on the current task.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/optimize-usage.md"
+}

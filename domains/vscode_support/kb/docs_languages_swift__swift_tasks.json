@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_swift__swift_tasks",
+  "title": "swift / Swift tasks",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Swift tasks\n\n{% data variables.product.prodname_vscode %} provides tasks as a way to run external tools. See the\n[Integrate with External Tools via Tasks](/docs/debugtest/tasks.md)\ndocumentation to learn more.\n\nThe Swift extension provides some built-in tasks that you can use to build via\nSwift Package Manager. You can also configure custom tasks by creating a\n`tasks.json` file in the root folder of your project. For example, this\n`tasks.json` builds of your Swift targets in release mode:\n\n```json\n{\n  \"version\": \"2.0.0\",\n  \"tasks\": [\n    {\n      \"type\": \"swift\",\n      \"label\": \"Swift Build All - Release\",\n      \"detail\": \"swift build --build-tests\",\n      \"args\": [\"build\", \"--build-tests\", \"-c\", \"release\"],\n      \"env\": {},\n      \"cwd\": \"${workspaceFolder}\",\n      \"group\": \"build\"\n    }\n  ]\n}\n```\n\nThe above task is configured to be in the `build` group. This means it will\nappear in the `run build tasks` menu that can be opened with `kbstyle(CMD+Shift+B)`\non macOS or `kbstyle(Ctrl+Shift+B)` on other platforms:\n\n![Run build task menu](images/swift/build-tasks.png)\n\nAny errors that occur during a build appear in the editor as diagnostics\nalongside those provided by SourceKit-LSP. Running another build task clears the\ndiagnostics from the previous build task.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/swift.md"
+}

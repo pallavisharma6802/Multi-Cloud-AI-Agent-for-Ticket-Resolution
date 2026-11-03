@@ -1,0 +1,8 @@
+{
+  "id": "docs_setup_mac__install_data_variables_product_prodname_vscode_shortname_on_macos",
+  "title": "mac / Install {% data variables.product.prodname_vscode_shortname %} on macOS",
+  "category": "INSTALLATION",
+  "intent": "installation",
+  "content": "## Install {% data variables.product.prodname_vscode_shortname %} on macOS\n\n1. [Download {% data variables.product.prodname_vscode %}](https://go.microsoft.com/fwlink/?LinkID=534106) for macOS.\n\n1. Open the downloaded `.dmg` file.\n\n1. Drag `{% data variables.product.prodname_vscode %}.app` to the **Applications** folder.\n\n1. Open {% data variables.product.prodname_vscode_shortname %} from the **Applications** folder by double-clicking the icon.\n\n1. To keep {% data variables.product.prodname_vscode_shortname %} in the Dock, Control-click the icon in the Dock, then select **Options** > **Keep in Dock**.\n\n> [!NOTE]\n> The [Download {% data variables.product.prodname_vscode %}](/download) page also lists Universal, Intel chip, and Apple silicon builds.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/mac.md"
+}

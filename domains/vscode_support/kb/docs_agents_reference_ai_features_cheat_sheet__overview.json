@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_ai_features_cheat_sheet__overview",
+  "title": "ai features cheat sheet",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# AI features cheat sheet\n\nFind the AI feature in {% data variables.product.prodname_vscode %} that fits your task, from a focused edit to work you delegate to an agent. Use this reference for common tasks, useful controls, and shortcuts.\n\nNew to agents? [Complete your first task with an agent](/docs/agents/quickstart.md). Available features depend on your [agent harness](/docs/agents/run/agent-harnesses.md), model, account, and organization policies.\n\n<a name=\"access-ai-in-vs-code\"></a>\n<a name=\"editor-ai-features\"></a>\n<a name=\"scaffold-a-new-project\"></a>\n<a name=\"source-control-and-issues\"></a>\n<a name=\"python-and-notebook-support\"></a>\n<a name=\"search-and-settings\"></a>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/ai-features-cheat-sheet.md"
+}

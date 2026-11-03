@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_html__intellisense",
+  "title": "html / IntelliSense",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## IntelliSense\n\nAs you type in HTML, we offer suggestions via HTML IntelliSense. In the image below, you can see a suggested HTML element closure `</div>` as well as a context specific list of suggested elements.\n\n![HTML IntelliSense](images/html/htmlintellisense.png)\n\nDocument symbols are also available for HTML, allowing you to quickly navigate to DOM nodes by id and class name.\n\nYou can also work with embedded CSS and JavaScript. However, note that script and style includes from other files are not followed, the language support only looks at the content of the HTML file.\n\nYou can trigger suggestions at any time by pressing `kb(editor.action.triggerSuggest)`.\n\nYou can also control which built-in code completion providers are active. Override these in your user or workspace [settings](/docs/configure/settings.md) if you prefer not to see the corresponding suggestions.\n\n```json\n// Configures if the built-in HTML language suggests HTML5 tags, properties and values.\n\"html.suggest.html5\": true\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/html.md"
+}

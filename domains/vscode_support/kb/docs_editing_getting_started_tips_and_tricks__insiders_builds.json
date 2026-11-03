@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_getting_started_tips_and_tricks__insiders_builds",
+  "title": "tips and tricks / Insiders builds",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Insiders builds\n\nThe {% data variables.product.prodname_vscode %} team uses the Insiders version to test the latest features and bug fixes of {% data variables.product.prodname_vscode_shortname %}. You can also use the Insiders version by [downloading it here](/insiders).\n\n* For Early Adopters - Insiders has the most recent code changes for users and extension authors to try out.\n* Frequent Builds - New builds every day with the latest bug fixes and features.\n* Side-by-side install - Insiders installs next to the Stable build allowing you to use either independently.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/tips-and-tricks.md"
+}

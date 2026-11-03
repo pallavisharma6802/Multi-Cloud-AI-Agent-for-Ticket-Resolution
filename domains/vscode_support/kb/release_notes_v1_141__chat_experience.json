@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_141__chat_experience",
+  "title": "v1_141 / Chat experience",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Chat experience\n\n### Persistent progress in chat\n\n**Settings**: `setting(chat.experimental.persistentProgress)`, `setting(chat.experimental.persistentProgressVerbosity)`\n\nPersistent progress is rolling out to all users. It keeps in-progress responses visible and lets you control how much progress detail appears. Use `setting(chat.experimental.persistentProgress)` to choose among three icon variants, including a monochrome icon or no icon.\n\n### Meet Blobby\n\nThe `/vscode-pet` has a name: Blobby. Type `/vscode-pet` in any chat in the editor or Agents window to meet Blobby.\n\nType `/blobby` to customize Blobby. More customization options become available as you explore chat and unlock achievements.\n\n![Animation showing the VS Code Pet sleeping in both insiders and stable colors.](images/1_141/sleep-wake-pr330399.png)\n\nLearn more about [Blobby and chat pets](https://code.visualstudio.com/docs/agents/reference/chat-pet).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_141.md"
+}

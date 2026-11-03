@@ -1,0 +1,8 @@
+{
+  "id": "api_ux_guidelines_notifications__links",
+  "title": "notifications / Links",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Links\n\n* [Hello World extension sample](https://github.com/microsoft/vscode-extension-samples/tree/main/helloworld-sample)\n* [Notifications extension sample](https://github.com/microsoft/vscode-extension-samples/tree/main/notifications-sample)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/notifications.md"
+}

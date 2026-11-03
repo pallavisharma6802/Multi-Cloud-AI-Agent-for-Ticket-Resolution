@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_may_2016__linters",
+  "title": "May_2016 / Linters",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Linters\n\n### ESLint\n\nThe [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) now supports a \"fix all problems\" command. You can bind the `eslint.fixAllProblems` command to a keyboard shortcut, such as:\n\n```json\n[\n    { \"key\": \"ctrl+shift+alt+f\",   \"command\": \"eslint.fixAllProblems\",\n                                     \"when\": \"editorTextFocus\" }\n]\n```\n\n### TSLint\n\nThe [TSLint extension](https://marketplace.visualstudio.com/items?itemName=eg2.tslint) now supports excluding files from linting ([PR #47](https://github.com/microsoft/vscode-tslint/pull/47)) as well as quick fixes for a set of TSLint warnings ([PR #40](https://github.com/microsoft/vscode-tslint/pull/40)). Thanks for the pull requests!",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/May_2016.md"
+}

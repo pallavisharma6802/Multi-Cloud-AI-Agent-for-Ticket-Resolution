@@ -1,0 +1,8 @@
+{
+  "id": "api_working_with_extensions_publishing_extension__overview",
+  "title": "publishing extension",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "# Publishing Extensions\n\nOnce you have made a high-quality extension, you can publish it to the [VS Code Extension Marketplace](https://marketplace.visualstudio.com/vscode) so others can find, download, and use your extension. Alternatively, you can [package](#packaging-extensions) an extension into the installable VSIX format and share it with other users.\n\nThis topic covers:\n\n- Using [vsce](#vsce), the CLI tool for managing VS Code extensions\n- [Packaging](#packaging-extensions), [publishing](#publishing-extensions) and [unpublishing](#unpublishing-extensions) extensions\n- [Registering a publisher](#create-a-publisher) necessary for publishing extensions",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/working-with-extensions/publishing-extension.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vdecember__extension_debugging",
+  "title": "vDecember / Extension Debugging",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Extension Debugging\n\nWe improved extension debugging when connecting the debugger to the extension. The debugger will no longer try to reconnect to the extension when you close the 'Extension Host`. In addition, the debugger will connect faster to your extension.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vDecember.md"
+}

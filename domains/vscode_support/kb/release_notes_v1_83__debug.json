@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_83__debug",
+  "title": "v1_83 / Debug",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debug\n\n### JavaScript Debugger\n\n#### WebAssembly debugging\n\nThe JavaScript debugger can now debug code compiled into WebAssembly if it includes [DWARF](https://dwarfstd.org) debug information. For example, C++ code compiled using [Emscripten](https://emscripten.org) can be debugged:\n\n![Debugger stopped on a breakpoint in C++ source code](images/1_83/wasm-dwarf.png)\n\n_Theme: [Codesong](https://marketplace.visualstudio.com/items?itemName=connor4312.codesong) (preview on [vscode.dev](https://vscode.dev/editor/theme/connor4312.codesong))_\n\nTo enable this, you'll want to install the [WebAssembly DWARF Debugging](https://marketplace.visualstudio.com/items?itemName=ms-vscode.wasm-dwarf-debugging) extension, which plugs in to the built-in JavaScript debugger. Read more about this in [Debugging WebAssembly](/docs/nodejs/nodejs-debugging#debugging-webassembly).\n\nWebAssembly debugging is built upon the [C/C++ Debugging Extension](https://github.com/ChromeDevTools/devtools-frontend/tree/main/extensions/cxx_debugging) from the Chromium authors, and was made possible with their support.\n\n#### Improved Call Stack view\n\nMethods and functions in the **Call Stack** view will now include the name of function (`this`) context. For example, a call stack for method `bar` on class `Foo` is now displayed as `Foo.bar`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_83.md"
+}

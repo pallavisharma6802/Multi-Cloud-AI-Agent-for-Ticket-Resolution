@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_agent_harnesses__use_canvases_with_the_copilot_harness",
+  "title": "agent harnesses / Use canvases with the Copilot harness",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Use canvases with the Copilot harness\n\n`feature(canvases)`\n\nCanvases are interactive visual surfaces shared by you and the agent in supported local {% data variables.product.prodname_copilot_short %} sessions. For prerequisites and steps to find, open, and manage canvases, see [Use canvases with agents](/docs/agents/run/canvases.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/agent-harnesses.md"
+}

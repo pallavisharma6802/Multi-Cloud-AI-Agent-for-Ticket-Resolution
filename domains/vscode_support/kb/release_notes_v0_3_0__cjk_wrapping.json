@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v0_3_0__cjk_wrapping",
+  "title": "v0_3_0 / CJK wrapping:",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## CJK wrapping:\nTo get a better approximation of the Chinese-Japanese-Korean (CJK) character widths, we now measure half-width **m** and full-width **m**. This result is text with CJK characters renders with a monospace font which shouldn't overflow the line and introduce horizontal scroll bars.\n\n![Chinese text](images/0_3_0/ChineseLoremIpsum.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_3_0.md"
+}

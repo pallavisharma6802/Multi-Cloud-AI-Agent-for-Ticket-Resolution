@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_history__next_steps",
+  "title": "history / Next steps",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## Next steps\n\n* [Create or switch branches](/docs/sourcecontrol/branches-worktrees.md).\n* [Review and commit working changes](/docs/sourcecontrol/staging-commits.md).\n* [Fetch, pull, and push changes](/docs/sourcecontrol/repos-remotes.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/history.md"
+}

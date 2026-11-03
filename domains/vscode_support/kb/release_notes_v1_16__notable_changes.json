@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_16__notable_changes",
+  "title": "v1_16 / Notable Changes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable Changes\n\n* [931](https://github.com/microsoft/vscode/issues/931): Windows: Cannot save hidden files\n* [32550](https://github.com/microsoft/vscode/issues/32550): Explorer: allow to collapse a sub-tree fully via Alt-click\n* [6196](https://github.com/microsoft/vscode/issues/6196): VSCode is not per monitor DPI aware\n* [29119](https://github.com/microsoft/vscode/issues/29119): Support files.eol as multi root folder setting\n* [24795](https://github.com/microsoft/vscode/issues/24795): Using integrated terminal to cat file with lots of unicode hangs terminal\n- [24820](https://github.com/microsoft/vscode/issues/24820): Icon shapes broken with rendering artifacts\n- [24981](https://github.com/microsoft/vscode/issues/24981): Backspace can not erase the last one character during Chinese/Japanese IME conversion (macOS)\n* [32336](https://github.com/microsoft/vscode/issues/32336): terminal.integrated.rightClickCopyPaste isn't working on x64 build",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_16.md"
+}

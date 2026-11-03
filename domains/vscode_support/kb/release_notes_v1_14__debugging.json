@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_14__debugging",
+  "title": "v1_14 / Debugging",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debugging\n\n### Recipe for Angular debugging\n\nSetting up Node.js debugging can be challenging for some non-standard or complex scenarios. In May, we started to collect recipes for these scenarios in a [recipe repository](https://github.com/microsoft/vscode-recipes).\n\nThis release adds a new recipe by [Tony Sneed (@tonysneed)](https://github.com/tonysneed) for [Chrome Debugging with Angular CLI](https://github.com/microsoft/vscode-recipes/blob/main/Angular-CLI).\n\n### Debug hover has scroll bar for long values\n\nThanks to a community [pull request](https://github.com/microsoft/vscode/pull/23211), a debug hover now displays long string values using a scroll bar.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_14.md"
+}

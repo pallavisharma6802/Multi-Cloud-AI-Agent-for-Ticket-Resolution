@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_quickstart__4_verify_the_result_yourself",
+  "title": "quickstart / 4. Verify the result yourself",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## 4. Verify the result yourself\n\nThe agent's validation report helps you find problems, but it doesn't replace your own review. In the integrated browser:\n\n1. Add a task and mark it complete.\n1. Reload the page and confirm that the task and its completed state persist.\n1. Delete the task and confirm that it doesn't return after another reload.\n\nIf a check fails, describe what you observed in chat and ask the agent to fix and retest it. Review the resulting diff before you commit the changes.\n\nYou have completed your first task with an agent. The agent interpreted your goal, created the code, exercised the app in the browser, and fixed issues it found. You reviewed both the code and the result.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/quickstart.md"
+}

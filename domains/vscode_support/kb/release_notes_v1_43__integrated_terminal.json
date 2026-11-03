@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_43__integrated_terminal",
+  "title": "v1_43 / Integrated Terminal",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Integrated Terminal\n\n### Unicode 11 support\n\nThe width of characters in the terminal now default to the Unicode 11 widths. What this means to most people is that emojis will be correctly showing up as wide characters.\n\n![Emojis are correctly wide characters](images/1_43/unicode11.png)\n\n### Better Alt+Click to navigate prompt support\n\nThe terminal has a feature that lets you `Alt+Click` on a cell and the cursor will navigate to that cell. Historically when in a shell's prompt, this only worked on a single line, even if it was wrapped. This has been improved to work on a full wrapped line.\n\n<video src=\"images/1_43/altclick.mp4\" title=\"Video showing Alt+Click can move across wrapped lines.\" autoplay loop controls muted></video>\n*Theme: [Sapphire](https://marketplace.visualstudio.com/items?itemName=Tyriar.theme-sapphire)*\n\nNote that this may not work correctly on Windows yet but [recent changes to ConPTY](https://github.com/microsoft/terminal/issues/405) should improve this in the future.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_43.md"
+}

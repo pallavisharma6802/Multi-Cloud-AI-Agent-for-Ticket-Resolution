@@ -1,0 +1,8 @@
+{
+  "id": "docs_remote_wsl_tutorial__prerequisites",
+  "title": "wsl tutorial / Prerequisites",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Prerequisites\n\nYou need [{% data variables.product.prodname_vscode %}](https://code.visualstudio.com/) installed.\n\n### Install the extension\n\nThe WSL extension enables you to run {% data variables.product.prodname_vscode %} within the Windows Subsystem for Linux (WSL).\n\n> <a class=\"install-extension-btn\" href=\"vscode:extension/ms-vscode-remote.remote-wsl\">Install the WSL extension</a>\n\n![WSL extension](images/wsl-tutorial/remote-wsl-extension.png)\n\n### Prerequisite check\n\nWith the WSL extension installed, you will see a new Status bar item at the far left.\n\n![Remote Status bar item](images/wsl-tutorial/remote-status-bar.png)\n\nThe Remote Status bar item can quickly show you in which context {% data variables.product.prodname_vscode_shortname %} is running (local or remote) and clicking on the item will bring up the WSL extension commands.\n\n![WSL extension commands](images/wsl-tutorial/wsl-commands.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/wsl-tutorial.md"
+}

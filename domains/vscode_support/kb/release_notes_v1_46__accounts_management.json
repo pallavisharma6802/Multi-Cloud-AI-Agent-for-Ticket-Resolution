@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_46__accounts_management",
+  "title": "v1_46 / Accounts management",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Accounts management\n\nIn previous releases, we introduced a preview of a new accounts management UI alongside the preview of the Settings Sync feature. Now, this UI will show up by default. Extensions using the new proposed [Authentication Provider API](https://github.com/microsoft/vscode/issues/88309) can surface requests to sign in here, and you can view your accounts and manage extension access. There are currently a limited number of extensions using this API, we will work on increasing adoption once the API is stable.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_46.md"
+}

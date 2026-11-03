@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_faq__overview",
+  "title": "faq",
+  "category": "GIT",
+  "intent": "git",
+  "content": "# Source control FAQ\n\nThis article answers support and compatibility questions about source control in {% data variables.product.prodname_vscode %}. To perform a Git task, use the [task guides](#common-tasks). For errors and unexpected behavior, see [source control troubleshooting](/docs/sourcecontrol/troubleshooting.md). If you're setting up Git for the first time, start with the [quickstart](/docs/sourcecontrol/quickstart.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/faq.md"
+}

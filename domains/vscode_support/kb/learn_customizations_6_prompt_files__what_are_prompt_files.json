@@ -1,0 +1,8 @@
+{
+  "id": "learn_customizations_6_prompt_files__what_are_prompt_files",
+  "title": "6 prompt files / What are prompt files?",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## What are prompt files?\n\n[Prompt files](https://code.visualstudio.com/docs/agent-customization/prompt-files) are reusable Markdown files that define instructions or context for chat sessions.\n\nInstead of rewriting the same prompt repeatedly, you create it once and reference it whenever needed. This allows you to standardize workflows across projects or even across teams.\n\nThey act as reusable building blocks for common tasks you perform during development.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/6-prompt-files.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_102__accessibility",
+  "title": "v1_102 / Accessibility",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Accessibility\n\n### Keep all edits from within the editor\n\nFormerly, to accept all edits, focus would need to be in the Chat view. Now, with focus in the editor, you can run the command **Keep All Edits** (`kb(chatEditor.action.acceptAllEdits)`).\n\n### User action required sound\n\nWe\u2019ve fine-tuned the accessibility signal to indicate when chat requires user action and set the default value to `auto`, so screen reader users will hear this signal. You can configure this behavior with the `setting(accessibility.signals.chatUserActionRequired)` setting.\n\n### Alert when rendering errors occur in chat\n\nPreviously, screen reader users were not alerted when a chat rendering error occurred. Users are now alerted with this information and can also focus it via keyboard.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_102.md"
+}

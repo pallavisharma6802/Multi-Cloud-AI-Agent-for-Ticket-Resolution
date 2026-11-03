@@ -1,0 +1,8 @@
+{
+  "id": "learn_customizations_2_instructions__what_s_next",
+  "title": "2 instructions / What\u2019s next",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## What\u2019s next\n\nCustom instructions give you control over behavior.\n\nIf you want to go further and define reusable capabilities, the next step is exploring agent skills.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/2-instructions.md"
+}

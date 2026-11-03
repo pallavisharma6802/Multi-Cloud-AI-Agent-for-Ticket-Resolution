@@ -1,0 +1,8 @@
+{
+  "id": "docs_getstarted_overview__next_steps",
+  "title": "overview / Next steps",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Next steps\n\n<div class=\"card-grid\">\n    <a class=\"card\" href=\"/docs/languages/overview\">\n        <i class=\"codicon codicon-code\" aria-hidden=\"true\"></i>\n        <div>\n            <p><strong>Add language support</strong></p>\n            <p>Set up editing, running, and debugging for your programming language.</p>\n        </div>\n    </a>\n    <a class=\"card\" href=\"/docs/getstarted/personalize-vscode\">\n        <i class=\"codicon codicon-settings-gear\" aria-hidden=\"true\"></i>\n        <div>\n            <p><strong>Personalize your setup</strong></p>\n            <p>Configure settings, keyboard shortcuts, themes, and display language.</p>\n        </div>\n    </a>\n    <a class=\"card\" href=\"/docs/sourcecontrol/overview\">\n        <i class=\"codicon codicon-source-control\" aria-hidden=\"true\"></i>\n        <div>\n            <p><strong>Use source control</strong></p>\n            <p>Track changes and collaborate with built-in Git support.</p>\n        </div>\n    </a>\n</div>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/getstarted/overview.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_debug_netcore__running_and_debugging_with_ssl_support",
+  "title": "debug netcore / Running and debugging with SSL support",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Running and debugging with SSL support\n\nTo enable SSL (using the HTTPS protocol), you will need to make a few changes to your configuration.\n\n1. In the Dockerfile, add an `EXPOSE` line to the base section to define a separate port for HTTPS / SSL. Keep a separate `EXPOSE` line with a different port for HTTP requests.\n\n   ```docker\n   FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base\n   WORKDIR /app\n   EXPOSE 5000\n   EXPOSE 5001\n   ```\n\n1. In the `.vscode/tasks.json` file, add `configureSsl: true` to the `netCore` section. Also, add an environment variable `ASPNETCORE_URLS` in the `dockerRun` section of the `docker-run: debug` task, with the same port numbers you defined in the Dockerfile:\n\n   ```json\n   dockerRun: {\n       \"env\": {\n          \"ASPNETCORE_URLS\": \"https://+:5001;http://+:5000\"\n      }\n    }\n    netCore: {\n        \"appProject\": \"${workspacefolder}/MyProject.csproj\",\n        \"enableDebugging\": true,\n        \"configureSsl\": true\n    }\n   ```\n\nFor additional customization options, see the documentation on [Tasks](/docs/containers/reference.md) and [Debug containerized apps](/docs/containers/debug-common.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/debug-netcore.md"
+}

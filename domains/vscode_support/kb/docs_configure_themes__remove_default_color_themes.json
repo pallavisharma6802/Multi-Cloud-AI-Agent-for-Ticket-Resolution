@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_themes__remove_default_color_themes",
+  "title": "themes / Remove default Color Themes",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Remove default Color Themes\n\nIf you'd like to remove some of the default themes shipped with {% data variables.product.prodname_vscode_shortname %} from the Color Theme picker, you can disable them from the Extensions view (`kb(workbench.view.extensions)`). Select the **Filter Extensions** button from the top of the Extensions view, select the **Built-in** option, and you see a **THEMES** section that lists the default themes.\n\n![built-in themes](images/themes/built-in-themes.png)\n\nYou can disable a built-in theme extension, as you would any other {% data variables.product.prodname_vscode_shortname %} [extension](/docs/configure/extensions/extension-marketplace.md) with the **Disable** command on the gear context menu.\n\n![disable theme](images/themes/disable-theme.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/themes.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_introvideos_csharp__data_variables_product_prodname_vscode_shortname_c_productivity",
+  "title": "introvideos csharp / {% data variables.product.prodname_vscode_shortname %} C# productivity",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## {% data variables.product.prodname_vscode_shortname %} C# productivity\n\nThis video shows you how to write C# code in {% data variables.product.prodname_vscode_shortname %} and discover cool productivity tools you can use along the way!\n\n[![Watch {% data variables.product.prodname_vscode_shortname %} C# Productivity on YouTube (opens in new tab).](images/introvideos-csharp/youtube-8M-wwFTqsCs.jpg)](https://www.youtube.com/watch?v=8M-wwFTqsCs)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/introvideos-csharp.md"
+}

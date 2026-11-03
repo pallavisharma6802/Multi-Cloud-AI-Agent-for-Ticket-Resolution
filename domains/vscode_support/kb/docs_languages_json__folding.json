@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_json__folding",
+  "title": "json / Folding",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Folding\n\nYou can fold regions of source code using the folding icons on the gutter between line numbers and line start. Folding regions are available for all object and array elements.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/json.md"
+}

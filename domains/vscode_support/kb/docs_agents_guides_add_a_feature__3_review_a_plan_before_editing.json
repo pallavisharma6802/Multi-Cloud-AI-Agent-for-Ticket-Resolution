@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_add_a_feature__3_review_a_plan_before_editing",
+  "title": "add a feature / 3. Review a plan before editing",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## 3. Review a plan before editing\n\nProvide the agreed feature brief and ask for a plan:\n\n```prompt\nPlan the optional title filter described in the feature brief.\nIdentify the implementation and test files to change, existing helpers\nto reuse, and any API documentation that needs updating.\n\nInclude tests for missing, empty, and whitespace-only filters, trimmed\ninput, mixed-case matches, no matches, and filtering before pagination.\nPreserve the existing response shape, ordering, and pagination behavior.\n\nIdentify unresolved decisions and compatibility risks. Do not edit files.\nWait for my approval before implementing.\n```\n\nYou can also use the dedicated [planning workflow](/docs/agents/run/planning.md) to create and refine the plan. An instruction to wait for approval doesn't change the session's tool permissions.\n\nReview whether the plan follows the code you inspected. It should name actual files, account for existing clients, and explain how tests demonstrate the acceptance criteria. Resolve ambiguities before approving it.\n\nFor example, check that pagination tests use enough matching records to span multiple pages. A test with only one matching record might not detect filtering that happens after pagination.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/add-a-feature.md"
+}

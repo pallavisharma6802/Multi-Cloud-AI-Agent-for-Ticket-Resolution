@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_prompt_examples__understanding_and_exploring_your_codebase",
+  "title": "prompt examples / Understanding and exploring your codebase",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Understanding and exploring your codebase\n\nUse the **Ask** agent with `#codebase` to understand how your project works, locate specific functionality, or explore code relationships.\n\nFor a guided investigation with source references and verification steps, see [Explore a codebase with an agent](/docs/agents/guides/explore-a-codebase.md).\n\n```prompt-ask\nExplain how authentication works in #codebase\n```\n\n```prompt-ask\nWhere is the database connection string configured? #codebase\n```\n\n```prompt-ask\nHow do I build this #codebase?\n```\n\n```prompt-ask\nWhich testing framework is used for #calculator.test.js?\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/prompt-examples.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_optimize_usage__plan_and_delegate_before_you_implement",
+  "title": "optimize usage / Plan and delegate before you implement",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Plan and delegate before you implement\n\nJumping straight into code generation can waste credits if the approach is wrong. Separate planning, implementation, and review so that each phase uses an appropriate model:\n\n1. Use the [Plan agent](/docs/agents/run/planning.md) with a capable reasoning model to research the task and create a structured implementation plan.\n1. Review and refine the plan before the agent writes code.\n1. Divide the approved plan into well-scoped implementation tasks.\n1. Delegate those tasks to [custom agents running as subagents](/docs/agents/run/subagents.md#run-a-custom-agent-as-a-subagent). Configure each worker with a cost-effective model, focused instructions, and only the tools it needs.\n1. Have the primary agent evaluate the results and resolve work that requires broader context or stronger reasoning.\n\nThis coordinator-and-worker pattern keeps the primary agent focused on planning and evaluation while lower-cost models perform bounded tasks. Delegation itself uses tokens, so keep small tasks in the primary session when isolation and a cheaper model would not offset the orchestration overhead.\n\nFor more information, see [plan first, then implement](/docs/agents/best-practices.md#plan-first-then-implement).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/optimize-usage.md"
+}

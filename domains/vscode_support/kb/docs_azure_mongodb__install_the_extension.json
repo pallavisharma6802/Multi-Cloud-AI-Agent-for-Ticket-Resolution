@@ -1,0 +1,8 @@
+{
+  "id": "docs_azure_mongodb__install_the_extension",
+  "title": "mongodb / Install the extension",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Install the extension\n\nMongoDB support for {% data variables.product.prodname_vscode_shortname %} is provided by the [DocumentDB for {% data variables.product.prodname_vscode_shortname %}](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-documentdb) extension. To install the DocumentDB for {% data variables.product.prodname_vscode_shortname %} extension, open the Extensions view by pressing `kb(workbench.view.extensions)` and search for 'DocumentDB' to filter the results. Select the **DocumentDB for {% data variables.product.prodname_vscode_shortname %}** extension.\n\n![Select DocumentDB for {% data variables.product.prodname_vscode_shortname %}](images/documentdb/install-documentdb-extension.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/mongodb.md"
+}

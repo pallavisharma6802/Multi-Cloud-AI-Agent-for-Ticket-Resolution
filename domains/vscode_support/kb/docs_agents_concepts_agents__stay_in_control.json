@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_concepts_agents__stay_in_control",
+  "title": "agents / Stay in control",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Stay in control\n\nAn agent can take actions, but you remain responsible for directing the task and deciding which changes to keep. During a session, you can:\n\n* Choose which tools are available and which tool calls require approval.\n* Review an approval request before an action runs.\n* Send another message to add context or redirect the work.\n* Stop the agent if it is taking the wrong approach.\n* Review changed files and validation results before you keep the changes.\n\nLearn more about [trust and safety controls](/docs/agents/concepts/trust-and-safety.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/agents.md"
+}

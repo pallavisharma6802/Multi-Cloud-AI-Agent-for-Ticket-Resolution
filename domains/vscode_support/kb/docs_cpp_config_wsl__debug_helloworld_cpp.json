@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_config_wsl__debug_helloworld_cpp",
+  "title": "config wsl / Debug helloworld.cpp",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Debug helloworld.cpp\n\nTo debug your code,\n\n1. Go back to `helloworld.cpp` so that it is the active file.\n1. Set a breakpoint by clicking on the editor margin or using F9 on the current line.\n   ![screenshot of breakpoint in helloworld.cpp](images/playbutton/cpp-breakpoint.png)\n1. From the drop-down next to the play button, select **Debug C/C++ File**.\n   ![Screenshot of play button drop-down](images/playbutton/debug-cpp-file-play-button.png)\n1. Choose **C/C++: g++ build and debug active file** from the list of detected compilers on your system (you'll only be asked to choose a compiler the first time you run ordebug `helloworld.cpp`).\n   ![C++ debug configuration dropdown](images/wsl/build-and-debug-active-file.png)\n\nThe play button has two modes: **Run C/C++ File** and **Debug C/C++ File**. It will default to the last-used mode. If you see the debug icon in the play button, you can select the play button to debug, instead of selecting the drop-down menu item.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/config-wsl.md"
+}

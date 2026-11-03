@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_custom_layout__notifications",
+  "title": "custom layout / Notifications",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Notifications\n\nBy default, {% data variables.product.prodname_vscode %} shows notification toasts and the Notification Center in the bottom-right corner of the workbench. You can change the position of notifications with the `setting(workbench.notifications.position)` setting (experimental).\n\nThe available positions are:\n\n* `bottom-right` (default) - Notifications appear in the bottom-right corner. The bell icon is in the Status Bar.\n* `bottom-left` - Notifications appear in the bottom-left corner. The bell icon moves to the left side of the Status Bar.\n* `top-right` - Notifications slide in from the top-right corner, similar to OS-level notifications. The bell icon moves from the Status Bar to the title bar.\n\nYou can also change the notification position directly from the Notification Center. Open the Notification Center by selecting the bell icon, and then select the position icon in the header toolbar to choose a different position.\n\nWhen the notification position is set to `top-right`, use the `setting(workbench.notifications.showInTitleBar)` setting to control whether the bell icon is visible in the title bar.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/custom-layout.md"
+}

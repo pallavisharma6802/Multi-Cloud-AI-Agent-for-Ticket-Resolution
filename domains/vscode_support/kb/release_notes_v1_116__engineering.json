@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_116__engineering",
+  "title": "v1_116 / Engineering",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Engineering\n\n### GitHub Copilot is now built-in\n\nGitHub Copilot Chat is now a built-in extension in VS Code. New users no longer need to install any extension to start using Copilot features such as chat, inline suggestions, and agents. Copilot is available out of the box as part of the standard VS Code installation.\n\nThis change is part of our ongoing effort to make VS Code the open source AI code editor. By shipping Copilot as a built-in extension, we reduce friction for new users and ensure that AI-powered features are seamlessly integrated from the first launch.\n\nExisting users are not affected by this change. If you already have the Copilot extension installed, it continues to work as before.\n\nAs before, if you prefer not to use AI features, you can disable them with the `setting(chat.disableAIFeatures)` setting.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_116.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_terminal_profiles__profile_specific_keyboard_shortcuts",
+  "title": "profiles / Profile-specific keyboard shortcuts",
+  "category": "TERMINAL",
+  "intent": "terminal",
+  "content": "## Profile-specific keyboard shortcuts\n\nLaunching a terminal with a specific profile via a [dedicated keyboard shortcut](/docs/configure/keybindings.md#advanced-customization) can be accomplished with the `workbench.action.terminal.newWithProfile` command. This command takes a profile name and optional location as arguments. For example, to bind `kbstyle(Ctrl+Shift+T)` to open a terminal with the `zsh` profile:\n\n```json\n{\n  \"key\": \"ctrl+shift+t\",\n  \"command\": \"workbench.action.terminal.newWithProfile\",\n  \"args\": {\n    \"profileName\": \"zsh\",\n    \"location\": \"editor\"\n  }\n}\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/profiles.md"
+}

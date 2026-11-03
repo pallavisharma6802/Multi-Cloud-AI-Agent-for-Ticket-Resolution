@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_cpp_debug__expression_evaluation",
+  "title": "cpp debug / Expression evaluation",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Expression evaluation\n\n{% data variables.product.prodname_vscode_shortname %} supports expression evaluation in several contexts:\n\n* You can type an expression into the **Watch** section of the **Run** view and it will be evaluated each time a breakpoint is hit.\n* You can type an expression into the **Debug Console** and it will be evaluated only once.\n* You can evaluate any expression that appears in your code while you're stopped at a breakpoint.\n\nExpressions in the **Watch** section take effect in the application being debugged; an expression that modifies the value of a variable will modify that variable for the duration of the program.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/cpp-debug.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_terminal_getting_started__overview",
+  "title": "getting started",
+  "category": "TERMINAL",
+  "intent": "terminal",
+  "content": "# Getting started with the terminal\n\n{% data variables.product.prodname_vscode %} includes a fully featured integrated terminal. You can use it to run commands like `echo`, `ls`, and `git`, just like a standalone terminal. The terminal in {% data variables.product.prodname_vscode_shortname %} also provides integration with the editor to support features such as links to workspace files and error detection.\n\nThe terminal can use various shells installed on your machine. A shell is a program that interprets and executes the commands by interacting with the operating system. Examples of shells include Bash, Zsh, and PowerShell.\n\nThis tutorial guides you through the basics of using the terminal in {% data variables.product.prodname_vscode %}.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/getting-started.md"
+}

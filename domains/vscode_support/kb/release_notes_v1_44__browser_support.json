@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_44__browser_support",
+  "title": "v1_44 / Browser support",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Browser support\n\n### Remote indicator\n\nWhen using VS Code in a browser, there is now a remote indicator. This lets you know the remote environment you are connected to and allows extensions to add additional commands associated with the remote. With this change, the **Open in Desktop** link was removed from the Status bar and will move into the remote picker.\n\n**Note:** VS Code currently does not support connecting to a different remote - such as SSH, a container, or WSL - from the browser.\n\n![Web remote indicator](images/1_44/web-remote-indicator.png)\n\n### Navigational links\n\nA new menu location lets extensions running in the browser contribute links to the hamburger menu in the upper left.\n\n![Web navigational links](images/1_44/web-navigational-links.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_44.md"
+}

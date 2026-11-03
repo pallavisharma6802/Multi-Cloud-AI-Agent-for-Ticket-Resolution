@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_overview__azure_cli_integration",
+  "title": "overview / Azure CLI integration",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Azure CLI integration\n\nYou can start Azure CLI (command-line interface) in a standalone, Linux-based container with **Container Images: Run Azure CLI** command. This gives you access to the full Azure CLI command set in an isolated environment. For more information on available commands, see [Get started with Azure CLI](https://learn.microsoft.com/cli/azure/get-started-with-azure-cli).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/overview.md"
+}

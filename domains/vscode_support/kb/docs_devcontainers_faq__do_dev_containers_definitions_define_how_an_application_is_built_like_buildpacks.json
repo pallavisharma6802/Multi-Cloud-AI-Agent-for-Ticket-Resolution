@@ -1,0 +1,8 @@
+{
+  "id": "docs_devcontainers_faq__do_dev_containers_definitions_define_how_an_application_is_built_like_buildpacks",
+  "title": "faq / Do \"dev containers definitions\" define how an application is built? Like Buildpacks?",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Do \"dev containers definitions\" define how an application is built? Like Buildpacks?\n\nNo. The [Buildpacks](https://buildpacks.io/) concept focuses on taking source code and generating deployable container images through a series of defined steps. A dev container is an environment in which you can develop your application before you are ready to build. They are therefore complementary concepts.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/faq.md"
+}

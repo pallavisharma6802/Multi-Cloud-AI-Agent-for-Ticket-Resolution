@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_copilot_tools__add_evaluation_tests",
+  "title": "copilot tools / Add evaluation tests",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Add evaluation tests\n\nAfter the agent works interactively, add repeatable tests to check whether changes improve the result or introduce regressions. **Get Evaluation Code Generation Best Practices** provides Python evaluation guidance, with different paths for local tests and Foundry evaluation.\n\nContinue the same chat conversation with a concrete evaluation goal:\n\n```prompt\nAdd local Python evaluation tests for this summarization agent using Foundry\nToolkit evaluation guidance. Check that each result contains three bullet\npoints and preserves the important facts in my sample support notes.\nExplain which checks are deterministic and which require a judge model.\nShow the dataset, test code, and run instructions before executing tests.\n```\n\nReview the dataset, expected results, evaluator selection, and any judge-model requirements. Then follow [Run agent evaluations as tests](/docs/intelligentapps/evaluation.md#run-agent-evaluations-as-tests) to execute the suite and inspect results. For service-side runs, use [Run and review evaluations in Foundry](/docs/intelligentapps/evaluation.md#run-and-review-evaluations-in-foundry).\n\nThe guidance tool does not itself run your dataset. Application execution, scoring, and storing results are separate actions with their own runtime, model access, and cost requirements.\n\n<a name=\"tracing-code-gen-tool\"></a>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/copilot-tools.md"
+}

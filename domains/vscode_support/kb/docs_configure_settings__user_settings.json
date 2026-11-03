@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_settings__user_settings",
+  "title": "settings / User settings",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## User settings\n\nUser settings are your personal settings for customizing {% data variables.product.prodname_vscode_shortname %}. These settings apply globally to any instance of {% data variables.product.prodname_vscode_shortname %} you open. For example, if you set the editor font size to 14 in your user settings, it will be 14 in all instances of {% data variables.product.prodname_vscode_shortname %} on your computer.\n\nYou can access your user settings in a few ways:\n\n* Select the **Preferences: Open User Settings** command in the Command Palette (`kb(workbench.action.showCommands)`)\n* Select the **User** tab in the [Settings editor](#settings-editor) (`kb(workbench.action.openSettings)`)\n* Select the **Preferences: Open User Settings (JSON)** command in the Command Palette (`kb(workbench.action.showCommands)`)\n\n![Settings editor with User tab highlighted](images/settings/settings-editor-user-tab.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/settings.md"
+}

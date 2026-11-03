@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundations_reviewing_and_controlling_agent_changes__learn_more",
+  "title": "reviewing and controlling agent changes / Learn more",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Learn more\n\n* [Reviewing AI-generated code edits in VS Code](https://code.visualstudio.com/docs/agents/run/review-code-edits)\n* [Checkpoints and editing requests in VS Code](https://code.visualstudio.com/docs/agents/run/review-code-edits#_edit-requests-and-restore-checkpoints)\n* [Create and manage chat sessions](https://code.visualstudio.com/docs/agents/run/sessions/manage-sessions)\n* [Chat overview in VS Code](https://code.visualstudio.com/docs/chat/chat-overview)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/reviewing-and-controlling-agent-changes.md"
+}

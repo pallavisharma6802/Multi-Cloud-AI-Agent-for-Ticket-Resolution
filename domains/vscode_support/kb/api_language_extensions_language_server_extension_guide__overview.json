@@ -1,0 +1,8 @@
+{
+  "id": "api_language_extensions_language_server_extension_guide__overview",
+  "title": "language server extension guide",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "# Language Server Extension Guide\n\nAs you have seen in the [Programmatic Language Features](/api/language-extensions/programmatic-language-features) topic, it's possible to implement Language Features by directly using `languages.*` API. Language Server Extension, however, provides an alternative way of implementing such language support.\n\nThis topic:\n\n- Explains the benefits of Language Server Extension.\n- Walks you through building a Language Server using the [`Microsoft/vscode-languageserver-node`](https://github.com/microsoft/vscode-languageserver-node) library. You can also jump directly to the code in [lsp-sample](https://github.com/microsoft/vscode-extension-samples/tree/main/lsp-sample).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/language-extensions/language-server-extension-guide.md"
+}

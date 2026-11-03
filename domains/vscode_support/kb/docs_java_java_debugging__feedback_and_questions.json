@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_debugging__feedback_and_questions",
+  "title": "java debugging / Feedback and questions",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Feedback and questions\n\nYou can find the full list of issues at the [vscode-java-debug](https://github.com/microsoft/vscode-java-debug/issues) repository. You can submit a [bug or feature suggestion](https://github.com/microsoft/vscode-java-debug/issues/new) and participate in the community driven [vscode-java-debug Gitter channel](https://gitter.im/Microsoft/vscode-java-debug).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-debugging.md"
+}

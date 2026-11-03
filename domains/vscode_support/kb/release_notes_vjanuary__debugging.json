@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vjanuary__debugging",
+  "title": "vJanuary / Debugging",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debugging\n\n### Rich Object Hover\n\nWe are now using a tree in the debug hover to allow better rich object inspection:\n\n![debug hover](images/January/debug-hover.png)\n\n### Conditional Breakpoints\n\nWe now support setting conditional breakpoints that are hit only when the specified condition is `true`. Please note, the  underlying debug target, such as Node.js, must support conditional breakpoints for this feature to work.\n\n![conditional breakpoints](images/January/conditional-breakpoints.png)\n\n### Changed Variable Indication\n\nWe now indicate in the Debug and Watch views which variables have changed values between step events.\n\n![variables changed](images/January/variables-change.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vJanuary.md"
+}

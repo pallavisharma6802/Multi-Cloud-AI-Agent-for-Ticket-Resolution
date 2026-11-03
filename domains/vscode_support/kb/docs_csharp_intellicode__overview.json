@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_intellicode__overview",
+  "title": "intellicode",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# IntelliCode for C# Dev Kit\n\nFor users of the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension in {% data variables.product.prodname_vscode %}, the [IntelliCode for C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.vscodeintellicode-csharp) extension is available to provide IntelliCode support. Predictions of up to a whole-line of code, along with ranking methods and properties in the IntelliSense list are available for C# Dev Kit users.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/intellicode.md"
+}

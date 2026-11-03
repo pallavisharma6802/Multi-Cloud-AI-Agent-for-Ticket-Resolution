@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_javascript__linters",
+  "title": "javascript / Linters",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Linters\n\n[Linters](https://en.wikipedia.org/wiki/Lint_%28software%29) provides warnings for suspicious looking code. While {% data variables.product.prodname_vscode_shortname %} does not include a built-in JavaScript linter, many JavaScript linter [extensions](/docs/configure/extensions/extension-marketplace.md) are available in the marketplace.\n\n<div class=\"marketplace-extensions-javascript-linters-curated\"></div>\n\n> [!TIP]\n> This list is dynamically queried from the [{% data variables.product.prodname_vs_marketplace %}](https://marketplace.visualstudio.com). Read the description and reviews to decide if the extension is right for you.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/javascript.md"
+}

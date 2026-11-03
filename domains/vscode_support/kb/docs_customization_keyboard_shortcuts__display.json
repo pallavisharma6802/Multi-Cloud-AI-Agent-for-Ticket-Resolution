@@ -1,0 +1,8 @@
+{
+  "id": "docs_customization_keyboard_shortcuts__display",
+  "title": "keyboard shortcuts / Display",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Display\n\nKey|Command\n---|---\n`kb(workbench.action.toggleFullScreen)`|Toggle full screen\n`kb(workbench.action.toggleEditorGroupLayout)`|Toggle editor layout\n`kb(workbench.action.zoomIn)`|Zoom in\n`kb(workbench.action.zoomOut)`|Zoom out\n`kb(workbench.action.toggleSidebarVisibility)`|Toggle Sidebar visibility\n`kb(workbench.view.explorer)`|Show Explorer / Toggle focus\n`kb(workbench.view.search)`|Show Search\n`kb(workbench.view.scm)`|Show Source Control\n`kb(workbench.view.debug)`|Show Run\n`kb(workbench.view.extensions)`|Show Extensions\n`kb(workbench.action.replaceInfiles)`|Replace in files\n`kb(workbench.action.search.toggleQueryDetails)`|Toggle Search details\n`kb(workbench.action.terminal.openNativeConsole)`|Open new command prompt/terminal\n`kb(workbench.action.output.toggleOutput)`|Show Output panel\n`kb(markdown.togglePreview)`|Toggle Markdown preview\n`kb(markdown.showPreviewToSide)`|Open Markdown preview to the side",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/customization/keyboard-shortcuts.md"
+}

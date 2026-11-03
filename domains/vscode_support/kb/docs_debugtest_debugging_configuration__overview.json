@@ -1,0 +1,8 @@
+{
+  "id": "docs_debugtest_debugging_configuration__overview",
+  "title": "debugging configuration",
+  "category": "DEBUGGING",
+  "intent": "debugging",
+  "content": "# Configure debugging in {% data variables.product.prodname_vscode %}\n\nCreate a debug configuration when your application needs more setup than running the active file. A configuration can specify the application entry point, arguments, environment variables, startup tasks, or a process to attach to.\n\nThis article shows how to create, run, customize, and troubleshoot reusable debug configurations. For an introduction to breakpoints, stepping, and data inspection, see [Debug code in {% data variables.product.prodname_vscode %}](/docs/debugtest/debugging.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/debugging-configuration.md"
+}

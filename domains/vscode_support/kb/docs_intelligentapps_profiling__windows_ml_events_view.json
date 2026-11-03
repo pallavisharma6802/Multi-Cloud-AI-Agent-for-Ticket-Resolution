@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_profiling__windows_ml_events_view",
+  "title": "profiling / Windows ML Events view",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Windows ML Events view\n\nIn the main window, the plot on the bottom shows Windows ML events. Its timeline is synchronized with the Resource Usage view, so you can easily determine how resources are used when certain events occur.\n\n> [!IMPORTANT]\n> To receive Windows ML events, the tool needs to be run in admin mode. If {% data variables.product.prodname_vscode_shortname %} is not started in admin mode, a notification shows up and guides you to restart {% data variables.product.prodname_vscode_shortname %}. You need to close all other {% data variables.product.prodname_vscode_shortname %} instances to make the restart in admin mode work.\n> ![Screenshot that shows a notification to restart {% data variables.product.prodname_vscode_shortname %} in admin mode](./images/profiling/events-view-admin.png)\n\nCurrently, only the following event types are shown:\n\n- Ensure ExecutionProvider Ready: when Windows ML is preparing the EP\n- Session Creation: when the session is created\n- Inference: when the model runs inference on the session\n\n![Screenshot that shows the Windows ML events view](./images/profiling/events-view.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/profiling.md"
+}

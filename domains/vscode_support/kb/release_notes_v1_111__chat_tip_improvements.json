@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_111__chat_tip_improvements",
+  "title": "v1_111 / Chat tip improvements",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Chat tip improvements\n\nThe chat experience evolves rapidly and we want to make sure you are aware of new features and improvements. We redesigned the chat tips experience to better surface relevant tips at the right time in your chat journey.\n\nChat tips now guide you through a structured onboarding journey. Foundational tips, such as using the Plan agent and creating a custom agent are shown first. After you complete or dismiss the foundational tips, quality-of-life tips like experimental settings or generating Mermaid diagrams are shown in random order.\n\n![Screenshot of the redesigned chat tips experience, showing a tip for using the init command.](images/1_111/chat-tip-init-command.png)\n\nAdditional chat tip improvements include:\n\n* Tips are only displayed when a single chat session is visible, such as in the Welcome view or Chat view. If multiple chat editors are open, tips are hidden to reduce clutter.\n* Tips include keyboard shortcuts to help you discover relevant key bindings.\n* Tips are hidden after you act on or dismiss them for the current session.\n* We added tips for the `/init` and `/fork` slash commands. The `/init` tip helps you discover the command for initializing project configuration, and the `/fork` tip introduces manual conversation forking, which lets you branch a conversation to explore different approaches.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_111.md"
+}

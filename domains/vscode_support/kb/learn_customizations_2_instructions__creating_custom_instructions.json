@@ -1,0 +1,8 @@
+{
+  "id": "learn_customizations_2_instructions__creating_custom_instructions",
+  "title": "2 instructions / Creating custom instructions",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Creating custom instructions\n\nYou can create custom instructions directly from the Agent Customizations view.\n\n![Screenshot of the Agent Customizations view showing the option to generate custom instructions](../images/customizations/ep-2-5-generate-cust-instruct.png)\n\nThere are two approaches:\n\n### Manual creation\n\nYou define:\n\n- the purpose\n- the rules\n- the expected behavior\n\nThis gives you full control but requires more effort.\n\n### AI-assisted creation\n\n![Screenshot of the Copilot Chat view showing the /create-instructions slash command](../images/customizations/ep-2-6-slash-cust-instruct.png)\n\nA faster approach is to let Copilot generate the instruction file.\n\nFor example, you can ask it to:\n\n- **/create-instructions** to enforce accessibility standards\n- **/create-instructions** to apply specific design rules\n- **/create-instructions** to confirm when rules are used\n\nThe AI creates the instruction file for you, which you can then review and refine.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/2-instructions.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_81__dev_containers",
+  "title": "v1_81 / Dev Containers",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Dev Containers\n\n### Simplified @devcontainers/cli installation\n\nYou no longer need a build toolchain to install the [@devcontainers/cli](https://github.com/devcontainers/cli) package. A simple `npm install -g @devcontainers/cli` will do the trick. The [Dev Container CLI](https://code.visualstudio.com/docs/devcontainers/devcontainer-cli) lets you to build and manage development containers, and is a companion to the [Development Containers Specification](https://containers.dev).\n\n### Record Feature dependencies in lockfile\n\n[Feature](https://code.visualstudio.com/docs/devcontainers/containers#_dev-container-features) dependencies are now also recorded in the `devcontainer-lock.json`. You can enable the use of lockfiles with the `dev.containers.experimentalLockfile` user setting:\n\n![Lockfile user setting](images/v1_81/lockfile-setting.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_81.md"
+}

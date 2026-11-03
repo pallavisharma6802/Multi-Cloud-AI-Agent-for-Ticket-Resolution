@@ -1,0 +1,8 @@
+{
+  "id": "learn_agents_4_using_third_party_agents_in_vs_code__start_a_claude_session",
+  "title": "4 using third party agents in vs code / Start a Claude session",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Start a Claude session\n\nTry Claude with a contained task first, such as asking it to inspect a small feature and propose a plan.\n\n1. Open the Chat view.\n\n1. Select **New Chat**.\n\n1. For a local session, choose **Claude** from the **Session Type** dropdown.\n\n1. For a cloud session, choose **Cloud** from the **Session Type** dropdown, then choose **Claude** from the **Partner Agent** dropdown.\n\n1. Send a prompt that defines the desired scope.\n\n```prompt\nInspect the current branch and propose a plan for one small refactor. Do not edit files yet.\n```\n\n![Screenshot showing session type dropdown with Claude agent option selected.](../images/agents/claude-agent-new-chat-1.121.png)\n\nStarting with a planning prompt gives you a low-risk way to see how the provider agent approaches the repository before it changes files.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/4-using-third-party-agents-in-vs-code.md"
+}

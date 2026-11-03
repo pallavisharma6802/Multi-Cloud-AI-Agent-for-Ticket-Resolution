@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v0_7_0__javascript",
+  "title": "v0_7_0 / JavaScript",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## JavaScript\nIn our [JavaScript documentation](/docs/languages/javascript.md) we've added topics covering:\n* JavaScript projects with `jsconfig.json`\n* `ES6` support\n* Configuring linters such as `JSHint` and `ESLint`\n* Rich Editing Support\n* IntelliSense\n\nWe also updated the quick fix code action. *Add /// reference for typing file* was renamed because `///` references are no longer needed to get IntelliSense from `.d.ts` files. The action is now called *Download type definition for some typing file* and it downloads the `.d.ts` file only.\n\nWe added the ability to exclude files and folders from a project via the addition of an `exclude` property in the `jsconfig.json`. This is useful when you want to exclude folders with generated JavaScript code.\n\n```json\n{\n\t\"compilerOptions\": {\n\t\t\"target\": \"ES6\"\n\t},\n\t\"exclude\": [\n\t\t\"node_modules\"\n\t]\n}\n```\n\nFinally, one key bug we fixed in this update was unlocking the ability to work with Ember.js/ES6/AMD projects - previously VS Code would crash with these large projects.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_7_0.md"
+}

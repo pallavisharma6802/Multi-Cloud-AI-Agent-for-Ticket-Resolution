@@ -1,0 +1,8 @@
+{
+  "id": "docs_introvideos_extend__video_outline",
+  "title": "extend / Video outline",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Video outline\n\n* Find extensions to install using the Extensions view.\n* Install an extension from the {% data variables.product.prodname_vscode_shortname %} Extension Marketplace.\n* See what features are added via the **Features Contributions** tab or Command Palette (`kb(workbench.action.showCommands)`).\n* See recommendations for other extensions.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/introvideos/extend.md"
+}

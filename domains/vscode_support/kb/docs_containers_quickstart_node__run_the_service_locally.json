@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_quickstart_node__run_the_service_locally",
+  "title": "quickstart node / Run the service locally",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Run the service locally\n\n1. Open a terminal (`kb(workbench.action.terminal.toggleTerminal)`).\n1. Enter `npm run start` to start the application:\n\n   ```\n   > express-app@0.0.0 start /Users/user/code/scratch/express-app\n   > node ./bin/www\n   ```\n\n1. Open the web browser and navigate to [http://localhost:3000](http://localhost:3000). You should see a page similar to the following:\n\n   ![Application page in browser](images/quickstarts/node-run-browser.png)\n\n1. When done testing, type `kbstyle(Ctrl+C)` in the terminal.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/quickstart-node.md"
+}

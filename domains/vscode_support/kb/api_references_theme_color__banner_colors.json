@@ -1,0 +1,8 @@
+{
+  "id": "api_references_theme_color__banner_colors",
+  "title": "theme color / Banner colors",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Banner colors\n\nThe banner appears below the title bar and spans the entire width of the workbench when visible.\n\n- `banner.background`: Banner background color.\n- `banner.foreground`: Banner foreground color.\n- `banner.iconForeground`: Color for the icon in front of the banner text.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+}

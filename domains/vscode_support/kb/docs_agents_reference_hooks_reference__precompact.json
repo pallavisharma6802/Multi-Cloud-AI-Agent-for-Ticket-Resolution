@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_hooks_reference__precompact",
+  "title": "hooks reference / `PreCompact`",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## `PreCompact`\n\nThe `PreCompact` hook fires before the harness compacts conversation context.\n\n### Input\n\nIn addition to the [common input](#common-input), the hook receives:\n\n```json\n{\n  \"trigger\": \"auto\"\n}\n```\n\n| Field | Type | Description |\n|-------|------|-------------|\n| `trigger` | string | How compaction started. The value is `\"auto\"` when the conversation exceeds the prompt budget. |\n\nThe hook supports the [common output](#common-output).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/hooks-reference.md"
+}

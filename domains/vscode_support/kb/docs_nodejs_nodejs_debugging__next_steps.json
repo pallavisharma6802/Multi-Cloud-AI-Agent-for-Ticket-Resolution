@@ -1,0 +1,8 @@
+{
+  "id": "docs_nodejs_nodejs_debugging__next_steps",
+  "title": "nodejs debugging / Next steps",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Next steps\n\nIn case you didn't already read the Node.js section, take a look at:\n\n* [Node.js](/docs/nodejs/nodejs-tutorial.md) - End to end Node scenario with a sample application\n\nTo see a tutorial on the basics of debugging in {% data variables.product.prodname_vscode_shortname %}, check out this video:\n\n* [Getting started with debugging in {% data variables.product.prodname_vscode_shortname %}](https://www.youtube.com/watch?v=3HiLLByBWkg).\n\nTo learn about {% data variables.product.prodname_vscode_shortname %}'s task running support, go to:\n\n* [Tasks](/docs/debugtest/tasks.md) - Running tasks with Gulp, Grunt, and Jake.  Showing Errors and Warnings\n\nTo write your own debugger extension, visit:\n\n* [Debugger Extension](/api/extension-guides/debugger-extension.md) - Steps to create a {% data variables.product.prodname_vscode_shortname %} debug extension starting from a mock sample",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/nodejs-debugging.md"
+}

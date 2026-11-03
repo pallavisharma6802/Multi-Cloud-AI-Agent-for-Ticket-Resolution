@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_tools__built_in_tools_and_context_reference",
+  "title": "tools / Built-in tools and context reference",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Built-in tools and context reference\n\nFor individual names, descriptions, and availability, see the [Tools and context reference](/docs/agents/reference/tools-reference.md). The reference groups tools by purpose and lists context items separately.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/tools.md"
+}

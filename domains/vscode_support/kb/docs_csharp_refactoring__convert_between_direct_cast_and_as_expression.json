@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_refactoring__convert_between_direct_cast_and_as_expression",
+  "title": "refactoring / Convert between direct cast and 'as' expression",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Convert between direct cast and 'as' expression\n\n**What:** Convert a variable between a regular cast and a try cast using the `as` keyword.\n\n**When:** When you expect the cast to fail under certain scenarios (`as`) or if you never expect the cast to fail (direct cast).\n\n**How-to:**\n\n1. Place your cursor on the variable.\n2. Press `kb(editor.action.quickFix)` to trigger the **Quick Actions and Refactorings** menu.\n3. Select from the following two options:\n\nSelect **Change to cast**.\n\n![Change to cast example](images/refactoring/change-to-cast.png)\n\nSelect **Change to `as` expression.**\n\n![Change to `as` expression example](images/refactoring/change-to-as-expression.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+}

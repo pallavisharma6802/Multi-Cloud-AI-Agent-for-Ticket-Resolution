@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_refactoring__convert_between_if_and_switch_statements",
+  "title": "refactoring / Convert between if and switch statements",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Convert between if and switch statements\n\n**What:** Convert an `if` statement to a [switch statement](https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/switch) or to the C# 8.0 [switch expression](https://learn.microsoft.com/dotnet/csharp/whats-new/csharp-8#switch-expressions).\n\n**When:** You want to convert an `if` statement to a `switch` statement or a `switch` expression and vice versa.\n\n**Why:** If you are using an `if` statement, this refactoring enables an easy transition to switch statements or switch expressions.\n\n**How-to:**\n\n1. Place your cursor in the `if` keyword.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select from the following options:\n\nSelect **Convert to `switch` statement**.\n\n![Convert to `switch` statement example](images/refactoring/convert-to-switch-statement.png)\n\nSelect **Convert to `switch` expression**.\n\n![Convert to `switch` expression example](images/refactoring/convert-to-switch-expression.png)\n\nSelect **Convert to `if` statement**.\n\n![Convert to `if` statement example](images/refactoring/convert-to-if-statement.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+}

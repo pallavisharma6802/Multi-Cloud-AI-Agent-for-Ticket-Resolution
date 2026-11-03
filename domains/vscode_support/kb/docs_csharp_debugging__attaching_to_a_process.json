@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_debugging__attaching_to_a_process",
+  "title": "debugging / Attaching to a process",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Attaching to a process\n\nYou can attach to a C# process using with the Command Palette `kb(workbench.action.showCommands)` and running the **Debug: Attach to a .NET 5+ or .NET Core process** command.\n\n![Attach to a C# process](images/debugging/attach-to-process.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/debugging.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_language_extensions_programmatic_language_features__show_hovers",
+  "title": "programmatic language features / Show Hovers",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Show Hovers\n\nHovers show information about the symbol/object that's below the mouse cursor. This is usually the type of the symbol and a description.\n\n![Showing details about a workspace and a method when hovering over them](images/language-support/hovers.gif)\n\n#### Language Server Protocol\n\nIn the response to the `initialize` method, your language server needs to announce that it provides hovers.\n\n```json\n{\n    ...\n    \"capabilities\" : {\n        \"hoverProvider\" : \"true\",\n        ...\n    }\n}\n```\n\nIn addition, your language server needs to respond to the `textDocument/hover` request.\n\n#### Direct Implementation\n\n```typescript\nclass GoHoverProvider implements HoverProvider {\n    public provideHover(\n        document: TextDocument, position: Position, token: CancellationToken):\n        Thenable<Hover> {\n    ...\n    }\n}\n\nexport function activate(ctx: vscode.ExtensionContext): void {\n    ...\n    ctx.subscriptions.push(\n        vscode.languages.registerHoverProvider(\n            GO_MODE, new GoHoverProvider()));\n    ...\n}\n```\n\n> **Basic**\n>\n> Show type information and include documentation if available.\n\n> **Advanced**\n>\n> Colorize method signatures in the same style you colorize the code.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/language-extensions/programmatic-language-features.md"
+}

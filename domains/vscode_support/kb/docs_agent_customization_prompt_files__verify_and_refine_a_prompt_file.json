@@ -1,0 +1,8 @@
+{
+  "id": "docs_agent_customization_prompt_files__verify_and_refine_a_prompt_file",
+  "title": "prompt files / Verify and refine a prompt file",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Verify and refine a prompt file\n\nTest discovery and effectiveness separately:\n\n1. Start a fresh **Local** chat in the workspace where you created the prompt.\n1. Type `/` and confirm that `/review-api-security` appears. If it does not, follow [Troubleshoot prompt files](#troubleshoot-prompt-files).\n1. Run `/review-api-security` followed by the path to a small API file or folder.\n1. Confirm that the result cites files, groups findings by priority, and distinguishes observed controls from missing or uncertain controls.\n1. Open the prompt file, adjust instructions that produced an unclear or unsupported result, and use the editor play button to rerun the same request in a new chat.\n\nDiscovery only confirms that the Local harness found the file. Review the result and tool activity to determine whether the prompt is effective for your task.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/prompt-files.md"
+}

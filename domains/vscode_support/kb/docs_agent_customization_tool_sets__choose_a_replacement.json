@@ -1,0 +1,8 @@
+{
+  "id": "docs_agent_customization_tool_sets__choose_a_replacement",
+  "title": "tool sets / Choose a replacement",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Choose a replacement\n\n* For a recurring role, specify supported tools directly in a [custom agent](/docs/agent-customization/custom-agents.md).\n* For personal tool availability, use the [Tools tab in the Agent Customizations editor](/docs/agents/run/tools.md#manage-available-tools).\n* To distribute a workflow with external tools, package skills and MCP servers in an [agent plugin](/docs/agent-customization/agent-plugins.md).\n\nThe tool groups displayed by the Copilot harness and its supported built-in tool aliases are not user-defined tool-set files. A plugin or skill does not recreate a named tool-set alias.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/tool-sets.md"
+}

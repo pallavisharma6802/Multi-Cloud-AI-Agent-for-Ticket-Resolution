@@ -1,0 +1,8 @@
+{
+  "id": "api_references_contribution_points__contributes_producticonthemes",
+  "title": "contribution points / contributes.productIconThemes",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## contributes.productIconThemes\n\nContribute a product icon theme to VS Code. Product icons are all icons used in VS Code except file icons and icons contributed from extensions.\n\nYou must specify an id (used in the settings), a label and the path to the icon definition file.\n\n### product icon theme example\n\n```json\n{\n  \"contributes\": {\n    \"productIconThemes\": [\n      {\n        \"id\": \"elegant\",\n        \"label\": \"Elegant Icon Theme\",\n        \"path\": \"./producticons/elegant-product-icon-theme.json\"\n      }\n    ]\n  }\n}\n```\n\n![product icon theme extension point example](images/contribution-points/product-icon-themes.png)\n\nSee the [Product Icon Theme Guide](/api/extension-guides/product-icon-theme) on how to create a Product Icon Theme.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/contribution-points.md"
+}

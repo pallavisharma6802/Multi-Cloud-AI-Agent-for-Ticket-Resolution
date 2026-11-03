@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_2_exploring_models__prerequisites",
+  "title": "2 exploring models / Prerequisites",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Prerequisites\n\nBefore we compare anything, let's make sure the environment is ready. This chapter depends on local tooling and cloud availability, so a quick setup check now saves annoying failures later.\n\nIf these prerequisites are in place, every step in this chapter should map cleanly to what you see in the UI.\n\n- **Visual Studio Code**: Installed and updated so extension workflows and command surfaces are available.\n- **Foundry Toolkit extension**: Installed and visible in the activity bar.\n- **Azure subscription and region**: Selected for deployment checks and quota-aware filtering.\n- **Connected Foundry project**: Available in Foundry Toolkit under your resources.\n\nWith setup confirmed, let's define exactly what this chapter teaches and how it maps to day-to-day model work.\n\nYou are about to replace guesswork with a repeatable loop.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/2-exploring-models.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_devcontainers_containers__debugging_in_a_container",
+  "title": "containers / Debugging in a container",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Debugging in a container\n\nOnce you've opened a folder in a container, you can use {% data variables.product.prodname_vscode_shortname %}'s debugger in the same way you would when running the application locally. For example, if you select a launch configuration in `launch.json` and start debugging (`kb(workbench.action.debug.start)`), the application will start on the remote host and attach the debugger to it.\n\nSee the [debugging](/docs/debugtest/debugging.md) documentation for details on configuring {% data variables.product.prodname_vscode_shortname %}'s debugging features in `.vscode/launch.json`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/containers.md"
+}

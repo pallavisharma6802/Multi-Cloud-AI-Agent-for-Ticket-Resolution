@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_dotnet__create_an_f_hello_world_app",
+  "title": "dotnet / Create an F# \"Hello World\" app",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Create an F# \"Hello World\" app\n\n1. Initialize an F# project:\n\n   * Open a terminal/command prompt and navigate to the folder in which you'd like to create the app.\n   * Enter the following command in the command shell:\n\n   ```bat\n   dotnet new console -lang \"F#\"\n   ```\n\n2. Once it completes, open the project in {% data variables.product.prodname_vscode %}:\n\n   ```bat\n   code .\n   ```\n\n3. Run the app by entering the following command in the command shell:\n\n   ```bat\n    dotnet run\n   ```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/dotnet.md"
+}

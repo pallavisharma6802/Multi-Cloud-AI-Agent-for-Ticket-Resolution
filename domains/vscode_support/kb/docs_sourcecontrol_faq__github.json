@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_faq__github",
+  "title": "faq / GitHub",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## GitHub\n\n### Is GitHub Enterprise Server supported?\n\nYes. {% data variables.product.prodname_vscode_shortname %} supports authentication with GitHub Enterprise Server. Open a local checkout of a GitHub Enterprise Server repository and follow the sign-in prompt.\n\nThe [GitHub Pull Requests and Issues extension](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) also supports GitHub Enterprise Server. Configure the extension for your server before you manage pull requests or issues.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/faq.md"
+}

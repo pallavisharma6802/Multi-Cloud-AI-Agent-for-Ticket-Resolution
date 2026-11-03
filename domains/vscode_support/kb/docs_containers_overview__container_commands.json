@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_overview__container_commands",
+  "title": "overview / Container commands",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Container commands\n\nMany of the most common container-related commands are built right into the Command Palette:\n\n![Container commands](images/overview/command-palette.png)\n\nYou can run commands to manage [images](https://docs.docker.com/engine/reference/commandline/image/), [networks](https://docs.docker.com/engine/reference/commandline/network/), [volumes](https://docs.docker.com/engine/reference/commandline/volume/), [image registries](https://docs.docker.com/engine/reference/commandline/push/), and [Docker Compose](https://docs.docker.com/compose/reference/overview/). In addition, the **Containers: Prune System** command will remove stopped containers, dangling images, and unused networks and volumes.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/overview.md"
+}

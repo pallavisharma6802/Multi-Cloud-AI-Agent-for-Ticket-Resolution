@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_accessibility_accessibility__dim_unfocused_editors_and_terminals",
+  "title": "accessibility / Dim unfocused editors and terminals",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Dim unfocused editors and terminals\n\nUnfocused views can be dimmed to make it clearer where typed input will go. This is especially useful when working with multiple editor groups or terminals. Turn on this feature by setting `\"accessibility.dimUnfocused.enabled\": true`. You can control the dimness level with `setting(accessibility.dimUnfocused.opacity)`, which takes the opacity fraction from 0.2 to 1 (default 0.75).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/accessibility/accessibility.md"
+}

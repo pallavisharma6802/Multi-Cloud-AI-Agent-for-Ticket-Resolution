@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_3_building_social_media_agent__what_you_will_learn",
+  "title": "3 building social media agent / What You Will Learn",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## What You Will Learn\n\nThe target outcome is a social content assistant for developer-focused marketing workflows. It transforms rough campaign inputs into structured draft content, while asking clarifying questions when required details are missing.\n\nYou will learn how to:\n\n- **Generate content drafts**: Produce LinkedIn copy, short captions, and campaign angles.\n- **Handle varied inputs**: Work from brief text, feature notes, screenshots, and goals.\n- **Apply quality guardrails**: Follow tone and structure constraints from system instructions.\n- **Return review-ready output**: Format responses so marketers and developer advocates can validate quickly.\n\nBefore touching configuration screens, let's make explicit why this low-code pattern is valuable.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/3-building-social-media-agent.md"
+}

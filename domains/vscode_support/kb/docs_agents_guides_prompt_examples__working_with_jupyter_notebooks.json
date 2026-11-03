@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_prompt_examples__working_with_jupyter_notebooks",
+  "title": "prompt examples / Working with Jupyter notebooks",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Working with Jupyter notebooks\n\nUse **Agent** to create, edit, and work with Jupyter notebooks.\n\n```prompt\n/newNotebook use pandas and seaborn to read and visualize the titanic dataset. Show key information from the dataset.\n```\n\n```prompt\nCreate a notebook to read data from #housing.csv and plot the distribution of prices\n```\n\n```prompt\nMake sure the data is cleaned before visualizing and processing it\n```\n\n```prompt\nShow the correlation between different features in the dataset\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/prompt-examples.md"
+}

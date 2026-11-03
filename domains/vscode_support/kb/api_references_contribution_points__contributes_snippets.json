@@ -1,0 +1,8 @@
+{
+  "id": "api_references_contribution_points__contributes_snippets",
+  "title": "contribution points / contributes.snippets",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## contributes.snippets\n\nContribute snippets for a specific language. The `language` attribute is the [language identifier](/docs/languages/identifiers) and the `path` is the relative path to the snippet file, which defines snippets in the [VS Code snippet format](/docs/editing/userdefinedsnippets.md#snippet-syntax).\n\nThe example below shows adding snippets for the Go language.\n\n```json\n{\n  \"contributes\": {\n    \"snippets\": [\n      {\n        \"language\": \"go\",\n        \"path\": \"./snippets/go.json\"\n      }\n    ]\n  }\n}\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/contribution-points.md"
+}

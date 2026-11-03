@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_54__debug_adapter_protocol",
+  "title": "v1_54 / Debug Adapter Protocol",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debug Adapter Protocol\n\n### More help text properties for ExceptionBreakpointsFilter\n\nTwo optional UI attributes `description` and `conditionDescription` have been added to the `ExceptionBreakpointsFilter`.\n\nWith these attributes, clients can display additional information about exception breakpoints. The `description` property could be displayed in a hover\nand the `conditionDescription` could be used as a placeholder text for a text box where the condition can be edited.\n\n### Improved description for setExceptionBreakpoints request\n\nWe have improved the description of the `setExceptionBreakpoints` request by adding guidance for what an adapter should do if the user inputs an invalid exception breakpoint condition.\n\n### New canRestart property for stack frames\n\nA new optional boolean property `canRestart` has been added to the stack frame. It indicated whether the stack frame can be restarted with the `restart` request.\nBased on this information a client can enable or disable a **Restart Frame** context menu action.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_54.md"
+}

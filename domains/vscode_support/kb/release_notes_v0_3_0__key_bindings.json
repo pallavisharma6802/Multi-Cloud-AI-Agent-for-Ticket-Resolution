@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v0_3_0__key_bindings",
+  "title": "v0_3_0 / Key Bindings",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Key Bindings\n\nBased on user feedback (thanks!) we've decided to make some key binding changes. If you do not like our changes, you can always change key bindings as described in the [keybindings](/docs/getstarted/keybindings.md) documentation.\n\n* The native File Open dialog has been restored to `kb(workbench.action.files.openFile)`. We received strong feedback that using this key for the Code File Open dialog is confusing.\n* The Code File Open dialog is now accessible via `kb(workbench.action.quickOpen)`. We needed to find a new key for the Code File Open dialog. Since many editors are now using `kb(workbench.action.quickOpen)` for their enriched File Open dialog, we decided to go with this trend.\n* Go To Definition is now `kb(editor.action.revealDefinition)` (formerly `kbstyle(Ctrl+F12)` on Windows). Visual Studio users suggested to align Go To Definition with Visual Studio. This wasn\u2019t an option in the past when the VS Code editor was running inside the browser, since F12 was opening the developer tools.\n* `kbstyle(Cmd+Up)` and `kbstyle(Cmd+Down)` now work as expected on the Mac by jumping to the beginning and end of the file.\n* Format code is now `kb(editor.action.format)`",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_3_0.md"
+}

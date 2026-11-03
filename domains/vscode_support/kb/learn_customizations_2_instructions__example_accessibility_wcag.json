@@ -1,0 +1,8 @@
+{
+  "id": "learn_customizations_2_instructions__example_accessibility_wcag",
+  "title": "2 instructions / Example: accessibility (WCAG)",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Example: accessibility (WCAG)\n\nIMAGE PLACEHOLDER \u2014 WCAG instruction file contents\n\nIn this example, a custom instruction ensures all UI code meets WCAG accessibility standards.\n\nOnce created, the instruction:\n\n- applies accessibility rules automatically\n- confirms in chat when they are used\n\nNow, even if you ask for unrelated changes, like updating UI design, accessibility is still enforced.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/2-instructions.md"
+}

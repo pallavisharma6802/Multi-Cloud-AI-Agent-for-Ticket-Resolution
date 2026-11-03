@@ -1,0 +1,8 @@
+{
+  "id": "docs_terminal_shell_integration__shell_integration_quality",
+  "title": "shell integration / Shell integration quality",
+  "category": "TERMINAL",
+  "intent": "terminal",
+  "content": "## Shell integration quality\n\nWhen using shell integration, it has a \"quality\" associated with it that declares the capabilities of it. These qualities are determined by how the shell integration script behaves.\n\n- **None**: No shell integration is active.\n- **Rich**: Shell integration is active and command detection is working in an ideal way.\n- **Basic**: Shell integration is active, but command detection might not support all functionality. For example, the command run location is detected, but not its exit status.\n\nTo view the shell integration quality, hover the terminal tab. Optionally, select **Show Details** on the hover to view more detailed information.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/shell-integration.md"
+}

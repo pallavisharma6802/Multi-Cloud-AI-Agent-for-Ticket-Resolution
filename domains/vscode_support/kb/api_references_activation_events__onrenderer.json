@@ -1,0 +1,8 @@
+{
+  "id": "api_references_activation_events__onrenderer",
+  "title": "activation events / onRenderer",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## onRenderer\n\n`onRenderer:id` is emitted when a notebook output renderer is used.\n\n```json\n\"activationEvents\": [\n    \"onRenderer:ms-toolsai.jupyter-renderers\"\n]\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/activation-events.md"
+}

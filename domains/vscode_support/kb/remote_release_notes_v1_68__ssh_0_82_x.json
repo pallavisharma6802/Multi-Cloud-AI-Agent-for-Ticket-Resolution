@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_68__ssh_0_82_x",
+  "title": "v1_68 / SSH (0.82.x)",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## SSH (0.82.x)\n\n### Localization\n\nThe [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) extension is now localized! This means the settings commands and other text from the extension will be translated to your preferred language if you have a [Language Pack](https://marketplace.visualstudio.com/search?term=language%20pack&target=VSCode&category=All%20categories) installed and set active in VS Code.\n\n### Enable external SSH_ASKPASS\n\nSSH_ASKPASS is an environment variable used by the SSH binary on your machine, OpenSSH, to configure the application that should handle authentication for connection attempts.\n\nThe Remote - SSH extension utilizes SSH_ASKPASS in local server mode, enabled with the setting `remote.SSH.useLocalServer`, to set the SSH_ASKPASS variable to VS Code. This designates VS Code as the application to handle authentication, which causes prompts to show up inside VS Code. However, you might not want VS Code to set SSH_ASKPASS if you have another application that you would like to handle authentication, such as you have a YubiKey and you'd like to authenticate with it instead.\n\nTo prevent VS Code from overriding the SSH_ASKPASS variable you had set, you can use the experimental setting `remote.SSH.externalSSH_ASKPASS`, while `remote.SSH.useLocalServer` is true, to keep and use your own SSH_ASKPASS.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_68.md"
+}

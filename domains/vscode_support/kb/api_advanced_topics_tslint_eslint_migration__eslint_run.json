@@ -1,0 +1,8 @@
+{
+  "id": "api_advanced_topics_tslint_eslint_migration__eslint_run",
+  "title": "tslint eslint migration / ESLint: Run",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## ESLint: Run\n\nYou are now ready to run ESLint, but before doing that, we recommend you disable TSLint. To do so, open the Extensions view and select **Disable** in the context menu of the TSLint extension.\n\nIt is time to lint! Use this command: `eslint -c .eslintrc.js --ext .ts <mySrcFolder>` (notice the `--ext .ts` option which tells ESLint to look at TypeScript files). We recommend putting the command in the `scripts` section of your `package.json`-file, like so:\n\n```json\n\"lint\": \"eslint -c .eslintrc.js --ext .ts <mySrcFolder>\"\n```\n\nTo integrate ESLint with Visual Studio Code, do the following:\n\n* Install the [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) extension.\n* Create a task via the **Tasks: Configure Task** command and select **npm: lint**.\n* In the resulting `tasks.json` file, configure the problem matcher to be `$eslint-stylish`.\n\n**Hint**: ESLint is sometimes \"more correct\" in how it does things and you may see warnings that you didn't have before, for example calling out missing semicolons. Try the `--fix` option to let ESLint clean up things up for you.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/advanced-topics/tslint-eslint-migration.md"
+}

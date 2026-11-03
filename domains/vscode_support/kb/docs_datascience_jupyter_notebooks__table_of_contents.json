@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_jupyter_notebooks__table_of_contents",
+  "title": "jupyter notebooks / Table of Contents",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Table of Contents\n\nTo navigate through your notebook, open the File Explorer in the Activity Bar. Then open the **Outline** tab in the Side Bar.\n\n![Table of contents](images/jupyter/table-of-contents.png)\n\nYou can use the filter control in the Outline view to include Markdown headers, code cells, and code cell symbols. The filters correspond to the following settings:\n\n- `notebook.outline.showMarkdownHeadersOnly`\n- `notebook.outline.showCodeCells`\n- `notebook.outline.showCodeCellSymbols`\n\n<video src=\"images/jupyter/notebook-outline-filters.mp4\" title=\"Notebook Outline filter controls.\" autoplay loop controls muted></video>\n\n> **Note:** By default, the outline will only show Markdown. To show code cells, enable the following setting:  **Notebook > Outline: Show Code Cells**.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/jupyter-notebooks.md"
+}

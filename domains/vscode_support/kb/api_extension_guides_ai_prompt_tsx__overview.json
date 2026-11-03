@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_ai_prompt_tsx__overview",
+  "title": "prompt tsx",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "# Craft language model prompts\n\nYou can build language model prompts by using string concatenation, but it's hard to compose features and make sure your prompts stay within the context window of language models. To overcome these limitations, you can use the [`@vscode/prompt-tsx`](https://github.com/microsoft/vscode-prompt-tsx) library.\n\nThe `@vscode/prompt-tsx` library provides the following features:\n\n- **TSX-based prompt rendering**: Compose prompts using TSX components, making them more readable and maintainable\n- **Priority-based pruning**: Automatically prune less important parts of prompts to fit within the model's context window\n- **Flexible token management**: Use properties like `flexGrow`, `flexReserve`, and `flexBasis` to cooperatively use token budgets\n- **Tool integration**: Integrate with VS Code's language model tools API\n\nFor a complete overview of all features and detailed usage instructions, refer to the [full README](https://github.com/microsoft/vscode-prompt-tsx/blob/main/README.md).\n\nThis article describes practical examples of prompt design with the library. The complete code for these examples can be found in the [prompt-tsx repository](https://github.com/microsoft/vscode-prompt-tsx/tree/main/examples).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/prompt-tsx.md"
+}

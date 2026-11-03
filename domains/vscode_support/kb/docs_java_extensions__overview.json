@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_extensions__overview",
+  "title": "extensions",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Java extensions for {% data variables.product.prodname_vscode %}\n\nThanks to the great Java community around {% data variables.product.prodname_vscode %}, you can use a wide range of extensions to enhance your Java development experience.\n\n> **Tip:** To learn how to install and manage your extensions, refer to the general [{% data variables.product.prodname_vscode_shortname %} extension documentation](/docs/configure/extensions/extension-marketplace.md).\n\nIn this topic, we recommend a list of popular extensions helpful for different Java development scenarios.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/extensions.md"
+}

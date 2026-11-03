@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_tree_view__treedataprovider",
+  "title": "tree view / TreeDataProvider",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## TreeDataProvider\n\nExtension writers should register a [TreeDataProvider](/api/references/vscode-api#TreeDataProvider) programmatically to populate data in the view.\n\n```typescript\nvscode.window.registerTreeDataProvider('nodeDependencies', new DepNodeProvider());\n```\n\nSee [nodeDependencies.ts](https://github.com/microsoft/vscode-extension-samples/tree/main/tree-view-sample/src/nodeDependencies.ts) in the `tree-view-sample` for the implementation.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/tree-view.md"
+}

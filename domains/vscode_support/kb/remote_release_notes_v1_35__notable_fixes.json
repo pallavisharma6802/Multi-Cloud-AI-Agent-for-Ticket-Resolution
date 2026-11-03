@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_35__notable_fixes",
+  "title": "v1_35 / Notable Fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable Fixes\n- [#11](https://github.com/microsoft/vscode-remote-release/issues/11): Extension packs are not installed on correct location\n- [#17](https://github.com/microsoft/vscode-remote-release/issues/17): SSH can't connect to a machine with `/tmp` mounted with `noexec`\n- [#19](https://github.com/microsoft/vscode-remote-release/issues/19), [#33](https://github.com/microsoft/vscode-remote-release/issues/33): SSH can't connect when some non-Bash shells are set as the default\n- [#38](https://github.com/microsoft/vscode-remote-release/issues/38): Default shell not launched in remote\n- [#437](https://github.com/microsoft/vscode-remote-release/issues/437): Remote server should discover the user's environment using their configured shell",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_35.md"
+}

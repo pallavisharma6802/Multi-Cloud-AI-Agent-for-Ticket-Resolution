@@ -1,0 +1,8 @@
+{
+  "id": "docs_typescript_typescript_tutorial__intellisense",
+  "title": "typescript tutorial / IntelliSense",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## IntelliSense\n\nIn {% data variables.product.prodname_vscode_shortname %}, you can see that you get language features such as syntax highlighting and bracket matching. When you were typing in the editor, you may have noticed IntelliSense, the smart code completions and suggestions provided by {% data variables.product.prodname_vscode_shortname %} and the TypeScript language server. Below you can see the methods of `console`\n\n![IntelliSense](images/tutorial/intellisense.png)\n\nWhen you select a method, you then get parameter help and can always get hover information.\n\n![parameter help](images/tutorial/parameter-help.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/typescript/typescript-tutorial.md"
+}

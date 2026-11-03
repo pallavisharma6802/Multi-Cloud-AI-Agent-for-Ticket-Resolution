@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_75__core",
+  "title": "v1_75 / Core",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Core\n\n### remote.forwardOnOpen setting\n\nThe setting `remote.forwardOnOpen` can be set to `false` to prevent forwarding of links opened from within VS Code.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_75.md"
+}

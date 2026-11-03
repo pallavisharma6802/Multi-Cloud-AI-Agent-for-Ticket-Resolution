@@ -1,0 +1,8 @@
+{
+  "id": "learn_customizations_8_demo__testing_the_app",
+  "title": "8 demo / Testing the app",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Testing the app\n\nOnce the app is generated, it can be tested against real repositories.\n\n![Screenshot of the Repo Analyzer app showing a code quality score and recommendations for a repository](../images/customizations/ep-8-1-repo-analyzer.png)\n\nFor example, entering the URL of a GitHub project returns:\n\n- an overall score\n- specific recommendations\n- documentation or structural improvements\n\nThis makes the app useful immediately, even in its first iteration.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/8-demo.md"
+}

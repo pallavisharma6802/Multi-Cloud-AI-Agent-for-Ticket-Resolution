@@ -1,0 +1,8 @@
+{
+  "id": "docs_azure_gettingstarted__overview",
+  "title": "gettingstarted",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "# Getting Started with Azure Tools for {% data variables.product.prodname_vscode %}\n\nThe [Azure Tools extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) enables developers to access Azure's cloud services within their current environment, simplifying the process of building web applications, managing backend services, deploying APIs, and handling large datasets. This guide is specifically designed for Azure Tools within {% data variables.product.prodname_vscode_shortname %}. It provides essential tips for getting started, writing code, deploying applications, troubleshooting with logs, utilizing Azure resources, and effectively navigating your code within {% data variables.product.prodname_vscode_shortname %}.\n\n![Explorer view](images/extensions/explorer.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/gettingstarted.md"
+}

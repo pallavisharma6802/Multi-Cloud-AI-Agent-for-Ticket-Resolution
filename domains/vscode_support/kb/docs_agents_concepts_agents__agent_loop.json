@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_concepts_agents__agent_loop",
+  "title": "agents / Agent loop",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Agent loop\n\nThe agent loop enables an agent to work through a task instead of producing a single response. At each step, the agent evaluates its progress and chooses the next action. The output of that action informs the next decision.\n\n![Screenshot showing a diagram of the agentic loop from the user prompt through reasoning, tool calls, updates, and final review.](../images/concepts/agent-loop.png)\n\nFor example, when you ask an agent to add validation to a form, the loop typically includes these stages:\n\n1. **Understand:** The agent finds the form, reads related code and tests, and identifies the project's existing validation patterns.\n1. **Act:** The agent updates the form and adds or modifies tests.\n1. **Validate:** The agent runs the relevant tests and checks for errors. If validation fails, it diagnoses the result, makes another change, and validates again.\n\nSimple questions might require only a few file reads. Larger implementation tasks might repeat the loop many times as the agent edits code, runs tests, and fixes problems.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/agents.md"
+}

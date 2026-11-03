@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_8__keyboard_shortcuts",
+  "title": "v1_8 / Keyboard shortcuts",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Keyboard shortcuts\n\n### Key binding command arguments\n\nWe added support to invoke commands with arguments to the `keybindings.json` configuration file. This is useful if you often perform the same operation on a specific file or folder. Simply add a custom keyboard shortcut to do exactly what you want.\n\nThe following is an example overriding the `kbstyle(Enter)` key to print some text:\n\n```json\n  { \"key\": \"enter\", \"command\": \"type\",\n                    \"args\": { \"text\": \"Hello World\" },\n                    \"when\": \"editorTextFocus\" }\n```\n\nThe type command will receive `{ \"text\": \"Hello World\"}` as first argument and add \"Hello World\" to the file instead of producing the default command.\n\n### Recommended keymap extensions\n\nWe have added a command to list the most popular Keymap extensions which provide full sets of key bindings for popular editors or IDEs. To see the list, use **File** > **Preferences** > **Migrate Keyboard Shortcuts from...**.\n\n![Recommended keymap extensions](images/1_8/recommended-keymap-extensions.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_8.md"
+}

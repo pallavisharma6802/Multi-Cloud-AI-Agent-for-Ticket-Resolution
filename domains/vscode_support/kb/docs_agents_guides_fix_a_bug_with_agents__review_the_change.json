@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_fix_a_bug_with_agents__review_the_change",
+  "title": "fix a bug with agents / Review the change",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Review the change\n\nBefore you commit an agent's work, inspect both the code and the evidence that supports it.\n\n1. Open the **Source Control** view and select `issues-api.js` to inspect the diff.\n\n1. Check that:\n\n    * The regression test represents the documented API contract rather than the implementation details.\n    * You observed the regression test fail before the fix and pass afterward.\n    * The production change addresses the offset calculation without changing the response shape, validation, or sample data.\n    * The agent didn't add dependencies or unrelated refactoring.\n    * The complete test suite and manual boundary checks pass.\n\n    <!-- TODO: Add a screenshot showing the focused production-code and regression-test changes in the Source Control diff. -->\n\n1. If the diff contains unrelated changes, ask the agent to revert them and rerun the tests.\n\n1. Commit the verified fix:\n\n    ```bash\n    git add issues-api.js\n    git commit -m \"Fix issue pagination\"\n    ```\n\nYou fixed a reproducible API defect by establishing the expected behavior before changing production code. This workflow gives you evidence for the diagnosis, protects the behavior with a regression test, and keeps the final change focused and reviewable.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/fix-a-bug-with-agents.md"
+}

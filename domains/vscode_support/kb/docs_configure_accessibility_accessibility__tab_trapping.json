@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_accessibility_accessibility__tab_trapping",
+  "title": "accessibility / Tab trapping",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Tab trapping\n\nBy default, pressing `kbstyle(Tab)` within a source code file inserts the Tab character (or spaces depending on your indentation setting) and does not leave the open file. You can toggle `kbstyle(Tab)` trapping with `kb(editor.action.toggleTabFocusMode)`, and subsequent `kbstyle(Tab)` keys will move focus out of the file.  When default `kbstyle(Tab)` trapping is off, you will see a **Tab moves focus** indicator in the Status Bar.\n\nTab trapping also exists in the integrated terminal. The default behavior for the feature can be configured with `setting(editor.tabFocusMode)`.\n\n![A Tab moves focus status bar item shows when the mode is active](images/accessibility/tab-moves-focus.png)\n\nYou can also toggle `kbstyle(Tab)` trapping on and off from the **Command Palette** (`kb(workbench.action.showCommands)`) with the **Toggle Tab Key Moves Focus** action.\n\nRead-only files never trap the `kbstyle(Tab)` key. The **Integrated Terminal** panel respects the `kbstyle(Tab)` trapping mode and can be toggled with `kb(editor.action.toggleTabFocusMode)`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/accessibility/accessibility.md"
+}

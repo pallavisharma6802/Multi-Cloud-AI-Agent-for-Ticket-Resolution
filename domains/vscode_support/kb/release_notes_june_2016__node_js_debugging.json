@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_june_2016__node_js_debugging",
+  "title": "June_2016 / Node.js Debugging",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Node.js Debugging\n\n### Attach to Process\n\nNode.js debugging now supports attaching to a Node.js process that has not been started in debug mode. This can be useful if you need to debug a production server that cannot always run in debug mode for performance reasons.\n\nIn order to attach to a Node.js process, you specify its _process id_ via a `processId` attribute in an `attach` launch configuration.\n\nSince it is not very practical to always having to edit the launch configuration before starting a debug session, we've introduced a new type of variable that can bind to an interactive UI, e.g. to a process picker:\n\n![Process Picker](images/June_2016/attach_to_process.png)\n\nHere is a launch configuration that uses the `${command:PickProcess}` variable to let the user select a Node.js process before starting the debug session:\n\n```json\n{\n   \"name\": \"Attach to Process\",\n   \"type\": \"node\",\n   \"request\": \"attach\",\n   \"processId\": \"${command:PickProcess}\"\n}\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/June_2016.md"
+}

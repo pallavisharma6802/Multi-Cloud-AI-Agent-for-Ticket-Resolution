@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_131__terminal",
+  "title": "v1_131 / Terminal",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Terminal\n\n### Control the terminal resize dimensions overlay\n\n**Setting**: `setting(terminal.integrated.resizeDimensionsOverlay.enabled)`\n\nIf you find the columns-by-rows overlay distracting when resizing the terminal, you can disable it with the `setting(terminal.integrated.resizeDimensionsOverlay.enabled)` setting. The overlay remains enabled by default, and setting changes apply immediately to open terminals without a restart.\n\n![Screenshot of the overlay that appears in the middle of the terminal with the current columns and rows when a terminal resize happens.](images/1_131/terminal-resize-overlay.webp)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_131.md"
+}

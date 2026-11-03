@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_optimize_usage__manage_context_with_compaction",
+  "title": "optimize usage / Manage context with compaction",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Manage context with compaction\n\nWhen a conversation grows long, use `/compact` to summarize older parts of the conversation and reclaim context window space. You can optionally add instructions to guide the summary, for example `/compact focus on the API design decisions`.\n\nFor more information, see [context compaction](/docs/agents/run/sessions/manage-sessions.md#compact-conversation-context).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/optimize-usage.md"
+}

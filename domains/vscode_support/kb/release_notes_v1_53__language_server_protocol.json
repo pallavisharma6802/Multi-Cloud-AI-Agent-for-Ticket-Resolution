@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_53__language_server_protocol",
+  "title": "v1_53 / Language Server Protocol",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Language Server Protocol\n\nWork has started on the [3.17](https://microsoft.github.io/language-server-protocol/specifications/specification-3-17) version of the protocol. The first proposed feature is support for a more detailed completion item label.\n\n### Language Server Index Format\n\nWe also improved the LSIF indexer for TypeScript and tested it against a broader range of open-source repositories. Major improvements are:\n\n* A tolerant index mode that uses more memory but doesn't fail if a symbol's moniker is not correctly computed (see `--moniker` command-line option).\n* Log file support to help find situations where monikers can't be correctly computed.\n* A new LSIF dump validation tool (lsif-tooling). The tools can be used with dumps produced by any tool. It is not constraint to the TypeScript indexer. The tool checks and LSIF dump for:\n  * Correct vertex and edge layout (for example, correct properties and types of the properties)\n  * That vertices are emitted before they are referenced in edges\n  * The cardinality of edges\n  * The outgoing and incoming type of edges.\n  * The dump is portioned correctly (for example, no result partitions are added to documents / projects that are already closed)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_53.md"
+}

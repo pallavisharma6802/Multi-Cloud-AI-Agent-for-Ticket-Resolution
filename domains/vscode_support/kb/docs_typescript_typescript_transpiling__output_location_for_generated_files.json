@@ -1,0 +1,8 @@
+{
+  "id": "docs_typescript_typescript_transpiling__output_location_for_generated_files",
+  "title": "typescript transpiling / Output location for generated files",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Output location for generated files\n\nHaving the generated JavaScript file in the same folder at the TypeScript source will quickly get cluttered on larger projects. You can specify the output directory for the compiler with the `outDir` attribute.\n\n```json\n{\n    \"compilerOptions\": {\n        \"target\": \"ES5\",\n        \"module\": \"CommonJS\",\n        \"outDir\": \"out\"\n    }\n}\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/typescript/typescript-transpiling.md"
+}

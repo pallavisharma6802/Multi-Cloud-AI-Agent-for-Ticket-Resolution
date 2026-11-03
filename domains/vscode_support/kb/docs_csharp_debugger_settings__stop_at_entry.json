@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_debugger_settings__stop_at_entry",
+  "title": "debugger settings / Stop at Entry",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Stop at Entry\n\nIf you need to stop at the entry point of the target, you can optionally set `stopAtEntry` to be \"true\".\n\n**Availability**\n\n* `launch.json` \u2714\ufe0f\n* `settings.json` \u2714\ufe0f as `csharp.debug.stopAtEntry`\n* `launchSettings.json` \u274c",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/debugger-settings.md"
+}

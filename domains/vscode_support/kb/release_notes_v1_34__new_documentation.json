@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_34__new_documentation",
+  "title": "v1_34 / New documentation",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## New documentation\n\n### Python Azure Functions\n\nThere is a new [Deploy Python to Azure Functions](https://code.visualstudio.com/docs/python/tutorial-azure-functions) tutorial that describes how to create and deploy Python serverless Azure Functions.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_34.md"
+}

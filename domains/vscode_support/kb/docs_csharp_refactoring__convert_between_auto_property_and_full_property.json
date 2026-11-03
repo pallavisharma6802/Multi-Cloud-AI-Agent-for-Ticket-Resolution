@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_refactoring__convert_between_auto_property_and_full_property",
+  "title": "refactoring / Convert between auto property and full property",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Convert between auto property and full property\n\n**What:** Convert between an auto-implemented property to a full property.\n\n**When:** The logic of the property has changed.\n\n**Why:** You can convert between an auto-implemented property to a full property manually, however this feature will automatically do the work for you.\n\n**How-to:**\n\n1. Place your cursor on the property name.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select from the following two options:\n\nSelect **Convert to full property.**\n\n![Convert to full property example](images/refactoring/convert-to-full-property.png)\n\nSelect **Use auto property.**\n\n![Use auto property example](images/refactoring/use-auto-property.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+}

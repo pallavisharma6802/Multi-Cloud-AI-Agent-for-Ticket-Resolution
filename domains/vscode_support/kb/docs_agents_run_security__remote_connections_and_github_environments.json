@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_security__remote_connections_and_github_environments",
+  "title": "security / Remote connections and GitHub Environments",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Remote connections and GitHub Environments\n\n[GitHub Environments (Preview)](/docs/agents/run/remote-agent-sessions.md#github-environments-preview) lets you register a development machine for access from supported {% data variables.product.prodname_copilot_short %} clients. Connected clients receive trusted-owner access to sessions, tools, and workspace resources on that machine. Only connect from clients and devices you trust, and protect the {% data variables.product.prodname_github %} account used to register the host.\n\nSession actions are mirrored to {% data variables.product.prodname_github %} for catalog and history storage. Conversation content is not end-to-end encrypted. Review the sharing disclosure before registering a host and check your organization's data-handling requirements.\n\nFor {% data variables.product.prodname_vscode_shortname %}-specific connections over SSH or dev tunnels, protect the SSH credentials or tunnel account. Require authentication for tunnels; don't expose an agent host through anonymous access.\n\nDisconnecting a client doesn't stop the host's tasks. To stop sharing from the host, select **Remote Connections** > **Off**. To halt active work, stop the task in its session. Neither action undoes completed file edits, commands, or external effects. See [disconnect or stop sharing](/docs/agents/run/remote-agent-sessions.md#disconnect-or-stop-sharing).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/security.md"
+}

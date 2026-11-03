@@ -1,0 +1,8 @@
+{
+  "id": "docs_devcontainers_containers__picking_your_quick_start",
+  "title": "containers / Picking your quick start",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Picking your quick start\n\nThis document includes 3 quick starts - we recommend starting with the one that fits your workflow and interests the best:\n\n1. Want to try out a dev container in a quick sample repo? Check out [Quick start 1: Try a development container](#quick-start-try-a-development-container).\n2. Want to add a dev container to one of your existing locally cloned projects? Check out [Quick start 2: Open an existing folder in a container](#quick-start-open-an-existing-folder-in-a-container).\n3. Want to work with an isolated copy of a repo, i.e. to review a PR or investigate a branch without impacting your local work? Check out [Quick start 3: Open a git repo or PR in an isolated container volume](#quick-start-open-a-git-repository-or-github-pr-in-an-isolated-container-volume).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/containers.md"
+}

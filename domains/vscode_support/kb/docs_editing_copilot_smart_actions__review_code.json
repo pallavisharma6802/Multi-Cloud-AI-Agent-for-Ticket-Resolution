@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_copilot_smart_actions__review_code",
+  "title": "copilot smart actions / Review code",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Review code\n\n{% data variables.product.prodname_vscode_shortname %} can help with reviewing your code, either for a code block in the editor or all changes included in a pull request (requires the [GitHub Pull Requests extension](https://marketplace.visualstudio.com/items/?itemName=GitHub.vscode-pull-request-github)).\n\nTo review a code block in the editor:\n\n1. Open your application code file.\n1. Select the code you want to fix.\n1. Right-click and select **Generate Code** > **Review**.\n\n    {% data variables.product.prodname_vscode_shortname %} creates review comments in the **Comments** panel and also shows them inline in the editor.\n\nTo review all changes in a pull request:\n\n1. Create a pull request with the GitHub Pull Requests extension\n1. Select the **Code Review** button in the **Files Changed** view.\n\n    {% data variables.product.prodname_vscode_shortname %} creates review comments in the **Comments** panel and also shows them inline in the editor.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/copilot-smart-actions.md"
+}

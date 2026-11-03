@@ -1,0 +1,8 @@
+{
+  "id": "api_references_theme_color__gauge_colors",
+  "title": "theme color / Gauge colors",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Gauge colors\n\n- `gauge.background`: Gauge background color.\n- `gauge.foreground`: Gauge foreground color.\n- `gauge.border`: Gauge border color.\n- `gauge.warningBackground`: Gauge warning background color.\n- `gauge.warningForeground`: Gauge warning foreground color.\n- `gauge.errorBackground`: Gauge error background color.\n- `gauge.errorForeground`: Gauge error foreground color.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+}

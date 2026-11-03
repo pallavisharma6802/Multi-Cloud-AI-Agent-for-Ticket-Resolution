@@ -1,0 +1,8 @@
+{
+  "id": "api_ux_guidelines_sidebars__sidebar_toolbars",
+  "title": "sidebars / Sidebar Toolbars",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Sidebar Toolbars\n\nBy default, View Containers in the Sidebar with more than one View will feature a single `...` icon button in the Sidebar Toolbar to show and hide each View. That looks something like this:\n\n![Sidebar with two views](images/examples/sidebar-toolbar-default.png)\n\nHowever, if only one View is used, the Sidebar will automatically consolidate the UI to use the Sidebar Toolbar to render all of the actions specific to that View. In place of the `...` button, the two actions associated with the 'Notes' View are rendered in its place:\n\n![Sidebar with a single view and toolbar with actions](images/examples/sidebar-toolbar-actions.png)\n\nAs with other toolbars, be careful to not add too many actions to reduce clutter and confusion. If possible, use an existing product icon paired with a descriptive Command name.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/sidebars.md"
+}

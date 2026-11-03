@@ -1,0 +1,8 @@
+{
+  "id": "api_references_when_clause_contexts__check_a_setting_in_a_when_clause",
+  "title": "when clause contexts / Check a setting in a when clause",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Check a setting in a when clause\n\nIn a when clause, you can reference a configuration (setting) value by prefixing it with `config.`, for example `config.editor.tabCompletion` or `config.breadcrumbs.enabled`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/when-clause-contexts.md"
+}

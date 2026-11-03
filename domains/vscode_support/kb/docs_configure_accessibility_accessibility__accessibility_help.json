@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_accessibility_accessibility__accessibility_help",
+  "title": "accessibility / Accessibility help",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Accessibility help\n\nThe command **Open Accessibility Help** `kb(editor.action.accessibilityHelp)` opens a help menu based on the current context. It currently applies to the editor, terminal, notebook, {% data variables.copilot.chat_view %}, and Inline Chat features.\n\nYou can dismiss the accessibility help menu or open additional documentation from within the help menu.\n\n![When triggered in an editor, a dialog appears that explains how to enable screen reader mode explicitly, tab focus mode and other details](images/accessibility/status.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/accessibility/accessibility.md"
+}

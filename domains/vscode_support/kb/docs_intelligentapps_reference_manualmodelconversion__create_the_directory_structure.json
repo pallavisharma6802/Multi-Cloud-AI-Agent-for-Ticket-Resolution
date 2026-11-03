@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_reference_manualmodelconversion__create_the_directory_structure",
+  "title": "ManualModelConversion / Create the directory structure",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Create the directory structure\n\nThe Foundry Toolkit loads ONNX models from its working directory:\n\n* Windows: `%USERPROFILE%\\.aitk\\models`\n* Unix-like systems (macOS): `$HOME/.aitk/models`\n\nTo ensure your models load correctly, create the required four-layer directory structure within the Foundry Toolkit's working directory. For example:\n\n```powershell\nmkdir C:\\Users\\Administrator\\.aitk\\models\\microsoft\\Phi-3.5-vision-instruct-onnx\\cpu\\phi3.5-cpu-int4-rtn-block-32\n```\n\nIn this example, the four-layer directory structure is `microsoft\\Phi-3.5-vision-instruct-onnx\\cpu\\phi3.5-cpu-int4-rtn-block-32`.\n\n> [!IMPORTANT]\n> The naming of the four-layer directory structure is important. Each directory layer corresponds with a specific system parameter: `$publisherName\\$modelName\\$runtime\\$displayName`. The `$displayName` appears in the local model tree view at the top-left side of the extension. Use distinct `displayName` values for different models to avoid confusion.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/reference/ManualModelConversion.md"
+}

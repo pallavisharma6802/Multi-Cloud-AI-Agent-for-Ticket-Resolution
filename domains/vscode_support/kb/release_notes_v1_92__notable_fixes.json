@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_92__notable_fixes",
+  "title": "v1_92 / Notable fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable fixes\n\n* [211199](https://github.com/microsoft/vscode/issues/211199) Ctrl+c in terminal does not scroll to the very bottom when smooth scroll is enabled",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_92.md"
+}

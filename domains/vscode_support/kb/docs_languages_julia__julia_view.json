@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_julia__julia_view",
+  "title": "julia / Julia view",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Julia view\n\nBy default, on the left side of the window in the Activity bar, you will see the Julia three dots logo as shown below:\n\n![Julia icon in the Activity bar](images/julia/julia-tab1.png)\n\nIf you select the Julia icon, the Julia view will open that displays sections for **Workspace**, **Documentation**, and the **Plot Navigator**. The **Workspace** section displays a collection of source code that is loaded into your active Julia session. By default, it will be blank since you have not yet run any code, but after you run something, you will be able to see the state of the workspace.\n\n![Julia Workspace](images/julia/julia-tab2.png)\n\nThe **Documentation** section lets you review details about specific Julia functions without needing to open a separate browser window. You can search the documentation of any Julia package you have loaded into your active session (by doing `using some_package`), but by default, the search bar will only display results from the core Julia documentation.\n\n![Julia Documentation](images/julia/julia-tab3.png)\n\nThere is also a built-in **Plot Navigator**, which can be very helpful when you are working on projects with visualization components. You can set the plots to render by default in {% data variables.product.prodname_vscode_shortname %} and then conveniently navigate back and forth through them.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/julia.md"
+}

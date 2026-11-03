@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_typescript__intellisense",
+  "title": "typescript / IntelliSense",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## IntelliSense\n\nIntelliSense shows you intelligent code completion, hover information, and signature help so that you can write code more quickly and correctly.\n\n![TypeScript small completions for String type](images/typescript/ts-intellisense.png)\n\n{% data variables.product.prodname_vscode_shortname %} provides IntelliSense for individual TypeScript files as well as TypeScript `tsconfig.json` projects.\n\n### Hover information\n\nHover over a TypeScript symbol to quickly see its type information and relevant documentation:\n\n![Hover for a lodash function](images/typescript/hover.png)\n\nYou can also show the hover information at the current cursor position with the `kb(editor.action.showHover)` keyboard shortcut.\n\n### Signature help\n\nAs you write a TypeScript function call, {% data variables.product.prodname_vscode_shortname %} shows information about the function signature and highlights the parameter that you are currently completing:\n\n![Signature help for the lodash capitalize function](images/typescript/signature-help.png)\n\nSignature help is shown automatically when you type a `(` or `,` within a function call. Use `kb(editor.action.triggerParameterHints)`  to manually trigger signature help.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/typescript.md"
+}

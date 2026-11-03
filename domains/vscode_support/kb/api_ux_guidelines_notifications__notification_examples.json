@@ -1,0 +1,8 @@
+{
+  "id": "api_ux_guidelines_notifications__notification_examples",
+  "title": "notifications / Notification examples",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Notification examples\n\n![Information notification](images/examples/notification-info.png)\n\n*This notification appears after the user runs an **Update version** command. Notice that there are no additional actions and is purely informational.*\n\n![Warning notification](images/examples/notification-warning.png)\n\n*This example highlights an issue with a feature that requires user input and shows actions to resolve the issue.*\n\n![Error notification](images/examples/notification-error.png)\n\n*This example shows a failure notification with an action to resolve the issue.*\n\n**\u2714\ufe0f Do**\n\n* Respect the user's attention by only sending notifications when absolutely necessary\n* Add a **Do not show again** option for every notification\n* Show one notification at a time\n\n**\u274c Don't**\n\n* Send repeated notifications\n* Use for promotion\n* Ask for feedback on the first install\n* Show actions if there aren't any",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/notifications.md"
+}

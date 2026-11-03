@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_overview__overview",
+  "title": "overview",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Data Science in {% data variables.product.prodname_vscode %}\n\nYou can do all of your data science work within {% data variables.product.prodname_vscode_shortname %}. Use Jupyter Notebooks and the [Interactive Window](/docs/python/jupyter-support-py.md) to start analyzing and visualizing your data in minutes! Power your Python coding experience with IntelliSense support and build, train, and deploy machine learning models to the cloud or the edge with Azure Machine Learning service.\n\n![Preview of Jupyter Notebooks in {% data variables.product.prodname_vscode_shortname %}](images/overview/jupyter-notebook-preview.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/overview.md"
+}

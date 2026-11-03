@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_python_quick_start__code_actions",
+  "title": "python quick start / Code Actions",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Code Actions\n\nCode Actions (also known as Quick Fixes) are provided to help fix issues when there are warnings in your code. These helpful hints are displayed in the editor left margin as a lightbulb (\ud83d\udca1). Select the light bulb to display Code Action options. These Code Action can come from extensions such as Python, Pylance, or {% data variables.product.prodname_vscode_shortname %} itself. For more information about Code Actions, see [Python Quick Fixes](/docs/python/editing.md#quick-fixes).\n\n![Screenshot showing Code Actions in a Python project.](images/editing/quickFix.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/python-quick-start.md"
+}

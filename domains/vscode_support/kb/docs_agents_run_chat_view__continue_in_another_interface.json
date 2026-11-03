@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_chat_view__continue_in_another_interface",
+  "title": "chat view / Continue in another interface",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Continue in another interface\n\nWhen you want to coordinate work across projects, select **Open in Agents** in the application title bar, then select your existing supported session from the sessions list. You don't have to start the task again. Review the [supported session types and continuation steps](/docs/agents/run/sessions/manage-sessions.md#continue-between-the-chat-view-and-agents-window) first: Local sessions and sessions from the OpenAI Codex extension remain editor-only.\n\nYou can also keep using [inline suggestions](/docs/editing/ai-powered-suggestions.md) as you type, or use [inline chat](/docs/chat/inline-chat.md) for a focused edit. These approaches complement the conversation rather than replace it.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/chat-view.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_terminal_basics__maximizing_the_terminal",
+  "title": "basics / Maximizing the terminal",
+  "category": "TERMINAL",
+  "intent": "terminal",
+  "content": "## Maximizing the terminal\n\nThe terminal view can be maximized by clicking the maximize panel size button with the upwards chevron icon. This will temporarily hide the editors and maximize the panel. This is useful to temporarily focus on a large amount of output. Some developers use {% data variables.product.prodname_vscode_shortname %} as a standalone terminal by opening a new window, maximizing the panel, and hiding the side bar.\n\nNote that the panel can only be maximized if its [alignment](/docs/configure/custom-layout.md#panel-alignment) option is set to **Center**.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/basics.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_references_theme_color__base_colors",
+  "title": "theme color / Base colors",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Base colors\n\n- `focusBorder`: Overall border color for focused elements. This color is only used if not overridden by a component.\n- `foreground`: Overall foreground color. This color is only used if not overridden by a component.\n- `disabledForeground`: Overall foreground for disabled elements. This color is only used if not overridden by a component.\n- `widget.border`: Border color of widgets such as Find/Replace inside the editor.\n- `widget.shadow`: Shadow color of widgets such as Find/Replace inside the editor.\n- `selection.background`: Background color of text selections in the workbench (for input fields or text areas, does not apply to selections within the editor and the terminal).\n- `descriptionForeground`: Foreground color for description text providing additional information, for example for a label.\n- `errorForeground`: Overall foreground color for error messages (this color is only used if not overridden by a component).\n- `icon.foreground`: The default color for icons in the workbench.\n- `sash.hoverBorder`: The hover border color for draggable sashes.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+}

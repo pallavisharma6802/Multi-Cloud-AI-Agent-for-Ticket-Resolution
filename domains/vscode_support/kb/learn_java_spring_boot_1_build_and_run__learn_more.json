@@ -1,0 +1,8 @@
+{
+  "id": "learn_java_spring_boot_1_build_and_run__learn_more",
+  "title": "1 build and run / Learn more",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Learn more\n\n- [Java in Visual Studio Code](https://code.visualstudio.com/docs/languages/java) \u2014 the product-level guide to the surfaces used here.\n- [Extension Pack for Java on the Marketplace](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack) \u2014 what the pack installs and why.\n- [Spring Boot reference documentation](https://docs.spring.io/spring-boot/) \u2014 starters, auto-configuration, and the application lifecycle.\n- [Maven build lifecycle](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html) \u2014 what `package` actually runs.\n- [Demo source on GitHub](https://github.com/microsoft/github-copilot-java-mcp-demo) \u2014 the sample used in every chapter.\n\n---\n\nChapter 1 of 4 \u00b7 Next: [Debug and Inspect a Spring Boot Request](/learn/java-spring-boot/2-debug-and-inspect)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/1-build-and-run.md"
+}

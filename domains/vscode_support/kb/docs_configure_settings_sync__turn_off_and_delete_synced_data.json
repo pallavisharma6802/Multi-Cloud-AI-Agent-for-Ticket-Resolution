@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_settings_sync__turn_off_and_delete_synced_data",
+  "title": "settings sync / Turn off and delete synced data",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Turn off and delete synced data\n\nTo stop synchronizing on the current device, select **Settings Sync is On** > **Settings Sync: Turn Off** from the **Manage** gear menu, and then select **Turn off**.\n\nTo turn off synchronization on all your devices and remove your data from the service, select the checkbox labeled **Turn off sync on all your devices and clear the data from the cloud.** Then select **Turn off**. If you turn on {% data variables.product.prodname_settings_sync %} again, it starts as a first-time setup.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/settings-sync.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_overview__working_with_github_pull_requests_and_issues",
+  "title": "overview / Working with GitHub pull requests and issues",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## Working with GitHub pull requests and issues\n\nCloning and pushing to {% data variables.product.prodname_github %} use built-in Git support. To create or review pull requests and manage issues, install the GitHub Pull Requests and Issues extension. See [which integration to use](/docs/sourcecontrol/github.md#choose-a-github-workflow).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/overview.md"
+}

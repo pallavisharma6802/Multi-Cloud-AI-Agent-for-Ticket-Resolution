@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_82__testing",
+  "title": "v1_82 / Testing",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Testing\n\n### Improved status area\n\nThe 'status area' below the filter box in the Testing view is now more concise, and also provides a clickable action to rerun the most recently run tests. Holding `kbstyle(Alt)` while clicking on the rerun button will debug those tests instead.\n\n![Testing view status area displaying test result count, test timing, and rerun button](images/1_82/testing-status-area.png)\n\n### Support for link detection in test output\n\nLink detection now runs in the terminal where Test Output is shown. File names, paths, and URIs are now clickable.\n\n### Improved experience for test-correlated output\n\nTest extensions can correlate console output with specific tests or locations. Previously, each output created in this way would appear as its own item in the Test Results view, and open in a text editor when selected.\n\nNow, they are shown in a proper terminal, and navigating to an output message opens a terminal of that test's output with the message selected.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_82.md"
+}

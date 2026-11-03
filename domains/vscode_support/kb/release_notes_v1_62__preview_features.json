@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_62__preview_features",
+  "title": "v1_62 / Preview features",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Preview features\n\n### TypeScript 4.5 support\n\nThis update adds support for the upcoming TypeScript 4.5 release. The [TypeScript 4.5 beta announcement post](https://devblogs.microsoft.com/typescript/announcing-typescript-4-5-beta) has more information about the new language and tooling features. Some tooling highlights:\n\n* [Method signature completions](https://github.com/microsoft/TypeScript/pull/46370).\n* [JSX attribute completions](https://github.com/microsoft/TypeScript/issues/38891).\n* More accurate reference counts for the references CodeLens.\n\nTo start using the TypeScript 4.5 nightly builds, install the [TypeScript Nightly extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next).\n\nPlease share your feedback and let us know if you run into any bugs with TypeScript 4.5.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_62.md"
+}

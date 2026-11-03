@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_workspace_trust__what_is_workspace_trust",
+  "title": "workspace trust / What is Workspace Trust?",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## What is Workspace Trust?\n\n[Workspace Trust](/docs/editing/workspaces/workspace-trust.md) is a feature driven by the security risks associated with unintended code execution when a user opens a workspace in VS Code. For example, consider that a language extension, in order to provide functionality, may execute code from the currently loaded workspace. In this scenario, the user should trust that the contents of the workspace are not malicious. Workspace Trust centralizes this decision within VS Code and supports a [Restricted Mode](/docs/editing/workspaces/workspace-trust.md#restricted-mode) to protect against automatic code execution so that extension authors do not have to handle this infrastructure themselves. VS Code offers static declaration and API support to onboard extensions quickly without the need to duplicate code across extensions.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/workspace-trust.md"
+}

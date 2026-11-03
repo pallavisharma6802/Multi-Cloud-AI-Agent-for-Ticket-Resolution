@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_39__notable_fixes",
+  "title": "v1_39 / Notable fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable fixes\n\n* [78984](https://github.com/microsoft/vscode/issues/78984): Touch doesn't work in Suggest widget\n* [79196](https://github.com/microsoft/vscode/issues/79196): debug console shows REPL results and console.log output in wrong order\n* [80003](https://github.com/microsoft/vscode/issues/80003): Regular breakpoints don't have a title tooltip\n* [55106](https://github.com/microsoft/vscode/issues/55106): Breakpoints appear as verified if verified by at least one session\n* [80435](https://github.com/microsoft/vscode/issues/80435): Please let me hide the empty folder section in the explorer sidebar\n* [80464](https://github.com/microsoft/vscode/issues/80464): Failure message from SetVariable request is not surfaced\n* [80402](https://github.com/microsoft/vscode/issues/80402): debug UI doesn't cleanup spinners on debug session end\n* [82047](https://github.com/microsoft/vscode/issues/82047): New title variable to indicate the remote name",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_39.md"
+}

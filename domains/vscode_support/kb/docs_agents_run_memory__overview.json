@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_memory__overview",
+  "title": "memory",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Use memory with agents in {% data variables.product.prodname_vscode_shortname %}\n\nMemory helps agents reuse coding preferences and repository knowledge without asking you to repeat them in every conversation. The memory system depends on your [agent harness](/docs/agents/run/agent-harnesses.md):\n\n* **{% data variables.product.prodname_copilot_short %} harness**: Use [{% data variables.copilot.copilot_memory %}](#copilot-memory) to store repository facts and user preferences in the cloud.\n\n* **Local harness**: Use [memory files](#local-memory-files) for persistent notes and temporary session context.\n\nFor background on how memory fits into the agent architecture, see [Agents concepts](/docs/agents/concepts/agents.md#memory).\n\nThis article shows how to set up cloud-backed memory, review or delete stored information, and manage local memory files.\n\n<div class=\"docs-action\" data-show-in-doc=\"false\" data-show-in-sidebar=\"true\" title=\"Try memory in action\">\nLaunch a chat prompt that asks the agent to remember a coding preference.\n\n* [Open in {% data variables.product.prodname_vscode_shortname %}](vscode://GitHub.Copilot-Chat/chat?agent=agent%26prompt=Remember%20that%20I%20prefer%20arrow%20functions%20over%20function%20declarations%20in%20JavaScript.)\n\n</div>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/memory.md"
+}

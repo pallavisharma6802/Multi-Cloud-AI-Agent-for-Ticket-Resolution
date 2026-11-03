@@ -1,0 +1,8 @@
+{
+  "id": "docs_nodejs_debugging_recipes__next_steps",
+  "title": "debugging recipes / Next steps",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Next steps\n\n* [Debugging](/docs/debugtest/debugging.md) - Read about general {% data variables.product.prodname_vscode_shortname %} debugging features.\n* [Node.js Debugging](/docs/nodejs/nodejs-debugging.md) - Learn about the built-in Node.js debugger.\n* [Video: Getting started with debugging in {% data variables.product.prodname_vscode_shortname %}](https://www.youtube.com/watch?v=3HiLLByBWkg) - Learn about debugging in {% data variables.product.prodname_vscode_shortname %}.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/debugging-recipes.md"
+}

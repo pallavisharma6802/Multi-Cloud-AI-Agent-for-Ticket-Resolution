@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vmarch__licensing_changes",
+  "title": "vMarch / Licensing Changes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Licensing Changes\n\nThere are several licensing changes for the Stable and Insiders builds.\n\nFor Stable 1.0, these are the differences:\n\n* The TIME-SENSITIVE SOFTWARE clause has been removed and the product will no longer stop running on 31/12/2016 (day/month/year).\n* The PRE-RELEASE SOFTWARE qualification has been removed.\n* The license no longer prohibits you from opting out of data collection. You can turn off [crash reporting](/docs/supporting/faq.md#how-to-disable-crash-reporting) and [usage reporting](/docs/supporting/faq.md#how-to-disable-telemetry-reporting).\n* The license clarifies that extensions downloaded are covered by the license provided by the extension author, not the VS Code license.\n\nYou can view the Stable license at https://code.visualstudio.com/license?lang= where lang is the two or three character language code ('en', 'de', 'fr', 'zh-CN', 'zh-TW', 'ko', 'ja', 'ru', 'es', 'it').\n\nFor Insiders, these are the changes:\n\n* The TIME-SENSITIVE SOFTWARE clause which indicated that the software will stop running on 31/12/2016 (day/month/year) has been changed to a TERM clause which specifies the license agreement is for 90 days.\n* The license clarifies that extensions downloaded are covered by the license provided by the extension author, not the VS Code license (same as Stable).\n\nYou can view the Insiders license at https://code.visualstudio.com/license/insiders, there are no localized Insider licenses.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vMarch.md"
+}

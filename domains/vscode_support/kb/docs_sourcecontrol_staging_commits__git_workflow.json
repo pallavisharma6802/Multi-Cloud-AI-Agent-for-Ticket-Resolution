@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_staging_commits__git_workflow",
+  "title": "staging commits / Git workflow",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## Git workflow\n\nSaving a file, staging it, committing it, and pushing it are separate operations:\n\n| Action | Result |\n|--------|--------|\n| Save | Writes your edits to the working file on disk. |\n| Stage | Copies selected changes into the staging area, also called the index. |\n| Commit | Records the staged snapshot in local Git history. |\n| Push | Uploads local commits to a remote repository. |\n\nStaging captures the selected content at that moment. If you edit the file again, those later edits are not included in the staged snapshot until you stage them too.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/staging-commits.md"
+}

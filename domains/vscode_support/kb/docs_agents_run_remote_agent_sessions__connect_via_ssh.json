@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_remote_agent_sessions__connect_via_ssh",
+  "title": "remote agent sessions / Connect via SSH",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Connect via SSH\n\n**Prerequisite**: the remote machine must be accessible over SSH. {% data variables.product.prodname_vscode_shortname %} installs the required CLI on the remote machine when needed.\n\nTo connect to a remote machine via SSH:\n\n1. Select **New** or press `kb(workbench.action.chat.newChat)`.\n\n1. In the environments dropdown, select **SSH**. If you've already set up SSH connections, they appear as options in the dropdown.\n\n    ![Screenshot showing how to select SSH in the environments dropdown when starting a new agent session in the {% data variables.copilot.agents_window %}.](../images/agents-window/agents-window-remote-2.png)\n\n1. Enter the SSH connection string for the remote machine (for example, `user@hostname`).\n\nAfter connecting, [open an existing remote session or start a new one](#continue-an-existing-remote-session).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/remote-agent-sessions.md"
+}

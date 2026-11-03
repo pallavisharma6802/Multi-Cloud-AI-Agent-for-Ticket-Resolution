@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_83__accessibility",
+  "title": "v1_83 / Accessibility",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Accessibility\n\n### GitHub Pull Requests and Issues Comment improvements\n\nThe [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) extension, which allows you to work on, create, and manage pull requests and issues, has seen many accessibility improvements this iteration for the commenting and reviewing experience.\n\nA screen reader user is informed when they open an editor if it contains commenting ranges. A new accessibility help dialog (`editor.action.accessibilityHelp`) provides insight into commands for navigation between comment threads and ranges.\n\nAdditionally, the Comment control is now accessible. A help dialog (`editor.action.accessibilityHelp`) is also available in that context to inform a user of what to expect and how to utilize the feature. There are also new commands **Comments: Go to Next Commenting Range** (`kb(editor.action.nextCommentingRange)`) and **Comments: Go to Previous Commenting Range** (`kb(editor.action.previousCommentingRange)`) for navigation between commenting ranges.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_83.md"
+}

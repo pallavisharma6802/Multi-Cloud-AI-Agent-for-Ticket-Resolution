@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_concepts_language_models__context_window",
+  "title": "language models / Context window",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Context window\n\nThe context window is the total amount of information a model can process in a single request. It includes everything: the system prompt, custom instructions, conversation history, file contents, tool outputs, and your current message. Different models have different context window sizes.\n\nWhen the context window fills up, {% data variables.product.prodname_vscode_shortname %} automatically summarizes older parts of the conversation to make room. This means important details from early in a long conversation might be compressed or lost. You can also type `/compact` in the chat input to manually trigger compaction at any time. Optionally, add custom instructions after the command to guide the summary, for example `/compact focus on the API design decisions`.\n\nLearn more about [how {% data variables.product.prodname_vscode_shortname %} assembles context](/docs/agents/concepts/context.md) and [context compaction](/docs/agents/run/sessions/manage-sessions.md#compact-conversation-context).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/language-models.md"
+}

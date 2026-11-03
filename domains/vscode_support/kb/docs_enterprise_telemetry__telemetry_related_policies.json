@@ -1,0 +1,8 @@
+{
+  "id": "docs_enterprise_telemetry__telemetry_related_policies",
+  "title": "telemetry / Telemetry-related policies",
+  "category": "ENTERPRISE",
+  "intent": "enterprise",
+  "content": "## Telemetry-related policies\n\n{% data variables.product.prodname_vscode_shortname %} provides the following policies for managing telemetry:\n\n| Policy           | Description                                                | {% data variables.product.prodname_vscode_shortname %} setting                       | Available since |\n|------------------|------------------------------------------------------------|---------------------------------------|-----------------|\n| `TelemetryLevel` | Specify the telemetry data level                           | `setting(telemetry.telemetryLevel)`   | 1.99            |\n| `EnableFeedback` | Configure feedback mechanisms (issue reporter and surveys) | `setting(telemetry.feedback.enabled)` | 1.99            |\n\nLearn how to [deploy policies](/docs/enterprise/policies.md) to your organization's devices.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/enterprise/telemetry.md"
+}

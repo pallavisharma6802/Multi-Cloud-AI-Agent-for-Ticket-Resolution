@@ -1,0 +1,8 @@
+{
+  "id": "docs_nodejs_nodejs_tutorial__next_steps",
+  "title": "nodejs tutorial / Next steps",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Next steps\n\nThere is much more to explore with {% data variables.product.prodname_vscode %}, please try the following topics:\n\n* [Node.js profile template](/docs/configure/profiles.md#nodejs-profile-template) - Create a new [profile](/docs/configure/profiles) with a curated set of extensions, settings, and snippets.\n* [Settings](/docs/configure/settings.md) - Learn how to customize {% data variables.product.prodname_vscode_shortname %} for how you like to work.\n* [Debugging](/docs/debugtest/debugging.md) - This is where {% data variables.product.prodname_vscode_shortname %} really shines.\n* [Video: Getting started with debugging in {% data variables.product.prodname_vscode_shortname %}](https://www.youtube.com/watch?v=3HiLLByBWkg) - Learn how to use debugging in {% data variables.product.prodname_vscode_shortname %}.\n* [Node.js debugging](/docs/nodejs/nodejs-debugging.md) - Learn more about {% data variables.product.prodname_vscode_shortname %}'s built-in Node.js debugging.\n* [Debugging recipes](/docs/nodejs/debugging-recipes.md) - Examples for scenarios like client-side and container debugging.\n* [Tasks](/docs/debugtest/tasks.md) - Running tasks with Gulp, Grunt and Jake. Showing Errors and Warnings.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/nodejs-tutorial.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_129__proposed_apis",
+  "title": "v1_129 / Proposed APIs",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Proposed APIs\n\n### Configure custom editors for diff and merge editors\n\nCustom editors now opt out of diff and merge editors by default. As a result, a file can continue to open in a custom editor while its diffs and merges open in the built-in text editors. You might notice this change if you previously saw a custom editor when opening a diff or merge editor.\n\nTo open a diff in another editor, use the [**Reopen Editor With** submenu](#reopen-an-editor-from-the-editor-toolbar) in the editor toolbar. To always use a specific editor for matching diffs, configure the `setting(workbench.diffEditorAssociations)` setting.\n\nThe proposed `customEditorPriority` API provides separate priorities for files, diffs, and merge editors:\n\n```json\n\"priority\": {\n  \"textEditor\": \"default\",\n  \"diffEditor\": \"option\",\n  \"mergeEditor\": \"never\"\n}\n```\n\nThe new `never` priority prevents automatic selection for that editor type while keeping the editor available for explicit selection.\n\nIf the text diff editor cannot display binary content, VS Code still falls back to a compatible custom diff editor.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_129.md"
+}

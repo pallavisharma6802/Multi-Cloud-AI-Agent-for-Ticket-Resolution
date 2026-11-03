@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_65__ssh_version_0_76_x",
+  "title": "v1_65 / SSH (version 0.76.x)",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## SSH (version 0.76.x)\n\n### Notable fix: connecting to remote machines that have zsh as default shell\n\nA fix was made to the popular issue of connecting to machines using zsh shells. The original issue was [#6341](https://github.com/microsoft/vscode-remote-release/issues/6341).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_65.md"
+}

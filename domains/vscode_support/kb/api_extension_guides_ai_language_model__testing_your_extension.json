@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_ai_language_model__testing_your_extension",
+  "title": "language model / Testing your extension",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Testing your extension\n\nThe responses that the Language Model API provides are nondeterministic, which means that you might get a different response for an identical request. This behavior can be challenging for testing your extension.\n\nThe part of the extension for building prompts and interpreting language model responses is deterministic, and can thus be unit tested without using an actual language model. However, interacting and getting responses from the language model itself, is nondeterministic and can\u2019t be easily tested. Consider designing your extension code in a modular way to enable you to unit test the specific parts that can be tested.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/language-model.md"
+}

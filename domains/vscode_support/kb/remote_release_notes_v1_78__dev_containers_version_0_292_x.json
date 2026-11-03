@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_78__dev_containers_version_0_292_x",
+  "title": "v1_78 / Dev Containers (version 0.292.x)",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Dev Containers (version 0.292.x)\n\n### Experimental lockfile for Features\n\nWe have added support for a lockfile for Dev Container Features to:\n\n* Remember the actual version a semver version resolves to, ensuring reproducibility. For example, `ghcr.io/devcontainers/features/github-cli:1` might resolve to `1.0.10` of the feature.\n* Improve cache hits when building the container image by using the same sources as with previous builds.\n* Detect when the content of a specific version of a feature unexpectedly changes to catch manipulation attempts.\n\n```json\n{\n  \"features\": {\n    \"ghcr.io/devcontainers/features/github-cli:1\": {\n      \"version\": \"1.0.10\",\n      \"resolved\": \"ghcr.io/devcontainers/features/github-cli@sha256:8a1705f62d358565394a868685047e57a8729cd88462a665967bea79a550b7c7\",\n      \"integrity\": \"sha256:8a1705f62d358565394a868685047e57a8729cd88462a665967bea79a550b7c7\"\n    }\n  }\n}\n```\n\nWe are making the lockfile available to collect feedback. The support is experimental and can change in the future. You can enable it in the user settings:\n\n![Experimental Lockfile User Setting](images/1_78/devcontainers-lockfile.png)\n\nSee [Dev Container Feature Lockfile](https://github.com/devcontainers/spec/blob/main/proposals/devcontainer-lockfile.md) for more information.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_78.md"
+}

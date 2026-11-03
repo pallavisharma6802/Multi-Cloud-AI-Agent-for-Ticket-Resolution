@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_37__notable_fixes",
+  "title": "v1_37 / Notable fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable fixes\n\n* [422](https://github.com/microsoft/vscode/issues/422): Preserve window size when restoring a maximized window\n* [70371](https://github.com/microsoft/vscode/issues/70371): emmet tab completion is slow in large files\n* [76922](https://github.com/microsoft/vscode/issues/76922): Ordering of Side bar views is persisted across all windows\n* [76989](https://github.com/microsoft/vscode/issues/76989): disable extensions not working for extension debugging\n* [77110](https://github.com/microsoft/vscode/issues/77110): Debug integrated terminal support doesn't get default terminal\n* [77926](https://github.com/microsoft/vscode/issues/77926): Typing \"string;\" sometimes inserts \"strings;\"",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_37.md"
+}

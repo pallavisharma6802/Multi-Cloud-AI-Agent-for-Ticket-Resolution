@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_41__vs_code_remote_core",
+  "title": "v1_41 / VS Code Remote Core",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## VS Code Remote Core\n\n### Remote Explorer make-over\n\nThe Remote Explorer has a new look to optimize your workflow and make it less busy.\n\nBelow you can see the new remote targets and containers dropdown as well as the **Help and Feedback** options:\n\n![Remote Explorer dropdowns](images/1_41/remote-explorer.gif)\n\n### Download extensions locally\n\nYou can now configure VS Code to always download extensions locally while installing extensions in a remote window. To enable this feature, set `remote.downloadExtensionsLocally` to `true`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_41.md"
+}

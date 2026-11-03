@@ -1,0 +1,8 @@
+{
+  "id": "docs_nodejs_nodejs_debugging__overview",
+  "title": "nodejs debugging",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Node.js debugging in {% data variables.product.prodname_vscode_shortname %}\n\nThe {% data variables.product.prodname_vscode %} editor has built-in debugging support for the [Node.js](https://nodejs.org/) runtime and can debug JavaScript, TypeScript, and many other languages that are transpiled into JavaScript. Setting up a project for Node.js debugging is straightforward with {% data variables.product.prodname_vscode_shortname %} providing appropriate launch configuration defaults and snippets.\n\nThere are a few ways you can debug your Node.js programs in {% data variables.product.prodname_vscode_shortname %}:\n\n* Use [auto attach](#auto-attach) to debug processes you run in {% data variables.product.prodname_vscode_shortname %}'s integrated terminal.\n* Use the [JavaScript debug terminal](#javascript-debug-terminal), similar to using the integrated terminal.\n* Use a [launch config](#launch-configuration) to start your program, or [attach to a process](#attaching-to-nodejs) launched outside of {% data variables.product.prodname_vscode_shortname %}.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/nodejs-debugging.md"
+}

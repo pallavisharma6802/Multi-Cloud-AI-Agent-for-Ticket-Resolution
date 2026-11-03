@@ -1,0 +1,8 @@
+{
+  "id": "docs_devcontainers_containers__opening_a_terminal",
+  "title": "containers / Opening a terminal",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Opening a terminal\n\nOpening a terminal in a container from {% data variables.product.prodname_vscode_shortname %} is simple. Once you've opened a folder in a container, **any terminal window** you open in {% data variables.product.prodname_vscode_shortname %} (**Terminal > New Terminal**) will automatically run in the container rather than locally.\n\nYou can also use the `code` command line from this same terminal window to perform a number of operations such as opening a new file or folder in the container. Type `code --help` to learn what options are available from the command line.\n\n![Using the code CLI](images/containers/code-command-in-terminal.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/containers.md"
+}

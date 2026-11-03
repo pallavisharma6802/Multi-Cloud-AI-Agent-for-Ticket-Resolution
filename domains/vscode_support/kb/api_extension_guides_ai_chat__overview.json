@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_ai_chat__overview",
+  "title": "chat",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "# Chat participants (deprecated)\n\nChat participants are deprecated and are not supported in the Copilot harness. The Chat Participant API remains available for Local harness compatibility. Do not use it for new Copilot integrations.\n\nFor an existing participant, follow [Replace chat participants](/docs/agent-customization/migrate-customizations.md#replace-chat-participants). The guide covers migration for both people who use a participant and extension authors who maintain one.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/chat.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "learn_agents_2_extending_agents_with_mcp_servers__overview",
+  "title": "2 extending agents with mcp servers",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "# Extending agents with MCP servers\n\n[![Watch Extending Agents With MCP Servers on YouTube (opens in new tab).](images/2-extending-agents-with-mcp-servers/youtube-Sf4qD7SS2NA.jpg)](https://www.youtube.com/watch?v=Sf4qD7SS2NA)\n\nMCP servers connect agents to external tools and data sources. In this guide, you will install an MCP server, use one of its tools in chat, choose the right configuration scope, and decide when to sandbox the server.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/2-extending-agents-with-mcp-servers.md"
+}

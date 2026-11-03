@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_95__editor",
+  "title": "v1_95 / Editor",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Editor\n\n### Occurrences Highlight Delay\n\nThis milestone, we have introduced the setting `setting(editor.occurrencesHighlightDelay)` to give you control over the delay before occurrences are highlighted in the editor. Lowering this delay value can lead to an editor experience that feels more responsive when working with semantic highlighting.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_95.md"
+}

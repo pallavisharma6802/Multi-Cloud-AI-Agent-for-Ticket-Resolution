@@ -1,0 +1,8 @@
+{
+  "id": "docs_agent_customization_migrate_customizations__replace_chat_participants",
+  "title": "migrate customizations / Replace chat participants",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Replace chat participants\n\nChat participants, including extension-provided `@participant` integrations, are deprecated and are not supported in the Copilot harness. The Chat Participant API remains available for Local harness compatibility, but new integrations should not depend on it.\n\n### If you use a participant\n\nFor built-in participant workflows, ask the Copilot agent directly. For example, replace `@vscode how do I enable word wrapping` with `How do I turn on word wrapping in the editor?`. For codebase or terminal questions, attach the relevant files, terminal output, or other [context](/docs/chat/copilot-chat-context.md).\n\nFor an extension-provided participant, check whether its publisher provides an [agent plugin](/docs/agent-customization/agent-plugins.md), MCP server, or extension tools. Install the replacement and follow its setup instructions. Removing the `@name` prefix does not give Copilot access to the participant's private data, services, or implementation.\n\nThere is no automatic conversion of an installed participant. If its publisher has not provided a replacement, ask for one. Keep Local compatibility only while you still need the original integration.\n\nIf you maintain the participant implementation, follow the separate [publisher guidance](#if-you-maintain-a-participant) after the FAQ.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/migrate-customizations.md"
+}

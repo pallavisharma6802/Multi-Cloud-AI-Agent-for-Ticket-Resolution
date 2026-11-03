@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_spring_apps__make_a_change",
+  "title": "java spring apps / Make a change",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Make a change\n\nLet's now edit `HelloController.java` to change \"Greetings from Spring Boot!\" to something else like \"Hello World\". {% data variables.product.prodname_vscode_shortname %} provides a great editing experience for Java, check out [Editing and Navigating Code](/docs/languages/java.md#editing) to learn about {% data variables.product.prodname_vscode_shortname %}'s editing and code navigation features.\n\nSelect the **Restart** button on the top of the editor to relaunch the app and see result by reloading the browser.\n\n![Restart Application](images/java-webapp/restart-application.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-spring-apps.md"
+}

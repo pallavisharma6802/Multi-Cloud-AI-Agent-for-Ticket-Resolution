@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_debug_node__overview",
+  "title": "debug node",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "# Debug Node.js within a container\n\nWhen adding Docker files to a Node.js project, tasks and launch configurations are added to enable debugging that application within a container. However, due to the large ecosystem surrounding Node.js, those tasks cannot accommodate every application framework or library, which means that some applications will require additional configuration.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/debug-node.md"
+}

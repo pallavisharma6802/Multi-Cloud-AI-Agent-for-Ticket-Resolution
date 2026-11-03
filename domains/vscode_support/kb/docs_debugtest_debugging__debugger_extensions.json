@@ -1,0 +1,8 @@
+{
+  "id": "docs_debugtest_debugging__debugger_extensions",
+  "title": "debugging / Debugger extensions",
+  "category": "DEBUGGING",
+  "intent": "debugging",
+  "content": "## Debugger extensions\n\n{% data variables.product.prodname_vscode_shortname %} includes debugging support for Node.js and for JavaScript, TypeScript, and languages that compile to JavaScript.\n\nFor other languages and runtimes, install an extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vscode/Debuggers). You can also select **Install Additional Debuggers** from the **Run** menu.\n\nDebugger extensions define their supported launch configurations, breakpoint types, expression syntax, and remote debugging capabilities. Consult the extension documentation when an option described in this article is unavailable.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/debugging.md"
+}

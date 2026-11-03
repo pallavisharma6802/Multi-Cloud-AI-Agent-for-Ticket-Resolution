@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundations_agent_sessions_and_where_agents_run__the_session_target_picker",
+  "title": "agent sessions and where agents run / The Session Target picker",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## The Session Target picker\n\nAt the bottom of the chat input is the **Session Target** picker. It shows the current session target and controls where the next session runs.\n\nIn a fresh session, it shows the available session targets. In an active session, it shows options to start a new session or hand off the current one to a different session target.\n\n![Screenshot showing the Session Target picker in VS Code.](../images/foundations/agent-type.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/agent-sessions-and-where-agents-run.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v0_9_0__languages_markdown_preview",
+  "title": "v0_9_0 / Languages - Markdown Preview",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Languages - Markdown Preview\nMarkdown preview was improved so that embedded code stands out more clearly and the overall font sizes and spacing were optimized. In addition\nthere is a new action to quickly open the Markdown preview to the side (Markdown: Open Preview to the Side).\n\n![open preview side](images/0_9_0/openpreviewside.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_9_0.md"
+}

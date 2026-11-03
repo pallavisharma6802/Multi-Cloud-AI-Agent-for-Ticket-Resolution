@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_47__editor",
+  "title": "v1_47 / Editor",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Editor\n\n### Case changing in regex replace\n\nVS Code now supports changing the case of regex matching groups while doing a find/replace in the editor. This is done with the modifiers `\\u\\U\\l\\L`, where `\\u` and `\\l` will upper/lowercase a single character, and `\\U` and `\\L` will upper/lowercase the rest of the matching group.\n\nExample:\n\n<video src=\"images/1_47/case-change-replace.mp4\" title=\"Video showing Changing case while doing find and replace.\" autoplay loop controls muted></video>\n\nThe modifiers can also be stacked - for example, `\\u\\u\\u$1` will uppercase the first three characters of the group, or `\\l\\U$1` will lowercase the first character, and uppercase the rest.\n\nCurrently, these are only supported in the editor's Find control, and not in global **Find in Files**.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_47.md"
+}

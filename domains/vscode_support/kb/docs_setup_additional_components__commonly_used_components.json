@@ -1,0 +1,8 @@
+{
+  "id": "docs_setup_additional_components__commonly_used_components",
+  "title": "additional components / Commonly used components",
+  "category": "INSTALLATION",
+  "intent": "installation",
+  "content": "## Commonly used components\n\nHere are a few commonly installed components:\n\n* [Git](https://git-scm.com/download) - {% data variables.product.prodname_vscode_shortname %} has built-in support for source code control using Git but requires Git to be installed separately.\n* [Node.js (includes npm)](https://nodejs.org/) - A cross platform runtime for building and running JavaScript applications.\n* [TypeScript](https://www.typescriptlang.org) - The TypeScript compiler, `tsc`, for transpiling TypeScript to JavaScript.\n\nYou'll find the components above mentioned often in our documentation and walkthroughs.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/additional-components.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_overview__other_source_control_providers",
+  "title": "overview / Other source control providers",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## Other source control providers\n\nWhile Git support is built-in, you can [install extensions](https://marketplace.visualstudio.com/search?target=VSCode&category=SCM%20Providers&sortBy=Installs) for other version control systems, such as Subversion or Mercurial. Git repositories hosted on Azure DevOps use the built-in Git integration.\n\nBrowse available SCM provider extensions in the Extensions view (`kb(workbench.view.extensions)`) by searching for `@category:\"scm providers\"`.\n\n<div class=\"marketplace-extensions-scm-curated\"></div>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/overview.md"
+}

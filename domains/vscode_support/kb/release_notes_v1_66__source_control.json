@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_66__source_control",
+  "title": "v1_66 / Source Control",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Source Control\n\n### Source Control Repositories view\n\nPreviously, the repositories in the **Source Control Repositories** view have been sorted as they were being discovered when opening a folder/workspace with multiple repositories. This was problematic as the discovery order can vary and repositories appeared to be in random order. This milestone, repositories are always sorted by name in the **Source Control Repositories** view.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_66.md"
+}

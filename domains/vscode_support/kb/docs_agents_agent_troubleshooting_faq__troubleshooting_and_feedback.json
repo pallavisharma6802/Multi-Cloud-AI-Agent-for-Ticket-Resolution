@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_agent_troubleshooting_faq__troubleshooting_and_feedback",
+  "title": "faq / Troubleshooting and feedback",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Troubleshooting and feedback\n\n### How can I provide feedback on Copilot?\n\nUse the feedback action associated with an inline suggestion or next edit suggestion. For chat and agent issues, use the {% data variables.product.prodname_vscode_shortname %} Issue Reporter.\n\nSee [Report an unresolved issue](/docs/agents/agent-troubleshooting/troubleshooting.md#report-an-unresolved-issue) for the reporting steps, evidence checklist, and precautions for sharing diagnostic data. Follow the [Copilot issue-reporting guidelines](https://github.com/microsoft/vscode/wiki/Copilot-Issues) to make the report actionable.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/agent-troubleshooting/faq.md"
+}

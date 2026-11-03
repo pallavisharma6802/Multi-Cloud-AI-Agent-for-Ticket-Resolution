@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_cs_dev_kit_faq__overview",
+  "title": "cs dev kit faq",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# C# Dev Kit FAQ\n\nUse this FAQ (Frequently Asked Questions) topic to learn more about the C# Dev Kit extension and troubleshoot issues you may be experiencing.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/cs-dev-kit-faq.md"
+}

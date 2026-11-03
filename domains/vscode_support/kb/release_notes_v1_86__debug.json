@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_86__debug",
+  "title": "v1_86 / Debug",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debug\n\n### Triggered breakpoints\n\nYou can now set breakpoints that are automatically enabled once another breakpoint is hit. For example, this can be useful when diagnosing failure cases in code that happen only after a certain precondition. Triggered breakpoints work for all languages, and conditional breakpoints might also be used as the trigger.\n\nTriggered breakpoints can be set by right-clicking on the glyph margin, selecting **Add Triggered Breakpoint...**, and then choosing which other breakpoint enables this breakpoint.\n\n<video src=\"images/1_86/debug-triggered-breakpoint.mp4\" title=\"Add a triggered breakpoint that depends on another breakpoint to be hit.\" autoplay loop controls muted></video>\n\n_Theme: [Codesong](https://marketplace.visualstudio.com/items?itemName=connor4312.codesong) (preview on [vscode.dev](https://vscode.dev/editor/theme/connor4312.codesong))_\n\n### Close readonly files when a session ends\n\nWhen attached to a debugger, there can be internal or virtual source files that don't exist on-disk, which are opened as readonly. There is a new setting, `debug.closeReadonlyTabsOnEnd`, that causes VS Code to automatically close any opened readonly files from the debug session when the session ends.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_86.md"
+}

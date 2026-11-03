@@ -1,0 +1,8 @@
+{
+  "id": "api_ux_guidelines_quick_picks__overview",
+  "title": "quick picks",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "# Quick Picks\n\n[Quick Picks](/api/extension-capabilities/common-capabilities#quick-pick) are an easy way to perform actions and receive input from the user. This is helpful when selecting a configuration option, needing to filter content, or picking from a list of items.\n\n![Quick Pick example](images/examples/quick-pick.png)\n\n**\u2714\ufe0f Do**\n\n* Use icons for clear metaphors\n* Use thoughtful icons that add clarity and help differentiate items\n* Use the description for displaying the current items (if applicable)\n* Use the detail for providing (brief) additional context\n* Use the multi-step pattern for a series of basic inputs\n* Provide an option to create a new item when picking from a list (if applicable)\n* Use a title for multi-step quick picks\n* Use a title for quick picks without a text input\n* Use a title for quick picks asking for text input (use the placeholder to show a hint or example)\n* Use a title for quick picks featuring global buttons (e.g. a refresh icon)\n\n\u274c Don't\n\n* Repeat existing functionality\n* Use a title when the placeholder can describe the purpose on its own\n* Use inputs without a placeholder",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/quick-picks.md"
+}

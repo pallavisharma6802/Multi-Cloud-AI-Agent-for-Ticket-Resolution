@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_monitoring_agents__security_and_privacy",
+  "title": "monitoring agents / Security and privacy",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Security and privacy\n\nOTel monitoring is off by default. You or your organization must configure monitoring before data is exported. For managed deployments, your organization controls what is collected and where it goes.\n\n| Aspect | Detail |\n|---|---|\n| **Off by default** | No OTel data is exported unless you or your organization enables monitoring. |\n| **No content by default** | Prompts, responses, and tool arguments require opt-in with `captureContent`. |\n| **No PII in default attributes** | Session IDs, model names, and token counts are not personally identifiable. |\n| **Configured destinations** | Data goes to the collector endpoint or file configured by you or your organization. |",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/monitoring-agents.md"
+}

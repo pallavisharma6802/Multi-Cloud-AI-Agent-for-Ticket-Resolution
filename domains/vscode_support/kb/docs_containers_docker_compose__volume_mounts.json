@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_docker_compose__volume_mounts",
+  "title": "docker compose / Volume mounts",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Volume mounts\n\nBy default, the Container Tools extension does not do any volume mounting for debugging components. There's no need for it in .NET or Node.js, since the required components are built into the runtime. If your app requires volume mounts, specify them by using the `volumes` tag in the `docker-compose*.yml` files.\n\n```yaml\nvolumes:\n    - /host-folder-path:/container-folder-path\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/docker-compose.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_color_theme__semantic_colors",
+  "title": "color theme / Semantic colors",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Semantic colors\n\nSemantic highlighting is available for TypeScript and JavaScript in VS Code release 1.43. We expect it to be adopted by other languages soon.\n\nSemantic highlighting enriches syntax coloring based on symbol information from the language service, which has more complete understanding of the project. The coloring changes appear once the language server is running and has computed the semantic tokens.\n\nEach theme controls whether to enable semantic highlighting with a specific setting that is part of the theme definition. The style of each semantic token is defined by the theme's styling rules.\n\nUsers can override the semantic highlighting feature and colorization rules using the `editor.tokenColorCustomizations` setting:\n\nEnable semantic highlighting for a specific theme:\n\n```json\n\"editor.tokenColorCustomizations\": {\n    \"[Material Theme]\": {\n        \"semanticHighlighting\": true\n    }\n},\n```\n\nThemes can define theming rules for semantic tokens as described in the [Syntax Highlighting guide](/api/language-extensions/syntax-highlight-guide#semantic-theming).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/color-theme.md"
+}

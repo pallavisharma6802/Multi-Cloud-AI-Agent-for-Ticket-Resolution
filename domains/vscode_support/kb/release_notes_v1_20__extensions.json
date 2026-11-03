@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_20__extensions",
+  "title": "v1_20 / Extensions",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Extensions\n\n### Extension recommendations\n\nWhen you are working on file types not supported out-of-the-box by VS Code or by any installed extension, you may not see syntax highlighting. If there are extensions in the Marketplace that can support such files, you will now be notified.\n\n<video src=\"images/1_20/filerec.mp4\" title=\"Video showing Extension Recommendations for unknown file types.\" autoplay loop controls muted></video>\n\nThe extension recommendation list will now include extensions that are popular among other users who work on the same repository as you.\n\n![Extension Recommendation based on what is popular on the same repo](images/1_20/popular-extension.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_20.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_88__dev_containers",
+  "title": "v1_88 / Dev Containers",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Dev Containers\n\n### Automatic start of Docker\n\nWhen the Dev Containers extension detects that Docker is not running on Windows or Mac, it now checks for and automatically starts Docker Desktop. This should avoid a common manual step after rebooting your machine.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_88.md"
+}

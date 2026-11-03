@@ -1,0 +1,8 @@
+{
+  "id": "learn_java_spring_boot_4_test_with_playwright__reading_the_evidence",
+  "title": "4 test with playwright / Reading the Evidence",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Reading the Evidence\n\nWatching the browser is satisfying and proves very little; a page can flash through a\nstate too quickly to see, and a human eye is a poor assertion engine.\n\nReturn to Chat and review the completed tool calls. The trace shows the page title that\nwas read, the exact text that was typed, the row that was located, the checked state that\nwas observed after the toggle, and the absence check that ran after the delete. Each of\nthose is a value the tool returned, not a claim in the summary.\n\nThat is the habit worth taking away: the final response is a summary, and the tool calls\nare the test report.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/4-test-with-playwright.md"
+}

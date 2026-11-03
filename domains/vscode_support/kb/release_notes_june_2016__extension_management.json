@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_june_2016__extension_management",
+  "title": "June_2016 / Extension Management",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Extension Management\n\nWe have introduced a new Extensions View to improve finding, installing, and updating VS Code [extensions](/docs/configure/extensions/extension-marketplace.md).\n\nTo display the Extensions View, click the Extensions View icon or press `kb(workbench.view.extensions)`:\n\n![extension view icon](images/June_2016/extensions-view-icon.png)\n\nBy clicking on the `...` **More Actions** button, it is possible to show:\n\n* The list of currently installed extensions\n* The list of outdated extensions that can be updated\n* The list of recommended extensions based on your workspace\n* The list of globally popular extensions\n\nClearing the search box, shows the list of installed extensions.\n\nBrowsing through a list of extensions, it is possible to install, uninstall or update them. Clicking on an extension will display the detailed description in the editor area.\n\n![Extensions View](images/June_2016/extensions_viewlet.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/June_2016.md"
+}

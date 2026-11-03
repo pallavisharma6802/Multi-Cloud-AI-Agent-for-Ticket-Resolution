@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vdecember__key_bindings_for_numeric_keypad",
+  "title": "vDecember / Key Bindings for Numeric Keypad",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Key Bindings for Numeric Keypad\n\nAdded support for function keys `kbstyle(f13-f19)` and for the numeric keypad keys:\n\n* `kbstyle(numpad0-numpad9)`\n* `kbstyle(numpad_multiply)`\n* `kbstyle(numpad_add)`\n* `kbstyle(numpad_separator)`\n* `kbstyle(numpad_subtract)`\n* `kbstyle(numpad_decimal)`\n* `kbstyle(numpad_divide)`",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vDecember.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v0_9_0__persistent_update_to_update_location_for_customizations",
+  "title": "v0_9_0 / Persistent (update to update) location for Customizations",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Persistent (update to update) location for Customizations\nPreviously we did not have a location we respected across updates.  It's true that we did have a location for user settings but as we get closer to our final update story we added a new location.  In the future, we will (gracefully) move all user settings here.\n\nThe new location is `.vscode/extensions` under your user directory.\n\nDepending on your platform, this folder is located here:\n* **Windows** `%USERPROFILE%\\.vscode\\extensions`\n* **Mac** `$HOME/.vscode/extensions`\n* **Linux** `$HOME/.vscode/extensions`\n\nAs this location is under your user directory, the content is persisted across VS Code updates.  This is just the start and we plan to use this location more in future updates.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_9_0.md"
+}

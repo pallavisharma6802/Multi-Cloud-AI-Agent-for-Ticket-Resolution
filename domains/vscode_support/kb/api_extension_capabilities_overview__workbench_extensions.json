@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_capabilities_overview__workbench_extensions",
+  "title": "overview / Workbench Extensions",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Workbench Extensions\n\n[Workbench Extensions](./extending-workbench) extend the VS Code Workbench UI. Add new right-click actions to the File Explorer, or even build a custom explorer using VS Code's [TreeView](/api/extension-guides/tree-view) API. And if your extension needs a fully customized user interface, use the [Webview API](/api/extension-guides/webview) to build your own document preview or UI using standard HTML, CSS, and JavaScript.\n\n**Extension Ideas**\n\n- Add custom context menu actions to the File Explorer.\n- Create a new, interactive TreeView in the Side Bar.\n- Define a new Activity Bar view.\n- Show new information in the Status Bar.\n- Render custom content using the `WebView` API.\n- Contribute Source Control providers.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-capabilities/overview.md"
+}

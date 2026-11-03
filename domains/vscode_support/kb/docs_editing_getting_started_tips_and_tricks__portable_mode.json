@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_getting_started_tips_and_tricks__portable_mode",
+  "title": "tips and tricks / Portable mode",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Portable mode\n\n{% data variables.product.prodname_vscode_shortname %} has a [Portable mode](/docs/setup/portable.md) which lets you keep settings and data in the same location as your installation, for example, on a USB drive.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/tips-and-tricks.md"
+}

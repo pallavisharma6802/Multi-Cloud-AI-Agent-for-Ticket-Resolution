@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_concepts_customization__model_driven_vs_deterministic_behavior",
+  "title": "customization / Model-driven vs. deterministic behavior",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Model-driven vs. deterministic behavior\n\nMost customizations guide the model or give it more options. The model interprets instructions, decides whether a skill is relevant, and chooses when to call an available tool. The result depends on the request, available context, and model reasoning.\n\nThe runtime triggers a hook when its configured event occurs, such as a tool call starting or finishing. Use a hook for actions such as validating a tool call or starting a formatter after an edit. Discovery, trust, filters, timeouts, and error handling still affect execution. Use instructions when you want to guide how the agent reasons or writes code.\n\nFor example, an instruction that says \"run the formatter after editing a file\" asks the model to remember and perform that action. A hook configured to run after the editing tool completes performs that action regardless of whether the model remembers the instruction.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/customization.md"
+}

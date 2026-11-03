@@ -1,0 +1,8 @@
+{
+  "id": "docs_chat_chat_overview__add_context_to_your_prompts",
+  "title": "chat overview / Add context to your prompts",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Add context to your prompts\n\nProviding the right context helps the AI generate more relevant and accurate responses.\n\n* **Implicit context**: {% data variables.product.prodname_vscode_shortname %} can include or suggest editor context, such as the active file or selection. The behavior depends on the interface, harness, and context settings. Attach important files explicitly instead of assuming that opening a file adds its contents to the request. Learn how [implicit context works](/docs/agents/concepts/context.md#implicit-context).\n\n* **`#`-mentions**: type `#` in the chat input to explicitly reference files (`#file`), folders, symbols, your codebase (`#codebase`), terminal output (`#terminalSelection`), or tools like `#fetch`.\n\n* **Vision**: attach images, such as screenshots or UI mockups, as context for your prompt.\n\n* **Browser elements**: select elements from the [integrated browser](/docs/debugtest/integrated-browser.md) to add HTML, CSS, and screenshot context to your prompt.\n\nLearn more about [managing context for AI](/docs/chat/copilot-chat-context.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/chat/chat-overview.md"
+}

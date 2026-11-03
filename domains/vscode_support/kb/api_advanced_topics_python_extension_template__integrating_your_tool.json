@@ -1,0 +1,8 @@
+{
+  "id": "api_advanced_topics_python_extension_template__integrating_your_tool",
+  "title": "python extension template / Integrating your tool",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Integrating your tool\n\nThe generated `bundled/tool/server.py` file is where you will make most of your changes. `TODO` comments in the file point out the various customization points. Also search for `TODO` comments in other locations in the template, such as other Python and Markdown files. You will want to review the LICENSE file, even if you want to keep it MIT License.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/advanced-topics/python-extension-template.md"
+}

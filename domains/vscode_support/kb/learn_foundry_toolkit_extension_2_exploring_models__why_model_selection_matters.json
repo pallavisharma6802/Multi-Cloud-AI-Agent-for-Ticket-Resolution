@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_2_exploring_models__why_model_selection_matters",
+  "title": "2 exploring models / Why Model Selection Matters",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Why Model Selection Matters\n\nModel selection can get overwhelming fast when you have multiple providers, model families, sizes, and capability flags. A structured process keeps decisions grounded in evidence and prevents teams from optimizing on preference alone.\n\nIt also creates traceability, which matters when you need to explain results to stakeholders.\n\nFor example, if your scenario requires image input and deployment in Sweden Central, a model that is excellent in general but unavailable in that region is not a practical choice. This is exactly where a disciplined filter-and-validate workflow saves time.\n\nIn practice, this workflow gives you:\n\n- **Faster narrowing**: Reduce large candidate sets before deep testing.\n- **Higher confidence**: Validate capabilities and availability before committing.\n- **Cleaner trade-off analysis**: Compare speed, style, and quality with identical prompts.\n- **Better production fit**: Select models that align with quota, region, and deployment constraints.\n\nLet's talk about how to run this workflow in practice.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/2-exploring-models.md"
+}

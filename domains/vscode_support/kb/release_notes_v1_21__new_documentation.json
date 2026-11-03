@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_21__new_documentation",
+  "title": "v1_21 / New Documentation",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## New Documentation\n\n### Node.js deployment tutorials for Azure Functions\n\nWe have a new [Deploy to Azure using Azure Functions](https://code.visualstudio.com/tutorials/functions-extension/getting-started?utm_source=VsCode&utm_medium=ReleaseNotes) tutorial for creating and deploying serverless [Azure Functions](https://azure.microsoft.com/services/functions/) using the [Azure Functions extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions).\n\n### Refactoring topic\n\nWe added a dedicated [Refactoring](https://code.visualstudio.com/docs/editing/refactoring) topic describing VS Code's support for refactorings such as **Extract Method**, **Extract Variable**, and **Rename Symbol**.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_21.md"
+}

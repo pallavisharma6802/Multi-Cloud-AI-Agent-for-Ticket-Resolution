@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_33__preview_features",
+  "title": "v1_33 / Preview features",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Preview features\n\nPreview features are not ready for release but are functional enough to use. We welcome your early feedback while they are under development.\n\n### Call Hierarchy\n\nA call hierarchy view shows all calls from or to a function and allows you to drill into callers of callers and calls of calls. The image below shows that function `foo` is being called by `bar` and `bang`, then `bar` is being called by `bang` and `fib`.\n\n![Call Hierarchy view](images/1_33/call-hierarchy.png)\n\nThis is a preview feature and there aren't any extensions currently providing real data for it. However, if you are an extension author, we invite you to validate our proposed API. If you are interested, there is a sample extension for testing: https://github.com/jrieken/demo-callhierarchy.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_33.md"
+}

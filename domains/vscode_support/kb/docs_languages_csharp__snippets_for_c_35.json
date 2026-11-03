@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_csharp__snippets_for_c_35",
+  "title": "csharp / Snippets for C&#35;",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Snippets for C&#35;\n\nFor information on snippets in C# Dev Kit, go to the [Navigate and Edit documentation](/docs/csharp/navigate-edit.md). There are also several built-in snippets included in {% data variables.product.prodname_vscode_shortname %} that will come up as you type or you can press `kb(editor.action.triggerSuggest)` (Trigger Suggest) and we will give you a context specific list of suggestions.\n\n![Snippets](images/csharp/snippet.png)\n\n>**Tip:** You can add in your own User Defined Snippets for C#. Take a look at [User Defined Snippets](/docs/editing/userdefinedsnippets.md) to find out how.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/csharp.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_web_extensions__publish_a_web_extension",
+  "title": "web extensions / Publish a web extension",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Publish a web extension\n\nWeb extensions are hosted on the [Marketplace](https://marketplace.visualstudio.com/vscode) along with other extensions.\n\nMake sure to use the latest version of `vsce` to publish your extension. `vsce` tags all extensions that are web extension. For that `vsce` is using the rules listed in the [web extension enablement](#web-extension-enablement) section.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/web-extensions.md"
+}

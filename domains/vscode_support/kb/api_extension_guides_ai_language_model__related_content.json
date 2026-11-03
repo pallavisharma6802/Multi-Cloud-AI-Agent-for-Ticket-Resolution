@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_ai_language_model__related_content",
+  "title": "language model / Related content",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Related content\n\n- [Language Models API Reference](/api/references/vscode-api#lm)\n- [Learn more about @vscode/prompt-tsx](https://www.npmjs.com/package/@vscode/prompt-tsx)\n- [Build a VS Code chat extension](/api/extension-guides/ai/chat)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/language-model.md"
+}

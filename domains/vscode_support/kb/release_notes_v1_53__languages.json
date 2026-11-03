@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_53__languages",
+  "title": "v1_53 / Languages",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Languages\n\n### Markdown preview auto updates when images are changed on disk\n\nThe Markdown preview will now automatically update when any embedded images are changed on disk:\n\n<video src=\"images/1_53/md-preview-update.mp4\" title=\"Video showing The markdown preview updating after editing an image with an external editor.\" autoplay loop controls muted></video>\n\nThis can happen when you edit the image file using an external program or from a source control operation, such as switching branches.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_53.md"
+}

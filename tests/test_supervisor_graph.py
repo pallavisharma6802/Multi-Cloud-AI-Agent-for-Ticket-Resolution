@@ -41,7 +41,7 @@ def supervisor(monkeypatch):
     mock_retrieval_agent.retrieve_relevant_documents.return_value = [
         KBDocument(doc_id="d1", content="how to cancel an order", similarity_score=0.9, metadata={})
     ]
-    agent._retrieval_agents["it_saas"] = mock_retrieval_agent
+    agent._retrieval_agents["vscode_support"] = mock_retrieval_agent
     agent._mock_retrieval_agent = mock_retrieval_agent
     return agent
 
@@ -97,7 +97,7 @@ def test_happy_path_auto_resolves(supervisor):
     _mock_final(supervisor, action="auto_resolve", confidence=0.92)
 
     result = supervisor.process_ticket(
-        "TKT-1", "Cancel order", "Please cancel order #123", domain_pack_id="it_saas"
+        "TKT-1", "Cancel order", "Please cancel order #123", domain_pack_id="vscode_support"
     )
     assert result.requires_human_review is False
     assert result.trace["final_action"] == "auto_resolve"
@@ -140,7 +140,7 @@ def test_judge_exhaustion_with_draft_forces_escalate(supervisor):
     _mock_final(supervisor, action="auto_resolve", confidence=0.99)
 
     result = supervisor.process_ticket(
-        "TKT-JUDGE-FAIL", "Cancel order", "Please cancel order #123", domain_pack_id="it_saas"
+        "TKT-JUDGE-FAIL", "Cancel order", "Please cancel order #123", domain_pack_id="vscode_support"
     )
 
     assert result.requires_human_review is True
@@ -184,7 +184,7 @@ def test_escalate_and_rewrite_loop(supervisor):
     supervisor.drafting.draft_response = MagicMock()
     _mock_final(supervisor, action="escalate", confidence=0.3)
 
-    result = supervisor.process_ticket("TKT-2", "Weird issue", "Something odd", domain_pack_id="it_saas")
+    result = supervisor.process_ticket("TKT-2", "Weird issue", "Something odd", domain_pack_id="vscode_support")
     assert result.requires_human_review is True
     assert supervisor._mock_retrieval_agent.retrieve_relevant_documents.call_count == 2
     supervisor.drafting.draft_response.assert_not_called()
@@ -227,7 +227,7 @@ def test_analytics_and_safety_net(supervisor, monkeypatch):
     )
     _mock_final(supervisor, action="auto_resolve")
 
-    supervisor.process_ticket("TKT-6", "Cancel order", "Please cancel", domain_pack_id="it_saas")
+    supervisor.process_ticket("TKT-6", "Cancel order", "Please cancel", domain_pack_id="vscode_support")
     supervisor.bq_sink.record_ticket_event.assert_called_once()
 
     monkeypatch.setattr(settings, "max_iterations", 0)
@@ -235,7 +235,7 @@ def test_analytics_and_safety_net(supervisor, monkeypatch):
         side_effect=AssertionError("should not be called")
     )
     _mock_final(supervisor, action="escalate", confidence=0.1)
-    result = supervisor.process_ticket("TKT-5", "Some ticket", "Some description", domain_pack_id="it_saas")
+    result = supervisor.process_ticket("TKT-5", "Some ticket", "Some description", domain_pack_id="vscode_support")
     assert result.requires_human_review is True
     assert any("safety_net" in flag for flag in result.trace["anomaly_flags"])
 
@@ -271,3 +271,18 @@ def test_unfinished_template_cannot_be_auto_resolved(supervisor):
     assert result["requires_human_review"] is True
     assert result["final_action"] == "escalate"
     supervisor.llm_client.generate_structured.assert_not_called()
+
+
+def test_repeated_redraft_stops_after_one_revision(supervisor):
+    supervisor.continuation.decide_post_judging = MagicMock(return_value=(
+        PostJudgingDecision(action="retry", rationale="Still unsupported"), make_metadata(),
+    ))
+    state = {
+        "title": "Windows install", "description": "How to install", "priority": "low",
+        "drafting_iteration": 2, "iteration_count": 1,
+        "judge_result": {"faithfulness_score": 0.8, "relevance_score": 1.0, "confidence": 0.8,
+                         "unsupported_claims": ["macOS-only step"]},
+    }
+    result = supervisor._continuation_post_judging_node(state)
+    assert result["post_judging_action"] == "escalate"
+    assert result["iteration_count"] == 1

@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_get_started__necessary_tools",
+  "title": "get started / Necessary tools",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Necessary tools\n\n- [{% data variables.product.prodname_vscode %}](https://code.visualstudio.com)\n- [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension\n- For .NET Development, the [.NET SDK](https://dotnet.microsoft.com/download)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/get-started.md"
+}

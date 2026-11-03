@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_locales__common_questions",
+  "title": "locales / Common questions",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Common questions\n\n### Unable to write to file because the file is dirty\n\nThis notification may mean that your `argv.json` file wasn't saved after a previous change. Check if there are any errors in the file (**Preferences: Configure Runtime Arguments**), make sure the file is saved, and try to install the Language Pack again.\n\n### Can I contribute to a language pack's translations?\n\nYes, the [{% data variables.product.prodname_vscode %} Community Localization Project](https://aka.ms/vscodeloc) is open to anyone, where contributors can provide new translations, vote on existing translations, or suggest process improvements.\n\n### How can I enable a programming language like Python?\n\nRefer to the [Programming Languages](/docs/languages/overview.md) section to learn how to install support for programming languages, such as PHP, Python, and Java.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/locales.md"
+}

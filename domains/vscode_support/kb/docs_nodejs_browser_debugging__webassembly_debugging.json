@@ -1,0 +1,8 @@
+{
+  "id": "docs_nodejs_browser_debugging__webassembly_debugging",
+  "title": "browser debugging / WebAssembly Debugging",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## WebAssembly Debugging\n\nWebAssembly debugging in browsers is identical to Node.js, [read more about WebAssembly Debugging here](/docs/nodejs/nodejs-debugging.md#debugging-webassembly).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/browser-debugging.md"
+}

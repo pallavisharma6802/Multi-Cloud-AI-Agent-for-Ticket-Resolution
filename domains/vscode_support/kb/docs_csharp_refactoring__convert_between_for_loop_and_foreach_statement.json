@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_refactoring__convert_between_for_loop_and_foreach_statement",
+  "title": "refactoring / Convert between for loop and foreach statement",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Convert between for loop and foreach statement\n\n**What:** If you have a [for](https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/for) loop in your code, you can use this refactoring to convert it to a [foreach](https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/foreach-in) statement.\n\n**Why:** Reasons you might want to convert a for loop to a foreach statement include:\n\n* You don't use the local loop variable inside the loop except as an index to access items.\n* You want to simplify your code and reduce the likelihood of logic errors in the initializer, condition, and iterator sections.\n\nReasons you might want to convert a foreach statement to a for loop include:\n\n* You want to use the local loop variable inside the loop for more than just accessing the item.\n* You are iterating through a multi-dimensional array and you want more control over the array elements.\n\n**How-to:**\n\n1. Place your caret in the `foreach` or `for` keyword.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select from the following two options:\n\nSelect **Convert to `for`**.\n\n![Convert to `for` example](images/refactoring/convert-to-for.png)\n\nSelect **Convert to `foreach`**.\n\n![Convert to `foreach`](images/refactoring/convert-to-foreach.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+}

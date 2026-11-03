@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_3_building_social_media_agent__quick_question",
+  "title": "3 building social media agent / Quick Question",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Quick Question\n\nIf an agent gives polished output but cannot explain where key product facts came from, would you trust it for external publishing?",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/3-building-social-media-agent.md"
+}

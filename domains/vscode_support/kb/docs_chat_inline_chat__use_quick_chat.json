@@ -1,0 +1,8 @@
+{
+  "id": "docs_chat_inline_chat__use_quick_chat",
+  "title": "inline chat / Use Quick Chat",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Use Quick Chat\n\nQuick Chat provides a lightweight chat panel that opens at the top of the editor. Use it for quick questions and short interactions without opening the full {% data variables.copilot.chat_view %} or leaving your current workflow.\n\n> [!NOTE]\n> Quick Chat in the editor window differs from [quick chats in the {% data variables.copilot.agents_window %}](/docs/agents/run/agents-window.md#start-a-quick-chat), which are workspace-free conversations that appear in the sessions list.\n\nTo open Quick Chat, press `kb(workbench.action.quickchat.toggle)` or select **Quick Chat** from the **Chat** menu in the title bar.\n\nType your prompt and press `kbstyle(Enter)` to get a response. Quick Chat supports the same `#`-mentions and `@`-mentions as the {% data variables.copilot.chat_view %} for adding context. Select the **Open in {% data variables.copilot.chat_view %}** button to continue the conversation in the full {% data variables.copilot.chat_view %}.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/chat/inline-chat.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vjanuary__workbench",
+  "title": "vJanuary / Workbench",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Workbench\n\n### Hide the Menu Bar (Windows, Linux)\n\nWe added a new action to hide the menu bar on Windows and Linux (`View | Toggle Menu Bar`). You can still access the menu pressing the `Alt` key.\n\n### Horizontal panel\n\nWe now show the output and debug consoles horizontally:\n\n![Horizontal output panel](images/January/output.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vJanuary.md"
+}

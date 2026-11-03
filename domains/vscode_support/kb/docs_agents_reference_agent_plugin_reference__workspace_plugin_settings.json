@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_agent_plugin_reference__workspace_plugin_settings",
+  "title": "agent plugin reference / Workspace plugin settings",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Workspace plugin settings\n\nProjects can configure plugin recommendations in `.claude/settings.json` or repository defaults in `.github/copilot/settings.json`:\n\n* **`extraKnownMarketplaces`**: registers additional marketplaces for the project. These marketplaces appear among the available sources in the Agent Customizations editor.\n* **`enabledPlugins`**: lists plugins that should be enabled by default.\n\nFor example:\n\n```json\n{\n    \"extraKnownMarketplaces\": {\n        \"company-tools\": {\n            \"source\": {\n                \"source\": \"github\",\n                \"repo\": \"your-org/plugin-marketplace\"\n            }\n        }\n    },\n    \"enabledPlugins\": {\n        \"code-formatter@company-tools\": true\n    }\n}\n```\n\nThe marketplace key, `company-tools` in this example, must match the `name` in the marketplace's `marketplace.json`. Plugin identifiers use `<plugin>@<marketplace>`, not the marketplace repository name. Keep marketplace names stable so shared settings continue to refer to the same plugins.\n\nFor the differences between Local recommendations, Copilot repository defaults, and enterprise policy, see [workspace plugin recommendations](/docs/agent-customization/agent-plugins.md#workspace-plugin-recommendations).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/agent-plugin-reference.md"
+}

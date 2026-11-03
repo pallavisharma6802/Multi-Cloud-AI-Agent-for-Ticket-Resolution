@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_10__known_issues",
+  "title": "v1_10 / Known Issues",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Known Issues\n\n* [Duplicate errors and warnings](https://github.com/microsoft/vscode/issues/19627) - This issue may surface more often if the [Preview SCM](#contributable-scm-providers) feature is enabled.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_10.md"
+}

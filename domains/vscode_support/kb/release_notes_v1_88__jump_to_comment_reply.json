@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_88__jump_to_comment_reply",
+  "title": "v1_88 / Jump to comment reply",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Jump to comment reply\n\nThe context menu for a comment thread in the Comments view now includes a \"Reply\" action when the comment thread allows replies. This enables you to quickly jump to the reply input box and start typing a reply.\n\n![Comments view context menu with a Reply action](images/1_88/context-menu-comment.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_88.md"
+}

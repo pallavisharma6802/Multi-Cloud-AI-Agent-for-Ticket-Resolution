@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_5__node_debugging",
+  "title": "v1_5 / Node Debugging",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Node Debugging\n\n### Launch debug target in Integrated Terminal\n\nIt is now possible to launch the Node.js debug target in the **Integrated Terminal** which helps when developing Node.js based command line applications that read from an interactive terminal and/or need to control their output on the terminal they are running in.\n\nSince there are now three options where to run a node program (**Debug Console**, **Integrated Terminal**, **External Terminal**), we've deprecated the boolean `launch.json` attribute `externalConsole` and introduced a new attribute `console` which accepts these corresponding values: `internalConsole`, `integratedTerminal`, `externalTerminal`.\n\n![New launch attribute Attribute console](images/1_5/debug-console-attribute.png)\n\n>**Note:** Depending on what options you have configured for the `internalConsoleOptions` attribute, VS Code may decide to open the **Debug Console** which will hide the **Integrated Terminal**. To avoid this, please set `internalConsoleOptions` to `neverOpen`.\n\n>**Note:** In this release, every debug session creates a new **Integrated Terminal**. In the next release, we will reuse an existing **Integrated Terminal** if possible.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_5.md"
+}

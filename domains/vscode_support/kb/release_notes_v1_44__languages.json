@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_44__languages",
+  "title": "v1_44 / Languages",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Languages\n\n### Auto import style in JavaScript\n\nThe new `javascript.preferences.importModuleSpecifierEnding` setting lets you control the style of imports that VS Code's auto imports use. This can be useful if you are writing code for platforms such as browsers that support native ES6 modules.\n\nPossible values are:\n\n* `auto` -\u00a0The default. Uses the project's [jsconfig](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_javascript-projects-jsconfigjson) to determine the import style to use.\n* `minimal` - Use's Node.js style imports. This shortens imports for `src/component/index.js` to `src/component`.\n* `index` - Include the `index` part of the path as well. This shortens `src/component/index.js` to `src/component/index`.\n* `js` - Use the full path, including the file extension (`.js`).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_44.md"
+}

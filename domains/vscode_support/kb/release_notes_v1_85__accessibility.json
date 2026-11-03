@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_85__accessibility",
+  "title": "v1_85 / Accessibility",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Accessibility\n\n### Accessible View\n\nLast iteration, we introduced automatic closing of the [Accessible View](https://code.visualstudio.com/docs/configure/accessibility/accessibility#_accessible-view) when a key is pressed for a seamless flow between a UI component and its Accessible View. In some cases, this behavior might not be desirable and can now be disabled via the `accessibility.accessibleView.closeOnKeyPress` setting.\n\nIf you find yourself toggling between the terminal and the terminal's Accessible View, you might want to enable `terminal.integrated.accessibleViewFocusOnCommandExecution`, which automatically opens the Accessible View after a command is executed in the terminal.\n\n### Tooltips shown on keyboard focus\n\nTo improve the experience for keyboard users, tooltips are now shown on keyboard focus for items with custom hovers such as Activity Bar and Status Bar items.\n\n![Tooltip for Extensions view icon in the Activity Bar](images/1_85/tooltip-keyboard-focus.png)\n\n### Speech detection timeout\n\nA new setting `accessibility.voice.speechTimeout` controls how long to wait during silence before accepting speech input, for example to Copilot Chat. By default, voice input is automatically submitted after `1.2` seconds of silence. You can set this to `0` to disable accepting speech input entirely.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_85.md"
+}

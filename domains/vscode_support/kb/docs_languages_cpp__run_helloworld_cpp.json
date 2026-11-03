@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_cpp__run_helloworld_cpp",
+  "title": "cpp / Run helloworld.cpp",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Run helloworld.cpp\n\n1. Make sure you have `helloworld.cpp` open so it is the active file in your editor.\n2. Press the play button in the top right corner of the editor.\n\n   ![Screenshot of helloworld.cpp and play button](images/cpp/run-play-button.png)\n\n3. Choose **C/C++: g++.exe build and debug active file** from the list of detected compilers on your system.\n\n   ![C++ debug configuration dropdown](images/cpp/select-gcc-compiler.png)\n\n    You are only prompted to choose a compiler the first time you run `helloworld.cpp`. This compiler becomes \"default\" compiler set in your `tasks.json` file.\n\n4. After the build succeeds, you should see \"Hello World\" appear in the integrated **Terminal**.\n\n    ![screenshot of program output](images/cpp/helloworld-terminal-output.png)\n\nCongratulations! You've just run your first C++ program in {% data variables.product.prodname_vscode_shortname %}! The next step is to learn more about the Microsoft C/C++ extension's language features such as IntelliSense, code navigation, build configuration, and debugging using one of the Tutorials in the next section.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/cpp.md"
+}

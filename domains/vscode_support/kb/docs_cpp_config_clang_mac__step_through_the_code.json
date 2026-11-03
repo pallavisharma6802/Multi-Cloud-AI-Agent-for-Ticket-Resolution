@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_config_clang_mac__step_through_the_code",
+  "title": "config clang mac / Step through the code",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Step through the code\n\nNow you're ready to start stepping through the code.\n\n1. Select the **Step over** icon in the debugging control panel so that the `for (const string& word : msg)` statement is highlighted.\n\n    ![Step over button](images/cpp/step-over-button.png)\n\n    The **Step Over** command skips over all the internal function calls within the `vector` and `string` classes that are invoked when the `msg` variable is created and initialized. Notice the change in the **Variables** window. The contents of `msg` are visible because that statement has completed.\n1. Press **Step over** again to advance to the next statement (skipping over all the internal code that is executed to initialize the loop). Now, the **Variables** window shows information about the loop variable.\n1. Press **Step over** again to execute the `cout` statement.\n1. If you like, you can keep pressing **Step over** until all the words in the vector have been printed to the console. But if you are curious, try pressing the **Step Into** button to step through source code in the C++ standard library!",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/config-clang-mac.md"
+}

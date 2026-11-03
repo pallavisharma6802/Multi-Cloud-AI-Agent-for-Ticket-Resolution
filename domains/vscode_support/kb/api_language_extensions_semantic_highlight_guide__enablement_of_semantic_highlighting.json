@@ -1,0 +1,8 @@
+{
+  "id": "api_language_extensions_semantic_highlight_guide__enablement_of_semantic_highlighting",
+  "title": "semantic highlight guide / Enablement of semantic highlighting",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Enablement of semantic highlighting\n\nWhether semantic tokens are computed and highlighted is decided by the setting `editor.semanticHighlighting.enabled`. It can have values `true`, `false`, and `configuredByTheme`.\n\n- `true` and `false` turn semantic highlighting on or off for all themes.\n- `configuredByTheme` is the default and lets each theme control whether semantic highlighting is enabled or not. All the themes that ship with VS Code (for example, the \"Dark+\" default) have semantic highlighting enabled by default.\n\nLanguage extensions that depend on semantic tokens can override the default for their language in their `package.json`:\n\n```json\n{\n  \"configurationDefaults\": {\n    \"[languageId]\": {\n      \"editor.semanticHighlighting.enabled\": true\n    }\n  }\n}\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/language-extensions/semantic-highlight-guide.md"
+}

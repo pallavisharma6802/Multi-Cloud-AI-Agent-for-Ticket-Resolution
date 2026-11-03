@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundations_reviewing_and_controlling_agent_changes__common_patterns",
+  "title": "reviewing and controlling agent changes / Common patterns",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Common patterns\n\n### Cleaning up a prompt retroactively\n\nEdit the original message and resend instead of stacking corrections. Cleaner history, cleaner response.\n\n### Mid-run change of plans\n\nUse **Steer with Message** so the agent adjusts without stopping. The agent finishes its current action, reads your new direction, and adjusts.\n\n### Something went wrong and needs a clean rollback\n\nUse **Restore Checkpoint** to go back to the last clean state before the wrong turn.\n\n### Exploring two approaches at once\n\nUse **Fork** to create a second branch and try the alternative. Both sessions run independently and you can compare results.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/reviewing-and-controlling-agent-changes.md"
+}

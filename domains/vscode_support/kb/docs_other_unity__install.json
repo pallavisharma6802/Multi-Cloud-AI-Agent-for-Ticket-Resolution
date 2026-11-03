@@ -1,0 +1,8 @@
+{
+  "id": "docs_other_unity__install",
+  "title": "unity / Install",
+  "category": "REFERENCE",
+  "intent": "reference",
+  "content": "## Install\n\n1. You will need at least [Unity](https://www.unity.com) 2021 installed.\n\n1. If you haven't already done so, [install {% data variables.product.prodname_vscode %}](https://code.visualstudio.com).\n\n1. Next, install the [Unity for {% data variables.product.prodname_vscode %}](https://aka.ms/vscode-unity) extension from the Visual Studio Marketplace. For additional details on installing extensions, read [Extension Marketplace](/docs/configure/extensions/extension-marketplace.md). The Unity extension is published by Microsoft.\n\nInstalling the Unity extension installs all its dependencies required to write [C#](/docs/languages/csharp.md) with {% data variables.product.prodname_vscode %}, including the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/other/unity.md"
+}

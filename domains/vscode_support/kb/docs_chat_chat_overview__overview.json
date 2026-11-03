@@ -1,0 +1,8 @@
+{
+  "id": "docs_chat_chat_overview__overview",
+  "title": "chat overview",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Use chat in {% data variables.product.prodname_vscode_shortname %}\n\nChat in {% data variables.product.prodname_vscode %} lets you use natural language for interacting with AI agents. Ask questions about your code, get help understanding complex logic, generate new features, fix bugs, and more, all through a conversational interface.\n\nThis article describes interaction mechanics shared by chat surfaces in {% data variables.product.prodname_vscode_shortname %}, including how to send and steer requests, add context, generate and edit images, navigate a conversation, and personalize the chat display. For an introduction to AI workflows, agents, and the available interfaces, see [Build with AI in {% data variables.product.prodname_vscode_shortname %}](/docs/agents/overview.md).\n\n<div class=\"docs-action\" data-show-in-doc=\"false\" data-show-in-sidebar=\"true\" title=\"Get started with agents\">\nFollow a hands-on tutorial to build an app with AI agents in {% data variables.product.prodname_vscode_shortname %}.\n\n* [Start agentic coding tutorial](/docs/agents/agents-tutorial.md)\n\n</div>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/chat/chat-overview.md"
+}

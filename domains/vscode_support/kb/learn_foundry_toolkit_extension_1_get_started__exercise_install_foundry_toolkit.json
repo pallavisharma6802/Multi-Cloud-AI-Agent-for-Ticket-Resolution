@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_1_get_started__exercise_install_foundry_toolkit",
+  "title": "1 get started / Exercise - install Foundry Toolkit",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Exercise - install Foundry Toolkit\n\nLet's install Foundry Toolkit so we can get started on the next steps. You can install it from the Visual Studio Code marketplace or directly from the Extensions view.\n\n1. Open Visual Studio Code and then open the Extensions view from the activity bar.\n\n2. Search for \"Foundry Toolkit\" in the search bar.\n3. Click \"Install\" on the Foundry Toolkit extension.\n\nThat's it, you now have the extension installed and ready to use. Next, we will explore the layout and key sections of the extension.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/1-get-started.md"
+}

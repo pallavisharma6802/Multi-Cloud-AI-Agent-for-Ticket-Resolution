@@ -1,0 +1,8 @@
+{
+  "id": "docs_debugtest_testing__test_configuration_settings",
+  "title": "testing / Test configuration settings",
+  "category": "DEBUGGING",
+  "intent": "debugging",
+  "content": "## Test configuration settings\n\nThere are multiple settings that you can configure to customize the testing experience in {% data variables.product.prodname_vscode_shortname %}. Each language extension might provide additional settings specific to testing in that language. Here are some common settings that you can configure:\n\n| Setting ID | Details |\n|-|-|\n| `setting(testing.countBadge)` | Controls the count badge on the Testing icon on the Activity Bar |\n| `setting(testing.gutterEnabled)` | Configure whether to show the test control in the editor gutter |\n| `setting(testing.defaultGutterClickAction)` | Configure the default action when selecting the gutter test control |\n| `setting(testing.coverageBarThresholds)` | Configure the colors for the coverage bar thresholds for the Test Coverage view |\n| `setting(testing.displayedCoveragePercent)` | Configure what percentage value is displayed in the Test Coverage view (total, statement, or minimum) |\n| `setting(testing.showCoverageInExplorer)` | Configure whether to show the coverage percentage in the Explorer view |\n\nYou can find all testing-related settings in the Settings editor (`kb(workbench.action.openSettings)`).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/testing.md"
+}

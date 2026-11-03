@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_themes__color_themes",
+  "title": "themes / Color Themes",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Color Themes\n\nColor themes enable you to modify the colors in the {% data variables.product.prodname_vscode %} user interface to match your preferences and work environment. A Color Theme affects both the {% data variables.product.prodname_vscode_shortname %} user interface elements and the editor highlighting colors.\n\n![Preview themes from the Command Palette](images/themes/themes_hero.gif)\n\nTo select a different Color Theme:\n\n1. Select the **File** > **Preferences** > **Theme** > **Color Theme** menu item, or use the **Preferences: Color Theme** command (`kb(workbench.action.selectTheme)`) to display the Color Theme picker.\n\n1. Use the `kbstyle(Up)` and `kbstyle(Down)` keys to navigate through the list and preview the colors of the theme.\n\n1. Select the theme you want and press `kbstyle(Enter)`.\n\nThe active color theme is stored in your user [settings](/docs/configure/settings.md) (keyboard shortcut `kb(workbench.action.openSettings)`).\n\n```json\n  // Specifies the color theme used in the workbench.\n  \"workbench.colorTheme\": \"Solarized Dark\"\n```\n\n> [!TIP]\n> By default, the theme is stored in your user settings and applies globally to all workspaces. You can also configure a workspace-specific theme. To do so, set a theme in the Workspace [settings](/docs/configure/settings.md#workspace-settings).\n>\n> ![Screenshot of Settings editor to set a workspace-specific Color Theme.](images/themes/workspace-color-theme.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/themes.md"
+}

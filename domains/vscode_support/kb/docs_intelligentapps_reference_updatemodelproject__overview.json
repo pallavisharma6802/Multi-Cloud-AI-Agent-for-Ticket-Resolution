@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_reference_updatemodelproject__overview",
+  "title": "UpdateModelProject",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Update a model project in Model Conversion\n\nThe recipes inside Foundry Toolkit could be updated for quality improvements, feature updates etc. After you update the extension, if the recipe version inside Foundry Toolkit is different from the one in your local model project, you will see a \"Need Update\" notification appear.\n\nThis article describes the different ways to update a model project if this happens.\n\n![Screenshot showing that a model needs an update](../images/modelconversion/need-update.png)\n\n> [!NOTE]\n> The Foundry Toolkit extension only contains the latest version of recipes to save size. Previous versions of the extension still contain the older recipes. Using one of them is one of the ways to handle this, as described below.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/reference/UpdateModelProject.md"
+}

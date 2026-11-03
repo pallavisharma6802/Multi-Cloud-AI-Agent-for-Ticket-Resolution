@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_98__editor",
+  "title": "v1_98 / Editor",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Editor\n\n### Peek references drag and drop support\n\nThe [peek](https://code.visualstudio.com/docs/editing/editingevolved#_peek) view now supports drag & drop. Invoke **Peek References**, **Peek Implementation**, or any of the other peek commands, and drag entries from its tree to open them as separate editors.\n\n<video src=\"images/1_98/peek_dnd.mp4\" title=\"Video that shows drag and drop of a peek reference as new editor group.\" autoplay loop controls muted></video>\n_Theme: [GitHub Light Colorblind (Beta)](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme) (preview on [vscode.dev](https://vscode.dev/editor/theme/GitHub.github-vscode-theme/GitHub%20Light%20Colorblind%20(Beta)))_\n\n### Occurrences highlight delay\n\nThe delay for occurrence highlighting within the editor is now set to 0 by default. This results in an overall more responsive editor feel. You can still control the delay with the `setting(editor.occurrencesHighlightDelay)` setting.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_98.md"
+}

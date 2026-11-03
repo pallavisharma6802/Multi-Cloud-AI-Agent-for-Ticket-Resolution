@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_github__get_started_with_github_pull_requests_and_issues",
+  "title": "github / Get started with GitHub Pull Requests and Issues",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## Get started with GitHub Pull Requests and Issues\n\nAfter you install the [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) extension, sign in to use pull request and issue features.\n\n1. Select the GitHub icon in the Activity Bar.\n\n1. Select **Sign In** and follow the browser prompts.\n\n    ![Screenshot showing the sign-in button in the GitHub view.](images/github/extension-signin.png)\n\n1. Return to {% data variables.product.prodname_vscode_shortname %} when authentication is complete.\n\nIf you are not redirected to {% data variables.product.prodname_vscode_shortname %}, you can add your authorization token manually:\n\n1. In the browser window, copy your authorization token.\n\n1. In {% data variables.product.prodname_vscode_shortname %}, select **Signing in to github.com...** in the Status Bar.\n\n1. Paste the token and press `kbstyle(Enter)` to complete the sign-in process.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/github.md"
+}

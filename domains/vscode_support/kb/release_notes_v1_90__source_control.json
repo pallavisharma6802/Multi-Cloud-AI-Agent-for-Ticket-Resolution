@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_90__source_control",
+  "title": "v1_90 / Source Control",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Source Control\n\n### Focus input/resource group commands\n\nThis milestone, we have added several workbench commands, so that you can create keyboard shortcuts for them:\n\n- Focus on the next or previous source control input field: `workbench.scm.action.focusNextInput`, `workbench.scm.action.focusPreviousInput`\n- Focus on the next or previous resource group within a repository: `workbench.scm.action.focusNextResourceGroup`, `workbench.scm.action.focusPreviousResourceGroup`",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_90.md"
+}

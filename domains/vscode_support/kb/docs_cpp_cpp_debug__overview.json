@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_cpp_debug__overview",
+  "title": "cpp debug",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Debug C++ in {% data variables.product.prodname_vscode %}\n\nAfter you have set up the basics of your debugging environment as specified in the configuration tutorials for each target compiler/platform, you can learn more details about debugging C/C++ in this section.\n\n{% data variables.product.prodname_vscode %} supports the following debuggers for C/C++ depending on the operating system you are using:\n\n* **Linux**: GDB\n* **macOS**: LLDB or GDB\n* **Windows**: the Visual Studio Windows Debugger or GDB (using Cygwin or MinGW)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/cpp-debug.md"
+}

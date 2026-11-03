@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_planning__implement_or_save_the_plan",
+  "title": "planning / Implement or save the plan",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Implement or save the plan\n\nAfter reviewing the plan, choose an action from the plan-review card. The available actions depend on the session:\n\n| Action | What it does |\n|--------|--------------|\n| **Implement Plan** | Approves the plan and starts implementation in the current session. |\n| **Approve Plan Only** | Approves the plan without executing it. |\n| **Implement with Autopilot** | Continues autonomously using the selected approval level in the {% data variables.product.prodname_copilot_short %} session. |\n| **Reject** | Declines the plan without starting implementation. |\n\nTo share the plan or keep it with your project, open the full plan and save a separate copy. To implement it in another session, start a session with the desired agent and attach the saved plan. This shares the plan rather than transferring the entire conversation.\n\n> [!NOTE]\n> Approving a plan and approving tool actions are separate decisions. Review the session's [permissions](/docs/agents/run/approvals.md#permission-levels) before starting implementation. In a {% data variables.product.prodname_copilot_short %} session, Autopilot controls how the agent continues working, while the selected approval level controls which actions need confirmation.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/planning.md"
+}

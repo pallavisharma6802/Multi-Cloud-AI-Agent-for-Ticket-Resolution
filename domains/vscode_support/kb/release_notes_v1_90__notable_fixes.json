@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_90__notable_fixes",
+  "title": "v1_90 / Notable fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable fixes\n\n* [212386](https://github.com/microsoft/vscode/issues/212386) Local history: does not preserve entries from previously deleted file\n* [213645](https://github.com/microsoft/vscode/issues/213645) Aux window does not work in Firefox\n* vscode-js-debug#[2000](https://github.com/microsoft/vscode-js-debug/pull/2000)/[2002](https://github.com/microsoft/vscode-js-debug/pull/2002) the JavaScript debugger is faster, especially dealing with source map renames",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_90.md"
+}

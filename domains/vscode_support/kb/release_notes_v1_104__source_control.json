@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_104__source_control",
+  "title": "v1_104 / Source Control",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Source Control\n\n### Preview and migrate Git worktree changes\n\nYou can now preview differences between worktree files and your current workspace by right-clicking on a worktree file to open the context menu in the Source Control Changes view and selecting **Compare with Workspace**.\n\n![Screenshot of the context menu shown in the SCM view on a changed file in a worktree, with the Compare with Workspace option selected.](images/1_104/image.png)\n\nAfter reviewing your changes, you can use the **Migrate Worktree Changes...** command from the Command Palette (`kb(git.migrateWorktreeChanges)`) to merge all changes from a worktree into your current workspace. This makes it easy to work across multiple worktrees and selectively bring changes back into your main repository.\n\nLearn more about [Git worktrees in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview#_worktrees).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_104.md"
+}

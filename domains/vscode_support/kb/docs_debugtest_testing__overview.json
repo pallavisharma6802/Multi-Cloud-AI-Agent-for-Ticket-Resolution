@@ -1,0 +1,8 @@
+{
+  "id": "docs_debugtest_testing__overview",
+  "title": "testing",
+  "category": "DEBUGGING",
+  "intent": "debugging",
+  "content": "# Testing\n\n{% data variables.product.prodname_vscode %} provides tools to discover, run, and debug tests, inspect results, and measure code coverage. This article covers testing extensions, test execution, coverage, and integration with tasks.\n\nAI assistance is optional. If you use {% data variables.product.prodname_copilot %}, you can also [add tests with an agent](#write-tests-with-ai), get help configuring a test framework, and investigate failures.\n\n<!-- ![Testing in {% data variables.product.prodname_vscode %}](images/testing/testing-hero.png) -->",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/testing.md"
+}

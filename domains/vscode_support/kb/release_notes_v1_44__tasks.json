@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_44__tasks",
+  "title": "v1_44 / Tasks",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Tasks\n\n### Faster task Quick Pick\n\nThe task Quick Pick used to fetch all tasks from all task-providing extensions before displaying the list of tasks to choose from. Now, VS Code doesn't fetch any additional extension tasks before showing the Quick Pick dropdown, making it much faster. Extension contributed tasks are also only fetched when you ask for them, which frees up the extension host.\n\nBelow the TypeScript contributed `tsc` tasks are only fetched after the user selects the **typescript** extension.\n\n<video src=\"images/1_44/task-pick.mp4\" title=\"Video showing Task Quick Pick.\" autoplay loop controls muted></video>\n\n*Theme: One Dark Pro*",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_44.md"
+}

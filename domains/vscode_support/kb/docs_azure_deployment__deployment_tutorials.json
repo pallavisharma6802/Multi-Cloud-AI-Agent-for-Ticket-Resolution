@@ -1,0 +1,8 @@
+{
+  "id": "docs_azure_deployment__deployment_tutorials",
+  "title": "deployment / Deployment tutorials",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Deployment tutorials\n\nThe tutorials and topics below describe different ways of creating and deploying apps to Azure via {% data variables.product.prodname_vscode %}:\n\nTutorial(s) | Description | Framework / Language\n--- | --- | ---\n[Deploy a static website](https://learn.microsoft.com/azure/static-web-apps/getting-started) | Create, deploy, and update a static website | Angular, Blazor, React, or Vue\n[Deploy Node.js apps](/docs/nodejs/nodejs-deployment.md) | Deploy web apps, containerized apps, or serverless code | Node.js\n[Deploy Python apps](/docs/python/python-on-azure.md) | Deploy web apps, containerized apps, or serverless code | Python\n[Deploy Java apps](/docs/java/java-on-azure.md) | Deploy web apps, Spring Boot apps, or serverless code | Java\n\nYou can find additional tutorials and walkthroughs on the\n[Azure Developer Center](https://learn.microsoft.com/azure/developer), including language-specific articles for JavaScript and Node.js, Python, Java, and .NET.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/deployment.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_69__development_container_specification",
+  "title": "v1_69 / Development Container specification",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Development Container specification\n\n(Dev Containers 0.241.x, devcontainer CLI 0.7.x)\n\n### Multi-platform builds\n\nThe devcontainer CLI adds a `--platform` option to its `build` command that can be used to build multi-platform images. This should usually be used together with the `--push` option because the local image cache only supports images for the local architecture:\n\n```bash\ndevcontainer build --workspace-folder <workspace folder> --platform linux/arm64,linux/amd64 --image-name <your Docker ID>/<name> --push\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_69.md"
+}

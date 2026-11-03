@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_12__debugging",
+  "title": "v1_12 / Debugging",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debugging\n\n### Editing Watch expressions\n\nIt is now possible to edit Watch expressions using the context menu.\n\n![edit watch](images/1_12/edit-watch.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_12.md"
+}

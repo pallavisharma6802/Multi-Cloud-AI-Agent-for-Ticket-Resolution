@@ -1,0 +1,8 @@
+{
+  "id": "docs_extension_docs_overview__overview",
+  "title": "overview",
+  "category": "EXTENSIONS",
+  "intent": "extensions",
+  "content": "# Extension Docs\n\nExtensions add specialized tools and workflows to {% data variables.product.prodname_vscode %}. Choose an area to explore its features, setup guides, tutorials, and reference documentation.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/extension-docs/overview.md"
+}

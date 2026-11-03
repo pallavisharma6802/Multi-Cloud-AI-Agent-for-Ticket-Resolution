@@ -1,0 +1,8 @@
+{
+  "id": "learn_agents_1_using_tools_with_agents__add_a_specific_tool_when_needed",
+  "title": "1 using tools with agents / Add a specific tool when needed",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Add a specific tool when needed\n\nSometimes you know exactly which tool should ground the answer. Type `#` in the chat input to see available tools, context sources, and tool sets.\n\nFor example, revise the previous prompt like this:\n\n```prompt\nExplain the authentication flow in this project. Focus on repository context. #codebase\n```\n\nUse explicit tool references when the task has a clear source of truth:\n\n* Use `#codebase` when the answer should come from your repository.\n* Use `#problems` when you want the agent to fix current diagnostics.\n* Use `#web` when the answer needs current external documentation.\n\n![Screenshot showing the tool picker drop-down with built-in tools, MCP servers, and user-defined tool sets.](../images/agents/chat-tools-picker.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/1-using-tools-with-agents.md"
+}

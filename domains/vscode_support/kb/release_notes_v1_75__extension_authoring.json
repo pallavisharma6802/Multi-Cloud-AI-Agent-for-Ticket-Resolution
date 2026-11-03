@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_75__extension_authoring",
+  "title": "v1_75 / Extension authoring",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Extension authoring\n\n### Comment thread state\n\nThe `CommentThread` `state` API has been finalized. This API controls whether a comment renders as resolved or unresolved and can affect filtering in the Comments view. You can learn more about how to use the API in [issue #127473](https://github.com/microsoft/vscode/issues/127473).\n\n### Ignore a setting to sync\n\nYou can now hide a setting from Setting Sync by default using the `ignoreSync` property while registering a setting. This is useful for settings that are not meant to be synced across machines.\n\n### Telemetry\n\nThe new `TelemetryLogger` API has been finalized. This API aims to make using telemetry easier for extension authors and safer for the end user. The API enables things such as built-in secret cleaning, a telemetry output channel, error handlers, and automatic telemetry level management. This should result in a more cohesive telemetry experience that is guaranteed to follow our requirements.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_75.md"
+}

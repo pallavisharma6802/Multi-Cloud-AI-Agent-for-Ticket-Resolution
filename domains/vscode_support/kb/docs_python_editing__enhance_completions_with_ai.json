@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_editing__enhance_completions_with_ai",
+  "title": "editing / Enhance completions with AI",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Enhance completions with AI\n\nGitHub Copilot provides coding suggestions as you type in your editor. You can also ask Copilot coding-related questions, such as how best to code something, how to fix a bug, or how someone else's code works.\n\nLearn how to get started with [AI in {% data variables.product.prodname_vscode_shortname %}](/docs/agents/overview.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/editing.md"
+}

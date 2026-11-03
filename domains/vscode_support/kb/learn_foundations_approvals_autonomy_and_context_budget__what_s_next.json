@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundations_approvals_autonomy_and_context_budget__what_s_next",
+  "title": "approvals autonomy and context budget / What's next",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## What's next\n\nYou now understand how to stay in control while the agent works, using scoped approvals, choosing the right autonomy level, and keeping an eye on context budget. In the [next guide](/learn/foundations/reviewing-and-controlling-agent-changes.md), you will review the changes the agent made, accept or undo them at any granularity, and use checkpoints and forks to explore different directions without losing work.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/approvals-autonomy-and-context-budget.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v0_3_0__overview",
+  "title": "v0_3_0",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "# June 2015 (0.3.0)\n\nThank you for using Visual Studio Code and keep the feedback coming!  Based on your feedback, we added some frequently requested enhancements and provided over 300 minor improvements and bug fixes. This release is available now and is just the start - from this point on, you should expect to see an update roughly every month.\n\nSee [how to update](/docs/supporting/howtoupdate.md) to get the bits. Read on for details about the many changes in this release.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_3_0.md"
+}

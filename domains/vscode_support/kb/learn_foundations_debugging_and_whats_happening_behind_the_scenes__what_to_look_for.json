@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundations_debugging_and_whats_happening_behind_the_scenes__what_to_look_for",
+  "title": "debugging and whats happening behind the scenes / What to look for",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## What to look for\n\n### Token usage\n\nCheck the Summary view first if responses start getting vague or repetitive. A filling context window is a common cause of degraded output.\n\n### Tool invocation order\n\nLook at the Logs view to confirm the agent followed a sensible sequence, such as reading a file before editing it or running tests after making changes.\n\n### Customization file discovery\n\nIf custom instructions, skills, or prompt files do not seem to take effect, inspect the load events to see every path that was searched.\n\n### Errors\n\nFailed tool calls, model timeouts, and missing dependencies show up inline in the Logs view.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/debugging-and-whats-happening-behind-the-scenes.md"
+}

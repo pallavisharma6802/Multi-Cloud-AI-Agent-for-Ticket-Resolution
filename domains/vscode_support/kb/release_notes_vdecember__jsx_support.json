@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vdecember__jsx_support",
+  "title": "vDecember / JSX Support",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## JSX Support\n\nTo improve the JavaScript and JSX support, the plan is to adopt [Salsa](https://github.com/microsoft/TypeScript/issues/4789). There is good progress on the Salsa project, but until VS Code has switched over to Salsa, we can only offer a **workaround** for using VS Code with JSX.\n\n* Install the [vscode-eslint extension](https://marketplace.visualstudio.com/items/dbaeumer.vscode-eslint) and configure JSX support. This will provide you with validation in JSX files.\n\n```\n{\n    \"ecmaFeatures\": {\n        \"jsx\": true,\n        ...\n    }\n    ...\n}\n```\n\n* If you are using React constructs inside `.js` files then you can install the `js-is-jsx` [extension](https://marketplace.visualstudio.com/items/eg2.js-is-jsx) which changes the file mapping so that `.js` files are treated as `.jsx` files. **Be aware** that if you install this extension, you lose the existing language support for `.js` files.\n\nThe grammars used to colorize JS and JSX are now aligned.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vDecember.md"
+}

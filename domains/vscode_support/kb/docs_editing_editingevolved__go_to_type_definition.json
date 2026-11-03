@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_editingevolved__go_to_type_definition",
+  "title": "editingevolved / Go to Type Definition",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Go to Type Definition\n\nSome [languages](/docs/languages/overview.md) also support jumping to the type definition of a symbol by running the **Go to Type Definition** command from either the editor context menu or the **Command Palette**. This will take you to the definition of the type of a symbol. The command `editor.action.goToTypeDefinition` is not bound to a keyboard shortcut by default but you can add your own custom [keybinding](/docs/configure/keybindings.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/editingevolved.md"
+}

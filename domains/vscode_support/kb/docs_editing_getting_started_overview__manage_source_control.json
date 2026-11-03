@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_getting_started_overview__manage_source_control",
+  "title": "overview / Manage source control",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Manage source control\n\nIntegrated [source control](/docs/sourcecontrol/overview.md) keeps the history and state of your project close to the code. See which files changed, review inline differences, and move between edits and source control operations without losing context.\n\n{% data variables.product.prodname_vscode_shortname %} includes Git support for [reviewing, staging, and committing changes](/docs/sourcecontrol/staging-commits.md), [managing branches and worktrees](/docs/sourcecontrol/branches-worktrees.md), and [resolving merge conflicts](/docs/sourcecontrol/merge-conflicts.md). You can also [collaborate on GitHub](/docs/sourcecontrol/github.md), and extensions can add support for other source control systems.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/overview.md"
+}

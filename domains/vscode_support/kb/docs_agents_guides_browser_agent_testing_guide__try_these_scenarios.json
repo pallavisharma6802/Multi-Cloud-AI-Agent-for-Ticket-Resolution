@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_browser_agent_testing_guide__try_these_scenarios",
+  "title": "browser agent testing guide / Try these scenarios",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Try these scenarios\n\nNow that you understand how browser tools work, try these scenarios to explore different use cases:\n\n* **Form validation testing**: have the agent verify validation rules, error messages, and successful submission by building and testing a contact form\n\n* **Responsive layout verification**: ask the agent to screenshot a page at different viewport sizes and verify responsive behavior (for example, a landing page with navigation menus)\n\n* **Authentication flow testing**: let the agent test credential validation, error handling, and successful redirects in a login page\n\n* **Interactive functionality testing**: have the agent verify user interactions and state management\n\n* **Accessibility audits**: ask the agent to check any web page for missing alt text, heading hierarchy, keyboard navigation, and color contrast issues",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/browser-agent-testing-guide.md"
+}

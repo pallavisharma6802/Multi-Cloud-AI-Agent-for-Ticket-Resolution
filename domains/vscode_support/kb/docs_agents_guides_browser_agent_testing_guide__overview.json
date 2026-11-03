@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_browser_agent_testing_guide__overview",
+  "title": "browser agent testing guide",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Build and validate a web app with browser tools\n\nBrowser tools give agents a closed development loop for web applications. The agent can create an app, open it in the integrated browser, interact with it against acceptance criteria, identify issues, fix them, and repeat the checks.\n\nThis guide walks you through that loop by building and validating a calculator app. For browser tool capabilities, session types, privacy controls, and prompting patterns, see [Use browser tools with agents](/docs/agents/run/browser-tools.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/browser-agent-testing-guide.md"
+}

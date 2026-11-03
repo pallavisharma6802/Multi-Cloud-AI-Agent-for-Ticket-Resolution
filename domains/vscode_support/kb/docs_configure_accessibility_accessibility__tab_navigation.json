@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_accessibility_accessibility__tab_navigation",
+  "title": "accessibility / Tab navigation",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Tab navigation\n\nYou can use the `kbstyle(Tab)` key to navigate between UI controls in {% data variables.product.prodname_vscode_shortname %}. Use `kbstyle(Shift+Tab)` to tab in reverse order. As you tab through the UI controls, an indicator will appear around each UI element when it has focus.\n\nAll elements in the workbench support tab navigation. To avoid having too many tab stops, workbench toolbars and tab lists each have only one. Once a toolbar or a tab list has focus, you can use the arrow keys to navigate within them.\n\n> **Note**: Tab navigation goes in the visually natural order, with the exception of WebViews (like Markdown preview). For WebViews, we recommend using the `kb(workbench.action.focusNextPart)` and `kb(workbench.action.focusPreviousPart)` commands to navigate between the WebViews and the rest of the workbench. Alternatively, you can use one of many Focus Editor commands.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/accessibility/accessibility.md"
+}

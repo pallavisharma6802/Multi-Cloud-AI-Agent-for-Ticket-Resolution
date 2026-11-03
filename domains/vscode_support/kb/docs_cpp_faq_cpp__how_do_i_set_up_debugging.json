@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_faq_cpp__how_do_i_set_up_debugging",
+  "title": "faq cpp / How do I set up debugging?",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## How do I set up debugging?\n\nThe debugger needs to be configured to know which executable and debugger to use:\n\nFrom the main menu, select **Run** > **Add Configuration...**.\n\nThe file `launch.json` will now be open for editing with a new configuration. The default settings will *probably* work except that you need to specify the `program` setting.\n\nSee [Configure C/C++ debugging](/docs/cpp/launch-json-reference.md) for more in-depth documentation on how to configure the debugger.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/faq-cpp.md"
+}

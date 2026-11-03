@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_81__tunnels",
+  "title": "v1_81 / Tunnels",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Tunnels\n\n### Install Tunnels as a service from VS Code\n\nUsing the **Remote Tunnels: Turn on Remote Tunnel Access** command, users now have the option to either run the tunnel in the current VS Code instance, or install it as a service on their system. Service-mode is supported on Windows, macOS, and systemd-based Linux systems.\n\nWhen installed as a service, the **Turn off Remote Tunnel Access** command will uninstall the service.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_81.md"
+}

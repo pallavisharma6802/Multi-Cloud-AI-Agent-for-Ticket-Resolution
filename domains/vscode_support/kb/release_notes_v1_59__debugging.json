@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_59__debugging",
+  "title": "v1_59 / Debugging",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debugging\n\n### Improved Run/Debug button in editor title\n\nIn the February release, we introduced a dropdown button to group the Run and Debug commands in a central (and compact) location in the editor's title area (refer to the [1.54 release notes](https://code.visualstudio.com/updates/v1_54#_limits-for-editor-title-menu-and-run-submenu)). Based on user feedback, we've tried to improve the dropdown button by remembering the last executed action. The dropdown button now has two click zones, one for the default action (left) and another for the dropdown (right) which, when selected, runs the action and remembers it as the new default.\n\n<video src=\"images/1_59/run-debug-splitbutton.mp4\" title=\"Video showing Debug/run split button shown for Java.\" autoplay loop controls muted></video>\n\nThe dropdown behavior:\n\n* If there is only a single Run or Debug action, the dropdown menu is omitted.\n* If there is more than one Run or Debug action, all actions appear in the dropdown menu and the default action is set to the first action from the dropdown menu (as long as there is no remembered action).\n* The default action is preserved for a specific workspace across VS Code restarts; it is **not** preserved per editor.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_59.md"
+}

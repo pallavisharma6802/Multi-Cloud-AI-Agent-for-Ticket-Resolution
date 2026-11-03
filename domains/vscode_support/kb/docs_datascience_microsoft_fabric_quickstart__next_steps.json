@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_microsoft_fabric_quickstart__next_steps",
+  "title": "microsoft fabric quickstart / Next steps",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Next steps\n\nNow that you have Microsoft Fabric extensions set up in {% data variables.product.prodname_vscode_shortname %}, explore these resources to deepen your knowledge:\n\n* [Learn about Microsoft Fabric for Data Science](https://learn.microsoft.com/en-us/fabric/data-science/tutorial-data-science-introduction).\n* [Set up your Fabric trial capacity](https://learn.microsoft.com/fabric/fundamentals/fabric-trial)\n* [Microsoft Fabric fundamentals](https://learn.microsoft.com/fabric/fundamentals/fabric-overview)\n\nTo engage with the community and get support:\n\n* [Microsoft Fabric community forums](https://community.fabric.microsoft.com/)\n* [Fabric samples and templates](https://github.com/microsoft/fabric-samples)\n* [Visual Studio Marketplace reviews and feedback](https://marketplace.visualstudio.com/items?itemName=ms-fabric.vscode-fabric)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/microsoft-fabric-quickstart.md"
+}

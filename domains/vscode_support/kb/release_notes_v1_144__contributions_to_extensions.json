@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_144__contributions_to_extensions",
+  "title": "v1_144 / Contributions to extensions",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Contributions to extensions\n\n### GitHub Pull Requests\n\nThere has been more progress on the [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) extension, which enables you to work on, create, and manage pull requests and issues. New features include:\n\n- The \"Update stack\" action now uses the GitHub API to update a stacked pull request when possible, so you no longer need to have a pull request from the stack checked out.\n- The pull request overview shows a banner offering to create a stack when the pull request's branches line up with other open pull requests that aren't stacked yet.\n![PR can be stacked](./images/1_144/pull-can-stack-banner.webp)\n\nReview the [changelog for the 0.174.0](https://github.com/microsoft/vscode-pull-request-github/blob/main/CHANGELOG.md#01740) release of the extension to learn about everything in the release.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_144.md"
+}

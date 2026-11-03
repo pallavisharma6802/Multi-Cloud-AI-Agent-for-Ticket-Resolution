@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_7__1_7_2_recovery_build",
+  "title": "v1_7 / 1.7.2 Recovery Build",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## 1.7.2 Recovery Build\n\nWe are releasing 1.7.2 today which includes a new version of the TypeScript Server (to 2.0.10). The update to the server will re-enable the Automatic Type Acquisition (ATA) feature by default for JavaScript users. This feature greatly improves the IntelliSense in JavaScript projects and removes the need to manually install TypeScript declaration files (.d.ts files). This feature is powered by a query to the npmjs service to retrieve relevant declaration files for used modules. More details in relation to this feature, including details on how to disable it are [included in the relevant section of these release notes](#better-javascript-intellisense).\n\nThe 1.7.2 release also adds the final 1.7 translations and fixes several important [issues](https://github.com/microsoft/vscode/milestone/32?closed=1).\n\nDownloads: [Windows](https://update.code.visualstudio.com/1.7.2/win32/stable) | [Mac](https://update.code.visualstudio.com/1.7.2/darwin/stable) | Linux 64-bit: [.tar.gz](https://update.code.visualstudio.com/1.7.2/linux-x64/stable) [.deb](https://update.code.visualstudio.com/1.7.2/linux-deb-x64/stable) [.rpm](https://update.code.visualstudio.com/1.7.2/linux-rpm-x64/stable) | Linux 32-bit: [.tar.gz](https://update.code.visualstudio.com/1.7.2/linux-ia32/stable) [.deb](https://update.code.visualstudio.com/1.7.2/linux-deb-ia32/stable) [.rpm](https://update.code.visualstudio.com/1.7.2/linux-rpm-ia32/stable)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_7.md"
+}

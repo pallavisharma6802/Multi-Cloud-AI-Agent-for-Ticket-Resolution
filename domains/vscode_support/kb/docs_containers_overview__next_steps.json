@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_overview__next_steps",
+  "title": "overview / Next steps",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Next steps\n\nRead on to learn more about\n\n- [Choosing your development environment](/docs/containers/choosing-dev-environment.md)\n- [Build and run a Node.js app in a container](/docs/containers/quickstart-node.md)\n- [Build and run a .NET app in a container](/docs/containers/quickstart-aspnet-core.md)\n- [Debug apps within Docker containers](/docs/containers/debug-common.md)\n- [Troubleshooting](/docs/containers/troubleshooting.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/overview.md"
+}

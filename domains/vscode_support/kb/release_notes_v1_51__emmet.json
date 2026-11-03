@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_51__emmet",
+  "title": "v1_51 / Emmet",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Emmet\n\nCustom snippets in Emmet are back. Additionally, snippets now automatically refresh upon saving the snippets file or updating the `emmet.extensionsPath` setting.\n\n<video src=\"images/1_51/emmet-custom-snippets.mp4\" title=\"Video showing Emmet custom snippets working again.\" autoplay loop controls muted></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_51.md"
+}

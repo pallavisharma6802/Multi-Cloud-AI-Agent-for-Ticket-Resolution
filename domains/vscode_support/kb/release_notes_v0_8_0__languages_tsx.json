@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v0_8_0__languages_tsx",
+  "title": "v0_8_0 / Languages - TSX",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Languages - TSX\nWe now support colorizing TSX (TypeScript JSX) files. To get full language support for TSX files, you need to install the latest TypeScript 1.6 version and configure VS Code to use it with the `typescript.tsdk` setting, as described above.\n\nTo learn more about how to use TSX with TypeScript refer to the [TypeScript TSX Wiki page](https://github.com/microsoft/TypeScript/wiki/JSX).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_8_0.md"
+}

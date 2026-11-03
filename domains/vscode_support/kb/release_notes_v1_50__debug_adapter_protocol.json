@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_50__debug_adapter_protocol",
+  "title": "v1_50 / Debug Adapter Protocol",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debug Adapter Protocol\n\n### New invalidated event\n\nA new `invalidated` event has been added to the protocol. This event signals that some state in the debug adapter has changed and requires that the client (frontend) needs to re-render the data previously requested.\nDebug adapters do not have to emit the event for runtime changes like \"stopped\" or thread changes because in these cases the client refetches the new state anyway. However, the event can be used to refresh the UI after rendering formatting has changed in the debug adapter. Debug adapters should only send the event if a true `supportsInvalidatedEvent` capability was received from the client in the \u2018initialize\u2019 request. Mock debug has an [example](https://github.com/microsoft/vscode-mock-debug/blob/23fd6bf224234f188eff23eba83b086e1ee5917c/src/mockDebug.ts#L553) for how to use the event.\n\n### Proposal for Conditional Exception support\n\nWe are planning to support \"Conditional Exceptions\" in a future version of VS Code. Since this requires support in the [Debug Adapter Protocol](https://microsoft.github.io/debug-adapter-protocol/) (DAP) we've prepared a [proposal for \"Conditional Exception\" support](https://github.com/microsoft/debug-adapter-protocol/issues/137#issuecomment-698211532). If you are a debug extension author and interested in this DAP protocol addition, we'd appreciate your feedback.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_50.md"
+}

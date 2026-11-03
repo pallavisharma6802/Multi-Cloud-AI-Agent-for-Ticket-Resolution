@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_playground__prerequisites",
+  "title": "playground / Prerequisites",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Prerequisites\n\nBefore you start:\n\n* Install the current public Foundry Toolkit extension in {% data variables.product.prodname_vscode %}. See [Install Foundry Toolkit](/docs/intelligentapps/overview.md#install-and-setup).\n* Have a local model or remote model connection available in Foundry Toolkit. You can use an existing connection, including a Foundry model provided by an administrator. For connection and deployment options, see [Set up models in Foundry Toolkit](/docs/intelligentapps/models.md).\n* For remote models, confirm that you have access to the provider endpoint or your model deployment. Authentication, availability, quota, and charges depend on the provider. For Microsoft Foundry, see [Foundry Models](https://learn.microsoft.com/azure/foundry/concepts/foundry-models-overview) and [quotas and limits](https://learn.microsoft.com/azure/foundry/foundry-models/quotas-limits).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/playground.md"
+}

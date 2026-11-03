@@ -1,0 +1,8 @@
+{
+  "id": "docs_reference_variables_reference__environment_variables",
+  "title": "variables reference / Environment variables",
+  "category": "REFERENCE",
+  "intent": "reference",
+  "content": "## Environment variables\n\nYou can reference environment variables with the **${env:Name}** syntax. For example, **${env:USERNAME}** references the `USERNAME` environment variable.\n\n```json\n{\n    \"type\": \"node\",\n    \"request\": \"launch\",\n    \"name\": \"Launch Program\",\n    \"program\": \"${workspaceFolder}/app.js\",\n    \"cwd\": \"${workspaceFolder}\",\n    \"args\": [ \"${env:USERNAME}\" ]\n}\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/reference/variables-reference.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "learn_customizations_7_customization_features_explained__using_copilot_to_learn_the_differences",
+  "title": "7 customization features explained / Using Copilot to learn the differences",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Using Copilot to learn the differences\n\nOne of the most effective ways to understand these features is to ask Copilot directly.\n\nFor example, you can provide a list of features and ask for a short explanation of each. Copilot will generate concise summaries that help you quickly understand what each one does.\n\n![Screenshot of Copilot Chat explaining the differences between VS Code customization features](../images/customizations/ep-7-1-cust-feature-explained-by-copilot.png)\n\nThis gives you a fast, high-level overview without needing to read through multiple docs.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/7-customization-features-explained.md"
+}

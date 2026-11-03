@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_prompt_examples__general_coding_and_technology_questions",
+  "title": "prompt examples / General coding and technology questions",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## General coding and technology questions\n\nUse the **Ask** agent to get quick answers about coding concepts, technology topics, and general programming questions.\n\n```prompt-ask\nWhat is a linked list?\n```\n\n```prompt-ask\nProvide 3 ways to implement a search feature in React.\n```\n\n```prompt-ask\nExplain the difference between async/await and promises.\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/prompt-examples.md"
+}

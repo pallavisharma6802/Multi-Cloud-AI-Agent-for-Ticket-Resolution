@@ -1,0 +1,8 @@
+{
+  "id": "api_references_theme_color__inline_chat_colors",
+  "title": "theme color / Inline Chat colors",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Inline Chat colors\n\n- `inlineChat.background`: Background color of the interactive editor widget.\n- `inlineChat.foreground`: Foreground color of the interactive editor widget\n- `inlineChat.border`: Border color of the interactive editor widget.\n- `inlineChat.shadow`: Shadow color of the interactive editor widget.\n- `inlineChatInput.border`: Border color of the interactive editor input.\n- `inlineChatInput.focusBorder`: Border color of the interactive editor input when focused.\n- `inlineChatInput.placeholderForeground`: Foreground color of the interactive editor input placeholder.\n- `inlineChatInput.background`: Background color of the interactive editor input.\n- `inlineChatDiff.inserted`: Background color of inserted text in the interactive editor input.\n- `inlineChatDiff.removed`: Background color of removed text in the interactive editor input.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+}

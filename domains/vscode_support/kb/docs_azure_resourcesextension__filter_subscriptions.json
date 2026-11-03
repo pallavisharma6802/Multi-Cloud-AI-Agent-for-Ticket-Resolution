@@ -1,0 +1,8 @@
+{
+  "id": "docs_azure_resourcesextension__filter_subscriptions",
+  "title": "resourcesextension / Filter subscriptions",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Filter subscriptions\n\nYou can filter the displayed subscriptions, by selecting the filter icon on any subscription.\n\n![Screenshot that shows where to filter your subscriptions](images/extensions/filterSub.png)\n\nThe filtered subscriptions are stored in the `setting(azureResourceGroups.selectedSubscriptions)` setting.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/resourcesextension.md"
+}

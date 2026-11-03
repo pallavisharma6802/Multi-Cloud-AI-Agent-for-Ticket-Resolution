@@ -1,0 +1,8 @@
+{
+  "id": "learn_customizations_4_custom_agent__example_arcade_app_builder_agent",
+  "title": "4 custom agent / Example: arcade app builder agent",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Example: arcade app builder agent\n\n![Screenshot of the arcade app builder custom agent definition in VS Code](../images/customizations/ep-4-3-arcade-agent.png)\n\nIn this example, Copilot suggests an agent designed specifically for an arcade-themed calculator project.\n\nThe agent is built with:\n\n- awareness of the project\u2019s architecture\n- knowledge of UI themes and styling\n- consistency with coding patterns\n\nIt\u2019s not just generating code. It\u2019s applying context from the entire project.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/4-custom-agent.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_data_wrangler_quick_start__open_data_wrangler",
+  "title": "data wrangler quick start / Open Data Wrangler",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Open Data Wrangler\n\nAnytime you are in Data Wrangler, you are in a *sandboxed* environment, meaning you are able to safely explore and transform the data. The original dataset is not modified until you explicitly export your changes.\n\n### Launch Data Wrangler from a Jupyter Notebook\n\nIf you have a Pandas data frame in your notebook, you\u2019ll now see an **Open 'df' in Data Wrangler** button (where `df` is the variable name of your data frame) appear in bottom of the cell after running any of `df.head()`, `df.tail()`, `display(df)`, `print(df)`, and `df`.\n\n![a screenshot showing the entry point into Data Wrangler from a notebook](images/data-wrangler-quick-start/entrypoint-quick-start.png)\n\n### Launch Data Wrangler directly from a file\n\nYou can also launch Data Wrangler directly from a local file (such as a `.csv`). To do so, open any folder in {% data variables.product.prodname_vscode_shortname %} that contains the file you\u2019d like to open. In the File Explorer view, right click the file and click **Open in Data Wrangler**.\n\n![a screenshot showing the entry point into Data Wrangler from a file](images/data-wrangler-quick-start/open-from-file.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/data-wrangler-quick-start.md"
+}

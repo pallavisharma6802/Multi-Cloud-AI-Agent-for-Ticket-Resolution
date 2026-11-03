@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_125__extension_authoring",
+  "title": "v1_125 / Extension Authoring",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Extension Authoring\n\n### Language Server Protocol\n\nExtension authors who build language servers can now adopt the latest protocol features by updating to [version 3.18 of the Language Server Protocol](https://microsoft.github.io/language-server-protocol/specifications/lsp/3.18/specification/). The corresponding VS Code client and server packages are available as `vscode-languageclient@10.0.0` and `vscode-languageserver@10.0.0`. For the full list of protocol additions and breaking changes, see the [vscode-languageserver-node changelog](https://github.com/microsoft/vscode-languageserver-node/blob/main/README.md#3180-protocol-900-json-rpc-1000-client-and-1000-server).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_125.md"
+}

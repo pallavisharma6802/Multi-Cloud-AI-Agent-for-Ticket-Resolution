@@ -1,0 +1,8 @@
+{
+  "id": "api_get_started_your_first_extension__developing_the_extension",
+  "title": "your first extension / Developing the extension",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Developing the extension\n\nLet's make a change to the message:\n\n1. Change the message from \"Hello World from HelloWorld!\" to \"Hello VS Code\" in `extension.ts`.\n1. Run **Developer: Reload Window** in the new window.\n1. Run the command **Hello World** again.\n\nYou should see the updated message showing up.\n\n<video loop muted playsinline controls title=\"Reload VS Code extension video\">\n  <source src=\"/assets/api/get-started/your-first-extension/reload.mp4\" type=\"video/mp4\">\n</video>\n\nHere are some ideas for things for you to try:\n\n- Give the **Hello World** command a new name in the Command Palette.\n- [Contribute](/api/references/contribution-points) another command that displays current time in an information message. Contribution points are static declarations you make in the `package.json` [Extension Manifest](/api/references/extension-manifest) to extend VS Code, such as adding commands, menus, or keybindings to your extension.\n- Replace the `vscode.window.showInformationMessage` with another [VS Code API](/api/references/vscode-api) call to show a warning message.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/get-started/your-first-extension.md"
+}

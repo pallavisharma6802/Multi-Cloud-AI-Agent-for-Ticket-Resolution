@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_enable_logging_cpp__enable_logging_for_the_language_server",
+  "title": "enable logging cpp / Enable logging for the language server",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Enable logging for the language server\n\nTo turn on full logging for the language server, follow these steps:\n\n1. Open the **Command Palette** and choose **Preferences: Workspace settings**.\n1. Search for \"logging\" in the search box.\n1. Find **C_Cpp: Logging Level** and change the level to **Debug**.\n\n   ![Logging level](images/cpp/logging-level.png)\n\n1. From the main menu, open the Output panel by choosing **View** > **Output**.\n\n1. Select the **C/C++** option in the log filter selector:\n\n   ![Log filter selector](images/cpp/log-filter-selector.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/enable-logging-cpp.md"
+}

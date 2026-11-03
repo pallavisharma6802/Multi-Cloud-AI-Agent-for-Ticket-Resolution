@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v0_8_0__debugging_no_mono_dependency_for_node",
+  "title": "v0_8_0 / Debugging - No Mono Dependency for Node",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debugging - No Mono Dependency for Node\nWe have ported the implementation of the Node.js debugging support from C#/Mono to TypeScript/Node.js, eliminating our Mono dependency for debugging Node.js applications on macOS and Linux.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_8_0.md"
+}

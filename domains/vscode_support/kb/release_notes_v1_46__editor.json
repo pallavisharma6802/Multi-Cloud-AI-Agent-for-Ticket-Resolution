@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_46__editor",
+  "title": "v1_46 / Editor",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Editor\n\n### Cross file Undo for closed files\n\nIt is now possible to Undo across files, even if the files have been closed in the meantime. The edited files will be reopened and a cross-file operation, such as a rename symbol, will be undone in all affected files.\n\n### Unusual line terminators\n\nVS Code currently recognizes CR (Carriage Return), LF (Line Feed), and CRLF as line terminators. Some programming languages have different definitions for what constitutes a line terminator. This varies across languages, for example LS (Line Separator) and PS (Paragraph Separator) are line terminators in C# and JavaScript, but not in HTML, PHP, or Java. These line ending differences can cause problems when VS Code communicates with a language server, since various concepts are communicated between VS Code and the language server using `(line;char)` coordinates. If there are different definitions of a line terminator, it can result in different mappings of lines and locations in the file.\n\nWhen opening a file, VS Code will now check if LS or PS are present in the opened file, and will prompt and ask for permission to remove these characters. These unusual line terminators are rare in practice and are most likely inserted in source code by accident, via copy-pasting.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_46.md"
+}

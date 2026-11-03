@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_93__tasks",
+  "title": "v1_93 / Tasks",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Tasks\n\n### Keep task terminal open on process exit\n\nIf a task's terminal process exits with a nonzero code, we now keep the terminal open for easier debugging.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_93.md"
+}

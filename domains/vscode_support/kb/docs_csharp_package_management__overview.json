@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_package_management__overview",
+  "title": "package management",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# NuGet in {% data variables.product.prodname_vscode %}\n\nNuGet is the package manager for .NET. It defines how packages for .NET are created, hosted, and consumed, while providing the tools for each of those functions. NuGet also manages the dependency tree on behalf of a project, so you only need to focus on the packages that you're directly using in a project.\n\nIn {% data variables.product.prodname_vscode %}, you can manage your NuGet packages either directly from the C# Dev Kit Solution explorer, or by using the Command Palette.\n\n* [NuGet Commands in C# Dev Kit](#nuget-commands-in-c-dev-kit)\n* [Dependency Management](#dependency-management)\n\nTo learn more about NuGet, go to the [NuGet documentation](https://learn.microsoft.com/nuget/what-is-nuget).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/package-management.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_typescript_typescript_transpiling__mixed_typescript_and_javascript_projects",
+  "title": "typescript transpiling / Mixed TypeScript and JavaScript projects",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Mixed TypeScript and JavaScript projects\n\nIt is possible to have mixed TypeScript and JavaScript projects. To enable JavaScript inside a TypeScript project, you can set the `allowJs` property to `true` in the `tsconfig.json`.\n\n>**Tip:** The `tsc` compiler does not detect the presence of a `jsconfig.json` file automatically. Use the `\u2013p` argument to make `tsc` use your `jsconfig.json` file, e.g. `tsc -p jsconfig.json`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/typescript/typescript-transpiling.md"
+}

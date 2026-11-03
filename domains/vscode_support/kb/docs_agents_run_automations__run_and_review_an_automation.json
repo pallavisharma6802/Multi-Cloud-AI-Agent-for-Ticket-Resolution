@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_automations__run_and_review_an_automation",
+  "title": "automations / Run and review an automation",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Run and review an automation\n\nSelect **Run now** on the automation card. The automation starts an agent session, and its run appears under **History**.\n\nSelect a run in **History** to open its session. Review the response and any changes before relying on the task's output. If the session needs approval, review the request there. If a run fails, inspect its error and session before trying again.\n\nEach run uses the selected agent and model, so account for recurring usage when choosing a schedule.\n\nFor a cloud automation, the automation card and its history update while a run is active and show whether the run is queued, running, completed, or failed. Select a run to open its session in the {% data variables.copilot.agents_window %}, review its output, and send a follow-up when available. A follow-up continues that run's conversation. It doesn't update the automation's saved prompt or future triggers.\n\nSelect **Refresh** to retrieve changes made on GitHub. On a run, use **Open on GitHub** to review or manage it there, or if the session isn't available in the editor yet. If a run reports **Needs input on GitHub**, open it on GitHub to respond.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/automations.md"
+}

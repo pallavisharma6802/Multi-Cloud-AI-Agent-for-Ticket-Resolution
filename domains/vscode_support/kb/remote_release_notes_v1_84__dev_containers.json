@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_84__dev_containers",
+  "title": "v1_84 / Dev Containers",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Dev Containers\n\n### Connect to Dev Containers over SSH and Tunnels on Windows\n\nYou can now also connect through remote Windows machines using Tunnels or SSH to connect to Dev Containers. Previously only Linux and macOS were supported as the remote OS.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_84.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_79__source_control",
+  "title": "v1_79 / Source Control",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Source Control\n\n### Default branch name\n\nStarting with this milestone, all new Git repositories created using VS Code set `main` as their default branch. If you prefer a different name for the default branch, you can change it with the `git.defaultBranchName` setting. When the setting is set to empty, VS Code defers to the default branch name configured in Git. Publishing a folder to GitHub also honors the default branch name configured on GitHub.\n\n### Branch picker integration with vscode.dev and GitHub\n\nYou can now checkout a branch in vscode.dev or open it on GitHub.com from the branch picker on VS Code desktop.\n\nIn the short video below, each branch listed in the branch picker dropdown has buttons on the right to either **Open on GitHub** or **Checkout on vscode.dev**.\n\n<video src=\"images/1_79/git-branch-picker.mp4\" autoplay loop controls muted title=\"Open a branch on GitHub.com from the branch picker\"></video>\n\n### Similarity threshold\n\n[Git status](https://git-scm.com/docs/git-status#Documentation/git-status.txt---find-renamesltngt) uses a similarity index (number of additions/deletions compared to the file's size) to determine whether an add/delete pair is considered a rename. You can now configure the similarity threshold with the `git.similarityThreshold` setting, which takes a value between `0` and `100`. The default value is `50`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_79.md"
+}

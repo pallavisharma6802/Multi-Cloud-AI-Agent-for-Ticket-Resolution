@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_agents_window__limitations",
+  "title": "agents window / Limitations",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Limitations\n\n* Sessions that use the [experimental Codex integration](/docs/agents/run/agent-harnesses.md#codex) can run in both the {% data variables.copilot.agents_window %} and the main {% data variables.product.prodname_vscode_shortname %} window. Local harness sessions and Codex sessions from the OpenAI extension run only in the main {% data variables.product.prodname_vscode_shortname %} window.\n\n* Copilot Cloud sessions are only supported for GitHub-backed repositories. For non-GitHub projects, you can still use Copilot in the {% data variables.copilot.agents_window %}.\n\n* The agents dropdown currently doesn't have the plan agent. You can use the `/plan` command in a Copilot or Claude agent session. In Copilot harness sessions, the plan agent is also automatically invoked when you ask it to create a plan.\n\n* Running multiple chats in a single session is currently supported for sessions that use the Copilot or Claude harness.\n\n* Multi-root sessions are not yet supported in the {% data variables.copilot.agents_window %}. You can ask the agent to work across projects in a single session.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/agents-window.md"
+}

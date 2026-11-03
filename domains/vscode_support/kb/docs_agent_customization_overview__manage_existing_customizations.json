@@ -1,0 +1,8 @@
+{
+  "id": "docs_agent_customization_overview__manage_existing_customizations",
+  "title": "overview / Manage existing customizations",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Manage existing customizations\n\nUse the Agent Customizations editor to find and update customizations for the selected harness:\n\n1. Open the Agent Customizations editor and select the customization type.\n1. Use the search box to find the customization.\n1. Select the customization to open its details.\n1. If the customization is editable, update its form or file and save your changes. For a read-only customization, use the available action to open the source file.\n\nThe available actions depend on the customization type and its source. Use the inline actions or context menu to access supported operations, such as revealing an editable file in your operating system or deleting it. Manage plugin-provided customizations from the **Plugins** section.\n\n`feature(user-customization-migration)`\n\n> [!IMPORTANT]\n> If the Agent Customizations editor shows **Migrations**, Copilot cannot use one or more customizations in their current location or format. Select **Migrations** to review the required work, and follow [Migrate Copilot customizations in VS Code](/docs/agent-customization/migrate-customizations.md) for detailed steps.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/overview.md"
+}

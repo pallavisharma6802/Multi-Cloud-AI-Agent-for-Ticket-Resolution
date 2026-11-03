@@ -1,0 +1,8 @@
+{
+  "id": "docs_debugtest_testing__extensions_for_testing",
+  "title": "testing / Extensions for testing",
+  "category": "DEBUGGING",
+  "intent": "debugging",
+  "content": "## Extensions for testing\n\nYou can find extensions that support testing by looking in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VSCode&category=Testing&sortBy=Installs). You can also go to the Extensions view (`kb(workbench.view.extensions)`), and filter by the **Testing** category.\n\n<div class=\"marketplace-extensions-testing-tools-curated\"></div>\n\n> [!TIP]\n> For AI help, ask an agent to [inspect your project's testing setup](/docs/agents/guides/test-code-with-ai.md#identify-the-testing-setup) and recommend a framework only if one isn't already configured. Review the proposal before installing dependencies. You can also use `/setupTests` (Experimental) when it is offered in your session's slash-command list.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/testing.md"
+}

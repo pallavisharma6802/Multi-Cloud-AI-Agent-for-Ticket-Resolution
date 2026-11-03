@@ -1,0 +1,8 @@
+{
+  "id": "docs_setup_linux__overview",
+  "title": "linux",
+  "category": "INSTALLATION",
+  "intent": "installation",
+  "content": "# Installing {% data variables.product.prodname_vscode %} on Linux\n\n{% data variables.product.prodname_vscode %} is available on Linux through official Debian, RPM, and Snap packages. Community-maintained packages are also available for Arch Linux and Nix.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/linux.md"
+}

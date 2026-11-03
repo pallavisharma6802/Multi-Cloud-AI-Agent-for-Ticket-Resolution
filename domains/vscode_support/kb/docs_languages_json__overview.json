@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_json__overview",
+  "title": "json",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Editing JSON with {% data variables.product.prodname_vscode %}\n\nJSON is a data format that is common in configuration files like `package.json` or `project.json`. We also use it extensively in {% data variables.product.prodname_vscode %} for our configuration files. When opening a file that ends with `.json`, {% data variables.product.prodname_vscode_shortname %} provides features to make it simpler to write or modify the file's content.\n\n![JSON within {% data variables.product.prodname_vscode_shortname %}](images/json/json_hero.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/json.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_ai_language_model_chat_provider__response_parts",
+  "title": "language model chat provider / Response parts",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Response parts\n\nYour provider can report different types of response parts through the progress callback via the `LanguageModelResponsePart` type, which can be one of:\n\n- `LanguageModelTextPart` - Text content\n- `LanguageModelToolCallPart` - Tool/function calls\n- `LanguageModelToolResultPart` - Tool result content",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/language-model-chat-provider.md"
+}

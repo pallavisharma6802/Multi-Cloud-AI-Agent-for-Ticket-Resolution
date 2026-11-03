@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_browser_tools__get_started",
+  "title": "browser tools / Get started",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Get started\n\nBrowser tools are enabled by default with the `setting(workbench.browser.enableChatTools)` setting.\n\n1. Start a new agent session in the {% data variables.copilot.chat_view %} or the {% data variables.copilot.agents_window %}.\n\n1. Ask the agent to start or locate your web application, test a specific user flow, and report the result.\n\n1. Include the expected behavior and tell the agent whether to fix and verify any problems it finds.\n\nFor example:\n\n```prompt\nStart the development server and open the app in the browser.\nAdd a task named \"Review browser tools\", mark it complete, and reload the page.\nVerify that the completed task persists. If any step fails, fix the issue and repeat the flow.\n```\n\n> [!TIP]\n> Select only the tools that are relevant to your task. Learn more about [selecting tools for agents](/docs/agents/run/tools.md#select-tools-for-a-request).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/browser-tools.md"
+}

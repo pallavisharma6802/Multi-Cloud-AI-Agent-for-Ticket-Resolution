@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_61__documentation",
+  "title": "v1_61 / Documentation",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Documentation\n\n### Advanced container configuration\n\nThere is a new section covering the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension's [advanced container configuration](https://code.visualstudio.com/remote/advancedcontainers/overview).\n\nIn the container documentation, you can learn how to:\n\n* [Set environment variables](https://code.visualstudio.com/remote/advancedcontainers/environment-variables)\n* [Mount local disk drives](https://code.visualstudio.com/remote/advancedcontainers/add-local-file-mount)\n* [Add a non-root user](https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user)\n* [Work with multiple containers](https://code.visualstudio.com/remote/advancedcontainers/connect-multiple-containers)\n* And more...\n\nThe advanced container configuration documentation has tips and code examples for setting up your development containers as well as short [YouTube videos](https://www.youtube.com/watch?v=vEb7hKlagAU).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_61.md"
+}

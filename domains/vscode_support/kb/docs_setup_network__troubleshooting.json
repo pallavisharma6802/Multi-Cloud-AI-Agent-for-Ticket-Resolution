@@ -1,0 +1,8 @@
+{
+  "id": "docs_setup_network__troubleshooting",
+  "title": "network / Troubleshooting",
+  "category": "INSTALLATION",
+  "intent": "installation",
+  "content": "## Troubleshooting\n\nHere are some helpful links that might help you troubleshoot networking issues in {% data variables.product.prodname_vscode_shortname %}:\n\n* [Network Settings](https://www.chromium.org/developers/design-documents/network-settings)\n* [Debugging problems with the network proxy](https://www.chromium.org/developers/design-documents/network-stack/debugging-net-proxy)\n* [Configuring a SOCKS proxy server in Chrome](https://www.chromium.org/developers/design-documents/network-stack/socks-proxy)\n* [Proxy settings and fallback (Windows)](https://www.chromium.org/developers/design-documents/network-stack/proxy-settings-fallback)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/network.md"
+}

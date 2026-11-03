@@ -1,0 +1,8 @@
+{
+  "id": "docs_introvideos_basics__next_video",
+  "title": "basics / Next video",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Next video\n\n* [Code Editing in {% data variables.product.prodname_vscode %}](/docs/introvideos/codeediting.md) - Learn about the advanced code editing features in {% data variables.product.prodname_vscode_shortname %}.\n* [Introductory Videos](/docs/getstarted/introvideos.md) - Review the entire list of videos.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/introvideos/basics.md"
+}

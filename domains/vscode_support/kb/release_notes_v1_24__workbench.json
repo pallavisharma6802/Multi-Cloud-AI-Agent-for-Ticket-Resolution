@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_24__workbench",
+  "title": "v1_24 / Workbench",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Workbench\n\n### Duplicate Workspace in New Window\n\nThere is a new command **Duplicate Workspace in New Window** to duplicate the current workspace in a new window. This command can be used as a workaround to the current limitation that one workspace cannot be opened in two windows. The workaround works best when you have the setting `files.autoSave` set to `afterDelay`, `onFocusChange`, or `onWindowChange`. In this way, the editor documents will be synced through the file system when you have the same document open in different windows.\n\nWith this addition, we are  **deprecating** the less general command **Open Folder as Workspace in New Window**. We plan to drop support for it in the following milestone.\n\n### Replace term history in Search view\n\nYou can now navigate to your previous replace terms in the Search View.\n\n* `kbstyle(Alt+Up)` navigates backward in the history. Corresponding command is `history.showPrevious`.\n* `kbstyle(Alt+Down)` navigates forward in the history. Corresponding command is `history.showNext`.\n\n### NPM Script Explorer improvements\n\nSome users want to run an npm script on single click from the Explorer and this is now supported by setting `npm.scriptExplorerAction` to \"run\". It is also now possible to run a script using the inline actions shown when hovering over a script in the tree. Finally, you can run `npm install` from the context menu when a `package.json` file is selected.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_24.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_editing__overview",
+  "title": "editing",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Editing Python in {% data variables.product.prodname_vscode %}\n\n{% data variables.product.prodname_vscode %} is a powerful editing tool for Python source code. The editor includes various features to help you be productive when writing code. For more information about editing in {% data variables.product.prodname_vscode %}, see [Basic Editing](/docs/editing/codebasics.md) and [Code Navigation](/docs/editing/editingevolved.md).\n\nIn this overview, we will describe the specific editing features provided by the [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python), including steps on how to customize these features via user and workspace [settings](/docs/configure/settings.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/editing.md"
+}

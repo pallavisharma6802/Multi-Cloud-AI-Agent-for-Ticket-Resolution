@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_build_tools__managing_project_files",
+  "title": "build tools / Managing project files",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Managing project files\n\nThe project file is an extensible XML document that describes how your project should build. You can learn more about .NET Project files in the [.NET project SDKs documentation](https://learn.microsoft.com/dotnet/core/project-sdk/overview), but in general you modify your build by adding Properties (XML elements with inner values) and Items (XML elements with attributes).\n\nTo add editor features like code completion for properties and items, syntax highlighting, and tooltips for common project properties, you can install the [MSBuild project tools](https://marketplace.visualstudio.com/items?itemName=tintoy.msbuild-project-tools) extension. Note that this extension is a community project and is not directly supported by Microsoft.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/build-tools.md"
+}

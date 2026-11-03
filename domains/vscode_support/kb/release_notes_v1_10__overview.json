@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_10__overview",
+  "title": "v1_10",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "# February 2017 (version 1.10)\n\n**Update 1.10.2**: Adds the 1.10 translations and addresses a handful of [issues](https://github.com/microsoft/vscode/milestone/38?closed=1).\n\nDownloads: [Windows](https://update.code.visualstudio.com/1.10.2/win32/stable) | [Mac](https://update.code.visualstudio.com/1.10.2/darwin/stable) | Linux 64-bit: [.tar.gz](https://update.code.visualstudio.com/1.10.2/linux-x64/stable) [.deb](https://update.code.visualstudio.com/1.10.2/linux-deb-x64/stable) [.rpm](https://update.code.visualstudio.com/1.10.2/linux-rpm-x64/stable) | Linux 32-bit: [.tar.gz](https://update.code.visualstudio.com/1.10.2/linux-ia32/stable) [.deb](https://update.code.visualstudio.com/1.10.2/linux-deb-ia32/stable) [.rpm](https://update.code.visualstudio.com/1.10.2/linux-rpm-ia32/stable)\n\n---",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_10.md"
+}

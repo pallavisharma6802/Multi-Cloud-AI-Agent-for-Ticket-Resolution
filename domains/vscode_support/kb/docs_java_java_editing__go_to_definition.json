@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_editing__go_to_definition",
+  "title": "java editing / Go to Definition",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Go to Definition\n\nYou can also quickly navigate to where a symbol is defined by using the Go to Definition feature.\n\nTo go to a symbol's definition, place your cursor on the symbol anywhere it is used in your source code and then press `kb(editor.action.revealDefinition)`. Alternatively, you can choose **Go to Definition** from the context menu (right-click, then choose **Go to Definition**). When there's only one definition of the symbol, you'll navigate directly to its location, otherwise the competing definitions are displayed in a peek window as described in the previous section and you have to choose the definition that you want to go to.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-editing.md"
+}

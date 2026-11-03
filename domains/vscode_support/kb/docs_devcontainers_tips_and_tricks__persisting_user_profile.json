@@ -1,0 +1,8 @@
+{
+  "id": "docs_devcontainers_tips_and_tricks__persisting_user_profile",
+  "title": "tips and tricks / Persisting user profile",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Persisting user profile\n\nYou can use the `mounts` property to persist the user profile (to keep things like shell history) in your dev container across rebuilds.\n\n```json\n    \"mounts\": [\n        \"source=profile,target=/root,type=volume\",\n        \"target=/root/.vscode-server,type=volume\"\n    ],\n```\n\nThe above code first creates a named volume called `profile` mounted to `/root`, which will survive a rebuild. It next creates an anonymous volume mounted to `/root/.vscode-server` that gets destroyed on rebuild, which allows {% data variables.product.prodname_vscode_shortname %} to reinstall extensions and dotfiles.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/tips-and-tricks.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_devcontainers_containers__personalizing_with_dotfile_repositories",
+  "title": "containers / Personalizing with dotfile repositories",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Personalizing with dotfile repositories\n\nDotfiles are files whose filename begins with a dot (`.`) and typically contain configuration information for various applications. Since development containers can cover a wide range of application types, it can be useful to store these files somewhere so that you can easily copy them into a container once it is up and running.\n\nA common way to do this is to store these dotfiles in a GitHub repository and then use a utility to clone and apply them. The Dev Containers extension has built-in support for using these with your own containers. If you are new to the idea, take a look at the different [dotfiles bootstrap repositories](https://dotfiles.github.io/) that exist.\n\nTo use it, add your dotfiles GitHub repository to {% data variables.product.prodname_vscode_shortname %}'s User Settings (`kb(workbench.action.openSettings)`) as follows:\n\n![Settings for dotfiles](images/containers/dotfiles.png)\n\nOr in `settings.json`:\n\n```json\n{\n    \"dotfiles.repository\": \"your-github-id/your-dotfiles-repo\",\n    \"dotfiles.targetPath\": \"~/dotfiles\",\n    \"dotfiles.installCommand\": \"install.sh\"\n}\n```\n\nFrom this point forward, the dotfiles repository will be used whenever a container is created.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/containers.md"
+}

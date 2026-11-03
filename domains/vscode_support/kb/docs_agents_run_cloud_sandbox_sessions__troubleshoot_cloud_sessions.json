@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_cloud_sandbox_sessions__troubleshoot_cloud_sessions",
+  "title": "cloud sandbox sessions / Troubleshoot cloud sessions",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Troubleshoot cloud sessions\n\n| Symptom | What to check |\n|---------|---------------|\n| Cloud session creation is unavailable | Check feature availability, account access, organization restrictions, and `setting(chat.remoteAgentHostsEnabled)`. |\n| The repository can't be selected or cloned | Use a GitHub.com repository and an account with access to it. Check the reported repository or authentication error before retrying. |\n| An existing session is missing | Use the owning account and check repository grouping and session filters. A deleted task isn't an existing session to resume. |\n| A transcript opens but can't accept messages | Check the environment's availability and connection state. History alone doesn't provide a live host. |\n| Local tools or files are missing | Cloud execution uses its own workspace and tools. Local editor state and installed extensions aren't automatically available there. |",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/cloud-sandbox-sessions.md"
+}

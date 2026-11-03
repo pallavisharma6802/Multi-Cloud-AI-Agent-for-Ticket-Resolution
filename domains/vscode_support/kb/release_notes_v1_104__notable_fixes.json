@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_104__notable_fixes",
+  "title": "v1_104 / Notable fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable fixes\n\n* [vscode#151902](https://github.com/microsoft/vscode/issues/151902) - Terminal: Copy on selection + new highlight in 1.68 copies previous term on CMD+F\n* [vscode#222075](https://github.com/microsoft/vscode/issues/222075) - Terminal sticky scroll can show up for 1 frame when using page down in a pager\n* [xtermjs/xterm.js#5390](https://github.com/xtermjs/xterm.js/pull/5390) - Fix scrollbar teleport after exiting alt buffer",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_104.md"
+}

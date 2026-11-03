@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_136__accessibility",
+  "title": "v1_136 / Accessibility",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Accessibility\n\n### Screen Reader Optimized badge in the Agents window\n\nThe **Screen Reader Optimized** badge in the Agents window title bar makes the active accessibility mode easier to identify. The badge appears when Screen Reader Optimized mode is enabled. Select the badge to disable this mode.\n\n![Screenshot of the Screen Reader Optimized badge in the Agents window title bar.](images/1_136/agents-screen-reader-optimized-badge.webp)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_136.md"
+}

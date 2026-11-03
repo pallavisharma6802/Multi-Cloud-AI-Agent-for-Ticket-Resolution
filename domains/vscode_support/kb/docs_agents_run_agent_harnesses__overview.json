@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_agent_harnesses__overview",
+  "title": "agent harnesses",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Choose an agent harness\n\n{% data variables.product.prodname_vscode_shortname %} supports multiple agent harnesses, each with its own tools, customizations, and workflows. An agent harness coordinates the language model, context, and tools that an agent uses to complete your task.\n\nUse this guide to compare the available options, identify which harness your session uses, select a harness or the Cloud execution target, and review its setup requirements.\n\nFor a deeper explanation of how harnesses work and differ from models and hosts, [learn about agent harness concepts](/docs/agents/concepts/agent-harnesses.md).\n\n<a name=\"choose-a-session-target\"></a>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/agent-harnesses.md"
+}

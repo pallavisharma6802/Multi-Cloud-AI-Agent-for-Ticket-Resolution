@@ -1,0 +1,8 @@
+{
+  "id": "docs_introvideos_configure__overview",
+  "title": "configure",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "# Personalize {% data variables.product.prodname_vscode %}\n\nIn this {% data variables.product.prodname_vscode %} tutorial, we show you how to personalize {% data variables.product.prodname_vscode %} with themes.\n\n[![Watch Personalize {% data variables.product.prodname_vscode %} on YouTube (opens in new tab).](images/configure/youtube-HOShAQzOy4Q.jpg)](https://www.youtube.com/watch?v=HOShAQzOy4Q)\n\nHere's the next video we recommend: [Extensions in {% data variables.product.prodname_vscode %}](/docs/introvideos/extend.md)\n\nPick another video from the list: [Introductory Videos](/docs/getstarted/introvideos.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/introvideos/configure.md"
+}

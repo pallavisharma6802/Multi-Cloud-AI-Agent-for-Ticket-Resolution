@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_python_interactive__overview",
+  "title": "python interactive",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# How to use Python Interactive in Jupyter\n\nThis page is redirected to /docs/python/jupyter-support-py.md and only exists to keep the \"Python Interactive\" TOC item.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/python-interactive.md"
+}

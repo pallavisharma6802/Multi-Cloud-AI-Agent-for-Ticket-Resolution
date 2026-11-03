@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_chat_view__view_sessions_on_the_welcome_page",
+  "title": "chat view / View sessions on the welcome page",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## View sessions on the welcome page\n\nSet `setting(workbench.startupEditor)` to `agentSessionsWelcomePage` to show recent sessions, an embedded chat widget for new tasks, and quick actions on the welcome page at startup. The startup page opens when no editors are restored from the previous session.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/chat-view.md"
+}

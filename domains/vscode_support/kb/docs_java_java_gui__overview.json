@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_gui__overview",
+  "title": "java gui",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Working with GUI applications in {% data variables.product.prodname_vscode_shortname %}\n\nYou can develop Java GUI applications in {% data variables.product.prodname_vscode %} easily. To achieve that, you need to install the [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack), which includes all the required extensions to develop Java GUI applications.\n\n<a class=\"install-extension-btn\" href=\"vscode:extension/vscjava.vscode-java-pack\">Install the Extension Pack for Java</a>\n\nIf you run into any issues when using the features below, you can contact us by entering an [issue](https://github.com/microsoft/vscode-java-pack/issues).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-gui.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_ux_guidelines_views__view_actions",
+  "title": "views / View Actions",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## View Actions\n\nViews can expose [View Actions](/api/extension-guides/tree-view#view-actions) on the View Toolbar. Be careful not to add too many actions to avoid noise and confusion. Using the built-in product icons helps an extension fit in alongside the native UI. However, an SVG icon can be supplied if a custom icon is needed.\n\n![Example of View Actions](images/examples/view-toolbar.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/views.md"
+}

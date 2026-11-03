@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_reference_templateproject__overview",
+  "title": "TemplateProject",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Set up a template project in model conversion\nThis article introduces how to set up and customize a template project in model conversion, guiding you through editing configuration files like sample.json, model_project.config, and others to suit your specific model, dataset, and workflow needs.\n\nAfter creating the template project, you could see the following files are created. To make the template project work, you could follow the readme of the project to update the parameters based on your need.\n\n![Template project files](../images/modelconversion//TemplateFiles.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/reference/TemplateProject.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_ai_settings__observability_settings",
+  "title": "ai settings / Observability settings",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Observability settings\n\n| Setting and Description | Default |\n|------------------------|---------------|\n| `setting(github.copilot.chat.otel.enabled)` <br/>Enable [OpenTelemetry](/docs/agents/guides/monitoring-agents.md) emission for Copilot Chat agent interactions. | `false` |\n| `setting(github.copilot.chat.otel.exporterType)` <br/>OTel exporter type: `otlp-http`, `otlp-grpc`, `console`, or `file`. | `\"otlp-http\"` |\n| `setting(github.copilot.chat.otel.otlpEndpoint)` <br/>OTLP collector endpoint URL. | `\"http://localhost:4318\"` |\n| `setting(github.copilot.chat.otel.outfile)` <br/>File path for JSON-lines output when using the `file` exporter type. | `\"\"` |\n| `setting(github.copilot.chat.otel.captureContent)` <br/>Capture full prompt and response content in OTel spans. May include sensitive information. | `false` |\n| `setting(github.copilot.chat.otel.captureIdentity)` <br/>Capture the authenticated account name, operating system username, and machine hostname in OTel data for Local harness sessions. This is independent of content capture and may include sensitive information. | `false` |",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/ai-settings.md"
+}

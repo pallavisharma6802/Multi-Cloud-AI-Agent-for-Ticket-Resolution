@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vdecember__overview",
+  "title": "vDecember",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "# December 2015 (0.10.6)\n\nHi,\n\nNovember was a big release for us (adding extensibility support and moving to open source) and we appreciate all the support we received leading up to and during the Connect(); event. We've kept busy in December and we hope you like this release.\n\nThese release notes only capture what's new in the core of Visual Studio Code. Do not forget to check out the [marketplace](https://marketplace.visualstudio.com/VSCode) for new extensions.\n\nDownloads: [Windows](https://az764295.vo.msecnd.net/public/0.10.6/VSCodeSetup.exe) | [OS X](https://az764295.vo.msecnd.net/public/0.10.6/VSCode-darwin.zip) | [Linux 32-bit](https://az764295.vo.msecnd.net/public/0.10.6/VSCode-linux32.zip) | [Linux 64-bit](https://az764295.vo.msecnd.net/public/0.10.6/VSCode-linux64.zip)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vDecember.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_enterprise_policies__overview",
+  "title": "policies",
+  "category": "ENTERPRISE",
+  "intent": "enterprise",
+  "content": "# Centrally manage VS Code settings with policies\n\nEnterprise policies in Visual Studio Code enable organizations to centrally manage VS Code settings for their development teams to ensure consistency and compatibility across their organization. When a policy value is set, the value overrides the VS Code setting value configured at any level (default, user, and workspace).\n\nIT admins can deploy and enforce specific VS Code configurations on users' devices through different device management solutions. VS Code supports applying policies on Windows, macOS, and Linux.\n\n![Settings editor showing that the 'Extensions: Allowed' setting is managed by the organization.](images/policies/allowed-extensions-managed-by-organization.png)\n\nIn this article, you learn which enterprise policies are available in VS Code and how to configure them on different operating systems.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/enterprise/policies.md"
+}

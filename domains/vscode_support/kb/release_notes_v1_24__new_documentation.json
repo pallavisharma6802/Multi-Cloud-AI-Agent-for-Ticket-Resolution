@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_24__new_documentation",
+  "title": "v1_24 / New Documentation",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## New Documentation\n\n### Update Docker topic\n\nWe've rewritten [Working with Docker](https://code.visualstudio.com/docs/azure/docker) which shows how you can create, publish and reuse Docker containers from within VS Code.\n\n### Working with MongoDB\n\nWe've added a new [Working with MongoDB](https://code.visualstudio.com/docs/azure/mongodb) topic for managing MongoDB databases in VS Code with the [Azure Databases](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb) extension.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_24.md"
+}

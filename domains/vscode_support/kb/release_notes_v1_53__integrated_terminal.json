@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_53__integrated_terminal",
+  "title": "v1_53 / Integrated Terminal",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Integrated Terminal\n\n### Flow control\n\nThe connection between the terminal processes and the frontend is now protected by a flow control mechanism that will pause the process when the frontend needs to catch up. Previously, this would cause stability/performance issues when using a terminal in a remote connection. This change only applies when using VS Code's remoting functionality for now, but it will be used for local windows soon, after we tweak where terminal processes get launched.\n\n### Better PowerShell 7 discovery\n\n[PowerShell 7](https://github.com/PowerShell/PowerShell) is the latest and greatest version of PowerShell, which can be installed on Windows, macOS, and Linux. If you install PowerShell 7 on Windows, VS Code will use that as the default shell. If you don't have PowerShell 7 installed, VS Code will continue to use Windows PowerShell as the default.\n\nAdditionally, if you open the **Select Default Shell** Quick Pick, the enumeration of all of the installed PowerShell versions will show up (MSI installation, Microsoft Store installation, etc.).\n\n![Select Default Shell showing possible PowerShell options](images/1_53/choose-default-shell.png)\n\n> **Note**: macOS and Linux default shell discovery and shell enumeration are unaffected by this because they use the default set by the OS and /etc/shells respectively.\n> Additionally, the `terminal.integrated.shell.windows` setting is still honored.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_53.md"
+}

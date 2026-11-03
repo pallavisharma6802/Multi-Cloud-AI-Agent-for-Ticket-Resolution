@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_command__naming_conventions",
+  "title": "command / Naming conventions",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Naming conventions\n\nWhen creating commands, you should follow these naming conventions:\n\n- Command title\n  - Use title-style capitalization. Don't capitalize prepositions of four or fewer letters (such as on, to, in, of, with, and for) unless the preposition is the first or last word.\n  - Start with a verb to describe the action that will be performed.\n  - Use a noun to describe the target of the action.\n  - Avoid using \"command\" in the title.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/command.md"
+}

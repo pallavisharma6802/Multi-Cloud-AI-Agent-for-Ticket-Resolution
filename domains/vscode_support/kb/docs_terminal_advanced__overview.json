@@ -1,0 +1,8 @@
+{
+  "id": "docs_terminal_advanced__overview",
+  "title": "advanced",
+  "category": "TERMINAL",
+  "intent": "terminal",
+  "content": "# Terminal Advanced\n\n{% data variables.product.prodname_vscode %}'s integrated terminal has many advanced features and settings, such as Unicode and emoji support, custom keyboard shortcuts, and automatic replies. This topic explains these advanced features in detail. If you are new to {% data variables.product.prodname_vscode_shortname %} or the integrated terminal, you may want to review the [Terminal Basics](/docs/terminal/basics.md) topic first.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/advanced.md"
+}

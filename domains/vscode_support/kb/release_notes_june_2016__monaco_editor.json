@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_june_2016__monaco_editor",
+  "title": "June_2016 / Monaco Editor",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Monaco Editor\n\nThe Monaco Editor is now on [npm](https://www.npmjs.com/package/monaco-editor-core)! It is the VS Code source code editor extracted and packaged as a library that can be integrated in any web application to work in any modern browser. We have created a [playground](https://microsoft.github.io/monaco-editor/index.html) showcasing some of the APIs. You can get it via `npm install monaco-editor`.\n\nAll further Monaco Editor specific release notes will be available at its distribution [repository](https://github.com/microsoft/monaco-editor/blob/main/CHANGELOG.md).\n\n![Monaco Editor Playground](images/June_2016/monaco-editor-playground.png)\n\n### CSS/LESS/SCSS and JSON language services are now available\n\nAdditionally, the CSS/LESS/SASS parser and language intelligence source code has been extracted to a separate node module [vscode-css-languageservice](https://github.com/microsoft/vscode-css-languageservice) which is used by both the [Monaco editor](https://github.com/microsoft/monaco-editor) as well as VS Code, bringing the same CSS editing experience to the web browser.\n\nSame for JSON, where the language service, including the JSON schema validator, were extracted to [vscode-json-languageservice](https://github.com/microsoft/vscode-json-languageservice) which again is shared with the [Monaco editor](https://github.com/microsoft/monaco-editor).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/June_2016.md"
+}

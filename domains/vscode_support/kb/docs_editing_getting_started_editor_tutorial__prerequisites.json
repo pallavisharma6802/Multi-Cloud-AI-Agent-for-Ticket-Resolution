@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_getting_started_editor_tutorial__prerequisites",
+  "title": "editor tutorial / Prerequisites",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Prerequisites\n\n* [Download and install {% data variables.product.prodname_vscode %} on your computer](https://code.visualstudio.com/download).\n* For the source control exercise, complete the [Git prerequisites](/docs/sourcecontrol/quickstart.md#prerequisites). These prerequisites include installing Git and configuring your Git author name and email address. You can complete the earlier sections without Git.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/editor-tutorial.md"
+}

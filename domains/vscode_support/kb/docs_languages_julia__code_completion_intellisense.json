@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_julia__code_completion_intellisense",
+  "title": "julia / Code completion (IntelliSense)",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Code completion (IntelliSense)\n\nThe Julia {% data variables.product.prodname_vscode_shortname %} extension comes with code completion thanks to IntelliSense. This feature works out of the box and is useful for experienced and beginner Julia developers alike.\n\n<video src=\"images/julia/code-completion.mp4\" title=\"Video showing Code completion with IntelliSense.\" autoplay loop controls muted></video>\n\nYou can learn more in the [{% data variables.product.prodname_vscode_shortname %} IntelliSense](/docs/editing/intellisense.md) topic.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/julia.md"
+}

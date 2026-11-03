@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_tutorial_fastapi__optional_create_a_gpt_action",
+  "title": "tutorial fastapi / Optional: Create a GPT Action",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Optional: Create a GPT Action\n\nWith GitHub Codespaces, you can host your application for testing purposes when using [GPT Actions](https://platform.openai.com/docs/actions/introduction). GPT Actions are tools that enable [ChatGPT](https://chatgpt.com/) to interact with existing APIs to enhance ChatGPT's abilities, allowing it to perform a wide range of actions. You can follow along the live stream recording below to create your own grocery list plugin for ChatGPT:\n\n[![Watch Build a GPT Action with {% data variables.product.prodname_vscode_shortname %} and Codespaces on YouTube (opens in new tab).](images/tutorial-fastapi/youtube-fPCjEbRpK1M.jpg)](https://www.youtube.com/watch?v=fPCjEbRpK1M)\n\n>**Note**: All personal GitHub.com accounts have a monthly quota of free use of GitHub Codespaces included in the Free or Pro plan. For more information, go to [About billing for GitHub Codespaces](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/tutorial-fastapi.md"
+}

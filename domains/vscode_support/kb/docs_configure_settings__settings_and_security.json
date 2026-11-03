@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_settings__settings_and_security",
+  "title": "settings / Settings and security",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Settings and security\n\nSome settings allow you to specify an executable that {% data variables.product.prodname_vscode_shortname %} will run to perform certain operations. For example, you can choose which shell the Integrated Terminal should use. For enhanced security, such settings can only be defined in user settings and not at workspace scope.\n\nHere is the list of settings not supported in workspace settings:\n\n* `setting(git.path)`\n* `setting(terminal.external.windowsExec)`\n* `setting(terminal.external.osxExec)`\n* `setting(terminal.external.linuxExec)`\n\nThe first time you open a workspace that defines any of these settings, {% data variables.product.prodname_vscode_shortname %} will warn you and then always ignore the values after that.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/settings.md"
+}

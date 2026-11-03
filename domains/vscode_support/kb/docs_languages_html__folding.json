@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_html__folding",
+  "title": "html / Folding",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Folding\n\nYou can fold regions of source code using the folding icons on the gutter between line numbers and line start. Folding regions are available for all HTML elements for multiline comments in the source code.\n\nAdditionally you can use the following region markers to define a folding region:\n`<!-- #region -->` and `<!-- #endregion -->`\n\nIf you prefer to switch to indentation based folding for HTML use:\n\n```json\n\"[html]\": {\n    \"editor.foldingStrategy\": \"indentation\"\n},\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/html.md"
+}

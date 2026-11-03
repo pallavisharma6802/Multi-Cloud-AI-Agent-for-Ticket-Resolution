@@ -1,0 +1,8 @@
+{
+  "id": "docs_typescript_typescript_refactoring__code_suggestions",
+  "title": "typescript refactoring / Code suggestions",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Code suggestions\n\n{% data variables.product.prodname_vscode_shortname %} automatically suggests some common code simplifications such as converting a chain of `.then` calls on a promise to use `async` and `await`\n\n<video src=\"images/refactoring/code-suggestions-convert-async.mp4\" placeholder=\"images/refactoring/code-suggestions-convert-async-placeholder.png\" autoplay loop controls muted>\n    Sorry, your browser doesn't support HTML 5 video.\n</video>\n\nSet `\"js/ts.suggestionActions.enabled\"` to `false` to disable suggestions.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/typescript/typescript-refactoring.md"
+}

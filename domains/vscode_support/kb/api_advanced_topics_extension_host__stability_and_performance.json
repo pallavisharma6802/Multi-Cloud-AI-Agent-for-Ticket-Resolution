@@ -1,0 +1,8 @@
+{
+  "id": "api_advanced_topics_extension_host__stability_and_performance",
+  "title": "extension host / Stability and Performance",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Stability and Performance\n\nVS Code aims to deliver a stable and high performance editor to users, and misbehaving extensions should not impact the user experience. The Extension Host in VS Code prevents extensions from:\n\n* Impacting startup performance\n* Slowing down UI operations\n* Modifying the UI\n\nAdditionally, VS Code lets extensions declare their [Activation Events](/api/references/activation-events) and loads them lazily. For example, the Markdown extension should only be loaded when a user opens a Markdown file. This makes sure that extensions do not consume unnecessary CPU and memory.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/advanced-topics/extension-host.md"
+}

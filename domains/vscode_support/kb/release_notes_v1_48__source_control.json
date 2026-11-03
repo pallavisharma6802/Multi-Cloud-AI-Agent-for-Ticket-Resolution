@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_48__source_control",
+  "title": "v1_48 / Source Control",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Source Control\n\n### Always show repositories\n\nThere's a new setting, `scm.alwaysShowRepositories`, that makes the Source Control view always show the repository rows, even if there's only a single repository open:\n\n<video src=\"images/1_48/scm-always-show-repositories.mp4\" title=\"Video showing Always show repositories.\" autoplay loop controls muted></video>\n\n### Better keyboard navigation\n\nAs you navigate the Source Control view, pressing `kbstyle(Space)` on a change will now open it as a preview editor and keep the focus in the Source Control view, for easier keyboard navigation.\n\n### Git: Overflow menu cleanup\n\nThanks to the new submenu proposed API, the Git **View and More Actions** (**...**) menu has been refactored for better organization of several commands:\n\n![Git menu with submenus](images/1_48/git-submenus.png)\n\n### GitHub: Publish to a public repository\n\nWhen publishing a repository to GitHub, you now have the option to make the repository public, as opposed to the previous default, private:\n\n![Publish public repo](images/1_48/github-publish-public.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_48.md"
+}

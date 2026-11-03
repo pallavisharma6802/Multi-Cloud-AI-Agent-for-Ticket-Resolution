@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_introvideos_csharp__installing_c_dev_kit",
+  "title": "introvideos csharp / Installing C# Dev Kit",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Installing C# Dev Kit\n\nLearn how to install {% data variables.product.prodname_vscode %} and C# Dev Kit and create your first C# project.\n\n[![Watch Installing {% data variables.product.prodname_vscode_shortname %} and C# Dev Kit on YouTube (opens in new tab).](images/introvideos-csharp/youtube-S4Rks1L03LI.jpg)](https://www.youtube.com/watch?v=S4Rks1L03LI)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/introvideos-csharp.md"
+}

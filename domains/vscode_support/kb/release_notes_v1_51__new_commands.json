@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_51__new_commands",
+  "title": "v1_51 / New commands",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## New commands\n\n| Key                                               | Command                                       | Command ID                                    |\n| ------------------------------------------------- | --------------------------------------------- | --------------------------------------------- |\n| `kb(workbench.action.focusLeftGroupWithoutWrap)`  | Focus Left Editor Group (do not wrap around)  | `workbench.action.focusLeftGroupWithoutWrap`  |\n| `kb(workbench.action.focusRightGroupWithoutWrap)` | Focus Right Editor Group (do not wrap around) | `workbench.action.focusRightGroupWithoutWrap` |\n| `kb(workbench.action.focusAboveGroupWithoutWrap)` | Focus Above Editor Group (do not wrap around) | `workbench.action.focusAboveGroupWithoutWrap` |\n| `kb(workbench.action.focusBelowGroupWithoutWrap)` | Focus Below Editor Group (do not wrap around) | `workbench.action.focusBelowGroupWithoutWrap` |\n| `kb(workbench.action.focusActivityBar)`           | Focus Activity Bar                            | `workbench.action.focusActivityBar`           |",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_51.md"
+}

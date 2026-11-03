@@ -10,17 +10,17 @@ from eval.run_eval import _flatten_available_numeric, compare_to_baseline
 def test_flatten_and_baseline_regression():
     report = {
         "packs": {
-            "it_saas": {
+            "vscode_support": {
                 "intent_classification": {"available": True, "macro_f1": 0.50},
                 "rag_quality": {"available": False, "reason": "skipped"},
             }
         }
     }
     flat = _flatten_available_numeric(report)
-    assert flat["packs.it_saas.intent_classification.macro_f1"] == 0.50
+    assert flat["packs.vscode_support.intent_classification.macro_f1"] == 0.50
     assert not any("rag_quality" in k for k in flat)
 
-    baseline = {"thresholds": {"packs.it_saas.intent_classification.macro_f1": 0.80}}
+    baseline = {"thresholds": {"packs.vscode_support.intent_classification.macro_f1": 0.80}}
     failures = compare_to_baseline(report, baseline)
     assert len(failures) == 1
     assert "REGRESSION" in failures[0]

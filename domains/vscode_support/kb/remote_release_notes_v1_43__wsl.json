@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_43__wsl",
+  "title": "v1_43 / WSL",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## WSL\n\n### Docker in WSL\n\nThe Windows team has been busy adding Docker support to the Windows Subsystem for Linux (WSL) and you can learn how to work with Docker, VS Code, and WSL 2 from the [Using Docker in WSL 2](https://code.visualstudio.com/blogs/2020/03/02/docker-in-wsl2) blog post.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_43.md"
+}

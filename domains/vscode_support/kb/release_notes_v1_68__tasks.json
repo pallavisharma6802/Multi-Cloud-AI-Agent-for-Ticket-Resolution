@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_68__tasks",
+  "title": "v1_68 / Tasks",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Tasks\n\n### Glob pattern for default tasks\n\nDefault build and test tasks can now be scoped to only be \"default\" when the active file matches a filename glob pattern:\n\n```jsonc\n{\n    \"version\": \"2.0.0\",\n    \"tasks\": [\n        {\n            \"label\": \"echo txt\",\n            \"type\": \"shell\",\n            \"command\": \"echo TextFile\",\n            \"group\": {\n                \"kind\": \"build\",\n                \"isDefault\": \"**.txt\" // This is a glob pattern which will only match when the active file has a .txt extension.\n            }\n        },\n        {\n            \"label\": \"echo js\",\n            \"type\": \"shell\",\n            \"command\": \"echo JavascriptFile\",\n            \"group\": {\n                \"kind\": \"build\",\n                \"isDefault\": \"**.js\" // This is a glob pattern which will only match when the active file has a .js extension.\n            },\n        }\n    ]\n}\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_68.md"
+}

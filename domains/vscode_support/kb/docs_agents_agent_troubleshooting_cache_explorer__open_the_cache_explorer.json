@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_agent_troubleshooting_cache_explorer__open_the_cache_explorer",
+  "title": "cache explorer / Open the Cache Explorer",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Open the Cache Explorer\n\n1. Open the Agent Debug Logs panel by selecting the ellipsis (**...**) menu in the {% data variables.copilot.chat_view %} and selecting **Show Agent Debug Logs**.\n1. Select the session description in the breadcrumb to open the Summary view.\n1. Select **Cache Explorer**.\n\n![Screenshot showing the Cache Explorer view in Agent Logs, with a side-by-side diff of two model requests.](../images/cache-explorer/cache-explorer.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/agent-troubleshooting/cache-explorer.md"
+}

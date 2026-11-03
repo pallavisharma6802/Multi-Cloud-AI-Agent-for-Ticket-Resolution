@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_54__ssh",
+  "title": "v1_54 / SSH",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## SSH\n\n### X11 forwarding\n\nX11 forwarding is now supported with Remote - SSH. If `ForwardX11 yes` is already set in your [SSH config file](https://man7.org/linux/man-pages/man5/ssh_config.5.html), and X11 forwarding is enabled on the SSH server, then it will work for programs launched from terminals, tasks, and debuggers. X11 forwarding is a feature that allows forwarding [X Window System](http://www.opengroup.org/tech/desktop/x-window-system/) application windows from your remote to an X Window Server running locally.\n\n### Port forwarding source is \"output\"\n\nTo prevent forwarding of unwanted ports when connected to an SSH host, the default value of `remote.autoForwardPortsSource` is `\"output\"`. See [port forwarding source](#choose-a-source-for-automatic-port-forwarding) for more details on this setting.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_54.md"
+}

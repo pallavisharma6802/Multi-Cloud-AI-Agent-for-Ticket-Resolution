@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_94__accessibility",
+  "title": "v1_94 / Accessibility",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Accessibility\n\n### Getting started\n\nOur **Help** menu now includes a **Get Started with Accessibility Features** walkthrough, which makes it easier for you to explore and utilize the accessibility options. The walkthrough introduces you to functionality, such as the accessibility help dialog, accessibility signals, keyboard shortcuts, and more.\n\n![Get Started with Accessibility Features product walkthrough.](images/1_94/accessibility-walkthrough.png)\n\n### Comment accessibility improvements\n\nWe have introduced an accessible view for comment thread controls. This view includes the relevant editor context, enabling you to stay focused without needing to switch between the editor and the accessible view. Likewise, the editor context is now provided in the accessible view for the comments panel.\n\nWe've also introduced the **Comments: Focus Comment on Current Line** command that lets you quickly move to the Comments control from the Editor by using the keyboard. There are also new actions to go to the next and previous commented ranges in the Editor: **Comments: Go to Next Commented Range** and **Comments: Go to Previous Commented Range**.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_94.md"
+}

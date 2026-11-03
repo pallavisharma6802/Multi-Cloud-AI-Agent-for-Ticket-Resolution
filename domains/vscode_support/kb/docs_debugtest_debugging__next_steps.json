@@ -1,0 +1,8 @@
+{
+  "id": "docs_debugtest_debugging__next_steps",
+  "title": "debugging / Next steps",
+  "category": "DEBUGGING",
+  "intent": "debugging",
+  "content": "## Next steps\n\n* [Configure debugging](/docs/debugtest/debugging-configuration.md) - Create and customize reusable `launch.json` configurations.\n* [Debug Node.js applications](/docs/nodejs/nodejs-debugging.md) - Learn about the built-in JavaScript and Node.js debugger.\n* [Debug and fix issues with Copilot](/docs/copilot/overview.md#fix-issues) - Use AI-assisted tools to investigate and fix problems.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/debugging.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_ai_ai_extensibility_overview__decide_which_option_to_use",
+  "title": "ai extensibility overview / Decide which option to use",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Decide which option to use\n\nWhen choosing the right approach for extending AI in your VS Code extension, consider the following guidelines:\n\n1. **Choose an agent plugin when**:\n    * You want to distribute domain expertise and workflows with their MCP integrations\n    * You are replacing a chat participant with skills, tools, and optional MCP Apps\n    * Your integration should work across clients rather than depend on editor APIs\n\n1. **Choose Language Model Tool when**:\n    - You want to extend chat in VS Code with specialized capabilities\n    - You want automatic invocation based on user intent in agent mode\n    - You want access to VS Code APIs for deep integration in VS Code\n    - You want to distribute your tool through the VS Code Marketplace\n\n1. **Choose MCP Tool when**:\n    - You want to extend chat in VS Code with specialized capabilities\n    - You want automatic invocation based on user intent in agent mode\n    - You don't need to integrate with VS Code APIs\n    - Your tool needs to work across different environments (not just VS Code)\n    - Your tool should run remotely or locally\n\n1. **Choose Language Model API when**:\n    - You want to integrate AI capabilities into existing extension features\n    - You're building UI experiences outside the chat interface\n    - You need direct programmatic control over AI model requests",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/ai-extensibility-overview.md"
+}

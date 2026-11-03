@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_139__editor_experience",
+  "title": "v1_139 / Editor experience",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Editor experience\n\n### Word wrap indicators\n\nDisplay word wrap indicators to make wrapped lines easier to identify. An arrow at the word wrap column on the right side of the editor indicates that a line wraps.\n\n![Screenshot showing word wrap indicators in the editor.](images/1_139/word_wrap_indicators.webp)\n\n### Improved bracket auto-closing behavior\n\nVS Code avoids inserting duplicate closing brackets when you type an opening bracket. If a matching closing bracket exists, VS Code uses it. Otherwise, VS Code inserts one.\n\n<video src=\"images/1_139/bracket-auto-closing.mp4\" title=\"Video showing improved bracket auto-closing behavior.\" autoplay loop controls muted></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_139.md"
+}

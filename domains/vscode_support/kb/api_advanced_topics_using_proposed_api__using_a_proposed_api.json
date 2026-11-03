@@ -1,0 +1,8 @@
+{
+  "id": "api_advanced_topics_using_proposed_api__using_a_proposed_api",
+  "title": "using proposed api / Using a proposed API",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Using a proposed API\n\nThese are the steps for testing a proposed API in local extension development:\n\n- Use [Insiders](/insiders) release of VS Code.\n- To your `package.json`, add `\"enabledApiProposals\": [\"<proposalName>\"]`.\n- Copy the corresponding [vscode.proposed.\\<proposalName\\>.d.ts](https://github.com/microsoft/vscode/blob/main/src/vscode-dts) files into your project's source location.\n\nThe [@vscode/dts](https://github.com/microsoft/vscode-dts) CLI utility allows you to quickly download the latest `vscode.proposed.<proposalName>.d.ts` for extension development. It downloads definition files by the proposals listed in your `package.json` file.\n\n```bash\n> npx @vscode/dts dev\nDownloading vscode.proposed.languageStatus.d.ts\nTo:   /Users/Me/Code/MyExtension/vscode.proposed.languageStatus.d.ts\nFrom: https://raw.githubusercontent.com/microsoft/vscode/main/src/vscode-dts/vscode.proposed.languageStatus.d.ts\nRead more about proposed API at: https://code.visualstudio.com/api/advanced-topics/using-proposed-api\n```\n\nThere is a sample using proposed APIs: [proposed-api-sample](https://github.com/microsoft/vscode-extension-samples/tree/main/proposed-api-sample).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/advanced-topics/using-proposed-api.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_reference_manualmodelconversion__set_up_the_environment",
+  "title": "ManualModelConversion / Set up the environment",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Set up the environment\n\nTo convert models from Hugging Face or Microsoft Foundry, you need the [Model Builder](https://onnxruntime.ai/docs/genai/howto/build-model.html) tool.\n\nFollow these steps to set up your environment:\n\n1. Ensure you have either [Anaconda](https://www.anaconda.com/download) or [Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/install) installed on your device.\n\n2. Create a dedicated conda environment for Model Builder and install the necessary dependencies (`onnx`, `torch`, `onnxruntime_genai`, and `transformers`):\n\n    ```powershell\n    conda create -n model_builder python==3.11 -y\n    conda activate model_builder\n    pip install onnx torch onnxruntime_genai==0.6.0 transformers\n    ```\n\n    > Note: For certain newer models, such as Phi-4-mini, you may need to install the latest development version of transformers directly from GitHub:\n\n    ```powershell\n    pip install git+https://github.com/huggingface/transformers\n    ```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/reference/ManualModelConversion.md"
+}

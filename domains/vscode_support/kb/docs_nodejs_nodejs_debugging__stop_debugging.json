@@ -1,0 +1,8 @@
+{
+  "id": "docs_nodejs_nodejs_debugging__stop_debugging",
+  "title": "nodejs debugging / Stop debugging",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Stop debugging\n\nUsing the **Debug: Stop** action (available in the Debug toolbar or via the **Command Palette**) stops the debug session.\n\nIf the debug session was started in \"attach\" mode (and the red terminate button in the Debug toolbar shows a superimposed \"plug\"), pressing **Stop** disconnects the Node.js debugger from the debuggee that then continues execution.\n\nIf the debug session is in \"launch\" mode, pressing **Stop** does the following:\n\n1. When pressing **Stop** for the first time, the debuggee is requested to shut down gracefully by sending a `SIGINT` signal. The debuggee is free to intercept this signal and clean up anything as necessary and then shut down. If there are no breakpoints (or problems) in that shutdown code, the debuggee and the debug session will terminate.\n\n2. However, if the debugger hits a breakpoint in the shutdown code or if the debuggee does not terminate properly by itself, then the debug session will not end. In this case, pressing **Stop** again will force terminate the debuggee and its child processes (`SIGKILL`).\n\nIf you see that a debug session doesn't end when you press the red **Stop** button, then press the button again to force a shutdown of the debuggee.\n\nOn Windows, pressing **Stop** forcibly kills the debuggee and its child processes.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/nodejs-debugging.md"
+}

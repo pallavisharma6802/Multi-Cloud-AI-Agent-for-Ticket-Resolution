@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_quickstart__next_steps",
+  "title": "quickstart / Next steps",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Next steps\n\n* [Apply the workflow to a bounded task in your own project](/docs/agents/best-practices.md#apply-the-workflow-to-your-project).\n* [Explore a codebase without changing files](/docs/agents/guides/explore-a-codebase.md).\n* [Build a complete app and learn the editor, browser, and source control workflows](/docs/agents/agents-tutorial.md).\n* [Review the recommended security baseline](/docs/agents/run/security.md#recommended-security-baseline).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/quickstart.md"
+}

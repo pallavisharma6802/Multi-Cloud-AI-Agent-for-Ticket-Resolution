@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_cloud_continuity_tutorial__4_continue_without_repeating_the_context",
+  "title": "cloud continuity tutorial / 4. Continue without repeating the context",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## 4. Continue without repeating the context\n\nAfter the agent finishes its exploration, enter this follow-up in the connected CLI session:\n\n```prompt\nTurn the second improvement you suggested into a short implementation plan.\nIdentify the affected files, acceptance criteria, and verification steps.\nDon't implement the change, install dependencies, execute project code,\nor create issues or pull requests.\n```\n\nThe agent uses the earlier conversation to identify the suggestion. You don't need to paste the repository summary or start another task.\n\nReview the result:\n\n* Confirm that the plan addresses the second suggestion from the original response.\n* Open the cited files on GitHub.com and check that they support the explanation.\n* Check that the acceptance criteria describe an observable outcome and that proposed verification steps are labeled as steps to run, not tests that already passed.\n\nYou have explored a repository in {% data variables.product.prodname_vscode_shortname %} and continued the same cloud-hosted task from your terminal. You can also reopen the original session in the {% data variables.copilot.agents_window %} to continue there.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/cloud-continuity-tutorial.md"
+}

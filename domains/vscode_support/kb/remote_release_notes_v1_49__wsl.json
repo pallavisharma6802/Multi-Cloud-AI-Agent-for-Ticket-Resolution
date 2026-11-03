@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_49__wsl",
+  "title": "v1_49 / WSL",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## WSL\n\n### WSL Welcome view\n\nWhen you don't have Windows Subsystem for Linux enabled or you don't have any Linux distributions installed, the Remote Explorer shows better guidance with buttons and links to help get you started with WSL.\n\n![Welcome WSL](images/1_49/welcome-wsl.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_49.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_debugtest_tasks__operating_system_specific_properties",
+  "title": "tasks / Operating system specific properties",
+  "category": "DEBUGGING",
+  "intent": "debugging",
+  "content": "## Operating system specific properties\n\nThe task system supports defining values (for example, the command to be executed) specific to an operating system. To do so, put an operating system specific literal into the `tasks.json` file and specify the corresponding properties inside that literal.\n\nBelow is an example that uses the Node.js executable as a command and is treated differently on Windows and Linux:\n\n```json\n{\n    \"label\": \"Run Node\",\n    \"type\": \"process\",\n    \"windows\": {\n        \"command\": \"C:\\\\Program Files\\\\nodejs\\\\node.exe\"\n    },\n    \"linux\": {\n        \"command\": \"/usr/bin/node\"\n    }\n}\n```\n\nValid operating properties are `windows` for Windows, `linux` for Linux, and `osx` for macOS. Properties defined in an operating system specific scope override properties defined in the task or global scope.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/tasks.md"
+}

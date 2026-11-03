@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_16__new_documentation",
+  "title": "v1_16 / New Documentation",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## New Documentation\n\n### Updated Node.js Deployment tutorial\n\nWe continue to refine the [Node.js Deployment to Azure](https://code.visualstudio.com/docs/nodejs/nodejs-deployment) tutorial so you can get your application running quickly in the Cloud.\n\n### New Emmet topic\n\nWe added a new [Emmet topic](https://code.visualstudio.com/docs/languages/emmet) describing VS Code's Emmet support. Learn about using Emmet abbreviations during your editing sessions, how to customize your Emmet experience, and even create custom Emmet snippets.\n\n### VS Code recipes\n\nIn May, we've started to collect recipes for some non-standard or complex debugging setups in a [VS Code Recipe](https://github.com/microsoft/vscode-recipes) repository. This repository has now moved to the new location [https://github.com/microsoft/vscode-recipes](https://github.com/microsoft/vscode-recipes). Here you can find working examples using [Angular](https://github.com/microsoft/vscode-recipes/tree/main/Angular-CLI) and [Docker](https://github.com/microsoft/vscode-recipes/tree/fc84ccc87a2f6248f7bc1a367d56045b8b1ed738/Docker-TypeScript) in VS Code.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_16.md"
+}

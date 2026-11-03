@@ -1,0 +1,8 @@
+{
+  "id": "docs_getstarted_personalize_vscode__next_steps",
+  "title": "personalize vscode / Next steps",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Next steps\n\nAfter personalizing {% data variables.product.prodname_vscode_shortname %}, you can:\n\n* [Explore key {% data variables.product.prodname_vscode_shortname %} features with our Quickstart](/docs/editing/getting-started/editor-tutorial.md)\n* [Install extensions to add features for your programming language](/docs/configure/extensions/extensions.md)\n* [Set up version control with Git](/docs/sourcecontrol/overview.md)\n* [Configure debugging for your project](/docs/debugtest/debugging.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/getstarted/personalize-vscode.md"
+}

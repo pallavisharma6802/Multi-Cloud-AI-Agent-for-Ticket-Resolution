@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_58__notable_fixes",
+  "title": "v1_58 / Notable fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable fixes\n\n* [120956](https://github.com/microsoft/vscode/issues/120956): iPad: can not trigger context menu outside of Editor\n* [122448](https://github.com/microsoft/vscode/issues/122448): Auto disable extensions if their dependencies are disabled\n* [124169](https://github.com/microsoft/vscode/issues/124169): Try to not indent the active debugging line\n* [125144](https://github.com/microsoft/vscode/issues/125144): When thread is no longer stopped the focus is not automatically passed to another thread\n* [125528](https://github.com/microsoft/vscode/issues/125528): Deselect breakpoint in breakpoint view when no longer stopped on it\n* [126211](https://github.com/microsoft/vscode/issues/126211): Node process started via debugger is not killed when quitting VS Code\n* [126702](https://github.com/microsoft/vscode/issues/126702): macOS: command line `code .` not working\n* [127716](https://github.com/microsoft/vscode/issues/127716): Debug Hover: Allow keyboard to search through properties",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_58.md"
+}

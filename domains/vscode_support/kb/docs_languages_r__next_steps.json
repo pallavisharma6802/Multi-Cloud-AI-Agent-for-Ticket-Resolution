@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_r__next_steps",
+  "title": "r / Next steps",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Next steps\n\nThis overview is a quick introduction to the R extension for {% data variables.product.prodname_vscode_shortname %}. Read the extension [README](https://github.com/REditorSupport/vscode-R#features) for a detailed list of features.\n\nIf you have any issues, suggestions or feature requests, please feel free to open an issue at the [GitHub repo](https://github.com/REditorSupport/vscode-R/issues).\n\nIf you'd like to learn more about {% data variables.product.prodname_vscode_shortname %}, try these topics:\n\n* [Basic Editing](/docs/editing/codebasics.md) - A quick introduction to the basics of the {% data variables.product.prodname_vscode_shortname %} editor.\n* [Install an Extension](/docs/configure/extensions/extension-marketplace.md) - Learn about other extensions are available in the [Marketplace](https://marketplace.visualstudio.com/vscode).\n* [Code Navigation](/docs/editing/editingevolved.md) - Move quickly through your source code.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/r.md"
+}

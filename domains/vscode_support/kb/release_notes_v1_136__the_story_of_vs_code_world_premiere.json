@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_136__the_story_of_vs_code_world_premiere",
+  "title": "v1_136 / The Story of VS Code: World Premiere",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## The Story of VS Code: World Premiere\n\nDiscover the story behind VS Code, from its early beginnings to the platform millions of developers use today, and the community that helped shape it along the way.\n\n**[Premiere: September 4 at 8:00 AM PT. Join us!](https://aka.ms/the-story-of-vs-code)**\n\n[![Graphic poster featuring the VS Code logo glowing over a dark background filled with programming code, with the title \"The Story of VS Code.\"](images/1_136/the-story-of-vs-code.png)](https://aka.ms/vscode-trailer)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_136.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_enterprise_overview__overview",
+  "title": "overview",
+  "category": "ENTERPRISE",
+  "intent": "enterprise",
+  "content": "# {% data variables.product.prodname_vscode_shortname %} for enterprise\n\n{% data variables.product.prodname_vscode %} can be used as a development tool for enterprise teams of all sizes. As an IT admin, you can configure {% data variables.product.prodname_vscode_shortname %} to achieve consistency and compliance across your organization.\n\nFor an AI rollout, start with [managing AI settings](/docs/enterprise/manage-ai-settings.md). Choose the controls your organization needs, test them with a representative development workflow, and tell developers which capabilities are available and how to request access.\n\n> [!NOTE]\n> If you're a developer using a managed device, start with the [AI troubleshooting guidance](/docs/agents/agent-troubleshooting/troubleshooting.md#start-with-basic-checks). If a setting is managed by your organization, contact your administrator rather than trying to override the policy.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/enterprise/overview.md"
+}

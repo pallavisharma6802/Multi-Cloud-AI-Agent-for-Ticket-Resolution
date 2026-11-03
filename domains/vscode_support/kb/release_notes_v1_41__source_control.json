@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_41__source_control",
+  "title": "v1_41 / Source Control",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Source Control\n\n### Git: Relative paths in git.ignoredRepositories\n\nThe `git.ignoredRepositories` setting now supports relative paths, which are useful when you're configuring workspace settings and you'd like to ignore certain repositories in VS Code.\n\n### Git: Adoption of FileSystemProvider\n\nThe Git extension now uses the [FileSystemProvider API](https://code.visualstudio.com/api/references/vscode-api#FileSystemProvider) which, besides fixing certain encoding issues, provides a more performant and more reliable way of exposing older versions of your files, from a Git repository.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_41.md"
+}

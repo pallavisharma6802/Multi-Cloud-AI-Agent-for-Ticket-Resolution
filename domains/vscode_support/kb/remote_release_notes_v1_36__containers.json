@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_36__containers",
+  "title": "v1_36 / Containers",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Containers\n\n### Experimental Alpine Linux support\n\nSupport for Alpine Linux is available in VS Code [Insiders](https://code.visualstudio.com/insiders/). We are holding this back from the Stable release to allow for extension authors to catch up with the additional platform. See [Supporting Remote Development](https://code.visualstudio.com/api/advanced-topics/remote-extensions) for details.\n\n### Read default shell and home folder from `/etc/passwd`\n\nThe default shell and the home folder are now read from `/etc/passwd`. You can still set the `SHELL` or `HOME` environment variables to override.\n\n### Dev Containers: Show Container Log\n\nThe **Dev Containers: Show Container Log** command reveals the log of the Dev Container.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_36.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_getting_started_tips_and_tricks__snippets",
+  "title": "tips and tricks / Snippets",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Snippets\n\n### Create custom snippets\n\n**File** > **Preferences** > **Configure Snippets**, select the language, and create a snippet.\n\n```json\n\"create component\": {\n    \"prefix\": \"component\",\n    \"body\": [\n        \"class $1 extends React.Component {\",\n        \"\",\n        \"\\trender() {\",\n        \"\\t\\treturn ($2);\",\n        \"\\t}\",\n        \"\",\n        \"}\"\n    ]\n},\n```\n\nSee more details in [Creating your own Snippets](/docs/editing/userdefinedsnippets.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/tips-and-tricks.md"
+}

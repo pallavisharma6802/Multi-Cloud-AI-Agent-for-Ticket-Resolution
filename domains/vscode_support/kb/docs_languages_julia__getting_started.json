@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_julia__getting_started",
+  "title": "julia / Getting started",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Getting started\n\n1. Install Julia for your platform: [https://julialang.org/install](https://julialang.org/install).\n2. Install {% data variables.product.prodname_vscode_shortname %} for your platform: [https://code.visualstudio.com/download](https://code.visualstudio.com/download).\n3. Open the Julia extension on the [{% data variables.product.prodname_vs_marketplace %}](https://marketplace.visualstudio.com/items?itemName=julialang.language-julia) and press **Install**; or manually install by doing the following steps:\n    1. Start {% data variables.product.prodname_vscode_shortname %}.\n    2. Inside {% data variables.product.prodname_vscode_shortname %}, go to the Extensions view by clicking **View** on the top menu bar and then selecting **Extensions**.\n    3. In the Extensions view, search for the term \"julia\" in the Marketplace search box, then select the Julia extension (julialang.language-julia) and select the **Install** button.\n    4. Restart {% data variables.product.prodname_vscode_shortname %}.\n\nIf you run into any issues installing the Julia {% data variables.product.prodname_vscode_shortname %} extension, check out [install an extension](/docs/configure/extensions/extension-marketplace.md#install-an-extension), which should help clarify any issues.\n\n![Julia in the {% data variables.product.prodname_vs_marketplace %}](images/julia/julia-extension-marketplace.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/julia.md"
+}

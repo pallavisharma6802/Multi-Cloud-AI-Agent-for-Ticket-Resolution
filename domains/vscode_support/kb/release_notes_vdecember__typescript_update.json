@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vdecember__typescript_update",
+  "title": "vDecember / TypeScript Update",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## TypeScript Update\n\nThe TypeScript language service was updated to version [1.7.5](https://devblogs.microsoft.com/typescript/announcing-typescript-1-7).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vDecember.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_1_get_started__problem_framing_why_one_workspace_changes_learning_speed",
+  "title": "1 get started / Problem Framing: Why One Workspace Changes Learning Speed",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Problem Framing: Why One Workspace Changes Learning Speed\n\nA useful way to think about Foundry Toolkit is as a feedback-loop accelerator, not just an extension with more buttons. When discovery, prompt testing, agent setup, and deployment checks live in one place, you spend less time tab-hopping and more time improving results.\n\nSmall shift, big payoff. Especially once more people join the project.\n\n**Try this**\n\nIf you want a quick test, compare two workflows: one where you bounce between portals and docs, and one where you stay in Visual Studio Code for most tasks. The second flow usually means faster iteration, fewer handoff mistakes, and much clearer ownership when multiple people touch the same project.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/1-get-started.md"
+}

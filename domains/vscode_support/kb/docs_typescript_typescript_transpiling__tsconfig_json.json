@@ -1,0 +1,8 @@
+{
+  "id": "docs_typescript_typescript_transpiling__tsconfig_json",
+  "title": "typescript transpiling / tsconfig.json",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## tsconfig.json\n\nTypically the first step in any new TypeScript project is to add a `tsconfig.json` file. A `tsconfig.json` file defines the TypeScript [project settings](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html), such as the compiler options and the files that should be included. To do this, open up the folder where you want to store your source and add a new file named `tsconfig.json`. Once in this file, IntelliSense (`kb(editor.action.triggerSuggest)`) will help you along the way.\n\n![tsconfig.json IntelliSense](images/compiling/tsconfigintellisense.png)\n\nA simple `tsconfig.json` looks like this for ES5, **CommonJS** [modules](https://wiki.commonjs.org/wiki/Modules/1.0) and source maps:\n\n```json\n{\n    \"compilerOptions\": {\n        \"target\": \"ES5\",\n        \"module\": \"CommonJS\",\n        \"sourceMap\": true\n    }\n}\n```\n\nNow when you create a `.ts` file as part of the project we will offer up rich editing experiences and syntax validation.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/typescript/typescript-transpiling.md"
+}

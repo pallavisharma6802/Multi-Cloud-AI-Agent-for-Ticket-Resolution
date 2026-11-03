@@ -1,0 +1,8 @@
+{
+  "id": "docs_azure_kubernetes__next_steps",
+  "title": "kubernetes / Next steps",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Next steps\n\n* [Azure Extensions](/docs/azure/extensions.md) - The {% data variables.product.prodname_vs_marketplace %} has hundreds of extensions for Azure and the cloud.\n* [Deploying to Azure](/docs/azure/deployment.md) - Learn step-by-step how to deploy your application to Azure.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/kubernetes.md"
+}

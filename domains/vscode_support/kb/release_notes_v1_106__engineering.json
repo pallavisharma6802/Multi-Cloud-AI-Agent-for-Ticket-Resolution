@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_106__engineering",
+  "title": "v1_106 / Engineering",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Engineering\n\n### Exploration of automated UX PR testing\n\nWe've introduced a new automation workflow that helps reviewers understand UI changes in pull requests without manually checking out and running the code. By adding the `~copilot-video-please` label to a pull request with UI changes, an automated process kicks off that:\n\n* Builds VS Code from the PR branch\n* Uses GitHub Copilot CLI to interact with the changes and record a video along the way - leveraging [playwright-mcp](https://github.com/microsoft/playwright-mcp)\n* Generates a Playwright trace for detailed inspection\n* Posts the results as a comment on the PR\n\nWhile it's still early, this workflow can reduce the manual effort required for code review, especially for small UI changes. The videos and traces help reviewers quickly verify that changes work as expected. Currently, the videos are only accessible to team members.\n\nFor more details about this automation, see <https://github.com/microsoft/vscode/issues/272529>.\n\n### macOS 11.0 support has ended\n\nVS Code `1.106` is the last release that supports macOS 11.0 (macOS Big Sur). Refer to our [FAQ](https://code.visualstudio.com/docs/supporting/faq#_can-i-run-vs-code-on-old-macos-versions) for additional information.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_106.md"
+}

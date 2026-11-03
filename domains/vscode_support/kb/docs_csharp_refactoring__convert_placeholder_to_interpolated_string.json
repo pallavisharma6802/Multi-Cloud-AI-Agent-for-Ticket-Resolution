@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_refactoring__convert_placeholder_to_interpolated_string",
+  "title": "refactoring / Convert placeholder to interpolated string",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Convert placeholder to interpolated string\n\n**What:** Convert a `String.Format` formatted result string (or placeholder) to an interpolated string.\n\n**When:** Use when you want to an interpolated string quickly.\n\n**Why:** Interpolated strings can give you a more readable version of `String.Format` and can let you access your variable name directly.\n\n**How-to:**\n\n1. Place your cursor on the `String.Format` placeholder.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select **Convert to interpolated string**.\n\n![Convert placeholder to interpolated string example](images/refactoring/convert-to-interpolated-string.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+}

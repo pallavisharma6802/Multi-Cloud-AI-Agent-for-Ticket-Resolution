@@ -1,0 +1,8 @@
+{
+  "id": "docs_devcontainers_devcontainer_cli__next_steps",
+  "title": "devcontainer cli / Next steps",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Next steps\n\n* [Dev container specification repository](https://containers.dev/) - Read and contribute to the open specification.\n* [devcontainer.json reference](https://containers.dev/implementors/json_reference) - Review the `devcontainer.json` schema.\n* [Create a Development Container](/docs/devcontainers/create-dev-container.md) - Create a custom container for your work environment.\n* [Advanced Containers](/remote/advancedcontainers/overview.md) - Find solutions to advanced container scenarios.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/devcontainer-cli.md"
+}

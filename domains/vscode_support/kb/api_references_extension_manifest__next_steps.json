@@ -1,0 +1,8 @@
+{
+  "id": "api_references_extension_manifest__next_steps",
+  "title": "extension manifest / Next steps",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Next steps\n\nTo learn more about VS Code extensibility model, try these topics:\n\n- [Contribution Points](/api/references/contribution-points) - VS Code contribution points reference\n- [Activation Events](/api/references/activation-events) - VS Code activation events reference\n- [Extension Marketplace](/docs/configure/extensions/extension-marketplace) - Read more about the VS Code Extension Marketplace",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/extension-manifest.md"
+}

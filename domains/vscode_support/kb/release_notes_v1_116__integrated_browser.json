@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_116__integrated_browser",
+  "title": "v1_116 / Integrated browser",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Integrated browser\n\nThe [integrated browser](https://code.visualstudio.com/docs/debugtest/integrated-browser) is now easier to access thanks to two new entry points:\n\n* The **View** menu, under **View** > **Browser**\n* The keyboard shortcut `kb(workbench.action.browser.openOrList)`\n<!-- shortcut `Ctrl+Alt+/` (`\u2325\u2318/` on macOS) -->\n\nThese actions open the integrated browser if no tabs are open, or let you quickly see and jump to existing tabs.\n\nThese new entry points are in addition to the previously existing ones:\n\n* The **Browser: Open Integrated Browser** command\n* Link clicks to localhost sites (`setting(workbench.browser.openLocalhostLinks)`)\n* The title bar icon (`setting(workbench.browser.showInTitleBar)`)\n* Ask an agent to open or interact with the browser (`setting(workbench.browser.enableChatTools)`)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_116.md"
+}

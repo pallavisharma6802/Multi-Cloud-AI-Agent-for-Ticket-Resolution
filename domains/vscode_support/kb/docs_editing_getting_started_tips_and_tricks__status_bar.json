@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_getting_started_tips_and_tricks__status_bar",
+  "title": "tips and tricks / Status Bar",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Status Bar\n\n### Errors and warnings\n\nKeyboard Shortcut: `kb(workbench.actions.view.problems)`\n\nQuickly jump to errors and warnings in the project.\n\nCycle through errors with `kb(editor.action.marker.nextInFiles)` or `kb(editor.action.marker.prevInFiles)`\n\n<video src=\"../images/tips-and-tricks/Errors_Warnings.mp4\" title=\"Video showing errors and warnings.\" autoplay loop controls muted></video>\n\nYou can filter problem list either by type ('info', 'errors', 'warnings') or by matching text.\n\n### Change language mode\n\nThe language mode in the Status Bar indicates the language (for example, Markdown, Python, and more) that is associated with the active editor. You can change the language mode for the current editor by selecting the Status Bar language mode indicator, or by using the keyboard shortcut.\n\nKeyboard Shortcut: `kb(workbench.action.editor.changeLanguageMode)`\n\n<video src=\"../images/tips-and-tricks/change_syntax.mp4\" title=\"Video showing change syntax.\" autoplay loop controls muted></video>\n\nIf you want to persist the new language mode for a file type, use the **Configure File Association for** command to associate the current file extension with an installed language.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/tips-and-tricks.md"
+}

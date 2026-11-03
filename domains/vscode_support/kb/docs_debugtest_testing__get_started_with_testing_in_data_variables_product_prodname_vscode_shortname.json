@@ -1,0 +1,8 @@
+{
+  "id": "docs_debugtest_testing__get_started_with_testing_in_data_variables_product_prodname_vscode_shortname",
+  "title": "testing / Get started with testing in {% data variables.product.prodname_vscode_shortname %}",
+  "category": "DEBUGGING",
+  "intent": "debugging",
+  "content": "## Get started with testing in {% data variables.product.prodname_vscode_shortname %}\n\nTo get started with testing in {% data variables.product.prodname_vscode_shortname %}, follow these steps:\n\n1. Open the Extensions view and install a testing extension for your project. Filter the extensions by the **Testing** category (_@category:\"testing\"_).\n\n1. Select the beaker icon (<i class=\"codicon codicon-beaker\"></i>) in the Activity Bar to open the Test Explorer and discover the tests in your project.\n\n1. Run and debug your tests from the Test Explorer or directly from the editor.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/testing.md"
+}

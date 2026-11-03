@@ -1,0 +1,8 @@
+{
+  "id": "docs_debugtest_tasks__examples_of_tasks_in_action",
+  "title": "tasks / Examples of tasks in action",
+  "category": "DEBUGGING",
+  "intent": "debugging",
+  "content": "## Examples of tasks in action\n\nTo highlight the power of tasks, here are a few examples of how {% data variables.product.prodname_vscode_shortname %} can use tasks to integrate external tools like linters and compilers.\n\n### Transpiling TypeScript to JavaScript\n\nThe [TypeScript topic](/docs/typescript/typescript-transpiling.md) includes an example that creates a task to transpile TypeScript to JavaScript and observe any related errors from within {% data variables.product.prodname_vscode_shortname %}.\n\n### Transpiling Less and SCSS into CSS\n\nThe CSS topic provides examples of how to use Tasks to generate CSS files.\n\n1. [Manually transpiling with a Build task](/docs/languages/css.md#transpiling-sass-and-less-into-css)\n2. [Automation of the compile step with a file watcher](/docs/languages/css.md#automating-sassless-compilation)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/tasks.md"
+}

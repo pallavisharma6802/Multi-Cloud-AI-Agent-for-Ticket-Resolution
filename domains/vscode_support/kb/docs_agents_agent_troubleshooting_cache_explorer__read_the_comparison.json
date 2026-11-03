@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_agent_troubleshooting_cache_explorer__read_the_comparison",
+  "title": "cache explorer / Read the comparison",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Read the comparison\n\nThe side panel lists model turns grouped by user request. Each turn can show the cache hit percentage, duration, model name, and timestamp. Select a turn to compare its request with the preceding request.\n\nThe main area contains:\n\n* **Cache performance**: The reported cache percentage and the number of reused input tokens.\n* **Prompt signature**: A summary of request components, such as system instructions, tool definitions, and messages. The first divergence marks where the consecutive requests stop matching.\n* **Components**: Expandable text diffs for the request components.\n\nIf a turn has no preceding model request, there is no consecutive request for the Cache Explorer to compare.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/agent-troubleshooting/cache-explorer.md"
+}

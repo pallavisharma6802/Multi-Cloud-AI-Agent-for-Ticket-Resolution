@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vnovember__debugging_debug_console_improvements",
+  "title": "vNovember / Debugging - Debug Console Improvements",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debugging - Debug Console Improvements\n* Colored text output to highlight diagnostic errors and warnings\n* Support file path links with line and column information for quick source code navigation.\n\n![Colored Output](images/0_10_0/colored-output.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vNovember.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_71__notable_fixes",
+  "title": "v1_71 / Notable fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable fixes\n\n* [115768](https://github.com/microsoft/vscode/issues/115768) Windows: different zoom levels on different monitors fail to restore windows at correct location\n* [133444](https://github.com/microsoft/vscode/issues/133444) Dragging settings tab to another editor group clears search query\n* [140305](https://github.com/microsoft/vscode/issues/140305) Main window extended across multiple screens does not restore position when re-opening\n* [146683](https://github.com/microsoft/vscode/issues/146683) Window layout style bug on open\n* [148492](https://github.com/microsoft/vscode/issues/148492) Use platform agnostic paths for workspace file\n* [154963](https://github.com/microsoft/vscode/issues/154963) Fixed codicon support in extension walkthroughs\n* [155341](https://github.com/microsoft/vscode/issues/155341) Piping into VS Code fails if data writes delayed\n* [156075](https://github.com/microsoft/vscode/issues/156075) \\[Emmet\\] per-language \"Trigger expansion on tab\"\n* [156385](https://github.com/microsoft/vscode/issues/156385) Run recent command shows resolved aliases - `ls` appends `--color=auto` to executed command",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_71.md"
+}

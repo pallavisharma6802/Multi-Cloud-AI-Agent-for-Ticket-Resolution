@@ -1,0 +1,8 @@
+{
+  "id": "api_references_activation_events__onwebviewpanel",
+  "title": "activation events / onWebviewPanel",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## onWebviewPanel\n\nThis activation event is emitted and interested extensions will be activated whenever VS Code needs to restore a [webview](/api/extension-guides/webview) with the matching `viewType`.\n\nFor example, the declaration of `onWebviewPanel` below:\n\n```json\n\"activationEvents\": [\n    \"onWebviewPanel:catCoding\"\n]\n```\n\nwill cause the extension to be activated when VS Code needs to restore a webview with the viewType: `catCoding`. The viewType is set in the call to `window.createWebviewPanel` and you will need to have another activation event (for example, onCommand) to initially activate your extension and create the webview.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/activation-events.md"
+}

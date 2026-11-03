@@ -1,0 +1,8 @@
+{
+  "id": "docs_setup_copilot__use_copilot_with_a_ghe_account",
+  "title": "copilot / Use Copilot with a GHE account",
+  "category": "INSTALLATION",
+  "intent": "installation",
+  "content": "## Use Copilot with a GHE account\n\nIf your Copilot subscription is associated with a GitHub Enterprise (GHE) account, you can sign in to Copilot in {% data variables.product.prodname_vscode_shortname %} with your GHE credentials.\n\n1. If you haven't already, hover over the Copilot icon in the Status Bar and select **Use AI Features**.\n\n1. In the sign in dialog, choose **Continue with GHE.com** and provide your GHE instance URL and credentials.\n\nIf you need to switch between a GitHub.com account and a GHE account, see [Use a different GitHub account per workspace or profile](#use-a-different-github-account-per-workspace-or-profile) for instructions.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/copilot.md"
+}

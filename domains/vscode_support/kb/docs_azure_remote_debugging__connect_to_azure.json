@@ -1,0 +1,8 @@
+{
+  "id": "docs_azure_remote_debugging__connect_to_azure",
+  "title": "remote debugging / Connect to Azure",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Connect to Azure\n\nAfter you install the Azure App Service extension, notice that there's an **Azure** view added to the Activity Bar. Select the Azure view to open the Azure App Service Explorer.\n\n![App Service explorer](images/remote-debugging/app-service-explorer.png)\n\nSelect **Sign in to Azure** in the App Service Explorer or **Azure: Sign In** from the **Command Palette** (`kb(workbench.action.showCommands)`) to sign in to your Azure Account. If you don't have an account, select **Create an Azure Account...** to create an Azure free account to try out any combination of Azure services.\n\n> **Tip:** If you don't have an app deployed to Azure App Service yet, start by following this tutorial to [deploy a Node.js + MongoDB web app to Azure](https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/remote-debugging.md"
+}

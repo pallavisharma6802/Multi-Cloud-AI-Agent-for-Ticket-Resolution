@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_32__debugging",
+  "title": "v1_32 / Debugging",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debugging\n\n### Font configuration for Debug Console\n\nNow it is possible to configure the font size, font family, and line height in the Debug Console using these settings: `debug.console.fontSize`, `debug.console.fontFamily`, and `debug.console.lineHeight`.\n\n<video src=\"images/1_32/debug-console-font.mp4\" title=\"Video showing Debug Console font.\" autoplay loop controls muted></video>\n\n### Debug Console text wrapping\n\nThanks to the new tree widget adoption, the debug console now supports automatic text wrapping for all its elements, even attributes inside objects.\n\n![Debug Console wrap](images/1_32/debug-console-wrap.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_32.md"
+}

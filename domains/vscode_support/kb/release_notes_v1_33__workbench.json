@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_33__workbench",
+  "title": "v1_33 / Workbench",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Workbench\n\n### Easier Display Language configuration\n\nRunning the **Configure Display Language** command will now open a Quick Pick listing the available locales based on the Language Packs you have installed, instead of only opening the `locale.json` file. When you make a selection, the locale will be automatically updated and you'll be prompted to restart VS Code for the change to take effect.\n\n![Configure Display Language Quick Pick](images/1_33/display-language-picker.png)\n\n### Improved Source Control view\n\nThe Source Control view has been aligned to behave like other views, such as the File Explorer, Debug view, etc. Repositories can now be made visible or hidden using context menu actions. Their order and sizing is now preserved. You can also show or hide the **Source Control Providers** view with context menu actions.\n\n![Source Control view context menu](images/1_33/source-control-context-menu.png)\n\n### List simple keyboard navigation when screen reader detected\n\nWhen VS Code detects that a screen reader is being used, it automatically turns on simple keyboard navigation for lists. This makes the list keyboard navigation easier for users with a screen reader since each key stroke will navigate to the corresponding item. This behavior applies for all lists and trees in the workbench, for example the File Explorer, Open Editors, and Debug views.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_33.md"
+}

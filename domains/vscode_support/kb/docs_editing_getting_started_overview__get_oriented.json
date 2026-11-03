@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_getting_started_overview__get_oriented",
+  "title": "overview / Get oriented",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Get oriented\n\nThe {% data variables.product.prodname_vscode_shortname %} window is called the workbench. The [user interface](/docs/editing/getting-started/userinterface.md) centers on the editor and provides dedicated views for files, search, source control, running and debugging, and extensions. The Activity Bar switches between these views, while the Panel hosts supporting tools such as the terminal, Problems view, and debug console.\n\nA [workspace](/docs/editing/workspaces/workspaces.md) represents the project you have open. A workspace can contain one or more folders and gives {% data variables.product.prodname_vscode_shortname %} the context to restore your open files and layout, apply project-specific settings, and store task and debug configurations. You can also open an individual file when you do not need project context.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/overview.md"
+}

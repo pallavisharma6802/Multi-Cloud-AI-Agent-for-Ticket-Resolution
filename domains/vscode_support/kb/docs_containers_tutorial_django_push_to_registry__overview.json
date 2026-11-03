@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_tutorial_django_push_to_registry__overview",
+  "title": "tutorial django push to registry",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "# Push Django images to a registry\n\nIn this tutorial, you take a container image of a Python Django app you built locally and deploy it to Azure Container Registry (ACR) or Docker Hub.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/tutorial-django-push-to-registry.md"
+}

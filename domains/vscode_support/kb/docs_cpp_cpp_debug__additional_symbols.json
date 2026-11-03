@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_cpp_debug__additional_symbols",
+  "title": "cpp debug / Additional symbols",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Additional symbols\n\nIf there are additional directories where the debugger can find symbol files (for example, `.pdb` files for the Visual Studio Windows Debugger), they can be specified by adding the `additionalSOLibSearchPath` (for GDB or LLDB) or `symbolSearchPath` (for the Visual Studio Windows Debugger).\n\nFor example:\n\n```json\n    \"additionalSOLibSearchPath\": \"/path/to/symbols;/another/path/to/symbols\"\n```\n\nor\n\n```json\n    \"symbolSearchPath\": \"C:\\\\path\\\\to\\\\symbols;C:\\\\another\\\\path\\\\to\\\\symbols\"\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/cpp-debug.md"
+}

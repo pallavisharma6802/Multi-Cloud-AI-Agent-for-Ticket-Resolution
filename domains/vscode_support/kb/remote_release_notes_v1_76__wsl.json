@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_76__wsl",
+  "title": "v1_76 / WSL",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## WSL\n\n### Download WSL server build in the background\n\nWhen VS Code Desktop detects a new update and downloads it in the background, the WSL extension now also downloads the matching server build. When the VS Code update is applied, VS Code is able to open WSL windows without a extra download. This will come handy when the update is applied while the machine has no connection to the internet.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_76.md"
+}

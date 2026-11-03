@@ -1,0 +1,8 @@
+{
+  "id": "api_language_extensions_overview__language_server_protocol",
+  "title": "overview / Language Server Protocol",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Language Server Protocol\n\nBy standardizing the communication between a Language Server (a static code analysis tool) and a Language Client (usually a source code editor), the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/) allows extension authors to write one code analysis program and reuse it in multiple editors.\n\nIn the [Programmatic Language Features](/api/language-extensions/programmatic-language-features) listing, you can find a listing of all VS Code language features and how they map to the [Language Server Protocol Specification](https://microsoft.github.io/language-server-protocol/specification).\n\nWe offer an in-depth guide that explains how to implement a Language Server extension in VS Code:\n\n- [Language Server Extension Guide](/api/language-extensions/language-server-extension-guide)\n\n![multi-editor](images/overview/multi-editor.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/language-extensions/overview.md"
+}

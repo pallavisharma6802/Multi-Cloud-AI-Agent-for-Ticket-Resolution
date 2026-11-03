@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_optimizations__understand_data_cost_and_side_effects",
+  "title": "optimizations / Understand data, cost, and side effects",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Understand data, cost, and side effects\n\nMicrosoft Foundry stores optimization runs, referenced datasets, candidates, and evaluation results in the selected project. Foundry Toolkit reads that service data and writes a candidate to the local workspace only when you apply or deploy it.\n\nOptimization invokes the baseline and candidate agents against tasks in the dataset. Evaluation-model calls score those responses, and the optimization model generates candidate configurations. If the agent calls APIs, databases, search services, or other tools, those calls run during candidate evaluation and can incur charges, mutate data, or trigger rate limits. Use test accounts, test endpoints, or mocked tools when repeated execution could have unwanted effects.\n\nHosted-agent optimization does not show a pre-run cost estimate in Foundry Toolkit. Candidate count, dataset size, evaluators, models, response length, and external tools all affect usage. Review [agent optimizer cost and token usage](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agent-optimizer-costs) and use your Azure invoice as the billing source of truth.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/optimizations.md"
+}

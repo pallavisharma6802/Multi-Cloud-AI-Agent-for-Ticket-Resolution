@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_117__languages",
+  "title": "v1_117 / Languages",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Languages\n\n### TypeScript 6.0.3\n\nThis release includes the [TypeScript 6.0.3](https://github.com/microsoft/typescript/issues?q=milestone%3A%22TypeScript%206.0.3%22) recovery release. This minor update fixes a few import bugs and regressions.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_117.md"
+}

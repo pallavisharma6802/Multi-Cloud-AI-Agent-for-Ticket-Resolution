@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v0_7_0__php",
+  "title": "v0_7_0 / PHP",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## PHP\nWe added a set of common snippets for PHP.  To access these hit `kb(editor.action.triggerSuggest)` to get a context specific list.\n\n![PHP Snippets](images/0_7_0/PHPSnip.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_7_0.md"
+}

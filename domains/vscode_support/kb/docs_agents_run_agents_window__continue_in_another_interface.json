@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_agents_window__continue_in_another_interface",
+  "title": "agents window / Continue in another interface",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Continue in another interface\n\nWhen you want to edit or debug alongside the conversation, select **Open in Editor** in the title bar of a supported project session. To return, select **Open in Agents** in the application title bar, then select the existing session from the sessions list. Check the [supported session types and continuation requirements](/docs/agents/run/sessions/manage-sessions.md#continue-between-the-chat-view-and-agents-window).\n\nFor continuity across apps and devices, use [GitHub Environments (Preview)](/docs/agents/run/remote-agent-sessions.md#github-environments-preview) to register this machine from **Remote Connections** in the title bar. Connect from another supported {% data variables.product.prodname_copilot_short %} client to continue a session on the host. For {% data variables.product.prodname_vscode_shortname %}-specific remote access, use [SSH or dev tunnels](/docs/agents/run/remote-agent-sessions.md#choose-how-to-connect). Keep the host and its required application or service running.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/agents-window.md"
+}

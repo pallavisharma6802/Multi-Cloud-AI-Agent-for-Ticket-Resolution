@@ -1,0 +1,8 @@
+{
+  "id": "api_ux_guidelines_sidebars__overview",
+  "title": "sidebars",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "# Sidebars\n\nThe Primary and Secondary Sidebars consists of one or more [Views](/api/ux-guidelines/views) contributed by a [View Container](/api/ux-guidelines/views#view-containers). Extensions can contribute Views to an existing View Container (for example, Explorer) or they can contribute an entirely new View Container.\n\n**\u2714\ufe0f Do**\n\n- Group related Views and content together\n- Use clear, descriptive names for View Containers and their Views\n\n**\u274c Don't**\n\n- Use an excessive number of View Containers. A single View Container (such as a Sidebar with Views unique to that extension) is generally enough for most extensions.\n- Use an excessive number of Views (3-5 is a comfortable max for most screen sizes)\n- Add content to the Sidebar that could be a simple Command.\n- Repeat existing functionality\n\n![Example of two sidebars](images/examples/sidebars.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/sidebars.md"
+}

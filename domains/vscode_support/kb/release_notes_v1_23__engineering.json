@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_23__engineering",
+  "title": "v1_23 / Engineering",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Engineering\n\n### Improved Smoke Test stability\n\nVS Code has always had a smoke test, which is used to keep quality under strict control. We had automated the smoke test yet failed to make it stable. This milestone we worked on improving the stability and performance of the smoke test. More details can be found in [pull request #47471](https://github.com/microsoft/vscode/pull/47471).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_23.md"
+}

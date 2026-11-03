@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_53__wsl",
+  "title": "v1_53 / WSL",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## WSL\n\n### Install extensions from a WSL shell\n\nThe `code` CLI in the WSL shell now also supports\n`--list-extensions`, `--uninstall-extension`, and `--uninstall-extension`. You can use them to list, remove, or add extensions installed on the WSL side. This works for extensions from the Marketplace and from VSIXes.\n\nAgain, the command is restricted to extensions on the WSL side. To install an extension locally, use `code.cmd` from the Windows side or the Extensions view.\n\n### Shortcuts to install WSL and WSL distros\n\nThe [WSL extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) now guides users how to install WSL and WSL distros when not yet present. It uses the new simplified [`wsl --install`](https://learn.microsoft.com/windows/wsl/install#install-wsl-command) feature available in Windows Preview builds.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_53.md"
+}

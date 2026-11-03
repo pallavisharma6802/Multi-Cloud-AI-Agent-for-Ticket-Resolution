@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_python_web__limitations",
+  "title": "python web / Limitations",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Limitations\n\nThe Python for the Web support doesn't provide all the features available when running source code on your local machine. The major limitations in the Python interpreter are:\n\n* No socket support.\n* No thread support. As a consequence, there is no async support.\n* No pip support.\n* No support for native Python modules.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/python-web.md"
+}

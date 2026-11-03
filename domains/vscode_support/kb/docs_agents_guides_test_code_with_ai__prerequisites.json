@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_test_code_with_ai__prerequisites",
+  "title": "test code with ai / Prerequisites",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Prerequisites\n\n* [Set up {% data variables.product.prodname_copilot %}](/docs/setup/copilot.md).\n* Open an existing project in {% data variables.product.prodname_vscode_shortname %}.\n* Install the project's dependencies and any runtime needed to run its tests.\n\nA testing extension is optional for running tests in the terminal. To discover and run tests in the Test Explorer, install an appropriate [testing extension](/docs/debugtest/testing.md#extensions-for-testing).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/test-code-with-ai.md"
+}

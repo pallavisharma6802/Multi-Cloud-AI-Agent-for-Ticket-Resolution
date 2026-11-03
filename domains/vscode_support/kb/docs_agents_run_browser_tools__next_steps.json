@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_browser_tools__next_steps",
+  "title": "browser tools / Next steps",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Next steps\n\n* Follow the [build and validate a web app with browser tools tutorial](/docs/agents/guides/browser-agent-testing-guide.md).\n* Learn about the [integrated browser](/docs/debugtest/integrated-browser.md).\n* Explore [testing with AI](/docs/agents/guides/test-code-with-ai.md).\n* Learn [how tools work in the agent loop](/docs/agents/concepts/tools.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/browser-tools.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_44__language_server_protocol",
+  "title": "v1_44 / Language Server Protocol",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Language Server Protocol\n\nA new version (0.5.0) of the Language Server Index Format [specification](https://microsoft.github.io/language-server-protocol/specifications/lsif/0.5.0/specification/) has been published. The version supports linking reference results across project dumps using monikers. In addition, new versions of the LSP client (6.2.0-next.2) and server (6.2.0-next.2) libraries have been published.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_44.md"
+}

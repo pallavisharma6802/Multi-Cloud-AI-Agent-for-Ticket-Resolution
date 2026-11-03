@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_93__testing",
+  "title": "v1_93 / Testing",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Testing\n\n### Support for stack traces on messages\n\nTesting extensions can now associate a stack trace with test failures. When they do, you'll see the code around each frame of the call stack in the Test Results view and in error peeks. You can `kbstyle(Ctrl)`-select (`kbstyle(Cmd)`-select on macOS) on code in the views to go to their original locations, or use the **Go to File** action on their headers.\n\n![Editor showing a test failure message and the corresponding call stack that led to the failure.](images/1_93/test-stack.png)\n_Theme: [Codesong](https://marketplace.visualstudio.com/items?itemName=connor4312.codesong) (preview on [vscode.dev](https://vscode.dev/editor/theme/connor4312.codesong))_",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_93.md"
+}

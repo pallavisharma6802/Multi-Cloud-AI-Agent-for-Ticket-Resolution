@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_azure_machine_learning__git_integration",
+  "title": "azure machine learning / Git integration",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Git integration\n\nBy using the Azure Machine Learning {% data variables.product.prodname_vscode_shortname %} extension to connect to a remote compute instance, you'll be able to use {% data variables.product.prodname_vscode_shortname %}'s built-in Git support.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/azure-machine-learning.md"
+}

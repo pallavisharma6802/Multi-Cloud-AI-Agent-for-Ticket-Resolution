@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_faq__git_clients_and_providers",
+  "title": "faq / Git clients and providers",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## Git clients and providers\n\n### Can {% data variables.product.prodname_vscode_shortname %} use GitHub Desktop for Git operations?\n\nNo. {% data variables.product.prodname_vscode_shortname %} uses the [official Git distribution](https://git-scm.com/) for its built-in Git integration. Installing GitHub Desktop doesn't replace this requirement.\n\n### Can I use Team Foundation Version Control?\n\nInstall the [Azure Repos extension](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team) to add Team Foundation Version Control support to {% data variables.product.prodname_vscode_shortname %}.\n\n### Can I use another source control provider?\n\nYes. Git support is built into {% data variables.product.prodname_vscode_shortname %}, and extensions can contribute support for other source control systems. Search the Extensions view (`kb(workbench.view.extensions)`) for `@category:\"scm providers\"`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/faq.md"
+}

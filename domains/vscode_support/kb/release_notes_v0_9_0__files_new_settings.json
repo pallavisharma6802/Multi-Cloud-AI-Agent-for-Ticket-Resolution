@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v0_9_0__files_new_settings",
+  "title": "v0_9_0 / Files - New Settings",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Files - New Settings\n\nWe added two new configuration options to control how files open and folders reopen between sessions.\n\nThe `window.openFilesInNewWindow` setting controls if files should open in a new window instead of reusing an existing VS Code instance. By default, VS Code will\nopen a new window, e.g. when you double-click on a file outside VS Code or open a file from the command line. Set this to `false` to reuse the last\nactive instance of VS Code and open files in there.\n\nThe `window.reopenFolders` setting tells VS Code how to restore the opened windows of your previous session. By default, VS Code will\nreopen the last opened folder you worked on (setting: `one`). Change this setting to `none` to never reopen any folders and always start with an\nempty VS Code instance. Change it to `all` to restore all folders you worked on. This will reopen all the windows with folders of your previous session.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_9_0.md"
+}

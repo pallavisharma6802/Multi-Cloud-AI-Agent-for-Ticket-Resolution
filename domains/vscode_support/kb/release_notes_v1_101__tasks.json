@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_101__tasks",
+  "title": "v1_101 / Tasks",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Tasks\n\n### Instance policy\n\nTask `runOptions` now has an `instancePolicy` property, which determines what happens when a task has reached its `instanceLimit`.\n\nOptions include `prompt` (default), `silent`, `terminateNewest`, `terminateOldest`, and `warn`.\n\n![Screenshot showing an `instancePolicy` being configured in a `tasks.json` file and displays the options with prompt as the default value.](images/1_101/instancePolicy.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_101.md"
+}

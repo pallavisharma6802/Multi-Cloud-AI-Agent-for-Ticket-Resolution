@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_tree_view__activation",
+  "title": "tree view / Activation",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Activation\n\nIt is important that your extension is activated only when user needs the functionality that your extension provides. In this case, you should consider activating your extension only when the user starts using the view. VS Code automatically does this for you when your extension declares a view contribution. VS Code emits an activationEvent [onView:${viewId}](/api/references/activation-events#onView) (`onView:nodeDependencies` for the example above) when the user opens the view.\n\n> **Note**: For VS Code versions prior to 1.74.0, you must explicitly register this activation event in `package.json` for VS Code to activate your extension on this view:\n>```json\n>\"activationEvents\": [\n>        \"onView:nodeDependencies\",\n>],\n>```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/tree-view.md"
+}

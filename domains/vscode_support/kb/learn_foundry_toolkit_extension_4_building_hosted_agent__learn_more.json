@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_4_building_hosted_agent__learn_more",
+  "title": "4 building hosted agent / Learn more",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Learn more\n\nIf you want to go deeper after this chapter, the best path is to pair platform guidance with hosted-agent deployment references. This gives you production context and practical next steps for what to do next.\nUse the links below as a practical continuation path.\n\n- **GitHub Copilot in Visual Studio Code**: [Review Copilot workflows in Visual Studio Code docs](https://code.visualstudio.com/docs/copilot/overview).\n- **Azure AI Foundry overview**: [Understand the broader Azure AI Foundry platform and workflows](https://learn.microsoft.com/azure/ai-foundry/).\n- **Azure AI Agents overview**: [Review hosted-agent concepts and lifecycle guidance](https://learn.microsoft.com/azure/ai-services/agents/overview).\n- **Azure Developer CLI documentation**: [Use azd for repeatable setup and deployment workflows](https://learn.microsoft.com/azure/developer/azure-developer-cli/).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
+}

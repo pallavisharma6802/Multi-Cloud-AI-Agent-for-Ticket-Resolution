@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vmarch__languages_html",
+  "title": "vMarch / Languages - HTML",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Languages - HTML\n\nThe HTML formatter is based on the **beautifyjs** library. The formatting options offered by that library are now surfaced in the VS Code settings:\n\n* `html.format.wrapLineLength`: Maximum amount of characters per line.\n* `html.format.unformatted`: List of tags that shouldn't be reformatted.\n* `html.format.extraLiners`: List of tags that should have an extra newline before them.\n* `html.format.preserveNewLines`: Whether existing line breaks before elements should be preserved.\n* `html.format.maxPreserveNewLines`: Maximum number of line breaks to be preserved in one chunk.\n* `html.format.indentInnerHtml`: Indent `<head>` and `<body>` sections.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vMarch.md"
+}

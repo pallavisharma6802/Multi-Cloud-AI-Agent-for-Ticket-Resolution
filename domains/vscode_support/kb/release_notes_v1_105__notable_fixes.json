@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_105__notable_fixes",
+  "title": "v1_105 / Notable fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable fixes\n\n* [vscode#265842](https://github.com/microsoft/vscode/issues/265842) - Chat: fix a file corruption issue affecting Sonnet, Gemini, and Grok models\n* [vscode#221255](https://github.com/microsoft/vscode/issues/221255) - Fix terminal links opening regardless of confirmation of \"Opening URIs can be insecure\" warning.\n* [vscode#229374](https://github.com/microsoft/vscode/issues/229374) - Fix to open terminal OSC 8 hyperlink to a folder in VS Code's explorer instead of native file explorer.\n* [vscode#268443](https://github.com/microsoft/vscode/issues/268443) - Settings links in Release Notes do nothing.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_105.md"
+}

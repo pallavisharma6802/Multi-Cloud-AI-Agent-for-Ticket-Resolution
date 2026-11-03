@@ -1,0 +1,8 @@
+{
+  "id": "docs_typescript_typescript_transpiling__working_with_large_projects",
+  "title": "typescript transpiling / Working with large projects",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Working with large projects\n\nIf you are working in a codebase with hundreds or thousands of TypeScript files, here are some steps you can take to improve both the editing experience in {% data variables.product.prodname_vscode_shortname %} as well as compile times on the command line.\n\n### Make sure your tsconfig only includes files you care about\n\nUse `include` or `files` in your project's `tsconfig.json` to make sure the project only includes the files that should be part of the project.\n\n[More information](https://github.com/microsoft/TypeScript/wiki/Performance#configuring-tsconfigjson-or-jsconfigjson) on configuring your project's `tsconfig.json`.\n\n### Break up your project using project references\n\nInstead of structuring your source code as a single large project, you can improve performance by breaking it up into smaller projects using [project references](https://www.typescriptlang.org/docs/handbook/project-references.html). This allows TypeScript to load just a subset of your codebase at a time, instead of loading the entire thing.\n\nSee the [TypeScript documentation](https://www.typescriptlang.org/docs/handbook/project-references.html) for details on how to use project references and best practices for working with them.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/typescript/typescript-transpiling.md"
+}

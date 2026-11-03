@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_command_line__next_steps",
+  "title": "command line / Next steps",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Next steps\n\nRead on to find out about:\n\n* [Integrated Terminal](/docs/terminal/basics.md) - Run command-line tools from inside {% data variables.product.prodname_vscode_shortname %}.\n* [Basic Editing](/docs/editing/codebasics.md) - Learn the basics of the {% data variables.product.prodname_vscode_shortname %} editor.\n* [Code Navigation](/docs/editing/editingevolved.md) - {% data variables.product.prodname_vscode_shortname %} lets you quickly understand and move through your source code.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/command-line.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_108__extension_authoring",
+  "title": "v1_108 / Extension Authoring",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Extension Authoring\n\n### New Quick Pick properties for prompts and resource URIs\n\nThe Quick Pick API includes two new properties for creating interactive selection interfaces.\n\nUse the `prompt` property on `QuickPick` to display persistent instructional text beneath the input box. The text remains visible while users type, which helps provide guidance or context.\n\n```typescript\nconst quickPick = vscode.window.createQuickPick();\nquickPick.prompt = 'Select a file to open';\nquickPick.items = items;\nquickPick.show();\n```\n\nUse the `resourceUri` property on `QuickPickItem` to automatically derive item properties from a resource URI. When provided, VS Code derives:\n\n* The `label` from the file name (when set to an empty string)\n* The `description` from the file path (when set to `undefined` or an empty string)\n* The `icon` from the current file icon theme (when `iconPath` is set to `ThemeIcon.File` or `ThemeIcon.Folder`)\n\nThis is useful when building file or folder selection interfaces.\n\n```typescript\nconst items: vscode.QuickPickItem[] = [\n  {\n    label: '',\n    resourceUri: vscode.Uri.file('/path/to/app.ts'),\n    iconPath: vscode.ThemeIcon.File\n  },\n  {\n    label: '',\n    resourceUri: vscode.Uri.file('/path/to/src'),\n    iconPath: vscode.ThemeIcon.Folder\n  }\n];\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_108.md"
+}

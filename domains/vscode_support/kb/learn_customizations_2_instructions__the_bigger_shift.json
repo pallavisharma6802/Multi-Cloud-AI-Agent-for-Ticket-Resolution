@@ -1,0 +1,8 @@
+{
+  "id": "learn_customizations_2_instructions__the_bigger_shift",
+  "title": "2 instructions / The bigger shift",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## The bigger shift\n\nCustom instructions represent a shift from:\n\n**reactive prompting \u2192 proactive control**\n\nYou\u2019re no longer adjusting outputs after they\u2019re generated.\n\nYou\u2019re defining how the system behaves before generation even happens.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/2-instructions.md"
+}

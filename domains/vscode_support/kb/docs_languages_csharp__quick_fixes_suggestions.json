@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_csharp__quick_fixes_suggestions",
+  "title": "csharp / Quick Fixes / Suggestions",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Quick Fixes / Suggestions\n\nThere are some basic quick fixes supported in {% data variables.product.prodname_vscode_shortname %}. You will see a lightbulb and clicking on it, or pressing `kb(editor.action.quickFix)` provides you with a simple list of fixes/suggestions.\n\n![Quick fix](images/csharp/lightbulb.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/csharp.md"
+}

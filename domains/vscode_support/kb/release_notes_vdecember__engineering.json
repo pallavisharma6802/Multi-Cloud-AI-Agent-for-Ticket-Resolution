@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vdecember__engineering",
+  "title": "vDecember / Engineering",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Engineering\n\nThe VS Code GitHub repository supports continued integration for branches and pull requests:\n\n* [Travis CI](https://travis-ci.org/Microsoft/vscode/) - Linux and OS X\n* [AppVeyor](https://ci.appveyor.com/project/VSCode/vscode) - Windows\n\nDuring this first iteration of VS Code being open source, we tuned and documented more of our development workflows:\n\n* [How we do issue tracking](https://github.com/microsoft/vscode/wiki/Issue-Tracking)\n* [How we use the different feedback channels](https://github.com/microsoft/vscode/wiki/Feedback-Channels)\n\nWe updated Electron to version 0.34.5.  This includes a bug fix for the issue on Linux where the editor font was showing blurry on certain high DPI displays.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vDecember.md"
+}

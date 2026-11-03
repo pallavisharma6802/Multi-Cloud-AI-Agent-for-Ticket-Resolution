@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_5__extensions",
+  "title": "v1_5 / Extensions",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Extensions\n\n### Easier Updates\n\nThere is now an action to **Update All Extensions**.\n\n![Extension update all](images/1_5/extension-update-all.png)\n\nAdditionally, there is now an `extensions.autoUpdate` setting which, when set to `true`, will let extension automatically update themselves without user intervention.\n\n### Extension Contribution Details View\n\nWhen browsing extensions in VS Code, there is now a **Contributions** section which will display each extension's contributions, even before installing the extension.\n\n![Extension Details](images/1_5/extension-details.png)\n\n### Extension Sorting\n\nYou can now sort extensions not only by install count, in the extensions view:\n\n![Extension sort](images/1_5/extension-sort.png)\n\n### Marketplace Performance Improvements\n\nThe [Marketplace](https://marketplace.visualstudio.com/vscode) has been revamped with a CDN, in order to improve download times and availability for extension queries and downloads.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_5.md"
+}

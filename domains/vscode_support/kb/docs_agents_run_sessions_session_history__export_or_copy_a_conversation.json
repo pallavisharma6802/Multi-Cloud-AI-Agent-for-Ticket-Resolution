@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_sessions_session_history__export_or_copy_a_conversation",
+  "title": "session history / Export or copy a conversation",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Export or copy a conversation\n\nExporting and copying create standalone records. These actions are separate from uploading session history with sync.\n\n### Export a chat session as a JSON file\n\nTo save all prompts and responses from a conversation:\n\n1. Open the session in the {% data variables.copilot.chat_view %}.\n1. Run **Chat: Export Chat...** from the Command Palette (`kb(workbench.action.showCommands)`).\n1. Choose where to save the JSON file.\n\n### Copy chat messages as Markdown\n\nRight-click a message or the chat background in the {% data variables.copilot.chat_view %} and choose:\n\n* **Copy**: Copy an individual prompt or response, including its text, thinking steps, and tool calls.\n* **Copy All**: Copy the entire conversation, including prompts, responses, thinking steps, and tool calls.\n* **Copy Final Response**: Copy only the final Markdown section after the last tool call, without intermediate steps.\n\n> [!IMPORTANT]\n> Review exported files and copied messages before sharing. They can contain sensitive prompts, responses, or tool output.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/sessions/session-history.md"
+}

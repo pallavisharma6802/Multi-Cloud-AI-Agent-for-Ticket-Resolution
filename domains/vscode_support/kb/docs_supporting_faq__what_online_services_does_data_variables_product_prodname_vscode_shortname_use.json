@@ -1,0 +1,8 @@
+{
+  "id": "docs_supporting_faq__what_online_services_does_data_variables_product_prodname_vscode_shortname_use",
+  "title": "faq / What online services does {% data variables.product.prodname_vscode_shortname %} use?",
+  "category": "REFERENCE",
+  "intent": "reference",
+  "content": "## What online services does {% data variables.product.prodname_vscode_shortname %} use?\n\nBeyond crash reporting and telemetry, {% data variables.product.prodname_vscode_shortname %} uses online services for various other purposes such as downloading product updates, finding, installing, and updating extensions, or providing Natural Language Search within the Settings editor. You can learn more in [Managing online services](/docs/configure/telemetry.md#managing-online-services).\n\nYou can choose to turn on/off features that use these services. From **File** > **Preferences** > **Settings**, and type the tag `@tag:usesOnlineServices`. This will display all settings that control the usage of online services and you can individually switch them on or off.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/supporting/faq.md"
+}

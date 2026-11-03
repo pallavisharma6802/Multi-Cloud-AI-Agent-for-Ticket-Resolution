@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vdecember__scoped_git_services",
+  "title": "vDecember / Scoped Git Services",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Scoped Git Services\n\nIt is now possible to open a sub-directory of a Git repository in VS Code. VS Code's Git services will still work as usual, showing all changes within the repository, but file changes outside of the scoped directory are shaded and have a tool tip indicating the file is located outside the current workspace.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vDecember.md"
+}

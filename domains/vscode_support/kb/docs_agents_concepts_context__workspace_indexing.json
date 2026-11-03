@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_concepts_context__workspace_indexing",
+  "title": "context / Workspace indexing",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Workspace indexing\n\n{% data variables.product.prodname_vscode_shortname %} uses a semantic index to find code by meaning rather than only by exact keywords. The index helps the agent locate relevant snippets quickly, especially in a large codebase. It doesn't add your entire workspace to every model request.\n\n{% data variables.product.prodname_vscode_shortname %} builds and maintains the index automatically. If a semantic index isn't available yet, the agent can still find context by using text search, file search, and language intelligence.\n\nLearn more about [workspace indexing](/docs/agents/reference/workspace-context.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/context.md"
+}

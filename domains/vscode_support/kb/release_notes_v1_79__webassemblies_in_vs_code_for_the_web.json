@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_79__webassemblies_in_vs_code_for_the_web",
+  "title": "v1_79 / WebAssemblies in VS Code for the Web",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## WebAssemblies in VS Code for the Web\n\nTo add more programming language support to [vscode.dev](https://vscode.dev), the VS Code team has been investigating how to run general [WebAssembly](https://webassembly.org) in VS Code for the Web. If you are interested in this approach and want to learn more, check out the recent [VS Code and WebAssemblies](https://code.visualstudio.com/blogs/2023/06/05/vscode-wasm-wasi) blog post.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_79.md"
+}

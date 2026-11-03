@@ -1,0 +1,8 @@
+{
+  "id": "docs_terminal_profiles__overview",
+  "title": "profiles",
+  "category": "TERMINAL",
+  "intent": "terminal",
+  "content": "# Terminal Profiles\n\nTerminal profiles are platform-specific shell configurations comprised of an executable path, arguments, and other customizations. By default several profiles are automatically detected which can be customized or added to.\n\n<!-- TODO: Image of customized select default profile quick pick -->\n\nExample profile:\n\n```jsonc\n{\n  \"terminal.integrated.profiles.windows\": {\n    \"Custom Init\": {\n      \"path\": \"pwsh.exe\",\n      \"args\": [\n         \"-noexit\",\n         \"-file\",\n         \"${env:APPDATA}\\\\PowerShell\\\\custom-init.ps1\"\n      ]\n    }\n  },\n  \"terminal.integrated.defaultProfile.windows\": \"Custom Init\"\n}\n```\n\nYou can use variables in terminal profiles as shown in the example above with the `APPDATA` environment variable. There is a list of available variables in the [Variables Reference](/docs/reference/variables-reference.md) topic.\n\nConfigure your default profile by running the **Terminal: Select Default Profile** command, which is also accessible via the new terminal dropdown.\n\n![Select Default Profile is located at the bottom of the dropdown menu attached to the new terminal button](images/basics/terminal-dropdown.png)\n\nThe default terminal profile shell defaults to `$SHELL` on Linux and macOS and PowerShell on Windows. {% data variables.product.prodname_vscode_shortname %} will automatically detect most standard shells that can then be configured as the default.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/profiles.md"
+}

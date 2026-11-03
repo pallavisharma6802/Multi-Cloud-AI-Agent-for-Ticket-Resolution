@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_78__testing",
+  "title": "v1_78 / Testing",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Testing\n\n[Continuous run](https://code.visualstudio.com/updates/v1_75#_continuous-test-runs) can now be turned on for individual tests. This requires a test extension that supports continuous run and has adopted the `supportsContinuousRun` API finalized last iteration.\n\n![Continuous run button highlighted on an individual test](images/1_78/testing-continous-run.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_78.md"
+}

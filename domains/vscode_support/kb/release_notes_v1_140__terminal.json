@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_140__terminal",
+  "title": "v1_140 / Terminal",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Terminal\n\n### Sharper terminal text on macOS (Experimental)\n\n**Setting**: `setting(terminal.integrated.fontRendering)`\n\nOn macOS high-DPI displays, terminal text can look softer than the same font in other terminals. Set `setting(terminal.integrated.fontRendering)` to `grayscale` to make terminal text look sharper.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_140.md"
+}

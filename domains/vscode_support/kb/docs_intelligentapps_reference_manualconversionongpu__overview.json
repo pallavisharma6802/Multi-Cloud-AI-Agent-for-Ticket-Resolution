@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_reference_manualconversionongpu__overview",
+  "title": "ManualConversionOnGPU",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Manual model conversion on GPU\nThis article introduces the manual workflow for converting LLM models using a local Nvidia GPU. It describes the required environment setup, execution steps, and how to run inference on a Windows Copilot+ PC with a Qualcomm NPU.\n\nConversion of LLM models requires a Nvidia GPU. If you want model lab to manage your local GPU, follow the steps in [Convert Model](/docs/intelligentapps/modelconversion.md#create-project). Otherwise, follow the steps in this article.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/reference/ManualConversionOnGPU.md"
+}

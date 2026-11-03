@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_68__debugging",
+  "title": "v1_68 / Debugging",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debugging\n\n### Run and Debug without a launch.json\n\nWhen you haven't set up a `launch.json` configuration file and press `F5`, or select the **Run and Debug** button in the Debug view, VS Code picks a debugger based on the programming language in the currently active file. If you don't have a file open, you will be asked which debugger you want to use. This experience can be a little confusing, so we've made a couple improvements.\n\n![Select debugger prompt before (alphabetical) and after (activated debugger at the top)](images/1_68/select-debugger.png)\n\nIf an extension was already activated before you tried to start debugging, then that extension's debugger will be sorted to the top. This can be useful, for example, when the extension was activated by previously running a command from that extension, or opening a file of a language that activates that extension, or by a `workspaceContains` pattern that your workspace matches. If you have used the debugger in this session, it will also be sorted to the top.\n\nThe Chrome/Edge debuggers have been renamed to **Web App (Chrome)** and **Web App (Edge)** to try to avoid confusion with other debuggers such as the [Flutter](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter) extension that also run apps in a browser.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_68.md"
+}

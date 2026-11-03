@@ -1,0 +1,8 @@
+{
+  "id": "api_references_activation_events__workspacecontains",
+  "title": "activation events / workspaceContains",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## workspaceContains\n\n`workspaceContains:path` is emitted and interested extensions will be activated whenever a folder is opened and the folder contains at least one file that matches a [glob pattern](/docs/editor/glob-patterns).\n\n```json\n\"activationEvents\": [\n    \"workspaceContains:**/.editorconfig\"\n]\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/activation-events.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_formatting_linting__overview",
+  "title": "formatting linting",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Formatting and Linting\n\nYou can format your C# source code using the [C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit), a lightweight extension to enhance your C# development experience in {% data variables.product.prodname_vscode %}.\n\nNavigate to **File** > **Preferences** > **Settings** (`kb(workbench.action.openSettings)`) to customize how your `.cs` files are formatted.  The Settings editor gives you a list of different formatting options (particularly under **Commonly Used** and **Text Editor**) that you can adjust across your specific workspace or your entire user profile.\n\n![Commonly Used menu](images/formatting-linting/commonly-used-menu.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/formatting-linting.md"
+}

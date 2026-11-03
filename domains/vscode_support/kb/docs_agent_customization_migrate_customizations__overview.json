@@ -1,0 +1,8 @@
+{
+  "id": "docs_agent_customization_migrate_customizations__overview",
+  "title": "migrate customizations",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Migrate customizations to the Copilot harness in {% data variables.product.prodname_vscode_shortname %}\n\nMove your existing Local customizations to the {% data variables.product.prodname_copilot_short %} harness without losing the workflows you rely on. Use the migration list for supported file moves and conversions, then verify the result with a representative task before retiring the original setup.\n\nStart with the path for your customization below. You don't need to complete every migration in this article. For answers about keeping Local available, MCP secrets, custom discovery paths, and agent tool names, see the [migration FAQ](#frequently-asked-questions).\n\n> [!NOTE]\n> This article covers migration to the Copilot harness. For the Claude or Codex harness, use the locations and formats in the provider documentation.\n>\n> Claude and Codex harnesses are disabled when [{% data variables.product.prodname_copilot_short %} enterprise-managed settings apply](/docs/enterprise/manage-ai-settings.md#claude-and-codex-availability). Contact the IT team that deployed the settings to discuss access.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/migrate-customizations.md"
+}

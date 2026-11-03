@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_overview__next_steps",
+  "title": "overview / Next steps",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## Next steps\n\n* [Make your first commit](/docs/sourcecontrol/quickstart.md) in a guided practice project.\n* [Watch the Git introduction](/docs/introvideos/versioncontrol.md) for a visual walkthrough.\n* [Check source control compatibility](/docs/sourcecontrol/faq.md) for Git clients, authentication, and other providers.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/overview.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_92__debug",
+  "title": "v1_92 / Debug",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debug\n\n### Show variable types while debugging\n\nVS Code now shows the data types of variables while debugging when the setting <a href=\"vscode://settings/debug.showVariableTypes\" codesetting=\"true\">`debug.showVariableTypes`</a> is turned on:\n\n![Show variable data types in the Variables section while debugging.](./images/1_92/debug-types.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_92.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_28__miscellaneous",
+  "title": "v1_28 / Miscellaneous",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Miscellaneous\n\n### Blurriness on macOS Mojave\n\nIf you have updated to macOS 10.14 (Mojave), you might have noticed that fonts in VS Code look blurry if you are not using a high-DPI monitor.\n\nA workaround for this is to run:\n\n```bash\ndefaults write com.microsoft.VSCode.helper CGFontRenderingFontSmoothingDisabled -bool NO\n```\n\nfrom a terminal followed by restarting your computer.\n\nNote that this change is global for every application and not specific to VS Code. See issue [51132](https://github.com/microsoft/vscode/issues/51132) for the related discussion.\n\n### Electron update\n\nIn this release, we updated from Electron 2.0.7 to 2.0.9. Most notably, this allows VS Code to run again on ArchLinux (issue [55934](https://github.com/microsoft/vscode/issues/55934)).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_28.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_cpp__overview",
+  "title": "cpp",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# C/C++ for {% data variables.product.prodname_vscode %}\n\nC/C++ support for {% data variables.product.prodname_vscode %} is provided by a [Microsoft C/C++ extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) to enable cross-platform C and C++ development on Windows, Linux, and macOS. When you create a `*.cpp` file, the extension adds features such as syntax highlighting (colorization), smart completions and hovers (IntelliSense), and error checking.\n\n![C++ language features](images/cpp/msg-intellisense.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/cpp.md"
+}

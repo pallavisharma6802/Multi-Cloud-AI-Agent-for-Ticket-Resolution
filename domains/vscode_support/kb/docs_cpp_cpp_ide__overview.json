@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_cpp_ide__overview",
+  "title": "cpp ide",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Editing and Navigating C++ Code\n\nThis article provides an overview of code editing and navigating features specific to the C/C++ extension. For more information about general editing and navigating in {% data variables.product.prodname_vscode %}, see [Basic Editing](/docs/editing/codebasics.md) and [Code Navigation](/docs/editing/editingevolved.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/cpp-ide.md"
+}

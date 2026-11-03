@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_history__configure_history_views",
+  "title": "history / Configure history views",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## Configure history views\n\n### Configure the Source Control Graph\n\nUse the `setting(scm.graph.showIncomingChanges)` and `setting(scm.graph.showOutgoingChanges)` settings to control whether incoming and outgoing commits appear. Use the `setting(scm.graph.pageSize)` setting to configure how many commits the graph loads initially and each time you load more.\n\n### Customize blame information\n\n* `setting(git.blame.statusBarItem.enabled)`: shows blame information in the Status Bar.\n* `setting(git.blame.editorDecoration.enabled)`: shows blame information inline in the editor.\n* `setting(git.blame.editorDecoration.disableHover)`: hides the blame hover in the editor.\n* `setting(git.blame.ignoreWhitespace)`: ignores whitespace changes when Git determines line authorship.\n\nUse the `setting(git.blame.editorDecoration.template)` and `setting(git.blame.statusBarItem.template)` settings to choose which commit details appear.\n\nFor example, the following template shows the commit subject, author name, and relative author date:\n\n```json\n{\n  \"git.blame.editorDecoration.template\": \"${subject}, ${authorName} (${authorDateAgo})\"\n}\n```\n\nUse the `git.blame.editorDecorationForeground` theme color to change the color of inline blame information.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/history.md"
+}

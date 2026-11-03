@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_webview__links",
+  "title": "webview / Links",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Links\n\n- [Webview sample](https://github.com/microsoft/vscode-extension-samples/blob/main/webview-sample/README.md)\n- [Custom Editors documentation](/api/extension-guides/custom-editors)\n- [Webview View sample](https://github.com/microsoft/vscode-extension-samples/tree/main/webview-view-sample)\n\n### VS Code API Usage\n\n- [`window.createWebviewPanel`](/api/references/vscode-api#window.createWebviewPanel)\n- [`window.registerWebviewPanelSerializer`](/api/references/vscode-api#window.registerWebviewPanelSerializer)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/webview.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_debugtest_port_forwarding__how_to_use_port_forwarding",
+  "title": "port forwarding / How to use port forwarding",
+  "category": "DEBUGGING",
+  "intent": "debugging",
+  "content": "## How to use port forwarding\n\nFirst, you need to have a service to forward. If you don't have one yet but do have Node.js installed, you can run this command to start up a server on port 3000:\n\n```bash\nnpx serve\n```\n\nThen, navigate to the **Ports** view in the Panel region (**Ports: Focus on Ports View**), and select **Forward a Port**.\n\n![Forward a Port button displayed in the Ports view](images/port-forwarding/ports-view.png)\n\nIf you haven't logged in with GitHub before, you'll be prompted to sign in. Then, enter the port you'd like to forward; the default port using the above command is port 3000. Once you do this, port forwarding starts and the **Ports** view updates to show the port you forwarded and its **Forwarded Address**.\n\n![Port 3000 added to the Ports view](images/port-forwarding/forwarded-port.png)\n\nHovering over the **Forwarded Address**, you can use the inline actions to copy the address, open it in your browser, or open an in-editor preview.\n\nBy default, the forwarded port is **Private**. When you navigate to the URL, you'll be required to sign in with the same GitHub account you used to start the port forwarding process in {% data variables.product.prodname_vscode_shortname %}. You can change the visibility by right-clicking on the port and selecting **Port Visibility > Public**. **Public** ports don't require sign in.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/port-forwarding.md"
+}

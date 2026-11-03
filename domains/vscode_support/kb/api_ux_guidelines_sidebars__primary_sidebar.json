@@ -1,0 +1,8 @@
+{
+  "id": "api_ux_guidelines_sidebars__primary_sidebar",
+  "title": "sidebars / Primary Sidebar",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Primary Sidebar\n\nMany extensions choose to contribute Views and/or View Containers to the Primary Sidebar given the high visibility it gives content. Use good judgement when adding content here\u2014too much contributed UI can lead to a cluttered experience that can confuse your users.\n\n![Example of the primary sidebar](images/examples/primary-sidebar.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/sidebars.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "learn_customizations_3_skills__learn_more",
+  "title": "3 skills / Learn more",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Learn more\n\n- [Customize AI in Visual Studio Code](https://code.visualstudio.com/docs/agent-customization/overview)\n- [Use agent skills in VS Code](https://code.visualstudio.com/docs/agent-customization/agent-skills)\n- [Use custom agents in VS Code](https://code.visualstudio.com/docs/agent-customization/custom-agents)\n- [Use custom instructions in VS Code](https://code.visualstudio.com/docs/agent-customization/custom-instructions)\n- [Community contributed customization features](https://github.com/github/awesome-copilot)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/3-skills.md"
+}

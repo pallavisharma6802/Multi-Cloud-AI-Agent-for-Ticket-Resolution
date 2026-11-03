@@ -1,0 +1,8 @@
+{
+  "id": "docs_azure_remote_debugging__install_the_extension",
+  "title": "remote debugging / Install the extension",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Install the extension\n\nRemote debugging support for {% data variables.product.prodname_vscode_shortname %} is provided by the [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) extension for apps deployed to Azure.\n\n![Select App Service extension](images/remote-debugging/install-app-service.png)\n\nTo install the Azure App Service extension:\n\n1. Open the Extensions view by pressing `kb(workbench.view.extensions)`\n1. Search for 'azure app service' to filter the results.\n1. Select the Microsoft **Azure App Service** extension and select **Install**.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/remote-debugging.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_devcontainers_create_dev_container__path_to_creating_a_dev_container",
+  "title": "create dev container / Path to creating a dev container",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Path to creating a dev container\n\nIn this document, we'll go through the steps for creating a development (dev) container in {% data variables.product.prodname_vscode_shortname %}:\n\n1. Create a `devcontainer.json`, which describes how {% data variables.product.prodname_vscode_shortname %} should start the container and what to do after it connects.\n2. Make and persist changes to the dev container, such as installation of new software, through use of a Dockerfile.\n3. Configure multiple containers through Docker Compose.\n4. As you make changes, build your dev container to ensure changes take effect.\n\nAfter any of the steps above, you'll have a fully functioning dev container, and you can either continue to the next step of this tutorial to add more features, or stop and begin working in the dev environment you currently have.\n\n> Note: The Dev Containers extension has a **Dev Containers: Add Dev Container Configuration Files...** command that lets you pick a pre-defined container configuration from a list. If you'd prefer to have a complete dev container immediately rather than building up the `devcontainer.json` and Dockerfile step-by-step, you can skip ahead to [Automate dev container creation](#automate-dev-container-creation).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/create-dev-container.md"
+}

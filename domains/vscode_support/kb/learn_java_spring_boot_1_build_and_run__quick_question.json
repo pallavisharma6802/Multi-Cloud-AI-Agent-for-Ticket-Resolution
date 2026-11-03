@@ -1,0 +1,8 @@
+{
+  "id": "learn_java_spring_boot_1_build_and_run__quick_question",
+  "title": "1 build and run / Quick Question",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Quick Question\n\nThe Spring Boot Dashboard can start the application on its own. So why does this chapter\nrun a Maven `package` build first, and why start the app from the Dashboard rather than\nfrom a terminal?",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/1-build-and-run.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_editing__go_to_super_implementation",
+  "title": "java editing / Go to Super Implementation",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Go to Super Implementation\n\nYou can keep track of class implementations and overriding methods by clicking the **Go to Super Implementation** link on hover.\n\n![Spring Navigation](images/java-editing/goto-super.png)\n\n<video src=\"images/java-editing/goto-super-implementation.mp4\" autoplay loop muted playsinline controls title=\"Go to super implementation\">\n</video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-editing.md"
+}

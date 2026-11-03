@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_91__engineering",
+  "title": "v1_91 / Engineering",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Engineering\n\n### Decouple NLS from AMD loader\n\nThis milestone, we started to remove the dependency of the core native language support (NLS) in VS Code with the Asynchronous Module Definition (AMD) loader we ship. Our goal in the future is to use ECMAScript Modules (ESM) loading and drop AMD entirely. To make progress into this direction, we remove our AMD loader plugin dependencies. You should not notice any difference in behaviour, and all the translations we used to support are still supported in both web and desktop.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_91.md"
+}

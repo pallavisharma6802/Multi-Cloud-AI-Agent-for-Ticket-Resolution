@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_automations__overview",
+  "title": "automations",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Create and manage agent automations\n\nAutomations run agent tasks from a saved prompt and session configuration. Use them for work such as summarizing repository changes or triaging issues without starting each session manually. Run an automation on demand, on a recurring schedule, or, for cloud automations, in response to supported repository events. You can also start from a template or share an automation as a reusable file.\n\nRun an automation locally when the task needs your development environment. Run it in GitHub's cloud `feature(cloud-automations)` when you want recurring repository work to continue while {% data variables.product.prodname_vscode_shortname %} and your computer are off.\n\nThis article explains how to choose between local and cloud automations, and how to create, monitor, and safely manage them.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/automations.md"
+}

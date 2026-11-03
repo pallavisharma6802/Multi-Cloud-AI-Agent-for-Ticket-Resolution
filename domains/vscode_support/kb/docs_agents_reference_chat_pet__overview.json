@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_chat_pet__overview",
+  "title": "chat pet",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# VS Code pet interactions and reactions\n\n`feature(chat-pet)`\n\nBlobby, the {% data variables.product.prodname_vscode %} pet, sits above the chat input box and reacts as you work with agents. This reference lists Blobby's reactions to chat activity, movement, direct interactions, and context-menu actions.\n\n![Screenshot showing the VS Code pet entering and leaving the chat input in Stable blue and Insiders green.](../images/chat-pet/toggle.png)\n\nTo learn how to show, hide, and control the pet, see [Personalize chat](/docs/chat/chat-overview.md#personalize-chat).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/chat-pet.md"
+}

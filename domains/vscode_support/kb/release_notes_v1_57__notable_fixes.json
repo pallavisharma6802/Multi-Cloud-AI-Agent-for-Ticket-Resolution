@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_57__notable_fixes",
+  "title": "v1_57 / Notable fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable fixes\n\n* [71966](https://github.com/microsoft/vscode/issues/71966): Often getting full window hangs\n* [85332](https://github.com/microsoft/vscode/issues/85332): Windows: freeze on file delete\n* [95077](https://github.com/microsoft/vscode/issues/95077): Terminal \"word\" link provider does not support wrapping\n* [108804](https://github.com/microsoft/vscode/issues/108804): Do not wait for shell environment resolution before opening window\n* [120004](https://github.com/microsoft/vscode/issues/120004): Weird letter spacing in Integrated Terminal for VS Code\n* [125035](https://github.com/microsoft/vscode/issues/125035): Debug Console filter text should be preserved across reloads\n* [iOS/iPadOS](https://github.com/microsoft/vscode/issues?q=is%3Aissue+milestone%3A%22May+2021%22+is%3Aclosed+label%3Aios-ipados+): Several fixes were made for the iOS/iPadOS platform",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_57.md"
+}

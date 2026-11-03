@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_php__snippets",
+  "title": "php / Snippets",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Snippets\n\n{% data variables.product.prodname_vscode %} includes a set of common snippets for PHP. To access these, hit `kb(editor.action.triggerSuggest)` to get a context-specific list.\n\n![PHP Snippets](images/php/php-snippets.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/php.md"
+}

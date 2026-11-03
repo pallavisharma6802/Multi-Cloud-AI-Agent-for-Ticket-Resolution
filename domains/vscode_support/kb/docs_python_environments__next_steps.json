@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_environments__next_steps",
+  "title": "environments / Next steps",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Next steps\n\n* [Python tutorial](/docs/python/python-tutorial.md) - Get started with Python in {% data variables.product.prodname_vscode_shortname %}.\n* [Debugging](/docs/python/debugging.md) - Learn to debug your Python code.\n* [Testing](/docs/python/testing.md) - Configure and run tests for your Python projects.\n* [Settings reference](/docs/python/settings-reference.md) - Explore all Python extension settings.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/environments.md"
+}

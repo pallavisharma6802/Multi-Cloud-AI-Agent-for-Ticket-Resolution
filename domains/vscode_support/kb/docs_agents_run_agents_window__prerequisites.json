@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_agents_window__prerequisites",
+  "title": "agents window / Prerequisites",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Prerequisites\n\n* {% data variables.product.prodname_vscode %} installed. [Download {% data variables.product.prodname_vscode_shortname %}](/download).\n* One of the following authentication options:\n  * Access to GitHub Copilot. Follow the steps in [Set up GitHub Copilot in {% data variables.product.prodname_vscode_shortname %}](/docs/setup/copilot.md) to sign in and activate your subscription.\n  * A [Claude API key or another supported bring-your-own-key (BYOK) configuration](/docs/agents/run/agent-harnesses.md#claude) to use Claude without GitHub sign-in (Experimental).\n  * An [existing ChatGPT sign-in for Codex](/docs/agents/run/agent-harnesses.md#codex) to use Codex without GitHub sign-in (Experimental).\n  * A [BYOK model](/docs/agent-customization/language-models.md#bring-your-own-language-model-key) configured for use in the {% data variables.copilot.agents_window %}.\n\n> [!NOTE]\n> Claude and Codex harnesses are disabled when [{% data variables.product.prodname_copilot_short %} enterprise-managed settings apply](/docs/enterprise/manage-ai-settings.md#claude-and-codex-availability), even with separate provider credentials. Existing sessions are not deleted by this restriction. Contact the IT team that deployed the settings to discuss access.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/agents-window.md"
+}

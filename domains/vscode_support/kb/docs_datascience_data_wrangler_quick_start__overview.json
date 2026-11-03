@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_data_wrangler_quick_start__overview",
+  "title": "data wrangler quick start",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Quick Start Guide for Data Wrangler in {% data variables.product.prodname_vscode_shortname %}\n\n[Data Wrangler](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.datawrangler) is a code-centric data viewing and cleaning tool that is integrated into {% data variables.product.prodname_vscode_shortname %} and {% data variables.product.prodname_vscode_shortname %} Jupyter Notebooks. It provides a rich user interface to view and analyze your data, show insightful column statistics and visualizations, and automatically generate Pandas code as you clean and transform the data.\n\nThe following is an example of opening Data Wrangler from the notebook to analyze and clean the data with the built-in operations. Then the automatically generated code is exported back into the notebook.\n\n![a gif of opening Data Wrangler from a notebook, looking through the data, switching from Viewing to Editing mode, applying data transformations, and exporting the generated Python code back into the notebook](images/data-wrangler-quick-start/full-dw-loop.gif)\n\nThe goal of this page is to help you quickly get up and running with Data Wrangler.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/data-wrangler-quick-start.md"
+}

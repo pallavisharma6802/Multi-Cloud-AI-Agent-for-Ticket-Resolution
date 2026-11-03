@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_swift__advanced_toolchain_selection",
+  "title": "swift / Advanced toolchain selection",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Advanced toolchain selection\n\nThe Swift extension automatically detects your installed Swift toolchain.\nHowever, it also provides a command called `Swift: Select Toolchain...` which\ncan be used to select between toolchains if you have multiple installed.\n\n> [!IMPORTANT]\n> This is an advanced feature used to configure {% data variables.product.prodname_vscode_shortname %} with a toolchain other\n> than the default on your machine. It is recommended to use `xcode-select` on\n> macOS or `swiftly` on Linux to switch between toolchains globally.\n\nYou may be prompted to select where to configure this new path. Your options are\nto:\n\n- Save it in User Settings\n- Save it in Workspace Settings\n\nKeep in mind that Workspace Settings take precedence over User Settings:\n\n![Settings selection](images/swift/configuration.png)\n\nThe Swift extension will then prompt you to reload the extension in order to\npick up the new toolchain. You must do so, otherwise the extension will not\nfunction correctly:\n\n![Reload {% data variables.product.prodname_vscode_shortname %} warning](images/swift/reload.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/swift.md"
+}

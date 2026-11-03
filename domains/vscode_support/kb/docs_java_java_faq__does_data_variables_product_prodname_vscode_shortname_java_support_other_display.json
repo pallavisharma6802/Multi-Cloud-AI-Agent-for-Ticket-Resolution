@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_faq__does_data_variables_product_prodname_vscode_shortname_java_support_other_display",
+  "title": "java faq / Does {% data variables.product.prodname_vscode_shortname %} Java support other display languages?",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Does {% data variables.product.prodname_vscode_shortname %} Java support other display languages?\n\nCurrently we support Chinese in addition to English for a few extensions including [Debugger for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug), [Test Runner for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-test), [Maven for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven), [Project Manager for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-dependency). To learn how to switch the {% data variables.product.prodname_vscode_shortname %} display language, see [Display Languages](/docs/configure/locales.md).\n\nYou can contribute to the extension repositories if you're interested in additional display language support.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-faq.md"
+}

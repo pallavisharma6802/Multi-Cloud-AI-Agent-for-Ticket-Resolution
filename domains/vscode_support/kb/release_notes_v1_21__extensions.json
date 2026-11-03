@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_21__extensions",
+  "title": "v1_21 / Extensions",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Extensions\n\n### Manage built-in extensions\n\nWith this release, you can now manage (disable/enable) the built-in extensions shipped with VS Code. There is an action **Show Built-in Extensions** in Extensions view that shows all built-in extensions and you can browse and manage them. The same action can be accessed via the **Command Palette** as well.\n\n<video src=\"images/1_21/manage-builtin.mp4\" title=\"Video showing Manage Built-in.\" autoplay loop controls muted></video>\n\n### Language Packs\n\nIn the 1.20 release, we added support for language packs and now the first language packs are available in the [Marketplace](https://marketplace.visualstudio.com/vscode).\n\n![language pack extensions](images/1_21/language-pack-extensions.png)\n\nWe will continue to work with the community to add more language packs.\n\n### Extension Recommendations\n\nYou can now disable all extension recommendations by setting `\"extensions.showRecommendationsOnlyOnDemand\": true`. When this setting is enabled, you will still be able to see recommendations by using the **Show Recommended Extensions** command in Extensions view. The command can also be run via the **Command Palette**.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_21.md"
+}

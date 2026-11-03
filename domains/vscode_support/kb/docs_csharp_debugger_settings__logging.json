@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_debugger_settings__logging",
+  "title": "debugger settings / Logging",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Logging\n\nYou can optionally enable or disable messages that should be logged to the output window. The flags in the logging field are: 'exceptions', 'moduleLoad', 'programOutput', 'browserStdOut' and 'consoleUsageMessage'.\n\nThere are also advanced options under 'logging.diagnosticsLog' that are meant for diagnosing problems with the debugger.\n\n**Availability**\n\n* `launch.json` \u2714\ufe0f\n* `settings.json` \u2714\ufe0f under `csharp.debug.logging`\n* `launchSettings.json` \u274c",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/debugger-settings.md"
+}

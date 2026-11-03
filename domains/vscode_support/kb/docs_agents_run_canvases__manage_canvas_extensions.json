@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_canvases__manage_canvas_extensions",
+  "title": "canvases / Manage canvas extensions",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Manage canvas extensions\n\nUse the **Canvases** section of the Agent Customizations editor to inspect canvas sources and manage supported extensions:\n\n1. Select your active local {% data variables.product.prodname_copilot_short %} session and open the Agent Customizations editor.\n\n1. Select **Canvases**.\n\n1. Expand the user, workspace, plugin, or other source group, then expand an extension to see its canvases.\n\n1. To inspect an extension's origin, use **More Actions** to open its source folder. For an extension owned by a plugin, select **Show Plugin** to view the plugin details.\n\n1. Use the switch on a user or plugin extension to turn the extension on or off.\n\n<!-- TODO: Add a screenshot showing the Canvases source groups and extension switches. -->\n\nThe switch applies to the extension, not an individual canvas. Workspace extensions can't be turned on or off from this editor.\n\nWhen you turn off an extension, its last-known canvas entries might remain visible so that you can identify the extension and turn it on again. You can't open canvases from an extension that's turned off.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/canvases.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_themes__product_icon_themes",
+  "title": "themes / Product Icon Themes",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Product Icon Themes\n\nProduct Icon Themes enable you to change the icons in the {% data variables.product.prodname_vscode_shortname %} user interface, other than the icons for specific file types. For example, you can modify the icons for the views in the Activity Bar, or the icons in the title bar for changing the layout.\n\nNotice in the following image how the Activity Bar icons are updated when selecting a different Product Icon Theme.\n\n![Screenshot of the Product Icon Theme dropdown, and how the Activity Bar icons are changed.](images/themes/product-icon-theme-dropdown.png)\n\nTo select a different Product Icon Theme:\n\n1. Select the **File** > **Preferences** > **Theme** > **Product Icon Theme** menu item, or use the **Preferences: Product Icon Theme** command to display the Product Icon Theme picker.\n\n1. Use the `kbstyle(Up)` and `kbstyle(Down)` keys to navigate through the list and preview the icons of the theme.\n\n1. Select the theme you want and press `kbstyle(Enter)`.\n\nBy default, {% data variables.product.prodname_vscode_shortname %} comes with one Product Icon Theme, **Default**. You can select more Product Icon Themes from the {% data variables.product.prodname_vs_marketplace %} directly from the Product Icon Theme picker by selecting **Browse Additional Product Icon Themes...**.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/themes.md"
+}

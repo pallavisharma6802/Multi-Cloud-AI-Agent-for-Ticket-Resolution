@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_concepts_trust_and_safety__overview",
+  "title": "trust and safety",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Understand trust and safety for AI agents\n\nAI-generated output requires review. {% data variables.product.prodname_vscode %} includes multiple mechanisms to keep you in control of what changes reach your codebase. This article explains the control mechanisms, AI limitations, and security considerations you should be aware of.\n\n<div class=\"docs-action\" data-show-in-doc=\"false\" data-show-in-sidebar=\"true\" title=\"Learn more about AI safety\">\nUnderstand the control mechanisms and safety considerations for using AI in {% data variables.product.prodname_vscode_shortname %}.\n\n* [Learn about AI safety](/docs/agents/run/security.md)\n\n</div>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/trust-and-safety.md"
+}

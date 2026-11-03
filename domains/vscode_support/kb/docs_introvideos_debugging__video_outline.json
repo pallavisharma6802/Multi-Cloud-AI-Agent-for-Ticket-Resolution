@@ -1,0 +1,8 @@
+{
+  "id": "docs_introvideos_debugging__video_outline",
+  "title": "debugging / Video outline",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Video outline\n\n* Debugging that a sample Node.js app.\n* Exploring the debugging user interface.\n* Debugging a sample C# app.\n* Set a breakpoint.\n* View variables and watch variables\n* Inspect the call stack and loaded scripts.\n* Use the debug console.\n* Debug a React app.\n* Launch configurations.\n* Conditional breakpoints.\n* Edit mode.\n* Debug in Microsoft Edge.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/introvideos/debugging.md"
+}

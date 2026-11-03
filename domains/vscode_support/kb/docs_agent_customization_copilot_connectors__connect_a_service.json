@@ -1,0 +1,8 @@
+{
+  "id": "docs_agent_customization_copilot_connectors__connect_a_service",
+  "title": "copilot connectors / Connect a service",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Connect a service\n\nConnectors are a source in the [Customization Marketplace](/docs/agent-customization/overview.md#discover-and-install-existing-customizations-preview). Unlike installing a skill or plugin, connecting a service authorizes access to its tools rather than installing customization files.\n\n1. Run **Chat: Open Customizations** from the Command Palette (`kb(workbench.action.showCommands)`) and select **Browse**.\n\n1. Choose **Copilot Connectors** in the source menu, or search for a service by name.\n\n1. Open the connector's details and select **Connect**.\n\n1. Review the requested permissions and complete authorization in your browser, including service sign-in when required.\n\n1. Wait for the status to show **Connected**.\n\n<!-- TODO: Add a screenshot showing a Copilot connector's details and Connect action in the Agent Customizations editor. -->\n\nWhile authorization is pending, select **Cancel** to stop connecting. You can select **Connect** again to retry.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/copilot-connectors.md"
+}

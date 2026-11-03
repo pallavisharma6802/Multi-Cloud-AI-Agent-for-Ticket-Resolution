@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_28__notable_fixes",
+  "title": "v1_28 / Notable Fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable Fixes\n\n* [48051](https://github.com/microsoft/vscode/issues/48051): After formatting you need to scroll left\n* [31619](https://github.com/microsoft/vscode/issues/31619): Must tab through deleted tab stops in snippets\n* [58327](https://github.com/microsoft/vscode/issues/58327): Debug toolbar buttons disabled\n* [35935](https://github.com/microsoft/vscode/issues/35935): \"Clear Recently Opened\" should also clear editor quick pick history\n* [58799](https://github.com/microsoft/vscode/issues/58799): Reveal untitled file when saving\n* [29553](https://github.com/microsoft/vscode/issues/29553): Preserve quick open input on Escape\n* [58222](https://github.com/microsoft/vscode/issues/58222): UriDisplayService is missing remote share path name\n* [54213](https://github.com/microsoft/vscode/issues/54213): Mechanism to abort the debug launch without showing launch.json\n* [52511](https://github.com/microsoft/vscode/issues/52511): Debug Hover Widget - Enable the widget resizing for long items whose overflow is hidden\n* [50569](https://github.com/microsoft/vscode/issues/50569): Conditional breakpoint prompt should offer to enable breakpoints if breakpoint is already disabled\n* [42737](https://github.com/microsoft/vscode/issues/42737): Extensions: allow to right click to bring up gear menu\n* [58434](https://github.com/microsoft/vscode/issues/58434): Use `--force` arg to prevent prompts while installing extensions from CLI.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_28.md"
+}

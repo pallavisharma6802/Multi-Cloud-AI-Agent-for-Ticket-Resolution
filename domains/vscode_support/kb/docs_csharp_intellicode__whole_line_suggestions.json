@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_intellicode__whole_line_suggestions",
+  "title": "intellicode / Whole line suggestions",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Whole line suggestions\n\n**Scenario 1**: When grey-text is shown, press `kbstyle(Tab)` to accept the prediction (suggestion).\n\n![Press Tab to accept prediction](images/intellicode/accept-prediction.gif)\n\n**Scenario 2**: When grey-text is shown along with the IntelliSense list, press `kbstyle(Tab)` to accept the IntelliSense list selection, then `kbstyle(Tab)` again to accept the rest of the multi-token prediction. In this scenario, you can use the IntelliSense list selection to steer the multi-token prediction offered by IntelliCode.\n\n![Use list selection to steer multi-choice prediction](images/intellicode/multi-token-prediction.gif)\n\nAdditionally, if the model is suggesting that a string should exist, but does not have a suggestion for the string, pressing `kbstyle(Tab)` places the cursor into the empty string, making it easier for you to complete your line of code.\n\nThis model makes predictions on what you'll type next based on a rich knowledge of what you have coded so far, which includes:\n\n* Variable names and positions\n* Libraries you're using\n* Functions in nearby code\n* The IntelliSense list",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/intellicode.md"
+}

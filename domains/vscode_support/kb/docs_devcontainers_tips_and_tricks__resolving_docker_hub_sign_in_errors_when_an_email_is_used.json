@@ -1,0 +1,8 @@
+{
+  "id": "docs_devcontainers_tips_and_tricks__resolving_docker_hub_sign_in_errors_when_an_email_is_used",
+  "title": "tips and tricks / Resolving Docker Hub sign in errors when an email is used",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Resolving Docker Hub sign in errors when an email is used\n\nThe Docker CLI only supports using your Docker ID, so using your email to sign in can cause problems. See Docker [issue #935](https://github.com/docker/hub-feedback/issues/935#issuecomment-300361781) for details.\n\nAs a workaround, use your Docker ID to sign in to Docker rather than your email.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/tips-and-tricks.md"
+}

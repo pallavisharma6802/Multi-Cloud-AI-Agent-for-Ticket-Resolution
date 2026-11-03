@@ -1,0 +1,8 @@
+{
+  "id": "docs_agent_customization_agent_skills__process",
+  "title": "agent skills / Process",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Process\n\n1. Use the `list_workflow_runs` tool to look up recent workflow runs for the pull request and their status\n2. Use the `summarize_job_log_failures` tool to get an AI summary of the logs for failed jobs\n3. If you need more information, use the `get_job_logs` or `get_workflow_run_logs` tool to get the full failure logs\n4. Try to reproduce the failure locally in your environment\n5. Fix the failing build and verify the fix before committing changes",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/agent-skills.md"
+}

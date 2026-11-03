@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_cpp_debug__memory_dump_debugging",
+  "title": "cpp debug / Memory dump debugging",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Memory dump debugging\n\nThe C/C++ extension for {% data variables.product.prodname_vscode_shortname %} also has the ability to debug memory dumps. To debug a memory dump, open your `launch.json` file and add the `coreDumpPath` (for GDB or LLDB) or `dumpPath` (for the Visual Studio Windows Debugger) property to the **C++ Launch** configuration, set its value to be a string containing the path to the memory dump. This will even work for x86 programs being debugged on an x64 machine.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/cpp-debug.md"
+}

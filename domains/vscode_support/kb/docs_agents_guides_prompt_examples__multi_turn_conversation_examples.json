@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_prompt_examples__multi_turn_conversation_examples",
+  "title": "prompt examples / Multi-turn conversation examples",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Multi-turn conversation examples\n\nChat supports follow-up prompts within the same session. Use multi-turn conversations to iterate on results and refine the AI's output.\n\n**First prompt:**\n\n```prompt\nCreate a REST API with Express.js that has endpoints for users and products\n```\n\n**Follow-up prompts:**\n\n```prompt\nAdd input validation and error handling to both endpoints\n```\n\n```prompt\nNow add unit tests for the validation logic\n```\n\nBy building on earlier responses, the AI maintains context from the previous steps and generates more coherent code.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/prompt-examples.md"
+}

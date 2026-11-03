@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_branches_worktrees__next_steps",
+  "title": "branches worktrees / Next steps",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## Next steps\n\n* [Inspect branch and commit history](/docs/sourcecontrol/history.md).\n* [Stage and commit changes](/docs/sourcecontrol/staging-commits.md).\n* [Publish and synchronize branches with a remote](/docs/sourcecontrol/repos-remotes.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/branches-worktrees.md"
+}

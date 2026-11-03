@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_json__json_with_comments",
+  "title": "json / JSON with Comments",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## JSON with Comments\n\nIn addition to the default JSON mode following the [JSON specification](https://www.json.org/), {% data variables.product.prodname_vscode_shortname %} also has a **JSON with Comments** (jsonc) mode. This mode is used for the {% data variables.product.prodname_vscode_shortname %} configuration files such as `settings.json`, `tasks.json`, or `launch.json`. When in the **JSON with Comments** mode, you can use single line (`//`) as well as block comments (`/* */`) as used in JavaScript. The mode also accepts trailing commas, but they are discouraged and the editor will display a warning.\n\nThe current editor mode is indicated in the editor's Status Bar. Select the mode indicator to change the mode and to configure how file extensions are associated to modes. You can also directly modify the `setting(files.associations)` [setting](/docs/languages/overview.md#add-a-file-extension-to-a-language) to associate file names or file name patterns to `jsonc`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/json.md"
+}

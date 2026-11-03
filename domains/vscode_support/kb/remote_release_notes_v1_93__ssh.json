@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_93__ssh",
+  "title": "v1_93 / SSH",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## SSH\n\n### **Feedback Wanted**: Expanded compatibility for remote OSs\n\nEffort has been made this milestone to make it possible to use the `Remote - SSH` extension with historically unsupported remote machines.\n\nChanges include removing the hard requirement for `bash` and supporting the BusyBox toolkit of programs.\n\nThis effort is experimental and subject to change.  We encourage users to try connecting to previously unsupported servers and [share their experience](https://github.com/microsoft/vscode-remote-release/issues/new).\n\n> **Note**: The <a href=\"vscode://settings/remote.SSH.useExecServer\" codesetting=\"true\">`remote.SSH.useExecServer`</a> setting must be enabled and [VS Code Server dependencies like `libstdc`](https://code.visualstudio.com/docs/remote/linux#_remote-host-container-wsl-linux-prerequisites) are still required on the remote machine.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_93.md"
+}

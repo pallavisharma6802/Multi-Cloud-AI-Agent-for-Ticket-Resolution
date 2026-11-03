@@ -1,0 +1,8 @@
+{
+  "id": "learn_agents_4_using_third_party_agents_in_vs_code__compare_the_result",
+  "title": "4 using third party agents in vs code / Compare the result",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Compare the result\n\nRun the same small planning prompt in two places:\n\n1. Start with the built-in VS Code agent.\n\n1. Run the same prompt in Claude or Codex.\n\n1. Compare the plan, tool use, and amount of control you had during the session.\n\nThis comparison helps you decide when a provider-specific agent adds value and when the built-in agent is enough.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/4-using-third-party-agents-in-vs-code.md"
+}

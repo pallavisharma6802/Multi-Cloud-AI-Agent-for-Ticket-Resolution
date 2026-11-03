@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_enable_logging_cpp__data_variables_product_prodname_vscode_shortname_and_the_cpptools_extension",
+  "title": "enable logging cpp / {% data variables.product.prodname_vscode_shortname %} and the CppTools extension",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## {% data variables.product.prodname_vscode_shortname %} and the CppTools extension\n\nThe logging here is called `trace` logging and can be enabled by setting `trace` and `traceResponse` to `true` in the logging block inside `launch.json`. This will help diagnose issues related to {% data variables.product.prodname_vscode_shortname %}'s communication to our extension and our responses.\n\n### CppTools extension and the debugger\n\nThe logging between CppTools and the debugger is called `engineLogging`. When using an MI debugger such as `gdb` or `lldb`, this will show the request, response, and events using the `mi` interpreter. This logging will help us determine whether the debugger is receiving the right commands and generating the correct responses.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/enable-logging-cpp.md"
+}

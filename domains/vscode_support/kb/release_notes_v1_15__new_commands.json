@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_15__new_commands",
+  "title": "v1_15 / New commands",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## New commands\n\nKey|Command|Command id\n---|-------|----------\n`kb(workbench.files.action.compareWithSaved)`|Compare a dirty file with the version on disk|`workbench.files.action.compareWithSaved`\n`kb(workbench.action.terminal.deleteWordLeft)`|Delete word left in terminal|`workbench.action.terminal.deleteWordLeft`\n`kb(workbench.action.terminal.deleteWordRight)`|Delete word right in terminal|`workbench.action.terminal.deleteWordRight`",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_15.md"
+}

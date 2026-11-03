@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_java__overview",
+  "title": "java",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Java in {% data variables.product.prodname_vscode %}\n\nSupport for Java in {% data variables.product.prodname_vscode %} is provided through a wide range of [extensions](/docs/java/extensions.md). Combined with the power of core {% data variables.product.prodname_vscode_shortname %}, these extensions give you a lightweight and performant code editor that also supports many of the most common Java development techniques.\n\nThis article will give you an overview of different capabilities of {% data variables.product.prodname_vscode %} for Java developers. For a quick walkthrough of editing, running, and debugging a Java program with {% data variables.product.prodname_vscode %}, use the **Java Getting Started Tutorial** button below.\n\n<a class=\"next-topic-btn\" href=\"/docs/java/java-tutorial\">Java Getting Started Tutorial</a>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/java.md"
+}

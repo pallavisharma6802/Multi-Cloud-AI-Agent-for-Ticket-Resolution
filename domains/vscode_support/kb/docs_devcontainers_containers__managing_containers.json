@@ -1,0 +1,8 @@
+{
+  "id": "docs_devcontainers_containers__managing_containers",
+  "title": "containers / Managing containers",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Managing containers\n\nBy default, the Dev Containers extension automatically starts the containers mentioned in the `devcontainer.json` when you open the folder. When you close {% data variables.product.prodname_vscode_shortname %}, the extension automatically shuts down the containers you've connected to. You can change this behavior by adding `\"shutdownAction\": \"none\"` to `devcontainer.json`.\n\nWhile you can use the command line to manage your containers, you can also use the  **Remote Explorer**. To stop a container, select Containers from the dropdown (if present), right-click on a running container, and select **Stop Container**. You can also start exited containers, remove containers, and remove recent folders. From the Details view, you can forward ports and open already forwarded ports in the browser.\n\n![Containers Explorer screenshot](images/containers/containers-explorer.png)\n\nIf you want to clean out images or mass-delete containers, see [Cleaning out unused containers and images](/docs/devcontainers/tips-and-tricks.md#cleaning-out-unused-containers-and-images) for different options.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/containers.md"
+}

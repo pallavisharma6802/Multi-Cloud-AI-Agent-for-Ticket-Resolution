@@ -1,0 +1,46 @@
+{
+  "commit": "b997976670611bc45544c85e05aacb6ceabaafb0",
+  "articles": [
+    {
+      "path": "setup/windows",
+      "sha256": "32f83c380e30096534e1d836018bcd83d11d493b9788894bbeba77c1b54b7168",
+      "source": "https://code.visualstudio.com/docs/setup/windows"
+    },
+    {
+      "path": "setup/mac",
+      "sha256": "c9bdd419beb8dd97ff9f195f99a26999018a71352ad18a7f5e69cd6516f7d9eb",
+      "source": "https://code.visualstudio.com/docs/setup/mac"
+    },
+    {
+      "path": "setup/linux",
+      "sha256": "6aa4dedd57bfb7ac0749e9d97a35d4ae99e4c8de65be6a0dc77697b77a67c0a2",
+      "source": "https://code.visualstudio.com/docs/setup/linux"
+    },
+    {
+      "path": "configure/settings",
+      "sha256": "ffaf6f538d0a2e51ea076cd796ab4a45087ed7f7ddb1d25a5fbf69c55be93222",
+      "source": "https://code.visualstudio.com/docs/configure/settings"
+    },
+    {
+      "path": "configure/extensions/extension-marketplace",
+      "sha256": "e9f31777a9ac888f45834e1516c8b74c4fd06338ea4e397d25c2a5cedf13971e",
+      "source": "https://code.visualstudio.com/docs/configure/extensions/extension-marketplace"
+    },
+    {
+      "path": "terminal/basics",
+      "sha256": "3255af910547d58f25916068642be5d4a392d6d66ce111c3711576a59a344d2f",
+      "source": "https://code.visualstudio.com/docs/terminal/basics"
+    },
+    {
+      "path": "sourcecontrol/overview",
+      "sha256": "5b14ed40ea7509335bdd0b6f23383b1039acdffe1aab5dd9ac76981d8c8576a2",
+      "source": "https://code.visualstudio.com/docs/sourcecontrol/overview"
+    },
+    {
+      "path": "debugtest/debugging",
+      "sha256": "9788972ed2d732ea42bd9521f051d04468cf54ab11551c2bbd59eeb04eec99d0",
+      "source": "https://code.visualstudio.com/docs/debugtest/debugging"
+    }
+  ],
+  "license_url": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/LICENSE.md"
+}

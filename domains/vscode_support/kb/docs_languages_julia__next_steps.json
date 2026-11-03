@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_julia__next_steps",
+  "title": "julia / Next steps",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Next steps\n\nThis has been a brief overview showing the Julia extension features within {% data variables.product.prodname_vscode_shortname %}. For more information, see the details provided in the Julia extension [README](https://github.com/julia-vscode/julia-vscode#julia).\n\nTo stay up to date on the latest features/bug fixes for the Julia extension, see the [CHANGELOG](https://github.com/julia-vscode/julia-vscode/blob/master/CHANGELOG.md).\n\nIf you have any issues or feature requests, feel free to log them in the Julia extension [GitHub repo](https://github.com/julia-vscode/julia-vscode/issues).\n\nIf you'd like to learn more about {% data variables.product.prodname_vscode_shortname %}, try these topics:\n\n* [Basic Editing](/docs/editing/codebasics.md) - A quick introduction to the basics of the {% data variables.product.prodname_vscode_shortname %} editor.\n* [Install an Extension](/docs/configure/extensions/extension-marketplace.md) - Learn about other extensions are available in the [Marketplace](https://marketplace.visualstudio.com/vscode).\n* [Code Navigation](/docs/editing/editingevolved.md) - Move quickly through your source code.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/julia.md"
+}

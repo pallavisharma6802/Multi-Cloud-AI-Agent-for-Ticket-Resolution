@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_100__source_control",
+  "title": "v1_100 / Source Control",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Source Control\n\n### Quick diff decorations for staged changes\n\nTo address a long-time feature request, this milestone we have added quick diff editor decorations for staged changes. Now you can view your staged changes directly from the editor, without needing to open the Source Control view.\n\n<video src=\"images/1_100/staged-changes-diff-decorations.mp4\" title=\"Video that shows managing staged changed from an editor by using diff decorations.\" autoplay loop controls muted></video>\n\nYou can customize the color of the staged changes quick diff decorations by using the following theme tokens: `editorGutter.addedSecondaryBackground`, `editorGutter.modifiedSecondaryBackground`, `editorGutter.deletedSecondaryBackground`.\n\nIf you do not want to see quick diff decorations for staged changes, you can hide them by using the **Diff Decorations** submenu that is available in the editor gutter context menu.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_100.md"
+}

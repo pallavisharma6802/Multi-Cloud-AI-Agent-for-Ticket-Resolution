@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_52__engineering",
+  "title": "v1_52 / Engineering",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Engineering\n\n### Sandbox and context isolation enabled for issue reporter and process explorer\n\nTo get more feedback from enabling Electron's [sandbox](https://www.electronjs.org/docs/api/sandbox-option) and [context isolation](https://www.electronjs.org/docs/tutorial/context-isolation), we pushed to enable it for our Process Explorer and Issue Reporter windows. This configuration will eventually be the default also for the main VS Code window:\n\n* `sandbox` enabled\n* `contextIsolation` enabled\n* resources are served from a custom `vscode-file` scheme (and not `file`)\n\n### Secure supply chain for NPM dependencies\n\nWe've improved our NPM dependency supply chain by leveraging source scanning and testing services, in order to increase our build pipeline security and reliability.\n\n### Linux ARM Repositories\n\nVS Code for ARM architectures (`aarch64` and `armhf`) is now published in the following Linux repositories:\n\n* Deb: [https://packages.microsoft.com/repos/code](https://packages.microsoft.com/repos/code)\n* RPM: [https://packages.microsoft.com/yumrepos/vscode](https://packages.microsoft.com/yumrepos/vscode)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_52.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_ux_guidelines_notifications__modal_dialog",
+  "title": "notifications / Modal dialog",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Modal dialog\n\nWhen you need immediate user input for an action, you can opt to show a modal dialog. This UI element should be used with caution because a modal dialog blocks user interactions outside the dialog, until it's dismissed.\n\n![Modal dialog](images/examples/save-ai-generated-changes-dialog.png)\n\n*This dialog appears after moving a JavaScript/TypeScript file, asking to update import statements in other files.*\n\n**\u2714\ufe0f Do**\n\n* Only use modal dialogs if you need immediate user interaction\n* Where appropriate, provide an action to avoid repeated user confirmation (*Always*/*Never* action)\n* Consider using a checkbox to remember the user's choice\n\n**\u274c Don't**\n\n* Use modal dialogs to confirm multiple steps\n* Use modal dialogs for showing messages that don't require an action from the user\n* Show a modal dialog for actions that are not explicitly initiated by the user",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/notifications.md"
+}

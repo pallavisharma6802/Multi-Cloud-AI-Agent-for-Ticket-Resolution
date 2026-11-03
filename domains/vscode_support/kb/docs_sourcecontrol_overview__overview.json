@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_overview__overview",
+  "title": "overview",
+  "category": "GIT",
+  "intent": "git",
+  "content": "# Source control in {% data variables.product.prodname_vscode_shortname %}\n\n{% data variables.product.prodname_vscode %} has built-in Git support for reviewing changes, creating commits, and collaborating on code without leaving your editor. Use this page to choose a starting point or find the guide for a specific task.\n\nGit tracks versions of files in a repository. {% data variables.product.prodname_github %} is a service that hosts Git repositories and adds collaboration tools such as pull requests. You don't need a hosting account to use Git locally.\n\n| What do you want to do? | Start here |\n|------------------------|------------|\n| Learn Git in the editor and make a first commit | [Source control quickstart](/docs/sourcecontrol/quickstart.md) |\n| Work on an existing project | [Clone a repository](/docs/sourcecontrol/repos-remotes.md#clone-repositories) |\n| Choose changes to save in Git history | [Stage and commit changes](/docs/sourcecontrol/staging-commits.md) |\n| Share local commits with a team | [Push, pull, and sync](/docs/sourcecontrol/repos-remotes.md#push-pull-and-sync) |\n| Undo or recover work | [Choose an undo action](/docs/sourcecontrol/staging-commits.md#undo-or-discard-changes) |\n| Resolve an error or unexpected behavior | [Troubleshoot source control](/docs/sourcecontrol/troubleshooting.md) |\n\nThe editor and command-line Git use the same repository. You can work in either interface without importing or synchronizing changes between them.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/overview.md"
+}

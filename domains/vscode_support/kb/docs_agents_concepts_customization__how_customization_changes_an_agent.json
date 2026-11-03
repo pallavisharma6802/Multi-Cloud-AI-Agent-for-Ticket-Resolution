@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_concepts_customization__how_customization_changes_an_agent",
+  "title": "customization / How customization changes an agent",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## How customization changes an agent\n\nThe model brings general knowledge learned during training. The agent combines that knowledge with your prompt, the current conversation, and available context, such as workspace files. Your organization's internal practices and information in other projects aren't automatically available. Customizations provide reusable guidance and access to additional capabilities, so you don't have to supply the same context in every prompt.\n\nDifferent mechanisms change different parts of the agent's work. Instructions and workflows guide the model's decisions. Tools expand the actions it can take. Hooks run commands at specific points in the agent's workflow, such as before or after a tool runs, without relying on the model to request them. Plugins package related customizations for installation and sharing.\n\nAdding a rule to an instructions file is not equivalent to executing a validation script. Neither mechanism alone establishes a security boundary.\n\nRelevant customizations can reduce back-and-forth and rework by giving the agent project context from the start. Avoiding corrective turns and discarded implementations can help reduce [AI credit usage](/docs/agents/guides/optimize-usage.md). Keep customizations focused because their content also consumes space in the model's context window.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/customization.md"
+}

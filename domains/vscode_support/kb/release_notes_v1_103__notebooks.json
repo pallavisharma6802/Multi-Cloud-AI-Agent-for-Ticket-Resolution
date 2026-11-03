@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_103__notebooks",
+  "title": "v1_103 / Notebooks",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notebooks\n\n### Notebook inline chat with agent tools\n\n**Setting**: `setting(inlineChat.notebookAgent:true)`\n\nThe notebook inline chat control can now use the full suite of notebook agent tools to enable additional capabilities like running cells and installing packages into the kernel.\n\n<video src=\"images/1_103/notebook-inline-agent.mp4\" title=\"Video showing a coding agent session opening in a chat session editor.\" autoplay loop controls muted></video>\n\nTo enable agent tools in notebooks, enable the new experimental setting `setting(inlineChat.notebookAgent:true)`. This also currently requires enabling the setting for inline chat v2 `setting(inlineChat.enableV2:true)`.\n\n### Install dependencies in Virtual Environments created with uv\n\nWe now support installing required dependencies when you run Jupyter Notebooks against a Virtual Environment created using [uv](https://docs.astral.sh/uv/pip/environments/).\n\n<video src=\"images/1_103/uv-install-ipykernel.mp4\" title=\"Video that shows installing IPyKernel in uv Virtual Environment.\" autoplay loop controls muted></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_103.md"
+}

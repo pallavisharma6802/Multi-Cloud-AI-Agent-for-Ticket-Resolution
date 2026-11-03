@@ -1,0 +1,8 @@
+{
+  "id": "docs_customization_keyboard_shortcuts__search_and_replace",
+  "title": "keyboard shortcuts / Search and Replace",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Search and Replace\n\nKey|Command\n---|---\n`kb(actions.find)`|Find\n`kb(editor.action.startFindReplaceAction)`|Replace\n`kb(editor.action.nextMatchFindAction)`|Find next\n`kb(editor.action.previousMatchFindAction)`|Find previous\n`kb(editor.action.selectAllMatches)`|Select all occurrences of Find match\n`kb(editor.action.addSelectionTonextFindMatch)`|Add selection to next Find match\n`kb(editor.action.moveSelectionTonextFindMatch)`|Move last selection to next Find match\n`kb(toggleFindCaseSensitive)`|Toggle Find case sensitive\n`kb(toggleFindRegex)`|Toggle Find regex\n`kb(toggleFindWholeWord)`|Toggle Find whole word",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/customization/keyboard-shortcuts.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_typescript__hello_world",
+  "title": "typescript / Hello World",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Hello World\n\nLet's start with a simple Hello World Node.js example. Create a new folder `HelloWorld` and launch {% data variables.product.prodname_vscode_shortname %}.\n\n```bash\nmkdir HelloWorld\ncd HelloWorld\ncode .\n```\n\nFrom the File Explorer, create a new file called `helloworld.ts`.\n\n![create new file](images/typescript/create-new-file.png)\n\nNow add the following TypeScript code. You'll notice the TypeScript keyword `let` and the `string` type declaration.\n\n```typescript\nlet message : string = \"Hello World\";\nconsole.log(message);\n```\n\nTo compile your TypeScript code, you can open the [Integrated Terminal](/docs/terminal/basics.md) (`kb(workbench.action.terminal.toggleTerminal)`) and type `tsc helloworld.ts`. This will compile and create a new `helloworld.js` JavaScript file.\n\n![compiled hello world](images/typescript/compiled-hello-world.png)\n\nIf you have Node.js installed, you can run `node helloworld.js`.\n\n![run hello world](images/typescript/run-hello-world.png)\n\nIf you open `helloworld.js`, you'll see that it doesn't look very different from `helloworld.ts`. The type information has been removed and `let` is now `var`.\n\n```javascript\nvar message = \"Hello World\";\nconsole.log(message);\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/typescript.md"
+}

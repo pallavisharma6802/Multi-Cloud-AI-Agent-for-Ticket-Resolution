@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_python_tutorial__start_data_variables_product_prodname_vscode_shortname_in_a_workspace_folder",
+  "title": "python tutorial / Start {% data variables.product.prodname_vscode_shortname %} in a workspace folder",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Start {% data variables.product.prodname_vscode_shortname %} in a workspace folder\n\nBy starting {% data variables.product.prodname_vscode_shortname %} in a folder, that folder becomes your \"workspace\".\n\nUsing a command prompt or terminal, create an empty folder called \"hello\", navigate into it, and open {% data variables.product.prodname_vscode_shortname %} (`code`) in that folder (`.`) by entering the following commands:\n\n```bash\nmkdir hello\ncd hello\ncode .\n```\n\n>**Note**: If you're using an Anaconda distribution, be sure to use an Anaconda command prompt.\n\nAlternately, you can create a folder through the operating system UI, then use {% data variables.product.prodname_vscode_shortname %}'s **File > Open Folder** to open the project folder.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/python-tutorial.md"
+}

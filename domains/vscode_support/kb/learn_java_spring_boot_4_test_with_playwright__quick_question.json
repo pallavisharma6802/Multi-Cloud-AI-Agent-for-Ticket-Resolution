@@ -1,0 +1,8 @@
+{
+  "id": "learn_java_spring_boot_4_test_with_playwright__quick_question",
+  "title": "4 test with playwright / Quick Question",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Quick Question\n\nThe prompt names the todo `Verify the browser flow` rather than something short like\n`test`. Why does the specific title matter to the reliability of this run?",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/4-test-with-playwright.md"
+}

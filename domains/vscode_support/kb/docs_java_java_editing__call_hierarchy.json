@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_editing__call_hierarchy",
+  "title": "java editing / Call Hierarchy",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Call Hierarchy\n\nA Call Hierarchy view shows all calls from or to a function and allows you to drill into callers of callers and call of calls. Right-click on a function and select **Peek** > **Peek Call Hierarchy**.\n\n![Call Hierarchy Peek](images/java-editing/call-hierarchy.png)\n\nYou can also right-click in a function body and pick **Show Call Hierarchy**.\n\n![Call Hierarchy Menu](images/java-editing/call-hierarchy.gif)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-editing.md"
+}

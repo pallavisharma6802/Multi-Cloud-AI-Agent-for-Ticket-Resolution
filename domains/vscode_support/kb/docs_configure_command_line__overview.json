@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_command_line__overview",
+  "title": "command line",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "# Command Line Interface (CLI)\n\n{% data variables.product.prodname_vscode %} has a powerful command-line interface built-in that lets you control how you launch the editor. You can open files, install extensions, change the display language, and output diagnostics through command-line options (switches).\n\n![command line example](images/command-line/hero.png)\n\nIf you are looking for how to run command-line tools inside {% data variables.product.prodname_vscode_shortname %}, see the [Integrated Terminal](/docs/terminal/basics.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/command-line.md"
+}

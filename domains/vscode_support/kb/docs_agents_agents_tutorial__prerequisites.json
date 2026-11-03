@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_agents_tutorial__prerequisites",
+  "title": "agents tutorial / Prerequisites",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Prerequisites\n\n* [Download and install {% data variables.product.prodname_vscode %}](/download).\n\n* [Enable AI features in {% data variables.product.prodname_vscode_shortname %}](/docs/getstarted/overview.md#enable-ai-features)\n\n    If you use GitHub Copilot, learn more about [AI credits and model costs](/docs/agents/concepts/language-models.md#ai-credits-and-model-costs) and [what happens when you reach a limit](/docs/agents/agent-troubleshooting/faq.md#i-reached-my-inline-suggestions-or-ai-credits-limit).\n\n* [Install Git](https://git-scm.com/)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/agents-tutorial.md"
+}

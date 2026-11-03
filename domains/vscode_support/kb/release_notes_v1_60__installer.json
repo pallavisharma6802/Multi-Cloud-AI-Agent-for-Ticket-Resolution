@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_60__installer",
+  "title": "v1_60 / Installer",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Installer\n\n### Register VS Code for supported file types by default\n\nWindows 11 introduces a [new File Explorer context menu](https://blogs.windows.com/windowsdeveloper/2021/07/19/extending-the-context-menu-and-share-dialog-in-windows-11/) that puts **Open With** to the top of the menu, grouped with **Open**. The update makes it easier to find all available editors and change defaults.\n\nFollowing the new best practices, VS Code's checkbox **Register VS Code to be the editor for associated file types** will now be checked on by default during Windows installation. We also reviewed the list of associated file types and expanded it to include more of the frequently opened file types.\n\n### Microsoft Store on Windows 11\n\nWith the upcoming Windows 11, the new Microsoft store can support more traditional application types and installers. If you are already testing Windows 11 via the Windows Insiders program, you can now install the latest release of VS Code today by searching for it in the store. Once installed, you will have the same VS Code that is available as a user install from our website and updates will be handled in-app, just like they are today.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_60.md"
+}

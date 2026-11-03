@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_refactoring__move_declaration_near_reference",
+  "title": "refactoring / Move declaration near reference",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Move declaration near reference\n\n**What:** Lets you move variable declarations closer to their usage.\n\n**When:** You have variable declarations that can be in a narrower scope.\n\n**Why:** You could leave it as it is, but that may cause readability issues or information hiding. This is a chance to refactor to improve readability.\n\n**How-to:**\n\n1. Place your cursor in the variable declaration.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select **Move declaration near reference**.\n\n![Move declaration near reference example](images/refactoring/move-declaration-near-reference.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+}

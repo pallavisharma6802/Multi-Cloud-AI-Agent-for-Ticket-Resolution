@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_keybindings__keyboard_shortcuts_reference",
+  "title": "keybindings / Keyboard Shortcuts reference",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Keyboard Shortcuts reference\n\nWe have a printable version of the default keyboard shortcuts. Select **Help** > **Keyboard Shortcut Reference** to display a condensed PDF version suitable for printing as an easy reference.\n\nThe following links provide access to the three platform-specific versions (US English keyboard):\n\n* [Windows](https://go.microsoft.com/fwlink/?linkid=832145)\n* [macOS](https://go.microsoft.com/fwlink/?linkid=832143)\n* [Linux](https://go.microsoft.com/fwlink/?linkid=832144)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/keybindings.md"
+}

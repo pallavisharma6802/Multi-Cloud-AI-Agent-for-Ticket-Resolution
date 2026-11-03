@@ -1,0 +1,8 @@
+{
+  "id": "docs_terminal_appearance__common_questions",
+  "title": "appearance / Common questions",
+  "category": "TERMINAL",
+  "intent": "terminal",
+  "content": "## Common questions\n\n### Why is my terminal showing a multi-colored triangle or a black rectangle?\n\nThe terminal can have problems with GPU accelerated rendering in some environments. For example, you might see a big multi-colored triangle instead of text. This is typically caused by driver/VM graphics issues and the same also happens in Chromium. Work around these issues by launching `code` with the `--disable-gpu` flag or by setting `setting(terminal.integrated.gpuAcceleration)` to `off` to avoid using the canvas in the terminal. See the [GPU acceleration](#gpu-acceleration) section for more information.\n\n### Why are the colors in the terminal not correct?\n\nThe [minimum contrast ratio feature](#minimum-contrast-ratio) can cause colors to not be displayed as expected. It can be disabled with:\n\n```json\n\"terminal.integrated.minimumContrastRatio\": 1\n```\n\nBackground on why this is the default is explained in [vscode#146406](https://github.com/microsoft/vscode/issues/146406#issuecomment-1084825473).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/appearance.md"
+}

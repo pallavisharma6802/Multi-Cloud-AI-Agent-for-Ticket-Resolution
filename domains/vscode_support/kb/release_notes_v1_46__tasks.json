@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_46__tasks",
+  "title": "v1_46 / Tasks",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Tasks\n\nContinuing with the recent tasks performance improvements, **Run Build Task** will no longer always ask extensions for their tasks. If you have a default build task configured in your folder's `tasks.json`, **Run Build Task** will only try to resolve that task, instead of finding all tasks from all extensions before running the default build task.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_46.md"
+}

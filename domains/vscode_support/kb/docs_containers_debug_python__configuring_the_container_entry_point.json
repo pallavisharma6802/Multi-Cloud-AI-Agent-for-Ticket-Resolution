@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_debug_python__configuring_the_container_entry_point",
+  "title": "debug python / Configuring the container entry point",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Configuring the container entry point\n\nYou can configure the entry point of the container by setting properties in `tasks.json`. {% data variables.product.prodname_vscode_shortname %} automatically configures the container entry point when you first use the **Containers: Add Docker Files to Workspace...** command.\n\n### Example: Configuring the entry point for a Python module\n\n```json\n{\n  \"tasks\": [\n    {\n      \"type\": \"docker-run\",\n      \"label\": \"docker-run: debug\",\n      \"dependsOn\": [\n        \"docker-build\"\n      ],\n      \"python\": {\n        \"module\": \"myapp\"\n      }\n    }\n  ]\n}\n```\n\n### Example: Configuring the entry point for a Python file\n\n```json\n{\n  \"tasks\": [\n    {\n      \"type\": \"docker-run\",\n      \"label\": \"docker-run: debug\",\n      \"dependsOn\": [\n        \"docker-build\"\n      ],\n      \"python\": {\n        \"args\": [\n          \"runserver\",\n          \"0.0.0.0:8000\",\n          \"--nothreading\",\n          \"--noreload\"\n        ],\n        \"file\": \"manage.py\"\n      }\n    }\n  ]\n}\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/debug-python.md"
+}

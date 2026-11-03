@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_hooks_reference__related_resources",
+  "title": "hooks reference / Related resources",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related resources\n\n* [Configure agent hooks](/docs/agent-customization/hooks.md)\n* [Create custom agents](/docs/agent-customization/custom-agents.md)\n* [Use subagents](/docs/agents/run/subagents.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/hooks-reference.md"
+}

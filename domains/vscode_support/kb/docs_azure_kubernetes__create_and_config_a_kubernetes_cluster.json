@@ -1,0 +1,8 @@
+{
+  "id": "docs_azure_kubernetes__create_and_config_a_kubernetes_cluster",
+  "title": "kubernetes / Create and config a Kubernetes cluster",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Create and config a Kubernetes cluster\n\nYou can create a Kubernetes cluster running on Azure using the Kubernetes extension in {% data variables.product.prodname_vscode_shortname %}. Once you have installed the Kubernetes extension, you will see **KUBERNETES** in the Explorer. Click on **More** and choose **Create Cluster**. Follow the instructions to choose the cluster type (here we choose **Azure Kubernetes Service**), select your subscription, and set up the Azure cluster and Azure agent settings. It will take a few minutes to complete the whole workflow.\n\n![Create Kubernetes](images/kubernetes/create-k8s.gif)\n\n**Important**: To create a Kubernetes cluster on Azure, you need to install the [Azure CLI](https://learn.microsoft.com/cli/azure/get-started-with-azure-cli) and sign in.\n\n**Tip**: You will encounter an error if you don't have an available RSA key file. Follow [create SSH public-private key](https://learn.microsoft.com/azure/virtual-machines/linux/mac-create-ssh-keys) to create your key before creating an Azure Kubernetes cluster.\n\n![Error with RSA](images/kubernetes/error-creating-clusters-RSA.png)\n\n**Tip**: You might encounter an error indicating conflicting location and VM size when creating an Azure Kubernetes cluster. Pay attention to choose proper location and VM size.\n\n![Error creating cluster](images/kubernetes/error-creating-clusters.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/kubernetes.md"
+}

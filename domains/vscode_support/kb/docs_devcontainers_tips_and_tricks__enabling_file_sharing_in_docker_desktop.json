@@ -1,0 +1,8 @@
+{
+  "id": "docs_devcontainers_tips_and_tricks__enabling_file_sharing_in_docker_desktop",
+  "title": "tips and tricks / Enabling file sharing in Docker Desktop",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Enabling file sharing in Docker Desktop\n\nThe {% data variables.product.prodname_vscode_shortname %} [Dev Containers](https://aka.ms/vscode-remote/download/containers) extension can only automatically mount your source code into a container if your code is in a folder or drive shared with Docker. If you open a dev container from a non-shared location, the container will successfully start but the workspace will be empty.\n\nNote that this step is **not required** with [Docker Desktop's WSL 2 engine](https://aka.ms/vscode-remote/containers/docker-wsl2).\n\nTo change Docker's drive and folder sharing settings:\n\n**Windows:**\n\n1. Right-click on the Docker task bar item and select **Settings**.\n2. Go to **Resources > File Sharing** and check the drive(s) where your source code is located.\n3. If you see a message about your local firewall blocking the sharing action, see [this Docker KB article](https://success.docker.com/article/error-a-firewall-is-blocking-file-sharing-between-windows-and-the-containers) for next steps.\n\n**macOS:**\n\n1. Click on the Docker menu bar item and select **Preferences**.\n2. Go to **Resources > File Sharing**. Confirm that the folder containing your source code is under one of the shared folders listed.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/tips-and-tricks.md"
+}

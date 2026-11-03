@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_overview__match_a_guide_to_your_setup",
+  "title": "overview / Match a guide to your setup",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Match a guide to your setup\n\nBefore starting a guide, check:\n\n* **Project:** Does it create a sample project, or require your own repository with working build and test commands?\n\n* **Harness:** Does it use your selected harness's tools and customization formats? Choosing the same language model doesn't make those formats interchangeable.\n\n* **Interface:** Which steps use the {% data variables.copilot.chat_view %} or the {% data variables.copilot.agents_window %}?\n\nBoth interfaces run agents. The {% data variables.copilot.chat_view %} emphasizes collaboration over code in the current workspace; the {% data variables.copilot.agents_window %} emphasizes multi-project orchestration and higher-level task assignment. Follow the guide's chosen interface for its walkthrough. See [Choose how you work](/docs/agents/overview.md#choose-how-you-work) to compare approaches.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/overview.md"
+}

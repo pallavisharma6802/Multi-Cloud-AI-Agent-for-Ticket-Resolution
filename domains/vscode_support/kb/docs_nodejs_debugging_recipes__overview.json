@@ -1,0 +1,8 @@
+{
+  "id": "docs_nodejs_debugging_recipes__overview",
+  "title": "debugging recipes",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# JavaScript Debugging Recipes\n\n{% data variables.product.prodname_vscode %} supports debugging of many languages and platforms via debuggers that are either built-in or contributed by extensions.\n\nTo make it easier to get started with debugging, we have made a collection of debugging \"recipes\" which contain the steps and configuration you need to set up debugging for your favorite platform. The recipes are in GitHub at [https://github.com/microsoft/vscode-recipes](https://github.com/microsoft/vscode-recipes).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/debugging-recipes.md"
+}

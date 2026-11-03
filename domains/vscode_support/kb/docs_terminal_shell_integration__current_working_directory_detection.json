@@ -1,0 +1,8 @@
+{
+  "id": "docs_terminal_shell_integration__current_working_directory_detection",
+  "title": "shell integration / Current working directory detection",
+  "category": "TERMINAL",
+  "intent": "terminal",
+  "content": "## Current working directory detection\n\nShell integration tells {% data variables.product.prodname_vscode_shortname %} what the current working directory of the shell is. This information is not possible to get on Windows without trying to detect the prompt through regex and requires polling on macOS and Linux, which isn't good for performance.\n\nOne of the biggest features this enables is enhanced resolving of links in the terminal. Take a link `package.json` for example, when the link is activated while shell integration is disabled this will open a search quick pick with `package.json` as the filter if there are multiple `package.json` files in the workspace. When shell integration is enabled however, it will open the `package.json` file in the current folder directly because the current location is known. This allows the output of `ls` for example to reliably open the correct file.\n\nThe current working directory is also used to show the directory in the terminal tab, in the run recent command quick pick and for the `\"terminal.integrated.splitCwd\": \"inherited\"` feature.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/shell-integration.md"
+}

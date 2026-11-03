@@ -1,0 +1,8 @@
+{
+  "id": "docs_enterprise_telemetry__configure_feedback_mechanisms",
+  "title": "telemetry / Configure feedback mechanisms",
+  "category": "ENTERPRISE",
+  "intent": "enterprise",
+  "content": "## Configure feedback mechanisms\n\nThe `EnableFeedback` policy controls whether users can access feedback mechanisms in {% data variables.product.prodname_vscode_shortname %}, such as the issue reporter and surveys.\n\nTo disable feedback mechanisms, set the `EnableFeedback` policy to `false`:\n\n**Policy value**:\n\n```text\nfalse\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/enterprise/telemetry.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_notebooks_web__jupyter_notebooks_on_data_variables_product_prodname_vscode_shortname_for_the_we",
+  "title": "notebooks web / Jupyter notebooks on {% data variables.product.prodname_vscode_shortname %} for the Web",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Jupyter notebooks on {% data variables.product.prodname_vscode_shortname %} for the Web\n\nYou can also use [{% data variables.product.prodname_vscode_shortname %} for the Web](/docs/remote/vscode-web.md) by going to [https://vscode.dev](https://vscode.dev) or [https://github.dev](https://github.dev) (available by typing '.' when viewing a repo on GitHub). With {% data variables.product.prodname_vscode_shortname %} for the Web, you have two options to connect to the following types of kernels for your notebook:\n\n1. [Remote tunneling with {% data variables.product.prodname_vscode_shortname %} Server](#remote-tunneling-with-vs-code-server)\n2. [Connect to a remote Jupyter server](#connect-to-a-remote-jupyter-server)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/notebooks-web.md"
+}

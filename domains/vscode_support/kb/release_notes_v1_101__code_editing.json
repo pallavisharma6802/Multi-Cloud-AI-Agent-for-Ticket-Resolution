@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_101__code_editing",
+  "title": "v1_101 / Code Editing",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Code Editing\n\n### NES import suggestions\n\n**Setting**: `setting(github.copilot.nextEditSuggestions.fixes)`\n\nLast month, we introduced support for next edit suggestions to automatically suggest adding missing import statements for TypeScript and JavaScript. In this release, we've improved the accuracy and reliability of these suggestions and expanded support to Python files as well.\n\n![Screenshot showing NES suggesting an import statement.](images/1_100/nes-import.png)\n\nNES is enabled for all VS Code Insiders users, and it will progressively be enabled by default for Stable users during June. You can enable NES yourself via its setting at any time.\n\n### NES acceptance flow\n\nAccepting next edit suggestions is now more seamless with improved keyboard navigation. Once you accept a suggestion, you can continue accepting subsequent suggestions with a single `kbstyle(Tab)` press, as long as you haven't started typing again. Once you start typing, press `kbstyle(Tab)` to first move the cursor to the next suggestion before you can accept it.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_101.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_context_engineering_guide__related_resources",
+  "title": "context engineering guide / Related resources",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related resources\n\nLearn more about customizing AI in {% data variables.product.prodname_vscode_shortname %}:\n\n* [Instructions files](/docs/agent-customization/custom-instructions.md)\n* [Custom agents](/docs/agent-customization/custom-agents.md)\n* [Prompt files](/docs/agent-customization/prompt-files.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/context-engineering-guide.md"
+}

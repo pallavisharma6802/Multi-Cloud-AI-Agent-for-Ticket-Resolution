@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_35__vs_code_remote_core",
+  "title": "v1_35 / VS Code Remote Core",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## VS Code Remote Core\n\n### Machine Scoped Settings\n\nIn a remote context, [machine scoped settings](https://code.visualstudio.com/updates/v1_34#_machinespecific-settings) can no longer be configured in the User Settings. They can now only be configured in the Remote/Workspace/Folder Settings. See also issue [#2](https://github.com/microsoft/vscode-remote-release/issues/2).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_35.md"
+}

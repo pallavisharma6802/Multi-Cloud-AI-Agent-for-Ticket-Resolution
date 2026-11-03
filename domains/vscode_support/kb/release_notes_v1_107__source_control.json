@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_107__source_control",
+  "title": "v1_107 / Source Control",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Source Control\n\n### Stashes in the Source Control Repositories view (Experimental)\n\n**Settings**: `setting(scm.repositories.explorer:true)`, `setting(scm.repositories.selectionMode:single)`\n\nThis milestone, we continued to expand the list of repository artifacts shown in the Source Control Repositories view by adding a Stashes node. Under this node, you can see the complete list of stashes, view, apply, and pop each stash. The context menu also contains an action to drop each stash.\n\n![Screenshot of the Source Control Repositories view showing the Stashes node and its context menu.](images/1_107/stashes-repo-explorer.png)\n\nYou can enable the experimental repository explorer by setting the `setting(scm.repositories.selectionMode:single)` and `setting(scm.repositories.explorer:true)` settings. Please give it a try and let us know what other repository artifacts you would like to see in the repositories explorer.\n\nLearn more about [using source control in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_107.md"
+}

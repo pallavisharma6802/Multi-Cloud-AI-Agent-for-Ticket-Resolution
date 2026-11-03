@@ -1,0 +1,8 @@
+{
+  "id": "docs_terminal_shell_integration__sticky_scroll",
+  "title": "shell integration / Sticky scroll",
+  "category": "TERMINAL",
+  "intent": "terminal",
+  "content": "## Sticky scroll\n\nThe sticky scroll feature will \"stick\" the command that is partially showing at the top of the terminal, making it much easier to see what command that output belongs to. Clicking on the sticky scroll component will scroll to the command's location in the terminal buffer.\n\n![Sticky scroll will show the command at the top of the terminal viewport](images/shell-integration/sticky-scroll.png)\n\nThis can be enabled with the `setting(terminal.integrated.stickyScroll.enabled)` setting.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/shell-integration.md"
+}

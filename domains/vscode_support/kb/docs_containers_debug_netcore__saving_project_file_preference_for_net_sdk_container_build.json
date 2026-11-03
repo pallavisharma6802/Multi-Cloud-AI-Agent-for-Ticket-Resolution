@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_debug_netcore__saving_project_file_preference_for_net_sdk_container_build",
+  "title": "debug netcore / Saving Project File Preference for .NET SDK Container Build",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Saving Project File Preference for .NET SDK Container Build\n\nIf you have a workspace folder with multiple .NET project files and you want to exclusively debug one specific project (without being prompted to choose from a list of project files every time you `kb(workbench.action.debug.start)`), you can save your launch profile by following these steps:\n\n1. Follow the steps in [.NET SDK Container Build](#net-sdk-container-build-debug-without-dockerfile) and keep the debug session live.\n1. Click on the `gear` icon in your debugger view.\n\n   ![dockerSharedFolders](images/debug/debugger-scaffolding.png)\n\n1. Select **Containers: Debug in Container**\n1. Choose the project file associated with the project you want to debug\n\nYour project preference is saved, and you no longer need to choose a project file on `kb(workbench.action.debug.start)`",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/debug-netcore.md"
+}

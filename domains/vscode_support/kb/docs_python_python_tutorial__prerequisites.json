@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_python_tutorial__prerequisites",
+  "title": "python tutorial / Prerequisites",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Prerequisites\n\nTo successfully complete this tutorial, you need to first set up your Python development environment. Specifically, this tutorial requires:\n\n- [Python 3](/docs/python/python-tutorial.md#install-a-python-interpreter)\n- [{% data variables.product.prodname_vscode_shortname %}](https://code.visualstudio.com/)\n- [{% data variables.product.prodname_vscode_shortname %} Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) (For additional details on installing extensions, see [Extension Marketplace](/docs/configure/extensions/extension-marketplace.md))",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/python-tutorial.md"
+}

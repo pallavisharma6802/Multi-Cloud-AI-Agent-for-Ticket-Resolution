@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_ai_powered_suggestions__overview",
+  "title": "ai powered suggestions",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "# Inline suggestions from GitHub Copilot in {% data variables.product.prodname_vscode_shortname %}\n\nUse inline suggestions when you want to keep writing code yourself, with help completing code, comments, or tests and making related edits. {% data variables.product.prodname_copilot %} suggests changes in the editor as you type. You review each suggestion and decide whether to accept it, accept part of it, or keep typing.\n\n{% data variables.product.prodname_copilot_short %} uses your existing code as context for two kinds of suggestions:\n\n* **Ghost text suggestions**: Dimmed text at your cursor suggests how to complete the code you're writing.\n\n* **Next edit suggestions**: Based on your recent edits, {% data variables.product.prodname_copilot_short %} suggests another change and where to make it.\n\nYou don't need to start a chat for inline suggestions. You can also [combine them with chat and agents](#combine-suggestions-with-chat-and-agents) as your task changes.\n\n<div class=\"docs-action\" data-show-in-doc=\"false\" data-show-in-sidebar=\"true\" title=\"Get started with AI\">\nFollow a hands-on tutorial to build your first app with AI in {% data variables.product.prodname_vscode_shortname %}.\n\n* [Start tutorial](/docs/agents/agents-tutorial.md)\n\n</div>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/ai-powered-suggestions.md"
+}

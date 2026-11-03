@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_concepts_agent_host__agent_host_protocol",
+  "title": "agent host / Agent Host Protocol",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Agent Host Protocol\n\n[Agent Host Protocol](https://microsoft.github.io/agent-host-protocol/) is an open, agent-agnostic protocol between a host and its clients. It uses JSON-RPC for communication and immutable state with pure reducers for synchronized session data.\n\nThe host is the source of truth. Each client subscribes to URI-addressed channels for resources such as sessions, chats, terminals, and changesets. The client receives an initial state snapshot followed by ordered actions. If the connection drops, the client reconnects and receives missed actions or a fresh snapshot.\n\nFor protocol definitions and implementation details, see the [Agent Host Protocol source repository](https://github.com/microsoft/agent-host-protocol).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/agent-host.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_pytorch_support__pytorch_profiler_integration",
+  "title": "pytorch support / PyTorch Profiler integration",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## PyTorch Profiler integration\n\nAlong with TensorBoard, {% data variables.product.prodname_vscode_shortname %} and the Python extension also integrate the PyTorch Profiler, allowing you to better analyze your PyTorch models in one place. For more information about the profiler, see the [PyTorch Profiler documentation](https://pytorch.org/blog/introducing-pytorch-profiler-the-new-and-improved-performance-tool/).\n\n![PyTorch Profiler integration with {% data variables.product.prodname_vscode_shortname %}](images/pytorch-support/pytorch-profiler.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/pytorch-support.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_86__finalized_apis",
+  "title": "v1_86 / Finalized APIs",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Finalized APIs\n\n### New `workspace.save` and `workspace.saveAs` APIs\n\nThe new finalized APIs `workspace.save` and `workspace.saveAs` allow extensions to trigger the flow of saving an editor, either to its resource, or by asking the user to provide a resource.\n\nAll methods for saving return the resulting `Uri`, or `undefined` if the operation was canceled. Untitled files will always ask the user for a destination, unless a path is already associated.\n\n### Readonly message for `FileSystemProvider` API\n\nWhen registering a `FileSystemProvider` with `registerFileSystemProvider`, the `options` can be set to mark the entire file system as readonly. Now, if the `isReadonly` option is set to a `MarkdownString`, then that message will be shown in the editor when the user tries to edit the file in the filesystem.\n\n![Example of readonly message showing in the editor.](images/1_86/readonly-message.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_86.md"
+}

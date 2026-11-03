@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_optimize_usage__keep_the_tool_catalog_focused",
+  "title": "optimize usage / Keep the tool catalog focused",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Keep the tool catalog focused\n\nLarge tool catalogs increase the input context and make tool selection more complex. Tool calls also add their output to the [context window](/docs/agents/concepts/language-models.md#context-window). Expose only the tools relevant to the current task:\n\n* Use the **Configure Tools** button in the chat input field to select individual tools or MCP servers for the current request. Search the tools picker and add another tool when the task needs it.\n* In [custom agents](/docs/agent-customization/custom-agents.md), use the `tools` property to give each agent a narrow, task-specific tool set.\n\nFor organizations with a large internal tool catalog, consider providing a curated command-line interface for common workflows. The agent can invoke the commands through the terminal tool without loading every operation as a separate MCP tool. This approach requires your organization to maintain and secure the command-line interface.\n\nFor more information, see [use tools with agents](/docs/agents/run/tools.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/optimize-usage.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_scm_provider__overview",
+  "title": "scm provider",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "# Source Control API\n\nThe Source Control API allows extension authors to define Source Control Management (SCM) features. There is a slim, yet powerful API surface which allows many different SCM systems to be integrated in Visual Studio Code, while having a common user interface with all of them.\n\n![VS Code SCM](images/scm-provider/main.png)\n\nVS Code itself ships with one Source Control provider, the Git extension, which is the best reference for this API and is [a great starting point](https://github.com/microsoft/vscode/blob/main/extensions/git/src/repository.ts) if you'd like to contribute your very own SCM provider. There are other great examples in the Marketplace such as the [SVN extension](https://marketplace.visualstudio.com/items?itemName=johnstoncode.svn-scm).\n\nThis documentation will help you build an extension which can make any SCM system work with VS Code.\n\n> **Note:** that you can always refer to the [`vscode` namespace API reference](/api/references/vscode-api#scm) in our documentation.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/scm-provider.md"
+}

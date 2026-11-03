@@ -1,0 +1,8 @@
+{
+  "id": "api_references_theme_color__scrollbar_control",
+  "title": "theme color / Scrollbar control",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Scrollbar control\n\n- `scrollbar.background`: Scrollbar track background color.\n- `scrollbar.shadow`: Scrollbar slider shadow to indicate that the view is scrolled.\n- `scrollbarSlider.activeBackground`: Scrollbar slider background color when clicked on.\n- `scrollbarSlider.background`: Scrollbar slider background color.\n- `scrollbarSlider.hoverBackground`: Scrollbar slider background color when hovering.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+}

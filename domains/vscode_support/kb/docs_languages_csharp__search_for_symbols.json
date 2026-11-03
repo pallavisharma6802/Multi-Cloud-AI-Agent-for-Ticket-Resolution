@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_csharp__search_for_symbols",
+  "title": "csharp / Search for Symbols",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Search for Symbols\n\nThere are also features outside the editor. One is the ability to search for symbols from wherever you are. Hit `kb(workbench.action.showAllSymbols)`, start typing, and see a list of matching C# symbols. Select one and you'll be taken straight to its code location.\n\n![Symbols](images/csharp/symbols.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/csharp.md"
+}

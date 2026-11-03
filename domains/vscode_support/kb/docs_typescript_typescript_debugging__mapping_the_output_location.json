@@ -1,0 +1,8 @@
+{
+  "id": "docs_typescript_typescript_debugging__mapping_the_output_location",
+  "title": "typescript debugging / Mapping the output location",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Mapping the output location\n\nIf generated (transpiled) JavaScript files do not live next to their source, you can help the {% data variables.product.prodname_vscode_shortname %} debugger locate them by setting the `outFiles` attribute in the launch configuration. Whenever you set a breakpoint in the original source, {% data variables.product.prodname_vscode_shortname %} tries to find the generated source by searching the files specified by glob patterns in `outFiles`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/typescript/typescript-debugging.md"
+}

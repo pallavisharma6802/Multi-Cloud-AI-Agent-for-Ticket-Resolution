@@ -1,0 +1,8 @@
+{
+  "id": "api_index__what_can_extensions_do",
+  "title": "index / What can extensions do?",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## What can extensions do?\n\nHere are some examples of what you can achieve with the Extension API:\n\n* Change the look of VS Code with a color or file icon theme - [Theming](/api/extension-capabilities/theming)\n* Add custom components & views in the UI - [Extending the Workbench](/api/extension-capabilities/extending-workbench)\n* Create a Webview to display a custom webpage built with HTML/CSS/JS - [Webview Guide](/api/extension-guides/webview)\n* Support a new programming language - [Language Extensions Overview](/api/language-extensions/overview)\n* Support debugging a specific runtime - [Debugger Extension Guide](/api/extension-guides/debugger-extension)\n\nIf you'd like to have a more comprehensive overview of the Extension API, refer to the [Extension Capabilities Overview](/api/extension-capabilities/overview) page. [Extension Guides Overview](/api/extension-guides/overview) also includes a list of code samples and guides that illustrate various Extension API usage.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/index.md"
+}

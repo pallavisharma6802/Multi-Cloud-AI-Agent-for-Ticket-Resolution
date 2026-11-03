@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_concepts_context__explicit_context",
+  "title": "context / Explicit context",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Explicit context\n\nAdd explicit context when you want to ensure that the agent considers a specific file, folder, symbol, image, web page, or other source. Type `#` in the chat input to choose a context item, or select **Add Context** (`+` icon) in the chat input field.\n\nExplicit context guides the agent toward relevant information but still counts toward the context window. Add only the sources that help the agent complete the current task. Learn more about [adding context to chat](/docs/chat/copilot-chat-context.md).\n\n> [!TIP]\n> Providing focused context up front might reduce the searches and file reads the agent needs, which can lower AI credit use. Avoid adding unrelated or large sources because they also consume context window tokens. Learn more about [optimizing AI credit usage](/docs/agents/guides/optimize-usage.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/context.md"
+}

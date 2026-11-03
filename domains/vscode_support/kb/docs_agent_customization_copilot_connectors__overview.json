@@ -1,0 +1,8 @@
+{
+  "id": "docs_agent_customization_copilot_connectors__overview",
+  "title": "copilot connectors",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Connect services with {% data variables.product.prodname_copilot_short %} connectors in {% data variables.product.prodname_vscode_shortname %}\n\nBring context from services such as Slack, Notion, and Microsoft Learn into your agent sessions with {% data variables.product.prodname_copilot_short %} connectors, also called {% data variables.product.prodname_github %}-managed MCP servers. Connect a supported service without installing a local server, writing MCP configuration, or managing credentials.\n\nConnect a service once and reuse the connection across supported {% data variables.product.prodname_copilot_short %} clients signed in with the same account. {% data variables.product.prodname_github %} manages the connection and stored authorization. You might need to authorize again if access expires, is revoked, or changes under your service's policies.\n\nIf the service you need isn't available as a connector, [add an MCP server](/docs/agent-customization/mcp-servers.md) using the publisher's URL or launch command instead. With a manually configured server, you manage its configuration, authentication, and updates.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/copilot-connectors.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_overview__using_image_registries",
+  "title": "overview / Using image registries",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Using image registries\n\nYou can display the content and push, pull, or delete images from [Azure Container Registry](https://learn.microsoft.com/azure/container-registry), [Docker Hub](https://hub.docker.com/), [GitHub](https://github.com/), and more:\n\n![Azure Container Registry content](images/overview/container-registry.png)\n\nAn image in an Azure Container Registry can be deployed to Azure App Service or Azure Container Apps directly from {% data variables.product.prodname_vscode_shortname %}. See [Deploy to Azure](/docs/containers/app-service.md) to get started. For more information about how to authenticate to and work with registries, see [Using container registries](/docs/containers/quickstart-container-registries.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/overview.md"
+}

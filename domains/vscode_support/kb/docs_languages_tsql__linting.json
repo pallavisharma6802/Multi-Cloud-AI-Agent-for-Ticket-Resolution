@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_tsql__linting",
+  "title": "tsql / Linting",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Linting\n\nLinting is the analysis of your T-SQL code for potential syntax errors. Use {% data variables.product.prodname_vscode %} to quickly navigate to the errors and warnings in your T-SQL code as you type.\n\n<video src=\"images/tsql/linting.mp4\" title=\"Video showing tsql linting.\" autoplay loop controls muted></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/tsql.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_javascript__formatting",
+  "title": "javascript / Formatting",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Formatting\n\n{% data variables.product.prodname_vscode_shortname %}'s built-in JavaScript formatter provides basic code formatting with reasonable defaults.\n\nThe `js/ts.format.*` [settings](/docs/configure/settings.md) configure the built-in formatter. Or, if the built-in formatter is getting in the way, set `\"js/ts.format.enable\"` to `false` to disable it.\n\nFor more specialized code formatting styles, try installing one of the JavaScript formatting extensions from the [Marketplace](https://marketplace.visualstudio.com/vscode).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/javascript.md"
+}

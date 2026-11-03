@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_77__terminal",
+  "title": "v1_77 / Terminal",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Terminal\n\n### Improved tab hover\n\nThe terminal tab hover now shows the shell's process ID, the full command line, and an improved view of extension environment variable contributions.\n\n![Hovering the terminal tab will reveal details about the terminal, this can be triggered with the keyboard via Ctrl/Cmd+K, Ctrl/Cmd+I](images/1_77/terminal-tab-hover.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_77.md"
+}

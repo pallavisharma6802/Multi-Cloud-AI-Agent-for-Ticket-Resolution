@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_refactoring__convert_numeric_literal_to_hex_decimal_or_binary_number",
+  "title": "refactoring / Convert numeric literal to hex, decimal, or binary number",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Convert numeric literal to hex, decimal, or binary number\n\n**What:** Convert a number between a hexadecimal, binary, or decimal number.\n\n**When:** Use when you want to automatically convert a number to the desired base without having to manually calculate the conversion.\n\n**How-to:**\n\n1. Place your cursor on the numeric literal.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select one of the following options:\n\nSelect **Convert to decimal**.\n\n![Convert to decimal example](images/refactoring/convert-numeric-literal-to-decimal.png)\n\nSelect **Convert to hex**.\n\n![Convert to hex example](images/refactoring/convert-numeric-literal-to-hex.png)\n\nSelect **Convert to binary**.\n\n![Convert to binary example](images/refactoring/convert-numeric-literal-to-binary.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+}

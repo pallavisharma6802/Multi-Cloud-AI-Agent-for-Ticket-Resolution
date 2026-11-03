@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_fix_a_bug_with_agents__reproduce_the_bug",
+  "title": "fix a bug with agents / Reproduce the bug",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Reproduce the bug\n\nThe bug report says:\n\n> Some issues disappear when paging through results. `GET /issues` returns issues 1-10, but `GET /issues?page=2` returns issues 21-30. Page two should return issues 11-20. Omitting `page` should behave the same as requesting `page=1`.\n\nVerify the report before asking the agent to change the code.\n\n1. Open the terminal (`kb(workbench.action.terminal.toggleTerminal)`) and start the API:\n\n    ```bash\n    node issues-api.js serve\n    ```\n\n1. Open another terminal and request the default page:\n\n    ```bash\n    node -e \"fetch('http://localhost:3000/issues').then(r => r.json()).then(d => console.log(d.issues.map(i => i.id)))\"\n    ```\n\n    The response contains the expected IDs:\n\n    ```text\n    [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]\n    ```\n\n1. Request page two:\n\n    ```bash\n    node -e \"fetch('http://localhost:3000/issues?page=2').then(r => r.json()).then(d => console.log(d.issues.map(i => i.id)))\"\n    ```\n\n    The response confirms the reported gap:\n\n    ```text\n    [ 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 ]\n    ```\n\n1. In the terminal that runs the API, press `kbstyle(Ctrl+C)` to stop it.\n\nYou now have a reproducible symptom and an expected result. Providing both helps the agent investigate the actual defect instead of guessing what \"pagination is broken\" means.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/fix-a-bug-with-agents.md"
+}

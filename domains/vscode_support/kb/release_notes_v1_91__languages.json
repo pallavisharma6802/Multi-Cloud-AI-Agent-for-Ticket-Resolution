@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_91__languages",
+  "title": "v1_91 / Languages",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Languages\n\n### TypeScript 5.5\n\nWe now include TypeScript 5.5. This major update brings a number of new language features and tooling improvements. Check out the [TypeScript 5.5 blog post](https://devblogs.microsoft.com/typescript/announcing-typescript-5-5/) for details on this release.\n\n### Syntax checking for regular expressions\n\nThanks to TypeScript 5.5, we now report many syntax errors in JavaScript and TypeScript regular expression literals. This includes errors such as unclosed groups, incorrect back references, or invalid escapes:\n\n![Editor showing a regex error for an invalid group caused by an extra parenthesis.](images/1_91/ts-regexp-invalid-group.png)\n\n![Editor showing a regex error for an invalid escape sequence](images/1_91/ts-new-escape-from-regexp-error.png)\n\nCheck out the [TypeScript 5.5 blog post for more details](https://devblogs.microsoft.com/typescript/announcing-typescript-5-5/#regular-expression-syntax-checking).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_91.md"
+}

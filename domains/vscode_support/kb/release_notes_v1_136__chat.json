@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_136__chat",
+  "title": "v1_136 / Chat",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Chat\n\n### Enterprise controls for dictation data\n\nAdministrators can manage the dictation model and language-model transcript cleanup through enterprise policies.\n\nThe new controls make it possible to require on-device transcription and disable language-model cleanup, so dictation remains available while preventing dictation data from being sent to cloud transcription or a Copilot model. Learn more about [enterprise controls for dictation data](https://code.visualstudio.com/docs/enterprise/manage-ai-settings#control-dictation-data).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_136.md"
+}

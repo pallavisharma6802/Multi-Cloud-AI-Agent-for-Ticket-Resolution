@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_troubleshooting__push_pull_or_sync_doesn_t_finish",
+  "title": "troubleshooting / Push, pull, or sync doesn't finish",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## Push, pull, or sync doesn't finish\n\nA Git operation that doesn't finish often indicates that Git is waiting for authentication but the credential prompt isn't visible.\n\n1. Open the Git Output window and check the most recent command for an authentication error.\n\n1. Configure a [Git credential helper](https://docs.github.com/get-started/getting-started-with-git/caching-your-github-credentials-in-git) for your operating system.\n\n1. Run the operation again and complete any sign-in prompt.\n\n[Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager) is the recommended credential helper for Windows, macOS, and Linux. Git for Windows includes Git Credential Manager.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/troubleshooting.md"
+}

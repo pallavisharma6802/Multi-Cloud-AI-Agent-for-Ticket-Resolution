@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_28__terminal",
+  "title": "v1_28 / Terminal",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Terminal\n\n### Define keybindings to send custom sequences\n\nThe new command `workbench.action.terminal.sendSequence` has been added which lets you send custom sequences directly to the active terminal. This allows things like sending arrow keys, enter, etc. using the `\\u` format for sending Unicode characters.\n\n```json\n{\n  \"key\": \"ctrl+u\",\n  \"command\": \"workbench.action.terminal.sendSequence\",\n  \"args\": { \"text\": \"\\u001b[1;5D\\u007f\" }\n}\n```\n\n### Find improvements\n\nFind in the terminal has been improved and now behaves more like find in the editor:\n\n* Support for regex, case sensitivity and match word.\n* The standard find next/previous keybindings (F3, shift+F3) now work.\n* Find results that are wrapped across lines are returned.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_28.md"
+}

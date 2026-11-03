@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_testing__run_tests_in_parallel",
+  "title": "testing / Run tests in parallel",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Run tests in parallel\n\nSupport for running tests in parallel with pytest is available through the `pytest-xdist` package. Visit their [documentation](https://pytest-xdist.readthedocs.io/en/stable/), for more information on how to use `pytest-xdist`.\n\nWhen `xdist` is enabled and no worker count is specified in the arguments, the number of workers is automatically optimized by the Python extension based on how many tests are selected in the Test Explorer.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/testing.md"
+}

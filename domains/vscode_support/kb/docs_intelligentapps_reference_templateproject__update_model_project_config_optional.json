@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_reference_templateproject__update_model_project_config_optional",
+  "title": "TemplateProject / Update model_project.config (optional)",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Update model_project.config (optional)\nUpdate workflows's `name` to reflect what you want to do. So it is more easy to pick from the workflow list.\n\nUpdate modelInfo's `displayName` and `modelLink` to the one you used. So it is more easy to pick from the model list.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/reference/TemplateProject.md"
+}

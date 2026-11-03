@@ -1,0 +1,8 @@
+{
+  "id": "docs_devcontainers_containers__quick_start_try_a_development_container",
+  "title": "containers / Quick start: Try a development container",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Quick start: Try a development container\n\nThe easiest way to get started is to try one of the sample development containers. The [Containers tutorial](/docs/devcontainers/tutorial.md) will walk you through setting up Docker and the Dev Containers extension and let you select a sample:\n\n![Select a sample from the list](images/containers/select-a-sample.png)\n\n> Note: If you already have {% data variables.product.prodname_vscode_shortname %} and Docker installed, then you may use [open in dev container](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/microsoft/vscode-remote-try-python). You can learn more about this and how to add it to your repos in the [create a dev container guide](/docs/devcontainers/create-dev-container.md#add-configuration-files-to-a-repository).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/containers.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_javascript__refactoring",
+  "title": "javascript / Refactoring",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Refactoring\n\n{% data variables.product.prodname_vscode_shortname %} includes some handy refactorings for JavaScript such as **Extract function** and **Extract constant**. Just select the source code you'd like to extract and then click on the lightbulb in the gutter or press (`kb(editor.action.quickFix)`) to see available refactorings.\n\n![JavaScript refactoring](images/javascript/refactorings.png)\n\nAvailable refactorings include:\n\n* Extract to method or function.\n* Extract to constant.\n* Convert between named imports and namespace imports.\n* Move to new file.\n\nSee [Refactorings](/docs/editing/refactoring.md) for more information about refactorings and how you can configure keyboard shortcuts for individual refactorings.\n\nAdditionally, **Code Action Widget: Include Nearby Quick Fixes** (`setting(editor.codeActionWidget.includeNearbyQuickFixes)`) is a setting that is enabled on default, which will activate the nearest Quick Fix in a line from `kb(editor.action.quickFix)` (command ID `editor.action.quickFix`), no matter where your cursor is in that line.\n\nThe command highlights the source code that will be refactored or fixed with Quick Fixes. Normal Code Actions and non-fix refactorings can still be activated at the cursor location.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/javascript.md"
+}

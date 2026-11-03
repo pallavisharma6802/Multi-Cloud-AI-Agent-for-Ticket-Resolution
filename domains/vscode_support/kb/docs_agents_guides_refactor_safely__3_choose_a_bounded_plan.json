@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_refactor_safely__3_choose_a_bounded_plan",
+  "title": "refactor safely / 3. Choose a bounded plan",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## 3. Choose a bounded plan\n\nAsk for the smallest structure that achieves your goal:\n\n```prompt\nPropose a plan to extract the agreed validation into a shared helper.\nName the files and callers to update, and identify the tests that\nverify each step. Preserve the contracts we recorded.\n\nReuse existing helpers if they already solve the problem. Do not add\ndependencies, redesign public interfaces, or reformat unrelated code.\nWait for my approval before editing.\n```\n\nCheck that the plan accounts for every known caller and explains any behavior differences that must remain. Ask the agent to separate independent cleanup from the required refactor.\n\nPrompts guide the agent but don't enforce access restrictions. Review the session's [permissions and tool approvals](/docs/agents/run/approvals.md) before implementation.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/refactor-safely.md"
+}

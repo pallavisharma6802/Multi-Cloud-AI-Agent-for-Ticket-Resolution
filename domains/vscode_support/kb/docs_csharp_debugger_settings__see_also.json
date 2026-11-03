@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_debugger_settings__see_also",
+  "title": "debugger settings / See Also",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## See Also\n\n* [launchSettings.json schema](https://json.schemastore.org/launchsettings.json)\n* [Use multiple environments in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/environments?view=aspnetcore-7.0)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/debugger-settings.md"
+}

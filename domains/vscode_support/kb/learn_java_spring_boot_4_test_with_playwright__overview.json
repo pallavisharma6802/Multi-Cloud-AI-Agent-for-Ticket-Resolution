@@ -1,0 +1,8 @@
+{
+  "id": "learn_java_spring_boot_4_test_with_playwright__overview",
+  "title": "4 test with playwright",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "# Let GitHub Copilot test your Spring Boot app with Playwright\n\n[![Watch End-to-End Testing for Spring Boot apps with Playwright in VS Code on YouTube (opens in new tab).](images/4-test-with-playwright/youtube-NR4YHj_9WFw.jpg)](https://www.youtube.com/watch?v=NR4YHj_9WFw)\n\nYour unit tests pass. Your integration tests pass. And you still open the browser\nafterwards to check that the page actually works, because a green build has never proved\nthat a checkbox ticks.\n\nThat last manual check is the one nobody automates, because writing browser tests feels\nlike a project of its own.\n\nIn this chapter, we'll hand it to GitHub Copilot. Copilot gets browser-control tools,\nyou describe the journey in one sentence, and a real Chrome window drives your running\nSpring Boot app while you watch.\n\nThen you read the assertions it actually ran, which is the part that matters.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/4-test-with-playwright.md"
+}

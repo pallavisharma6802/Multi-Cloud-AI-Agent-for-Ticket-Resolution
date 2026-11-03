@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_capabilities_extending_workbench__overview",
+  "title": "extending workbench",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "# Extending Workbench\n\n\"Workbench\" refers to the overall Visual Studio Code UI that encompasses the following UI components:\n\n- Title Bar\n- Activity Bar\n- Side Bar\n- Panel\n- Editor Group\n- Status Bar\n\nVS Code provides various APIs that allow you to add your own components to the Workbench. For example, in the image below:\n\n![workbench-contribution](images/extending-workbench/workbench-contribution.png)\n\n- Activity Bar: The [Azure App Service extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) adds a [View Container](#views-container)\n- Side Bar: The built-in [NPM extension](https://github.com/microsoft/vscode/tree/main/extensions/npm) adds a [Tree View](#tree-view) to the Explorer View\n- Editor Group: The built-in [Markdown extension](https://github.com/microsoft/vscode/tree/main/extensions/markdown-language-features) adds a [Webview](#webview) next to other editors in the Editor Group\n- Status Bar: The [VSCodeVim extension](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) adds a [Status Bar Item](#status-bar-item) in the Status Bar",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-capabilities/extending-workbench.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_77__documentation",
+  "title": "v1_77 / Documentation",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Documentation\n\n### New programming language topics\n\n* [Ruby in VS Code](https://code.visualstudio.com/docs/languages/ruby) - Learn about Ruby language support (snippets, linting, debugging) using the [Ruby LSP](https://marketplace.visualstudio.com/items?itemName=Shopify.ruby-lsp) extension.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_77.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_chat_chat_overview__related_resources",
+  "title": "chat overview / Related resources",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related resources\n\n* [Create and manage agent sessions](/docs/agents/run/sessions/manage-sessions.md)\n\n* [Choose an agent harness](/docs/agents/run/agent-harnesses.md)\n\n* [Prompt examples](/docs/agents/guides/prompt-examples.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/chat/chat-overview.md"
+}

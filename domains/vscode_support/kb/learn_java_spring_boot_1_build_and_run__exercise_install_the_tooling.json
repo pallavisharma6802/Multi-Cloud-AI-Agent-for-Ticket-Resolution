@@ -1,0 +1,8 @@
+{
+  "id": "learn_java_spring_boot_1_build_and_run__exercise_install_the_tooling",
+  "title": "1 build and run / Exercise - install the tooling",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Exercise - install the tooling\n\nLet's get both packs installed and confirm they are working before touching any code.\n\n1. Select the **Extensions** button in the Activity Bar, search for **`Extension Pack for Java`**, open the result, and select **Install**.\n2. Wait for the **Opening Java Projects** notification to appear and finish. The pack finds the project's `pom.xml` and starts importing on its own.\n3. Confirm the import worked: the Status Bar reads **Java: Ready**, and the Explorer has gained **Java Projects** and **Maven** views.\n4. Select **View \u2192 Command Palette**, search for **`Java: Configure Java Runtime`**, and run it. On the **Project Settings** page, stay on **Classpath \u2192 JDK Runtime** and find **JDK: JavaSE-25** with its install path below.\n5. If you do not have a JDK yet, **Download a new JDK...** on that tab fetches one without leaving the editor. Otherwise close the tab without selecting **Apply Settings**.\n6. Return to the **Extensions** view, search for **`Spring Boot Extension Pack`**, and install it too. A new **Spring Boot Dashboard** icon appears in the Activity Bar.\n\nThat is the entire setup. Everything from here on is the project itself.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/1-build-and-run.md"
+}

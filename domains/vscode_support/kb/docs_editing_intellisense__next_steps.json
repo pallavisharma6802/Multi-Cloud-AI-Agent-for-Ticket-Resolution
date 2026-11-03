@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_intellisense__next_steps",
+  "title": "intellisense / Next steps",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Next steps\n\nIntelliSense is just one of {% data variables.product.prodname_vscode_shortname %}'s powerful features. Read on to learn more:\n\n* [Debugging](/docs/debugtest/debugging.md) - Learn how to set up debugging for your application.\n* [Creating Language extensions](/api/language-extensions/programmatic-language-features.md) - Learn how to create extensions that add IntelliSense for new programming languages.\n* [GitHub Copilot in {% data variables.product.prodname_vscode_shortname %}](/docs/agent-native/overview.md) - Learn how to use AI with GitHub Copilot to enhance your coding.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/intellisense.md"
+}

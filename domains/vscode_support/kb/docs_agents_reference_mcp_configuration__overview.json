@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_mcp_configuration__overview",
+  "title": "mcp configuration",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# MCP configuration reference\n\nThis article provides the MCP configuration formats, supported fields, commands, and settings in {% data variables.product.prodname_vscode_shortname %}. To connect your first server, see [Add MCP servers](/docs/agent-customization/mcp-servers.md). For operational tasks, see [Manage and troubleshoot MCP servers](/docs/agents/run/manage-mcp-servers.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/mcp-configuration.md"
+}

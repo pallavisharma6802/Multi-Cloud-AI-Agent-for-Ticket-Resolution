@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_finetune__prerequisites",
+  "title": "finetune / Prerequisites",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Prerequisites\n\n- You have identified a use case for enhancing the response of Phi Silica.\n- You have chosen an evaluation criteria to decide what a 'good response' is.\n- You have tried the Phi Silica APIs and they do not meet your evaluation criteria.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/finetune.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_93__terminal",
+  "title": "v1_93 / Terminal",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Terminal\n\n### Julia and NuShell support\n\nThere's now shell integration support for Julia and NuShell. This enables features such as [command decorations](https://code.visualstudio.com/docs/terminal/shell-integration#_command-decorations-and-the-overview-ruler) and [run recent command](https://code.visualstudio.com/docs/terminal/shell-integration#_run-recent-command) for these shell types.\n\n### Move multiple terminal tabs\n\nYou can now multi-select terminal tabs and move them around the list of terminals as an ordered group.\n\n### Command guide setting and color theming\n\nThe command guide is a bar that shows up beside a command and its output when hovered. You can now disable the [command guide](https://code.visualstudio.com/docs/terminal/shell-integration#_command-guide) with the <a href=\"vscode://settings/terminal.integrated.shellIntegration.showCommandGuide\" codesetting=\"true\">`terminal.integrated.shellIntegration.showCommandGuide`</a> setting and the color can be configured by themes with the `terminalCommandGuide.foreground` theme key.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_93.md"
+}

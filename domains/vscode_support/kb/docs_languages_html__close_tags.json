@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_html__close_tags",
+  "title": "html / Close tags",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Close tags\n\nTag elements are automatically closed when `>` of the opening tag is typed.\n\n<video src=\"images/html/auto-close1.mp4\" title=\"Video showing HTML Close1.\" autoplay loop controls muted></video>\n\nThe matching closing tag is inserted when `/` of the closing tag is entered.\n\n<video src=\"images/html/auto-close2.mp4\" title=\"Video showing HTML Close2.\" autoplay loop controls muted></video>\n\nYou can turn off autoclosing tags with the following [setting](/docs/configure/settings.md):\n\n```json\n\"html.autoClosingTags\": false\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/html.md"
+}

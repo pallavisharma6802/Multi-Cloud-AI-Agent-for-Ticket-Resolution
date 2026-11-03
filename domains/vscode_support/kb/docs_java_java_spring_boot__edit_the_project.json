@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_spring_boot__edit_the_project",
+  "title": "java spring boot / Edit the project",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Edit the project\n\nThe [Spring Initializr](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-initializr) extension allows you to add dependencies after generating a new Spring Boot project.\n\nNavigate to your `pom.xml` file and right-click to select **Add starters...**. A dropdown will show the dependencies you already have beginning with a `\u221a` . You can search for other dependencies you want to add to your project. Or you can click on the existing dependencies to remove them.\n\n<video src=\"images/java-spring-boot/spring-initializr-add-starters.mp4\" autoplay loop muted playsinline controls title=\"Edit the project\">\n</video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-spring-boot.md"
+}

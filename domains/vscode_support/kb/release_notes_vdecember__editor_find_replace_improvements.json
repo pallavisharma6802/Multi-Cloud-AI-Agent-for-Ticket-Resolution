@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vdecember__editor_find_replace_improvements",
+  "title": "vDecember / Editor - Find/Replace improvements",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Editor - Find/Replace improvements\n\nIn regex mode:\n\n* Can now search for `^`, `$` or `^$` thanks to a [community contribution](https://github.com/microsoft/vscode/pull/314).\n* Can now replace with `\\n` or `\\t`.\n\nKeyboard shortcuts:\n\n* New Find settings commands: toggle case-sensitive (`kb(toggleFindCaseSensitive)`), toggle regex (`kb(toggleFindRegex)`) and toggle whole word (`kb(toggleFindWholeWord)`)\n* `kb(actions.find)` puts focus in the Find input field.\n* `kb(editor.action.startFindReplaceAction)` puts focus in the Replace input field.\n* When focus is in the Find widget input fields, `kbstyle(Ctrl+Down)` put focus in the editor.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vDecember.md"
+}

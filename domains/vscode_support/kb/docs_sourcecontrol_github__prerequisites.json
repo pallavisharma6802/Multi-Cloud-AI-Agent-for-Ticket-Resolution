@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_github__prerequisites",
+  "title": "github / Prerequisites",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## Prerequisites\n\nFor a local checkout, install [Git](https://git-scm.com/download) and [configure your commit identity](/docs/sourcecontrol/quickstart.md#prerequisites). To publish changes, create pull requests, or manage issues, you also need a [hosting account](https://docs.github.com/get-started/signing-up-for-github/signing-up-for-a-new-github-account).\n\nSigning in does not grant write permission to every repository. If you can't push to the project, [create a fork](https://docs.github.com/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo), work in your fork, and open a pull request to the original project.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/github.md"
+}

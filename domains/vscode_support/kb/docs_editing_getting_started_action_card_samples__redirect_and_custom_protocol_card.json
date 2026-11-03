@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_getting_started_action_card_samples__redirect_and_custom_protocol_card",
+  "title": "action card samples / Redirect and custom protocol card",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Redirect and custom protocol card\n\nThe first action wraps a product protocol URL in a `vscode.dev` redirect and receives the Stable or Insiders selector. The second action uses another custom scheme and remains unchanged.\n\n{% action-card title=\"Compare protocol handling\" %}\nCompare version-aware URL rewriting with an unchanged custom protocol.\n\n* [Open settings through vscode.dev](https://vscode.dev/redirect?url=vscode%3A%2F%2Fsettings%2Feditor.fontSize)\n* [Open an email draft](mailto:?subject=Action%20card%20protocol%20test)\n{% /action-card %}",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/action-card-samples.md"
+}

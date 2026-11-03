@@ -1,0 +1,8 @@
+{
+  "id": "docs_azure_aksextensions__install_the_azure_kubernetes_services_extension",
+  "title": "aksextensions / Install the Azure Kubernetes Services extension",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Install the Azure Kubernetes Services extension\n\nFor a fully integrated Azure Kubernetes diagnostics experience, you can install the [Azure Kubernetes Services Tools](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-aks-tools) extension.\n\nWith the extension you can easily view and manage your AKS clusters from your {% data variables.product.prodname_vscode_shortname %} environment.\n\nTo install the Azure Kubernetes Services {% data variables.product.prodname_vscode_shortname %} extension, open the Extensions view (`kb(workbench.view.extensions)`) and search for \"AKS\". Select the Microsoft [Azure Kubernetes Services](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-aks-tools) extension.\n\n![Install Azure Kubernetes Services](images/aksextensions/install-aks-extension.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/aksextensions.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_intellicode__starred_suggestions",
+  "title": "intellicode / Starred suggestions",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Starred suggestions\n\nThis extension provides AI-assisted IntelliSense by showing recommended completion items for your code context at the top of the completions list.\n\n![Ranks methods and properties in the IntelliSense list with stars](images/intellicode/rank-methods.png)\n\nWhen it comes to overloads, rather than taking the time to cycle through the alphabetical list of member, IntelliCode presents the most relevant one first. This extension not only ranks known methods, but its deep learning model also ranks methods that are unique to your code.\n\nTo see AI-assisted ranking in the IntelliSense list, you must first open a C# file that is a part of a solution. C# files that aren't a part of a solution won't have this functionality available.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/intellicode.md"
+}

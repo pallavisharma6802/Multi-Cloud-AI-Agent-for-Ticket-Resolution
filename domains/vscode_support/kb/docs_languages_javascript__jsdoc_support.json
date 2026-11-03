@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_javascript__jsdoc_support",
+  "title": "javascript / JSDoc support",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## JSDoc support\n\n{% data variables.product.prodname_vscode_shortname %} understands many standard [JSDoc](https://jsdoc.app) annotations, and uses these annotations to provide rich [IntelliSense](#intellisense). You can optionally even use the type information from JSDoc comments to [type check your JavaScript](#type-checking).\n\n<video src=\"images/javascript/jsdoc-autofill.mp4\" placeholder=\"images/javascript/jsdoc-autofill-placeholder.png\" autoplay loop controls muted>\n    Sorry, your browser doesn't support HTML 5 video.\n</video>\n\nQuickly create JSDoc comments for functions by typing `/**` before the function declaration, and select the **JSDoc comment** snippet suggestion:\n\nTo disable JSDoc comment suggestions, disable the `setting(js/ts.suggest.jsdoc.enabled)` setting.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/javascript.md"
+}

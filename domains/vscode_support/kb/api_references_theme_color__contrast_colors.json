@@ -1,0 +1,8 @@
+{
+  "id": "api_references_theme_color__contrast_colors",
+  "title": "theme color / Contrast colors",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Contrast colors\n\nThe contrast colors are typically only set for high contrast themes. If set, they add an additional border around items across the UI to increase the contrast.\n\n- `contrastActiveBorder`: An extra border around active elements to separate them from others for greater contrast.\n- `contrastBorder`: An extra border around elements to separate them from others for greater contrast.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_index__how_to_build_extensions",
+  "title": "index / How to build extensions?",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## How to build extensions?\n\nBuilding a good extension can take a lot of time and effort. Here is what each section of the API docs can help you with:\n\n* **Get Started** teaches fundamental concepts for building extensions with the [Hello World](https://github.com/microsoft/vscode-extension-samples/tree/main/helloworld-sample) sample.\n* **Extension Capabilities** dissects VS Code's vast API into smaller categories and points you to more detailed topics.\n* **Extension Guides** includes guides and code samples that explain specific usages of VS Code Extension API.\n* **UX Guidelines** showcases best practices for providing a great user experience in an extension.\n* **Language Extensions** illustrates how to add support for a programming language with guides and code samples.\n* **Testing and Publishing** includes in-depth guides on various extension development topics, such as [testing](/api/working-with-extensions/testing-extension) and [publishing](/api/working-with-extensions/publishing-extension) extensions.\n* **Advanced Topics** explains advanced concepts such as [Extension Host](/api/advanced-topics/extension-host), [Supporting Remote Development and GitHub Codespaces](/api/advanced-topics/remote-extensions), and [Proposed API](/api/advanced-topics/using-proposed-api).\n* **References** contains exhaustive references for the [VS Code API](/api/references/vscode-api), [Contribution Points](/api/references/contribution-points), and many other topics.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/index.md"
+}

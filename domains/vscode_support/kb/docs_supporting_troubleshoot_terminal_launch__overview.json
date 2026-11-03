@@ -1,0 +1,8 @@
+{
+  "id": "docs_supporting_troubleshoot_terminal_launch__overview",
+  "title": "troubleshoot terminal launch",
+  "category": "REFERENCE",
+  "intent": "reference",
+  "content": "<a name=\"troubleshoot-terminal-launch-failures\"></a>\n<a id=\"_troubleshoot-terminal-launch-failures\"></a>\n\n# Troubleshoot terminal launch failures and unexpected exits\n\nIf your integrated terminal does not start or closes unexpectedly, use the error message to choose a troubleshooting path. This article helps you check the shell, its startup configuration, and the environment, then collect logs if the problem persists.\n\nThe **Open Help** action in {% data variables.product.prodname_vscode %} leads to this page for both launch failures and some later shell exits. Arriving here does not necessarily mean that the terminal failed to start.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/supporting/troubleshoot-terminal-launch.md"
+}

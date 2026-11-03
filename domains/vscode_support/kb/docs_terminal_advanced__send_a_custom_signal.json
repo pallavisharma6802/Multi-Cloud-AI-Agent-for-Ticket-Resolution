@@ -1,0 +1,8 @@
+{
+  "id": "docs_terminal_advanced__send_a_custom_signal",
+  "title": "advanced / Send a custom signal",
+  "category": "TERMINAL",
+  "intent": "terminal",
+  "content": "## Send a custom signal\n\nThe `workbench.action.terminal.sendSignal` command can be used to send an arbitrary signal to the foreground process in the active terminal.\n\nFor example, the below keybinding will send `SIGTERM`, causing it to terminate gracefully.\n\n```jsonc\n{\n  \"key\": \"ctrl+shift+/\",\n  \"command\": \"workbench.action.terminal.sendSignal\",\n  \"args\": {\n    \"signal\": \"SIGTERM\"\n  }\n}\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/advanced.md"
+}

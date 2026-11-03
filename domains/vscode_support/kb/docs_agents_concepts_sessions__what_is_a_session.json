@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_concepts_sessions__what_is_a_session",
+  "title": "sessions / What is a session?",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## What is a session?\n\nA session contains one or more chats. Each chat records your prompts, the agent's responses, the tool calls it makes, and the [context](/docs/agents/concepts/context.md) it accumulates along the way. Its conversation history contributes to the language model's [context window](/docs/agents/concepts/language-models.md#context-window) and isn't automatically shared with other chats or sessions.\n\nUse a session to organize related conversations, follow their progress, and review their combined results.\n\nThe session's [execution environment](/docs/agents/concepts/agent-harnesses.md#relate-execution-environments-and-code-isolation) determines where it works on code. Depending on the harness, a session can use a workspace on your machine or a connected host. It can also work inside a Dev Container in either location. A container changes the development environment, not how the session organizes the conversation and task.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/sessions.md"
+}

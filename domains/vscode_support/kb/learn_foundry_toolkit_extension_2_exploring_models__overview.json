@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_2_exploring_models__overview",
+  "title": "2 exploring models",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "# Exploring Models with Model Catalog\n\n[![Watch Chapter 2 Video on YouTube (opens in new tab).](images/2-exploring-models/youtube-92tKoJOTays.jpg)](https://www.youtube.com/watch?v=92tKoJOTays)\n\nWhen building AI applications, one of the hardest parts is not implementation, it is picking the right model. You can have strong prompts and a clean workflow, but if the model is mismatched, quality and speed both take a hit.\n\nIn this chapter, we will use Foundry Toolkit in Visual Studio Code to walk a practical selection path from recommendations to side-by-side validation.\n\nThink of it as model selection with receipts.\n\nEach step is useful on its own.\nThe real magic happens when the full loop runs end to end.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/2-exploring-models.md"
+}

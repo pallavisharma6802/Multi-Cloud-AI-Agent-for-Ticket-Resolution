@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_47__wsl",
+  "title": "v1_47 / WSL",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## WSL\n\nWith updates to Windows 10 and Docker Desktop Stable in May, WSL 2 in Windows and Docker Desktop is now GA. Check out the blog post [Using Dev Containers in WSL 2](https://code.visualstudio.com/blogs/2020/07/01/containers-wsl) to learn how to develop applications in a Docker container in WSL 2 from VS Code.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_47.md"
+}

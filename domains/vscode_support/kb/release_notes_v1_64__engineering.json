@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_64__engineering",
+  "title": "v1_64 / Engineering",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Engineering\n\n### vscode-bisect tool\n\nA new tool for bisecting released VS Code Insiders versions (web and desktop) is available to help diagnose issues:\n\n```sh\nnpx vscode-bisect\n```\n\n<video src=\"images/1_64/vscode-bisect.mp4\" autoplay loop controls muted title=\"VS Code bisect tool\"></video>\n\nSimilar to `git bisect`, `vscode-bisect` will launch a range of released Insiders builds from the past, asking whether the build reproduces the issue or not. The end result is a range of commits that introduced the issue. The instance will use a dedicated fresh folder for user data to not impact your main development environment.\n\n### Run Code Web & Server from sources\n\nThe scripts to run VS Code for the Web and VS Code Server from sources has moved to the `scripts` folder:\n\n* `./scripts/code-web.sh|bat` starts Code for the Web (aka \"serverless)\" from sources and opens a browser on it. Use `--help` for more options.\n* `./scripts/code-server.sh|bat` starts VS Code Server from sources. Add `--launch` to additionally open the web UI in a browser. Use `--help` for more options.\n* `./scripts/test-web-integration.sh|bat` for the remote web tests.\n* `./scripts/test-remote-integration.sh|bat` for the remote tests.\n\n### Extensions\n\nIn this milestone, we improved Marketplace interactions by minimizing the number of queries VS Code makes to the service.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_64.md"
+}

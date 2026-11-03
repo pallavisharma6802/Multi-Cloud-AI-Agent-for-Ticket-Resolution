@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_cpp_debug__multi_threaded_debugging",
+  "title": "cpp debug / Multi-threaded debugging",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Multi-threaded debugging\n\nThe C/C++ extension for {% data variables.product.prodname_vscode_shortname %} has the ability to debug multi-threaded programs. All threads and their call stacks appear in the **Call Stack** section:\n\n![Multi-threaded process](images/cpp/threads.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/cpp-debug.md"
+}

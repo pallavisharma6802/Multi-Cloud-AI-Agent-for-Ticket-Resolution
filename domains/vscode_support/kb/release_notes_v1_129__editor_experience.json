@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_129__editor_experience",
+  "title": "v1_129 / Editor experience",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Editor experience\n\n### Reopen an editor from the editor toolbar\n\nWhen a file or diff supports multiple editors, you can switch editors directly from the editor toolbar. Open the **...** menu and select an editor from the **Reopen Editor With** submenu. This makes alternative editors easier to discover without using the Command Palette.\n\n### Modern UI preview (Experimental)\n\n**Setting**: `setting(workbench.experimental.modernUI)`\n\nYou can now preview a modernized VS Code UI that updates the look and feel of the editor workbench. This is currently an experimental feature that you can enable with the `setting(workbench.experimental.modernUI)` setting and is enabled by default in Insiders builds.\n\n<video src=\"images/1_129/modern-editor-workbench-ui.mp4\" title=\"Video showing the modernized VS Code editor workbench UI.\" autoplay loop controls muted></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_129.md"
+}

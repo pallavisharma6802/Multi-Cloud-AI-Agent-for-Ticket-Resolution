@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_sessions_session_history__session_sync_status",
+  "title": "session history / Session sync status",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Session sync status\n\nThe session sync status appears in the Copilot status bar in the {% data variables.copilot.chat_view %}. It shows the current state of cloud sync:\n\n| State | Description |\n|-------|-------------|\n| **Not enabled** | Session-history sync is off. This does not delete previously synced data. |\n| **Enabled** | Sessions are syncing to your GitHub account. |\n| **N sessions synced** | Shows how many sessions have been uploaded. Select to view sessions on GitHub.com. |\n| **Syncing N sessions** | Upload is in progress. |\n| **Disabled by policy** | Your organization's policy prevents session sync. |\n| **Sync error** | Something went wrong during the last sync. Try again later. |",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/sessions/session-history.md"
+}

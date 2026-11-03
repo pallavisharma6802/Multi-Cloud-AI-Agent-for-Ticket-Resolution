@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_56__partner_extensions",
+  "title": "v1_56 / Partner extensions",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Partner extensions\n\n### Azure Machine Learning\n\nThe [Azure Machine Learning](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vscode-ai) extension enables you to create and manage powerful cloud computing resources for your machine learning workflows. With its remote capabilities, you can seamlessly [connect to your compute resources](https://techcommunity.microsoft.com/t5/azure-ai/supercharge-azure-ml-code-development-with-new-vs-code/ba-p/2260129) in a secure, auditable, and compliant manner.\n\n[![Microsoft Azure Machine Learning extension](images/1_56/azure-machine-learning.png)](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vscode-ai)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_56.md"
+}

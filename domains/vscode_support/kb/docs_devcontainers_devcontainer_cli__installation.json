@@ -1,0 +1,8 @@
+{
+  "id": "docs_devcontainers_devcontainer_cli__installation",
+  "title": "devcontainer cli / Installation",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Installation\n\nYou can quickly try out the CLI through the Dev Containers extension. Select the **Dev Containers: Install devcontainer CLI** command from the Command Palette (`kbstyle(F1)`).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/devcontainer-cli.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_66__notebooks",
+  "title": "v1_66 / Notebooks",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notebooks\n\n### Find decorations on scroll bar\n\nThe Find results in notebooks will now be rendered in the scroll bar:\n\n<video src=\"images/1_66/notebook-find-scrollbar.mp4\" autoplay loop controls muted title=\"Find decorations rendered in the scroll bar\"></video>\n\n### Move focus to the interactive window\n\nThere are two new commands for placing focus in the interactive window.\n\n* `interactive.input.focus` - Move focus to the input editor in the interactive window.\n* `interactive.history.focus` - Move focus to history in interactive window.\n\nThese commands don't have default keybindings but you can add your own [keyboard shortcuts](https://code.visualstudio.com/docs/getstarted/keybindings).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_66.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_reference_filestructure__about_git",
+  "title": "FileStructure / About git",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## About git\n\nBy default, the `cache` and `history` folders are excluded from version control (`.gitignore`), except for the following two configuration files: `history.config` and `olive_config.json`\n\nYou might update the `.gitignore` file to include specific history folders that are worth saving.\n\nWhen someone else clones the repo, these two files ensure that they can rerun these histories to reproduce the conversion result.\n\n```\n__pycache__\n/cache\n/history/*/*\n!/history/*/history.config\n!/history/*/olive_config.json\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/reference/FileStructure.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_test_code_with_ai__add_tests_without_changing_implementation_code",
+  "title": "test code with ai / Add tests without changing implementation code",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Add tests without changing implementation code\n\nKeeping implementation code unchanged lets the tests expose existing bugs and keeps any fixes separate for review. After you agree on the cases, ask the agent to implement _only_ the tests:\n\n```prompt\nAdd the agreed tests using the existing framework and test conventions.\nReuse existing test helpers where appropriate. Do not change implementation\ncode, add dependencies, or refactor unrelated tests.\nKeep expected results explicit rather than computing them with the\nfunction under test.\n```\n\nInspect the generated tests. Check that they call the intended code and assert observable results, rather than only checking that execution completes. Keep expected results independent of the function under test: if the test uses that function to calculate the expected value, the same bug can affect both values and let the test pass.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/test-code-with-ai.md"
+}

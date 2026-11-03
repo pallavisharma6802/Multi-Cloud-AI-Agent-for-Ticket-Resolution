@@ -1,0 +1,8 @@
+{
+  "id": "docs_remote_tunnels__getting_started",
+  "title": "tunnels / Getting Started",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Getting Started\n\nYou have two paths to work with tunnels:\n\n* Run the `tunnel` command of the `code` [command-line interface (CLI)](/docs/configure/command-line.md#create-remote-tunnel).\n* Enable tunneling through the {% data variables.product.prodname_vscode_shortname %} Desktop UI.\n\nBoth of these paths result in the same tunneling functionality \u2013 you can use whichever tooling works best for you. The CLI is a great option if you can't install the full {% data variables.product.prodname_vscode_shortname %} Desktop on your remote machine. Using the {% data variables.product.prodname_vscode_shortname %} Desktop UI is convenient if you're already doing some work in {% data variables.product.prodname_vscode_shortname %} and would then like to enable tunneling for your current machine.\n\nWe'll describe both paths in the sections below.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/tunnels.md"
+}

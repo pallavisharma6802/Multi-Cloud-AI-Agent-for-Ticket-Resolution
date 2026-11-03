@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_agent_troubleshooting_cache_explorer__investigate_a_cache_miss",
+  "title": "cache explorer / Investigate a cache miss",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Investigate a cache miss\n\n1. Select a turn with low reported cache reuse and unexpected duration or input token usage.\n1. Find the first divergence in the prompt signature.\n1. Expand that component and identify what changed.\n1. Decide whether the change was necessary and under your control.\n1. Make one justified adjustment.\n1. Start a new session with the adjusted configuration and repeat the same two-request sequence.\n1. Compare the second request's cache metric, duration, input token usage, and response quality. Keep the adjustment only if the overall result improves.\n\nFor example, suppose the first divergence is in the tool definitions because you enabled an MCP server between turns. If the server is required for the task, keep it and accept the lower reuse. If it is not required, choose your tools before starting a new session and repeat the same two-request sequence. A change in the diff is evidence about the request structure, not proof that caching caused all observed latency.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/agent-troubleshooting/cache-explorer.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_models__license_and_sign_in",
+  "title": "models / License and sign-in",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## License and sign-in\n\nLicenses, agreements, credentials, and permissions depend on the model source:\n\n* Microsoft Foundry deployments require access to the project and resource. Use [Microsoft Entra authentication for Foundry models](https://learn.microsoft.com/azure/foundry/foundry-models/how-to/configure-entra-id) when your application connects to the endpoint.\n* Some catalog models display a publisher agreement during deployment or download. Review it before you continue.\n* Provider-hosted and custom models require credentials accepted by their endpoint. You remain responsible for the provider account and data-handling requirements.\n* Local models can have separate model licenses and hardware prerequisites even when no cloud sign-in is required.\n\nFor service concepts, model availability, and lifecycle information, see the [Microsoft Foundry models overview](https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview). For endpoint and authentication choices, see [Foundry model endpoints](https://learn.microsoft.com/azure/foundry/foundry-models/concepts/endpoints).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/models.md"
+}

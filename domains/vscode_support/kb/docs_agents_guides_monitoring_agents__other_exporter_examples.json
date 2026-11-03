@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_monitoring_agents__other_exporter_examples",
+  "title": "monitoring agents / Other exporter examples",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Other exporter examples\n\nThe default exporter is `otlp-http`. You can switch to `otlp-grpc`, `console`, or `file` to fit your backend or debugging workflow.\n\nOTLP/gRPC:\n\n```json\n{\n  \"github.copilot.chat.otel.enabled\": true,\n  \"github.copilot.chat.otel.exporterType\": \"otlp-grpc\",\n  \"github.copilot.chat.otel.otlpEndpoint\": \"http://localhost:4317\"\n}\n```\n\nConsole output (quick debugging):\n\n```json\n{\n  \"github.copilot.chat.otel.enabled\": true,\n  \"github.copilot.chat.otel.exporterType\": \"console\"\n}\n```\n\nFile-based output from the Copilot Chat extension (offline or CI):\n\n```json\n{\n  \"github.copilot.chat.otel.enabled\": true,\n  \"github.copilot.chat.otel.exporterType\": \"file\",\n  \"github.copilot.chat.otel.outfile\": \"/tmp/copilot-otel.jsonl\"\n}\n```\n\nFor organization-managed output from Copilot Agent Host sessions, see [Export managed telemetry to a file](#export-managed-telemetry-to-a-file).\n\nFor static HTTP headers, set `OTEL_EXPORTER_OTLP_HEADERS`. Administrators can also configure managed static headers and, for Copilot Agent Host sessions, [dynamic headers](#configure-dynamic-headers).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/monitoring-agents.md"
+}

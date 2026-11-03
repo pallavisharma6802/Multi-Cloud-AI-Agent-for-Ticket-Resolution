@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_18__notable_changes",
+  "title": "v1_18 / Notable Changes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable Changes\n\n* [22523](https://github.com/microsoft/vscode/issues/22523): Touch support in editor tabs (scrolling, open, context menu)\n* [35527](https://github.com/microsoft/vscode/issues/35527): macOS High Sierra: parts of the UI not rendering\n* [36122](https://github.com/microsoft/vscode/issues/36122): Windows: window on secondary monitor does not restore at exact position\n* [36695](https://github.com/microsoft/vscode/issues/36695): Workspace doesn't restores itself on re-opening Code in Ubuntu 17.10 GNOME",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_18.md"
+}

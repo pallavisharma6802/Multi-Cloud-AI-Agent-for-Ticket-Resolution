@@ -1,0 +1,8 @@
+{
+  "id": "docs_remote_ssh_tutorial__create_a_virtual_machine",
+  "title": "ssh tutorial / Create a virtual machine",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Create a virtual machine\n\nIf you don't have an existing Linux virtual machine, you can create a new VM through the [Azure portal](https://portal.azure.com). In the Azure portal, search for \"Virtual Machines\", and choose **Add**. From there, you can select your Azure subscription and create a new resource group, if you don't already have one.\n\n> **Note**: In this tutorial, we are using Azure, but your Linux VM can be hosted anywhere, as long as the Linux distribution meets these [prerequisites](/docs/remote/linux.md#local-linux-prerequisites).\n\n![Create a virtual machine](images/ssh-tutorial/create-vm.png)\n\nNow you can specify details of your VM, such as the name, the size, and the base image. Choose Ubuntu Server 18.04 LTS for this example, but you can choose recent versions of other Linux distros and look at {% data variables.product.prodname_vscode_shortname %}'s [supported SSH servers](/docs/remote/troubleshooting.md#installing-a-supported-ssh-server).\n\n![Virtual machine instance details](images/ssh-tutorial/vm-instance-details.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/ssh-tutorial.md"
+}

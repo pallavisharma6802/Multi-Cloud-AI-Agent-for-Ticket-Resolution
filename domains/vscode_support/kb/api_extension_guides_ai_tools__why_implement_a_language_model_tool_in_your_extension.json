@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_ai_tools__why_implement_a_language_model_tool_in_your_extension",
+  "title": "tools / Why implement a language model tool in your extension?",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Why implement a language model tool in your extension?\n\nImplementing a language model tool in your extension has several benefits:\n\n- **Extend agent mode** with specialized, domain-specific tools that are automatically invoked as part of responding to a user prompt. For example, enable database scaffolding and querying to dynamically provide the LLM with relevant context.\n- **Deeply integrate with VS Code** by using the broad set of extension APIs. For example, use the [debug APIs](/api/extension-guides/debugger-extension) to get the current debugging context and use it as part of the tool's functionality.\n- **Distribute and deploy** tools via the Visual Studio Marketplace, providing a reliable and seamless experience for users. Users don't need a separate installation and update process for your tool.\n\nYou might consider implementing a language model tool with an [MCP server](/api/extension-guides/ai/mcp) in the following scenarios:\n\n- You already have an MCP server implementation and also want to use it in VS Code.\n- You want to reuse the same tool across different development environments and platforms.\n- Your tool is hosted remotely as a service.\n- You don't need access to VS Code APIs.\n\nLearn more about the [differences between tool types](/docs/agents/concepts/tools.md#types-of-tools).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/tools.md"
+}

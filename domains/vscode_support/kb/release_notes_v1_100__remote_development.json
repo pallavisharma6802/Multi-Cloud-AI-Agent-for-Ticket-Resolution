@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_100__remote_development",
+  "title": "v1_100 / Remote Development",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Remote Development\n\nThe [Remote Development extensions](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack), allow you to use a [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers), remote machine via SSH or [Remote Tunnels](https://code.visualstudio.com/docs/remote/tunnels), or the [Windows Subsystem for Linux](https://learn.microsoft.com/windows/wsl) (WSL) as a full-featured development environment.\n\n### Dev container instructions files\n\nDev Container features and images now include instructions files describing their tools and configuration. VS Code chat can automatically use this context, improving the relevance and accuracy of its suggestions during development.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_100.md"
+}

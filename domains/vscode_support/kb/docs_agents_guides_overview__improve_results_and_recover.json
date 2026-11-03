@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_overview__improve_results_and_recover",
+  "title": "overview / Improve results and recover",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Improve results and recover\n\n* [Get an agent back on track](/docs/agents/guides/get-agent-back-on-track.md): choose whether to steer a request, recover unwanted changes, or reset conversation context.\n\n* [Reduce AI credit usage](/docs/agents/guides/optimize-usage.md): compare model costs and results, focus context, and scope tools to reduce unnecessary usage.\n\n* [Find prompt examples](/docs/agents/guides/prompt-examples.md): adapt prompts for exploring code, building features, debugging, and testing.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/overview.md"
+}

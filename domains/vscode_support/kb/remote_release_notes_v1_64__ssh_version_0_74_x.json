@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_64__ssh_version_0_74_x",
+  "title": "v1_64 / SSH (version 0.74.x)",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## SSH (version 0.74.x)\n\n### Pre-release version\n\nThe Remote-SSH extension has adopted the pre-release extension model to allow anyone to switch between using the stable release of the extension, that is released along with every stable release of VS Code, and the pre-release version of the extension that is released everyday with the most up-to-date features and fixes.\n\n![GIF showing how you can switch between pre-release and release version of Remote SSH on the Marketplace page in VS Code](images/1_64/ssh-pre-release.gif)\n\n### Enable RemoteCommand\n\nYou can now use RemoteCommands defined in your SSH Configuration entries. With the settings `remote.SSH.useLocalServer` and `remote.SSH.enableRemoteCommand` set to `true`. Note that only commands that don't close the shell will work properly. If you try the same connection with your shell and you see the command executes on the remote and then the connection immediately closes, that command will not work with the Remote-SSH extension. Only commands that leave the SSH connection in an interactive state will work as expected.\n\n![Enable RemoteCommand setting in the VS Code Settings GUI](images/1_64/ssh-remote-command.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_64.md"
+}

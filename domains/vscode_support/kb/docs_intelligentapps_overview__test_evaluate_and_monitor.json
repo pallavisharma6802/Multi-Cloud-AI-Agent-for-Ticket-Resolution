@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_overview__test_evaluate_and_monitor",
+  "title": "overview / Test, evaluate, and monitor",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Test, evaluate, and monitor\n\nUse different tools to answer different development questions. An interactive test helps you inspect one execution; repeatable evaluations help you compare behavior across changes.\n\n* **[Agent Inspector](/docs/intelligentapps/agent-inspector.md):** Send requests to a locally running agent, inspect responses and tool calls, and debug its code. Available views depend on the agent's protocol and instrumentation.\n* **[Evaluation](/docs/intelligentapps/evaluation.md):** Assess models, prompts, and agents with datasets, built-in evaluators, or custom criteria. Choose local tests or Foundry evaluation based on your workflow.\n* **[Tracing](/docs/intelligentapps/tracing.md):** Collect local telemetry or inspect hosted-agent traces to investigate model calls, tool activity, latency, and failures. Live Inspector events and stored traces are separate data sources.\n\nRunning your development tools or agent server locally does not mean every operation stays on your device. Requests to cloud models and live tools can consume quota, incur charges, or access external data.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/overview.md"
+}

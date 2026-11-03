@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_81__source_control",
+  "title": "v1_81 / Source Control",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Source Control\n\n### Support Git repositories with symbolic links\n\nBased on community feedback, there is now support for Git repositories that have symbolic links on their path by using the `--path-format` option, added to the `rev-parse` Git command in version `2.31`. Starting with this release, all source control functionality (for example, the **Source Control** view, repository detection, added/modified/deleted lines editor decorations, etc.) should work as expected when opening such a repository.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_81.md"
+}

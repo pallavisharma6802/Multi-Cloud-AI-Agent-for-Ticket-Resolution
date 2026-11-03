@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_troubleshooting__open_the_git_output_window",
+  "title": "troubleshooting / Open the Git Output window",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## Open the Git Output window\n\n{% data variables.product.prodname_vscode_shortname %} uses your machine's Git installation for source control operations. The Git Output window records the Git executable, commands, errors, timestamps, and command duration.\n\nOpen the Git Output window in one of these ways:\n\n* In the Source Control view, select **More Actions** (**...**) > **Show Git Output**.\n* Run **Git: Show Git Output** from the Command Palette (`kb(workbench.action.showCommands)`).\n* Open the Output panel (`kb(workbench.action.output.toggleOutput)`) and select **Git** from the channel list.\n\n![Screenshot showing the Git output channel in the Output panel.](images/troubleshooting/git-output.png)\n\nReview the most recent command and error message. The first error after the command is usually more useful than later errors that result from it.\n\n> [!TIP]\n> By default, the Git Output window shows standard output only when a command fails. Use the `setting(git.commandsToLog)` setting to choose commands that should always log their standard output.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/troubleshooting.md"
+}

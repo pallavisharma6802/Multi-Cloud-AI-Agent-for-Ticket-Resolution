@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_best_practices__overview",
+  "title": "best practices",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Best practices for using AI in {% data variables.product.prodname_vscode_shortname %}\n\nThis article covers good practices for using AI in {% data variables.product.prodname_vscode %}. Start with a bounded task, provide relevant context, and verify the result. Configure custom instructions, agents, or tools later when you have a recurring need.\n\n<div class=\"docs-action\" data-show-in-doc=\"false\" data-show-in-sidebar=\"true\" title=\"How AI works in {% data variables.product.prodname_vscode_shortname %}\">\nLearn about the agent loop, context window, tools, and other core concepts.\n\n* [Read about core concepts](/docs/agents/concepts/agents.md)\n\n</div>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/best-practices.md"
+}

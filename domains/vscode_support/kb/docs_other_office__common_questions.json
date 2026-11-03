@@ -1,0 +1,8 @@
+{
+  "id": "docs_other_office__common_questions",
+  "title": "office / Common questions",
+  "category": "REFERENCE",
+  "intent": "reference",
+  "content": "## Common questions\n\n### Can I create an Office Add-in with the generator and use {% data variables.product.prodname_vscode_shortname %} regardless of the language or client-side framework?\n\nYes, you can. You can use pure HTML, Angular, Ember, React, Aurelia... anything you like!\n\n### Can I use TypeScript to create my Office Add-in?\n\nAbsolutely, {% data variables.product.prodname_vscode_shortname %} has great support for [TypeScript](/docs/languages/typescript.md)!",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/other/office.md"
+}

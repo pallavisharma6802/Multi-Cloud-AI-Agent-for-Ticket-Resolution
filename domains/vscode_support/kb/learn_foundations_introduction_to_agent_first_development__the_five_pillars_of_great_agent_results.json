@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundations_introduction_to_agent_first_development__the_five_pillars_of_great_agent_results",
+  "title": "introduction to agent first development / The five pillars of great agent results",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## The five pillars of great agent results\n\nAgents are not magic. Great results come from five things working together.\n\n1. Harness - the software layer that connects the model to your tools and workspace.\n1. Model - the AI that does the reasoning and generates the code.\n1. Context - the files, instructions, and details that help the agent understand your project.\n1. Tools - the actions an agent can execute, such as reading files, running commands, and searching.\n1. Prompt - the instructions you give the agent.\n\nGet all five right, and agents accomplish significantly more. Miss one, and results become unfocused.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/introduction-to-agent-first-development.md"
+}

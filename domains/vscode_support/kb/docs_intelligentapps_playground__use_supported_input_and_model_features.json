@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_playground__use_supported_input_and_model_features",
+  "title": "playground / Use supported input and model features",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Use supported input and model features\n\nControls in the chat input depend on the selected model, provider, and API. The playground warns you when a requested capability is not supported.\n\n| Feature | Playground behavior | Important limitation |\n| --- | --- | --- |\n| Documents | Adds supported file content as extracted text or as native file input. | File types and parsing depend on the selected model and provider. Do not assume page-image interpretation or OCR. |\n| Images | Sends an image as native model input when vision is supported. | An attachment control does not mean that the model can understand images. |\n| Other media | Sends supported files through providers that accept native file input. | Audio and video support is model-specific. |\n| **Web** | Adds web search when the selected model, provider, and API support it. | OpenAI-compatible endpoints do not all provide the same search behavior. |\n| **Thinking** | Requests model reasoning when the selected model and API expose that control. | Availability and returned reasoning content vary by model. |\n\n> [!WARNING]\n> Prompts and attachment content are sent to the selected provider. Some provider workflows upload an attachment when you add it, before you select **Send**. Do not attach sensitive data unless the provider's data-handling terms meet your requirements.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/playground.md"
+}

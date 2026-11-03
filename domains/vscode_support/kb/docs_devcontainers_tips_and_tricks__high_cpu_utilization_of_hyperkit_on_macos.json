@@ -1,0 +1,8 @@
+{
+  "id": "docs_devcontainers_tips_and_tricks__high_cpu_utilization_of_hyperkit_on_macos",
+  "title": "tips and tricks / High CPU utilization of Hyperkit on macOS",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## High CPU utilization of Hyperkit on macOS\n\nThere is [known issue with Docker for Mac](https://github.com/docker/for-mac/issues/1759) that can drive high CPU spikes. In particular, high CPU usage occurring when watching files and building. If you see high CPU usage for `com.docker.hyperkit` in Activity Monitor while very little is going on in your dev container, you are likely hitting this issue. Follow the [Docker issue](https://github.com/docker/for-mac/issues/1759) for updates and fixes.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/tips-and-tricks.md"
+}

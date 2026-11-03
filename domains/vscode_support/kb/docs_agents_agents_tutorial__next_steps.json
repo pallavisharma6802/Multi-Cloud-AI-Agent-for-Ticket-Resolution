@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_agents_tutorial__next_steps",
+  "title": "agents tutorial / Next steps",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Next steps\n\n{% action-card title=\"Use agents in your own project\" display=\"sidebar\" %}\nApply the same prompt, review, and validation workflow to a bounded task in an existing project.\n\n* [Apply the workflow to your project](/docs/agents/best-practices.md#apply-the-workflow-to-your-project)\n\n{% /action-card %}\n\nTo go deeper with agentic coding in {% data variables.product.prodname_vscode %}, get more info about how to:\n\n* [Explore an unfamiliar codebase without changing files](/docs/agents/guides/explore-a-codebase.md)\n\n* [Review the recommended security baseline](/docs/agents/run/security.md#recommended-security-baseline)\n\n* [Continue a cloud agent session from your terminal](/docs/agents/cloud-continuity-tutorial.md) (Experimental)\n\n* [Find a guide for your next task](/docs/agents/guides/overview.md#work-on-a-project)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/agents-tutorial.md"
+}

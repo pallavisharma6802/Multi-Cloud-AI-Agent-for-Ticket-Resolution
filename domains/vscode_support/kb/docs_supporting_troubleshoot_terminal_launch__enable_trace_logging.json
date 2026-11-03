@@ -1,0 +1,8 @@
+{
+  "id": "docs_supporting_troubleshoot_terminal_launch__enable_trace_logging",
+  "title": "troubleshoot terminal launch / Enable trace logging",
+  "category": "REFERENCE",
+  "intent": "reference",
+  "content": "## Enable trace logging\n\nCapture logs from a fresh reproduction, before changing more settings:\n\n1. Run **Developer: Set Log Level...** from the Command Palette and set the log level to **Trace**.\n2. Reproduce the failure by creating a terminal.\n3. Run **Developer: Open Log...** and select **Terminal** for frontend logs. Repeat for **Pty Host**, which records shell process creation and communication. For a remote terminal, include the relevant remote log when available.\n4. Save the relevant log content, then restore the previous log level.\n\n> [!IMPORTANT]\n> Logs can contain file paths, environment details, commands, and terminal output. Review them and remove secrets and sensitive information before sharing.\n\nFor additional capture options, see [terminal trace logging](https://github.com/microsoft/vscode/wiki/Terminal-Issues#enabling-trace-logging).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/supporting/troubleshoot-terminal-launch.md"
+}

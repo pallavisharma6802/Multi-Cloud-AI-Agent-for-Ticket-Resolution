@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_tutorial_create_containers__overview",
+  "title": "tutorial create containers",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Create containers for Python\n\nThis page is redirected to /docs/containers/quickstart-python.md and only exists to keep the \"Create containers\" TOC item.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/tutorial-create-containers.md"
+}

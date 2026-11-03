@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_keybindings__overview",
+  "title": "keybindings",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "# Keyboard shortcuts for {% data variables.product.prodname_vscode %}\n\n{% data variables.product.prodname_vscode %} lets you perform most tasks directly from the keyboard. This article explains how you can modify the default keyboard shortcuts that come with {% data variables.product.prodname_vscode_shortname %}.\n\n> [!NOTE]\n> If you visit this page on a Mac, you will see the keyboard shortcuts for the Mac. If you visit using Windows or Linux, you will see the keys for that platform. If you need the keyboard shortcuts for another platform, hover your mouse over the key you are interested in.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/keybindings.md"
+}

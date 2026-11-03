@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_package_management__dependency_management",
+  "title": "package management / Dependency management",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Dependency management\n\n### Automatic NuGet restore\n\nFor a .NET project, a package restore happens automatically when you create a project from a template, build, load, or make changes to an SDK-style project. You can view in the progress and logs in the Output panel.\n\n![Automatic NuGet package restore](images/package-management/automatic-nuget-package-restore.png)\n\nFor projects that use `<PackageReference>`, you can see the package references in the **Solution Explorer** section of {% data variables.product.prodname_vscode %}.\n\n![Package references in the Solution Explorer](images/package-management/package-references-solution-explorer.png)\n\nPackages that don't install properly when a restore happens or when you run a build, will show error icons in **Solution Explorer**.\n\n**Note**: At this time, you cannot right-click on projects to manage your NuGet packages and there is not a NuGet Package Manager user interface in {% data variables.product.prodname_vscode %}.\n\nFor more information on managing packages, see [Install and manage NuGet packages with the dotnet CLI](https://learn.microsoft.com/nuget/consume-packages/install-use-packages-dotnet-cli).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/package-management.md"
+}

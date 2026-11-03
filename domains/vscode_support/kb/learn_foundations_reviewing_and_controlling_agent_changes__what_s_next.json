@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundations_reviewing_and_controlling_agent_changes__what_s_next",
+  "title": "reviewing and controlling agent changes / What's next",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## What's next\n\nWith the files changed view, per-change controls, message editing, steering, and checkpoints, you have complete control over what the agent produces and where the session goes.\n\nIn the [next guide](/learn/foundations/agent-sessions-and-where-agents-run.md), you will manage multiple agents at the same time and compare local, background, and cloud execution.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/reviewing-and-controlling-agent-changes.md"
+}

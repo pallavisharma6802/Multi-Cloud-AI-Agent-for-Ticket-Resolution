@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_playground__review_responses_and_usage",
+  "title": "playground / Review responses and usage",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Review responses and usage\n\nFor chat responses, you can copy the response, regenerate it, and copy or insert code blocks. Token counts appear only when the model returns token usage. Image output uses the gallery actions described in [Generate images with Image Playground](#generate-images-with-image-playground).\n\nGenerated Markdown can reference remote images. Use **Load Remote Images** when you want the playground to retrieve them. Loading a remote image contacts its host, so review the source before you load it.\n\n### Review local resource usage (Preview)\n\nFor supported local chat models on Windows, **Show resource usage (preview)** reports local process metrics for these providers:\n\n* ONNX.\n* ONNX Converted.\n* Foundry Local.\n* Windows OS models, including Phi Silica.\n\nWhen available, the response shows CPU, GPU, NPU, and memory metrics. These metrics are not billing data. They do not cover remote endpoints, Ollama, or every local runtime.\n\nSelect **Usage details** to continue in [Model Profiling](/docs/intelligentapps/profiling.md). Platform prerequisites and permissions can affect which metrics are available.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/playground.md"
+}

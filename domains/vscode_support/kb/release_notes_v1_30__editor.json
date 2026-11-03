@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_30__editor",
+  "title": "v1_30 / Editor",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Editor\n\n### Snippet comment variables\n\nThere are new snippet variables that insert line or block comments, honoring the current language. Use `BLOCK_COMMENT_START` and  `BLOCK_COMMENT_END` for block comments and `LINE_COMMENT` otherwise.\n\nThe snippet below inserts `/* Hello World */` in JavaScript files and `<!-- Hello World -->` in HTML files\n\n```json\n{\n    \"hello\": {\n        \"scope\": \"javascript,html\",\n        \"prefix\": \"hello\",\n        \"body\": \"$BLOCK_COMMENT_START Hello World $BLOCK_COMMENT_END\"\n    }\n}\n```\n\n### Declaration versus definition\n\nUntil now, VS Code offered commands for displaying the definition of a symbol, for example **Go to Definition** and **Peek Definition**. This didn't take into account the fact that some languages differentiate, stricter than others, between the **declaration** and the **definition** of a symbol. We have fixed that and there are now commands **Go to Declaration** and **Peek Declaration** for the declaration of a symbol.\n\n![Go to Declaration](images/1_30/go-to-declaration.png)\n\nThe data required for language features like **Go to Declaration** is computed by extensions and there is a new API, which you can read about in the [Extension Authoring](#extension-authoring) section.\n\n### Smooth cursor animation\n\nThere is a new setting, `editor.cursorSmoothCaretAnimation`, which will enable a transition animation whenever the cursor is moved.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_30.md"
+}

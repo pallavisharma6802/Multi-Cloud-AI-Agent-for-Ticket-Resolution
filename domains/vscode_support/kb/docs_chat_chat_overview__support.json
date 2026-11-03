@@ -1,0 +1,8 @@
+{
+  "id": "docs_chat_chat_overview__support",
+  "title": "chat overview / Support",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Support\n\nSupport for GitHub Copilot Chat is provided by GitHub and can be reached at <https://support.github.com>.\n\nTo learn more about Copilot's security, privacy, compliance, and transparency, see the [GitHub Copilot Trust Center FAQ](https://copilot.github.trust.page/faq).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/chat/chat-overview.md"
+}

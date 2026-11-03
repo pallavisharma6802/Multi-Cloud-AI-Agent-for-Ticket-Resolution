@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_1_get_started__answer",
+  "title": "1 get started / Answer",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Answer\n\nFor most teams early in the lifecycle, prompt iteration speed gives the fastest visible return because it affects daily output quality almost immediately. If your team is already producing stable prompts, deployment consistency often becomes the next bottleneck to tackle. The key is to pick the slowest repeated step in your current flow and optimize that first.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/1-get-started.md"
+}

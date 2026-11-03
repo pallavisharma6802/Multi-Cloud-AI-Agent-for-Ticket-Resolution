@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_refactoring__refactor_preview",
+  "title": "refactoring / Refactor Preview",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Refactor Preview\n\nWhen you apply a refactoring, the changes are directly implemented to your code. In the **Refactor Preview** panel, you can preview the changes that will be applied by a refactoring operation.\n\nTo open the **Refactor Preview** panel, open the Code Actions control, hover over a refactoring, and then press `kb(previewSelectedCodeAction)`.\n\n<video src=\"images/refactoring/refactor-preview-launch.mp4\" title=\"Video showing launching the Refactor Preview panel by pressing `CtrlCmd + Enter` on the Code Actions control.\" autoplay loop controls muted></video>\n\nYou can select any of the changes in the **Refactor Preview** panel to get a diff view of the changes that are a result of the refactoring operation.\n\n![Screenshot of the Refactor Preview panel that shows an 'Extract to' refactoring that results in two changes](images/refactoring/refactor-preview.png)\n\nUse the **Accept** or **Discard** controls to apply or cancel the proposed refactoring changes.\n\nOptionally, you can partially apply the refactoring changes by deselecting some of the proposed changes in the Refactor Preview panel.\n\n![Screenshot of the Refactor Preview panel that shows how to partially apply changes by deselecting specific changes.](images/refactoring/refactor-preview-partial.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/refactoring.md"
+}

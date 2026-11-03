@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_145__october_31_2026",
+  "title": "v1_145 / October 31, 2026",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## October 31, 2026\n\n* Keep sessions visible in the Agents window's **Worktree Cleanup** list after opening them for review with the default **Any time** filter. _[microsoft/vscode#342637: [Worktree Cleanup] Clicking on a session removed it from the list](https://github.com/microsoft/vscode/issues/342637)_",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_145.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_capabilities_overview__overview",
+  "title": "overview",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "# Extension Capabilities Overview\n\nVisual Studio Code offers many ways for extensions to extend its capabilities. It can sometimes be hard to find the right [Contribution Points](/api/references/contribution-points) and [VS Code API](/api/references/vscode-api) to use. This topic splits extension capabilities into a few categories. Each category describes:\n\n- Some functionalities your extension could use\n- Links to more detailed topics for using these functionalities\n- A few extension ideas\n\nHowever, we also impose [restrictions](#restrictions) upon extensions to ensure the stability and performance of VS Code. For example, extensions cannot access the DOM of VS Code UI.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-capabilities/overview.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vmarch__thank_you",
+  "title": "vMarch / Thank You",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Thank You\n\nLast but certainly not least, a big *__Thank You!__* to the following folks that helped to make VS Code even better:\n\n* [Joe Martella (@martellaj)](https://github.com/martellaj): Adds sort lines (ascending and descending) command [2796](https://github.com/microsoft/vscode/pull/2796).\n* [Ivan Enderlin (@Hywan)](https://github.com/Hywan): Improved PHP support [4323](https://github.com/microsoft/vscode/pull/4323) [4322](https://github.com/microsoft/vscode/pull/4322).\n- [Sanders Lauture (@golf1052)](https://github.com/golf1052): Fix markdown highlighting for C# [4225](https://github.com/microsoft/vscode/pull/4225).\n- [Phillip Johnsen (@phillipj)](https://github.com/phillipj): Multiple script enhancements  [3691](https://github.com/microsoft/vscode/pull/3691) [3649](https://github.com/microsoft/vscode/pull/3649) [3636](https://github.com/microsoft/vscode/pull/3636).\n- [Ed Mu\u00f1oz (@edumunoz)](https://github.com/edumunoz): Support stop-all-threads mode debugging for multi-threaded debuggers [3990](https://github.com/microsoft/vscode/pull/3990).\n- [Pierson Lee (@pieandcakes)](https://github.com/pieandcakes): Added telemetry for debugging scenarios [3687](https://github.com/microsoft/vscode/pull/3687).\n- [Guillaume Jenkins (@guillaumejenkins)](https://github.com/guillaumejenkins): Adding descriptions of Ionic HTML tags [3734](https://github.com/microsoft/vscode/pull/3734).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vMarch.md"
+}

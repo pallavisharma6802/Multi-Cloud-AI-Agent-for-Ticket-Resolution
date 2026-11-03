@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_troubleshooting__the_extension_does_not_find_docker_on_a_remote_machine",
+  "title": "troubleshooting / The extension does not find Docker on a remote machine",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## The extension does not find Docker on a remote machine\n\nError message \"Failed to connect. Is Docker installed and running?\"\n\n1. Make sure Docker engine **is installed** on the remote machine and that Docker CLI works (run `docker ps` from the terminal and ensure it does not return any errors).\n2. If you are using a remote development environment (remote machine via SSH, WSL subsystem, GitHub Codespace), make sure the Container Tools extension is installed remotely as well as locally.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/troubleshooting.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vdecember__changed_defaults_and_key_bindings",
+  "title": "vDecember / Changed defaults and key bindings",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Changed defaults and key bindings\n\n* Changed the defaults for `editor.insertSpaces` to `true` and `editor.tabSize` to `4`. To get the previous behavior, you can change both settings back to `\"auto\"`.\n* Changed the default key bindings on Linux for Insert Cursor Below (`kb(editor.action.insertCursorBelow)`), Insert Cursor Above (`kb(editor.action.insertCursorAbove)`), Move Line Down (`kb(editor.action.moveLinesDownAction)`) and Move Line Up (`kb(editor.action.moveLinesUpAction)`)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vDecember.md"
+}

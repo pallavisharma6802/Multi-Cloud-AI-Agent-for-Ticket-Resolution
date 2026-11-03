@@ -1,0 +1,8 @@
+{
+  "id": "docs_devcontainers_tips_and_tricks__customize_ai_chat_responses",
+  "title": "tips and tricks / Customize AI Chat Responses",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Customize AI Chat Responses\n\n[Custom instructions](/docs/agent-customization/overview.md) enable you to describe common guidelines or rules to get responses that match your specific coding practices and tech stack.\n\nYou can use custom instructions with dev containers to give Copilot more information about the type of dev container you're connected to (like what kind of languages or toolchains are installed). You can achieve this in a few ways:\n* Add `\"github.copilot.chat.codeGeneration.instructions\"` directly in your `devcontainer.json`\n    * We publish dev container resources (like [images](https://github.com/devcontainers/images) and [Features](https://github.com/devcontainers/features)) to make the process of creating and connecting to dev containers even easier, and we now include custom instructions in these files.\n    * [Here](https://github.com/devcontainers/features/blob/main/src/python/devcontainer-feature.json#L80) is an example of custom instructions in the Python Feature.\n* Use a `copilot-instructions.md` file just as you would locally",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/tips-and-tricks.md"
+}

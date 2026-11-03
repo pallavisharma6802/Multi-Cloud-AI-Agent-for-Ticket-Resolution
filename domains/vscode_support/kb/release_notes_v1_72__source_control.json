@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_72__source_control",
+  "title": "v1_72 / Source Control",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Source Control\n\n### Discover nested Git repositories\n\nTo address a long standing feature request, this milestone we made changes to repository discovery to add support for nested Git repositories. Depending on the location of the nested repositories, you may need to modify the `git.repositoryScanMaxDepth` setting (the default is 1 level).\n\n### Add support for SSH keys with a passphrase\n\nWhen an SSH key with a passphrase is used for Git operations, VS Code will now display the quick input control so that you can enter the passphrase for the SSH key. The passphrase is not cached and has to be entered every time a Git operation is performed.\n\n### Pull before checkout\n\nThis milestone we added a new setting, `git.pullBeforeCheckout`, to streamline the process of switching branches. When this setting is enabled, if there are no outgoing commits, we will pull from the remote and fast-forward the branch before checking it out.\n\n### Repository fetch improvements\n\nFor Git repositories with multiple remotes, invoking the fetch command will now display a Quick Pick with the list of all remotes. Users can pick a particular remote to be fetched or to fetch from all remotes.\n\n### Abort merge command\n\nThere is a new command, **Git: Abort Merge**, to abort a merge operation that is currently in progress.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_72.md"
+}

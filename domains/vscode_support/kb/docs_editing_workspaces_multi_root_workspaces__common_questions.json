@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_workspaces_multi_root_workspaces__common_questions",
+  "title": "multi root workspaces / Common questions",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Common questions\n\n### How can I go back to working with a single project folder?\n\nYou can either close the Workspace and open the folder directly or remove the folder from Workspace.\n\n### As an extension author what do I need to do?\n\nSee our [Adopting Multi Root Workspace APIs](https://github.com/microsoft/vscode/wiki/Adopting-Multi-Root-Workspace-APIs) guide. Most extensions can easily support multi-root workspaces.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/workspaces/multi-root-workspaces.md"
+}

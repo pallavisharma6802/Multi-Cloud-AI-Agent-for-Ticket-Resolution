@@ -1,0 +1,8 @@
+{
+  "id": "api_ux_guidelines_activity_bar__overview",
+  "title": "activity bar",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "# Activity Bar\n\nThe Activity Bar is a core navigation surface in VS Code. Extensions can contribute [View Containers](/api/ux-guidelines/views#view-containers) to the Activity Bar that appear as Activity Bar Items. Users can drag the item to other locations like the Panel to customize their layout.\n\n**\u2714\ufe0f Do**\n\n- Use an icon that matches the default Activity Bar item icon style\n- Use a clear, obvious name for the [View Container](/api/ux-guidelines/views#view-containers) associated with the item\n\n**\u274c Don't**\n\n- Duplicate an existing icon\n- Use an Activity Bar item to open a Webview Panel\n\n![Example of the Activity Bar](images/examples/activity-bar.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/activity-bar.md"
+}

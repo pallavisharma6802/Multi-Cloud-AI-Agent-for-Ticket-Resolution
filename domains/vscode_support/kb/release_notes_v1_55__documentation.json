@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_55__documentation",
+  "title": "v1_55 / Documentation",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Documentation\n\n### VS Code and JavaScript in the classroom\n\nRead the [case study](https://code.visualstudio.com/learn/educators/nodejs) of a Computer Science lecturer at Naresuan University in Thailand, who uses VS Code in his introductory Web Development classes with JavaScript and Node.js. Learn about the settings and extensions he recommends for his students, as well as a helpful [Node.js and JavaScript Education Extension Pack](https://marketplace.visualstudio.com/items?itemName=tanhakabir.node-js-education-extension-pack).\n\n### Raspberry Pi\n\nThere is a new topic describing how to install [VS Code on Raspberry Pi](https://code.visualstudio.com/docs/setup/raspberry-pi) devices.\n\n![Raspberry Pi logo](images/1_55/raspberry-pi.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_55.md"
+}

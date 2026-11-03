@@ -1,0 +1,8 @@
+{
+  "id": "api_references_contribution_points__contributes_iconthemes",
+  "title": "contribution points / contributes.iconThemes",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## contributes.iconThemes\n\nContribute a file icon theme to VS Code. File icons are shown next to file names, indicating the file type.\n\nYou must specify an id (used in the settings), a label and the path to the file icon definition file.\n\n### file icon theme example\n\n```json\n{\n  \"contributes\": {\n    \"iconThemes\": [\n      {\n        \"id\": \"my-cool-file-icons\",\n        \"label\": \"Cool File Icons\",\n        \"path\": \"./fileicons/cool-file-icon-theme.json\"\n      }\n    ]\n  }\n}\n```\n\n![file icon theme extension point example](images/contribution-points/file-icon-themes.png)\n\nSee the [File Icon Theme Guide](/api/extension-guides/file-icon-theme) on how to create a File Icon Theme.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/contribution-points.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vnovember__vs_code_supports_extensions",
+  "title": "vNovember / VS Code Supports Extensions!",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## VS Code Supports Extensions!\n\nVS Code has great features out of the box but now you and the community can extend VS Code to add new features and languages.\n\n![marketplace](images/0_10_0/marketplace.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vNovember.md"
+}

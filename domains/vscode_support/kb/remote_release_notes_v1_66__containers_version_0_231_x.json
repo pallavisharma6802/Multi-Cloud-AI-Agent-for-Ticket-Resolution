@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_66__containers_version_0_231_x",
+  "title": "v1_66 / Containers (version 0.231.x)",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Containers (version 0.231.x)\n\nYou can now add a badge or link to your repository so that users can easily open your project in Dev Containers. It will install the Dev Containers extension if necessary, clone the repo into a container [volume](https://code.visualstudio.com/remote/advancedcontainers/improve-performance#_use-clone-repository-in-container-volume), and start up the dev container.\n\nAs an example, a badge to open the [vscode-remote-try-java](https://github.com/microsoft/vscode-remote-try-java) repo would look like:\n\n[![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20-%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/microsoft/vscode-remote-try-java)\n\nYou would author the badge in Markdown as:\n\n```markdown\n[![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20-%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/microsoft/vscode-remote-try-java)\n\n```\n\nYou may also include an [open in dev container](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/microsoft/vscode-remote-try-java) link directly.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_66.md"
+}

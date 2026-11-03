@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundations_reviewing_and_controlling_agent_changes__per_change_controls",
+  "title": "reviewing and controlling agent changes / Per-change controls",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Per-change controls\n\nInside the diff view, you will find **Keep** and **Undo** controls on each individual edit. Use the arrow navigation to move between edits within the file without scrolling manually.\n\n![Per-change controls showing Keep and Undo actions for individual edits in the diff view](../images/foundations/per-change-controls.png)\n\nThis lets you keep the correct changes and undo only the incorrect ones. This granularity matters. The agent might make ten changes to a file - nine correct, one wrong. You don't have to throw out the whole thing. Keep the nine, undo the one, and move on.\n\nOnce you've reviewed a file, move to the next one in the files changed bar and repeat.\n\n### Accept all or undo all\n\nWhen you're happy with all the changes across all files, the top-level **Keep** button accepts everything at once. **Undo All** rolls back every file the agent touched in this round, leaving your workspace exactly as it was before.\n\n![Top-level Keep All controls for accepting all agent changes](../images/foundations/keep-all.png)\n\nUse **Accept All** when you trust the output. Use **Undo All** when the agent went in the wrong direction and you'd rather start over.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/reviewing-and-controlling-agent-changes.md"
+}

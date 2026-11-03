@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_45__accessibility",
+  "title": "v1_45 / Accessibility",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Accessibility\n\nThis milestone we received great feedback from our community, which helped us identify and tackle many [accessibility issues](https://github.com/microsoft/vscode/issues?q=label%3Aaccessibility+milestone%3A%22April+2020%22+is%3Aclosed).\n\n* We introduced **Focus Next Part** (`kb(workbench.action.focusNextPart)`) and **Focus Previous Part** (`kb(workbench.action.focusPreviousPart)`) commands to make it easy to navigate across the workbench.\n* The status bar is now accessible and when focused, screen readers can read its content.\n* Introduced appropriate ARIA labels across every list and tree widget in the workbench, such as Open Editors, Breadcrumbs, Problems view, and more.\n\nOne of our team's top priorities is making Visual Studio Code a more accessible product and improving experiences for every user and so we have created a [new Gitter channel](https://gitter.im/Microsoft/vscode-a11y) for VS Code accessibility. We encourage users to join and give feedback, bring up problems, and share accessibility practices.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_45.md"
+}

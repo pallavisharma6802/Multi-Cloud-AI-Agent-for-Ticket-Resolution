@@ -1,0 +1,8 @@
+{
+  "id": "api_working_with_extensions_continuous_integration__automated_publishing",
+  "title": "continuous integration / Automated publishing",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Automated publishing\n\nYou can also configure the CI to publish a new version of the extension automatically.\n\nThe publish command is similar to publishing from a local environment using [`vsce`](https://github.com/microsoft/vscode-vsce), but you must somehow provide the Personal Access Token (PAT) in a secure way. By storing the PAT as a `VSCE_PAT` **secret variable**, `vsce` will be able to use it. Secret variables are never exposed, so they are safe to use in a CI pipeline.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/working-with-extensions/continuous-integration.md"
+}

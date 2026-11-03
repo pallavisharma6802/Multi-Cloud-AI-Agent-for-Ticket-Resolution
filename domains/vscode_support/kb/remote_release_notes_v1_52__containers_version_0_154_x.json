@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_52__containers_version_0_154_x",
+  "title": "v1_52 / Containers (version 0.154.x)",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Containers (version 0.154.x)\n\n### Support to select a branch when opening a repository in a container\n\nWhen using the **Remote: Clone Repository in Container Volume...** command to clone a repository from GitHub, then you can now also select the branch that should be cloned into the volume.\n\n### VS Code server and extension cache on Docker volume\n\nWe now create a `vscode` Docker volume on which we install the VS Code server and cache extensions for shorter creation and rebuild times of Dev Containers. Additionally, extensions configured in the `devcontainer.json` and user settings are now installed while the VS Code server starts up - their installation no longer blocks the startup process.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_52.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_playground__choose_a_playground_task",
+  "title": "playground / Choose a playground task",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Choose a playground task\n\nThe selected model determines which playground opens. A chat model that accepts images for analysis is not necessarily a model that generates images.\n\n| Goal | Model to select | Playground |\n| --- | --- | --- |\n| Test chat prompts, analyze supported image input, or compare responses. | A chat-capable model with the required input capabilities. | **Model Playground**, with conversations and chat comparison. |\n| Generate an image or edit from a reference image. | A supported Foundry image-generation deployment. | **Image Playground**, with generation settings and an image gallery. |\n\nSelecting an image-generation model switches to **Image Playground** automatically. Selecting a text-generation model switches back to the chat view.\n\nThe following example shows the chat playground with a configured model.\n\n![Screenshot showing the Foundry Toolkit chat playground with a connected Foundry model, model preferences, and prompt input.](./images/playground/model-playground.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/playground.md"
+}

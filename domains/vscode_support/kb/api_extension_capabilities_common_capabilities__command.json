@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_capabilities_common_capabilities__command",
+  "title": "common capabilities / Command",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Command\n\nCommand is central to how VS Code works. You open the Command Palette to execute commands, bind custom keybindings to commands, and right-click to invoke commands in Context Menus.\n\nAn extension could:\n\n- Register and execute commands with the [`vscode.commands`](/api/references/vscode-api#commands) API.\n- Make commands available in the Command Palette with the [`contributes.commands`](/api/references/contribution-points#contributes.commands) Contribution Point.\n\nLearn more about commands at the [Extension Guides / Command](/api/extension-guides/command) topic.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-capabilities/common-capabilities.md"
+}

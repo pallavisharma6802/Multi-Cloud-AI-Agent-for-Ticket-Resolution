@@ -1,0 +1,8 @@
+{
+  "id": "api_get_started_wrapping_up__testing_and_publishing",
+  "title": "wrapping up / Testing and Publishing",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Testing and Publishing\n\nThis section includes topics that help you develop high-quality VS Code extensions. For example, you can learn\n\n- How to add [integration tests](/api/working-with-extensions/testing-extension) for your extension\n- How to [publish your extension](/api/working-with-extensions/publishing-extension) to the VS Code [Marketplace](https://marketplace.visualstudio.com/)\n- How to set up [Continuous Integration](/api/working-with-extensions/continuous-integration) for your extension",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/get-started/wrapping-up.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_themes__automatically_switch_based_on_os_color_scheme",
+  "title": "themes / Automatically switch based on OS color scheme",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Automatically switch based on OS color scheme\n\nWindows and macOS support light and dark color schemes. There is a setting, `setting(window.autoDetectColorScheme)`, that instructs {% data variables.product.prodname_vscode_shortname %} to listen to changes to the OS's color scheme and switch to a matching theme accordingly.\n\nSimilarly, you can use the `setting(window.autoDetectHighContrast)` setting to automatically detect if the OS switched to a high-contrast color scheme.\n\nTo customize the themes that are used when a color scheme changes, you can set the preferred light, dark, and high contrast themes in the Settings editor:\n\n* **Workbench: Preferred Dark Color Theme** - defaults to Dark Modern\n* **Workbench: Preferred Light Color Theme** - defaults to Light Modern\n* **Workbench: Preferred High Contrast Color Theme** - defaults to Dark High Contrast\n* **Workbench: Preferred High Contrast Light Color Theme** - defaults to Light High Contrast\n\n![Settings editor filtered on the preferred color themes settings](images/themes/preferred-color-themes.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/themes.md"
+}

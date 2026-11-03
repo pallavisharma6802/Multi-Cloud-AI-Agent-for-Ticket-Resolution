@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_tsql__next_steps",
+  "title": "tsql / Next steps",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Next steps\n\n* Download the free [SQL Server 2017 Developer Edition].\n* Install the [mssql] extension from the {% data variables.product.prodname_vscode %} Marketplace.\n* [Build an app] using SQL Server - Get started with SQL Server on macOS, Linux, and Windows using your favorite programming language.\n* Contribute to the mssql extension on [GitHub]. Submit a bug report or a feature suggestion on our [GitHub Issue Tracker].",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/tsql.md"
+}

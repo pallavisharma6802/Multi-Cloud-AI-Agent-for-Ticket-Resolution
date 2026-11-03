@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_dotnet__create_a_c_hello_world_app",
+  "title": "dotnet / Create a C# \"Hello World\" app",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Create a C# \"Hello World\" app\n\n1. Initialize a C# project:\n\n   * Open a terminal/command prompt and navigate to the folder in which you'd like to create the app.\n   * Enter the following command in the command shell:\n\n   ```bat\n     dotnet new console\n   ```\n\n2. When the project folder is first opened in {% data variables.product.prodname_vscode_shortname %}:\n\n   * A \"Required assets to build and debug are missing. Add them?\" notification appears at the bottom right of the window.\n   * Select **Yes**.\n\n3. Run the app by entering the following command in the command shell:\n\n   ```bat\n   dotnet run\n   ```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/dotnet.md"
+}

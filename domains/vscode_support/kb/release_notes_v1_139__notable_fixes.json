@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_139__notable_fixes",
+  "title": "v1_139 / Notable fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable fixes\n\n* For users whose organization disables Agent mode by account policy, ensure the Welcome invitation opening is hidden and that alternative methods of launching the disabled Agents Window (for example, `code --agents` disallow circumvention of the control). _[#336968: Fix account policy enforcement in the Agents window](https://github.com/microsoft/vscode/pull/336968)_\n\n* For users with enterprise-managed [OpenTelemetry (OTel) settings](https://code.visualstudio.com/docs/enterprise/manage-ai-settings#configure-telemetry-export-with-opentelemetry), fix a race condition in the configuration of OTel in the Local (i.e. non-Agent Host Harness) to ensure OTel is not dropped. _[#336701: Fix Enterprise Managed OTel Race in Copilot Extension](https://github.com/microsoft/vscode/pull/336701)_\n\n<!-- RELEASE_THANK_YOU_START -->",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_139.md"
+}

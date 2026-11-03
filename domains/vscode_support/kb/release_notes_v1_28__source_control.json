@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_28__source_control",
+  "title": "v1_28 / Source Control",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Source Control\n\n### Change SCM commit keybinding\n\nYou can now change the default keybinding to accept a commit message in the SCM view, using the `scm.acceptInput` command.\n\n### SCM status bar tracks active file\n\nThe SCM Status Bar contribution in the bottom left now tracks whichever repository the currently active file belongs to. This reduces confusion when editing files across your multi-folder workspace.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_28.md"
+}

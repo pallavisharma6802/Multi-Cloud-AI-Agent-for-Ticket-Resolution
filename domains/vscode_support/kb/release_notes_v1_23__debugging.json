@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_23__debugging",
+  "title": "v1_23 / Debugging",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debugging\n\n### Logpoint improvements\n\nLogpoints were introduced in the last release and we've improved their ease of use and usefulness:\n\n* IntelliSense (smart completion) has been added for expressions embedded in log messages and conditional breakpoints.\n* When using Logpoints in Node.js debugging, structured objects embedded in the log message appear as expandable object in the Debug Console:\n\n  <video src=\"images/1_23/logpoints.mp4\" title=\"Video showing IntelliSense for Logpoint expressions.\" autoplay loop controls muted></video>\n\n* Logpoints in Node.js debugging now show their source location in the Debug Console:\n\n  ![Logpoint location](images/1_23/logpoint-location.png)\n\n* Since Logpoints and breakpoints can be easily deleted by clicking on their icon in the editor's gutter, you can accidentally lose a log message or a breakpoint condition. To prevent this, VS Code now prompts when a breakpoint with a condition or log message is deleted by clicking in the gutter. The alert gives you the option to disable the breakpoint instead of deleting it.\n* Last but not least, we've added a **New Breakpoint** > **Logpoint...** action to the **Debug** menu.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_23.md"
+}

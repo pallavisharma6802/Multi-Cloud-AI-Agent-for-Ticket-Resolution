@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_review_code_edits__related_resources",
+  "title": "review code edits / Related resources",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related resources\n\n* [Delegate two tasks without mixing their changes](/docs/agents/guides/delegate-two-tasks.md)\n* [Agent sessions](/docs/agents/run/sessions/manage-sessions.md)\n* [Security considerations for using AI in {% data variables.product.prodname_vscode_shortname %}](/docs/agents/run/security.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/review-code-edits.md"
+}

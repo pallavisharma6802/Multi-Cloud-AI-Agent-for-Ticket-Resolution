@@ -1,0 +1,8 @@
+{
+  "id": "api_get_started_wrapping_up__overview",
+  "title": "wrapping up",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "# Wrapping Up\n\nIn the [Your First Extension](/api/get-started/your-first-extension) topic, you learned how to create, run, and debug an extension. In the [Extension Anatomy](/api/get-started/extension-anatomy) topic, you learned fundamental concepts to Visual Studio Code extension development. However, we have only seen the tip of the iceberg, and here are some suggested routes for furthering your VS Code extension development skills.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/get-started/wrapping-up.md"
+}

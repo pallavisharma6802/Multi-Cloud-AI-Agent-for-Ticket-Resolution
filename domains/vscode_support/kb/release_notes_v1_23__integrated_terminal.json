@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_23__integrated_terminal",
+  "title": "v1_23 / Integrated Terminal",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Integrated Terminal\n\n### Multi-root support for terminal splitting\n\nYou will now be able to select the folder to split the terminal into when inside a multi-root workspace. The old behavior can be re-enabled by keybinding the `workbench.action.terminal.splitInActiveWorkspace` command.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_23.md"
+}

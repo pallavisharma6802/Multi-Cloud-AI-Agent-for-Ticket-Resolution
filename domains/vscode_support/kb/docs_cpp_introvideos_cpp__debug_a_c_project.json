@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_introvideos_cpp__debug_a_c_project",
+  "title": "introvideos cpp / Debug a C++ project",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Debug a C++ project\n\nThis video shows you how to customize debug configurations for your C++ project and start a C++ debugging session in {% data variables.product.prodname_vscode_shortname %}.\n\n[![Watch Debug a C++ project in {% data variables.product.prodname_vscode_shortname %} on Microsoft Learn (opens in new tab).](images/introvideos-cpp/video-debug-cpp-project.jpg)](https://learn.microsoft.com/shows/docs-dev-tools/debug-a-c-project-in-vs-code)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/introvideos-cpp.md"
+}

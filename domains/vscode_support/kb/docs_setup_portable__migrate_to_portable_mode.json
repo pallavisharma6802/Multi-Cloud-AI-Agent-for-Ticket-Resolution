@@ -1,0 +1,8 @@
+{
+  "id": "docs_setup_portable__migrate_to_portable_mode",
+  "title": "portable / Migrate to Portable mode",
+  "category": "INSTALLATION",
+  "intent": "installation",
+  "content": "## Migrate to Portable mode\n\nYou can also migrate an existing installation to Portable mode.\n\n### Windows, Linux\n\n1. Download the [{% data variables.product.prodname_vscode_shortname %}](/download) (or [{% data variables.product.prodname_vscode_shortname %} Insiders](/insiders)) ZIP distribution for your platform.\n2. Create the `data` folder as above.\n3. Copy the user data directory `Code` to `data` and rename it to `user-data`:\n    * **Windows** `%APPDATA%\\Code`\n    * **Linux** `$HOME/.config/Code`\n4. Copy the extensions directory to `data`:\n    * **Windows** `%USERPROFILE%\\.vscode\\extensions`\n    * **Linux** `~/.vscode/extensions`\n\nAs an example, here's the desired outcome on **Windows**:\n\n```\n|- VSCode-win32-x64-1.84.2\n|   |- Code.exe (or code executable)\n|   |- data\n|   |   |- user-data\n|   |   |   |- ...\n|   |   |- extensions\n|   |   |   |- ...\n|   |- ...\n```\n\n### macOS\n\n1. Download [{% data variables.product.prodname_vscode_shortname %}](/download) (or [{% data variables.product.prodname_vscode_shortname %} Insiders](/insiders)) for macOS.\n2. Create the `code-portable-data` folder as above.\n3. Copy the user data directory `Code` to `code-portable-data` and rename it to `user-data`:\n    * `$HOME/Library/Application Support/Code`\n4. Copy the extensions directory to `code-portable-data`:\n    * `~/.vscode/extensions`",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/portable.md"
+}

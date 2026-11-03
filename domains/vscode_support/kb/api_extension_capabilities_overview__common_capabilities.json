@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_capabilities_overview__common_capabilities",
+  "title": "overview / Common Capabilities",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Common Capabilities\n\n[Common Capabilities](./common-capabilities) are core pieces of functionality that you can use in any extension.\n\nSome of these capabilities include:\n\n- Registering commands, configurations, keybindings, or context menu items.\n- Storing workspace or global data.\n- Displaying notification messages.\n- Using Quick Pick to collect user input.\n- Open the system file picker to let users select files or folders.\n- Use the Progress API to indicate long-running operations.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-capabilities/overview.md"
+}

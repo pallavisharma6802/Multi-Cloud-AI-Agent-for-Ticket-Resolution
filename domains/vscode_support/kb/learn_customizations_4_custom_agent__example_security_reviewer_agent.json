@@ -1,0 +1,8 @@
+{
+  "id": "learn_customizations_4_custom_agent__example_security_reviewer_agent",
+  "title": "4 custom agent / Example: security reviewer agent",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Example: security reviewer agent\n\nIMAGE PLACEHOLDER \u2014 Agent selected via dropdown or @ mention\n\nOne example is a custom agent designed for security reviews.\n\nWhen activated, this agent focuses specifically on identifying vulnerabilities, auditing for secrets, and analyzing potential risks in your code.\n\nInstead of giving general feedback, it structures its output around security concerns and categorizes findings by severity.\n\nIMAGE PLACEHOLDER \u2014 Chat output showing categorized security findings\n\nThis is a clear example of how an agent changes the behavior of the AI based on its defined role.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/4-custom-agent.md"
+}

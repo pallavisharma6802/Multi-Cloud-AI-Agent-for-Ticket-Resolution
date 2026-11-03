@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_best_practices__plan_first_then_implement",
+  "title": "best practices / Plan first, then implement",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Plan first, then implement\n\nFor complex changes that span multiple files, separate planning from implementation. This approach prevents the AI from solving the wrong problem and avoids spending [AI credits](/docs/agents/concepts/language-models.md#ai-credits-and-model-costs) on code that needs to be thrown away.\n\n1. **Explore.** Use chat for questions or use a subagent to read the relevant code and understand how it works before making changes.\n1. **Plan.** Use the [Plan agent](/docs/agents/run/planning.md) to create a structured implementation plan. Review and refine the plan before executing.\n1. **Implement.** Switch to agent mode and implement from the plan. Include tests or expected outputs so the agent can verify its own work. Run independent sessions that use the Copilot, Claude, or Codex harness in parallel. For managed cloud execution, [start a cloud session](/docs/agents/run/cloud-sandbox-sessions.md) `feature(cloud-sessions)` with the task and its context.\n1. **Review.** Use [checkpoints](/docs/agents/run/review-code-edits.md#edit-requests-and-restore-checkpoints) to review progress, rewind if the agent goes off track, or [request a Copilot code review](https://docs.github.com/en/copilot/concepts/agents/code-review) on the resulting pull request.\n\nFor more information, see the [context engineering workflow](/docs/agents/guides/context-engineering-guide.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/best-practices.md"
+}

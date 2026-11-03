@@ -1,0 +1,8 @@
+{
+  "id": "docs_other_office__create_a_new_office_add_in_project",
+  "title": "office / Create a new Office Add-in project",
+  "category": "REFERENCE",
+  "intent": "reference",
+  "content": "## Create a new Office Add-in project\n\nBefore you can create an Office Add-in, you must set up your development environment. To assist you with tool installation, see [Set up your development environment](https://learn.microsoft.com/office/dev/add-ins/overview/set-up-your-dev-environment).\n\nOnce you have your tools installed, you can create a basic add-in for Excel, OneNote, Outlook, PowerPoint, Project, or Word by completing a [5-minute quick start](https://learn.microsoft.com/office/dev/add-ins/). These quick starts use the [Yeoman Generator for Office Add-ins (also called \"Yo Office\")](https://learn.microsoft.com/office/dev/add-ins/develop/yeoman-generator-overview) to create a Node.js Office Add-in project that can be managed with {% data variables.product.prodname_vscode %} ({% data variables.product.prodname_vscode_shortname %}).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/other/office.md"
+}

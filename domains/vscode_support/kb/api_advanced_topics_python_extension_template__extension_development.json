@@ -1,0 +1,8 @@
+{
+  "id": "api_advanced_topics_python_extension_template__extension_development",
+  "title": "python extension template / Extension development",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Extension development\n\nThe template README goes into detail on the [development cycle support](https://github.com/microsoft/vscode-python-tools-extension-template#debugging) included with the template. The template has commands and configurations so you can build, run, debug, and test your extension.\n\nIf you run into problems during development, there is a [Troubleshooting](https://github.com/microsoft/vscode-python-tools-extension-template#troubleshooting) section to help with common issues.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/advanced-topics/python-extension-template.md"
+}

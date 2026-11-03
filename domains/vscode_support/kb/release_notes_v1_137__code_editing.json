@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_137__code_editing",
+  "title": "v1_137 / Code Editing",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Code Editing\n\n### Smart diff editor layout\n\nChoose a diff layout in the same way across regular diffs, multi-file diffs, and the Agents window **Changes** editor. Open **More Actions** (**...**) > **Diff View**, and then select **Inline**, **Side by Side**, or **Automatic**.\n\nThe **Automatic** option shows which layout is active and adapts as the editor width changes. If you deliberately widen an inline diff by dragging a sash, the diff remains inline while you resize so the content doesn't shift unexpectedly.\n\n<video src=\"images/1_137/smart-diff-layout.mp4\" title=\"Video showing the diff editor preserving its inline layout during a deliberate resize.\" autoplay loop controls muted></video>\n\n### Binary files in multi-file diffs\n\nChanged binary files, such as images, remain visible in multi-file diffs instead of being omitted. The diff shows a **Binary file changed** placeholder in the file's original position. Select **Open Diff** to review the file in the standard diff experience, such as an image diff or applicable custom editor.\n\n![Screenshot showing a binary file placeholder and Open Diff action in a multi-file diff.](images/1_137/binary-files-multi-diff.webp)\n\nMulti-file diffs in editor windows also use the same visual design as multi-file diffs in the Agents window.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_137.md"
+}

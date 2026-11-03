@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_concepts_tools__tool_approval_and_trust",
+  "title": "tools / Tool approval and trust",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Tool approval and trust\n\nTools can edit files, modify your environment, or access external services. {% data variables.product.prodname_vscode_shortname %} provides controls for reviewing and limiting these actions:\n\n* **Approval prompts**: based on your permission level, a tool call can require confirmation before it runs.\n* **URL approval**: when a tool accesses a URL, a two-step process verifies both the request and the response content.\n* **Permission levels**: the [permissions picker](/docs/agents/run/approvals.md#permission-levels) controls how much autonomy the agent has, from requiring manual approval to fully autonomous operation.\n\nReview the tool name and inputs before you approve a call. Learn more about [trust and safety](/docs/agents/concepts/trust-and-safety.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/tools.md"
+}

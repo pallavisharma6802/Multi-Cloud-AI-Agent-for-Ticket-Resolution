@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v0_7_0__c_35",
+  "title": "v0_7_0 / C&#35;",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## C&#35;\nWe have moved to the latest OmniSharp version 1.1.0.\n\nWe also added in early support for quick fixes (aka. lightbulbs) via Roslyn and NRefactory.\n\nQuick fixes are automatically computed when you put the cursor onto a marker; they can also be requested by pressing `kb(editor.action.quickFix)`.\n\n![Quick Fix - Marker](images/0_7_0/QuickFixOnMarker.png)\n\n\nIn the image below you can see the prompt to extract a method from the current selection:\n\n![Quick Fix - Selection](images/0_7_0/QuickFixOnSelection.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_7_0.md"
+}

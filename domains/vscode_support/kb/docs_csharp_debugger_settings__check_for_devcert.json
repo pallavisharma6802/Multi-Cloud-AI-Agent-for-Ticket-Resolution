@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_debugger_settings__check_for_devcert",
+  "title": "debugger settings / Check for DevCert",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Check for DevCert\n\nThis option controls if, on launch, the debugger should check if the computer has a self-signed HTTPS certificate used to develop web projects running on https endpoints. For this, it tries to run `dotnet dev-certs https --check --trust`, if no certs are found, it will prompt the user to suggest creating one. If approved by the user, the extension runs `dotnet dev-certs https --trust` to create a trusted self-signed certificate.\n\nIf unspecified, defaults to true when `serverReadyAction` is set. This option does nothing on Linux, {% data variables.product.prodname_vscode_shortname %} remote, and {% data variables.product.prodname_vscode_shortname %} for the Web scenarios.\n\nYou can override this behavior by setting `checkForDevCert` to false in your `launch.json`.\n\nExample:\n\n```json\n    \"checkForDevCert\": \"false\"\n```\n\n**Availability**\n\n* `launch.json` \u2714\ufe0f\n* `settings.json` \u274c\n* `launchSettings.json` \u2714\ufe0f as `useSSL`",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/debugger-settings.md"
+}

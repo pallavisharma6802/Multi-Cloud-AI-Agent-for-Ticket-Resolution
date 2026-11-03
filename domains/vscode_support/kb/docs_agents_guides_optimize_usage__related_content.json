@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_optimize_usage__related_content",
+  "title": "optimize usage / Related content",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related content\n\n* [AI credits and model costs](/docs/agents/concepts/language-models.md#ai-credits-and-model-costs)\n* [Choose and configure language models](/docs/agent-customization/language-models.md)\n* [Best practices for GitHub Copilot](/docs/agents/best-practices.md)\n* [GitHub Copilot plans](https://docs.github.com/en/copilot/get-started/plans)\n* [Usage-based billing](https://docs.github.com/en/copilot/concepts/billing/usage-based-billing-for-individuals)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/optimize-usage.md"
+}

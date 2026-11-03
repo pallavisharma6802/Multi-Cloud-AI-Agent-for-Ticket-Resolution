@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_custom_agent_file_reference__tool_list_priority",
+  "title": "custom agent file reference / Tool list priority",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Tool list priority\n\nIn Local, a prompt file's `tools` list takes precedence over the custom agent's `tools` list. Other harnesses don't load prompt files. For the full order, see [Tool list priority](/docs/agent-customization/prompt-files.md#tool-list-priority).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/custom-agent-file-reference.md"
+}

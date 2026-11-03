@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_concepts_agent_host__related_resources",
+  "title": "agent host / Related resources",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related resources\n\n* [Remote agent sessions](/docs/agents/run/remote-agent-sessions.md)\n* [Agent harness concepts](/docs/agents/concepts/agent-harnesses.md)\n* [{% data variables.product.prodname_vscode_shortname %} Remote Development architecture](/docs/remote/remote-overview.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/agent-host.md"
+}

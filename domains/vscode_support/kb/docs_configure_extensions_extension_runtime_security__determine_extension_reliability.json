@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_extensions_extension_runtime_security__determine_extension_reliability",
+  "title": "extension runtime security / Determine extension reliability",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Determine extension reliability\n\nBefore you install an extension, you can take various steps to determine if it's reliable. The Visual Studio Marketplace provides you with information about the extension to help you make an informed decision:\n\n* **Ratings & Reviews**: Read what others think about the extension.\n\n* **Q & A**: Review existing questions and the level of the publisher's responsiveness. You can also engage with the extension's publisher if you have concerns.\n\n* **Issues, Repository, and License**: Check if the publisher provided these and if they have the support you expect.\n\n* **Verified Publisher**: Use the blue check mark next to the publisher's name and domain name as an extra signal of trust. The check mark indicates that the publisher has proven domain-name ownership to the Marketplace. It also shows that the Marketplace has verified both the existence of the domain name and the good standing of the publisher on the Marketplace for at least six months.\n\n    ![Verified publisher](images/extension-marketplace/bluecheck.png)\n\n> [!TIP]\n> If you want to enforce which extensions are allowed to be used in your organization, check out how to [configure allowed extensions in {% data variables.product.prodname_vscode_shortname %}](/docs/enterprise/extensions.md#configure-allowed-extensions).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/extensions/extension-runtime-security.md"
+}

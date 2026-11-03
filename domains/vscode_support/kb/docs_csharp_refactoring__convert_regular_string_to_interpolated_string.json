@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_refactoring__convert_regular_string_to_interpolated_string",
+  "title": "refactoring / Convert regular string to interpolated string",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Convert regular string to interpolated string\n\n**What:** Change a regular string to an interpolated string.\n\n**When:** Use when you want to clean up your code and make it more readable.\n\n**How-to:**\n\n1. Place your cursor on the string you want to convert.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select **Convert to interpolated string**.\n\n![Convert to interpolated string before example](images/refactoring/convert-to-interpolated-string-before.png)\n\n![Convert to interpolated string after example](images/refactoring/convert-to-interpolated-string-after.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_106__notebooks",
+  "title": "v1_106 / Notebooks",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notebooks\n\n### Notebook search\n\nNotebooks now support searching across cells. Use key bindings (`kb(notebook.findNext.fromWidget)` and `kb(notebook.findPrevious.fromWidget)`) to navigate to the next and previous match, just like you would in the editor.\n\n<video src=\"images/1_106/notebookSearch.mp4\" title=\"Video showing search in notebook cells.\" autoplay loop controls muted></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_106.md"
+}

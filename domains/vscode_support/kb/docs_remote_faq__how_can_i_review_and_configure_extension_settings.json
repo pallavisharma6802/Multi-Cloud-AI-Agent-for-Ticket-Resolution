@@ -1,0 +1,8 @@
+{
+  "id": "docs_remote_faq__how_can_i_review_and_configure_extension_settings",
+  "title": "faq / How can I review and configure extension settings?",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## How can I review and configure extension settings?\n\nAs with [other parts of {% data variables.product.prodname_vscode %}](/docs/configure/settings.md), you can customize each of the Remote Development extensions through their settings. Using Dev Containers as an example, you may review a list of all Dev Containers settings by opening the extension in the Extensions view (`kb(workbench.view.extensions)`), and navigating to **Feature Contributions**:\n\n![List of settings in Feature Contributions](images/faq/feature-contributions.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/faq.md"
+}

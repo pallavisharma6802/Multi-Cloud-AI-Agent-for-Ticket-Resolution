@@ -1,0 +1,8 @@
+{
+  "id": "docs_chat_chat_overview__image_carousel",
+  "title": "chat overview / Image carousel",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Image carousel\n\nYou can select images or videos in chat responses to open a dedicated carousel view. Media files from tool results (such as the integrated browser, Playwright, or other MCP servers) and inlined in assistant messages are all accessible from the carousel.\n\n![Screenshot showing the image carousel view with multiple images.](images/chat-sessions/image-carousel.png)\n\nTo disable the image carousel, set `setting(imageCarousel.chat.enabled)` to `false`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/chat/chat-overview.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_compare_models__prerequisites",
+  "title": "compare models / Prerequisites",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Prerequisites\n\nBefore you start, make sure you have:\n\n* Met the [{% data variables.copilot.agents_window %} prerequisites](/docs/agents/run/agents-window.md#prerequisites).\n* Access to an eligible Agent Host harness.\n\nFor a folderless comparison, use a harness that supports [quick chats](/docs/agents/run/agents-window.md#start-a-quick-chat). Folderless comparisons run independent chats without worktrees, a judge, or a synthesizer.\n\nThe models and harnesses available for comparison depend on your setup, credentials, and enterprise policies. Learn how to [configure and choose an agent harness](/docs/agents/run/agent-harnesses.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/compare-models.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_ai_language_model_chat_provider__getting_started",
+  "title": "language model chat provider / Getting started",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Getting started\n\nYou can get started with a [basic example project](https://github.com/microsoft/vscode-extension-samples/blob/main/chat-model-provider-sample).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/language-model-chat-provider.md"
+}

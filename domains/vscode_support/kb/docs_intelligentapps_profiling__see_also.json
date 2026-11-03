@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_profiling__see_also",
+  "title": "profiling / See also",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## See also\n\n- [How to measure performance of AI models running locally](https://learn.microsoft.com/en-us/windows/ai/npu-devices/#how-to-measure-performance-of-ai-models-running-locally-on-the-device-npu)\n- [Performance Monitor](https://learn.microsoft.com/en-us/troubleshoot/windows-server/support-tools/troubleshoot-issues-performance-monitor)\n- [ONNX Runtime Tracing](https://onnxruntime.ai/docs/performance/tune-performance/logging_tracing.html)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/profiling.md"
+}

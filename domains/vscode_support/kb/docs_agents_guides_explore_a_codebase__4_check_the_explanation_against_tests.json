@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_explore_a_codebase__4_check_the_explanation_against_tests",
+  "title": "explore a codebase / 4. Check the explanation against tests",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## 4. Check the explanation against tests\n\nTests can provide examples of intended behavior and reveal cases that the implementation summary missed:\n\n```prompt\nFind tests for the request path we traced. List the inputs and expected\nresults they check, with source references. Identify boundary cases\nthat are not covered. Do not claim that the tests pass unless they\nhave been run in this environment.\n```\n\nCompare the assertions with the explanation and project documentation. A test name alone isn't evidence that the test checks the behavior.\n\nIf you need runtime confirmation, first review the project's setup instructions and proposed test command. Only run code from a repository you trust, using appropriate local test resources. Record the actual result and any environment limitations. Don't treat an unavailable service or an unexecuted test as a passing check.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/explore-a-codebase.md"
+}

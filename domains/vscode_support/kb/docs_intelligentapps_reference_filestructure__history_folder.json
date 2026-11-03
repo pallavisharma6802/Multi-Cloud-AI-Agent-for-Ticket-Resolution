@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_reference_filestructure__history_folder",
+  "title": "FileStructure / History folder",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## History folder\n\nThe timestamp in the `history` folder name indicates the run time, like: `April 14, 2025 at 16:10:46`.\n\n- `model`: model files.\n- `model_config.json`: contains details about the model.\n- `footprints.json`, `output_footprint.json`, `run_history.txt`: Olive output.\n- `history.config`, `history.config.user`: history configurations used by Model Conversion.\n- `inference_sample.ipynb`: sample to test the output model.\n- `log.txt`: contain logs.\n- `metrics.json`: contain evaluation result if evaluation is enabled.\n- `olive_config.json`: the config used to run the conversion.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/reference/FileStructure.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_ai_mcp__get_started_to_create_an_mcp_server",
+  "title": "mcp / Get started to create an MCP server",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Get started to create an MCP server\n\nVS Code has all the tools you need to develop your own MCP server. While MCP servers can be written in any language that can handle `stdout`, the MCP's official SDKs are a good place to start:\n\n- [TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk)\n- [Python SDK](https://github.com/modelcontextprotocol/python-sdk)\n- [Java SDK](https://github.com/modelcontextprotocol/java-sdk)\n- [Kotlin SDK](https://github.com/modelcontextprotocol/kotlin-sdk)\n- [C# SDK](https://github.com/modelcontextprotocol/csharp-sdk)\n\nYou might also find the [MCP for Beginners curriculum](https://github.com/microsoft/mcp-for-beginners) helpful to get started with building your first MCP server.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/mcp.md"
+}

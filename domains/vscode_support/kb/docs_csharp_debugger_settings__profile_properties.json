@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_debugger_settings__profile_properties",
+  "title": "debugger settings / Profile properties",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Profile properties\n\n* `commandLineArgs` - The arguments to pass to the target being run.\n* `executablePath` - An absolute or relative path to the executable.\n* `workingDirectory` - Sets the working directory of the command.\n* `launchBrowser` - Set to `true` if the browser should be launched.\n* `applicationUrl` - A semi-colon delimited list of URL(s) to configure for the web server.\n* `sslPort` - The SSL port to use for the web site.\n* `httpPort` - The HTTP port to use for the web site.\n\n# List of configurable options\n\nBelow are common options you may want to change while debugging.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/debugger-settings.md"
+}

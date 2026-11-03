@@ -1,0 +1,8 @@
+{
+  "id": "api_references_theme_color__action_colors",
+  "title": "theme color / Action colors",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Action colors\n\nA set of colors to control the interactions with actions across the workbench.\n\n- `toolbar.hoverBackground`: Toolbar background when hovering over actions using the mouse\n- `toolbar.hoverOutline`: Toolbar outline when hovering over actions using the mouse\n- `toolbar.activeBackground`: Toolbar background when holding the mouse over actions\n- `editorActionList.background`: Action List background color.\n- `editorActionList.foreground`: Action List foreground color.\n- `editorActionList.focusForeground`: Action List foreground color for the focused item.\n- `editorActionList.focusBackground`: Action List background color for the focused item.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_17__source_control",
+  "title": "v1_17 / Source Control",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Source Control\n\n### Improved multiple SCM support\n\nContinuous iteration on the multiple source control provider support UX has led us to a master-detail implementation.\n\n![multiple scm providers](images/1_17/scm.png)\n\nThere is a new **SOURCE CONTROL PROVIDERS** section which gives you an overview when you have multiple active repositories. These can be contributed by several SCM providers; for example, you can have Git repositories side-by-side with Azure DevOps Server workspaces. As you select repositories in this view, they get highlighted underneath. You can use <kbd>ctrl+click</kbd> or <kbd>shift+click</kbd> to select multiple repositories. They will appear as split views underneath.\n\n### Increased Performance\n\nWe did quite a bit of performance work around the Source Control extension API and UI. Overall, the experience should be much smoother especially in repositories with a large number of objects.\n\n### Git stash commands\n\nYou might have missed this in the last release, but thanks to a PR from [Krzysztof Cie\u015blak (@Krzysztof-Cieslak)](https://github.com/Krzysztof-Cieslak), VS Code has Git `stash` commands in the **Source Control** view **More Actions** (...) dropdown.\n\n![git stash commands](images/1_17/git-stash.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_17.md"
+}

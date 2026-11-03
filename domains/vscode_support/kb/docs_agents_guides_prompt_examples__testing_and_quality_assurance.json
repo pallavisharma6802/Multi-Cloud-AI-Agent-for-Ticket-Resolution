@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_prompt_examples__testing_and_quality_assurance",
+  "title": "prompt examples / Testing and quality assurance",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Testing and quality assurance\n\nUse **Agent** to generate tests or fix failing tests.\n\n```prompt\nAdd unit tests for the user service.\n```\n\n```prompt\nFix the failing tests #testFailure\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/prompt-examples.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_98__accessibility",
+  "title": "v1_98 / Accessibility",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Accessibility\n\n### Copilot Edits accessibility\n\nWe made Copilot Edits much more accessible.\n\n* There are now audio signals for files with modifications and for changed regions (insertions, modifications, and deletions).\n* The accessible diff viewer is now available for modified files. Just like in diff editors, select `kb(chatEditor.action.showAccessibleDiffView)` to enable it.\n\n### `activeEditorState` window title variable\n\nWe have a new `setting(window.title)` variable, `activeEditorState`, to indicate editor information such as modified state, the number of problems, and when a file has pending Copilot Edits to screen reader users. When in Screen Reader Optimized mode, this is appended by default and can be disabled with `setting(accessibility.windowTitleOptimized:false)`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_98.md"
+}

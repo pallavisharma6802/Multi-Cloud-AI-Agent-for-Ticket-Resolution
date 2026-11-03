@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_config_clang_mac__next_steps",
+  "title": "config clang mac / Next steps",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Next steps\n\n- Explore the [{% data variables.product.prodname_vscode_shortname %} User Guide](/docs/editing/codebasics.md).\n- Review the [Overview of the C++ extension](/docs/languages/cpp.md)\n- Create a new workspace, copy your .json files to it, adjust the necessary settings for the new workspace path, program name, and so on, and start coding!",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/config-clang-mac.md"
+}

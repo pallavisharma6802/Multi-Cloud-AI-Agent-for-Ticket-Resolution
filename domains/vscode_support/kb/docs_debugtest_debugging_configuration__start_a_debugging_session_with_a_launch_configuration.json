@@ -1,0 +1,8 @@
+{
+  "id": "docs_debugtest_debugging_configuration__start_a_debugging_session_with_a_launch_configuration",
+  "title": "debugging configuration / Start a debugging session with a launch configuration",
+  "category": "DEBUGGING",
+  "intent": "debugging",
+  "content": "## Start a debugging session with a launch configuration\n\nTo start a saved configuration:\n\n1. Open the **Run and Debug** view.\n\n1. Select a configuration from the configuration dropdown.\n\n1. Start debugging with `kb(workbench.action.debug.start)`, or select **Start Debugging**.\n\nYou can also run **Debug: Select and Start Debugging** from the Command Palette (`kb(workbench.action.showCommands)`) and then select a configuration.\n\n<!-- TODO: Capture an updated screenshot showing the configuration dropdown with multiple launch and attach configurations. -->",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/debugging-configuration.md"
+}

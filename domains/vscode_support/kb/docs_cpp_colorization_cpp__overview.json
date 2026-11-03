@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_colorization_cpp__overview",
+  "title": "colorization cpp",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Enhanced colorization\n\nThe {% data variables.product.prodname_vscode %} C/C++ extension now supports semantic colorization, when IntelliSense is enabled.  Use of enhanced colorization is controlled by the C_Cpp.enhancedColorization setting.  This setting is enabled by default.\n\n```json\n\"C_Cpp.enhancedColorization\": \"enabled\"\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/colorization-cpp.md"
+}

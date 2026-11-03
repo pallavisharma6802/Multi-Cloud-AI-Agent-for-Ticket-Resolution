@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v0_9_0__customization_adding_themes",
+  "title": "v0_9_0 / Customization - Adding Themes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Customization - Adding Themes\nYou can also add new TextMate theme files (.tmTheme) to your VS Code installation.\n\n[ColorSublime](https://colorsublime.github.io) has hundreds of existing TextMate themes to choose from.  Pick a theme you like and copy the Download link to use in the Yeoman generator.  The 'code' generator will prompt you for the URL or file location of the .tmTheme file, the theme name as well as other information for the theme.\n\n![yo code theme](images/0_9_0/yocodetheme.png)\n\nCopy the generated theme folder to a new folder under `.vscode/extensions` and restart VS Code.\n\nOpen the Color Theme picker theme with `File | Preferences | Color Theme` and you can see your theme in the dropdown.  Arrow up and down to see a live preview of your theme.\n\n![my theme](images/0_9_0/mytheme.png)\n\nWhile building this, the VS Code team contributed a [Pull Request](https://github.com/atom/node-oniguruma/pull/40) to [node-oniguruma](https://github.com/atom/node-oniguruma) that results in a nice performance improvement when colorizing/tokenizing. Both the Atom and VS Code IDEs profit from this improvement.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_9_0.md"
+}

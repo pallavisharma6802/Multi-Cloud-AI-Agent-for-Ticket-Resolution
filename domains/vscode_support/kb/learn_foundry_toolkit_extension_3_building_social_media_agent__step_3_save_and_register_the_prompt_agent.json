@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_3_building_social_media_agent__step_3_save_and_register_the_prompt_agent",
+  "title": "3 building social media agent / Step 3: Save and Register the Prompt Agent",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Step 3: Save and Register the Prompt Agent\n\nAfter defining instructions, save the agent to your Foundry project so it appears in project resources. This turns a temporary editing session into a trackable artifact the team can revisit.\n\nIt also gives you a clean base version before adding tools.\n\nSelect the Save button. It should give you two options: Save to Foundry or Save to local file. Choose **Save to Foundry**.\n\n![Save to Microsoft Foundry](../images/foundry-toolkit/ch3-save.png)\n\n**Fig 03: Save the agent to project resources for reuse and versioning.**\n\nOnce we've saved the agent, we can add tools to connect it to authoritative Microsoft documentation.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/3-building-social-media-agent.md"
+}

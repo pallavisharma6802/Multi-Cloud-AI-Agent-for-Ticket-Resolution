@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_markdown__next_steps",
+  "title": "markdown / Next steps",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Next steps\n\nRead on to find out about:\n\n* [CSS, SCSS, and Less](/docs/languages/css.md) - Want to edit your CSS? {% data variables.product.prodname_vscode_shortname %} has great support for CSS, SCSS, and Less editing.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/markdown.md"
+}

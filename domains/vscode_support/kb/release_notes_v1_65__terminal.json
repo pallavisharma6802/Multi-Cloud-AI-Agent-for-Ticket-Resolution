@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_65__terminal",
+  "title": "v1_65 / Terminal",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Terminal\n\n### Multi-line paste warning\n\nA dialog now shows by default when pasting multiple lines in terminals when the shell does not support multi-line. This warning is displayed for bracketed paste mode and for PowerShell when we hand off `Ctrl+V` directly to the shell. There is a **Do not ask me again** checkbox on the dialog to easily disable the feature.\n\n### Terminal link improvements\n\nThe implementation for terminal links had a large refactor this release. This simplified and improved maintainability of the feature but also brought:\n\n* Link highlights work again.\n* Caching of resolved links, reducing latency for certain links to show up.\n* **Workspace Search** links are now handled by the same code as validated links, for more consistency and improving line/column recognition.\n* Several bug fixes.\n\n### Open file link command improvements\n\nThe **Open Last File Link** and **Open Detected Link...** commands introduced last version now exclude folders, which should make them more useful.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_65.md"
+}

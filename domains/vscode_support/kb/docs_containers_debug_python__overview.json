@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_debug_python__overview",
+  "title": "debug python",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "# Debug Python within a container\n\nWhen adding Docker files to a Python project, tasks and launch configurations are added to enable debugging the application within a container. To accommodate the various scenarios of Python projects, some apps may require additional configuration.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/debug-python.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_nodejs_angular_tutorial__overview",
+  "title": "angular tutorial",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Using Angular in {% data variables.product.prodname_vscode %}\n\n[Angular](https://angular.io/) is a popular web development platform developed and maintained by Google. Angular uses [TypeScript](/docs/languages/typescript.md) as its main programming language. The {% data variables.product.prodname_vscode %} editor supports TypeScript IntelliSense and code navigation out of the box, so you can do Angular development without installing any other extension.\n\n![Welcome to app](images/angular/Welcome-to-app.png)\n\n>**Note**: To help get you started with Angular development, you can use the [Angular profile template](/docs/configure/profiles.md#angular-profile-template) that includes useful extensions,  settings, and code snippets.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/angular-tutorial.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_remote_ssh__overview",
+  "title": "ssh",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "# Remote Development using SSH\n\nThe **{% data variables.product.prodname_vscode %} Remote - SSH** extension allows you to open a remote folder on any remote machine, virtual machine, or container with a running SSH server and take full advantage of {% data variables.product.prodname_vscode_shortname %}'s feature set. Once connected to a server, you can interact with files and folders anywhere on the remote filesystem.\n\nNo source code needs to be on your local machine to gain these benefits since the extension runs commands and other extensions directly on the remote machine.  The extension will install {% data variables.product.prodname_vscode_shortname %} Server on the remote OS; the server is independent of any existing {% data variables.product.prodname_vscode_shortname %} installation on the remote OS.\n\n![SSH Architecture](images/ssh/architecture-ssh.png)\n\nThis lets {% data variables.product.prodname_vscode_shortname %} provide a **local-quality development experience** - including full IntelliSense (completions), code navigation, and debugging - **regardless of where your code is hosted**.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/ssh.md"
+}

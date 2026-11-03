@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_introvideos_csharp__c_project_management",
+  "title": "introvideos csharp / C# project management",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## C# project management\n\nThis video shows you how to navigate your C# project using the Solution Explorer in C# Dev Kit.\n\n[![Watch C# Project Management in {% data variables.product.prodname_vscode_shortname %} on YouTube (opens in new tab).](images/introvideos-csharp/youtube-HnP6pkE8Tjs.jpg)](https://www.youtube.com/watch?v=HnP6pkE8Tjs)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/introvideos-csharp.md"
+}

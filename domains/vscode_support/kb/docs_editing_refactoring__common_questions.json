@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_refactoring__common_questions",
+  "title": "refactoring / Common questions",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Common questions\n\n### Why don't I see any light bulbs when there are errors in my code?\n\nLight bulbs (Code Actions) are only shown when the cursor is over the text showing the error. Hovering over the text shows the error description, but you need to move the cursor or select text to see light bulbs for Quick Fixes and refactorings.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/refactoring.md"
+}

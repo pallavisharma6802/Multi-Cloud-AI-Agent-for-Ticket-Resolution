@@ -1,0 +1,8 @@
+{
+  "id": "docs_agent_customization_overview__related_resources",
+  "title": "overview / Related resources",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related resources\n\n* [Customization concepts](/docs/agents/concepts/customization.md)\n* [Configure AI for your codebase](/docs/agents/guides/customize-copilot-guide.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/overview.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_navigate_edit__peek_implementations",
+  "title": "navigate edit / Peek Implementations",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Peek Implementations\n\nYou can take a quick, inline view at how and where a class, method, or symbol was implemented using the **Peek Implementations** feature.\n\nTo view the list of implementation locations, place the cursor on the symbol anywhere it's used in your source code and then press `kb(editor.action.peekImplementation)`.  Alternatively, you can choose **Peek Implementations** from the context menu (right-click, then choose **Peek > Peek Implementations**).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/navigate-edit.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_microsoft_fabric_quickstart__getting_started",
+  "title": "microsoft fabric quickstart / Getting started",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Getting started\n\nOnce you have the extensions installed and signed in, you can start working with Fabric workspaces and items. In the Command Palette (`kb(workbench.action.showCommands)`), type **Fabric** to list the commands that are specific to Microsoft Fabric.\n\n![Diagram that shows all microsoft Fabric commands](images/microsoft-fabric/fabric-command-palette.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/microsoft-fabric-quickstart.md"
+}

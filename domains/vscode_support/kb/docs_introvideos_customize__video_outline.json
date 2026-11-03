@@ -1,0 +1,8 @@
+{
+  "id": "docs_introvideos_customize__video_outline",
+  "title": "customize / Video outline",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Video outline\n\n* Anatomy of the {% data variables.product.prodname_vscode_shortname %} UI\n* Implementing themes\n* Activity Bar\n* Main editor\n* Status Bar\n* Configure the font size\n* Using profiles",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/introvideos/customize.md"
+}

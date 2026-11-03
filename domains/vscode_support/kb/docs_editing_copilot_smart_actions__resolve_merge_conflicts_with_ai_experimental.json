@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_copilot_smart_actions__resolve_merge_conflicts_with_ai_experimental",
+  "title": "copilot smart actions / Resolve merge conflicts with AI (Experimental)",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Resolve merge conflicts with AI (Experimental)\n\nUse AI to help you resolve Git merge conflicts. Select the **Resolve Merge Conflict with AI** button in the editor to open the {% data variables.copilot.chat_view %} and start an agentic flow to help you resolve the merge conflict. The merge base and changes from each branch are provided as context for the AI.\n\n![Screenshot of the proposed merge conflict resolution in the editor.](images/copilot-smart-actions/ai-merge-conflict-resolution.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/copilot-smart-actions.md"
+}

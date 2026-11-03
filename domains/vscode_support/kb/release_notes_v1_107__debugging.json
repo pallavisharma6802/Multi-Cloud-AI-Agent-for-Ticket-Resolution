@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_107__debugging",
+  "title": "v1_107 / Debugging",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debugging\n\n### Attach variables to chat\n\nYou can now attach variables, scopes, and expressions to your chat context in VS Code. You can do this by right clicking on data in the **Variables** and **Watch** views, or by using the **Add Context** button in chat.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_107.md"
+}

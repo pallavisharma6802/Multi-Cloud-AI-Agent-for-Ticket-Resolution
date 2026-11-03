@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_140__code_editing",
+  "title": "v1_140 / Code Editing",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Code Editing\n\n### New option to control selection text matching case sensitivity\n\n**Setting**: `setting(editor.selectedTextMatchMode)`\n\nWe have added a new setting `setting(editor.selectedTextMatchMode)` to control the case sensitivity of selection matching.\n\nThe default value, `findOptions`, means selection matching sensitivity is tied to the Find widget, as was previously the case. There are two other values `caseSensitive` and `caseInsensitive`, which match case-sensitive and case-insensitive selections respectively.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_140.md"
+}

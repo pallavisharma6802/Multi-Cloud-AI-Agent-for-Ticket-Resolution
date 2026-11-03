@@ -1,0 +1,8 @@
+{
+  "id": "learn_customizations_7_customization_features_explained__building_a_comparison_chart",
+  "title": "7 customization features explained / Building a comparison chart",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Building a comparison chart\n\nTo go deeper, you can ask Copilot to generate a comparison chart.\n\n![Screenshot of Copilot Chat generating a comparison chart of VS Code customization features](../images/customizations/ep-7-2-comparisons-by-copilot.png)\n\nThis chart can include:\n\n- what each feature is\n- when to use it\n- file types or formats\n- scope (user, workspace, etc.)\n\nThis turns abstract concepts into something you can scan and reference quickly.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/7-customization-features-explained.md"
+}

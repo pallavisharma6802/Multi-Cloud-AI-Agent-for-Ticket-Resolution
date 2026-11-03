@@ -1,0 +1,8 @@
+{
+  "id": "api_references_theme_color__extensions_colors",
+  "title": "theme color / Extensions colors",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Extensions colors\n\n- `extensionButton.prominentForeground`: Extension view button foreground color (for example **Install** button).\n- `extensionButton.prominentBackground`: Extension view button background color.\n- `extensionButton.prominentHoverBackground`: Extension view button background hover color.\n- `extensionButton.background`: Button background color for extension actions.\n- `extensionButton.foreground`: Button foreground color for extension actions.\n- `extensionButton.hoverBackground`: Button background hover color for extension actions.\n- `extensionButton.separator`: Button separator color for extension actions.\n- `extensionButton.border`: Button border color for extension actions.\n- `extensionBadge.remoteBackground`: Background color for the remote badge in the extensions view.\n- `extensionBadge.remoteForeground`: Foreground color for the remote badge in the extensions view.\n- `extensionIcon.starForeground`: The icon color for extension ratings.\n- `extensionIcon.verifiedForeground`: The icon color for extension verified publisher.\n- `extensionIcon.preReleaseForeground`: The icon color for pre-release extension.\n- `extensionIcon.sponsorForeground`: The icon color for extension sponsor.\n- `extensionIcon.privateForeground`: The icon color for private extensions.\n- `mcpIcon.starForeground`: The icon color for mcp starred.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+}

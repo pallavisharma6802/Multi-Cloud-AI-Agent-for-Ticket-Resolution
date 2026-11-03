@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_compare_models__synthesize_a_new_implementation",
+  "title": "compare models / Synthesize a new implementation",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Synthesize a new implementation\n\nFor repository comparisons, if you configured both a judge and a synthesizer, select **Synthesize** after reviewing the verdict. Add optional instructions to focus the synthesis on specific strengths, constraints, or corrections.\n\nThe synthesizer creates a new grouped session in another isolated worktree. It uses the judge verdict and strengths from the attempts as context for a new implementation. It doesn't modify the recommended attempt or your original working tree.\n\nSynthesis doesn't automatically merge changes from the attempts or the synthesized result. Review and validate the new implementation as a separate result.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/compare-models.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_4_building_hosted_agent__why_move_to_a_code_based_agent",
+  "title": "4 building hosted agent / Why Move to a Code-Based Agent",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Why Move to a Code-Based Agent\n\nTeams choose coded agents when they need deeper control than a low-code builder can provide. That usually includes business-specific logic, deterministic configuration files, repeatable deployment, and direct integration with application code.\n\nIn other words, code-based agents are not about complexity for its own sake. They are about control, reliability, and team-scale maintainability.\n\nIf you have ever asked, \"How do we make this agent predictable across environments?\" this is the workflow that answers that question.\n\n- **Control**: Version prompts, runtime settings, and dependencies in source control.\n- **Extensibility**: Add custom logic and richer tool orchestration patterns.\n- **Repeatability**: Reproduce environments through config and infrastructure files.\n- **Production fit**: Deploy and operate through a hosted agent lifecycle.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
+}

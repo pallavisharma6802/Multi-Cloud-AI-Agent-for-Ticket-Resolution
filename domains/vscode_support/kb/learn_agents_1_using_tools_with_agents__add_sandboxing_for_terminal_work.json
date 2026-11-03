@@ -1,0 +1,8 @@
+{
+  "id": "learn_agents_1_using_tools_with_agents__add_sandboxing_for_terminal_work",
+  "title": "1 using tools with agents / Add sandboxing for terminal work",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Add sandboxing for terminal work\n\nAgent sandboxing adds OS-level isolation for terminal commands run by the agent. It limits file system and network access, and sandboxed commands are auto-approved because they already run in a controlled environment.\n\nEnable it with `setting(chat.agent.sandbox.enabled)`. On macOS and Linux, you can choose full isolation or file system isolation with network access.\n\nSandboxing is a good fit when the agent needs terminal access but should not reach beyond the workspace or approved domains. For example, use sandboxing before asking the agent to run a generated script, start a local tool, or inspect a project with unfamiliar package scripts.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/1-using-tools-with-agents.md"
+}

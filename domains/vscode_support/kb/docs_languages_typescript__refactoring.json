@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_typescript__refactoring",
+  "title": "typescript / Refactoring",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Refactoring\n\n{% data variables.product.prodname_vscode_shortname %} includes some handy refactorings for TypeScript such as **Extract function** and **Extract constant**. Just select the source code you'd like to extract and then click on the light bulb in the gutter or press (`kb(editor.action.quickFix)`) to see available refactorings.\n\n![TypeScript refactoring](images/typescript/refactorings.png)\n\nSee [Refactoring TypeScript](/docs/typescript/typescript-refactoring.md) for more information about refactorings and how you can configure keyboard shortcuts for individual refactorings.\n\n### Rename\n\nOne of the simplest refactorings is to rename a method or variable. Press `kb(editor.action.rename)` to rename the symbol under the cursor across your TypeScript project:\n\n![Renaming a method](images/typescript/rename.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/typescript.md"
+}

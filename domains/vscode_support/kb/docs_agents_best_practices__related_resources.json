@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_best_practices__related_resources",
+  "title": "best practices / Related resources",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related resources\n\n* [Context engineering guide](/docs/agents/guides/context-engineering-guide.md)\n* [Optimize AI credit usage](/docs/agents/guides/optimize-usage.md)\n* [Customize agent behavior in {% data variables.product.prodname_vscode_shortname %}](/docs/agent-customization/overview.md)\n* [Cheat sheet](/docs/agents/reference/ai-features-cheat-sheet.md)\n* [GitHub Copilot security](/docs/agents/run/security.md)\n* [Best Practices for using GitHub Copilot](https://docs.github.com/en/copilot/using-github-copilot/best-practices-for-using-github-copilot) in the GitHub Copilot documentation",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/best-practices.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_get_started_wrapping_up__guides_samples",
+  "title": "wrapping up / Guides & Samples",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Guides & Samples\n\nWe have a great collection of sample extensions that you can adapt from, and some of them include a detailed guide that explains the source code. You can find all samples and guides in the [Extension Guide Listing](/api/extension-guides/overview) or the [vscode-extension-samples](https://github.com/microsoft/vscode-extension-samples) repository.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/get-started/wrapping-up.md"
+}

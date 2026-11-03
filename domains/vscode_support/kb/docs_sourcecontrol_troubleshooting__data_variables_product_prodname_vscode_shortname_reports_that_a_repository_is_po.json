@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_troubleshooting__data_variables_product_prodname_vscode_shortname_reports_that_a_repository_is_po",
+  "title": "troubleshooting / {% data variables.product.prodname_vscode_shortname %} reports that a repository is potentially unsafe",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## {% data variables.product.prodname_vscode_shortname %} reports that a repository is potentially unsafe\n\nGit blocks operations in a repository owned by a different operating-system user. This protects you from running Git configuration or hooks from an untrusted repository.\n\nSelect **Manage Unsafe Repositories** in the Source Control view or notification. Review the repository location before you mark it as safe. Marking a repository as safe adds its location to Git's [`safe.directory` configuration](https://git-scm.com/docs/git-config#Documentation/git-config.txt-safedirectory).\n\nOn Windows, this can happen when you clone a repository from an application running as administrator and later open it from an application that isn't running as administrator.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/troubleshooting.md"
+}

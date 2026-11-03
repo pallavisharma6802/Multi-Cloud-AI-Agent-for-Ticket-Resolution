@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_105__tasks",
+  "title": "v1_105 / Tasks",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Tasks\n\n### OS notification for long-running task completion\n\n**Setting**: `setting(task.notifyWindowOnTaskCompletion)`\n\nWhen a user-initiated, long-running task completes while the VS Code window is not focused, an OS badge and notification toast are shown. Selecting the notification focuses the window where the task completed. You can configure this behavior with the `setting(task.notifyWindowOnTaskCompletion)` setting.\n\n![Screenshot of an OS notification that shows a task completion message saying Task \"build\" completed in 1 minute 21 seconds.](images/1_105/task-notification.png)\n\n### Task terminal title persistence\n\n**Setting**: `setting(terminal.integrated.tabs.title)`\n\nYou can configure the title of terminal tabs with the `setting(terminal.integrated.tabs.title)` setting. By default, the value is `${process}`, which shows the name of the process running in the terminal.\n\nFor tasks, this means that the terminal title might change when the task starts a different process, which can be confusing. To address this, we now persist the task's name as the terminal title when a task is started.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_105.md"
+}

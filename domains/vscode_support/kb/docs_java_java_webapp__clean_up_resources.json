@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_webapp__clean_up_resources",
+  "title": "java webapp / Clean up resources",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Clean up resources\n\n1. To delete your web app, navigate to the **RESOURCES** Explorer and locate the **App Services** item.\n\n2. Right-click the web app you'd like to delete and click **Delete**.\n\n![Delete the Web App Resources](images/java-webapp/delete-webapp.png)\n\n3. To delete your app service plan or resource group, visit the [Azure portal](https://portal.azure.com) and manually delete the resources under your subscription.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-webapp.md"
+}

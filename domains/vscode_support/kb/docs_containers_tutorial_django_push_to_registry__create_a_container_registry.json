@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_tutorial_django_push_to_registry__create_a_container_registry",
+  "title": "tutorial django push to registry / Create a container registry",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Create a container registry\n\nCreate a container registry to push images to. For more information about how to authenticate to and work with registries, see [Using container registries](/docs/containers/quickstart-container-registries.md).\n\nMake sure that the registry endpoint you created is visible under **Registries** in the **Container Explorer** of {% data variables.product.prodname_vscode_shortname %}:\n\n![Container Explorer in {% data variables.product.prodname_vscode_shortname %} showing registries](images/quickstarts/python-django-registries.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/tutorial-django-push-to-registry.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_working_with_extensions_testing_extension__next_steps",
+  "title": "testing extension / Next steps",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Next steps\n\n- [Continuous Integration](/api/working-with-extensions/continuous-integration) - Run your extension tests in a Continuous Integration service such as Azure DevOps.\n- [Workspace Trust Extension Guide](/api/extension-guides/workspace-trust) - Learn how to declare and handle workspace trust in your extension.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/working-with-extensions/testing-extension.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_89__debug",
+  "title": "v1_89 / Debug",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debug\n\n### JavaScript Debugger\n\nThe JavaScript debugger now automatically looks for binaries that appear in the `node_modules/.bin` folder in the `runtimeExecutable` configuration. Now, it resolves them by name automatically.\n\nNotice in the following example that you can just reference `mocha`, without having to specify the full path to the binary.\n\n```diff\n{\n\t\"name\": \"Run Tests\",\n\t\"type\": \"node\",\n\t\"request\": \"launch\",\n-\t\"runtimeExecutable\": \"${workspaceFolder}/node_modules/.bin/mocha\",\n-\t\"windows\": {\n-\t\t\"runtimeExecutable\": \"${workspaceFolder}/node_modules/.bin/mocha.cmd\"\n-\t},\n+\t\"runtimeExecutable\": \"mocha\",\n}\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_89.md"
+}

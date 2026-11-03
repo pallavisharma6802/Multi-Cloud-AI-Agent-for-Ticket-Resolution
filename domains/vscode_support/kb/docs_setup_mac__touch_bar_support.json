@@ -1,0 +1,8 @@
+{
+  "id": "docs_setup_mac__touch_bar_support",
+  "title": "mac / Touch Bar support",
+  "category": "INSTALLATION",
+  "intent": "installation",
+  "content": "## Touch Bar support\n\n{% data variables.product.prodname_vscode_shortname %} adds these Touch Bar actions on supported Macs:\n\n* Editor history navigation.\n* The Debug toolbar for controlling the debugger.\n\n![Screenshot showing {% data variables.product.prodname_vscode_shortname %} Touch Bar actions on macOS.](images/mac/touchbar.gif)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/mac.md"
+}

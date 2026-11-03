@@ -1,0 +1,8 @@
+{
+  "id": "docs_remote_remote_overview__github_codespaces",
+  "title": "remote overview / GitHub Codespaces",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## GitHub Codespaces\n\n[GitHub Codespaces](/docs/remote/codespaces.md) provides remote development environments that are managed for you. You can configure and create a development environment hosted in the cloud, which is spun up and available when you need it.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/remote-overview.md"
+}

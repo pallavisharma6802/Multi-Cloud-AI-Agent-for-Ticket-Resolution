@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_128__editor_experience",
+  "title": "v1_128 / Editor Experience",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Editor Experience\n\n### Configurable placement of integrated browser tabs\n\n**Setting**: `setting(workbench.browser.newTabPlacement)`\n\nKeeping tabs organized can be a challenge. With this release, you can configure a location for browser tabs to open via the `setting(workbench.browser.newTabPlacement)` setting. The setting can take the following values:\n\n* **`activeGroup`** (default): Browser tabs always open in the active editor group.\n* **`sideGroup`**: Browser tabs open in a dedicated group to the side. This group is locked so only browser tabs open there.\n* **`window`**: Browser tabs open in a dedicated auxiliary window. This window group is also locked to only browser tabs.\n\nYou can still reorganize tabs as desired, and pages opened from an existing tab (for example, by selecting a link with `Ctrl`) open in the same group as the parent.\n\n### OS-level keyboard shortcuts\n\nVS Code can now contribute OS-level keyboard shortcuts. These shortcuts take effect even if VS Code is not in focus. Add `systemWide` to your keybinding definition in your `keybindings.json` to make it OS-level. For example, here's a keybinding in `keybindings.json` to focus the Agents window on MacOS:\n\n```\n{\n  \"key\": \"cmd+shift+a\",\n  \"command\": \"workbench.action.openAgentsWindow\",\n  \"systemWide\": true\n}\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_128.md"
+}

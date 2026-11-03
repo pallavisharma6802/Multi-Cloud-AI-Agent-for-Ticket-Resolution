@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_67__vs_code_for_the_web",
+  "title": "v1_67 / VS Code for the Web",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## VS Code for the Web\n\n### Open Remote Repository picker\n\nVS Code for the Web now respects the `window.openFoldersInNewWindow` setting when you use the **Open Remote Repository** picker. This aligns the picker behavior with the other versions of VS Code and replaces the **Open in New Window** Quick Pick item button.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_67.md"
+}

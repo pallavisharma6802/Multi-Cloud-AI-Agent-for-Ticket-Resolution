@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_ai_chat__related_resources",
+  "title": "chat / Related resources",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Related resources\n\n* [Migrate a code tutor to a plugin](/docs/agent-customization/migrate-customizations.md#example-migrate-a-code-tutor-to-a-plugin)\n* [Build editor features with the Language Model API](/api/extension-guides/ai/language-model.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/chat.md"
+}

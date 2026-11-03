@@ -1,0 +1,8 @@
+{
+  "id": "docs_enterprise_telemetry__overview",
+  "title": "telemetry",
+  "category": "ENTERPRISE",
+  "intent": "enterprise",
+  "content": "# Manage telemetry in enterprise environments\n\n{% data variables.product.prodname_vscode_shortname %} collects telemetry data to help understand how the product is used and to improve it. Organizations can centrally manage telemetry settings to control what data is collected across their development teams.\n\nThis article covers how IT admins can configure telemetry through [enterprise policies](/docs/enterprise/policies.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/enterprise/telemetry.md"
+}

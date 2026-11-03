@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_cpp_refactoring__overview",
+  "title": "cpp refactoring",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Refactoring C++ code\n\nThe C/C++ extension in {% data variables.product.prodname_vscode %} has multiple refactoring features to help you improve your code's structure, readability, and maintainability without altering its runtime behavior. These include features such as Extract Method and Create Declaration and Definitions.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/cpp-refactoring.md"
+}

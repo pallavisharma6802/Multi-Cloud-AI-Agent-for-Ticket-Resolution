@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vmarch__extension_authoring",
+  "title": "vMarch / Extension Authoring",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Extension Authoring\n\n### Extension API additions\n\n* Added `setEndOfLine` on the `TextEditorEdit` builder interface to allow changing the line ending sequence of a file from an extension.\n* Added `cursorStyle` to `TextEditorOptions` to set the cursor style (vertical line, block or underline) for a specific editor.\n* Added a `setContext` command for customizing key binding rules.  This command takes two arguments, a key and a value.\n* All typing in an editor now goes through a `type` command that can be overwritten by an extension to implement different editor emulation modes such as **Vim** emulation mode.\n* Added a [**Vim** emulation sample](https://github.com/alexandrudima/vscode-vim) that shows how a **Vim** emulation extension can use the VS Code API.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vMarch.md"
+}

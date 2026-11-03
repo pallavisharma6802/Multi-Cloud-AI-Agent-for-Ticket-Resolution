@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_38__source_control",
+  "title": "v1_38 / Source Control",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Source Control\n\n### Git: Branch name on commit input\n\nThe current Git branch name now appears in the commit input box, to avoid committing on the wrong branch:\n\n![Git branch name in input box](images/1_38/branch-name.png)\n\n### Git: Sort branch list alphabetically\n\nThere's a new `git.branchSortOrder` setting to change the order of branches when checking out to a branch with the **Git: Checkout to...** command.\n\n### Git: Support pull cancellation\n\nWhen enabling the `git.supportCancellation` setting, you'll have the opportunity to cancel ongoing **Git Pull** requests, which is useful when pulling from slow remotes.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_38.md"
+}

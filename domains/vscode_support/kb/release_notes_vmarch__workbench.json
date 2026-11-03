@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vmarch__workbench",
+  "title": "vMarch / Workbench",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Workbench\n\n### Extension Display in the Status Bar\n\nThere is now an Extensions icon in the bottom left corner of the workbench. This is not only a shortcut to reach into extension related actions but also the place for notifying extension errors. It is also used to report progress during an extension's installation.\n\n![](images/March/extension-widget.png)\n\nUpdate notifications will also be notified in this widget:\n\n![](images/March/extension-widget-notification.png)\n\n### Exclude files from watching\n\nWhen you open VS Code on a folder, it installs a file watcher service on the folder and every file and folder contained within to be notified when something changes. If the folder is very large, this can consume many resources right at startup. A new setting, `files.watcherExclude`, now allows to explicitly exclude large directories from file watching.\n\nThis setting has the following defaults:\n\n```json\n\"files.watcherExclude\": {\n    \"**/.git/objects/**\": true,\n    \"**/node_modules/**\": true\n}\n```\n\nWe suggest you only exclude more folders if you see that VS Code is using lots of CPU when opening a folder. Typically you would not have to make any changes to this setting.\n\n### Output handling improvements\n\nLarge amounts of output were the cause of multiple user issues. We have now addressed this and are handling large amounts of output in a more efficient way.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vMarch.md"
+}

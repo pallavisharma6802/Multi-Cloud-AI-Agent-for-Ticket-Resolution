@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_3_building_social_media_agent__step_2_define_strong_instructions",
+  "title": "3 building social media agent / Step 2: Define Strong Instructions",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Step 2: Define Strong Instructions\n\nA strong system prompt defines role, audience, boundaries, and output shape in concrete terms. This matters because vague instructions usually produce vague copy and inconsistent follow-up behavior.\n\nHere's what to consider when crafting instructions for a social content agent:\n\n- **Role clarity**: Support a social media team producing developer-facing content.\n- **Behavior rules**: Ask follow-up questions when required details are missing.\n- **Tone constraints**: Avoid exaggerated claims and include clear technical value.\n- **Output structure**: Separate final copy from rationale and assumptions.\n\nBelow is an example of a system prompt that captures these requirements. You can adapt it to your own style and team needs.\n\n![System prompt configuration](../images/foundry-toolkit/ch3-system-prompt.png)\n\n**Fig 02: Define system prompt instructions for the social content agent.**\n\nAfter instructions look solid, save the agent so it becomes a reusable project asset.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/3-building-social-media-agent.md"
+}

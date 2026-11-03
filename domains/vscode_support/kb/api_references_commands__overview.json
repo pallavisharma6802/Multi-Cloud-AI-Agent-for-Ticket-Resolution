@@ -1,0 +1,8 @@
+{
+  "id": "api_references_commands__overview",
+  "title": "commands",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "# Built-in Commands\n\nThis document lists a subset of Visual Studio Code commands that you might use with `vscode.commands.executeCommand` API.\n\nRead the [Commands guide](/api/extension-guides/command) for how to use the commands API.\n\nThe following is a sample of how to open a new folder in VS Code:\n\n```javascript\nlet uri = Uri.file('/some/path/to/folder');\nlet success = await commands.executeCommand('vscode.openFolder', uri);\n```\n\n>**Note**: You can review the full set of VS Code commands via the Keyboard Shortcuts editor **File** > **Preferences** > **Keyboard Shortcuts**. The Keyboard Shortcuts editor lists all commands built into VS Code or contributed by extensions, along with their keybindings and visibility when clauses.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/commands.md"
+}

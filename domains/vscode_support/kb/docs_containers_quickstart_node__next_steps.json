@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_quickstart_node__next_steps",
+  "title": "quickstart node / Next steps",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Next steps\n\nYou're done! Now that your container is ready, you may want to:\n\n- [Learn about debugging Node.js in a container](/docs/containers/debug-node.md)\n- [Customize your Docker build and run tasks](/docs/containers/reference.md)\n- [Push your image to a container registry](/docs/containers/quickstart-container-registries.md#push-an-image-to-a-container-registry)\n- [Learn about using Docker Compose](/docs/containers/docker-compose.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/quickstart-node.md"
+}

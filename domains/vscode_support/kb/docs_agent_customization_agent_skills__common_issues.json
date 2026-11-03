@@ -1,0 +1,8 @@
+{
+  "id": "docs_agent_customization_agent_skills__common_issues",
+  "title": "agent skills / Common issues",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Common issues\n\n- **Missing environment variables**: Check that all required secrets are configured\n- **Version mismatches**: Verify action versions and dependencies are compatible\n- **Permission issues**: Ensure the workflow has the necessary permissions\n- **Timeout issues**: Consider splitting long-running jobs or increasing timeout values\n````\n\n</details>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/agent-skills.md"
+}

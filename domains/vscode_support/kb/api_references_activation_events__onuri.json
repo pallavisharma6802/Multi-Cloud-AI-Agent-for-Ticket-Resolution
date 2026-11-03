@@ -1,0 +1,8 @@
+{
+  "id": "api_references_activation_events__onuri",
+  "title": "activation events / onUri",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## onUri\n\nThis activation event is emitted and interested extensions will be activated whenever a system-wide Uri for that extension is opened. The Uri scheme is fixed to either `vscode` or `vscode-insiders`. The Uri authority must be the extension's identifier. The rest of the Uri is arbitrary.\n\n```json\n\"activationEvents\": [\n    \"onUri\"\n]\n```\n\nIf the `vscode.git` extension defines `onUri` as an activation event, it will be activated in any of the following Uris are open:\n\n- `vscode://vscode.git/init`\n- `vscode://vscode.git/clone?url=https%3A%2F%2Fgithub.com%2FMicrosoft%2Fvscode-vsce.git`\n- `vscode-insiders://vscode.git/init` (for VS Code Insiders)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/activation-events.md"
+}

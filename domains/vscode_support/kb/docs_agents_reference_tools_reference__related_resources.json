@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_tools_reference__related_resources",
+  "title": "tools reference / Related resources",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related resources\n\n* [Understand tools in the agent loop](/docs/agents/concepts/tools.md).\n* [Migrate existing customizations](/docs/agent-customization/migrate-customizations.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/tools-reference.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_ux_guidelines_panel__links",
+  "title": "panel / Links",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Links\n\n- [View Container contribution point](/api/references/contribution-points#contributes.viewsContainers)\n- [View contribution point](/api/references/contribution-points#contributes.views)\n- [View Actions extension guide](/api/extension-guides/tree-view#view-actions)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/panel.md"
+}

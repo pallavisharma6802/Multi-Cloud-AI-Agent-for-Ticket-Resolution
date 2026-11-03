@@ -1,0 +1,8 @@
+{
+  "id": "docs_editor_whyvscode__next_steps",
+  "title": "whyvscode / Next steps",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Next steps\n\nRead on to find out about:\n\n* [{% data variables.product.prodname_vscode %} User Interface](/docs/editing/getting-started/userinterface.md) - A quick orientation to {% data variables.product.prodname_vscode_shortname %}.\n* [Intro Videos](/docs/getstarted/introvideos.md) - Learn about the {% data variables.product.prodname_vscode_shortname %} editor features.\n* [Debugging](/docs/debugtest/debugging.md) - OK time for the really fun stuff - break, step, watch.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editor/whyvscode.md"
+}

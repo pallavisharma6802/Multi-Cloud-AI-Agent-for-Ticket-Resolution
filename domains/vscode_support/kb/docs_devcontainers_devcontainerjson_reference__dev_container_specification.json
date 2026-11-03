@@ -1,0 +1,8 @@
+{
+  "id": "docs_devcontainers_devcontainerjson_reference__dev_container_specification",
+  "title": "devcontainerjson reference / Dev container specification",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Dev container specification\n\nAs mentioned in the main [Dev Containers documentation](/docs/devcontainers/containers.md), we're creating the **Development Containers Specification** to empower anyone in any tool to configure a consistent dev environment.\n\nThe `devcontainer.json` reference is [hosted on the specification site](https://containers.dev/implementors/json_reference). Here you can also review the [devcontainer.json schema](https://containers.dev/implementors/json_schema).\n\nYou can also review the specification documents and latest proposals in the [devcontainers/spec](https://github.com/devcontainers/spec/tree/main/docs/specs) repository.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/devcontainerjson-reference.md"
+}

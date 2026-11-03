@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_faq__authentication",
+  "title": "faq / Authentication",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## Authentication\n\n### Can I use SSH authentication with {% data variables.product.prodname_vscode_shortname %}?\n\nYes. {% data variables.product.prodname_vscode_shortname %} uses the SSH configuration from your Git installation. If an SSH key has a passphrase, configure an SSH agent so Git can request or reuse the passphrase.\n\nFor platform-specific configuration, see [GitHub's SSH documentation](https://docs.github.com/authentication/connecting-to-github-with-ssh).\n\n### How do I authenticate with an Azure DevOps organization that requires multifactor authentication?\n\nUse [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager), the recommended Git credential helper for Windows, macOS, and Linux. Git for Windows includes Git Credential Manager.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/faq.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundations_reviewing_and_controlling_agent_changes__overview",
+  "title": "reviewing and controlling agent changes",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "# Reviewing and controlling agent changes\n\n[![Watch Video for reviewing and controlling agent changes on YouTube (opens in new tab).](images/reviewing-and-controlling-agent-changes/youtube-oFSJs6RnFt4.jpg)](https://www.youtube.com/watch?v=oFSJs6RnFt4)\n\nWhen an agent finishes a round of work, it leaves behind proposed changes, edits to files, new files, and deleted files. Nothing is permanent until you say so. This guide covers how to review what the agent did, accept or undo changes at any granularity, and use the tools available to steer the agent, correct mistakes, and explore multiple directions without losing work.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/reviewing-and-controlling-agent-changes.md"
+}

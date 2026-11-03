@@ -29,7 +29,7 @@ asserted.
 ```mermaid
 flowchart TB
     subgraph domainPacks ["Domain Packs (config-driven, swappable)"]
-        itPack["it_saas: 27 intents — resolution assist"]
+        itPack["vscode_support: 27 intents — resolution assist"]
     end
 
     subgraph agenticGraph ["LangGraph Supervisor (cyclic, conditional edges)"]
@@ -110,7 +110,7 @@ plus a real evaluation harness (below) so "agentic" is a measured property, not 
 Packs ship under [`domains/`](domains/) and are auto-discovered — the LangGraph is generic and swappable
 across whichever packs are present.
 
-- **`it_saas`** — resolution assist. 27 Bitext intents with labeled eval + intent-tagged FAQ KB.
+- **`vscode_support`** — resolution assist. 27 Bitext intents with labeled eval + intent-tagged FAQ KB.
   `intent_eval_available: true`.
 
 Each pack directory contains `config.yaml`, `few_shot_examples.json`, and `kb/`.
@@ -154,7 +154,7 @@ Then seed the knowledge base if the active Pinecone namespace is empty:
 
 ```bash
 docker compose exec backend python seed_kb.py --pack all
-# or: --pack it_saas
+# or: --pack vscode_support
 ```
 
 **What Docker Compose does *not* provide**, because they're real external managed services: Amazon Bedrock
@@ -200,7 +200,7 @@ Tests are fully mocked (Bedrock via MagicMock / boto3 stub, Azure, Pinecone, Big
 
 ```bash
 python eval/run_eval.py --pack all --skip-rag
-python eval/run_eval.py --pack it_saas --update-baseline
+python eval/run_eval.py --pack vscode_support --update-baseline
 ```
 
 ### Live smoke (continuous)
@@ -315,7 +315,7 @@ app/
 ├── schemas/            # Pydantic request/response schemas
 └── config.py           # Central Pydantic settings
 
-domains/                # it_saas/ — config.yaml, few-shot examples, KB
+domains/                # vscode_support/ — config.yaml, few-shot examples, KB
 eval/                   # Evaluation harness — see Evaluation above
 frontend/               # Next.js UI
 grafana/                # Dashboards + provisioning
@@ -326,7 +326,7 @@ docker-compose.yml      # Local stack: postgres, backend, frontend, grafana (Bed
 
 ## Extending with a new domain pack
 
-1. Create `domains/<your_pack>/config.yaml` following `domains/it_saas/config.yaml`'s shape: intent taxonomy,
+1. Create `domains/<your_pack>/config.yaml` following `domains/vscode_support/config.yaml`'s shape: intent taxonomy,
    priority guidance (prose, not rules), KB category map, and `source_dataset` provenance (including honest
    `limitations`).
 2. Add `domains/<your_pack>/few_shot_examples.json` and `domains/<your_pack>/kb/*.json` (or similar) knowledge

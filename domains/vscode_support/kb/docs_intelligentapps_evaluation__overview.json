@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_evaluation__overview",
+  "title": "evaluation",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Evaluate models, prompts, and agents\n\nEvaluation helps you choose a model and check whether changes to prompts, tools, or agent code improve the behavior your application needs. Use representative test cases and consistent scoring criteria rather than relying on one useful playground response.\n\nFoundry Toolkit for {% data variables.product.prodname_vscode %} has four evaluation experiences: standalone dataset scoring, inline tabular evaluation in Agent Builder, evaluation as pytest tests, and Copilot-assisted agent evaluation. They differ in what you provide, whether they generate new agent responses, and where the evaluation runs. This guide explains when to choose each experience and takes you through its workflow. For exploratory model comparisons before building a benchmark, use the [Model Playground](/docs/intelligentapps/playground.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/evaluation.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_devcontainers_tips_and_tricks__resolving_errors_about_missing_linux_dependencies",
+  "title": "tips and tricks / Resolving errors about missing Linux dependencies",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Resolving errors about missing Linux dependencies\n\nSome extensions rely on libraries not found in the certain Docker images. See the [Containers](/docs/devcontainers/create-dev-container.md#install-additional-software) article for a few options on resolving this issue.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/tips-and-tricks.md"
+}

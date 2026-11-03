@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_navigate_edit__smart_selection",
+  "title": "navigate edit / Smart selection",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Smart selection\n\nWith [smart selection](/updates/v1_33.md#smart-select-api) (semantic selection), you can expand or shrink the selection range based on the semantic information of the caret position in your source code.\n\n* To expand the selection, use `kb(editor.action.smartSelect.expand)`\n* To shrink the selection, use `kb(editor.action.smartSelect.shrink)`",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/navigate-edit.md"
+}

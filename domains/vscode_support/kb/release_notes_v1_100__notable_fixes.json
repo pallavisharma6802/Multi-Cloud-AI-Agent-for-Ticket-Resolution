@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_100__notable_fixes",
+  "title": "v1_100 / Notable fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable fixes\n\n* [244939](https://github.com/microsoft/vscode/issues/244939) - Personal Microsoft accounts logs out very quickly (few mins to few hours)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_100.md"
+}

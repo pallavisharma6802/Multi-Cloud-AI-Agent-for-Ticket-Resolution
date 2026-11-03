@@ -1,0 +1,8 @@
+{
+  "id": "docs_getstarted_personalize_vscode__welcome_page",
+  "title": "personalize vscode / Welcome page",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Welcome page\n\nBy default, {% data variables.product.prodname_vscode_shortname %} shows a welcome page when you start it. The welcome page provides quick access to common tasks such as opening recent projects, cloning repositories, and installing extensions.\n\nYou can customize what {% data variables.product.prodname_vscode_shortname %} shows when you start it. If you frequently work with agent sessions, set the `setting(workbench.startupEditor)` setting to `agentSessionsWelcomePage` to show a welcome page with recent sessions, embedded chat, and quick actions. Learn more about the [Agent Sessions Welcome Page](/docs/agents/run/sessions/manage-sessions.md#view-sessions-on-the-vs-code-welcome-page).\n\nGet more details about [configuring settings in {% data variables.product.prodname_vscode_shortname %}](/docs/configure/settings.md), such as configuring language-specific settings or syncing settings across machines.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/getstarted/personalize-vscode.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_nodejs_working_with_javascript__disable_javascript_support",
+  "title": "working with javascript / Disable JavaScript support",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Disable JavaScript support\n\nIf you prefer to use JavaScript language features supported by other JavaScript language tools such as [Flow](https://flow.org/), you can disable {% data variables.product.prodname_vscode_shortname %}'s built-in JavaScript support. You do this by disabling the built-in TypeScript language extension **TypeScript and JavaScript Language Features** (vscode.typescript-language-features) which also provides the JavaScript language support.\n\nTo disable JavaScript/TypeScript support, go to the Extensions view (`kb(workbench.view.extensions)`) and filter on built-in extensions (**Show Built-in Extensions** in the **...** **More Actions** dropdown), then type 'typescript'. Select the **TypeScript and JavaScript Language Features** extension and press the **Disable** button. {% data variables.product.prodname_vscode_shortname %} built-in extensions cannot be uninstalled, only disabled, and can be re-enabled at any time.\n\n![TypeScript and JavaScript Language Features extension](images/working-with-javascript/disable-TS-language.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/working-with-javascript.md"
+}

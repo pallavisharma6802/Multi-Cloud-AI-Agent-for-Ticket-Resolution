@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_3_building_social_media_agent__problem_framing_grounded_agents_are_decision_systems",
+  "title": "3 building social media agent / Problem Framing: Grounded Agents Are Decision Systems",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Problem Framing: Grounded Agents Are Decision Systems\n\nA useful perspective is to treat this agent as a decision system, not just a text generator. Output quality depends on three linked decisions:\n\n- **When to ask clarifying questions**: For example, if the prompt is missing audience or tone, the agent should ask before drafting copy.\n- **When to call tools**: If the prompt references Microsoft technologies, the agent should retrieve official documentation before drafting copy.\n- **How to shape final content for review**: The agent should format drafts according to team style guides and include references to supporting materials.\n\nWhen those decisions are explicit, your team gets more predictable and trustworthy behavior.\n\nThat is the difference between \"sounds smart\" and \"safe to publish.\"\n\nYou can see this in practice when the same prompt is run with and without grounding. The grounded version usually gives fewer vague claims and better traceability, which is exactly what content teams need when publishing technical messages.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/3-building-social-media-agent.md"
+}

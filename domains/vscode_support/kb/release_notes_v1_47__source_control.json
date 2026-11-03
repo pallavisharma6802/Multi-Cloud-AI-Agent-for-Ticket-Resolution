@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_47__source_control",
+  "title": "v1_47 / Source Control",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Source Control\n\n### Single view\n\nThe Source Control view has been consolidated into a single view:\n\n![Source Control with a single view](images/1_47/scm.png)\n\nAll repositories are rendered in a single view, so you can get a better overview of the entire workspace status. Additionally, the Source Control view can now be moved to the panel and other views can be moved to the Source Control view container.\n\n### View and Sort\n\nWe have added support for sorting your changes in the source control view by name, path (default), and state when using the list view option. We have consolidated the view options (list vs. tree) and sort options into a new **View & Sort** menu item in the context menu.\n\n![View & Sort in Source Control](images/1_47/scm-view&sort.png)\n\n### Git: Restore squash message\n\nSimilar to usual `git merge` command, the SCM view will now restore the SCM input with the default message if the user is in the middle of a `git merge --squash` command.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_47.md"
+}

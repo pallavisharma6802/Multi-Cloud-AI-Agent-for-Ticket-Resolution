@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_faq_cpp__how_do_i_disable_the_intellisense_cache_ipch",
+  "title": "faq cpp / How do I disable the IntelliSense cache (ipch)?",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## How do I disable the IntelliSense cache (ipch)?\n\nIf you do not want to use the IntelliSense caching feature (such as to work around a bug that may only occur when the cache is enabled), you can disable the feature by setting the **IntelliSense Cache Size** setting to 0 (or `\"C_Cpp.intelliSenseCacheSize\": 0\"` in the JSON settings editor). Disabling the cache may also be beneficial if you're seeing excessive disk writing, particularly when editing headers.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/faq-cpp.md"
+}

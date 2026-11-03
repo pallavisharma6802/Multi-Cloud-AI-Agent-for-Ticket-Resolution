@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_python_web__feedback",
+  "title": "python web / Feedback",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Feedback\n\nIf you run into issues while using the Python for the Web extension, you can enter issues in the [vscode-python-web-wasm](https://github.com/microsoft/vscode-python-web-wasm) repository.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/python-web.md"
+}

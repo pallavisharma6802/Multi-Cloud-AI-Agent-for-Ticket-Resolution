@@ -1,0 +1,8 @@
+{
+  "id": "api_references_icons_in_labels__icons_in_labels",
+  "title": "icons in labels / Icons in labels",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Icons in labels\n\nIcons can be used in Markdown labels in hovers, in the  [StatusBarItem](/api/references/vscode-api#StatusBarItem) text and [QuickPickItem](/api/references/vscode-api#QuickPickItem) label API. The syntax for adding an icon in Markdown is `$(iconIdentifier)`:\n\n```ts\n$(alert);\n```\n\nYou can also embed text and use multiple icons:\n\n```ts\n$(eye) $(heart) $(mark-github) GitHub\n```\n\nTo place a literal `${...}` text inside a label, escape the `$` with a backslash:\n\n```ts\n\\$(eye)\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/icons-in-labels.md"
+}

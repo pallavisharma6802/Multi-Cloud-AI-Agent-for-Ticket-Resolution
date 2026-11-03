@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_refactoring__add_await",
+  "title": "refactoring / Add await",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Add await\n\n**What:** Adds `await` keyword to a function call.\n\n**When:** When you're calling a function within an asynchronous method.\n\n**How-to:**\n\n1. Place carat by the function call (will most likely be underlined in red).\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select **Add `await`**.\n\n![Add await example](images/refactoring/add-await.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+}

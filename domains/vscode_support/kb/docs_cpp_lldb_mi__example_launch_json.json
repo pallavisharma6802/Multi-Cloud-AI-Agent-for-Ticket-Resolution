@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_lldb_mi__example_launch_json",
+  "title": "lldb mi / Example launch.json",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Example launch.json\n\nBelow is an example `launch.json` debug configuration entry for `lldb`:\n\n```json\n\"configurations\": [\n    {\n        \"name\": \"Launch (lldb)\",\n        \"type\": \"cppdbg\",\n        \"request\": \"launch\",\n        \"program\": \"${workspaceFolder}/a.out\",\n        \"args\": [],\n        \"stopAtEntry\": false,\n        \"cwd\": \"${workspaceFolder}\",\n        \"environment\": [],\n        \"externalConsole\": false\n    }\n]\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/lldb-mi.md"
+}

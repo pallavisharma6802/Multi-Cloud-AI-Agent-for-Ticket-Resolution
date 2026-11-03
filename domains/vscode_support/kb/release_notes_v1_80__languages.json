@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_80__languages",
+  "title": "v1_80 / Languages",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Languages\n\n### Markdown copy image from preview\n\nA new context menu for images in the Markdown preview allows you to copy the image from the preview and paste it into the Markdown editor. When copying the image, the preview editor must be focused.\n\n<video src=\"images/1_80/copy-image.mp4\" autoplay loop controls muted title=\"Copy image from Markdown preview\"></video>\n\n### Markdown format pasted URLs as Markdown links\n\nThe new `markdown.editor.pasteUrlAsFormattedLink.enabled` setting (default `false`) lets you insert links into the Markdown editor that are automatically formatted into Markdown links. If you select some text to be replaced with the pasted link, the selected text will automatically become the title of the link. If no text is selected, there will be a default link title. This feature applies to external browser links as well as files within the workspace.\n\n<video src=\"images/1_80/paste-formatted-link.mp4\" autoplay loop controls muted title=\"Paste formatted link over selected text\"></video>\n\nYou must enable the setting `editor.pasteAs.enabled` for this new setting to work.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_80.md"
+}

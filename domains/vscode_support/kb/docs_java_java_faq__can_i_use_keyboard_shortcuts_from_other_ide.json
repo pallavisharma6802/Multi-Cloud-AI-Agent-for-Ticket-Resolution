@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_faq__can_i_use_keyboard_shortcuts_from_other_ide",
+  "title": "java faq / Can I use keyboard shortcuts from other IDE?",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Can I use keyboard shortcuts from other IDE?\n\nSure. [Keymap extensions](/docs/configure/keybindings.md#keymap-extensions) in {% data variables.product.prodname_vscode_shortname %} modify the {% data variables.product.prodname_vscode_shortname %} shortcuts to match those of other editors. You can find [IntelliJ IDEA keyboard shortcuts](https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings), [Eclipse Keymap](https://marketplace.visualstudio.com/items?itemName=alphabotsec.vscode-eclipse-keybindings) as well as keymaps for other popular editors in [Keymaps category](https://marketplace.visualstudio.com/search?target=VSCode&category=Keymaps&sortBy=Installs) of extensions in the Marketplace.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-faq.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_references_document_selector__next_steps",
+  "title": "document selector / Next steps",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Next steps\n\nTo learn more about VS Code extensibility model, try these topics:\n\n- [Extension Manifest File](/api/references/extension-manifest) - VS Code package.json extension manifest file reference\n- [Contribution Points](/api/references/contribution-points) - VS Code contribution points reference",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/document-selector.md"
+}

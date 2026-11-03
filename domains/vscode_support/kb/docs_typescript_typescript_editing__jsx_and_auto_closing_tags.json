@@ -1,0 +1,8 @@
+{
+  "id": "docs_typescript_typescript_editing__jsx_and_auto_closing_tags",
+  "title": "typescript editing / JSX and auto closing tags",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## JSX and auto closing tags\n\n{% data variables.product.prodname_vscode_shortname %}'s TypeScript features also work with [JSX](https://reactjs.org/docs/introducing-jsx.html). To use JSX in your TypeScript, use the `*.tsx` file extension instead of the normal `*.ts`:\n\n![IntelliSense in JSX](images/editing/jsx.png)\n\n{% data variables.product.prodname_vscode_shortname %} also includes JSX-specific features such as autoclosing of JSX tags in TypeScript:\n\n<video src=\"images/editing/jsx-tag-complete.mp4\" placeholder=\"images/editing/jsx-tag-complete.png\" autoplay loop controls muted>\n    Sorry, your browser doesn't support HTML 5 video.\n</video>\n\nSet `\"js/ts.autoClosingTags.enabled\"` to `false` to disable JSX tag closing.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/typescript/typescript-editing.md"
+}

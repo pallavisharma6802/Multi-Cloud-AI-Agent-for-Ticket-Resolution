@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_quickstart_python__free_up_resources",
+  "title": "quickstart python / Free up resources",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Free up resources\n\nIn the [Azure portal](https://portal.azure.com), delete the Resource Group to free up all resources that you created during this exercise.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/quickstart-python.md"
+}

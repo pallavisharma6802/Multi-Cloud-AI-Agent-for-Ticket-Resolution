@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_refactor_safely__5_check_callers_and_compatibility",
+  "title": "refactor safely / 5. Check callers and compatibility",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## 5. Check callers and compatibility\n\nAfter the planned edits are complete:\n\n1. Inspect all references to the changed symbols. Check imports, exports, configuration references, and callers outside the edited files.\n1. Run the targeted tests and the related suite, including tests for every affected caller.\n1. Run the project's applicable build, type check, and lint checks.\n1. Exercise representative valid and invalid inputs through the original entry points.\n1. Compare the results with the recorded baseline, including errors and side effects.\n\nSource references and passing tests don't prove that external consumers are compatible. If a published API, package export, or persisted format is affected, verify it against the relevant consumer contracts. Defer the change if you can't establish the required compatibility.\n\nTreat unexecuted checks as unverified. Ask the agent to report environment failures or missing test resources rather than claiming completion.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/refactor-safely.md"
+}

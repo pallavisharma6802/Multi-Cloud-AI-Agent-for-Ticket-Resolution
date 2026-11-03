@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_refactoring__use_recursive_patterns",
+  "title": "refactoring / Use recursive patterns",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Use recursive patterns\n\n**What:** Converts a code block to using a recursive pattern.  This refactoring works with switch statements, property pattern matching, tuple pattern matching, and positional pattern matching.\n\n**When:** Using recursive patterns can make your code more readable / cleaner.\n\n**How-to:**\n\n1. Place your cursor on the expression you want to convert to a recursive pattern.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select one of the following:\n\nSelect **Convert `switch` statement to expression**.\n\n![Convert `switch` statement to expression example](images/refactoring/convert-switch-statement-to-expression.png)\n\nSelect **Use recursive patterns**.\n\n![Use recursive patterns before example](images/refactoring/use-recursive-patterns-before.png)\n\n![Use recursive patterns after example](images/refactoring/use-recursive-patterns-after.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+}

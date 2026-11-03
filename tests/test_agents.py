@@ -30,7 +30,7 @@ def test_azure_nlp_agent_returns_raw_signals_only(mock_azure_text_analytics):
 
 
 def test_intent_priority_agent_majority_vote(mock_llm_client):
-    pack = load_domain_pack("it_saas")
+    pack = load_domain_pack("vscode_support")
     signals = NLPSignals(entities=[], sentiment="neutral", key_phrases=["cancel", "order"])
     mock_llm_client.generate_structured.side_effect = [
         (IntentPrioritySample(intent="cancel_order", priority="medium", rationale="wants to cancel", confidence=0.8), make_metadata()),

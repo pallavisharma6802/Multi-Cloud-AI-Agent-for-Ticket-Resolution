@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_reference_manualmodelconversion__load_models_into_foundry_toolkit",
+  "title": "ManualModelConversion / Load models into Foundry Toolkit",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Load models into Foundry Toolkit\n\nAfter conversion, move your ONNX model file into the newly created directory. The Foundry Toolkit automatically loads ONNX models from this directory upon activation.\n\nYou can find your models in the `MY MODELS` view. To use a model, double-click its name or open `TOOLS` > `Playground` and select the model from the dropdown list to start interacting with it.\n\n> Note: The Foundry Toolkit does not support deleting manually added models directly. To remove a model, delete its directory manually.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/reference/ManualModelConversion.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_12__contributions_to_extensions",
+  "title": "v1_12 / Contributions to Extensions",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Contributions to Extensions\n\nOur team maintains or contributes to a number of VS Code extensions. Most notably:\n\n* [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint) : We contributed to the [tslint language server plugin](https://github.com/angelozerr/tslint-language-service) and there is now a [preview](https://github.com/angelozerr/tslint-language-service#vscode) available to try out for VS Code.\n* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)\n* [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)\n* [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)\n* [Mono Debug](https://marketplace.visualstudio.com/items?itemName=ms-vscode.mono-debug)\n* [VSCodeVim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_12.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_browser_agent_testing_guide__step_4_watch_the_agent_debug_and_fix_issues",
+  "title": "browser agent testing guide / Step 4: Watch the agent debug and fix issues",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Step 4: Watch the agent debug and fix issues\n\nIf the agent discovers bugs during testing, it automatically analyzes the problem and implements a fix.\n\n1. Let's introduce a bug by removing the division by zero check:\n\n    ```javascript\n    function calculate() {\n        if (!operator || shouldReset) return;\n\n        const a = parseFloat(previous);\n        const b = parseFloat(current);\n        let result;\n\n        switch (operator) {\n        case '+': result = a + b; break;\n        case '-': result = a - b; break;\n        case '*': result = a * b; break;\n        case '/': result = a / b; break;\n    }\n    ```\n\n1. Ask the agent to reproduce the issue, fix it, and verify the acceptance criterion again:\n\n    ```prompt\n    Test division by zero. If it produces an invalid numeric result instead\n    of an error, fix the issue. Then repeat the test and report the result.\n    ```\n\n1. Watch as the agent encounters an error when dividing by zero, then analyzes and fixes the code, and finally validates the bug fix.\n\nThe agent has completed a full development cycle: build, validate, debug, fix, and revalidate by using browser tools.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/browser-agent-testing-guide.md"
+}

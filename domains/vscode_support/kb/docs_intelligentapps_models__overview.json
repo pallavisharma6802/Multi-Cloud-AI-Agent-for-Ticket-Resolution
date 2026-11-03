@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_models__overview",
+  "title": "models",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Explore and manage AI models in Foundry Toolkit\n\nFoundry Toolkit helps you prepare a model for application development in {% data variables.product.prodname_vscode %}. Start by deciding where inference should run, and then deploy a cloud model, download a supported local model, or connect to an existing endpoint.\n\nThis article explains how to find and set up a model, test it, and understand who owns the deployment, connection, or downloaded data.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/models.md"
+}

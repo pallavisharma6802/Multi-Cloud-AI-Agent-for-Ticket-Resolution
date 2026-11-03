@@ -1,0 +1,8 @@
+{
+  "id": "docs_devcontainers_create_dev_container__overview",
+  "title": "create dev container",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "# Create a Dev Container\n\nThe **{% data variables.product.prodname_vscode %} Dev Containers** extension lets you use a [Docker container](https://docker.com) as a full-featured development environment. It allows you to open any folder or repository inside a container and take advantage of {% data variables.product.prodname_vscode %}'s full feature set. A `devcontainer.json` file in your project tells {% data variables.product.prodname_vscode_shortname %} how to access (or create) a **development container** with a well-defined tool and runtime stack. This container can be used to run an application or to provide separate tools, libraries, or runtimes needed for working with a codebase.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/create-dev-container.md"
+}

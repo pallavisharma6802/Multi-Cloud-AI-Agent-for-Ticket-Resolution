@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v0_9_0__notable_bug_fixes",
+  "title": "v0_9_0 / Notable Bug Fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable Bug Fixes\n\nAs always we fixed many issues.\n\nHere are a few of the notable ones from the public bug tracker:\n\n* [18998](https://code.visualstudio.com/Issues/Detail/18998): newly added files not honored by tsconfig.json\n* [18692](https://code.visualstudio.com/Issues/Detail/18692): Changes to tsconfig.json not updated immediately\n* [19239](https://code.visualstudio.com/Issues/Detail/19239): Detaching from Unity Results in a Unity Crash\n\nOther issues we've fixed:\n\n* JSON schemas support external references.\n* The CSS tooling now supports CSS3 identifier escaping.\n* Node.js Debugger: In 0.9.0, we focused on fixing the problems that resulted from the introduction of a new implementation of the Node.js debugger in VS Code 0.8.0.\nYou should no longer see empty CALL STACK, VARIABLES and WATCH views.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_9_0.md"
+}

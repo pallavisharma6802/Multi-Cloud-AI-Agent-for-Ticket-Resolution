@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_95__vs_code_for_the_web",
+  "title": "v1_95 / VS Code for the Web",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## VS Code for the Web\n\n### VS Code for the Web supports local file events\n\nWhen using Chrome or Edge as of version 129, opening <https://insiders.vscode.dev> with a local folder now supports file events. If you make changes to files and folders of the opened workspace outside the browser, these changes are reflected immediately inside the browser.\n\nThis feature leverages the new [`FileSystemObserver`](https://chromestatus.com/feature/4622243656630272) interface that is proposed as new API for the web.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_95.md"
+}

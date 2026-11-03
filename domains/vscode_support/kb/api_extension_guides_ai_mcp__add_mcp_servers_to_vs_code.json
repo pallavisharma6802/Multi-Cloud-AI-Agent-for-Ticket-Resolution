@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_ai_mcp__add_mcp_servers_to_vs_code",
+  "title": "mcp / Add MCP servers to VS Code",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Add MCP servers to VS Code\n\nUsers can add MCP servers within VS Code in several ways:\n\n- Install directly from the web: use a special MCP installation URL (`vscode:mcp/install`) on your website.\n- Workspace configuration: Specify the server configuration in a `.vscode/mcp.json` file in the workspace.\n- Global configuration: Define servers globally in the user [profile](/docs/configure/profiles).\n- Autodiscovery: VS Code can discover servers from other tools like Claude Desktop.\n- Extension: VS Code extensions can register MCP servers programmatically.\n- Command line: Install MCP servers from the command line with the `--add-mcp` VS Code command-line option.\n\nLearn more about the different ways to [add MCP servers to VS Code](/docs/agent-customization/mcp-servers#add-an-mcp-server).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/mcp.md"
+}

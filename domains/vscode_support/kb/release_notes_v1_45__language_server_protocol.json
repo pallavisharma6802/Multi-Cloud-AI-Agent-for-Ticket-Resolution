@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_45__language_server_protocol",
+  "title": "v1_45 / Language Server Protocol",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Language Server Protocol\n\nWork has started on the [3.16 version](https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/) of the specification. As a first step, the Call Hierarchy support moved out of the proposed state. Please note that the 3.16 spec is not yet final and, depending on feedback, may still change.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_45.md"
+}

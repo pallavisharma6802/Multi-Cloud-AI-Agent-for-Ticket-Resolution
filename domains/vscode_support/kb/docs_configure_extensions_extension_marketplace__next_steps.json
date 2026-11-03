@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_extensions_extension_marketplace__next_steps",
+  "title": "extension marketplace / Next steps",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Next steps\n\n* [{% data variables.product.prodname_vscode_shortname %} profiles](/docs/configure/profiles.md): use different sets of extensions for different projects or workflows.\n* [Extension runtime security](/docs/configure/extensions/extension-runtime-security.md): learn how to assess an extension before installing it.\n* [Your first extension](/api/get-started/your-first-extension.md): create an extension if the Marketplace doesn't have what you need.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/extensions/extension-marketplace.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_ssh__overview",
+  "title": "ssh",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "# Connect to remote Docker over SSH\n\nWe recommend using the {% data variables.product.prodname_vscode %} [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) extension to connect to a remote machine running Docker engine. You can use the [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) and [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extensions together. You may review the steps in the [Dev Containers documentation](/docs/devcontainers/containers.md#open-a-folder-on-a-remote-ssh-host-in-a-container).\n\nIt is also possible to connect to the remote Docker engine directly using SSH tunneling, which you can read more about below.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/ssh.md"
+}

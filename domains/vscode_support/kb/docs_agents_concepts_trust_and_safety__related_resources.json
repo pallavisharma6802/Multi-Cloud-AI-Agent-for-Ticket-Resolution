@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_concepts_trust_and_safety__related_resources",
+  "title": "trust and safety / Related resources",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related resources\n\n* [AI security considerations](/docs/agents/run/security.md)\n* [Terminal sandbox configuration](/docs/agents/run/agent-sandboxing.md)\n* [Reviewing code edits](/docs/agents/run/review-code-edits.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/trust-and-safety.md"
+}

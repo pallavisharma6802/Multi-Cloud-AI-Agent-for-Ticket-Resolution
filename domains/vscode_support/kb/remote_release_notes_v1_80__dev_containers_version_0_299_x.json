@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_80__dev_containers_version_0_299_x",
+  "title": "v1_80 / Dev Containers (version 0.299.x)",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Dev Containers (version 0.299.x)\n\n### Update Feature versions\n\nThe CodeLens on a Dev Container Feature in the `devcontainer.json` configuration file now makes it easy to update to a newer version of the Feature:\n\n<video src=\"remote-release-notes/images/v1_80/devcontainer-version-codelens.mp4\" autoplay loop controls muted title=\"Version Code Lenses for Dev Container Features\"></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_80.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "learn_java_spring_boot_4_test_with_playwright__prerequisites",
+  "title": "4 test with playwright / Prerequisites",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Prerequisites\n\n- **A cloned copy of the sample:** Clone [microsoft/github-copilot-java-mcp-demo](https://github.com/microsoft/github-copilot-java-mcp-demo) and open it in a current version of Visual Studio Code.\n- **JDK 25 and both extension packs:** The **Extension Pack for Java** and the **Spring Boot Extension Pack**.\n* **{% data variables.product.prodname_copilot %}:** Signed in, with the **Copilot** harness available in the **Session Target** control. See [harness requirements](/docs/agents/run/agent-harnesses.md#copilot).\n- **A clean starting state:** The app stopped, port 8080 free, and the Playwright MCP server not yet installed, so the **Install** action is available.\n- **Permission to install and run:** Allow MCP server installation and tool use when prompted.\n\n> [!NOTE]\n> If marketplace discovery or automatic installation isn't available, follow the\n> [Playwright connection steps](/docs/agent-customization/mcp-servers.md#connect-a-server)\n> to add the publisher's command through **MCP: Add Server**. Marketplace sources depend\n> on the harness and organization policy.\n>\n> **Browser warning:** Playwright opens a real Chrome window that shows an **unsupported\n> command-line flag: --no-sandbox** infobar. Dismiss it with its **\u00d7**; it does not affect\n> the run.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/4-test-with-playwright.md"
+}

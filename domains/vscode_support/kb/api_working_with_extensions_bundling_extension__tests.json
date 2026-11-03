@@ -1,0 +1,8 @@
+{
+  "id": "api_working_with_extensions_bundling_extension__tests",
+  "title": "bundling extension / Tests",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Tests\n\nExtension authors often write unit tests for their extension source code. With the correct architectural layering, where the extension source code doesn't depend on tests, the webpack and esbuild produced bundle shouldn't contain any test code. To run unit tests, only a simple compile is necessary.\n\nMerge these entries into the `scripts` section in `package.json`:\n\n```json\n\"scripts\": {\n    \"compile-tests\": \"tsc -p . --outDir out\",\n    \"pretest\": \"npm run compile-tests\",\n    \"test\": \"vscode-test\"\n}\n```\n\n\n The `compile-tests` script uses the TypeScript compiler to compile the extension into the `out` folder. With that intermediate JavaScript available, the following snippet for `launch.json` is enough to run tests.\n\n```json\n{\n    \"name\": \"Extension Tests\",\n    \"type\": \"extensionHost\",\n    \"request\": \"launch\",\n    \"runtimeExecutable\": \"${execPath}\",\n    \"args\": [\n        \"--extensionDevelopmentPath=${workspaceFolder}\",\n        \"--extensionTestsPath=${workspaceFolder}/out/test\"\n    ],\n    \"outFiles\": [\n        \"${workspaceFolder}/out/test/**/*.js\"\n    ],\n    \"preLaunchTask\": \"npm: compile-tests\"\n}\n```\n\nThis configuration for running tests is the same for non-bundled extensions. There is no reason to bundle unit tests because they are not part of the published portion of an extension.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/working-with-extensions/bundling-extension.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_optimize_usage__fork_conversations",
+  "title": "optimize usage / Fork conversations",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Fork conversations\n\nWhen you want to explore an alternative approach or ask a side question, [fork the conversation](/docs/agents/run/sessions/manage-sessions.md#fork-a-chat-session) instead of re-prompting from scratch. Forking creates a new session that inherits the existing conversation history, so you don't need to re-establish context.\n\n* Type `/fork` in the chat input to fork the entire session up to the current message.\n* Hover over a previous message and select **Fork Conversation** to fork from a specific checkpoint.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/optimize-usage.md"
+}

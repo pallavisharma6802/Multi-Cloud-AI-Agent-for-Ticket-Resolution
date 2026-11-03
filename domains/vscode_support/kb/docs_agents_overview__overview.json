@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_overview__overview",
+  "title": "overview",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Build with AI in {% data variables.product.prodname_vscode_shortname %}\n\nUse as much or as little AI as your task needs in {% data variables.product.prodname_vscode %}. Get suggestions as you type, collaborate with an agent beside your code, or coordinate tasks across projects in the {% data variables.copilot.agents_window %}. Combine these approaches as your work changes.\n\nYou can choose models from multiple providers and work with the {% data variables.product.prodname_copilot_short %}, Claude, or Codex agent harness, using a supported account or your own API key. Customizations and plugins help you tailor agents to your work.\n\nContinuity lets you pick up agent work across supported interfaces without starting over. Connect to sessions on your own machine through GitHub Environments, or use a cloud session without keeping a local host online.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/overview.md"
+}

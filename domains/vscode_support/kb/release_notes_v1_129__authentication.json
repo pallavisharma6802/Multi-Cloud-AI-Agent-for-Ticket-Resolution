@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_129__authentication",
+  "title": "v1_129 / Authentication",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Authentication\n\n### GitHub Enterprise support for Copilot in the agent host\n\nDevelopers whose GitHub Copilot access is provided through a GitHub Enterprise (GHE) instance can sign in and use Copilot in VS Code. Previously, the agent host's Copilot authentication only supported github.com, so a GHE-backed Copilot subscription could not complete sign-in: both the OAuth flow and the Copilot token request targeted github.com.\n\nWith this release, VS Code can authenticate Copilot against a GitHub Enterprise instance. When you sign in to Copilot, choose your GitHub Enterprise instance, and VS Code runs the sign-in flow and requests Copilot access tokens from that host instead of github.com. This works in both the editor window and the [Agents window](https://code.visualstudio.com/docs/agents/run/agents-window), and with both the Copilot and Claude agents.\n\nBecause this support is part of [the agent host](#the-agent-host), ensure the agent host is enabled with `setting(chat.agentHost.enabled)`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_129.md"
+}

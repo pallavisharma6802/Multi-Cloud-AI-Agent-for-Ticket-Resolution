@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_114__enterprise",
+  "title": "v1_114 / Enterprise",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Enterprise\n\n### Group policy to disable Claude agent\n\nAdministrators can now use a group policy to disable the Claude agent integration in chat. When this policy is applied, the `setting(github.copilot.chat.claudeAgent.enabled)` setting is managed by the organization and users cannot enable the Claude agent.\n\nThis policy is configured as a boolean with key `Claude3PIntegration`. Learn more about [device management policies](https://code.visualstudio.com/docs/setup/enterprise#_device-management) in the enterprise documentation.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_114.md"
+}

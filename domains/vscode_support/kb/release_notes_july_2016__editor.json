@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_july_2016__editor",
+  "title": "July_2016 / Editor",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Editor\n\n### Snippets and Suggestions\n\nBy default, VS Code shows snippets and completion proposals in one widget. This is not always desirable so we added a new configuration setting called `editor.snippetSuggestions`. To remove snippets from the suggestions widget, set the value to `\"none\"`. If you'd like to see snippets, you can specify the order relative to suggestions; at the top (`\"top\"`), at the bottom (`\"bottom`\"), or inline ordered alphabetically (`\"inline\"`). The default is `\"inline\"`.\n\nIn addition, we added a new command to insert a snippet, **Insert Snippet**, which displays the available snippets in a dropdown.\n\n![snippet insert](images/July_2016/insertSnippet.gif)\n\n### Tab Completion\n\nThe editor now supports `kbstyle(Tab)` completions. You can enable it with the `editor.tabCompletion` setting. After typing the prefix of a snippet, press `kbstyle(Tab)` to insert it.\n\n![tab completions](images/July_2016/tabCompletion.gif)\n\nNote that quick suggestions and `kbstyle(Tab)` completion might interfere because the suggestions widget also reacts to `kbstyle(Tab)`.\n\nEither disable quick suggestions:\n\n```json\n{\n  \"editor.quickSuggestions\": false\n}\n```\n\nor remove snippets from the suggest widget:\n\n```json\n{\n  \"editor.snippetSuggestions\": \"none\"\n}\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/July_2016.md"
+}

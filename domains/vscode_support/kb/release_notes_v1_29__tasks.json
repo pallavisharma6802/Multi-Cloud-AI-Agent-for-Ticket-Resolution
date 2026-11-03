@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_29__tasks",
+  "title": "v1_29 / Tasks",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Tasks\n\n### Clear terminal before executing task\n\nA new property `clear` was added to the task `presentation` configuration. Set the `clear` property to `true` to clear the terminal before the task is run.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_29.md"
+}

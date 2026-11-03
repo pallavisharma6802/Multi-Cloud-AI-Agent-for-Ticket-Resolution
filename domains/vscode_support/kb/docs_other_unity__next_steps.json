@@ -1,0 +1,8 @@
+{
+  "id": "docs_other_unity__next_steps",
+  "title": "unity / Next steps",
+  "category": "REFERENCE",
+  "intent": "reference",
+  "content": "## Next steps\n\nRead on to learn more about:\n\n* [Basic Editing](/docs/editing/codebasics.md) - Learn about the powerful {% data variables.product.prodname_vscode %} editor.\n* [Code Navigation](/docs/editing/editingevolved.md) - Move quickly through your source code.\n* [C#](/docs/languages/csharp.md) - Learn about the C# support in {% data variables.product.prodname_vscode %}.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/other/unity.md"
+}

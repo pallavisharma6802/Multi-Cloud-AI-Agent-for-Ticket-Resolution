@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_launch_json_reference__environment_variable_definitions_file",
+  "title": "launch json reference / Environment variable definitions file",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Environment variable definitions file\n\nAn environment variable definitions file is a simple text file containing key-value pairs in the form of `environment_variable=value`, with `#` used for comments. Multiline values are not supported.\n\nThe `cppvsdbg` debugger configuration also contains an `envFile` property that allows you to easily set variables for debugging purposes.\n\nFor example:\n\n**project.env file**:\n\n```bash\n# project.env\n\n# Example environment with key as 'MYENVRIONMENTPATH' and value as C:\\\\Users\\\\USERNAME\\\\Project\nMYENVRIONMENTPATH=C:\\\\Users\\\\USERNAME\\\\Project\n\n# Variables with spaces\nSPACED_OUT_PATH=\"C:\\\\This Has Spaces\\\\Project\"\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/launch-json-reference.md"
+}

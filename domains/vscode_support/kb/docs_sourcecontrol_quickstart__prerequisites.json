@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_quickstart__prerequisites",
+  "title": "quickstart / Prerequisites",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## Prerequisites\n\n1. Install [{% data variables.product.prodname_vscode %}](https://code.visualstudio.com/download) and [Git](https://git-scm.com/downloads).\n\n1. In {% data variables.product.prodname_vscode_shortname %}, select **Terminal** > **New Terminal**, then check that Git is available:\n\n    ```bash\n    git --version\n    ```\n\n    You should see a Git version number. If the command isn't found, restart {% data variables.product.prodname_vscode_shortname %} after installing Git. If it still fails, see [source control troubleshooting](/docs/sourcecontrol/troubleshooting.md).\n\n1. Configure the author name and email for your commits. Replace the placeholders with your details:\n\n    ```bash\n    git config --global user.name \"<your-name>\"\n    git config --global user.email \"<your-email>\"\n    ```\n\n    Skip this step if your identity is already configured. These values identify the author in Git history, not your sign-in credentials. The `--global` option sets the default for your repositories. If you publish commits, their author information is also shared.\n\n<a name=\"option-b-initialize-a-repository-in-a-local-folder\"></a>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/quickstart.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_27__editor",
+  "title": "v1_27 / Editor",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Editor\n\n### Auto closing & surrounding characters\n\nWhen typing certain brackets like `{`, `[` or `(`, depending on the programming language, they will get auto-closed by default when they are followed by specific characters that typically cannot start an expression, for example `;:.,=}])>`. This behavior can be customized with the `editor.autoClosingBrackets` setting. Similarly, it is possible to customize the auto closing behavior while typing quotes like `\"`, `'` or `` ` `` with `editor.autoClosingQuotes`.\n\nWhen text is selected and you type one of these characters, the selection will be surrounded by brackets or quotes. It is now possible to adjust this behavior separately via the new `editor.autoSurround` setting.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_27.md"
+}

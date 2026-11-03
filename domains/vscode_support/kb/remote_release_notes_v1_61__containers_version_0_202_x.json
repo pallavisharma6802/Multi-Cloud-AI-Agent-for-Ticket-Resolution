@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_61__containers_version_0_202_x",
+  "title": "v1_61 / Containers (version 0.202.x)",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Containers (version 0.202.x)\n\n### Container features\n\nMany of the dev container definitions now support adding tools and languages as easy to drop-in features. The **Dev Containers: Add Dev Container Configuration Files...** command at the end shows the list of available features and the **Dev Containers: Configure Container Features** command allows you to update an existing configuration.\n\n![Configure container features list](images/1_61/configure_container_features.png)\n\nThere is also support for IntelliSense to edit the new `\"features\"` property in the `devcontainer.json` directly.\n\n![Container features IntelliSense](images/1_61/container_features_intellisense.png)\n\n### Execute in WSL setting\n\nOn Windows, to support having Docker CE or Podman installed in Windows Subsystem for Linux (WSL), the new **Execute in WSL** (`dev.containers.executeInWSL`) user setting lets the Dev Containers extension run all CLI commands in WSL.\n\n![Execute in WSL Setting.](images/1_61/execute_in_wsl.png)\n\nWhen not enabled, CLI commands are still run in WSL for workspace folders on a WSL filesystem.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_61.md"
+}

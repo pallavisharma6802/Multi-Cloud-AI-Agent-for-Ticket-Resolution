@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_javascript__hover_information",
+  "title": "javascript / Hover Information",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Hover Information\n\nHover over a JavaScript symbol to quickly see its type information and relevant documentation.\n\n![Hovering over a JavaScript variable to see its type information](images/javascript/hover.png)\n\nThe `kb(editor.action.showHover)` keyboard shortcut shows this hover information at the current cursor position.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/javascript.md"
+}

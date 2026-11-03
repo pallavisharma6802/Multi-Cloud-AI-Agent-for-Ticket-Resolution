@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_getting_started_overview__run_debug_and_test",
+  "title": "overview / Run, debug, and test",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Run, debug, and test\n\nRunning, debugging, and testing form a continuous loop as you make changes. {% data variables.product.prodname_vscode_shortname %} brings each activity into the workbench while continuing to use the tools and runtimes from your project.\n\nAutomate builds, scripts, and other recurring commands with [tasks](/docs/debugtest/tasks.md). Use the [debugger](/docs/debugtest/debugging.md) to control program execution with breakpoints, step through code, and inspect application state. The [Testing view](/docs/debugtest/testing.md) uses testing extensions to discover tests and lets you run, debug, and review results alongside your code.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/overview.md"
+}

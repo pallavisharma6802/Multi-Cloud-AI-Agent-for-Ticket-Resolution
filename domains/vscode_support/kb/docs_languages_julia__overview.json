@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_julia__overview",
+  "title": "julia",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Julia in {% data variables.product.prodname_vscode %}\n\nThe [Julia programming language](https://julialang.org) is a high level and dynamic language built for speed and simplicity. Julia is commonly used in areas such as data science, machine learning, scientific computing, but is still a general purpose language that can handle most programming use cases.\n\nThe [Julia extension](https://marketplace.visualstudio.com/items?itemName=julialang.language-julia) for {% data variables.product.prodname_vscode %} includes built-in dynamic autocompletion, inline results, plot pane, integrated REPL, variable view, code navigation, and many other advanced language features.\n\n![Julia {% data variables.product.prodname_vscode_shortname %} overview](images/julia/overview.png)\n\nMost of these features work out of the box, while some may require basic configuration to get the best experience. This page summarizes the Julia features included in the Julia {% data variables.product.prodname_vscode_shortname %} extension. For a more in-depth guide on how these features work and can be configured, see the [Julia in {% data variables.product.prodname_vscode_shortname %}](https://www.julia-vscode.org/docs/stable/) documentation.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/julia.md"
+}

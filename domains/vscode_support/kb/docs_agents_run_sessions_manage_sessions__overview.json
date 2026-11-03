@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_sessions_manage_sessions__overview",
+  "title": "manage sessions",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Manage agent sessions in {% data variables.product.prodname_vscode_shortname %}\n\nUse the sessions list to return to an agent task, monitor ongoing work, and put completed work away. This article shows how to manage sessions in the [{% data variables.copilot.chat_view %}](/docs/agents/run/chat-view.md) and the [{% data variables.copilot.agents_window %}](/docs/agents/run/agents-window.md).\n\nA [session](/docs/agents/concepts/sessions.md) groups the workspace, code changes, and conversations for a task. Each conversation has its own history and context. If you're starting your first task, follow the [agents quickstart](/docs/agents/quickstart.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/sessions/manage-sessions.md"
+}

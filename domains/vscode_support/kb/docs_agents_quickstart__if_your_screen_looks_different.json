@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_quickstart__if_your_screen_looks_different",
+  "title": "quickstart / If your screen looks different",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## If your screen looks different\n\n* If the **Copilot** harness or **Agent** isn't available, verify your sign-in and review the [agent harness setup requirements](/docs/agents/run/agent-harnesses.md#requirements-and-setup). Your organization's policies might restrict specific agents, models, or tools.\n\n* If you reach an AI credits limit, review [what remains available and when allowances reset](/docs/agents/agent-troubleshooting/faq.md#i-reached-my-inline-suggestions-or-ai-credits-limit).\n\n<a name=\"optional-continue-in-the-other-surface\"></a>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/quickstart.md"
+}

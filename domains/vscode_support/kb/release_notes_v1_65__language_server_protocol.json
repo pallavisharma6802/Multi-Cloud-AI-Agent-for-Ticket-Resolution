@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_65__language_server_protocol",
+  "title": "v1_65 / Language Server Protocol",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Language Server Protocol\n\nAnother next version of the [Language Server Protocol](https://microsoft.github.io/language-server-protocol), together with the corresponding npm modules, has been published. The new version contains the following changes:\n\n* The conversion of LSP types into VS Code types and vice versa is now fully asynchronous. This change avoids the conversion of large data streams, which can block the extension host. Note that this is a breaking API change in the libraries (more information in the [README.md](https://github.com/microsoft/vscode-languageserver-node/blob/081ba82a0e49eebec2d1b7d93751290cc1128104/README.md#L47)). It does not affect the backwards compatibility of the protocol itself.\n* The proposed implementation for notebook documents was enhanced. It has now full middleware and provider support.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_65.md"
+}

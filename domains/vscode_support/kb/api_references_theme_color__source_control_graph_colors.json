@@ -1,0 +1,8 @@
+{
+  "id": "api_references_theme_color__source_control_graph_colors",
+  "title": "theme color / Source Control Graph colors",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Source Control Graph colors\n\n- `scmGraph.historyItemHoverLabelForeground`: History item hover label foreground color.\n- `scmGraph.foreground1`: Source control graph foreground color (1).\n- `scmGraph.foreground2`: Source control graph foreground color (2).\n- `scmGraph.foreground3`: Source control graph foreground color (3).\n- `scmGraph.foreground4`: Source control graph foreground color (4).\n- `scmGraph.foreground5`: Source control graph foreground color (5).\n- `scmGraph.historyItemHoverAdditionsForeground`: History item hover additions foreground color.\n- `scmGraph.historyItemHoverDeletionsForeground`: History item hover deletions foreground color.\n- `scmGraph.historyItemRefColor`: History item reference color.\n- `scmGraph.historyItemRemoteRefColor`: History item remote reference color.\n- `scmGraph.historyItemBaseRefColor`: History item base reference color.\n- `scmGraph.historyItemHoverDefaultLabelForeground`: History item hover default label foreground color.\n- `scmGraph.historyItemHoverDefaultLabelBackground`: History item hover default label background color.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+}

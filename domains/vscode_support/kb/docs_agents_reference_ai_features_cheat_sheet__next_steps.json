@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_ai_features_cheat_sheet__next_steps",
+  "title": "ai features cheat sheet / Next steps",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Next steps\n\n* [Apply AI best practices to your project](/docs/agents/best-practices.md).\n* [Look up AI settings](/docs/agents/reference/ai-settings.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/ai-features-cheat-sheet.md"
+}

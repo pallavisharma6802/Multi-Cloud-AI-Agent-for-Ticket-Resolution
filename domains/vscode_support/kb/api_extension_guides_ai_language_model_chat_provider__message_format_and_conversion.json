@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_ai_language_model_chat_provider__message_format_and_conversion",
+  "title": "language model chat provider / Message format and conversion",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Message format and conversion\n\nYour provider receives messages in the `LanguageModelChatRequestMessage` format, which you'll typically need to convert to your service's API format. The message content can be a mix of text parts, tool calls, and tool results.\n\n```typescript\ninterface LanguageModelChatRequestMessage {\n    readonly role: LanguageModelChatMessageRole;\n    readonly content: ReadonlyArray<LanguageModelInputPart | unknown>;\n    readonly name: string | undefined;\n}\n```\n\nOptionally, convert these messages appropriately for your language model API:\n\n```typescript\nprivate convertMessages(messages: readonly LanguageModelChatRequestMessage[]) {\n    return messages.map(msg => ({\n        role: msg.role === vscode.LanguageModelChatMessageRole.User ? 'user' : 'assistant',\n        content: msg.content\n            .filter(part => part instanceof vscode.LanguageModelTextPart)\n            .map(part => (part as vscode.LanguageModelTextPart).value)\n            .join('')\n    }));\n}\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/language-model-chat-provider.md"
+}

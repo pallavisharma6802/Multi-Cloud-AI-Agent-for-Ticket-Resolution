@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_87__terminal",
+  "title": "v1_87 / Terminal",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Terminal\n\n### Command duration tracked\n\nTerminal duration is now tracked and details are shown in the command hover when shell integration is enabled:\n\n![Hovering the terminal command shows how long it took in milliseconds](./images/1_87/terminal_duration.png)\n\n### New commands to zoom in, out and reset\n\nThere are new commands to zoom in, zoom out, and reset the terminal font size. These are unbound by default, but you can bind them to your preferred keybindings.\n\n- **Terminal: Increase Font Size** (`workbench.action.terminal.fontZoomIn`)\n- **Terminal: Decrease Font Size** (`workbench.action.terminal.fontZoomOut`)\n- **Terminal: Reset Font Size** (`workbench.action.terminal.fontZoomReset`)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_87.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_agent_customization_agent_skills__verify_a_skill",
+  "title": "agent skills / Verify a skill",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Verify a skill\n\nUse these checks after installing, copying, creating, or editing a skill.\n\nStart a fresh chat with the intended harness and workspace. If the skill appears in the `/` menu, [run the skill yourself](#use-skills-as-slash-commands) and give it a small task you expect it to handle. Review the tool activity and result to confirm that it uses the expected instructions and resources.\n\nIf you want the agent to select the skill automatically, test that separately with a request that matches its description. Discovery and installation make a skill available; they don't guarantee that the agent selects it for every relevant request.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/agent-skills.md"
+}

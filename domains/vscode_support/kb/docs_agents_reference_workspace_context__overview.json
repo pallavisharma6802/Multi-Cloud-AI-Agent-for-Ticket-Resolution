@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_workspace_context__overview",
+  "title": "workspace context",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# How Copilot understands your workspace\n\nCopilot agents use search and file-reading tools to find relevant workspace code. For prompts like \"where is authentication handled?\" or \"add tests for the list endpoint\", they can gather context from related files instead of relying only on the current editor. What they find depends on available tools, indexing, exclusions, and the information you provide. Review their answers and edits against the source.\n\nThis article explains the tools and indexes Copilot uses to discover workspace context, and the limits to consider when a result is incomplete. An index helps find relevant snippets; it doesn't put the entire workspace into each model request.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/workspace-context.md"
+}

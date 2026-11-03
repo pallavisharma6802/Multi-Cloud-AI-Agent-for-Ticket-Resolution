@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_concepts_sessions__remote_and_synced_sessions",
+  "title": "sessions / Remote and synced sessions",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Remote and synced sessions\n\nA session doesn't have to run on your local machine, and it doesn't have to stay on one device:\n\n* **Remote sessions** run on a machine other than the one you work from. [GitHub Environments (Preview)](/docs/agents/run/remote-agent-sessions.md#github-environments-preview) registers that machine for access across supported {% data variables.product.prodname_copilot_short %} clients. For {% data variables.product.prodname_vscode_shortname %}-specific access, connect over [SSH or a dev tunnel](/docs/agents/run/remote-agent-sessions.md#choose-how-to-connect). The host, workspace, and running session stay on the remote machine.\n* **Cloud sessions** `feature(cloud-sessions)` run in managed cloud environments rather than on a machine you register. [Reopen the existing cloud session](/docs/agents/run/cloud-sandbox-sessions.md#continue-an-existing-cloud-session) to reconnect and continue work. This doesn't migrate an existing local conversation, and environment lifetime is managed by the service.\n* **Synced sessions** are backed up to your GitHub account so you can access them across devices. Learn more about [syncing sessions](/docs/agents/run/sessions/session-history.md).\n* **Session insights** let you query your session history to review what you worked on. Learn more about [session insights](/docs/agents/run/sessions/session-history.md#query-session-history-with-chronicle).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/sessions.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_json__hovers",
+  "title": "json / Hovers",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Hovers\n\nWhen you hover over properties and values for JSON data with or without schema, we will provide additional context.\n\n![Hover](images/json/hoverandtoggle.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/json.md"
+}

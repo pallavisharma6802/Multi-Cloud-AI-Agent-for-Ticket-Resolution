@@ -1,0 +1,8 @@
+{
+  "id": "learn_java_spring_boot_3_expose_tools_with_mcp__what_you_will_learn",
+  "title": "3 expose tools with mcp / What You Will Learn",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## What You Will Learn\n\nThe interesting part of this chapter is not the chat prompt. It is how little code it\ntakes to get there.\n\nIn this chapter, you will learn to:\n\n- **Add an MCP server to a Spring Boot app:** One starter dependency turns the application into an MCP server.\n- **Publish Java methods as tools:** Annotate ordinary Spring bean methods so a client can discover and call them.\n- **Choose the right transport:** Understand the one property that decides whether the `/mcp` endpoint exists at all.\n- **Connect Visual Studio Code:** Register the server in `.vscode/mcp.json` and confirm the tools were discovered.\n- **Drive it from Copilot Chat:** Enable the tools in Agent mode and give Copilot a task that needs two of them in sequence.\n- **Verify the result independently:** Confirm in the browser that Copilot changed real application state.\n\nHere is how the pieces connect.\n\n![MCP tools and the web UI connected to the Spring Boot service](../images/java-spring-boot/ch3-journey.png)\n\nFig 1: The MCP tools and the web page are two front doors onto one service and one repository.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/3-expose-tools-with-mcp.md"
+}

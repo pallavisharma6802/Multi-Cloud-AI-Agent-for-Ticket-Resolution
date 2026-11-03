@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_50__editor",
+  "title": "v1_50 / Editor",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Editor\n\n### Trigger IntelliSense\n\nFor years, `Ctrl+Space` has been the predominant keybinding to trigger IntelliSense. However, on macOS and Windows, the same keybinding is used to toggle between keyboard layouts. To minimize confusion, we added another keybinding to trigger IntelliSense: on Windows and Linux it's `Ctrl+I`, and on macOS it's `Cmd+I`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_50.md"
+}

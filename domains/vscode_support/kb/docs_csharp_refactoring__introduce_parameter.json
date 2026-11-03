@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_refactoring__introduce_parameter",
+  "title": "refactoring / Introduce parameter",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Introduce parameter\n\n**What:** Lets you immediately generate a new parameter to replace an existing expression.\n\n**When:** You have code that could be easily reused later if it were in a parameter.\n\n**Why:** You could copy and paste the code multiple times to use it in various locations, however it would be better to perform the operation once, store the result in a parameter, and use the parameter throughout.\n\n**How-to:**\n\n1. Place your caret on the expression that you want to assign to a new parameter.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select from the following options:\n\nSelect **Introduce parameter for &lt;expression&gt; -> and update call sites directly**\n\n![Update call sites directly example](images/refactoring/introduce-parameter-directly.png)\n\nSelect **Introduce parameter for &lt;expression&gt; -> into extracted method**\n\n![Introduce parameter into extracted method example](images/refactoring/introduce-parameter-extracted-method.png)\n\nSelect **Introduce parameter for &lt;expression&gt; -> into new overload**\n\n![Introduce parameter into new overload example](images/refactoring/introduce-parameter-overload.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "learn_java_spring_boot_2_debug_and_inspect__quick_question",
+  "title": "2 debug and inspect / Quick Question",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Quick Question\n\nThe Dashboard's **Properties** and **Memory** sections appear only while a live process is\nattached. Why can they not simply read the app the way **Endpoint Mappings** appears to?",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/2-debug-and-inspect.md"
+}

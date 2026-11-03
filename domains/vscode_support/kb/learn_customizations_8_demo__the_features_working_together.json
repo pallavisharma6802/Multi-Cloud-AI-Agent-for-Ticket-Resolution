@@ -1,0 +1,8 @@
+{
+  "id": "learn_customizations_8_demo__the_features_working_together",
+  "title": "8 demo / The features working together",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## The features working together\n\nThis project uses several customization features simultaneously.\n\nEach one handles a specific part of the workflow:\n\n- **Custom Agent** \u2192 Applies the arcade-themed visual style\n- **Agent Skill** \u2192 Automatically updates the README when features change\n- **Custom Instructions** \u2192 Ensures SOLID principles and accessibility standards are applied\n- **Prompt File** \u2192 Simplifies bloated code in open files\n- **Hook** \u2192 Automatically formats files after modifications\n\nThis saves time because you don\u2019t need to repeat these instructions manually.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/8-demo.md"
+}

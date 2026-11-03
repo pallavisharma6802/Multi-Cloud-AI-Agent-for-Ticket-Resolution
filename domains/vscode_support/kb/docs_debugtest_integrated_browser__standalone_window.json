@@ -1,0 +1,8 @@
+{
+  "id": "docs_debugtest_integrated_browser__standalone_window",
+  "title": "integrated browser / Standalone window",
+  "category": "DEBUGGING",
+  "intent": "debugging",
+  "content": "## Standalone window\n\nMove the browser to its own floating window by right-clicking the editor tab and selecting **Move into New Window**. Use **Set Always on Top** from the floating window's title bar to keep it visible.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/integrated-browser.md"
+}

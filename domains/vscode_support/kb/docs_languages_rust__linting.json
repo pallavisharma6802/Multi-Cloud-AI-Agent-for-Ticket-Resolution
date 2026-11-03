@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_rust__linting",
+  "title": "rust / Linting",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Linting\n\nThe Rust toolset includes linting, provided by rustc and clippy, to detect issues with your source code.\n\n![linter warning about an unused variable](images/rust/linter-warning.png)\n\nThe rustc linter, enabled by default, detects basic Rust errors, but you can use [clippy](https://github.com/rust-lang/rust-clippy) to get more lints. To enable clippy integration in rust-analyzer, change the **Rust-analyzer > Check: Command** (`rust-analyzer.check.command`) setting to `clippy` instead of the default `check`. The rust-analyzer extension will now run `cargo clippy` when you save a file and display clippy warnings and errors directly in the editor and Problems view.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/rust.md"
+}

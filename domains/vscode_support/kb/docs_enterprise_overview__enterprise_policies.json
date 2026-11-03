@@ -1,0 +1,8 @@
+{
+  "id": "docs_enterprise_overview__enterprise_policies",
+  "title": "overview / Enterprise policies",
+  "category": "ENTERPRISE",
+  "intent": "enterprise",
+  "content": "## Enterprise policies\n\n{% data variables.product.prodname_vscode_shortname %} supports centrally managed policies that override user settings on managed devices. Policies can be deployed through device management solutions like Microsoft Intune, Active Directory Group Policy, or MDM solutions on macOS.\n\nPolicies are available to control:\n\n* [AI and Copilot features](/docs/enterprise/manage-ai-settings.md) - Agent mode, MCP servers, and tool approvals\n* [Extensions](/docs/enterprise/extensions.md) - Allowed extensions and private marketplace\n* [Telemetry](/docs/enterprise/telemetry.md) - Data collection levels and feedback mechanisms\n* [Automatic updates](/docs/enterprise/updates.md) - Control when and how {% data variables.product.prodname_vscode_shortname %} updates\n\nSee the [enterprise policies reference](/docs/enterprise/policies.md) for a complete list of available policies.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/enterprise/overview.md"
+}

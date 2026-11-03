@@ -1,0 +1,8 @@
+{
+  "id": "docs_typescript_typescript_editing__overview",
+  "title": "typescript editing",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Editing TypeScript\n\n{% data variables.product.prodname_vscode %} has great editing support for [TypeScript](https://www.typescriptlang.org). This article goes into depth on the editing and programming language features that come built-in to {% data variables.product.prodname_vscode_shortname %}. If you'd like to know more about general editing features in {% data variables.product.prodname_vscode_shortname %}, such as keyboard shortcuts, multi-cursors, search, and find and replace, you can read [Basic Editing](/docs/editing/codebasics.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/typescript/typescript-editing.md"
+}

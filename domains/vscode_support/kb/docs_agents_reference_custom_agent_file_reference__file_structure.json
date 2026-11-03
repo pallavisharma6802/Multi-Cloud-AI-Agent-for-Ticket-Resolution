@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_custom_agent_file_reference__file_structure",
+  "title": "custom agent file reference / File structure",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## File structure\n\nA custom agent file contains an optional YAML header, enclosed by `---` delimiters, followed by a Markdown body with the agent's instructions:\n\n```markdown\n---\nname: Reviewer\ndescription: Review changes without editing files\ntools: ['read', 'search']\n---\nReview the supplied changes for correctness and missing tests.\nReport actionable findings with file references. Do not edit files.\n```\n\nThe fields below describe the {% data variables.product.prodname_vscode_shortname %} format. Files in `.claude/agents` use the [Claude agent format](#claude-agent-format).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/custom-agent-file-reference.md"
+}

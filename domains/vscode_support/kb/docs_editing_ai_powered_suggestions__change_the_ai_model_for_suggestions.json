@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_ai_powered_suggestions__change_the_ai_model_for_suggestions",
+  "title": "ai powered suggestions / Change the AI model for suggestions",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Change the AI model for suggestions\n\nDifferent Large Language Models (LLMs) are trained on different types of data and might have different capabilities and strengths. Learn more about how to [choose between different AI language models](/docs/agent-customization/language-models.md) in {% data variables.product.prodname_vscode_shortname %}.\n\nTo change the language model that is used for generating ghost text suggestions in the editor:\n\n1. Select **Configure Inline Suggestions...** from the Chat menu in the {% data variables.product.prodname_vscode_shortname %} title bar.\n\n1. Select **Change Completions Model...**, and then select one of the models from the list.\n\n> [!NOTE]\n> The list of available models might vary and change over time. When no alternative models are available, the option to change the model is not available.\n>\n> If you are a {% data variables.copilot.copilot_business_short %} or Enterprise user, your Administrator needs to enable certain models for your organization by opting in to `Editor Preview Features` in the [Copilot policy settings](https://docs.github.com/en/enterprise-cloud@latest/copilot/managing-copilot/managing-github-copilot-in-your-organization/managing-policies-for-copilot-in-your-organization#enabling-copilot-features-in-your-organization) on GitHub.com.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/ai-powered-suggestions.md"
+}

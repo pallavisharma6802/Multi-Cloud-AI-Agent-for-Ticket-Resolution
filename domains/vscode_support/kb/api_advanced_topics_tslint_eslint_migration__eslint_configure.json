@@ -1,0 +1,8 @@
+{
+  "id": "api_advanced_topics_tslint_eslint_migration__eslint_configure",
+  "title": "tslint eslint migration / ESLint: Configure",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## ESLint: Configure\n\nThe `.eslintrc.js` file is usually sufficient to get started but it's likely that the `parserOptions.project` property is still set to your `tsconfig.json` file. That means that ESLint rules can use semantic information, for example, is this variable a string or a number-array? This configuration enables some powerful rules but means that ESLint takes much longer to compute. The default rules for extensions do not require semantic information and unless you have added rules that do, we recommend you remove the `parserOptions.project` property.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/advanced-topics/tslint-eslint-migration.md"
+}

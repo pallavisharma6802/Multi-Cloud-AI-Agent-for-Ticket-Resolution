@@ -1,0 +1,8 @@
+{
+  "id": "docs_nodejs_profiling__overview",
+  "title": "profiling",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Performance Profiling JavaScript\n\n{% data variables.product.prodname_vscode %} supports collecting and viewing performance profiles for JavaScript programs. To get started, you'll first need to have the debugger configured for your [Node.js program](/docs/nodejs/nodejs-debugging.md) or [browser app](/docs/nodejs/browser-debugging.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/profiling.md"
+}

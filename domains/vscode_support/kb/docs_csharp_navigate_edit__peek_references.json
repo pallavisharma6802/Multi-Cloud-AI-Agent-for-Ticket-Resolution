@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_navigate_edit__peek_references",
+  "title": "navigate edit / Peek References",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Peek References\n\nYou can get an inline list of sources where a selected symbol has been referenced in your code using the **Peek References** feature.  Place the cursor on the symbol anywhere it's used in your source code, right-click, then choose **Peek > Peek References**.\n\n![Peek References example](images/navigate-edit/peek-references.gif)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/navigate-edit.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_references_theme_color__menu_bar_colors",
+  "title": "theme color / Menu Bar colors",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Menu Bar colors\n\n- `menubar.selectionForeground`: Foreground color of the selected menu item in the menubar.\n- `menubar.selectionBackground`: Background color of the selected menu item in the menubar.\n- `menubar.selectionBorder`: Border color of the selected menu item in the menubar.\n- `menu.foreground`: Foreground color of menu items.\n- `menu.background`: Background color of menu items.\n- `menu.selectionForeground`: Foreground color of the selected menu item in menus.\n- `menu.selectionBackground`: Background color of the selected menu item in menus.\n- `menu.selectionBorder`: Border color of the selected menu item in menus.\n- `menu.separatorBackground`: Color of a separator menu item in menus.\n- `menu.border`: Border color of menus.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+}

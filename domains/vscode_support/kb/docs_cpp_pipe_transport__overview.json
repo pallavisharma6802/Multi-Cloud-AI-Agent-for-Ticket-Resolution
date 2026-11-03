@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_pipe_transport__overview",
+  "title": "pipe transport",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Pipe transport\n\nPipe transport allows communication through a pipe program to a remote shell. For example, `ssh` on Linux. With the introduction of [{% data variables.product.prodname_vscode %} Remote Development](/docs/remote/remote-overview.md) pipe transport is relevant primarily for IoT scenarios.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/pipe-transport.md"
+}

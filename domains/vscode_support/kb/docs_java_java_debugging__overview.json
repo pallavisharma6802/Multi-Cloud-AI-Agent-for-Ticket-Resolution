@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_debugging__overview",
+  "title": "java debugging",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Running and debugging Java\n\n{% data variables.product.prodname_vscode %} allows you to debug Java applications through the [Debugger for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug) extension. It's a lightweight Java debugger based on [Java Debug Server](https://github.com/microsoft/java-debug), which extends the [Language Support for Java\u2122 by Red Hat](https://marketplace.visualstudio.com/items?itemName=redhat.java).\n\nHere's a list of supported debugging features:\n\n- Launch/Attach\n- Breakpoints\n- Exceptions\n- Pause & Continue\n- Step In/Out/Over\n- Variables\n- Call Stacks\n- Threads\n- Debug Console\n- Evaluation\n- Hot Code Replace\n\nThe Java debugger is an open-source project, which welcomes contributors to collaborate through GitHub repositories:\n\n- [Debugger for Java](https://github.com/microsoft/vscode-java-debug)\n- [Java Debug Server for {% data variables.product.prodname_vscode %}](https://github.com/microsoft/java-debug)\n\nIf you run into any issues when using the features below, you can contact us by entering an [issue](https://github.com/microsoft/vscode-java-pack/issues).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-debugging.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_reference_default_settings__related_resources",
+  "title": "default settings / Related resources",
+  "category": "REFERENCE",
+  "intent": "reference",
+  "content": "## Related resources\n\n* [Configure settings in {% data variables.product.prodname_vscode_shortname %}](/docs/configure/settings.md)\n* [Personalize {% data variables.product.prodname_vscode_shortname %}](/docs/getstarted/personalize-vscode.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/reference/default-settings.md"
+}

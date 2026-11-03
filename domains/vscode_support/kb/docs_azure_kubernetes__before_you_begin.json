@@ -1,0 +1,8 @@
+{
+  "id": "docs_azure_kubernetes__before_you_begin",
+  "title": "kubernetes / Before you begin",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Before you begin\n\nYou will need to have tools for [Docker](https://docker.com/) and [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/). See the [Install Docker](https://docs.docker.com/install/) documentation for details on setting up Docker on your machine and [Install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/). Before proceeding further, verify you can run Docker and kubectl commands from the shell.\n\nYou can create a local Kubernetes cluster with [minikube](https://kubernetes.io/docs/getting-started-guides/minikube/) or an Azure Kubernetes cluster in [Azure Kubernetes Service (AKS)](https://learn.microsoft.com/azure/aks/). In this tutorial, we will use [Azure Kubernetes Service (AKS)](https://learn.microsoft.com/azure/aks/) and you will need to have your [Azure](https://www.azure.com) account ready for the deployment steps.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/kubernetes.md"
+}

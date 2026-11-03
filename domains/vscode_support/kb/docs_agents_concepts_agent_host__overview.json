@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_concepts_agent_host__overview",
+  "title": "agent host",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Agent Host architecture\n\nThe Agent Host is a dedicated process that runs agent harnesses and manages their sessions. Separating session execution from an individual window lets you work with the same session across interfaces and run agents close to your code and development tools.\n\nThis article explains the process boundaries, execution environments, session lifetime, and client dependencies for integrations that use the Agent Host. You don't need this architecture background to use agents. To identify the harness a session uses or compare Local and Copilot, see [Choose an agent harness](/docs/agents/run/agent-harnesses.md). For session-management tasks, see [Manage sessions](/docs/agents/run/sessions/manage-sessions.md).\n\n<a name=\"why-a-dedicated-agent-host\"></a>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/agent-host.md"
+}

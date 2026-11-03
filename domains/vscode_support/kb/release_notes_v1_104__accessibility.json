@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_104__accessibility",
+  "title": "v1_104 / Accessibility",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Accessibility\n\n### Focus chat confirmation action\n\nWe've added a command, **Focus Chat Confirmation** `(kb(workbench.action.chat.focusConfirmation))`, which focuses the confirmation dialog, if present, or announces to screen reader users that confirmation is not required.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_104.md"
+}

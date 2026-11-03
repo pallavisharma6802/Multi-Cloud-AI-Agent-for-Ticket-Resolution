@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_prompt_examples__terminal_and_command_line_tasks",
+  "title": "prompt examples / Terminal and command-line tasks",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Terminal and command-line tasks\n\nUse [terminal inline chat](/docs/chat/inline-chat.md#use-terminal-inline-chat) to get help with shell commands and terminal operations.\n\n```prompt\nHow do I install npm packages?\n```\n\n```prompt\nList the top 5 largest files in the src directory\n```\n\n```prompt\nundo the last git commit\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/prompt-examples.md"
+}

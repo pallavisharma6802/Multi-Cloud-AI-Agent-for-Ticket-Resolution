@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_finetune_legacy__overview",
+  "title": "finetune legacy",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Fine-tune models\n\nFine-tune AI model is a common practice that allows you to use your custom dataset to run **fine-tune** jobs on a pre-trained model in a computing environment with GPUs. Foundry Toolkit currently supports fine-tuning SLMs on local machine with GPU or in the cloud (Azure Container App) with GPU.\n\nA fine-tuned model can be downloaded to local and do inference test with GPUs, or be quantized to run locally on CPUs. Fine-tuned model can also be deployed to a cloud environment as remote model.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/finetune-legacy.md"
+}

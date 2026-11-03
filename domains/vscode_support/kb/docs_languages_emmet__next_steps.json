@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_emmet__next_steps",
+  "title": "emmet / Next steps",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Next steps\n\nEmmet is just one of the great web developer features in {% data variables.product.prodname_vscode_shortname %}.  Read on to find out about:\n\n* [HTML](/docs/languages/html.md) - {% data variables.product.prodname_vscode_shortname %} supports HTML with IntelliSense, closing tags, and formatting.\n* [CSS](/docs/languages/css.md) - We offer rich support for CSS, SCSS and Less.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/emmet.md"
+}

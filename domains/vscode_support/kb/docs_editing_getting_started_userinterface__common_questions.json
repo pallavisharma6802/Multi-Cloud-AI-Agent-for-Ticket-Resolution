@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_getting_started_userinterface__common_questions",
+  "title": "userinterface / Common questions",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Common questions\n\n### How can I change the color of the indent guides?\n\nThe indent guide colors are customizable, as are most {% data variables.product.prodname_vscode_shortname %} user interface elements. To [customize](/api/references/theme-color.md) the indent guides color for your active Color Theme, use the `setting(workbench.colorCustomizations)` setting and modify the `editorIndentGuide.background` value.\n\nFor example, to make the indent guides bright blue, add the following to your `settings.json`:\n\n```json\n\"workbench.colorCustomizations\": {\n    \"editorIndentGuide.background\": \"#0000ff\"\n}\n```\n\n### Can I hide the Open Editors section in the Explorer view?\n\nYes, you can show or hide the Open Editors section by using the Views menu in the Explorer and toggling the **Open Editors** menu item.\n\n![Explorer menu to enable or disable views in the Explorer](../images/userinterface/explorer-menu.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/userinterface.md"
+}

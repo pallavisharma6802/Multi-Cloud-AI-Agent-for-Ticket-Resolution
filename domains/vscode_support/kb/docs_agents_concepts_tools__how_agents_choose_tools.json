@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_concepts_tools__how_agents_choose_tools",
+  "title": "tools / How agents choose tools",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## How agents choose tools\n\nBy default, the agent chooses from the enabled tools based on your request and the current context. You can give the agent a high-level goal without naming each tool that it should use.\n\nTo direct the agent to a specific tool or group of tools, add a `#` reference to your prompt. Learn how to [use tools in a request](/docs/agents/run/tools.md#use-tools-in-a-request).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/tools.md"
+}

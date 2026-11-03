@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundations_approvals_autonomy_and_context_budget__permission_levels",
+  "title": "approvals autonomy and context budget / Permission levels",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Permission levels\n\nBeyond individual approvals, the permissions picker in the chat input area controls how much overall autonomy the agent has for the session.\n\n### Default approvals\n\nThe default mode. Copilot follows configured settings and shows confirmation dialogs where required. This is the right starting point when learning what the agent does or when working on something sensitive.\n\n### Bypass approvals\n\nAuto-approves all tool calls and automatically retries when it hits errors. You're stepping back from step-by-step oversight and letting everything run uninterrupted.\n\nWith Bypass Approvals, the agent still stops and waits if it has a blocking question that requires a decision. You've removed the security prompts, but you're still in the loop for judgment calls.\n\n### Autopilot\n\nAutopilot goes further than Bypass. It auto-approves tool calls, auto-retries on errors, and resolves blocking questions on its own until it decides the task is complete.\n\n> [!NOTE]\n> The first time you enable Bypass approvals or Autopilot, VS Code shows a warning. Both modes skip manual confirmations for actions that can modify files and run commands.\n\n![Screenshot showing the approval picker in VS Code chat with Default approvals, Bypass approvals, and Autopilot options.](../images/foundations/approval-picker.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/approvals-autonomy-and-context-budget.md"
+}

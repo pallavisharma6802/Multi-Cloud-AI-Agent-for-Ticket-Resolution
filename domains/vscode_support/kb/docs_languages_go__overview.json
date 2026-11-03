@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_go__overview",
+  "title": "go",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Go in {% data variables.product.prodname_vscode %}\n\nUsing the Go extension for {% data variables.product.prodname_vscode %}, you get features like IntelliSense, code navigation, symbol search, testing, debugging, and many more that will help you in [Go](https://go.dev/) development.\n\n![Go extension banner](images/go/go-extension.png)\n\nYou can install the Go extension from the {% data variables.product.prodname_vscode_shortname %} [Marketplace](https://marketplace.visualstudio.com/items?itemName=golang.go).\n\nWatch [\"Getting started with {% data variables.product.prodname_vscode_shortname %} Go\"](https://youtu.be/1MXIGYrMk80) for an explanation of how to build your first Go application using {% data variables.product.prodname_vscode_shortname %} Go.\n\nThis article describes only a subset of the features the Go extension provides. See the extension's [documentation](https://github.com/golang/vscode-go/wiki/features) for the full, up-to-date list of supported features.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/go.md"
+}

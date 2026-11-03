@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_105__source_control",
+  "title": "v1_105 / Source Control",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Source Control\n\n### Resolve merge conflicts with AI\n\nWhen opening a file with git merge conflict markers, you are now able to resolve merge conflicts with AI. We added a new action in the lower right-hand corner of the editor. Selecting this new action opens the Chat view and starts an agentic flow with the merge base and changes from each branch as context.\n\n![Screenshot of the proposed merge conflict resolution in the editor.](images/1_105/merge-conflict-resolution.png)\n\nYou can review the proposed merge conflict resolution in the editor and follow up with additional context if needed. You can customize the merge conflict resolution by using an `AGENTS.md` file.\n\n### Add file commit to chat context\n\nA couple of milestones ago, we added the capability to view the files in each history item shown in the Source Control Graph view. You can now add a file from a history item as context to a chat request. This can be useful when you want to provide the contents of a specific version of a file as context to your chat prompt.\n\nTo add a file from a past commit to chat, select a commit to view the list of files, right-click on a particular file, and then select **Add to Chat** from the context menu.\n\n![Screenshot of the Source Control Graph view showing the context menu for a file in a history item with the Add to Chat option highlighted.](images/1_105/add-history-item-to-chat.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_105.md"
+}

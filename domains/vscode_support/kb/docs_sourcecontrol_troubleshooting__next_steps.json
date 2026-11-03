@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_troubleshooting__next_steps",
+  "title": "troubleshooting / Next steps",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## Next steps\n\n* [Choose a remote operation](/docs/sourcecontrol/repos-remotes.md#push-pull-and-sync) to fetch, pull, or push without unintended synchronization.\n* [Source control FAQ](/docs/sourcecontrol/faq.md) answers product support and compatibility questions.\n* [Git documentation](https://git-scm.com/doc) provides reference details for Git commands and configuration.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/troubleshooting.md"
+}

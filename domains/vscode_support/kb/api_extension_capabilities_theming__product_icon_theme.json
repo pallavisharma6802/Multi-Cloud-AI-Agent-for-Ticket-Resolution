@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_capabilities_theming__product_icon_theme",
+  "title": "theming / Product Icon Theme",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Product Icon Theme\n\nProduct icon themes allow you to:\n\nRedefine all the built-in icons used in the workbench. Examples are the icons in filter action buttons and view icons, in the status bar, breakpoints and the folding icons in trees and the editor.\n\nThe [Product Icon Theme guide](/api/extension-guides/product-icon-theme) discusses how to create a Product Icon Theme.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-capabilities/theming.md"
+}

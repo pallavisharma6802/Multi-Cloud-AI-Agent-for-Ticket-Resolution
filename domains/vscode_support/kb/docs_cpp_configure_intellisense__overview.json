@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_configure_intellisense__overview",
+  "title": "configure intellisense",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Configure C/C++ IntelliSense\n\nThis article is about configuring the [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) extension to provide C++ specific [IntelliSense](/docs/editing/intellisense.md) suggestions in {% data variables.product.prodname_vscode %}. IntelliSense is a helpful tool built into {% data variables.product.prodname_vscode_shortname %} that provides various code editing features to help you code faster and more efficiently. For example, code completion, parameter info, syntax highlighting, Code Actions (light bulbs), and member lists are all generated using IntelliSense.\n\nC/C++ IntelliSense only requires a C/C++ compiler to be installed on your system. The C/C++ compiler provides C++ specific information to IntelliSense, such as the locations of system include paths and other settings. For project level configurations, reference [Project level IntelliSense configuration](#project-level-intellisense-configuration) section.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/configure-intellisense.md"
+}

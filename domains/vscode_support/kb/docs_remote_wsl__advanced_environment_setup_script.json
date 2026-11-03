@@ -1,0 +1,8 @@
+{
+  "id": "docs_remote_wsl__advanced_environment_setup_script",
+  "title": "wsl / Advanced: Environment setup script",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Advanced: Environment setup script\n\nWhen {% data variables.product.prodname_vscode_shortname %} Remote is started in WSL, no shell startup scripts are run. This was done to avoid issues with startup scripts that are tuned for shells. If you want to run additional commands or modify the environment this can be done in a setup script `~/.vscode-server/server-env-setup` (Insiders: `~/.vscode-server-insiders/server-env-setup`). If present, the script is processed before the server is started.\n\nThe script needs to be a valid Bourne shell script. Be aware that an invalid script will prevent the server from starting up. If you end up with a script that prevents the server from starting, you will have to use a regular WSL shell and delete or rename the setup script.\n\nCheck the WSL log (**WSL: Show Log**) for output and errors.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/wsl.md"
+}

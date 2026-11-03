@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_overview__language_features_in_data_variables_product_prodname_vscode_shortname",
+  "title": "overview / Language features in {% data variables.product.prodname_vscode_shortname %}",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Language features in {% data variables.product.prodname_vscode_shortname %}\n\nThe richness of support varies across the different languages and their extensions:\n\n* Syntax highlighting and bracket matching\n* Smart completions (IntelliSense, Artificial Intelligence with [GitHub Copilot](/docs/editing/ai-powered-suggestions.md))\n* Linting and corrections\n* Code navigation (Go to Definition, Find All References)\n* Debugging\n* Refactoring",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/overview.md"
+}

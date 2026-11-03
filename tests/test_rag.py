@@ -53,7 +53,7 @@ def retrieval_agent(monkeypatch):
 
     from app.agents.retrieval_agent import RetrievalAgent
 
-    agent = RetrievalAgent(domain_pack_id="it_saas")
+    agent = RetrievalAgent(domain_pack_id="vscode_support")
     agent._pinecone_mock = mock_pinecone
     return agent
 
@@ -69,4 +69,34 @@ def test_retrieval_agent_merges_and_indexes(retrieval_agent):
     )
     retrieval_agent._pinecone_mock.upsert_documents.assert_called_once()
     _, kwargs = retrieval_agent._pinecone_mock.upsert_documents.call_args
-    assert kwargs.get("namespace") == "it_saas"
+    assert kwargs.get("namespace") == "vscode_support"
+
+
+def test_hybrid_ranking_rewards_agreement_not_score_magnitude(retrieval_agent):
+    shared = {"id": "shared", "text": "Windows install", "score": 0.7, "source": "kb"}
+    dense_only = {"id": "dense", "text": "Other install", "score": 0.99, "source": "kb"}
+    sparse_only = {"id": "sparse", "text": "Repeated install keywords", "score": 1.0, "source": "kb"}
+    retrieval_agent._pinecone_mock.query.return_value = [dense_only, shared]
+    retrieval_agent._bm25_search = MagicMock(return_value=[sparse_only, shared])
+    results = retrieval_agent.retrieve_relevant_documents("Windows install", top_k=3)
+    assert results[0].doc_id == "shared"
+    assert results[0].metadata["retrieval_method"] == "hybrid"
+
+
+def test_retrieval_restores_same_article_context_and_links(retrieval_agent, tmp_path, monkeypatch):
+    import json
+
+    from app.config import settings
+    article_dir = tmp_path / 'vscode_support' / 'kb'
+    article_dir.mkdir(parents=True)
+    article_dir.joinpath('doc1.json').write_text(json.dumps({
+        'source': 'kb', 'content': 'Installer adds PATH. Restart your terminal. [Download](/download)',
+    }))
+    monkeypatch.setattr(settings, 'domains_root', str(tmp_path))
+    result = retrieval_agent.retrieve_relevant_documents('cancel order', top_k=1)[0]
+    assert 'Restart your terminal' in result.content
+    article_dir.joinpath('doc1.json').write_text(json.dumps({
+        'source': 'different-version-source', 'content': 'Wrong evidence',
+    }))
+    result = retrieval_agent.retrieve_relevant_documents('cancel order', top_k=1)[0]
+    assert 'Wrong evidence' not in result.content

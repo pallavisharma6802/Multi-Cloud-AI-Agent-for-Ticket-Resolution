@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_84__source_control",
+  "title": "v1_84 / Source Control",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Source Control\n\n### Force push using --force-if-includes\n\nThis milestone there is now support for the `--force-if-includes` option, which is an auxiliary option to `--force-with-lease` added in Git 2.30. The new option ensures that commits that are being force-pushed were created after examining the commit at the tip of the remote reference, and reduces the chance of losing commits when auto fetch is enabled. You can disable the use of `--force-if-includes` by disabling the `git.useForcePushIfIncludes` setting.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_84.md"
+}

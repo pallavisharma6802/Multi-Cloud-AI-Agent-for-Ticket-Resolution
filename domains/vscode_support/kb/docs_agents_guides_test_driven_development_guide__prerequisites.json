@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_test_driven_development_guide__prerequisites",
+  "title": "test driven development guide / Prerequisites",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Prerequisites\n\nUse your own repository for this workflow. Before you start:\n\n* Open the repository root as a folder or workspace in {% data variables.product.prodname_vscode_shortname %}. The workflow stores shared customization files under `.github`.\n* Open the {% data variables.copilot.chat_view %} and select **Local** from the **Session Target** control. Run the TDD cycle and its handoffs in this view.\n* Install the project dependencies and confirm that you can run its test command from the integrated terminal. The custom agents use that command to verify each phase.\n\nIf you use another harness, adapt these TDD roles with the [customization formats that the harness supports](/docs/agents/concepts/customization.md#customization-options-at-a-glance). You can package a portable workflow as an [agent skill](/docs/agent-customization/agent-skills.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/test-driven-development-guide.md"
+}

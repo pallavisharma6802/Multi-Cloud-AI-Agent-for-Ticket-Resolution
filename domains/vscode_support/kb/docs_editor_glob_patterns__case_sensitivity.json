@@ -1,0 +1,8 @@
+{
+  "id": "docs_editor_glob_patterns__case_sensitivity",
+  "title": "glob patterns / Case sensitivity",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Case sensitivity\n\nGlob pattern matching behavior differs based on the platform's file system:\n\n* **Windows and macOS**: Glob patterns are **case-insensitive** by default. For example, the pattern `**/MyFolder/**` will match `myfolder/`, `MyFolder/`, `MYFOLDER/`, and any other case variation.\n* **Linux**: Glob patterns are **case-sensitive**. The pattern `**/MyFolder/**` will only match folders with that exact casing.\n\nThis platform-aware behavior applies to all uses of glob patterns in {% data variables.product.prodname_vscode_shortname %}, including:\n\n* Search view include/exclude patterns\n* `setting(files.exclude)` setting\n* `setting(search.exclude)` setting\n* `.gitignore` file patterns (when `setting(explorer.excludeGitIgnore)` is enabled)\n* Search Editor patterns\n\nFor example, if you have a `.gitignore` file with a pattern like `build/`, this will match `build/`, `Build/`, `BUILD/`, and other case variations on Windows and macOS, but only exact matches on Linux. This ensures consistent behavior with how these file systems handle file and folder names.\n\n**Remote development:** When working with remote workspaces (such as WSL, SSH, or dev containers), the glob matching behavior follows the **remote** file system's case sensitivity rules, not the local client's operating system.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editor/glob-patterns.md"
+}

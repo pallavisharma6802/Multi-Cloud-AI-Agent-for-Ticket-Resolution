@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_keybindings__viewing_modified_keyboard_shortcuts",
+  "title": "keybindings / Viewing modified keyboard shortcuts",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Viewing modified keyboard shortcuts\n\nTo filter the list to only show the shortcuts you have modified, select the **Show User Keybindings** command in the **More Actions** (**...**) menu. This applies the `@source:user` filter to the **Keyboard Shortcuts** editor (**Source** is 'User').\n\n![Default Keyboard Shortcuts](images/keybinding/user-keyboard-shortcuts.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/keybindings.md"
+}

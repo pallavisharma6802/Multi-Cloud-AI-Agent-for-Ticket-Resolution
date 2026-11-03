@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_sessions_session_history__related_content",
+  "title": "session history / Related content",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related content\n\n* [Manage agent sessions](/docs/agents/run/sessions/manage-sessions.md) - Create and organize agent sessions\n* [Security](/docs/agents/run/security.md) - Copilot security and privacy\n* [Diagnose prompt caching with the Cache Explorer](/docs/agents/agent-troubleshooting/cache-explorer.md) - Find where sessions waste tokens",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/sessions/session-history.md"
+}

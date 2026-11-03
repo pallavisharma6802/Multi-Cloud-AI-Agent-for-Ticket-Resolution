@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_81__notable_fixes",
+  "title": "v1_81 / Notable fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable fixes\n\n* [133542](https://github.com/microsoft/vscode/issues/133542) Reattached to the wrong terminal\n* [168021](https://github.com/microsoft/vscode/issues/168021) Better object completions in the JavaScript debugger\n* [184894](https://github.com/microsoft/vscode/issues/184894) Cannot click and drag scroll bar in terminal",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_81.md"
+}

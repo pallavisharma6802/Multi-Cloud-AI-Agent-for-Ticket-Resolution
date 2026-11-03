@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_139__release_highlights",
+  "title": "v1_139 / Release highlights",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Release highlights\n\nThis release makes large agent session lists faster, extends Dev Container support to remote projects, and improves everyday editing.\n\n* [Remote Dev Container sessions](#run-agent-sessions-in-dev-containers-on-remote-hosts): Run agents inside your project's Dev Container on SSH, Tunnel, and WSL hosts.\n\n* [Session list improvements](#faster-session-list-loading): Load large session lists faster, fit more sessions on screen, and in-place session renaming.\n\n* [Editor experience](#editor-experience): Identify wrapped lines at a glance and avoid duplicate closing brackets as you type.\n<!-- RELEASE_HIGHLIGHTS_END -->\n\n<!-- %IF IN_PRODUCT %\nHappy Coding!\n\n---\n%ENDIF % -->\n\n<!-- TOC\n<div class=\"toc-nav-layout\">\n  <nav id=\"toc-nav\">\n    <div>In this update</div>\n    <ul>\n      <li><a href=\"#release-highlights\">Release highlights</a></li>\n      <li><a href=\"#agents\">Agents</a></li>\n      <li><a href=\"#chat\">Chat</a></li>\n      <li><a href=\"#editor-experience\">Editor experience</a></li>\n      <li><a href=\"#proposed-apis\">Proposed APIs</a></li>\n      <li><a href=\"#deprecated-features-and-settings\">Deprecated features and settings</a></li>\n      <li><a href=\"#notable-fixes\">Notable fixes</a></li>\n      <li><a href=\"#thank-you\">Thank you</a></li>\n    </ul>\n  </nav>\n  <div class=\"notes-main\">\nNavigation End -->",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_139.md"
+}

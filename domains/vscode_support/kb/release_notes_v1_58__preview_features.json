@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_58__preview_features",
+  "title": "v1_58 / Preview Features",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Preview Features\n\n### TypeScript 4.4 support\n\nThis release includes initial support for the upcoming TypeScript 4.4 release. You can read more about the new language features and improvements in TypeScript 4.4 [on the TypeScript blog](https://devblogs.microsoft.com/typescript/announcing-typescript-4-4-beta/).\n\nTo start using the TypeScript 4.4 nightly builds, install the [TypeScript Nightly extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next).\n\nPlease share your feedback and let us know if you run into any bugs with TypeScript 4.4.\n\n### Move terminals between windows\n\nIt's now possible to move terminals between windows by detaching via **Terminal: Detach Session** in one window and attaching to another with **Terminal: Attach to Session**. In the future, this should help enable cross-window drag and drop!",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_58.md"
+}

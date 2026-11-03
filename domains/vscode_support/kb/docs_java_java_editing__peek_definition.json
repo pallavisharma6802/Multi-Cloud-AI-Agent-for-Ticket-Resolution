@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_editing__peek_definition",
+  "title": "java editing / Peek Definition",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Peek Definition\n\nYou can take a quick look at how a symbol was defined by using the Peek Definition feature. This feature displays a few lines of code near the definition inside a peek window, so you can take a look without navigating away from your current location.\n\nTo peek at a symbol's definition, place your cursor on the symbol anywhere it's used in your source code and then press `kb(editor.action.peekDefinition)`. Alternatively, you can choose **Peek Definition** from the context menu (right-click, then choose **Peek Definition**).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-editing.md"
+}

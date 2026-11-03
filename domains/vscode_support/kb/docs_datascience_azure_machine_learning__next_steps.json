@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_azure_machine_learning__next_steps",
+  "title": "azure machine learning / Next steps",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Next steps\n\n- [Set up the Azure Machine Learning extension](https://learn.microsoft.com/azure/machine-learning/how-to-setup-vs-code)\n- [Interact with Azure Machine Learning (in the desktop or web)](https://learn.microsoft.com/azure/machine-learning/how-to-launch-vs-code-remote?view=azureml-api-2&tabs=vscode-web)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/azure-machine-learning.md"
+}

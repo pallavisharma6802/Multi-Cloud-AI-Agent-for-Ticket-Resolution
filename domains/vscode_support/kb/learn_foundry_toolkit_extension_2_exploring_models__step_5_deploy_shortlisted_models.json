@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_2_exploring_models__step_5_deploy_shortlisted_models",
+  "title": "2 exploring models / Step 5: Deploy Shortlisted Models",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Step 5: Deploy Shortlisted Models\n\nDeployment moves model comparison from theory to hands-on testing. In this step, two OpenAI candidates are deployed into the same Foundry project so they can be evaluated under identical prompts.\n\nGreat, let's kick off a deployment.\n\n1. Choose Deploy from the model card.\n2. Select your connected Foundry project as the deployment target.\n\n![Deployment in Foundry Playground](../images/foundry-toolkit/ch2-deploy.png)\n\nThis should kick off a deployment process that takes a few minutes. Once complete, you will see the deployed model in your Foundry project.\n\nFor our next step, we will compare the two deployed models side by side in Playground to evaluate their behavior under identical prompts.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/2-exploring-models.md"
+}

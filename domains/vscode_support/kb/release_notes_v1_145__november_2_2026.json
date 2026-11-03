@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_145__november_2_2026",
+  "title": "v1_145 / November 2, 2026",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## November 2, 2026\n\n* Add support for nesting Claude and Codex chats under a Copilot session in the Agents window. _[microsoft/vscode#343910: Why can't I nest a Claude/Codex session under a Copilot session?](https://github.com/microsoft/vscode/issues/343910)_",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_145.md"
+}

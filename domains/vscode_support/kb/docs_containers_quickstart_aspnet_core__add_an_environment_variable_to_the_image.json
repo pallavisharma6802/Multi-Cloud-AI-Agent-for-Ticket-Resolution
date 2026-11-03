@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_quickstart_aspnet_core__add_an_environment_variable_to_the_image",
+  "title": "quickstart aspnet core / Add an environment variable to the image",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Add an environment variable to the image\n\nYou can use the Container Tools extension to author Docker files. The extension provides completions and contextual help. To see these capabilities add an environment variable to your service image by following these steps:\n\n1. Open the `Dockerfile` file.\n1. Use `ENV` instruction to add an environment variable to the service container image. The instruction should be placed in the `base` stage of the `Dockerfile` (the first stage in the file). Set the `ASPNETCORE_URLS` variable to `http://*:5000`:\n\n   ![Add an environment variable to Docker image](images/quickstarts/aspnetcore-intellisense-env.png)\n\n   Note how the Container Tools extension lists all available Dockerfile instructions and describes the syntax.\n\n   > The Container Tools extension uses the `base` stage of the `Dockerfile` to create a debug version of the container image for your service. Put the `ASPNETCORE_URLS` environment variable definition in the `base` stage to have this variable available in both debug and release versions of the container image.\n1. Save the `Dockerfile` file.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/quickstart-aspnet-core.md"
+}

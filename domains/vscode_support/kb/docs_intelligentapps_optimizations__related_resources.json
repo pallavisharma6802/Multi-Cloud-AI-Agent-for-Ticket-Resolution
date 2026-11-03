@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_optimizations__related_resources",
+  "title": "optimizations / Related resources",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related resources\n\n* [Build prompt agents with Agent Builder](/docs/intelligentapps/agentbuilder.md)\n* [Create and deploy a hosted agent](/docs/intelligentapps/hosted-agents.md)\n* [Evaluate AI models and agents](/docs/intelligentapps/evaluation.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/optimizations.md"
+}

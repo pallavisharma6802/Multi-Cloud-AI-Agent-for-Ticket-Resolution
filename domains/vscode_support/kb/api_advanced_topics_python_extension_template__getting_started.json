@@ -1,0 +1,8 @@
+{
+  "id": "api_advanced_topics_python_extension_template__getting_started",
+  "title": "python extension template / Getting started",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Getting started\n\nTo get started, follow the instructions in the template [README](https://github.com/microsoft/vscode-python-tools-extension-template#readme). There you will learn how to use the [template to create your repository](https://docs.github.com/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) and how to install the necessary tools (for example, the [nox](https://nox.thea.codes) task runner) and optional dependencies (testing support).\n\nThe [README](https://github.com/microsoft/vscode-python-tools-extension-template#readme) has the most up-to-date instructions and also goes into details on how to customize the extension's `package.json` placeholders (`<pythontool-module>`, `<pythontool-display-name>`, etc.).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/advanced-topics/python-extension-template.md"
+}

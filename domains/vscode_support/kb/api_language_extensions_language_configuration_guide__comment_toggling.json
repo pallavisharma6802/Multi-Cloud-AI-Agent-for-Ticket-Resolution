@@ -1,0 +1,8 @@
+{
+  "id": "api_language_extensions_language_configuration_guide__comment_toggling",
+  "title": "language configuration guide / Comment toggling",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Comment toggling\n\nVS Code offers two commands for comment toggling. **Toggle Line Comment** and **Toggle Block Comment**. You can specify `comments.blockComment` and `comments.lineComment` to control how VS Code should comment out lines / blocks.\n\n```json\n{\n  \"comments\": {\n    \"lineComment\": \"//\",\n    \"blockComment\": [\"/*\", \"*/\"]\n  }\n}\n```\n\nThe `lineComment` property supports two formats for backwards compatibility:\n\n- A string value for simple line comment definitions.\n- An object value that enables configuring the indentation behavior of comment lines.\n\n```json\n{\n  \"comments\": {\n    \"lineComment\": {\n      \"comment\": \"//\",\n      \"noIndent\": true\n    },\n    \"blockComment\": [\"/*\", \"*/\"]\n  }\n}\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/language-extensions/language-configuration-guide.md"
+}

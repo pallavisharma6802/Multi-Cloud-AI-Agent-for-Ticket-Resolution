@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_3_building_social_media_agent__overview",
+  "title": "3 building social media agent",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "# Building a Social Media Content Agent with Agent Builder\n\n[![Watch Chapter 3 Video on YouTube (opens in new tab).](images/3-building-social-media-agent/youtube-NPGMgljY2Gs.jpg)](https://www.youtube.com/watch?v=NPGMgljY2Gs)\n\nThis chapter walks through building a practical social media content agent using Agent Builder in Foundry Toolkit. The goal is not just to generate text, but to create an assistant that asks the right follow-up questions, uses trusted context, and returns output a team can actually review and ship.\n\nBy the end, you will have a repeatable workflow for moving from idea to tested prompt-agent behavior in Visual Studio Code.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/3-building-social-media-agent.md"
+}

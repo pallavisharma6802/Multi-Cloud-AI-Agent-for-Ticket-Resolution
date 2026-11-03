@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_90__notebooks",
+  "title": "v1_90 / Notebooks",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notebooks\n\n### Find in cell selection\n\nWhen you're in a notebook, you can now use the Find control to search within specific ranges of selected cells.\n\nAfter you set <code codesetting=\"notebook.experimental.find.scope.enabled\">notebook.experimental.find.scope.enabled</code> to `true`, the **Find in Cell Selection** toggle will be available in the Find control. You can then select a range of cells and either open the Find control or, if it's already open, select the \"Find in Cell Selection\" button.\n\n<video src=\"images/1_90/notebook-find-in-cell-selection.mp4\" title=\"Notebook Find in Cell Selection\" autoplay loop controls muted></video>\n\n### Notebook Format Code Actions\n\nNotebooks now support a new kind of Code Action, which is defined with the `notebook.format` Code Action Kind prefix. These Code Actions can be triggered automatically via an explicit formatting request (using the command **Notebook: Format Notebook**) or a formatting on save request.\n\nThese can be used to provide more powerful formatting, through the use of Workspace Edits and Notebook Edits. To get started, check out an example extension in the [vscode-extension-samples](https://github.com/microsoft/vscode-extension-samples/tree/main/notebook-format-code-action-sample) repository.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_90.md"
+}

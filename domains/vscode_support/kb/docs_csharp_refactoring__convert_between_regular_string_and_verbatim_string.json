@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_refactoring__convert_between_regular_string_and_verbatim_string",
+  "title": "refactoring / Convert between regular string and verbatim string",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Convert between regular string and verbatim string\n\n**What:** Lets you convert between regular string and verbatim string literals.\n\n**When:** You either want to save space or provide more clarity in your code.\n\n**Why:** Converting a verbatim string literal to a regular string literal can help save space. Converting a regular string literal to a verbatim string literal can provide more clarity.\n\n**How-to:**\n\n1. Place your caret on either the regular string or verbatim string literal:\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select from one of the following options:\n\nSelect **Convert to regular string**.\n\nSelect **Convert to verbatim string**.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+}

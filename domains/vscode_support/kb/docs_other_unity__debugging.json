@@ -1,0 +1,8 @@
+{
+  "id": "docs_other_unity__debugging",
+  "title": "unity / Debugging",
+  "category": "REFERENCE",
+  "intent": "reference",
+  "content": "## Debugging\n\nBy default, your Unity project is setup with a debugger configuration to attach the Unity debugger to the Unity Editor instance opened on the project. Press `kb(workbench.action.debug.start)` to start a debugging session.\n\nIf you want to debug a Unity standalone player, the easiest way is to use the **Attach Unity Debugger** command.\n\nAlternatively, you can modify the `.vscode/launch.json` file in your project and add a new debugger configuration for an IP endpoint you control:\n\n```json\n    {\n        \"name\": \"Attach to Xbox\",\n        \"type\": \"vstuc\",\n        \"request\": \"attach\",\n        \"endPoint\": \"127.0.0.1:56321\"\n    }\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/other/unity.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundations_debugging_and_whats_happening_behind_the_scenes__the_chat_debug_view",
+  "title": "debugging and whats happening behind the scenes / The chat debug view",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## The chat debug view\n\nWhere the Agent Debug Log panel shows the sequence of events, the Chat Debug view shows the raw content of each LLM request and response.\n\nOpen it from the Chat view overflow menu and select **Show Chat Debug View**.\n\nThe sidebar lists every AI request made during the session, grouped by agent. Select a request to inspect:\n\n* The full system prompt.\n* The user prompt.\n* All attached context.\n* Complete tool invocation payloads.\n\nThis is the exact data that went to the model and the exact data that came back. It's useful for answering questions like: Did the agent have the right file contents when it wrote that function? Was the system prompt shaped the way I expected?",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/debugging-and-whats-happening-behind-the-scenes.md"
+}

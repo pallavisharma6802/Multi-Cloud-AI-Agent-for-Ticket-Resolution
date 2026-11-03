@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_accessibility_voice__next_steps",
+  "title": "voice / Next steps",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Next steps\n\nRead on to find out about:\n\n* [Other {% data variables.product.prodname_vscode_shortname %} accessibility features](/docs/configure/accessibility/accessibility.md).\n* [{% data variables.product.prodname_vscode %} User Interface](/docs/editing/getting-started/userinterface.md) - A quick orientation to {% data variables.product.prodname_vscode_shortname %}.\n* [Basic Editing](/docs/editing/codebasics.md) - Learn about the powerful {% data variables.product.prodname_vscode_shortname %} editor.\n* [Code Navigation](/docs/editing/editingevolved.md) - Move quickly through your source code.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/accessibility/voice.md"
+}

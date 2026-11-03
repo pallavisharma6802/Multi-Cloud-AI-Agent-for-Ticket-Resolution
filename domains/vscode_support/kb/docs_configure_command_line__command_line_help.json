@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_command_line__command_line_help",
+  "title": "command line / Command line help",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Command line help\n\nTo get an overview of the {% data variables.product.prodname_vscode_shortname %} command-line interface, open a terminal or command prompt and type `code --help`. You will see the version, usage example, and list of command line options.\n\n![command line help](images/command-line/command-line-help.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/command-line.md"
+}

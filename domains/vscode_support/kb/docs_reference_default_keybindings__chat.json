@@ -1,0 +1,8 @@
+{
+  "id": "docs_reference_default_keybindings__chat",
+  "title": "default keybindings / Chat",
+  "category": "REFERENCE",
+  "intent": "reference",
+  "content": "## Chat\n\nCommand|Key|Command id\n-------|---|----------\nOpen {% data variables.copilot.chat_view %}|`kb(workbench.action.chat.open)`|`workbench.action.chat.open`\nOpen chat in agent mode|`kb(workbench.action.chat.openagent)`|`workbench.action.chat.openagent`\nOpen editor inline chat|`kb(inlineChat.start)`|`inlineChat.start`\nOpen terminal inline chat|`kb(workbench.action.terminal.chat.start)`|`workbench.action.terminal.chat.start`\nOpen quick chat|`kb(workbench.action.quickchat.toggle)`|`workbench.action.quickchat.toggle`\nOpen agent picker|`kb(workbench.action.chat.openModePicker)`|`workbench.action.chat.openModePicker`\nOpen language model picker|`kb(workbench.action.chat.openModelPicker)`|`workbench.action.chat.openModelPicker`\nNew chat session|`kb(workbench.action.chat.newChat)`|`workbench.action.chat.newChat`\nAccept inline suggestion|`kb(editor.action.inlineSuggest.commit)`|`editor.action.inlineSuggest.commit`",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/reference/default-keybindings.md"
+}

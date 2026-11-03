@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_reference_manualmodelconversion__overview",
+  "title": "ManualModelConversion",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Convert models to ONNX format\n\nThe Foundry Toolkit supports the [Open Neural Network Exchange](https://onnx.ai) (ONNX) format for running models locally. ONNX is an open standard for representing machine learning models, defining a common set of operators and a file format that enables models to run across various hardware platforms.\n\nTo use models from other catalogs, such as Microsoft Foundry or Hugging Face, in the Foundry Toolkit, you must first convert them to ONNX format.\n\nThis tutorial guides you through converting Hugging Face models to ONNX format and loading them into the Foundry Toolkit.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/reference/ManualModelConversion.md"
+}

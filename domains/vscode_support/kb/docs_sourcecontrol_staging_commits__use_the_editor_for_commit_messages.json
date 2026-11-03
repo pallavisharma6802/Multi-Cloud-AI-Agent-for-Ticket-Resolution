@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_staging_commits__use_the_editor_for_commit_messages",
+  "title": "staging commits / Use the editor for commit messages",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## Use the editor for commit messages\n\nFor longer commit messages, use a full editor tab instead of the input box. Make sure `setting(git.useEditorAsCommitInput)` is on.\n\n1. In the Source Control view, select **Commit** without entering a message in the commit input box. This opens an editor tab named `COMMIT_EDITMSG`.\n\n    ![Screenshot showing the COMMIT_EDITMSG editor for writing a commit message.](images/staging-commits/commit-editmsg.png)\n\n1. Write the message. To complete the commit, close the editor tab or select **Commit** in the editor.\n\n    ![Screenshot showing the Commit button in the COMMIT_EDITMSG editor.](images/staging-commits/commit-editmsg-done.png)\n\nTo cancel, select **Cancel** in the editor, or clear the message and close the tab.\n\n![Screenshot showing the Cancel button in the COMMIT_EDITMSG editor.](images/staging-commits/commit-editmsg-cancel.png)\n\nTo use an input prompt instead, turn off `setting(git.useEditorAsCommitInput)` and restart {% data variables.product.prodname_vscode_shortname %}. To use the editor for terminal `git commit` commands too, turn on `setting(git.terminalGitEditor)` and restart the terminal.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/staging-commits.md"
+}

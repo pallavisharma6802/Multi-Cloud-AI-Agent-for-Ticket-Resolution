@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_microsoft_fabric_quickstart__fabric_workspace_and_items_explorer",
+  "title": "microsoft fabric quickstart / Fabric Workspace and items explorer",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Fabric Workspace and items explorer\n\nThe Fabric extensions provide a seamless way to work with both remote and local Fabric items.\n\n* In the Fabric extension, the **Fabric Workspaces** section lists all items from your remote workspace, organized by type (Lakehouses, Notebooks, Pipelines, and more).\n* In the Fabric extension, the **Local folder** section shows a Fabric item(s) folder opened in {% data variables.product.prodname_vscode_shortname %}. It reflects the structure of your fabric item definition for each type that is opened in {% data variables.product.prodname_vscode_shortname %}. This enables you to develop locally and publish your changes to current or new workspace.\n\n![Screenshot that shows how to view your workspaces and items?](images/microsoft-fabric/view-workspaces-and-items.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/microsoft-fabric-quickstart.md"
+}

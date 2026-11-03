@@ -1,0 +1,8 @@
+{
+  "id": "docs_agent_customization_agent_plugins__cross_tool_compatibility",
+  "title": "agent plugins / Cross-tool compatibility",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Cross-tool compatibility\n\n[Agent Plugins](https://agent-plugins.org/) is an open standard for packaging skills and MCP servers across compatible clients, including {% data variables.product.prodname_copilot %} in {% data variables.product.prodname_vscode_shortname %}, {% data variables.copilot.copilot_cli %}, and the {% data variables.copilot.github_copilot_app %}. Other components, such as custom agents, slash commands, rules, hooks, and automation templates, can be client-specific.\n\n{% data variables.product.prodname_vscode_shortname %} also supports existing Copilot, Claude, and legacy OpenPlugin formats. Support for a package format doesn't guarantee that every component works in every harness or client. Check the plugin's requirements. For file layouts and client-specific namespaces, see the [plugin authoring compatibility reference](/docs/agents/reference/agent-plugin-reference.md#cross-tool-compatibility).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/agent-plugins.md"
+}

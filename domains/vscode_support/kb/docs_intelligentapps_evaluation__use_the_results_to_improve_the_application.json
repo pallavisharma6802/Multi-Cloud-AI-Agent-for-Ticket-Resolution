@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_evaluation__use_the_results_to_improve_the_application",
+  "title": "evaluation / Use the results to improve the application",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Use the results to improve the application\n\nInspect failed cases, evaluator explanations, tool activity, and missing data before changing the application. A low score can indicate a response problem, an unsuitable evaluator, or incomplete inputs. Rerun the same benchmark after a change and check held-out cases.\n\nFor prompt revisions and evaluated hosted-agent candidates, follow [Optimize models, prompts, and agents](/docs/intelligentapps/optimizations.md). Saving a recovery draft, saving a prompt-agent version with **Deploy**, publishing an agent application, and deploying hosted-agent code are separate operations. Evaluation alone performs none of those publication or deployment steps.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/evaluation.md"
+}

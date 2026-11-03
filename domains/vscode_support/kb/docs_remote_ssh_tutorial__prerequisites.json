@@ -1,0 +1,8 @@
+{
+  "id": "docs_remote_ssh_tutorial__prerequisites",
+  "title": "ssh tutorial / Prerequisites",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Prerequisites\n\nTo get started, you need to have done the following steps:\n\n1. Install an [OpenSSH compatible SSH client](/docs/remote/troubleshooting.md#installing-a-supported-ssh-client) (PuTTY is not supported).\n2. Install [{% data variables.product.prodname_vscode %}](https://code.visualstudio.com).\n3. Have an Azure subscription (If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin).\n\n### Install the extension\n\nThe Remote - SSH extension is used to connect to SSH hosts.\n\n> <a class=\"install-extension-btn\" href=\"vscode:extension/ms-vscode-remote.remote-ssh\">Install the Remote - SSH extension</a>\n\n![Remote - SSH extension](images/ssh-tutorial/remote-ssh-extension.png)\n\n### Remote - SSH\n\nWith the Remote - SSH extension installed, you will see a new Status bar item at the far left.\n\n![Remote Status bar item](images/ssh-tutorial/remote-status-bar.png)\n\nThe Remote Status bar item can quickly show you in which context {% data variables.product.prodname_vscode_shortname %} is running (local or remote) and clicking on the item will bring up the Remote - SSH commands.\n\n![Remote - SSH commands](images/ssh-tutorial/remote-ssh-commands.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/ssh-tutorial.md"
+}

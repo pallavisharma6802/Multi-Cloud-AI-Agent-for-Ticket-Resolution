@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_37__contributions_to_extensions",
+  "title": "v1_37 / Contributions to extensions",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Contributions to extensions\n\n### Remote Development (Preview)\n\nWork has continued on the [Remote Development](https://aka.ms/vscode-remote/download/extension) extensions, which allow you to use a container, remote machine, or the [Windows Subsystem for Linux](https://learn.microsoft.com/windows/wsl) (WSL) as a full-featured development environment. You can learn about new extension features and bug fixes in the [Remote Development release notes](https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_37.md).\n\nYou can also read two recent blog posts describing:\n\n* [Linux development with WSL and Visual Studio Code](https://devblogs.microsoft.com/commandline/an-in-depth-tutorial-on-linux-development-on-windows-with-wsl-and-visual-studio-code)\n* [Remote development over SSH](https://code.visualstudio.com/blogs/2019/07/25/remote-ssh).\n\n### Java supports smart selection\n\nThe [Microsoft Java extension](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack) now supports [smart semantic selection](https://code.visualstudio.com/docs/java/java-editing#_smart-selection). You can expand or shrink the selection range based on the semantic information of the caret position in your source code.\n\n* To expand the selection, use `kb(editor.action.smartSelect.expand)`.\n* To shrink the selection, use `kb(editor.action.smartSelect.shrink)`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_37.md"
+}

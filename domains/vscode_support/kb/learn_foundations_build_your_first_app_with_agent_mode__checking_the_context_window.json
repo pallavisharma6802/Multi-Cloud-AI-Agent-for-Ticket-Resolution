@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundations_build_your_first_app_with_agent_mode__checking_the_context_window",
+  "title": "build your first app with agent mode / Checking the context window",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Checking the context window\n\nOpen the context window indicator mid-session and compare it to earlier single-file sessions.\n\n* System (tool definitions and instructions) stays roughly constant.\n* User context grows as planning messages, tool results, and server logs accumulate.\n\nIf the budget fills up, run `/compact` to summarize the conversation history, or start a fresh session and reference the previous one for context.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/build-your-first-app-with-agent-mode.md"
+}

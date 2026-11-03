@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_19__engineering",
+  "title": "v1_19 / Engineering",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Engineering\n\n### Yarn\n\nWe now use [Yarn](https://yarnpkg.com/en/) to manage our production and development dependencies. This has greatly reduced the setup time to prepare a VS Code repository, both for development and build. More details are in this [Pull Request](https://github.com/microsoft/vscode/pull/38481).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_19.md"
+}

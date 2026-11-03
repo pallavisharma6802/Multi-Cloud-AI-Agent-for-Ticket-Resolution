@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_126__cost_management",
+  "title": "v1_126 / Cost management",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Cost management\n\n### Session-level cost information\n\nYou can now see the cost for an entire chat session, not just for individual turns. This gives you better transparency into which sessions consume the most credits, making it easier to spot expensive conversations and manage your usage over time.\n\n![Screenshot showing the session info popover with session cost in credits and context window token usage for the whole chat session.](images/1_126/session-token-usage.webp)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_126.md"
+}

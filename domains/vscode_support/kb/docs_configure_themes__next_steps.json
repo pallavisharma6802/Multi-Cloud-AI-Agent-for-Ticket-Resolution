@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_themes__next_steps",
+  "title": "themes / Next steps",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Next steps\n\nThemes are just one way to customize {% data variables.product.prodname_vscode_shortname %}. If you'd like to learn more about {% data variables.product.prodname_vscode_shortname %} customization and extensibility, try these articles:\n\n* [Settings](/docs/configure/settings) -  Learn how to configure {% data variables.product.prodname_vscode_shortname %} to your preferences through user and workspace settings.\n* [Snippets](/docs/editing/userdefinedsnippets.md) - Add extra snippets to your favorite language.\n* [Extension API](/api) - Learn about other ways to extend {% data variables.product.prodname_vscode_shortname %}.\n* [Color Theme](/api/extension-guides/color-theme.md) - Color Theme extension API.\n* [File Icon Theme](/api/extension-guides/file-icon-theme.md) - File Icon Theme extension API.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/themes.md"
+}

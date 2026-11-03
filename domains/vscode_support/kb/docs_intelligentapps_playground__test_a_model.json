@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_playground__test_a_model",
+  "title": "playground / Test a model",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Test a model\n\nFor chat models, use the following procedure. For image output, follow [Generate images with Image Playground](#generate-images-with-image-playground).\n\n1. Open the playground by using one of these methods:\n   * In the **Foundry Toolkit** view, select **Developer Tools** > **Build** > **Model Playground**.\n   * Under **My Resources** > **Models**, select a deployed model to open it in the playground.\n   * From the model catalog, select **Try in Playground** on a model card.\n2. In **Basic information**, select the model that you want to test from the **Model** list.\n3. Optionally, enter a system prompt and adjust the inference parameters shown for that model.\n4. Enter a prompt in the chat input.\n5. Select **Send**.\n6. Review the response, capability warnings, and available usage information.\n\nEach remote request might consume quota or incur provider charges.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/playground.md"
+}

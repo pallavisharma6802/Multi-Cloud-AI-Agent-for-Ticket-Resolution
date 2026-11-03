@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_95__proposed_apis",
+  "title": "v1_95 / Proposed APIs",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Proposed APIs\n\n### Chat Reference Binary Data for image attachments\n\nWe now allow images (`png`, `jpeg`, `bmp`, `gif`, and `tiff`) to be pasted in chat if there is an extension that uses the `ChatReferencebinaryData` proposed API.\n\n```typescript\nexport class ChatReferenceBinaryData {\n\t/**\n\t * The MIME type of the binary data.\n\t */\n\treadonly mimeType: string;\n\n\t/**\n\t * Retrieves the binary data of the reference.\n\t * @returns A promise that resolves to the binary data as a Uint8Array.\n\t */\n\tdata(): Thenable<Uint8Array>;\n\n\t/**\n\t * @param mimeType The MIME type of the binary data.\n\t * @param data The binary data of the reference.\n\t */\n\tconstructor(mimeType: string, data: () => Thenable<Uint8Array>);\n}\n```\n\nExtension authors can access this after creating a chat handler via `request.references`, which can be a `URI` when images are attached via drag and drop or from the quick pick, or will be `ChatReferenceBinaryData` for pasted images.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_95.md"
+}

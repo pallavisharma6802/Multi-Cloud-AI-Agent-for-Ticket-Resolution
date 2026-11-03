@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_63__vs_code_for_the_web",
+  "title": "v1_63 / VS Code for the Web",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## VS Code for the Web\n\n### Azure Repos\n\nThis milestone we have partnered with the Azure DevOps engineering team to add a new keyboard shortcut to the **Files** hub in Azure Repos. When browsing a repository in the **Files** hub, you can press `.` to open the repository in [https://vscode.dev](https://vscode.dev).\n\nWe have also added a new entry point to your Azure Repos repository. You can now use the new **Open Repository from Azure Repos...** menu item under the **Open Remote Repositories...** menu item in the remote picker to connect to your Azure Repos repository from within [https://vscode.dev](https://vscode.dev).\n\nAdditionally, you can now open an Azure Repos repository using the legacy Azure DevOps URL format (for example, `https://<org>.visualstudio.com`) in vscode.dev by prefixing the URL with `https://vscode.dev`.\n\n### Improved Remote menu\n\nThree additional commands now appear in the Remote menu:\n\n* **Close Remote Workspace** - Change the workspace to the empty one.\n* **Download Visual Studio Code** - Go to [https://code.visualstudio.com/download](https://code.visualstudio.com/download).\n* **Go to Repository** - Open the repository on the source control host website, for example [https://github.com](https://github.com) for GitHub repositories.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_63.md"
+}

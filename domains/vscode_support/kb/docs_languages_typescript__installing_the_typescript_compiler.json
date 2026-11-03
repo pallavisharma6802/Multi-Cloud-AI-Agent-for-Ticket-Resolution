@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_typescript__installing_the_typescript_compiler",
+  "title": "typescript / Installing the TypeScript compiler",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Installing the TypeScript compiler\n\n{% data variables.product.prodname_vscode %} includes TypeScript language support but does not include the TypeScript compiler, `tsc`. You will need to install the TypeScript compiler either globally or in your workspace to transpile TypeScript source code to JavaScript (`tsc HelloWorld.ts`).\n\nThe easiest way to install TypeScript is through npm, the [Node.js Package Manager](https://www.npmjs.com/). If you have npm installed, you can install TypeScript globally (`-g`) on your computer by:\n\n```bash\nnpm install -g typescript\n```\n\nYou can test your install by checking the version.\n\n```bash\ntsc --version\n```\n\nAnother option is to install the TypeScript compiler locally in your project (`npm install --save-dev typescript`) and has the benefit of avoiding possible interactions with other TypeScript projects you may have.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/typescript.md"
+}

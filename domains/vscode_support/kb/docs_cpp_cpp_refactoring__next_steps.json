@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_cpp_refactoring__next_steps",
+  "title": "cpp refactoring / Next steps",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Next steps\n\nRead on to find out about:\n\n* [C++ Code Navigation](/docs/cpp/cpp-ide.md)\n* [Basic Editing](/docs/editing/codebasics.md) - Learn about the powerful {% data variables.product.prodname_vscode_shortname %} editor.\n* [Tasks](/docs/debugtest/tasks.md) - use tasks to build your project and more\n* [Debugging](/docs/debugtest/debugging.md) - find out how to use the debugger with your project\n\nIf you have any other questions or run into any issues, please file an issue on [GitHub](https://github.com/microsoft/vscode-cpptools/issues). You might be asked to provide logging information from the extension to help diagnose the issue. See [C/C++ extension logging](/docs/cpp/enable-logging-cpp.md) for help on providing extension logs.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/cpp-refactoring.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_webapp__next_steps",
+  "title": "java webapp / Next steps",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Next steps\n\n- To containerize and deploy a web application, check out the [Docker in {% data variables.product.prodname_vscode_shortname %}](/docs/containers/overview.md).\n- To learn more about Java Debugging features, see the [Java Debugging Tutorial](/docs/java/java-debugging.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-webapp.md"
+}

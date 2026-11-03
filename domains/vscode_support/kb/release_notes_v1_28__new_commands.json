@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_28__new_commands",
+  "title": "v1_28 / New Commands",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## New Commands\n\nKey|Command|Command id\n---|-------|----------\n`kb(workbench.action.navigateToLastEditLocation)`|Navigate to the last location edited|`workbench.action.navigateToLastEditLocation`\n`kb(workbench.action.files.saveWithoutFormatting)`|Save file without running save participants (formatters, etc.)|`workbench.action.files.saveWithoutFormatting`\n`kb(workbench.action.closeEditorInAllGroups)`|Close the active file across all editor groups|`workbench.action.closeEditorInAllGroups`\n`kb(toggle.diff.renderSideBySide)`|Toggle diff editor inline and side-by-side mode (deprecates `toggle.diff.editorMode`)|`toggle.diff.renderSideBySide`",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_28.md"
+}

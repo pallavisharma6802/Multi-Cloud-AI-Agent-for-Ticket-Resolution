@@ -1,0 +1,8 @@
+{
+  "id": "learn_java_spring_boot_4_test_with_playwright__answer",
+  "title": "4 test with playwright / Answer",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Answer\n\nBecause it is what makes the row uniquely addressable. The delete buttons all share one\ntest id, so \"the delete button\" is ambiguous the moment the list has more than one row.\nThe checkbox, by contrast, gets an accessible label built from the title \u2014 so a distinctive\ntitle produces a distinctive label, and the assistant can target exactly the row it\ncreated. A generic title risks colliding with existing data and turning a passing run into\na false positive, which is the worst outcome a test can have.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/4-test-with-playwright.md"
+}

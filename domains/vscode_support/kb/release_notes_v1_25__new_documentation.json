@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_25__new_documentation",
+  "title": "v1_25 / New Documentation",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## New Documentation\n\n### New Python Flask tutorial\n\nThere is a new [Using Flask in Visual Studio Code](https://code.visualstudio.com/docs/python/tutorial-flask?utm_source=VsCode&utm_medium=ReleaseNotes) tutorial showing how you can quickly create, edit, and debug a Python [Flask](https://flask.palletsprojects.com) web application in VS Code.\n\n### Updated website deployment tutorial\n\nWe've updated the [Deploy static website to Azure](https://code.visualstudio.com/tutorials/static-website/getting-started?utm_source=VsCode&utm_medium=ReleaseNotes) tutorial for creating and deploying a static website using [Azure Storage](https://learn.microsoft.com/azure/storage/). Website deployment is simplified with the new features provided by [Azure Storage extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestorage).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_25.md"
+}

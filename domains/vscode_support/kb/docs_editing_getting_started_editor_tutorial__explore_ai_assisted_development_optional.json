@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_getting_started_editor_tutorial__explore_ai_assisted_development_optional",
+  "title": "editor tutorial / Explore AI-assisted development (optional)",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Explore AI-assisted development (optional)\n\nAI isn't required for this tutorial. If you choose to use AI later, both the {% data variables.copilot.chat_view %} and the {% data variables.copilot.agents_window %} can run agents. Use the {% data variables.copilot.chat_view %} to collaborate with an agent in your current workspace, or use the {% data variables.copilot.agents_window %} to orchestrate agent sessions across multiple projects.\n\n* [Follow the agents quickstart for a focused workspace task](/docs/agents/quickstart.md).\n* [Learn agent workflows across both interfaces](/docs/agents/agents-tutorial.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/editor-tutorial.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_94__debug",
+  "title": "v1_94 / Debug",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debug\n\n### Support for data colorization\n\nVS Code supports new text styling capabilities from the Debug Adapter Protocol. This enables data in the Variables view, Watch view, hovers, and Debug Console to be colorized via ANSI escape sequences.\n\n### JavaScript Debugger\n\n#### Improved display of HTML elements\n\nWe've improved how HTML elements are displayed in the JavaScript debugger. Previously, they were rendered as naive objects, which were hard to navigate. Now, they more closely reflect DOM structure, and we take advantage of new colorization capabilities to provide some basic syntax highlighting.\n\n![HTML elements are colorized in the JavaScript Debug Console.](./images/1_94/js-debug-html.png)\n\n#### Autocomplete of Node commands in launch configuration\n\nThere is a new autocompletion helper available in `launch.json` files for command-line applications that are installed in your `node_modules`. This makes it easier to set up debugging for tools like `vitest` or `nest`.\n\n#### Cleaner Loaded Sources view\n\nWe changed how source paths are structured for Node.js built-in modules, evaluated scripts, and WebAssembly modules to make the **Loaded Sources** view less noisy and easier to browse.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_94.md"
+}

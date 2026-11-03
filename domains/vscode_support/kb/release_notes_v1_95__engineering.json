@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_95__engineering",
+  "title": "v1_95 / Engineering",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Engineering\n\n### Prompt building library for LLMs\n\nThis month, we open sourced our [@vscode/prompt-tsx](https://www.npmjs.com/package/@vscode/prompt-tsx) library, which we've developed and used in Copilot Chat over the past year for crafting language model prompts. The library enables developers to create their prompts using TSX/JSX syntax, similar to React, and includes a variety of tools to make the best use of prompts' token budget.\n\n### AMD code removal and more ESM use in web\n\nWe removed the last traces of AMD (Asynchronous Module Definition) from our sources, mainly from the build scripts that we still kept for supporting AMD in case needed for a recovery release.\n\nIn addition, <https://vscode.dev> is now also running 100% with ESM (ECMAScript Modules) only.\n\n### Migration to ESLint 9\n\nWe've updated both the main VS Code repo and all of our [extension samples](https://github.com/microsoft/vscode-extension-samples) to use ESLint 9. This included migrating all of our ESLint configuration to use modern [flat configs](https://eslint.org/blog/2023/10/flat-config-rollout-plans/).\n\n### Electron 32 update\n\nIn this milestone, we are promoting the Electron 32 update to users on our stable release. This update comes with Chromium 128.0.6613.186 and Node.js 20.18.0. We want to thank everyone who self-hosted on Insiders builds and provided early feedback.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_95.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "learn_agents_1_using_tools_with_agents__prerequisites",
+  "title": "1 using tools with agents / Prerequisites",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Prerequisites\n\nBefore you start, install VS Code, enable AI features, and sign in to GitHub Copilot. You also need access to any extra tools you want to try, such as MCP servers or extensions that contribute tools.\n\n* [Download VS Code](https://code.visualstudio.com/)\n* [Set up GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview#_step-1-set-up-copilot)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/1-using-tools-with-agents.md"
+}

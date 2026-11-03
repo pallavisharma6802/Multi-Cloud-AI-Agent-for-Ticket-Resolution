@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_config_mingw__prerequisites",
+  "title": "config mingw / Prerequisites",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Prerequisites\n\nTo successfully complete this tutorial, you must do the following steps:\n\n1. Install [{% data variables.product.prodname_vscode %}](/download).\n\n1. Install the [C/C++ extension for {% data variables.product.prodname_vscode_shortname %}](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools). You can install the C/C++ extension by searching for 'C++' in the Extensions view (`kb(workbench.view.extensions)`).\n\n    ![C/C++ extension](images/cpp/cpp-extension.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/config-mingw.md"
+}

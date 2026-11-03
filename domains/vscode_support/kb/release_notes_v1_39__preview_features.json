@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_39__preview_features",
+  "title": "v1_39 / Preview features",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Preview features\n\nPreview features are not ready for release but are functional enough to use. We welcome your early feedback while they are under development.\n\n### TypeScript 3.7-beta support\n\nAlthough VS Code will not bundle TypeScript 3.7 until its official release, we have already been working to support all the [exciting new TypeScript 3.7-beta features](https://devblogs.microsoft.com/typescript/announcing-typescript-3-7-beta/).\n\nThese include:\n\n* Syntax highlighting of optional chaining and nullish coalescing in JavaScript and TypeScript files.\n* Completion support for optional chaining.\n* Control over semicolons with the new `javascript.format.semicolons` and `typescript.format.semicolons` settings.\n\nYou can easily try all these new TypeScript 3.7 features today by installing the [TypeScript Nightly extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next). Please share feedback and let us know if you run into any bugs with the TypeScript 3.7 beta!",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_39.md"
+}

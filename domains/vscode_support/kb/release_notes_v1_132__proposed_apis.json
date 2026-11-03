@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_132__proposed_apis",
+  "title": "v1_132 / Proposed APIs",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Proposed APIs\n\n### Configure custom editor priorities by editor mode\n\nThe proposed `customEditors.priority` feature lets extensions choose different priorities for text and diff editors. For example, an extension can use its custom editor by default for regular files while keeping the built-in editor as the default for diffs and vice versa.\n\nExisting single priority values continue to work, and diff editors use `explicit` by default. Extension authors can learn more about [configuring custom editor priorities](https://github.com/microsoft/vscode/issues/292379). We plan to promote this feature to stable in the next release.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_132.md"
+}

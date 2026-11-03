@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_92__diff_editor",
+  "title": "v1_92 / Diff Editor",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Diff Editor\n\n### More compact diffs in Chat\n\nWe iterated on the diff editor layout in the Chat view/inline Chat and made it more compact.\n\n**Before**:\n\n![Previous diff editor layout, which is less compact.](images/1_92/diffEditor_inlineChat_before.png)\n\n**After**:\n\n![More compact diff editor layout.](images/1_92/diffEditor_inlineChat_after.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_92.md"
+}

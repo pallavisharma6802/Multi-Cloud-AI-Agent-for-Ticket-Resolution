@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_formatting__next_steps",
+  "title": "formatting / Next steps",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Next steps\n\n- [Debugging](/docs/python/debugging.md) - Learn to debug Python both locally and remotely.\n- [Testing](/docs/python/testing.md) - Configure test environments and discover, run, and debug tests.\n- [Basic Editing](/docs/editing/codebasics.md) - Learn about the powerful {% data variables.product.prodname_vscode_shortname %} editor.\n- [Code Navigation](/docs/editing/editingevolved.md) - Move quickly through your source code.\n- [Python Extension Template](/api/advanced-topics/python-extension-template.md) - Create an extension to integrate your favorite linter into {% data variables.product.prodname_vscode_shortname %}.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/formatting.md"
+}

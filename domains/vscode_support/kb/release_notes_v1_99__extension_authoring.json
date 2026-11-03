@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_99__extension_authoring",
+  "title": "v1_99 / Extension authoring",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Extension authoring\n\n### Terminal.shellIntegration tweaks\n\nThe `Terminal.shellIntegration` API will now only light up when command detection happens. Previously, this should work when _only_ the current working directory was reported, which caused `TerminalShellIntegration.executeCommand` to not function well.\n\nAdditionally, `TerminalShellIntegration.executeCommand` will now behave more consistently and track multiple \"sub-executions\" for a single command line that ended up running multiple commands. This depends on rich shell integration as mentioned in the [reliability in agent mode section](#reliability-in-agent-mode).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_99.md"
+}

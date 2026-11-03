@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_70__tasks",
+  "title": "v1_70 / Tasks",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Tasks\n\n### Filter support for Run Task command\n\nThe **Tasks: Run Task** (`workbench.action.tasks.runTask`) action supports filtering by task name and type for a more concise and configurable way to select and execute tasks.\n\nFor example:\n\n```json\n{\n  \"key\": \"ctrl+h\",\n  \"command\": \"workbench.action.tasks.runTask\",\n  \"args\": {\n    \"task\": \"VS Code - Build\",\n    \"type\": \"npm\"\n  }\n}\n```\n\n### Improved automatic tasks flow\n\nThe Trusted Workspace feature allows VS Code to simplify the flow for running automatic tasks. By default, automatic tasks will run if a folder is trusted and you'll be prompt once per folder otherwise. This behavior can be configured with the `task.allowAutomaticTasks` setting (default `auto`) to always (`on`) or never (`off`) prompt before running an automatic task.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_70.md"
+}

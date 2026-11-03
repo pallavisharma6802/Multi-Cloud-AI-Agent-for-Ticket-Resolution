@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_hooks_reference__subagentstop",
+  "title": "hooks reference / `SubagentStop`",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## `SubagentStop`\n\nThe `SubagentStop` hook fires when a subagent is about to stop.\n\n### Input\n\nIn addition to the [common input](#common-input), the hook receives:\n\n```json\n{\n  \"agent_id\": \"subagent-456\",\n  \"agent_type\": \"Plan\",\n  \"stop_hook_active\": false\n}\n```\n\n| Field | Type | Description |\n|-------|------|-------------|\n| `agent_id` | string | Identifier for the subagent. |\n| `agent_type` | string | Agent name, such as `\"Plan\"` or a custom agent name. |\n| `stop_hook_active` | boolean | `true` when the subagent is already continuing because a previous `SubagentStop` hook blocked it. |\n\n### Output\n\nThe hook can require the subagent to continue:\n\n```json\n{\n  \"decision\": \"block\",\n  \"reason\": \"Verify the results before completing.\"\n}\n```\n\n| Field | Values or type | Description |\n|-------|----------------|-------------|\n| `decision` | `\"block\"` | Prevents the subagent from stopping. |\n| `reason` | string | Required when `decision` is `\"block\"`. Explains why the subagent should continue. |",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/hooks-reference.md"
+}

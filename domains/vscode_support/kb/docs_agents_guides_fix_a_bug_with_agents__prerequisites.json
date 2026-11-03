@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_fix_a_bug_with_agents__prerequisites",
+  "title": "fix a bug with agents / Prerequisites",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Prerequisites\n\nTo complete this tutorial, you need:\n\n* [Download and install {% data variables.product.prodname_vscode %}](/download).\n* [Enable AI features in {% data variables.product.prodname_vscode_shortname %}](/docs/getstarted/overview.md#enable-ai-features).\n* Install [Node.js 22 or later](https://nodejs.org/en/download).\n* Install [Git](https://git-scm.com/downloads) and configure it for commits.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/fix-a-bug-with-agents.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_azure_machine_learning__remote_jupyter_servers",
+  "title": "azure machine learning / Remote Jupyter servers",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Remote Jupyter servers\n\n{% data variables.product.prodname_vscode_shortname %} offers great support for development using Jupyter notebooks. For more information, see [Jupyter Notebooks in {% data variables.product.prodname_vscode_shortname %}](/docs/datascience/jupyter-notebooks.md).\n\nThe Azure Machine Learning leverages the strong Jupyter notebooks support in {% data variables.product.prodname_vscode_shortname %}. It makes connecting to a remote compute instance and using them as remote Jupyter servers seamless. For more information, see [Configure a compute instance as a remote notebook server](https://learn.microsoft.com/azure/machine-learning/how-to-set-up-vs-code-remote?tabs=extension).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/azure-machine-learning.md"
+}

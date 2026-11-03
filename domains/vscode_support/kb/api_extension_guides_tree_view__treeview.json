@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_tree_view__treeview",
+  "title": "tree view / TreeView",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## TreeView\n\nIf you would like to perform some UI operations on the view programmatically, you can use `window.createTreeView` instead of `window.registerTreeDataProvider`. This will give access to the view, which you can use for performing view operations.\n\n```typescript\nvscode.window.createTreeView('ftpExplorer', {\n  treeDataProvider: new FtpTreeDataProvider()\n});\n```\n\nSee [ftpExplorer.ts](https://github.com/microsoft/vscode-extension-samples/tree/main/tree-view-sample/src/ftpExplorer.ts) in the `tree-view-sample` for the implementation.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/tree-view.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_91__debug",
+  "title": "v1_91 / Debug",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debug\n\n### JavaScript debugger\n\nThe JavaScript debugger now shows the correct value of shadowed variables when hovering over them and in inline values (enabled via the <code codesetting=\"debug.inlineValues\">debug.inlineValues</code> setting), based on the program's scopes.\n\n![JavaScript code snippet that shows an overlay with the value of shadowed variables.](images/1_91/debug-shadowed.png)\n\n_Theme: [Codesong](https://marketplace.visualstudio.com/items?itemName=connor4312.codesong) (preview on [vscode.dev](https://vscode.dev/editor/theme/connor4312.codesong))_",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_91.md"
+}

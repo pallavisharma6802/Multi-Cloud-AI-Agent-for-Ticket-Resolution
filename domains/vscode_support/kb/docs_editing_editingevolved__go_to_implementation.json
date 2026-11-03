@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_editingevolved__go_to_implementation",
+  "title": "editingevolved / Go to Implementation",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Go to Implementation\n\n[Languages](/docs/languages/overview.md) can also support jumping to the implementation of a symbol by pressing `kb(editor.action.goToImplementation)`. For an interface, this shows all the implementors of that interface and for abstract methods, this shows all concrete implementations of that method.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/editingevolved.md"
+}

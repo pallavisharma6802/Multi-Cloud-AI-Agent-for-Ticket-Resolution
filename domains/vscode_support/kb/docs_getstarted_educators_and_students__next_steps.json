@@ -1,0 +1,8 @@
+{
+  "id": "docs_getstarted_educators_and_students__next_steps",
+  "title": "educators and students / Next steps",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Next steps\n\n- Watch the [{% data variables.product.prodname_vscode_shortname %} intro videos](/docs/getstarted/introvideos.md)\n- Check out the [{% data variables.product.prodname_vscode_shortname %} tips and tricks](/docs/editing/getting-started/tips-and-tricks.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/getstarted/educators-and-students.md"
+}

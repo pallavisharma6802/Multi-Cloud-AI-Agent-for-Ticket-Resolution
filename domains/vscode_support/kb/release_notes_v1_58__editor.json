@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_58__editor",
+  "title": "v1_58 / Editor",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Editor\n\n### Editor scroll bar customization\n\nThere are new settings to customize the editor's scroll bars:\n\n* Control scroll bar visibility using `editor.scrollbar.horizontal` and `editor.scrollbar.vertical`.\n* Change their thickness with `editor.scrollbar.horizontalScrollbarSize` and `editor.scrollbar.verticalScrollbarSize`.\n* Determine whether clicking scrolls by page or jumps to the click position (default behavior) using `editor.scrollbar.scrollByPage`.\n\nBelow the editor's vertical scroll bar width is set to 30 pixels.\n\n![Vertical editor scroll bar width set to 30 pixels](images/1_58/scroll-bar-width.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_58.md"
+}

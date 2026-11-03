@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_overview__prerequisites",
+  "title": "overview / Prerequisites",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## Prerequisites\n\nTo use Git features in {% data variables.product.prodname_vscode_shortname %}, you need:\n\n* [Install Git](https://git-scm.com/download) on your machine. {% data variables.product.prodname_vscode_shortname %} uses this installation for Git operations.\n\n* Configure the name and email recorded in your commits. These values identify the author, not your sign-in credentials:\n\n    ```bash\n    git config --global user.name \"<your-name>\"\n    git config --global user.email \"<your-email>\"\n    ```\n\nReplace the placeholders with your name and email. The [quickstart](/docs/sourcecontrol/quickstart.md#prerequisites) walks through this setup. For background on Git concepts, see the [Git documentation](https://git-scm.com/doc).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/overview.md"
+}

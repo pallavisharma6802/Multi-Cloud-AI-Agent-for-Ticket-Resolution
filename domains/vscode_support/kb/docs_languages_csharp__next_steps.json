@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_csharp__next_steps",
+  "title": "csharp / Next steps",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Next steps\n\nRead on to find out about:\n\n* [C# Dev Kit documentation](/docs/csharp/get-started.md)\n* [.NET Development](/docs/languages/dotnet.md) - get up and running with cross-platform .NET\n* [Basic Editing](/docs/editing/codebasics.md) - Learn about the powerful {% data variables.product.prodname_vscode_shortname %} editor.\n* [Tasks](/docs/debugtest/tasks.md) - Use tasks to build your project and more.\n* [Debugging](/docs/debugtest/debugging.md) - Find out how to use the debugger with your project.\n* [Unity development](/docs/other/unity.md) - Learn about using {% data variables.product.prodname_vscode_shortname %} with your Unity projects.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/csharp.md"
+}

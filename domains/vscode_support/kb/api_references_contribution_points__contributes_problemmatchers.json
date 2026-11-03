@@ -1,0 +1,8 @@
+{
+  "id": "api_references_contribution_points__contributes_problemmatchers",
+  "title": "contribution points / contributes.problemMatchers",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## contributes.problemMatchers\n\nContribute problem matcher patterns. These contributions work in both the output panel runner and in the terminal runner. Below is an example to contribute a problem matcher for the gcc compiler in an extension:\n\n```json\n{\n  \"contributes\": {\n    \"problemMatchers\": [\n      {\n        \"name\": \"gcc\",\n        \"owner\": \"cpp\",\n        \"fileLocation\": [\"relative\", \"${workspaceFolder}\"],\n        \"pattern\": {\n          \"regexp\": \"^(.*):(\\\\d+):(\\\\d+):\\\\s+(warning|error):\\\\s+(.*)$\",\n          \"file\": 1,\n          \"line\": 2,\n          \"column\": 3,\n          \"severity\": 4,\n          \"message\": 5\n        }\n      }\n    ]\n  }\n}\n```\n\nThis problem matcher can now be used in a `tasks.json` file via a name reference `$gcc`. An example looks like this:\n\n```json\n{\n  \"version\": \"2.0.0\",\n  \"tasks\": [\n    {\n      \"label\": \"build\",\n      \"command\": \"gcc\",\n      \"args\": [\"-Wall\", \"helloWorld.c\", \"-o\", \"helloWorld\"],\n      \"problemMatcher\": \"$gcc\"\n    }\n  ]\n}\n```\n\nAlso see: [Defining a Problem Matcher](/docs/debugtest/tasks.md#defining-a-problem-matcher)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/contribution-points.md"
+}

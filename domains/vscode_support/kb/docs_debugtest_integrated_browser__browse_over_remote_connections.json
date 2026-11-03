@@ -1,0 +1,8 @@
+{
+  "id": "docs_debugtest_integrated_browser__browse_over_remote_connections",
+  "title": "integrated browser / Browse over remote connections",
+  "category": "DEBUGGING",
+  "intent": "debugging",
+  "content": "## Browse over remote connections\n\n`feature(integrated-browser-remote)`\n\nWhen you work in a [remote workspace](/docs/remote/remote-overview.md), such as a Dev Container, SSH host, WSL, or GitHub Codespace, the integrated browser can proxy its `http` and `https` traffic over the remote connection. This lets you securely reach ports and services that are only accessible from the remote machine, without forwarding a port to your local machine first.\n\nTo enable remote proxying, enable the `setting(workbench.browser.enableRemoteProxy)` setting. The `setting(workbench.browser.dataStorage)` setting must not be set to `global`, because globally scoped sessions are shared across workspaces and are never proxied.\n\nWhen proxying is active, a remote indicator appears in the browser address bar.\n\nRemote proxying affects the browser in the following ways:\n\n* **Localhost links**: With remote proxying enabled, selecting a `localhost` link opens the original remote URL. With the setting disabled, the link opens the forwarded local URL instead.\n\n* **`file://` URLs**: File URLs are not proxied. When you open a `file://` URL in a proxied tab, the indicator changes to a warning.\n\n* **Agent-opened tabs**: Browser tabs that an agent opens are also proxied and open at the correct remote URL.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/integrated-browser.md"
+}

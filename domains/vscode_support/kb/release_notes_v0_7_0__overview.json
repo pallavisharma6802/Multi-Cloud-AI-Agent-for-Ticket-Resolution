@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v0_7_0__overview",
+  "title": "v0_7_0",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "# August 2015 (0.7.1)\n\nHi,\n\nIt's time to update VS Code again :)   This is a smaller update in terms of raw added features \u2013 but have no fear we are not slacking off - behind the scenes we are working hard to add plug-in support to VS Code.  Paired with this release we have also made a number of updates to our documentation.\n\nRead on to find out what's new...",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_7_0.md"
+}

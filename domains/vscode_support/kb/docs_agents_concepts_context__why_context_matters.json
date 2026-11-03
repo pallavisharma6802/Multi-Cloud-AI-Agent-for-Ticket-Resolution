@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_concepts_context__why_context_matters",
+  "title": "context / Why context matters",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Why context matters\n\nA prompt with relevant files, clear instructions, and focused history produces better results than a vague prompt with no context. The language model can only reason over information included in its current context.\n\nYou don't need to identify every relevant file before you start. During the [agent loop](/docs/agents/concepts/agents.md#agent-loop), the agent can search your workspace, read files, run commands, and add the results to the context for its next step. Explicit references are useful when you already know which information the agent should consider.\n\nConversation history is scoped to a chat and isn't automatically shared with other chats or sessions. Context can be passed explicitly, such as in a delegated task or a [handoff](/docs/agents/concepts/sessions.md#hand-off-a-session). Persistent sources, such as [custom instructions](/docs/agent-customization/custom-instructions.md) or [agent memory](/docs/agents/concepts/agents.md#memory), can also provide information across conversations.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/context.md"
+}

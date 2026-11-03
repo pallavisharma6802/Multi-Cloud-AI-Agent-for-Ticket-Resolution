@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_app_mod__related_resources",
+  "title": "java app mod / Related resources",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Related resources\n\n* Learn more about [general concepts of app modernization](https://learn.microsoft.com/en-us/azure/developer/github-copilot-app-modernization/overview)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-app-mod.md"
+}

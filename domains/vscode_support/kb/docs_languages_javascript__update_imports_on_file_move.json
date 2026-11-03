@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_javascript__update_imports_on_file_move",
+  "title": "javascript / Update imports on file move",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Update imports on file move\n\nWhen you move or rename a file that is imported by other files in your JavaScript project, {% data variables.product.prodname_vscode_shortname %} can automatically update all import paths that reference the moved file:\n\n<video src=\"images/javascript/update-imports.mp4\" placeholder=\"images/javascript/update-imports-placeholder.png\" autoplay loop controls muted>\n    Sorry, your browser doesn't support HTML 5 video.\n</video>\n\nThe `setting(js/ts.updateImportsOnFileMove.enabled)` setting controls this behavior. Valid settings values are:\n\n* `\"prompt\"` -\u00a0The default. Asks if paths should be updated for each file move.\n* `\"always\"` -\u00a0Always automatically update paths.\n* `\"never\"` -\u00a0Do not update paths automatically and do not prompt.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/javascript.md"
+}

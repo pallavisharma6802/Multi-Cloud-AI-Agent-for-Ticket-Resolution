@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_testing__overview_2",
+  "title": "testing / Overview",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Overview\n\nThe extension supports the following test frameworks:\n\n- [xUnit](https://learn.microsoft.com/dotnet/core/testing/unit-testing-with-dotnet-test)\n- [NUnit](https://learn.microsoft.com/dotnet/core/testing/unit-testing-with-nunit)\n- [MSTest](https://learn.microsoft.com/dotnet/core/testing/unit-testing-with-mstest)\n\nThe C# Dev Kit extension provides the following features:\n\n- Run/Debug tests cases\n- View test report\n- View tests in Testing Explorer",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/testing.md"
+}

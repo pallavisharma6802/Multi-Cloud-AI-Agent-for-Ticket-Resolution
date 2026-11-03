@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_43__accessibility",
+  "title": "v1_43 / Accessibility",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Accessibility\n\n### Linux screen reader support\n\nWith the help of the community, we have been working on making VS Code accessible on Linux with the Orca screen reader. Orca and Chromium are still actively working on screen reader support, so there are a couple of things needed in order to have this fully working:\n\n* Make sure to use the latest version of Orca out of master. Instructions can be found in [issue #91063](https://github.com/microsoft/vscode/issues/91063).\n* Make sure to have the setting `\"editor.accessibilitySupport\": \"on\"` in VS Code. You can do this using settings, or by running the **Show Accessibility Help** command and pressing `kbstyle(Ctrl+E)` to turn on Screen Reader Optimized mode.\n\nAfter enabling that setting, VS Code should work with the Orca screen reader.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_43.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "learn_customizations_5_hooks__creating_a_hook",
+  "title": "5 hooks / Creating a hook",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Creating a hook\n\nTo create a hook, you can use the Agent Customizations view and generate one directly.\n\nFor example, you might create a hook that:\n\n- runs Prettier automatically\n- triggers after a tool completes (post tool use)\n- executes via a shell script\n\nCopilot can generate the hook for you based on your description, including the necessary configuration and commands.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/5-hooks.md"
+}

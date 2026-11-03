@@ -1,0 +1,8 @@
+{
+  "id": "api_working_with_extensions_bundling_extension__next_steps",
+  "title": "bundling extension / Next steps",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Next steps\n\n* [Extension Marketplace](/docs/configure/extensions/extension-marketplace) - Learn more about VS Code's public Extension Marketplace.\n* [Testing Extensions](/api/working-with-extensions/testing-extension) - Add tests to your extension project to ensure high quality.\n* [Continuous Integration](/api/working-with-extensions/continuous-integration) - Learn how to run extension CI builds on Azure Pipelines.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/working-with-extensions/bundling-extension.md"
+}

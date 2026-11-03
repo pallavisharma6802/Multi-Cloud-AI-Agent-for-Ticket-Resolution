@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_42__browser_support",
+  "title": "v1_42 / Browser support",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Browser support\n\n### Drag and drop files into the editor\n\nWhen using VS Code in a browser, you can now drop local files into the editor area to open them as dirty (unsaved) files with the contents of the files.\n\n<video src=\"images/1_42/web-dnd.mp4\" title=\"Video showing In-browser support for drag and drop.\" autoplay loop controls muted></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_42.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_config_msvc__overview",
+  "title": "config msvc",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Configure {% data variables.product.prodname_vscode_shortname %} for Microsoft C++\n\nIn this tutorial, you configure {% data variables.product.prodname_vscode %} to use the Microsoft Visual C++ compiler and debugger on Windows.\n\nAfter configuring {% data variables.product.prodname_vscode_shortname %}, you will compile and debug a simple Hello World program in {% data variables.product.prodname_vscode_shortname %}. This tutorial does not teach you details about the Microsoft C++ toolset or the C++ language. For those subjects, there are many good resources available on the Web.\n\nIf you have any problems, feel free to file an issue for this tutorial in the [{% data variables.product.prodname_vscode_shortname %} documentation repository](https://github.com/microsoft/vscode-docs/issues).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/config-msvc.md"
+}

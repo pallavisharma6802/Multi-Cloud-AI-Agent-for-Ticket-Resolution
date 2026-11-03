@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_web_extensions__web_extension_enablement",
+  "title": "web extensions / Web extension enablement",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Web extension enablement\n\nVS Code automatically treats an extension as a web extension if:\n\n* The extension manifest (`package.json`) has `browser` entry point.\n* The extension manifest has no `main` entry point and none of the following contribution points: `localizations`, `debuggers`, `terminal`, `typescriptServerPlugins`.\n\nIf an extension wants to provide a debugger or terminal that also work in the web extension host, a `browser` entry point needs to be defined.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/web-extensions.md"
+}

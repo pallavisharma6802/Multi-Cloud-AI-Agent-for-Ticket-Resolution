@@ -1,0 +1,8 @@
+{
+  "id": "docs_debugtest_debugging__start_a_debugging_session",
+  "title": "debugging / Start a debugging session",
+  "category": "DEBUGGING",
+  "intent": "debugging",
+  "content": "## Start a debugging session\n\nTo run your code until it reaches a breakpoint:\n\n1. Open the source file that you want to debug.\n\n1. Set a breakpoint by selecting the editor margin next to a line of executable code or by pressing `kb(editor.debug.action.toggleBreakpoint)`.\n\n    A red circle indicates a breakpoint.\n\n1. Start debugging with `kb(workbench.action.debug.start)`, or open the **Run and Debug** view (`kb(workbench.view.debug)`) and select **Run and Debug**.\n\n1. If prompted, select the debugger for your language or runtime.\n\n    For a simple application, {% data variables.product.prodname_vscode_shortname %} tries to run the active file. If your application requires a specific entry point, command-line arguments, environment variables, or another custom setup, [create a `launch.json` configuration](/docs/debugtest/debugging-configuration.md).\n\n1. When execution pauses at the breakpoint, inspect values in the **VARIABLES** section and review the function calls in the **CALL STACK** section.\n\n1. Use the Debug toolbar to continue execution, step through code, restart the application, or stop debugging.\n\n![Screenshot of an active debug session with the Run and Debug view, editor breakpoint, Debug toolbar, and Debug Console.](images/debugging/debug-session.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/debugging.md"
+}

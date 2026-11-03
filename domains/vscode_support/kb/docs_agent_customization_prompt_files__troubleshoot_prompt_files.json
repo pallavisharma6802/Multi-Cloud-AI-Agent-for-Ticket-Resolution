@@ -1,0 +1,8 @@
+{
+  "id": "docs_agent_customization_prompt_files__troubleshoot_prompt_files",
+  "title": "prompt files / Troubleshoot prompt files",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Troubleshoot prompt files\n\nIf a prompt is missing or produces an unexpected result:\n\n1. Confirm that the session target is **Local** and that the file has the `.prompt.md` extension.\n1. Confirm that a workspace prompt is in `.github/prompts` for the open workspace, or that the user prompt is in the current {% data variables.product.prodname_vscode_shortname %} profile.\n1. Check the YAML frontmatter for syntax errors and confirm that configured agents, models, and tools are available.\n1. Run the prompt in a fresh chat to avoid context from an earlier task.\n1. Open the Agent Debug Log panel from the ellipsis (**...**) menu in the {% data variables.copilot.chat_view %} to inspect discovery and related errors. Learn more about [troubleshooting AI in {% data variables.product.prodname_vscode_shortname %}](/docs/agents/agent-troubleshooting/troubleshooting.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/prompt-files.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "learn_agents_3_agent_plugins__learn_more",
+  "title": "3 agent plugins / Learn more",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Learn more\n\n* [Agent plugins in VS Code](https://code.visualstudio.com/docs/copilot/customization/agent-plugins)\n* [Customize AI in Visual Studio Code](https://code.visualstudio.com/docs/copilot/concepts/customization)\n* [Use agent skills in VS Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills)\n* [Use custom agents in VS Code](https://code.visualstudio.com/docs/copilot/customization/custom-agents)\n* [Use hooks in VS Code](https://code.visualstudio.com/docs/copilot/customization/hooks)\n* [Add and manage MCP servers in VS Code](https://code.visualstudio.com/docs/copilot/customization/mcp-servers)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/3-agent-plugins.md"
+}

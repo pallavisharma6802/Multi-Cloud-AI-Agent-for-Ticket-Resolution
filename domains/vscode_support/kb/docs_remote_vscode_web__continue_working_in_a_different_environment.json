@@ -1,0 +1,8 @@
+{
+  "id": "docs_remote_vscode_web__continue_working_in_a_different_environment",
+  "title": "vscode web / Continue working in a different environment",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Continue working in a different environment\n\nIn some cases, you will want to access a different environment that has the ability to run code. You can switch to working on a repository in a development environment that has support for a local file system and full language and development tooling.\n\nThe GitHub Repositories extension makes it easy for you to clone the repository locally, reopen it on the desktop, or create a GitHub codespace for the current repository (if you have the [GitHub Codespaces](https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces) extension installed and access to create GitHub codespaces). To do this, use the **Continue Working On...** command available from the Command Palette (`kbstyle(F1)`) or click on the Remote indicator in the Status bar.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/vscode-web.md"
+}

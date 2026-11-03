@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_overview__source_control_interface",
+  "title": "overview / Source control interface",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## Source control interface\n\nOpen the **Source Control** view (`kb(workbench.view.scm)`) to review and commit changes.\n\n![Screenshot showing staged changes in the Source Control view and a side-by-side comparison in the diff editor.](images/overview/overview.png)\n\n| Interface | Use it to |\n|-----------|-----------|\n| **Source Control** view | Review changed files, choose changes to stage, and commit them. |\n| **Diff editor** | Compare versions of a file and stage individual changes. |\n| **Source Control Graph** | Inspect commits, branches, and incoming or outgoing work. |\n| **Timeline** view in Explorer | Inspect Git commits and local saves for one file. |\n| **Status Bar** | Check the active branch and access synchronization actions. |",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/overview.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_codebasics__compare_files",
+  "title": "codebasics / Compare files",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Compare files\n\n{% data variables.product.prodname_vscode_shortname %} supports several ways to compare the content of the current file or of any two files.\n\nWhen you have an active file open in the editor, you have the following compare options:\n\n* **Compare with a workspace file**: in the Command Palette, select **File: Compare Active File With...**, and then choose another file to compare with.\n* **Compare with clipboard**: in the Command Palette, select **File: Compare Active File with Clipboard** (`kb(workbench.files.action.compareWithClipboard)`) to compare the current file with the clipboard content.\n* **Compare with saved**: in the Command Palette, select **File: Compare Active File with Saved** (`kb(workbench.files.action.compareWithSaved)`) to compare the current file with the last saved version.\n\nTo compare any two files:\n\n* Right-click on a file in the Explorer view and select **Select for Compare**. Then, right-click on a second file and select **Compare with Selected**.\n* To start a comparison between two empty editor windows, select **File: Compare New Untitled Text Files** from the Command Palette.\n\n> [!TIP]\n> You can start {% data variables.product.prodname_vscode_shortname %} from the command line with the `--diff` option to compare two files. Learn more about the [{% data variables.product.prodname_vscode_shortname %} command line interface](/docs/configure/command-line.md#core-cli-options).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/codebasics.md"
+}

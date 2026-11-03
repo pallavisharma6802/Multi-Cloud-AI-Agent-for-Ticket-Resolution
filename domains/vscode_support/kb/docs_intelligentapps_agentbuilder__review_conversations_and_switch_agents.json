@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_agentbuilder__review_conversations_and_switch_agents",
+  "title": "agentbuilder / Review conversations and switch agents",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Review conversations and switch agents\n\nThe **Playground** contains the current test conversation. Use **Clear all messages** to start a fresh conversation.\n\nFor a saved Foundry agent, select **Conversations** to review history for the selected agent version. The list includes the conversation status, token usage, and start time. Select a conversation to open its messages and response details. Opening history does not resume that conversation in the playground.\n\n![Screenshot showing the Conversations tab in Agent Builder with conversation IDs, completion status, input and output token counts, and start times.](./images/agentbuilder/conversations.png)\n\nUse the agent selector at the top of Agent Builder to switch between local agents and Foundry prompt agents. Check the storage badge and version after switching. The **Conversations** tab is available for saved Foundry agents, not local prompts.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/agentbuilder.md"
+}

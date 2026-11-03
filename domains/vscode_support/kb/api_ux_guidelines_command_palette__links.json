@@ -1,0 +1,8 @@
+{
+  "id": "api_ux_guidelines_command_palette__links",
+  "title": "command palette / Links",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Links\n\n* [Commands API reference](/api/references/contribution-points#contributes.commands)\n* [Commands extension guide](/api/extension-guides/command)\n* [Hello World extension sample](https://github.com/microsoft/vscode-extension-samples/tree/main/helloworld-sample)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/command-palette.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_r__code_completion_intellisense",
+  "title": "r / Code completion (IntelliSense)",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Code completion (IntelliSense)\n\nThe R extension supports code completion and many other code editing features thanks to the R language server. The completion shows the available functions and variables in the scope and the current R workspace along with the documentation from packages or provided as comments.\n\n<video src=\"images/r/completion.mp4\" title=\"Video showing Code completion.\" autoplay loop controls muted></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/r.md"
+}

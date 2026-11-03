@@ -1,0 +1,8 @@
+{
+  "id": "docs_terminal_profiles__cygwin",
+  "title": "profiles / Cygwin",
+  "category": "TERMINAL",
+  "intent": "terminal",
+  "content": "## Cygwin\n\nCygwin itself is a terminal, but you can use the [Cygwin](https://www.cygwin.com/) shell in {% data variables.product.prodname_vscode_shortname %} with the following profile:\n\n```json\n{\n  \"terminal.integrated.profiles.windows\": {\n    \"Cygwin\": {\n      \"path\": \"C:\\\\cygwin64\\\\bin\\\\bash.exe\",\n      \"args\": [\"--login\"]\n    }\n  },\n  \"terminal.integrated.defaultProfile.windows\": \"Cygwin\"\n}\n```\n\nThis profile should be detected automatically as an [unsafe profile](#unsafe-profile-detection) when installed at the default paths `C:\\cygwin` or `C:\\cygwin64`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/profiles.md"
+}

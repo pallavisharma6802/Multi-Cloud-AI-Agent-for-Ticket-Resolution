@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_69__notebooks",
+  "title": "v1_69 / Notebooks",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notebooks\n\n### Support for in-notebook extension recommendations\n\nTo help improve the getting started experience for notebooks when a required extension is not installed, we have updated the extension recommendation flow and let you install extensions directly from a notebook window. This greatly reduces the number of steps needed to go from no extensions installed to runnable cells within VS Code. This iteration enabled this experience for Python Jupyter notebooks with more notebook types and languages to follow.\n\n![A Quick Pick depicting two entries. The top entry is selected that has a light bulb to its left and says 'Install suggested extensions Python + Jupyter'](images/1_69/jupyter-extension-install.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_69.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_overview__overview",
+  "title": "overview",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "# Containers in {% data variables.product.prodname_vscode %}\n\nThe [Container Tools](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-containers) extension makes it easy to build, manage, and deploy containerized applications in {% data variables.product.prodname_vscode %}.\n\nThis page provides an overview of the Container Tools extension capabilities; use the side menu to learn more about topics of interest. If you are just getting started with container development, try the [Docker tutorial](https://learn.microsoft.com/visualstudio/docker/tutorials/docker-tutorial) first to understand key Docker concepts.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/overview.md"
+}

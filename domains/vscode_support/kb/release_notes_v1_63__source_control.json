@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_63__source_control",
+  "title": "v1_63 / Source Control",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Source Control\n\n### Ignore trim whitespace in quick diff\n\nYou can now configure the SCM quick diff feature displayed in the left gutter to ignore trim whitespace, using the `scm.diffDecorationsIgnoreTrimWhitespace` setting.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_63.md"
+}

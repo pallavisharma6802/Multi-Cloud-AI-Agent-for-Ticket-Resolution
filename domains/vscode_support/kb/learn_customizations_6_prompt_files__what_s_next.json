@@ -1,0 +1,8 @@
+{
+  "id": "learn_customizations_6_prompt_files__what_s_next",
+  "title": "6 prompt files / What's next",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## What's next\n\nPrompt files are just one part of the customization system.\n\nIf you want even more control over how AI behaves, the next step is exploring custom instructions.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/6-prompt-files.md"
+}

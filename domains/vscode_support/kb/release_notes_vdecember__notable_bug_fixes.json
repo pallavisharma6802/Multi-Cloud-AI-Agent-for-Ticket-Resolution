@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vdecember__notable_bug_fixes",
+  "title": "vDecember / Notable Bug Fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable Bug Fixes\n\n* Submitted [pull request](https://github.com/atom/node-oniguruma/pull/46) to `atom/node-oniguruma` in order to [improve performance](https://github.com/microsoft/vscode/issues/94) when colorizing long lines with multi-byte characters.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vDecember.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_faq_cpp__how_do_i_get_the_new_intellisense_to_work_with_the_windows_subsystem_for_linux",
+  "title": "faq cpp / How do I get the new IntelliSense to work with the Windows Subsystem for Linux?",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## How do I get the new IntelliSense to work with the Windows Subsystem for Linux?\n\nSee [Get Started with C++ and Windows Subsystem for Linux in {% data variables.product.prodname_vscode %}](/docs/cpp/config-wsl.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/faq-cpp.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_terminal_basics__fixed_dimension_terminals",
+  "title": "basics / Fixed dimension terminals",
+  "category": "TERMINAL",
+  "intent": "terminal",
+  "content": "## Fixed dimension terminals\n\nThe **Terminal: Set Fixed Dimensions** command allows changing the number of columns and rows that the terminal and it's backing pseudoterminal uses. This will add scroll bars when necessary, which may lead to an unpleasant UX and is generally not recommended, but it is a common ask on Windows in particular for reading logs or long lines when paging tools aren't available.\n\nYou can also right-click on a terminal tab and select **Toggle Size to Content Width** (`kb(workbench.action.terminal.sizeToContentWidth)`) to resize the number of terminal columns to the largest wrapped line in the terminal.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/basics.md"
+}

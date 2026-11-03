@@ -1,0 +1,8 @@
+{
+  "id": "docs_azure_overview__overview",
+  "title": "overview",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "# Azure Extensions\n\nYou can use Azure directly from {% data variables.product.prodname_vscode %} through a range of extensions. The [Azure Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) extension pack contains various extensions designed to deploy your application to Azure within minutes.\n\n![app service](images/extensions/azure-tools.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/overview.md"
+}

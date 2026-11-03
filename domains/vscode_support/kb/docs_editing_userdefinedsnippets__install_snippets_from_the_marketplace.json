@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_userdefinedsnippets__install_snippets_from_the_marketplace",
+  "title": "userdefinedsnippets / Install snippets from the Marketplace",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Install snippets from the Marketplace\n\nMany [extensions](/docs/configure/extensions/extension-marketplace.md) on the [{% data variables.product.prodname_vs_marketplace %}](https://marketplace.visualstudio.com/vscode) include snippets. You can search for extensions that contains snippets in the Extensions view (`kb(workbench.view.extensions)`) using the `@category:\"snippets\"` filter.\n\n![Searching for extensions with snippets](images/userdefinedsnippets/category-snippets.png)\n\nIf you find an extension you want to use, install it, then restart {% data variables.product.prodname_vscode_shortname %} and the new snippets will be available.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/userdefinedsnippets.md"
+}

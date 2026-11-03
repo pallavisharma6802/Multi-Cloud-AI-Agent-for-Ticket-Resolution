@@ -1,0 +1,8 @@
+{
+  "id": "docs_remote_vscode_web__safe_exploration",
+  "title": "vscode web / Safe exploration",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Safe exploration\n\n{% data variables.product.prodname_vscode_shortname %} for the Web runs entirely in your web browser's sandbox and offers a very limited execution environment.\n\nWhen accessing code from remote repositories, the web editor doesn't \"clone\" the repo, but instead loads the code by invoking the services' APIs directly from your browser; this further reduces the attack surface when cloning untrusted repositories.\n\nWhen working with local files, {% data variables.product.prodname_vscode_shortname %} for the Web loads them through your browser's file system access APIs, which limit the scope of what the browser can access.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/vscode-web.md"
+}

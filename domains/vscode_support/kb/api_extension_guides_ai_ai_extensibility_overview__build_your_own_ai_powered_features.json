@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_ai_ai_extensibility_overview__build_your_own_ai_powered_features",
+  "title": "ai extensibility overview / Build your own AI-powered features",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Build your own AI-powered features\n\nVS Code gives you direct programmatic access to AI models for creating custom AI-powered features in your extensions. This approach enables you to build editor-specific interactions that use AI capabilities without relying on the chat interface.\n\nTo use language models directly, use the [Language Model API](/api/extension-guides/ai/language-model) within your VS Code extension. You can incorporate these AI capabilities into any extension feature, such as code actions, hover providers, custom views, and more.\n\n**Key benefits**:\n\n- Integrate AI capabilities into existing extension features or build new ones\n- Running in the extension host process allows access to VS Code extension APIs\n- Easy distribution and deployment via the Visual Studio Marketplace\n\n**Key considerations**:\n\n- Reuse across different experiences requires modular design and implementation",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/ai-extensibility-overview.md"
+}

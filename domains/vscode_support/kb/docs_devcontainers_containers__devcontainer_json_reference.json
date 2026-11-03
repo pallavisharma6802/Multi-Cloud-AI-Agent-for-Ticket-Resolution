@@ -1,0 +1,8 @@
+{
+  "id": "docs_devcontainers_containers__devcontainer_json_reference",
+  "title": "containers / devcontainer.json reference",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## devcontainer.json reference\n\nThere is a full [devcontainer.json reference](https://containers.dev/implementors/json_reference), where you can review the file schema to help you customize your development containers and control how you attach to running containers.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/containers.md"
+}

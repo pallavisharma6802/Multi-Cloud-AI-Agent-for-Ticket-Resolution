@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_reference_filestructure__cache_folder",
+  "title": "FileStructure / Cache folder",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Cache folder\n\nThe `cache` folder stores cache files that were generated during workflow execution. These cached results can help accelerate repeated runs of the workflow.\n\nYou can delete this folder to free up space if it's no longer needed.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/reference/FileStructure.md"
+}

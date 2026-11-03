@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_ai_chat_tutorial__overview",
+  "title": "chat tutorial",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "# Code-tutor chat participant tutorial (deprecated)\n\nChat participants are deprecated and are not supported in the Copilot harness. This tutorial has been retired. The Chat Participant API remains available for Local harness compatibility.\n\nFor the supported approach, follow [Migrate a code tutor to a plugin](/docs/agent-customization/migrate-customizations.md#example-migrate-a-code-tutor-to-a-plugin). Package teaching workflows as skills and exercise operations as MCP tools. Use MCP Apps for interactive exercises, and extension tools when you need live editor context.\n\nThe migration guide explains which participant responsibilities have replacements and which require redesign. Renaming a participant or copying its request handler into a custom-agent file does not migrate the integration.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/chat-tutorial.md"
+}

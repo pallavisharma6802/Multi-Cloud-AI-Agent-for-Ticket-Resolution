@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vnovember__debugging_debug_environment_configuration",
+  "title": "vNovember / Debugging - Debug environment configuration",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debugging - Debug environment configuration\nWhen you create your initial debug configuration (`launch.json`), VS Code now asks for your specific debug environment (Node.js, Mono) and creates a `launch.json` specific to that environment.  VS Code also detects the type of request ('launch' or 'attach').\n\n![select debug env](images/0_10_0/select-debug-env.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vNovember.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_customize_copilot_guide__project_structure",
+  "title": "customize copilot guide / Project structure",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Project structure\n\n* Add API routes under `src/api/routes`.\n* Put shared validation schemas in `src/schemas`.\n* Keep database access in the repository layer.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/customize-copilot-guide.md"
+}

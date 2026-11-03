@@ -1,0 +1,8 @@
+{
+  "id": "docs_remote_codespaces__getting_started",
+  "title": "codespaces / Getting started",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Getting started\n\nThere are getting started topics for both GitHub Codespaces clients. These will fast-track you through signing in to GitHub Codespaces, creating your first codespace, and connecting to it with your preferred client:\n\n* [Codespaces in {% data variables.product.prodname_vscode_shortname %}](https://docs.github.com/github/developing-online-with-codespaces/using-codespaces-in-visual-studio-code) - Use the [GitHub Codespaces](https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces) extension to connect and work in your environment.\n* [Codespaces in the browser](https://docs.github.com/github/developing-online-with-codespaces/creating-a-codespace) - Connect to your codespace through a browser-based editor.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/codespaces.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vfebruary__localization",
+  "title": "vFebruary / Localization",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Localization\n\nSupport has been added to localize `package.json` files for extensions and CommonJS code. For localizing CommonJS code, we've published a new npm module [`vscode-nls`](https://www.npmjs.com/package/vscode-nls) which helps you with localizing strings in your VS Code extension.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vFebruary.md"
+}

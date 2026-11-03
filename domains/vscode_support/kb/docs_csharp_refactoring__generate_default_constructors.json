@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_refactoring__generate_default_constructors",
+  "title": "refactoring / Generate default constructors",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Generate default constructors\n\n**What:** Lets you immediately generate the code for a new default constructor on a class.\n\n**When:** You introduce a new default constructor and want to properly declare it automatically.\n\n**Why:** You could declare the constructor before using it, however this feature generates it automatically.\n\n**How-to:**\n\n1. Place your cursor on the class name.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select **Generate constructor &lt;classname&gt;()**.\n\n![Generate default constructor example](images/refactoring/generate-default-constructor.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundations_agent_sessions_and_where_agents_run__learn_more",
+  "title": "agent sessions and where agents run / Learn more",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Learn more\n\n* [Using agents in VS Code](https://code.visualstudio.com/docs/agents/overview)\n* [GitHub Pull Requests extension](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/agent-sessions-and-where-agents-run.md"
+}

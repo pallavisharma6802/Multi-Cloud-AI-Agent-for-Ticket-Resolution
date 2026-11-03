@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_90__accessibility",
+  "title": "v1_90 / Accessibility",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Accessibility\n\n### Set keybindings from the accessibility help dialog\n\nAccessibility help dialogs give you an overview of important commands for a feature or view. When a command lacks a keybinding assignment, you can now configure it from within the accessibility help dialog with `kb(editor.action.accessibilityHelpConfigureKeybindings)`.\n\n### Experimental: signal delay settings\n\nWhen the setting <code codesetting=\"accessibility.signalOptions.debouncePositionChanges\">Debounce position changes</code> is enabled, you can use the setting <code codesetting=\"accessibility.signalOptions.delays\">Signal options delays</code> to customize the debouncing time for various accessibility signals.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_90.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_52__language_server_protocol",
+  "title": "v1_52 / Language Server Protocol",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Language Server Protocol\n\nThe feature set for the 3.16 version of the Language Server Protocol has been finalized and is available on the [LSP protocol site](https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/). The major highlights of the 3.16 version are:\n\n* [Semantic tokens](https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#textDocument_semanticTokens)\n* [Call hierarchy](https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#textDocument_prepareCallHierarchy)\n* [Linked editing](https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#textDocument_linkedEditingRange)\n* [Change Annotations](https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#textEdit)\n* [LSIF Monikers](https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#textDocument_moniker)\n* [File Operation Events](https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#workspace_willCreateFiles)\n\nThe detailed [change log](https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#version_3_16_0) contains all the minor improvements to existing requests as well.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_52.md"
+}

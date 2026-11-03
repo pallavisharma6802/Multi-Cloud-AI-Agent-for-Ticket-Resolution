@@ -1,0 +1,8 @@
+{
+  "id": "docs_nodejs_nodejs_debugging__supported_node_like_runtimes",
+  "title": "nodejs debugging / Supported Node-like runtimes",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Supported Node-like runtimes\n\nThe current {% data variables.product.prodname_vscode_shortname %} JavaScript debugger supports Node version at or above 8.x, recent Chrome versions, and recent Edge versions (via the `msedge` launch type).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/nodejs-debugging.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_overview__extensions",
+  "title": "overview / Extensions",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Extensions\n\nThe {% data variables.product.prodname_vs_marketplace %} offers a family of extensions that provide a first-class data science experience for Python data science. In order to get started with Python, Microsoft recommends the following extensions:\n\n<div class=\"marketplace-extensions-datascience-python\"></div>\n\n### Build an extension for notebooks\n\nWe welcome (and encourage you to!) build {% data variables.product.prodname_vscode %} extensions for your favorite notebooks tools. After going through [Your First Extension](/api/get-started/your-first-extension.md) tutorial, check out some of the extensions that augment the notebooks development experience in {% data variables.product.prodname_vscode_shortname %}:\n\n<div class=\"marketplace-extensions-notebook-tools-curated\"></div>\n\nYou can explore the source code for these extensions by selecting the repository link under the **Project Details** section in the Visual Studio Marketplace.\n\nYou can also contribute directly to the [Jupyter extension](https://github.com/microsoft/vscode-jupyter).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/overview.md"
+}

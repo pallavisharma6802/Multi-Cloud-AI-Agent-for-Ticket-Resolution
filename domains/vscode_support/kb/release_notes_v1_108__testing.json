@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_108__testing",
+  "title": "v1_108 / Testing",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Testing\n\n### Navigate to uncovered regions\n\nWe've added navigation buttons to the test coverage toolbar that allow you to easily jump between regions of uncovered code. You can toggle the test coverage toolbar using the **Test: Show Coverage Toolbar** command in the Command Palette.\n\n![Screenshot showing the test coverage toolbar with navigation buttons to jump between uncovered regions.](./images/1_108/coverage-navigation.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_108.md"
+}

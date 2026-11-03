@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_56__ssh",
+  "title": "v1_56 / SSH",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## SSH\n\n### Default port source setting\n\nPreviously, the setting `remote.autoForwardPortsSource` would be set to `\"output\"` as a machine setting when connecting to a remote with the Remote - SSH extension. Now, instead of actively setting the value, the `autoForwardPortSource` default is `\"output\"` so that your machine settings aren't changed.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_56.md"
+}

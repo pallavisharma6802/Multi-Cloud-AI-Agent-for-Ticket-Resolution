@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_17__integrated_terminal",
+  "title": "v1_17 / Integrated Terminal",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Integrated Terminal\n\n### New rendering engine\n\nThe integrated terminal is now using a new canvas-based rendering engine which renders approximately 5 to 45 times faster, depending on the situation. This change reduces the input latency, power usage, and increases the frame rate of the terminal significantly.\n\n<video src=\"images/1_17/terminal_60fps.mp4\" title=\"Video showing 60 FPS is now possible in the terminal.\" autoplay loop controls muted></video>\n\nYou can read about this in more detail in [our recent blog post](https://code.visualstudio.com/blogs/2017/10/03/terminal-renderer).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_17.md"
+}

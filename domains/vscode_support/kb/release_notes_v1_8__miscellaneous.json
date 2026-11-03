@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_8__miscellaneous",
+  "title": "v1_8 / Miscellaneous",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Miscellaneous\n\n### Electron update\n\nIn this release, we updated from Electron 1.3.x to 1.4.x. This brings a Chrome update from version 52 to 53. We have heard from users that this update reduces font blurriness on Windows when running with >100% DPI.\n\nAnother benefit is that we can now enable the High Contrast theme automatically when we detect that Windows is running in high contrast mode. VS Code will open in high contrast mode when Windows is configured as such and will also switch to high contrast mode if you change the mode in Windows while VS Code is running.\n\n### Language Server Protocol\n\nThe LSP now supports snippets in completion items just as the VS Code API does. In addition, two new requests got introduced supporting the dynamic registration of providers on the client side. Also the LSP NPM node modules were upgraded to TypeScript version 2.0. For details see [https://github.com/microsoft/language-server-protocol](https://github.com/microsoft/language-server-protocol) and [https://github.com/microsoft/vscode-languageserver-node](https://github.com/microsoft/vscode-languageserver-node)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_8.md"
+}

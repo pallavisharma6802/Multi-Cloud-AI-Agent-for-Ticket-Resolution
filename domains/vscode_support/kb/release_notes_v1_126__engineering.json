@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_126__engineering",
+  "title": "v1_126 / Engineering",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Engineering\n\n### Agent Host Protocol (AHP)\n\nAs part of rearchitecting how agent sessions work in VS Code, we are adopting the [Agent Host Protocol](https://microsoft.github.io/agent-host-protocol/) (AHP). AHP lets us connect and render the same agent session from multiple clients and VS Code windows at the same time.\n\nThis unlocks scenarios like seeing the same session in both a regular VS Code window and the Agents window. The work is ongoing, but you can already try it out in VS Code Insiders and we would welcome [your feedback](https://github.com/microsoft/vscode/issues).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_126.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vfebruary__tasks",
+  "title": "vFebruary / Tasks",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Tasks\n\nThe `eslint-stylish` problem matcher changed to use absolute file paths by default. We made this breaking change because the stylish reporter integrated into `eslint` reports absolute paths by default. If you are using an older version of `eslint` with the external stylish reporter that reports relative file paths, you can tweak the `problemMatcher` in a tasks.json file as below to make this combination work:\n\n```json\n\"problemMatcher\": {\n    \"base\": \"$eslint-stylish\",\n    \"fileLocation\": \"relative\"\n}\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vFebruary.md"
+}

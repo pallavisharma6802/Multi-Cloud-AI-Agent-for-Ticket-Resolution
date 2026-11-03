@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_ai_powered_suggestions__prerequisites",
+  "title": "ai powered suggestions / Prerequisites",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Prerequisites\n\n* {% data variables.product.prodname_vscode %} installed on your machine. Follow these steps to [set up {% data variables.product.prodname_vscode_shortname %}](/docs/getstarted/overview.md).\n* Access to a GitHub Copilot subscription. Follow these steps to [set up GitHub Copilot](/docs/setup/copilot.md). You can set up {% data variables.copilot.copilot_free_short %} to get a monthly allowance of inline suggestions and AI credits.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/ai-powered-suggestions.md"
+}

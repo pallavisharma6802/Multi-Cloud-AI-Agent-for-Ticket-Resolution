@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_111__debug_events_snapshot",
+  "title": "v1_111 / Debug events snapshot",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debug events snapshot\n\nTo help you understand and troubleshoot agent behavior, you can now attach a snapshot of agent debug events as context in chat by using `#debugEventsSnapshot`. Use it to ask the agent about loaded customizations, token consumption, or to troubleshoot agent behavior.\n\nYou can also select the sparkle chat icon in the top-right corner of the Agent Debug panel to add the debug events snapshot as an attachment to the chat composer. Selecting the attachment opens the Agent Debug panel logs, filtered to the timestamp when the snapshot was taken.\n\n![Screenshot of the option to attach debug events snapshot to chat from the Agent Debug panel.](images/1_111/agent-logs.png)\n\nLearn more about [Debugging chat interactions](https://code.visualstudio.com/docs/agents/agent-troubleshooting/chat-debug-view) in our documentation.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_111.md"
+}

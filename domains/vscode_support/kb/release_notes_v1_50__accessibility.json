@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_50__accessibility",
+  "title": "v1_50 / Accessibility",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Accessibility\n\n### Settings editor\n\nBack in July, we mentioned in the [1.48 release notes](https://code.visualstudio.com/updates/v1_48#_settings-editor-improvements) that we were investigating ways to improve the accessibility of the settings editor. After a few months of talking to screen reader users, experimenting, prototyping, and gathering feedback from the community, we are shipping the new experience, which we believe is an improvement for all keyboard-heavy users, whether using a screen reader or not.\n\nIn this new interaction model, interacting with the settings list works more like interacting with any other list in VS Code. With focus in the search bar, you can press the down arrow to focus a setting row. Then you can use the arrow keys to move focus around the settings list. To edit a setting, you can press enter to set focus on the control in the setting row.\n\n<video src=\"images/1_50/settings-editor.mp4\" title=\"Video showing settings editor as list.\" autoplay loop controls muted></video>\n\nIf you would like to read more about the motivation and thinking behind this approach, please see GitHub [issue #108006](https://github.com/microsoft/vscode/issues/108006).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_50.md"
+}

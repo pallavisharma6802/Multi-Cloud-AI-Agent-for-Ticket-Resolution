@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_html__auto_update_tags",
+  "title": "html / Auto update tags",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Auto update tags\n\nWhen modifying a tag, the linked editing feature automatically updates the matching closing tag. The feature is optional and can be enabled by setting:\n\n```json\n\"editor.linkedEditing\": true\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/html.md"
+}

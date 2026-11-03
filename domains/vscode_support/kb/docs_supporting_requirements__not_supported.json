@@ -1,0 +1,8 @@
+{
+  "id": "docs_supporting_requirements__not_supported",
+  "title": "requirements / Not supported",
+  "category": "REFERENCE",
+  "intent": "reference",
+  "content": "## Not supported\n\n* Running {% data variables.product.prodname_vscode_shortname %} in application virtualization solutions such as Microsoft App-V or MSIX for Windows, or third-party app virtualization technologies.\n* Running {% data variables.product.prodname_vscode_shortname %} in a virtual machine environment requires a full operating system.\n* Running {% data variables.product.prodname_vscode_shortname %} on a non-persistent virtual machine.\n* Running {% data variables.product.prodname_vscode_shortname %} on systems utilizing or managing users with FSLogix.\n* Multiple simultaneous users using the software on the same machine, including shared virtual desktop infrastructure machines or a pooled Windows/Linux Virtual Desktop host pool.\n* Running the full {% data variables.product.prodname_vscode_shortname %} in Windows/Linux containers.\n* Windows Server\n\n### Additional Linux requirements\n\n* GLIBCXX version 3.4.25 or later\n* GLIBC version 2.28 or later\n\nFor a list of currently known issues, see our [FAQ](faq).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/supporting/requirements.md"
+}

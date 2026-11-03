@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_on_azure__overview",
+  "title": "java on azure",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Deploy Java Web Apps\n\nThe [Azure Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) extension pack contains a rich set of extensions that make it easy to discover and interact with the cloud services that power your Java applications.\n\nThe extension pack supports the following development workflows:\n\n* Deploy Java applications (including containers) to [Azure App Service](https://azure.microsoft.com/services/app-service).\n* Deploy Spring microservices to [Azure Spring Cloud](https://azure.microsoft.com/services/spring-cloud/).\n* Deploy serverless code to [Azure Functions](https://azure.microsoft.com/services/functions).\n\n![Azure Tools extension](images/azure/azure-tools.png)\n\nIf you are interested in a specific Azure service, you can also directly search for it on the [{% data variables.product.prodname_vscode %} Marketplace](https://marketplace.visualstudio.com/VSCode) to see if there's an available extension.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-on-azure.md"
+}

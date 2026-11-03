@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_tomcat_jetty__other_servers",
+  "title": "java tomcat jetty / Other Servers",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Other Servers\n\nThe [Open Liberty Tools](https://marketplace.visualstudio.com/items?itemName=Open-Liberty.liberty-dev-vscode-ext) extension lets you run your application on Open Liberty, allowing you to deploy, test, and debug your application from {% data variables.product.prodname_vscode %}.\n\nThe [Server Connector](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-server-connector) extension by Red Hat allows you to start, stop, and deploy to a Red Hat server and runtime products like WildFly, JBoss EAP, Minishift, CDK.\n\n[Extension Pack for MicroProfile](https://marketplace.visualstudio.com/items?itemName=MicroProfile-Community.vscode-microprofile-pack) provides tools for creating MicroProfile projects to develop and deploy to runtimes such as Open Liberty, Quarkus, and Payara.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-tomcat-jetty.md"
+}

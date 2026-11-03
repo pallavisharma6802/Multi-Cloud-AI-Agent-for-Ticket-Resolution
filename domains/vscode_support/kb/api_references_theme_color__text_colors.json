@@ -1,0 +1,8 @@
+{
+  "id": "api_references_theme_color__text_colors",
+  "title": "theme color / Text colors",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Text colors\n\nColors inside a text document, such as the welcome page.\n\n- `textBlockQuote.background`: Background color for block quotes in text.\n- `textBlockQuote.border`: Border color for block quotes in text.\n- `textCodeBlock.background`: Background color for code blocks in text.\n- `textLink.activeForeground`: Foreground color for links in text when clicked on and on mouse hover.\n- `textLink.foreground`: Foreground color for links in text.\n- `textPreformat.foreground`: Foreground color for preformatted text segments.\n- `textPreformat.background`: Background color for preformatted text segments.\n- `textPreformat.border`: Border color for preformatted text segments.\n- `textSeparator.foreground`: Color for text separators.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+}

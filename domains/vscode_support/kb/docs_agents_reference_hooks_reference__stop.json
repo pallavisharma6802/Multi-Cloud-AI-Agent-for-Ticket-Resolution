@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_hooks_reference__stop",
+  "title": "hooks reference / `Stop`",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## `Stop`\n\nThe `Stop` hook fires when the current agent execution is about to stop. The event does not indicate that the session ended or became inactive.\n\nWhen a custom agent runs as a subagent, its `Stop` hook is treated as `SubagentStop`.\n\n### Input\n\nIn addition to the [common input](#common-input), the hook receives:\n\n```json\n{\n  \"stop_hook_active\": false\n}\n```\n\n| Field | Type | Description |\n|-------|------|-------------|\n| `stop_hook_active` | boolean | `true` when the agent is already continuing because a previous `Stop` hook blocked it. |\n\n### Output\n\nThe hook can require the agent to continue:\n\n```json\n{\n  \"hookSpecificOutput\": {\n    \"hookEventName\": \"Stop\",\n    \"decision\": \"block\",\n    \"reason\": \"Run the test suite before finishing.\"\n  }\n}\n```\n\n| Field | Values or type | Description |\n|-------|----------------|-------------|\n| `hookEventName` | `\"Stop\"` | Identifies the event-specific output. |\n| `decision` | `\"block\"` | Prevents the agent execution from stopping. |\n| `reason` | string | Required when `decision` is `\"block\"`. Explains why the agent should continue. |\n\n> [!IMPORTANT]\n> When a `Stop` hook blocks the agent, the additional turns consume [AI credits](https://docs.github.com/en/copilot/concepts/billing/usage-based-billing-for-individuals). Check `stop_hook_active` to prevent the agent from continuing indefinitely.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/hooks-reference.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_2_exploring_models__what_you_will_learn",
+  "title": "2 exploring models / What You Will Learn",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## What You Will Learn\n\nThis chapter is about building a repeatable model-selection process, not making one-off guesses. We will combine GitHub Copilot recommendations, Model Catalog filtering, model-card review, deployment, and Playground comparison into one loop you can reuse.\n\nIn this chapter, you will learn how to:\n\n- **Generate a shortlist**: Use GitHub Copilot to produce an initial set of realistic candidates.\n- **Refine the catalog**: Use filters to reduce model options to a relevant subset.\n- **Validate capabilities**: Check model cards before deployment.\n- **Deploy selected models**: Push selected candidates into your Foundry project.\n- **Compare behavior**: Evaluate outputs side by side in Playground.\n\nBefore we run the workflow, let's be clear about why this structure matters.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/2-exploring-models.md"
+}

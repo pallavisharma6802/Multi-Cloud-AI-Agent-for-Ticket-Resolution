@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_agent_troubleshooting_troubleshooting__overview",
+  "title": "troubleshooting",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Troubleshoot AI in {% data variables.product.prodname_vscode %}\n\nWhen chat, agents, or inline suggestions do not behave as expected, start with the symptom you see. This article helps you choose the right diagnostic tool, interpret the result, and collect useful evidence if you need to report the issue.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/agent-troubleshooting/troubleshooting.md"
+}

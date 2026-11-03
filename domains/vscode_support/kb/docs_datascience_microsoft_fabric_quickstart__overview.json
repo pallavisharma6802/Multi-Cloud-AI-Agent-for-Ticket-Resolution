@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_microsoft_fabric_quickstart__overview",
+  "title": "microsoft fabric quickstart",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Data science in Microsoft Fabric using {% data variables.product.prodname_vscode %}\n\nYou can build and develop data science and data engineering solutions for [Microsoft Fabric](https://learn.microsoft.com/fabric/) within {% data variables.product.prodname_vscode_shortname %}. [Microsoft Fabric](https://marketplace.visualstudio.com/items?itemName=fabric.vscode-fabric) extensions for {% data variables.product.prodname_vscode_shortname %} provide an integrated development experience for working with Fabric artifacts, lakehouses, notebooks, and user data functions.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/microsoft-fabric-quickstart.md"
+}

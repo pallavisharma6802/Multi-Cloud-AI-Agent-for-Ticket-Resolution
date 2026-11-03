@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_concepts_context__context_isolation_with_subagents",
+  "title": "context / Context isolation with subagents",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Context isolation with subagents\n\nAn agent can delegate a focused task to a [subagent](/docs/agents/concepts/agents.md#subagents) that works in its own context and returns a result. This keeps intermediate work separate from the main conversation. Compaction, by contrast, summarizes content already in that conversation.\n\nContext isolation is not code isolation. It doesn't by itself create a separate worktree or sandbox. An agent's access to files and tools depends on the [execution environment](/docs/agents/concepts/agent-harnesses.md#relate-execution-environments-and-code-isolation) and [permission controls](/docs/agents/concepts/trust-and-safety.md).\n\nLearn how to [delegate work to subagents](/docs/agents/run/subagents.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/context.md"
+}

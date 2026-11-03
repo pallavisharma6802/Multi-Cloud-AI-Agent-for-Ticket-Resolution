@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_142__languages",
+  "title": "v1_142 / Languages",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Languages\n\n### Python\n\nThis release includes fixes for environment discovery, interpreter selection, and terminal activation in the Python Environments Extension.\n\n* **Environment discovery:** Python installations managed by `uv` now appear under **Global**. Selecting an interpreter by path adds its virtual environment to the environment list, and deleting a virtual environment outside VS Code updates the selection.\n\n* **Project-specific environments:** Automatic selection now prefers a project's own virtual environment over nested environments. Conda environment selection and Poetry package operations respect project scope, and background refreshes no longer overwrite newer interpreter selections.\n\n* **Interpreter configuration:** Fixed resolution of `${workspaceFolder}`, relative paths, and commands such as `python3` in `python.defaultInterpreterPath`. The project-view environment selector now includes **Enter Interpreter Path**.\n\n* **Terminal activation:** Shell-startup activation now updates when the global interpreter changes and is preserved when environment files change. Environment-file notifications include **Enable for Workspace** or **Enable for Folder** actions.\n\n* **Python installation:** When `uv` is required but missing, setup offers to install it and continues to Python version selection without requiring a PATH refresh.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_142.md"
+}

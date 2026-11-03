@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vdecember__file_picker_improvements_and_fuzzy_search",
+  "title": "vDecember / File Picker improvements and fuzzy search",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## File Picker improvements and fuzzy search\n\nThe file picker (\"Quick Open\") is now able to search on file paths when you include slash (Mac/Linux) or backslash (Windows) in the search term. This allows you to list all the files of a directory easily.\n\n![Path Search in File Picker](images/December/path-search.png)\n\nA new setting `filePicker.alternateFileNameMatching` enables fuzzy searching for the file picker. Once enabled, the search term will match on the full path of the file by default, without having to include path separators in the query. In addition, a search term will match in a more fuzzy way on the path compared to the default. For example, a search for `fb` will match a file `foobar` because the filename contains `f` and `b`. We also added a new sorter for the picker when fuzzy searching is enabled which tries to put the most relevant results to the top. Please try out this feature and give us feedback so that we can tune the experience.\n\n![Fuzzy Search in File Picker](images/December/fuzzy-search.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vDecember.md"
+}

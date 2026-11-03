@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_get_agent_back_on_track__related_resources",
+  "title": "get agent back on track / Related resources",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related resources\n\n* [Use chat in {% data variables.product.prodname_vscode_shortname %}](/docs/chat/chat-overview.md)\n* [Review and revert agent changes](/docs/agents/run/review-code-edits.md)\n* [Troubleshoot AI in {% data variables.product.prodname_vscode_shortname %}](/docs/agents/agent-troubleshooting/troubleshooting.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/get-agent-back-on-track.md"
+}

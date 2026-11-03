@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_editing__navigating_code_with_spring_boot",
+  "title": "java editing / Navigating code with Spring Boot",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Navigating code with Spring Boot\n\nThe [Spring Boot Tools](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-spring-boot) extension provides enhanced navigation and code completion support for Spring Boot projects.\n\n* `@/` shows all defined request mappings (mapped path, request method, source location)\n* `@+` shows all defined beans (bean name, bean type, source location)\n* `@>` shows all functions (prototype implementation)\n* `@` shows all Spring annotations in the code\n\n![Spring Navigation](images/java-editing/spring-navigation.png)\n\nTo learn more about Spring Boot support with {% data variables.product.prodname_vscode %}, read [Spring Boot in {% data variables.product.prodname_vscode %}](/docs/java/java-spring-boot.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-editing.md"
+}

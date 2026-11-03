@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_customize_cpp_settings__top_level_properties",
+  "title": "customize cpp settings / Top-level properties",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Top-level properties\n\n- `env`:\n  An array of user-defined variables that are available for substitution in the configurations via the standard environment variable syntax: `${<var>}` or `${env:<var>}`. Strings and arrays of strings are accepted.\n\n- `configurations`:\n  An array of configuration objects that provide the IntelliSense engine with information about your project and your preferences. By default, the extension creates a configuration for you based on your operating system. You can also add more configurations.\n\n- `version`:\n  We recommend that you don't edit this field. It tracks the current version of the `c_cpp_properties.json` file, so that the extension knows what properties and settings should be present and how to upgrade this file to the latest version.\n\n- `enableConfigurationSquiggles`:\n  Set to `true` to report errors detected in the `c_cpp_properties.json` file to the C++ extension.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/customize-cpp-settings.md"
+}

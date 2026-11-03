@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_overview__get_started_with_a_repository",
+  "title": "overview / Get started with a repository",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## Get started with a repository\n\nOpen a repository folder with **File** > **Open Folder...** to use its Git history in {% data variables.product.prodname_vscode_shortname %}. If you don't have a local repository yet, choose one of these paths:\n\n* **Start locally**: [Initialize a repository and make a first commit](/docs/sourcecontrol/quickstart.md) in a practice folder.\n\n* **Work on an existing project**: [Clone a repository](/docs/sourcecontrol/repos-remotes.md#clone-repositories) from a Git host.\n\n* **Browse without cloning**: Use the [GitHub Repositories extension](/docs/sourcecontrol/github.md#github-repositories-extension) for a virtual workspace. This workflow has different capabilities from a local checkout.\n\nTo share an existing local repository, [publish it](/docs/sourcecontrol/repos-remotes.md#publish-to-github) or [add a remote](/docs/sourcecontrol/repos-remotes.md#add-a-remote).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/overview.md"
+}

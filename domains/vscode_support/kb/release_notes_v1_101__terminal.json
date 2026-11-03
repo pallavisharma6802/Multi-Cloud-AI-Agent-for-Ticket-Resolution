@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_101__terminal",
+  "title": "v1_101 / Terminal",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Terminal\n\n### Language server based terminal suggest\n\nLanguage server completions are now available in the terminal for interactive Python REPL sessions.\nThis brings the same language completions you receive in the editor now inside the terminal.\nWe are starting with support for Python via Pylance, with plans to expand to more languages in the future.\n\n<video src=\"images/1_101/lsp_completions.mp4\" title=\"Video that shows completions from LSP in REPL in the terminal.\" autoplay loop controls muted></video>\n\nTo try it out, ensure the following settings are enabled:\n\n* `setting(terminal.integrated.shellIntegration.enabled:true)`\n* `setting(python.terminal.shellIntegration.enabled:true)`\n* `setting(terminal.integrated.suggest.enabled:true)`\n* `setting(python.analysis.supportAllPythonDocuments:true)`",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_101.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_go__import_packages",
+  "title": "go / Import packages",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Import packages\n\nThe extension organizes imports, and removes unused imports by default. For different behavior, you can override per-language default settings following [these instructions](https://github.com/golang/vscode-go/wiki/advanced#formatting-code-and-organizing-imports).\n\nRun the command **Go: Add Import** to get a list of packages that can be imported to your Go file. Choose one and it will get added in the import block of your Go file.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/go.md"
+}

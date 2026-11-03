@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_cloud_continuity_tutorial__overview",
+  "title": "cloud continuity tutorial",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "<a name=\"tutorial-continue-a-cloud-agent-session-in-your-terminal-experimental\"></a>\n\n# Tutorial: Continue a cloud agent session in your terminal\n\nStart an agent task in {% data variables.product.prodname_vscode %}, close the application, and continue the same conversation from {% data variables.copilot.copilot_cli %} in a regular terminal. The agent runs in a managed cloud environment, so your development machine doesn't need to stay online for the task to run.\n\nIn this tutorial, you ask an agent to explore one of your private repositories and suggest improvements. Then you connect from your terminal and turn one suggestion into an implementation plan without repeating the repository context. You don't need to clone the repository, install its dependencies, or change any code.\n\nIf you haven't worked with agents before, start with the [agents quickstart](/docs/agents/quickstart.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/cloud-continuity-tutorial.md"
+}

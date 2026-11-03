@@ -1,0 +1,8 @@
+{
+  "id": "api_get_started_your_first_extension__debugging_the_extension",
+  "title": "your first extension / Debugging the extension",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Debugging the extension\n\nVS Code's built-in debugging functionality makes it easy to debug extensions. Set a breakpoint by clicking the gutter next to a line, and VS Code will hit the breakpoint. You can hover over variables in the editor or use the **Run and Debug** view in the left to check a variable's value. The Debug Console allows you to evaluate expressions.\n\n<video loop muted playsinline controls title=\"Debug VS Code extension video\">\n  <source src=\"/assets/api/get-started/your-first-extension/debug.mp4\" type=\"video/mp4\">\n</video>\n\nYou can learn more about debugging Node.js apps in VS Code in the [Node.js Debugging Topic](/docs/nodejs/nodejs-debugging).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/get-started/your-first-extension.md"
+}

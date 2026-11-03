@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_45__debugging",
+  "title": "v1_45 / Debugging",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debugging\n\n### Automatic debug configurations\n\nSetting up debugging in VS Code can be a daunting task because a user has to create a new debug configuration (or at least modify a template to their needs). In our continuing effort to simplify the debugging experience, we have added a new feature that gives debug extension authors a means to analyze the current project and offer quality debug configurations automatically that do not require additional user configuration.\n\nIn a similar way to how build tasks are provided, the automatic debug configurations are grouped under the appropriate debugger (folder icon) in the Debug view's configuration dropdown and the **Select and Start Debugging** Quick Pick. Once the debugger is chosen, VS Code presents all the automatic configurations available. Selecting a configuration will start a new debugging session.\n\nThe following screen cast shows the feature for the new JavaScript debugger (in preview) and our educational Mock Debug:\n\n<video src=\"images/1_45/dynamic.mp4\" title=\"Video showing Automatic debug configurations.\" autoplay loop controls muted></video>\n\nThe debug Quick Pick can be opened by typing 'debug ' (with a space) in **Quick open** (`kb(workbench.action.quickOpen)`) or by triggering the **Debug: Select and Start Debugging** command.\n\nIn the next milestone, we'll add UI so that an automatic debug configuration can be easily added to the `launch.json` for further configuration.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_45.md"
+}

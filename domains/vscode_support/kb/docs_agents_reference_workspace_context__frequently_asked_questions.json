@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_workspace_context__frequently_asked_questions",
+  "title": "workspace context / Frequently asked questions",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Frequently asked questions\n\n### Do I need to use `#codebase` in my prompts?\n\nNo. Agents automatically use semantic search when it makes sense. You don't need to add `#codebase` to your prompt.\n\nThe `#codebase` tool is always semantic and provides consistent results. If you want to force a semantic search for a specific prompt, you can still add `#codebase` as a [context item](/docs/chat/copilot-chat-context.md).\n\n### What happens if my workspace is not semantically indexed?\n\nMost workspaces are indexed automatically, but if the index isn't available yet (for example, while a new local workspace is still building its initial index), agents still search your code effectively by using text search, grep, file search, and language intelligence. The workspace index enables semantic search, which finds code by meaning rather than keywords. Without it, agents rely on the other search tools and can still provide accurate results for most prompts. We've found that these other tools still provide great results.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/workspace-context.md"
+}

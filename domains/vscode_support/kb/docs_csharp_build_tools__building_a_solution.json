@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_build_tools__building_a_solution",
+  "title": "build tools / Building a solution",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Building a solution\n\nWhen a solution is loaded, the C# Dev Kit extension provides several tasks that operate on the solution and the projects contained in it. In addition to the ability to right-click and build on any solution or project in the Solution Explorer, you can build your entire solution using the `.NET: Build` command:\n\n![Choosing the .NET:Build command](images/build-tools/net-build-command.gif)\n\nYou can also build your solution using the Tasks feature of {% data variables.product.prodname_vscode %}. C# Dev Kit integrates with the Task system and registers several tasks under the `dotnet` grouping. Here's what that looks like:\n\n![Showing the `dotnet` task grouping here](images/build-tools/show-dotnet-tasks.gif)\n\nThe `build` task builds the open solution via the [dotnet build](https://learn.microsoft.com/dotnet/core/tools/dotnet-build) command, and the `clean` task cleans all solution outputs via the [dotnet clean](https://learn.microsoft.com/dotnet/core/tools/dotnet-clean) command.\n\nYou can also `watch` specific projects with these tasks. Watching a project means looking at the project's files and rebuilding the project whenever those change. This is the same as running the [dotnet watch](https://learn.microsoft.com/dotnet/core/tools/dotnet-watch) command against the project directly, only integrated into your editor.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/build-tools.md"
+}

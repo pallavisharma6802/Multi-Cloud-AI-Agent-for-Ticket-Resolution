@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_110__proposed_apis",
+  "title": "v1_110 / Proposed APIs",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Proposed APIs\n\n### Chat item controller API\n\nWe continued to improve the chat session API. This API lets extensions contribute items to VS Code's built-in chat sessions view. Notable changes this iteration include:\n\n* Added `ChatSessionItemControllerNewItemHandler` so that controllers can specify the URI used for new sessions.\n\n* Added `ChatSessionProviderOptions.newSessionOptions` which sets the default options for new sessions.\n\nWe also significantly optimized the API's implementation to support large numbers of sessions.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_110.md"
+}

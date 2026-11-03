@@ -1,0 +1,8 @@
+{
+  "id": "docs_reference_default_keybindings__preferences",
+  "title": "default keybindings / Preferences",
+  "category": "REFERENCE",
+  "intent": "reference",
+  "content": "## Preferences\n\nCommand|Key|Command id\n-------|---|----------\nOpen Settings|`kb(workbench.action.openSettings)`|`workbench.action.openSettings`\nOpen Keyboard Shortcuts|`kb(workbench.action.openGlobalKeybindings)`|`workbench.action.openGlobalKeybindings`\nSelect Color Theme|`kb(workbench.action.selectTheme)`|`workbench.action.selectTheme`",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/reference/default-keybindings.md"
+}

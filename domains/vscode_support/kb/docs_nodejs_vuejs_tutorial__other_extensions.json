@@ -1,0 +1,8 @@
+{
+  "id": "docs_nodejs_vuejs_tutorial__other_extensions",
+  "title": "vuejs tutorial / Other extensions",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Other extensions\n\n- Search in the Extensions view (`kb(workbench.view.extensions)`) by typing _vue_ to find other Vue extensions.\n\n  ![Vue.js extensions](images/vuejs/vue-extensions.png)\n\n- Extensions like [Vue {% data variables.product.prodname_vscode_shortname %} Snippets](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets) can be handy for Vue snippets.\n\n  ![Vue {% data variables.product.prodname_vscode_shortname %} Snippets](images/vuejs/vue-vscode-snippets.png)\n\n- There are also Extension Packs, which bundle extensions that other people have found useful for Vue.js development.\n\n  ![Vue.js Extension Pack](images/vuejs/vue-extension-pack.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/vuejs-tutorial.md"
+}

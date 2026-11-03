@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_app_service__prerequisites",
+  "title": "app service / Prerequisites",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Prerequisites\n\n- An Azure subscription.\n- The [Container Tools](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-containers) and [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) extensions must be installed.\n- A [**web** application](https://learn.microsoft.com/azure/app-service/tutorial-custom-container) that produces a container image. You could also follow [Create a sample ASP .NET Core application](/docs/containers/quickstart-aspnet-core.md) to create such application.\n- You need a [Docker Hub](https://hub.docker.com/) account or an instance of [Azure Container Registry (ACR)](https://learn.microsoft.com/azure/container-registry/container-registry-get-started-portal).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/app-service.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_pipe_transport__how_to",
+  "title": "pipe transport / How-To",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## How-To\n\n`pipeTransport` is an option within the **launch.json** file. The structure looks as follows:\n\n```json\n\"pipeTransport\": {\n    \"pipeCwd\": \"/usr/bin\",\n    \"pipeProgram\": \"/usr/bin/ssh\",\n    \"pipeArgs\": [\n        \"-pw\",\n        \"<password>\",\n        \"user@10.10.10.10\"\n    ],\n    \"debuggerPath\": \"/usr/bin/gdb\"\n},\n```\n\nThe `pipeArgs` can be any set of arguments necessary to set up and authenticate the pipe connection. In the example, a password is used but you can also use an SSH key.\n\nYou may also need to add a `sourceFileMap` to map the path of where the code exists on the remote shell to where it is locally:\n\n```json\n\"sourceFileMap\": {\n    // \"remote\": \"local\"\n    \"/home/user/src\": \"/src/projectA/src\"\n}\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/pipe-transport.md"
+}

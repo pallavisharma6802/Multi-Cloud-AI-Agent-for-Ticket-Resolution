@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_codebasics__auto_closing_brackets",
+  "title": "codebasics / Auto-closing brackets",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Auto-closing brackets\n\nWhen you type an opening bracket, {% data variables.product.prodname_vscode_shortname %} can insert the matching closing bracket based on the active language configuration. The `setting(editor.autoClosingBrackets)` setting controls this behavior:\n\n* `languageDefined`: Use the language configuration to determine when to insert a closing bracket. This value is the default.\n* `beforeWhitespace`: Insert a closing bracket only when the cursor is before whitespace.\n* `always`: Always insert a closing bracket.\n* `never`: Do not insert a closing bracket.\n\nFor the `languageDefined` and `beforeWhitespace` values, if a matching unpaired closing bracket exists later in the document, {% data variables.product.prodname_vscode_shortname %} does not insert a duplicate. Set `setting(editor.autoClosingBrackets)` to `always` to insert a closing bracket even when an unpaired closing bracket already exists.\n\n> [!NOTE]\n> Bracket balancing depends on token-aware bracket information. Until tokenization is complete, or for files too large for bracket-pair analysis, the editor uses its standard auto-closing behavior. With multiple cursors, if any cursor can pair with an unpaired closing bracket, the editor suppresses auto-closing at every cursor.\n\nAuto-closing for quotes is controlled separately by the `setting(editor.autoClosingQuotes)` setting.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/codebasics.md"
+}

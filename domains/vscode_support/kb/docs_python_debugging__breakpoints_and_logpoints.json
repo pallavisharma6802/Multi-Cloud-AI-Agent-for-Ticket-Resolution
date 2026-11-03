@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_debugging__breakpoints_and_logpoints",
+  "title": "debugging / Breakpoints and logpoints",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Breakpoints and logpoints\n\nThe Python Debugger extension supports [breakpoints](/docs/debugtest/debugging.md#breakpoints) and [logpoints](/docs/debugtest/debugging.md#logpoints) for debugging code. For a short walkthrough of basic debugging and using breakpoints, see [Tutorial - Configure and run the debugger](/docs/python/python-tutorial.md#configure-and-run-the-debugger).\n\n### Conditional breakpoints\n\nBreakpoints can also be set to trigger based on expressions, hit counts, or a combination of both. The Python Debugger extension supports hit counts that are integers, in addition to integers preceded by the ==, >, >=, <, <=, and % operators. For example, you could set a breakpoint to trigger after five occurrences by setting a hit count of `>5`  For more information, see [conditional breakpoints](/docs/debugtest/debugging.md#conditional-breakpoints) in the main {% data variables.product.prodname_vscode_shortname %} debugging article.\n\n### Invoking a breakpoint in code\n\nIn your Python code, you can call `debugpy.breakpoint()` at any point where you want to pause the debugger during a debugging session.\n\n### Breakpoint validation\n\nThe Python Debugger extension automatically detects breakpoints that are set on non-executable lines, such as `pass` statements or the middle of a multiline statement. In such cases, running the debugger moves the breakpoint to the nearest valid line to ensure that code execution stops at that point.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/debugging.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_typescript__formatting",
+  "title": "typescript / Formatting",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Formatting\n\n{% data variables.product.prodname_vscode_shortname %} includes a TypeScript formatter that provides basic code formatting with reasonable defaults.\n\nUse the `js/ts.format.*` [settings](/docs/configure/settings.md) to configure the built-in formatter, such as making braces appear on their own line. Or, if the built-in formatter is getting in the way, set `\"js/ts.format.enable\"` to `false` to disable it.\n\nFor more specialized code formatting styles, try installing one of the formatting extensions from the {% data variables.product.prodname_vs_marketplace %}.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/typescript.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "learn_agents_3_agent_plugins__prerequisites",
+  "title": "3 agent plugins / Prerequisites",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Prerequisites\n\nBefore you start, install VS Code, enable AI features, and sign in to GitHub Copilot. Then enable support for agent plugins with `setting(chat.plugins.enabled)`.\n\n* [Download VS Code](https://code.visualstudio.com/)\n* [Set up GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview#_step-1-set-up-copilot)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/3-agent-plugins.md"
+}

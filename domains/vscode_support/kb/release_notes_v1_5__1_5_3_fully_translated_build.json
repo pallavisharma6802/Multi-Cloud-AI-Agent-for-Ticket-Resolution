@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_5__1_5_3_fully_translated_build",
+  "title": "v1_5 / 1.5.3 Fully Translated Build",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## 1.5.3 Fully Translated Build\n\nIt took us 2 weeks longer than originally anticipated, but now it's here: The 1.5.3 release is our August release fully translated into the 9 supported languages.\n\nDownloads: [Windows](https://update.code.visualstudio.com/1.5.3/win32/stable) | [Mac](https://update.code.visualstudio.com/1.5.3/darwin/stable) | Linux 64-bit: [.tar.gz](https://update.code.visualstudio.com/1.5.3/linux-x64/stable) [.deb](https://update.code.visualstudio.com/1.5.3/linux-deb-x64/stable) [.rpm](https://update.code.visualstudio.com/1.5.3/linux-rpm-x64/stable) | Linux 32-bit: [.tar.gz](https://update.code.visualstudio.com/1.5.3/linux-ia32/stable) [.deb](https://update.code.visualstudio.com/1.5.3/linux-deb-ia32/stable) [.rpm](https://update.code.visualstudio.com/1.5.3/linux-rpm-ia32/stable)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_5.md"
+}

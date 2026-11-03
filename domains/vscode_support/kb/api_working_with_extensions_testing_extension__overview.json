@@ -1,0 +1,8 @@
+{
+  "id": "api_working_with_extensions_testing_extension__overview",
+  "title": "testing extension",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "# Testing Extensions\n\nVisual Studio Code supports running and debugging tests for your extension. These tests will run inside a special instance of VS Code named the **Extension Development Host**, and have full access to the VS Code API. We refer to these tests as integration tests, because they go beyond unit tests that can run without a VS Code instance. This documentation focuses on VS Code integration tests.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/working-with-extensions/testing-extension.md"
+}

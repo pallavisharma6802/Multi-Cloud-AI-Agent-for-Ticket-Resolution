@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_agent_sandboxing__when_your_organization_manages_sandboxing",
+  "title": "agent sandboxing / When your organization manages sandboxing",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## When your organization manages sandboxing\n\nManaged sandbox enforcement is in Preview. When a policy sets `sandbox.enabled` to `true`, `sandbox.allowBypass` determines whether the session toggle is editable: `true` lets you turn sandboxing off for the current session, while `false` or an omitted value keeps sandboxing on and locks the toggle. A session choice does not change the managed policy or other sessions. Your organization can also restrict network access.\n\nIf a setting is locked or you need access that policy denies, contact your administrator. For policy details, see [enterprise agent sandboxing](/docs/enterprise/manage-ai-settings.md#configure-agent-sandboxing).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/agent-sandboxing.md"
+}

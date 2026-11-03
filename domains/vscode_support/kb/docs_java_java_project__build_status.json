@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_project__build_status",
+  "title": "java project / Build Status",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Build Status\n\nWhen you edit Java source code in {% data variables.product.prodname_vscode %}, the Java language server is building your workspace to provide you with the necessary language features. You can see the detailed build task status and watch what is happening behind the scene by clicking the language status item in the Status bar. You can also select the **check details** link when a notification shows the language server is opening Java projects to see the build task status.\n\n<video src=\"images/java-project/java.build.status.mp4\" autoplay loop muted playsinline controls title=\"Build status for the Java project\">\n</video>\n\n### Additional resources\n\nThere are several {% data variables.product.prodname_vscode %} extensions to support different build systems for Java. Below are extensions for several popular build systems.\n\n- [Maven for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven)\n- [Gradle for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-gradle)\n- [Bazel for Java](https://marketplace.visualstudio.com/items?itemName=sfdc.bazel-vscode-java) ([Bazel](https://marketplace.visualstudio.com/items?itemName=BazelBuild.vscode-bazel) is for `BUILD` files, without Java integration))\n\nIf you run into any problems when using the features above, you can contact us by filing an [issue](https://github.com/microsoft/vscode-java-pack/issues).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-project.md"
+}

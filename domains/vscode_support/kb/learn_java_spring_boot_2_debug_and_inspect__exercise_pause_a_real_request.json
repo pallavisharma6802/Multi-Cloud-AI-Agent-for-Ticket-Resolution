@@ -1,0 +1,8 @@
+{
+  "id": "learn_java_spring_boot_2_debug_and_inspect__exercise_pause_a_real_request",
+  "title": "2 debug and inspect / Exercise - pause a real request",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Exercise - pause a real request\n\nLet's stop the application in the middle of an add.\n\n1. Open `TodoController.java`, find the `addForm` method, and select the gutter to set a breakpoint on its `service.add(title)` line.\n2. Select the **Spring Boot Dashboard** icon in the Activity Bar, select the app's **Debug** action, and wait for the debugger to connect.\n3. Confirm the running debug state in the Dashboard, and find the **Endpoint Mappings** and **Memory** sections listed below **Apps**.\n4. Return to the controller and select the root URL hint. In the page that opens, enter **`Trace this request`** and select **Add**.\n5. Wait for Visual Studio Code to stop at the breakpoint.\n\nThe request is now frozen immediately before the controller calls the service, which\nmeans the Variables panel holds exactly what the web layer received and nothing it has\nproduced yet.\n\n![Visual Studio Code paused at the breakpoint, with the Variables panel showing the incoming title](../images/java-spring-boot/ch2-breakpoint-paused.png)\n\nFig 3: The paused request. **Local** holds the `title` the form sent, the debug toolbar offers the stepping actions, and the editor annotates the stopped line with its live values.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/2-debug-and-inspect.md"
+}

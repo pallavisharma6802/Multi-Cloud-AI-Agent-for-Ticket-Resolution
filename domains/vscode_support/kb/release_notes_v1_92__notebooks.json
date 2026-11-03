@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_92__notebooks",
+  "title": "v1_92 / Notebooks",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notebooks\n\n### Multi-cell commenting\n\nThe Notebook Editor now supports toggling comments on one or multiple cells at a time. Do this by selecting one or multiple cell containers, followed by the keyboard shortcut `kb(notebook.commentSelectedCells)`.\n\n<video src=\"images/1_92/notebook-multi-cell-comment.mp4\" title=\"Notebook Multi Cell Commenting\" autoplay loop controls muted></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_92.md"
+}

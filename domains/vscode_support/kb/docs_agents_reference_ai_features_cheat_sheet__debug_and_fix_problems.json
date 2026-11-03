@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_ai_features_cheat_sheet__debug_and_fix_problems",
+  "title": "ai features cheat sheet / Debug and fix problems",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Debug and fix problems\n\n| Task | Starting point |\n|---|---|\n| Generate tests | Select code and use **Generate Code** > **Generate Tests**, or ask an agent to add and run tests with your project's framework. |\n| Diagnose a failing test | Select **Fix Test Failure** in the Test Explorer, or attach the failure output to chat. |\n| Fix a compiler or linting error | Use the editor Code Action (lightbulb), or attach the problem to chat. |\n| Configure a debugging session | Ask for a debug configuration, or use `copilot-debug` (Preview) before a terminal run command, such as `copilot-debug python foo.py`. |\n\nCombine the task, constraint, and verification in one request:\n\n```prompt\nFind the cause of the failing authentication test.\nFix the implementation without changing the expected behavior.\nRun the relevant tests and summarize the change and results.\n```\n\nSee [smart actions for tests and errors](/docs/editing/copilot-smart-actions.md#fix-testing-errors) and [debugging](/docs/debugtest/debugging.md).\n\n<a name=\"terminal\"></a>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/ai-features-cheat-sheet.md"
+}

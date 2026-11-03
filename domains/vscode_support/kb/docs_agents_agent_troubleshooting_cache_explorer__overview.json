@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_agent_troubleshooting_cache_explorer__overview",
+  "title": "cache explorer",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Diagnose prompt caching with the Cache Explorer\n\nSome language model providers can reuse an unchanged prefix from an earlier request instead of processing those input tokens again. The Cache Explorer compares consecutive model requests in a chat session to help you investigate whether changes to that prefix contribute to higher latency or token usage.\n\nUse the Cache Explorer after the Agent Debug Logs Summary view reports low cache reuse together with unexpected duration or input token usage. For general agent failures, missing context, or tool errors, start with [Debug chat interactions](/docs/agents/agent-troubleshooting/chat-debug-view.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/agent-troubleshooting/cache-explorer.md"
+}

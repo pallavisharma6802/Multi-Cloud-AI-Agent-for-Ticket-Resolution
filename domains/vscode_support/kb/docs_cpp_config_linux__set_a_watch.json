@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_config_linux__set_a_watch",
+  "title": "config linux / Set a watch",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Set a watch\n\nTo keep track of the value of a variable as your program executes, set a **watch** on the variable.\n\n1. Place the insertion point inside the loop. In the **Watch** window, click the plus sign and in the text box, type `word`, which is the name of the loop variable. Now view the Watch window as you step through the loop.\n\n   ![Watch window](images/cpp/watch-window.png)\n\n1. To quickly view the value of any variable while execution is paused on a breakpoint, you can hover over it with the mouse pointer.\n\n   ![Mouse hover](images/cpp/mouse-hover.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/config-linux.md"
+}

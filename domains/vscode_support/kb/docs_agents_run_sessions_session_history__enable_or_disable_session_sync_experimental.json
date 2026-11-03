@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_sessions_session_history__enable_or_disable_session_sync_experimental",
+  "title": "session history / Enable or disable session sync (Experimental)",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Enable or disable session sync (Experimental)\n\nCheck the [session sync status](#session-sync-status) to see whether sync is enabled. Use `setting(chat.sessionSync.enabled)` to set your preference:\n\n* To sync session history, set `setting(chat.sessionSync.enabled)` to `true`. Local session tracking must also be enabled with `setting(github.copilot.chat.localIndex.enabled)`.\n* To turn off session-history sync, set `setting(chat.sessionSync.enabled)` to `false`. You can keep local session tracking enabled. Turning off sync does not delete data already synced to GitHub.com; see [Delete synced sessions](#delete-synced-sessions).\n\nReview [what gets tracked](#what-gets-tracked) and the [privacy controls](#privacy-and-data-control) before turning on sync. If your organization disables sync by policy, you cannot override that restriction.\n\n> [!NOTE]\n> Session-history sync is separate from the prompts and context sent to a model during an agent session. Turning off sync does not stop those model requests.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/sessions/session-history.md"
+}

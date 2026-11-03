@@ -1,0 +1,8 @@
+{
+  "id": "docs_agent_customization_tool_sets__overview",
+  "title": "tool sets",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Tool sets (deprecated)\n\nUser-defined tool sets group existing tools under a reusable name. They are deprecated and are not supported in the Copilot harness. Tool-set files remain available only for Local harness compatibility.\n\nTo move an existing workflow to the Copilot harness, follow [Replace tool sets](/docs/agent-customization/migrate-customizations.md#replace-tool-sets).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/tool-sets.md"
+}

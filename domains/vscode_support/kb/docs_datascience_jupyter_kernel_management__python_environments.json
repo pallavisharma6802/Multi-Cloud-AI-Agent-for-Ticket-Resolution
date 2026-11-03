@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_jupyter_kernel_management__python_environments",
+  "title": "jupyter kernel management / Python Environments",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Python Environments\n\nThe **Python Environments** category lists the Python environments that {% data variables.product.prodname_vscode_shortname %} detects from the compute system it's operating in (your desktop, Codespaces, remote server, etc.). It shows all Python environments grouped by type (for example, conda, venv)\u2014whether the [IPyKernel](https://ipython.readthedocs.io/en/stable/install/kernel_install.html) is installed or not.\n\n   > **Note**: You **do not** need to install [jupyter](https://pypi.org/project/jupyter/) into the Python environment you want to use. Only the IPyKernel package is required to launch a Python process as a kernel and execute code against your notebook (`pip install ipykernel`). Visit the [Jupyter extension wiki](https://github.com/microsoft/vscode-jupyter/wiki/Kernels-(Architecture)) to learn more.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/jupyter-kernel-management.md"
+}

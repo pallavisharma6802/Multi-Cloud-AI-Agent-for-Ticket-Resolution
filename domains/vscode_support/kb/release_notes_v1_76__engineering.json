@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_76__engineering",
+  "title": "v1_76 / Engineering",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Engineering\n\n### More Electron UtilityProcess adoption\n\nAs part of our [process sandbox journey](https://code.visualstudio.com/blogs/2022/11/28/vscode-sandbox), we want to make sure that there are no more Node.js enabled browser windows in our application. This milestone we started to convert our last remaining process from a hidden Node.js browser window to an Electron [UtilityProcess](https://www.electronjs.org/docs/latest/api/utility-process). As part of this work, the file watcher process had to move out into its own utility process as well.\n\nA new setting `window.experimental.sharedProcessUseUtilityProcess` enables the use of `UtilityProcess` and we plan to make this the default in the next release.\n\n### macOS 10.11 and 10.12 support has ended\n\nAs mentioned in our [1.75 release notes](https://code.visualstudio.com/updates/v1_75#_eol-warning-for-macos-1011-and-1012), `1.76` is the last release that supports macOS 10.11 (OS X El Capitan) and 10.12 (macOS Sierra). Refer to our [FAQ](https://code.visualstudio.com/docs/supporting/faq#_can-i-run-vs-code-on-old-macos-versions) for additional information.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_76.md"
+}

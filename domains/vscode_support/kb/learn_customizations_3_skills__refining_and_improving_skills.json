@@ -1,0 +1,8 @@
+{
+  "id": "learn_customizations_3_skills__refining_and_improving_skills",
+  "title": "3 skills / Refining and improving skills",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Refining and improving skills\n\nSkills aren\u2019t static. Over time, you can improve them by adjusting behavior, adding confirmations, or refining how they execute tasks.\n\nThis allows your workflow automation to evolve alongside your projects.\n\nAgent skills represent a shift from:\n\n**manual workflows \u2192 automated systems**\n\nInstead of handling tasks step-by-step, you define reusable capabilities that execute entire workflows for you.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/3-skills.md"
+}

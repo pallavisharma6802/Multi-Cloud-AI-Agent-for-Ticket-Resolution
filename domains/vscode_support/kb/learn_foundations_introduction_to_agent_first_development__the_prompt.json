@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundations_introduction_to_agent_first_development__the_prompt",
+  "title": "introduction to agent first development / The prompt",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## The prompt\n\nThe prompt is the message you send to the agent, your instructions, goals, and requirements. It is the biggest lever you have over output quality.\n\nHere is a basic prompt to get started.\n\n**Before continuing**, make sure you have [Python 3.13 or later](https://www.python.org/downloads/) and [`uv`](https://docs.astral.sh/uv/guides/install-python/) installed. The agent uses both to set up and run the project.\n\n```prompt\nUsing Python 3.13 and uv, implement a base62 encoder/decoder.\n```\n\n![Prompt example in VS Code chat showing a request to implement a base62 encoder/decoder with Python 3.13 and uv.](../images/foundations/prompt.png)\n\nThis gets the agent started, but the more specific you are, the better the results. Reference existing files, specify the pattern to follow, and define the scope clearly. We'll cover prompt strategies in depth in later guides.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/introduction-to-agent-first-development.md"
+}

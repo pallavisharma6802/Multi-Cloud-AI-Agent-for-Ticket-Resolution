@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_11__overview",
+  "title": "v1_11",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "# March 2017 (version 1.11)\n\n**Update 1.11.2**: Adds the 1.11 translations and addresses these [issues](https://github.com/microsoft/vscode/milestone/41?closed=1).\n\n**Update 1.11.1**: Fixes these [issues](https://github.com/microsoft/vscode/milestone/40?closed=1).\n\nDownloads: [Windows](https://update.code.visualstudio.com/1.11.2/win32/stable) | [Mac](https://update.code.visualstudio.com/1.11.2/darwin/stable) | Linux 64-bit: [.tar.gz](https://update.code.visualstudio.com/1.11.2/linux-x64/stable) [.deb](https://update.code.visualstudio.com/1.11.2/linux-deb-x64/stable) [.rpm](https://update.code.visualstudio.com/1.11.2/linux-rpm-x64/stable) | Linux 32-bit: [.tar.gz](https://update.code.visualstudio.com/1.11.2/linux-ia32/stable) [.deb](https://update.code.visualstudio.com/1.11.2/linux-deb-ia32/stable) [.rpm](https://update.code.visualstudio.com/1.11.2/linux-rpm-ia32/stable)\n\n---\n\n### Troubleshooting\n\nSome users are reporting issues with the new [Git integration](#git-extension-enabled) and the [keyboard layout support](#improved-keyboard-layout-support).\n\nIf you like to go back to the previous behavior, you can apply the following workarounds:\n\n* Git integration - Run the **SCM: Disable Preview SCM** command.\n* Keyboard layout - Use the setting `\"keyboard.dispatch\": \"keyCode\"`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_11.md"
+}

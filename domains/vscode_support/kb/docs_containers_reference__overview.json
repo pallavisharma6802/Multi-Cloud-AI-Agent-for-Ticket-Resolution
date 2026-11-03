@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_reference__overview",
+  "title": "reference",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "# Customize the Container Tools extension\n\nThe Container Tools extension includes several {% data variables.product.prodname_vscode %} tasks to control the behavior of Docker [build](#docker-build-task) and [run](#docker-run-task), and form the basis of container startup for debugging.\n\nThe tasks allow for a great deal of control and customization. The final configuration is a combination of general defaults, platform-specific defaults (such as Node.js, Python, or .NET), and user input. User input takes precedence when it conflicts with defaults.\n\nAll common features of {% data variables.product.prodname_vscode %} tasks (for example, grouping tasks into compound tasks) are supported by Container Tools extension tasks. For more information on common task features and properties, see the {% data variables.product.prodname_vscode %} [custom task](/docs/debugtest/tasks.md#custom-tasks) documentation.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/reference.md"
+}

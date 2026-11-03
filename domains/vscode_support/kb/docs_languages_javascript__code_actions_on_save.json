@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_javascript__code_actions_on_save",
+  "title": "javascript / Code Actions on Save",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Code Actions on Save\n\nThe `setting(editor.codeActionsOnSave)` setting lets you configure a set of Code Actions that are run when a file is saved. For example, you can enable organize imports on save by setting:\n\n```json\n// On explicit save, run fixAll source action. On auto save (window or focus change), run organizeImports source action.\n\"editor.codeActionsOnSave\": {\n    \"source.fixAll\": \"explicit\",\n    \"source.organizeImports\": \"always\",\n}\n```\n\nAs of today, the following enums are supported:\n\n* `explicit` (default): Triggers Code Actions when explicitly saved. Same as `true`.\n* `always`: Triggers Code Actions when explicitly saved and on Auto Saves from window or focus changes.\n* `never`: Never triggers Code Actions on save. Same as `false`.\n\nYou can also set `setting(editor.codeActionsOnSave)` to an array of Code Actions to execute in order.\n\nHere are some source actions:\n\n* `\"organizeImports\"` -  Enables organize imports on save.\n* `\"fixAll\"` - Auto Fix on Save computes all possible fixes in one round (for all providers including ESLint).\n* `\"fixAll.eslint\"` -  Auto Fix only for ESLint.\n* `\"addMissingImports\"` - Adds all missing imports on save.\n\nSee [Node.js/JavaScript](/docs/nodejs/working-with-javascript) for more information.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/javascript.md"
+}

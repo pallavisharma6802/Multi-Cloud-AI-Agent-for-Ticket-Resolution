@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_command__overview",
+  "title": "command",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "# Commands\n\nCommands trigger actions in Visual Studio Code. If you have ever [configured a keybinding](/docs/getstarted/keybindings), then you've worked with commands. Commands are also used by extensions to expose functionality to users, bind to actions in VS Code's UI, and implement internal logic.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/command.md"
+}

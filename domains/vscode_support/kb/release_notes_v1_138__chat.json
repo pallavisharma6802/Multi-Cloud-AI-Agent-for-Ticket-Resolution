@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_138__chat",
+  "title": "v1_138 / Chat",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Chat\n\n### Improved Voice Mode session awareness (Experimental)\n\nNavigate and monitor parallel agent work without leaving Voice Mode. Voice Mode can find recent agent sessions, switch between them by label, and report each session's status.\n\n<video src=\"images/1_138/voice-mode-session-navigation.mp4\" title=\"Video showing Voice Mode switching between Agent sessions.\" autoplay loop controls muted></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_138.md"
+}

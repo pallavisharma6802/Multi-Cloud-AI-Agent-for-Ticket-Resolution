@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_114__proposed_apis",
+  "title": "v1_114 / Proposed APIs",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Proposed APIs\n\n### Fine-grained tool approval\n\nLanguage model tools with an approval flow can now scope approval to a specific combination of arguments.\n\nFor example, the built-in \"Run VS Code Command\" tool can run any VS Code command. A user might feel comfortable always approving `editor.action.formatDocument`, but not other commands. With this API, the tool implementation can scope approval to the specific command, so users approve each command individually.\n\n```typescript\nexport interface LanguageModelToolConfirmationMessages {\n\t/**\n\t * When set, a button will be shown allowing the user to approve this particular\n\t * combination of tool and arguments. The value is shown as the label for the\n\t * approval option.\n\t *\n\t * For example, a tool that reads files could set this to `\"Allow reading 'foo.txt'\"`,\n\t * so that the user can approve that specific file without approving all invocations\n\t * of the tool.\n\t */\n\tapproveCombination?: string | MarkdownString;\n}\n```\n\nSee the full API proposal for more details: [Fine grain tool approval](https://github.com/microsoft/vscode/blob/af50a47c13e23e0b3c46719dbd92fe00144362a5/src/vscode-dts/vscode.proposed.toolInvocationApproveCombination.d.ts).\n\nSee an example of the API in use in the [Copilot Chat extension](https://github.com/microsoft/vscode-copilot-chat/blob/a71b716b1ea82855b90bdab8cd307396b601475e/src/extension/tools/node/vscodeCmdTool.tsx#L101-L105).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_114.md"
+}

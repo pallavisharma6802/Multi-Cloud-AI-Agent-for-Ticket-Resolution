@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_refactoring__add_explicit_cast",
+  "title": "refactoring / Add explicit cast",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Add explicit cast\n\n**What:** Lets you automatically add an explicit cast to an expression, based on usage.\n\n**When:** You need to add an explicit cast to an expression and want to properly assign it automatically.\n\n**Why:** You could add an explicit cast to an expression manually, however this feature adds it automatically based on the code context.\n\n**How-to:**\n\n1. Place your caret on the error.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select **Add explicit cast**.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+}

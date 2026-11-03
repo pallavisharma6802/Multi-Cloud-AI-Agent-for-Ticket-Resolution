@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_explore_a_codebase__3_trace_one_path_through_the_application",
+  "title": "explore a codebase / 3. Trace one path through the application",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## 3. Trace one path through the application\n\nFollow a concrete input from entry point to result. Replace the example values with a request that your application supports:\n\n```prompt\nTrace GET /issues?page=2 through the files you identified. Show where\nthe page parameter is parsed and validated, how records are selected,\nand how the response is constructed.\n\nFor each step, cite the relevant symbol and explain the input and\noutput. Include error paths and any database or external-service\nboundary. If a dependency's implementation is unavailable, identify\nwhat you cannot verify. Do not edit files or execute project code.\n```\n\nCheck the connections, not only the individual functions. Verify that callers pass the values described, that the return value reaches the response, and that error handling follows the path the agent claims.\n\nAsk focused follow-ups when the explanation skips a step:\n\n```prompt\nYou identified the pagination helper, but have not shown how the route\ncalls it. Find that call site and verify which default page value it\nreceives. If you cannot find a connection, revise the explanation.\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/explore-a-codebase.md"
+}

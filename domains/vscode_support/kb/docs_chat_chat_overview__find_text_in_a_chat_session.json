@@ -1,0 +1,8 @@
+{
+  "id": "docs_chat_chat_overview__find_text_in_a_chat_session",
+  "title": "chat overview / Find text in a chat session",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Find text in a chat session\n\nPress `kb(workbench.action.chat.find)` to search the entire conversation. Find is available in the {% data variables.copilot.chat_view %}, chat editor tabs, and the {% data variables.copilot.agents_window %}. It searches prompts and responses, including off-screen content and code blocks.\n\nUse `kb(workbench.action.chat.findNext)` and `kb(workbench.action.chat.findPrevious)` to navigate between matches. When a match is inside a collapsed **Completed N steps** section, navigating to the match expands the section. Use the **Match Case**, **Whole Word**, and **Regular Expression** options to refine the results.\n\n> [!NOTE]\n> Find is not available in Quick Chat or inline chat. It does not search text inside tool pills or collapsed reasoning.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/chat/chat-overview.md"
+}

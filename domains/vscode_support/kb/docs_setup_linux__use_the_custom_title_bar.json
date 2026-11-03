@@ -1,0 +1,8 @@
+{
+  "id": "docs_setup_linux__use_the_custom_title_bar",
+  "title": "linux / Use the custom title bar",
+  "category": "INSTALLATION",
+  "intent": "installation",
+  "content": "## Use the custom title bar\n\nThe custom title bar provides theming support and better accessibility through keyboard navigation and screen readers. These benefits might not always translate as well to Linux because desktop environments and window managers vary. For this reason, the custom title bar isn't enabled by default on Linux.\n\nFor accessibility improvements while using a screen reader, enable the custom title bar when running in accessibility mode.\n\nConfigure the title bar with the **Window: Title Bar Style** (`setting(window.titleBarStyle)`) setting:\n\n* `custom`: Use the custom title bar.\n* `native`: Use the operating system title bar.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/linux.md"
+}

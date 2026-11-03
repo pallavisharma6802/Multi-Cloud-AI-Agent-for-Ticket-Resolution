@@ -1,0 +1,8 @@
+{
+  "id": "api_references_theme_color__chat_colors",
+  "title": "theme color / Chat colors",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Chat colors\n\n- `chat.requestBorder`: The border color of a chat request.\n- `chat.requestBackground`: The background color of a chat request.\n- `chat.slashCommandBackground`: The background color of a chat slash command.\n- `chat.slashCommandForeground`: The foreground color of a chat slash command.\n- `chat.avatarBackground`: The background color of a chat avatar.\n- `chat.avatarForeground`: The foreground color of a chat avatar.\n- `chat.editedFileForeground`: The foreground color of a chat edited file in the edited file list.\n- `chat.linesAddedForeground`: Foreground color of lines added in chat code block pill.\n- `chat.linesRemovedForeground`: Foreground color of lines removed in chat code block pill.\n- `chat.requestCodeBorder`: Border color of code blocks within the chat request bubble.\n- `chat.requestBubbleBackground`: Background color of the chat request bubble.\n- `chat.requestBubbleHoverBackground`: Background color of the chat request bubble on hover.\n- `chat.checkpointSeparator`: Chat checkpoint separator color.\n- `chat.thinkingShimmer`: Shimmer highlight for thinking/working labels.\n- `chatManagement.sashBorder`: The color of the Chat Management editor splitview sash border.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+}

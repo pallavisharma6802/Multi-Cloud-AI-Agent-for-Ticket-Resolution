@@ -1,0 +1,39 @@
+{
+  "id": "vscode_support",
+  "display_name": "VS Code Support",
+  "description": "Documentation-grounded VS Code help: installation, settings, extensions, editor, languages, terminal, Git, debugging, remote/containers, AI features, and release notes. No account access or privileged actions.",
+  "source_dataset": {
+    "name": "Microsoft VS Code official documentation",
+    "url": "https://github.com/microsoft/vscode-docs",
+    "license": "CC-BY-3.0-US",
+    "real_data": true,
+    "num_source_rows": 6347,
+    "limitations": "6,347 documents chunked (by H2 section) from 691 real pages under docs/, api/, release-notes/, remote-release-notes/ and learn/, pinned to commit b997976670611bc45544c85e05aacb6ceabaafb0. Regenerate with data/prepare_vscode_docs.py. Snapshot, not a guaranteed product release match. No labeled accuracy benchmark yet."
+  },
+  "intents": [
+    { "id": "installation", "category": "INSTALLATION", "description": "Help installing or setting up VS Code" },
+    { "id": "settings", "category": "SETTINGS", "description": "Help with VS Code settings and configuration" },
+    { "id": "extensions", "category": "EXTENSIONS", "description": "Help with VS Code extensions" },
+    { "id": "editor", "category": "EDITOR", "description": "Help with core editing and editor features" },
+    { "id": "languages", "category": "LANGUAGES", "description": "Help with a specific programming language in VS Code" },
+    { "id": "terminal", "category": "TERMINAL", "description": "Help with the integrated terminal" },
+    { "id": "git", "category": "GIT", "description": "Help with source control / Git in VS Code" },
+    { "id": "debugging", "category": "DEBUGGING", "description": "Help with debugging and testing" },
+    { "id": "remote_cloud", "category": "REMOTE_CLOUD", "description": "Help with Remote, Containers, Dev Containers, or Azure integration" },
+    { "id": "ai_features", "category": "AI_FEATURES", "description": "Help with Copilot Chat, agents, and AI features" },
+    { "id": "getting_started", "category": "GETTING_STARTED", "description": "Onboarding / getting-started questions" },
+    { "id": "enterprise", "category": "ENTERPRISE", "description": "Help with enterprise deployment and policy" },
+    { "id": "api_reference", "category": "API_REFERENCE", "description": "Extension API reference questions" },
+    { "id": "release_notes", "category": "RELEASE_NOTES", "description": "Questions about what changed in a specific VS Code version" },
+    { "id": "reference", "category": "REFERENCE", "description": "General reference material not covered above" },
+    { "id": "contact_human_agent", "category": "CONTACT", "description": "Explicit request to speak to a human" },
+    { "id": "unsupported", "category": "OTHER", "description": "Outside documented VS Code scope or requires private account/admin access" }
+  ],
+  "priority_guidance": "Use stated urgency and impact; do not infer critical urgency from sentiment alone.",
+  "kb_categories": [
+    "INSTALLATION", "SETTINGS", "EXTENSIONS", "EDITOR", "LANGUAGES", "TERMINAL",
+    "GIT", "DEBUGGING", "REMOTE_CLOUD", "AI_FEATURES", "GETTING_STARTED",
+    "ENTERPRISE", "API_REFERENCE", "RELEASE_NOTES", "REFERENCE", "CONTACT", "OTHER"
+  ],
+  "intent_eval_available": false
+}

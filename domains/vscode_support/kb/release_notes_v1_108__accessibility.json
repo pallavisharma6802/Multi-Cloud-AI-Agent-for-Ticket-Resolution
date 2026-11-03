@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_108__accessibility",
+  "title": "v1_108 / Accessibility",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Accessibility\n\n### Streaming chat responses in Accessible View\n\nThe Accessible View now dynamically streams chat responses as they are generated. Previously, you needed to close and reopen the Accessible View to see updated content. Now, you can stay in the Accessible View and monitor output as it comes in, making it much easier to follow along with AI responses in real-time.\n\n### MCP server output excluded from Accessible View\n\nTo reduce noise, MCP (Model Context Protocol) server output is now excluded from the Accessible View by default. The standard chat output remains fully accessible, as it's presented in a text area that works well with screen readers.\n\n### Language ID variable in window title\n\nA new `${activeEditorLanguageId}` variable is now available for the `setting(window.title)` setting. This variable displays the language identifier of the currently active editor, which is useful for accessibility tools like Talon that need to determine the current programming language to enable appropriate voice commands.\n\n```json\n\"window.title\": \"${activeEditorLanguageId} - ${activeEditorShort}\"\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_108.md"
+}

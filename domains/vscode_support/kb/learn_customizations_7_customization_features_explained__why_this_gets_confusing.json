@@ -1,0 +1,8 @@
+{
+  "id": "learn_customizations_7_customization_features_explained__why_this_gets_confusing",
+  "title": "7 customization features explained / Why this gets confusing",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Why this gets confusing\n\nAll of these features overlap in some way.\n\nThey all influence how AI behaves, but they operate at different levels. Without a clear mental model, it\u2019s easy to mix them up or use the wrong one for a task.\n\nInstead of trying to memorize definitions, a better approach is to explore them interactively.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/7-customization-features-explained.md"
+}

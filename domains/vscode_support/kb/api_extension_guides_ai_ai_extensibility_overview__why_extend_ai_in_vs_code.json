@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_ai_ai_extensibility_overview__why_extend_ai_in_vs_code",
+  "title": "ai extensibility overview / Why extend AI in VS Code?",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Why extend AI in VS Code?\n\nAdding AI capabilities to your extension brings several benefits to your users:\n\n- **Domain-specific knowledge in agent mode**: Let agent mode access your company's data sources and services\n- **Enhanced user experience**: Provide intelligent assistance tailored to your extension's domain\n- **Domain specialization**: Create AI features specific to a programming language, framework, or domain\n- **Extend chat capabilities**: Add specialized tools or assistants to the chat interface for more powerful interactions\n- **Improved developer productivity**: Enhance common developer tasks, like debugging, code reviewing or testing, with AI capabilities",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/ai-extensibility-overview.md"
+}

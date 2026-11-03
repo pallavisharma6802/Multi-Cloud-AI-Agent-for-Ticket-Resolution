@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_on_azure__deployment_tutorials",
+  "title": "java on azure / Deployment tutorials",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Deployment tutorials\n\nThe following tutorials below walk you through the details.  You can also check the [Java Azure Developer's Center](https://learn.microsoft.com/azure/developer/java) for all things on Azure for Java developers.\n\n| Tutorial | Description | Related Tools |\n| --- | --- | --- |\n| [Deploy Java web apps <br> to Azure App Service](/docs/java/java-webapp.md) | Deploy a web app to the cloud | [Apache Maven](https://maven.apache.org/download.cgi) <br> [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice)\n| [Deploy Spring Boot apps <br> to Azure Spring Apps](/docs/java/java-spring-apps.md) | Deploy a Spring Boot application<br> to Azure Spring Apps | [Apache Maven](https://maven.apache.org/download.cgi) <br> [Azure Spring Apps](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-azurespringcloud)\n| [Create an Azure Functions project <br> using {% data variables.product.prodname_vscode %}](https://learn.microsoft.com/azure/azure-functions/create-first-function-vs-code-java) | Deploy serverless code <br> using Azure Functions | [Apache Maven](https://maven.apache.org/download.cgi) <br> [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-on-azure.md"
+}

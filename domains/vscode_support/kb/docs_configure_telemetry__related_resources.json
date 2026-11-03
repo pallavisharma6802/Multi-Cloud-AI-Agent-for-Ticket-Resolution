@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_telemetry__related_resources",
+  "title": "telemetry / Related resources",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Related resources\n\n* [Centrally manage telemetry log level](/docs/enterprise/telemetry.md#configure-telemetry-level) - Learn how to set the telemetry log level for your organization.\n* [{% data variables.product.prodname_vscode %} FAQ](/docs/supporting/faq.md) - Consult the Frequently Asked Questions to learn more.\n* [User and Workspace Settings](/docs/configure/settings.md) - Read about available options to customize {% data variables.product.prodname_vscode_shortname %}.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/telemetry.md"
+}

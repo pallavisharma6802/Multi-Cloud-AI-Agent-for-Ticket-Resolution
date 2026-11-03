@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_65__debugging",
+  "title": "v1_65 / Debugging",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debugging\n\n### Lazy variables\n\nAccessing the value of a variable may have side-effects or be expensive. VS Code's generic debugger can now show a button for the user to fetch the variable value on demand. This is available for debug extensions that support the new [\"lazy\" variable feature](#debugger-extension-authoring). Currently this has only been implemented by the built-in JavaScript debugger for property getters, but we expect that other debugger extensions will follow soon.\n\n<video src=\"images/1_65/lazy-vars.mp4\" autoplay loop controls muted title=\"Expanding lazy variables in the debugger\"></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_65.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_custom_instructions_reference__overview",
+  "title": "custom instructions reference",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Custom instructions reference\n\nUse this reference to look up instruction file formats, locations, activation rules, and settings for your agent harness. For a first setup, examples, and verification steps, see [Use custom instructions](/docs/agent-customization/custom-instructions.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/custom-instructions-reference.md"
+}

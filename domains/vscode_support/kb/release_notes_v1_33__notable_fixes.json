@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_33__notable_fixes",
+  "title": "v1_33 / Notable fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable fixes\n\n* [27636](https://github.com/microsoft/vscode/issues/27636): Quick commands fuzzy search doesn't work for text in brackets\n* [66632](https://github.com/microsoft/vscode/issues/66632): Terminal link underlines on lines that start with \\t are offset\n* [70962](https://github.com/microsoft/vscode/issues/70962): Console.WriteLine() does not result in an empty line anymore",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_33.md"
+}

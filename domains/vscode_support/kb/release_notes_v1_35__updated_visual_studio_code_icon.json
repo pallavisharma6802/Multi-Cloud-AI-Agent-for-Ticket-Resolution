@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_35__updated_visual_studio_code_icon",
+  "title": "v1_35 / Updated Visual Studio Code icon",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Updated Visual Studio Code icon\n\nOver the past two months, we've been working on updating the VS Code product logo. [We've taken feedback from the community](https://github.com/microsoft/vscode/issues/71827) (thank you to everyone who responded) and we are happy to release the new logos for Stable and Insiders. We are also using same logo on all platforms.\n\nStable | Insiders\n--- | ---\n![Stable logo](images/1_35/logo-stable.png) | ![Insiders logo](images/1_35/logo-insiders.png)\n\n**Note**: Depending on your platform, you may still see the earlier logo due to the operating system caching the application icon. If you do encounter caching issues, [follow these steps](https://github.com/microsoft/vscode/issues/71827#issuecomment-498352621) to clear your icon cache.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_35.md"
+}

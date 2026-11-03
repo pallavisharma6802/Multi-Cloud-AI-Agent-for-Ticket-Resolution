@@ -1,0 +1,8 @@
+{
+  "id": "docs_typescript_typescript_refactoring__quick_fixes",
+  "title": "typescript refactoring / Quick Fixes",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Quick Fixes\n\nQuick Fixes are suggested edits that address simple coding errors. Example Quick Fixes include:\n\n* Adding a missing `this` to a member access.\n* Fixing a misspelled property name.\n* Removing unreachable code or unused imports\n* Declaring\n\nWhen you move your cursor on to a TypeScript error, {% data variables.product.prodname_vscode_shortname %} shows a light bulb that indicates that Quick Fixes are available. Click the light bulb or press `kb(editor.action.quickFix)` to show a list of available Quick Fixes and [refactorings](#refactoring).\n\nAdditionally, **Code Action Widget: Include Nearby Quick Fixes** (`editor.codeActionWidget.includeNearbyQuickFixes`) is a setting that is enabled on default, which will activate the nearest Quick Fix in a line from `kb(editor.action.quickFix)` (command ID `editor.action.quickFix`), no matter where your cursor is in that line.\n\nThe command highlights the source code that will be refactored or fixed with Quick Fixes. Normal Code Actions and non-fix refactorings can still be activated at the cursor location.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/typescript/typescript-refactoring.md"
+}

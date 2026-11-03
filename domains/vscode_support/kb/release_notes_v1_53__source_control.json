@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_53__source_control",
+  "title": "v1_53 / Source Control",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Source Control\n\n### Git: Open All Changes command\n\nA new Git command has been added to the Command Palette:\n\n* **Git: Open All Changes...** - Opens all modified and untracked files.\n\n### Git: Warning when pulling (or syncing) and the current branch has been rebased\n\nVS Code will now warn you whenever you attempt to pull (or sync) and the current branch looks like it has been rebased (for example, when published history has been rewritten).\n\n### Git: New settings\n\nAdditionally, new Git settings have been added:\n\n* `git.requireGitUserConfig` - In VS Code 1.51 we made a privacy change to require a user name or email address before committing. You can now disable that requirement if desired.\n* `git.ignoreRebaseWarning` - Disables the new warning when pulling (or syncing) and the current branch has been rebased.\n* `git.autofetch` - Auto fetch can now additionally be set to `all` to fetch all remotes.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_53.md"
+}

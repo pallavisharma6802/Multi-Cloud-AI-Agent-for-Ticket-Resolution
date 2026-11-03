@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_quickstart__step_2_make_changes_and_review",
+  "title": "quickstart / Step 2: Make changes and review",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## Step 2: Make changes and review\n\n1. In the Explorer view (`kb(workbench.view.explorer)`), create a file named `README.md`.\n\n1. Add the following content and save the file (`kb(workbench.action.files.save)`):\n\n    ```markdown\n    # Git practice\n\n    My first Git repository.\n    ```\n\n1. Open the **Source Control** view. `README.md` appears under **Changes**, marked **U** for untracked. Git can see the new file, but it isn't part of a commit.\n\n1. Select `README.md` under **Changes** to review its contents.\n\n    For a new file, all its contents are new. For files already tracked by Git, this view shows the edits that aren't staged yet.\n\n<!-- TODO: Capture the git-practice repository with README.md under Changes and its new contents open for review. -->\n\nSaving writes the file to disk. It does not create a Git commit.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/quickstart.md"
+}

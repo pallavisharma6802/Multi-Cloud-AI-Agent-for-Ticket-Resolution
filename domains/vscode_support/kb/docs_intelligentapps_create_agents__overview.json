@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_create_agents__overview",
+  "title": "create agents",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Create agents with the Foundry Toolkit\n\nMicrosoft Foundry Agent Service helps you build, test, and run AI agents that use models and tools to answer questions, retrieve information, and take actions. Foundry supports the agent lifecycle, from experimenting with behavior to evaluation and application integration.\n\nBefore you create an agent, choose how much control you need over its logic and runtime. This affects what you configure, what code you maintain, and how you deploy. Use this guide to compare prompt and hosted agents, then choose a creation path in Foundry Toolkit for {% data variables.product.prodname_vscode %}.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/create-agents.md"
+}

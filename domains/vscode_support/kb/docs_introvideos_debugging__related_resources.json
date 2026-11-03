@@ -1,0 +1,8 @@
+{
+  "id": "docs_introvideos_debugging__related_resources",
+  "title": "debugging / Related resources",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Related resources\n\n* [Debugging](/docs/debugtest/debugging.md) - Official documentation for {% data variables.product.prodname_vscode_shortname %} debugging.\n* [Integrated Terminal](/docs/terminal/basics.md) - Use the integrated terminal inside {% data variables.product.prodname_vscode_shortname %}.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/introvideos/debugging.md"
+}

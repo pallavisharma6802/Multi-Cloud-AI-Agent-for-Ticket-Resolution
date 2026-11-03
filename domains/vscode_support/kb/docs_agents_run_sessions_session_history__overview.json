@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_sessions_session_history__overview",
+  "title": "session history",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Save, sync, and query session history\n\nKeep a copy of an agent conversation, find earlier work, or share results with collaborators. Export or copy a conversation for a standalone record, or use session-history tracking and sync to search across your work.\n\n{% data variables.product.prodname_vscode_shortname %} maintains a searchable history of your {% data variables.product.prodname_copilot_short %} harness sessions. Session sync (Experimental) can upload local session history to your GitHub account for cross-device access and sharing. With sync enabled, you can query work from {% data variables.product.prodname_vscode_shortname %}, {% data variables.copilot.copilot_cli_short %}, code review, and the {% data variables.copilot.github_copilot_app %}.\n\nSynced sessions are private unless you explicitly share them. To resume a task rather than search its history, see [Find and resume a session](/docs/agents/run/sessions/manage-sessions.md#find-and-resume-a-session).\n\n<div class=\"docs-action\" data-show-in-doc=\"false\" data-show-in-sidebar=\"true\" title=\"Try it\">\nLaunch a chat prompt that summarizes your recent coding sessions into a standup report.\n\n* [Open in {% data variables.product.prodname_vscode_shortname %}](vscode://GitHub.Copilot-Chat/chat?agent=agent%26prompt=%2Fchronicle%3Astandup)\n\n</div>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/sessions/session-history.md"
+}

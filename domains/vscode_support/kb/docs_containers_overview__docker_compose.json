@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_overview__docker_compose",
+  "title": "overview / Docker Compose",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Docker Compose\n\n[Docker Compose](https://docs.docker.com/compose/) lets you define and run multi-container applications with Docker. Our [Compose Language Service](https://github.com/microsoft/compose-language-service) in the Container Tools extension gives you IntelliSense and tab completions when authoring `docker-compose.yml` files. Press `kb(editor.action.triggerSuggest)` to see a list of valid Compose directives.\n\n ![Docker Compose IntelliSense](images/overview/tab-completions.gif)\n\nWe also provide tooltips when you hover over a Docker Compose YAML attribute.\n\n ![Docker Compose Tooltips](images/overview/hover-support.png)\n\nWhile `Compose Up` allows you to run all of your services at once, our new feature `Compose Up - Select Services` lets you select any combination of the services you want to run.\n\n  ![Docker Compose Up - Select Subset](images/overview/select-subset.gif)\n\nOnce your `Compose Up` command completes, navigate to the Container Explorer to view your services as a Compose Group. This allows you to start, stop, and view the logs of each service as a group.\n\n![Docker Compose Groups](images/overview/compose-group.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/overview.md"
+}

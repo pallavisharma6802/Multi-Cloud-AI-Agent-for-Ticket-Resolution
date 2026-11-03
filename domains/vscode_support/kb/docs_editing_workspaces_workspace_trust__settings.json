@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_workspaces_workspace_trust__settings",
+  "title": "workspace trust / Settings",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Settings\n\nBelow are the available Workspace Trust settings:\n\n* `setting(security.workspace.trust.enabled)` - Enable Workspace Trust feature. Default is true.\n* `setting(security.workspace.trust.startupPrompt)` - Whether to show the Workspace Trust dialog on startup. Default is `never`, so new folders open in [Restricted Mode](#restricted-mode) with a trust banner instead of an upfront dialog. Set it to `once` to be prompted the first time you open a distinct folder or workspace.\n* `setting(security.workspace.trust.emptyWindow)` - Whether to always trust an empty window (no open folder). Default is true.\n* `setting(security.workspace.trust.untrustedFiles)` - Controls how to handle loose files in a workspace. Default is to prompt.\n* `setting(extensions.supportUntrustedWorkspaces)` - Override extension Workspace Trust declarations. Either true or false.\n* `setting(security.workspace.trust.banner)` - Controls when the Restricted Mode banner is displayed. Default is `untilDismissed`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/workspaces/workspace-trust.md"
+}

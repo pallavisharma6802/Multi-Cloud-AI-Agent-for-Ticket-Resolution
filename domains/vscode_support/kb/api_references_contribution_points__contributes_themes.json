@@ -1,0 +1,8 @@
+{
+  "id": "api_references_contribution_points__contributes_themes",
+  "title": "contribution points / contributes.themes",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## contributes.themes\n\nContribute a color theme to VS Code, defining workbench colors and styles for syntax tokens in the editor.\n\nYou must specify a label, whether the theme is a dark theme or a light theme (such that the rest of VS Code changes to match your theme) and the path to the file (JSON format).\n\n### theme example\n\n```json\n{\n  \"contributes\": {\n    \"themes\": [\n      {\n        \"label\": \"Monokai\",\n        \"uiTheme\": \"vs-dark\",\n        \"path\": \"./themes/monokai-color-theme.json\"\n      }\n    ]\n  }\n}\n```\n\n![color theme extension point example](images/contribution-points/color-themes.png)\n\nSee the [Color Theme Guide](/api/extension-guides/color-theme) on how to create a Color Theme.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/contribution-points.md"
+}

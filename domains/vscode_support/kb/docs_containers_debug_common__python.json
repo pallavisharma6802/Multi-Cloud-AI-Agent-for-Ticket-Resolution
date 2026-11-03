@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_debug_common__python",
+  "title": "debug common / Python",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Python\n\nMore information about debugging Python applications within containers can be found at [Debug Python within a container](/docs/containers/debug-python.md).\n\nExample `launch.json` configuration for debugging a Python application:\n\n```json\n{\n  \"configurations\": [\n    {\n      \"name\": \"Containers: Python - Django\",\n      \"type\": \"docker\",\n      \"request\": \"launch\",\n      \"preLaunchTask\": \"docker-run: debug\",\n      \"python\": {\n        \"pathMappings\": [\n          {\n            \"localRoot\": \"${workspaceFolder}\",\n            \"remoteRoot\": \"/app\"\n          }\n        ],\n        \"projectType\": \"django\"\n      }\n    }\n  ]\n}\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/debug-common.md"
+}

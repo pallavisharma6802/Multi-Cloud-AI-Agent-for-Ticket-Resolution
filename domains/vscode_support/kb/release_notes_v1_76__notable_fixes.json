@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_76__notable_fixes",
+  "title": "v1_76 / Notable fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable fixes\n\n* [168939](https://github.com/microsoft/vscode/issues/168939) Persist state of badge hiding across reloads and view moves.\n* [164397](https://github.com/microsoft/vscode/issues/164397) Layout control in the wrong place for RTL macOS.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_76.md"
+}

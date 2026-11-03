@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_agent_inspector__related_resources",
+  "title": "agent inspector / Related resources",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related resources\n\n* [Agent development lifecycle](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/development-lifecycle)\n* [Evaluate models, prompts, and agents](/docs/intelligentapps/evaluation.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/agent-inspector.md"
+}

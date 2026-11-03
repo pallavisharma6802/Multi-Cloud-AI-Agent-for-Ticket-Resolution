@@ -1,0 +1,8 @@
+{
+  "id": "docs_terminal_getting_started__next_steps",
+  "title": "getting started / Next steps",
+  "category": "TERMINAL",
+  "intent": "terminal",
+  "content": "## Next steps\n\nIn this tutorial, you learned how to get started with the terminal in {% data variables.product.prodname_vscode_shortname %}. Here are some more topics to explore:\n\n* Learn the [fundamental concepts and features of the terminal](/docs/terminal/basics.md)\n* Explore how to [create and manage terminal profiles](/docs/terminal/profiles.md)\n* Discover various ways to [customize the appearance and behavior](/docs/terminal/appearance.md) of the terminal",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/getting-started.md"
+}

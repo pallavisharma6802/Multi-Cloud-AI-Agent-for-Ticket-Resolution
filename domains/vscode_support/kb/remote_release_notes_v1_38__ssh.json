@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_38__ssh",
+  "title": "v1_38 / SSH",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## SSH\n\n### ARMv7l support in Stable\n\nA couple months ago, we added experimental support for ARMv7l 32-bit when using VS Code Insiders. With 1.38, this is now supported in Stable VS Code as well. This means you can now connect to a Raspberry Pi 2/3 via SSH and edit files using Stable VS Code.\n\n### Experimental ARMv8l (AArch64) Linux support\n\nExperimental support for ARMv8l (AArch64) is now available when using [VS Code Insiders](https://code.visualstudio.com/insiders/) only.\n\nWe are holding this back from the Stable release to allow for extension authors to catch up with the additional platform, see [Supporting Remote Development](https://code.visualstudio.com/api/advanced-topics/remote-extensions) for details.\n\n### Experimental features turned on by default\n\nLast month we added experimental support for SSH's `ForwardAgent` option and \"dynamic forwarding\", which provides a better experience when using password authentication. Those features are now enabled by default.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_38.md"
+}

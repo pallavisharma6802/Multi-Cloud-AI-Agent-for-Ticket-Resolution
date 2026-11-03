@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_markdown__overview",
+  "title": "markdown",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Markdown and {% data variables.product.prodname_vscode %}\n\nWorking with Markdown files in {% data variables.product.prodname_vscode %} is simple, straightforward, and fun. Besides {% data variables.product.prodname_vscode_shortname %}'s basic editing, there are a several Markdown-specific features that help you be more productive.\n\n>**Note**: To help get you started with editing Markdown files, you can use the [Doc Writer profile template](/docs/configure/profiles.md#doc-writer-profile-template) to install useful extensions (spell checker, Markdown linter) and configure appropriate setting values.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/markdown.md"
+}

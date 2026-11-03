@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_get_started__create_a_hello_world_app",
+  "title": "get started / Create a Hello World app",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Create a Hello World app\n\nTo get started, go to the **Explorer** view and select **Create .NET Project**. Alternatively, you can bring up the Command Palette using `kb(workbench.action.showCommands)` and then type \".NET\" and find and select the **.NET: New Project** command.\n\n1. After selecting the command, you'll need to choose the project template. Choose **Console app**.\n1. To run your app, select **Run > Run without Debugging** in the upper menu, or use the `kb(workbench.action.debug.run)` keyboard shortcut. To learn more about debugging your C# project, read the [debugging documentation](/docs/csharp/debugging.md).\n\n![Use the Command Palette to create a new .NET project](images/get-started/open-new-project.gif)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/get-started.md"
+}

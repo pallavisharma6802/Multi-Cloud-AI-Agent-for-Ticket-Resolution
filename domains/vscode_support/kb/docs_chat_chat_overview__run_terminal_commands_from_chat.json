@@ -1,0 +1,8 @@
+{
+  "id": "docs_chat_chat_overview__run_terminal_commands_from_chat",
+  "title": "chat overview / Run terminal commands from chat",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Run terminal commands from chat\n\nStart a message with `!` to run a terminal command directly from the {% data variables.copilot.chat_view %} or {% data variables.copilot.agents_window %}. The `!` must be the first character and must be followed by a command.\n\nFor example, enter the following message to run your tests:\n\n```shell\n!npm test\n```\n\nThe command runs immediately in the session's default shell, without sending the message to the agent or asking for approval. It uses the session folder or worktree as the working directory. The command output and exit status appear in the chat transcript.\n\n> [!NOTE]\n> The `!` command isn't available in Local harness sessions, cloud sessions, or extension-based agent integrations. Use the [integrated terminal](/docs/terminal/getting-started.md) to run commands yourself instead.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/chat/chat-overview.md"
+}

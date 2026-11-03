@@ -1,0 +1,8 @@
+{
+  "id": "docs_introvideos_extend__next_video",
+  "title": "extend / Next video",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Next video\n\n* [Debugging](/docs/introvideos/debugging.md) - Learn how to debug your application, including setting breakpoints and inspecting variables.\n* [Introductory Videos](/docs/getstarted/introvideos.md) - Review the entire list of videos.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/introvideos/extend.md"
+}

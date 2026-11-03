@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_html__html_extensions",
+  "title": "html / HTML extensions",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## HTML extensions\n\nInstall an extension to add more functionality. Go to the **Extensions** view (`kb(workbench.view.extensions)`) and type 'html' to see a list of relevant extensions to help with creating and editing HTML.\n\n<div class=\"marketplace-extensions-html-curated\"></div>\n\n> [!TIP]\n> Select an extension tile above to read the description and reviews to decide which extension is best for you. See more in the [Marketplace](https://marketplace.visualstudio.com).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/html.md"
+}

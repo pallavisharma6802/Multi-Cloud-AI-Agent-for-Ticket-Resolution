@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_may_2016__1_2_0_may_release",
+  "title": "May_2016 / 1.2.0 May release",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## 1.2.0 May release\n\nThe May release of VS Code has some great new features, enhancements to existing features, and a set of important bug fixes.\n\nHere are the highlights:\n\n* [**Editor**](#editor): Ability to trim automatically inserted whitespace, a new key binding to select all find matches, and the Peek view is now resizable.\n* [**Linting**](#linters): ESLint now supports the ability to fix all problems and TSLint supports quick fixes and file exclusion.\n* [**Languages**](#languages): Code completion (IntelliSense), Go To and Peek Definition, and Find All Occurrences support for CSS variables in CSS, SCSS, and LESS files.\n* [**Workbench**](#workbench): A new integrated Terminal allows you to stay in VS Code while using your platform's shell, we've added the ability to remove key bindings, and we've made *progress* on Tab support, which you can preview using the [Insiders Release](/insiders).\n* [**Debugging**](#debugging): You can now control how the Debug Console is revealed and we've improved stepping performance for Node.js applications with large numbers of local variables.\n* [**Extensions**](#extension-authoring): You can now list, install, and uninstall extensions from the command line. For extension authors, we've expanded our debug, TextMate grammar, and command APIs and we've improved the Language Server Protocol.\n\nPlease continue reading for more information on what's new in May.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/May_2016.md"
+}

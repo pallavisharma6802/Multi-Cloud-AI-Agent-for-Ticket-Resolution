@@ -1,0 +1,8 @@
+{
+  "id": "api_references_activation_events__ontasktype",
+  "title": "activation events / onTaskType",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## onTaskType\n\n`onTaskType:type` is emitted whenever tasks of a certain type need to be listed or resolved.\n\n```json\n\"activationEvents\": [\n    \"onTaskType:npm\"\n]\n```\n\n> **Note**: Beginning with VS Code 1.76.0, tasks contributed by your extension do not require a corresponding `onTaskType` activation event declaration for your extension to be activated.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/activation-events.md"
+}

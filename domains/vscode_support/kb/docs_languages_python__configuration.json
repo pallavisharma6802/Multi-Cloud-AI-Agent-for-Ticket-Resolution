@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_python__configuration",
+  "title": "python / Configuration",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Configuration\n\nThe Python extension provides a wide variety of settings for its various features. These are described on their relevant topics, such as [Editing code](/docs/python/editing.md), [Linting](/docs/python/linting.md), [Debugging](/docs/python/debugging.md), and [Testing](/docs/python/testing.md). The complete list is found in the [Settings reference](/docs/python/settings-reference.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/python.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_copilot_smart_actions__fix_coding_errors",
+  "title": "copilot smart actions / Fix coding errors",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Fix coding errors\n\nTo fix coding issues for your application code without writing a prompt, you can use the editor smart actions.\n\n1. Open your application code file.\n1. Select the code you want to fix.\n1. Right-click and select **Generate Code** > **Fix**.\n\n    {% data variables.product.prodname_vscode_shortname %} provides a code suggestion to fix the code.\n\n1. Optionally, refine the generated code by providing additional context in the chat prompt.\n\nAlternatively, if there's a compile or linting problem in a code file, {% data variables.product.prodname_vscode_shortname %} shows a code action in the editor to help resolve the issue.\n\n![Screenshot of the editor showing the sparkle icon and Copilot context menu to explain or fix the issue.](images/copilot-smart-actions/copilot-code-action-fix.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/copilot-smart-actions.md"
+}

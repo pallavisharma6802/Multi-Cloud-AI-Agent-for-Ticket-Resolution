@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_56__documentation",
+  "title": "v1_56 / Documentation",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Documentation\n\n### Updated introductory videos\n\nThe VS Code [introductory videos](https://code.visualstudio.com/docs/getstarted/introvideos) have been updated. The videos range from [Getting Started](https://code.visualstudio.com/docs/introvideos/basics) and [Using extensions](https://code.visualstudio.com/docs/introvideos/extend) to VS Code features like [Debugging](https://code.visualstudio.com/docs/introvideos/debugging) and [Version Control](https://code.visualstudio.com/docs/introvideos/versioncontrol).\n\n[![Intro to Debugging in VS Code video](images/1_56/intro-video-debugging.png)](https://code.visualstudio.com/docs/introvideos/debugging)\n\n### New C++ videos\n\nThe [C++ extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) team has created a set of [introductory videos](https://code.visualstudio.com/docs/cpp/introvideos-cpp) explaining how to configure IntelliSense, build, and debug your C++ projects.\n\n### The Story and Technology Behind VS Code\n\nYou can read about the history and underlying technology of VS Code in [this interview](https://www.git-tower.com/blog/developing-for-the-desktop-vscode/) with VS Code engineer, [Ben Pasero](https://twitter.com/benjaminpasero). Ben talks about the early days of VS Code and what it's like to use Electron as an application framework enabling VS Code run on macOS, Windows, and Linux.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_56.md"
+}

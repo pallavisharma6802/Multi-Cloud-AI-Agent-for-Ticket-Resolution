@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_143__editor_experience",
+  "title": "v1_143 / Editor Experience",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Editor Experience\n\n### Diagnostic highlight limits\n\nTo improve diagnostic visibility in files with many reported problems, the editor highlight limit has increased from 500 to 5,000 diagnostics per file.\n\nA warning in the editor's language status indicator indicates when diagnostics or their highlights are limited for performance reasons:\n\n* **Diagnostic source limit:** Each extension diagnostic collection can provide up to 1,000 diagnostics per file. If a collection exceeds this limit, the warning indicates that some diagnostics are not shown.\n\n* **Editor highlight limit:** The editor highlights up to 5,000 diagnostics per file across all sources. If this limit is exceeded, the warning indicates that only 5,000 diagnostics are highlighted.\n\nIf both limits are reached, the warning reports both conditions. Hover over the language status indicator in the Status Bar to view the details.\n\n![Screenshot showing the language status bar diagnostic highlights addition](images/1_143/diagnostic-highlights.webp)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_143.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_concepts_language_models__related_resources",
+  "title": "language models / Related resources",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related resources\n\n* [Context](/docs/agents/concepts/context.md)\n* [AI language models in {% data variables.product.prodname_vscode_shortname %}](/docs/agent-customization/language-models.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/language-models.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_ai_mcp__why_use_mcp_servers",
+  "title": "mcp / Why use MCP servers?",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Why use MCP servers?\n\nImplementing an MCP server to extend chat in VS Code with language model tools has the following benefits:\n\n- **Extend agent mode** with specialized, domain-specific, tools that are automatically invoked as part of responding to a user prompt. For example, enable database scaffolding and querying to dynamically provide the LLM with relevant context.\n- **Flexible deployment options** for local and remote scenarios.\n- **Reuse** your MCP server across different tools and platforms.\n\nYou might consider implementing a language model tool with the [Language Model API](/api/extension-guides/ai/tools) in the following scenarios:\n\n- You want to deeply integrate with VS Code by using extension APIs.\n- You want to distribute your tool and updates by using the Visual Studio Marketplace.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/mcp.md"
+}

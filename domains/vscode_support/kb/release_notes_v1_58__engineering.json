@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_58__engineering",
+  "title": "v1_58 / Engineering",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Engineering\n\n### ES2020\n\nWe have updated our TypeScript projects to allow using recent JavaScript APIs, like `Promise.allSettled` or `String.replaceAll`. We also output more modern JavaScript, ES2020, which reduces the overall size of our main bundle slightly.\n\n### Progress for Electron sandbox support\n\nThis milestone we continued to make the VS Code window ready for enabling Electron's [sandbox](https://www.electronjs.org/docs/tutorial/sandbox) and [context isolation](https://www.electronjs.org/docs/tutorial/context-isolation) features.\n\nSpecifically:\n\n* We removed our Node.js dependency for loading the resources needed to open VS Code windows in general.\n* We added searching to `iframe` elements to get behavior closer to the deprecated `webview` component, allowing us to drop `webview` in the future. This feature can be enabled by setting `\"webview.experimental.useIframes\": true` in the `settings.json` file.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_58.md"
+}

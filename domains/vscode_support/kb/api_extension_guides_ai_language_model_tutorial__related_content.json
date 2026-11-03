@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_ai_language_model_tutorial__related_content",
+  "title": "language model tutorial / Related content",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Related content\n\n- [Language Model API extension guide](/api/extension-guides/ai/language-model)\n* [Agent plugins](/docs/agent-customization/agent-plugins.md)\n* [MCP tools and Apps](/api/extension-guides/ai/mcp.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/language-model-tutorial.md"
+}

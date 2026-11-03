@@ -1,0 +1,8 @@
+{
+  "id": "docs_devcontainers_devcontainer_cli__avoiding_problems_with_images_built_using_docker",
+  "title": "devcontainer cli / Avoiding problems with images built using Docker",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Avoiding problems with images built using Docker\n\nGiven Dockerfiles and Docker Compose files can be used without {% data variables.product.prodname_vscode_shortname %} or the `devcontainer` CLI, you may want to let users know that they should not try to build the image directly. You may learn more in the [advanced dev container documentation](/remote/advancedcontainers/reduce-docker-warnings.md#avoiding-problems-with-images-built-using-docker).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/devcontainer-cli.md"
+}

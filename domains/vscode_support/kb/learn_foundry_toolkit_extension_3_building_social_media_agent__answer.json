@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_3_building_social_media_agent__answer",
+  "title": "3 building social media agent / Answer",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Answer\n\nIn most production teams, the answer is no. Polished wording without traceable grounding creates review risk, especially for technical claims. Reliable publication workflows need both quality language and verifiable source usage.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/3-building-social-media-agent.md"
+}

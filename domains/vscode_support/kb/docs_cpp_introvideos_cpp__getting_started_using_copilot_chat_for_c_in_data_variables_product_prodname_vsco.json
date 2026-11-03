@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_introvideos_cpp__getting_started_using_copilot_chat_for_c_in_data_variables_product_prodname_vsco",
+  "title": "introvideos cpp / Getting started using Copilot Chat for C++ in {% data variables.product.prodname_vscode_shortname %}",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Getting started using Copilot Chat for C++ in {% data variables.product.prodname_vscode_shortname %}\n\nThis video covers some use cases for using Copilot Chat in {% data variables.product.prodname_vscode_shortname %} with C++ Code.\n\n[![Watch Getting Started using Copilot Chat for C++ in {% data variables.product.prodname_vscode_shortname %} on YouTube (opens in new tab).](images/introvideos-cpp/youtube-ZfT2CXY5-Dc.jpg)](https://www.youtube.com/watch?v=ZfT2CXY5-Dc)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/introvideos-cpp.md"
+}

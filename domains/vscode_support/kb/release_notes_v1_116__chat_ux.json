@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_116__chat_ux",
+  "title": "v1_116 / Chat UX",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Chat UX\n\nThis release includes a few UX improvements to chat:\n\n* **Diffs in the top level**: Code diffs now render directly in the chat conversation, so you can review proposed changes without switching context to a separate diff view.\n\n    ![Screenshot showing improved chat rendering with streaming updates and progress indicators.](images/1_116/chat-rendering-improvements.webp)\n\n* **Rendering performance**: Chat responses should now render faster, with added improvements including reduced layout thrashing and more efficient incremental updates during streaming.\nAlso fixes an issue where rapid bursts of tool invocation updates cause brief hangs in the extension host.\n\n* **Chat send performance**: Fixes an issue where chat message sending is blocked by loading chat customizations. The message now visually appears in the chat conversation immediately even if prompts are still loading.\n\n* **Subagent progress**: The expanded view for subagent progress is now more visually distinct, making it easier to follow when a subagent is in progress.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_116.md"
+}

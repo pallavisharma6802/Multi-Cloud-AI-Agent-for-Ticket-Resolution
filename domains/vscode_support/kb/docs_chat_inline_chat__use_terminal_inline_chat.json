@@ -1,0 +1,8 @@
+{
+  "id": "docs_chat_inline_chat__use_terminal_inline_chat",
+  "title": "inline chat / Use terminal inline chat",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Use terminal inline chat\n\nYou can bring up terminal inline chat in the [integrated terminal](/docs/terminal/basics.md) to get help with shell commands or ask terminal-related questions.\n\nTo use terminal inline chat:\n\n1. Open the terminal in {% data variables.product.prodname_vscode_shortname %} by selecting the **View** > **Terminal** menu item or using the `kb(workbench.action.terminal.toggleTerminal)` keyboard shortcut.\n\n1. Start terminal inline chat by using the `kb(workbench.action.terminal.chat.start)` keyboard shortcut or running the **Terminal Inline Chat** command in the Command Palette.\n\n1. Type your prompt in the chat input field and press `kbstyle(Enter)`.\n\n    ![Screenshot showing that you can ask complex questions like \"list the top 5 largest files in the src dir\"](images/copilot-chat/terminal-chat.png)\n\n1. Review the response and select the **Run** (`kb(workbench.action.terminal.chat.runCommand)`) to run the command in the terminal\n\n    Alternatively, select **Insert** (`kb(workbench.action.terminal.chat.insertCommand)`) to insert the command into the terminal and modify it before running.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/chat/inline-chat.md"
+}

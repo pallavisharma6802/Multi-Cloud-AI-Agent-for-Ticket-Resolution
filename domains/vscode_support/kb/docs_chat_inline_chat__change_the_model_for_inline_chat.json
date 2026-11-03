@@ -1,0 +1,8 @@
+{
+  "id": "docs_chat_inline_chat__change_the_model_for_inline_chat",
+  "title": "inline chat / Change the model for inline chat",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Change the model for inline chat\n\nYou can change the language model that is used for editor inline chat. To configure the default model for inline chat, use the `setting(inlineChat.defaultModel)` setting. The setting lists all available models from the model picker.\n\nIf you change the model during an inline chat session, the selection persists for the remainder of the session. After you reload {% data variables.product.prodname_vscode_shortname %}, the model resets to the value specified in the `setting(inlineChat.defaultModel)` setting.\n\nLearn more about [choosing the right model for your task](/docs/agents/concepts/language-models.md#choose-the-right-model).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/chat/inline-chat.md"
+}

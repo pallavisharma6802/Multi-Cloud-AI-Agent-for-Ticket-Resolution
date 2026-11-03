@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_html__validation",
+  "title": "html / Validation",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Validation\n\nThe HTML language support performs validation on all embedded JavaScript and CSS.\n\nYou can turn that validation off with the following settings:\n\n```json\n// Configures if the built-in HTML language support validates embedded scripts.\n\"html.validate.scripts\": true,\n\n// Configures if the built-in HTML language support validates embedded styles.\n\"html.validate.styles\": true\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/html.md"
+}

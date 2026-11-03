@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_19__new_commands",
+  "title": "v1_19 / New commands",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## New commands\n\nKey|Command|Command id\n---|-------|----------\n`kb(workbench.action.openRawDefaultSettings)`|Open Default Settings (JSON)|`workbench.action.openRawDefaultSettings`\n`kb(workbench.action.toggleTabsVisibility)`|View: Toggle Tab Visibility|`workbench.action.toggleTabsVisibility`\n`kb(workbench.action.lastEditorInGroup)`|View: Open Last Editor in Group|`workbench.action.lastEditorInGroup`\n`kb(workbench.files.action.compareWithClipboard)`|Compare Active File with Clipboard|`workbench.files.action.compareWithClipboard`\n`kb(search.action.refreshSearchResults)`|Refresh Search results|`search.action.refreshSearchResults`\n`kb(search.action.collapseSearchResults)`|Collapse Search results|`search.action.collapseSearchResults`\n`kb(search.action.clearSearchResults)`|Clear Search results|`search.action.clearSearchResults`",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_19.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_go__test",
+  "title": "go / Test",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Test\n\nThe {% data variables.product.prodname_vscode_shortname %} [Test UI](/api/extension-guides/testing.md) and editor [CodeLens](https://code.visualstudio.com/blogs/2017/02/12/code-lens-roundup) elements allow users to easily run tests, benchmarks, profiles for a given function, file, package, or workspace.\n\nAlternatively, the same functionality is available through a set of commands:\n\n* [**Go: Test Function At Cursor**](https://github.com/golang/vscode-go/wiki/commands#go-test-function-at-cursor)\n* [**Go: Test File**](https://github.com/golang/vscode-go/wiki/commands#go-test-file)\n* [**Go: Test Package**](https://github.com/golang/vscode-go/wiki/commands#go-test-package)\n* [**Go: Test All Packages in Workspace**](https://github.com/golang/vscode-go/wiki/commands#go-test-all-packages-in-workspace)\n\nThere are many test-related commands that you can explore by typing \"Go: test\" in the Command Palette.\n\n![Test Commands](images/go/testcommands.png)\n\nThe first three above can be used to generate test skeletons for the functions in the current package, file, or at the cursor using `gotests`. The last few can be used to run tests in the current package, file, or at the cursor using `go test`. There is also a command for getting test coverage.\n\nYou can configure the extension to run tests and compute test coverage using:\n\n* `go.testOnSave`\n* `go.coverOnSave`\n* `go.testFlags`",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/go.md"
+}

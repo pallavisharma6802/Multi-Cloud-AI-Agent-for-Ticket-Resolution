@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_signing_in__troubleshoot_sign_in_issues",
+  "title": "signing in / Troubleshoot sign in issues",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Troubleshoot sign in issues\n\n### Unable to retrieve a license\n\nIf you are not able to retrieve a license after a successful sign in operation, you'll likely need to modify your firewall settings by adding the URL below to its allowlist:\n\n`https://api.subscriptions.visualstudio.microsoft.com/Me/Entitlements/IDEBenefits`",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/signing-in.md"
+}

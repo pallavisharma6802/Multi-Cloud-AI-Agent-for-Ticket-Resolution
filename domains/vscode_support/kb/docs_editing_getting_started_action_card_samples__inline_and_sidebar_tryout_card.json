@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_getting_started_action_card_samples__inline_and_sidebar_tryout_card",
+  "title": "action card samples / Inline and sidebar tryout card",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Inline and sidebar tryout card\n\nThis card appears in the article and in the contextual sidebar. The tryout uses the same protocol URL produced by an inline tryout macro.\n\n{% action-card title=\"Try Smart Diff\" display=\"both\" %}\nLaunch the registered Smart Diff onboarding experience.\n\n* [Try Smart Diff Layout](vscode://tryout/editor.smart-diff)\n* [Read the editing overview](/docs/editing/codebasics.md)\n{% /action-card %}",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/action-card-samples.md"
+}

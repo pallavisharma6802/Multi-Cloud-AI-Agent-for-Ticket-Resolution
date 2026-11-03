@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_codebasics__file_encoding_support",
+  "title": "codebasics / File encoding support",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## File encoding support\n\nSet the file encoding globally or per workspace by using the `setting(files.encoding)` setting in **User Settings** or **Workspace Settings**.\n\n![files.encoding setting](images/codebasics/filesencodingsetting.png)\n\nYou can view the file encoding in the status bar.\n\n![Encoding in status bar](images/codebasics/fileencoding.png)\n\nClick on the encoding button in the status bar to reopen or save the active file with a different encoding.\n\n![Reopen or save with a different encoding](images/codebasics/encodingclicked.png)\n\nThen choose an encoding.\n\n![Select an encoding](images/codebasics/encodingselection.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/codebasics.md"
+}

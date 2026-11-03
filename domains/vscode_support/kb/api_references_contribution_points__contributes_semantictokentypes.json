@@ -1,0 +1,8 @@
+{
+  "id": "api_references_contribution_points__contributes_semantictokentypes",
+  "title": "contribution points / contributes.semanticTokenTypes",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## contributes.semanticTokenTypes\n\nContributes new semantic token types that can be highlighted via theme rules.\n\n```json\n{\n  \"contributes\": {\n    \"semanticTokenTypes\": [\n      {\n        \"id\": \"templateType\",\n        \"superType\": \"type\",\n        \"description\": \"A template type.\"\n      }\n    ]\n  }\n}\n```\n\nSee the [Semantic Highlighting Guide](/api/language-extensions/semantic-highlight-guide) to read more about semantic highlighting.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/contribution-points.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_capabilities_common_capabilities__display_notifications",
+  "title": "common capabilities / Display Notifications",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Display Notifications\n\nAlmost all extensions need to present information to the user at some point. VS Code offers three APIs for displaying notification messages of different severity:\n\n- [`window.showInformationMessage`](/api/references/vscode-api#window.showInformationMessage)\n- [`window.showWarningMessage`](/api/references/vscode-api#window.showWarningMessage)\n- [`window.showErrorMessage`](/api/references/vscode-api#window.showErrorMessage)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-capabilities/common-capabilities.md"
+}

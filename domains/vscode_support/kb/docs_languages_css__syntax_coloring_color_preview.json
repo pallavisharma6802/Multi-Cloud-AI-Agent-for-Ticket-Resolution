@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_css__syntax_coloring_color_preview",
+  "title": "css / Syntax coloring & color preview",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Syntax coloring & color preview\n\nAs you type, there is syntax highlighting as well as in context preview of colors.\n\n![Syntax and color](images/css/color.png)\n\nClicking on a color preview will launch the integrated color picker which supports configuration of hue, saturation and opacity.\n\n![Color picker in CSS](images/css/css-color-picker.png)\n\n> **Tip:** You can trigger between different color modes by clicking on the color string at the top of the picker.\n\nYou can hide {% data variables.product.prodname_vscode_shortname %}'s color previews by setting the following [setting](/docs/configure/settings.md):\n\n```json\n\"editor.colorDecorators\": false\n```\n\nTo just disable it for css, Less and SCSS, use\n\n```json\n\"[css]\": {\n    \"editor.colorDecorators\": false\n}\n\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/css.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_references_theme_color__welcome_page_colors",
+  "title": "theme color / Welcome page colors",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Welcome page colors\n\n- `welcomePage.background`: Background color for the Welcome page.\n- `welcomePage.progress.background`: Foreground color for the Welcome page progress bars.\n- `welcomePage.progress.foreground`: Background color for the Welcome page progress bars.\n- `welcomePage.tileBackground`: Background color for the tiles on the Welcome page.\n- `welcomePage.tileHoverBackground`: Hover background color for the tiles on the Welcome page.\n- `welcomePage.tileBorder`: Border color for the tiles on the Welcome page.\n\n- `walkThrough.embeddedEditorBackground`: Background color for the embedded editors on the Interactive Playground.\n- `walkthrough.stepTitle.foreground`: Foreground color of the heading of each walkthrough step.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+}

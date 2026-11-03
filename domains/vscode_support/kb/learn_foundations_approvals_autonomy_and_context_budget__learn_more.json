@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundations_approvals_autonomy_and_context_budget__learn_more",
+  "title": "approvals autonomy and context budget / Learn more",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Learn more\n\n* [Using agents in VS Code](https://code.visualstudio.com/docs/agents/overview)\n* [Chat overview in VS Code](https://code.visualstudio.com/docs/chat/chat-overview)\n* [Managing context for AI in VS Code](https://code.visualstudio.com/docs/chat/copilot-chat-context)\n* [Create and manage chat sessions](https://code.visualstudio.com/docs/agents/run/sessions/manage-sessions)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/approvals-autonomy-and-context-budget.md"
+}

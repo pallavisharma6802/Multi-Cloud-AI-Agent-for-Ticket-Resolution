@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_95__preview_features",
+  "title": "v1_95 / Preview Features",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Preview Features\n\n### TypeScript 5.7\n\nWe've continued improving our support for the upcoming TypeScript 5.7 release. Check out the [TypeScript 5.7 beta blog post](https://devblogs.microsoft.com/typescript/announcing-typescript-5-7-beta/) and the [TypeScript 5.7 plan](https://github.com/microsoft/TypeScript/issues/59905) for details.\n\nTo start using preview builds of TypeScript 5.7, install the [TypeScript Nightly extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next).\n\n### Update imports on paste for JavaScript and TypeScript\n\nTired of having to add imports after moving code between files? Try out our experimental support for updating imports on paste! When you copy and paste code between editors, VS Code automatically adds imports when the code is pasted:\n\n<video src=\"images/1_95/jsts-update-imports-paste.mp4\" title=\"Title\" autoplay loop controls muted></video>\n\nNotice how it not only added imports, it even added a new export for a local variable that was used in the pasted code!\n\nTo try this out today, make sure you are using TypeScript 5.7+. Then enable `javascript.experimental.updateImportsOnPaste`/`typescript.experimental.updateImportsOnPaste`. Currently this is only supported when pasting between text editors in the same VS Code window.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_95.md"
+}

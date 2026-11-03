@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_agent_troubleshooting_troubleshooting__troubleshoot_mcp_servers",
+  "title": "troubleshooting / Troubleshoot MCP servers",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Troubleshoot MCP servers\n\nIf an MCP server or one of its tools is unavailable:\n\n1. Open the Command Palette and run **MCP: List Servers**.\n1. Select the server and review its status.\n1. Select **Show Output** and inspect errors from the failed request.\n1. Correct the reported configuration or connection problem.\n1. Select **Restart Server**, and then retry the request.\n\nIf the server is running but the model does not invoke its tool, follow [An MCP tool is not being invoked](/docs/agents/agent-troubleshooting/chat-debug-view.md#an-mcp-tool-is-not-being-invoked).\n\nFor server-specific checks, see [Manage and troubleshoot MCP servers](/docs/agents/run/manage-mcp-servers.md#troubleshoot-mcp-servers).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/agent-troubleshooting/troubleshooting.md"
+}

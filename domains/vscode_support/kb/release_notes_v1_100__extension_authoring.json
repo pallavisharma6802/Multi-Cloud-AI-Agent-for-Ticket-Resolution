@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_100__extension_authoring",
+  "title": "v1_100 / Extension Authoring",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Extension Authoring\n\n### Text Encodings\n\nWe finalized the API for working with text encodings in VS Code.\n\nSpecifically, this new API allows you to:\n\n* Get the current `encoding` of a `TextDocument`\n* Open a `TextDocument` with a specific `encoding`\n* Encode a `string` to a `Uint8Array` with a specific `encoding`\n* Decode a `Uint8Array` to a `string` using a specific `encoding`\n\n### ESM support for extensions\n\nThe NodeJS extension host now supports extensions that use JavaScript-modules (ESM). All it needs is the `\"type\": \"module\"` entry in your extension's `package.json` file. With that, the JavaScript code can use `import` and `export` statements, including the special module `import('vscode')`. Find a sample here: <https://github.com/jrieken/vscode-esm-sample-extension>.\n\nNote that ESM support isn't for the web worker extension host yet. There are some technical challenges that need to be overcome first. We'll post updates on <https://github.com/microsoft/vscode/issues/130367>. Stay tuned!",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_100.md"
+}

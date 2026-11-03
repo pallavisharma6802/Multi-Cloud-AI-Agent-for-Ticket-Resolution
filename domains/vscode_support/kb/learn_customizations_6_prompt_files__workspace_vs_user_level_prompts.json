@@ -1,0 +1,8 @@
+{
+  "id": "learn_customizations_6_prompt_files__workspace_vs_user_level_prompts",
+  "title": "6 prompt files / Workspace vs user-level prompts",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Workspace vs user-level prompts\n\nBy default, prompt files may be created at the workspace level.\n\nThis means they are tied to a specific project.\n\nIf you want to reuse them across multiple projects, move them to the user level instead.\n\nThis allows you to build a personal library of reusable AI workflows.\n\n![Screenshot of the prompt file scope selection showing workspace and user-level options](../images/customizations/ep-6-4-workspace-v-user.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/6-prompt-files.md"
+}

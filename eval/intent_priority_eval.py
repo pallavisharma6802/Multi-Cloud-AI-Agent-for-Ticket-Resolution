@@ -76,7 +76,7 @@ def evaluate_intent_priority(pack_id: str, max_examples: int | None = None, num_
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--pack", default="it_saas")
+    parser.add_argument("--pack", default="vscode_support")
     parser.add_argument("--max-examples", type=int, default=100)
     parser.add_argument("--num-samples", type=int, default=1, help="Self-consistency samples per ticket (cost vs. stability tradeoff)")
     args = parser.parse_args()

@@ -1,0 +1,8 @@
+{
+  "id": "docs_remote_troubleshooting__dev_containers_tips",
+  "title": "troubleshooting / Dev Containers tips",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Dev Containers tips\n\nIf you'd like to read about tips for using Dev Containers, you can go to Dev Containers [Tips and Tricks](/docs/devcontainers/tips-and-tricks.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/troubleshooting.md"
+}

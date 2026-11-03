@@ -53,7 +53,7 @@ jobs:
           PINECONE_API_KEY: ci-placeholder-key
           PINECONE_ENVIRONMENT: us-east-1
           AWS_REGION: us-east-1
-          DOMAIN_PACK: it_saas
+          DOMAIN_PACK: vscode_support
           ENABLE_BIGQUERY: "false"
 
   eval-gate:
@@ -91,7 +91,7 @@ jobs:
           AZURE_TEXT_ANALYTICS_KEY: ci-placeholder-key
           PINECONE_API_KEY: ci-placeholder-key
           PINECONE_ENVIRONMENT: us-east-1
-          DOMAIN_PACK: it_saas
+          DOMAIN_PACK: vscode_support
           ENABLE_BIGQUERY: "false"
       - name: Upload eval report
         if: always() && steps.creds.outputs.skip != 'true'

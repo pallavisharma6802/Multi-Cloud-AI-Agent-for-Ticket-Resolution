@@ -1,0 +1,8 @@
+{
+  "id": "api_references_theme_color__panel_chat_colors",
+  "title": "theme color / Panel Chat colors",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Panel Chat colors\n\n- `interactive.activeCodeBorder`: The border color for the current interactive code cell when the editor has focus.\n- `interactive.inactiveCodeBorder`: The border color for the current interactive code cell when the editor does not have focus.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+}

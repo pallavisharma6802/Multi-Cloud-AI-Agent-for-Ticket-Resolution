@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_29__preview_features",
+  "title": "v1_29 / Preview Features",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Preview Features\n\nPreview features are not ready for release but are functional enough to use. We welcome your early feedback while they are under development.\n\n### References View\n\nThere is a new command **Find All References**, which displays a dedicated Side Bar view showing reference search results. This complements the existing Peek view presentation and provides a more stable list of references. In the context menu, select **Find All References** (`kb(references-view.find)`) and references are shown in a separate view, just like search results.\n\n<video src=\"images/1_29/references-view.mp4\" title=\"Video showing References View.\" autoplay loop controls muted></video>\n\nResults are stable and individual results can be cleared, which is great if you use the view as a To Do list. You can use `kb(references-view.next)` and `kb(references-view.prev)` to navigate through results without taking your hands off the keyboard.\n\nLet us know what you think and we'll be refining the experience in our next update.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_29.md"
+}

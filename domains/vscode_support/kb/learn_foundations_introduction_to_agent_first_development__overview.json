@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundations_introduction_to_agent_first_development__overview",
+  "title": "introduction to agent first development",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "# Introduction to agent-first development\n\n[![Watch Video for introduction to agent-first development on YouTube (opens in new tab).](images/introduction-to-agent-first-development/youtube-uu4sf8z9n8c.jpg)](https://www.youtube.com/watch?v=uu4sf8z9n8c)\n\nHow you write code is changing. You can still write every single line yourself, and that might be appropriate for specific use cases. But another pattern is emerging across the industry, using agents in programming, often called agentic programming or agent-first development.\n\nInstead of writing each line, you direct an AI coding agent to read your codebase, make edits, run commands, fix its own mistakes, and accomplish work. These agents operate in a loop. You give direction, the agent acts, you course-correct, and repeat until you reach your goal.\n\nThis guide covers everything needed to kick off a first agent session with VS Code and GitHub Copilot.\n\nBefore you start, install [VS Code](https://code.visualstudio.com/) and [set up GitHub Copilot](https://code.visualstudio.com/docs/setup/copilot).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/introduction-to-agent-first-development.md"
+}

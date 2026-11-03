@@ -1,0 +1,8 @@
+{
+  "id": "learn_java_spring_boot_3_expose_tools_with_mcp__what_s_next",
+  "title": "3 expose tools with mcp / What's Next",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## What's Next\n\nYour Java application can now be called by an assistant, and you have verified that the\ncalls change real state rather than producing plausible text.\n\nIn [Chapter 4, Let Copilot Test Your App with Playwright](/learn/java-spring-boot/4-test-with-playwright), we\npoint Copilot at the other side of the app. Instead of calling your service directly, it\ndrives a real browser against the running page \u2014 filling the form, clicking the checkbox,\ndeleting the row, and asserting each result along the way.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/3-expose-tools-with-mcp.md"
+}

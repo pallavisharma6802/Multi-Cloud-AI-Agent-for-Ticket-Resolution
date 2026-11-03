@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_python_web__run_hello_world",
+  "title": "python web / Run Hello World",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Run Hello World\n\nThe screenshot below shows the execution of a simple Python program in the browser. The program consists of two files `app.py` and `hello.py` stored on the local file system.\n\n![Execution of Python code stored on a local disk](images/web/execution-local-files.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/python-web.md"
+}

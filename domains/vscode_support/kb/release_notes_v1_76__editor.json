@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_76__editor",
+  "title": "v1_76 / Editor",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Editor\n\n### JSONC document sorting\n\nIt is now possible to sort JSONC (JSON documents with comments) files by key. To use this feature, select **JSON: Sort Document** from the Command Palette.\n\n### Independent bracket pairs for matching and colorization\n\nIn this iteration, we changed the behavior when both `editor.language.brackets` and `editor.language.colorizedBracketPairs` are configured. Before, setting `editor.language.colorizedBracketPairs` would override `editor.language.brackets` for bracket matching (as both use the same [bracket pair tree](https://code.visualstudio.com/blogs/2021/09/29/bracket-pair-colorization#_the-basic-algorithm)). Now, the union of both settings is used for bracket matching, but only brackets configured in `editor.language.colorizedBracketPairs` are colorized.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_76.md"
+}

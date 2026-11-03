@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_sessions_session_history__exclude_repositories_from_sync",
+  "title": "session history / Exclude repositories from sync",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Exclude repositories from sync\n\nUse `setting(chat.sessionSync.excludeRepositories)` to prevent sessions in specific repositories from syncing to the cloud. The setting accepts exact `owner/repo` names or glob patterns:\n\n```json\n\"chat.sessionSync.excludeRepositories\": [\n    \"my-org/private-repo\",\n    \"my-org/secret-*\"\n]\n```\n\nSessions from matching repositories are not uploaded by session sync.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/sessions/session-history.md"
+}

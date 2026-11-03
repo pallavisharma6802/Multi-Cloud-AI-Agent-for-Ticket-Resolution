@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_jupyter_notebooks__custom_notebook_diffing",
+  "title": "jupyter notebooks / Custom notebook diffing",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Custom notebook diffing\n\nUnder the hood, Jupyter Notebooks are JSON files. The segments in a JSON file are rendered as cells that are comprised of three components: input, output, and metadata. Comparing changes made in a notebook using lined-based diffing is difficult and hard to parse. The rich diffing editor for notebooks allows you to easily see changes for each component of a cell.\n\nYou can even customize what types of changes you want displayed within your diffing view. In the top right, select the overflow menu item in the toolbar to customize what cell components you want included. Input differences will always be shown.\n\n![Custom notebook diffing](images/jupyter/notebook-diffing.png)\n\nTo learn more about Git integration within {% data variables.product.prodname_vscode_shortname %}, visit [Source Control in {% data variables.product.prodname_vscode_shortname %}](/docs/sourcecontrol/overview.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/jupyter-notebooks.md"
+}

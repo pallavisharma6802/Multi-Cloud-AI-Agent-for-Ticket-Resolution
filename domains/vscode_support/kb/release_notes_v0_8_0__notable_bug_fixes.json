@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v0_8_0__notable_bug_fixes",
+  "title": "v0_8_0 / Notable Bug Fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable Bug Fixes\n\nAs always we fixed many issues.\n\nHere are a few of the notable ones from the public bug tracker:\n\n* [18617](/Issues/Detail/18617): C# IntelliSense suggestions only come up after error checking, making them slow over time\n* [17259](/Issues/Detail/17259): Cannot control installation location\n* [18603](/Issues/Detail/18603): Duplicate icon on Windows 10\n* [17159](/Issues/Detail/17159): Cannot open a file with spaces in its name from command line",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_8_0.md"
+}

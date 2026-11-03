@@ -1,0 +1,8 @@
+{
+  "id": "docs_azure_mongodb__next_steps",
+  "title": "mongodb / Next steps",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Next steps\n\n* [Index Advisor](https://learn.microsoft.com/azure/documentdb/index-advisor) - Learn how to optimize your MongoDB performance with Index Advisor.\n* [Azure Extensions](/docs/azure/extensions.md) - The Visual Studio Marketplace has hundreds of {% data variables.product.prodname_vscode_shortname %} extensions for Azure and the cloud.\n* [Deploying to Azure](/docs/azure/deployment.md) - Learn step-by-step how to deploy your application to Azure.\n* [Working with Docker](/docs/azure/docker.md) - Put your application in a Docker container for easy reuse and deployment.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/mongodb.md"
+}

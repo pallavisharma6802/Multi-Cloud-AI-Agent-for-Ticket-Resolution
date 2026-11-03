@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_overview__what_else_can_you_use_notebooks_for",
+  "title": "overview / What else can you use notebooks for?",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## What else can you use notebooks for?\n\nThe support for mixing executable code, equations, visualizations, and rich Markdown makes notebooks useful for breaking down new concepts in a storytelling form. This makes notebooks an exceptional tool for educators and students!",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/overview.md"
+}

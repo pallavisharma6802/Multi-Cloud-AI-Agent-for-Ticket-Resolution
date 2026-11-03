@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_debug_common__next_steps",
+  "title": "debug common / Next steps",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Next steps\n\nRead on to learn more about:\n\n- [Debugging Node.js within containers](/docs/containers/debug-node.md)\n- [Debugging Python within containers](/docs/containers/debug-python.md)\n- [Debugging .NET within containers](/docs/containers/debug-netcore.md)\n- [Debugging with Docker Compose](/docs/containers/docker-compose.md#debug)\n- [Troubleshooting](/docs/containers/troubleshooting.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/debug-common.md"
+}

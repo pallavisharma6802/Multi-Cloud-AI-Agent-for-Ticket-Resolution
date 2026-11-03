@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vfebruary__workbench",
+  "title": "vFebruary / Workbench",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Workbench\n\n### Open Definition to the Side\n\nThere is now an action to open a definition to the side in the **Command Palette** (`kb(editor.action.revealDefinitionAside)`).\n\n![open definition to the side](images/February/open-definition-to-side.png)\n\n### Close Other Files\n\nThere is now an action to close all other files, in the **Working Files**' context menu (`kb(workbench.files.action.closeOtherFiles)`).\n\n![close other files](images/February/close-other-files.png)\n\n### Switch to a working file from Quick Open\n\nIt's now possible to open a file in the **Working Files** list from the **Quick Open** box by prefixing it with `~`.\n\n![quick open working files](images/February/quick-open-working-files.png)\n\n### Extension Recommendations\n\nThere is a new command **Extensions: Show Extension Recommendations** for displaying suggested extensions based on your use of VS Code. You can reach this by typing `ext recommend ` (trailing space) in the **Quick Open** box.\n\n![show extension recommendations](images/February/extension-tips-2.png)\n\n### Extension Marketplace Performance Improvement\n\nThe performance of the in-product Extension Marketplace (via the **Extensions: Install Extension** command) has been greatly improved. We introduced a server-side cache which speeds up the request considerably.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vFebruary.md"
+}

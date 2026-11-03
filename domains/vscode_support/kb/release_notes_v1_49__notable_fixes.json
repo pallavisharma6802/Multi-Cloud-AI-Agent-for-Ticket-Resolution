@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_49__notable_fixes",
+  "title": "v1_49 / Notable fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable fixes\n\n* [38137](https://github.com/microsoft/vscode/issues/38137): Can't call sendText API or paste into terminal with long text\n* [82604](https://github.com/microsoft/vscode/issues/82604): Web: editor does not provide a \"Paste\" action\n* [101110](https://github.com/microsoft/vscode/issues/101110): Allow to configure workbench.editor.restoreViewState per language\n* [102199](https://github.com/microsoft/vscode/issues/102199): JavaScript debugging: run to cursor can skip to next statement if cursor is after semicolon\n* [103052](https://github.com/microsoft/vscode/issues/103052): Order of files in \"Search files by name\" results is incorrect\n* [103105](https://github.com/microsoft/vscode/issues/103105): Debug: timeout after 1000 ms\n* [103414](https://github.com/microsoft/vscode/issues/103414): Debug: better support when views are moved out of debug viewlet\n* [105481](https://github.com/microsoft/vscode/issues/105481): macOS: detect high contrast theme",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_49.md"
+}

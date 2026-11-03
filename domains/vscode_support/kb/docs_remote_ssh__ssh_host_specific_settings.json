@@ -1,0 +1,8 @@
+{
+  "id": "docs_remote_ssh__ssh_host_specific_settings",
+  "title": "ssh / SSH host-specific settings",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## SSH host-specific settings\n\n{% data variables.product.prodname_vscode_shortname %}'s local User settings are also reused when you are connected to an SSH host. While this keeps your user experience consistent, you may want to vary some of these settings between your local machine and each host. Fortunately, once you have connected to a host, you can also set host-specific settings by running the **Preferences: Open Remote Settings** command from the Command Palette (`kbstyle(F1)`, `kb(workbench.action.showCommands)`) or by selecting on the **Remote** tab in the Settings editor. These will override any User settings you have in place whenever you connect to the host. And Workspace settings will override Remote and User settings.\n\n![Host-specific settings tab](images/ssh/ssh-settings.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/ssh.md"
+}

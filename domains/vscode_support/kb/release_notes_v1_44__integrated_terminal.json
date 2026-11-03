@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_44__integrated_terminal",
+  "title": "v1_44 / Integrated Terminal",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Integrated Terminal\n\n### Allow menu bar mnemonics to skip the terminal\n\nWhen the new setting `terminal.integrated.allowMenubarMnemonics` is enabled, all keystrokes using `Alt` will skip the terminal so they are processed by VS Code's keybinding manager, making all menu mnemonics work at the cost of `Alt` hotkeys within the terminal. This setting is disabled by default.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_44.md"
+}

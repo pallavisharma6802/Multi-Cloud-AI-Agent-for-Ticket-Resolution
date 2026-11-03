@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_staging_commits__next_steps",
+  "title": "staging commits / Next steps",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## Next steps\n\n* [Push your commits](/docs/sourcecontrol/repos-remotes.md#push-commits) to share them with others.\n* [Set unfinished work aside with a stash](/docs/sourcecontrol/branches-worktrees.md#manage-stashes) before switching tasks.\n* [Troubleshoot Git problems](/docs/sourcecontrol/troubleshooting.md) when an operation fails.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/staging-commits.md"
+}

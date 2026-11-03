@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_79__tunnels",
+  "title": "v1_79 / Tunnels",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Tunnels\n\nThis releases adds preliminary support to connect to WSL remotes from vscode.dev. To use this feature, navigate to vscode.dev, then install the WSL extension. Once installed, open a tunnel to a Windows machine, and then use the **WSL Targets** view to connect to a WSL distribution.\n\n![The WSL Targets view displayed in the Remote Explorer](images/1_79/wsl-tunnel.png)\n\nThis coming iteration we will continue to polish the experience and add support for connect to WSL over a tunnel from VS Code desktop.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_79.md"
+}

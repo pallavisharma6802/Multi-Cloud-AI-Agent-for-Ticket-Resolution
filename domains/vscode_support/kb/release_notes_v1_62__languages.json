@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_62__languages",
+  "title": "v1_62 / Languages",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Languages\n\n### Configure how HTML completes attributes\n\nThere is a new setting `html.completion.attributeDefaultValue` that lets you choose how values are filled in when an HTML attribute is completed:\n\n* `doublequotes`: The value is placed in double quotes (default)\n* `singlequotes`: The value is placed in single quotes\n* `empty`: The value is left empty\n\n<video src=\"images/1_62/html-attribute-value-completion.mp4\" autoplay loop controls muted title=\"HTML value completion showing double quotes, single quotes, and left empty\"></video>\n\n### Emmet improvements\n\nThe new **Emmet: Update Tag** command (`editor.emmet.action.updateTag`) updates the placeholder with the HTML tag to be updated.\n\n<video src=\"images/1_62/emmet-update-tag.mp4\" autoplay loop controls muted title=\"Emmet update tag command with placeholder\"></video>\n\nThe extension also activates now when one tries to run any Emmet command. This change should fix an issue where some commands were not found when run from the Command Palette, while also keeping the activation event list more precise so that Emmet does not start up unnecessarily, such as in an empty workspace.\n\nFor multi-root workspaces, Emmet now sources snippets from all workspace folders, rather than just the first one. As a result, custom snippets from all workspace folders will be suggested when editing an applicable file in the workspace.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_62.md"
+}

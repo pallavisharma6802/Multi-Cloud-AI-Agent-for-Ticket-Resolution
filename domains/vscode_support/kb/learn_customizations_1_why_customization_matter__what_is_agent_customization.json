@@ -1,0 +1,8 @@
+{
+  "id": "learn_customizations_1_why_customization_matter__what_is_agent_customization",
+  "title": "1 why customization matter / What is agent customization?",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## What is agent customization?\n\nAgent customization in VS Code Copilot Chat lets you define how the AI behaves, responds, and operates within your workflow.\n\nInstead of relying on one-off prompts, you can create reusable building blocks:\n\n- **Agents** - specialized modes for different tasks\n- **Skills** - domain-specific capabilities and workflows\n- **Instructions** - persistent rules and coding conventions\n- **Prompts** - reusable prompt templates\n- **Hooks** - automated actions triggered by events\n\nWe'll cover the above in depth in later guides, but for now, just note that together these allow you to shape Copilot into a context-aware assistant that follows your standards, understands your project, and automates repetitive work.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/1-why-customization-matter.md"
+}

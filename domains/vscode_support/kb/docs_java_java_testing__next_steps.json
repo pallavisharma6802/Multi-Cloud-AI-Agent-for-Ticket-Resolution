@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_testing__next_steps",
+  "title": "java testing / Next steps",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Next steps\n\nRead on to find out about:\n\n- [Debugging](/docs/java/java-debugging.md) - Find out how to debug your Java project with {% data variables.product.prodname_vscode_shortname %}.\n- [Extensions for Java](/docs/java/extensions.md) - Learn about more useful Java extensions for {% data variables.product.prodname_vscode_shortname %}.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-testing.md"
+}

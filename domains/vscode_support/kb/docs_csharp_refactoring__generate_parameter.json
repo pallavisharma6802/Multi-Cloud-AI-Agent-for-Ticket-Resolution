@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_refactoring__generate_parameter",
+  "title": "refactoring / Generate parameter",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Generate parameter\n\n**What:** Automatically generates a method parameter.\n\n**When:** You reference a variable in a method that doesn't exist in the current context and receive an error; you can generate a parameter as a code fix.\n\n**Why:** You can quickly modify a method signature without losing context.\n\n**How-to:**\n\n1. Place your cursor in the variable name.\n2. Press `kb(editor.action.quickFix)` to trigger the **Quick Actions and Refactoring**s menu.\n3. Select **Generate parameter**.\n\n![Generate parameter example](images/refactoring/add-parameter-check.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+}

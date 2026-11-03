@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_81__vs_code_for_the_web",
+  "title": "v1_81 / VS Code for the Web",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## VS Code for the Web\n\n### Always load latest versions of built-in extensions\n\n[vscode.dev](https://vscode.dev) now always loads the latest versions of the built-in extensions. This means that you will no longer see the \"Reload Required\" notification to update built-in extensions to the latest version when you open vscode.dev.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_81.md"
+}

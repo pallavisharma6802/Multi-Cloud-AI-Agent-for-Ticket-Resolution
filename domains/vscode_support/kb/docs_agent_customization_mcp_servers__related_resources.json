@@ -1,0 +1,8 @@
+{
+  "id": "docs_agent_customization_mcp_servers__related_resources",
+  "title": "mcp servers / Related resources",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related resources\n\n* [Use tools with agents](/docs/agents/run/tools.md)\n* [MCP configuration reference](/docs/agents/reference/mcp-configuration.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/mcp-servers.md"
+}

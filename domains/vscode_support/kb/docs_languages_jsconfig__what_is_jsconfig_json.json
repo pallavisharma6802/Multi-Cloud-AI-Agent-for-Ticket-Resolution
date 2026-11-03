@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_jsconfig__what_is_jsconfig_json",
+  "title": "jsconfig / What is jsconfig.json?",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## What is jsconfig.json?\n\nThe presence of `jsconfig.json` file in a directory indicates that the directory is the root of a JavaScript Project. The `jsconfig.json` file specifies the root files and the options for the features provided by the [JavaScript language service](https://github.com/microsoft/TypeScript/wiki/JavaScript-Language-Service-in-Visual-Studio).\n\n> **Tip:** If you are not using JavaScript, you do not need to worry about `jsconfig.json`.\n\n> **Tip:** `jsconfig.json` is a descendant of [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html), which is a configuration file for TypeScript. `jsconfig.json` is `tsconfig.json` with `\"allowJs\"` attribute set to `true`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/jsconfig.md"
+}

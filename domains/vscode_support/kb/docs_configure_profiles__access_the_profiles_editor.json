@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_profiles__access_the_profiles_editor",
+  "title": "profiles / Access the Profiles editor",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Access the Profiles editor\n\nThe **Profiles editor** enables you to create and manage your profiles in {% data variables.product.prodname_vscode_shortname %} from a single place. The Profiles editor opens by default in a [modal overlay](/docs/editing/getting-started/userinterface.md#modal-editors) on top of the editor area.\n\n![Screenshot that shows the Profiles editor.](images/profiles/profiles-editor.png)\n\nYou can access the Profiles editor in either of the following ways:\n\n* From the **File** > **Preferences** > **Profiles** menu item\n\n    ![Profiles editor Menu Item](images/profiles/profiles-editor-menu-item.png)\n\n* From the **Manage** gear button in the bottom of the Activity Bar.\n\n    ![Profiles editor via the Manage button in the Activity bar](images/profiles/profiles-editor-via-manage.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/profiles.md"
+}

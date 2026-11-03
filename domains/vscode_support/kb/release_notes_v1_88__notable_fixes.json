@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_88__notable_fixes",
+  "title": "v1_88 / Notable fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable fixes\n\n* [204886](https://github.com/microsoft/vscode/issues/204886) Opening a file on a different path but with the same name in the simple file picker fails",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_88.md"
+}

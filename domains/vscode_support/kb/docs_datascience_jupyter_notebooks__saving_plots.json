@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_jupyter_notebooks__saving_plots",
+  "title": "jupyter notebooks / Saving plots",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Saving plots\n\nTo save a plot from your notebook, simply hover over the output and select the **Save** icon in the top right.\n\n![Save output](images/jupyter/save-output.png)\n\n> **Note:** There is support for rendering plots created with [matplotlib](https://matplotlib.org/) and [Altair](https://altair-viz.github.io/index.html).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/jupyter-notebooks.md"
+}

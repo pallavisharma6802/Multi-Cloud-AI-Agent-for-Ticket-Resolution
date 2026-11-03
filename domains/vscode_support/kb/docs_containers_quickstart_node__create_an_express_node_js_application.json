@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_quickstart_node__create_an_express_node_js_application",
+  "title": "quickstart node / Create an Express Node.js application",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Create an Express Node.js application\n\n1. Create a folder for the project.\n1. Open a development command prompt in the project folder and create the project:\n\n   ```bash\n   npx express-generator\n   npm install\n   ```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/quickstart-node.md"
+}

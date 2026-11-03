@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_typescript__typescript_extensions",
+  "title": "typescript / TypeScript extensions",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## TypeScript extensions\n\n{% data variables.product.prodname_vscode_shortname %} provides many features for TypeScript out of the box. In addition to what comes built-in, you can install an extension for greater functionality.\n\n<div class=\"marketplace-extensions-typescript-curated\"></div>\n\n> Tip: Click on an extension tile above to read the description and reviews to decide which extension is best for you. See more in the [Marketplace](https://marketplace.visualstudio.com).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/typescript.md"
+}

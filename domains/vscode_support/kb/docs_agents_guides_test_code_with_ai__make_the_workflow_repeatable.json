@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_test_code_with_ai__make_the_workflow_repeatable",
+  "title": "test code with ai / Make the workflow repeatable",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Make the workflow repeatable\n\nSave the test commands, framework, mocking conventions, and test-quality safeguards in your project's [custom instructions](/docs/agent-customization/custom-instructions.md). This helps the agent follow the same guidance across sessions without you repeating it in every prompt. Keep the instructions in version control to share them with your team.\n\nAlongside your project's conventions, include safeguards such as:\n\n```markdown\n* Do not delete or weaken assertions, skip tests, or change expected\n  values solely to make failing tests pass.\n* If an assertion appears incorrect, explain why and ask for confirmation\n  before changing it.\n* Run the relevant tests after changes. Report failures, skipped tests,\n  and tests you could not run.\n```\n\nCustom instructions guide the agent but don't enforce these safeguards. Review the diff and test results even when instructions are in place.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/test-code-with-ai.md"
+}

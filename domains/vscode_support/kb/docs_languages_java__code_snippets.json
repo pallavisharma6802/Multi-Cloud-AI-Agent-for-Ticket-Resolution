@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_java__code_snippets",
+  "title": "java / Code snippets",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Code snippets\n\n{% data variables.product.prodname_vscode %} supports a wide range of popular Java code snippets to make you more productive, such as class/interface, syserr, sysout, if/else, try/catch, static main method. Using information from Java language server, it also provides a preview of the code snippet during the selection.\n\nFor example, typing \"**sout**\" or \"**sysout**\" will produce a code snippet for `System.out.println()`.<br>\nSimilarly, typing \"**main**\" or \"**psvm**\" will generate a code snippet for `public static void main(String[] args) {}`.\n\nWe support a wide range of code snippet shortcuts and postfix completion features. To see the complete list, see [Code Snippets](/docs/java/java-editing.md#code-snippets). {% data variables.product.prodname_vscode_shortname %} also supports a range of [Refactoring](/docs/java/java-refactoring.md) and [Linting](/docs/java/java-linting.md) features.\n\n![Code Snippet](images/java/code-snippet.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/java.md"
+}

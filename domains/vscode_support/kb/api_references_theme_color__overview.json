@@ -1,0 +1,8 @@
+{
+  "id": "api_references_theme_color__overview",
+  "title": "theme color",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "# Theme Color\n\nYou can customize your active Visual Studio Code [color theme](/docs/getstarted/themes) with the `workbench.colorCustomizations` user [setting](/docs/configure/settings).\n\n```json\n{\n  \"workbench.colorCustomizations\": {\n    \"activityBar.background\": \"#00AA00\"\n  }\n}\n```\n\n**Note**: If you want to use an existing color theme, see [Color Themes](/docs/getstarted/themes) where you'll learn how to set the active color theme through the **Preferences: Color Theme** dropdown (`kb(workbench.action.selectTheme)`).\n\nTheme colors are available as CSS variables in [webviews](/api/extension-guides/webview), and [an extension](https://marketplace.visualstudio.com/items?itemName=connor4312.css-theme-completions) is available which provides IntelliSense for them.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_devcontainers_faq__i_m_seeing_an_error_about_a_missing_library_or_dependency",
+  "title": "faq / I'm seeing an error about a missing library or dependency",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## I'm seeing an error about a missing library or dependency\n\nSome extensions rely on libraries not found in specific Docker images. For example, [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) requires the installation of system-level dependencies, which are [listed in their documentation](https://learn.microsoft.com/visualstudio/liveshare/reference/linux#install-prerequisites-manually). The need for these dependencies may depend on the operating system (for example, specific Linux distribution) used by your Docker image. You may need to install these dependencies during the Docker build process, by adding required commands to your Dockerfile. Search the specific extension's documentation to check for dependencies and see [Installing additional software](/docs/devcontainers/create-dev-container.md#install-additional-software) for help with resolving the problem.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/faq.md"
+}

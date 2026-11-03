@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_data_wrangler_quick_start__set_up_your_environment",
+  "title": "data wrangler quick start / Set up your environment",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Set up your environment\n\n1. If you have not already done so, install [Python](https://www.python.org/downloads/)\n   (**Note:** Data Wrangler only supports Python version 3.8 or higher).\n2. <a class=\"install-extension-btn\" href=\"vscode:extension/ms-toolsai.datawrangler\">Install the Data Wrangler extension</a>\n\nWhen you launch Data Wrangler for the first time, it asks you which Python kernel you would like to connect to. It also checks your machine and environment to see if the required Python packages are installed, such as Pandas.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/data-wrangler-quick-start.md"
+}

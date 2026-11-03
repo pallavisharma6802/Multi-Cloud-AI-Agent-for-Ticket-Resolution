@@ -1,0 +1,8 @@
+{
+  "id": "learn_agents_1_using_tools_with_agents__limit_tools_for_a_custom_agent",
+  "title": "1 using tools with agents / Limit tools for a custom agent",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Limit tools for a custom agent\n\nWhen you build a [custom agent](https://code.visualstudio.com/docs/copilot/customization/custom-agents), you can list the tools and tool sets it has access to in the `tools` field of the agent's Markdown frontmatter:\n\n```yaml\n---\ndescription: Python testing helper\ntools: ['search', 'edit', 'pylance', 'runTests']\n---\n```\n\nYou can also edit the `tools` field directly, or open the tools picker with the **Configure Tools** button in the Chat view and let VS Code update the agent's list for you.\n\nUse a custom agent when the tool boundary is part of the role. For example, a planning agent should not edit files by accident, so give it search and web tools but leave out edit and terminal tools. An implementation agent needs a broader set because its job is to modify code and validate the change.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/1-using-tools-with-agents.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_custom_instructions_reference__organization_instructions",
+  "title": "custom instructions reference / Organization instructions",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Organization instructions\n\nOrganization instructions are managed on GitHub rather than in a repository file. Their availability depends on the client and feature, so don't assume that signing in makes them available to every harness.\n\nLocal has an organization instruction provider controlled by `setting(github.copilot.chat.organizationInstructions.enabled)`, which is on by default. Verify discovery for your account and session in the Agent Customizations editor.\n\nFor organization configuration and supported GitHub experiences, see [organization custom instructions](https://docs.github.com/en/copilot/concepts/prompting-and-context/custom-instructions#about-organization-custom-instructions). Keep applicable organization and project guidance consistent.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/custom-instructions-reference.md"
+}

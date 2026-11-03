@@ -1,0 +1,8 @@
+{
+  "id": "docs_remote_vscode_web__use_your_own_compute_instance_with_remote_tunnels",
+  "title": "vscode web / Use your own compute instance with Remote Tunnels",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Use your own compute instance with Remote Tunnels\n\nYou may develop against another machine in {% data variables.product.prodname_vscode_shortname %} for the Web using the [Remote - Tunnels](https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-server) extension.\n\nThe Remote - Tunnels extension lets you connect to a remote machine, like a desktop PC or virtual machine (VM), via a secure tunnel. You can then securely connect to that machine from anywhere, without the requirement of SSH. This lets you \"bring your own compute\" to vscode.dev, enabling additional scenarios like running your code in the browser.\n\nYou may learn more about Remote - Tunnels in its [documentation](/docs/remote/tunnels.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/vscode-web.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_concepts_agent_harnesses__related_resources",
+  "title": "agent harnesses / Related resources",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related resources\n\n* [Choose an agent harness](/docs/agents/run/agent-harnesses.md)\n* [Complete your first task with an agent](/docs/agents/quickstart.md)\n* [Sessions and handoff](/docs/agents/concepts/sessions.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/agent-harnesses.md"
+}

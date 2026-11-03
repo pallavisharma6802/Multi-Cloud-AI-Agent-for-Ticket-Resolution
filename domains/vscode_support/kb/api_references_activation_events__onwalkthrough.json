@@ -1,0 +1,8 @@
+{
+  "id": "api_references_activation_events__onwalkthrough",
+  "title": "activation events / onWalkthrough",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## onWalkthrough\n\n`onWalkthrough:id` is emitted when a specified walkthrough is opened.\n\n```json\n\"activationEvents\": [\n    \"onWalkthrough:nodejsWelcome\"\n]\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/activation-events.md"
+}

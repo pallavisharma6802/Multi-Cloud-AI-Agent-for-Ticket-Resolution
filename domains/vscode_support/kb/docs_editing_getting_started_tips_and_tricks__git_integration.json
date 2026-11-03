@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_getting_started_tips_and_tricks__git_integration",
+  "title": "tips and tricks / Git integration",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Git integration\n\nKeyboard Shortcut: `kb(workbench.view.scm)`\n\nGit integration comes \"out-of-the-box\" with {% data variables.product.prodname_vscode_shortname %}. You can install other source control management (SCM) providers from the {% data variables.product.prodname_vscode_shortname %} [Extension Marketplace](/docs/configure/extensions/extension-marketplace.md). This section describes the Git integration but much of the UI and gestures are common for other SCM providers.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/tips-and-tricks.md"
+}

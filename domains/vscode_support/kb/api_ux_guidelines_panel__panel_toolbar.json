@@ -1,0 +1,8 @@
+{
+  "id": "api_ux_guidelines_panel__panel_toolbar",
+  "title": "panel / Panel Toolbar",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Panel Toolbar\n\nThe Panel Toolbar can expose options scoped to the currently selected View. For example the Terminal view exposes [View Actions](/api/extension-guides/tree-view#view-actions) to add a new terminal, split the view layout, and more. Switching to the Problems view exposes a different set of actions. Similar to the [Sidebar Toolbar](/api/ux-guidelines/sidebars#sidebar-toolbar), the toolbar will only render if there is just a single View. If more than one View is used, each View will render its own toolbar.\n\n**\u2714\ufe0f Do**\n\n- Use an existing [product icon](/api/references/icons-in-labels#icon-listing) if available\n- Provide clear, useful tooltips\n\n**\u274c Don't**\n\n- Don't add an excessive number of icon buttons. Consider using a [Context Menu](/api/references/contribution-points#contributes.menus) if more options are needed for a specific button.\n- Don't duplicate the default Panel icons (collapse/expand, close, etc.)\n\n![Example of a panel toolbar with a single view](images/examples/panel-toolbar.png)\n\n*In this example, the single View rendered in the Panel renders its View Actions in the main Panel Toolbar.*\n\n![Example of a panel toolbar with multiple views](images/examples/panel-toolbar-multiple-views.png)\n\n*In this example, multiple Views are used, so each View exposes its own specific View Actions.*",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/panel.md"
+}

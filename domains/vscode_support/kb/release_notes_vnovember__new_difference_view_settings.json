@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vnovember__new_difference_view_settings",
+  "title": "vNovember / New Difference View Settings",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## New Difference View Settings\nYou can now set your diff view preferences with two new settings:\n* `diffEditor.renderSideBySide` - Control whether to show differences in a side by side or inline view.\n* `diffEditor.ignoreTrimWhitespace` - Ignore leading and trailing (trim) whitespace when showing differences.\n\n![inline-diff-view](images/0_10_0/inline-diff-view.png)\n\nPreviously these options where available in the editor's title bar.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vNovember.md"
+}

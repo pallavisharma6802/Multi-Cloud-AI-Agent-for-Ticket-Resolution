@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_debugger_settings__program",
+  "title": "debugger settings / Program",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Program\n\nThe program field is set to the path of the application dll or .NET Core host executable to launch.\n\nThis property normally takes the form: \"${workspaceFolder}/bin/Debug/\\<target-framework\\>/\\<project-name.dll\\>\".\n\nExample: `\"${workspaceFolder}/bin/Debug/netcoreapp1.1/MyProject.dll\"`\n\nWhere:\n\n* \\<target-framework\\> is the framework that the debugged project is being built for. This is normally found in the project file as the 'TargetFramework' property.\n* \\<project-name.dll\\> is the name of debugged project's build output dll. This is normally the same as the project file name but with a '.dll' extension.\n\n**Availability**\n\n* `launch.json` \u2714\ufe0f\n* `settings.json` \u274c\n* `launchSettings.json` \u2714\ufe0f as `executablePath`",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/debugger-settings.md"
+}

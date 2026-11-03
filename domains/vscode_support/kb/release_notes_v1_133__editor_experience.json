@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_133__editor_experience",
+  "title": "v1_133 / Editor Experience",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Editor Experience\n\n### Auto-reload HTML files in the integrated browser\n\n**Setting**: `setting(workbench.browser.autoReloadOnFileChange)`\n\nWhen a local HTML file is open in the [integrated browser](https://code.visualstudio.com/docs/debugtest/integrated-browser), it now refreshes automatically when the file changes on disk.\n\nThis helps you see agent edits or your own saved changes immediately. You can toggle automatic reload for individual browser tabs and configure the default with the `setting(workbench.browser.autoReloadOnFileChange)` setting.\n\n<video src=\"images/1_133/browser-auto-reload.mp4\" title=\"Video showing the integrated browser opened side-by-side with an HTML file and reloading automatically.\" autoplay loop controls muted></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_133.md"
+}

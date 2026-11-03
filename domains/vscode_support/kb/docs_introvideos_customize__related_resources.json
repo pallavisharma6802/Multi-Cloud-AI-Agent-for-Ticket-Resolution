@@ -1,0 +1,8 @@
+{
+  "id": "docs_introvideos_customize__related_resources",
+  "title": "customize / Related resources",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Related resources\n\n* [Key Bindings for {% data variables.product.prodname_vscode %}](/docs/configure/keybindings.md) - See a list of defined keyboard shortcuts and learn how to update them.\n* [User and Workspace Settings](/docs/configure/settings.md) - Learn how to customize user and workspace settings.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/introvideos/customize.md"
+}

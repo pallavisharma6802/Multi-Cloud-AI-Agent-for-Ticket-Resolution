@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_2_exploring_models__answer",
+  "title": "2 exploring models / Answer",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Answer\n\nThe better production choice is the model that can be deployed in your target region with acceptable behavior and cost. A slightly better output that cannot be deployed where you need it creates delivery risk you cannot hide later. Production fit always includes availability, not just raw output quality.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/2-exploring-models.md"
+}

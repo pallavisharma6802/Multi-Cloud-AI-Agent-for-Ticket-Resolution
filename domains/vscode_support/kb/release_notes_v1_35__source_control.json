@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_35__source_control",
+  "title": "v1_35 / Source control",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Source control\n\n### Compare merge conflicts with complete context\n\nA new setting `merge-conflict.diffViewPosition` allows you to open the diff view in a new editor group when you compare merge conflicts. In addition, the new view shows the complete diff view of the changed file, which provides better context for the merge conflicts.\n\n<video src=\"images/1_35/compare-conflict.mp4\" title=\"Video showing Compare merge conflicts in a new editor group.\" autoplay loop controls muted></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_35.md"
+}

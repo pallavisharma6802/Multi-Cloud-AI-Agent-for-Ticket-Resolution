@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_javascript__rename",
+  "title": "javascript / Rename",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Rename\n\nPress `kb(editor.action.rename)` to rename the symbol under the cursor across your JavaScript project:\n\n![Renaming a variable](images/javascript/rename.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/javascript.md"
+}

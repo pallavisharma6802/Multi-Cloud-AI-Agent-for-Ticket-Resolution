@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_100__debugging",
+  "title": "v1_100 / Debugging",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debugging\n\n### Disassembly view context menu\n\nThanks to a community contribution, we now have a context menu in the disassembly view.\n\n![Screenshot that shows the context menu in the Disassembly view.](images/1_100/disassembly-context.png)\n\n### JavaScript debugger Network view\n\nRecent versions of Node.js have enhanced its network debugging capabilities. The [experimental network view](https://code.visualstudio.com/updates/v1_93#_experimental-network-view) will be enabled by default on recent versions of Node.js that support it well (v22.14.0 and above).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_100.md"
+}

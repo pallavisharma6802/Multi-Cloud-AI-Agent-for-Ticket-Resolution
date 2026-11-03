@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_107__ssh",
+  "title": "v1_107 / SSH",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## SSH\n\n### SSH reconnection grace time control\n\nA new `--reconnection-grace-time` flag keeps the remote server running beyond the default three-hour window, and the `setting(remote.SSH.reconnectionGraceTime)` setting lets you configure the grace period per host from the SSH extension. Until the grace time expires, the server will continue to stay alive on the remote machine.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_107.md"
+}

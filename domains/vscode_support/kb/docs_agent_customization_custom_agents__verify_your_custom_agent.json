@@ -1,0 +1,8 @@
+{
+  "id": "docs_agent_customization_custom_agents__verify_your_custom_agent",
+  "title": "custom agents / Verify your custom agent",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Verify your custom agent\n\nCheck both whether the agent is available and whether it produces the result you need:\n\n1. Open **Agents** in the Agent Customizations editor and confirm that **Reviewer** is listed without file errors.\n1. Start a new chat with the same harness and repository folder. Select **Reviewer** from the **Agent** dropdown.\n1. Use **Add Context** to attach a small source file and its tests. Choose code you understand so you can check the findings. Send a request without repeating the agent's instructions:\n\n    ```prompt-reviewer\n    Review these files.\n    ```\n\n1. Check that the response focuses on behavior and missing tests, cites relevant file locations, and explains each finding's impact. Verify the findings against the code, not just the requested output format.\n1. Review the tool activity and workspace changes. For this reviewer, expect reading and search activity, not file edits or terminal commands. It should not claim to have run tests.\n\nIf the result isn't useful, clarify one instruction and repeat the same task in a new chat. Keep the harness, model, input files, and available tools consistent when comparing results. See [Troubleshoot custom agents](#troubleshoot-custom-agents) if the agent is missing or uses unexpected capabilities.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/custom-agents.md"
+}

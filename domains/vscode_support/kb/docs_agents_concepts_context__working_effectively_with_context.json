@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_concepts_context__working_effectively_with_context",
+  "title": "context / Working effectively with context",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Working effectively with context\n\n* **Describe the goal and constraints.** Explain the outcome you want and any requirements the agent should follow.\n* **Let the agent discover context.** The agent can search your workspace and read related files as it works. You don't need to attach the entire codebase.\n* **Reference important sources.** Explicitly add files, symbols, errors, or documentation that the agent must consider.\n* **Keep each conversation focused.** Use a new chat for related work that doesn't need the current history, or a separate session for an unrelated task.\n\n### How context improves a response\n\nConsider asking an agent to explain how authentication works in your project.\n\nWithout relevant workspace context:\n\n```prompt\nHow does authentication work?\n```\n\nThe model has no way to know which project you mean and gives a generic answer about authentication patterns.\n\nAfter attaching `src/auth.ts` to the request as context:\n\n```prompt\nExplain the authentication flow and identify where tokens are validated.\n```\n\nThe referenced file gives the agent a starting point. The agent can then search for related code and explain the implementation with specific functions and configuration values.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/context.md"
+}

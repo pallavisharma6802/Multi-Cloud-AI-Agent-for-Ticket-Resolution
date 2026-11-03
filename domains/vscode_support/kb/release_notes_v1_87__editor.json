@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_87__editor",
+  "title": "v1_87 / Editor",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Editor\n\n### Editor Sticky Scroll\n\nThis iteration we're enabling Sticky Scroll in the editor by default. You can change this using the setting <code codesetting=\"editor.stickyScroll.enabled\">editor.stickyScroll.enabled</code>.\n\nWe have also increased the maximum number of lines that can be displayed within the editor sticky widget from 10 to 20. You can configure the maximum line count with the setting <code codesetting=\"editor.stickyScroll.maxLineCount\">editor.stickyScroll.maxLineCount</code>.\n\n### Inline completions for multiple cursors\n\nThis iteration we have added support for multi-cursor inline completions. Now, the inline completions are previewed and applied at both the primary and the secondary cursor positions.\n\n<video src=\"images/1_87/multicursor-inline-completions.mp4\" autoplay loop controls muted title=\"Multi-cursor inline Completions.\"></video>\n\n### Refactor preview in multi diff editor\n\nWith Refactor preview, you can review the changes that will be applied by a code refactoring. Refactor preview changes are now shown in a multi diff editor, which facilitates seeing all changes at a glance and comparing them against the previous version.\n\n<video src=\"images/1_87/refactor-preview-multidiff-editor.mp4\" autoplay loop controls muted title=\"Multi-diff Editor opened from Refactor preview.\"></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_87.md"
+}

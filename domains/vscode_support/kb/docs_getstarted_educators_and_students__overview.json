@@ -1,0 +1,8 @@
+{
+  "id": "docs_getstarted_educators_and_students__overview",
+  "title": "educators and students",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "# {% data variables.product.prodname_vscode_shortname %} for Educators and Students\n\nWelcome to the world of using {% data variables.product.prodname_vscode %} as an educator or student! In this article, we introduce you to various tools, extension packs, and learning paths that can help you get started with coding in {% data variables.product.prodname_vscode %}. Whether you're an educator looking for resources to enhance your classroom experience, or a student eager to learn and explore coding, this guide is here to help you get started.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/getstarted/educators-and-students.md"
+}

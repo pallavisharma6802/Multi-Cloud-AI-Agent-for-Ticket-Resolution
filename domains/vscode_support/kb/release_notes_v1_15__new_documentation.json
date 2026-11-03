@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_15__new_documentation",
+  "title": "v1_15 / New documentation",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## New documentation\n\nWe update the [https://code.visualstudio.com](https://code.visualstudio.com) website at a different cadence than the product release, so you might have missed some of the recent additions.\n\n### Tutorials\n\nWe've created tutorials for [React](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial), [Angular](https://code.visualstudio.com/docs/nodejs/angular-tutorial), and [Node.js Deployment to Azure](https://code.visualstudio.com/docs/nodejs/nodejs-deployment). These tutorials walk you through creating sample projects and using VS Code for smart code editing and debugging.\n\n![nodejs tutorials](images/1_15/react-tutorial.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_15.md"
+}

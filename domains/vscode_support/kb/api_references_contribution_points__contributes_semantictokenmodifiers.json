@@ -1,0 +1,8 @@
+{
+  "id": "api_references_contribution_points__contributes_semantictokenmodifiers",
+  "title": "contribution points / contributes.semanticTokenModifiers",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## contributes.semanticTokenModifiers\n\nContributes new semantic token modifiers that can be highlighted via theme rules.\n\n```json\n{\n  \"contributes\": {\n    \"semanticTokenModifiers\": [\n      {\n        \"id\": \"native\",\n        \"description\": \"Annotates a symbol that is implemented natively\"\n      }\n    ]\n  }\n}\n```\n\nSee the [Semantic Highlighting Guide](/api/language-extensions/semantic-highlight-guide) to read more about semantic highlighting.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/contribution-points.md"
+}

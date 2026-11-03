@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_config_clang_mac__explore_the_debugger",
+  "title": "config clang mac / Explore the debugger",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Explore the debugger\n\nBefore you start stepping through the code, let's take a moment to notice several changes in the user interface:\n\n- The Integrated Terminal appears at the bottom of the source code editor. In the **Debug Console** tab, you see output that indicates the debugger is up and running.\n- The editor highlights the line where you set a breakpoint before starting the debugger:\n\n   ![Initial breakpoint](images/playbutton/breakpoint-debug.png)\n\n- The **Run and Debug** view in the Activity Bar shows debugging information.\n\n- At the top of the code editor, a debugging control panel appears. You can move this around the screen by grabbing the dots on the left side.\n\n    ![Debugging controls](images/cpp/debug-controls.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/config-clang-mac.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_refactoring__next_steps",
+  "title": "refactoring / Next steps",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Next steps\n\n* [Intro Video - Code Editing](/docs/introvideos/codeediting.md) - Watch an introductory video on code editing features.\n* [Code Navigation](/docs/editing/editingevolved) - {% data variables.product.prodname_vscode_shortname %} lets you move quickly through your source code.\n* [Debugging](/docs/debugtest/debugging.md) - Learn about debugging with {% data variables.product.prodname_vscode_shortname %}.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/refactoring.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_83__language_server_protocol",
+  "title": "v1_83 / Language Server Protocol",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Language Server Protocol\n\nNew versions of the [Language Server Protocol](https://microsoft.github.io/language-server-protocol) npm packages have been released (protocol@3.17.5, client@9.0.1 and server@9.0.1).\n\n Highlights of the release are:\n\n* Added proposed inline completion request.\n* Added proposed formatting ranges request.\n* Added proposed refresh request for folding ranges. This changed the shape of the folding range feature since the API needs to expose the event emitter and is a breaking change. To get to the provider, you now need to use the following code:\n\n  ```ts\n  client.getFeature(lsclient.FoldingRangeRequest.method).getProvider(document)?.provider;\n  ```\n\n* Various [bug fixes](https://github.com/microsoft/vscode-languageserver-node/milestone/46?closed=1).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_83.md"
+}

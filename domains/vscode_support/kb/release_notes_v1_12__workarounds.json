@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_12__workarounds",
+  "title": "v1_12 / Workarounds",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Workarounds\n\n### macOS flickering\n\nSome users are seeing VS Code flicker when running on high DPI external monitors [#25934](https://github.com/microsoft/vscode/issues/25934). The workaround is to set: `\"editor.disableTranslate3d\": true` in user settings (this produces a warning, but that is fine as VS Code still accepts the setting).\n\n### macOS blurry icons\n\nThis issue appears if certain environment variables are set when VS Code launches [#24820](https://github.com/microsoft/vscode/issues/24820). The workaround is to either launch VS Code from the macOS Dock or clear the `LC_ALL` environment variable (`export LC_ALL=`) before launching from the terminal. The [Insiders](https://code.visualstudio.com/insiders) build applies this workaround and clears `LC_ALL`.\n\n<!-- In-product release notes styles.  Do not modify without also modifying regex in gulpfile.common.js -->\n<a id=\"scroll-to-top\" role=\"button\" aria-label=\"scroll to top\" href=\"#\"><span class=\"icon\"></span></a>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"css/inproduct_releasenotes.css\"/>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_12.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_notebooks_web__continue_working_on_codespaces",
+  "title": "notebooks web / Continue working on Codespaces",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Continue working on Codespaces\n\nAs with {% data variables.product.prodname_vscode_shortname %} Desktop, you can easily continue your work from {% data variables.product.prodname_vscode_shortname %} for the Web ([https://vscode.dev](https://vscode.dev) or [https://github.dev](https://github.dev)) on Codespaces. When you choose to **Continue Working On** in a new codespace, your uncommitted changes will travel with you. To do so:\n\n1. Open the Command Palette (`kb(workbench.action.showCommands)`) and select **Continue Working On...**.\n2. Select **Create New Codespace**.\n\n   ![Continue working on](images/notebooks-web/continue-working-on-codespaces.png)\n\n3. Follow the prompts to store your working changes in the cloud and to sign into Codespaces.\n4. Select the instance type for your codespace (number of cores, RAM, and storage).\n\nYou can also manually commit your changes and create a codespace through the **Remote Explorer**:\n\n1. Sign into Codespaces by opening the Command Palette (`kb(workbench.action.showCommands)`) and selecting **Codespaces: Sign in**.\n2. Navigate to the **Remote Explorer** view from the Activity bar.\n\n    ![Remote explorer tab](images/notebooks-web/remote-explorer-tab.png)\n\nFrom the **Remote Explorer** view, you can either connect to an existing codespace or create a new one. This will open up a new window for you to continue working on your project on Codespaces.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/notebooks-web.md"
+}

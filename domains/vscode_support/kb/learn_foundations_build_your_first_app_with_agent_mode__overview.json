@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundations_build_your_first_app_with_agent_mode__overview",
+  "title": "build your first app with agent mode",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "# Build your first app with agent mode\n\n[![Watch Video for building your first app with agent mode on YouTube (opens in new tab).](images/build-your-first-app-with-agent-mode/youtube-hmfldW7dmgw.jpg)](https://www.youtube.com/watch?v=hmfldW7dmgw)\n\nThis guide is a capstone walkthrough that ties together everything covered in the series. You will build a URL shortener from scratch using agent-first development, FastAPI for the API, Python `sqlite3` for the database, a simple HTML frontend, and the base62 encoder from earlier in the series.\n\nYou will see the model picker, the plan agent, Autopilot, the files changed view, session forking, and the Agent Debug Logs all in action together.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/build-your-first-app-with-agent-mode.md"
+}

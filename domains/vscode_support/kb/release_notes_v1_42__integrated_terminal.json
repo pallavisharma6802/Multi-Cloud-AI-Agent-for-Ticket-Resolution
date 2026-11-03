@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_42__integrated_terminal",
+  "title": "v1_42 / Integrated Terminal",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Integrated Terminal\n\n### Scrolling sensitivity\n\nThe terminal's scrolling sensitivity can now be configured independent of the editor using the new settings:\n\n* `terminal.integrated.mouseWheelScrollSensitivity` - Mouse wheel scrolling multiplier (default is 1).\n* `terminal.integrated.fastScrollSensitivity` - Fast scroll multiplier when `kbstyle(Alt)` is pressed (default is 5).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_42.md"
+}

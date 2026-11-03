@@ -1,0 +1,8 @@
+{
+  "id": "learn_customizations_6_prompt_files__why_prompt_files_matter",
+  "title": "6 prompt files / Why prompt files matter",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Why prompt files matter\n\nWithout prompt files, every interaction looks the same:\n\n- You restate the task\n- You restate the context\n- You restate how you want it done\n\nThis leads to:\n\n- repetitive work\n- inconsistent outputs\n- slower workflows\n\nPrompt files solve this by letting you define instructions once and reuse them whenever needed.\n\nInstead of prompting better, you\u2019re building a system that works for you.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/6-prompt-files.md"
+}

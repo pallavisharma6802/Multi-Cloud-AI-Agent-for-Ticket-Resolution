@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v0_3_0__file_encoding",
+  "title": "v0_3_0 / File Encoding",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## File Encoding\nSet the file encoding globally or per workspace by using the **files.encoding** setting in **User Settings** or **Workspace Settings**.\n\n![files.encoding setting](images/0_3_0/FilesEncodingSetting.png)\n\nYou can view the file encoding in the status bar.\n\n![Encoding in status bar](images/0_3_0/FileEncoding.png)\n\nClick on the encoding in the status bar to reopen or save the active file with a different encoding.\n\n![Reopen or save with a different encoding](images/0_3_0/EncodingClicked.png)\n\nThen choose an encoding.\n\n![Select an encoding](images/0_3_0/EncodingSelection.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_3_0.md"
+}

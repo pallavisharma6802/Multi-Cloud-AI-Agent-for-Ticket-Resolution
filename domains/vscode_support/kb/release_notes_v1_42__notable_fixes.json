@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_42__notable_fixes",
+  "title": "v1_42 / Notable fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable fixes\n\n* [12058](https://github.com/microsoft/vscode/issues/12058): Save UI state periodically to prevent loss on shutdown\n* [79205](https://github.com/microsoft/vscode/issues/79205): Explorer tree does not show correct content when connected to case sensitive file system on a case insensitive platform\n* [83543](https://github.com/microsoft/vscode/issues/83543): Debug program location only shown for active session\n* [85057](https://github.com/microsoft/vscode/issues/85057): Move dialog details to description row in custom dialog\n* [86445](https://github.com/microsoft/vscode/issues/86445): Unable to delete multiple Watch debug variables simultaneously via hotkey\n* [88240](https://github.com/microsoft/vscode/issues/88240): Slow to create many Watch dropdown expressions\n* [89057](https://github.com/microsoft/vscode/issues/89057): Let read-only editors show problems\n* [89405](https://github.com/microsoft/vscode/issues/89405): Text files: do not report dirty for readonly models",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_42.md"
+}

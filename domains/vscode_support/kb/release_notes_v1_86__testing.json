@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_86__testing",
+  "title": "v1_86 / Testing",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Testing\n\n### More ways to run tests\n\nHolding `kbstyle(Alt)` while clicking on a test decoration, now runs that test in debug mode, when available.\n\nThere are now context menu actions in the Explorer view, which can be used to run all tests declared in a file or folder.\n\n### Finalized `TestRunProfile.isDefault/onDidChangeDefault` APIs for extension authors\n\nPreviously, `TestRunProfile.isDefault` only controlled the initial default state of a test run profile, and it was never changed or read after that point.\n\nIn this release, users changing their selected profiles will be reflected in the `TestRunProfile.isDefault` property and fire a corresponding `TestRunProfile.onDidChangeDefault` event. Likewise, when extensions change `isDefault`, this will cause the selected profiles in the UI to update.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_86.md"
+}

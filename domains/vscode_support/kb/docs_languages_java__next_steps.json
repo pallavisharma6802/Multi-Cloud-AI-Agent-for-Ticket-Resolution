@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_java__next_steps",
+  "title": "java / Next steps",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Next steps\n\nLearn more about Java in {% data variables.product.prodname_vscode_shortname %}:\n\n* [Getting Started with Java](/docs/java/java-tutorial.md)\n* [Code Editing and Navigation](/docs/java/java-editing.md)\n* [Java Debugging](/docs/java/java-debugging.md)\n* [Java Testing](/docs/java/java-testing.md)\n* [Java Project Management](/docs/java/java-project.md)\n* [Spring Boot with {% data variables.product.prodname_vscode_shortname %}](/docs/java/java-spring-boot.md)\n* [Application Servers](/docs/java/java-tomcat-jetty.md)\n* [Azure with {% data variables.product.prodname_vscode_shortname %}](/docs/java/java-on-azure.md)\n\nRead on to find out more about {% data variables.product.prodname_vscode %}:\n\n* [Basic Editing](/docs/editing/codebasics.md) - Learn about the powerful {% data variables.product.prodname_vscode_shortname %} editor.\n* [Code Navigation](/docs/editing/editingevolved.md) - Move quickly through your source code.\n* [Tasks](/docs/debugtest/tasks.md) - use tasks to build your project and more\n* [Debugging](/docs/debugtest/debugging.md) - find out how to use the debugger with your project",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/java.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_intellisense__common_questions",
+  "title": "intellisense / Common questions",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Common questions\n\n### Why am I not getting any suggestions?\n\nThis can be caused by a variety of reasons. First, try restarting {% data variables.product.prodname_vscode_shortname %}. If the problem persists, consult the language extension's documentation. For JavaScript-specific troubleshooting, please see the [JavaScript language topic](/docs/languages/javascript.md#intellisense).\n\n### Why am I not seeing method and variable suggestions?\n\n![image of IntelliSense showing no useful suggestions](images/intellisense/missing_typings.png)\n\nThis issue is caused by missing type declaration (typings) files in JavaScript. Most common JavaScript libraries ship with declaration files or have type declaration files available.\n\nMake sure to install the corresponding npm or yarn package for the library you are using. Learn more about IntelliSense in the [Working with JavaScript](/docs/nodejs/working-with-javascript.md#intellisense) article. For other languages, please consult the extension's documentation.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/intellisense.md"
+}

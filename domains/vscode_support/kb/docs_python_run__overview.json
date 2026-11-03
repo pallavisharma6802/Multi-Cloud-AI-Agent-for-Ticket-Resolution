@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_run__overview",
+  "title": "run",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Running Python code in {% data variables.product.prodname_vscode %}\n\nWhether you are experimenting with smaller lines of Python code in the REPL or ready to run a Python script, the Python extension offers multiple ways to run your code.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/run.md"
+}

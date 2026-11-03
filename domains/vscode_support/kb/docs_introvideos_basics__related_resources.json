@@ -1,0 +1,8 @@
+{
+  "id": "docs_introvideos_basics__related_resources",
+  "title": "basics / Related resources",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Related resources\n\n* [User Interface](/docs/editing/getting-started/userinterface.md) - View the documentation for {% data variables.product.prodname_vscode_shortname %}.\n* [Setup Overview](/docs/getstarted/overview.md) - Documentation for getting up and running with {% data variables.product.prodname_vscode_shortname %}, including platform specific setup.\n* [IntelliSense](/docs/editing/intellisense.md) -{% data variables.product.prodname_vscode_shortname %} brings smart code completions as you type.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/introvideos/basics.md"
+}

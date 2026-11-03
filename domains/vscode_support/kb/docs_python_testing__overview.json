@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_testing__overview",
+  "title": "testing",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Python testing in {% data variables.product.prodname_vscode %}\n\nThe [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) builds on the built-in [testing features in {% data variables.product.prodname_vscode_shortname %}](/docs/debugtest/testing.md) and provides test discovery, test coverage, and running and debugging tests for Python's built-in [unittest](https://docs.python.org/3/library/unittest.html) framework and [pytest](https://docs.pytest.org/).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/testing.md"
+}

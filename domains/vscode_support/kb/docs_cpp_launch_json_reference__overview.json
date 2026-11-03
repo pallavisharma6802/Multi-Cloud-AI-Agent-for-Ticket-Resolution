@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_launch_json_reference__overview",
+  "title": "launch json reference",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Configure C/C++ debugging\n\nA `launch.json` file is used to configure the [debugger](/docs/debugtest/debugging.md) in {% data variables.product.prodname_vscode %}.\n\n{% data variables.product.prodname_vscode %} generates a `launch.json` (under a `.vscode` folder in your project) with almost all of the required information. To get started with debugging you need to fill in the `program` field with the path to the executable you plan to debug. This must be specified for both the launch and attach (if you plan to attach to a running instance at any point) configurations.\n\nThe generated file contains two sections, one that configures debugging for launch and a second that configures debugging for attach.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/launch-json-reference.md"
+}

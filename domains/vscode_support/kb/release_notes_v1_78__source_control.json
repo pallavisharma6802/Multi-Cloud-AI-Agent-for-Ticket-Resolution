@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_78__source_control",
+  "title": "v1_78 / Source Control",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Source Control\n\n### Quick Fixes in the Source Control input\n\nCode Actions and Quick Fixes are now supported in the Source Control message box:\n\n<video src=\"images/1_78/scm-quick-fix.mp4\" autoplay loop controls muted title=\"Fixing a spelling error in the Source Control quick input\"></video>\n\nThe [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) extension, for example, adds spelling fixes to the Source Control input. Extensions can contribute additional fixes and Code Actions.\n\n### GitHub repository rulesets\n\nVS Code already lets you define branch protection using the `git.branchProtection` setting. This milestone we added a new experimental feature that uses the recently announced [GitHub repository rulesets](https://docs.github.com/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets) to determine whether a branch is protected. If you are using GitHub repository rulesets, you can enable this feature using the `github.branchProtection` setting.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_78.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_agent_customization_prompt_files__use_a_prompt_file_in_chat",
+  "title": "prompt files / Use a prompt file in chat",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Use a prompt file in chat\n\nSelect **Local** in the {% data variables.copilot.chat_view %} before running the prompt. The following options run prompt files in Local sessions:\n\n* In the {% data variables.copilot.chat_view %}, type `/` followed by the prompt name in the chat input field. [Agent skills](/docs/agent-customization/agent-skills.md) also appear as slash commands alongside prompt files.\n\n    You can add extra information in the chat input field. For example, `/review-api-security src/api` identifies the API folder to review.\n\n* Run the **Chat: Run Prompt** command from the Command Palette (`kb(workbench.action.showCommands)`) and select a prompt file from the Quick Pick.\n\n* Open the prompt file in the editor, and press the play button in the editor title area. You can choose to run the prompt in the current chat session or open a new chat session.\n\n    This option is useful for quickly testing and iterating on your prompt files.\n\n> [!TIP]\n> Use the `setting(chat.promptFilesRecommendations)` setting to show prompts as recommended actions when starting a new chat session.\n>\n> ![Screenshot showing a \"explain\" prompt file recommendation in the {% data variables.copilot.chat_view %}.](images/customization/prompt-file-recommendations.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/prompt-files.md"
+}

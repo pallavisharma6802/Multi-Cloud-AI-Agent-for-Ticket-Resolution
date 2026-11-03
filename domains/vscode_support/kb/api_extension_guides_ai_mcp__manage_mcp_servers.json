@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_ai_mcp__manage_mcp_servers",
+  "title": "mcp / Manage MCP servers",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Manage MCP servers\n\nYou can manage the list of installed MCP servers from the Extension view (`kb(workbench.view.extensions)`) in VS Code.\n\n![Screenshot showing the MCP servers in the Extensions view.](../images/ai/mcp/extensions-view-mcp-servers.png)\n\nRight-click on an MCP server or select the gear icon to perform different management actions on the server. Alternatively, run the **MCP: List Servers** command from the Command Palette to view the list of configured MCP servers. You can then select a server and perform actions on it.\n\n> [!TIP]\n> When you open the `.vscode/mcp.json` file, VS Code shows commands in the editor to start, stop, or restart a server directly from the editor.\n>\n> ![MCP server configuration with lenses to manage server.](../images/ai/mcp/mcp-server-config-lenses.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/mcp.md"
+}

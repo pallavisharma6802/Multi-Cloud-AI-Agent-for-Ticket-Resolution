@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_77__preview_features",
+  "title": "v1_77 / Preview features",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Preview features\n\n### Notebook search support for outputs\n\nLast iteration, we introduced global search for formatted notebook content in open notebooks, but only for cell and Markdown inputs. This iteration, we have added support for searching notebook outputs. When you have a notebook open, there is a toggle that allows you to customize where you would like to search in a notebook. Enable `search.experimental.notebookSearch` to try this out!\n\n<video src=\"images/1_77/notebook-search.mp4\" placeholder=\"images/1_77/notebook-search.mp4\" autoplay loop controls muted title=\"Notebook rich content search demo\">\n    Sorry, your browser doesn't support HTML 5 video.\n</video>\n\n### Remote connection picker on the Welcome page\n\nThe Welcome page now supports an experimental remote connection picker **Connect to..** in the start list to help you get started with remote connections (SSH, Remote Tunnels, GitHub Codespaces, etc.). This feature is disabled by default and can be enabled by setting `workbench.remote.experimental.showStartListEntry` to `true`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_77.md"
+}

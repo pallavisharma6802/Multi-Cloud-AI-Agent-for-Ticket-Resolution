@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_agent_troubleshooting_chat_debug_view__choose_a_diagnostic_tool",
+  "title": "chat debug view / Choose a diagnostic tool",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Choose a diagnostic tool\n\n{% data variables.product.prodname_vscode_shortname %} provides complementary tools for different questions:\n\n| Question | Tool |\n|----------|------|\n| What happened, and in what order? | Use the [Logs view](#logs-view) in the Agent Debug Logs panel. |\n| How long did the session take, how many tokens did it use, and were there errors? | Use the [Summary view](#summary-view). |\n| How did agents and subagents interact? | Use the [Agent flow chart view](#agent-flow-chart-view). |\n| What prompt, context, and tools were sent to the model? | Use the [Chat Debug view](#chat-debug-view). |\n| Did changes between requests reduce reported cache reuse? | Use the [Cache Explorer](/docs/agents/agent-troubleshooting/cache-explorer.md). |\n| Can the AI summarize the captured events for me? | [Attach debug events to chat or use `/troubleshoot`](#analyze-debug-events-with-chat). |\n\nFor account, connectivity, or feature-availability problems, start with [Troubleshoot AI in {% data variables.product.prodname_vscode_shortname %}](/docs/agents/agent-troubleshooting/troubleshooting.md) instead.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/agent-troubleshooting/chat-debug-view.md"
+}

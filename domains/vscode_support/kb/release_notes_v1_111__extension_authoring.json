@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_111__extension_authoring",
+  "title": "v1_111 / Extension authoring",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Extension authoring\n\n### Basic IntelliSense for localized strings in extension package.json files\n\nVS Code supports [localizing strings in an extension's `package.json`](https://github.com/microsoft/vscode-l10n?tab=readme-ov-file#packagenlsjson). This iteration, we added a few basic IntelliSense features that make working with these localized strings easier.\n\n* `Go to Definition`: Jump to or peek at the definition of a localized string in the `package.nls.json` file.\n\n    ![Peeking at the definition of a localized strings](images/1_111/nls-string-def.png)\n\n* `Find all References`: See all the places a localized string is referenced in either the `package.json` or `package.nls.json` file.\n\n    ![Finding references to a localized string](images/1_111/nls-string-refs.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_111.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_settings_sync__resolve_conflicts",
+  "title": "settings sync / Resolve conflicts",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Resolve conflicts\n\nConflicts can occur when you first turn on {% data variables.product.prodname_settings_sync %} on a device or when you change data while a device is offline. Synchronization pauses until you resolve the conflicts.\n\nThe available actions depend on whether you are turning on sync or resolving a later conflict:\n\n* **Accept Local** or **Replace Remote** uses your local data and overwrites the data in the cloud.\n* **Accept Remote** or **Replace Local** uses the data in the cloud and overwrites your local data.\n* **Show Conflicts** opens a diff editor where you can compare the local and remote data. Edit the merge result, and then select **Complete Merge**.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/settings-sync.md"
+}

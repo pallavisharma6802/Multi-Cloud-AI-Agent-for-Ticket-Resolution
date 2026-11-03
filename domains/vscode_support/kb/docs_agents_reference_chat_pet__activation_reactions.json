@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_chat_pet__activation_reactions",
+  "title": "chat pet / Activation reactions",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Activation reactions\n\nSelect the pet while it is resting, or focus it and press `kbstyle(Enter)` or `kbstyle(Space)`, to trigger one of these reactions at random. The pet doesn't immediately repeat its previous reaction.\n\n| Reaction | Behavior | Preview |\n|----------|----------|---------|\n| Button press | Presses its red button. | ![Screenshot showing the Stable and Insiders pets pressing their red buttons.](../images/chat-pet/click-button-v2.png) |\n| Heart | Reacts with hearts. | ![Screenshot showing the Stable and Insiders pets reacting with hearts.](../images/chat-pet/click-love.png) |\n| Cool | Puts on sunglasses. | ![Screenshot showing the Stable and Insiders pets putting on sunglasses.](../images/chat-pet/click-cool.png) |\n| VS Code | Lies on its side and yaps. | ![Screenshot showing the Stable and Insiders pets lying on their sides and yapping.](../images/chat-pet/click-yap-static.png) |\n| Sing | Sings a musical note. | ![Screenshot showing the Stable and Insiders pets singing a musical note.](../images/chat-pet/click-sing-v2.png) |\n| Speechless | Becomes speechless. | ![Screenshot showing the Stable and Insiders pets becoming speechless.](../images/chat-pet/click-speechless.png) |\n| Worry | Looks worried. | ![Screenshot showing the Stable and Insiders pets looking worried.](../images/chat-pet/click-worry.png) |",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/chat-pet.md"
+}

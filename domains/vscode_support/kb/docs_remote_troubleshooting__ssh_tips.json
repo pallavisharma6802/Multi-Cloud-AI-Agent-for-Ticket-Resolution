@@ -1,0 +1,8 @@
+{
+  "id": "docs_remote_troubleshooting__ssh_tips",
+  "title": "troubleshooting / SSH tips",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## SSH tips\n\nSSH is powerful and flexible, but this also adds some setup complexity. This section includes some tips and tricks for getting the Remote - SSH extension up and running in different environments.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/troubleshooting.md"
+}

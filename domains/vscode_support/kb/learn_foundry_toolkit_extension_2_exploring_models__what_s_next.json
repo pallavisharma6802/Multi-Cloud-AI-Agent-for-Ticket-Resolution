@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_2_exploring_models__what_s_next",
+  "title": "2 exploring models / What's Next",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## What's Next\n\nYou are now ready to move from model selection into agent development. In the next chapter, we will use this model-evaluation foundation to build agents that ask better questions, use tools effectively, and produce outputs that are easier to evaluate and ship.\n\nYou now have signal, not vibes, driving the model decision.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/2-exploring-models.md"
+}

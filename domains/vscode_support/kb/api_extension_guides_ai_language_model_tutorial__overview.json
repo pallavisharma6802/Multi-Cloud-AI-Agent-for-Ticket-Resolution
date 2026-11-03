@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_ai_language_model_tutorial__overview",
+  "title": "language model tutorial",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "# Tutorial: Generate AI-powered code annotations by using the Language Model API\n\nIn this tutorial, You'll learn how to create a VS Code extension to build an AI-powered Code Tutor. You use the Language Model (LM) API to generate suggestions to improve your code and take advantage of the VS Code extension APIs to integrate it seamlessly in the editor as inline annotations that the user can hover over for more information. After you complete this tutorial, you will know how to implement custom AI features in VS Code.\n\n![VS Code displaying custom annotations from GitHub Copilot as annotations](../images/ai/lm-api/code-tutor-annotations-gif.gif)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/language-model-tutorial.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "learn_agents_1_using_tools_with_agents__pick_a_permission_level",
+  "title": "1 using tools with agents / Pick a permission level",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Pick a permission level\n\nNext, decide how much review you want before tools run. The permissions picker controls how much autonomy the agent has during a session.\n\n* **Default Approvals** asks before sensitive actions.\n* **Bypass Approvals** auto-approves tool calls.\n* **Autopilot** (Preview) auto-approves tool calls and continues working until the task is done.\n\nUse the mode that matches the risk of the task:\n\n* Use **Default Approvals** while exploring unfamiliar code or when the agent can run commands you want to review.\n* Use **Bypass Approvals** for routine workflows in a trusted workspace after you know which tools will run.\n* Use **Autopilot** for contained tasks where the agent can keep iterating until it reaches a result you can review.\n\nYou can keep your preferred mode across sessions with `setting(chat.permissions.default)`. Autopilot is available when `setting(chat.autopilot.enabled)` is on.\n\n> [!CAUTION]\n> Higher autonomy levels reduce the amount of review you do before tools run. Use them with care, especially when the agent can edit files or run terminal commands.\n\n![Screenshot of approval options.](../images/agents/chat-approval-options.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/1-using-tools-with-agents.md"
+}

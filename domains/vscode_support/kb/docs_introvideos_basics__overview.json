@@ -1,0 +1,8 @@
+{
+  "id": "docs_introvideos_basics__overview",
+  "title": "basics",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "# Getting started with {% data variables.product.prodname_vscode %}\n\nIn this tutorial, we walk you through using {% data variables.product.prodname_vscode %} powered with AI features.\n\n[![Watch Getting Started with {% data variables.product.prodname_vscode %} on YouTube (opens in new tab).](images/basics/youtube-f8_uF_IDV50.jpg)](https://www.youtube.com/watch?v=f8_uF_IDV50)\n\nHere's the next video we recommend: [Code Editing in {% data variables.product.prodname_vscode %}](/docs/introvideos/codeediting.md)\n\nExplore more in the [{% data variables.product.prodname_vscode_shortname %} Tutorial](/docs/editing/getting-started/editor-tutorial.md) and [GitHub Copilot's Quickstart](/docs/agents/quickstart.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/introvideos/basics.md"
+}

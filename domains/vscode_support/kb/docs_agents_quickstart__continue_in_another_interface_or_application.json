@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_quickstart__continue_in_another_interface_or_application",
+  "title": "quickstart / Continue in another interface or application",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Continue in another interface or application\n\nThe {% data variables.copilot.agents_window %} and {% data variables.copilot.chat_view %} share your {% data variables.product.prodname_copilot_short %} session, so you can switch between them without losing the conversation.\n\n* From the {% data variables.copilot.agents_window %}, select **Open in Editor** in the title bar. {% data variables.product.prodname_vscode_shortname %} opens the project in an editor window with the session available in the {% data variables.copilot.chat_view %}.\n\n* Select **Open in Agents** in the application title bar, then select your existing {% data variables.product.prodname_copilot_short %} session from the sessions list.\n\nFor other applications, terminal options, or access from another device, see [Continue an existing session](/docs/agents/run/sessions/manage-sessions.md#continue-an-existing-session). That guide covers the supported routes and their requirements.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/quickstart.md"
+}

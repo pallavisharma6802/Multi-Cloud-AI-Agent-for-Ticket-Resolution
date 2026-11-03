@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundations_build_your_first_app_with_agent_mode__choosing_the_right_model",
+  "title": "build your first app with agent mode / Choosing the right model",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Choosing the right model\n\nFor a project spanning multiple files - database schema, API routing, frontend, integration between them - set thinking effort to High. The model will reason more deeply about how the pieces fit together before writing code.\n\nOpen a fresh chat session, click the model picker, and set thinking effort to High.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/build-your-first-app-with-agent-mode.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_32__new_documentation",
+  "title": "v1_32 / New documentation",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## New documentation\n\n### Bundling extensions with webpack\n\nFor extension authors, there is a new [Bundling Extensions](https://code.visualstudio.com/api/working-with-extensions/bundling-extension) topic on bundling extensions files with [webpack](https://webpack.js.org/) to reduce extension load time.\n\n![webpack logo](images/1_32/webpack-logo.png)\n\n### Working with JavaScript\n\nA new [Working with JavaScript](https://code.visualstudio.com/docs/nodejs/working-with-javascript) article describes advanced JavaScript features supported by VS Code. You'll learn the benefits of adding [JavaScript project files](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_javascript-projects-jsconfigjson) (jsconfig.json) to your code as well as how to enable [type checking](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_type-checking-javascript).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_32.md"
+}

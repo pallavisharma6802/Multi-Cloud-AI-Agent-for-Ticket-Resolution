@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_may_2016__debugging",
+  "title": "May_2016 / Debugging",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debugging\n\n### Control opening the Debug Console\n\nTo provide greater control over how the internal Debug Console is revealed VS Code, we are introducing the `internalConsoleOptions` setting in `launch.json` (see [#6159](https://github.com/microsoft/vscode/issues/6159)). This is especially useful if you are using an external terminal while debugging and you want to keep VS Code focused on your code. The possible values are:\n\n* `neverOpen` - VS Code will *never* open the debug console\n* `openOnFirstSessionStart` - VS Code will open the debug console on the *first* debug session\n* `openOnSessionStart` - VS Code will open the debug console on *every* debug session\n\n### Node.js Improved Stepping Performance\n\nWe want VS Code to remain lightweight and fast so to improve the stepping experience for programs with a large number of local variables per scope, we've made the following adjustments for Node.js debugging:\n\n* If a scope has **more than 100 local variables**, VS Code no longer automatically auto expands that scope\n* After you expand the scope manually, only the **first 100** local variables are shown\n\nThe scope header will reflect that only the first 100 local variables are being displayed:\n\n![100 Local Variables](images/May_2016/many-locals.png)\n\nTo track a variable that is not within the first 100 you must add it as a Watch expression or evaluate it in the Debug Console.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/May_2016.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_copilot_tools__prerequisites",
+  "title": "copilot tools / Prerequisites",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Prerequisites\n\n* The current public [Foundry Toolkit extension and its prerequisites](/docs/intelligentapps/overview.md#install-and-setup).\n* Access to [{% data variables.product.prodname_copilot %} Chat in {% data variables.product.prodname_vscode_shortname %}](/docs/setup/copilot.md).\n* A folder open for the agent project. Use a separate project folder rather than an unrelated application's workspace.\n* Access to a [selected Foundry project](https://learn.microsoft.com/azure/foundry/how-to/develop/set-up-foundry-project-visual-studio-code). You can choose a model during the walkthrough, but need a compatible [model deployment](/docs/intelligentapps/models.md#deploy-a-model-to-microsoft-foundry) before testing inference.\n* Python and the dependencies required by the generated project. Follow its setup instructions and review the [hosted-agent prerequisites](/docs/intelligentapps/hosted-agents.md#prerequisites) before running or deploying it.\n\nRemote model requests can consume quota or incur charges even when the agent runs locally. Use non-sensitive test inputs and keep credentials out of prompts and committed files.\n\n<a name=\"using-copilot-tools-in-foundry-toolkit\"></a>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/copilot-tools.md"
+}

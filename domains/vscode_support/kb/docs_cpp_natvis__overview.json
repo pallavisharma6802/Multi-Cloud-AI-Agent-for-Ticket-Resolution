@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_natvis__overview",
+  "title": "natvis",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Natvis: Custom views for native objects\n\nThe [Natvis](https://learn.microsoft.com/visualstudio/debugger/create-custom-views-of-native-objects) framework allows developers to write custom schemas to help visualize native objects.\n\nFor gdb/lldb debugging (`\"type\": \"cppdbg\"`), a subset of the Natvis framework has been ported to the {% data variables.product.prodname_vscode %} C/C++ extension and the code resides in the [MIEngine](https://github.com/microsoft/MIEngine) shared component. If additional features that are not implemented are requested, please [file an issue](https://github.com/microsoft/MIEngine/issues) on the MIEngine GitHub page with details of what is missing.\n\nFor Microsoft C++ debugging (`\"type\": \"cppvsdbg\"`), the debugger contains the full implementation of the Natvis framework in Visual Studio.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/natvis.md"
+}

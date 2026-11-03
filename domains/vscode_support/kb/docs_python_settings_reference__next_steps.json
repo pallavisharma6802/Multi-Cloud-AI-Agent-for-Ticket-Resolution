@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_settings_reference__next_steps",
+  "title": "settings reference / Next steps",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Next steps\n\n- [Python environments](/docs/python/environments.md) - Control which Python interpreter is used for editing and debugging.\n- [Editing code](/docs/python/editing.md) - Learn about autocomplete, IntelliSense, formatting, and refactoring for Python.\n- [Linting](/docs/python/linting.md) - Enable, configure, and apply a variety of Python linters.\n- [Debugging](/docs/python/debugging.md) - Learn to debug Python both locally and remotely.\n- [Testing](/docs/python/testing.md) - Configure test environments and discover, run, and debug tests.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/settings-reference.md"
+}

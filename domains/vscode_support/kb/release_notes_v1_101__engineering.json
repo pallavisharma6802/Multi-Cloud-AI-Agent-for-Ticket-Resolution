@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_101__engineering",
+  "title": "v1_101 / Engineering",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Engineering\n\n### Electron 35 update\n\nIn this milestone, we are promoting the Electron 35 update to users on our Stable release. This update comes with Chromium 134.0.6998.205 and Node.js 22.15.1. We want to thank everyone who self-hosted on Insiders builds and provided early feedback.\n\n### Adopting ESM in a real-world extension\n\nLast milestone, we have announced support for JavaScript-modules (ESM). This enables extensions to use `import` and `export` statements, but currently only when targeting the NodeJS extension host.\n\nThis month, we have done a real-world adoption with [GitHub Issue Notebooks](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-github-issue-notebooks). It is not trivial because this extension can be run in the NodeJS extension host (which supports ESM extensions) and the web worker extension host, which currently does not support ESM extensions. This required a more complex bundler configuration and you might want to take inspiration from its [esbuild-config](https://github.com/microsoft/vscode-github-issue-notebooks/blob/main/esbuild.mjs).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_101.md"
+}

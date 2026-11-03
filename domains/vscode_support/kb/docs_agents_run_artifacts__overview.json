@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_artifacts__overview",
+  "title": "artifacts",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Use artifacts in agent sessions\n\nThe artifacts panel in {% data variables.product.prodname_vscode %} surfaces important resources, such as screenshots, plans, and documents, alongside the chat conversation. Artifacts can come from multiple sources simultaneously and are displayed in a collapsible tree control, grouped by origin.\n\n> [!NOTE]\n> The features on this page work in both the [{% data variables.copilot.chat_view %}](/docs/agents/run/chat-view.md) and the [{% data variables.copilot.agents_window %}](/docs/agents/run/agents-window.md).\n\n> [!NOTE]\n> To enable the artifacts panel, set `setting(chat.artifacts.enabled)` to `true`.\n\n<div class=\"docs-action\" data-show-in-doc=\"false\" data-show-in-sidebar=\"true\" title=\"Try artifacts in action\">\nLaunch a chat prompt that asks the agent to save a screenshot as an artifact.\n\n* [Open in {% data variables.product.prodname_vscode_shortname %}](vscode://GitHub.Copilot-Chat/chat?agent=agent%26prompt=Take%20a%20screenshot%20of%20my%20app%20and%20set%20it%20as%20an%20artifact.)\n\n</div>\n\n![Screenshot of the artifacts panel in the {% data variables.copilot.chat_view %}, showing example artifacts such as links, images, and documents.](../images/chat-artifacts/chat-artifacts-list.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/artifacts.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_python_quick_start__next_steps",
+  "title": "python quick start / Next steps",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Next steps\n\nTo learn how to build web apps with popular Python web frameworks, see the following tutorials:\n\n- [Use Django in {% data variables.product.prodname_vscode %}](/docs/python/tutorial-django.md)\n- [Use Flask in {% data variables.product.prodname_vscode %}](/docs/python/tutorial-flask.md)\n- [Use FastAPI in {% data variables.product.prodname_vscode %}](/docs/python/tutorial-fastapi.md)\n\nThere is much more to explore with Python in {% data variables.product.prodname_vscode %}:\n\n- [Python profile template](/docs/configure/profiles.md#python-profile-template) - Create a new [profile](/docs/configure/profiles) with a curated set of extensions, settings, and snippets\n- [Editing code](/docs/python/editing.md) - Learn about autocomplete, IntelliSense, formatting, and refactoring for Python.\n- [Linting](/docs/python/linting.md) - Enable, configure, and apply a variety of Python linters.\n- [Debugging](/docs/python/debugging.md) - Learn to debug Python both locally and remotely.\n- [Testing](/docs/python/testing.md) - Configure test environments and discover, run, and debug tests.\n- [Settings reference](/docs/python/settings-reference.md) - Explore the full range of Python-related settings in {% data variables.product.prodname_vscode_shortname %}.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/python-quick-start.md"
+}

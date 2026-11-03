@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_56__debug_adapter_protocol",
+  "title": "v1_56 / Debug Adapter Protocol",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debug Adapter Protocol\n\n### Exception breakpoints are better aligned with regular breakpoints\n\nThe `setExceptionBreakpoints` request can now optionally return an array of `Breakpoint`s similar to other `set*Breakpoints` requests. This allows clients to show validation error messages for individual exception breakpoints or filters. Starting with this release, VS Code shows these errors in the Breakpoints view.\n\n### Restart request can now pick up debug configuration changes\n\nThe `restart` request now takes a new optional parameter `arguments`, where clients can pass the latest version of a launch or attach configuration. With this addition, a debug adapter can restart the session with up-to-date values from the debug configuration.\n\n### Disconnect debugger and keep debuggee suspended\n\nThe `disconnect` request is used to end a debug session and to either continue execution of the debuggee or to terminate it. There is a new option to keep the debuggee in the suspended state after the debugger disconnects. This makes it possible to pick up debugging with a new session.\n\nA debug adapter implementing this feature must announce its support with the `supportSuspendDebuggee` capability. A client can use the feature by passing a new optional argument `suspendDebuggee` to the `disconnect` request.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_56.md"
+}

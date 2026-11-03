@@ -1,0 +1,8 @@
+{
+  "id": "docs_agent_customization_migrate_customizations__verify_the_migration",
+  "title": "migrate customizations / Verify the migration",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Verify the migration\n\nAfter completing the migration path for your customization:\n\n1. Start a new Copilot harness session in the repository and environment where you intend to use it.\n1. Confirm that the migrated agents, instructions, skills, MCP servers, or plugins appear in the Agent Customizations editor. This checks discovery, not whether they work.\n1. Repeat the representative task you chose before migration without restating the customization's guidance.\n1. Check actual inclusion or invocation through references, tool activity, or hook execution logs, as applicable. Compare the output, tools, and approvals with your expected result.\n1. For a replaced tool set, check for missing capabilities and preserved tool restrictions. For a replaced participant, test its workflows, unavailable-service errors, approvals, and any MCP App interactions.\n1. Check that old and migrated copies aren't both active.\n1. Review and commit workspace migrations when your team should share them. Remove remaining old files and settings only after the migrated customization works.\n\nFor remote or Dev Container sessions, perform these checks in the destination environment. User customization folders belong to the machine or container where the agent runs. Hook migrations also require the [script and live-session checks](#verify-before-retiring-the-original) below.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/migrate-customizations.md"
+}

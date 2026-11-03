@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_55__engineering",
+  "title": "v1_55 / Engineering",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Engineering\n\n### Faster Snap launch\n\nThe snap package now uses the `lzo` compression algorithm, which provides faster launch times. For more information, see [the blog post from Ubuntu about the algorithm](https://ubuntu.com//blog/snap-speed-improvements-with-new-compression-algorithm).\n\n### Progress on Electron sandbox\n\nThis milestone we continued to make the VS Code window ready for enabling Electron's [sandbox](https://www.electronjs.org/docs/tutorial/sandbox) and [context isolation](https://www.electronjs.org/docs/tutorial/context-isolation) features.\n\nSpecifically:\n\n- We were able to move some of the native module requirements we have in the renderer to other processes.\n- We were able to make more components and services available when sandbox option is enabled.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_55.md"
+}

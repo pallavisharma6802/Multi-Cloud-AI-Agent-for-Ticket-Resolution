@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_jupyter_kernel_management__existing_jupyter_server",
+  "title": "jupyter kernel management / Existing Jupyter Server",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Existing Jupyter Server\n\nThe **Existing Jupyter Server** category lists remote Jupyter servers previously connected. You can also use this option to connect to an existing Jupyter server running remotely or locally. Find the URL for your Jupyter server, for example, `http://<ip-address>:<port>/?token=<token>` and paste it in the **Enter the URL of the running Jupyter server** option to connect to the remote server and execute code against your notebook using that server.\n\n![Enter server URL](images/jupyter-kernel-management/select-enter-server-url.png)\n\nWhen you're starting your remote server, be sure to:\n\n1. Allow all origins (for example `--NotebookApp.allow_origin='*'`) to allow your servers to be accessed externally.\n2. Set the notebook to listen on all IPs (`--NotebookApp.ip='0.0.0.0'`).\n\nOnce connected, all active Jupyter sessions will appear on this list.\n\nYou can create a new session from the server's kernelspec by:\n\n1. Running the **Notebook: Select Notebook Kernel** command.\n2. Choose **Select Another Kernel**.\n3. Choose **Existing Jupyter Server**.\n4. Select your server.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/jupyter-kernel-management.md"
+}

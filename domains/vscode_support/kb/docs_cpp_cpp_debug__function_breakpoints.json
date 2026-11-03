@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_cpp_debug__function_breakpoints",
+  "title": "cpp debug / Function breakpoints",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Function breakpoints\n\nFunction breakpoints enable you to break execution at the beginning of a function instead of on a particular line of code. To set a function breakpoint, on the **Run** view right-click inside the **Breakpoints** section, then choose **Add Function Breakpoint** and enter the name of the function on which you want to break execution.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/cpp-debug.md"
+}

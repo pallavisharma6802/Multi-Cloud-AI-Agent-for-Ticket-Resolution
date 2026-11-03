@@ -1,0 +1,8 @@
+{
+  "id": "api_index__what_s_new",
+  "title": "index / What's new?",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## What's new?\n\nVS Code updates on a weekly cadence, and that applies to the Extension API as well. New features and APIs become available every week to increase the power and scope of VS Code extensions.\n\nTo stay current with the Extension API, you can review the weekly release notes, which have dedicated sections covering extension authoring and proposed APIs.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/index.md"
+}

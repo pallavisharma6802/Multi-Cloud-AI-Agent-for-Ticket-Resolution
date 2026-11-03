@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_tree_view__welcome_content",
+  "title": "tree view / Welcome content",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Welcome content\n\nIf your view can be empty, or if you want to add Welcome content to another extension's empty view, you can contribute `viewsWelcome` content. An empty view is a view that has no `TreeView.message` and an empty tree.\n\n```json\n\"contributes\": {\n  \"viewsWelcome\": [\n    {\n      \"view\": \"nodeDependencies\",\n      \"contents\": \"No node dependencies found [learn more](https://www.npmjs.com/).\\n[Add Dependency](command:nodeDependencies.addEntry)\"\n    }\n  ]\n}\n```\n\n![Welcome Content](images/tree-view/welcome-content.png)\n\nLinks are supported in Welcome content. By convention, a link on a line by itself is a button. Each Welcome content can also contain a `when` clause. For more examples, see the [built-in Git extension](https://github.com/microsoft/vscode/tree/main/extensions/git).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/tree-view.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_playground__related_resources",
+  "title": "playground / Related resources",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related resources\n\n* [Trace model and agent requests](/docs/intelligentapps/tracing.md).\n* [Agent development lifecycle](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/development-lifecycle).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/playground.md"
+}

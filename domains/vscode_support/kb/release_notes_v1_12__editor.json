@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_12__editor",
+  "title": "v1_12 / Editor",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Editor\n\n### Dynamic IntelliSense sorting\n\nThe editor now re-sorts the completions list while you type. That ensures that the completions you need are always on top and easy to select.\n\n<video src=\"images/1_12/completions-dynamic-sort.mp4\" title=\"Video showing Dynamic Sort.\" autoplay loop controls muted></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_12.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_cpp_debug__locate_source_files",
+  "title": "cpp debug / Locate source files",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Locate source files\n\nThe source file location can be changed if the source files are not located in the compilation location. This is done by simple replacement pairs added in the `sourceFileMap` section. The first match in this list will be used.\n\nFor example:\n\n```json\n\"sourceFileMap\": {\n    \"/build/gcc-4.8-fNUjSI/gcc-4.8-4.8.4/build/i686-linux-gnu/libstdc++-v3/include/i686-linux-gnu\": \"/usr/include/i686-linux-gnu/c++/4.8\",\n    \"/build/gcc-4.8-fNUjSI/gcc-4.8-4.8.4/build/i686-linux-gnu/libstdc++-v3/include\": \"/usr/include/c++/4.8\"\n}\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/cpp-debug.md"
+}

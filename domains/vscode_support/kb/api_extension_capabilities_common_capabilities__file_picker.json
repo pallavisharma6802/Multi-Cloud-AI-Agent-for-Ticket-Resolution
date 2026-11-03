@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_capabilities_common_capabilities__file_picker",
+  "title": "common capabilities / File Picker",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## File Picker\n\nExtensions can use the [`window.showOpenDialog`](/api/references/vscode-api#window.showOpenDialog) API to open the system file picker and select files or folders.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-capabilities/common-capabilities.md"
+}

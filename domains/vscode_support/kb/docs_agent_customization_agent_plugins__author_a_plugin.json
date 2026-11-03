@@ -1,0 +1,8 @@
+{
+  "id": "docs_agent_customization_agent_plugins__author_a_plugin",
+  "title": "agent plugins / Author a plugin",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Author a plugin\n\nUse the [agent plugin authoring reference](/docs/agents/reference/agent-plugin-reference.md) to create a package or inspect its configuration:\n\n* **Package structure:** [Manifest fields](/docs/agents/reference/agent-plugin-reference.md#plugin-manifest-pluginjson), [supported formats](/docs/agents/reference/agent-plugin-reference.md#plugin-formats), and [plugin environment variables](/docs/agents/reference/agent-plugin-reference.md#plugin-environment-variables).\n\n* **Automation templates:** [Package prompts and schedules](/docs/agents/reference/agent-plugin-reference.md#automations-in-plugins).\n\n* **MCP servers:** [Server configuration, paths, and interaction with other servers](/docs/agents/reference/agent-plugin-reference.md#mcp-servers-in-plugins).\n\n* **Hooks:** [Hook configuration, paths, and events](/docs/agents/reference/agent-plugin-reference.md#hooks-in-plugins).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/agent-plugins.md"
+}

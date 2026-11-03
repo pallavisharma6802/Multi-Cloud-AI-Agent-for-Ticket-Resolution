@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_61__notable_fixes",
+  "title": "v1_61 / Notable fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable fixes\n\n* [69665](https://github.com/microsoft/vscode/issues/69665): Terminal shows corrupt texture sometimes when resuming the OS from a sleep state\n* [130407](https://github.com/microsoft/vscode/issues/130407): \\[trivial\\] settings>files: exclude changing pattern as (blank) won't deletable\n* [133149](https://github.com/microsoft/vscode/issues/133149): Task terminal marked failed for info/warning-level problems.\n* [133567](https://github.com/microsoft/vscode/issues/133567): accessibility: the labels for the top-level tree nodes in find references all just read \"true\"\n* [133910](https://github.com/microsoft/vscode/issues/133910): Show an error when resolving shell environment fails or is timing out\n* [133976](https://github.com/microsoft/vscode/issues/133976): Allow to open a `.code-workspace` via protocol URL",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_61.md"
+}

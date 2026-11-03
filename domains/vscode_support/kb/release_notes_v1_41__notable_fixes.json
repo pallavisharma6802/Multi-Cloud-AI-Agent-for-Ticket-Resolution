@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_41__notable_fixes",
+  "title": "v1_41 / Notable fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable fixes\n\n* [51039](https://github.com/microsoft/vscode/issues/51039): Diff editor closes when closing left hand side editor in other tab\n* [83746](https://github.com/microsoft/vscode/issues/83746): Web: unable to drag and drop composites & views (activity bar, panel)\n* [80026](https://github.com/microsoft/vscode/issues/80026): gray attributes in launch.json are confusing, please remove them\n* [83449](https://github.com/microsoft/vscode/issues/83449): Accessibility: Ctrl+Right in accessibility mode (CursorWordAccessibilityRight) should jump to the beginning of next word, rather than the end\n* [83753](https://github.com/microsoft/vscode/issues/83753): Disabling console.debug.wordWrap strips newlines and whitespace\n* [85086](https://github.com/microsoft/vscode/issues/85086): Backreferences are not supported in global searching when `search.usePCRE2` is disabled\n* [36219](https://github.com/microsoft/vscode/issues/36219): Git: \"Stage selected ranges\" command changes encoding to UTF-8",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_41.md"
+}

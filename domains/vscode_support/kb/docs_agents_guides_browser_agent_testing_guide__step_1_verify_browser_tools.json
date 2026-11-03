@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_browser_agent_testing_guide__step_1_verify_browser_tools",
+  "title": "browser agent testing guide / Step 1: Verify browser tools",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Step 1: Verify browser tools\n\nBrowser tools are generally available by default. Verify that they are selected for the request:\n\n1. Open the {% data variables.copilot.chat_view %} (`kb(workbench.action.chat.open)`) and select **Agent** from the Agents dropdown.\n\n1. Select **Open Customizations** in the {% data variables.copilot.chat_view %} title bar > **Tools** and verify that **Integrated Browser** is selected.\n\nThe agent can now use these tools to interact with web pages. If the tools are missing, verify that `setting(workbench.browser.enableChatTools)` is turned on. An organization policy can also turn off browser tools.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/browser-agent-testing-guide.md"
+}

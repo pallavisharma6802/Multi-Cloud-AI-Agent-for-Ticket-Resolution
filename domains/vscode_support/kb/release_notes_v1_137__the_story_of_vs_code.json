@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_137__the_story_of_vs_code",
+  "title": "v1_137 / The Story of VS Code",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## The Story of VS Code\n\nDiscover the story behind VS Code, from its early beginnings to the platform millions of developers use today, and the community that helped shape it along the way.\n\n[![Graphic poster featuring the VS Code logo glowing over a dark background filled with programming code, with the title \"The Story of VS Code.\"](images/1_136/the-story-of-vs-code.png)](https://aka.ms/the-story-of-vs-code)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_137.md"
+}

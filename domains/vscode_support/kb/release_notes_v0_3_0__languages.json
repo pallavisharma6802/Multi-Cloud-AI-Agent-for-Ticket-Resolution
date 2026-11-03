@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v0_3_0__languages",
+  "title": "v0_3_0 / Languages",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Languages\n\n### Rust\n[Rust](https://www.rust-lang.org/) has been added as a supported language for colorization and bracket matching.\n\n### TypeScript\nThe TypeScript language service has been updated to TypeScript version 1.5.\n\n### JavaScript\nNew options allow you to turn off *all* semantic and syntax checks, useful if you prefer JSHint instead of the VS Code JavaScript validator.\n\n* `javascript.validate.semanticValidation=[true|false]` Use `true` to have VS Code report semantic errors (unassigned variables, etc. and *all* lint checks)\n* `javascript.validate.syntaxValidation=[true|false]` Use `false` to have VS Code report syntaX errors (missing brackets, etc.).\n\n### HTML\nHTML auto closing of tags has now been removed and replaced with smarter IntelliSense on `</`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_3_0.md"
+}

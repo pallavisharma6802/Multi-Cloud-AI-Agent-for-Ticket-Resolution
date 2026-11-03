@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_53__editor",
+  "title": "v1_53 / Editor",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Editor\n\n### New snippet variables\n\nThere are new snippet variables for inserting UUIDs, and for inserting the relative path of the current file. The sample snippet below would print:\n\n`let someId = 'foo/test.js/c13d226f-1932-40e2-9fd9-10198c219e33'`\n\n```json\n// sample snippet using UUID and RELATIVE_FILEPATH\n{\n  \"scope\": \"javascript\",\n  \"prefix\": \"newVars\",\n  \"body\": \"let someId = '${RELATIVE_FILEPATH}/${UUID}'$0\"\n}\n```\n\n### Transform to snake case\n\nThere is a new command **Transform to Snake Case** that will convert the selected text to [snake case](https://en.wikipedia.org/wiki/Snake_case) (for example, `myVariable` -> `my_variable`).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_53.md"
+}

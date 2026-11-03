@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_debugging__debug_session_inputs",
+  "title": "java debugging / Debug session inputs",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Debug session inputs\n\nThe default Debug Console in {% data variables.product.prodname_vscode_shortname %} doesn't support inputs. If your program needs inputs from a terminal, you can use the Integrated Terminal (`kb(workbench.action.terminal.toggleTerminal)`) within {% data variables.product.prodname_vscode_shortname %} or an external terminal to launch it. You can also use the user setting `java.debug.settings.console` to configure a global console for all Java debug sessions.\n\n<video src=\"images/java-debugging/launch-in-terminal.mp4\" autoplay loop muted playsinline controls title=\"Debugging a Java app that takes input via the Integrated Terminal\">\n</video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-debugging.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_reference_setupwithoutaitk__set_up_the_environment_for_model_inference",
+  "title": "SetupWithoutAITK / Set up the environment for model inference",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Set up the environment for model inference\n\nThe process is similar to [Set up the environment for model conversion](#set-up-the-environment-for-model-conversion).\n\n> [!TIP]\n> The same requirements file may also be used for conversion. You may only need to install `onnxruntime-windowsml` and `onnxruntime-genai-winml` from the file.\n\n[WCR](https://github.com/microsoft/olive-recipes/blob/main/.aitk/requirements/requirements-WCR.txt) is the up-to-date requirements file for running models on all execution providers in Foundry Toolkit.\n\n> [!NOTE]\n> For LLM models on QNN, an arm64 Python environment provides better performance. A dedicated [requirements file](https://github.com/microsoft/olive-recipes/blob/main/.aitk/requirements/requirements-QNN_LLM.txt) is available for this configuration.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/reference/SetupWithoutAITK.md"
+}

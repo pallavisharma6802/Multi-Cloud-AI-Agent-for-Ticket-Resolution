@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v0_9_0__debugging_pre_launch_task",
+  "title": "v0_9_0 / Debugging - Pre-Launch Task",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debugging - Pre-Launch Task\nIn a project's launch configurations (launch.json), you can now use the `preLaunchTask` attribute to specify a task to run before a debug session starts.\n\nFor example, with this option you could make sure that your project is built before it is launched in the debugger. If the task results in errors, an error message warns you and you can decide to either fix the errors or continue launching the debugger.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_9_0.md"
+}

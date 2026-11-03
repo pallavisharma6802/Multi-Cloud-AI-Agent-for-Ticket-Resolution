@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_5__downloads",
+  "title": "v1_5 / Downloads",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Downloads\n\n* [Windows](https://update.code.visualstudio.com/1.5.0/win32/stable)\n* [Mac](https://update.code.visualstudio.com/1.5.0/darwin/stable)\n* Linux 64-bit: [.tar.gz](https://update.code.visualstudio.com/1.5.0/linux-x64/stable)\n  [.deb](https://update.code.visualstudio.com/1.5.0/linux-deb-x64/stable)\n  [.rpm](https://update.code.visualstudio.com/1.5.0/linux-rpm-x64/stable)\n* Linux 32-bit: [.tar.gz](https://update.code.visualstudio.com/1.5.0/linux-ia32/stable)\n  [.deb](https://update.code.visualstudio.com/1.5.0/linux-deb-ia32/stable)\n  [.rpm](https://update.code.visualstudio.com/1.5.0/linux-rpm-ia32/stable)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_5.md"
+}

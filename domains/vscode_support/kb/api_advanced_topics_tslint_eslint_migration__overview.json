@@ -1,0 +1,8 @@
+{
+  "id": "api_advanced_topics_tslint_eslint_migration__overview",
+  "title": "tslint eslint migration",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "# Migrate from TSLint to ESLint\n\n[TSLint](https://palantir.github.io/tslint/) has been the recommended linter in the past but now TSLint is deprecated and [ESLint](https://eslint.org/) is taking over its duties. This article will help you migrate from TSLint to ESLint.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/advanced-topics/tslint-eslint-migration.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_debugtest_debugging__remote_debugging",
+  "title": "debugging / Remote debugging",
+  "category": "DEBUGGING",
+  "intent": "debugging",
+  "content": "## Remote debugging\n\nRemote debugging support depends on the debugger extension. Review the extension's documentation for connection requirements and supported environments.\n\nThe built-in Node.js debugger supports remote debugging. For setup details, see [Remote debugging with Node.js](/docs/nodejs/nodejs-debugging.md#remote-debugging).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/debugging.md"
+}

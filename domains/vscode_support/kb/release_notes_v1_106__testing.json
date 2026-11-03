@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_106__testing",
+  "title": "v1_106 / Testing",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Testing\n\n### Navigate uncovered lines in test coverage\n\nWhen reviewing test coverage, you can now easily navigate between uncovered lines using new navigation commands. Two commands are available in the editor toolbar when viewing coverage information:\n\n* **Go to Next Uncovered Line** - Jumps to the next line that is not covered by tests\n* **Go to Previous Uncovered Line** - Jumps to the previous line that is not covered by tests\n\nThese commands help you quickly identify coverage gaps and focus on areas that need additional test coverage, making it easier to improve the overall test quality of your codebase.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_106.md"
+}

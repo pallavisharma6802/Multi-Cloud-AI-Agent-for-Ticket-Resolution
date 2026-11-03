@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_customize_copilot_guide__step_2_review_the_generated_instructions",
+  "title": "customize copilot guide / Step 2: Review the generated instructions",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Step 2: Review the generated instructions\n\nTreat generated instructions as a starting point. Check the categories relevant to your observed problem, rather than adding every category to the file:\n\n* **Observed problem**: include only the guidance needed to improve the baseline behavior.\n* **Architecture**: describe important directories, component boundaries, and where to add different types of code.\n* **Commands**: include the correct build, test, lint, and formatting commands.\n* **Technology choices**: identify preferred frameworks, libraries, and patterns.\n* **Conventions**: capture naming, error-handling, testing, security, and documentation requirements.\n* **Definition of done**: state which validations the agent should run before completing a task.\n\nRemove information that is generic, obsolete, or duplicated elsewhere in the file. Resolve conflicting instructions and keep each rule concise.\n\nFor example, project-specific instructions might include:\n\n```markdown",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/customize-copilot-guide.md"
+}

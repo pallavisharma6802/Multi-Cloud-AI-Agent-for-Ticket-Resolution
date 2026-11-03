@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_110__debugging",
+  "title": "v1_110 / Debugging",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debugging\n\n### JavaScript Debugger\n\n#### Custom property replacements\n\nIf an object has a method defined using `Symbol.for('debug.properties')`, then those properties will be shown by default in the debugger. This allows you to provide a more comprehensible view of complex objects.\n\n![Screenshot showing custom debug properties displayed in the debugger.](images/1_110/debug-properties.png)\n\nThe original object properties are folded under a `...` list item.\n\n#### Emulate focused window and event listener breakpoints\n\nPreviously, when debugging a browser, you could set breakpoints in the **Event Listener Breakpoints** view. We have renamed this view to **Browser Options**.\n\nWe added an extra option to **Emulate a focused page**. When checked, moving your focus out of the browser window no longer causes the browser element to lose focus. This is useful for debugging elements that depend on hover or focus states.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_110.md"
+}

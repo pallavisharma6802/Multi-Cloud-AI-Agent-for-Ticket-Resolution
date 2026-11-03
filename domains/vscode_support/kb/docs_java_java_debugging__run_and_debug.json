@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_debugging__run_and_debug",
+  "title": "java debugging / Run and Debug",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Run and Debug\n\nThe debugger extension provides multiple ways to run and debug your Java application.\n\n### Run from CodeLens\n\nYou will find **Run|Debug** on the [CodeLens](/blogs/2017/02/12/code-lens-roundup.md) of your `main()` function.\n\n![CodeLens](images/java-debugging/java-codelens.png)\n\n### Run from Editor menu\n\nAnother way to start debugging is to select **Run Java** or **Debug Java** menu from the top editor title bar.\n\n![EditorMenu](images/java-debugging/run-menu.png)\n\n### Run from pressing F5\n\nPressing `kb(workbench.action.debug.start)`, the debugger will automatically find the entry point of your project and start debugging. You can also start a debugging session from the **Run and Debug** view from the side bar of {% data variables.product.prodname_vscode_shortname %}. See more at [Debugging in {% data variables.product.prodname_vscode_shortname %}](/docs/debugtest/debugging.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-debugging.md"
+}

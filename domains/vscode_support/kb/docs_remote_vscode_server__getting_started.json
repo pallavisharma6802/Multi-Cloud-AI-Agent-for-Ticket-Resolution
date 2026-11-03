@@ -1,0 +1,8 @@
+{
+  "id": "docs_remote_vscode_server__getting_started",
+  "title": "vscode server / Getting Started",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Getting Started\n\nYou can choose from two paths to enable tunneling, which are described in greater details in their respective docs content:\n\n* [Run the `tunnel` command in the `code` CLI](/docs/remote/tunnels.md#using-the-code-cli)\n* [Enable tunneling through the {% data variables.product.prodname_vscode_shortname %} UI](/docs/remote/tunnels.md#using-the-vs-code-ui)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/vscode-server.md"
+}

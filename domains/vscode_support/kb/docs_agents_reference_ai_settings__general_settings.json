@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_ai_settings__general_settings",
+  "title": "ai settings / General settings",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## General settings\n\n| Setting and Description | Default |\n|------------------------|---------------|\n| `setting(chat.commandCenter.enabled)`<br/>Controls whether to show the Chat menu in the {% data variables.product.prodname_vscode_shortname %} title bar. | `true` |\n| `setting(workbench.settings.showAISearchToggle)`<br/>Enable searching settings with AI in the Settings editor. | `true` |\n| `setting(workbench.commandPalette.experimental.askChatLocation)` _(Experimental)_<br/>Controls where the Command Palette should ask chat questions. | `\"chatView\"` |\n| `setting(search.searchView.semanticSearchBehavior)` _(Preview)_<br/>Configure when to run semantic search in the Search view: manually (default), when no text search results are found, or always. | `\"manual\"` |\n| `setting(search.searchView.keywordSuggestions)` _(Preview)_<br/>Controls whether to show keyword suggestions in the Search view. | `false` |\n| `setting(chat.disableAIFeatures)`<br/>Disable and hide built-in AI features in {% data variables.product.prodname_vscode_shortname %}, such as chat and inline suggestions, and disable the Copilot extensions. | `false` |",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/ai-settings.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_114__languages",
+  "title": "v1_114 / Languages",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Languages\n\n### TypeScript 6.0\n\nOur JavaScript and TypeScript support now uses TypeScript 6.0. This major update includes important fixes and improvements. Importantly, this TypeScript release also deprecates a number of older options in preparation for the [TypeScript 7.0 rewrite](https://devblogs.microsoft.com/typescript/typescript-native-port/).\n\nYou can read all about the TypeScript 6.0 release [on the TypeScript blog](https://devblogs.microsoft.com/typescript/announcing-typescript-6.0/).\n\n### Python\n\n* Various bug fixes in the Python Environments extension for env file notifications and environment manager selection priority:\n\n    * The workspace's saved interpreter selection now takes precedence over terminal-activated virtual or conda environments across restarts.\n    * The env file change notification now includes a \"Don't Show Again\" option to permanently dismiss it.\n\n    _[vscode-python#25867](https://github.com/microsoft/vscode-python/issues/25867), [vscode-python-environments#1347](https://github.com/microsoft/vscode-python-environments/issues/1347), [vscode-python-environments#1393](https://github.com/microsoft/vscode-python-environments/pull/1393)_\n\n* The Python Environments extension now recommends the community Pixi extension when Pixi environments are detected, and includes Pixi in the environment manager priority order. _[vscode-python-environments#1291](https://github.com/microsoft/vscode-python-environments/pull/1291)_",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_114.md"
+}

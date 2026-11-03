@@ -1,0 +1,8 @@
+{
+  "id": "learn_customizations_1_why_customization_matter__prerequisites",
+  "title": "1 why customization matter / Prerequisites",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Prerequisites\n\nBefore you start: you'll need VS Code Insiders installed and the GitHub Copilot and GitHub Copilot Chat extensions set up and signed in.\n\n- [Download VS Code](https://code.visualstudio.com/)\n- [Set up GitHub Copilot in VS Code](https://code.visualstudio.com/docs/agent-native/overview#_step-1-set-up-copilot)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/1-why-customization-matter.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_overview__debugging_services_running_inside_a_container",
+  "title": "overview / Debugging services running inside a container",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Debugging services running inside a container\n\nYou can debug services built using .NET (C#) and Node.js that are running inside a container. The extension offers custom tasks that help with launching a service under the debugger and with attaching the debugger to a running service instance. For more information, see [Debug containerized apps](/docs/containers/debug-common.md) and [Customize the Container Tools extension](/docs/containers/reference.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/overview.md"
+}

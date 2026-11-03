@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_prompt_examples__debugging_and_fixing_issues",
+  "title": "prompt examples / Debugging and fixing issues",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Debugging and fixing issues\n\nUse **Agent** for fixing issues across files, or **Ask** to understand the root cause first.\n\n```prompt\nFix the issues in #problems\n```\n\n```prompt\nWhy is this function returning undefined?\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/prompt-examples.md"
+}

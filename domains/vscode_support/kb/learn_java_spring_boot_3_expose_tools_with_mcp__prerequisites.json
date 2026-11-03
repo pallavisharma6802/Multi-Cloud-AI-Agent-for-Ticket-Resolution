@@ -1,0 +1,8 @@
+{
+  "id": "learn_java_spring_boot_3_expose_tools_with_mcp__prerequisites",
+  "title": "3 expose tools with mcp / Prerequisites",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Prerequisites\n\nThis chapter runs the finished sample rather than building it up, so the setup is short.\n\n- **A cloned copy of the sample:** Clone [microsoft/github-copilot-java-mcp-demo](https://github.com/microsoft/github-copilot-java-mcp-demo) and open it in Visual Studio Code.\n- **JDK 25 and both extension packs:** The **Extension Pack for Java** and the **Spring Boot Extension Pack**.\n- **GitHub Copilot:** Installed and signed in, with Agent mode available in Chat.\n- **A clean starting state:** The app stopped and port 8080 free.\n- **Permission to run tools:** Allow MCP tool use when Visual Studio Code prompts for trust or confirmation.\n\n> **Expected warnings:** Startup prints three `BeanPostProcessorChecker` warnings about\n> the MCP annotation scanner, immediately above the `Registered tools: 5` line. They are\n> normal.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/3-expose-tools-with-mcp.md"
+}

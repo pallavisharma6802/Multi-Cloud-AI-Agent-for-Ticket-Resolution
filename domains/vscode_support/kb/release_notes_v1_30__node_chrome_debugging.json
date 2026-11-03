@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_30__node_chrome_debugging",
+  "title": "v1_30 / Node/Chrome debugging",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Node/Chrome debugging\n\n### `smartStep` now enabled by default\n\nA few releases ago, we [changed the behavior](https://code.visualstudio.com/updates/v1_26#_changed-smartstep-behavior-for-nodechrome-debugging) of `smartStep` to make it more useful. Using `smartStep` results in a much better debugging experience, especially for TypeScript, so we have changed the behavior to be always on.\n\n### Automatic default for `localRoot`\n\nIn Node.js remote debugging scenarios, the debug configuration attribute `localRoot` now automatically defaults to `${workspaceFolder}` and only `remoteRoot` needs to be specified.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_30.md"
+}

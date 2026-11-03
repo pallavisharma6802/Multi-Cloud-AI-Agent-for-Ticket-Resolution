@@ -1,0 +1,8 @@
+{
+  "id": "docs_nodejs_vuejs_tutorial__intellisense",
+  "title": "vuejs tutorial / IntelliSense",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## IntelliSense\n\nAs you start typing in `App.vue`, you'll see smart suggestions or completions both for HTML and CSS but also for Vue.js specific items like declarations (`v-bind`, `v-for`) in the Vue `template` section:\n\n![Vue.js suggestions](images/vuejs/suggestions.png)\n\nand Vue properties such as `computed` in the `scripts` section:\n\n![Vue.js JavaScript suggestions](images/vuejs/javascript-suggestions.png)\n\n### Go to Definition, Peek definition\n\nThe Vue - Official extension in {% data variables.product.prodname_vscode_shortname %} enhances the Vue.js development experience by providing language service features such as type definitions. You can access these features using:\n\n- **Go to Definition** (`kb(editor.action.revealDefinition)`): Navigate directly to the type definition in your code.\n- **Peek Definition** (`kb(editor.action.peekDefinition)`): View the type definition inline without leaving your current context.\n\nTo use Peek Definition, follow these steps:\n1. Place the cursor over `App`.\n2. Right-click, hover over **Peek** in the context menu, and select **Peek Definition**.\n3. A [Peek window](/docs/editing/editingevolved.md#peek) will open, displaying the `App` definition from `App.js`.\n\n![Vue.js peek definition](images/vuejs/peek-definition.png)\n\nPress `kbstyle(Escape)` to close the Peek window.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/vuejs-tutorial.md"
+}

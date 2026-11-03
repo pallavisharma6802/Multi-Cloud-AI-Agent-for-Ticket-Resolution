@@ -1,0 +1,8 @@
+{
+  "id": "docs_devcontainers_faq__i_am_seeing_errors_when_trying_to_mount_the_local_filesystem_into_a_container",
+  "title": "faq / I am seeing errors when trying to mount the local filesystem into a container",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## I am seeing errors when trying to mount the local filesystem into a container\n\nRight-click on the Docker task bar item. On Windows, select the **Settings** menu item then **Resources > File Sharing** and check the drive(s) where your source code is located. On macOS, select the **Preferences** menu item then **Resources > File Sharing** and make sure the folder containing your source code is under a file path specified in the list.\n\nSee [Docker Desktop for Windows tips](/docs/devcontainers/tips-and-tricks.md#docker-desktop-for-windows-tips) for information on workarounds to common Docker for Windows issues.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/faq.md"
+}

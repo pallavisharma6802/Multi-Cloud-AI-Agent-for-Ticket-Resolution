@@ -1,0 +1,8 @@
+{
+  "id": "docs_reference_variables_reference__overview",
+  "title": "variables reference",
+  "category": "REFERENCE",
+  "intent": "reference",
+  "content": "# Variables reference\n\n{% data variables.product.prodname_vscode %} supports variable substitution in [Debugging](/docs/debugtest/debugging.md) and [Task](/docs/debugtest/tasks.md) configuration files, and for some select settings. Variable substitution is supported inside some key and value strings in `launch.json` and `tasks.json` files by using the **${variableName}** syntax.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/reference/variables-reference.md"
+}

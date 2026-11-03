@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_16__integrated_terminal",
+  "title": "v1_16 / Integrated Terminal",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Integrated Terminal\n\n### Terminal quick open improvements\n\nThe Integrated Terminal can now be launched via the **Terminal: Switch Active Terminal** command or by typing \"term \" (with a trailing space) in **Quick Open**. When using the Integrated Terminal **Quick Open** dropdown, you can also create new terminals or delete existing terminals.\n\n![Terminal quick open improvements](images/1_16/terminal-quick-pick.png)\n\n### Force selection using Shift on Linux and Windows\n\nRunning programs in mouse mode within the terminal (like tmux) will intercept the mouse and therefore not allow you to make a selection. You can now hold the `Shift` key to force the mouse event to perform a selection rather than be sent to the terminal. This functionality was added for `Alt` on macOS in 1.15.\n\n### Terminal Find widget improvements\n\nThe terminal Find widget now supports find history. You can use `kb(history.showNext)` and  `kb(history.showPrevious)` to show the next or previous find term in the Find widget. Many thanks to [Christopher Leidigh](https://github.com/cleidigh), who has helped with both code refactoring and feature implementation in [PR #32113](https://github.com/microsoft/vscode/pull/32113).\n\n<video src=\"images/1_16/terminal-find.mp4\" title=\"Video showing Terminal Find Widget improvements.\" autoplay loop controls muted></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_16.md"
+}

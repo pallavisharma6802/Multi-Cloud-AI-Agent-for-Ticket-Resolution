@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v0_3_0__close_folder",
+  "title": "v0_3_0 / Close Folder",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Close Folder\nThe new menu item **File**, **Close Folder** will close the currently active folder and bring the workbench back into the \"empty\" state with a single, empty file opened. (If you haven't enabled Auto Save, you'll be prompted to save any pending changes in the active folder before it is closed.)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_3_0.md"
+}

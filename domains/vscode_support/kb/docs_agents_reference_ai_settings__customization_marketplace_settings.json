@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_ai_settings__customization_marketplace_settings",
+  "title": "ai settings / Customization marketplace settings",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Customization marketplace settings\n\n| Setting and Description | Default |\n|------------------------|---------------|\n| `setting(chat.customizations.marketplace.enabled)` _(Preview)_<br/>Show the unified [**Browse** page](/docs/agent-customization/overview.md#discover-and-install-existing-customizations-preview) when a marketplace source is available. When disabled, discovery remains in the existing customization management pages. | `true` |\n| `setting(chat.customizations.copilotConnectors.enabled)` `feature(copilot-connectors)`<br/>Control [{% data variables.product.prodname_copilot_short %} connectors](/docs/agent-customization/copilot-connectors.md) in the unified marketplace and the availability of connected connector MCP servers in {% data variables.product.prodname_copilot_short %} agent sessions. | `true` |\n\nOrganization policy forces both settings off when **Editor preview features** is disabled. See [organization and enterprise settings](/docs/enterprise/manage-ai-settings.md#use-github-organization-and-enterprise-settings).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/ai-settings.md"
+}

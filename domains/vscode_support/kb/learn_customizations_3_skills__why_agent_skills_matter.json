@@ -1,0 +1,8 @@
+{
+  "id": "learn_customizations_3_skills__why_agent_skills_matter",
+  "title": "3 skills / Why agent skills matter",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Why agent skills matter\n\nWithout skills, you\u2019re responsible for guiding every step manually. That often means repeating logic, making decisions each time, and dealing with inconsistent results.\n\nWith skills, that burden shifts to the system. You define how something should work once, and it runs consistently every time.\n\nThe difference shows up in your workflow:\n\n- less repetition of instructions\n- more consistent outputs\n- faster execution of multi-step tasks",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/3-skills.md"
+}

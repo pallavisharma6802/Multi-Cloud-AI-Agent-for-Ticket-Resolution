@@ -1,0 +1,8 @@
+{
+  "id": "learn_agents_4_using_third_party_agents_in_vs_code__choose_the_session_type",
+  "title": "4 using third party agents in vs code / Choose the session type",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Choose the session type\n\nThird-party agents come from providers such as Anthropic and OpenAI. VS Code uses the provider's SDK and agent harness, while keeping the session in the VS Code chat experience.\n\nCloud-based third-party agents are currently in preview.\n\nBefore starting, decide which kind of session fits the task.\n\n| Session type | Use it when | Example |\n| --- | --- | --- |\n| Local third-party agent | You want the provider agent to work directly in your local workspace. | Ask Claude to refactor a small module and run local tests. |\n| Cloud partner agent | You want a provider agent to work in a cloud session through your Copilot setup. | Hand off a longer coding task that can run away from your editor. |\n| Built-in VS Code agent | You want the standard VS Code agent with your current tool selection and customizations. | Make a focused edit using selected tools and approvals. |\n\nUse third-party agents when you specifically want the provider's agent behavior or SDK. Use the built-in VS Code agent when the task mainly depends on VS Code tools, custom agents, tool sets, or the approval model you already configured.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/4-using-third-party-agents-in-vs-code.md"
+}

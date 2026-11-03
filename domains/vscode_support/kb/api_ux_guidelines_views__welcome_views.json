@@ -1,0 +1,8 @@
+{
+  "id": "api_ux_guidelines_views__welcome_views",
+  "title": "views / Welcome Views",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Welcome Views\n\nWhen a view is empty, you can [add content to guide users](/api/references/contribution-points#contributes.viewsWelcome) on how to use your extension or get started. Links and icons are supported in Welcome views.\n\n**\u2714\ufe0f Do**\n\n* Use Welcome views only when necessary\n* Use links instead of buttons when possible\n* Use buttons only for primary actions\n* Use clear link text to indicate the link destination\n* Limit the length of the content\n* Limit the number of Welcome views\n* Limit the number of buttons in views\n\n**\u274c Don't**\n\n* Use buttons if not necessary\n* Use Welcome views for promotions\n* Use generic \"read more\" as link text\n\n![Welcome Views](images/examples/welcome-view.png)\n\n*This example shows one primary action for the extension with an additional link to documentation.*",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/views.md"
+}

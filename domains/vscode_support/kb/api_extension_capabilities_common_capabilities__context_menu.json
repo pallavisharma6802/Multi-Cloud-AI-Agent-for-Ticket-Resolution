@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_capabilities_common_capabilities__context_menu",
+  "title": "common capabilities / Context Menu",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Context Menu\n\nAn extension can register custom Context Menu items that will be displayed in different parts of the VS Code UI on right-click. Read more at the [`contributes.menus`](/api/references/contribution-points#contributes.menus) Contribution Point.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-capabilities/common-capabilities.md"
+}

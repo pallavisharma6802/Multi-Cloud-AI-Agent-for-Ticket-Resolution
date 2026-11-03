@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_68__notable_fixes",
+  "title": "v1_68 / Notable fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable fixes\n\n* [141157](https://github.com/microsoft/vscode/issues/141157) Clicking F11 while not in debug mode turns on debug instead of going full screen\n* [148864](https://github.com/microsoft/vscode/issues/148864) Unbound breakpoint for TypeScript files\n* [149638](https://github.com/microsoft/vscode/issues/149638) Lazy variable evaluation button causes problematic gaps and misalignments between nodes",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_68.md"
+}

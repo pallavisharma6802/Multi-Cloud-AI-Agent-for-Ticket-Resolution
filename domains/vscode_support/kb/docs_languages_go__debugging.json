@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_go__debugging",
+  "title": "go / Debugging",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Debugging\n\nThe Go extension lets you debug Go code by utilizing the [Delve](https://github.com/go-delve/delve) debugger.\n\nRead [Debug Go programs in {% data variables.product.prodname_vscode_shortname %}](https://github.com/golang/vscode-go/wiki/debugging) for setup steps, supported features, configurations, information on remote debugging and a troubleshooting guide. For general debugging features such as inspecting variables, setting breakpoints, and other activities that aren't language-dependent, review [{% data variables.product.prodname_vscode_shortname %} debugging](/docs/debugtest/debugging.md).\n\nSome features unique to Go are:\n\n* Local & remote debugging\n* Data inspection using [Delve's expression syntax](https://github.com/go-delve/delve/blob/master/Documentation/cli/expr.md)\n* Dynamic configuration change and inspection options with [`dlv` command](https://github.com/golang/vscode-go/wiki/debugging#dlv-command-from-debug-console) from DEBUG CONSOLE\n* Ability to hide/show system goroutines (use `hideSystemGoroutines` configuration)\n* Disassembly view support (right-click your source code and select **Open Disassembly View**)\n* Experimental function call, core inspection, Mozilla `rr` support",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/go.md"
+}

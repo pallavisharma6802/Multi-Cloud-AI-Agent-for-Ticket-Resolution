@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_126__language_models",
+  "title": "v1_126 / Language models",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Language models\n\n### Unified model customization picker\n\nTo simplify language model configuration, we have combined the context size and reasoning (thinking) effort controls into a single model customization picker. From one place, you can adjust both settings when tuning a model, instead of working with two separate dropdowns.\n\n![Screenshot showing the model customization picker with combined context size and reasoning effort controls.](images/1_126/model-customization-picker.webp)\n\n### Simplified model hover\n\nWe cleaned up the model hover to make it easier to scan. It now shows a concise one-word descriptor of the model's capabilities and includes deep link buttons that take you directly to the relevant configuration.\n\n![Screenshot showing the simplified model hover with a one-word capability descriptor and deep link configuration buttons.](images/1_126/model-hover.webp)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_126.md"
+}

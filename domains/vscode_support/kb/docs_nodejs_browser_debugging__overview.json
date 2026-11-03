@@ -1,0 +1,8 @@
+{
+  "id": "docs_nodejs_browser_debugging__overview",
+  "title": "browser debugging",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Browser debugging in {% data variables.product.prodname_vscode_shortname %}\n\n{% data variables.product.prodname_vscode %} includes a built-in debugger for Edge and Chrome. There are a couple ways to get started with it.\n\n* Use the [Open Link](#open-link-command) command to debug a URL.\n* Clicking a link in the [JavaScript debug terminal](/docs/nodejs/nodejs-debugging.md#javascript-debug-terminal).\n* Use a [launch config](#launch-configuration) to launch a browser with your app.\n\nYou can also debug web apps in {% data variables.product.prodname_vscode_shortname %}'s [integrated browser](/docs/debugtest/integrated-browser.md#debugging) without launching an external browser.\n\nWe also have more detailed walkthroughs to get started with [React](/docs/nodejs/reactjs-tutorial), [Angular](/docs/nodejs/angular-tutorial), and [Vue](/docs/nodejs/vuejs-tutorial), as well as other debugging [recipes](/docs/nodejs/debugging-recipes).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/browser-debugging.md"
+}

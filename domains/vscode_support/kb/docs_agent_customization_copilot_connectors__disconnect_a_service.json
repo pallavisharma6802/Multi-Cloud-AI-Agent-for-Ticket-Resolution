@@ -1,0 +1,8 @@
+{
+  "id": "docs_agent_customization_copilot_connectors__disconnect_a_service",
+  "title": "copilot connectors / Disconnect a service",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Disconnect a service\n\nConnected services appear in **MCP Servers** with a **Connector: &lt;name&gt;** label. Their connections are managed by {% data variables.product.prodname_github %}, not by a local MCP configuration file.\n\n1. With the **Copilot** harness selected, run **Chat: Open Customizations** and select **MCP Servers**.\n\n1. Find the connector's row and open its ellipsis (**...**) menu.\n\n1. Select **Disconnect** and wait for the operation to complete.\n\n**Disconnect** removes the {% data variables.product.prodname_github %}-managed connection for your signed-in account, not just a workspace configuration. Supported clients signed in with that account share the connection state.\n\nThe connector's row disappears, and its tools are no longer available to the {% data variables.product.prodname_copilot_short %} session. Use **Disconnect**, not **Uninstall** or a configuration-file edit, to remove a connector.\n\nTo use the service again, [connect it from the Agent Customizations editor](#connect-a-service).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/copilot-connectors.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_82__notebooks",
+  "title": "v1_82 / Notebooks",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notebooks\n\n### Copy cell output\n\nThe cell output menu now includes an option to copy the output to the system clipboard. The context menu can also be used for image output by right-clicking the image and selecting the **Copy Output** command.\n\n<video src=\"images/1_82/copy-cell-output.mp4\" autoplay loop controls muted title=\"Copy cell output\"></video>\n\n_Theme: [Bearded Theme feat. Gold D Raynh](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme) (preview on [vscode.dev](https://vscode.dev/editor/theme/BeardedBear.beardedtheme/Bearded%20Theme%20feat.%20Gold%20D%20Raynh))_",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_82.md"
+}

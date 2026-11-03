@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_debugger_settings__cwd",
+  "title": "debugger settings / Cwd",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Cwd\n\nThe working directory of the target process.\n\n**Availability**\n\n* `launch.json` \u2714\ufe0f\n* `settings.json` \u274c\n* `launchSettings.json` \u2714\ufe0f as `workingDirectory`",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/debugger-settings.md"
+}

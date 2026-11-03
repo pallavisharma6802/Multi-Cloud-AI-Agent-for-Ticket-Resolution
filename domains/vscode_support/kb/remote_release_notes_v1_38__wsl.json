@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_38__wsl",
+  "title": "v1_38 / WSL",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## WSL\n\n### Alpine WSL\n\nAlpine WSL is now also enabled for VS Code Stable builds. Alpine support is still in preview mode as some extensions installed in Alpine Linux may not work due to glibc dependencies in native code inside the extension.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_38.md"
+}

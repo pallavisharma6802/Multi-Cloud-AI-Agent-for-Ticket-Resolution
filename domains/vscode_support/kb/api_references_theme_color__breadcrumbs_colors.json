@@ -1,0 +1,8 @@
+{
+  "id": "api_references_theme_color__breadcrumbs_colors",
+  "title": "theme color / Breadcrumbs colors",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Breadcrumbs colors\n\nThe theme colors for breadcrumbs navigation:\n\n- `breadcrumb.foreground`: Color of breadcrumb items.\n- `breadcrumb.background`: Background color of breadcrumb items.\n- `breadcrumb.focusForeground`: Color of focused breadcrumb items.\n- `breadcrumb.activeSelectionForeground`: Color of selected breadcrumb items.\n- `breadcrumbPicker.background`: Background color of breadcrumb item picker.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+}

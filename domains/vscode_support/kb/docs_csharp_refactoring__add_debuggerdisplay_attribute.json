@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_refactoring__add_debuggerdisplay_attribute",
+  "title": "refactoring / Add DebuggerDisplay attribute",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Add DebuggerDisplay attribute\n\n**What:** The [DebuggerDisplay Attribute](https://learn.microsoft.com/visualstudio/debugger/using-the-debuggerdisplay-attribute?view=vs-2022) controls how an object, property, or field is displayed in the debugger variable windows.\n\n**When:** You want to [pin properties](https://learn.microsoft.com/visualstudio/debugger/view-data-values-in-data-tips-in-the-code-editor?view=vs-2022#pin-properties-in-data-tips) within the debugger programmatically in your code.\n\n**Why:** Pinning properties allows you to quickly inspect objects by their properties by bubbling up that property to the top of the object's property list within the debugger.\n\n**How-to:**\n\n1. Place your cursor on either a type, delegate, property, or field.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu and select **Add `DebuggerDisplay` attribute**.\n3. The `DebuggerDisplay` attribute is added along with an auto method that returns the default `ToString()`.\n\n![Add DebuggerDisplay attribute example](images/refactoring/add-debuggerdisplay-attribute.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+}

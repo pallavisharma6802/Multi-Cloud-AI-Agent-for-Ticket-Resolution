@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_tool_catalog__prerequisites",
+  "title": "tool catalog / Prerequisites",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Prerequisites\n\nFor all paths, install [{% data variables.product.prodname_vscode %}](/download) and the [Foundry Toolkit extension](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio). See the [Foundry Toolkit overview](/docs/intelligentapps/overview.md) for extension and project setup.\n\nFor Foundry tools, connections, Toolboxes, and skills, select a Foundry project in the Toolkit and make sure you have permission to manage its resources. For agent use, prepare a [compatible model deployment](/docs/intelligentapps/models.md). The agent identity and, for per-user authentication, the end user also need the appropriate access.\n\nFollow the [Toolbox prerequisites and region and model compatibility guidance](https://learn.microsoft.com/azure/foundry/agents/how-to/tools/toolbox). A catalog entry is not proof that a tool works with every model or in every region. OpenAPI and A2A connections also require a working API or agent endpoint and the authentication information supplied by its owner.\n\nFor local MCP connections, install the runtime required by the server and obtain access to its endpoint. You do not need a Foundry project unless you use Foundry resources.\n\n> [!CAUTION]\n> Local tests can call cloud services and live tools, incur charges, and send data outside Foundry. Review the provider's permissions and data handling terms before using sensitive inputs.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/tool-catalog.md"
+}

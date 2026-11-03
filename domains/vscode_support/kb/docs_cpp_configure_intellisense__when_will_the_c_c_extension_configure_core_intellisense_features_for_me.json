@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_configure_intellisense__when_will_the_c_c_extension_configure_core_intellisense_features_for_me",
+  "title": "configure intellisense / When will the C/C++ extension configure core IntelliSense features for me?",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## When will the C/C++ extension configure core IntelliSense features for me?\n\nA compiler is the only requirement to configure core IntelliSense functionality. To identify a compiler for IntelliSense, the C/C++ extension scans common paths on your machine for compilers such as Clang, GCC, MinGW, cygwin, cygwin64, and MSVC. If any of these compilers are identified and in a secure location, they are automatically configured for IntelliSense. Otherwise, a notification is displayed asking you to confirm that this compiler should be configured for IntelliSense. In either of these scenarios, the compiler selected is also set as the default compiler.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/configure-intellisense.md"
+}

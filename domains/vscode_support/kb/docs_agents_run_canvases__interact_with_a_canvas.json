@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_canvases__interact_with_a_canvas",
+  "title": "canvases / Interact with a canvas",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Interact with a canvas\n\nA canvas opens in an editor tab and stays associated with the chat that opened it. The controls and supported actions depend on the canvas extension.\n\n* **Interact directly**: Use the canvas controls to inspect or change its content. For example, create a card or move it between columns on a Kanban board.\n* **Ask the agent to make changes**: Describe what you want to update in chat. The agent can use actions exposed by the canvas to inspect or update its state.\n* **Return to a canvas**: Close and reopen a live canvas when the extension supports it. Use the canvas menus to return to an available canvas.\n\nDepending on the extension, your interactions can also update the agent session.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/canvases.md"
+}

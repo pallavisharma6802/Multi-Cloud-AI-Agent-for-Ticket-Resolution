@@ -1,0 +1,8 @@
+{
+  "id": "learn_agents_1_using_tools_with_agents__your_turn",
+  "title": "1 using tools with agents / Your turn",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Your turn\n\nTry the same repository task three ways:\n\n1. Run it with only repository search and file-reading tools.\n\n1. Add the terminal tool and ask the agent to run one focused validation.\n\n1. Save the tool selection as a tool set and reuse it in a new chat.\n\nAfter each run, compare what changed. Notice whether the agent stayed focused, asked for missing permissions, or used tools you did not expect.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/1-using-tools-with-agents.md"
+}

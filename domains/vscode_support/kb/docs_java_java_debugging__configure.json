@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_debugging__configure",
+  "title": "java debugging / Configure",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Configure\n\nBy default, the debugger will run out-of-box by automatically finding the main class and generating a default launch configuration in memory to launch your application.\n\nIf you would like to customize and persist your launch configuration, you can select the **create a launch.json file** link in the **Run and Debug** view.\n\n![Debug Menu](images/java-debugging/run-debug-button.png)\n\nThe `launch.json` file is located in a `.vscode` folder in your workspace (project root folder).\n\nFor more details on how to create the `launch.json`, read [Launch configurations](/docs/debugtest/debugging-configuration.md#launch-configurations); for more details on configuration options for Java, you can read [Configuration options](/docs/java/java-debugging.md#configuration-options).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-debugging.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_setup_copilot__overview",
+  "title": "copilot",
+  "category": "INSTALLATION",
+  "intent": "installation",
+  "content": "# Set up GitHub Copilot in {% data variables.product.prodname_vscode_shortname %}\n\nUse this guide to sign in to {% data variables.product.prodname_copilot %} in {% data variables.product.prodname_vscode %} and manage your account. If you already have Copilot access, sign in with that GitHub account.\n\nFor a different access path, follow the [{% data variables.product.prodname_anthropic_claude %} setup](/docs/agents/run/agent-harnesses.md#claude), [{% data variables.product.prodname_openai_codex %} setup](/docs/agents/run/agent-harnesses.md#codex), or [bring your own model key](/docs/agent-customization/language-models.md#bring-your-own-language-model-key). These routes have their own requirements; some agent workflows without GitHub sign-in are experimental.\n\n<div class=\"docs-action\" data-show-in-doc=\"false\" data-show-in-sidebar=\"true\" title=\"Get started with AI\">\nComplete your first coding task with an AI agent in {% data variables.product.prodname_vscode_shortname %}.\n\n* [Start quickstart](/docs/agents/quickstart.md)\n\n</div>\n\n> [!NOTE]\n> Claude and Codex harnesses are disabled when [{% data variables.product.prodname_copilot_short %} enterprise-managed settings apply](/docs/enterprise/manage-ai-settings.md#claude-and-codex-availability), even with separate provider credentials. Contact the IT team that deployed the settings to discuss access.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/copilot.md"
+}

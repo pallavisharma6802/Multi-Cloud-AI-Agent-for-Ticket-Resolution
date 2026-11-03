@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_test_driven_development_guide__use_the_tdd_workflow_to_implement_features",
+  "title": "test driven development guide / Use the TDD workflow to implement features",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Use the TDD workflow to implement features\n\nNow that the TDD custom agents are set up, you can use them to implement features in your project using the TDD workflow.\n\n1. Open the {% data variables.copilot.chat_view %} and select the **TDD Red** agent from the agent dropdown menu.\n\n1. Provide a prompt that describes the feature or behavior you want to test.\n\n    For example:\n\n    ```text\n    Write tests for user registration with email validation and password requirements.\n    ```\n\n1. Review the generated tests and use the handoff actions to transition through the TDD cycle:\n\n    * Confirm that the new test fails for the expected reason, and then select **TDD Green** to implement the minimal code that makes the test pass.\n    * Confirm that the green agent's test run passes, and then select **TDD Refactor** to improve code quality.\n    * Confirm that the refactor agent's test run still passes, and then select **TDD Red** to start the next cycle with additional functionality.\n\n    Each handoff switches to its named agent and fills the chat input with the next prompt. Review or edit the prompt before you submit it. The handoffs don't submit automatically because their configurations omit the `send` property.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/test-driven-development-guide.md"
+}

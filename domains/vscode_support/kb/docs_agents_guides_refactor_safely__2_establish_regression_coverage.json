@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_refactor_safely__2_establish_regression_coverage",
+  "title": "refactor safely / 2. Establish regression coverage",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## 2. Establish regression coverage\n\nAsk the agent to identify the existing test commands and run the relevant tests after you review the commands. Record their results before any implementation changes.\n\nIf the behavior isn't sufficiently covered, [add tests for the existing code](/docs/agents/guides/test-code-with-ai.md) first:\n\n```prompt\nAdd regression tests for the behavior we agreed to preserve.\nCover defaults, valid values, boundary and invalid inputs, and the\nobservable results for each affected caller.\n\nUse the existing test framework. Keep implementation code unchanged\nand expected results explicit. Run the new tests and the related\nexisting tests, then report their actual results.\n```\n\nReview the assertions against requirements and documented behavior, not only against the current implementation. If you discover a likely bug, decide whether to fix it as a separate change. Don't silently turn a refactor into a behavior change or encode a known defect as the intended contract.\n\nReview the test-only diff separately from the implementation refactor. Preserve this verified baseline in Git so you can compare or recover the changes later.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/refactor-safely.md"
+}

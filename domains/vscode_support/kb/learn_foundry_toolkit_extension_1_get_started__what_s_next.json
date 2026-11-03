@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_1_get_started__what_s_next",
+  "title": "1 get started / What's Next",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## What's Next\n\nYou now have the foundation for working effectively in Foundry Toolkit inside Visual Studio Code. Next, you'll move from setup into active experimentation, where model comparison and prompt iteration shape your first real agent behavior. From there, you can grow into agent creation, evaluation, and deployment with a much smoother learning curve.\n\nIn the next chapter, we'll go deeper into model catalog and playground workflows so you can compare model behavior with practical, scenario-based prompts. That is where the really fun trade-offs begin: quality, speed, and cost.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/1-get-started.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_quickstart_aspnet_core__overview",
+  "title": "quickstart aspnet core",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "# ASP.NET Core in a container\n\nIn this guide you will learn how to:\n\n- Create a `Dockerfile` file describing a simple .NET Core service container.\n- Build, run, and verify the functionality of the service.\n- Debug the service running as a container.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/quickstart-aspnet-core.md"
+}

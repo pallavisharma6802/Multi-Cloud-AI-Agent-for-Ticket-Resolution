@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vmarch__debugging",
+  "title": "vMarch / Debugging",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debugging\n\n### Run action\n\nWith this release, VS Code now supports 'Run' (in addition to 'Debug') of a program. The **Run** action is triggered with `kb(workbench.action.debug.run)` and uses the currently selected launch configuration. Many of the launch configuration attributes are supported in 'Run' mode. VS Code maintains a debug session while the program is running and pressing the **Stop** button terminates the program.\n\nPlease note: The **Run** action is always available, but a debugger extension has to 'opt-in' in order to support 'Run'. If a debugger extension has not been updated, 'Run' will fall back to 'Debug' (the built-in Node Debug and [Mono Debug](https://marketplace.visualstudio.com/items?itemName=ms-vscode.mono-debug) already support 'Run').\n\n### Improved thread handling\n\nThanks to this [pull request](https://github.com/microsoft/vscode/pull/3990), VS Code debugger UI now supports multiple stopped threads and the call stack for each thread is now requested lazily. This improves the debugger's stepping performance in multi-threaded programs.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vMarch.md"
+}

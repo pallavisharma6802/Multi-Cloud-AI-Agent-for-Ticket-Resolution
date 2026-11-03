@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_51__overview",
+  "title": "v1_51",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "# October 2020 (version 1.51)\n\n**Update 1.51.1**: The update addresses these [issues](https://github.com/microsoft/vscode/issues?q=is%3Aissue+milestone%3A%22October+2020+Recovery%22+is%3Aclosed+).\n\n<!-- DOWNLOAD_LINKS_PLACEHOLDER -->\n\n---\n\nWelcome to the October 2020 release of Visual Studio Code. As announced in the [October iteration plan](https://github.com/microsoft/vscode/issues/108473), we focused on housekeeping GitHub issues and pull requests as documented in our issue grooming guide.\n\nWe also worked with our partners at GitHub on GitHub Codespaces, which ended up being more involved than originally anticipated. To that end, we'll continue working on housekeeping for part of the November iteration.\n\nDuring this housekeeping milestone, we also addressed several feature requests and community [pull requests](#thank-you). Read on to learn about new features and settings.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_51.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_introvideos_configure__next_video",
+  "title": "configure / Next video",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Next video\n\n* [Extensions in {% data variables.product.prodname_vscode %}](/docs/introvideos/extend.md) - Add features to {% data variables.product.prodname_vscode_shortname %} through Extensions.\n* [Introductory Videos](/docs/getstarted/introvideos.md) - Review the entire list of videos.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/introvideos/configure.md"
+}

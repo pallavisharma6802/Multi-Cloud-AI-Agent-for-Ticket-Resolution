@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_3_building_social_media_agent__prerequisites",
+  "title": "3 building social media agent / Prerequisites",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Prerequisites\n\nBefore we start building, let's confirm your setup is ready. This chapter combines agent authoring, tool grounding, and evaluation, so a missing prerequisite can break the flow halfway through.\n\nIf everything below is already in place, you should be able to run the full chapter without detours.\n\n- **Visual Studio Code setup**: Visual Studio Code with Foundry Toolkit installed.\n- **Project access**: A Microsoft Foundry project connected in Foundry Toolkit.\n- **Model readiness**: At least one deployed model available to power the agent.\n- **GitHub Copilot support**: GitHub Copilot enabled in Visual Studio Code for guided evaluation setup.\n- **Evaluation data**: A JSONL dataset (or readiness to generate a synthetic one).\n\nWith setup confirmed, we can define exactly what we are building and why the design choices matter.\n\nNow we move from setup mode into build mode.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/3-building-social-media-agent.md"
+}

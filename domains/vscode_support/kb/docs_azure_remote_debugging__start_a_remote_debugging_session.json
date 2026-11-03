@@ -1,0 +1,8 @@
+{
+  "id": "docs_azure_remote_debugging__start_a_remote_debugging_session",
+  "title": "remote debugging / Start a remote debugging session",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Start a remote debugging session\n\nTo start a remote debugging session for your application, right-click your app in the App Service Explorer and select **Start Remote Debugging**.\n\n![Start remote debugging](images/remote-debugging/start-remote-debugging.png)\n\nThis process requires that the app be restarted with the debugger enabled. You are prompted to confirm the restart.\n\nOnce restarted, {% data variables.product.prodname_vscode_shortname %} connects to the app's debugging port via an SSH tunnel. It might take some time to establish the connection. Once connected, {% data variables.product.prodname_vscode_shortname %} switches to debugging mode and works in the same way as when you're debugging an app locally.\n\n![Remote breakpoint](images/remote-debugging/remote-breakpoint.png)\n\nWhen you're ready to end your remote debugging session, disconnect from the debugger as you would normally, and confirm that you want to restart the app.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/remote-debugging.md"
+}

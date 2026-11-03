@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_extensions_extension_runtime_security__extension_publisher_trust",
+  "title": "extension runtime security / Extension publisher trust",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Extension publisher trust\n\nAs of {% data variables.product.prodname_vscode_shortname %} release 1.97, when you first install an extension from a third-party publisher, {% data variables.product.prodname_vscode_shortname %} shows a dialog prompting you to confirm that you trust the publisher of that extension.\n\nWhen you trust the publisher of an extension pack or an extension with dependencies on other extensions, you are also trusting the publishers of the dependent extensions.\n\nPublishers for extensions that you installed previously are considered trusted and are automatically added to the list of trusted publishers.\n\nYou can manage the list of trusted extensions by using the **Extensions: Manage Trusted Extensions Publishers** command.\n\n> [!IMPORTANT]\n> When you install extensions by using the [{% data variables.product.prodname_vscode_shortname %} command line](/docs/configure/command-line.md#working-with-extensions), the extension's publisher is not automatically trusted.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/extensions/extension-runtime-security.md"
+}

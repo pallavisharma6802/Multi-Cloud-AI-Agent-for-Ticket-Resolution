@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_canvases__open_a_canvas",
+  "title": "canvases / Open a canvas",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Open a canvas\n\nAsk the agent to list the available canvases and open one. Include any information the canvas needs, such as the project or data it should display.\n\nYou can also open a canvas that doesn't require input without asking the agent:\n\n| Location | Action |\n|----------|--------|\n| Chat input in either window | Select **Add Context (+)** > **Canvas...** to open or refocus an available canvas. |\n| {% data variables.copilot.chat_view %} title bar | Select **New Chat (+)** > **Canvas**. |\n| {% data variables.copilot.agents_window %} editor area | Select **Add Tab (+)** > **Canvas**. |\n| Agent Customizations editor | Select **Canvases**, then double-click a canvas marked **Ready to Open**. You can also select it and press `Enter`, or select **More Actions** > **Open Canvas**. |\n\nFor a canvas marked **Requires Input**, ask the agent to open it and describe the information or configuration it should use.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/canvases.md"
+}

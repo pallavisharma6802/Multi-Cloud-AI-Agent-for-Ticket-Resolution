@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_getting_started_userinterface__overview",
+  "title": "userinterface",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "# User interface\n\nAt its heart, {% data variables.product.prodname_vscode %} is a code editor. Like many other code editors, {% data variables.product.prodname_vscode_shortname %} adopts a common user interface and layout of an explorer on the left, showing all of the files and folders you have access to, and an editor on the right, showing the content of the files you have opened.\n\n[![Watch Transform your {% data variables.product.prodname_vscode_shortname %} user interface on YouTube (opens in new tab).](images/userinterface/youtube-nORT3-kONgA.jpg)](https://www.youtube.com/watch?v=nORT3-kONgA)\n\n<div class=\"docs-action\" data-show-in-doc=\"false\" data-show-in-sidebar=\"true\" title=\"Get started with AI\">\nFollow a hands-on tutorial to build your first app with AI in {% data variables.product.prodname_vscode_shortname %}.\n\n* [Start tutorial](/docs/agents/agents-tutorial.md)\n\n</div>\n\n<div class=\"docs-action\" data-show-in-doc=\"false\" data-show-in-sidebar=\"true\" title=\"Watch the introduction video\">\nLearn about the key features of {% data variables.product.prodname_vscode %} in our introduction video.\n\n* [Watch video](https://www.youtube.com/watch?v=f8_uF_IDV50)\n\n</div>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/userinterface.md"
+}

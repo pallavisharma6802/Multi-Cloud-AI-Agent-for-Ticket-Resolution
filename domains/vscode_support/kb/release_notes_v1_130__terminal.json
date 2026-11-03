@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_130__terminal",
+  "title": "v1_130 / Terminal",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Terminal\n\n### Clickable file links in Git diffs with mnemonic prefixes\n\nYou can open file links directly from Git diff output in the terminal when Git's [`diff.mnemonicPrefix`](https://git-scm.com/docs/diff-config#Documentation/diff-config.txt-diffmnemonicPrefix) option is enabled. VS Code recognizes prefixes such as `i/` for the index and `w/` for the working tree, and removes the prefix from the link target so the correct file opens.\n\nWhen mnemonic prefixes are enabled, VS Code also recognizes the numeric `1/` and `2/` prefixes produced by `git diff --no-index`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_130.md"
+}

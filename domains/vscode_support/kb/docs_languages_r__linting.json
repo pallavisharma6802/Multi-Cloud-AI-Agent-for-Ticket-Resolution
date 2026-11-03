@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_r__linting",
+  "title": "r / Linting",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Linting\n\nLinting is a feature that checks the code for warnings and potential errors. R code linting is provided by [lintr](https://github.com/r-lib/lintr) package. You can customize it by choosing from the list of [available linters](https://lintr.r-lib.org/reference/index.html#individual-linters) via the [configuration file](https://lintr.r-lib.org/articles/lintr.html#configuring-linters).\n\n<video src=\"images/r/linting.mp4\" title=\"Video showing Linting.\" autoplay loop controls muted></video>\n\nBesides code completion and linting, the R extension also supports other features such as code formatting, go to definition, rename symbol, find references. Read [R Language Service](https://github.com/REditorSupport/vscode-R/wiki/R-Language-Service) for more details.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/r.md"
+}

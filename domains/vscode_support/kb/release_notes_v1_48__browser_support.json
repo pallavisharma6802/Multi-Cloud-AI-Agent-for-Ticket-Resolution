@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_48__browser_support",
+  "title": "v1_48 / Browser support",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Browser support\n\n### Text file encoding support\n\nAll of the text file encodings of the desktop version of VS Code are now also supported when running in a browser.\n\n<video src=\"images/1_48/web-encoding.mp4\" title=\"Video showing Web encoding support.\" autoplay loop controls muted></video>\n\nAs such, the settings `files.encoding` and `files.autoGuessEncoding` can be now configured for web and work, in the same way as in the desktop version.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_48.md"
+}

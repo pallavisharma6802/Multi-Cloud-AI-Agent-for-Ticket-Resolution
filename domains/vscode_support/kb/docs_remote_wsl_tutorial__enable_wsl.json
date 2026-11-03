@@ -1,0 +1,8 @@
+{
+  "id": "docs_remote_wsl_tutorial__enable_wsl",
+  "title": "wsl tutorial / Enable WSL",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Enable WSL\n\nWindows Subsystem for Linux (WSL) is an optional feature on Windows 10. You can enable it through the Windows Features dialog or PowerShell.\n\n### Windows Features dialog\n\nIn the Windows search bar, type 'features' to bring up the **Turn Windows Features on and off** dialog. Scroll down and check **Windows Subsystem for Linux**.\n\n![Turn Windows features on and off dialog](images/wsl-tutorial/windows-features.png)\n\nSelect **OK** and you will be prompted to restart Windows.\n\n### PowerShell\n\nIf you prefer, you can open PowerShell as an Administrator and type:\n\n```powershell\nEnable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux\n```\n\nAfter the command runs, you will be prompted to restart Windows.\n\n![PowerShell prompt to restart](images/wsl-tutorial/powershell-output.png)\n\n### Check WSL\n\nAfter restarting Windows, you can check that you have WSL enabled by opening a Command Prompt and typing 'wsl'.\n\n![WSL check](images/wsl-tutorial/wsl-check.png)\n\nWSL is enabled, but you haven't installed a Linux distribution yet.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/wsl-tutorial.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_advanced_topics_tslint_eslint_migration__tslint_removal",
+  "title": "tslint eslint migration / TSLint: Removal",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## TSLint: Removal\n\nCongratulations. You should now have a working ESLint setup and it's time to clean up.\n\nThe removal of TSLint depends on your project, but usually these are the steps:\n\n* Update `.vscode/extensions.json` to recommend the ESLint extension and not TSLint anymore:\n\n  ```json\n  \"recommendations\": [\n    \"dbaeumer.vscode-eslint\"\n  ]\n  ```\n\n* Remove the `tslint.json` file.\n* Remove the dependency on `tslint` in the `package.json` file.\n* Uninstall TSLint with `npm uninstall tslint`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/advanced-topics/tslint-eslint-migration.md"
+}

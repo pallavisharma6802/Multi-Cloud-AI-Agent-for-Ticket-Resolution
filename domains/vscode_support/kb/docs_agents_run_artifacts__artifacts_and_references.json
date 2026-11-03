@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_artifacts__artifacts_and_references",
+  "title": "artifacts / Artifacts and references",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Artifacts and references\n\nAgent sessions can surface both artifacts and references next to the chat input. Artifacts represent notable results or resources the session works on, while references provide supporting information that the session only consults.\n\nFor GitHub issues and pull requests, an item is an artifact when the session works on it, even if the item existed before the session started. An issue or pull request that the session only uses for information is a reference.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/artifacts.md"
+}

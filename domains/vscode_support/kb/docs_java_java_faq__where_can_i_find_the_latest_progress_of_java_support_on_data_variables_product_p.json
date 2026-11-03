@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_faq__where_can_i_find_the_latest_progress_of_java_support_on_data_variables_product_p",
+  "title": "java faq / Where can I find the latest progress of Java support on {% data variables.product.prodname_vscode %}?",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Where can I find the latest progress of Java support on {% data variables.product.prodname_vscode %}?\n\nYou can follow us on the [Java at Microsoft](https://devblogs.microsoft.com/java/) blog, which will keep you updated on our progress.\n\nWhile you're using Java within {% data variables.product.prodname_vscode_shortname %}, you may also see a **Release Notes** section after you update the [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack). The notes will give you an overview on the notable updates included in the extensions.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-faq.md"
+}

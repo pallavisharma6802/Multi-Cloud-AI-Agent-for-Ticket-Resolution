@@ -1,0 +1,8 @@
+{
+  "id": "learn_agents_3_agent_plugins__try_a_plugin_command",
+  "title": "3 agent plugins / Try a plugin command",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Try a plugin command\n\nPlugins can expose custom agents, skills, slash commands, and MCP servers all in one place. In chat, you can invoke plugin content with slash commands or by selecting the relevant customization from the picker.\n\nFor example, after installing the awesome-copilot plugin, you can run `/awesome-copilot:suggest` to have the plugin look across your project and recommend related collections you can install next.\n\nTry this sequence:\n\n1. Open a repository you use for development.\n\n1. Start a new agent chat.\n\n1. Type `/` and find the plugin command.\n\n1. Run the command and review what it recommends.\n\n1. If it recommends more plugins, inspect those plugins before installing them.\n\nThe goal is not to install everything. The goal is to see how a plugin can bring a complete workflow into chat with one command.\n\n![Screenshot of the Agent Customizations editor showing installed plugin content.](../images/agents/chat-customizations-editor-plugins.png)\n\n> [!CAUTION]\n> Plugins can run hooks and MCP servers on your machine. Review the contents and publisher before you install one.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/3-agent-plugins.md"
+}

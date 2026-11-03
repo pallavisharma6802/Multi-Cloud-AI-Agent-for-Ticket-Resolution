@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v0_7_0__tasks",
+  "title": "v0_7_0 / Tasks",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Tasks\nWe did a significant review of the [Tasks documentation](/docs/debugtest/tasks.md) with this update and have included several examples of using tasks.\n\nWe also now support automatic detection of tasks in a `gruntfile`. This works the same as our support for the Gulp and Jake task runners (see [Tasks](/docs/debugtest/tasks.md#autodetecting-gulp-grunt-and-jake-tasks)).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_7_0.md"
+}

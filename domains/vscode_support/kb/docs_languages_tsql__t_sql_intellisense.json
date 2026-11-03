@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_tsql__t_sql_intellisense",
+  "title": "tsql / T-SQL IntelliSense",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## T-SQL IntelliSense\n\nAs you type T-SQL code in the editor, {% data variables.product.prodname_vscode_shortname %} provides intelligent code completion for T-SQL keywords, suggestions for schema object names (tables, columns, views), and parameter help for functions and procedures when connected to a database.\n\n<video src=\"images/tsql/intellisense.mp4\" title=\"Video showing tsql intellisense.\" autoplay loop controls muted></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/tsql.md"
+}

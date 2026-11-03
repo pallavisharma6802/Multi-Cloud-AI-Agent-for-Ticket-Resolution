@@ -1,0 +1,8 @@
+{
+  "id": "docs_reference_default_keybindings__navigation",
+  "title": "default keybindings / Navigation",
+  "category": "REFERENCE",
+  "intent": "reference",
+  "content": "## Navigation\n\nCommand|Key|Command id\n-------|---|----------\nShow All Symbols|`kb(workbench.action.showAllSymbols)`|`workbench.action.showAllSymbols`\nGo to Line...|`kb(workbench.action.gotoLine)`|`workbench.action.gotoLine`\nGo to File..., Quick Open|`kb(workbench.action.quickOpen)`|`workbench.action.quickOpen`\nGo to Symbol...|`kb(workbench.action.gotoSymbol)`|`workbench.action.gotoSymbol`\nShow Problems|`kb(workbench.actions.view.problems)`|`workbench.actions.view.problems`\nGo to Next Error or Warning|`kb(editor.action.marker.nextInFiles)`|`editor.action.marker.nextInFiles`\nGo to Previous Error or Warning|`kb(editor.action.marker.prevInFiles)`|`editor.action.marker.prevInFiles`\nShow All Commands|`kb(workbench.action.showCommands)` or `kbstyle(F1)`|`workbench.action.showCommands`\nNavigate Editor Group History|`kb(workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup)`|`workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup`\nGo Back|`kb(workbench.action.navigateBack)`|`workbench.action.navigateBack`\nGo back in Quick Input|`kb(workbench.action.quickInputBack)`|`workbench.action.quickInputBack`\nGo Forward|`kb(workbench.action.navigateForward)`|`workbench.action.navigateForward`\nFocus Breadcrumbs|`kb(breadcrumbs.focus)`|`breadcrumbs.focus`\nFocus and Select Breadcrumbs|`kb(breadcrumbs.focusAndSelect)`|`breadcrumbs.focusAndSelect`",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/reference/default-keybindings.md"
+}

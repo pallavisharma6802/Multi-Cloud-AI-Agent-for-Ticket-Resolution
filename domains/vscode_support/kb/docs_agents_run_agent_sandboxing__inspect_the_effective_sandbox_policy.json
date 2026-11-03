@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_agent_sandboxing__inspect_the_effective_sandbox_policy",
+  "title": "agent sandboxing / Inspect the effective sandbox policy",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Inspect the effective sandbox policy\n\nIn a Copilot harness session, run `/sandbox policy` to verify whether sandboxing is active or investigate why a process is blocked. This command isn't available in Local harness sessions.\n\n* Enter `/sandbox policy` in the chat input and submit it. The report opens automatically in the editor as a Markdown preview. Select **Open Sandbox Policy** in the response to reopen it.\n\nThe generated `sandbox-policy.md` report describes the execution host, whether sandboxing is enabled, the operating system's sandbox implementation, and the effective file system and network policy. You can also run the command when sandboxing is off. In that case, the report indicates that sandbox restrictions are not active.\n\nThe command does not start a model turn or change your sandbox settings.\n\nRun `/sandbox policy` again after a change to refresh the report. The command updates the same report for the session, so earlier links also open the latest generated report. To check the defaults for new sessions, start a new session before running the command.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/agent-sandboxing.md"
+}

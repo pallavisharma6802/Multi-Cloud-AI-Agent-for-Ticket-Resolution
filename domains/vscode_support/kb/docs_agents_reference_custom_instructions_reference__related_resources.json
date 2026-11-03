@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_custom_instructions_reference__related_resources",
+  "title": "custom instructions reference / Related resources",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related resources\n\n* [Use custom instructions](/docs/agent-customization/custom-instructions.md) to create and test project guidance.\n* [Migrate customizations](/docs/agent-customization/migrate-customizations.md) when changing harnesses or storage locations.\n* [Debug instruction inclusion](/docs/agents/agent-troubleshooting/chat-debug-view.md#instructions-or-a-prompt-file-are-not-applied) to inspect what reached the model.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/custom-instructions-reference.md"
+}

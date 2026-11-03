@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_history__overview",
+  "title": "history",
+  "category": "GIT",
+  "intent": "git",
+  "content": "# View source control history\n\nSource control history helps you understand how a codebase changed, which commits affected a file, and who last changed a line. {% data variables.product.prodname_vscode_shortname %} provides the Source Control Graph for repository history, the Timeline view for file history, and Git blame information for individual lines.\n\n* [Inspect or compare commits](#view-branch-and-commit-history) in the Source Control Graph.\n* [Review a file's revisions](#view-file-history-with-the-timeline-view) in the Timeline view.\n* [Find who last changed a line](#view-git-blame-information) with Git blame.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/history.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_111__engineering",
+  "title": "v1_111 / Engineering",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Engineering\n\nWith the move to **weekly Stable releases**, we continue to improve our engineering processes to ship high-quality features at a faster pace.\n\n### Test plan item creation\n\nWe added a one-click experience for creating test plan items from feature request issues. This reduces the manual steps needed to set up structured testing plans for new features.\n\n### Verification step generation\n\nAs test plan items are assigned randomly to engineers, clear verification steps are crucial for efficient and effective testing. We added a button to generate verification steps on relevant issues. This helps ensure that issues have clear, structured steps for verifying fixes and features before they are closed.\n\n### Automatic PR media attachment to linked issues\n\nWhen you merge a pull request that includes an image or GIF in its description, the media content is now automatically posted as a comment on the linked issue. This streamlines the verification process by making it easier to see the visual demonstration of a fix or feature directly on the issue.\n\n### Chat showcase pipeline\n\nA new automated pipeline processes issues that are labeled with `chat-showcase`. When a showcase issue is identified, a corresponding chat tip issue is automatically created, making it easier to add tips for features.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_111.md"
+}

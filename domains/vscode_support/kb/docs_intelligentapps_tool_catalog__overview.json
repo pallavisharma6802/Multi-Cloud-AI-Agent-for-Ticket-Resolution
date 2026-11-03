@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_tool_catalog__overview",
+  "title": "tool catalog",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Manage tools and Toolboxes in Foundry Toolkit\n\nTools give an agent access to information and actions outside its model. For example, an issue-triage agent might read a repository, search project documentation, and query a business service. Foundry Toolkit for {% data variables.product.prodname_vscode %} helps you configure these capabilities, manage their connections, and share them through Toolboxes.\n\nThis guide covers the resource lifecycle: create a connection, assemble tools and skills, manage versions, attach the capabilities to a prompt or hosted agent, and verify an actual tool call. **Tool Catalog** is the discovery and configuration surface, not the resource that runs your tools.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/tool-catalog.md"
+}

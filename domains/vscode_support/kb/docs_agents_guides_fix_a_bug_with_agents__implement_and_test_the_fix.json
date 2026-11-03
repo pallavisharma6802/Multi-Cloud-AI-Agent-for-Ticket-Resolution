@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_fix_a_bug_with_agents__implement_and_test_the_fix",
+  "title": "fix a bug with agents / Implement and test the fix",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Implement and test the fix\n\nAfter the failing test establishes the expected behavior, ask the agent to correct the implementation.\n\n1. Enter the following prompt:\n\n    ```prompt\n    Fix the root cause of the pagination bug with the smallest\n    production-code change. Keep the public API one-based, preserve\n    the existing response shape and validation, and do not add\n    dependencies. Run the complete test suite after the change.\n    ```\n\n1. Confirm that the regression coverage and the original tests pass.\n\n1. Review how the implementation handles page numbers. A correct solution uses one-based values at the API boundary and converts them to a zero-based offset when slicing the array. Equivalent implementations are valid if they preserve the same API contract and pass the tests.\n\nIf a test still fails, give the agent the complete failure output and ask it to explain the remaining mismatch before making another change.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/fix-a-bug-with-agents.md"
+}

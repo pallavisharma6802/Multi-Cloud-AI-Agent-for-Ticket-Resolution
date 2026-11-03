@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_javascript__signature_help",
+  "title": "javascript / Signature Help",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Signature Help\n\nAs you write JavaScript function calls, {% data variables.product.prodname_vscode_shortname %} shows information about the function signature and highlights the parameter that you are currently completing:\n\n![Signature help for some DOM methods](images/javascript/signature-help.png)\n\nSignature help is shown automatically when you type a `(` or `,` within a function call. Press `kb(editor.action.triggerParameterHints)`  to manually trigger signature help.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/javascript.md"
+}

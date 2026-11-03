@@ -1,0 +1,8 @@
+{
+  "id": "docs_enterprise_updates__check_for_updates_at_startup_only",
+  "title": "updates / Check for updates at startup only",
+  "category": "ENTERPRISE",
+  "intent": "enterprise",
+  "content": "## Check for updates at startup only\n\nTo check for updates only when {% data variables.product.prodname_vscode_shortname %} starts, without background checking, set the `UpdateMode` policy to `start`:\n\n**Policy value**:\n\n```text\nstart\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/enterprise/updates.md"
+}

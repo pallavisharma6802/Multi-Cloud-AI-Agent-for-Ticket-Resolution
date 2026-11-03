@@ -1,0 +1,8 @@
+{
+  "id": "api_get_started_wrapping_up__ux_guidelines",
+  "title": "wrapping up / UX Guidelines",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## UX Guidelines\n\nTo help make your extension fit seamlessly into the VS Code user interface, refer to the [UX Guidelines](/api/ux-guidelines/overview), where you'll learn the best practices for creating extension UI and conventions for following the preferred VS Code workflows.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/get-started/wrapping-up.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_devcontainers_devcontainer_cli__automation",
+  "title": "devcontainer cli / Automation",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Automation\n\nIf you'd like to use the dev container CLI in your CI/CD builds or test automation, you can find examples of GitHub Actions and Azure DevOps Tasks in the [devcontainers/ci](https://github.com/devcontainers/ci) repository.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/devcontainer-cli.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_ai_language_model_tutorial__add_a_button_to_the_editor_title_bar",
+  "title": "language model tutorial / Add a button to the editor title bar",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Add a button to the editor title bar\n\nYou can enable your command to be invoked from places other than the Command Palette. In our case, we can add a button to the top of the current tab that allows the user to easily toggle the annotations.\n\nTo do this, modify the \"contributes\" portion of the `package.json` as follows:\n\n```json\n\"contributes\": {\n  \"commands\": [\n    {\n      \"command\": \"code-tutor.annotate\",\n      \"title\": \"Toggle Tutor Annotations\",\n      \"icon\": \"$(comment)\"\n    }\n  ],\n  \"menus\": {\n    \"editor/title\": [\n      {\n        \"command\": \"code-tutor.annotate\",\n        \"group\": \"navigation\"\n      }\n    ]\n  }\n}\n```\n\nThis causes a button to appear in the navigation area (right-side) of the editor title bar. The \"icon\" comes from the [Product Icon Reference](https://code.visualstudio.com/api/references/icons-in-labels).\n\nRestart your extension with the green arrow or press `kbstyle(F5)` if the extension is not already running. You should now see a comment icon that will trigger the \"Toggle Tutor Annotations\" command.\n\n![A comment icon appears in the title bar of the active tab in VS Code](../images/ai/lm-api/code-tutor-annotations-gif.gif)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/language-model-tutorial.md"
+}

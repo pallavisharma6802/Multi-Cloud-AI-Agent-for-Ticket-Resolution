@@ -1,0 +1,8 @@
+{
+  "id": "learn_customizations_3_skills__what_s_next",
+  "title": "3 skills / What\u2019s next",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## What\u2019s next\n\nAgent skills help you automate workflows.\n\nIf you want to go further and define complete systems with roles and responsibilities, the next step is exploring custom agents.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/3-skills.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_references_extension_manifest__example",
+  "title": "extension manifest / Example",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Example\n\nHere is a complete `package.json`\n\n```json\n{\n  \"name\": \"wordcount\",\n  \"displayName\": \"Word Count\",\n  \"version\": \"0.1.0\",\n  \"publisher\": \"ms-vscode\",\n  \"description\": \"Markdown Word Count Example - reports out the number of words in a Markdown file.\",\n  \"author\": {\n    \"name\": \"sean\"\n  },\n  \"categories\": [\"Other\"],\n  \"icon\": \"images/icon.png\",\n  \"galleryBanner\": {\n    \"color\": \"#C80000\",\n    \"theme\": \"dark\"\n  },\n  \"pricing\": \"Free\",\n  \"activationEvents\": [\"onLanguage:markdown\"],\n  \"engines\": {\n    \"vscode\": \"^1.0.0\"\n  },\n  \"main\": \"./out/extension\",\n  \"scripts\": {\n    \"vscode:prepublish\": \"node ./node_modules/vscode/bin/compile\",\n    \"compile\": \"node ./node_modules/vscode/bin/compile -watch -p ./\"\n  },\n  \"devDependencies\": {\n    \"@types/vscode\": \"^0.10.x\",\n    \"typescript\": \"^1.6.2\"\n  },\n  \"license\": \"SEE LICENSE IN LICENSE.txt\",\n  \"bugs\": {\n    \"url\": \"https://github.com/microsoft/vscode-wordcount/issues\",\n    \"email\": \"sean@contoso.com\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/microsoft/vscode-wordcount.git\"\n  },\n  \"homepage\": \"https://github.com/microsoft/vscode-wordcount/blob/main/README.md\"\n}\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/extension-manifest.md"
+}

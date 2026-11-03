@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_custom_agent_file_reference__claude_agent_format",
+  "title": "custom agent file reference / Claude agent format",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Claude agent format\n\nAgent files in `.claude/agents` use plain `.md` files and the [Claude subagents format](https://code.claude.com/docs/en/sub-agents).\n\n| Field | Description |\n|-------|-------------|\n| `name` | Required unique agent identifier using lowercase letters and hyphens. |\n| `description` | Required description of when to delegate to the agent. |\n| `tools` | Comma-separated allowed tool names, such as `\"Read, Grep, Glob, Bash\"`. If omitted, the agent inherits all tools. |\n| `disallowedTools` | Comma-separated tool names to block. |\n| `model` | `sonnet`, `opus`, `haiku`, or `inherit` (default). |\n| `permissionMode` | `default`, `acceptEdits`, `dontAsk`, `bypassPermissions`, or `plan`. |\n| `skills` | Skills to load into the agent's context at startup. |\n| `mcpServers` | MCP servers available to the agent. |\n| `hooks` | Hooks that run at configured points in this agent's workflow. |\n| `memory` | Persistent memory scope: `user`, `project`, or `local`. |\n\nThe Claude harness implements these fields according to its provider documentation. When Local loads a Claude-format agent, it maps supported Claude tool and model names to their {% data variables.product.prodname_vscode_shortname %} equivalents. This compatibility does not make all Claude runtime features available in Local.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/custom-agent-file-reference.md"
+}

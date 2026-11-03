@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_command_line__select_a_profile",
+  "title": "command line / Select a profile",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Select a profile\n\nYou can launch {% data variables.product.prodname_vscode_shortname %} with a specific [profile](/docs/configure/profiles.md) via the `--profile` command-line interface option. You pass the name of the profile after the `--profile` argument and open a folder or a workspace using that profile. The command line below opens the `web-sample` folder with the \"Web Development\" profile:\n\n`code ~/projects/web-sample --profile \"Web Development\"`\n\nIf the profile specified does not exist, a new empty profile with the given name is created.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/command-line.md"
+}

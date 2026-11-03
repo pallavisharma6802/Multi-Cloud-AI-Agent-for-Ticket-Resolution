@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_43__debug_adapter_protocol",
+  "title": "v1_43 / Debug Adapter Protocol",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debug Adapter Protocol\n\n### Support grouping in output events\n\nAn optional `group` attribute has been added to the `output` event in order to keep an output log organized by grouping related messages. Possible values for `group` are `start` and `startCollapsed` to open a group either expanded or collapsed, and `end` for closing a group.\n\n**Note:** Starting with this release, VS Code supports this DAP enhancement.\n\n### Allow cursor placement via completion items\n\nOptional `selectionStart` and `selectionLength` attributes have been added to the completion item. With these attributes, the client's current selection (or caret position) can be controlled after the completion text has been inserted.\n\n**Note:** VS Code does not yet support this DAP enhancement. It is planned for the next release.\n\n### Proposal: Progress events\n\nWe made some progress on a proposal for adding **progress events** to the Debug Adapter Protocol. If you are interested, you can contribute to the discussion on this [DAP feature request](https://github.com/microsoft/debug-adapter-protocol/issues/92).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_43.md"
+}

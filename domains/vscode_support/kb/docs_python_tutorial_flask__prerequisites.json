@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_tutorial_flask__prerequisites",
+  "title": "tutorial flask / Prerequisites",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Prerequisites\n\nTo successfully complete this Flask tutorial, you must do the following (which are the same steps as in the [general Python tutorial](/docs/python/python-tutorial.md)):\n\n1. Install the [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python).\n\n1. Install a version of Python 3 (for which this tutorial is written). Options include:\n   - (All operating systems) A download from [python.org](https://www.python.org/downloads/); typically use the **Download** button that appears first on the page.\n   - (Linux) The built-in Python 3 installation works well, but to install other Python packages you must run `sudo apt install python3-pip` in the terminal.\n   - (macOS) An installation through [Homebrew](https://brew.sh/) on macOS using `brew install python3`.\n   - (All operating systems) A download from [Anaconda](https://www.anaconda.com/download/) (for data science purposes).\n\n1. On Windows, make sure the location of your Python interpreter is included in your PATH environment variable. You can check the location by running `path` at the command prompt. If the Python interpreter's folder isn't included, open Windows Settings, search for \"environment\", select **Edit environment variables for your account**, then edit the **Path** variable to include that folder.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/tutorial-flask.md"
+}

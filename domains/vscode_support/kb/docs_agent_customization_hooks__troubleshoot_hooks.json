@@ -1,0 +1,8 @@
+{
+  "id": "docs_agent_customization_hooks__troubleshoot_hooks",
+  "title": "hooks / Troubleshoot hooks",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Troubleshoot hooks\n\n1. Confirm the **Session Target**, installed runtime version, and hook source.\n1. Check whether another user, repository, settings, agent, or plugin source contributes the same command.\n1. Run the script directly with a non-sensitive event fixture. Check its exit status and exact JSON output, including malformed-input behavior.\n1. Start a disposable session and confirm the hook fires for the expected event and tool. A file shown in the editor is not proof that its script executed.\n1. Check dependencies, path quoting, `cwd`, and permissions in the execution environment. Test timeouts separately from command errors.\n\nUse the [agent debug logs](/docs/agents/agent-troubleshooting/chat-debug-view.md#agent-debug-logs-panel) and the provider's diagnostics to investigate. Avoid logging complete prompts, arguments, results, or environment variables that might contain sensitive data.\n\nFor an old Local setup, **Chat: Configure Hooks** lists its files, and the **GitHub Copilot Chat Hooks** output channel shows its command errors.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/hooks.md"
+}

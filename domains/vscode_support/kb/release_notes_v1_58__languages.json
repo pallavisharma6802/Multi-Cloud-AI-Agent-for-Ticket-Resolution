@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_58__languages",
+  "title": "v1_58 / Languages",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Languages\n\n### Math formula rendering in the Markdown preview\n\nVS Code's [built-in Markdown preview](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview) can now render math equations using [KaTeX](https://katex.org).\n\n![Math rendering in the built-in Markdown preview](images/1_58/markdown-math.png)\n\nInline math equations are wrapped in single dollar signs:\n\n```markdown\nInline math: $x^2$\n```\n\nYou can create a math equation block with double dollar signs:\n\n```markdown\nMath block:\n\n$$\n\\displaystyle\n\\left( \\sum_{k=1}^n a_k b_k \\right)^2\n\\leq\n\\left( \\sum_{k=1}^n a_k^2 \\right)\n\\left( \\sum_{k=1}^n b_k^2 \\right)\n$$\n```\n\nYou can set `\"markdown.math.enabled\": false` to disable this feature.\n\n### Markdown math formula syntax highlighting\n\nVS Code also now supports highlighting of math equations in Markdown source:\n\n![Syntax highlighting of a math equation in a Markdown file](images/1_58/markdown-math-highlighting.png)\n\nThis works both in normal Markdown files and in Markdown cells inside notebooks.\n\n### TypeScript 4.3.5\n\nWe now bundle TS 4.3.5. This minor update fixes a few important bugs, including [auto imports not working in JSX](https://github.com/microsoft/TypeScript/issues/44657).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_58.md"
+}

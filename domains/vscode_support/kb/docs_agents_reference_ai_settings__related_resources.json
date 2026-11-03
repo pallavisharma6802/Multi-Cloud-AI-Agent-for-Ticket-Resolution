@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_ai_settings__related_resources",
+  "title": "ai settings / Related resources",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related resources\n\n* [Get a quick overview of the AI features in {% data variables.product.prodname_vscode_shortname %}](/docs/agents/reference/ai-features-cheat-sheet.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/ai-settings.md"
+}

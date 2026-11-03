@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v0_7_0__css_less_and_sass",
+  "title": "v0_7_0 / CSS, Less and Sass",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## CSS, Less and Sass\nWe updated our [CSS, Less and Sass documentation](/docs/languages/css.md) to provide examples of how to work with CSS in VS Code.\n\nThis includes sections on:\n* CSS IntelliSense\n* Emmet Snippet support\n* Syntax highlighting and Color preview\n* Goto symbol & Hover support\n* Goto declaration & Find references\n* Using tasks to transpile Sass and Less into CSS\n* Customizing CSS settings",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_7_0.md"
+}

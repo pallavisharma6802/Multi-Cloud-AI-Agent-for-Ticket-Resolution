@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_refactoring__invert_if",
+  "title": "refactoring / Invert if",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Invert if\n\n**What:** Lets you invert an `if` or `if else` statement without changing the meaning of the code.\n\n**When:** When you have an `if` or `if else` statement that would be better understood when inverted.\n\n**Why:** Inverting an `if` or `if else` statement by hand can take much longer and possibly introduce errors. This code fix helps you do this refactoring automatically.\n\n**How-to:**\n\n1. Place your cursor in an `if` or `if else` statement.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select **Invert `if`**.\n\n![Invert `if` example](images/refactoring/invert-if.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+}

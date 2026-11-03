@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_merge_conflicts__complete_the_merge_operation",
+  "title": "merge conflicts / Complete the merge operation",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## Complete the merge operation\n\nFirst, resolve and save every conflicting file, then stage the resolutions. Inspect the staged diff and run the relevant tests before continuing.\n\nUse the finish action for the operation that stopped:\n\n| Operation | How to finish |\n|-----------|---------------|\n| Merge, including a pull that merges | Enter a merge commit message in the Source Control view and select **Commit**. |\n| Rebase, including **Pull (Rebase)** | Run `git rebase --continue` in the repository's integrated terminal. Git might stop at another conflicting commit. Resolve it and continue again until the rebase finishes. |\n| Cherry-pick | Run `git cherry-pick --continue` in the repository's integrated terminal. Repeat if a sequence of commits encounters more conflicts. |\n| Restore a stash | Review the restored files and commit them when ready. A stash conflict does not require a merge commit. |\n\nThe {% data variables.product.prodname_vscode_shortname %} commit action also continues an in-progress rebase after you stage the resolutions. If you are unsure which operation is active, run `git status` in the repository's terminal for Git's current state and next action.\n\nAfter a merge, rebase, or cherry-pick finishes, check that `git status` no longer reports that operation in progress. Review the resulting history in the [Source Control Graph](/docs/sourcecontrol/history.md#view-branch-and-commit-history).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/merge-conflicts.md"
+}

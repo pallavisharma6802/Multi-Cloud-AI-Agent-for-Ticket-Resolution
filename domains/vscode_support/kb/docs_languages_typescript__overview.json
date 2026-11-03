@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_typescript__overview",
+  "title": "typescript",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# TypeScript in {% data variables.product.prodname_vscode %}\n\n[TypeScript](https://www.typescriptlang.org) is a typed superset of JavaScript that compiles to plain JavaScript. It offers classes, modules, and interfaces to help you build robust components.\n\n![Working with TypeScript in {% data variables.product.prodname_vscode %}](images/typescript/overview.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/typescript.md"
+}

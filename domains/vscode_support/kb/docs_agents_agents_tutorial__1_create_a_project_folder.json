@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_agents_tutorial__1_create_a_project_folder",
+  "title": "agents tutorial / 1. Create a project folder",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## 1. Create a project folder\n\nAgents work in the context of a folder, also referred to as a *workspace* in {% data variables.product.prodname_vscode_shortname %}. You start by creating a folder for your project. Start by creating an empty folder for the tutorial app and enabling Git version control to track your changes.\n\n1. On your computer, create a new folder named `myportfolio`.\n\n    ```bash\n    mkdir myportfolio\n    ```\n\n1. Put the folder under Git version control to track changes. Open a terminal and run the following commands:\n\n    ```bash\n    cd myportfolio\n    git init\n    ```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/agents-tutorial.md"
+}

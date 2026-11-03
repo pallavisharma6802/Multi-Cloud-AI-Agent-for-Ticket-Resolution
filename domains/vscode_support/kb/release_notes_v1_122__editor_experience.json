@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_122__editor_experience",
+  "title": "v1_122 / Editor Experience",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Editor Experience\n\n### Improved issue reporting flow\n\n**Setting**: `setting(issueReporter.wizard.enabled)`\n\nTo help us better understand and fix any problems you might run into in VS Code, we've improved the issue reporting flow with a new issue reporting wizard. The wizard guides you through creating high quality issues directly from VS Code, including adding relevant details, screenshots, and video recordings.\n\nEnable the `setting(issueReporter.wizard.enabled)` setting to opt in to the new issue reporter.\n\n<video src=\"images/1_122/issue-reporting-wizard.mp4\" autoplay loop controls muted title=\"Improved Issue Reporting Flow\"></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_122.md"
+}

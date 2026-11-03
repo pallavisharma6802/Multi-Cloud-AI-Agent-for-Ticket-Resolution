@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_106__notable_fixes",
+  "title": "v1_106 / Notable fixes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Notable fixes\n\n* [vscode#258236](https://github.com/microsoft/vscode/issues/258236) - Add setting for extensions request timeout used when installing extensions\n* [vscode#272945](https://github.com/microsoft/vscode/issues/272945) - Tasks do not trigger `onDidStartTerminalShellExecution`\n* [vscode#273372](https://github.com/microsoft/vscode/issues/273372) - `/**` is automatically closed with `*/` in .gitignore files\n* [vscode#243584](https://github.com/microsoft/vscode/issues/243584) - First input gets ignored on pwsh/conpty\n* [vscode#271952](https://github.com/microsoft/vscode/pull/271952) - Copilot 'configure instructions' quickpick doesn't show workspace-level agent instruction files (copilot-instructions.md, AGENTS.md)\n* [vscode#274631](https://github.com/microsoft/vscode/pull/274631) - Network: Load intermediate certification authorities on Windows",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_106.md"
+}

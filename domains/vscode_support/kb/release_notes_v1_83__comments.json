@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_83__comments",
+  "title": "v1_83 / Comments",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Comments\n\nThe Comments editor is used in extensions such as the [GitHub Pull Request and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) extension, where it displays pull request comments.\n\n### Comment editor size\n\nThe Comment editor now expands as lines are added, up to a maximum height dependent on the size of the editor that the comment is in.\n\n![Comment editor expanding as lines are added](images/1_83/expanding_comment_editor.gif)\n\n### Open Comments view on unresolved comments\n\nThe setting `comments.openView` has a new possible value `firstFileUnresolved`. Setting `firstFileUnresolved` causes the Comments view to open the first time per session that a file with unresolved comments is opened.\n\n### Automatically collapse resolved comments\n\nBy default, when you resolve a comment thread, it will now collapse. This feature can be disabled with the setting `\"comments.collapseOnResolve\"`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_83.md"
+}

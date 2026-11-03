@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_47__browser_support",
+  "title": "v1_47 / Browser support",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Browser support\n\n### Large file upload support\n\nYou can now upload large files and folders to the web version of VS Code and progress will be reported accurately so that you can track the number of bytes that have been uploaded, as well as the upload speed.\n\n<video src=\"images/1_47/web-upload.mp4\" title=\"Video showing Web upload indicator in bottom Status bar.\" autoplay loop controls muted></video>\n\n### Towards text file encoding support\n\nDuring this milestone, a lot of work went into full support for text encodings in the browser for reading and writing files. We rely on two libraries that are now supported in browsers by leveraging webpack:\n\n* [`iconv-lite`](https://github.com/ashtuchkin/iconv-lite) to read and write encodings\n* [`jschardet`](https://github.com/aadsm/jschardet): to guess encodings from textual content\n\nThis work will continue in July and should be generally available soon.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_47.md"
+}

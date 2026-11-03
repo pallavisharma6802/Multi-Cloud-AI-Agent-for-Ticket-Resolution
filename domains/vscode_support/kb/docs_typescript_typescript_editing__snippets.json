@@ -1,0 +1,8 @@
+{
+  "id": "docs_typescript_typescript_editing__snippets",
+  "title": "typescript editing / Snippets",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Snippets\n\n{% data variables.product.prodname_vscode_shortname %} includes basic TypeScript [snippets](/docs/editing/userdefinedsnippets.md) that are suggested as you type;\n\n![Typescript snippets](images/editing/ts-snippets.png)\n\nYou can install extensions to get additional snippets or define your own snippets for TypeScript. See [User Defined Snippets](/docs/editing/userdefinedsnippets.md) for more information.\n\n> [!TIP]\n> You can disable snippets by setting `editor.snippetSuggestions` to `\"none\"` in your [settings](/docs/configure/settings.md) file. If you'd like to see snippets, you can specify the order relative to suggestions; at the top (`\"top\"`), at the bottom (`\"bottom\"`), or inlined ordered alphabetically (`\"inline\"`). The default is `\"inline\"`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/typescript/typescript-editing.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_agent_inspector__how_inspector_and_tracing_differ",
+  "title": "agent inspector / How Inspector and tracing differ",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## How Inspector and tracing differ\n\nInspector communicates with your local server over HTTP and streams response events. A compatible development server also supplies a separate diagnostics stream for workflow details and source navigation. The debugger attaches to your running process independently of those streams.\n\nThese live diagnostics don't require the local OTLP collector. Inspector's **Traces** tab opens the separate tracing viewer. It doesn't turn protocol events into stored OpenTelemetry spans. To collect spans for later analysis, configure [local tracing](/docs/intelligentapps/tracing.md#set-up-instrumentation). For deployed agents, use [hosted-agent traces](/docs/intelligentapps/tracing.md#view-hosted-agent-traces).\n\nAfter local testing, follow the existing [hosted-agent deployment procedure](/docs/intelligentapps/hosted-agents.md#deploy-your-hosted-agent). Test the deployed agent separately because its identity, environment, and network access differ from your local process.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/agent-inspector.md"
+}

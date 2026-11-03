@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_87__dev_containers",
+  "title": "v1_87 / Dev Containers",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Dev Containers\n\n### GitHub Copilot Chat suggested templates and features\n\nWhen adding Dev Container configuration files to a workspace folder (`F1` > `Dev Containers: Add Dev Container Configuration Files...`) GitHub Copilot Chat now suggests templates and features indicated by the sparkle icon:\n\n![GitHub Copilot Chat template suggestion](images/1_87/devcontainer-copilot-template.png)\n\n![GitHub Copilot Chat feature suggestion](images/1_87/devcontainer-copilot-features.png)\n\nYou need the [Dev Containers](https://code.visualstudio.com/docs/devcontainers/containers) and the [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat) extension installed to enable this functionality.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_87.md"
+}

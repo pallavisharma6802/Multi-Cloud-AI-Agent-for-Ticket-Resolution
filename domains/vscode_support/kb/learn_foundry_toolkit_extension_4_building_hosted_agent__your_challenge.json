@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_4_building_hosted_agent__your_challenge",
+  "title": "4 building hosted agent / Your Challenge",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Your Challenge\n\nNow that you have seen the full hosted flow, try a small production-style exercise on your own. The goal is to prove that you can move from scaffold to repeatable validation without guessing.\nUse this checklist as your action plan.\n\n1. Scaffold a new hosted agent for a different scenario using GitHub Copilot CLI.\n2. Add at least one grounding tool and one instruction rule for when it must be used.\n3. Validate behavior locally with at least two prompts that force tool usage.\n4. Deploy the agent and compare one local trace to one hosted trace.\n5. Document one behavior difference and the fix you applied.\n\nSuccess target: you can explain the full path from prompt input to hosted output and show evidence for each stage.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
+}

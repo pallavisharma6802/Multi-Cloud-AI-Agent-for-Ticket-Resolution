@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundations_build_your_first_app_with_agent_mode__learn_more",
+  "title": "build your first app with agent mode / Learn more",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Learn more\n\n* [Choose and use an agent harness in VS Code](https://code.visualstudio.com/docs/agents/run/agent-harnesses)\n* [Planning with agents in VS Code](https://code.visualstudio.com/docs/agents/run/planning)\n* [Reviewing AI-generated code edits in VS Code](https://code.visualstudio.com/docs/agents/run/review-code-edits)\n* [Checkpoints and editing requests in VS Code](https://code.visualstudio.com/docs/agents/run/review-code-edits#_edit-requests-and-restore-checkpoints)\n* [Agent Logs and Chat Debug view](https://code.visualstudio.com/docs/chat/chat-debug-view)\n* [FastAPI](https://fastapi.tiangolo.com/)\n* [Python sqlite3](https://docs.python.org/3/library/sqlite3.html)\n* [Model Context Protocol](https://modelcontextprotocol.io/introduction)\n* [Custom instructions and agents for GitHub Copilot](https://code.visualstudio.com/docs/agent-customization/overview)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/build-your-first-app-with-agent-mode.md"
+}

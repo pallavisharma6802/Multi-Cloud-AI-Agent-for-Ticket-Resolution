@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_47__documentation_and_extensions",
+  "title": "v1_47 / Documentation and extensions",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Documentation and extensions\n\n### CMake Tools for C++\n\nNew tutorial for [developing C++ applications with CMake](https://code.visualstudio.com/docs/cpp/cmake-linux) and the [CMake Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools) extension.\n\n![CMake Tools extension](images/1_47/cmake-extension.png)\n\n### Java Pack installer for macOS\n\nThe [Visual Studio Code for Java Pack Installer](https://aka.ms/vscode-java-installer-mac) downloads the necessary dependencies and extensions for Java development in Visual Studio Code on macOS.\n\n![Java Pack installer for macOS](images/1_47/java-installer-macos.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_47.md"
+}

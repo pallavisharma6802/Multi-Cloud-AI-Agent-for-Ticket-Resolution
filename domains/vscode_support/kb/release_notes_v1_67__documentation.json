@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_67__documentation",
+  "title": "v1_67 / Documentation",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Documentation\n\n### Rust in VS Code\n\nThere is a new [Rust in Visual Studio Code](https://code.visualstudio.com/docs/languages/rust) topic describing [Rust programming language](https://www.rust-lang.org/) support in VS Code with the [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer) extension. The rust-analyzer extension includes rich language features such as code completions, linting, refactorings, debugging, and more.\n\n![rust-analyzer extension for Visual Studio Code details pane](images/1_67/rust-analyzer-extension.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_67.md"
+}

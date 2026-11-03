@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_branches_worktrees__overview",
+  "title": "branches worktrees",
+  "category": "GIT",
+  "intent": "git",
+  "content": "# Git branches and worktrees in {% data variables.product.prodname_vscode_shortname %}\n\nCreate and switch branches, set aside unfinished changes, and work on multiple branches in separate folders with the Git tools in {% data variables.product.prodname_vscode_shortname %}.\n\nChoose the workflow for your task:\n\n* [Use branches](#working-with-branches) to keep separate lines of development and switch between them in one folder.\n* [Use a stash](#manage-stashes) to set aside uncommitted changes without creating a commit.\n* [Use worktrees](#working-with-git-worktrees) to keep multiple branches checked out in separate folders at the same time.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/branches-worktrees.md"
+}

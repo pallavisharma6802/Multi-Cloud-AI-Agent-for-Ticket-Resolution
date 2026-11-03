@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vdecember__git_status_bar_actions",
+  "title": "vDecember / Git Status Bar Actions",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Git Status Bar Actions\n\nThere is now a **Synchronize** action in the Status Bar, next to the branch indicator, when the current checked out branch has an upstream branch configured.\n\n![git status bar sync](images/December/git-status-bar-sync.png)\n\nIf there is no upstream branch configured and the Git repository has remotes set up, a new **Publish** action is enabled. This will let you publish the current branch to remote.\n\n![git status bar publish](images/December/git-status-bar-publish.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vDecember.md"
+}

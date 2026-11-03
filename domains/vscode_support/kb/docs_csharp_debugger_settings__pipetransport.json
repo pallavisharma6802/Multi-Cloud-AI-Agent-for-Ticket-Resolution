@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_debugger_settings__pipetransport",
+  "title": "debugger settings / PipeTransport",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## PipeTransport\n\nIf you need to have the debugger to connect to a remote computer using another executable to relay standard input and output between {% data variables.product.prodname_vscode_shortname %} and the .NET Core debugger backend (vsdbg), then add the pipeTransport field following this schema:\n\n```json\n    \"pipeTransport\": {\n        \"pipeProgram\": \"ssh\",\n        \"pipeArgs\": [ \"-T\", \"ExampleAccount@ExampleTargetComputer\" ],\n        \"debuggerPath\": \"~/vsdbg/vsdbg\",\n        \"pipeCwd\": \"${workspaceFolder}\",\n        \"quoteArgs\": true\n    }\n```\n\nMore information about pipe transport can be found [here](https://github.com/OmniSharp/omnisharp-vscode/wiki/Attaching-to-remote-processes).\n\nYou can find information on configuring pipe transport for [Windows Subsystem for Linux](https://msdn.microsoft.com/en-us/commandline/wsl/about) (WSL) [here](https://github.com/OmniSharp/omnisharp-vscode/wiki/Windows-Subsystem-for-Linux).\n\n**Availability**\n\n* `launch.json` \u2714\ufe0f\n* `settings.json` \u274c\n* `launchSettings.json` \u274c\n\n### Operating system-specific configurations\n\nIf there are specific commands that need to be changed per operating system, you can use the fields: 'windows', 'osx', or 'linux'. You can replace any of the fields mentioned above for the specific operating system.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/debugger-settings.md"
+}

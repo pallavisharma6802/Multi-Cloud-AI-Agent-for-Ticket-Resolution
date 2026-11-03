@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_themes__data_variables_product_prodname_vscode_shortname_for_the_web",
+  "title": "themes / {% data variables.product.prodname_vscode_shortname %} for the Web",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## {% data variables.product.prodname_vscode_shortname %} for the Web\n\n{% data variables.product.prodname_vscode_shortname %} for the Web provides a free, zero-install {% data variables.product.prodname_vscode_shortname %} experience running entirely in your browser at [https://vscode.dev](https://vscode.dev).\n\nYou can share and experience color themes through {% data variables.product.prodname_vscode_shortname %} for the Web through the URL schema: `https://vscode.dev/editor/theme/<extensionId>`.\n\nFor instance, you can go to [https://vscode.dev/editor/theme/sdras.night-owl](https://vscode.dev/editor/theme/sdras.night-owl) to experience the [Night Owl theme](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl) without having to go through the download and install process.\n\nYou can learn more about previewing and sharing themes with in the [{% data variables.product.prodname_vscode_shortname %} for the Web documentation](/docs/remote/vscode-web.md#themes).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/themes.md"
+}

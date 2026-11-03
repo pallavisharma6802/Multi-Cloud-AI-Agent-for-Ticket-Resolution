@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_notebooks_with_ai__iterate_by_editing_and_running_cells",
+  "title": "notebooks with ai / Iterate by editing and running cells",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Iterate by editing and running cells\n\nAgents have notebook-specific tools for understanding the cell structure, editing cells, running code, and reading cell outputs. This edit-run loop lets the agent validate the analysis and respond to runtime errors instead of only generating a static notebook.\n\nAsk the agent to continue from the current notebook:\n\n```prompt\nRun the notebook from top to bottom. Fix any errors you find, then explain the main result.\n```\n\nYou can also request a specific revision:\n\n```prompt\nAdd a section that identifies outliers, explains how they affect the analysis, and compares the results before and after removing them.\n```\n\nKeep the notebook editor open to review cell changes and outputs as the agent works. Configure agent permissions to control which tool and command invocations require approval. Learn more about [agent approvals](/docs/agents/run/approvals.md).\n\n<!-- TODO: Add a screenshot showing an agent editing and running notebook cells in the current UI. -->",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/notebooks-with-ai.md"
+}

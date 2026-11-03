@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_agent_troubleshooting_cache_explorer__before_you_start",
+  "title": "cache explorer / Before you start",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Before you start\n\nTo make the comparison useful:\n\n* Use a session with at least two model requests.\n* Open the Agent Debug Logs Summary view and confirm that cache reuse is low for a request that also has unexpected duration or input token usage.\n* Compare requests from the same session. Keep the model and task comparable when you verify a change.\n\nIf the Summary view does not report cache information, the selected model or provider might not expose it. Use the Logs view to investigate request duration, errors, and tool calls instead.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/agent-troubleshooting/cache-explorer.md"
+}

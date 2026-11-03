@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_37__vs_code_remote_core",
+  "title": "v1_37 / VS Code Remote Core",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## VS Code Remote Core\n\n### Empty remote window presentation\n\nWhen an empty remote window is opened (no folder, no workspace file) and the startup editor is not the Welcome page, we now show the projects view and the terminal. Use the **Open** button from the explorer to select a remote folder, or use the terminal to open files and folders.\n\n### Install Local Extensions in Remote Server\n\nThere is a new command **Remote: Install Local Extensions in** when running remotely to select and install local extensions in the remote server.\n\n![Install Local Extensions](images/1_37/install-local-extensions-remote.gif).\n\n### Open in terminal/external terminal integration\n\nThe external terminal integration now uses the integrated terminal in remote, this includes the **Open in terminal** entry in the Explorer context menu as well as the **Open New Terminal** command.\n\n### Remote settings\n\nThe Remote settings file now supports edit actions.\n\n![Edit Remote Settings](images/1_37/remote-settings.png).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_37.md"
+}

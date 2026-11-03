@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_workspaces_workspaces__how_do_i_open_a_data_variables_product_prodname_vscode_shortname_workspace",
+  "title": "workspaces / How do I open a {% data variables.product.prodname_vscode_shortname %} \"workspace\"?",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## How do I open a {% data variables.product.prodname_vscode_shortname %} \"workspace\"?\n\nYou can open a workspace by using the **File** > **Open Folder...** menu, and then selecting a folder.\n\nAlternatively, if you launch {% data variables.product.prodname_vscode_shortname %} from a terminal, you can pass the path to a folder as the first argument to the `code` command for opening. For example, use the following command to open the current folder (`.`) with {% data variables.product.prodname_vscode_shortname %}:\n\n```bash\ncode .\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/workspaces/workspaces.md"
+}

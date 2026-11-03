@@ -1,0 +1,8 @@
+{
+  "id": "docs_setup_copilot__remove_ai_features_from_data_variables_product_prodname_vscode_shortname",
+  "title": "copilot / Remove AI features from {% data variables.product.prodname_vscode_shortname %}",
+  "category": "INSTALLATION",
+  "intent": "installation",
+  "content": "## Remove AI features from {% data variables.product.prodname_vscode_shortname %}\n\nYou can disable the built-in AI features in {% data variables.product.prodname_vscode_shortname %} with the `setting(chat.disableAIFeatures)` setting, similar to how you configure other features in {% data variables.product.prodname_vscode_shortname %}.\n\nThis setting disables and hides features like chat or inline suggestions in {% data variables.product.prodname_vscode_shortname %} and disables the Copilot extension. You can configure the setting at the workspace or user level.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/copilot.md"
+}

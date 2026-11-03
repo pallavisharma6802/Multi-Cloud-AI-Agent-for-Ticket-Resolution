@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_34__languages",
+  "title": "v1_34 / Languages",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Languages\n\n### Lower rank for CSS property values with vendor prefix\n\nCSS property values prefixed with dash `'-'` (such as `-moz-grid` or `-ms-grid`), now come after `grid` in auto completion.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_34.md"
+}

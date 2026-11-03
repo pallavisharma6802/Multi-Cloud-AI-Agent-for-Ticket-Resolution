@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_18__new_commands",
+  "title": "v1_18 / New commands",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## New commands\n\nKey|Command|Command id\n---|-------|----------\n`kb(workbench.action.quickOpenPreviousEditor)`|Open quick file picker with the second entry selected by default|`workbench.action.quickOpenPreviousEditor`\n`kb(workbench.action.openFolderAsWorkspaceInNewWindow)`|Open a folder as workspace in a new window|`workbench.action.openFolderAsWorkspaceInNewWindow`\n`kb(workbench.action.removeRootFolder)`|Remove a root folder from the workspace|`workbench.action.removeRootFolder`\n`kb(workbench.action.problems.focus)`|Focus Problems|`workbench.action.problems.focus`\n`kb(workbench.debug.action.focusVariablesView)`|Focus Variables|`workbench.debug.action.focusVariablesView`\n`kb(workbench.debug.action.focusWatchView)`|Focus Watch|`workbench.debug.action.focusWatchView`\n`kb(workbench.debug.action.focusCallStackView)`|Focus CallStack|`workbench.debug.action.focusCallStackView`\n`kb(workbench.debug.action.focusBreakpointsView)`|Focus Breakpoints|`workbench.debug.action.focusBreakpointsView`",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_18.md"
+}

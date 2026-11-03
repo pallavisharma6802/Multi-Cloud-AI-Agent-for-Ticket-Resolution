@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_csharp__intellisense",
+  "title": "csharp / IntelliSense",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## IntelliSense\n\nIntelliSense just works: hit `kb(editor.action.triggerSuggest)` at any time to get context specific suggestions.\n\n![IntelliSense](images/csharp/intellisense.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/csharp.md"
+}

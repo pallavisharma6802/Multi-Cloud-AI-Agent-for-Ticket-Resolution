@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_colorization_cpp__customizing_colors_in_settings",
+  "title": "colorization cpp / Customizing Colors in Settings",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Customizing Colors in Settings\n\nColors can also be overridden globally, in settings:\n\n```json\n    \"editor.semanticTokenColorCustomizations\": {\n        \"rules\": {\n            \"templateType\": {\n                \"foreground\": \"#ff0000\",\n                \"fontStyle\": \"italic bold underline\"\n            }\n        }\n    }\n```\n\nOr, overridden on a per-theme basis:\n\n```json\n    \"editor.semanticTokenColorCustomizations\": {\n        \"[Visual Studio Dark]\": {\n            \"rules\": {\n                \"templateType\": {\n                    \"foreground\": \"#ff0000\",\n                    \"fontStyle\": \"italic bold underline\"\n                }\n            }\n        }\n    }\n```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/colorization-cpp.md"
+}

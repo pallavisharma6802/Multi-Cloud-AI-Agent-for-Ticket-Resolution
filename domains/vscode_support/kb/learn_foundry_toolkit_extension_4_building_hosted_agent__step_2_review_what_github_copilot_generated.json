@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundry_toolkit_extension_4_building_hosted_agent__step_2_review_what_github_copilot_generated",
+  "title": "4 building hosted agent / Step 2: Review What GitHub Copilot Generated",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Step 2: Review What GitHub Copilot Generated\n\nLet's see what was generated. Here's what you should expect to see in the project folder:\n\n- **Main runtime**: `main.py` contains the core assistant logic and runtime wiring.\n- **Agent config**: `agent.yaml` defines behavior, hosting, protocol, and runtime settings.\n- **Tool config**: `toolbox.yaml` describes connected tools and tool endpoints.\n- **Deployment config**: `azure.yaml` and `infra/` Bicep templates drive provisioning and deploy.\n\nIf any file role looks unclear here, stop and resolve it before deployment. Ambiguity at this step usually becomes expensive once cloud resources are involved.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
+}

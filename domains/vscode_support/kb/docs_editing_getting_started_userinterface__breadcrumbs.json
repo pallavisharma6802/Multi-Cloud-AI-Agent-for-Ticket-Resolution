@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_getting_started_userinterface__breadcrumbs",
+  "title": "userinterface / Breadcrumbs",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Breadcrumbs\n\nThe editor has a navigation bar at the top, also called [breadcrumbs](https://en.wikipedia.org/wiki/Breadcrumb_(navigation)). Breadcrumbs always show the file path and, if the current file type has language support for symbols, the symbol path up to the cursor position. The breadcrumbs enable you to quickly navigate between folders, files, and symbols.\n\n![Breadcrumbs](../images/userinterface/breadcrumbs.png)\n\nYou can disable breadcrumbs with the **View** > **Appearance** > **Toggle Breadcrumbs** menu item or the **View: Toggle Breadcrumbs** command. For more information about the breadcrumbs feature, such as how to customize their appearance, see the [Breadcrumbs](/docs/editing/editingevolved.md#breadcrumbs) section of the [Code Navigation](/docs/editing/editingevolved.md) article.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/userinterface.md"
+}

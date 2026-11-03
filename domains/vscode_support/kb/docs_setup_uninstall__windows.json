@@ -1,0 +1,8 @@
+{
+  "id": "docs_setup_uninstall__windows",
+  "title": "uninstall / Windows",
+  "category": "INSTALLATION",
+  "intent": "installation",
+  "content": "## Windows\n\n### Windows Installer\n\nIf you installed {% data variables.product.prodname_vscode_shortname %} via the Windows Installer, either the User or System version, use the installer to remove {% data variables.product.prodname_vscode_shortname %}.\n\n* Start menu\n  * Search for **Add or Remove Programs** and find {% data variables.product.prodname_vscode %} in the **Apps** > **Apps & features** list.\n  * Select **Uninstall** from the actions dropdown on the right side (three vertical dots).\n  * Follow the prompts to uninstall {% data variables.product.prodname_vscode_shortname %}.\n* Control Panel\n  * Under **Programs**, select the **Uninstall a program** link.\n  * Find the {% data variables.product.prodname_vscode %} entry, right-click, and select the **Uninstall** command.\n  * Follow the prompts to uninstall {% data variables.product.prodname_vscode_shortname %}.\n\n### .zip file installation\n\nIf you installed {% data variables.product.prodname_vscode_shortname %} on Windows by downloading and extracting one of the `.zip` files found on the [{% data variables.product.prodname_vscode %} website](https://code.visualstudio.com/#alt-downloads), you can uninstall by deleting the folder where you extracted the `.zip` contents.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/uninstall.md"
+}

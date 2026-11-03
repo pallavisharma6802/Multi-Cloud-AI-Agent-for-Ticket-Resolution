@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_76__extensions",
+  "title": "v1_76 / Extensions",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Extensions\n\n### Improved extension search relevance\n\nWe have improved the relevance of extension search results in the [Extensions view](https://code.visualstudio.com/docs/configure/extensions/extension-marketplace#_search-for-an-extension) and on the [Marketplace](https://marketplace.visualstudio.com/vscode) gallery. Results should now be more appropriate, especially for multi-word queries.\n\n| Before      | After |\n| ----------- | ----------- |\n| ![Search results for \"mono debugger\" showing Java debugger extension as the top result](images/1_76/search_before.png)      | ![Search results for \"mono debugger\" showing Mono debug extension as the top result](images/1_76/search_after.png)       |",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_76.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_html__hover",
+  "title": "html / Hover",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Hover\n\nMove the mouse over HTML tags or embedded styles and JavaScript to get more information on the symbol under the cursor.\n\n![HTML Hover](images/html/htmlhover.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/html.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_html__html_custom_data",
+  "title": "html / HTML custom data",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## HTML custom data\n\nYou can extend {% data variables.product.prodname_vscode_shortname %}'s HTML support through a declarative [custom data format](https://github.com/microsoft/vscode-html-languageservice/blob/main/docs/customData.md). By setting `setting(html.customData)` to a list of JSON files following the custom data format, you can enhance {% data variables.product.prodname_vscode_shortname %}'s understanding of new HTML tags, attributes and attribute values. {% data variables.product.prodname_vscode_shortname %} will then offer language support such as completion & hover information for the provided tags, attributes and attribute values.\n\nYou can read more about using custom data in the [vscode-custom-data](https://github.com/microsoft/vscode-custom-data) repository.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/html.md"
+}

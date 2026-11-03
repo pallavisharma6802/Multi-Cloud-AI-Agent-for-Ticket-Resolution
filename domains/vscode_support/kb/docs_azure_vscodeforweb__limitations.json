@@ -1,0 +1,8 @@
+{
+  "id": "docs_azure_vscodeforweb__limitations",
+  "title": "vscodeforweb / Limitations",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Limitations\n\nAlthough {% data variables.product.prodname_vscode_shortname %} for the Web is almost at parity with {% data variables.product.prodname_vscode_shortname %} on the desktop, there are some limitations to the development environment:\n\n* No terminal access beyond Cloud Shell\n* Limited support for some native extensions or language features\n* No offline support",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/vscodeforweb.md"
+}

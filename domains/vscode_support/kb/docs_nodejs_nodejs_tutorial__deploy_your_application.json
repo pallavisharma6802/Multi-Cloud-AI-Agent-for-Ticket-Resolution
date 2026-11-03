@@ -1,0 +1,8 @@
+{
+  "id": "docs_nodejs_nodejs_tutorial__deploy_your_application",
+  "title": "nodejs tutorial / Deploy your application",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Deploy your application\n\nIf you'd like to learn how to deploy your web application, check out the [Deploying Applications to Azure](/docs/azure/deployment.md) tutorials where we show how to run your website in Azure.\n\n---",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/nodejs-tutorial.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_overview__test_and_validate",
+  "title": "overview / Test and validate",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Test and validate\n\n* [Add tests to existing code](/docs/agents/guides/test-code-with-ai.md): generate tests for a function or module, run them, and review assertions, failures, and coverage. **Use your own project with {% data variables.product.prodname_copilot_short %} in the {% data variables.copilot.chat_view %}.**\n\n* [Validate a web app with browser tools](/docs/agents/guides/browser-agent-testing-guide.md): build a calculator app and check it against observable acceptance criteria. **Sample web app.**\n\n* [Set up test-driven development](/docs/agents/guides/test-driven-development-guide.md): create custom agents and instructions for a repeatable test-first workflow. **Use your own repository with working tests and the Local harness in the {% data variables.copilot.chat_view %}.**",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/overview.md"
+}

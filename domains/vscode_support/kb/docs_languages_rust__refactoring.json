@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_rust__refactoring",
+  "title": "rust / Refactoring",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Refactoring\n\nDue to rust-analyzer's semantic understanding of your source code, it can also provide smart renames, across your Rust files. With your cursor on a variable, select **Rename Symbol** from the context menu, Command Palette, or via `kb(editor.action.rename)`.\n\nThe rust-analyzer extension also supports other code refactorings and code generation, which the extension calls [Assists](https://rust-analyzer.github.io/manual.html#assists-code-actions).\n\nHere are just a few of the refactorings available:\n\n* Convert if statement to guarded return\n* Inline variable\n* Extract function\n* Add return type\n* Add import",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/rust.md"
+}

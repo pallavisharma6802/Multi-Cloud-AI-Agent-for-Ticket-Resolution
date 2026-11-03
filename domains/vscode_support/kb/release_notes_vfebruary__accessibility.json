@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vfebruary__accessibility",
+  "title": "vFebruary / Accessibility",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Accessibility\n\nAccessibility has been a constant theme over the past milestones and in February VS Code has been improved across the feature space.\n\n### High Contrast Theme\n\nAs a part of the accessibility work, the **High Contrast** theme, which was only available for Windows users, is now enabled for all 3 platforms.\n\n![High Contrast Theme](images/February/high-contrast.png)\n\n### Screen reading\n\nWe have turned on by default a new strategy for screen readers in the editor, one that is based on paging the text. From our testing, this is the best option in terms of trade-off between good screen reader support and performance when dealing with very large files.\n\nThe **Go to Next/Previous Error or Warning** actions (`kb(editor.action.marker.nextInFiles)` and `kb(editor.action.marker.prevInFiles)`) now allow screen readers to announce the error or warning messages.\n\n### Improved Debugger Accessibility\n\nBased on [user feedback](https://github.com/microsoft/vscode/issues/2108#issuecomment-183373356), we have improved debugger accessibility:\n\n* Changes in debug state are read out (e.g. 'started', 'breakpoint hit', 'terminated', ...)\n* All debug actions are keyboard accessible\n* Focus intuitively moves inside the Debug View and Debug Console\n* Debug hover is keyboard accessible (`kb(editor.action.showHover)`)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vFebruary.md"
+}

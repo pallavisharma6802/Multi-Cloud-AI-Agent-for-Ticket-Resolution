@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_create_agents__related_resources",
+  "title": "create agents / Related resources",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related resources\n\n* [Debug code-based agents with Agent Inspector](/docs/intelligentapps/agent-inspector.md)\n* [Use Tool Catalog to connect shared tools](/docs/intelligentapps/tool-catalog.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/create-agents.md"
+}

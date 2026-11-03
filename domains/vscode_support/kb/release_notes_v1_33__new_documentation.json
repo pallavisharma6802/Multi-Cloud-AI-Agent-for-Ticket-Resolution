@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_33__new_documentation",
+  "title": "v1_33 / New documentation",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## New documentation\n\n### Node remote debugging\n\nThe new [Remote Debugging for Node.js](https://code.visualstudio.com/docs/azure/remote-debugging) topic explains how you can connect the VS Code debugger to your Node.js applications running on [Azure](https://azure.microsoft.com) with the [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) extension.\n\n![Azure App Service extension](images/1_33/azure-app-service.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_33.md"
+}

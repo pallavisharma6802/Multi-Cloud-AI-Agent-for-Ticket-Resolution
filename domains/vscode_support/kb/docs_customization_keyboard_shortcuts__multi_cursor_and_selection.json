@@ -1,0 +1,8 @@
+{
+  "id": "docs_customization_keyboard_shortcuts__multi_cursor_and_selection",
+  "title": "keyboard shortcuts / Multi-cursor and Selection",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Multi-cursor and Selection\n\nKey|Command\n---|---\n`kbstyle(Alt+Click)`|Insert cursor\n`kb(editor.action.insertCursorabove)`|Insert cursor above\n`kb(editor.action.insertCursorbelow)`|Insert cursor below\n`kb(cursorUndo)`|Undo last cursor operation\n`kb(editor.action.insertCursorAtendOfEachlineSelected)`|Insert cursor at end of each line selected\n`kb(expandlineSelection)`|Select current line\n`kb(editor.action.selectHighlights)`|Select all occurrences of current selection\n`kb(editor.action.changeAll)`|Select all occurrences of current word\n`kb(editor.action.smartSelect.expand)`|Expand selection\n`kb(editor.action.smartSelect.shrink)`|Shrink selection\n`kbstyle(Shift+Alt)` + drag mouse |Column selection\n`kb(cursorColumnSelectup)`|Column selection up\n`kb(cursorColumnSelectdown)`|Column selection down\n`kb(cursorColumnSelectLeft)`|Column selection left\n`kb(cursorColumnSelectRight)`|Column selection right\n`kb(cursorColumnSelectPageup)`|Column selection page up\n`kb(cursorColumnSelectPagedown)`|Column selection page down",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/customization/keyboard-shortcuts.md"
+}

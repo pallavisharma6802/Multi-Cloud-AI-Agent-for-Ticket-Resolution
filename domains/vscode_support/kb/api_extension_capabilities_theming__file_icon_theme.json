@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_capabilities_theming__file_icon_theme",
+  "title": "theming / File Icon Theme",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## File Icon Theme\n\nFile icon themes allow you to:\n\n- Create a mapping from unique file icon identifiers to images or font icons.\n- Associate files to these unique file icon identifiers by filenames or file language types.\n\nThe [File Icon Theme guide](/api/extension-guides/file-icon-theme) discusses how to create a File Icon Theme.\n![file-icon-theme](images/theming/file-icon-theme.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-capabilities/theming.md"
+}

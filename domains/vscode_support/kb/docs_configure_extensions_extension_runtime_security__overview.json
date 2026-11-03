@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_extensions_extension_runtime_security__overview",
+  "title": "extension runtime security",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "# Extension runtime security\n\n[Extensions](/docs/configure/extensions/extension-marketplace.md) greatly enhance the functionality of {% data variables.product.prodname_vscode %}. They can also introduce risks, such as malicious code execution and data privacy concerns. The [Visual Studio Marketplace](https://marketplace.visualstudio.com/vscode) has many ways to protect you from bad extensions. In addition, {% data variables.product.prodname_vscode_shortname %} gives you several indicators of an extension's reliability.\n\nThis document outlines the runtime permissions of extensions in {% data variables.product.prodname_vscode_shortname %} and the measures in place to protect you from malicious extensions. You'll learn how to make an informed decision about the reliability of an extension before installing it.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/extensions/extension-runtime-security.md"
+}

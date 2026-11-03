@@ -1,0 +1,8 @@
+{
+  "id": "docs_nodejs_extensions__overview",
+  "title": "extensions",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# JavaScript extensions for {% data variables.product.prodname_vscode_shortname %}\n\n{% data variables.product.prodname_vscode %} supports many features for JavaScript and Node.js development. The features that ship with the downloaded product are the core features: debugging, IntelliSense, code navigation, etc.\n\nIn addition, to these core features, you can install a large number of quality extensions to add features to {% data variables.product.prodname_vscode_shortname %} for JavaScript development.\n\n> **Tip:** To see how to install and manage your extensions, please refer to the [extension documentation](/docs/configure/extensions/extension-marketplace.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/extensions.md"
+}

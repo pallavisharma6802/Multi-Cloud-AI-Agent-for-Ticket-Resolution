@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_php__debugging",
+  "title": "php / Debugging",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Debugging\n\nPHP debugging with **XDebug** is supported through a [PHP Debug extension](https://marketplace.visualstudio.com/items?itemName=xdebug.php-debug). Follow the extension's instructions for configuring **XDebug** to work with {% data variables.product.prodname_vscode_shortname %}.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/php.md"
+}

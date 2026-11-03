@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_troubleshooting__error_connect_eacces_var_run_docker_sock_on_linux",
+  "title": "troubleshooting / Error \"connect EACCES /var/run/docker.sock\" on Linux",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Error \"connect EACCES /var/run/docker.sock\" on Linux\n\nSince {% data variables.product.prodname_vscode_shortname %} runs as a non-root user, you will need to follow the steps in \"Manage Docker as a non-root user\" from [Post-installation steps for Linux](https://aka.ms/AA37yk6) to access Docker from the extension.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/troubleshooting.md"
+}

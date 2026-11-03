@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_107__accessibility",
+  "title": "v1_107 / Accessibility",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Accessibility\n\n### Keyboard approval for chat confirmations\n\nWhen an agent prompts for confirmation, you can now approve via keyboard using `kb(workbench.action.chat.acceptTool)`.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_107.md"
+}

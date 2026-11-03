@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_ai_powered_suggestions__next_steps",
+  "title": "ai powered suggestions / Next steps",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Next steps\n\n* Discover the key features in the [Quickstart](/docs/agents/quickstart.md).\n\n* Watch the videos in our [{% data variables.product.prodname_vscode_shortname %} Copilot Series](https://www.youtube.com/playlist?list=PLj6YeMhvp2S5_hvBl2SE-7YCHYlLQ0bPt) on YouTube.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/ai-powered-suggestions.md"
+}

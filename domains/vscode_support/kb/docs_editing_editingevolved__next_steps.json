@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_editingevolved__next_steps",
+  "title": "editingevolved / Next steps",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Next steps\n\nNow that you know how the editor works, time to try a few other things...\n\n* [Intro Video - Code Editing](/docs/introvideos/codeediting.md) - Watch an introductory video on code editing features.\n* [User Interface](/docs/editing/getting-started/userinterface.md) - In case you missed a basic orientation around {% data variables.product.prodname_vscode_shortname %}.\n* [Key Bindings](/docs/configure/keybindings.md) - Learn how to modify keyboard shortcuts to your preference.\n* [Debugging](/docs/debugtest/debugging.md) - This is where {% data variables.product.prodname_vscode_shortname %} really shines.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/editingevolved.md"
+}

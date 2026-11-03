@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_47__language_server_protocol",
+  "title": "v1_47 / Language Server Protocol",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Language Server Protocol\n\nSupport for [semantic tokens](https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#textDocument_semanticTokens) and lazy resolving of additional text edits in [completion items](https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#textDocument_completion) has been added to the upcoming [3.16](https://microsoft.github.io/language-server-protocol/specifications/specification-3-16) specification.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_47.md"
+}

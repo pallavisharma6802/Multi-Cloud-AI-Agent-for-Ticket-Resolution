@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundations_build_your_first_app_with_agent_mode__reading_the_agent_debug_logs",
+  "title": "build your first app with agent mode / Reading the Agent Debug Logs",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Reading the Agent Debug Logs\n\nAfter Autopilot runs, open the Agent Debug Logs.\n\n* Logs view shows the sequence of events, customization loading, LLM requests, tool calls, terminal commands, parallel file creation, and verification.\n* Summary view shows totals for model turns, tool calls, tokens, and events.\n* Agent Flow Chart visualizes the structure of the session.\n\nWith two sessions after forking, compare the logs side by side.\n\nYou can also attach a debug snapshot and ask a direct question such as `#debugEventsSnapshot How many tool calls did this session make?`",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/build-your-first-app-with-agent-mode.md"
+}

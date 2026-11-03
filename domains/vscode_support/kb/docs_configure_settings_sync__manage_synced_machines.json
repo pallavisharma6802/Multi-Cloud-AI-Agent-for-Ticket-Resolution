@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_settings_sync__manage_synced_machines",
+  "title": "settings sync / Manage synced machines",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Manage synced machines\n\n{% data variables.product.prodname_vscode_shortname %} tracks the devices that synchronize your data. Run the **Settings Sync: Show Synced Data** command, and then expand **Synced Machines** to view them.\n\nEach device has a default name based on its operating system and whether it runs Stable or Insiders. Use the actions for a device to rename it or turn off {% data variables.product.prodname_settings_sync %} remotely.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/settings-sync.md"
+}

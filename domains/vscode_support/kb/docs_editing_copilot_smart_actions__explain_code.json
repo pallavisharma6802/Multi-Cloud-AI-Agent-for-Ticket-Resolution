@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_copilot_smart_actions__explain_code",
+  "title": "copilot smart actions / Explain code",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Explain code\n\nGet help with explaining a block of code in the editor.\n\n1. Open your application code file.\n1. Select the code you want to fix.\n1. Right-click and select **Explain**.\n\n    {% data variables.product.prodname_vscode_shortname %} provides an explanation of the selected block of code.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/copilot-smart-actions.md"
+}

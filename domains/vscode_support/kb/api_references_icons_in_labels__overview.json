@@ -1,0 +1,8 @@
+{
+  "id": "api_references_icons_in_labels__overview",
+  "title": "icons in labels",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "# Product Icon Reference\n\nVisual Studio Code contains a set of built-in icons that are used in views and the editor, but can also be used in hovers, the status bar, and by extensions. These icons are **product icons** as opposed to **file icons**, which are used next to file names throughout the UI.\n\nThe product icons that ship with VS Code are contained in the [Codicon icon font](https://github.com/microsoft/vscode-codicons) and form the **default** product icon theme. Extensions can provide new [Product Icon Themes](/api/extension-guides/product-icon-theme) to redefine these icons and give VS Code a new appearance.\n\nIn order to allow this, all product icons are identified by an ID. The icon identifier is what's used in UI components in labels (`$(pencil)`), in the API as `ThemeIcon` and in contributions when icons are needed.\n\nThe association of icon identifier to an actual icon font glyph happens the product icon theme.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/icons-in-labels.md"
+}

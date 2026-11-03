@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_build_tools__overview",
+  "title": "build tools",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Build Tools\n\nThis document is an overview of how to build your C# projects and solutions in the C# tools for {% data variables.product.prodname_vscode %}. It covers the features provided by the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/build-tools.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_91__extension_authoring",
+  "title": "v1_91 / Extension authoring",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Extension authoring\n\n### Chat and Language Model API\n\nLast month, we finalized the APIs that enable extensions to participate in chat and to access language models, but they were only available in VS Code Insiders. In this release, these APIs are now fully available in VS Code Stable.\n\nCheck out our [announcement blog post](https://code.visualstudio.com/blogs/2024/06/24/extensions-are-all-you-need) to learn more about these APIs and see how some of early adopters are using them.\n\nTo get started, head over to our [extension sample](https://github.com/microsoft/vscode-extension-samples/tree/main/chat-sample) and the [Chat extensibility documentation](https://code.visualstudio.com/api/extension-guides/chat).\n\n### Handling of default values for object settings\n\nWhen multiple extensions contribute default values for the same object setting, these default values are now combined. This prevents conflicts between the extensions.\n\n### Finalized `DebugSessionOptions.testRun` API\n\nExtensions that start a debug session from a test run, can now pass that run into the `DebugSessionOptions` when they call `vscode.debug.startDebugging`. When passed, lifecycle actions, such as restarting the debug session, create a new test run as well.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_91.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "api_ux_guidelines_context_menus__overview",
+  "title": "context menus",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "# Context Menus\n\n[Menu items](/api/references/contribution-points#contributes.menus) appear in views, actions, and right-click menus. It's important that the grouping of menus remain consistent. If your extension has actions that relate to files, place your actions in the File Explorer context menu (when appropriate). If an extension has actions for certain file types, only display it for those items.\n\n**\u2714\ufe0f Do**\n\n* Show actions when contextually appropriate\n* Group similar actions together\n* Place large groups of actions into a submenu\n\n\u274c Don't\n\n* Show actions for every file without context\n\n![Context Menu](images/examples/context-menu.png)\n\n*This example places a **Copy GitHub Permalink** next to the other copy commands. This action only appears on files that are from a GitHub repository.*",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/context-menus.md"
+}

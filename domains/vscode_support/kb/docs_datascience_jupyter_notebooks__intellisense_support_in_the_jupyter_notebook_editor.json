@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_jupyter_notebooks__intellisense_support_in_the_jupyter_notebook_editor",
+  "title": "jupyter notebooks / IntelliSense support in the Jupyter Notebook Editor",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## IntelliSense support in the Jupyter Notebook Editor\n\nThe Python Jupyter Notebook Editor window has full IntelliSense \u2013 code completions, member lists, quick info for methods, and parameter hints. You can be just as productive typing in the Notebook Editor window as you are in the code editor.\n\n![IntelliSense support](images/jupyter/intellisense.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/jupyter-notebooks.md"
+}

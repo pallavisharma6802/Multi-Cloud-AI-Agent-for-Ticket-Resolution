@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_59__debug_adapter_protocol",
+  "title": "v1_59 / Debug Adapter Protocol",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debug Adapter Protocol\n\n### Finalized \"writeMemory\" request and \"memory\" event proposal\n\nThe `writeMemory` request has been finalized and is now available in version 1.48 of the [Debug Adapter Protocol](https://microsoft.github.io/debug-adapter-protocol/) and the corresponding npm modules. If a debug adapter has a `supportsWriteMemoryRequest` capability, clients can use the `writeMemory` request to write bytes to memory at a given location.\n\nThe `memory` event has a [proposal](https://github.com/microsoft/debug-adapter-protocol/issues/194#issuecomment-886687894) that will be added to DAP in the next milestone.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_59.md"
+}

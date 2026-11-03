@@ -1,0 +1,8 @@
+{
+  "id": "docs_supporting_troubleshoot_terminal_launch__exit_codes",
+  "title": "troubleshoot terminal launch / Exit codes",
+  "category": "REFERENCE",
+  "intent": "reference",
+  "content": "## Exit codes\n\nA process exit code reports how the shell or program ended. A native process-creation error, such as Windows error `5` or `267`, instead reports a failure to create the process. These codes have different meanings, even when their numbers match.\n\nSearch using the complete message, shell name, and operating system. An exit code alone is not a diagnosis.\n\n### Terminal exited after starting\n\nA shell can start successfully and later exit with a non-zero status. For example, an explicit `exit` command or a script that terminates the shell can produce an exit notification. This is different from a command failing while the shell remains open.\n\nCheck the last terminal output and the command that preceded the exit. If the shell exits only during startup, use the startup customization and integration tests above. If you did not expect the shell to close, capture logs rather than hiding the notification.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/supporting/troubleshoot-terminal-launch.md"
+}

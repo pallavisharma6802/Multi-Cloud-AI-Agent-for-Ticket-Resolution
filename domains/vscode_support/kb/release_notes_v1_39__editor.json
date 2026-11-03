@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_39__editor",
+  "title": "v1_39 / Editor",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Editor\n\n### Toggle folding\n\nYou can now expand and collapse a folding region with the **Toggle Fold** (`kb(editor.toggleFold)`) command.\n\n### Minimap editor selection decorations\n\nThe editor selection is now highlighted within the minimap:\n\n![Minimap displays the editor selection](images/1_39/minimap-selection.png)\n\nYou can change the color of these decorations by modifying the `minimap.selectionHighlight` theme color.\n\n### Touch events for the minimap\n\nThe minimap slider can now be dragged with touch.\n\n### New option for multi cursor pasting\n\nIn the past, when pasting multi-line text from the clipboard, VS Code would check if the clipboard text line count matched the cursor count, and if it did, it would \"distribute\" or \"spread\" each line to a cursor. You can now control this behavior with the `editor.multiCursorPaste` setting, which can have the values:\n\n* `spread` - Each cursor pastes a line of text (default).\n* `full` - Each cursor pastes the full clipboard text.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_39.md"
+}

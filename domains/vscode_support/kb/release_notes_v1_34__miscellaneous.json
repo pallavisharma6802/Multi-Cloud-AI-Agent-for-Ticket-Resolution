@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_34__miscellaneous",
+  "title": "v1_34 / Miscellaneous",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Miscellaneous\n\n### Language Server Protocol\n\nThe [Language Server Protocol](https://microsoft.github.io/language-server-protocol) has proposed support for the following new features:\n\n* Selection ranges: to compute selection ranges for an array of positions. Sent from client to server.\n* Call hierarchy: to compute a call hierarchy for a given symbol. Sent from client to server.\n* Progress: to initiate progress reporting from the server. Sent from server to client.\n\nThe new features are available in the next versions of the `vscode-languageclient` and `vscode-languageserver` npm modules.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_34.md"
+}

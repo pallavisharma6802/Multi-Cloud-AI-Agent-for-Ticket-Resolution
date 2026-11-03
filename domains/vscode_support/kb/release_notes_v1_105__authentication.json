@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_105__authentication",
+  "title": "v1_105 / Authentication",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Authentication\n\n### macOS native broker support for Microsoft Authentication\n\n**Setting**: `setting(microsoft-authentication.implementation)`\n\nThis milestone, we adopted the latest MSAL libraries and with that you are now able to sign in through a native experience on macOS (in addition to Windows):\n\n![Screenshot of a native broker dialog window asking to sign into VS Code.](images/1_105/macOS-auth-broker.png)\n\nNative broker authentication is only available for:\n\n* M-series (also known as ARM) macOS devices\n* macOS machines that are Intune-enrolled with the policy to go through the broker\n\nThis enables nice single sign-on flows and is the recommended way of acquiring a Microsoft authentication session. The MSAL team will enable this up for the remaining platforms (Linux, Windows ARM, macOS Intel/x64) over time, so stay tuned!\n\n> NOTE: If you have trouble authenticating via the broker, you can change the `setting(microsoft-authentication.implementation)` to `msal-no-broker`, which will use your browser to authenticate instead.\n\n### PKCE support for GitHub Authentication\n\n[GitHub recently enabled](https://github.blog/changelog/2025-07-14-pkce-support-for-oauth-and-github-app-authentication/) PKCE ([Proof Key for Code Exchange](https://www.rfc-editor.org/rfc/rfc7636)) support in their authentication flows. We have adopted this in the flow that VS Code uses to authenticate to GitHub.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_105.md"
+}

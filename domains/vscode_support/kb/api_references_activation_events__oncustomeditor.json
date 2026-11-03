@@ -1,0 +1,8 @@
+{
+  "id": "api_references_activation_events__oncustomeditor",
+  "title": "activation events / onCustomEditor",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## onCustomEditor\n\nThis activation event is emitted and interested extensions will be activated whenever VS Code needs to create a [custom editor](/api/extension-guides/custom-editors) with the matching `viewType`.\n\nFor example, the declaration of `onCustomEditor` below:\n\n```json\n\"activationEvents\": [\n    \"onCustomEditor:catCustoms.pawDraw\"\n]\n```\n\nwill cause the extension to be activated when VS Code needs to restore a custom editor with the viewType: `catCustoms.pawDraw`. The viewType is set in the [`customEditors` contribution point](/api/extension-guides/custom-editors#contribution-point) and bound to a provider with `registerCustomEditorProvider`.\n\n> **Note**: Beginning with VS Code 1.74.0, custom editors contributed by your extension do not require a corresponding `onCustomEditor` activation event declaration for your extension to be activated.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/activation-events.md"
+}

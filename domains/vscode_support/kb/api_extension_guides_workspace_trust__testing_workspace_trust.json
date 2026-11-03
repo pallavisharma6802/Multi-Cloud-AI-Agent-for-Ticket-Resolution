@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_workspace_trust__testing_workspace_trust",
+  "title": "workspace trust / Testing Workspace Trust",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Testing Workspace Trust\n\nSee the [Workspace Trust user guide](/docs/editor/workspace-trust) for details on enabling and configuring Workspace Trust.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/workspace-trust.md"
+}

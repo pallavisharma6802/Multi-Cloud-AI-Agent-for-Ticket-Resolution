@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_tutorial_fastapi__next_steps",
+  "title": "tutorial fastapi / Next Steps",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Next Steps\n\nThank you for following along this tutorial! We hope you learned something new about FastAPI and how to use it with {% data variables.product.prodname_vscode_shortname %}.\n\nThe completed code project from this tutorial can be found on GitHub: [python-sample-vscode-fastapi-tutorial](https://github.com/microsoft/python-sample-vscode-fastapi-tutorial).\n\nLearn more about FastAPI at the [official documentation](https://fastapi.tiangolo.com/).\n\nTo try the app on a production website, check out the tutorial [Deploy Python apps to Azure App Service using Docker Containers](https://learn.microsoft.com/azure/developer/python/tutorial-deploy-containers-01).\n\nYou can also review these other {% data variables.product.prodname_vscode_shortname %} Python articles:\n\n* [Editing Python code](/docs/python/editing.md)\n* [Managing Python environments](/docs/python/environments.md)\n* [Debugging Python](/docs/python/debugging.md)\n* [Testing](/docs/python/testing.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/tutorial-fastapi.md"
+}

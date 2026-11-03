@@ -1,0 +1,8 @@
+{
+  "id": "docs_setup_raspberry_pi__installation",
+  "title": "raspberry pi / Installation",
+  "category": "INSTALLATION",
+  "intent": "installation",
+  "content": "## Installation\n\n{% data variables.product.prodname_vscode %} is officially distributed via the [Raspberry Pi OS](https://www.raspberrypi.com/software/operating-systems/) (previously called Raspbian) APT repository, in both 32-bit and 64-bit variants.\n\nYou can install it by running:\n\n```bash\nsudo apt update\nsudo apt install code\n```\n\n### Running {% data variables.product.prodname_vscode_shortname %}\n\nAfter installing the {% data variables.product.prodname_vscode_shortname %} package, you can run {% data variables.product.prodname_vscode_shortname %} by typing `code` in a terminal or launching it via the **Programming** menu.\n\n![{% data variables.product.prodname_vscode %} under the Programming menu on Raspberry Pi](images/raspberry-pi-os/vscode-under-programming.jpg)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/raspberry-pi.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_jupyter_notebooks__overview",
+  "title": "jupyter notebooks",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Jupyter Notebooks in {% data variables.product.prodname_vscode_shortname %}\n\n[Jupyter](https://jupyter-notebook.readthedocs.io/en/latest/) (formerly IPython Notebook) is an open-source project that lets you easily combine Markdown text and executable Python source code on one canvas called a **notebook**. {% data variables.product.prodname_vscode %} supports working with Jupyter Notebooks natively (through the [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)), and through [Python code files](/docs/python/jupyter-support-py.md). This topic covers the native support available for Jupyter Notebooks and demonstrates how to:\n\n- Create, open, and save Jupyter Notebooks\n- Work with Jupyter code cells\n- View, inspect, and filter variables using the Variable Explorer and Data Viewer\n- Connect to a remote Jupyter server\n- Debug a Jupyter Notebook\n\n[![Watch Get started with Jupyter Notebooks in {% data variables.product.prodname_vscode_shortname %} on YouTube (opens in new tab).](images/jupyter-notebooks/youtube-suAkMeWJ1yE.jpg)](https://www.youtube.com/watch?v=suAkMeWJ1yE)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/jupyter-notebooks.md"
+}

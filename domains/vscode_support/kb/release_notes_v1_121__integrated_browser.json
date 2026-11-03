@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_121__integrated_browser",
+  "title": "v1_121 / Integrated Browser",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Integrated Browser\n\n### Quickly open HTML files in the Integrated Browser\n\nPreviously, previewing an HTML file required installing an extension, which is unnecessary friction for something so common. You can now easily open local HTML files via the **Open in Integrated Browser** option by right-clicking the file in the File Explorer, or right-clicking the editor tab when the file is already open. You can also select the **Preview** icon in the editor title bar when an HTML file is active.\n\n![Screenshot showing the editor title bar with an HTML file open and an Open in Integrated Browser icon.](images/1_121/browser-open-html.webp)\n\n### Improved experience for adding elements to chat\n\nWe have reworked the element selection UI to enable richer functionality and theming support.\n\n#### Select a range of elements\n\nYou can now click and drag to select a range of elements, making it easier to target shared container elements.\n\n<video src=\"images/1_121/browser-drag-select.mp4\" title=\"Video showing click-and-drag to select ancestor elements of items in a menu.\" autoplay loop controls muted></video>\n\n#### Attach elements from context menus\n\nYou can now right-click anywhere in a page to quickly attach elements to the chat.\n\n![Screenshot showing a context menu opened on an element with an Add Element to Chat item.](images/1_121/browser-add-context.webp)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_121.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "learn_customizations_4_custom_agent__creating_a_custom_agent",
+  "title": "4 custom agent / Creating a custom agent",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Creating a custom agent\n\nOne of the easiest ways to create a custom agent is to ask Copilot for help.\n\nFor example, you can describe your project and ask it to suggest an agent tailored to your needs. It can generate:\n\n- the agent definition\n- its responsibilities\n- why it\u2019s useful\n\n![Screenshot of Copilot Chat showing a prompt asking Copilot to suggest a custom agent for a project](../images/customizations/ep-4-2-ask-copilot-for-cust-agent.png)\n\nThis approach helps you think beyond just writing code and start designing workflows.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/4-custom-agent.md"
+}

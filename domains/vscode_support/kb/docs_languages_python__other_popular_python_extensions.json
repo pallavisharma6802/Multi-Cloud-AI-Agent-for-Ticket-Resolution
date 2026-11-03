@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_python__other_popular_python_extensions",
+  "title": "python / Other popular Python extensions",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Other popular Python extensions\n\nThe [Microsoft Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) provides all of the features described previously in this article. Additional Python language support can be added to {% data variables.product.prodname_vscode_shortname %} by installing other popular Python extensions.\n\n1. Open the **Extensions** view (`kb(workbench.view.extensions)`).\n1. Filter the extension list by typing 'python'.\n\n<div class=\"marketplace-extensions-python\"></div>\n\nThe extensions shown above are dynamically queried. Click on an extension tile above to read the description and reviews to decide which extension is best for you. See more in the [Marketplace](https://marketplace.visualstudio.com/vscode).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/python.md"
+}

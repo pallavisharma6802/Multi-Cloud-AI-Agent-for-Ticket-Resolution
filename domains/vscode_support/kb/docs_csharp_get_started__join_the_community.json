@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_get_started__join_the_community",
+  "title": "get started / Join the community",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Join the community\n\nFind community resources and connect with user groups.\n\n[.NET developer community](https://dotnet.microsoft.com/platform/community) - Meet with like-minded developers",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/get-started.md"
+}

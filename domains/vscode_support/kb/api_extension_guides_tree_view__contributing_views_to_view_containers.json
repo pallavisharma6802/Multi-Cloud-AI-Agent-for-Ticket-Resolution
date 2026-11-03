@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_tree_view__contributing_views_to_view_containers",
+  "title": "tree view / Contributing views to View Containers",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Contributing views to View Containers\n\nOnce you've created a View Container, you can use the [contributes.views](/api/references/contribution-points#contributes.views) Contribution Point in `package.json`.\n\n```json\n\"contributes\": {\n  \"views\": {\n    \"package-explorer\": [\n      {\n        \"id\": \"nodeDependencies\",\n        \"name\": \"Node Dependencies\",\n        \"icon\": \"media/dep.svg\",\n        \"contextualTitle\": \"Package Explorer\"\n      }\n    ]\n  }\n}\n```\n\nA view can also have an optional `visibility` property which can be set to `visible`, `collapsed`, or `hidden`. This property is only respected by VS Code the first time a workspace is opened with this view. After that, the visibility is set to whatever the user has chosen. If you have a view container with many views, or if your view will not be useful to every user of your extension, consider setting the view the `collapsed` or `hidden`. A `hidden` view will appear in the view containers \"Views\" menu:\n\n![Views Menu](images/tree-view/views-menu.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/tree-view.md"
+}

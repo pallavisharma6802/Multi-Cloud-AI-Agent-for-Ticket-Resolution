@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_workspaces_multi_root_workspaces__next_steps",
+  "title": "multi root workspaces / Next steps",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Next steps\n\n* [What is a {% data variables.product.prodname_vscode_shortname %} \"workspace\"?](/docs/editing/workspaces/workspaces.md) - More about single-folder and multi-root workspaces.\n* [Debugging](/docs/debugtest/debugging.md) - Learn how to set up debugging for your application.\n* [Tasks](/docs/debugtest/tasks.md) - Tasks let you run external tools like compilers within {% data variables.product.prodname_vscode_shortname %}.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/workspaces/multi-root-workspaces.md"
+}

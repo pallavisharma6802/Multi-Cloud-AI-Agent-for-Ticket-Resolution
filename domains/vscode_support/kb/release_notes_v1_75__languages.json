@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_75__languages",
+  "title": "v1_75 / Languages",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Languages\n\n### JavaScript React language label is now JavaScript JSX\n\nThe `JavaScript React` language mode has been renamed to `JavaScript JSX` to reflect that JSX syntax is used by more than just React. `TypeScript React` has also been renamed to `TypeScript JSX`.\n\nNote that only the language names shown in the UI have been changed. The internal language IDs (`javascriptreact` and `typescriptreact`) remain unchanged for compatibility reasons.\n\n### New shellscript grammar\n\nVS Code now uses a new grammar from [better-shell-syntax](https://github.com/jeff-hykin/better-shell-syntax) for shellscript syntax highlighting.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_75.md"
+}

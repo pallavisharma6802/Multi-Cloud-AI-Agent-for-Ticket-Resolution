@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_56__visual_studio_code_remote_core",
+  "title": "v1_56 / Visual Studio Code Remote Core",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Visual Studio Code Remote Core\n\n### Local terminal indicator and message\n\nAny **local** terminal launched within a remote window will now have a special indicator in the dropdown or terminal tab and will also display a warning message to help differentiate them from remote terminals.\n\n![Warning to say that shell is running on your local machine](images/1_56/local_terminals.png)\n\n### Themable color for forwarded ports\n\nPorts in the **Ports** view that are associated with a running process have a filled circle icon that is now themable with the theme id `ports.iconRunningProcessforeground`.\n\n![Port with a process icon](images/1_56/ports-view-running-icon.png)\n\n### Improved rendering of the remote indicator menu\n\nThe remote indicator menu shows when clicking on the remote indicator in the bottom left corner.\n\n![Remote Indicator Menu](images/1_56/remote-indicator-menu.png)\n\nThe labels in the remote menu no longer start with Remote-XY. Instead this is now shown as group label.\n\n### Remote indicator menu is now public API\n\nAny extension can now contribute commands to the Remote Indicator menu. See the Extension authoring section in the Visual Studio Code April 2021 Release Notes.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_56.md"
+}

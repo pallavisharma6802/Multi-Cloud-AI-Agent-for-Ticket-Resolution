@@ -1,0 +1,8 @@
+{
+  "id": "api_references_extension_manifest__extension_uninstall_hook",
+  "title": "extension manifest / Extension uninstall hook",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Extension uninstall hook\n\nIf your extension has some clean up to be done when it is uninstalled from VS Code, you can register a `node` script to the uninstall hook `vscode:uninstall` under `scripts` section in extension's package.json.\n\n```json\n{\n  \"scripts\": {\n    \"vscode:uninstall\": \"node ./out/src/lifecycle\"\n  }\n}\n```\n\nThis script gets executed when the extension is completely uninstalled from VS Code which is when VS Code is restarted (shutdown and start) after the extension is uninstalled.\n\n**Note**: Only Node.js scripts are supported.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/extension-manifest.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_copilot_tools__deploy_the_tested_agent",
+  "title": "copilot tools / Deploy the tested agent",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Deploy the tested agent\n\nDeploy only after you have reviewed the generated code and checked its local behavior. Use [Deploy your hosted agent](/docs/intelligentapps/hosted-agents.md#deploy-your-hosted-agent) for the canonical deployment procedure and its source-code or container-image options.\n\nIf you continue with {% data variables.product.prodname_copilot_short %}, explicitly identify the tested project and intended deployment target:\n\n```prompt\nPrepare this tested agent for deployment to my selected Foundry project.\nReview its deployment configuration, required identity permissions, packaged\nfiles, and secrets handling. Explain the resources and changes before deployment.\n```\n\nPreparing configuration does not submit a deployment. After you authorize deployment, confirm service-side success and test the deployed agent, rather than treating a local file change as success.\n\nLocal sign-in does not transfer your user's permissions to the deployed agent. For service identity, publication, networking, and production operations, follow the [Foundry agent lifecycle](https://learn.microsoft.com/azure/foundry/agents/concepts/development-lifecycle). Publishing an agent application is separate from deploying hosted-agent code.\n\n<a name=\"foundry-skills\"></a>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/copilot-tools.md"
+}

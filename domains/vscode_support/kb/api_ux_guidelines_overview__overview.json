@@ -1,0 +1,8 @@
+{
+  "id": "api_ux_guidelines_overview__overview",
+  "title": "overview",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "# UX Guidelines\n\nThese guidelines cover the best practices for creating extensions that seamlessly integrate with VS Code's native interface and patterns. In these guidelines, you can expect to find:\n\n- An outline of VS Code's overall UI architecture and elements\n- Recommendations and examples for UI contributed by an extension\n- Links to relevant guides and samples\n\nBefore diving into the details, it's important to understand how the various architectural UI parts of VS Code fit together and how and where your extension could contribute.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/overview.md"
+}

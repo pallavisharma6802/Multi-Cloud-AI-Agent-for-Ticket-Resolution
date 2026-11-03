@@ -1,0 +1,8 @@
+{
+  "id": "docs_nodejs_reactjs_tutorial__common_questions",
+  "title": "reactjs tutorial / Common questions",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Common questions\n\n### Can I get IntelliSense within declarative JSX?\n\nYes. For example, if you open the `create-react-app` project's `App.js` file, you can see IntelliSense within the React JSX in the `render()` method.\n\n![JSX IntelliSense](images/reactjs/jsx-intellisense.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/reactjs-tutorial.md"
+}

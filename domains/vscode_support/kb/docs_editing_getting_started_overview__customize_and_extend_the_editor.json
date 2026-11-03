@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_getting_started_overview__customize_and_extend_the_editor",
+  "title": "overview / Customize and extend the editor",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Customize and extend the editor\n\n{% data variables.product.prodname_vscode_shortname %} starts with useful defaults but lets you control how the editor looks and behaves. Change the [layout](/docs/configure/custom-layout.md), remap [keyboard shortcuts](/docs/configure/keybindings.md), and configure [settings](/docs/configure/settings.md) globally or for a specific workspace.\n\n[Extensions](/docs/configure/extensions/extensions.md) add languages, debuggers, source control providers, and connections to external tools and services. Create [profiles](/docs/configure/profiles.md) to switch between sets of extensions, settings, and user interface customizations for different projects or tasks. Use [Settings Sync](/docs/configure/settings-sync.md) to share your configuration across devices.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/overview.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_optimize_usage__use_thinking_effort_defaults",
+  "title": "optimize usage / Use thinking effort defaults",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Use thinking effort defaults\n\nThinking effort controls how much reasoning a model applies to each request. Higher effort levels produce more thinking tokens, which increases both latency and credit consumption. {% data variables.product.prodname_vscode_shortname %} sets default effort levels based on evaluations and has adaptive reasoning enabled, where the model dynamically decides how much to think based on the complexity of each request.\n\nFor most tasks, the defaults are sufficient. Only increase thinking effort for genuinely complex problems like architectural planning or multi-step debugging.\n\nFor more information, see [configure thinking effort](/docs/agent-customization/language-models.md#configure-thinking-effort).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/optimize-usage.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_json__quick_navigation",
+  "title": "json / Quick navigation",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Quick navigation\n\nJSON files can get large and we support quick navigation to properties using the **Go to Symbol** command (`kb(workbench.action.gotoSymbol)`).\n\n![Goto Symbol](images/json/gotosymbol.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/json.md"
+}

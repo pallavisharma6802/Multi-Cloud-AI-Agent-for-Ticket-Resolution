@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_reference_manualmodelconversion__supported_models_for_conversion",
+  "title": "ManualModelConversion / Supported models for conversion",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Supported models for conversion\n\nThe following table lists models supported for conversion to ONNX format in the Foundry Toolkit:\n\n| Support Matrix | Supported now | Under development | On the roadmap |\n| :------------: | :-----------: | :---------------: | :------------: |\n| Model architectures | `DeepSeek`, `Gemma`, `Llama`, `Mistral`, `Phi (Language + Vision)`, `Qwen`, `Nemotron`, `Granite`, `AMD OLMo` | `Whisper` | `Stable Diffusion` |",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/reference/ManualModelConversion.md"
+}

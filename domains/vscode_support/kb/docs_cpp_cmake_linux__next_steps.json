@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_cmake_linux__next_steps",
+  "title": "cmake linux / Next steps",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Next steps\n\n* Explore the [CMake Tools](https://aka.ms/cmaketoolsdocumentation) documentation\n* Review the [Overview of the C++ extension](/docs/languages/cpp.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/cmake-linux.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_linting__severity",
+  "title": "linting / Severity",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Severity\n\nLinters report issues with some predefined severity. This can be changed using `severity` setting for the linter. Refer to each linter extension's README for more details on the supported values and severity levels.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/linting.md"
+}

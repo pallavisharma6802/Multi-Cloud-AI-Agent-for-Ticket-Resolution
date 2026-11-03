@@ -1,0 +1,8 @@
+{
+  "id": "docs_chat_chat_overview__troubleshoot_chat_interactions",
+  "title": "chat overview / Troubleshoot chat interactions",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Troubleshoot chat interactions\n\nUse [Agent Logs and the Chat Debug view](/docs/agents/agent-troubleshooting/chat-debug-view.md) to inspect what happens when you send a prompt. Agent Logs shows a chronological event log of tool calls, LLM requests, and prompt file discovery. The Chat Debug view shows the raw system prompt, user prompt, context, and tool payloads for each interaction. These tools are useful for understanding why the AI responded in a certain way or for troubleshooting unexpected results.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/chat/chat-overview.md"
+}

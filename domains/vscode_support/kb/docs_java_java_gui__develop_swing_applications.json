@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_gui__develop_swing_applications",
+  "title": "java gui / Develop Swing applications",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Develop Swing applications\n\nSwing application development is supported by default. You can directly write your Swing application code without any setup.\n\nYou can find more Swing samples in the [Oracle Swing documentation](https://docs.oracle.com/javase/tutorial/uiswing/examples/components/index.html).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-gui.md"
+}

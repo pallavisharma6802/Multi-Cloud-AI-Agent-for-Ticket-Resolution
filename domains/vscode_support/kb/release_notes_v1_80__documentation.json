@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_80__documentation",
+  "title": "v1_80 / Documentation",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Documentation\n\n### New C# topics\n\nYou can learn about C# development in VS Code with the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension through a new set of [C# articles](https://code.visualstudio.com/docs/csharp/get-started). There you'll find topics explaining how to [get started](https://code.visualstudio.com/docs/csharp/get-started), describing the extension's language features ([code navigation](https://code.visualstudio.com/docs/csharp/navigate-edit), [refactoring](https://code.visualstudio.com/docs/csharp/refactoring), [debugging](https://code.visualstudio.com/docs/csharp/debugging)), and aiding the development life cycle such as [Project](https://code.visualstudio.com/docs/csharp/project-management) and [Package](https://code.visualstudio.com/docs/csharp/package-management) management.\n\n### Glob patterns reference\n\nVS Code has it's own glob pattern [implementation](https://github.com/microsoft/vscode/blob/main/src/vs/base/common/glob.ts), which it uses for features like Search file and folder filtering, letting you customize the File Explorer view, etc. To learn the details, you can review the new [Glob Patterns Reference](https://code.visualstudio.com/docs/editor/glob-patterns).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_80.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_azure_gettingstarted__troubleshooting_azure_apps_resources",
+  "title": "gettingstarted / Troubleshooting Azure apps/resources",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Troubleshooting Azure apps/resources\n\nQuickly locate and review detailed log information, access your recent activities, and easily manage the resources you've recently created.\n\n**Find logs.** The Output Channel displays textual information such as logs, messages, and other information. Use **Ctrl+Shift+U** to show Output.\n\n**Tip:** More verbose log info is found in the Output Channel.\n\n**Access resources.** View all of your recent activities and quickly access resources you've recently created in the **Activity Log**.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/gettingstarted.md"
+}

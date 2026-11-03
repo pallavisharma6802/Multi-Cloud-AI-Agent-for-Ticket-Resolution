@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_canvases__related_resources",
+  "title": "canvases / Related resources",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related resources\n\n* [Sample canvas extensions](https://awesome-copilot.github.com/extensions/)\n* [Work with canvas extensions in the {% data variables.copilot.github_copilot_app %}](https://docs.github.com/en/copilot/how-tos/github-copilot-app/working-with-canvas-extensions)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/canvases.md"
+}

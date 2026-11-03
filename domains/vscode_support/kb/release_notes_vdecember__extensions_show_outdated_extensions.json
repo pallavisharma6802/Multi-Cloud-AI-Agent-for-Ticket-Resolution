@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vdecember__extensions_show_outdated_extensions",
+  "title": "vDecember / Extensions Show Outdated Extensions",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Extensions Show Outdated Extensions\n\nThanks to a [community contribution](https://github.com/microsoft/vscode/pull/517), there is now a `Show Outdated Extensions` command, that shows all outdated extensions and lets you quickly install their updates.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vDecember.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_extensions__application_servers_tomcat_jetty_etc",
+  "title": "extensions / Application Servers (Tomcat / Jetty / etc.)",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Application Servers (Tomcat / Jetty / etc.)\n\n[Community Server Connectors](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-community-server-connector) is an excellent extension for application servers such as Tomcat and Jetty.\n\nTo learn more about how to work with Java application servers on {% data variables.product.prodname_vscode %}, refer to the [Application Server](/docs/java/java-tomcat-jetty.md) page.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/extensions.md"
+}

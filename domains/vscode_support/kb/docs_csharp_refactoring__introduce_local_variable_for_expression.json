@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_refactoring__introduce_local_variable_for_expression",
+  "title": "refactoring / Introduce local variable for expression",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Introduce local variable for expression\n\n**What:** Lets you immediately generate a local variable to replace an existing expression.\n\n**When:** You have code that could be easily reused later if it were in a local variable.\n\n**Why:** You could copy and paste the code multiple times to use it in various locations, however it would be better to perform the operation once, store the result in a local variable, and use the local variable throughout.\n\n**How-to:**\n\n1. Place your caret on the expression that you want to assign to a new local variable.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select from the following options:\n\nSelect **Introduce local -> Introduce local for &lt;expression&gt;**\n\n![Introduce local for expression example](images/refactoring/introduce-local-variable-for-expression.png)\n\nSelect **Introduce local -> Introduce local for all occurrences of &lt;expression&gt;**",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+}

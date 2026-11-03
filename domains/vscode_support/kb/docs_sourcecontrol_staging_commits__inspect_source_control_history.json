@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_staging_commits__inspect_source_control_history",
+  "title": "staging commits / Inspect source control history",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## Inspect source control history\n\nAfter you create commits, use the Source Control Graph, Git blame information, and Timeline view to understand when and why code changed.\n\nLearn more about [viewing source control history](/docs/sourcecontrol/history.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/staging-commits.md"
+}

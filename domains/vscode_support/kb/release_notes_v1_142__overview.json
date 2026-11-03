@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_142__overview",
+  "title": "v1_142",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "# Visual Studio Code 1.142\n\n<!-- %IF IN_PRODUCT %\nFollow us on [LinkedIn](https://www.linkedin.com/showcase/vs-code), [X](https://go.microsoft.com/fwlink/?LinkID=533687), [Bluesky](https://bsky.app/profile/vscode.dev), [Instagram](https://www.instagram.com/vscode) | [View online](https://code.visualstudio.com/updates)\n%ENDIF % -->\n<!-- %IF IN_WEB %\n<p class=\"release-metadata\"><span>Released October 14, 2026</span> <span class=\"release-channel\">Stable</span></p>\n%ENDIF % -->\n<!-- %IF IN_PRODUCT %\n_Release date: October 14, 2026_\n%ENDIF % -->\n\n<!-- DOWNLOAD_LINKS_PLACEHOLDER -->\n\n<!-- %IF STABLE %\n<p class=\"release-update-guidance\">Already installed? Use <strong>Check for Updates</strong> in VS Code. For upcoming features, use the <a href=\"https://code.visualstudio.com/insiders\">Insiders build</a>.</p>\n%ENDIF % -->\n\n<!-- RELEASE_HIGHLIGHTS_START -->",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_142.md"
+}

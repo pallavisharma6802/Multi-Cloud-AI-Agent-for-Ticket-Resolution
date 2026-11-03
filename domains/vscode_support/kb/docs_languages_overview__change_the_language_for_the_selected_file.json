@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_overview__change_the_language_for_the_selected_file",
+  "title": "overview / Change the language for the selected file",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Change the language for the selected file\n\nIn {% data variables.product.prodname_vscode_shortname %}, we default the language support for a file based on its filename extension. However, at times you may want to change language modes, to do this click on the language indicator - which is located on the right hand of the Status Bar. This will bring up the **Select Language Mode** dropdown where you can select another language for the current file.\n\n![Language Selector](images/overview/languageselect.png)\n\n**Tip**: You can get the same dropdown by running the **Change Language Mode** command (`kb(workbench.action.editor.changeLanguageMode)`).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/overview.md"
+}

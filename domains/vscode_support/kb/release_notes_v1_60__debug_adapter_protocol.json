@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_60__debug_adapter_protocol",
+  "title": "v1_60 / Debug Adapter Protocol",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debug Adapter Protocol\n\n### New \"memory\" event released\n\nThe `memory` event has been finished and is now available in version 1.49 of the [Debug Adapter Protocol](https://microsoft.github.io/debug-adapter-protocol/) and the corresponding npm modules. If a debug adapter has received a value `true` for the `supportsMemoryEvent` capability of the `initialize` request, the debug adapter can emit the `memory` event to indicate that some memory range has been updated.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_60.md"
+}

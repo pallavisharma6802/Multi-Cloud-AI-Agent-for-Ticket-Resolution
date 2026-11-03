@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_42__new_documentation",
+  "title": "v1_42 / New documentation",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## New documentation\n\n### Containers\n\nThere are new articles covering creating [containers](https://code.visualstudio.com/docs/containers/overview) with the Microsoft [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) extension. You'll find tutorials for containerizing [Node.js](https://code.visualstudio.com/docs/containers/quickstart-node) and [ASP.NET Core](https://code.visualstudio.com/docs/containers/quickstart-aspnet-core) applications, pushing to a [container registry](https://code.visualstudio.com/docs/containers/quickstart-container-registries), and [deploying containers](https://code.visualstudio.com/docs/containers/app-service) to the cloud.\n\n![Docker extension](images/1_42/docker-extension.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_42.md"
+}

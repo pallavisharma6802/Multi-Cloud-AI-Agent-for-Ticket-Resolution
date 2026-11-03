@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vdecember__installed_extension_issues",
+  "title": "vDecember / Installed Extension Issues",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Installed Extension Issues\n\nIf VS Code identifies an issue with an installed extension, it will display an `issues` prompt on the Status Bar.  Click on the `issues` prompt to see the extension issue details and have the option to uninstall the extension.\n\n![extension issues](images/December/extension-issues.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vDecember.md"
+}

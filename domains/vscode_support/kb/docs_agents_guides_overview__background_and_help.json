@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_overview__background_and_help",
+  "title": "overview / Background and help",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Background and help\n\n* [How agents work](/docs/agents/concepts/agents.md): understand the agent loop and the role of models, context, and tools.\n\n* [Best practices for using AI](/docs/agents/best-practices.md): scope tasks, provide relevant context, and verify results.\n\n* [Troubleshoot AI features](/docs/agents/agent-troubleshooting/troubleshooting.md): diagnose setup, sign-in, connection, and other technical issues.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/overview.md"
+}

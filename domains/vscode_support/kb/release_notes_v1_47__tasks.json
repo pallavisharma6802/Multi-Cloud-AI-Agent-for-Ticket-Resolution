@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_47__tasks",
+  "title": "v1_47 / Tasks",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Tasks\n\n### pnpm package manager support\n\n[pnpm](https://pnpm.js.org) is now a valid choice for the `npm.packageManager` setting, along with `npm` and `yarn`, to run your scripts.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_47.md"
+}

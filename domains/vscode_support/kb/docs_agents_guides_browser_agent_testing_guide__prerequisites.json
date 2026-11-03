@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_browser_agent_testing_guide__prerequisites",
+  "title": "browser agent testing guide / Prerequisites",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Prerequisites\n\nTo complete this guide, you need:\n\n* [{% data variables.product.prodname_vscode %} installed on your computer](/download)\n* [A GitHub Copilot subscription](/docs/setup/copilot.md)\n* The `setting(workbench.browser.enableChatTools)` setting turned on, which is the default",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/browser-agent-testing-guide.md"
+}

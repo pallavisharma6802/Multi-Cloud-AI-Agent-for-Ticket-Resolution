@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_62__extensions",
+  "title": "v1_62 / Extensions",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Extensions\n\n### Verified extension publishers\n\nVS Code now shows if the domains of an extension publisher are verified by the Visual Studio Marketplace.\n\n![Verified extension publisher indicators in the Extensions view and details pane](images/1_62/verified-publishers.png)\n\n*Theme: [GitHub Light Theme](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme)*\n\nIf you are an extension author, more details about how to become a verified publisher can be found in the [Publishing Extensions](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#verify-a-publisher) topic.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_62.md"
+}

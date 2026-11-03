@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_color_theme__syntax_colors",
+  "title": "color theme / Syntax colors",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Syntax colors\n\nFor syntax highlighting colors, there are two approaches. You can reference an existing TextMate theme (`.tmTheme` file) from the community, or you can create your own theming rules. The easiest way is to start with an existing theme and customize it, much like in the workbench colors section above.\n\nFirst switch to the color theme to customize and use the `editor.tokenColorCustomizations` [settings](/docs/configure/settings). Changes are applied live to your VS Code instance and no refreshing or reloading is necessary.\n\nFor example, the following would change the color of comments within the editor:\n\n```json\n{\n  \"editor.tokenColorCustomizations\": {\n    \"comments\": \"#FF0000\"\n  }\n}\n```\n\nThe setting supports a simple model with a set of common token types such as 'comments', 'strings' and 'numbers' available. If you want to color more than that, you need to use TextMate theme rules directly, which are explained in detail in the [Syntax Highlighting guide](/api/language-extensions/syntax-highlight-guide).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/color-theme.md"
+}

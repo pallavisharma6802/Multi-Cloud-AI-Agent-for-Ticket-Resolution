@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_history__view_file_history_with_the_timeline_view",
+  "title": "history / View file history with the Timeline view",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## View file history with the Timeline view\n\nThe Timeline view shows events for the file that is active in the editor. These events can include Git commits and local file saves.\n\n1. Open a file in the editor.\n\n1. In the Explorer view (`kb(workbench.view.explorer)`), expand the **Timeline** view.\n\n1. Select an event to inspect the corresponding file changes.\n\n![Screenshot showing Git commits and local file saves in the Timeline view.](images/overview/timeline-view.png)\n\nUse the Timeline filter to show only Git commits or to include events from other timeline providers. Learn more about the [Timeline view](/docs/editing/getting-started/userinterface.md#timeline-view).\n\nTo compare two committed versions of the same file:\n\n1. In the Timeline view, right-click a Git commit and select **Select for Compare**.\n\n1. Right-click another Git commit for that file and select **Compare with Selected**.\n\nThe diff shows the first selected revision on the left and the second on the right. This compares file revisions, not all files in those commits. To identify who last changed a particular line in the current file, use [Git blame](#view-git-blame-information).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/history.md"
+}

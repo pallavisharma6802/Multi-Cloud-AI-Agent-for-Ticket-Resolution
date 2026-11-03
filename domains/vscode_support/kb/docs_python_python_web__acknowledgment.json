@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_python_web__acknowledgment",
+  "title": "python web / Acknowledgment",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Acknowledgment\n\nThe work would have not been possible without the support of the Python community, who are building and maintaining the necessary WASM files of CPython.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/python-web.md"
+}

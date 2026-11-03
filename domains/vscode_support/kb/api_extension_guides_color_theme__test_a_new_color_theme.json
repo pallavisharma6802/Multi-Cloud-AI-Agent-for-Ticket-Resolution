@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_color_theme__test_a_new_color_theme",
+  "title": "color theme / Test a new Color Theme",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Test a new Color Theme\n\nTo try out the new theme, press F5 to launch an Extension Development Host window.\n\nThere, open the Color Theme picker with **File** > **Preferences** > **Theme** > **Color Theme** and you can see your theme in the dropdown list. Arrow up and down to see a live preview of your theme.\n\n![select my theme](images/color-theme/mytheme.png)\n\nChanges to the theme file are applied live in the `Extension Development Host` window.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/color-theme.md"
+}

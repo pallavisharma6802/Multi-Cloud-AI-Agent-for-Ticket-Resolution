@@ -1,0 +1,8 @@
+{
+  "id": "learn_foundations_agent_sessions_and_where_agents_run__handing_off_between_session_targets",
+  "title": "agent sessions and where agents run / Handing off between session targets",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Handing off between session targets\n\nIn an active session, the **Session Target** picker shows two options.\n\n* **New Chat Session** starts a fresh session with an empty context window.\n* **Continue In** hands off the current session to a different session target and carries the full context forward.\n\nUse **Continue In** when you want to start locally, then hand the work off to a background or cloud agent without rebuilding context from scratch.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/agent-sessions-and-where-agents-run.md"
+}

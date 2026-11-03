@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_python_tutorial__understand_the_python_setup",
+  "title": "python tutorial / Understand the Python setup",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Understand the Python setup\n\nIf you're new to programming tools, it helps to know that three separate pieces work together to run Python in {% data variables.product.prodname_vscode_shortname %}:\n\n* **{% data variables.product.prodname_vscode_shortname %}**: the editor where you write and organize your code.\n\n* **Python extension**: adds Python language support to {% data variables.product.prodname_vscode_shortname %}, such as IntelliSense, running, and debugging. The extension doesn't include Python itself.\n\n* **Python interpreter**: the program that actually runs your Python code. You install it separately from {% data variables.product.prodname_vscode_shortname %}.\n\nYou install all three in this tutorial. {% data variables.product.prodname_vscode_shortname %} is the workspace, the Python extension connects {% data variables.product.prodname_vscode_shortname %} to Python, and the interpreter does the work of running your script.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/python-tutorial.md"
+}

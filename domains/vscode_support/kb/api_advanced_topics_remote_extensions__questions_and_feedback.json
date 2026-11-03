@@ -1,0 +1,8 @@
+{
+  "id": "api_advanced_topics_remote_extensions__questions_and_feedback",
+  "title": "remote extensions / Questions and feedback",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Questions and feedback\n\n- See [Tips and Tricks](/docs/remote/troubleshooting) or the [FAQ](/docs/remote/faq).\n- Search for answers on [Stack Overflow](https://stackoverflow.com/questions/tagged/vscode-remote).\n- [Upvote a feature or request a new one](https://aka.ms/vscode-remote/feature-requests), search [existing issues](https://aka.ms/vscode-remote/issues), or [report a problem](https://aka.ms/vscode-remote/issues/new).\n- Create a [development container Template](https://containers.dev/templates) or [Feature](https://containers.dev/features) for others to use.\n- Contribute to [our documentation](https://github.com/microsoft/vscode-docs) or [VS Code](https://github.com/microsoft/vscode).\n- See our [CONTRIBUTING](https://aka.ms/vscode-remote/contributing) guide for details.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/advanced-topics/remote-extensions.md"
+}

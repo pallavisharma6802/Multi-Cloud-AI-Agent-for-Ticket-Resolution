@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_agents_window_configuration__overview",
+  "title": "agents window configuration",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Configure the {% data variables.copilot.agents_window %}\n\nThe {% data variables.copilot.agents_window %} uses the AI providers and accounts configured in {% data variables.product.prodname_vscode_shortname %}. It shares settings and the default profile with the main {% data variables.product.prodname_vscode_shortname %} window. This article describes the shared account options and the window-specific layout, editor, setting, and extension configuration.\n\nFor instructions about starting and working with sessions, see [Use the {% data variables.copilot.agents_window %}](/docs/agents/run/agents-window.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/agents-window-configuration.md"
+}

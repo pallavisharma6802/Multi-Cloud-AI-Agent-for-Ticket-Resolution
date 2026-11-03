@@ -1,0 +1,8 @@
+{
+  "id": "docs_agent_customization_language_models__related_resources",
+  "title": "language models / Related resources",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related resources\n\n* [Language models concepts](/docs/agents/concepts/language-models.md)\n* [Available language models in GitHub Copilot](https://docs.github.com/en/copilot/using-github-copilot/ai-models/changing-the-ai-model-for-copilot-chat?tool=vscode)\n* [Choosing the right AI model for your task](https://docs.github.com/en/copilot/using-github-copilot/ai-models/choosing-the-right-ai-model-for-your-task)\n* [Security considerations for AI in {% data variables.product.prodname_vscode_shortname %}](/docs/agents/run/security.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/language-models.md"
+}

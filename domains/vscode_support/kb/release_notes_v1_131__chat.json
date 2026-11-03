@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_131__chat",
+  "title": "v1_131 / Chat",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Chat\n\n### VS Code pet (Experimental)\n\nA new highly experimental pet has been discovered in VS Code! Enter `/vscode-pet` in chat to meet your new companion.\n\nFrom September 10 through September 17, 2026, [submit a name for the new VS Code pet](https://forms.cloud.microsoft/r/4iFTRDnvaY). Review the [contest terms and conditions](https://code.visualstudio.com/docs/agents/reference/chat-pet#_contest-terms-and-conditions).\n\n<video src=\"images/1_131/pet.mp4\" title=\"Video showing the experimental VS Code pet appearing in chat.\" autoplay loop controls muted></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_131.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_agent_customization_hooks__existing_local_hooks",
+  "title": "hooks / Existing Local hooks",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Existing Local hooks\n\n<a id=\"configure-hooks-for-the-local-harness\"></a>\n<a id=\"create-your-first-local-hook\"></a>\n<a id=\"local-hook-file-locations\"></a>\n<a id=\"local-hook-configuration-formats\"></a>\n<a id=\"local-hook-lifecycle-events\"></a>\n<a id=\"agent-scoped-hooks-for-local\"></a>\n<a id=\"agent-scoped-hooks-for-the-local-harness\"></a>\n<a id=\"local-hook-examples\"></a>\n\nUse this section only to identify an existing Local setup before [migrating it](/docs/agent-customization/migrate-customizations.md#migrate-hooks).\n\n* Local discovers repository and user hook files, configured `chat.hookFilesLocations`, and agent or plugin hooks. Claude settings files require `chat.useClaudeHooks`.\n* `chat.useHooks` controls Local execution. These settings do not configure the shared Copilot runtime.\n* The Local parser accepts PascalCase and Copilot event aliases, command aliases, and nested Claude command groups. It ignores matcher values and still sends Local payloads.\n* Local agent-scoped hooks require a trusted workspace and `chat.useHooks`. A scoped `Stop` hook is treated as `SubagentStop` when the agent runs as a subagent.\n\nThe [Local reference](/docs/agents/reference/hooks-reference.md) retains the configuration, input, and output details needed to convert those scripts. For new hooks, use the Copilot examples above.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/hooks.md"
+}

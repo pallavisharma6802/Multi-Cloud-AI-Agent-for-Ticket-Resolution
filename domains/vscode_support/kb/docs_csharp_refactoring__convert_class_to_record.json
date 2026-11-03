@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_refactoring__convert_class_to_record",
+  "title": "refactoring / Convert class to record",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Convert class to record\n\n**What:** Convert your class to a C# record.\n\n**When:** When you want to quickly change your class to a record, which is tailored for storing data and immutability.\n\n**How-to:**\n\n1. Place your cursor on the class name.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select **Convert to positional record**.\n\n![Convert class to record before example](images/refactoring/convert-class-to-record-before.png)\n\n![Convert class to record after example](images/refactoring/convert-class-to-record-result.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+}

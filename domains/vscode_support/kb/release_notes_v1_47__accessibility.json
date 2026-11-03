@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_47__accessibility",
+  "title": "v1_47 / Accessibility",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Accessibility\n\nThis milestone, we again received helpful feedback from our community, which helped us identify and tackle many [accessibility issues](https://github.com/microsoft/vscode/issues?q=label%3Aaccessibility+milestone%3A%22June+2020%22+is%3Aclosed). Highlights:\n\n* Compact folders in the File Explorer now properly narrate expanded/collapsed state and the ARIA level.\n* Screen readers can now update the cursor offset in the editor. As a result, the screen reader \"Say All\" command should work better when stopped and resumed.\n* Same ARIA live messages will now properly be re-read by the screen reader.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_47.md"
+}

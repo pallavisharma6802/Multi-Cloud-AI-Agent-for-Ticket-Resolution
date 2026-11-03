@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_natvis__documentation",
+  "title": "natvis / Documentation",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Documentation\n\nThe official Natvis documentation is located at [Create custom views of C++ objects in the debugger](https://learn.microsoft.com/visualstudio/debugger/create-custom-views-of-native-objects).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/natvis.md"
+}

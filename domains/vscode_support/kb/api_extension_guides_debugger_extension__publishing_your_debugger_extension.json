@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_debugger_extension__publishing_your_debugger_extension",
+  "title": "debugger extension / Publishing your debugger extension",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Publishing your debugger extension\n\nOnce you have created your debugger extension you can publish it to the Marketplace:\n\n- Update the attributes in the `package.json` to reflect the naming and purpose of your debugger extension.\n- Upload to the Marketplace as described in [Publishing Extension](/api/working-with-extensions/publishing-extension).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/debugger-extension.md"
+}

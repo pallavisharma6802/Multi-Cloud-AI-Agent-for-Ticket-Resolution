@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_69__comments",
+  "title": "v1_69 / Comments",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Comments\n\n### Toggle editor commenting\n\nThe new command **Comments: Toggle Editor Commenting** toggles all editor commenting features, including the commenting range gutter decoration, the \"+\" on line hover, and all editor comment widgets. Commenting will be automatically disabled in Zen Mode.\n\n### Drag for multiline comments\n\nThe Add a Comment \"+\" button can be dragged to add a multiline comment.\n\n<video src=\"images/1_69/drag-for-comment.mp4\" autoplay loop controls muted title=\"Drag the + button for a multiline comment\"></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_69.md"
+}

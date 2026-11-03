@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_48__workbench",
+  "title": "v1_48 / Workbench",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Workbench\n\n### Search Editor\n\nWe added an **Open Search Editor** command to open an existing search editor if one exists, or to otherwise create a new one. The pre-existing command **Open new Search Editor** has been renamed to **New Search Editor**, and will always create a new Search Editor.\n\nSearch Editors also now support custom `search.sortOrder` configurations, such as sorting by file type, modified date, or result count.\n\n### Extensions: Overflow menu cleanup\n\nThe Extensions view filter actions are now displayed under a separate filter action (funnel button):\n\n![Extensions filter menu](images/1_48/extensions-filter-menu.png)\n\n*Theme: GitHub Light*\n\nThe Extensions view **Views and More Actions** (**...**) menu has been refactored for better organization of extension queries (such as Installed or Recommended) and other actions like **Check for Extension Updates** and **Enable All Extensions**:\n\n![Extensions overflow menu](images/1_48/extensions-overflow-menu.png)\n\n*Theme: GitHub Light*",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_48.md"
+}

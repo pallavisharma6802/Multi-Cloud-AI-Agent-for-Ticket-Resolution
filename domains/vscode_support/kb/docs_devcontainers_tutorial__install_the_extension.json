@@ -1,0 +1,8 @@
+{
+  "id": "docs_devcontainers_tutorial__install_the_extension",
+  "title": "tutorial / Install the extension",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Install the extension\n\nThe Dev Containers extension lets you run {% data variables.product.prodname_vscode %} inside a Docker container.\n\n> <a class=\"install-extension-btn\" href=\"vscode:extension/ms-vscode-remote.remote-containers\">Install the Dev Containers extension</a>\n\n![Dev Containers extension](images/tutorial/dev-containers-extension.png)\n\n### Check installation\n\nWith the Dev Containers extension installed, you will see a new Status bar item at the far left.\n\n![Remote Status bar item](images/tutorial/remote-status-bar.png)\n\nThe Remote Status bar item can quickly show you in which context {% data variables.product.prodname_vscode_shortname %} is running (local or remote) and clicking on the item will bring up the Dev Containers commands.\n\n![Dev Containers commands](images/tutorial/dev-containers-commands-simple.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/tutorial.md"
+}

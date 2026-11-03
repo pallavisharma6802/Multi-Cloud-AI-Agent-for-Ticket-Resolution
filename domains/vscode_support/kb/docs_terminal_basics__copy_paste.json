@@ -1,0 +1,8 @@
+{
+  "id": "docs_terminal_basics__copy_paste",
+  "title": "basics / Copy & paste",
+  "category": "TERMINAL",
+  "intent": "terminal",
+  "content": "## Copy & paste\n\nThe keyboard shortcuts for copy and paste follow platform standards:\n\n* Linux: `kbstyle(Ctrl+Shift+C)` and `kbstyle(Ctrl+Shift+V)`; selection paste is available with `kbstyle(Shift+Insert)`\n* macOS: `kbstyle(Cmd+C)` and `kbstyle(Cmd+V)`\n* Windows: `kbstyle(Ctrl+C)` and `kbstyle(Ctrl+V)`\n\nCopying is done automatically on selection when `setting(terminal.integrated.copyOnSelection)` is enabled.\n\nBy default, there is a warning when pasting multiple lines, which can be disabled with the `setting(terminal.integrated.enableMultiLinePasteWarning)` setting. This is only done when the shell does not support \"bracketed paste mode\". When that mode is enabled, the shell is indicating that it can handle multiple line pasting.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/basics.md"
+}

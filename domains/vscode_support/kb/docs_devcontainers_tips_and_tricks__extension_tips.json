@@ -1,0 +1,8 @@
+{
+  "id": "docs_devcontainers_tips_and_tricks__extension_tips",
+  "title": "tips and tricks / Extension tips",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Extension tips\n\nWhile many extensions will work unmodified, there are a few issues that can prevent certain features from working as expected. In some cases, you can use another command to work around the issue, while in others, the extension may need to be modified. The [Remote Extensions Tips](/docs/remote/troubleshooting.md#extension-tips) section provides a quick reference for common issues and tips on resolving them. You can also refer to the main extension article on [Supporting Remote Development](/api/advanced-topics/remote-extensions) for an in-depth guide on modifying extensions to support remote extension hosts.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/tips-and-tricks.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_introvideos_productivity__overview",
+  "title": "productivity",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "# Productivity Tips\n\nIn this {% data variables.product.prodname_vscode %} tutorial, we describe {% data variables.product.prodname_vscode %} features that help increase your coding productivity. Learning just a few tips can speed up your workflow and help you discover the full power of the {% data variables.product.prodname_vscode_shortname %} editor.\n\n[![Watch Productivity tips for {% data variables.product.prodname_vscode %} on YouTube (opens in new tab).](images/productivity/youtube-HIqONcVBEm0.jpg)](https://www.youtube.com/watch?v=HIqONcVBEm0)\n\nHere's the next video we recommend: [Personalize {% data variables.product.prodname_vscode %}](/docs/introvideos/configure.md)\n\nPick another video from the list: [Introductory Videos](/docs/getstarted/introvideos.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/introvideos/productivity.md"
+}

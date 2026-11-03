@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_subagents__when_to_use_subagents",
+  "title": "subagents / When to use subagents",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## When to use subagents\n\nDelegate work that has a clear scope and produces a result the main agent can use:\n\n* **Research before implementation**: find relevant files, existing patterns, or library options, then return a recommendation.\n* **Compare approaches**: investigate independent solutions, or use [different models](#select-the-model-for-a-subagent) to examine the same problem.\n* **Review changes**: check separate concerns, such as correctness and performance, then combine the findings.\n\nFor a quick lookup or a small edit, a direct request is usually enough. Delegation adds model usage and coordination, so consider the cost as well as the benefit of keeping intermediate work out of the main context.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/subagents.md"
+}

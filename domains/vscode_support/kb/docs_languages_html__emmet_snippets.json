@@ -1,0 +1,8 @@
+{
+  "id": "docs_languages_html__emmet_snippets",
+  "title": "html / Emmet snippets",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Emmet snippets\n\n{% data variables.product.prodname_vscode_shortname %} supports [Emmet snippet](https://emmet.io/) expansion. Emmet abbreviations are listed along with other suggestions and snippets in the editor auto-completion list.\n\n<video src=\"images/html/emmetsnippet.mp4\" title=\"Video showing Emmet HTML support built-in.\" autoplay loop controls muted></video>\n\n> [!TIP]\n> See the HTML section of the [Emmet cheat sheet](https://docs.emmet.io/cheat-sheet) for valid abbreviations.\n\nIf you'd like to use HTML Emmet abbreviations with other languages, you can associate one of the Emmet modes (such as `css`, `html`) with other languages with the `setting(emmet.includeLanguages)` [setting](/docs/configure/settings.md). The setting takes a [language identifier](/docs/languages/overview.md#language-identifier) and associates it with the language ID of an Emmet supported mode.\n\nFor example, to use Emmet HTML abbreviations inside JavaScript:\n\n```json\n{\n    \"emmet.includeLanguages\": {\n        \"javascript\": \"html\"\n     }\n}\n```\n\nWe also support [User Defined Snippets](/docs/editing/userdefinedsnippets.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/html.md"
+}

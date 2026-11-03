@@ -68,7 +68,7 @@ def evaluate_rag(pack_id: str, max_examples: int = 30) -> dict:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--pack", default="it_saas")
+    parser.add_argument("--pack", default="vscode_support")
     parser.add_argument("--max-examples", type=int, default=30)
     args = parser.parse_args()
     print(json.dumps(evaluate_rag(args.pack, args.max_examples), indent=2))

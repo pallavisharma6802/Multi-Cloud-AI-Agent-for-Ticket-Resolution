@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_hosted_agents__related_resources",
+  "title": "hosted agents / Related resources",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related resources\n\n* [Manage hosted agents in Foundry](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/manage-hosted-agent)\n* [Use Foundry Toolkit Copilot tools and skills](/docs/intelligentapps/copilot-tools.md)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/hosted-agents.md"
+}

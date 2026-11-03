@@ -1,0 +1,8 @@
+{
+  "id": "docs_intelligentapps_copilot_tools__troubleshoot_the_workflow",
+  "title": "copilot tools / Troubleshoot the workflow",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Troubleshoot the workflow\n\n* **Toolkit tools are missing:** Confirm that the current extension is installed and enabled, then check the **Tools** tab in Agent Customizations. Workspace restrictions or organizational policies can limit available capabilities.\n* **The Foundry skill is unavailable:** Check Git availability and use **Foundry Toolkit: Install Foundry Skill** to retry. A request in chat does not prove installation succeeded.\n* **No deployed models appear:** Confirm the selected Toolkit project and your access to it. Catalog discovery and listing existing deployments are different operations. Follow [Foundry project setup](https://learn.microsoft.com/azure/foundry/how-to/develop/set-up-foundry-project-visual-studio-code) before creating another resource.\n* **A model input or feature does not work:** Check the selected model's capabilities and endpoint, then test it directly in the [Playground](/docs/intelligentapps/playground.md#troubleshoot-the-playground) before changing the agent code.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/copilot-tools.md"
+}

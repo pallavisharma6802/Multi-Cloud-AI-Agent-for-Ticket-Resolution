@@ -1,0 +1,8 @@
+{
+  "id": "docs_editor_whyvscode__ready_set_code",
+  "title": "whyvscode / Ready, set, code!",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Ready, set, code!\n\nIf you prefer a code editor-centric development tool or are building cross-platform web and cloud applications, we invite you to try out {% data variables.product.prodname_vscode %} and let us know what you think!",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editor/whyvscode.md"
+}

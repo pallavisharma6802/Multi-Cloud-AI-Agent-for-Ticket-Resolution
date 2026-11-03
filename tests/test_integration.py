@@ -44,7 +44,7 @@ def client(monkeypatch):
         agent_decisions=[],
         requires_human_review=False,
         trace={
-            "domain_pack": "it_saas",
+            "domain_pack": "vscode_support",
             "intent": "cancel_order",
             "category": "ORDER",
             "priority": "medium",
@@ -101,7 +101,7 @@ def test_ticket_submission_and_trace(client):
             "title": "Need to cancel my order",
             "description": "I would like to cancel order #12345 please",
             "user_email": "user@example.com",
-            "domain_pack": "it_saas",
+            "domain_pack": "vscode_support",
         },
     )
     assert ok.status_code == 201
@@ -121,7 +121,7 @@ def test_list_domain_packs(client):
     response = client.get("/api/v1/domain-packs")
     assert response.status_code == 200
     ids = [p["id"] for p in response.json()["packs"]]
-    assert "it_saas" in ids
+    assert "vscode_support" in ids
 
 
 def test_resolved_ticket_is_counted_in_workspace_overview(client):
@@ -131,7 +131,7 @@ def test_resolved_ticket_is_counted_in_workspace_overview(client):
             "title": "Help recover my password",
             "description": "I forgot my password and need the reset instructions.",
             "user_email": "demo@example.com",
-            "domain_pack": "it_saas",
+            "domain_pack": "vscode_support",
         },
     )
     assert response.status_code == 201
@@ -154,7 +154,7 @@ def test_failed_open_ticket_can_be_retried_without_duplicate(client):
         "title": "Recover my account",
         "description": "I forgot my password and need help signing in.",
         "user_email": "demo@example.com",
-        "domain_pack": "it_saas",
+        "domain_pack": "vscode_support",
     }
     failed = client.post("/api/v1/tickets", json=payload)
     assert failed.status_code == 500
@@ -228,3 +228,22 @@ def test_human_resolution_preserves_original_ai_assessment(client):
     assert after["ai_resolved"] == 0
     assert after["needs_review"] == 0
     assert client.post(f"/api/v1/tickets/{ticket_id}/resolve").status_code == 409
+
+
+def test_review_reassessment_preserves_id_history_and_audit(client):
+    import app.api.routes.tickets as tickets_module
+    processor = tickets_module.supervisor.process_ticket
+    processor.return_value.requires_human_review = True
+    created = client.post('/api/v1/tickets', json={
+        'title': 'Installation question', 'description': 'How do I install this application?',
+        'user_email': 'demo@example.com', 'domain_pack': 'vscode_support',
+    }).json()
+    assert created['status'] == 'in_progress'
+    ticket_id = created['ticket_id']
+    processor.return_value.requires_human_review = False
+    retried = client.post(f'/api/v1/tickets/{ticket_id}/retry')
+    assert retried.status_code == 200
+    assert retried.json()['ticket_id'] == ticket_id
+    assert len(client.get('/api/v1/tickets').json()) == 1
+    trace = client.get(f'/api/v1/tickets/{ticket_id}/trace').json()
+    assert any(d['action'] == 'reassess_review' for d in trace['agent_decisions'])

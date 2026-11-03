@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_capabilities_common_capabilities__output_channel",
+  "title": "common capabilities / Output Channel",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Output Channel\n\nThe Output Panel displays a collection of [`OutputChannel`](/api/references/vscode-api#OutputChannel), which are great for logging purposes. You can easily take advantage of it with the [`window.createOutputChannel`](/api/references/vscode-api#window.createOutputChannel) API.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-capabilities/common-capabilities.md"
+}

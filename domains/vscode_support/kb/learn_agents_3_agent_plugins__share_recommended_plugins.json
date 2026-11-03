@@ -1,0 +1,8 @@
+{
+  "id": "learn_agents_3_agent_plugins__share_recommended_plugins",
+  "title": "3 agent plugins / Share recommended plugins",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Share recommended plugins\n\nTo share a curated set of plugins with your team, add an `extraKnownMarketplaces` and `enabledPlugins` block to your project's `.github/copilot/settings.json` (or `.claude/settings.json`) file and commit it.\n\n```json\n{\n    \"extraKnownMarketplaces\": {\n        \"company-tools\": {\n            \"source\": {\n                \"source\": \"github\",\n                \"repo\": \"your-org/plugin-marketplace\"\n            }\n        }\n    },\n    \"enabledPlugins\": {\n        \"code-formatter@company-tools\": true\n    }\n}\n```\n\nUse this approach when you want consistent tooling across a team without forcing a plugin into every workspace. VS Code shows a notification the first time a chat message is sent, and team members can also view the recommended plugins from the Extensions view with the `@agentPlugins @recommended` filter.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/3-agent-plugins.md"
+}

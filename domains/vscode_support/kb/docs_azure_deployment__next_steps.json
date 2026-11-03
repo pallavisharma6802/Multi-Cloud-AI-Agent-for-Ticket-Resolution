@@ -1,0 +1,8 @@
+{
+  "id": "docs_azure_deployment__next_steps",
+  "title": "deployment / Next steps",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Next steps\n\n* [Deploy to Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/deploy-visual-studio-code) - Run microservices and containerized applications on a serverless platform.\n* [{% data variables.product.prodname_vscode %} Azure Extensions](/docs/azure/overview.md) - The Azure Tools extension pack is designed to deploy your application to Azure within minutes.\n* [Working with Docker](/docs/azure/docker.md) - Put your application in a Docker container for easy reuse and deployment.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/deployment.md"
+}

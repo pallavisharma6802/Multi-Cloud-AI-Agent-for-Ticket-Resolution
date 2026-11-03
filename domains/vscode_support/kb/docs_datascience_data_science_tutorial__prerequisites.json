@@ -1,0 +1,8 @@
+{
+  "id": "docs_datascience_data_science_tutorial__prerequisites",
+  "title": "data science tutorial / Prerequisites",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Prerequisites\n\nThe following installations are required for the completion of this tutorial. Make sure to install them if you haven't already.\n\n- [{% data variables.product.prodname_vscode %}](https://code.visualstudio.com/)\n- The [Python extension for {% data variables.product.prodname_vscode_shortname %}](https://marketplace.visualstudio.com/items?itemName=ms-python.python) and [Jupyter extension for {% data variables.product.prodname_vscode_shortname %}](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) from the Visual Studio Marketplace. For more details on installing extensions, see [Extension Marketplace](/docs/configure/extensions/extension-marketplace.md). Both extensions are published by Microsoft.\n\n- [Miniconda with latest Python](https://docs.anaconda.com/miniconda/)\n\n   > **Note**: If you already have the full Anaconda distribution installed, you don't need to install Miniconda. Alternatively, if you'd prefer not to use Anaconda or Miniconda, you can create a Python virtual environment and install the packages needed for the tutorial using pip. If you go this route, you will need to install the following packages: pandas, jupyter, seaborn, scikit-learn, keras, and tensorflow.\n   > ```sh\n   > python -m pip install pandas jupyter seaborn scikit-learn keras tensorflow\n   > ```",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/data-science-tutorial.md"
+}

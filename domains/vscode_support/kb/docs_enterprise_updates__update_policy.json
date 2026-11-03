@@ -1,0 +1,8 @@
+{
+  "id": "docs_enterprise_updates__update_policy",
+  "title": "updates / Update policy",
+  "category": "ENTERPRISE",
+  "intent": "enterprise",
+  "content": "## Update policy\n\n{% data variables.product.prodname_vscode_shortname %} provides the `UpdateMode` policy for controlling automatic updates. This policy controls the `setting(update.mode)` setting in {% data variables.product.prodname_vscode_shortname %}.\n\nLearn how to [deploy policies](/docs/enterprise/policies.md) to your organization's devices.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/enterprise/updates.md"
+}

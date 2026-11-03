@@ -1,0 +1,8 @@
+{
+  "id": "docs_enterprise_manage_ai_settings__security_considerations",
+  "title": "manage ai settings / Security considerations",
+  "category": "ENTERPRISE",
+  "intent": "enterprise",
+  "content": "## Security considerations\n\nAI-powered development features can perform actions with user-level permissions. Review [AI security considerations](/docs/agents/run/security.md) before enabling agents or auto-approval.\n\nFor {% data variables.product.prodname_copilot_short %} security, privacy, compliance, and transparency information, see the [{% data variables.product.prodname_copilot_short %} Trust Center FAQ](https://copilot.github.trust.page/faq).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/enterprise/manage-ai-settings.md"
+}

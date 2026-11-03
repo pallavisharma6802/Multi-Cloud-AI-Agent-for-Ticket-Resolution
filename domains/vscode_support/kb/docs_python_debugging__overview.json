@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_debugging__overview",
+  "title": "debugging",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Python debugging in {% data variables.product.prodname_vscode_shortname %}\n\nThe Python extension supports debugging through the [Python Debugger extension](https://marketplace.visualstudio.com/items?itemName=ms-python.debugpy) for several types of Python applications. For a short walkthrough of basic debugging, see [Tutorial - Configure and run the debugger](/docs/python/python-tutorial.md#configure-and-run-the-debugger). Also see the [Flask tutorial](/docs/python/tutorial-flask.md). Both tutorials demonstrate core skills like setting breakpoints and stepping through code.\n\nFor general debugging features such as inspecting variables, setting breakpoints, and other activities that aren't language-dependent, review [{% data variables.product.prodname_vscode_shortname %} debugging](/docs/debugtest/debugging.md).\n\nThis article mainly addresses Python-specific debugging *configurations*, including the necessary steps for specific app types and remote debugging.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/debugging.md"
+}

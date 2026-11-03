@@ -1,0 +1,8 @@
+{
+  "id": "learn_customizations_5_hooks__what_s_next",
+  "title": "5 hooks / What\u2019s next",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## What\u2019s next\n\nHooks help automate workflows without requiring input.\n\nIf you want to understand how hooks, agents, skills, and instructions all fit together, the next step is comparing them as a complete system.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/5-hooks.md"
+}

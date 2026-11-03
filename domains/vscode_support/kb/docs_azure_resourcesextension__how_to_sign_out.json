@@ -1,0 +1,8 @@
+{
+  "id": "docs_azure_resourcesextension__how_to_sign_out",
+  "title": "resourcesextension / How to sign out",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## How to sign out\n\nSign out in the Accounts menu, located in the bottom left of your {% data variables.product.prodname_vscode_shortname %} window.\n\n![Screenshot that shows where to sign out of an Azure account](images/extensions/signOut.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/resourcesextension.md"
+}

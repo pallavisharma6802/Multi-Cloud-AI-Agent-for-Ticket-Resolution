@@ -1,0 +1,8 @@
+{
+  "id": "docs_introvideos_configure__related_resources",
+  "title": "configure / Related resources",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Related resources\n\n* [User and Workspace Settings](/docs/configure/settings.md) - Configure user and workspace settings.\n* [Key Bindings](/docs/configure/keybindings.md) - See the default keyboard shortcuts (key bindings) for editing, navigation, and more.\n* [Snippets](/docs/editing/userdefinedsnippets.md) - Create your own custom snippets.\n* [Themes](/docs/configure/themes.md) - Change your Color Theme to customize {% data variables.product.prodname_vscode_shortname %}'s background text and language syntax colorization.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/introvideos/configure.md"
+}

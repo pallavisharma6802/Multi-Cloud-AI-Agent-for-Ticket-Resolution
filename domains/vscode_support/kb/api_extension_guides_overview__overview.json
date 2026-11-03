@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_guides_overview__overview",
+  "title": "overview",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "# Extension Guides\n\nOnce you have learned the basics of Visual Studio Code Extension API in the [Hello World](/api/get-started/your-first-extension) sample, it's time to build some real-world extensions. While the [Extension Capabilities](/api/extension-capabilities/overview) section offers high-level overviews of what an extension **can** do, this section contains a list of detailed code guides and samples that explains **how** to use a specific VS Code API.\n\nIn each guide or sample, you can expect to find:\n\n- Thoroughly commented source code.\n- A gif or image showing the usage of the sample extension.\n- Instructions for running the sample extension.\n- Listing of VS Code API being used.\n- Listing of Contribution Points being used.\n- Real-world extensions resembling the sample.\n- Explanation of API concepts.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/overview.md"
+}

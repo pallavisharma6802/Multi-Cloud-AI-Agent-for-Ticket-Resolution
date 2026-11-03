@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_workspaces_workspaces__workspace_tasks_and_launch_configurations",
+  "title": "workspaces / Workspace tasks and launch configurations",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Workspace tasks and launch configurations\n\nSimilar to how [workspace settings](#workspace-settings) are specific to a workspace, tasks and launch configurations can also be scoped to a workspace.\n\nDepending on whether you have a folder opened as workspace or a `.code-workspace` file, the location of workspace task and launch configurations is either inside the `.vscode` folder, or inside the `.code-workspace` file. In addition, task and launch configurations can always be defined at the level of a folder, even when you have opened a `.code-workspace` file.\n\nRefer to [tasks](/docs/debugtest/tasks.md) and [debugging](/docs/debugtest/debugging.md) chapters for a more comprehensive overview of how to use tasks and launch configurations in {% data variables.product.prodname_vscode_shortname %}.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/workspaces/workspaces.md"
+}

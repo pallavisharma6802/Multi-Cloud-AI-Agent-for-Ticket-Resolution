@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_keybindings__detecting_keyboard_shortcut_conflicts",
+  "title": "keybindings / Detecting keyboard shortcut conflicts",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Detecting keyboard shortcut conflicts\n\nIf you have many extensions installed or you have modified your keyboard shortcuts, there might be keyboard shortcut conflicts, where the same keyboard shortcut is mapped to multiple commands. This can result in confusing behavior, especially if different keyboard shortcuts are going in and out of scope as you move around the editor.\n\nRight-click on an item in the list of keyboard shortcuts, and select **Show Same Keybindings** to view all entries with the same keyboard shortcut.\n\n![show keyboard shortcut conflicts menu](images/keybinding/show-conflicts-menu.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/keybindings.md"
+}

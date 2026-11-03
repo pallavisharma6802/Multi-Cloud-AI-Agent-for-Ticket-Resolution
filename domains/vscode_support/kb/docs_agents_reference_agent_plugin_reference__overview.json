@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_agent_plugin_reference__overview",
+  "title": "agent plugin reference",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "# Agent plugin authoring reference\n\nPackage related customizations as a plugin that developers can install together. This reference covers manifests, directory layouts, component and marketplace configuration, management commands, and compatibility across plugin formats and agent harnesses.\n\nUse it when creating a plugin or inspecting how its components are configured. To find, install, update, or remove an existing plugin, see [Use agent plugins](/docs/agent-customization/agent-plugins.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/agent-plugin-reference.md"
+}

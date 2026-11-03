@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_configure_intellisense_crosscompilation__next_steps",
+  "title": "configure intellisense crosscompilation / Next steps",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Next steps\n\n- For more information about IntelliSense configuration, see [Customizing default settings](/docs/cpp/customize-cpp-settings.md).\n- If you have trouble configuring the settings, please start a discussion at [GitHub discussions](https://github.com/microsoft/vscode-cpptools/discussions), or if you find an issue that needs to be fixed, file an issue at [GitHub issues](https://github.com/microsoft/vscode-cpptools/issues).\n- Review the [Overview of the C++ extension](/docs/languages/cpp.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/configure-intellisense-crosscompilation.md"
+}

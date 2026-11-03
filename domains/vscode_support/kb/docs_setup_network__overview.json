@@ -1,0 +1,8 @@
+{
+  "id": "docs_setup_network__overview",
+  "title": "network",
+  "category": "INSTALLATION",
+  "intent": "installation",
+  "content": "# Network Connections in {% data variables.product.prodname_vscode %}\n\n{% data variables.product.prodname_vscode %} is built on top of [Electron](https://www.electronjs.org) and benefits from all the networking stack capabilities of [Chromium](https://www.chromium.org/). This also means that {% data variables.product.prodname_vscode_shortname %} users get much of the networking support available in [Google Chrome](https://www.google.com/chrome/index.html).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/network.md"
+}

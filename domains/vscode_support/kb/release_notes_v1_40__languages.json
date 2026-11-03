@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_40__languages",
+  "title": "v1_40 / Languages",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Languages\n\n### CSS media query symbols\n\nIn CSS/SCSS/Less files, media query symbols are now shown in the Outline view, the breadcrumb path, and the **Go to Symbols in File** list:\n\n![CSS media query symbols](images/1_40/css-media-query-symbols.png)\n\n### typescript.tsserver.maxTsServerMemory\n\nIf you are working with a large TypeScript project containing thousands of files, the new `typescript.tsserver.maxTsServerMemory` setting lets you increase the maximum memory usage for the TypeScript server that powers IntelliSense.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_40.md"
+}

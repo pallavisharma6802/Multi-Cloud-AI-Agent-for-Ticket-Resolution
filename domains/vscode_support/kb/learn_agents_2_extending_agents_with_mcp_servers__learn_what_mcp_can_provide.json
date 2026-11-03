@@ -1,0 +1,8 @@
+{
+  "id": "learn_agents_2_extending_agents_with_mcp_servers__learn_what_mcp_can_provide",
+  "title": "2 extending agents with mcp servers / Learn what MCP can provide",
+  "category": "GETTING_STARTED",
+  "intent": "getting_started",
+  "content": "## Learn what MCP can provide\n\nMCP is built around a few capabilities. Each one solves a different problem.\n\n* **Tools** let the agent take actions, such as opening a browser or querying an API.\n* **Resources** provide read-only context that you attach to a request, such as a database schema or document.\n* **Prompts** provide reusable templates from the server, such as a standard research prompt.\n* **MCP Apps** render interactive UI in chat when a server supports richer input or output.\n\nUse tools when the agent needs to do something. Use resources when it needs to read something. Use prompts when your team wants a repeatable interaction pattern.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/2-extending-agents-with-mcp-servers.md"
+}

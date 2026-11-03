@@ -1,0 +1,8 @@
+{
+  "id": "docs_configure_extensions_extensions__open_extension_settings",
+  "title": "extensions / Open extension settings",
+  "category": "SETTINGS",
+  "intent": "settings",
+  "content": "## Open extension settings\n\nExtensions can also contribute settings to {% data variables.product.prodname_vscode_shortname %}. Use the [Settings editor](/docs/getstarted/personalize-vscode.md#configure-settings) to view and modify these settings like you would for other settings in {% data variables.product.prodname_vscode_shortname %}.\n\n1. Open the Settings editor via the **File** > **Preferences** > **Settings** menu or use the `kb(workbench.action.openSettings)` keyboard shortcut.\n1. In the settings tree view, select **Extensions**, and then select the specific extension to see its settings.\n\n    ![Screenshot of the Settings view, showing the settings of the GitHub Pull Requests extension, highlighting the Extensions entry in the tree view.](images/extensions/settings-view-extension-settings.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/extensions/extensions.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_refactoring__use_lambda_expression_or_block_body",
+  "title": "refactoring / Use lambda expression or block body",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Use lambda expression or block body\n\n**What:** Lets you refactor a lambda expression to use an expression body or a block body.\n\n**When:** You prefer lambda expressions to use either an expression body or a block body.\n\n**Why:** Lambda expressions can be refactored to improve readability according to your user preference.\n\n**How-to:**\n\n1. Place your cursor on the right of a lambda operator.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select one of the following:\n\nSelect **Use block body for lambda expressions**.\n\n![Use block body for lambda expressions example](images/refactoring/use-block-body-for-lambda-expression.png)\n\nSelect **Use expression body for lambda expressions**.\n\n![Use expression body for lambda expressions](images/refactoring/use-expression-body-for-lambda-expressions.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+}

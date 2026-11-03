@@ -1,0 +1,8 @@
+{
+  "id": "docs_cpp_cpp_refactoring__extract_to_method",
+  "title": "cpp refactoring / Extract to method",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Extract to method\n\nThe Extract Method refactoring feature enables you to extract a block of code into a separate method to help improve code readability, reduce duplication, and make the code more modular.\n\nTo extract a method, select the C++ code you want to extract, select the code action (light bulb), and then select **Extract to Function**. Alternately, right-click on the code and select **Refactor > Extract** or use the keyboard command (`Ctrl + Shift + R, Ctrl + E` on windows) to get more information.\n\nYou can then name the new function that was created. The new function that contains your selected code is placed above the current function.\n\n![Extract Method and create declaration](images/refactoring/extract-method.gif)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/cpp-refactoring.md"
+}

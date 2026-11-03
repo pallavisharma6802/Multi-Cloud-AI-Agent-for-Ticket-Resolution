@@ -1,0 +1,8 @@
+{
+  "id": "api_ux_guidelines_status_bar__overview",
+  "title": "status bar",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "# Status Bar\n\nThe [Status Bar](/api/extension-capabilities/extending-workbench#status-bar-item) sits at the bottom of the VS Code workbench and displays information and actions that relate to your workspace. Items are placed into two groups: Primary (left) and Secondary (right). Items that relate to the entire workspace (status, problems/warnings, sync) go on the left and items that are secondary or contextual (language, spacing, feedback) go on the right. Limit the number of items added, as other extensions contribute to the same area.\n\n![Status Bar example](images/examples/status-bar.png)\n\n**\u2714\ufe0f Do**\n\n* Use short text labels\n* Use icons only when necessary\n* Use icons only for clear metaphors\n* Place primary (global) items on the left\n* Place secondary (contextual) items on the right\n\n**\u274c Don't**\n\n* Add custom colors\n* Add more than one icon (unless necessary)\n* Add more than one item (unless necessary)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/status-bar.md"
+}

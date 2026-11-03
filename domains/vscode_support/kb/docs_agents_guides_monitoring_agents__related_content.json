@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_guides_monitoring_agents__related_content",
+  "title": "monitoring agents / Related content",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related content\n\n* [AI settings reference](/docs/agents/reference/ai-settings.md)\n* [Manage AI settings in enterprise environments](/docs/enterprise/manage-ai-settings.md)\n* [Troubleshoot AI in {% data variables.product.prodname_vscode_shortname %}](/docs/agents/agent-troubleshooting/troubleshooting.md)\n* [Diagnose prompt caching with the Cache Explorer](/docs/agents/agent-troubleshooting/cache-explorer.md)\n* [OTel GenAI Semantic Conventions](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/gen-ai/)\n* [Inside the LLM Call: GenAI Observability with OpenTelemetry](https://opentelemetry.io/blog/2026/genai-observability/)\n* [Aspire Dashboard standalone docs](https://aspire.dev/dashboard/standalone/)\n* [Video: Tracing agent sessions with OpenTelemetry and Aspire](https://www.youtube.com/watch?v=JsZ3q8OKsMM)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/monitoring-agents.md"
+}

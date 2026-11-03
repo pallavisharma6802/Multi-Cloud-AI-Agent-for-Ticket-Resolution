@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_66__language_server_protocol",
+  "title": "v1_66 / Language Server Protocol",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Language Server Protocol\n\nType Hierarchy, inline values, and inlay hints support has been moved out of the proposed state to prepare for the 3.17 release. A new next version of the libraries has been published.\n\nThere is also a first version of a [meta model for LSP](https://github.dev/microsoft/vscode-languageserver-node/blob/6a33b75c3520ad66d437c33ec9fc10d49a4675b8/protocol/metaModel.json#L1) together with the corresponding schema as a [JSON schema](https://github.dev/microsoft/vscode-languageserver-node/blob/6a33b75c3520ad66d437c33ec9fc10d49a4675b8/protocol/metaModel.schema.json#L1) or as [TypeScript type definitions](https://github.dev/microsoft/vscode-languageserver-node/blob/6a33b75c3520ad66d437c33ec9fc10d49a4675b8/tools/src/metaModel.ts#L1). The meta model contains the following information: specified requests and notifications together with their parameter types, return types, partial return types, and registration options. It also contains all defined structures and enums.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_66.md"
+}

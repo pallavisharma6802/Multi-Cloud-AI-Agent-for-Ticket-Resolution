@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_118__trust_and_security",
+  "title": "v1_118 / Trust and security",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Trust and security\n\n### Approved account organizations policy\n\nEnterprises can now gate chat and related AI feature activation on approved GitHub organization membership by using the `ChatApprovedAccountOrganizations` device policy.\n\nThis policy helps organizations apply GitHub account-based policy consistently across chat entry points. Chat features are not activated until (1) the user is signed into a GitHub account with membership in an approved organization and (2) the account-based policy has been resolved. This fail-closed behavior is useful for enterprises that configure account-based policies on GitHub.com and need eligibility enforced before chat is shown.\n\nLearn more about [enterprise policies](https://code.visualstudio.com/docs/enterprise/policies).\n\n### Sandboxing default read permissions\n\nRead access is no longer automatically enabled for all paths under the `$HOME` directory. This update strengthens sandbox isolation and ensures commands only access the files they explicitly need.\n\nBefore any command runs in sandbox, read permissions are added based on the executing command only and all other paths in the `$HOME` directory are denied read access. Accessing any arbitrary paths results in failure due to denied read permissions.\n\nBy default, workspace folders and the sandbox temporary folder (managing sandbox configuration at run time) are granted read access under `$HOME` dir.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_118.md"
+}

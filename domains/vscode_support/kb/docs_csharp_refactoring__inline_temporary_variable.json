@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_refactoring__inline_temporary_variable",
+  "title": "refactoring / Inline temporary variable",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Inline temporary variable\n\n**What:** Lets you remove a temporary variable and replace it with its value instead.\n\n**When:** The use of the temporary variable makes the code harder to understand.\n\n**Why:** Removing a temporary variable may make the code easier to read.\n\n**How-to:**\n\n1. Place your cursor inside the temporary variable to be inlined.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select **Inline temporary variable**.\n\n![Inline temporary variable example](images/refactoring/inline-temporary-variable.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+}

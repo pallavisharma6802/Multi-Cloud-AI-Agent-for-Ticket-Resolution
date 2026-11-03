@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v0_9_0__debugging_performance",
+  "title": "v0_9_0 / Debugging - Performance",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debugging - Performance\nWe improved stepping performance by loading the scopes and variables of stack frames lazily. This improvement is based on a protocol change that affects all debug adapters.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_9_0.md"
+}

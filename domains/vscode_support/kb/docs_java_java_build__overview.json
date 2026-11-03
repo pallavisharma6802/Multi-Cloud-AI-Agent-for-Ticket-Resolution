@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_build__overview",
+  "title": "java build",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Java build tools in {% data variables.product.prodname_vscode_shortname %}\n\nThis document is an overview of how to work with your Java build tools in {% data variables.product.prodname_vscode %}. It covers the [Maven for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven) and [Gradle for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-gradle) extensions as well as other tools.\n\nIf you run into any issues when using the features below, you can contact us by entering an [issue](https://github.com/microsoft/vscode-java-pack/issues).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-build.md"
+}

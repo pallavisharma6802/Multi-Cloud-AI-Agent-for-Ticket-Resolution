@@ -1,0 +1,8 @@
+{
+  "id": "docs_sourcecontrol_merge_conflicts__resolve_conflicts_with_ai_experimental",
+  "title": "merge conflicts / Resolve conflicts with AI (experimental)",
+  "category": "GIT",
+  "intent": "git",
+  "content": "## Resolve conflicts with AI (experimental)\n\n> [!NOTE]\n> AI-assisted conflict resolution is an experimental feature and requires {% data variables.product.prodname_copilot %} access. [Set up {% data variables.product.prodname_copilot_short %}](/docs/setup/copilot.md) before using it.\n\n{% data variables.product.prodname_vscode_shortname %} can [use AI](/docs/setup/copilot.md) to help resolve merge conflicts automatically. This feature analyzes both versions of the conflicting changes and proposes a resolution:\n\n1. Open a file with conflicts in the editor.\n\n1. Select the **Resolve Merge Conflict with AI** button at the top of the editor.\n\n    ![Screenshot showing the AI merge conflict resolution button in the editor.](images/overview/ai-merge-conflict-resolution.png)\n\n1. Review the agent's analysis and proposed edits in the {% data variables.copilot.chat_view %} and editor.\n\n1. Accept the resolution or adjust it manually, then test the result.\n\n1. Stage the resolved files and [complete the operation](#complete-the-merge-operation).\n\nThe AI considers the merge base (the common ancestor of both branches) and the changes from each branch to generate a resolution that attempts to preserve the intent of both changes.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/merge-conflicts.md"
+}

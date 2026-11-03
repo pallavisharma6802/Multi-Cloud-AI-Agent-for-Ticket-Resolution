@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_refactoring__add_missing_usings_imports",
+  "title": "refactoring / Add missing usings / imports",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Add missing usings / imports\n\n**What:** Lets you immediately add the necessary imports or using directives for copy-and-pasted code.\n\n**When:** It's common practice to copy code from different places in your project or other sources and paste it into new code. This Quick Action finds missing imports directives for copy-and-pasted code and then prompts you to add them. This code fix can also add references from project to project.\n\n**Why:** Because the Quick Action automatically adds necessary imports, you don't need to manually copy the using directives that your code needs.\n\n**How-to:**\n\n1. Copy code from a file and paste it into a new one without including the necessary using directives. The resulting error is accompanied by a code fix that adds the missing using directives.\n2. Select `kb(editor.action.quickFix)`to open the **Quick Actions and Refactorings** menu.\n3. Select **Using &lt;your reference&gt;** to add the missing reference.\n\n![Add missing `usings` / imports example](images/refactoring/add-missing-usings.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+}

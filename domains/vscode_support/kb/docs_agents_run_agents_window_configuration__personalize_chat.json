@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_run_agents_window_configuration__personalize_chat",
+  "title": "agents window configuration / Personalize chat",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Personalize chat\n\nAdd a decorative chat background, use the interactive VS Code pet, or adjust how chat content appears. Learn how to [personalize chat](/docs/chat/chat-overview.md#personalize-chat).\n\n### Set a group icon and color\n\nGive [custom session groups](/docs/agents/run/sessions/manage-sessions.md#create-a-custom-group) distinct icons and colors to recognize related work in a busy list.\n\nRight-click a group header and select **Change Icon...** to search for an icon, or **Change Color...** to choose a color from the theme-aware palette.\n\nTo restore either default, open its picker and select **Reset to default**. Resetting one doesn't change the other. Both choices persist after reload.\n\n<!-- TODO: Add a screenshot showing a custom group containing workspace sessions and quick chats, with a custom icon and color and the group context menu showing Change Icon and Change Color. -->",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/agents-window-configuration.md"
+}

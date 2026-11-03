@@ -1,0 +1,8 @@
+{
+  "id": "docs_nodejs_debugging_recipes__electron_debug_electron_applications",
+  "title": "debugging recipes / Electron - Debug Electron applications",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Electron - Debug Electron applications\n\nThe {% data variables.product.prodname_vscode %} editor supports debugging [Electron](https://www.electronjs.org) applications via the built-in JavaScript debugger.\n\n![electron logo](images/recipes/electron.png)\n\n**Recipes:**\n\n* [Debugging Electron Main and Renderer processes](https://github.com/microsoft/vscode-recipes/tree/main/Electron)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/debugging-recipes.md"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_webapp__overview",
+  "title": "java webapp",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Java Web Apps with {% data variables.product.prodname_vscode %}\n\nThis tutorial shows you how to create a Java web application with {% data variables.product.prodname_vscode %}. You'll learn how to deploy a Java web application to a Linux Tomcat server in Azure App Service.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-webapp.md"
+}

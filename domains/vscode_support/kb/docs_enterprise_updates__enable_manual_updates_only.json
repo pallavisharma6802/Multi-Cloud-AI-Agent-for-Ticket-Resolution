@@ -1,0 +1,8 @@
+{
+  "id": "docs_enterprise_updates__enable_manual_updates_only",
+  "title": "updates / Enable manual updates only",
+  "category": "ENTERPRISE",
+  "intent": "enterprise",
+  "content": "## Enable manual updates only\n\nTo allow users to check for updates manually while disabling automatic background checks, set the `UpdateMode` policy to `manual`:\n\n**Policy value**:\n\n```text\nmanual\n```\n\nUsers can check for updates by selecting **Help** > **Check for Updates**.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/enterprise/updates.md"
+}

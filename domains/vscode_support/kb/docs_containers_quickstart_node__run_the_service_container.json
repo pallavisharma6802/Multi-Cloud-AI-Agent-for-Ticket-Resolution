@@ -1,0 +1,8 @@
+{
+  "id": "docs_containers_quickstart_node__run_the_service_container",
+  "title": "quickstart node / Run the service container",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Run the service container\n\n1. Right-click on the image built in the previous section and select **Run** or **Run Interactive**. The container should start and you should be able to see it in the Containers view:\n\n   ![Running service container](images/quickstarts/node-running-container-dark.png)\n\n1. Open the web browser and navigate to [http://localhost:3000](http://localhost:3000). You should see a page similar to the following:\n\n   ![Application page in browser](images/quickstarts/node-run-browser.png)\n\n1. When done testing, right-click the container in the Containers view and select **Stop**.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/quickstart-node.md"
+}

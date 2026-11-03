@@ -1,0 +1,8 @@
+{
+  "id": "docs_agent_customization_copilot_connectors__related_resources",
+  "title": "copilot connectors / Related resources",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Related resources\n\n* [Browse available connectors](https://github.com/copilot/customize).\n* [{% data variables.product.prodname_github %}-managed MCP servers](https://docs.github.com/copilot/concepts/customizations/copilot-connectors).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/copilot-connectors.md"
+}

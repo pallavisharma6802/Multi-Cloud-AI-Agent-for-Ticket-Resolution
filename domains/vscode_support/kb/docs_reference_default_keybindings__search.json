@@ -1,0 +1,8 @@
+{
+  "id": "docs_reference_default_keybindings__search",
+  "title": "default keybindings / Search",
+  "category": "REFERENCE",
+  "intent": "reference",
+  "content": "## Search\n\nCommand|Key|Command id\n-------|---|----------\nShow Search|`kb(workbench.view.search)`|`workbench.view.search`\nReplace in Files|`kb(workbench.action.replaceInFiles)`|`workbench.action.replaceInFiles`\nToggle Match Case|`kb(toggleSearchCaseSensitive)`|`toggleSearchCaseSensitive`\nToggle Match Whole Word|`kb(toggleSearchWholeWord)`|`toggleSearchWholeWord`\nToggle Use Regular Expression|`kb(toggleSearchRegex)`|`toggleSearchRegex`\nToggle Search Details|`kb(workbench.action.search.toggleQueryDetails)`|`workbench.action.search.toggleQueryDetails`\nFocus Next Search Result|`kb(search.action.focusNextSearchResult)`|`search.action.focusNextSearchResult`\nFocus Previous Search Result|`kb(search.action.focusPreviousSearchResult)`|`search.action.focusPreviousSearchResult`\nShow Next Search Term|`kb(history.showNext)`|`history.showNext`\nShow Previous Search Term|`kb(history.showPrevious)`|`history.showPrevious`",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/reference/default-keybindings.md"
+}

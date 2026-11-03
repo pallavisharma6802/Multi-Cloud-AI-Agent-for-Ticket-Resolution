@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_93__website",
+  "title": "v1_93 / Website",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Website\n\nWe have fixed several links under the [VS Code API](https://code.visualstudio.com/api/references/vscode-api) page. Links to generic types and functions work again, and primitive types and values aren't formatted as links anymore!",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_93.md"
+}

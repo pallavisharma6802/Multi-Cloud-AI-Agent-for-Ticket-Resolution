@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_76__language_server_protocol",
+  "title": "v1_76 / Language Server Protocol",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Language Server Protocol\n\nNew versions of the [Language Server Protocol](https://microsoft.github.io/language-server-protocol) (LSP) client (8.1.0) and server (8.1.0) npm packages have been released. These are bug fix releases (mainly to address problems with request ordering problem when using full text document sync) and contain API additions for custom message handling to the JSON-RPC library.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_76.md"
+}

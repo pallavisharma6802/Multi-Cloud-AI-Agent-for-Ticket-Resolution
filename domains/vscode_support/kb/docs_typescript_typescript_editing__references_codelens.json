@@ -1,0 +1,8 @@
+{
+  "id": "docs_typescript_typescript_editing__references_codelens",
+  "title": "typescript editing / References CodeLens",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## References CodeLens\n\nThe TypeScript references CodeLens displays an inline count of reference for classes, interfaces, methods, properties, and exported objects:\n\n![TypeScript references CodeLens](images/editing/ts-references-code-lens.png)\n\nYou can enable this by setting `\"js/ts.referencesCodeLens.enabled\": true` in the User Settings file.\n\nClick on the reference count to quickly browse a list of references:\n\n![TypeScript references CodeLens peek](images/editing/ts-references-code-lens-peek.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/typescript/typescript-editing.md"
+}

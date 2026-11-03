@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_hooks_reference__sessionstart",
+  "title": "hooks reference / `SessionStart`",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## `SessionStart`\n\nThe `SessionStart` hook fires when the first prompt starts the session.\n\n### Input\n\nIn addition to the [common input](#common-input), the hook receives:\n\n```json\n{\n  \"source\": \"new\"\n}\n```\n\n| Field | Type | Description |\n|-------|------|-------------|\n| `source` | string | How the session started. Currently always `\"new\"`. |\n\n### Output\n\nThe hook can add context to the conversation:\n\n```json\n{\n  \"hookSpecificOutput\": {\n    \"hookEventName\": \"SessionStart\",\n    \"additionalContext\": \"Project: my-app 2.1.0 | Branch: main\"\n  }\n}\n```\n\n| Field | Values or type | Description |\n|-------|----------------|-------------|\n| `hookEventName` | `\"SessionStart\"` | Identifies the event-specific output. |\n| `additionalContext` | string | Context added to the conversation. |",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/hooks-reference.md"
+}

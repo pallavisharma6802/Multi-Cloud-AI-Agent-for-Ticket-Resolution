@@ -1,0 +1,8 @@
+{
+  "id": "docs_typescript_typescript_editing__next_steps",
+  "title": "typescript editing / Next steps",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Next steps\n\nRead on to find out about:\n\n* [Refactor TypeScript](/docs/typescript/typescript-refactoring.md) - Learn about the useful refactorings available for TypeScript.\n* [Debugging TypeScript](/docs/typescript/typescript-debugging.md) - Configure the debugger for your TypeScript project.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/typescript/typescript-editing.md"
+}

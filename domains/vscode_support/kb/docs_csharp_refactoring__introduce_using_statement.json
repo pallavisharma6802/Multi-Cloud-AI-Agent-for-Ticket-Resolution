@@ -1,0 +1,8 @@
+{
+  "id": "docs_csharp_refactoring__introduce_using_statement",
+  "title": "refactoring / Introduce `using` statement",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Introduce `using` statement\n\n**What:** Add a `using` statement / code block to your `IDisposable` instance.\n\n**When:** You have an `IDisposable` instance that you want to ensure is acquired, used, and disposed correctly.\n\n**How-to:**\n\n1. Place your caret on the expression that you want to assign to a new parameter.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select **Introduce `using` statement**.\n\n![Introduce `using` statement example](images/refactoring/introduce-using-statement.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+}

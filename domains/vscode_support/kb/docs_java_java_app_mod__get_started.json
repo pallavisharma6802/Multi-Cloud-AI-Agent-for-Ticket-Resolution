@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_app_mod__get_started",
+  "title": "java app mod / Get started",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Get started\n\nGet started with one of the following tutorials:\n\n* [Upgrade a Java project](https://learn.microsoft.com/java/upgrade/quickstart-upgrade)\n* [Assess and migrate a Java project](https://learn.microsoft.com/azure/developer/java/migration)\n* [Detect and fix security issues in your Java project](https://learn.microsoft.com/java/upgrade/tools)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-app-mod.md"
+}

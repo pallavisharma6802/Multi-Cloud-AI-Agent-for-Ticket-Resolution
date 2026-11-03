@@ -1,0 +1,8 @@
+{
+  "id": "docs_azure_resourcesextension__overview",
+  "title": "resourcesextension",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "# Azure Resources for {% data variables.product.prodname_vscode %}\n\nThe [Azure Resources](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups) extension allows you to seamlessly view and manage your Azure resources directly within {% data variables.product.prodname_vscode_shortname %}. It also provides the ability to authenticate and manage your Azure accounts and tenants.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/resourcesextension.md"
+}

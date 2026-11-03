@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_45__languages",
+  "title": "v1_45 / Languages",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Languages\n\n### TypeScript status bar entry enhancements\n\nWhen you are focused on a TypeScript file, VS Code shows the current TypeScript version in the status bar:\n\n![TypeScript version status bar entry](images/1_45/ts-version-entry.png)\n\nClicking on the version now brings up commands appropriate for the current TypeScript project:\n\n![TypeScript project commands](images/1_45/ts-version-ui.png)\n\n### Prompt users to switch to the workspace version of TypeScript\n\nThe new `typescript.enablePromptUseWorkspaceTsdk` setting brings up a prompt asking users if they want to switch to the workspace version of TypeScript:\n\n![Prompt shown when opening a workspace with local TypeScript version](images/1_45/ts-prompt.png)\n\nTo enable the prompt, include `\"typescript.enablePromptUseWorkspaceTsdk\": true` and `typescript.tsdk` as workspace settings for your project.\n\n### Markdown link to folders\n\nEditor links in Markdown files and links in the Markdown preview can now point to folders. Clicking on one of these links will reveal the target folder in VS Code's File Explorer.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_45.md"
+}

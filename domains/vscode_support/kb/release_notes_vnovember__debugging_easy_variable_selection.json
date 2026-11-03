@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vnovember__debugging_easy_variable_selection",
+  "title": "vNovember / Debugging - Easy Variable Selection",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Debugging - Easy Variable Selection\nDirectly add selections to the Debug Console and Watch window with two new editor commands:\n* `Debug: Evaluate` - add the text selection to the Debug Console\n* `Debug: Add to Watch` - add the text selection to the Debug Watch window\n\n![add to watch](images/0_10_0/add-to-watch.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vNovember.md"
+}

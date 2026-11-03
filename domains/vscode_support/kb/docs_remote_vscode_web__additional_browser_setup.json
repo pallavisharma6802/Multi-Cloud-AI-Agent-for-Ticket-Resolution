@@ -1,0 +1,8 @@
+{
+  "id": "docs_remote_vscode_web__additional_browser_setup",
+  "title": "vscode web / Additional browser setup",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Additional browser setup\n\nThere are additional browser configuration steps you can take when working with {% data variables.product.prodname_vscode_shortname %} in a browser.\n\n### Opening new tabs and windows\n\nIn certain cases, you may need to open a new tab or window while working in {% data variables.product.prodname_vscode_shortname %} for the Web. {% data variables.product.prodname_vscode_shortname %} might ask you for permission to access the clipboard when reading from it. Depending on your browser, you may grant access to the clipboard or otherwise allow for pop-up windows in different ways:\n\n* Chrome, Edge, Firefox: Search for \"site permissions\" in your browser's settings, or look for the following option in the address bar on the right:\n\n![Allow clipboard access in the browser](images/vscode-web/allow-clipboard-access.png)\n\n* Safari: In the Safari browser, go to **Preferences...** > **Websites** > **Pop-up Windows** > the domain you're accessing (for example, `vscode.dev`), and select **Allow** from the dropdown.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/vscode-web.md"
+}

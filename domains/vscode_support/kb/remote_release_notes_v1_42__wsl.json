@@ -1,0 +1,8 @@
+{
+  "id": "remote_release_notes_v1_42__wsl",
+  "title": "v1_42 / WSL",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## WSL\n\n### Reveal in Explorer\n\nThe **Reveal in Explorer** command is now available in a WSL window. It will open the Windows Explorer on the WSL resource. For files not located in `/mnt/c/..`, this will use the `wsl$` network share:\n\n![Reveal In Explorer command](images/1_42/reveal-in-explorer.png)\n\n![Folder in Windows Explorer](images/1_42/reveal-in-explorer-2.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_42.md"
+}

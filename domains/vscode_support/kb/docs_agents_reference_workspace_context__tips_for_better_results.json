@@ -1,0 +1,8 @@
+{
+  "id": "docs_agents_reference_workspace_context__tips_for_better_results",
+  "title": "workspace context / Tips for better results",
+  "category": "AI_FEATURES",
+  "intent": "ai_features",
+  "content": "## Tips for better results\n\nThe way you phrase your prompt influences which tools the agent uses and the quality of the results.\n\n* **Be specific**: avoid vague terms like \"what does this do\", where \"this\" could mean the last answer, current file, or whole project.\n* **Use code terms**: use function names, class names, and concepts that appear in your code so the agent can find exact matches.\n* **Add context manually**: select code, reference files, or [#-mention context items](/docs/chat/copilot-chat-context.md) such as debug context, terminal output, and more.\n* **Scope your request**: responses can draw from multiple references, such as \"find exceptions without a catch block\". But don't expect a full codebase analysis, such as \"how many times is this function invoked?\".\n* **Use external tools for non-code questions**: for information like \"who contributed to this file?\", configure the relevant [tools or MCP servers](/docs/agents/run/tools.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/workspace-context.md"
+}

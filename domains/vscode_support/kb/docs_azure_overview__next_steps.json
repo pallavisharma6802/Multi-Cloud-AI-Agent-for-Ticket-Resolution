@@ -1,0 +1,8 @@
+{
+  "id": "docs_azure_overview__next_steps",
+  "title": "overview / Next steps",
+  "category": "REMOTE_CLOUD",
+  "intent": "remote_cloud",
+  "content": "## Next steps\n\n* [Azure Tools Getting Started](/docs/azure/gettingstarted.md) - Learn how to get started quickly.\n* [Azure Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/?source=docs) - Guidance for architecting solutions on Azure using established patterns and practices\n* [{% data variables.product.prodname_vscode_shortname %} Getting Started](https://code.visualstudio.com/docs/editing/getting-started/editor-tutorial)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/overview.md"
+}

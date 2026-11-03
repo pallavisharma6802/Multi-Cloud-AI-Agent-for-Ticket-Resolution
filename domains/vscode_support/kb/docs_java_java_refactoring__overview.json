@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_refactoring__overview",
+  "title": "java refactoring",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "# Java refactoring and Source Actions\n\n{% data variables.product.prodname_vscode %} provides many options to refactor your source code as well as Source Actions to generate code and fix issues while you're coding. To access them, click on the `light bulb` \ud83d\udca1 whenever you see it. Or right-click the editor view and pick **Source Action...**.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-refactoring.md"
+}

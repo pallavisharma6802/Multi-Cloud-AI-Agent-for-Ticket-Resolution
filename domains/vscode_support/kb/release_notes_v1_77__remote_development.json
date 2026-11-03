@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_77__remote_development",
+  "title": "v1_77 / Remote Development",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Remote Development\n\nThe [Remote Development extensions](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack), allow you to use a [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers), remote machine via SSH or [Remote Tunnels](https://code.visualstudio.com/docs/remote/tunnels), or the [Windows Subsystem for Linux](https://learn.microsoft.com/windows/wsl) (WSL) as a full-featured development environment.\n\nA Dev Container lets you use a container as a full-featured development environment. The [Dev Container Specification](https://containers.dev/) seeks ways to enrich existing formats with common development settings, tools, and configurations while still providing a simplified, unorchestrated single container option. You can learn more about Dev Containers and the specification in [episode #529 of the Changelog podcast](https://changelog.com/podcast/529).\n\nOther Remote Development highlights include:\n\n* Remote Tunnels - Better reuse of existing tunnels.\n* Remote Tunnels - **Continue Working in VS Code Desktop** command to quickly transition to local development.\n* Dev Containers - Easier clean up of unused Dev Containers and volumes.\n\nYou can learn about new extension features and bug fixes in the [Remote Development release notes](https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_77.md).",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_77.md"
+}

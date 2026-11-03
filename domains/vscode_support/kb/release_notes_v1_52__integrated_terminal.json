@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_52__integrated_terminal",
+  "title": "v1_52 / Integrated Terminal",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Integrated Terminal\n\n### Terminal configuration support\n\nYou can now modify terminal settings by selecting **Configure Terminal Settings** in the terminal dropdown menu.\n\n<video src=\"images/1_52/configure-terminal-settings.mp4\" title=\"Video showing Configure Terminal Settings.\" autoplay loop controls muted></video>\n\n### Keybindings management\n\nBy default, keybindings are dispatched to the workbench instead of the terminal as specified in the `terminal.integrated.commandsToSkipShell` setting. A new notification informs the user when they have entered a keybinding corresponding to one of these commands and provides the option to configure the relevant settings.\n\nTo send most keybindings to the terminal instead of the workbench, you can set `terminal.integrated.sendKeybindingsToShell`.\n\n<video src=\"images/1_52/terminal-keybindings-notification.mp4\" title=\"Video showing Send Keybindings to Shell.\" autoplay loop controls muted></video>",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_52.md"
+}

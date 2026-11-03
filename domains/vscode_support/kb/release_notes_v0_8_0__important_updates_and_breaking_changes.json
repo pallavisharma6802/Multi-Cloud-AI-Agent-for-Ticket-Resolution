@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v0_8_0__important_updates_and_breaking_changes",
+  "title": "v0_8_0 / Important Updates and Breaking Changes",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Important Updates and Breaking Changes\nBefore we get into all of the exciting new stuff, there are a couple of key changes with this update that we don't want you to miss.\n\n\n### New Windows Setup\nWe adopted a new installation and update framework for Windows based on [Inno Setup](https://www.jrsoftware.org/isinfo.php).\nThis fixes many Windows integration issues and streamlines the update story.\n\n>**Note:** You will see a two stage update as a result of the change to the new installer.  First to version 0.7.20 to bootstrap the new installer and then to the 0.8.0 release version.  The new installer will prompt you during installation.  Continue through the setup dialog to install VS Code 0.8.0.\n\n>**Tip:** You will need to close any currently open command windows to pick up the new PATH setting.\n\n### Renamed VS Code Settings Folder\nWe renamed the top level `.settings` folder to `.vscode` to make it clear that this folder contains VS Code specific configurations and to avoid conflicts with other IDEs who may also use a folder named `.settings` (e.g. Eclipse).\n\nWhen you update to version 0.8.0, VS Code will rename the folder to the new name and inform you if you had any files in a `.settings` folder.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_8_0.md"
+}

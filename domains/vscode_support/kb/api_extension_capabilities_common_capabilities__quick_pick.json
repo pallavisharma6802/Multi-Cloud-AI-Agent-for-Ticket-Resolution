@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_capabilities_common_capabilities__quick_pick",
+  "title": "common capabilities / Quick Pick",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Quick Pick\n\nWith the [`vscode.QuickPick`](/api/references/vscode-api#QuickPick) API, you can easily collect user input or let the user make a selection from multiple options. The [QuickInput sample](https://github.com/microsoft/vscode-extension-samples/tree/main/quickinput-sample) illustrates the API.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-capabilities/common-capabilities.md"
+}

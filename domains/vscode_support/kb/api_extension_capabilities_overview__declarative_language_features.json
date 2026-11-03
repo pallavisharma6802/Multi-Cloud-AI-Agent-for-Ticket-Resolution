@@ -1,0 +1,8 @@
+{
+  "id": "api_extension_capabilities_overview__declarative_language_features",
+  "title": "overview / Declarative Language Features",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Declarative Language Features\n\n[Declarative Language Features](/api/language-extensions/overview#declarative-language-features) adds basic text editing support for a programming language such as bracket matching, auto-indentation and syntax highlighting. This is done declaratively, without writing any code. For more advanced language features, like IntelliSense or debugging, see [Programmatic Language Features](#programmatic-language-features).\n\n**Extension Ideas**\n\n- Bundle common JavaScript snippets into an extension.\n- Tell VS Code about a new programming language.\n- Add or replace the grammar for a programming language.\n- Extend an existing grammar with grammar injections.\n- Port an existing TextMate grammar to VS Code.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-capabilities/overview.md"
+}

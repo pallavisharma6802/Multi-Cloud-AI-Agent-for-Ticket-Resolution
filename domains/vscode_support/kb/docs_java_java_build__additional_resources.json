@@ -1,0 +1,8 @@
+{
+  "id": "docs_java_java_build__additional_resources",
+  "title": "java build / Additional resources",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Additional resources\n\nVisit the [GitHub Repo](https://github.com/microsoft/vscode-maven) of the Maven extension for additional [configurations](https://github.com/microsoft/vscode-maven/tree/main#additional-configurations) and a [troubleshooting guide](https://github.com/microsoft/vscode-maven/blob/main/Troubleshooting.md).\n\nIn addition to Maven, there's also a [Bazel extension](https://marketplace.visualstudio.com/items?itemName=BazelBuild.vscode-bazel) if you use Bazel to build and test your project.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-build.md"
+}

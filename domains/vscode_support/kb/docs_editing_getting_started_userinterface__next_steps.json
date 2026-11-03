@@ -1,0 +1,8 @@
+{
+  "id": "docs_editing_getting_started_userinterface__next_steps",
+  "title": "userinterface / Next steps",
+  "category": "EDITOR",
+  "intent": "editor",
+  "content": "## Next steps\n\nNow that you know the overall layout of {% data variables.product.prodname_vscode_shortname %}, start to customize the editor to how you like to work by looking at the following articles:\n\n* [Changing the theme](/docs/configure/themes.md) - Set a Color and/or File Icon Theme to your preference.\n* [Using custom layouts](/docs/configure/custom-layout.md) - Learn more about {% data variables.product.prodname_vscode_shortname %}'s workbench and editor layout customizations.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/userinterface.md"
+}

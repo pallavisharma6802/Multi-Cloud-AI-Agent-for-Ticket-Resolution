@@ -1,0 +1,8 @@
+{
+  "id": "api_advanced_topics_using_proposed_api__proposed_api_incompatibility",
+  "title": "using proposed api / Proposed API incompatibility",
+  "category": "API_REFERENCE",
+  "intent": "api_reference",
+  "content": "## Proposed API incompatibility\n\nOn the main branch, the `vscode.proposed.<proposalName>.d.ts` is always compatible with `vscode.d.ts`. However, when you add `vscode.proposed.<proposal>.d.ts` to your project that uses `@types/vscode`, the latest `vscode.proposed.<proposal>.d.ts` might be incompatible with the version in `@types/vscode`.\n\nYou can solve this issue by either:\n\n- Remove dependency on `@types/vscode` and use `npx @vscode/dts main` to download `vscode.d.ts` from `microsoft/vscode` main branch.\n- Use `@types/vscode@<version>` and also use `npx @vscode/dts dev <version>` to download the `vscode.proposed.<proposal>.d.ts` from an old branch of `microsoft/vscode`. However, be careful as the API might have changed in the latest version of VS Code Insiders.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/advanced-topics/using-proposed-api.md"
+}

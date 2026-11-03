@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_vdecember__es6_is_the_new_default",
+  "title": "vDecember / ES6 is the new default",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## ES6 is the new default\n\nWe have made ES6 the default for JavaScript files. This means you don't need to create `jsconfig.json` files to enable new syntax and by default you get suggestions for ES6-types, like `Promise`, `Set`, `Map`, `String.startsWith` and much more. Thanks to a community [contribution](https://github.com/microsoft/vscode/pull/337).\n\nAt the same time, the grammar used to colorize JavaScript was also updated to support the ES6 syntax.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vDecember.md"
+}

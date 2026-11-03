@@ -1,0 +1,8 @@
+{
+  "id": "release_notes_v1_31__extensions",
+  "title": "v1_31 / Extensions",
+  "category": "RELEASE_NOTES",
+  "intent": "release_notes",
+  "content": "## Extensions\n\n### No reload on install\n\nBeing able to install extensions without forcing a reload (restart) of VS Code is one of the most upvoted feature requests and we bring it to you in this release. You are no longer required to reload VS Code when you install or enable an extension.\n\nIn the example below the user follows the recommendation to install the **Vetur** extension after opening a `.vue` file. Notice that the language features provided by the Vetur extension (such as syntax coloring, diagnostic errors) are available immediately after installing the recommended extension.\n\n<video src=\"images/1_31/no-reload-language-extension.mp4\" title=\"Video showing Extensions no reload.\" autoplay loop controls muted></video>\n\nReload is also not needed when you uninstall or disable an extension if it is not activated.\n\n**Note:** There are certain extensions that require reload because of external contributions (contributing to the extension points of other extensions). It requires adoption from the external contribution point owners by listening to the [`extensions.onDidChange`](#extensions-change-event) event.",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_31.md"
+}

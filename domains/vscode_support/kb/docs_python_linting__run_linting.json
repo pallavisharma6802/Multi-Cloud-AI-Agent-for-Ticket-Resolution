@@ -1,0 +1,8 @@
+{
+  "id": "docs_python_linting__run_linting",
+  "title": "linting / Run linting",
+  "category": "LANGUAGES",
+  "intent": "languages",
+  "content": "## Run linting\n\nLinting will automatically run when a Python file is opened or saved.\n\nErrors and warnings are shown in the **Problems** panel (`kb(workbench.actions.view.problems)`) for open files, and are also highlighted in the code editor. Hovering over an underlined issue displays the details:\n\n![Linting messages in the editor and the Problems panel](images/linting/lint-messages.png)",
+  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/linting.md"
+}
