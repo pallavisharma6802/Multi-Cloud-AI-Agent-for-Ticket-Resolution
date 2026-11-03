@@ -8,6 +8,7 @@ const links = [
   { href: "/", label: "Overview", icon: "grid" },
   { href: "/triage", label: "Ticket inbox", icon: "inbox" },
   { href: "/analytics", label: "Analytics", icon: "chart" },
+  { href: "/knowledge", label: "Knowledge library", icon: "chart" },
 ];
 export default function NavBar() {
   const path = usePathname();
@@ -83,7 +84,7 @@ export default function NavBar() {
                   ? "Ticket inbox"
                   : path === "/submit"
                     ? "Create ticket"
-                    : "Analytics"}
+                    : path.startsWith("/knowledge") ? "Knowledge library" : "Analytics"}
           </strong>
         </div>
         <div className="topbar-right">
