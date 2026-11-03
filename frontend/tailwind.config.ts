@@ -37,12 +37,29 @@ const config: Config = {
           urgent: "#dd5a5a",
         },
       },
+      // Site-wide type bump -- every text-xs/sm/base/etc now resolves bigger.
+      // Fixes "font is too small" without touching every className.
+      fontSize: {
+        xs: ["13px", { lineHeight: "1.5" }],
+        sm: ["15px", { lineHeight: "1.6" }],
+        base: ["16px", { lineHeight: "1.65" }],
+        lg: ["19px", { lineHeight: "1.6" }],
+        xl: ["22px", { lineHeight: "1.5" }],
+        "2xl": ["26px", { lineHeight: "1.35" }],
+        "3xl": ["33px", { lineHeight: "1.25" }],
+        "4xl": ["42px", { lineHeight: "1.15" }],
+      },
       borderRadius: {
         xl: "14px",
         "2xl": "18px",
       },
       boxShadow: {
-        card: "0 1px 2px rgba(23,40,64,0.04), 0 8px 24px rgba(23,40,64,0.06)",
+        card: "0 1px 2px rgba(23,40,64,0.05), 0 10px 30px rgba(23,40,64,0.08)",
+        glow: "0 0 0 1px rgba(36,91,219,0.08), 0 12px 32px rgba(36,91,219,0.14)",
+      },
+      backgroundImage: {
+        "brand-gradient": "linear-gradient(135deg, #245bdb 0%, #1b49b4 55%, #122239 100%)",
+        "teal-gradient": "linear-gradient(135deg, #4fcfbd 0%, #2fb6a3 100%)",
       },
     },
   },

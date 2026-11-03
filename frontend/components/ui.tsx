@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import type { LucideIcon } from "lucide-react";
 
 export function Card({
   children,
@@ -19,23 +20,36 @@ export function StatCard({
   value,
   foot,
   tone = "default",
+  icon: Icon,
 }: {
   label: string;
   value: ReactNode;
   foot?: string;
   tone?: "default" | "brand" | "teal" | "amber";
+  icon?: LucideIcon;
 }) {
-  const tones: Record<string, string> = {
-    default: "bg-surface",
-    brand: "bg-brand-50",
-    teal: "bg-teal-100",
-    amber: "bg-amber-50",
+  const tones: Record<string, { bg: string; icon: string; value: string }> = {
+    default: { bg: "bg-surface", icon: "bg-slate-100 text-ink-soft", value: "text-ink" },
+    brand: { bg: "bg-brand-gradient", icon: "bg-white/15 text-white", value: "text-white" },
+    teal: { bg: "bg-teal-100", icon: "bg-white/70 text-teal-500", value: "text-ink" },
+    amber: { bg: "bg-amber-50", icon: "bg-white/70 text-amber-600", value: "text-ink" },
   };
+  const t = tones[tone];
+  const isBrand = tone === "brand";
   return (
-    <Card className={`p-5 ${tones[tone]}`}>
-      <div className="text-sm font-medium text-ink-soft">{label}</div>
-      <div className="mt-2 text-3xl font-semibold tracking-tight text-ink">{value}</div>
-      {foot && <div className="mt-1 text-xs text-ink-faint">{foot}</div>}
+    <Card className={`relative overflow-hidden p-6 ${t.bg} ${isBrand ? "border-transparent shadow-glow" : ""}`}>
+      <div className="flex items-start justify-between">
+        <div className={`text-sm font-semibold ${isBrand ? "text-white/80" : "text-ink-soft"}`}>{label}</div>
+        {Icon && (
+          <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl ${t.icon}`}>
+            <Icon size={17} strokeWidth={2.25} />
+          </span>
+        )}
+      </div>
+      <div className={`mt-3 text-4xl font-bold tracking-tight ${t.value}`}>{value}</div>
+      {foot && (
+        <div className={`mt-1.5 text-sm ${isBrand ? "text-white/70" : "text-ink-faint"}`}>{foot}</div>
+      )}
     </Card>
   );
 }

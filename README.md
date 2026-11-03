@@ -1,10 +1,11 @@
 # Agentic Multi-Cloud Ticket Resolution
 
-An agentic support-ticket resolution system: a cyclic [LangGraph](https://github.com/langchain-ai/langgraph) of six
-LLM agents (intent/priority classification, CRAG document grading, Self-RAG response judging, and an agentic
-Continuation Agent that replaces every fixed retry-cap/threshold with a reasoned decision), running against two
-real, labeled domain pack (IT/SaaS), with a from-scratch evaluation harness, a BigQuery/Grafana
-analytics layer, and a Next.js UI — all runnable for free on a laptop via Docker Compose.
+An agentic support-ticket resolution system: a cyclic [LangGraph](https://github.com/langchain-ai/langgraph) of
+eight LLM agents (intent/priority classification, CRAG document grading, Self-RAG response judging, and an agentic
+Continuation Agent that replaces every fixed retry-cap/threshold with a reasoned decision), running against a
+real VS Code documentation knowledge base (6,347 chunks from `microsoft/vscode-docs`), with a from-scratch
+evaluation harness, a BigQuery/Grafana analytics layer, and a Next.js UI — all runnable for free on a laptop via
+Docker Compose.
 
 This is a rebuild of an earlier keyword-heuristic pipeline. See [Why this rebuild](#why-this-rebuild) for what
 changed and why, and [Evaluation](#evaluation) for how "agentic, not guessed" is actually measured rather than
@@ -29,7 +30,7 @@ asserted.
 ```mermaid
 flowchart TB
     subgraph domainPacks ["Domain Packs (config-driven, swappable)"]
-        itPack["vscode_support: 27 intents — resolution assist"]
+        vscodePack["vscode_support: resolution assist over 6,347 VS Code doc chunks"]
     end
 
     subgraph agenticGraph ["LangGraph Supervisor (cyclic, conditional edges)"]
@@ -110,10 +111,15 @@ plus a real evaluation harness (below) so "agentic" is a measured property, not 
 Packs ship under [`domains/`](domains/) and are auto-discovered — the LangGraph is generic and swappable
 across whichever packs are present.
 
-- **`vscode_support`** — resolution assist. 27 Bitext intents with labeled eval + intent-tagged FAQ KB.
-  `intent_eval_available: true`.
+- **`vscode_support`** (only pack currently shipped) — resolution assist over 6,347 documents chunked from 691
+  real VS Code docs pages (`docs/`, `api/`, `release-notes/`, `remote-release-notes/`, `learn/`), pinned to
+  commit `b997976670611bc45544c85e05aacb6ceabaafb0` of `microsoft/vscode-docs` (CC-BY-3.0-US). Regenerate with
+  [`data/prepare_vscode_docs.py`](data/prepare_vscode_docs.py). No labeled intent-accuracy benchmark yet —
+  `intent_eval_available: false`.
 
-Each pack directory contains `config.yaml`, `few_shot_examples.json`, and `kb/`.
+An earlier IT/SaaS (Kaggle) domain pack and its BigQuery rows have been fully removed; see
+[`domains/vscode_support/config.yaml`](domains/vscode_support/config.yaml) for the current taxonomy and
+provenance. Each pack directory contains `config.yaml`, `few_shot_examples.json`, and `kb/`.
 
 ### Per-role Bedrock models
 
@@ -190,12 +196,12 @@ Tests are fully mocked (Bedrock via MagicMock / boto3 stub, Azure, Pinecone, Big
 
 | Script | Metric | What it measures |
 |---|---|---|
-| [`eval/intent_priority_eval.py`](eval/intent_priority_eval.py) | Macro-F1 | IT intent labels |
+| [`eval/intent_priority_eval.py`](eval/intent_priority_eval.py) | Macro-F1 | Intent labels (where a labeled set exists) |
 | [`eval/ner_eval.py`](eval/ner_eval.py) | Entity P/R/F1 | Azure NER when gold CoNLL provided |
 | [`eval/rag_eval.py`](eval/rag_eval.py) | Faithfulness / relevancy | ragas against seeded KB |
 | [`eval/agreement_eval.py`](eval/agreement_eval.py) | Kappa | Human escalate labels |
 | [`eval/run_eval.py`](eval/run_eval.py) | CI gate | Orchestrates + baseline compare |
-| [`eval/live_smoke_runner.py`](eval/live_smoke_runner.py) | Live continuous smoke | IT/SaaS labeled suite via `POST /api/v1/tickets` |
+| [`eval/live_smoke_runner.py`](eval/live_smoke_runner.py) | Live continuous smoke | vscode_support ticket suite via `POST /api/v1/tickets` |
 | [`eval/score_live_run.py`](eval/score_live_run.py) | Live spot-check | Scores smoke JSONL vs suite labels |
 
 ```bash
@@ -205,7 +211,7 @@ python eval/run_eval.py --pack vscode_support --update-baseline
 
 ### Live smoke (continuous)
 
-Labeled suite: [`eval/datasets/live_smoke_suite.jsonl`](eval/datasets/live_smoke_suite.jsonl) (IT/SaaS, easy→hard).
+Labeled suite: [`eval/datasets/live_smoke_suite.jsonl`](eval/datasets/live_smoke_suite.jsonl) (vscode_support, easy→hard).
 
 ```bash
 python eval/live_smoke_runner.py --once
@@ -269,20 +275,33 @@ own span in the LangSmith UI, with intent/final_action and judge scores visible 
 
 `frontend/` is a Next.js 15 (App Router) + Tailwind app calling the FastAPI backend directly:
 
-- **`/submit`** — ticket submission form (domain-pack selector, title/description), shows the immediate
-  processing result.
-- **`/triage`** — ticket queue with domain/priority/status/escalation filters.
-- **`/tickets/[id]`** — full agentic trace view: per-document CRAG grading rationale, judge scores per
-  iteration, continuation rationale at every branch point, and the final Supervisor rationale. This is the
-  project's best demonstration piece — the whole point of the rebuild is that every decision has a reasoned
-  trace, and this page renders exactly that trace, not a summary of it.
-- **`/analytics`** — embeds the Grafana dashboards above via iframe.
+- **`/`** — overview: live stats, a visual breakdown of the multi-agent pipeline (CRAG/self-RAG steps), and the
+  full 8-agent roster with each agent's real job.
+- **`/submit`** — chat-style ticket intake (email → issue description → live API submission → the agent's
+  response rendered as the final chat message).
+- **`/triage`** — ticket inbox with tabs/search/filter/CSV export, filterable by status (`open`, `in_progress`
+  — shown as "Needs review", `resolved`, `closed`).
+- **`/tickets/[id]`** — full agentic trace view: conversation, per-document CRAG grading rationale, judge
+  scores per iteration, continuation rationale at every branch point, retry/resolve actions, and the final
+  Supervisor rationale. This is the project's best demonstration piece — every decision has a reasoned trace,
+  and this page renders exactly that trace, not a summary of it.
+- **`/analytics`** — interactive Recharts (pie/bar/area) over live ticket data, plus the four Grafana
+  dashboards below embedded live via iframe (anonymous viewer auth + `GF_SECURITY_ALLOW_EMBEDDING=true`).
+
+There is no knowledge-graph page — an earlier force-graph visualization was tried and removed in favor of the
+Grafana/Recharts analytics above.
 
 ```bash
 cd frontend
+cp .env.local.example .env.local   # sets NEXT_PUBLIC_API_URL / NEXT_PUBLIC_GRAFANA_URL — required for the
+                                    # embedded Grafana iframe to resolve correctly
 npm install
 npm run dev   # http://localhost:3000, expects the backend at NEXT_PUBLIC_API_URL (default http://localhost:8000)
 ```
+
+Note: `NEXT_PUBLIC_*` values are baked in at `next build` time, not read at container runtime — if you change
+`.env.local` after a Docker build, rebuild the frontend image (`docker compose build frontend`) for it to take
+effect.
 
 ## CI/CD
 
@@ -340,13 +359,15 @@ No code changes required — the agents, graph, and eval harness are all pack-ag
 
 ## MVP workflow and deployment status
 
-The refreshed workspace includes live overview counts, inbox search/filter/CSV export, ticket retry, explicit human resolution, and expandable CRAG/Self-RAG evidence. Open tickets do not run in the background: use Retry assessment. Needs review means a human must act; Mark resolved records that action separately from AI resolution.
+The refreshed workspace includes live overview counts, inbox search/filter/CSV export, ticket retry, explicit human resolution, and expandable CRAG/Self-RAG evidence. Open tickets do not run in the background: use Retry assessment. `in_progress` ("Needs review" in the UI) means a human must act; Mark resolved records that action separately from AI resolution.
 
 [AWS deployment instructions](deploy/aws/README.md) are prepared. No AWS deployment has been performed. Localhost is not a hosted deployment. Vercel can host the frontend, Render can host an appropriately sized API, and GitHub Pages cannot run this Python backend. Each external host requires an account and authorized access.
 
-BigQuery sandbox writes use load jobs, with a 59-day retention limit, in `ticket_analytics_live`. The six completed live demo tickets are stored both as analytics events and full snapshots. Historical 122-row data was recovered into `ticket_analytics_live.fact_ticket_events_legacy_backup_20261102` after a retention mistake expired the original partitions. Recovery was verified by an exact row-multiset checksum; this archive also has sandbox retention. PostgreSQL plus the AWS backup plan is the long-term system of record.
+BigQuery sandbox writes use load jobs, with a 59-day retention limit, in `ticket_analytics_live`. The project is on BigQuery's free tier (billing disabled), which blocks DML `DELETE` and `WRITE_TRUNCATE` table rewrites on the fact table — the old IT/SaaS and healthcare rows were fully purged from PostgreSQL directly, and the four Grafana dashboard queries filter them out (`domain_pack NOT IN ('it_saas', 'healthcare')`) rather than deleting the underlying BigQuery rows, which isn't currently possible with this project's permissions. PostgreSQL plus the AWS backup plan is the long-term system of record.
 
-The IT/SaaS pack currently contains 108 knowledge articles, 82 few-shot examples, and 900 evaluation tickets, prepared from a 3,400-row sample of Bitext's 26,872-row corpus. This uses a pretrained model; it does not train a custom model.
+**Operational note**: Grafana's BigQuery datasource caches its service-account access token and can present it as expired after the container has been up a while, causing all dashboard panels to render blank with no visible error (check `docker logs ticket-grafana` for `ACCESS_TOKEN_EXPIRED` to confirm). Fix: `docker restart ticket-grafana` forces it to re-mint a fresh token.
+
+The `vscode_support` pack currently contains 6,347 KB documents chunked from VS Code's official docs; ticket volume is seeded via [`data/seed_vscode_tickets.py`](data/seed_vscode_tickets.py). This uses a pretrained model; it does not train a custom model.
 
 ### Active Neon database
 
