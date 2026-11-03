@@ -1,0 +1,20 @@
+# Current hosted-database deployment: preserve the verified Neon database.
+services:
+  postgres:
+    profiles: [local-database]
+  backend:
+    mem_limit: 1536m
+    cpus: 1.0
+    environment:
+      DATABASE_URL: ${CLOUD_DATABASE_URL:?Set the existing pooled Neon URL in the private server .env}
+      MKL_NUM_THREADS: "1"
+    depends_on: !reset {}
+  frontend:
+    mem_limit: 256m
+    cpus: 0.5
+  grafana:
+    mem_limit: 384m
+    cpus: 0.5
+  proxy:
+    mem_limit: 128m
+    cpus: 0.5

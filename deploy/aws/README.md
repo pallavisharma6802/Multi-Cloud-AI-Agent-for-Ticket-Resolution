@@ -10,6 +10,31 @@ No AWS resources were created. The working application profile can invoke Bedroc
 
 A temporary tunnel to the local app is a preview, not this deployment. The Mac must remain online for a tunnel to work.
 
+## Current app: deploy with Neon
+
+The operational database has already been migrated and verified in Neon. Keep it there. The older single-host PostgreSQL procedure below is an alternative, not a required migration step.
+
+1. Connect the current browser console session to a **new** CLI profile, leaving the working application profile alone:
+   `aws login --profile resolve-deploy --region us-east-1`.
+2. Verify that profile with `aws sts get-caller-identity --profile resolve-deploy --region us-east-1` and `aws ec2 describe-vpcs --profile resolve-deploy --region us-east-1`. The identity needs deployment permissions for EC2, IAM, S3, and SSM. Browser sign-in does not add those permissions.
+3. Copy `terraform.tfvars.example` to `terraform.tfvars`, set `aws_profile = "resolve-deploy"`, and explicitly select the HTTP/HTTPS visitor CIDRs. Run `terraform init` and `terraform plan -out=review.tfplan`; review the resources before `terraform apply review.tfplan`.
+4. Follow the private release packaging and Session Manager steps below, including the existing pooled `CLOUD_DATABASE_URL` in the **private server .env**. Keep `BIGQUERY_DATASET=ticket_analytics_live`. Use the server instance role for AWS; never upload local AWS access keys.
+5. Every server Compose command must include **both** files:
+
+   ```bash
+   docker compose --env-file .env -f deploy/aws/compose.yml -f deploy/aws/compose.neon.yml config --quiet
+   docker compose --env-file .env -f deploy/aws/compose.yml -f deploy/aws/compose.neon.yml build backend
+   docker compose --env-file .env -f deploy/aws/compose.yml -f deploy/aws/compose.neon.yml build frontend
+   docker compose --env-file .env -f deploy/aws/compose.yml -f deploy/aws/compose.neon.yml up -d backend frontend grafana proxy
+   ```
+
+   Build sequentially on EC2, not on the Mac. Do **not** start the `postgres` service or restore the old local dump for this path. No ticket copy is required: the app uses the same Neon database.
+6. Open the HTTPS hostname from Terraform, authenticate with the demo password, create a synthetic ticket, and verify that ticket in Neon and the four Grafana dashboards.
+
+The Neon override removes the backend's local-Postgres dependency and applies resource limits. AWS infrastructure has not been provisioned by these instructions. Credits cover eligible AWS usage subject to your balance and terms; they do not pay Neon, Azure, Pinecone, or Google Cloud charges.
+
+---
+
 ## 1. Review and provision
 
 From the project root, after recovering a valid deployment profile:

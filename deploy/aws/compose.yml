@@ -50,7 +50,7 @@ services:
       GF_SERVER_SERVE_FROM_SUB_PATH: "true"
       GF_SECURITY_ADMIN_USER: admin
       GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_ADMIN_PASSWORD:?Set a generated Grafana password}
-      GF_INSTALL_PLUGINS: grafana-bigquery-datasource
+      GF_INSTALL_PLUGINS: grafana-bigquery-datasource 2.2.1
       GF_USERS_ALLOW_SIGN_UP: "false"
       GF_SECURITY_ALLOW_EMBEDDING: "true"
       # Read-only dashboard viewing is inside the Caddy password boundary.
