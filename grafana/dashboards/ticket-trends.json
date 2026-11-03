@@ -8,7 +8,7 @@
   ],
   "timezone": "browser",
   "schemaVersion": 39,
-  "version": 1,
+  "version": 2,
   "refresh": "5m",
   "time": {
     "from": "now-30d",
@@ -41,12 +41,14 @@
       "targets": [
         {
           "refId": "A",
-          "format": "timeseries",
-          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time, COUNT(*) AS tickets\nFROM `ticket_analytics_live.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\nGROUP BY time\nORDER BY time",
+          "format": 0,
+          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time, COUNT(*) AS tickets\nFROM `ticket_analytics_live.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\n  AND domain_pack NOT IN ('it_saas', 'healthcare')\nGROUP BY time\nORDER BY time",
           "datasource": {
             "type": "grafana-bigquery-datasource",
             "uid": "bigquery-ticket-analytics"
-          }
+          },
+          "rawQuery": true,
+          "editorMode": "code"
         }
       ]
     },
@@ -73,12 +75,14 @@
       "targets": [
         {
           "refId": "A",
-          "format": "timeseries",
-          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time, COALESCE(domain_pack, 'unknown') AS domain_pack, COUNT(*) AS tickets\nFROM `ticket_analytics_live.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\nGROUP BY time, domain_pack\nORDER BY time",
+          "format": 0,
+          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time, COALESCE(domain_pack, 'unknown') AS domain_pack, COUNT(*) AS tickets\nFROM `ticket_analytics_live.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\n  AND domain_pack NOT IN ('it_saas', 'healthcare')\nGROUP BY time, domain_pack\nORDER BY time",
           "datasource": {
             "type": "grafana-bigquery-datasource",
             "uid": "bigquery-ticket-analytics"
-          }
+          },
+          "rawQuery": true,
+          "editorMode": "code"
         }
       ]
     },
@@ -105,12 +109,14 @@
       "targets": [
         {
           "refId": "A",
-          "format": "timeseries",
-          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time, COALESCE(priority, 'unknown') AS priority, COUNT(*) AS tickets\nFROM `ticket_analytics_live.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\nGROUP BY time, priority\nORDER BY time",
+          "format": 0,
+          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time, COALESCE(priority, 'unknown') AS priority, COUNT(*) AS tickets\nFROM `ticket_analytics_live.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\n  AND domain_pack NOT IN ('it_saas', 'healthcare')\nGROUP BY time, priority\nORDER BY time",
           "datasource": {
             "type": "grafana-bigquery-datasource",
             "uid": "bigquery-ticket-analytics"
-          }
+          },
+          "rawQuery": true,
+          "editorMode": "code"
         }
       ]
     },
@@ -140,12 +146,14 @@
       "targets": [
         {
           "refId": "A",
-          "format": "timeseries",
-          "rawSql": "WITH daily AS (\n  SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS day,\n    COUNTIF(final_action = 'escalate') AS escalated,\n    COUNT(*) AS total\n  FROM `ticket_analytics_live.fact_ticket_events`\n  WHERE $__timeFilter(event_ts)\n  GROUP BY day\n)\nSELECT day AS time,\n  SAFE_DIVIDE(\n    SUM(escalated) OVER (ORDER BY UNIX_DATE(DATE(day)) RANGE BETWEEN 6 PRECEDING AND CURRENT ROW),\n    SUM(total) OVER (ORDER BY UNIX_DATE(DATE(day)) RANGE BETWEEN 6 PRECEDING AND CURRENT ROW)\n  ) AS rolling_7d_escalation_rate\nFROM daily\nORDER BY day",
+          "format": 0,
+          "rawSql": "WITH daily AS (\n  SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS day,\n    COUNTIF(final_action = 'escalate') AS escalated,\n    COUNT(*) AS total\n  FROM `ticket_analytics_live.fact_ticket_events`\n  WHERE $__timeFilter(event_ts)\n  AND domain_pack NOT IN ('it_saas', 'healthcare')\n  GROUP BY day\n)\nSELECT day AS time,\n  SAFE_DIVIDE(\n    SUM(escalated) OVER (ORDER BY UNIX_DATE(DATE(day)) RANGE BETWEEN 6 PRECEDING AND CURRENT ROW),\n    SUM(total) OVER (ORDER BY UNIX_DATE(DATE(day)) RANGE BETWEEN 6 PRECEDING AND CURRENT ROW)\n  ) AS rolling_7d_escalation_rate\nFROM daily\nORDER BY day",
           "datasource": {
             "type": "grafana-bigquery-datasource",
             "uid": "bigquery-ticket-analytics"
-          }
+          },
+          "rawQuery": true,
+          "editorMode": "code"
         }
       ]
     }

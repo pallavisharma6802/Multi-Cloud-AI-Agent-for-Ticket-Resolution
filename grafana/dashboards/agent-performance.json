@@ -8,7 +8,7 @@
   ],
   "timezone": "browser",
   "schemaVersion": 39,
-  "version": 1,
+  "version": 2,
   "refresh": "5m",
   "time": {
     "from": "now-30d",
@@ -35,12 +35,14 @@
       "targets": [
         {
           "refId": "A",
-          "format": "table",
-          "rawSql": "SELECT intent_confidence\nFROM `ticket_analytics_live.fact_ticket_events`\nWHERE $__timeFilter(event_ts) AND intent_confidence IS NOT NULL",
+          "format": 1,
+          "rawSql": "SELECT intent_confidence\nFROM `ticket_analytics_live.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\n  AND domain_pack NOT IN ('it_saas', 'healthcare') AND intent_confidence IS NOT NULL",
           "datasource": {
             "type": "grafana-bigquery-datasource",
             "uid": "bigquery-ticket-analytics"
-          }
+          },
+          "rawQuery": true,
+          "editorMode": "code"
         }
       ]
     },
@@ -61,12 +63,14 @@
       "targets": [
         {
           "refId": "A",
-          "format": "table",
-          "rawSql": "SELECT final_confidence\nFROM `ticket_analytics_live.fact_ticket_events`\nWHERE $__timeFilter(event_ts) AND final_confidence IS NOT NULL",
+          "format": 1,
+          "rawSql": "SELECT final_confidence\nFROM `ticket_analytics_live.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\n  AND domain_pack NOT IN ('it_saas', 'healthcare') AND final_confidence IS NOT NULL",
           "datasource": {
             "type": "grafana-bigquery-datasource",
             "uid": "bigquery-ticket-analytics"
-          }
+          },
+          "rawQuery": true,
+          "editorMode": "code"
         }
       ]
     },
@@ -96,12 +100,14 @@
       "targets": [
         {
           "refId": "A",
-          "format": "timeseries",
-          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time,\n  SAFE_DIVIDE(COUNTIF(requires_human_review), COUNT(*)) AS human_override_rate\nFROM `ticket_analytics_live.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\nGROUP BY time\nORDER BY time",
+          "format": 0,
+          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time,\n  SAFE_DIVIDE(COUNTIF(requires_human_review), COUNT(*)) AS human_override_rate\nFROM `ticket_analytics_live.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\n  AND domain_pack NOT IN ('it_saas', 'healthcare')\nGROUP BY time\nORDER BY time",
           "datasource": {
             "type": "grafana-bigquery-datasource",
             "uid": "bigquery-ticket-analytics"
-          }
+          },
+          "rawQuery": true,
+          "editorMode": "code"
         }
       ]
     },
@@ -131,12 +137,14 @@
       "targets": [
         {
           "refId": "A",
-          "format": "timeseries",
-          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time, AVG(intent_self_consistency) AS avg_self_consistency\nFROM `ticket_analytics_live.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\nGROUP BY time\nORDER BY time",
+          "format": 0,
+          "rawSql": "SELECT TIMESTAMP_TRUNC(event_ts, DAY) AS time, AVG(intent_self_consistency) AS avg_self_consistency\nFROM `ticket_analytics_live.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\n  AND domain_pack NOT IN ('it_saas', 'healthcare')\nGROUP BY time\nORDER BY time",
           "datasource": {
             "type": "grafana-bigquery-datasource",
             "uid": "bigquery-ticket-analytics"
-          }
+          },
+          "rawQuery": true,
+          "editorMode": "code"
         }
       ]
     },
@@ -180,12 +188,14 @@
       "targets": [
         {
           "refId": "A",
-          "format": "table",
-          "rawSql": "SELECT SAFE_DIVIDE(COUNTIF(requires_human_review), COUNT(*)) AS escalation_rate\nFROM `ticket_analytics_live.fact_ticket_events`\nWHERE $__timeFilter(event_ts)",
+          "format": 1,
+          "rawSql": "SELECT SAFE_DIVIDE(COUNTIF(requires_human_review), COUNT(*)) AS escalation_rate\nFROM `ticket_analytics_live.fact_ticket_events`\nWHERE $__timeFilter(event_ts)\n  AND domain_pack NOT IN ('it_saas', 'healthcare')",
           "datasource": {
             "type": "grafana-bigquery-datasource",
             "uid": "bigquery-ticket-analytics"
-          }
+          },
+          "rawQuery": true,
+          "editorMode": "code"
         }
       ]
     }
