@@ -2,9 +2,24 @@
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
-import Icon from "@/components/Icon";
-import { Status, Priority } from "@/components/TicketTable";
+import {
+  ArrowLeft,
+  Sparkles,
+  Copy,
+  Check,
+  ChevronDown,
+  Clock,
+  ShieldCheck,
+} from "lucide-react";
 import { TicketTraceResponse, getTicketTrace, retryTicket, resolveTicket } from "@/lib/api";
+import { Card, Button, PriorityBadge, StatusBadge } from "@/components/ui";
+
+const TABS = [
+  { id: "conversation", label: "Conversation" },
+  { id: "trace", label: "Agent activity" },
+  { id: "evidence", label: "Knowledge & quality" },
+];
+
 export default function TicketDetail() {
   const { id } = useParams<{ id: string }>();
   const [data, setData] = useState<TicketTraceResponse | null>(null);
@@ -13,302 +28,301 @@ export default function TicketDetail() {
   const [copied, setCopied] = useState(false);
   const [working, setWorking] = useState(false);
   const [actionError, setActionError] = useState("");
-  async function act(action:"retry"|"resolve") {
-    setWorking(true); setActionError("");
-    try { if(action==="retry") await retryTicket(id); else await resolveTicket(id); setData(await getTicketTrace(id)); }
-    catch(e:any){setActionError(e.message)} finally{setWorking(false)}
+
+  async function act(action: "retry" | "resolve") {
+    setWorking(true);
+    setActionError("");
+    try {
+      if (action === "retry") await retryTicket(id);
+      else await resolveTicket(id);
+      setData(await getTicketTrace(id));
+    } catch (e: any) {
+      setActionError(e.message);
+    } finally {
+      setWorking(false);
+    }
   }
+
   useEffect(() => {
-    getTicketTrace(id)
-      .then(setData)
-      .catch((e) => setError(e.message));
+    getTicketTrace(id).then(setData).catch((e) => setError(e.message));
   }, [id]);
+
   if (error)
     return (
-      <div className="error-box">
+      <Card className="border-rose-200 bg-rose-50 p-5 text-sm text-rose-700">
         {error}
-        <Link className="btn" href="/triage">
+        <Link href="/triage" className="ml-3 font-semibold underline">
           Back to inbox
         </Link>
-      </div>
+      </Card>
     );
   if (!data)
-    return (
-      <section className="panel">
-        <div className="empty-state">Loading ticket and decision trail…</div>
-      </section>
-    );
+    return <Card className="p-10 text-center text-sm text-ink-soft">Loading ticket and decision trail…</Card>;
+
   const { ticket: t, drafted_response: r, agent_decisions: decisions } = data;
   const relevant = decisions.flatMap((d) => d.output?.graded_documents || []);
+
   async function copy() {
     try {
       await navigator.clipboard.writeText(r?.draft_text || "");
       setCopied(true);
       setTimeout(() => setCopied(false), 2500);
     } catch {
-      setError(
-        "Clipboard is unavailable. You can select and copy the response text.",
-      );
+      setError("Clipboard is unavailable. You can select and copy the response text.");
     }
   }
+
   return (
-    <div className="page-enter">
-      <Link href="/triage" className="text-link" style={{ marginBottom: 20 }}>
-        ← Back to inbox
+    <div>
+      <Link href="/triage" className="mb-5 flex items-center gap-1.5 text-sm font-medium text-ink-soft hover:text-ink">
+        <ArrowLeft size={15} /> Back to inbox
       </Link>
-      <div className="page-heading">
+
+      <div className="mb-6 flex items-start justify-between gap-4">
         <div>
-          <div className="eyebrow">
+          <div className="text-xs font-semibold uppercase tracking-wide text-ink-faint">
             {t.id} · {(t.domain_pack || "Support").replaceAll("_", " ")}
           </div>
-          <h1 style={{ fontSize: 25 }}>{t.title}</h1>
-          <p className="subtle">
-            Opened{" "}
-            {new Date(
-              t.created_at + (/Z$/.test(t.created_at) ? "" : "Z"),
-            ).toLocaleString()}
+          <h1 className="mt-1 text-2xl font-semibold tracking-tight text-ink">{t.title}</h1>
+          <p className="mt-1 text-sm text-ink-soft">
+            Opened {new Date(t.created_at + (/Z$/.test(t.created_at) ? "" : "Z")).toLocaleString()}
           </p>
         </div>
-        <Status status={t.status} />
+        <StatusBadge status={t.status} />
       </div>
-      {actionError&&<div className="error-box">{actionError}</div>}
-      {t.status==="open"&&<div className="cloud-strip"><Icon name="clock" size={16}/><span>This ticket has not finished processing. Retry it to resume an assessment using the same ticket ID.</span><button className="btn btn-primary" style={{marginLeft:"auto"}} disabled={working} onClick={()=>act("retry")}>{working?"Processing…":"Retry assessment"}</button></div>}
-      {t.status==="in_progress"&&<div className="cloud-strip"><Icon name="shield" size={16}/><span>This ticket needs your team’s review. After checking the response and addressing the request, mark it resolved.</span><button className="btn btn-primary" style={{marginLeft:"auto"}} disabled={working} onClick={()=>act("resolve")}>{working?"Saving…":"Mark resolved"}</button></div>}
-      <div className="ticket-layout">
+
+      {actionError && <Card className="mb-5 border-rose-200 bg-rose-50 p-4 text-sm text-rose-700">{actionError}</Card>}
+
+      {t.status === "open" && (
+        <Card className="mb-6 flex items-center gap-3 border-brand-100 bg-brand-50 p-4 text-sm text-brand-700">
+          <Clock size={16} />
+          <span>This ticket hasn&apos;t finished processing. Retry it to resume using the same ticket ID.</span>
+          <Button className="ml-auto" disabled={working} onClick={() => act("retry")}>
+            {working ? "Processing…" : "Retry assessment"}
+          </Button>
+        </Card>
+      )}
+      {t.status === "needs_review" && (
+        <Card className="mb-6 flex items-center gap-3 border-amber-200 bg-amber-50 p-4 text-sm text-amber-700">
+          <ShieldCheck size={16} />
+          <span>Needs your team&apos;s review. After checking the response, mark it resolved.</span>
+          <Button className="ml-auto" disabled={working} onClick={() => act("resolve")}>
+            {working ? "Saving…" : "Mark resolved"}
+          </Button>
+        </Card>
+      )}
+
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_320px]">
         <div>
-          <div className="tabs detail-tabs">
-            {[
-              { id: "conversation", label: "Conversation" },
-              { id: "trace", label: `Agent activity (${decisions.length})` },
-              { id: "evidence", label: "Knowledge & quality" },
-            ].map((v) => (
+          <div className="mb-5 flex gap-1 rounded-xl bg-slate-100 p-1">
+            {TABS.map((v) => (
               <button
-                className={`tab ${tab === v.id ? "active" : ""}`}
                 key={v.id}
                 onClick={() => setTab(v.id)}
+                className={`rounded-lg px-3.5 py-2 text-sm font-medium transition ${
+                  tab === v.id ? "bg-surface text-ink shadow-card" : "text-ink-soft hover:text-ink"
+                }`}
               >
                 {v.label}
+                {v.id === "trace" && ` (${decisions.length})`}
               </button>
             ))}
           </div>
+
           {tab === "conversation" && (
-            <>
-              <section className="panel detail-card">
-                <div className="detail-label">CUSTOMER REQUEST</div>
-                <p className="response-text">{t.description}</p>
-              </section>
-              <section className="panel detail-card">
-                <div
-                  className="panel-head"
-                  style={{ padding: 0, marginBottom: 22 }}
-                >
-                  <div className="button-row">
-                    <span className="stat-icon">
-                      <Icon name="spark" size={16} />
+            <div className="space-y-5">
+              <Card className="p-6">
+                <div className="text-xs font-semibold uppercase tracking-wide text-ink-faint">Customer request</div>
+                <p className="mt-3 text-sm leading-relaxed text-ink">{t.description}</p>
+              </Card>
+              <Card className="p-6">
+                <div className="mb-5 flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <span className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-500 text-white">
+                      <Sparkles size={16} />
                     </span>
                     <div>
-                      <h2>AI response</h2>
-                      <p>Grounded in your knowledge sources</p>
+                      <h2 className="text-sm font-semibold text-ink">AI response</h2>
+                      <p className="text-xs text-ink-soft">Grounded in your knowledge sources</p>
                     </div>
                   </div>
                   {r?.draft_text && (
-                    <button className="btn" onClick={copy}>
-                      <Icon name={copied ? "check" : "copy"} size={13} />
+                    <Button variant="secondary" onClick={copy} className="py-1.5">
+                      {copied ? <Check size={14} /> : <Copy size={14} />}
                       {copied ? "Copied" : "Copy"}
-                    </button>
+                    </Button>
                   )}
                 </div>
-                <p className="response-text">
-                  {r?.draft_text ||
-                    "No response was drafted. This ticket requires a support specialist."}
+                <p className="text-sm leading-relaxed text-ink">
+                  {r?.draft_text || "No response was drafted. This ticket requires a support specialist."}
                 </p>
                 {r?.escalation_rationale && (
-                  <div className="detail-section">
-                    <div className="detail-label">WHY THIS NEEDS A PERSON</div>
-                    <p className="response-text">{r.escalation_rationale}</p>
+                  <div className="mt-5 border-t border-line pt-5">
+                    <div className="text-xs font-semibold uppercase tracking-wide text-ink-faint">Why this needs a person</div>
+                    <p className="mt-2 text-sm text-ink-soft">{r.escalation_rationale}</p>
                   </div>
                 )}
                 {r?.intent_rationale && (
-                  <div className="detail-section">
-                    <div className="detail-label">
-                      HOW WE UNDERSTOOD THE ISSUE
-                    </div>
-                    <p className="response-text">{r.intent_rationale}</p>
+                  <div className="mt-5 border-t border-line pt-5">
+                    <div className="text-xs font-semibold uppercase tracking-wide text-ink-faint">How we understood the issue</div>
+                    <p className="mt-2 text-sm text-ink-soft">{r.intent_rationale}</p>
                   </div>
                 )}
-              </section>
-            </>
+              </Card>
+            </div>
           )}
+
           {tab === "trace" && (
-            <section className="panel detail-card">
-              <div className="detail-label">A COMPLETE DECISION TRAIL</div>
-              <p className="subtle" style={{ marginBottom: 26 }}>
-                Expand any step to inspect its recorded inputs, outputs, and
-                rationale.
-              </p>
-              {decisions.map((d, i) => (
-                <details className="timeline-item" key={i}>
-                  <summary>
-                    <span>
-                      <strong
-                        style={{
-                          display: "block",
-                          marginBottom: 6,
-                          fontWeight: 500,
-                        }}
-                      >
-                        {d.agent_name.replaceAll("_", " ")}
-                      </strong>
-                      <small>
-                        {d.action.replaceAll("_", " ")} ·{" "}
-                        {d.confidence === null
-                          ? "No confidence reported"
-                          : `${Math.round(d.confidence * 100)}% confidence`}
-                      </small>
-                    </span>
-                    <Icon name="chevron" size={13} />
-                  </summary>
-                  <pre>{JSON.stringify(d.output, null, 2)}</pre>
-                </details>
-              ))}
-            </section>
+            <Card className="p-6">
+              <div className="text-xs font-semibold uppercase tracking-wide text-ink-faint">A complete decision trail</div>
+              <p className="mb-5 mt-2 text-sm text-ink-soft">Expand any step to inspect its recorded inputs, outputs, and rationale.</p>
+              <div className="space-y-2">
+                {decisions.map((d, i) => (
+                  <details key={i} className="group rounded-xl border border-line">
+                    <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-3">
+                      <span>
+                        <strong className="block text-sm font-medium capitalize text-ink">
+                          {d.agent_name.replaceAll("_", " ")}
+                        </strong>
+                        <small className="text-xs text-ink-soft">
+                          {d.action.replaceAll("_", " ")} ·{" "}
+                          {d.confidence === null ? "no confidence reported" : `${Math.round(d.confidence * 100)}% confidence`}
+                        </small>
+                      </span>
+                      <ChevronDown size={15} className="shrink-0 text-ink-faint transition group-open:rotate-180" />
+                    </summary>
+                    <pre className="overflow-x-auto border-t border-line bg-slate-50 p-4 text-xs text-ink-soft">
+                      {JSON.stringify(d.output, null, 2)}
+                    </pre>
+                  </details>
+                ))}
+              </div>
+            </Card>
           )}
+
           {tab === "evidence" && (
-            <>
-              <section className="panel detail-card">
-                <div className="detail-label">SUPPORTING KNOWLEDGE</div>
+            <div className="space-y-5">
+              <Card className="p-6">
+                <div className="text-xs font-semibold uppercase tracking-wide text-ink-faint">Supporting knowledge</div>
                 {r?.kb_documents?.length ? (
-                  r.kb_documents.map((d) => (
-                    <details key={d.doc_id} className="detail-section" open>
-                      <summary style={{ cursor: "pointer", fontSize: 12 }}>
-                        {String(d.metadata?.source || d.doc_id)}
-                        <span
-                          className="badge green"
-                          style={{ float: "right" }}
-                        >
-                          {Math.round(d.similarity_score * 100)}% match
-                        </span>
-                      </summary>
-                      <p className="response-text" style={{ marginTop: 15 }}>
-                        {d.content}
-                      </p>
-                    </details>
-                  ))
+                  <div className="mt-3 space-y-2">
+                    {r.kb_documents.map((d) => (
+                      <details key={d.doc_id} className="rounded-xl border border-line p-4" open>
+                        <summary className="flex cursor-pointer list-none items-center justify-between text-sm">
+                          <span className="truncate text-ink-soft">{String(d.metadata?.source || d.doc_id)}</span>
+                          <span className="shrink-0 rounded-full bg-teal-100 px-2 py-0.5 text-xs font-semibold text-teal-500">
+                            {Math.round(d.similarity_score * 100)}% match
+                          </span>
+                        </summary>
+                        <p className="mt-3 text-sm leading-relaxed text-ink">{d.content}</p>
+                      </details>
+                    ))}
+                  </div>
                 ) : (
-                  <p className="subtle">
-                    No supporting documents were attached to this response.
-                  </p>
+                  <p className="mt-2 text-sm text-ink-soft">No supporting documents were attached to this response.</p>
                 )}
                 {relevant.length > 0 && (
-                  <div className="detail-section">
-                    <div className="detail-label">
-                      DOCUMENT RELEVANCE REVIEW
-                    </div>
+                  <div className="mt-5 border-t border-line pt-5">
+                    <div className="text-xs font-semibold uppercase tracking-wide text-ink-faint">Document relevance review</div>
                     {relevant.map((d: any, i: number) => (
-                      <div className="detail-section" key={i}>
+                      <div key={i} className="mt-3">
                         <span
-                          className={`badge ${d.relevant ? "green" : "amber"}`}
+                          className={`rounded-full px-2 py-0.5 text-xs font-semibold ${
+                            d.relevant ? "bg-teal-100 text-teal-500" : "bg-amber-50 text-amber-600"
+                          }`}
                         >
                           {d.relevant ? "Relevant" : "Excluded"}
                         </span>
-                        <p className="subtle" style={{ marginTop: 10 }}>
-                          {d.rationale}
-                        </p>
+                        <p className="mt-1.5 text-sm text-ink-soft">{d.rationale}</p>
                       </div>
                     ))}
                   </div>
                 )}
-              </section>
-              <section className="panel detail-card">
-                <div className="detail-label">RESPONSE QUALITY CHECKS</div>
+              </Card>
+              <Card className="p-6">
+                <div className="text-xs font-semibold uppercase tracking-wide text-ink-faint">Response quality checks</div>
                 {r?.judge_score_history?.length ? (
-                  r.judge_score_history.map((j, i) => (
-                    <div key={i} className="detail-section">
-                      <div className="button-row">
-                        <span className="badge">Review {i + 1}</span>
-                        <span className="badge green">
-                          {Math.round((j.faithfulness_score || 0) * 100)}%
-                          faithful
-                        </span>
-                        <span className="badge blue">
-                          {Math.round((j.relevance_score || 0) * 100)}% relevant
-                        </span>
-                      </div>
-                      <p className="response-text" style={{ marginTop: 12 }}>
-                        {j.rationale}
-                      </p>
-                      {j.unsupported_claims?.length > 0 && (
-                        <div className="error-box">
-                          Claims to check: {j.unsupported_claims.join("; ")}
+                  <div className="mt-3 space-y-4">
+                    {r.judge_score_history.map((j, i) => (
+                      <div key={i} className="border-t border-line pt-4 first:border-0 first:pt-0">
+                        <div className="flex flex-wrap gap-2">
+                          <span className="rounded-full bg-slate-100 px-2 py-0.5 text-xs font-semibold text-ink-soft">Review {i + 1}</span>
+                          <span className="rounded-full bg-teal-100 px-2 py-0.5 text-xs font-semibold text-teal-500">
+                            {Math.round((j.faithfulness_score || 0) * 100)}% faithful
+                          </span>
+                          <span className="rounded-full bg-brand-50 px-2 py-0.5 text-xs font-semibold text-brand-500">
+                            {Math.round((j.relevance_score || 0) * 100)}% relevant
+                          </span>
                         </div>
-                      )}
-                    </div>
-                  ))
+                        <p className="mt-2 text-sm text-ink-soft">{j.rationale}</p>
+                        {j.unsupported_claims?.length > 0 && (
+                          <div className="mt-2 rounded-xl bg-rose-50 px-3 py-2 text-xs text-rose-700">
+                            Claims to check: {j.unsupported_claims.join("; ")}
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
                 ) : (
-                  <p className="subtle">
-                    No quality scores are available for this ticket.
-                  </p>
+                  <p className="mt-2 text-sm text-ink-soft">No quality scores are available for this ticket.</p>
                 )}
-              </section>
-            </>
+              </Card>
+            </div>
           )}
         </div>
-        <aside>
-          <section className="panel detail-card">
-            <div className="detail-label">TICKET DETAILS</div>
-            <div className="metric-row">
-              <span>Status</span>
-              <Status status={t.status} />
-            </div>
-            <div className="metric-row">
-              <span>Priority</span>
-              <Priority priority={t.priority} />
-            </div>
-            <div className="metric-row">
-              <span>Intent</span>
-              <strong
-                style={{ fontSize: 10, maxWidth: 130, textAlign: "right" }}
-              >
-                {t.intent?.replaceAll("_", " ") || "Unclassified"}
-              </strong>
-            </div>
-            <div className="metric-row">
-              <span>Sentiment</span>
-              <strong style={{ fontSize: 10 }}>
-                {t.sentiment || "Not available"}
-              </strong>
-            </div>
-          </section>
-          <section className="panel detail-card">
-            <div className="detail-label">ASSESSMENT</div>
-            <div style={{ fontSize: 34, fontWeight: 500, letterSpacing: -1 }}>
-              {r ? Math.round(r.confidence * 100) : "—"}
-              <span style={{ fontSize: 16, color: "#91a083" }}>%</span>
-            </div>
-            <p className="subtle" style={{ fontSize: 10, marginTop: 5 }}>
-              Supervisor confidence
-            </p>
-            <div className="detail-section">
-              <div className="metric-row">
-                <span>LLM calls</span>
-                <strong>{r?.cost_estimate?.llm_call_count ?? "—"}</strong>
+
+        <aside className="space-y-5">
+          <Card className="p-5">
+            <div className="text-xs font-semibold uppercase tracking-wide text-ink-faint">Ticket details</div>
+            <div className="mt-3 space-y-3 text-sm">
+              <div className="flex items-center justify-between">
+                <span className="text-ink-soft">Status</span>
+                <StatusBadge status={t.status} />
               </div>
-              <div className="metric-row">
-                <span>Tokens used</span>
-                <strong>
-                  {r?.cost_estimate?.total_tokens?.toLocaleString() ?? "—"}
+              <div className="flex items-center justify-between">
+                <span className="text-ink-soft">Priority</span>
+                <PriorityBadge priority={t.priority} />
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-ink-soft">Intent</span>
+                <strong className="max-w-[140px] truncate text-right capitalize text-ink">
+                  {t.intent?.replaceAll("_", " ") || "Unclassified"}
                 </strong>
               </div>
-              <div className="metric-row">
-                <span>Review loops</span>
-                <strong>{r?.iteration_count ?? "—"}</strong>
+              <div className="flex items-center justify-between">
+                <span className="text-ink-soft">Sentiment</span>
+                <strong className="capitalize text-ink">{t.sentiment || "Not available"}</strong>
               </div>
             </div>
-          </section>
-          <div className="cloud-strip">
-            <Icon name="shield" size={18} />
+          </Card>
+
+          <Card className="p-5">
+            <div className="text-xs font-semibold uppercase tracking-wide text-ink-faint">Assessment</div>
+            <div className="mt-2 text-4xl font-semibold tracking-tight text-ink">
+              {r ? Math.round(r.confidence * 100) : "—"}
+              <span className="text-lg text-ink-faint">%</span>
+            </div>
+            <p className="text-xs text-ink-soft">Supervisor confidence</p>
+            <div className="mt-4 space-y-3 border-t border-line pt-4 text-sm">
+              <div className="flex items-center justify-between">
+                <span className="text-ink-soft">LLM calls</span>
+                <strong className="text-ink">{r?.cost_estimate?.llm_call_count ?? "—"}</strong>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-ink-soft">Tokens used</span>
+                <strong className="text-ink">{r?.cost_estimate?.total_tokens?.toLocaleString() ?? "—"}</strong>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-ink-soft">Review loops</span>
+                <strong className="text-ink">{r?.iteration_count ?? "—"}</strong>
+              </div>
+            </div>
+          </Card>
+
+          <Card className="flex items-center gap-3 border-teal-100 bg-teal-100/40 p-4 text-sm text-teal-700">
+            <ShieldCheck size={18} />
             <span>Decision trail recorded with this ticket.</span>
-          </div>
+          </Card>
         </aside>
       </div>
     </div>

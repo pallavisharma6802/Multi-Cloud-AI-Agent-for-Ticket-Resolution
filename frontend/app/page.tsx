@@ -1,14 +1,17 @@
 "use client";
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
-import Icon from "@/components/Icon";
-import TicketTable from "@/components/TicketTable";
+import { Clock, Plus, ArrowRight, RefreshCw } from "lucide-react";
 import { getOverview, Overview } from "@/lib/api";
+import { Card, PageHeading, StatCard, Button } from "@/components/ui";
+import TicketRow from "@/components/TicketRow";
+
 export default function Home() {
   const [data, setData] = useState<Overview | null>(null);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
   const [days, setDays] = useState(7);
+
   const load = useCallback(() => {
     setLoading(true);
     getOverview(days)
@@ -19,249 +22,79 @@ export default function Home() {
       .catch((e) => setError(e.message))
       .finally(() => setLoading(false));
   }, [days]);
+
   useEffect(() => {
     load();
     const t = setInterval(load, 30000);
     return () => clearInterval(t);
   }, [load]);
-  const total = data?.total || 0,
-    resolved = data?.resolved || 0,
-    review = data?.needs_review || 0;
-  const completed = resolved + review;
-  const rate = completed ? Math.round((resolved / completed) * 100) : 0;
-  const max = Math.max(...(data?.daily.map((d) => d.total) || [1]), 1);
+
   return (
-    <div className="page-enter">
-      <div className="page-heading">
-        <div>
-          <div className="eyebrow">YOUR SUPPORT, IN FOCUS</div>
-          <h1>Workspace overview</h1>
-          <p className="subtle">
-            A little less busywork. A lot more resolutions.
-          </p>
-        </div>
-        <div className="button-row">
-          <button className="btn" onClick={() => setDays(days === 7 ? 30 : 7)}>
-            <Icon name="clock" size={14} />
-            Last {days} days⌄
-          </button>
-          <Link className="btn btn-primary" href="/submit">
-            <Icon name="plus" size={15} />
-            Create ticket
-          </Link>
-        </div>
-      </div>
-      <section className="hero">
-        <div>
-          <div className="hero-label">
-            <Icon name="spark" size={13} /> INTELLIGENT SUPPORT. HUMAN
-            OVERSIGHT.
+    <div>
+      <PageHeading
+        title="AI support for your organization"
+        description="Your knowledge. Helpful answers. Less back-and-forth. Human review stays one click away."
+        action={
+          <div className="flex items-center gap-3">
+            <Button variant="secondary" onClick={() => setDays(days === 7 ? 30 : 7)}>
+              <Clock size={15} /> Last {days} days
+            </Button>
+            <Link href="/submit">
+              <Button>
+                <Plus size={15} /> Create ticket
+              </Button>
+            </Link>
           </div>
-          <h2>
-            Good support starts
-            <br />
-            with a clearer picture.
-          </h2>
-          <p>
-            Let your AI agents handle the research. Review their work,
-            <br className="hidden md:block" /> understand every decision, and
-            move your customers forward.
-          </p>
-          <Link className="btn btn-primary" href="/triage">
-            Open your inbox <Icon name="arrow" size={14} />
-          </Link>
-        </div>
-        <div className="hero-art" aria-hidden="true">
-          <div className="orbit" />
-          <div className="orbit two" />
-          <div className="art-core">
-            <Icon name="spark" size={28} />
-          </div>
-          <div className="art-chip one">
-            <Icon name="check" size={13} />
-            Evidence-backed answers
-          </div>
-          <div className="art-chip two">
-            <Icon name="shield" size={13} />
-            Human review, when it matters
-          </div>
-          <div className="art-chip three">
-            <span className="dot" />
-            Cloud-connected
-          </div>
-        </div>
-      </section>
+        }
+      />
+
       {error && (
-        <div className="error-box">
-          We couldn’t refresh the workspace: {error}{" "}
-          <button onClick={load} className="text-link">
+        <Card className="mb-6 border-rose-200 bg-rose-50 p-4 text-sm text-rose-700">
+          We couldn&apos;t refresh the workspace: {error}{" "}
+          <button onClick={load} className="font-semibold underline">
             Try again
           </button>
-        </div>
+        </Card>
       )}
-      <div className="stats-grid">
-        {[
-          {
-            label: "Total tickets",
-            value: data ? total : "—",
-            icon: "inbox",
-            foot: `In the last ${days} days`,
-          },
-          {
-            label: "AI resolved",
-            value: data ? data.ai_resolved : "—",
-            icon: "spark",
-            foot: "Completed without human review",
-          },
-          {
-            label: "Needs attention",
-            value: data ? review : "—",
-            icon: "clock",
-            foot: "Waiting for your team",
-          },
-          {
-            label: "Resolution rate",
-            value: data ? `${rate}%` : "—",
-            icon: "chart",
-            foot: "Of completed AI assessments",
-          },
-        ].map((s) => (
-          <div className="stat-card" key={s.label}>
-            <div className="stat-top">
-              {s.label}
-              <span className="stat-icon">
-                <Icon name={s.icon} size={15} />
-              </span>
-            </div>
-            <div className="stat-value">{s.value}</div>
-            <div className="stat-foot">{s.foot}</div>
-          </div>
-        ))}
+
+      <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+        <StatCard label="Tickets" value={data?.total ?? "—"} foot={`Created in the last ${days} days`} tone="brand" />
+        <StatCard label="AI answered" value={data?.ai_resolved ?? "—"} foot="Generated answer, awaiting confirmation" />
+        <StatCard label="Needs human review" value={data?.needs_review ?? "—"} foot="Waiting for a reviewer" tone="amber" />
+        <StatCard label="Open" value={data?.open ?? "—"} foot="Not yet processed" tone="teal" />
       </div>
-      <div className="dashboard-grid">
-        <section className="panel">
-          <div className="panel-head">
-            <div>
-              <h2>Ticket activity</h2>
-              <p>Your incoming volume and resolutions</p>
-            </div>
-            <div className="legend">
-              <span>
-                <i />
-                Resolved
-              </span>
-              <span>
-                <i />
-                Total
-              </span>
-            </div>
-          </div>
-          <div className="panel-body">
-            <div className="chart-area">
-              {(
-                data?.daily ||
-                Array.from({ length: days }, (_, i) => ({
-                  date: "",
-                  total: 0,
-                  resolved: 0,
-                }))
-              ).map((d, i) => (
-                <div className="bar-group" key={i}>
-                  <span className="bar-tip">
-                    {d.total} tickets · {d.resolved} resolved
-                  </span>
-                  <div
-                    className="bar dark"
-                    style={{ height: `${(d.resolved / max) * 92}%` }}
-                  />
-                  <div
-                    className="bar"
-                    style={{ height: `${(d.total / max) * 92}%` }}
-                  />
-                </div>
-              ))}
-            </div>
-            <div className="chart-labels">
-              {data?.daily.map((d, i) => (
-                <span key={d.date}>
-                  {days === 7 || i % 5 === 0
-                    ? new Date(d.date + "T12:00:00").toLocaleDateString(
-                        undefined,
-                        {
-                          weekday: days === 7 ? "short" : undefined,
-                          month: days === 30 ? "short" : undefined,
-                          day: days === 30 ? "numeric" : undefined,
-                        },
-                      )
-                    : ""}
-                </span>
-              ))}
-            </div>
-          </div>
-        </section>
-        <section className="panel">
-          <div className="panel-head">
-            <div>
-              <h2>Resolution breakdown</h2>
-              <p>Every ticket has a next step</p>
-            </div>
-            <Icon name="spark" size={15} />
-          </div>
-          <div className="panel-body">
-            <div
-              className="donut"
-              style={{
-                background: `conic-gradient(#316752 0 ${total ? (resolved / total) * 100 : 0}%,#c9e79f ${total ? (resolved / total) * 100 : 0}% ${total ? ((resolved + review) / total) * 100 : 0}%,#eef2e7 0)`,
-              }}
-            >
-              <div className="donut-inner">
-                <strong>{total}</strong>
-                <small>Total tickets</small>
-              </div>
-            </div>
-            <div className="metric-row">
-              <span>
-                <i className="dot" />
-                AI resolved
-              </span>
-              <strong>{resolved}</strong>
-            </div>
-            <div className="metric-row">
-              <span>
-                <i className="dot lime" />
-                Needs review
-              </span>
-              <strong>{review}</strong>
-            </div>
-            <div className="metric-row">
-              <span>
-                <i className="dot amber" />
-                Open tickets
-              </span>
-              <strong>{data?.open || 0}</strong>
-            </div>
-          </div>
-        </section>
-      </div>
-      <section className="panel">
-        <div className="panel-head">
+
+      <Card className="mt-8">
+        <div className="flex items-center justify-between border-b border-line px-6 py-5">
           <div>
-            <h2>Recent tickets</h2>
-            <p>The latest conversations in your workspace</p>
+            <h2 className="text-lg font-semibold text-ink">Recent tickets</h2>
+            <p className="text-sm text-ink-soft">Open a ticket to read its answer, sources, and trail.</p>
           </div>
-          <Link href="/triage" className="text-link">
-            View all tickets <Icon name="arrow" size={12} />
+          <Link href="/triage" className="flex items-center gap-1 text-sm font-semibold text-brand-500 hover:text-brand-600">
+            View inbox <ArrowRight size={14} />
           </Link>
         </div>
-        <TicketTable tickets={data?.recent || []} loading={loading} />
-      </section>
-      <div className="footer-note">
-        <span>Resolve workspace · AI-assisted, evidence-led</span>
-        <span>
+        {loading && !data ? (
+          <div className="px-6 py-10 text-center text-sm text-ink-soft">Loading recent tickets…</div>
+        ) : data && data.recent.length > 0 ? (
+          <div>
+            {data.recent.map((t) => (
+              <TicketRow key={t.ticket_id} ticket={t} />
+            ))}
+          </div>
+        ) : (
+          <div className="px-6 py-10 text-center text-sm text-ink-soft">No tickets yet.</div>
+        )}
+      </Card>
+
+      <div className="mt-6 flex items-center justify-between text-xs text-ink-faint">
+        <span>Support workspace</span>
+        <span className="flex items-center gap-1.5">
+          {loading && <RefreshCw size={12} className="animate-spin" />}
           {loading
             ? "Refreshing…"
             : data
-              ? `Updated ${new Date(data.as_of).toLocaleTimeString()} · Auto-refresh every 30s`
+              ? `Updated ${new Date(data.as_of).toLocaleTimeString()} · auto-refresh every 30s`
               : "Waiting for connection"}
         </span>
       </div>
