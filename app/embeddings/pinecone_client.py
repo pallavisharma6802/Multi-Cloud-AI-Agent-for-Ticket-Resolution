@@ -59,7 +59,9 @@ class PineconeClient:
                     }
                 })
             
-            self.index.upsert(vectors=vectors, namespace=namespace)
+            batch_size = 100
+            for i in range(0, len(vectors), batch_size):
+                self.index.upsert(vectors=vectors[i:i + batch_size], namespace=namespace)
             logger.info(f"Upserted {len(vectors)} documents to Pinecone (namespace={namespace})")
             
         except Exception as e:
