@@ -1,0 +1,63 @@
+services:
+  - type: web
+    name: ticket-resolution-backend
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: starter
+    healthCheckPath: /health
+    envVars:
+      - key: ENV
+        value: production
+      - key: PROJECT_NAME
+        value: multi-cloud-ai-agent
+      - key: AWS_REGION
+        value: us-east-1
+      - key: MODEL_INTENT_PRIORITY
+        value: amazon.nova-lite-v1:0
+      - key: MODEL_GRADER
+        value: amazon.nova-lite-v1:0
+      - key: MODEL_JUDGE
+        value: amazon.nova-lite-v1:0
+      - key: MODEL_CONTINUATION
+        value: amazon.nova-lite-v1:0
+      - key: MODEL_DRAFTING
+        value: amazon.nova-lite-v1:0
+      - key: MODEL_SUPERVISOR
+        value: amazon.nova-lite-v1:0
+      - key: DOMAIN_PACK
+        value: vscode_support
+      - key: INTENT_NUM_SAMPLES
+        value: "1"
+      - key: RETRIEVAL_TOP_K
+        value: "3"
+      - key: MAX_QUERY_REWRITES
+        value: "1"
+      - key: MAX_WALL_CLOCK_SECONDS
+        value: "900"
+      - key: ENABLE_BIGQUERY
+        value: "false"
+      - key: LOG_LEVEL
+        value: INFO
+      - key: REQUEST_TIMEOUT_SECONDS
+        value: "180"
+      # Secrets -- set these in the Render dashboard, not here (this file is committed):
+      # AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AZURE_TEXT_ANALYTICS_ENDPOINT,
+      # AZURE_TEXT_ANALYTICS_KEY, PINECONE_API_KEY, PINECONE_ENVIRONMENT,
+      # PINECONE_INDEX_NAME, DATABASE_URL (your Neon connection string)
+      - key: AWS_ACCESS_KEY_ID
+        sync: false
+      - key: AWS_SECRET_ACCESS_KEY
+        sync: false
+      - key: AZURE_TEXT_ANALYTICS_ENDPOINT
+        sync: false
+      - key: AZURE_TEXT_ANALYTICS_KEY
+        sync: false
+      - key: PINECONE_API_KEY
+        sync: false
+      - key: PINECONE_ENVIRONMENT
+        sync: false
+      - key: PINECONE_INDEX_NAME
+        sync: false
+      - key: DATABASE_URL
+        sync: false
