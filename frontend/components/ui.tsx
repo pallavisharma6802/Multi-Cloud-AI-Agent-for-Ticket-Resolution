@@ -25,31 +25,31 @@ export function StatCard({
   label: string;
   value: ReactNode;
   foot?: string;
-  tone?: "default" | "brand" | "teal" | "amber";
+  tone?: "default" | "brand" | "teal" | "amber" | "purple";
   icon?: LucideIcon;
 }) {
-  const tones: Record<string, { bg: string; icon: string; value: string; border: string }> = {
-    default: { bg: "bg-surface", icon: "bg-line/60 text-ink-soft", value: "text-ink", border: "" },
-    brand: { bg: "bg-brand-gradient", icon: "bg-white/15 text-white", value: "text-white", border: "border-transparent shadow-glow" },
-    teal: { bg: "bg-surface", icon: "bg-[#0f2e1c] text-[#4ade80]", value: "text-ink", border: "border-l-2 border-l-[#4ade80]/60" },
-    amber: { bg: "bg-surface", icon: "bg-[#2b2008] text-priority-medium", value: "text-ink", border: "border-l-2 border-l-priority-medium/60" },
+  // Flat KPI-tile style: neutral card, solid-colored icon badge carries the
+  // color -- not the whole card -- so a row of these reads as a real support
+  // dashboard (distinct colors per metric) rather than one brand wash.
+  const iconBg: Record<string, string> = {
+    default: "bg-ink-faint/20 text-ink-soft",
+    brand: "bg-brand-500 text-white",
+    teal: "bg-[#2fb66a] text-white",
+    amber: "bg-priority-medium text-[#2b2008]",
+    purple: "bg-[#8b5cf6] text-white",
   };
-  const t = tones[tone];
-  const isBrand = tone === "brand";
   return (
-    <Card className={`relative overflow-hidden p-6 ${t.bg} ${t.border}`}>
-      <div className="flex items-start justify-between">
-        <div className={`text-sm font-semibold ${isBrand ? "text-white/80" : "text-ink-soft"}`}>{label}</div>
+    <Card className="p-5">
+      <div className="flex items-center justify-between">
+        <div className="text-sm font-medium text-ink-soft">{label}</div>
         {Icon && (
-          <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl ${t.icon}`}>
+          <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl ${iconBg[tone]}`}>
             <Icon size={17} strokeWidth={2.25} />
           </span>
         )}
       </div>
-      <div className={`mt-3 text-4xl font-bold tracking-tight ${t.value}`}>{value}</div>
-      {foot && (
-        <div className={`mt-1.5 text-sm ${isBrand ? "text-white/70" : "text-ink-faint"}`}>{foot}</div>
-      )}
+      <div className="mt-3 text-3xl font-bold tracking-tight text-ink">{value}</div>
+      {foot && <div className="mt-1 text-xs text-ink-faint">{foot}</div>}
     </Card>
   );
 }
