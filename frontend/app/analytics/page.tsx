@@ -20,13 +20,25 @@ import { getOverview, listTickets, Overview, TicketSummary } from "@/lib/api";
 import { Card, PageHeading, Button } from "@/components/ui";
 
 const GRAFANA_URL = process.env.NEXT_PUBLIC_GRAFANA_URL || "http://localhost:3001";
-const OUTCOME_COLORS = ["#245bdb", "#2fb6a3", "#d9a441", "#8a98ac"];
+// Current palette (onyx/indigo/mint) -- these were still the pre-reskin
+// hex values and read as visibly disconnected from the rest of the dark UI.
+const OUTCOME_COLORS = ["#6331fb", "#88f9c0", "#f5b942", "#4a4760"];
 const PRIORITY_COLORS: Record<string, string> = {
-  urgent: "#dd5a5a",
-  high: "#e0843f",
-  medium: "#d9a441",
-  low: "#2fb6a3",
+  urgent: "#ff5c72",
+  high: "#ff8a4c",
+  medium: "#f5b942",
+  low: "#88f9c0",
 };
+const CHART_LINE = "#201e36";
+const CHART_TICK = { fill: "#a7a4c7", fontSize: 12 };
+const CHART_TOOLTIP_STYLE = {
+  background: "#0d0c1a",
+  border: "1px solid #201e36",
+  borderRadius: 10,
+  color: "#f3f2fb",
+  fontSize: 13,
+};
+const CHART_TOOLTIP_LABEL_STYLE = { color: "#a7a4c7" };
 
 const DASHBOARDS = [
   { uid: "ticket-trends", title: "Ticket Trends" },
@@ -86,7 +98,7 @@ export default function Analytics() {
     [data]
   );
 
-  const grafanaFull = `${GRAFANA_URL}/d/${dashboard}/${dashboard}?orgId=1&from=now-${days}d&to=now&theme=light&kiosk=tv`;
+  const grafanaFull = `${GRAFANA_URL}/d/${dashboard}/${dashboard}?orgId=1&from=now-${days}d&to=now&theme=dark&kiosk=tv`;
 
   return (
     <div>
@@ -127,8 +139,13 @@ export default function Analytics() {
                   <Cell key={i} fill={OUTCOME_COLORS[i % OUTCOME_COLORS.length]} />
                 ))}
               </Pie>
-              <Tooltip />
-              <Legend verticalAlign="bottom" height={36} iconType="circle" wrapperStyle={{ fontSize: 12 }} />
+              <Tooltip contentStyle={CHART_TOOLTIP_STYLE} labelStyle={CHART_TOOLTIP_LABEL_STYLE} />
+              <Legend
+                verticalAlign="bottom"
+                height={36}
+                iconType="circle"
+                wrapperStyle={{ fontSize: 12, color: "#a7a4c7" }}
+              />
             </PieChart>
           </ResponsiveContainer>
         </ChartCard>
@@ -136,10 +153,10 @@ export default function Analytics() {
         <ChartCard title="Volume by priority" subtitle="Across all tickets currently in the inbox">
           <ResponsiveContainer>
             <BarChart data={priorityData}>
-              <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f4" vertical={false} />
-              <XAxis dataKey="priority" tick={{ fontSize: 12 }} tickLine={false} axisLine={{ stroke: "#e2e8f4" }} />
-              <YAxis tick={{ fontSize: 12 }} tickLine={false} axisLine={false} allowDecimals={false} />
-              <Tooltip />
+              <CartesianGrid strokeDasharray="3 3" stroke={CHART_LINE} vertical={false} />
+              <XAxis dataKey="priority" tick={CHART_TICK} tickLine={false} axisLine={{ stroke: CHART_LINE }} />
+              <YAxis tick={CHART_TICK} tickLine={false} axisLine={false} allowDecimals={false} />
+              <Tooltip contentStyle={CHART_TOOLTIP_STYLE} labelStyle={CHART_TOOLTIP_LABEL_STYLE} cursor={{ fill: "#ffffff0a" }} />
               <Bar dataKey="count" radius={[8, 8, 0, 0]}>
                 {priorityData.map((d, i) => (
                   <Cell key={i} fill={PRIORITY_COLORS[d.priority]} />
@@ -154,15 +171,23 @@ export default function Analytics() {
             <AreaChart data={trendData}>
               <defs>
                 <linearGradient id="vol" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#245bdb" stopOpacity={0.35} />
-                  <stop offset="100%" stopColor="#245bdb" stopOpacity={0} />
+                  <stop offset="0%" stopColor="#6331fb" stopOpacity={0.45} />
+                  <stop offset="100%" stopColor="#6331fb" stopOpacity={0} />
                 </linearGradient>
               </defs>
-              <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f4" vertical={false} />
-              <XAxis dataKey="date" tick={{ fontSize: 11 }} tickLine={false} axisLine={{ stroke: "#e2e8f4" }} />
-              <YAxis tick={{ fontSize: 12 }} tickLine={false} axisLine={false} allowDecimals={false} />
-              <Tooltip />
-              <Area type="monotone" dataKey="total" stroke="#245bdb" strokeWidth={2} fill="url(#vol)" />
+              <CartesianGrid strokeDasharray="3 3" stroke={CHART_LINE} vertical={false} />
+              <XAxis dataKey="date" tick={{ ...CHART_TICK, fontSize: 11 }} tickLine={false} axisLine={{ stroke: CHART_LINE }} />
+              <YAxis tick={CHART_TICK} tickLine={false} axisLine={false} allowDecimals={false} />
+              <Tooltip contentStyle={CHART_TOOLTIP_STYLE} labelStyle={CHART_TOOLTIP_LABEL_STYLE} />
+              <Area
+                type="monotone"
+                dataKey="total"
+                stroke="#7c4dff"
+                strokeWidth={2}
+                fill="url(#vol)"
+                dot={{ r: 2, fill: "#7c4dff", strokeWidth: 0 }}
+                activeDot={{ r: 5, fill: "#88f9c0", stroke: "#0d0c1a", strokeWidth: 2 }}
+              />
             </AreaChart>
           </ResponsiveContainer>
         </ChartCard>
