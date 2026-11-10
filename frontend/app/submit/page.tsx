@@ -10,11 +10,13 @@ import {
 } from "@/lib/api";
 import { Card, Button } from "@/components/ui";
 
-const PROMPTS = [
-  "I can't access my account — forgot my password and can't sign in.",
-  "I was charged twice for the same subscription this month.",
+const ISSUE_PROMPTS = [
   "The integrated terminal won't open in VS Code on macOS.",
+  "My extensions stopped loading after the latest update.",
+  "IntelliSense stopped working for TypeScript in my project.",
 ];
+
+const DEMO_EMAIL = "demo@example.com";
 
 type Msg = {
   role: "agent" | "user";
@@ -165,12 +167,23 @@ export default function Submit() {
           <div ref={bottomRef} />
         </div>
 
-        {stage !== "done" && messages.length <= 1 && (
+        {stage === "email" && messages.length <= 1 && (
           <div className="flex flex-wrap gap-2 border-t border-line px-6 py-3">
-            {PROMPTS.map((p) => (
+            <button
+              onClick={() => handleSend(DEMO_EMAIL)}
+              className="rounded-full border border-line bg-surface px-3 py-1.5 text-xs text-ink-soft transition hover:border-brand-500/40 hover:text-ink"
+            >
+              Use demo email ({DEMO_EMAIL})
+            </button>
+          </div>
+        )}
+
+        {stage === "issue" && messages.length <= 3 && (
+          <div className="flex flex-wrap gap-2 border-t border-line px-6 py-3">
+            {ISSUE_PROMPTS.map((p) => (
               <button
                 key={p}
-                onClick={() => handleSend(stage === "email" ? "demo@example.com" : p)}
+                onClick={() => handleSend(p)}
                 className="rounded-full border border-line bg-surface px-3 py-1.5 text-xs text-ink-soft transition hover:border-brand-500/40 hover:text-ink"
               >
                 {p.length > 50 ? p.slice(0, 50) + "…" : p}
