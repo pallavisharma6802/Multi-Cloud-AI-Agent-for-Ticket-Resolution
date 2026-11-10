@@ -36,7 +36,15 @@ services:
       - key: MAX_WALL_CLOCK_SECONDS
         value: "900"
       - key: ENABLE_BIGQUERY
-        value: "false"
+        value: "true"
+      - key: GCP_PROJECT_ID
+        value: css771cv
+      - key: GOOGLE_APPLICATION_CREDENTIALS
+        value: /etc/secrets/gcp-key.json
+      - key: BIGQUERY_DATASET
+        value: ticket_analytics_live
+      - key: BIGQUERY_TABLE
+        value: fact_ticket_events
       - key: LOG_LEVEL
         value: INFO
       - key: REQUEST_TIMEOUT_SECONDS
