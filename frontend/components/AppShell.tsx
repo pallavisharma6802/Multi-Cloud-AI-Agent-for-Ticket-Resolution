@@ -10,6 +10,7 @@ import {
   Plus,
   ShieldCheck,
   ArrowUpRight,
+  UserRound,
 } from "lucide-react";
 import { API_BASE_URL } from "@/lib/api";
 
@@ -104,14 +105,19 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
             </Link>
           </div>
           <div className="flex items-center gap-3 border-t border-white/10 pt-4">
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-teal-400 text-xs font-semibold text-brand-900">
-              PS
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-brand-100">
+              <UserRound size={16} />
             </span>
             <div className="text-sm">
-              <div className="font-medium text-white">Support team</div>
-              <div className="text-xs text-brand-100/60">Workspace admin</div>
+              <div className="font-medium text-white">Anonymous workspace</div>
+              <div className="text-xs text-brand-100/60">No sign-in — single shared demo</div>
             </div>
           </div>
+          <p className="text-[11px] leading-relaxed text-brand-100/40">
+            No accounts or profile pages — this is a single-tenant demo of the resolution
+            pipeline, not a multi-user product. Each ticket already carries its own
+            submitter email.
+          </p>
         </div>
       </aside>
 
@@ -128,8 +134,8 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               />
               {online ? "API connected" : "Connecting to API"}
             </span>
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-100 text-xs font-semibold text-brand-700">
-              PS
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-100 text-brand-700">
+              <UserRound size={16} />
             </span>
           </div>
         </header>

@@ -28,7 +28,7 @@ export default function Home() {
   const [data, setData] = useState<Overview | null>(null);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
-  const [days, setDays] = useState(7);
+  const [days, setDays] = useState(30);
 
   const load = useCallback(() => {
     setLoading(true);
