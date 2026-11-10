@@ -83,7 +83,7 @@ export default function Inbox() {
       </div>
 
       {error && (
-        <Card className="mt-6 border-rose-200 bg-rose-50 p-4 text-sm text-rose-700">
+        <Card className="mt-6 border-[#5c1a26] bg-[#2b0d12] p-4 text-sm text-priority-urgent">
           {error}{" "}
           <button className="font-semibold underline" onClick={load}>
             Retry
@@ -93,7 +93,7 @@ export default function Inbox() {
 
       <Card className="mt-8">
         <div className="flex flex-wrap items-center justify-between gap-4 border-b border-line px-5 py-4">
-          <div className="flex gap-1 rounded-xl bg-slate-100 p-1">
+          <div className="flex gap-1 rounded-xl bg-line/60 p-1">
             {TABS.map((t) => (
               <button
                 key={t.v}

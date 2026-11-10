@@ -28,16 +28,16 @@ export function StatCard({
   tone?: "default" | "brand" | "teal" | "amber";
   icon?: LucideIcon;
 }) {
-  const tones: Record<string, { bg: string; icon: string; value: string }> = {
-    default: { bg: "bg-surface", icon: "bg-slate-100 text-ink-soft", value: "text-ink" },
-    brand: { bg: "bg-brand-gradient", icon: "bg-white/15 text-white", value: "text-white" },
-    teal: { bg: "bg-teal-100", icon: "bg-white/70 text-teal-500", value: "text-ink" },
-    amber: { bg: "bg-amber-50", icon: "bg-white/70 text-amber-600", value: "text-ink" },
+  const tones: Record<string, { bg: string; icon: string; value: string; border: string }> = {
+    default: { bg: "bg-surface", icon: "bg-line/60 text-ink-soft", value: "text-ink", border: "" },
+    brand: { bg: "bg-brand-gradient", icon: "bg-white/15 text-white", value: "text-white", border: "border-transparent shadow-glow" },
+    teal: { bg: "bg-surface", icon: "bg-teal-100 text-teal-500", value: "text-ink", border: "border-l-2 border-l-teal-500/60" },
+    amber: { bg: "bg-surface", icon: "bg-[#2b2008] text-priority-medium", value: "text-ink", border: "border-l-2 border-l-priority-medium/60" },
   };
   const t = tones[tone];
   const isBrand = tone === "brand";
   return (
-    <Card className={`relative overflow-hidden p-6 ${t.bg} ${isBrand ? "border-transparent shadow-glow" : ""}`}>
+    <Card className={`relative overflow-hidden p-6 ${t.bg} ${t.border}`}>
       <div className="flex items-start justify-between">
         <div className={`text-sm font-semibold ${isBrand ? "text-white/80" : "text-ink-soft"}`}>{label}</div>
         {Icon && (
@@ -56,9 +56,9 @@ export function StatCard({
 
 const PRIORITY_STYLES: Record<string, string> = {
   low: "bg-teal-100 text-teal-500",
-  medium: "bg-amber-50 text-priority-medium",
-  high: "bg-orange-50 text-priority-high",
-  urgent: "bg-rose-50 text-priority-urgent",
+  medium: "bg-[#2b2008] text-priority-medium",
+  high: "bg-[#2b1708] text-priority-high",
+  urgent: "bg-[#2b0d12] text-priority-urgent",
 };
 
 export function PriorityBadge({ priority }: { priority: string }) {
@@ -66,10 +66,10 @@ export function PriorityBadge({ priority }: { priority: string }) {
   return (
     <span
       className={`inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold capitalize ${
-        PRIORITY_STYLES[key] || "bg-slate-100 text-ink-soft"
+        PRIORITY_STYLES[key] || "bg-line/60 text-ink-soft"
       }`}
     >
-      {priority || "—"}
+      {priority || "none"}
     </span>
   );
 }
@@ -79,10 +79,10 @@ export function PriorityBadge({ priority }: { priority: string }) {
 // needs human review" (set in app/api/routes/tickets.py when
 // requires_human_review is true) -- there is no separate "needs_review" status.
 const STATUS_STYLES: Record<string, string> = {
-  open: "bg-slate-100 text-ink-soft",
-  in_progress: "bg-amber-50 text-amber-600",
+  open: "bg-line/60 text-ink-soft",
+  in_progress: "bg-[#2b2008] text-priority-medium",
   resolved: "bg-teal-100 text-teal-500",
-  closed: "bg-slate-100 text-ink-soft",
+  closed: "bg-line/60 text-ink-soft",
 };
 
 export const STATUS_LABELS: Record<string, string> = {
@@ -94,10 +94,10 @@ export function StatusBadge({ status }: { status: string }) {
   return (
     <span
       className={`inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold capitalize ${
-        STATUS_STYLES[key] || "bg-slate-100 text-ink-soft"
+        STATUS_STYLES[key] || "bg-line/60 text-ink-soft"
       }`}
     >
-      {STATUS_LABELS[key] || (status || "—").replace(/_/g, " ")}
+      {STATUS_LABELS[key] || (status || "none").replace(/_/g, " ")}
     </span>
   );
 }
@@ -113,7 +113,7 @@ export function Button({
   const variants: Record<string, string> = {
     primary: "bg-brand-500 text-white hover:bg-brand-600 shadow-card",
     secondary: "bg-surface border border-line text-ink hover:border-brand-500/40",
-    ghost: "text-ink-soft hover:bg-slate-100",
+    ghost: "text-ink-soft hover:bg-line/60",
   };
   return (
     <button

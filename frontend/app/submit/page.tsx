@@ -60,7 +60,7 @@ export default function Submit() {
       setStage("issue");
       setMessages((m) => [
         ...m,
-        { role: "agent", text: "Thanks. Now tell me what's going on — include any error messages and what you've already tried." },
+        { role: "agent", text: "Thanks. Now tell me what's going on: include any error messages and what you've already tried." },
       ]);
       return;
     }
@@ -81,7 +81,7 @@ export default function Submit() {
           role: "agent",
           text:
             res.drafted_response ||
-            "This needs a support specialist — I've routed it for human review with my notes attached.",
+            "This needs a support specialist. I've routed it for human review with my notes attached.",
           result: res,
         },
       ]);
@@ -97,7 +97,7 @@ export default function Submit() {
       <div className="mb-4 flex items-center justify-between">
         <div>
           <h1 className="text-2xl font-semibold tracking-tight text-ink">New ticket</h1>
-          <p className="text-sm text-ink-soft">Describe the issue in your own words — an agent will take it from here.</p>
+          <p className="text-sm text-ink-soft">Describe the issue in your own words, an agent will take it from here.</p>
         </div>
         {packs.length > 1 && (
           <select
@@ -129,7 +129,7 @@ export default function Submit() {
                     className={`rounded-2xl px-4 py-3 text-sm leading-relaxed ${
                       m.role === "user"
                         ? "bg-brand-500 text-white"
-                        : "border border-line bg-slate-50 text-ink"
+                        : "border border-line bg-surface text-ink"
                     }`}
                   >
                     {m.text}
@@ -158,7 +158,7 @@ export default function Submit() {
               <span className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-500 text-white">
                 <Sparkles size={15} />
               </span>
-              <div className="flex items-center gap-2 rounded-2xl border border-line bg-slate-50 px-4 py-3 text-sm text-ink-soft">
+              <div className="flex items-center gap-2 rounded-2xl border border-line bg-surface border border-line px-4 py-3 text-sm text-ink-soft">
                 <Loader2 size={14} className="animate-spin" />
                 Classifying, checking sources, drafting a response…
               </div>
@@ -204,9 +204,9 @@ export default function Submit() {
             onChange={(e) => setInput(e.target.value)}
             disabled={loading || stage === "done"}
             placeholder={
-              stage === "done" ? "Ticket submitted — start a new one below" : stage === "email" ? "you@company.com" : "Type your message…"
+              stage === "done" ? "Ticket submitted. Start a new one below" : stage === "email" ? "you@company.com" : "Type your message…"
             }
-            className="flex-1 rounded-xl border border-line bg-slate-50 px-4 py-2.5 text-sm outline-none focus:border-brand-500/50 disabled:opacity-60"
+            className="flex-1 rounded-xl border border-line bg-surface border-line px-4 py-2.5 text-sm outline-none focus:border-brand-500/50 disabled:opacity-60"
           />
           <Button disabled={loading || stage === "done" || !input.trim()} className="px-3.5">
             <Send size={16} />

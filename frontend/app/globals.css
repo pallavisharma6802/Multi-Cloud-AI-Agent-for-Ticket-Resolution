@@ -15,14 +15,14 @@ body {
 body {
   @apply text-ink font-sans antialiased;
   background:
-    radial-gradient(ellipse 900px 500px at 100% -10%, rgba(36, 91, 219, 0.10), transparent 60%),
-    radial-gradient(ellipse 700px 500px at -10% 20%, rgba(47, 182, 163, 0.08), transparent 55%),
-    #f4f7fc;
+    radial-gradient(ellipse 900px 500px at 100% -10%, rgba(99, 49, 251, 0.14), transparent 60%),
+    radial-gradient(ellipse 700px 500px at -10% 20%, rgba(136, 249, 192, 0.05), transparent 55%),
+    #01010d;
   background-attachment: fixed;
 }
 
 ::selection {
-  @apply bg-brand-100;
+  @apply bg-brand-100 text-ink;
 }
 
 @media (prefers-reduced-motion: reduce) {

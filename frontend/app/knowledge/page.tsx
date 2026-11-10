@@ -40,7 +40,7 @@ export default function Knowledge() {
     <div>
       <PageHeading
         title="Knowledge base"
-        description="Every answer this agent drafts is grounded in these documents — nothing else. No private data, no made-up sources."
+        description="Every answer this agent drafts is grounded in these documents. Nothing else, no private data, no made-up sources."
       />
 
       {loading && (
@@ -51,7 +51,7 @@ export default function Knowledge() {
       )}
 
       {error && (
-        <Card className="border-rose-200 bg-rose-50 p-4 text-sm text-rose-700">
+        <Card className="border-[#5c1a26] bg-[#2b0d12] p-4 text-sm text-priority-urgent">
           Couldn&apos;t load the knowledge base: {error}
         </Card>
       )}
@@ -65,7 +65,7 @@ export default function Knowledge() {
             </div>
             <p className="mt-3 text-base text-ink-soft">
               {data.total_documents.toLocaleString()} documents, chunked from{" "}
-              <span className="font-semibold text-ink">{data.source_dataset.name}</span> — real,
+              <span className="font-semibold text-ink">{data.source_dataset.name}</span>: real,
               official, licensed documentation, not a synthetic or scraped dataset.
             </p>
             <div className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-ink-soft">
@@ -89,7 +89,7 @@ export default function Knowledge() {
               {categories.map(([cat, count]) => (
                 <div key={cat} className="flex items-center gap-3">
                   <span className="w-36 shrink-0 text-sm text-ink-soft">{label(cat)}</span>
-                  <div className="h-2 flex-1 overflow-hidden rounded-full bg-slate-100">
+                  <div className="h-2 flex-1 overflow-hidden rounded-full bg-line/60">
                     <div
                       className="h-full rounded-full bg-brand-gradient"
                       style={{ width: `${Math.max(4, (count / maxCount) * 100)}%` }}
@@ -105,7 +105,7 @@ export default function Knowledge() {
             <div className="border-b border-line px-6 py-5">
               <h2 className="text-lg font-semibold text-ink">A sample of the real documents</h2>
               <p className="text-sm text-ink-soft">
-                Randomly sampled from the full {data.total_documents.toLocaleString()} — each links to the exact
+                Randomly sampled from the full {data.total_documents.toLocaleString()}; each links to the exact
                 commit of the source file.
               </p>
             </div>

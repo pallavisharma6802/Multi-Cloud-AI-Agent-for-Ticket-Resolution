@@ -116,11 +116,11 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
             </span>
             <div className="text-sm">
               <div className="font-medium text-white">Anonymous workspace</div>
-              <div className="text-xs text-brand-100/60">No sign-in — single shared demo</div>
+              <div className="text-xs text-brand-100/60">No sign-in, single shared demo</div>
             </div>
           </div>
           <p className="text-[11px] leading-relaxed text-brand-100/40">
-            No accounts or profile pages — this is a single-tenant demo of the resolution
+            No accounts or profile pages. This is a single-tenant demo of the resolution
             pipeline, not a multi-user product. Each ticket already carries its own
             submitter email.
           </p>

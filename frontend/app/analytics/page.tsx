@@ -107,7 +107,7 @@ export default function Analytics() {
       />
 
       {error && (
-        <Card className="mb-6 border-rose-200 bg-rose-50 p-4 text-sm text-rose-700">{error}</Card>
+        <Card className="mb-6 border-[#5c1a26] bg-[#2b0d12] p-4 text-sm text-priority-urgent">{error}</Card>
       )}
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
@@ -170,7 +170,7 @@ export default function Analytics() {
 
       <Card className="mt-6 overflow-hidden">
         <div className="flex flex-wrap items-center justify-between gap-3 border-b border-line px-6 py-4">
-          <div className="flex gap-1 rounded-xl bg-slate-100 p-1">
+          <div className="flex gap-1 rounded-xl bg-line/60 p-1">
             {DASHBOARDS.map((d) => (
               <button
                 key={d.uid}
@@ -196,11 +196,11 @@ export default function Analytics() {
           key={dashboard + days}
           src={grafanaFull}
           className="h-[700px] w-full border-0"
-          title={`Grafana — ${dashboard}`}
+          title={`Grafana: ${dashboard}`}
         />
         <p className="border-t border-line px-6 py-3 text-xs text-ink-soft">
           Model and retrieval diagnostics (confidence distributions, latency percentiles, faithfulness/relevance
-          trends, retrieval-miss rate) are computed in Grafana straight from the BigQuery fact table — real
+          trends, retrieval-miss rate) are computed in Grafana straight from the BigQuery fact table, real
           histograms and percentiles that don&apos;t belong in a hand-rolled chart.
         </p>
       </Card>

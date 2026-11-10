@@ -24,11 +24,14 @@ import {
 import { getOverview, Overview } from "@/lib/api";
 import { Card, PageHeading, StatCard, Button } from "@/components/ui";
 
+type Tab = "roster" | "activity" | "explore";
+
 export default function Home() {
   const [data, setData] = useState<Overview | null>(null);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
   const [days, setDays] = useState(30);
+  const [tab, setTab] = useState<Tab>("roster");
 
   const load = useCallback(() => {
     setLoading(true);
@@ -57,9 +60,9 @@ export default function Home() {
   const agents = [
     { icon: Users, name: "Intent / Priority", role: "Classifies category + urgency" },
     { icon: ScanSearch, name: "Retrieval", role: "Hybrid dense + BM25 search, reciprocal-rank fusion" },
-    { icon: FileSearch, name: "Document grader", role: "CRAG — grades relevance, rewrites the query" },
+    { icon: FileSearch, name: "Document grader", role: "CRAG, grades relevance and rewrites the query" },
     { icon: PenLine, name: "Drafting", role: "Writes the grounded response" },
-    { icon: Gavel, name: "Judge", role: "self-RAG — scores faithfulness + relevance" },
+    { icon: Gavel, name: "Judge", role: "self-RAG, scores faithfulness and relevance" },
     { icon: Repeat, name: "Continuation", role: "Decides retry / proceed / escalate at each step" },
     { icon: Lock, name: "Security", role: "Screens for prompt injection + unsafe content" },
     { icon: Smile, name: "Sentiment (Azure NLP)", role: "Reads customer tone" },
@@ -72,7 +75,7 @@ export default function Home() {
         description={
           <>
             This build is scoped to a single example: VS Code support, grounded in Microsoft&apos;s own
-            public documentation — not a generic bot, and not connected to any real organization&apos;s
+            public documentation. Not a generic bot, and not connected to any real organization&apos;s
             data.{" "}
             <Link href="/knowledge" className="font-semibold text-brand-500 hover:text-brand-600">
               See what it actually knows <ArrowRight size={12} className="inline" />
@@ -95,7 +98,7 @@ export default function Home() {
           <h2 className="text-xs font-bold uppercase tracking-widest text-brand-500">A multi-agent pipeline, not one prompt</h2>
         </div>
         <p className="mt-2 max-w-3xl text-base text-ink-soft">
-          Every ticket runs through a real self-RAG / CRAG loop — eight distinct agents, each with its own
+          Every ticket runs through a real self-RAG/CRAG loop: eight distinct agents, each with its own
           job, orchestrated by a LangGraph state machine that can retry or escalate at two different points.
         </p>
 
@@ -120,78 +123,112 @@ export default function Home() {
           ))}
         </div>
 
-        <div className="mt-8 border-t border-line pt-6">
-          <h3 className="text-xs font-bold uppercase tracking-widest text-ink-faint">The agent roster</h3>
-          <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {agents.map((a) => (
-              <div key={a.name} className="flex items-start gap-3 rounded-xl border border-line p-3.5 transition hover:border-brand-500/30 hover:bg-brand-50/40">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-ink-soft">
-                  <a.icon size={15} />
-                </span>
-                <div>
-                  <div className="text-sm font-bold text-ink">{a.name}</div>
-                  <p className="mt-0.5 text-xs leading-snug text-ink-soft">{a.role}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </Card>
 
       {error && (
-        <Card className="mb-6 border-rose-200 bg-rose-50 p-4 text-sm text-rose-700">
-          We couldn&apos;t refresh the workspace: {error}{" "}
+        <Card className="mb-6 border-[#5c1a26] bg-[#2b0d12] p-4 text-sm text-priority-urgent">
+          Couldn&apos;t refresh the workspace: {error}{" "}
           <button onClick={load} className="font-semibold underline">
             Try again
           </button>
         </Card>
       )}
 
-      <div className="flex items-center justify-between">
-        <h2 className="text-xs font-bold uppercase tracking-widest text-ink-faint">Demo activity (not live production traffic)</h2>
-        <Button variant="ghost" onClick={() => setDays(days === 7 ? 30 : 7)} className="text-xs">
-          <Clock size={13} /> Last {days} days
-        </Button>
-      </div>
-      <div className="mt-3 grid grid-cols-2 gap-4 lg:grid-cols-4">
-        <StatCard icon={Ticket} label="Tickets" value={data?.total ?? "—"} foot={`Created in the last ${days} days`} tone="brand" />
-        <StatCard icon={Sparkles} label="AI answered" value={data?.ai_resolved ?? "—"} foot="Generated answer, awaiting confirmation" />
-        <StatCard icon={ShieldCheck} label="Needs human review" value={data?.needs_review ?? "—"} foot="Waiting for a reviewer" tone="amber" />
-        <StatCard icon={Clock} label="Open" value={data?.open ?? "—"} foot="Not yet processed" tone="teal" />
-      </div>
+      <Card>
+        <div className="flex items-center justify-between border-b border-line px-2 pt-2">
+          <div className="flex gap-1">
+            {(
+              [
+                ["roster", "Agent roster"],
+                ["activity", "Activity"],
+                ["explore", "Explore"],
+              ] as [Tab, string][]
+            ).map(([key, label]) => (
+              <button
+                key={key}
+                onClick={() => setTab(key)}
+                className={`rounded-t-lg px-4 py-2.5 text-sm font-semibold transition ${
+                  tab === key ? "bg-surface text-ink border-x border-t border-line -mb-px" : "text-ink-faint hover:text-ink-soft"
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+          {tab === "activity" && (
+            <Button variant="ghost" onClick={() => setDays(days === 7 ? 30 : 7)} className="text-xs">
+              <Clock size={13} /> Last {days} days
+            </Button>
+          )}
+        </div>
 
-      <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
-        <Link href="/triage" className="group rounded-2xl border border-line bg-surface p-5 shadow-card transition hover:border-brand-500/30">
-          <div className="flex items-center gap-2 text-ink">
-            <Ticket size={16} className="text-brand-500" />
-            <span className="font-semibold">Inbox</span>
-          </div>
-          <p className="mt-2 text-sm text-ink-soft">Every ticket, its AI answer, and the evidence trail behind it.</p>
-          <span className="mt-3 flex items-center gap-1 text-sm font-semibold text-brand-500 group-hover:text-brand-600">
-            Open the inbox <ArrowRight size={13} />
-          </span>
-        </Link>
-        <Link href="/analytics" className="group rounded-2xl border border-line bg-surface p-5 shadow-card transition hover:border-brand-500/30">
-          <div className="flex items-center gap-2 text-ink">
-            <Sparkles size={16} className="text-teal-500" />
-            <span className="font-semibold">Analytics</span>
-          </div>
-          <p className="mt-2 text-sm text-ink-soft">Volume, priority mix, and RAG/judge health over time.</p>
-          <span className="mt-3 flex items-center gap-1 text-sm font-semibold text-brand-500 group-hover:text-brand-600">
-            View dashboards <ArrowRight size={13} />
-          </span>
-        </Link>
-        <Link href="/knowledge" className="group rounded-2xl border border-line bg-surface p-5 shadow-card transition hover:border-brand-500/30">
-          <div className="flex items-center gap-2 text-ink">
-            <BookOpen size={16} className="text-amber-600" />
-            <span className="font-semibold">Knowledge base</span>
-          </div>
-          <p className="mt-2 text-sm text-ink-soft">The 6,347 real VS Code doc chunks this agent actually retrieves from.</p>
-          <span className="mt-3 flex items-center gap-1 text-sm font-semibold text-brand-500 group-hover:text-brand-600">
-            See what it knows <ArrowRight size={13} />
-          </span>
-        </Link>
-      </div>
+        <div className="p-6">
+          {tab === "roster" && (
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {agents.map((a) => (
+                <div key={a.name} className="flex items-start gap-3 rounded-xl border border-line p-3.5 transition hover:border-brand-500/30 hover:bg-brand-50/40">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-line/60 text-ink-soft">
+                    <a.icon size={15} />
+                  </span>
+                  <div>
+                    <div className="text-sm font-bold text-ink">{a.name}</div>
+                    <p className="mt-0.5 text-xs leading-snug text-ink-soft">{a.role}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {tab === "activity" && (
+            <div>
+              <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-ink-faint">
+                Demo activity, not live production traffic
+              </p>
+              <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+                <StatCard icon={Ticket} label="Tickets" value={data?.total ?? "none yet"} foot={`Created in the last ${days} days`} tone="brand" />
+                <StatCard icon={Sparkles} label="AI answered" value={data?.ai_resolved ?? "none yet"} foot="Generated answer, awaiting confirmation" />
+                <StatCard icon={ShieldCheck} label="Needs human review" value={data?.needs_review ?? "none yet"} foot="Waiting for a reviewer" tone="amber" />
+                <StatCard icon={Clock} label="Open" value={data?.open ?? "none yet"} foot="Not yet processed" tone="teal" />
+              </div>
+            </div>
+          )}
+
+          {tab === "explore" && (
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+              <Link href="/triage" className="group rounded-2xl border border-line bg-surface p-5 transition hover:border-brand-500/30">
+                <div className="flex items-center gap-2 text-ink">
+                  <Ticket size={16} className="text-brand-500" />
+                  <span className="font-semibold">Inbox</span>
+                </div>
+                <p className="mt-2 text-sm text-ink-soft">Every ticket, its AI answer, and the evidence trail behind it.</p>
+                <span className="mt-3 flex items-center gap-1 text-sm font-semibold text-brand-500 group-hover:text-brand-600">
+                  Open the inbox <ArrowRight size={13} />
+                </span>
+              </Link>
+              <Link href="/analytics" className="group rounded-2xl border border-line bg-surface p-5 transition hover:border-brand-500/30">
+                <div className="flex items-center gap-2 text-ink">
+                  <Sparkles size={16} className="text-teal-500" />
+                  <span className="font-semibold">Analytics</span>
+                </div>
+                <p className="mt-2 text-sm text-ink-soft">Volume, priority mix, and RAG/judge health over time.</p>
+                <span className="mt-3 flex items-center gap-1 text-sm font-semibold text-brand-500 group-hover:text-brand-600">
+                  View dashboards <ArrowRight size={13} />
+                </span>
+              </Link>
+              <Link href="/knowledge" className="group rounded-2xl border border-line bg-surface p-5 transition hover:border-brand-500/30">
+                <div className="flex items-center gap-2 text-ink">
+                  <BookOpen size={16} className="text-priority-medium" />
+                  <span className="font-semibold">Knowledge base</span>
+                </div>
+                <p className="mt-2 text-sm text-ink-soft">The 6,347 real VS Code doc chunks this agent actually retrieves from.</p>
+                <span className="mt-3 flex items-center gap-1 text-sm font-semibold text-brand-500 group-hover:text-brand-600">
+                  See what it knows <ArrowRight size={13} />
+                </span>
+              </Link>
+            </div>
+          )}
+        </div>
+      </Card>
 
       <div className="mt-6 flex items-center justify-between text-xs text-ink-faint">
         <span>Support workspace</span>

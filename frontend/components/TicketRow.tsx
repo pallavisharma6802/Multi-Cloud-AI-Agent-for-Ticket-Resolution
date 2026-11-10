@@ -13,8 +13,8 @@ export default function TicketRow({ ticket }: { ticket: TicketSummary }) {
   return (
     <Link
       href={`/tickets/${ticket.ticket_id}`}
-      className={`flex items-center gap-4 border-b border-line px-5 py-4 transition hover:bg-slate-50 ${
-        needsReview ? "bg-amber-50/40" : ""
+      className={`flex items-center gap-4 border-b border-line px-5 py-4 transition hover:bg-line/30 ${
+        needsReview ? "bg-[#2b2008]/40" : ""
       }`}
     >
       <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-50 text-xs font-semibold text-brand-700">

@@ -49,7 +49,7 @@ export default function TicketDetail() {
 
   if (error)
     return (
-      <Card className="border-rose-200 bg-rose-50 p-5 text-sm text-rose-700">
+      <Card className="border-[#5c1a26] bg-[#2b0d12] p-5 text-sm text-priority-urgent">
         {error}
         <Link href="/triage" className="ml-3 font-semibold underline">
           Back to inbox
@@ -91,7 +91,7 @@ export default function TicketDetail() {
         <StatusBadge status={t.status} />
       </div>
 
-      {actionError && <Card className="mb-5 border-rose-200 bg-rose-50 p-4 text-sm text-rose-700">{actionError}</Card>}
+      {actionError && <Card className="mb-5 border-[#5c1a26] bg-[#2b0d12] p-4 text-sm text-priority-urgent">{actionError}</Card>}
 
       {t.status === "open" && (
         <Card className="mb-6 flex items-center gap-3 border-brand-100 bg-brand-50 p-4 text-sm text-brand-700">
@@ -103,7 +103,7 @@ export default function TicketDetail() {
         </Card>
       )}
       {t.status === "in_progress" && (
-        <Card className="mb-6 flex items-center gap-3 border-amber-200 bg-amber-50 p-4 text-sm text-amber-700">
+        <Card className="mb-6 flex items-center gap-3 border-[#5c4a1a] bg-[#2b2008] p-4 text-sm text-priority-medium">
           <ShieldCheck size={16} />
           <span>Needs your team&apos;s review. After checking the response, mark it resolved.</span>
           <Button className="ml-auto" disabled={working} onClick={() => act("resolve")}>
@@ -114,7 +114,7 @@ export default function TicketDetail() {
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_320px]">
         <div>
-          <div className="mb-5 flex gap-1 rounded-xl bg-slate-100 p-1">
+          <div className="mb-5 flex gap-1 rounded-xl bg-line/60 p-1">
             {TABS.map((v) => (
               <button
                 key={v.id}
@@ -191,7 +191,7 @@ export default function TicketDetail() {
                       </span>
                       <ChevronDown size={15} className="shrink-0 text-ink-faint transition group-open:rotate-180" />
                     </summary>
-                    <pre className="overflow-x-auto border-t border-line bg-slate-50 p-4 text-xs text-ink-soft">
+                    <pre className="overflow-x-auto border-t border-line bg-canvas p-4 text-xs text-ink-soft">
                       {JSON.stringify(d.output, null, 2)}
                     </pre>
                   </details>
@@ -228,7 +228,7 @@ export default function TicketDetail() {
                       <div key={i} className="mt-3">
                         <span
                           className={`rounded-full px-2 py-0.5 text-xs font-semibold ${
-                            d.relevant ? "bg-teal-100 text-teal-500" : "bg-amber-50 text-amber-600"
+                            d.relevant ? "bg-teal-100 text-teal-500" : "bg-[#2b2008] text-priority-medium"
                           }`}
                         >
                           {d.relevant ? "Relevant" : "Excluded"}
@@ -246,7 +246,7 @@ export default function TicketDetail() {
                     {r.judge_score_history.map((j, i) => (
                       <div key={i} className="border-t border-line pt-4 first:border-0 first:pt-0">
                         <div className="flex flex-wrap gap-2">
-                          <span className="rounded-full bg-slate-100 px-2 py-0.5 text-xs font-semibold text-ink-soft">Review {i + 1}</span>
+                          <span className="rounded-full bg-line/60 px-2 py-0.5 text-xs font-semibold text-ink-soft">Review {i + 1}</span>
                           <span className="rounded-full bg-teal-100 px-2 py-0.5 text-xs font-semibold text-teal-500">
                             {Math.round((j.faithfulness_score || 0) * 100)}% faithful
                           </span>
@@ -256,7 +256,7 @@ export default function TicketDetail() {
                         </div>
                         <p className="mt-2 text-sm text-ink-soft">{j.rationale}</p>
                         {j.unsupported_claims?.length > 0 && (
-                          <div className="mt-2 rounded-xl bg-rose-50 px-3 py-2 text-xs text-rose-700">
+                          <div className="mt-2 rounded-xl bg-[#2b0d12] px-3 py-2 text-xs text-priority-urgent">
                             Claims to check: {j.unsupported_claims.join("; ")}
                           </div>
                         )}
