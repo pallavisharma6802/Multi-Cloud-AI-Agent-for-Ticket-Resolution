@@ -72,32 +72,34 @@ export default function Home() {
   return (
     <div>
       <div className="relative mb-6 overflow-hidden rounded-2xl border border-line">
-        <LighthouseHero height={160} />
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-canvas to-transparent px-6 pb-3 pt-10">
-          <p className="text-xs font-semibold uppercase tracking-widest text-ink-soft">A beam that only lights what&apos;s really there</p>
+        <div className="absolute inset-0">
+          <LighthouseHero height={260} />
+        </div>
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-canvas via-canvas/70 to-canvas/10" />
+        <div className="relative px-7 py-8">
+          <PageHeading
+            title="AI support for your organization"
+            description={
+              <>
+                This build is scoped to a single example: VS Code support, grounded in Microsoft&apos;s own
+                public documentation. <span className="text-[#ff7a52]">Not a generic bot</span>, and not
+                connected to any real organization&apos;s data.{" "}
+                <Link href="/knowledge" className="pointer-events-auto font-semibold text-brand-500 hover:text-brand-600">
+                  See what it actually knows <ArrowRight size={12} className="inline" />
+                </Link>
+              </>
+            }
+            action={
+              <Link href="/submit" className="pointer-events-auto">
+                <Button>
+                  <Plus size={15} /> Create ticket
+                </Button>
+              </Link>
+            }
+          />
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#ff7a52]">A beam that only lights what&apos;s really there</p>
         </div>
       </div>
-
-      <PageHeading
-        title="AI support for your organization"
-        description={
-          <>
-            This build is scoped to a single example: VS Code support, grounded in Microsoft&apos;s own
-            public documentation. Not a generic bot, and not connected to any real organization&apos;s
-            data.{" "}
-            <Link href="/knowledge" className="font-semibold text-brand-500 hover:text-brand-600">
-              See what it actually knows <ArrowRight size={12} className="inline" />
-            </Link>
-          </>
-        }
-        action={
-          <Link href="/submit">
-            <Button>
-              <Plus size={15} /> Create ticket
-            </Button>
-          </Link>
-        }
-      />
 
       <Card className="relative mb-6 overflow-hidden p-7">
         <div className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-brand-gradient opacity-[0.07]" />
@@ -120,7 +122,7 @@ export default function Home() {
               <div className="mt-2.5 flex items-center gap-2">
                 <div className="text-sm font-bold text-ink">{s.title}</div>
                 {s.tag && (
-                  <span className="rounded-full bg-brand-100 px-1.5 py-0.5 text-[10px] font-bold text-brand-600">{s.tag}</span>
+                  <span className="rounded-full bg-[#3a1710] px-1.5 py-0.5 text-[10px] font-bold text-[#ff7a52]">{s.tag}</span>
                 )}
               </div>
               <p className="mt-1 text-xs leading-relaxed text-ink-soft">{s.body}</p>
