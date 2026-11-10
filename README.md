@@ -13,6 +13,8 @@ asserted.
 
 ## Table of contents
 
+- [Services used, and what they cost](#services-used-and-what-they-cost)
+- [Live deployment](#live-deployment)
 - [Architecture](#architecture)
 - [Why this rebuild](#why-this-rebuild)
 - [Domain packs](#domain-packs)
@@ -24,6 +26,55 @@ asserted.
 - [CI/CD](#cicd)
 - [Project structure](#project-structure)
 - [Extending with a new domain pack](#extending-with-a-new-domain-pack)
+
+## Services used, and what they cost
+
+Every external service this project touches, what it's for, and its actual billing model. Nothing here is a
+flat recurring fee as currently configured; it's either pay-per-use or a genuinely free tier.
+
+| Service | What it's for | Billing model |
+|---|---|---|
+| **Amazon Bedrock** (`amazon.nova-lite-v1:0`) | Sole LLM backend, every agent role | Pay-per-token, per request. Only charged when a ticket actually runs. |
+| **Azure AI Text Analytics** | Real NER/sentiment/key-phrase extraction | Pay-per-API-call; free tier covers ~5K calls/month before that. |
+| **Pinecone** (serverless) | Vector KB storage + hybrid retrieval | Free tier (one serverless index, capped storage/ops). No card charged unless upgraded. |
+| **Neon** (managed Postgres) | Primary OLTP database (tickets, decisions, responses) | Free tier (storage/compute caps). |
+| **Google BigQuery** | Analytics fact table (`fact_ticket_events`) | Free sandbox tier: 10GB storage, 1TB query/month, no billing account attached, hard-capped by Google rather than your card. |
+| **Render** | Backend API + Grafana, each a separate free web service | Free web service tier. Sleeps after ~15 min idle; first request after that is a slow cold start. |
+| **Vercel** | Frontend (Next.js) | Hobby plan, free for personal projects. |
+| **GitHub** | Source control, CI | Free, public repo. |
+| **AWS CloudWatch** | **Not used.** No metrics/logs ship there. | — |
+| **LangSmith** | Optional trace viewer (off by default) | Free tier if you turn it on; unrelated to the rest of the stack. |
+
+The only way this starts costing meaningful fixed money is upgrading a Render/Vercel plan, or Bedrock/Azure
+usage volume growing a lot — and even then that's still metered by actual use, not a subscription.
+
+## Live deployment
+
+This app is deployed and publicly reachable right now:
+
+- **Frontend** (Vercel): the Next.js UI.
+- **Backend** (Render, `ticket-resolution-backend`): FastAPI + the LangGraph pipeline. `render.yaml` at the repo
+  root is the Render Blueprint — it defines env vars for both services below; secrets (`AWS_*`, `AZURE_*`,
+  `PINECONE_*`, `DATABASE_URL`) are filled in via Render's dashboard, not committed.
+- **Grafana** (Render, `ticket-resolution-grafana`): standalone image built from [`grafana/Dockerfile`](grafana/Dockerfile),
+  which bakes dashboards/provisioning in at build time since Render can't bind-mount repo folders the way
+  `docker-compose.yml` does locally. Anonymous Viewer auth + `GF_SECURITY_ALLOW_EMBEDDING=true` so the frontend
+  can iframe it.
+- **Database**: Neon (`resolve-support` project), not the local `ticket-postgres` container.
+- **Vector store**: Pinecone, `ticket-kb` index, `vscode_support` namespace, seeded via `seed_kb.py`.
+- **Analytics sink**: BigQuery (`css771cv.ticket_analytics_live.fact_ticket_events`), read by the Grafana
+  dashboards above.
+
+Redeploying after a push: Render has auto-deploy on for both services (should pick up `main` automatically,
+but **Manual Deploy → Deploy latest commit** forces it); Vercel needs **Deployments → Redeploy** since
+`NEXT_PUBLIC_*` env vars are baked in at build time, not read at runtime.
+
+**Known operational gotcha**: Grafana's BigQuery datasource can go stale after the container's been up a
+while, or (worse) `GF_INSTALL_PLUGINS` set as a runtime env var makes the entrypoint reinstall that plugin on
+*every* boot, which can race with SQLite migrations on Render's free tier and silently block dashboard
+provisioning entirely (`/api/search` comes back empty even though the container reports healthy). Fixed by
+installing the plugin at Docker build time instead (see [`grafana/Dockerfile`](grafana/Dockerfile)); if
+dashboards ever go missing again, check that service's logs for `"database is locked"` first.
 
 ## Architecture
 
@@ -357,26 +408,34 @@ docker-compose.yml      # Local stack: postgres, backend, frontend, grafana (Bed
 
 No code changes required — the agents, graph, and eval harness are all pack-agnostic by construction.
 
-## MVP workflow and deployment status
+## MVP workflow notes
 
-The refreshed workspace includes live overview counts, inbox search/filter/CSV export, ticket retry, explicit human resolution, and expandable CRAG/Self-RAG evidence. Open tickets do not run in the background: use Retry assessment. `in_progress` ("Needs review" in the UI) means a human must act; Mark resolved records that action separately from AI resolution.
+The workspace includes live overview counts, inbox search/filter/CSV export, ticket retry, explicit human
+resolution, and expandable CRAG/Self-RAG evidence. Open tickets do not run in the background: use Retry
+assessment. `in_progress` ("Needs review" in the UI) means a human must act; Mark resolved records that action
+separately from AI resolution.
 
-[AWS deployment instructions](deploy/aws/README.md) are prepared. No AWS deployment has been performed. Localhost is not a hosted deployment. Vercel can host the frontend, Render can host an appropriately sized API, and GitHub Pages cannot run this Python backend. Each external host requires an account and authorized access.
+BigQuery sandbox writes use load jobs, with a 59-day retention limit, in `ticket_analytics_live`. The project
+is on BigQuery's free tier (billing disabled), which blocks DML `DELETE` and `WRITE_TRUNCATE` table rewrites on
+the fact table — the old IT/SaaS and healthcare rows were fully purged from PostgreSQL directly, and the four
+Grafana dashboard queries filter them out (`domain_pack NOT IN ('it_saas', 'healthcare')`) rather than deleting
+the underlying BigQuery rows, which isn't currently possible with this project's permissions.
 
-BigQuery sandbox writes use load jobs, with a 59-day retention limit, in `ticket_analytics_live`. The project is on BigQuery's free tier (billing disabled), which blocks DML `DELETE` and `WRITE_TRUNCATE` table rewrites on the fact table — the old IT/SaaS and healthcare rows were fully purged from PostgreSQL directly, and the four Grafana dashboard queries filter them out (`domain_pack NOT IN ('it_saas', 'healthcare')`) rather than deleting the underlying BigQuery rows, which isn't currently possible with this project's permissions. PostgreSQL plus the AWS backup plan is the long-term system of record.
+The `vscode_support` pack currently contains 6,347 KB documents chunked from VS Code's official docs; ticket
+volume is seeded via [`data/seed_vscode_tickets.py`](data/seed_vscode_tickets.py). This uses a pretrained
+model; it does not train a custom model.
 
-**Operational note**: Grafana's BigQuery datasource caches its service-account access token and can present it as expired after the container has been up a while, causing all dashboard panels to render blank with no visible error (check `docker logs ticket-grafana` for `ACCESS_TOKEN_EXPIRED` to confirm). Fix: `docker restart ticket-grafana` forces it to re-mint a fresh token.
+[AWS EC2/ECS deployment instructions](deploy/aws/README.md) are prepared but unused — the live deployment
+(see [Live deployment](#live-deployment) above) uses Vercel + Render instead, which needed far less setup for
+a demo at this scale. The AWS path stays documented for anyone who wants that experience specifically.
 
-The `vscode_support` pack currently contains 6,347 KB documents chunked from VS Code's official docs; ticket volume is seeded via [`data/seed_vscode_tickets.py`](data/seed_vscode_tickets.py). This uses a pretrained model; it does not train a custom model.
+### Neon database
 
-### Active Neon database
-
-The local operational database has been migrated to Neon project `resolve-support` in AWS US East 1. Migration verified all 66 original tickets, 725 decision rows, and 57 response rows using exact content hashes. The local Postgres container is stopped and retained as a backup. Keep connection URLs in ignored `.env` only.
+The operational database lives in Neon project `resolve-support` (AWS US East 1), not the local
+`ticket-postgres` container (stopped, kept as a backup). Keep connection URLs in ignored `.env` only.
 
 Start the app without the local database using:
 
 ```bash
 docker compose -f docker-compose.yml -f docker-compose.neon.yml up -d --no-deps backend frontend grafana
 ```
-
-The web frontend and API are still hosted locally; moving the database online does not publish the app itself.
