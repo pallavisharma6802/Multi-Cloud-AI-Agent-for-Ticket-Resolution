@@ -19,8 +19,13 @@ from app.schemas.ticket import TicketCreate, TicketResponse
 logger = logging.getLogger(__name__)
 
 router = APIRouter()
-# Keep native embedding inference serial on small MVP hosts; HTTP reads remain responsive.
-_pipeline_capacity = threading.BoundedSemaphore(1)
+# Was 1 to keep native embedding inference serial on small MVP hosts -- that
+# constraint is gone now that embeddings are a Bedrock API call instead of a
+# locally-loaded model, so a couple of tickets can run concurrently without
+# the memory spike that caused OOM restarts. Measured locally: 3 concurrent
+# peaked at ~363MB RSS, too close to Render's 512MB free-tier ceiling for
+# comfort; 2 leaves more headroom.
+_pipeline_capacity = threading.BoundedSemaphore(2)
 
 supervisor = SupervisorAgent()
 _active_ticket_ids = set()
