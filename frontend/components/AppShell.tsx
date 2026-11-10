@@ -11,6 +11,7 @@ import {
   ShieldCheck,
   ArrowUpRight,
   UserRound,
+  BookOpen,
 } from "lucide-react";
 import { API_BASE_URL } from "@/lib/api";
 
@@ -18,6 +19,7 @@ const links = [
   { href: "/", label: "Overview", icon: LayoutGrid },
   { href: "/triage", label: "Inbox", icon: Inbox },
   { href: "/analytics", label: "Analytics", icon: BarChart3 },
+  { href: "/knowledge", label: "Knowledge base", icon: BookOpen },
 ];
 
 const titles: Record<string, string> = {
@@ -25,6 +27,7 @@ const titles: Record<string, string> = {
   "/triage": "Inbox",
   "/analytics": "Analytics",
   "/submit": "New ticket",
+  "/knowledge": "Knowledge base",
 };
 
 function titleFor(path: string) {
@@ -56,6 +59,9 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
           </span>
           resolve
         </Link>
+        <span className="mt-1.5 px-2 text-[11px] font-semibold uppercase tracking-wider text-teal-400">
+          Example build · VS Code support
+        </span>
 
         <Link
           href="/submit"

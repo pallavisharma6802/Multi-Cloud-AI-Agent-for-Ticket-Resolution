@@ -63,6 +63,62 @@ async def get_domain_packs():
     return {"packs": packs, "default": settings.domain_pack}
 
 
+_kb_cache: dict = {}
+
+
+@router.get("/knowledge-base")
+async def get_knowledge_base(pack_id: str = Query(None), sample_size: int = Query(24, ge=1, le=100)):
+    """Lists the real source documents backing a domain pack's retrieval --
+    provenance, per-category counts, and a representative sample with links
+    back to the original source. Cached per pack since the KB is static
+    until data/prepare_vscode_docs.py is rerun.
+    """
+    import json
+    import random
+    from pathlib import Path
+
+    pack_id = pack_id or settings.domain_pack
+    if pack_id in _kb_cache:
+        cached = _kb_cache[pack_id]
+    else:
+        pack = get_domain_pack(pack_id)
+        kb_dir = Path("domains") / pack_id / "kb"
+        if not kb_dir.is_dir():
+            raise HTTPException(status_code=404, detail=f"No knowledge base found for pack {pack_id}")
+
+        category_counts: dict[str, int] = {}
+        docs = []
+        for f in sorted(kb_dir.glob("*.json")):
+            doc = json.loads(f.read_text())
+            category_counts[doc.get("category", "OTHER")] = category_counts.get(doc.get("category", "OTHER"), 0) + 1
+            docs.append(
+                {
+                    "id": doc.get("id"),
+                    "title": doc.get("title"),
+                    "category": doc.get("category"),
+                    "source": doc.get("source"),
+                }
+            )
+        cached = {
+            "pack_id": pack_id,
+            "source_dataset": pack.config.source_dataset.model_dump(),
+            "total_documents": len(docs),
+            "category_counts": category_counts,
+            "all_docs": docs,
+        }
+        _kb_cache[pack_id] = cached
+
+    rng = random.Random(42)
+    sample = rng.sample(cached["all_docs"], min(sample_size, len(cached["all_docs"])))
+    return {
+        "pack_id": cached["pack_id"],
+        "source_dataset": cached["source_dataset"],
+        "total_documents": cached["total_documents"],
+        "category_counts": cached["category_counts"],
+        "sample": sample,
+    }
+
+
 @router.post("/tickets", response_model=TicketResolutionResponse, status_code=status.HTTP_201_CREATED)
 def submit_ticket(ticket_data: TicketCreate, db: Session = Depends(get_db)):
     logger.info(f"Received ticket submission from {ticket_data.user_email}")

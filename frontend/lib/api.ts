@@ -103,6 +103,32 @@ export function getDomainPacks(): Promise<{
   return apiFetch("/api/v1/domain-packs");
 }
 
+export interface KnowledgeBaseDoc {
+  id: string;
+  title: string;
+  category: string;
+  source: string;
+}
+
+export interface KnowledgeBaseInfo {
+  pack_id: string;
+  source_dataset: {
+    name: string;
+    url: string;
+    license: string;
+    real_data: boolean;
+    num_source_rows: number;
+    limitations: string;
+  };
+  total_documents: number;
+  category_counts: Record<string, number>;
+  sample: KnowledgeBaseDoc[];
+}
+
+export function getKnowledgeBase(sampleSize = 24): Promise<KnowledgeBaseInfo> {
+  return apiFetch(`/api/v1/knowledge-base?sample_size=${sampleSize}`);
+}
+
 export function submitTicket(data: {
   title: string;
   description: string;

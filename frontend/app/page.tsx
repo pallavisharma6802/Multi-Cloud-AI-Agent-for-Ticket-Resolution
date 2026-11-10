@@ -19,10 +19,10 @@ import {
   Repeat,
   Lock,
   Smile,
+  BookOpen,
 } from "lucide-react";
 import { getOverview, Overview } from "@/lib/api";
 import { Card, PageHeading, StatCard, Button } from "@/components/ui";
-import TicketRow from "@/components/TicketRow";
 
 export default function Home() {
   const [data, setData] = useState<Overview | null>(null);
@@ -69,18 +69,22 @@ export default function Home() {
     <div>
       <PageHeading
         title="AI support for your organization"
-        description="Your knowledge. Helpful answers. Less back-and-forth. Human review stays one click away."
-        action={
-          <div className="flex items-center gap-3">
-            <Button variant="secondary" onClick={() => setDays(days === 7 ? 30 : 7)}>
-              <Clock size={15} /> Last {days} days
-            </Button>
-            <Link href="/submit">
-              <Button>
-                <Plus size={15} /> Create ticket
-              </Button>
+        description={
+          <>
+            This build is scoped to a single example: VS Code support, grounded in Microsoft&apos;s own
+            public documentation — not a generic bot, and not connected to any real organization&apos;s
+            data.{" "}
+            <Link href="/knowledge" className="font-semibold text-brand-500 hover:text-brand-600">
+              See what it actually knows <ArrowRight size={12} className="inline" />
             </Link>
-          </div>
+          </>
+        }
+        action={
+          <Link href="/submit">
+            <Button>
+              <Plus size={15} /> Create ticket
+            </Button>
+          </Link>
         }
       />
 
@@ -143,35 +147,51 @@ export default function Home() {
         </Card>
       )}
 
-      <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+      <div className="flex items-center justify-between">
+        <h2 className="text-xs font-bold uppercase tracking-widest text-ink-faint">Demo activity (not live production traffic)</h2>
+        <Button variant="ghost" onClick={() => setDays(days === 7 ? 30 : 7)} className="text-xs">
+          <Clock size={13} /> Last {days} days
+        </Button>
+      </div>
+      <div className="mt-3 grid grid-cols-2 gap-4 lg:grid-cols-4">
         <StatCard icon={Ticket} label="Tickets" value={data?.total ?? "—"} foot={`Created in the last ${days} days`} tone="brand" />
         <StatCard icon={Sparkles} label="AI answered" value={data?.ai_resolved ?? "—"} foot="Generated answer, awaiting confirmation" />
         <StatCard icon={ShieldCheck} label="Needs human review" value={data?.needs_review ?? "—"} foot="Waiting for a reviewer" tone="amber" />
         <StatCard icon={Clock} label="Open" value={data?.open ?? "—"} foot="Not yet processed" tone="teal" />
       </div>
 
-      <Card className="mt-8">
-        <div className="flex items-center justify-between border-b border-line px-6 py-5">
-          <div>
-            <h2 className="text-lg font-semibold text-ink">Recent tickets</h2>
-            <p className="text-sm text-ink-soft">Open a ticket to read its answer, sources, and trail.</p>
+      <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+        <Link href="/triage" className="group rounded-2xl border border-line bg-surface p-5 shadow-card transition hover:border-brand-500/30">
+          <div className="flex items-center gap-2 text-ink">
+            <Ticket size={16} className="text-brand-500" />
+            <span className="font-semibold">Inbox</span>
           </div>
-          <Link href="/triage" className="flex items-center gap-1 text-sm font-semibold text-brand-500 hover:text-brand-600">
-            View inbox <ArrowRight size={14} />
-          </Link>
-        </div>
-        {loading && !data ? (
-          <div className="px-6 py-10 text-center text-sm text-ink-soft">Loading recent tickets…</div>
-        ) : data && data.recent.length > 0 ? (
-          <div>
-            {data.recent.map((t) => (
-              <TicketRow key={t.ticket_id} ticket={t} />
-            ))}
+          <p className="mt-2 text-sm text-ink-soft">Every ticket, its AI answer, and the evidence trail behind it.</p>
+          <span className="mt-3 flex items-center gap-1 text-sm font-semibold text-brand-500 group-hover:text-brand-600">
+            Open the inbox <ArrowRight size={13} />
+          </span>
+        </Link>
+        <Link href="/analytics" className="group rounded-2xl border border-line bg-surface p-5 shadow-card transition hover:border-brand-500/30">
+          <div className="flex items-center gap-2 text-ink">
+            <Sparkles size={16} className="text-teal-500" />
+            <span className="font-semibold">Analytics</span>
           </div>
-        ) : (
-          <div className="px-6 py-10 text-center text-sm text-ink-soft">No tickets yet.</div>
-        )}
-      </Card>
+          <p className="mt-2 text-sm text-ink-soft">Volume, priority mix, and RAG/judge health over time.</p>
+          <span className="mt-3 flex items-center gap-1 text-sm font-semibold text-brand-500 group-hover:text-brand-600">
+            View dashboards <ArrowRight size={13} />
+          </span>
+        </Link>
+        <Link href="/knowledge" className="group rounded-2xl border border-line bg-surface p-5 shadow-card transition hover:border-brand-500/30">
+          <div className="flex items-center gap-2 text-ink">
+            <BookOpen size={16} className="text-amber-600" />
+            <span className="font-semibold">Knowledge base</span>
+          </div>
+          <p className="mt-2 text-sm text-ink-soft">The 6,347 real VS Code doc chunks this agent actually retrieves from.</p>
+          <span className="mt-3 flex items-center gap-1 text-sm font-semibold text-brand-500 group-hover:text-brand-600">
+            See what it knows <ArrowRight size={13} />
+          </span>
+        </Link>
+      </div>
 
       <div className="mt-6 flex items-center justify-between text-xs text-ink-faint">
         <span>Support workspace</span>
