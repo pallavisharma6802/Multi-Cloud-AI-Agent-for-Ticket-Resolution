@@ -31,7 +31,7 @@ export function StatCard({
   const tones: Record<string, { bg: string; icon: string; value: string; border: string }> = {
     default: { bg: "bg-surface", icon: "bg-line/60 text-ink-soft", value: "text-ink", border: "" },
     brand: { bg: "bg-brand-gradient", icon: "bg-white/15 text-white", value: "text-white", border: "border-transparent shadow-glow" },
-    teal: { bg: "bg-surface", icon: "bg-teal-100 text-teal-500", value: "text-ink", border: "border-l-2 border-l-teal-500/60" },
+    teal: { bg: "bg-surface", icon: "bg-[#0f2e1c] text-[#4ade80]", value: "text-ink", border: "border-l-2 border-l-[#4ade80]/60" },
     amber: { bg: "bg-surface", icon: "bg-[#2b2008] text-priority-medium", value: "text-ink", border: "border-l-2 border-l-priority-medium/60" },
   };
   const t = tones[tone];
@@ -55,7 +55,7 @@ export function StatCard({
 }
 
 const PRIORITY_STYLES: Record<string, string> = {
-  low: "bg-teal-100 text-teal-500",
+  low: "bg-[#0f2e1c] text-[#4ade80]",
   medium: "bg-[#2b2008] text-priority-medium",
   high: "bg-[#2b1708] text-priority-high",
   urgent: "bg-[#2b0d12] text-priority-urgent",
@@ -81,7 +81,7 @@ export function PriorityBadge({ priority }: { priority: string }) {
 const STATUS_STYLES: Record<string, string> = {
   open: "bg-line/60 text-ink-soft",
   in_progress: "bg-[#2b2008] text-priority-medium",
-  resolved: "bg-teal-100 text-teal-500",
+  resolved: "bg-[#0f2e1c] text-[#4ade80]",
   closed: "bg-line/60 text-ink-soft",
 };
 

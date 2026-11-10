@@ -210,7 +210,7 @@ export default function TicketDetail() {
                       <details key={d.doc_id} className="rounded-xl border border-line p-4" open>
                         <summary className="flex cursor-pointer list-none items-center justify-between text-sm">
                           <span className="truncate text-ink-soft">{String(d.metadata?.source || d.doc_id)}</span>
-                          <span className="shrink-0 rounded-full bg-teal-100 px-2 py-0.5 text-xs font-semibold text-teal-500">
+                          <span className="shrink-0 rounded-full bg-[#0f2e1c] px-2 py-0.5 text-xs font-semibold text-[#4ade80]">
                             {Math.round(d.similarity_score * 100)}% match
                           </span>
                         </summary>
@@ -228,7 +228,7 @@ export default function TicketDetail() {
                       <div key={i} className="mt-3">
                         <span
                           className={`rounded-full px-2 py-0.5 text-xs font-semibold ${
-                            d.relevant ? "bg-teal-100 text-teal-500" : "bg-[#2b2008] text-priority-medium"
+                            d.relevant ? "bg-[#0f2e1c] text-[#4ade80]" : "bg-[#2b2008] text-priority-medium"
                           }`}
                         >
                           {d.relevant ? "Relevant" : "Excluded"}
@@ -247,7 +247,7 @@ export default function TicketDetail() {
                       <div key={i} className="border-t border-line pt-4 first:border-0 first:pt-0">
                         <div className="flex flex-wrap gap-2">
                           <span className="rounded-full bg-line/60 px-2 py-0.5 text-xs font-semibold text-ink-soft">Review {i + 1}</span>
-                          <span className="rounded-full bg-teal-100 px-2 py-0.5 text-xs font-semibold text-teal-500">
+                          <span className="rounded-full bg-[#0f2e1c] px-2 py-0.5 text-xs font-semibold text-[#4ade80]">
                             {Math.round((j.faithfulness_score || 0) * 100)}% faithful
                           </span>
                           <span className="rounded-full bg-brand-50 px-2 py-0.5 text-xs font-semibold text-brand-500">
@@ -319,7 +319,7 @@ export default function TicketDetail() {
             </div>
           </Card>
 
-          <Card className="flex items-center gap-3 border-teal-100 bg-teal-100/40 p-4 text-sm text-teal-700">
+          <Card className="flex items-center gap-3 border-[#0f2e1c] bg-[#0f2e1c]/40 p-4 text-sm text-[#4ade80]">
             <ShieldCheck size={18} />
             <span>Decision trail recorded with this ticket.</span>
           </Card>

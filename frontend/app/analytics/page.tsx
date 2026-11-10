@@ -20,25 +20,24 @@ import { getOverview, listTickets, Overview, TicketSummary } from "@/lib/api";
 import { Card, PageHeading, Button } from "@/components/ui";
 
 const GRAFANA_URL = process.env.NEXT_PUBLIC_GRAFANA_URL || "http://localhost:3001";
-// Current palette (onyx/indigo/mint) -- these were still the pre-reskin
-// hex values and read as visibly disconnected from the rest of the dark UI.
-const OUTCOME_COLORS = ["#6331fb", "#88f9c0", "#f5b942", "#4a4760"];
+// Current palette: midnight ink, azure blue, vermilion orange (sparingly).
+const OUTCOME_COLORS = ["#329dd2", "#ff4c2b", "#f5b942", "#3d4f66"];
 const PRIORITY_COLORS: Record<string, string> = {
-  urgent: "#ff5c72",
-  high: "#ff8a4c",
+  urgent: "#ff4c2b",
+  high: "#ff7a52",
   medium: "#f5b942",
-  low: "#88f9c0",
+  low: "#4db2e3",
 };
-const CHART_LINE = "#201e36";
-const CHART_TICK = { fill: "#a7a4c7", fontSize: 12 };
+const CHART_LINE = "#1b2840";
+const CHART_TICK = { fill: "#9fb0c6", fontSize: 12 };
 const CHART_TOOLTIP_STYLE = {
-  background: "#0d0c1a",
-  border: "1px solid #201e36",
+  background: "#0e1726",
+  border: "1px solid #1b2840",
   borderRadius: 10,
-  color: "#f3f2fb",
+  color: "#f2f5fa",
   fontSize: 13,
 };
-const CHART_TOOLTIP_LABEL_STYLE = { color: "#a7a4c7" };
+const CHART_TOOLTIP_LABEL_STYLE = { color: "#9fb0c6" };
 
 const DASHBOARDS = [
   { uid: "ticket-trends", title: "Ticket Trends" },
@@ -171,8 +170,8 @@ export default function Analytics() {
             <AreaChart data={trendData}>
               <defs>
                 <linearGradient id="vol" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#6331fb" stopOpacity={0.45} />
-                  <stop offset="100%" stopColor="#6331fb" stopOpacity={0} />
+                  <stop offset="0%" stopColor="#329dd2" stopOpacity={0.45} />
+                  <stop offset="100%" stopColor="#329dd2" stopOpacity={0} />
                 </linearGradient>
               </defs>
               <CartesianGrid strokeDasharray="3 3" stroke={CHART_LINE} vertical={false} />
@@ -182,11 +181,11 @@ export default function Analytics() {
               <Area
                 type="monotone"
                 dataKey="total"
-                stroke="#7c4dff"
+                stroke="#4db2e3"
                 strokeWidth={2}
                 fill="url(#vol)"
-                dot={{ r: 2, fill: "#7c4dff", strokeWidth: 0 }}
-                activeDot={{ r: 5, fill: "#88f9c0", stroke: "#0d0c1a", strokeWidth: 2 }}
+                dot={{ r: 2, fill: "#4db2e3", strokeWidth: 0 }}
+                activeDot={{ r: 5, fill: "#ff4c2b", stroke: "#0e1726", strokeWidth: 2 }}
               />
             </AreaChart>
           </ResponsiveContainer>

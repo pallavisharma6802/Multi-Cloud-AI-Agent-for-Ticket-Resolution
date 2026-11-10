@@ -13,7 +13,7 @@ function drawShip(ctx: CanvasRenderingContext2D, x: number, y: number, scale: nu
   ctx.save();
   ctx.translate(x, y);
   ctx.scale(scale, scale);
-  const hullColor = `rgba(${167 + lit * 88}, ${164 + lit * 91}, ${199 + lit * 56}, ${0.35 + lit * 0.55})`;
+  const hullColor = `rgba(${95 + lit * 160}, ${116 + lit * 6}, ${137 - lit * 55}, ${0.35 + lit * 0.55})`;
   ctx.fillStyle = hullColor;
   ctx.beginPath();
   ctx.moveTo(-14, 0);
@@ -68,8 +68,8 @@ export default function LighthouseHero({ height = 180 }: { height?: number }) {
       ctx.clearRect(0, 0, width, height);
 
       const bg = ctx.createLinearGradient(0, 0, 0, height);
-      bg.addColorStop(0, "#0a0718");
-      bg.addColorStop(1, "#01010d");
+      bg.addColorStop(0, "#0b2030");
+      bg.addColorStop(1, "#080f1b");
       ctx.fillStyle = bg;
       ctx.fillRect(0, 0, width, height);
 
@@ -79,8 +79,8 @@ export default function LighthouseHero({ height = 180 }: { height?: number }) {
         const fy = height * (0.5 + 0.15 * Math.sin(t * 0.5 + i * 2));
         const r = 90 + i * 20;
         const fog = ctx.createRadialGradient(fx, fy, 0, fx, fy, r);
-        fog.addColorStop(0, "rgba(167,164,199,0.08)");
-        fog.addColorStop(1, "rgba(167,164,199,0)");
+        fog.addColorStop(0, "rgba(159,176,198,0.08)");
+        fog.addColorStop(1, "rgba(159,176,198,0)");
         ctx.fillStyle = fog;
         ctx.beginPath();
         ctx.arc(fx, fy, r, 0, Math.PI * 2);
@@ -97,9 +97,9 @@ export default function LighthouseHero({ height = 180 }: { height?: number }) {
       ctx.translate(bx, by);
       ctx.rotate(angle);
       const beam = ctx.createLinearGradient(0, 0, beamLen, 0);
-      beam.addColorStop(0, "rgba(136,249,192,0.22)");
-      beam.addColorStop(0.5, "rgba(99,49,251,0.08)");
-      beam.addColorStop(1, "rgba(99,49,251,0)");
+      beam.addColorStop(0, "rgba(255,122,82,0.22)");
+      beam.addColorStop(0.5, "rgba(50,157,210,0.1)");
+      beam.addColorStop(1, "rgba(50,157,210,0)");
       ctx.fillStyle = beam;
       ctx.beginPath();
       ctx.moveTo(0, 0);
@@ -111,8 +111,8 @@ export default function LighthouseHero({ height = 180 }: { height?: number }) {
 
       ctx.beginPath();
       ctx.arc(bx, by, 4, 0, Math.PI * 2);
-      ctx.fillStyle = "#88f9c0";
-      ctx.shadowColor = "#88f9c0";
+      ctx.fillStyle = "#ff4c2b";
+      ctx.shadowColor = "#ff4c2b";
       ctx.shadowBlur = 10;
       ctx.fill();
       ctx.shadowBlur = 0;

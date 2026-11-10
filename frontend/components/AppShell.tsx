@@ -52,14 +52,14 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="flex min-h-screen">
-      <aside className="fixed inset-y-0 left-0 z-30 flex w-64 flex-col bg-brand-900 bg-[radial-gradient(ellipse_400px_280px_at_0%_0%,rgba(36,91,219,0.35),transparent)] px-4 py-6 text-ink-soft">
+      <aside className="fixed inset-y-0 left-0 z-30 flex w-64 flex-col bg-brand-900 bg-[radial-gradient(ellipse_400px_280px_at_0%_0%,rgba(50,157,210,0.3),transparent)] px-4 py-6 text-ink-soft">
         <Link href="/" className="flex items-center gap-2 px-2 text-lg font-bold tracking-tight text-white">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-teal-gradient text-brand-900 shadow-glow">
+          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-gradient text-white shadow-glow">
             <Sparkles size={15} strokeWidth={2.5} />
           </span>
           resolve
         </Link>
-        <span className="mt-1.5 px-2 text-[11px] font-semibold uppercase tracking-wider text-teal-400">
+        <span className="mt-1.5 px-2 text-[11px] font-semibold uppercase tracking-wider text-ink-faint">
           Example build · VS Code support
         </span>
 
@@ -97,7 +97,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
         <div className="mt-auto flex flex-col gap-4">
           <div className="rounded-xl border border-white/10 bg-white/5 p-4 text-sm">
             <div className="flex items-center gap-2 font-semibold text-white">
-              <ShieldCheck size={16} className="text-teal-400" />
+              <ShieldCheck size={16} className="text-brand-500" />
               AI with accountability
             </div>
             <p className="mt-2 text-xs leading-relaxed text-ink-soft">
@@ -105,7 +105,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
             </p>
             <Link
               href="/triage"
-              className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-teal-400 hover:text-teal-100"
+              className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-brand-500 hover:text-white"
             >
               Explore the inbox <ArrowUpRight size={13} />
             </Link>

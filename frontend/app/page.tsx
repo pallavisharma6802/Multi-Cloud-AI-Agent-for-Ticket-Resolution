@@ -74,7 +74,7 @@ export default function Home() {
       <div className="relative mb-6 overflow-hidden rounded-2xl border border-line">
         <LighthouseHero height={160} />
         <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-canvas to-transparent px-6 pb-3 pt-10">
-          <p className="text-xs font-semibold uppercase tracking-widest text-teal-400">A beam that only lights what&apos;s really there</p>
+          <p className="text-xs font-semibold uppercase tracking-widest text-ink-soft">A beam that only lights what&apos;s really there</p>
         </div>
       </div>
 
@@ -120,7 +120,7 @@ export default function Home() {
               <div className="mt-2.5 flex items-center gap-2">
                 <div className="text-sm font-bold text-ink">{s.title}</div>
                 {s.tag && (
-                  <span className="rounded-full bg-teal-100 px-1.5 py-0.5 text-[10px] font-bold text-teal-500">{s.tag}</span>
+                  <span className="rounded-full bg-brand-100 px-1.5 py-0.5 text-[10px] font-bold text-brand-600">{s.tag}</span>
                 )}
               </div>
               <p className="mt-1 text-xs leading-relaxed text-ink-soft">{s.body}</p>
