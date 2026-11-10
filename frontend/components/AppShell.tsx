@@ -52,7 +52,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="flex min-h-screen">
-      <aside className="fixed inset-y-0 left-0 z-30 flex w-64 flex-col bg-brand-900 bg-[radial-gradient(ellipse_400px_280px_at_0%_0%,rgba(36,91,219,0.35),transparent)] px-4 py-6 text-brand-100">
+      <aside className="fixed inset-y-0 left-0 z-30 flex w-64 flex-col bg-brand-900 bg-[radial-gradient(ellipse_400px_280px_at_0%_0%,rgba(36,91,219,0.35),transparent)] px-4 py-6 text-ink-soft">
         <Link href="/" className="flex items-center gap-2.5 px-2 text-2xl font-bold tracking-tight text-white">
           <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-teal-gradient text-brand-900 shadow-glow">
             <Sparkles size={19} strokeWidth={2.5} />
@@ -70,7 +70,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
           <Plus size={16} /> New ticket
         </Link>
 
-        <div className="mt-8 px-2 text-xs font-semibold uppercase tracking-wider text-brand-100/50">
+        <div className="mt-8 px-2 text-xs font-semibold uppercase tracking-wider text-ink-faint">
           Workspace
         </div>
         <nav className="mt-2 flex flex-col gap-1">
@@ -84,7 +84,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                 className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition ${
                   active
                     ? "bg-brand-500 text-white shadow-card"
-                    : "text-brand-100/80 hover:bg-white/5 hover:text-white"
+                    : "text-ink-soft hover:bg-white/5 hover:text-white"
                 }`}
               >
                 <LinkIcon size={18} strokeWidth={2} />
@@ -100,7 +100,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               <ShieldCheck size={16} className="text-teal-400" />
               AI with accountability
             </div>
-            <p className="mt-2 text-xs leading-relaxed text-brand-100/70">
+            <p className="mt-2 text-xs leading-relaxed text-ink-soft">
               Every resolution ships with evidence and a decision trail.
             </p>
             <Link
@@ -111,15 +111,15 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
             </Link>
           </div>
           <div className="flex items-center gap-3 border-t border-white/10 pt-4">
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-brand-100">
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-ink">
               <UserRound size={16} />
             </span>
             <div className="text-sm">
               <div className="font-medium text-white">Anonymous workspace</div>
-              <div className="text-xs text-brand-100/60">No sign-in, single shared demo</div>
+              <div className="text-xs text-ink-faint">No sign-in, single shared demo</div>
             </div>
           </div>
-          <p className="text-[11px] leading-relaxed text-brand-100/40">
+          <p className="text-[11px] leading-relaxed text-ink-faint/70">
             No accounts or profile pages. This is a single-tenant demo of the resolution
             pipeline, not a multi-user product. Each ticket already carries its own
             submitter email.
