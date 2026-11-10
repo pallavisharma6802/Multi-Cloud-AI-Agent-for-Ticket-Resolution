@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import argparse
 import sys
-import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 
@@ -31,37 +31,49 @@ TICKETS = [
 ]
 
 
+def submit_one(args_base_url, i, title, desc, total):
+    try:
+        r = requests.post(
+            f"{args_base_url}/api/v1/tickets",
+            json={
+                "title": title,
+                "description": desc,
+                "user_email": f"seed-user-{i}@example.com",
+                "domain_pack": "vscode_support",
+            },
+            timeout=180,
+        )
+        if r.status_code in (200, 201):
+            body = r.json()
+            print(f"[{i+1}/{total}] OK {body['ticket_id']} "
+                  f"conf={body['confidence_score']:.2f} review={body['requires_human_review']}")
+            return True
+        print(f"[{i+1}] FAIL {r.status_code}: {r.text[:200]}")
+        return False
+    except Exception as e:
+        print(f"[{i+1}] ERROR {e}")
+        return False
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--base-url", default="http://localhost:8000")
     ap.add_argument("--n", type=int, default=len(TICKETS))
+    ap.add_argument("--concurrency", type=int, default=2)
     args = ap.parse_args()
 
+    subset = TICKETS[: args.n]
     ok = fail = 0
-    for i, (title, desc) in enumerate(TICKETS[: args.n]):
-        try:
-            r = requests.post(
-                f"{args.base_url}/api/v1/tickets",
-                json={
-                    "title": title,
-                    "description": desc,
-                    "user_email": f"seed-user-{i}@example.com",
-                    "domain_pack": "vscode_support",
-                },
-                timeout=180,
-            )
-            if r.status_code in (200, 201):
-                body = r.json()
-                print(f"[{i+1}/{len(TICKETS[:args.n])}] OK {body['ticket_id']} "
-                      f"conf={body['confidence_score']:.2f} review={body['requires_human_review']}")
+    with ThreadPoolExecutor(max_workers=args.concurrency) as pool:
+        futures = [
+            pool.submit(submit_one, args.base_url, i, title, desc, len(subset))
+            for i, (title, desc) in enumerate(subset)
+        ]
+        for f in as_completed(futures):
+            if f.result():
                 ok += 1
             else:
-                print(f"[{i+1}] FAIL {r.status_code}: {r.text[:200]}")
                 fail += 1
-        except Exception as e:
-            print(f"[{i+1}] ERROR {e}")
-            fail += 1
-        time.sleep(1)
     print(f"\ndone: {ok} ok, {fail} failed")
     sys.exit(0 if fail == 0 else 1)
 
