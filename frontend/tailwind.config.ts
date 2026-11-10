@@ -38,16 +38,19 @@ const config: Config = {
         },
       },
       // Site-wide type bump -- every text-xs/sm/base/etc now resolves bigger.
-      // Fixes "font is too small" without touching every className.
+      // A previous pass over-corrected "too small" into "too big", especially
+      // at the heading/stat sizes (4xl went to 42px). Pulled back down,
+      // closer to Tailwind's own defaults, with just a slight bump on body
+      // text (xs/sm/base) since plain defaults did read a little small.
       fontSize: {
-        xs: ["13px", { lineHeight: "1.5" }],
-        sm: ["15px", { lineHeight: "1.6" }],
-        base: ["16px", { lineHeight: "1.65" }],
-        lg: ["19px", { lineHeight: "1.6" }],
-        xl: ["22px", { lineHeight: "1.5" }],
-        "2xl": ["26px", { lineHeight: "1.35" }],
-        "3xl": ["33px", { lineHeight: "1.25" }],
-        "4xl": ["42px", { lineHeight: "1.15" }],
+        xs: ["12px", { lineHeight: "1.5" }],
+        sm: ["13.5px", { lineHeight: "1.5" }],
+        base: ["15px", { lineHeight: "1.6" }],
+        lg: ["17px", { lineHeight: "1.55" }],
+        xl: ["19px", { lineHeight: "1.45" }],
+        "2xl": ["22px", { lineHeight: "1.3" }],
+        "3xl": ["28px", { lineHeight: "1.2" }],
+        "4xl": ["34px", { lineHeight: "1.1" }],
       },
       borderRadius: {
         xl: "14px",
