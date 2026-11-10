@@ -6,6 +6,7 @@ Unsupported claims feed the Reflexion re-draft loop.
 from __future__ import annotations
 
 import logging
+import re
 from typing import List
 
 from pydantic import BaseModel, Field
@@ -15,6 +16,38 @@ from app.llm.bedrock_client import LLMCallMetadata, get_llm_client
 from app.schemas.response import KBDocument
 
 logger = logging.getLogger(__name__)
+
+# The judge's own prompt (rule 5 below) tells it that an omission phrased as
+# "the draft does not mention X" is not an unsupported claim, but
+# amazon.nova-lite-v1:0 doesn't reliably follow that rule even given matching
+# examples -- measured on a 109-ticket live batch, roughly 20 of the escalated
+# tickets were flagged on exactly this omission pattern. Enforce the judge's
+# own stated rule in code as a backstop rather than trusting compliance.
+_OMISSION_RE = re.compile(
+    r"does not (?:mention|state|explicitly|provide|specify)|"
+    r"is not (?:mentioned|explicitly|stated)|"
+    r"without (?:providing|explicitly|mentioning|stating)|"
+    r"not explicitly (?:mentioned|stated|supported|state)",
+    re.IGNORECASE,
+)
+# Also seen in production: the judge occasionally puts a plainly affirmative
+# statement ("the URLs provided are accurate and necessary") or a non-claim
+# fragment ("The WSL service is running.") into unsupported_claims, directly
+# contradicting its own instruction never to do that. Require some actual
+# negative/failure language before accepting an entry as a real claim.
+_NEGATIVE_INDICATOR_RE = re.compile(
+    r"\b(incorrect|inaccurate|wrong|invented|hallucinat|fabricat|false|untrue|"
+    r"misleading|unsafe|not accurate|does not exist|no such|not true)\b",
+    re.IGNORECASE,
+)
+
+
+def _is_valid_unsupported_claim(claim: str) -> bool:
+    if _OMISSION_RE.search(claim):
+        return False
+    if "not" not in claim.lower() and not _NEGATIVE_INDICATOR_RE.search(claim):
+        return False
+    return True
 
 
 class JudgeResult(BaseModel):
@@ -99,4 +132,11 @@ Be strict about material facts and capabilities. Fluent wording is not evidence 
             temperature=0.0,
             num_predict=400,
         )
+
+        filtered = [c for c in result.unsupported_claims if _is_valid_unsupported_claim(c)]
+        if len(filtered) != len(result.unsupported_claims):
+            dropped = [c for c in result.unsupported_claims if c not in filtered]
+            logger.info(f"Judge: dropped {len(dropped)} non-compliant unsupported_claims entries: {dropped}")
+            result = result.model_copy(update={"unsupported_claims": filtered})
+
         return result, meta
