@@ -53,9 +53,9 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex min-h-screen">
       <aside className="fixed inset-y-0 left-0 z-30 flex w-64 flex-col bg-brand-900 bg-[radial-gradient(ellipse_400px_280px_at_0%_0%,rgba(36,91,219,0.35),transparent)] px-4 py-6 text-ink-soft">
-        <Link href="/" className="flex items-center gap-2.5 px-2 text-2xl font-bold tracking-tight text-white">
-          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-teal-gradient text-brand-900 shadow-glow">
-            <Sparkles size={19} strokeWidth={2.5} />
+        <Link href="/" className="flex items-center gap-2 px-2 text-lg font-bold tracking-tight text-white">
+          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-teal-gradient text-brand-900 shadow-glow">
+            <Sparkles size={15} strokeWidth={2.5} />
           </span>
           resolve
         </Link>

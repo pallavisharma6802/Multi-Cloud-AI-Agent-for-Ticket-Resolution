@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import { getOverview, Overview } from "@/lib/api";
 import { Card, PageHeading, StatCard, Button } from "@/components/ui";
+import LighthouseHero from "@/components/LighthouseHero";
 
 type Tab = "roster" | "activity" | "explore";
 
@@ -70,6 +71,13 @@ export default function Home() {
 
   return (
     <div>
+      <div className="relative mb-6 overflow-hidden rounded-2xl border border-line">
+        <LighthouseHero height={160} />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-canvas to-transparent px-6 pb-3 pt-10">
+          <p className="text-xs font-semibold uppercase tracking-widest text-teal-400">A beam that only lights what&apos;s really there</p>
+        </div>
+      </div>
+
       <PageHeading
         title="AI support for your organization"
         description={
@@ -102,23 +110,20 @@ export default function Home() {
           job, orchestrated by a LangGraph state machine that can retry or escalate at two different points.
         </p>
 
-        <div className="relative mt-7 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <div className="absolute left-0 right-0 top-6 hidden h-px bg-gradient-to-r from-transparent via-line to-transparent lg:block" />
-          {steps.map((s, i) => (
+        <div className="relative mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="absolute left-0 right-0 top-4 hidden h-px bg-gradient-to-r from-transparent via-line to-transparent lg:block" />
+          {steps.map((s) => (
             <div key={s.title} className="relative">
-              <div className="flex items-center gap-3">
-                <span className="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-brand-gradient text-white shadow-glow">
-                  <s.icon size={20} strokeWidth={2.25} />
-                </span>
-                <div className="text-3xl font-bold text-line">{i + 1}</div>
-              </div>
-              <div className="mt-3 flex items-center gap-2">
-                <div className="text-base font-bold text-ink">{s.title}</div>
+              <span className="relative z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-brand-gradient text-white">
+                <s.icon size={14} strokeWidth={2.25} />
+              </span>
+              <div className="mt-2.5 flex items-center gap-2">
+                <div className="text-sm font-bold text-ink">{s.title}</div>
                 {s.tag && (
-                  <span className="rounded-full bg-teal-100 px-2 py-0.5 text-xs font-bold text-teal-500">{s.tag}</span>
+                  <span className="rounded-full bg-teal-100 px-1.5 py-0.5 text-[10px] font-bold text-teal-500">{s.tag}</span>
                 )}
               </div>
-              <p className="mt-1.5 text-sm leading-relaxed text-ink-soft">{s.body}</p>
+              <p className="mt-1 text-xs leading-relaxed text-ink-soft">{s.body}</p>
             </div>
           ))}
         </div>

@@ -43,14 +43,14 @@ const config: Config = {
       // closer to Tailwind's own defaults, with just a slight bump on body
       // text (xs/sm/base) since plain defaults did read a little small.
       fontSize: {
-        xs: ["12px", { lineHeight: "1.5" }],
-        sm: ["13.5px", { lineHeight: "1.5" }],
-        base: ["15px", { lineHeight: "1.6" }],
-        lg: ["17px", { lineHeight: "1.55" }],
-        xl: ["19px", { lineHeight: "1.45" }],
-        "2xl": ["22px", { lineHeight: "1.3" }],
-        "3xl": ["28px", { lineHeight: "1.2" }],
-        "4xl": ["34px", { lineHeight: "1.1" }],
+        xs: ["11px", { lineHeight: "1.45" }],
+        sm: ["12.5px", { lineHeight: "1.5" }],
+        base: ["14px", { lineHeight: "1.55" }],
+        lg: ["15.5px", { lineHeight: "1.5" }],
+        xl: ["17px", { lineHeight: "1.4" }],
+        "2xl": ["19px", { lineHeight: "1.3" }],
+        "3xl": ["23px", { lineHeight: "1.2" }],
+        "4xl": ["28px", { lineHeight: "1.15" }],
       },
       borderRadius: {
         xl: "14px",
