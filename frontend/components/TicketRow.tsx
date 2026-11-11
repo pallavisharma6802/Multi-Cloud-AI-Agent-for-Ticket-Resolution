@@ -9,10 +9,10 @@ function initials(email: string) {
 }
 
 const BAR_COLORS: Record<string, string> = {
-  resolved: "#22c55e",
-  in_progress: "#f59e0b",
-  closed: "#94a3b8",
-  open: "#329dd2",
+  resolved: "#2dd4bf",
+  in_progress: "#f2b84b",
+  closed: "#8f766c",
+  open: "#e3a655",
 };
 
 export default function TicketRow({ ticket }: { ticket: TicketSummary }) {
@@ -23,7 +23,7 @@ export default function TicketRow({ ticket }: { ticket: TicketSummary }) {
       href={`/tickets/${ticket.ticket_id}`}
       style={{ borderLeft: `3px solid ${barColor}` }}
       className={`flex items-center gap-4 border-b border-line px-5 py-4 transition hover:bg-line/30 ${
-        needsReview ? "bg-[#fef3c7]/50" : ""
+        needsReview ? "bg-priority-medium/10" : ""
       }`}
     >
       <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-50 text-xs font-semibold text-brand-700">

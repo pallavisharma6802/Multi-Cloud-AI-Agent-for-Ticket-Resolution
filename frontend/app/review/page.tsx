@@ -6,9 +6,9 @@ import { TicketSummary, listTickets } from "@/lib/api";
 import { Card, PageHeading, Button, PriorityBadge } from "@/components/ui";
 
 const COLUMNS: Array<{ key: string; label: string; accent: string }> = [
-  { key: "open", label: "Ticket opened", accent: "#329dd2" },
-  { key: "urgent", label: "Urgent", accent: "#dc2626" },
-  { key: "in_progress", label: "On hold · needs review", accent: "#f59e0b" },
+  { key: "open", label: "Ticket opened", accent: "#e3a655" },
+  { key: "urgent", label: "Urgent", accent: "#f87171" },
+  { key: "in_progress", label: "On hold · needs review", accent: "#f2b84b" },
 ];
 
 function timeAgo(iso: string) {
@@ -94,7 +94,7 @@ export default function ReviewBoard() {
       />
 
       {error && (
-        <Card className="mb-6 border-[#fecaca] bg-[#fef2f2] p-4 text-sm text-priority-urgent">{error}</Card>
+        <Card className="mb-6 border-priority-urgent/30 bg-priority-urgent/10 p-4 text-sm text-priority-urgent">{error}</Card>
       )}
 
       {loading && !tickets.length ? (

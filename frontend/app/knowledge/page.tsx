@@ -12,7 +12,7 @@ const CATEGORY_LABELS: Record<string, string> = {
   RELEASE_NOTES: "Release notes",
 };
 
-const CATEGORY_COLORS = ["#329dd2", "#8b5cf6", "#10b981", "#f97316", "#ec4899", "#eab308", "#0891b2"];
+const CATEGORY_COLORS = ["#e3a655", "#a78bfa", "#2dd4bf", "#fb923c", "#e78fa3", "#f2b84b", "#22d3ee"];
 
 function label(category: string) {
   return CATEGORY_LABELS[category] || category.charAt(0) + category.slice(1).toLowerCase().replace(/_/g, " ");
@@ -53,7 +53,7 @@ export default function Knowledge() {
       )}
 
       {error && (
-        <Card className="border-[#fecaca] bg-[#fef2f2] p-4 text-sm text-priority-urgent">
+        <Card className="border-priority-urgent/30 bg-priority-urgent/10 p-4 text-sm text-priority-urgent">
           Couldn&apos;t load the knowledge base: {error}
         </Card>
       )}

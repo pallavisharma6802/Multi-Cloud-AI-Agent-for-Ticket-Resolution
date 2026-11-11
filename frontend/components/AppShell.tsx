@@ -17,10 +17,10 @@ import { API_BASE_URL } from "@/lib/api";
 import Mascot from "./Mascot";
 
 const links = [
-  { href: "/overview", label: "Overview", icon: LayoutGrid, color: "#329dd2", tint: "#eaf4fb" },
-  { href: "/triage", label: "Inbox", icon: Inbox, color: "#8b5cf6", tint: "#f3effe" },
-  { href: "/review", label: "Review board", icon: Columns3, color: "#f97316", tint: "#fff7ed" },
-  { href: "/knowledge", label: "Knowledge base", icon: BookOpen, color: "#10b981", tint: "#ecfdf5" },
+  { href: "/overview", label: "Overview", icon: LayoutGrid, color: "#f0c479", tint: "rgba(227,166,85,0.15)" },
+  { href: "/triage", label: "Inbox", icon: Inbox, color: "#c4b5fd", tint: "rgba(167,139,250,0.15)" },
+  { href: "/review", label: "Review board", icon: Columns3, color: "#fdba74", tint: "rgba(251,146,60,0.15)" },
+  { href: "/knowledge", label: "Knowledge base", icon: BookOpen, color: "#5eead4", tint: "rgba(45,212,191,0.15)" },
 ];
 
 const titles: Record<string, string> = {
@@ -55,24 +55,24 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex min-h-screen">
       <aside className="fixed inset-y-0 left-0 z-30 flex w-64 flex-col border-r border-line bg-surface px-4 py-6 text-ink-soft">
-        <Link href="/" className="flex items-center gap-2 px-2 text-lg font-bold tracking-tight text-ink">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-gradient text-white shadow-glow">
+        <Link href="/" className="flex items-center gap-2 px-2 font-serif text-xl font-semibold tracking-tight text-ink">
+          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-gradient text-[#15100d] shadow-glow">
             <Sparkles size={15} strokeWidth={2.5} />
           </span>
           resolve
         </Link>
-        <span className="mt-1.5 px-2 text-[11px] font-semibold uppercase tracking-wider text-ink-faint">
+        <span className="mt-1.5 px-2 font-mono text-[10px] uppercase tracking-wider text-ink-faint">
           Example build · VS Code support
         </span>
 
         <Link
           href="/submit"
-          className="mt-6 flex items-center justify-center gap-2 rounded-xl bg-brand-500 px-4 py-2.5 text-sm font-semibold text-white shadow-card transition hover:bg-brand-600"
+          className="mt-6 flex items-center justify-center gap-2 rounded-full bg-brand-500 px-4 py-2.5 font-mono text-xs font-medium uppercase tracking-wide text-[#15100d] shadow-card transition hover:bg-brand-700"
         >
           <Plus size={16} /> New ticket
         </Link>
 
-        <div className="mt-8 px-2 text-xs font-semibold uppercase tracking-wider text-ink-faint">
+        <div className="mt-8 px-2 font-mono text-[10px] uppercase tracking-wider text-ink-faint">
           Workspace
         </div>
         <nav className="mt-2 flex flex-col gap-1">

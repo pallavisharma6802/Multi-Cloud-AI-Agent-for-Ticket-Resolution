@@ -30,13 +30,13 @@ export function StatCard({
 }) {
   // Flat KPI-tile style: neutral card, solid-colored icon badge carries the
   // color -- not the whole card -- so a row of these reads as a real support
-  // dashboard (distinct colors per metric) rather than one brand wash.
+  // dashboard (distinct colors per metric) rather than one wash.
   const iconBg: Record<string, string> = {
     default: "bg-ink-faint/20 text-ink-soft",
-    brand: "bg-brand-500 text-white",
-    teal: "bg-[#2fb66a] text-white",
-    amber: "bg-priority-medium text-white",
-    purple: "bg-[#8b5cf6] text-white",
+    brand: "bg-brand-500 text-[#15100d]",
+    teal: "bg-[#2dd4bf] text-[#0d1f1c]",
+    amber: "bg-priority-medium text-[#2b1d06]",
+    purple: "bg-[#a78bfa] text-[#1c1530]",
   };
   return (
     <Card className="p-5">
@@ -48,24 +48,24 @@ export function StatCard({
           </span>
         )}
       </div>
-      <div className="mt-3 text-3xl font-bold tracking-tight text-ink">{value}</div>
+      <div className="mt-3 font-serif text-3xl font-semibold tracking-tight text-ink">{value}</div>
       {foot && <div className="mt-1 text-xs text-ink-faint">{foot}</div>}
     </Card>
   );
 }
 
 const PRIORITY_STYLES: Record<string, string> = {
-  low: "bg-[#e0f2fe] text-[#0369a1]",
-  medium: "bg-[#fef3c7] text-priority-medium",
-  high: "bg-[#ffe4d5] text-priority-high",
-  urgent: "bg-[#fee2e2] text-priority-urgent",
+  low: "bg-priority-low/15 text-priority-low",
+  medium: "bg-priority-medium/15 text-priority-medium",
+  high: "bg-priority-high/15 text-priority-high",
+  urgent: "bg-priority-urgent/15 text-priority-urgent",
 };
 
 export function PriorityBadge({ priority }: { priority: string }) {
   const key = (priority || "").toLowerCase();
   return (
     <span
-      className={`inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold capitalize ${
+      className={`inline-flex items-center rounded-full px-2.5 py-1 font-mono text-[11px] font-medium uppercase tracking-wide ${
         PRIORITY_STYLES[key] || "bg-line/60 text-ink-soft"
       }`}
     >
@@ -80,8 +80,8 @@ export function PriorityBadge({ priority }: { priority: string }) {
 // requires_human_review is true) -- there is no separate "needs_review" status.
 const STATUS_STYLES: Record<string, string> = {
   open: "bg-line/60 text-ink-soft",
-  in_progress: "bg-[#fef3c7] text-priority-medium",
-  resolved: "bg-[#dcfce7] text-[#15803d]",
+  in_progress: "bg-priority-medium/15 text-priority-medium",
+  resolved: "bg-[#2dd4bf]/15 text-[#5eead4]",
   closed: "bg-line/60 text-ink-soft",
 };
 
@@ -93,7 +93,7 @@ export function StatusBadge({ status }: { status: string }) {
   const key = (status || "").toLowerCase();
   return (
     <span
-      className={`inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold capitalize ${
+      className={`inline-flex items-center rounded-full px-2.5 py-1 font-mono text-[11px] font-medium uppercase tracking-wide ${
         STATUS_STYLES[key] || "bg-line/60 text-ink-soft"
       }`}
     >
@@ -111,13 +111,13 @@ export function Button({
   variant?: "primary" | "secondary" | "ghost";
 }) {
   const variants: Record<string, string> = {
-    primary: "bg-brand-500 text-white hover:bg-brand-600 shadow-card",
-    secondary: "bg-surface border border-line text-ink hover:border-brand-500/40",
+    primary: "bg-brand-500 text-[#15100d] hover:bg-brand-700 shadow-card",
+    secondary: "bg-transparent border-2 border-ink text-ink hover:border-brand-500 hover:text-brand-700",
     ghost: "text-ink-soft hover:bg-line/60",
   };
   return (
     <button
-      className={`inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition disabled:cursor-wait disabled:opacity-50 ${variants[variant]} ${className}`}
+      className={`inline-flex items-center justify-center gap-2 rounded-full px-4 py-2.5 font-mono text-xs font-medium uppercase tracking-wide transition disabled:cursor-wait disabled:opacity-50 ${variants[variant]} ${className}`}
       {...rest}
     >
       {children}
@@ -137,7 +137,7 @@ export function PageHeading({
   return (
     <div className="mb-8 flex flex-wrap items-start justify-between gap-4">
       <div className="max-w-2xl">
-        <h1 className="text-3xl font-semibold tracking-tight text-ink sm:text-4xl">{title}</h1>
+        <h1 className="font-serif text-3xl font-semibold tracking-tight text-ink sm:text-4xl">{title}</h1>
         {description && <p className="mt-3 text-lg leading-relaxed text-ink-soft">{description}</p>}
       </div>
       {action}

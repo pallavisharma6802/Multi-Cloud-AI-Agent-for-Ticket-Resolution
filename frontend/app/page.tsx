@@ -16,14 +16,14 @@ import {
 import { Card, Button } from "@/components/ui";
 
 const AGENTS = [
-  { icon: SearchCheck, title: "Intent & priority", body: "Classifies what the ticket is actually asking for and how urgent it is.", bg: "#eaf4fb", fg: "#1f6b93" },
-  { icon: FileSearch, title: "Retrieval", body: "Pulls the knowledge-base passages that are relevant to the request.", bg: "#f3effe", fg: "#6d28d9" },
-  { icon: FileCheck2, title: "Document grader (CRAG)", body: "Scores each retrieved passage and drops anything that doesn't apply.", bg: "#ecfdf5", fg: "#047857" },
-  { icon: Sparkles, title: "Drafting", body: "Writes a response grounded only in the passages that passed grading.", bg: "#fff7ed", fg: "#c2410c" },
-  { icon: ShieldCheck, title: "Judge (self-RAG)", body: "Checks the draft's faithfulness and relevance, escalating to a human when it can't be sure.", bg: "#fdf2f8", fg: "#be185d" },
-  { icon: Repeat, title: "Continuation", body: "Decides whether the draft needs another retrieval/drafting pass.", bg: "#fefce8", fg: "#a16207" },
-  { icon: Lock, title: "Security", body: "Screens for sensitive or risky content that shouldn't go out unreviewed.", bg: "#fef2f2", fg: "#b91c1c" },
-  { icon: SmilePlus, title: "Sentiment", body: "Reads tone, so frustrated or urgent requests get flagged accordingly.", bg: "#e0f2fe", fg: "#0369a1" },
+  { icon: SearchCheck, title: "Intent & priority", body: "Classifies what the ticket is actually asking for and how urgent it is.", bg: "rgba(227,166,85,0.15)", fg: "#f0c479" },
+  { icon: FileSearch, title: "Retrieval", body: "Pulls the knowledge-base passages that are relevant to the request.", bg: "rgba(167,139,250,0.15)", fg: "#c4b5fd" },
+  { icon: FileCheck2, title: "Document grader (CRAG)", body: "Scores each retrieved passage and drops anything that doesn't apply.", bg: "rgba(45,212,191,0.15)", fg: "#5eead4" },
+  { icon: Sparkles, title: "Drafting", body: "Writes a response grounded only in the passages that passed grading.", bg: "rgba(251,146,60,0.15)", fg: "#fdba74" },
+  { icon: ShieldCheck, title: "Judge (self-RAG)", body: "Checks the draft's faithfulness and relevance, escalating to a human when it can't be sure.", bg: "rgba(231,143,163,0.15)", fg: "#f3b6c4" },
+  { icon: Repeat, title: "Continuation", body: "Decides whether the draft needs another retrieval/drafting pass.", bg: "rgba(242,184,75,0.15)", fg: "#facc15" },
+  { icon: Lock, title: "Security", body: "Screens for sensitive or risky content that shouldn't go out unreviewed.", bg: "rgba(248,113,113,0.15)", fg: "#f87171" },
+  { icon: SmilePlus, title: "Sentiment", body: "Reads tone, so frustrated or urgent requests get flagged accordingly.", bg: "rgba(34,211,238,0.15)", fg: "#67e8f9" },
 ];
 
 const WORDMARK = "resolve".split("");
@@ -51,7 +51,11 @@ export default function HomePage() {
   return (
     <div>
       <section className="flex flex-col items-center justify-center py-10 text-center">
-        <h1 className="flex text-6xl font-extrabold tracking-tight text-ink sm:text-7xl">
+        <span className="inline-flex items-center gap-1.5 rounded-full border-2 border-brand-500 px-3 py-1 font-mono text-[10px] uppercase tracking-wide text-brand-700">
+          <Sparkles size={11} /> Example build
+        </span>
+
+        <h1 className="mt-5 flex font-serif text-6xl font-semibold tracking-tight text-ink sm:text-7xl">
           {WORDMARK.map((letter, i) => (
             <span key={i} ref={(el) => void (letterRefs.current[i] = el)} className="inline-block">
               {letter}
@@ -82,7 +86,7 @@ export default function HomePage() {
 
       <section className="mt-2 mb-6">
         <div className="mx-auto max-w-xl text-center">
-          <h2 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">How it works</h2>
+          <h2 className="font-serif text-2xl font-semibold tracking-tight text-ink sm:text-3xl">How it works</h2>
           <p className="mt-2 text-sm text-ink-soft">Eight agents, one pipeline, every step logged.</p>
         </div>
 
@@ -99,7 +103,7 @@ export default function HomePage() {
                 {i < AGENTS.length - 1 && <span className="my-1 w-px flex-1 bg-line" />}
               </div>
               <div className={i < AGENTS.length - 1 ? "pb-8" : ""}>
-                <span className="text-xs font-semibold text-ink-faint">Step {i + 1} of {AGENTS.length}</span>
+                <span className="font-mono text-[10px] uppercase tracking-wide text-ink-faint">Step {i + 1} of {AGENTS.length}</span>
                 <div className="text-sm font-semibold text-ink">{a.title}</div>
                 <p className="mt-1 text-xs leading-relaxed text-ink-soft">{a.body}</p>
               </div>

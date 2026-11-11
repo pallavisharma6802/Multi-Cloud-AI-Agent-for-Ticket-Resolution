@@ -78,7 +78,7 @@ export default function Mascot() {
       aria-hidden="true"
     >
       <svg viewBox="0 0 100 100" className="h-full w-full overflow-visible">
-        <circle cx="50" cy="54" r="38" fill="#329dd2" />
+        <circle cx="50" cy="54" r="38" fill="#e3a655" />
         <circle cx="50" cy="54" r="38" fill="url(#mascot-shine)" opacity="0.35" />
         <defs>
           <radialGradient id="mascot-shine" cx="35%" cy="30%" r="60%">
@@ -88,17 +88,17 @@ export default function Mascot() {
         </defs>
 
         <g ref={headRef}>
-          <ellipse cx="34" cy="52" rx="10" ry="11" fill="#ffffff" />
-          <ellipse cx="66" cy="52" rx="10" ry="11" fill="#ffffff" />
-          <circle ref={leftPupilRef} cx="34" cy="52" r="4.5" fill="#0f1a2e" />
-          <circle ref={rightPupilRef} cx="66" cy="52" r="4.5" fill="#0f1a2e" />
-          <rect ref={leftLidRef} x="23" y="41" width="22" height="22" fill="#329dd2" style={{ transformOrigin: "34px 52px" }} transform="scale(1, 0)" />
-          <rect ref={rightLidRef} x="55" y="41" width="22" height="22" fill="#329dd2" style={{ transformOrigin: "66px 52px" }} transform="scale(1, 0)" />
-          <path d="M 38 70 Q 50 78 62 70" stroke="#0f1a2e" strokeWidth="3" strokeLinecap="round" fill="none" />
+          <ellipse cx="34" cy="52" rx="10" ry="11" fill="#211815" />
+          <ellipse cx="66" cy="52" rx="10" ry="11" fill="#211815" />
+          <circle ref={leftPupilRef} cx="34" cy="52" r="4.5" fill="#f6ebe3" />
+          <circle ref={rightPupilRef} cx="66" cy="52" r="4.5" fill="#f6ebe3" />
+          <rect ref={leftLidRef} x="23" y="41" width="22" height="22" fill="#e3a655" style={{ transformOrigin: "34px 52px" }} transform="scale(1, 0)" />
+          <rect ref={rightLidRef} x="55" y="41" width="22" height="22" fill="#e3a655" style={{ transformOrigin: "66px 52px" }} transform="scale(1, 0)" />
+          <path d="M 38 70 Q 50 78 62 70" stroke="#211815" strokeWidth="3" strokeLinecap="round" fill="none" />
         </g>
 
-        <circle cx="50" cy="12" r="5" fill="#1f6b93" />
-        <rect x="48.5" y="16" width="3" height="10" fill="#1f6b93" />
+        <circle cx="50" cy="12" r="5" fill="#e78fa3" />
+        <rect x="48.5" y="16" width="3" height="10" fill="#e78fa3" />
       </svg>
     </div>
   );

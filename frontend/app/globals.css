@@ -14,7 +14,7 @@ body {
 
 body {
   @apply text-ink font-sans antialiased;
-  background: #f3f5f9;
+  background: #211815;
 }
 
 ::selection {
