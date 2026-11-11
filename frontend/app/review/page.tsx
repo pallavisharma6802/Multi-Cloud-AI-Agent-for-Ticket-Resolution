@@ -75,8 +75,8 @@ export default function ReviewBoard() {
       const status = (t.status || "").toLowerCase();
       const priority = (t.priority || "").toLowerCase();
       if (status === "resolved" || status === "closed") map.resolved.push(t);
-      else if (status === "in_progress") map.in_progress.push(t);
       else if (priority === "urgent") map.urgent.push(t);
+      else if (status === "in_progress") map.in_progress.push(t);
       else map.open.push(t);
     });
     return map;

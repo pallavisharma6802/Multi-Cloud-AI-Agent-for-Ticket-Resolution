@@ -16,14 +16,15 @@ import {
 import { API_BASE_URL } from "@/lib/api";
 
 const links = [
-  { href: "/", label: "Overview", icon: LayoutGrid },
+  { href: "/overview", label: "Overview", icon: LayoutGrid },
   { href: "/triage", label: "Inbox", icon: Inbox },
   { href: "/review", label: "Review board", icon: Columns3 },
   { href: "/knowledge", label: "Knowledge base", icon: BookOpen },
 ];
 
 const titles: Record<string, string> = {
-  "/": "Overview",
+  "/": "Home",
+  "/overview": "Overview",
   "/triage": "Inbox",
   "/review": "Review board",
   "/submit": "New ticket",
@@ -52,14 +53,14 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="flex min-h-screen">
-      <aside className="fixed inset-y-0 left-0 z-30 flex w-64 flex-col bg-brand-900 bg-[radial-gradient(ellipse_400px_280px_at_0%_0%,rgba(50,157,210,0.3),transparent)] px-4 py-6 text-white/65">
-        <Link href="/" className="flex items-center gap-2 px-2 text-lg font-bold tracking-tight text-white">
+      <aside className="fixed inset-y-0 left-0 z-30 flex w-64 flex-col border-r border-line bg-surface px-4 py-6 text-ink-soft">
+        <Link href="/" className="flex items-center gap-2 px-2 text-lg font-bold tracking-tight text-ink">
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-gradient text-white shadow-glow">
             <Sparkles size={15} strokeWidth={2.5} />
           </span>
           resolve
         </Link>
-        <span className="mt-1.5 px-2 text-[11px] font-semibold uppercase tracking-wider text-white/40">
+        <span className="mt-1.5 px-2 text-[11px] font-semibold uppercase tracking-wider text-ink-faint">
           Example build · VS Code support
         </span>
 
@@ -70,12 +71,12 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
           <Plus size={16} /> New ticket
         </Link>
 
-        <div className="mt-8 px-2 text-xs font-semibold uppercase tracking-wider text-white/40">
+        <div className="mt-8 px-2 text-xs font-semibold uppercase tracking-wider text-ink-faint">
           Workspace
         </div>
         <nav className="mt-2 flex flex-col gap-1">
           {links.map((l) => {
-            const active = l.href === "/" ? path === "/" : path.startsWith(l.href);
+            const active = path.startsWith(l.href);
             const LinkIcon = l.icon;
             return (
               <Link
@@ -84,7 +85,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                 className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition ${
                   active
                     ? "bg-brand-500 text-white shadow-card"
-                    : "text-white/65 hover:bg-white/5 hover:text-white"
+                    : "text-ink-soft hover:bg-line/60 hover:text-ink"
                 }`}
               >
                 <LinkIcon size={18} strokeWidth={2} />
@@ -95,31 +96,31 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
         </nav>
 
         <div className="mt-auto flex flex-col gap-4">
-          <div className="rounded-xl border border-white/10 bg-white/5 p-4 text-sm">
-            <div className="flex items-center gap-2 font-semibold text-white">
+          <div className="rounded-xl border border-line bg-brand-50 p-4 text-sm">
+            <div className="flex items-center gap-2 font-semibold text-ink">
               <ShieldCheck size={16} className="text-brand-500" />
               AI with accountability
             </div>
-            <p className="mt-2 text-xs leading-relaxed text-white/65">
+            <p className="mt-2 text-xs leading-relaxed text-ink-soft">
               Every resolution ships with evidence and a decision trail.
             </p>
             <Link
               href="/triage"
-              className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-brand-500 hover:text-white"
+              className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-brand-700 hover:text-brand-500"
             >
               Explore the inbox <ArrowUpRight size={13} />
             </Link>
           </div>
-          <div className="flex items-center gap-3 border-t border-white/10 pt-4">
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-white">
+          <div className="flex items-center gap-3 border-t border-line pt-4">
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-line/70 text-ink-soft">
               <UserRound size={16} />
             </span>
             <div className="text-sm">
-              <div className="font-medium text-white">Anonymous workspace</div>
-              <div className="text-xs text-white/40">No sign-in, single shared demo</div>
+              <div className="font-medium text-ink">Anonymous workspace</div>
+              <div className="text-xs text-ink-faint">No sign-in, single shared demo</div>
             </div>
           </div>
-          <p className="text-[11px] leading-relaxed text-white/30">
+          <p className="text-[11px] leading-relaxed text-ink-faint">
             No accounts or profile pages. This is a single-tenant demo of the resolution
             pipeline, not a multi-user product. Each ticket already carries its own
             submitter email.

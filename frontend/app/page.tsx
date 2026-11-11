@@ -1,240 +1,159 @@
 "use client";
 import Link from "next/link";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import {
-  PieChart,
-  Pie,
-  Cell,
-  AreaChart,
-  Area,
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
-} from "recharts";
-import { Plus, RefreshCw, Ticket, Sparkles, ShieldCheck, CheckCircle2, ArrowRight, ExternalLink } from "lucide-react";
-import { getOverview, listTickets, Overview, TicketSummary } from "@/lib/api";
-import { Card, PageHeading, StatCard, Button } from "@/components/ui";
-import TicketRow from "@/components/TicketRow";
+  ArrowRight,
+  ChevronDown,
+  Sparkles,
+  SearchCheck,
+  FileCheck2,
+  ShieldCheck,
+  UserCheck,
+  Gauge,
+  Ticket,
+  CheckCircle2,
+} from "lucide-react";
+import { getOverview, Overview } from "@/lib/api";
+import { Card, Button } from "@/components/ui";
 
-const GRAFANA_URL = process.env.NEXT_PUBLIC_GRAFANA_URL || "http://localhost:3001";
-const OUTCOME_COLORS = ["#329dd2", "#ff4c2b", "#f5b942", "#94a3b8"];
-const PRIORITY_COLORS: Record<string, string> = {
-  urgent: "#dc2626",
-  high: "#c2410c",
-  medium: "#b45309",
-  low: "#0891b2",
-};
-const CHART_LINE = "#e2e8f0";
-const CHART_TICK = { fill: "#64748b", fontSize: 12 };
-const CHART_TOOLTIP_STYLE = {
-  background: "#ffffff",
-  border: "1px solid #e2e8f0",
-  borderRadius: 10,
-  color: "#1a2436",
-  fontSize: 13,
-  boxShadow: "0 8px 24px rgba(15,23,42,0.08)",
-};
-const CHART_TOOLTIP_LABEL_STYLE = { color: "#64748b" };
+const STEPS = [
+  {
+    icon: SearchCheck,
+    title: "Understand the ticket",
+    body: "Intent, priority, and sentiment are classified before anything else runs, so routing decisions start from a real read of the request.",
+  },
+  {
+    icon: FileCheck2,
+    title: "Retrieve and grade evidence",
+    body: "Relevant knowledge-base docs are pulled and graded for relevance (CRAG) so a draft is only built on evidence that actually applies.",
+  },
+  {
+    icon: Sparkles,
+    title: "Draft a response",
+    body: "A grounded draft is written from the graded evidence, not from the model's own memory of how things usually work.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Judge it before it ships",
+    body: "A self-RAG judge checks faithfulness and relevance against the evidence, and flags anything it can't fully support.",
+  },
+  {
+    icon: UserCheck,
+    title: "Escalate when it should",
+    body: "Low-confidence or sensitive cases route to a human reviewer instead of going out the door unchecked.",
+  },
+];
 
-export default function Home() {
+export default function HomePage() {
   const [data, setData] = useState<Overview | null>(null);
-  const [tickets, setTickets] = useState<TicketSummary[]>([]);
-  const [error, setError] = useState("");
-  const [loading, setLoading] = useState(true);
-  const [days] = useState(30);
-
-  const load = useCallback(() => {
-    setLoading(true);
-    getOverview(days)
-      .then((d) => {
-        setData(d);
-        setError("");
-      })
-      .catch((e) => setError(e.message))
-      .finally(() => setLoading(false));
-    listTickets({ limit: 500 }).then(setTickets).catch(() => {});
-  }, [days]);
 
   useEffect(() => {
-    load();
-    const t = setInterval(load, 30000);
-    return () => clearInterval(t);
-  }, [load]);
-
-  const outcomeData = [
-    { name: "AI answered", value: data?.ai_resolved || 0 },
-    { name: "Human resolved", value: data?.human_resolved || 0 },
-    { name: "Needs review", value: data?.needs_review || 0 },
-    { name: "Open", value: data?.open || 0 },
-  ];
-  const trendData = (data?.daily || []).map((d) => ({ date: d.date.slice(5), total: d.total, resolved: d.resolved }));
-
-  const priorityData = useMemo(() => {
-    const counts: Record<string, number> = { urgent: 0, high: 0, medium: 0, low: 0 };
-    tickets.forEach((t) => {
-      const p = (t.priority || "").toLowerCase();
-      if (p in counts) counts[p] += 1;
-    });
-    return Object.entries(counts).map(([priority, count]) => ({ priority, count }));
-  }, [tickets]);
-
-  const grafanaUrl = `${GRAFANA_URL}/d/ticket-trends/ticket-trends?orgId=1&from=now-${days}d&to=now&theme=light&kiosk=tv`;
+    getOverview(30).then(setData).catch(() => {});
+  }, []);
 
   return (
     <div>
-      <div className="mb-6 flex flex-wrap items-start justify-between gap-4">
-        <div>
-          <h1 className="text-3xl font-semibold tracking-tight text-ink sm:text-4xl">AI support for your organization</h1>
-          <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-brand-500">VS Code support demo</p>
-        </div>
-        <Link href="/submit">
-          <Button>
-            <Plus size={15} /> New ticket
-          </Button>
-        </Link>
-      </div>
+      <section className="flex min-h-[70vh] flex-col items-center justify-center text-center">
+        <span className="animate-fade-up inline-flex items-center gap-1.5 rounded-full border border-line bg-surface px-3 py-1 text-xs font-semibold text-brand-700 shadow-card">
+          <Sparkles size={13} /> Example build · VS Code support
+        </span>
 
-      {error && (
-        <Card className="mb-6 border-[#fecaca] bg-[#fef2f2] p-4 text-sm text-priority-urgent">
-          Couldn&apos;t refresh the workspace: {error}{" "}
-          <button onClick={load} className="font-semibold underline">
-            Try again
-          </button>
-        </Card>
-      )}
+        <h1 className="animate-wordmark mt-6 text-6xl font-extrabold tracking-tight text-ink sm:text-7xl">
+          resolve
+        </h1>
+        <span className="animate-underline mt-1 block h-1 w-28 rounded-full bg-brand-gradient" />
 
-      <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
-        <StatCard icon={Ticket} label="All tickets" value={data?.total ?? 0} foot={`Last ${days} days`} tone="brand" />
-        <StatCard icon={Sparkles} label="AI answered" value={data?.ai_resolved ?? 0} foot="Auto-resolved" tone="purple" />
-        <StatCard icon={ShieldCheck} label="Needs review" value={data?.needs_review ?? 0} foot="Waiting on a reviewer" tone="amber" />
-        <StatCard icon={CheckCircle2} label="Resolved" value={data?.resolved ?? 0} foot="Closed out" tone="teal" />
-      </div>
+        <p className="animate-fade-up mt-6 max-w-xl text-xl font-medium text-ink" style={{ animationDelay: "0.2s" }}>
+          AI support for your organization.
+        </p>
+        <p className="animate-fade-up mt-2 max-w-lg text-sm text-ink-soft" style={{ animationDelay: "0.3s" }}>
+          A multi-agent pipeline that triages, researches, drafts, and judges its own answers to VS Code
+          support tickets, escalating to a human the moment it isn&apos;t sure.
+        </p>
 
-      <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-3">
-        <Card className="p-6 lg:col-span-2">
-          <h3 className="text-sm font-semibold text-ink">Tickets created each day</h3>
-          <p className="text-xs text-ink-soft">Hover a point for the exact count</p>
-          <div className="mt-4 h-64 w-full">
-            <ResponsiveContainer>
-              <AreaChart data={trendData}>
-                <defs>
-                  <linearGradient id="vol" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#329dd2" stopOpacity={0.3} />
-                    <stop offset="100%" stopColor="#329dd2" stopOpacity={0} />
-                  </linearGradient>
-                </defs>
-                <CartesianGrid strokeDasharray="3 3" stroke={CHART_LINE} vertical={false} />
-                <XAxis dataKey="date" tick={{ ...CHART_TICK, fontSize: 11 }} tickLine={false} axisLine={{ stroke: CHART_LINE }} />
-                <YAxis tick={CHART_TICK} tickLine={false} axisLine={false} allowDecimals={false} />
-                <Tooltip contentStyle={CHART_TOOLTIP_STYLE} labelStyle={CHART_TOOLTIP_LABEL_STYLE} />
-                <Area type="monotone" dataKey="total" stroke="#329dd2" strokeWidth={2} fill="url(#vol)" />
-              </AreaChart>
-            </ResponsiveContainer>
-          </div>
-        </Card>
-
-        <Card className="p-6">
-          <h3 className="text-sm font-semibold text-ink">Ticket outcomes</h3>
-          <p className="text-xs text-ink-soft">{data?.total ?? 0} tickets in this period</p>
-          <div className="mt-2 h-56 w-full">
-            <ResponsiveContainer>
-              <PieChart>
-                <Pie data={outcomeData} dataKey="value" nameKey="name" innerRadius={50} outerRadius={80} paddingAngle={3} stroke="none">
-                  {outcomeData.map((_, i) => (
-                    <Cell key={i} fill={OUTCOME_COLORS[i % OUTCOME_COLORS.length]} />
-                  ))}
-                </Pie>
-                <Tooltip contentStyle={CHART_TOOLTIP_STYLE} labelStyle={CHART_TOOLTIP_LABEL_STYLE} />
-              </PieChart>
-            </ResponsiveContainer>
-          </div>
-          <div className="mt-2 grid grid-cols-2 gap-x-3 gap-y-1.5 text-xs">
-            {outcomeData.map((o, i) => (
-              <div key={o.name} className="flex items-center gap-1.5 text-ink-soft">
-                <span className="h-2 w-2 shrink-0 rounded-full" style={{ background: OUTCOME_COLORS[i] }} />
-                {o.name}
-              </div>
-            ))}
-          </div>
-        </Card>
-      </div>
-
-      <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-3">
-        <Card className="p-6 lg:col-span-1">
-          <h3 className="text-sm font-semibold text-ink">Volume by priority</h3>
-          <p className="text-xs text-ink-soft">Across all tickets in the inbox</p>
-          <div className="mt-4 h-56 w-full">
-            <ResponsiveContainer>
-              <BarChart data={priorityData}>
-                <CartesianGrid strokeDasharray="3 3" stroke={CHART_LINE} vertical={false} />
-                <XAxis dataKey="priority" tick={CHART_TICK} tickLine={false} axisLine={{ stroke: CHART_LINE }} />
-                <YAxis tick={CHART_TICK} tickLine={false} axisLine={false} allowDecimals={false} />
-                <Tooltip contentStyle={CHART_TOOLTIP_STYLE} labelStyle={CHART_TOOLTIP_LABEL_STYLE} cursor={{ fill: "#32455210" }} />
-                <Bar dataKey="count" radius={[8, 8, 0, 0]}>
-                  {priorityData.map((d, i) => (
-                    <Cell key={i} fill={PRIORITY_COLORS[d.priority]} />
-                  ))}
-                </Bar>
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
-        </Card>
-
-        <Card className="flex flex-col justify-between p-6 lg:col-span-2">
-          <div>
-            <h3 className="text-sm font-semibold text-ink">Model &amp; retrieval diagnostics</h3>
-            <p className="mt-1 text-xs text-ink-soft">
-              Confidence distributions, latency percentiles, and faithfulness/relevance trends are computed in
-              Grafana straight from the BigQuery fact table, real histograms and percentiles that don&apos;t
-              belong in a hand-rolled chart.
-            </p>
-          </div>
-          <a
-            href={grafanaUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-4 inline-flex w-fit items-center gap-1.5 rounded-xl border border-line bg-surface px-4 py-2 text-sm font-semibold text-brand-500 hover:border-brand-500/40"
-          >
-            Open Grafana dashboards <ExternalLink size={14} />
-          </a>
-        </Card>
-      </div>
-
-      <Card className="mt-6">
-        <div className="flex items-center justify-between border-b border-line px-6 py-4">
-          <h2 className="text-sm font-semibold text-ink">Recent tickets</h2>
-          <Link href="/triage" className="flex items-center gap-1 text-sm font-semibold text-brand-500 hover:text-brand-600">
-            View inbox <ArrowRight size={13} />
+        <div className="animate-fade-up mt-8 flex flex-wrap items-center justify-center gap-3" style={{ animationDelay: "0.4s" }}>
+          <Link href="/overview">
+            <Button>
+              Open the dashboard <ArrowRight size={15} />
+            </Button>
+          </Link>
+          <Link href="/submit">
+            <Button variant="secondary">Try submitting a ticket</Button>
           </Link>
         </div>
-        {loading && !data ? (
-          <div className="px-6 py-10 text-center text-sm text-ink-soft">Loading recent tickets…</div>
-        ) : data && data.recent.length > 0 ? (
-          <div>
-            {data.recent.map((t) => (
-              <TicketRow key={t.ticket_id} ticket={t} />
-            ))}
-          </div>
-        ) : (
-          <div className="px-6 py-10 text-center text-sm text-ink-soft">No tickets yet.</div>
-        )}
-      </Card>
 
-      <div className="mt-6 flex items-center justify-between text-xs text-ink-faint">
-        <span>Support workspace</span>
-        <span className="flex items-center gap-1.5">
-          {loading && <RefreshCw size={12} className="animate-spin" />}
-          {loading
-            ? "Refreshing…"
-            : data
-              ? `Updated ${new Date(data.as_of).toLocaleTimeString()} · auto-refresh every 30s`
-              : "Waiting for connection"}
-        </span>
-      </div>
+        <a href="#how-it-works" className="animate-fade-up mt-16 flex flex-col items-center gap-1 text-xs font-semibold text-ink-faint" style={{ animationDelay: "0.6s" }}>
+          Scroll to see how it works
+          <ChevronDown size={18} className="animate-scroll-cue" />
+        </a>
+      </section>
+
+      <section className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+        <Card className="p-5 text-center">
+          <Ticket className="mx-auto text-brand-500" size={20} />
+          <div className="mt-2 text-2xl font-bold text-ink">{data?.total ?? "—"}</div>
+          <div className="text-xs text-ink-soft">Tickets handled (30d)</div>
+        </Card>
+        <Card className="p-5 text-center">
+          <Gauge className="mx-auto text-[#8b5cf6]" size={20} />
+          <div className="mt-2 text-2xl font-bold text-ink">{data?.ai_resolved ?? "—"}</div>
+          <div className="text-xs text-ink-soft">Answered by AI</div>
+        </Card>
+        <Card className="p-5 text-center">
+          <ShieldCheck className="mx-auto text-priority-medium" size={20} />
+          <div className="mt-2 text-2xl font-bold text-ink">{data?.needs_review ?? "—"}</div>
+          <div className="text-xs text-ink-soft">Escalated to a human</div>
+        </Card>
+        <Card className="p-5 text-center">
+          <CheckCircle2 className="mx-auto text-[#22c55e]" size={20} />
+          <div className="mt-2 text-2xl font-bold text-ink">{data?.resolved ?? "—"}</div>
+          <div className="text-xs text-ink-soft">Fully resolved</div>
+        </Card>
+      </section>
+
+      <section id="how-it-works" className="mt-20 scroll-mt-8">
+        <div className="mx-auto max-w-xl text-center">
+          <h2 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">How it works</h2>
+          <p className="mt-2 text-sm text-ink-soft">
+            Every ticket moves through the same five-step pipeline, end to end, with every step logged.
+          </p>
+        </div>
+
+        <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-5">
+          {STEPS.map((s, i) => (
+            <Card key={s.title} className="flex flex-col gap-3 p-5">
+              <div className="flex items-center gap-2">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-700">
+                  <s.icon size={16} />
+                </span>
+                <span className="text-xs font-semibold text-ink-faint">Step {i + 1}</span>
+              </div>
+              <div className="text-sm font-semibold text-ink">{s.title}</div>
+              <p className="text-xs leading-relaxed text-ink-soft">{s.body}</p>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      <section className="mt-16 mb-4">
+        <Card className="flex flex-col items-center gap-4 p-10 text-center">
+          <h3 className="text-xl font-semibold text-ink">See it running on real tickets</h3>
+          <p className="max-w-md text-sm text-ink-soft">
+            The dashboard shows live outcomes and diagnostics; the inbox and review board show exactly
+            what a human reviewer sees for the cases the AI didn&apos;t resolve on its own.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            <Link href="/overview">
+              <Button>
+                Open the dashboard <ArrowRight size={15} />
+              </Button>
+            </Link>
+            <Link href="/review">
+              <Button variant="secondary">See the review board</Button>
+            </Link>
+          </div>
+        </Card>
+      </section>
     </div>
   );
 }
