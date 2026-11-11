@@ -34,6 +34,9 @@ export default function HomePage() {
   const taglineRef = useRef<HTMLParagraphElement>(null);
   const subRef = useRef<HTMLParagraphElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
+  const stepRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const iconRefs = useRef<(HTMLSpanElement | null)[]>([]);
+  const lineRefs = useRef<(HTMLSpanElement | null)[]>([]);
 
   useEffect(() => {
     const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
@@ -46,6 +49,33 @@ export default function HomePage() {
       .fromTo(taglineRef.current, { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4 }, "-=0.2")
       .fromTo(subRef.current, { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4 }, "-=0.25")
       .fromTo(ctaRef.current, { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4 }, "-=0.25");
+  }, []);
+
+  useEffect(() => {
+    // Scroll-reveal the pipeline timeline: each step's icon pops in and its
+    // body slides up as it enters view; the connecting line underneath it
+    // fills in right after, so the "path" visibly draws itself downward.
+    gsap.set(stepRefs.current, { opacity: 0, y: 24 });
+    gsap.set(iconRefs.current, { scale: 0.5, opacity: 0 });
+    gsap.set(lineRefs.current, { scaleY: 0 });
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          const i = Number((entry.target as HTMLElement).dataset.index);
+          observer.unobserve(entry.target);
+          const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+          tl.to(iconRefs.current[i], { scale: 1, opacity: 1, duration: 0.4 })
+            .to(stepRefs.current[i], { opacity: 1, y: 0, duration: 0.45 }, "-=0.3")
+            .to(lineRefs.current[i], { scaleY: 1, duration: 0.4, transformOrigin: "top" }, "-=0.1");
+        });
+      },
+      { threshold: 0.4, rootMargin: "0px 0px -10% 0px" }
+    );
+
+    stepRefs.current.forEach((el) => el && observer.observe(el));
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -92,12 +122,25 @@ export default function HomePage() {
 
         <div className="mx-auto mt-10 flex max-w-xl flex-col">
           {AGENTS.map((a, i) => (
-            <div key={a.title} className="flex gap-4">
+            <div
+              key={a.title}
+              data-index={i}
+              ref={(el) => void (stepRefs.current[i] = el)}
+              className="flex gap-4"
+            >
               <div className="flex flex-col items-center">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-700">
+                <span
+                  ref={(el) => void (iconRefs.current[i] = el)}
+                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-700"
+                >
                   <a.icon size={15} />
                 </span>
-                {i < AGENTS.length - 1 && <span className="my-1 w-px flex-1 bg-line" />}
+                {i < AGENTS.length - 1 && (
+                  <span
+                    ref={(el) => void (lineRefs.current[i] = el)}
+                    className="my-1 w-px flex-1 bg-line"
+                  />
+                )}
               </div>
               <div className={i < AGENTS.length - 1 ? "pb-8" : ""}>
                 <span className="font-mono text-[10px] uppercase tracking-wide text-ink-faint">Step {i + 1} of {AGENTS.length}</span>

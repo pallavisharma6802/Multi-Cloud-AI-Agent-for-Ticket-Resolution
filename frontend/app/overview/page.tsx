@@ -21,24 +21,27 @@ import { Card, PageHeading, StatCard, Button } from "@/components/ui";
 import TicketRow from "@/components/TicketRow";
 
 const GRAFANA_URL = process.env.NEXT_PUBLIC_GRAFANA_URL || "http://localhost:3001";
-const OUTCOME_COLORS = ["#cb8a2e", "#b03f5c", "#0d9488", "#9c8a81"];
+// AI answered / Human resolved / Needs review / Open -- indigo (the one
+// brand accent) for the automated-resolution outcome, a standard semantic
+// green/amber/gray for the rest. No gold/rose left over from the old theme.
+const OUTCOME_COLORS = ["#4f46e5", "#15803d", "#b45309", "#9aa3af"];
 const PRIORITY_COLORS: Record<string, string> = {
   urgent: "#dc2626",
-  high: "#b45309",
-  medium: "#92600a",
-  low: "#0e6c8a",
+  high: "#c2410c",
+  medium: "#b45309",
+  low: "#5b6472",
 };
-const CHART_LINE = "#ece2d8";
-const CHART_TICK = { fill: "#6b5a52", fontSize: 12 };
+const CHART_LINE = "#e5e7eb";
+const CHART_TICK = { fill: "#5b6472", fontSize: 12 };
 const CHART_TOOLTIP_STYLE = {
   background: "#ffffff",
-  border: "1px solid #ece2d8",
+  border: "1px solid #e5e7eb",
   borderRadius: 10,
-  color: "#241b17",
+  color: "#111418",
   fontSize: 13,
-  boxShadow: "0 8px 24px rgba(36,27,23,0.12)",
+  boxShadow: "0 8px 24px rgba(17,20,24,0.1)",
 };
-const CHART_TOOLTIP_LABEL_STYLE = { color: "#6b5a52" };
+const CHART_TOOLTIP_LABEL_STYLE = { color: "#5b6472" };
 
 const DASHBOARDS = [
   { uid: "ticket-trends", title: "Ticket Trends" },
@@ -131,15 +134,15 @@ export default function Home() {
               <AreaChart data={trendData}>
                 <defs>
                   <linearGradient id="vol" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#cb8a2e" stopOpacity={0.25} />
-                    <stop offset="100%" stopColor="#cb8a2e" stopOpacity={0} />
+                    <stop offset="0%" stopColor="#4f46e5" stopOpacity={0.18} />
+                    <stop offset="100%" stopColor="#4f46e5" stopOpacity={0} />
                   </linearGradient>
                 </defs>
                 <CartesianGrid strokeDasharray="3 3" stroke={CHART_LINE} vertical={false} />
                 <XAxis dataKey="date" tick={{ ...CHART_TICK, fontSize: 11 }} tickLine={false} axisLine={{ stroke: CHART_LINE }} />
                 <YAxis tick={CHART_TICK} tickLine={false} axisLine={false} allowDecimals={false} />
                 <Tooltip contentStyle={CHART_TOOLTIP_STYLE} labelStyle={CHART_TOOLTIP_LABEL_STYLE} />
-                <Area type="monotone" dataKey="total" stroke="#cb8a2e" strokeWidth={2} fill="url(#vol)" />
+                <Area type="monotone" dataKey="total" stroke="#4f46e5" strokeWidth={2} fill="url(#vol)" />
               </AreaChart>
             </ResponsiveContainer>
           </div>
@@ -180,7 +183,7 @@ export default function Home() {
               <CartesianGrid strokeDasharray="3 3" stroke={CHART_LINE} vertical={false} />
               <XAxis dataKey="priority" tick={CHART_TICK} tickLine={false} axisLine={{ stroke: CHART_LINE }} />
               <YAxis tick={CHART_TICK} tickLine={false} axisLine={false} allowDecimals={false} />
-              <Tooltip contentStyle={CHART_TOOLTIP_STYLE} labelStyle={CHART_TOOLTIP_LABEL_STYLE} cursor={{ fill: "#8f766c1a" }} />
+              <Tooltip contentStyle={CHART_TOOLTIP_STYLE} labelStyle={CHART_TOOLTIP_LABEL_STYLE} cursor={{ fill: "#9aa3af1a" }} />
               <Bar dataKey="count" radius={[8, 8, 0, 0]}>
                 {priorityData.map((d, i) => (
                   <Cell key={i} fill={PRIORITY_COLORS[d.priority]} />

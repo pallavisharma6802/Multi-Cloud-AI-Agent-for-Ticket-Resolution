@@ -88,7 +88,7 @@ export function PriorityBadge({ priority }: { priority: string }) {
 const STATUS_STYLES: Record<string, string> = {
   open: "bg-line text-ink-soft",
   in_progress: "bg-priority-medium/15 text-[#92600a]",
-  resolved: "bg-[#0d9488]/10 text-[#0d9488]",
+  resolved: "bg-[#15803d]/10 text-[#15803d]",
   closed: "bg-line text-ink-soft",
 };
 

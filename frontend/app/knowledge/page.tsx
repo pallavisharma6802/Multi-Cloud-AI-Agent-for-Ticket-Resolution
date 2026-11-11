@@ -12,7 +12,9 @@ const CATEGORY_LABELS: Record<string, string> = {
   RELEASE_NOTES: "Release notes",
 };
 
-const CATEGORY_COLORS = ["#cb8a2e", "#6d28d9", "#0d7a70", "#b45309", "#b03f5c", "#92600a", "#0e6c8a"];
+// Single accent (indigo) with the standard gray/amber/red/green semantic
+// set cycling through -- not a different hue per category.
+const CATEGORY_COLORS = ["#4f46e5", "#5b6472", "#15803d", "#b45309", "#9aa3af", "#4338ca", "#c2410c"];
 
 function label(category: string) {
   return CATEGORY_LABELS[category] || category.charAt(0) + category.slice(1).toLowerCase().replace(/_/g, " ");
