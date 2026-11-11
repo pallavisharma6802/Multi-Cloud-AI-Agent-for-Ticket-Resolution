@@ -41,6 +41,16 @@ const config: Config = {
           high: "#c2410c",
           urgent: "#dc2626",
         },
+        // Extra accent family so sections of the app (sidebar nav, step
+        // flows, category bars) can each carry their own color instead of
+        // the whole site reading as one blue wash.
+        accent: {
+          purple: { 50: "#f3effe", 500: "#8b5cf6", 700: "#6d28d9" },
+          teal: { 50: "#ecfdf5", 500: "#10b981", 700: "#047857" },
+          orange: { 50: "#fff7ed", 500: "#f97316", 700: "#c2410c" },
+          pink: { 50: "#fdf2f8", 500: "#ec4899", 700: "#be185d" },
+          yellow: { 50: "#fefce8", 500: "#eab308", 700: "#a16207" },
+        },
       },
       // Site-wide type bump -- every text-xs/sm/base/etc now resolves bigger.
       // A previous pass over-corrected "too small" into "too big", especially

@@ -17,10 +17,10 @@ import { API_BASE_URL } from "@/lib/api";
 import Mascot from "./Mascot";
 
 const links = [
-  { href: "/overview", label: "Overview", icon: LayoutGrid },
-  { href: "/triage", label: "Inbox", icon: Inbox },
-  { href: "/review", label: "Review board", icon: Columns3 },
-  { href: "/knowledge", label: "Knowledge base", icon: BookOpen },
+  { href: "/overview", label: "Overview", icon: LayoutGrid, color: "#329dd2", tint: "#eaf4fb" },
+  { href: "/triage", label: "Inbox", icon: Inbox, color: "#8b5cf6", tint: "#f3effe" },
+  { href: "/review", label: "Review board", icon: Columns3, color: "#f97316", tint: "#fff7ed" },
+  { href: "/knowledge", label: "Knowledge base", icon: BookOpen, color: "#10b981", tint: "#ecfdf5" },
 ];
 
 const titles: Record<string, string> = {
@@ -84,12 +84,15 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                 key={l.href}
                 href={l.href}
                 className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition ${
-                  active
-                    ? "bg-brand-500 text-white shadow-card"
-                    : "text-ink-soft hover:bg-line/60 hover:text-ink"
+                  active ? "bg-line/60 text-ink shadow-card" : "text-ink-soft hover:bg-line/40 hover:text-ink"
                 }`}
               >
-                <LinkIcon size={18} strokeWidth={2} />
+                <span
+                  className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg"
+                  style={{ background: l.tint, color: l.color }}
+                >
+                  <LinkIcon size={15} strokeWidth={2.25} />
+                </span>
                 {l.label}
               </Link>
             );

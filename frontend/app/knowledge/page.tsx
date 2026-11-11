@@ -12,6 +12,8 @@ const CATEGORY_LABELS: Record<string, string> = {
   RELEASE_NOTES: "Release notes",
 };
 
+const CATEGORY_COLORS = ["#329dd2", "#8b5cf6", "#10b981", "#f97316", "#ec4899", "#eab308", "#0891b2"];
+
 function label(category: string) {
   return CATEGORY_LABELS[category] || category.charAt(0) + category.slice(1).toLowerCase().replace(/_/g, " ");
 }
@@ -86,13 +88,22 @@ export default function Knowledge() {
           <Card className="mb-6 p-6">
             <h2 className="text-xs font-bold uppercase tracking-widest text-ink-faint">Coverage by category</h2>
             <div className="mt-4 space-y-2.5">
-              {categories.map(([cat, count]) => (
+              {categories.map(([cat, count], i) => (
                 <div key={cat} className="flex items-center gap-3">
-                  <span className="w-36 shrink-0 text-sm text-ink-soft">{label(cat)}</span>
+                  <span className="flex w-36 shrink-0 items-center gap-2 text-sm text-ink-soft">
+                    <span
+                      className="h-2 w-2 shrink-0 rounded-full"
+                      style={{ background: CATEGORY_COLORS[i % CATEGORY_COLORS.length] }}
+                    />
+                    {label(cat)}
+                  </span>
                   <div className="h-2 flex-1 overflow-hidden rounded-full bg-line/60">
                     <div
-                      className="h-full rounded-full bg-brand-gradient"
-                      style={{ width: `${Math.max(4, (count / maxCount) * 100)}%` }}
+                      className="h-full rounded-full"
+                      style={{
+                        width: `${Math.max(4, (count / maxCount) * 100)}%`,
+                        background: CATEGORY_COLORS[i % CATEGORY_COLORS.length],
+                      }}
                     />
                   </div>
                   <span className="w-12 shrink-0 text-right text-sm font-semibold text-ink">{count}</span>

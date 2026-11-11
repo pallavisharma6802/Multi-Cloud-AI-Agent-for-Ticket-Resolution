@@ -16,14 +16,14 @@ import {
 import { Card, Button } from "@/components/ui";
 
 const AGENTS = [
-  { icon: SearchCheck, title: "Intent & priority", body: "Classifies what the ticket is actually asking for and how urgent it is." },
-  { icon: FileSearch, title: "Retrieval", body: "Pulls the knowledge-base passages that are relevant to the request." },
-  { icon: FileCheck2, title: "Document grader (CRAG)", body: "Scores each retrieved passage and drops anything that doesn't apply." },
-  { icon: Sparkles, title: "Drafting", body: "Writes a response grounded only in the passages that passed grading." },
-  { icon: ShieldCheck, title: "Judge (self-RAG)", body: "Checks the draft's faithfulness and relevance, escalating to a human when it can't be sure." },
-  { icon: Repeat, title: "Continuation", body: "Decides whether the draft needs another retrieval/drafting pass." },
-  { icon: Lock, title: "Security", body: "Screens for sensitive or risky content that shouldn't go out unreviewed." },
-  { icon: SmilePlus, title: "Sentiment", body: "Reads tone, so frustrated or urgent requests get flagged accordingly." },
+  { icon: SearchCheck, title: "Intent & priority", body: "Classifies what the ticket is actually asking for and how urgent it is.", bg: "#eaf4fb", fg: "#1f6b93" },
+  { icon: FileSearch, title: "Retrieval", body: "Pulls the knowledge-base passages that are relevant to the request.", bg: "#f3effe", fg: "#6d28d9" },
+  { icon: FileCheck2, title: "Document grader (CRAG)", body: "Scores each retrieved passage and drops anything that doesn't apply.", bg: "#ecfdf5", fg: "#047857" },
+  { icon: Sparkles, title: "Drafting", body: "Writes a response grounded only in the passages that passed grading.", bg: "#fff7ed", fg: "#c2410c" },
+  { icon: ShieldCheck, title: "Judge (self-RAG)", body: "Checks the draft's faithfulness and relevance, escalating to a human when it can't be sure.", bg: "#fdf2f8", fg: "#be185d" },
+  { icon: Repeat, title: "Continuation", body: "Decides whether the draft needs another retrieval/drafting pass.", bg: "#fefce8", fg: "#a16207" },
+  { icon: Lock, title: "Security", body: "Screens for sensitive or risky content that shouldn't go out unreviewed.", bg: "#fef2f2", fg: "#b91c1c" },
+  { icon: SmilePlus, title: "Sentiment", body: "Reads tone, so frustrated or urgent requests get flagged accordingly.", bg: "#e0f2fe", fg: "#0369a1" },
 ];
 
 const WORDMARK = "resolve".split("");
@@ -90,7 +90,10 @@ export default function HomePage() {
           {AGENTS.map((a, i) => (
             <div key={a.title} className="flex gap-4">
               <div className="flex flex-col items-center">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-50 text-brand-700">
+                <span
+                  className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full"
+                  style={{ background: a.bg, color: a.fg }}
+                >
                   <a.icon size={16} />
                 </span>
                 {i < AGENTS.length - 1 && <span className="my-1 w-px flex-1 bg-line" />}
