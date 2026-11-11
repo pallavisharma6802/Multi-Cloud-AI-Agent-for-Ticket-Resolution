@@ -56,32 +56,25 @@ export default function HomePage() {
       <section className="mt-12 mb-6">
         <div className="mx-auto max-w-xl text-center">
           <h2 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">How it works</h2>
-          <p className="mt-2 text-sm text-ink-soft">Eight agents, one pipeline. Scroll to follow a ticket through it.</p>
+          <p className="mt-2 text-sm text-ink-soft">Eight agents, one pipeline, every step logged.</p>
         </div>
 
-        <div className="relative mt-10">
-          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-10 bg-gradient-to-r from-canvas to-transparent" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-10 bg-gradient-to-l from-canvas to-transparent" />
-
-          <div className="flex snap-x snap-mandatory gap-5 overflow-x-auto px-6 pb-4" style={{ scrollbarWidth: "thin" }}>
-            {AGENTS.map((a, i) => (
-              <div key={a.title} className="flex shrink-0 snap-center items-center">
-                <Card className="flex h-44 w-56 shrink-0 flex-col gap-2 p-5">
-                  <div className="flex items-center gap-2">
-                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-700">
-                      <a.icon size={16} />
-                    </span>
-                    <span className="text-xs font-semibold text-ink-faint">Step {i + 1} of {AGENTS.length}</span>
-                  </div>
-                  <div className="text-sm font-semibold text-ink">{a.title}</div>
-                  <p className="text-xs leading-relaxed text-ink-soft">{a.body}</p>
-                </Card>
-                {i < AGENTS.length - 1 && (
-                  <ArrowRight size={18} className="mx-2 shrink-0 text-ink-faint" />
-                )}
+        <div className="mx-auto mt-10 flex max-w-xl flex-col">
+          {AGENTS.map((a, i) => (
+            <div key={a.title} className="flex gap-4">
+              <div className="flex flex-col items-center">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-50 text-brand-700">
+                  <a.icon size={16} />
+                </span>
+                {i < AGENTS.length - 1 && <span className="my-1 w-px flex-1 bg-line" />}
               </div>
-            ))}
-          </div>
+              <div className={i < AGENTS.length - 1 ? "pb-8" : ""}>
+                <span className="text-xs font-semibold text-ink-faint">Step {i + 1} of {AGENTS.length}</span>
+                <div className="text-sm font-semibold text-ink">{a.title}</div>
+                <p className="mt-1 text-xs leading-relaxed text-ink-soft">{a.body}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
     </div>
