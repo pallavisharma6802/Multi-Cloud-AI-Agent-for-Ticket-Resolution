@@ -71,7 +71,11 @@ export default function HomePage() {
             .to(lineRefs.current[i], { scaleY: 1, duration: 0.4, transformOrigin: "top" }, "-=0.1");
         });
       },
-      { threshold: 0.4, rootMargin: "0px 0px -10% 0px" }
+      // A bottom margin that stayed negative would never fire for the last
+      // step, since it can't reach 40% visible before the page runs out of
+      // scroll room below it. Trigger as soon as a step's top edge clears
+      // the bottom of the viewport instead.
+      { threshold: 0, rootMargin: "0px 0px -20% 0px" }
     );
 
     stepRefs.current.forEach((el) => el && observer.observe(el));
@@ -114,7 +118,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mt-2 mb-6">
+      <section className="mt-2 mb-6 pb-24">
         <div className="mx-auto max-w-xl text-center">
           <h2 className="text-xl font-semibold tracking-tight text-ink sm:text-2xl">How it works</h2>
           <p className="mt-2 text-sm text-ink-soft">Eight agents, one pipeline, every step logged.</p>
