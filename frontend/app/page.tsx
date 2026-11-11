@@ -1,5 +1,7 @@
 "use client";
 import Link from "next/link";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 import {
   ArrowRight,
   Sparkles,
@@ -24,24 +26,49 @@ const AGENTS = [
   { icon: SmilePlus, title: "Sentiment", body: "Reads tone, so frustrated or urgent requests get flagged accordingly." },
 ];
 
+const WORDMARK = "resolve".split("");
+
 export default function HomePage() {
+  const letterRefs = useRef<(HTMLSpanElement | null)[]>([]);
+  const underlineRef = useRef<HTMLSpanElement>(null);
+  const taglineRef = useRef<HTMLParagraphElement>(null);
+  const subRef = useRef<HTMLParagraphElement>(null);
+  const ctaRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+    tl.fromTo(
+      letterRefs.current,
+      { y: 40, opacity: 0, rotate: 6 },
+      { y: 0, opacity: 1, rotate: 0, duration: 0.6, stagger: 0.05 }
+    )
+      .fromTo(underlineRef.current, { scaleX: 0 }, { scaleX: 1, duration: 0.5, transformOrigin: "left" }, "-=0.2")
+      .fromTo(taglineRef.current, { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4 }, "-=0.2")
+      .fromTo(subRef.current, { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4 }, "-=0.25")
+      .fromTo(ctaRef.current, { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4 }, "-=0.25");
+  }, []);
+
   return (
     <div>
-      <section className="flex min-h-[60vh] flex-col items-center justify-center text-center">
-        <h1 className="animate-wordmark text-6xl font-extrabold tracking-tight text-ink sm:text-7xl">
-          resolve
+      <section className="flex flex-col items-center justify-center py-10 text-center">
+        <h1 className="flex text-6xl font-extrabold tracking-tight text-ink sm:text-7xl">
+          {WORDMARK.map((letter, i) => (
+            <span key={i} ref={(el) => void (letterRefs.current[i] = el)} className="inline-block">
+              {letter}
+            </span>
+          ))}
         </h1>
-        <span className="animate-underline mt-1 block h-1 w-28 rounded-full bg-brand-gradient" />
+        <span ref={underlineRef} className="mt-1 block h-1 w-28 rounded-full bg-brand-gradient" />
 
-        <p className="animate-fade-up mt-6 max-w-xl text-xl font-medium text-ink" style={{ animationDelay: "0.2s" }}>
+        <p ref={taglineRef} className="mt-6 max-w-xl text-xl font-medium text-ink">
           AI support for your organization.
         </p>
-        <p className="animate-fade-up mt-2 max-w-lg text-sm text-ink-soft" style={{ animationDelay: "0.3s" }}>
+        <p ref={subRef} className="mt-2 max-w-lg text-sm text-ink-soft">
           A multi-agent pipeline that triages, researches, drafts, and judges its own answers, escalating
           to a human the moment it isn&apos;t sure.
         </p>
 
-        <div className="animate-fade-up mt-8 flex flex-wrap items-center justify-center gap-3" style={{ animationDelay: "0.4s" }}>
+        <div ref={ctaRef} className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <Link href="/overview">
             <Button>
               Open the dashboard — VS Code demo <ArrowRight size={15} />
@@ -53,7 +80,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mt-12 mb-6">
+      <section className="mt-2 mb-6">
         <div className="mx-auto max-w-xl text-center">
           <h2 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">How it works</h2>
           <p className="mt-2 text-sm text-ink-soft">Eight agents, one pipeline, every step logged.</p>

@@ -14,6 +14,7 @@ import {
   Columns3,
 } from "lucide-react";
 import { API_BASE_URL } from "@/lib/api";
+import Mascot from "./Mascot";
 
 const links = [
   { href: "/overview", label: "Overview", icon: LayoutGrid },
@@ -148,6 +149,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
         </header>
         <main className="flex-1 px-8 py-8">{children}</main>
       </div>
+      <Mascot />
     </div>
   );
 }

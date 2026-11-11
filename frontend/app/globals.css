@@ -21,41 +21,6 @@ body {
   @apply bg-brand-100 text-ink;
 }
 
-@keyframes wordmark-bounce {
-  0% { transform: translateY(-24px); opacity: 0; }
-  55% { transform: translateY(4px); opacity: 1; }
-  75% { transform: translateY(-3px); }
-  100% { transform: translateY(0); }
-}
-.animate-wordmark {
-  animation: wordmark-bounce 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) both;
-}
-
-@keyframes draw-underline {
-  from { transform: scaleX(0); }
-  to { transform: scaleX(1); }
-}
-.animate-underline {
-  transform-origin: left;
-  animation: draw-underline 0.6s ease-out 0.6s both;
-}
-
-@keyframes fade-up {
-  from { transform: translateY(16px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-.animate-fade-up {
-  animation: fade-up 0.6s ease-out both;
-}
-
-@keyframes scroll-bounce {
-  0%, 100% { transform: translateY(0); opacity: 0.5; }
-  50% { transform: translateY(8px); opacity: 1; }
-}
-.animate-scroll-cue {
-  animation: scroll-bounce 1.6s ease-in-out infinite;
-}
-
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
