@@ -9,6 +9,7 @@ import {
   submitTicket,
 } from "@/lib/api";
 import { Card, Button } from "@/components/ui";
+import Markdown from "@/components/Markdown";
 
 const ISSUE_PROMPTS = [
   "The integrated terminal won't open in VS Code on macOS.",
@@ -132,7 +133,7 @@ export default function Submit() {
                         : "border border-line bg-surface text-ink"
                     }`}
                   >
-                    {m.text}
+                    {m.role === "agent" ? <Markdown>{m.text}</Markdown> : m.text}
                   </div>
                   {m.result && (
                     <div className="mt-2 flex items-center gap-3 px-1 text-xs text-ink-soft">

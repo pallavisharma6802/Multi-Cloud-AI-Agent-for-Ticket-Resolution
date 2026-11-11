@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { TicketTraceResponse, getTicketTrace, retryTicket, resolveTicket } from "@/lib/api";
 import { Card, Button, PriorityBadge, StatusBadge } from "@/components/ui";
+import Markdown from "@/components/Markdown";
 
 const TABS = [
   { id: "conversation", label: "Conversation" },
@@ -153,9 +154,13 @@ export default function TicketDetail() {
                     </Button>
                   )}
                 </div>
-                <p className="text-sm leading-relaxed text-ink">
-                  {r?.draft_text || "No response was drafted. This ticket requires a support specialist."}
-                </p>
+                {r?.draft_text ? (
+                  <Markdown>{r.draft_text}</Markdown>
+                ) : (
+                  <p className="text-sm leading-relaxed text-ink">
+                    No response was drafted. This ticket requires a support specialist.
+                  </p>
+                )}
                 {r?.escalation_rationale && (
                   <div className="mt-5 border-t border-line pt-5">
                     <div className="text-xs font-semibold uppercase tracking-wide text-ink-faint">Why this needs a person</div>
