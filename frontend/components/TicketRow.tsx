@@ -9,10 +9,10 @@ function initials(email: string) {
 }
 
 const BAR_COLORS: Record<string, string> = {
-  resolved: "#2dd4bf",
-  in_progress: "#f2b84b",
-  closed: "#8f766c",
-  open: "#e3a655",
+  resolved: "#0d9488",
+  in_progress: "#cb8a2e",
+  closed: "#9c8a81",
+  open: "#d65a78",
 };
 
 export default function TicketRow({ ticket }: { ticket: TicketSummary }) {

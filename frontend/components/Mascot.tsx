@@ -74,31 +74,65 @@ export default function Mascot() {
   return (
     <div
       ref={rootRef}
-      className="pointer-events-none fixed bottom-5 right-5 z-40 h-16 w-16 drop-shadow-lg sm:bottom-6 sm:right-6"
+      className="pointer-events-none fixed bottom-0 right-5 z-40 h-28 w-20 drop-shadow-lg sm:right-6"
       aria-hidden="true"
     >
-      <svg viewBox="0 0 100 100" className="h-full w-full overflow-visible">
-        <circle cx="50" cy="54" r="38" fill="#e3a655" />
-        <circle cx="50" cy="54" r="38" fill="url(#mascot-shine)" opacity="0.35" />
-        <defs>
-          <radialGradient id="mascot-shine" cx="35%" cy="30%" r="60%">
-            <stop offset="0%" stopColor="#ffffff" stopOpacity="0.8" />
-            <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
-          </radialGradient>
-        </defs>
+      <svg viewBox="0 0 100 130" className="h-full w-full overflow-visible">
+        {/* shoulders / headset-wearing support agent, torso anchored off-screen */}
+        <path d="M 14 130 Q 14 96 50 92 Q 86 96 86 130 Z" fill="#cb8a2e" />
+        <path d="M 14 130 Q 14 96 50 92 Q 86 96 86 130 Z" fill="#241b17" opacity="0.08" />
 
         <g ref={headRef}>
-          <ellipse cx="34" cy="52" rx="10" ry="11" fill="#211815" />
-          <ellipse cx="66" cy="52" rx="10" ry="11" fill="#211815" />
-          <circle ref={leftPupilRef} cx="34" cy="52" r="4.5" fill="#f6ebe3" />
-          <circle ref={rightPupilRef} cx="66" cy="52" r="4.5" fill="#f6ebe3" />
-          <rect ref={leftLidRef} x="23" y="41" width="22" height="22" fill="#e3a655" style={{ transformOrigin: "34px 52px" }} transform="scale(1, 0)" />
-          <rect ref={rightLidRef} x="55" y="41" width="22" height="22" fill="#e3a655" style={{ transformOrigin: "66px 52px" }} transform="scale(1, 0)" />
-          <path d="M 38 70 Q 50 78 62 70" stroke="#211815" strokeWidth="3" strokeLinecap="round" fill="none" />
-        </g>
+          {/* neck */}
+          <rect x="43" y="78" width="14" height="14" rx="5" fill="#e8b98c" />
+          {/* head */}
+          <ellipse cx="50" cy="56" rx="24" ry="26" fill="#f0c89a" />
+          {/* hair */}
+          <path
+            d="M 26 52 Q 24 24 50 22 Q 76 24 74 52 Q 74 38 62 36 Q 56 44 50 36 Q 44 44 38 36 Q 27 38 26 52 Z"
+            fill="#4a332a"
+          />
+          {/* ears */}
+          <circle cx="25" cy="58" r="4.5" fill="#e8b98c" />
+          <circle cx="75" cy="58" r="4.5" fill="#e8b98c" />
+          {/* headset band + mic, the one "robot" nod kept minimal */}
+          <path d="M 25 50 Q 50 16 75 50" stroke="#241b17" strokeWidth="3" fill="none" strokeLinecap="round" />
+          <circle cx="75" cy="50" r="3.5" fill="#241b17" />
+          <path d="M 75 53 Q 72 66 60 70" stroke="#241b17" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+          <circle cx="60" cy="70" r="3" fill="#241b17" />
 
-        <circle cx="50" cy="12" r="5" fill="#e78fa3" />
-        <rect x="48.5" y="16" width="3" height="10" fill="#e78fa3" />
+          {/* eyes */}
+          <ellipse cx="40" cy="56" rx="6" ry="7" fill="#fff" />
+          <ellipse cx="60" cy="56" rx="6" ry="7" fill="#fff" />
+          <circle ref={leftPupilRef} cx="40" cy="56" r="3.2" fill="#241b17" />
+          <circle ref={rightPupilRef} cx="60" cy="56" r="3.2" fill="#241b17" />
+          <rect
+            ref={leftLidRef}
+            x="32"
+            y="47"
+            width="16"
+            height="16"
+            fill="#f0c89a"
+            style={{ transformOrigin: "40px 56px" }}
+            transform="scale(1, 0)"
+          />
+          <rect
+            ref={rightLidRef}
+            x="52"
+            y="47"
+            width="16"
+            height="16"
+            fill="#f0c89a"
+            style={{ transformOrigin: "60px 56px" }}
+            transform="scale(1, 0)"
+          />
+          {/* brows */}
+          <path d="M 34 47 Q 40 44 46 47" stroke="#4a332a" strokeWidth="2" fill="none" strokeLinecap="round" />
+          <path d="M 54 47 Q 60 44 66 47" stroke="#4a332a" strokeWidth="2" fill="none" strokeLinecap="round" />
+          {/* nose + friendly smile */}
+          <path d="M 50 58 Q 48 64 50 66" stroke="#d99a6b" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+          <path d="M 40 70 Q 50 78 60 70" stroke="#241b17" strokeWidth="2.5" strokeLinecap="round" fill="none" />
+        </g>
       </svg>
     </div>
   );

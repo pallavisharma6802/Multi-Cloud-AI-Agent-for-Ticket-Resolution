@@ -6,9 +6,9 @@ import { TicketSummary, listTickets } from "@/lib/api";
 import { Card, PageHeading, Button, PriorityBadge } from "@/components/ui";
 
 const COLUMNS: Array<{ key: string; label: string; accent: string }> = [
-  { key: "open", label: "Ticket opened", accent: "#e3a655" },
-  { key: "urgent", label: "Urgent", accent: "#f87171" },
-  { key: "in_progress", label: "On hold · needs review", accent: "#f2b84b" },
+  { key: "open", label: "Ticket opened", accent: "#cb8a2e" },
+  { key: "urgent", label: "Urgent", accent: "#dc2626" },
+  { key: "in_progress", label: "On hold · needs review", accent: "#b45309" },
 ];
 
 function timeAgo(iso: string) {

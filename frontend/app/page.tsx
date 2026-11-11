@@ -16,14 +16,14 @@ import {
 import { Card, Button } from "@/components/ui";
 
 const AGENTS = [
-  { icon: SearchCheck, title: "Intent & priority", body: "Classifies what the ticket is actually asking for and how urgent it is.", bg: "rgba(227,166,85,0.15)", fg: "#f0c479" },
-  { icon: FileSearch, title: "Retrieval", body: "Pulls the knowledge-base passages that are relevant to the request.", bg: "rgba(167,139,250,0.15)", fg: "#c4b5fd" },
-  { icon: FileCheck2, title: "Document grader (CRAG)", body: "Scores each retrieved passage and drops anything that doesn't apply.", bg: "rgba(45,212,191,0.15)", fg: "#5eead4" },
-  { icon: Sparkles, title: "Drafting", body: "Writes a response grounded only in the passages that passed grading.", bg: "rgba(251,146,60,0.15)", fg: "#fdba74" },
-  { icon: ShieldCheck, title: "Judge (self-RAG)", body: "Checks the draft's faithfulness and relevance, escalating to a human when it can't be sure.", bg: "rgba(231,143,163,0.15)", fg: "#f3b6c4" },
-  { icon: Repeat, title: "Continuation", body: "Decides whether the draft needs another retrieval/drafting pass.", bg: "rgba(242,184,75,0.15)", fg: "#facc15" },
-  { icon: Lock, title: "Security", body: "Screens for sensitive or risky content that shouldn't go out unreviewed.", bg: "rgba(248,113,113,0.15)", fg: "#f87171" },
-  { icon: SmilePlus, title: "Sentiment", body: "Reads tone, so frustrated or urgent requests get flagged accordingly.", bg: "rgba(34,211,238,0.15)", fg: "#67e8f9" },
+  { icon: SearchCheck, title: "Intent & priority", body: "Classifies what the ticket is actually asking for and how urgent it is.", bg: "rgba(203,138,46,0.12)", fg: "#8a5c1c" },
+  { icon: FileSearch, title: "Retrieval", body: "Pulls the knowledge-base passages that are relevant to the request.", bg: "rgba(124,58,237,0.1)", fg: "#6d28d9" },
+  { icon: FileCheck2, title: "Document grader (CRAG)", body: "Scores each retrieved passage and drops anything that doesn't apply.", bg: "rgba(13,148,136,0.1)", fg: "#0d7a70" },
+  { icon: Sparkles, title: "Drafting", body: "Writes a response grounded only in the passages that passed grading.", bg: "rgba(217,119,6,0.1)", fg: "#b45309" },
+  { icon: ShieldCheck, title: "Judge (self-RAG)", body: "Checks the draft's faithfulness and relevance, escalating to a human when it can't be sure.", bg: "rgba(214,90,120,0.1)", fg: "#b03f5c" },
+  { icon: Repeat, title: "Continuation", body: "Decides whether the draft needs another retrieval/drafting pass.", bg: "rgba(202,138,4,0.1)", fg: "#92600a" },
+  { icon: Lock, title: "Security", body: "Screens for sensitive or risky content that shouldn't go out unreviewed.", bg: "rgba(220,38,38,0.1)", fg: "#b91c1c" },
+  { icon: SmilePlus, title: "Sentiment", body: "Reads tone, so frustrated or urgent requests get flagged accordingly.", bg: "rgba(8,145,178,0.1)", fg: "#0e6c8a" },
 ];
 
 const WORDMARK = "resolve".split("");

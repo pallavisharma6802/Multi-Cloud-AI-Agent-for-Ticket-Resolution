@@ -10,34 +10,34 @@ const config: Config = {
         mono: ["var(--font-mono)", "ui-monospace", "SFMono-Regular", "monospace"],
       },
       colors: {
-        // Warm dark editorial theme: espresso background, cream ink, gold
-        // primary accent, rose secondary accent -- matched directly off
-        // pallavisharma6802.github.io (sampled computed styles).
-        canvas: "#211815",
-        surface: "#2a211d",
+        // Warm light help-desk theme: cream/white background, espresso ink,
+        // gold + rose accents reserved for labels/icons/CTAs -- not washed
+        // across whole surfaces.
+        canvas: "#faf6f1",
+        surface: "#ffffff",
         ink: {
-          DEFAULT: "#f6ebe3",
-          soft: "#cdb3a8",
-          faint: "#8f766c",
+          DEFAULT: "#241b17",
+          soft: "#6b5a52",
+          faint: "#9c8a81",
         },
-        line: "#3c2f29",
+        line: "#ece2d8",
         brand: {
-          50: "rgba(227,166,85,0.12)",
-          100: "rgba(227,166,85,0.18)",
-          500: "#e3a655",
-          600: "#cf9144",
-          700: "#f0c479",
+          50: "rgba(203,138,46,0.08)",
+          100: "rgba(203,138,46,0.14)",
+          500: "#cb8a2e",
+          600: "#a66f22",
+          700: "#8a5c1c",
           900: "#15100d",
         },
         rose: {
-          50: "rgba(231,143,163,0.12)",
-          500: "#e78fa3",
-          700: "#f3b6c4",
+          50: "rgba(214,90,120,0.08)",
+          500: "#d65a78",
+          700: "#b03f5c",
         },
         teal: {
-          100: "rgba(227,166,85,0.18)",
-          400: "#e3a655",
-          500: "#f0c479",
+          100: "rgba(203,138,46,0.14)",
+          400: "#cb8a2e",
+          500: "#8a5c1c",
         },
         priority: {
           low: "#22d3ee",
@@ -76,12 +76,12 @@ const config: Config = {
         "2xl": "18px",
       },
       boxShadow: {
-        card: "0 1px 2px rgba(0,0,0,0.25), 0 8px 24px rgba(0,0,0,0.35)",
-        glow: "0 0 0 1px rgba(227,166,85,0.25), 0 10px 24px rgba(227,166,85,0.18)",
+        card: "0 1px 2px rgba(36,27,23,0.05), 0 8px 24px rgba(36,27,23,0.08)",
+        glow: "0 0 0 1px rgba(203,138,46,0.25), 0 10px 24px rgba(203,138,46,0.16)",
       },
       backgroundImage: {
-        "brand-gradient": "linear-gradient(135deg, #e3a655 0%, #e78fa3 100%)",
-        "teal-gradient": "linear-gradient(135deg, #e3a655 0%, #cf9144 100%)",
+        "brand-gradient": "linear-gradient(135deg, #cb8a2e 0%, #d65a78 100%)",
+        "teal-gradient": "linear-gradient(135deg, #cb8a2e 0%, #a66f22 100%)",
       },
     },
   },

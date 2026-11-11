@@ -32,23 +32,30 @@ export function StatCard({
   // color -- not the whole card -- so a row of these reads as a real support
   // dashboard (distinct colors per metric) rather than one wash.
   const iconBg: Record<string, string> = {
-    default: "bg-ink-faint/20 text-ink-soft",
-    brand: "bg-brand-500 text-[#15100d]",
-    teal: "bg-[#2dd4bf] text-[#0d1f1c]",
-    amber: "bg-priority-medium text-[#2b1d06]",
-    purple: "bg-[#a78bfa] text-[#1c1530]",
+    default: "bg-ink-faint/15 text-ink-soft",
+    brand: "bg-brand-100 text-brand-700",
+    teal: "bg-[#0d9488]/10 text-[#0d9488]",
+    amber: "bg-priority-medium/15 text-[#92600a]",
+    purple: "bg-[#7c3aed]/10 text-[#7c3aed]",
+  };
+  const valueTone: Record<string, string> = {
+    default: "text-ink",
+    brand: "text-brand-700",
+    teal: "text-[#0d9488]",
+    amber: "text-[#92600a]",
+    purple: "text-[#7c3aed]",
   };
   return (
     <Card className="p-5">
       <div className="flex items-center justify-between">
-        <div className="text-sm font-medium text-ink-soft">{label}</div>
+        <div className="font-mono text-[11px] font-medium uppercase tracking-wide text-ink-faint">{label}</div>
         {Icon && (
           <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl ${iconBg[tone]}`}>
             <Icon size={17} strokeWidth={2.25} />
           </span>
         )}
       </div>
-      <div className="mt-3 font-serif text-3xl font-semibold tracking-tight text-ink">{value}</div>
+      <div className={`mt-3 font-serif text-3xl font-semibold tracking-tight ${valueTone[tone]}`}>{value}</div>
       {foot && <div className="mt-1 text-xs text-ink-faint">{foot}</div>}
     </Card>
   );
@@ -79,10 +86,10 @@ export function PriorityBadge({ priority }: { priority: string }) {
 // needs human review" (set in app/api/routes/tickets.py when
 // requires_human_review is true) -- there is no separate "needs_review" status.
 const STATUS_STYLES: Record<string, string> = {
-  open: "bg-line/60 text-ink-soft",
-  in_progress: "bg-priority-medium/15 text-priority-medium",
-  resolved: "bg-[#2dd4bf]/15 text-[#5eead4]",
-  closed: "bg-line/60 text-ink-soft",
+  open: "bg-line text-ink-soft",
+  in_progress: "bg-priority-medium/15 text-[#92600a]",
+  resolved: "bg-[#0d9488]/10 text-[#0d9488]",
+  closed: "bg-line text-ink-soft",
 };
 
 export const STATUS_LABELS: Record<string, string> = {
@@ -111,8 +118,8 @@ export function Button({
   variant?: "primary" | "secondary" | "ghost";
 }) {
   const variants: Record<string, string> = {
-    primary: "bg-brand-500 text-[#15100d] hover:bg-brand-700 shadow-card",
-    secondary: "bg-transparent border-2 border-ink text-ink hover:border-brand-500 hover:text-brand-700",
+    primary: "bg-brand-500 text-[#fff8ec] hover:bg-brand-600 shadow-card",
+    secondary: "bg-transparent border-2 border-line text-ink hover:border-brand-500 hover:text-brand-700",
     ghost: "text-ink-soft hover:bg-line/60",
   };
   return (
@@ -126,10 +133,12 @@ export function Button({
 }
 
 export function PageHeading({
+  eyebrow,
   title,
   description,
   action,
 }: {
+  eyebrow?: string;
   title: string;
   description?: ReactNode;
   action?: ReactNode;
@@ -137,8 +146,13 @@ export function PageHeading({
   return (
     <div className="mb-8 flex flex-wrap items-start justify-between gap-4">
       <div className="max-w-2xl">
+        {eyebrow && (
+          <div className="mb-2 font-mono text-[11px] font-semibold uppercase tracking-wider text-brand-700">
+            {eyebrow}
+          </div>
+        )}
         <h1 className="font-serif text-3xl font-semibold tracking-tight text-ink sm:text-4xl">{title}</h1>
-        {description && <p className="mt-3 text-lg leading-relaxed text-ink-soft">{description}</p>}
+        {description && <p className="mt-3 text-base leading-relaxed text-ink-soft">{description}</p>}
       </div>
       {action}
     </div>

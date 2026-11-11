@@ -17,10 +17,10 @@ import { API_BASE_URL } from "@/lib/api";
 import Mascot from "./Mascot";
 
 const links = [
-  { href: "/overview", label: "Overview", icon: LayoutGrid, color: "#f0c479", tint: "rgba(227,166,85,0.15)" },
-  { href: "/triage", label: "Inbox", icon: Inbox, color: "#c4b5fd", tint: "rgba(167,139,250,0.15)" },
-  { href: "/review", label: "Review board", icon: Columns3, color: "#fdba74", tint: "rgba(251,146,60,0.15)" },
-  { href: "/knowledge", label: "Knowledge base", icon: BookOpen, color: "#5eead4", tint: "rgba(45,212,191,0.15)" },
+  { href: "/overview", label: "Overview", icon: LayoutGrid, color: "#8a5c1c", tint: "rgba(203,138,46,0.12)" },
+  { href: "/triage", label: "Inbox", icon: Inbox, color: "#6d28d9", tint: "rgba(124,58,237,0.1)" },
+  { href: "/review", label: "Review board", icon: Columns3, color: "#b45309", tint: "rgba(217,119,6,0.1)" },
+  { href: "/knowledge", label: "Knowledge base", icon: BookOpen, color: "#0d7a70", tint: "rgba(13,148,136,0.1)" },
 ];
 
 const titles: Record<string, string> = {
@@ -56,7 +56,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
     <div className="flex min-h-screen">
       <aside className="fixed inset-y-0 left-0 z-30 flex w-64 flex-col border-r border-line bg-surface px-4 py-6 text-ink-soft">
         <Link href="/" className="flex items-center gap-2 px-2 font-serif text-xl font-semibold tracking-tight text-ink">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-gradient text-[#15100d] shadow-glow">
+          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-gradient text-[#fff8ec] shadow-glow">
             <Sparkles size={15} strokeWidth={2.5} />
           </span>
           resolve
@@ -67,7 +67,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
         <Link
           href="/submit"
-          className="mt-6 flex items-center justify-center gap-2 rounded-full bg-brand-500 px-4 py-2.5 font-mono text-xs font-medium uppercase tracking-wide text-[#15100d] shadow-card transition hover:bg-brand-700"
+          className="mt-6 flex items-center justify-center gap-2 rounded-full bg-brand-500 px-4 py-2.5 font-mono text-xs font-medium uppercase tracking-wide text-[#fff8ec] shadow-card transition hover:bg-brand-600"
         >
           <Plus size={16} /> New ticket
         </Link>

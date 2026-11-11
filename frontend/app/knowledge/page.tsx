@@ -12,7 +12,7 @@ const CATEGORY_LABELS: Record<string, string> = {
   RELEASE_NOTES: "Release notes",
 };
 
-const CATEGORY_COLORS = ["#e3a655", "#a78bfa", "#2dd4bf", "#fb923c", "#e78fa3", "#f2b84b", "#22d3ee"];
+const CATEGORY_COLORS = ["#cb8a2e", "#6d28d9", "#0d7a70", "#b45309", "#b03f5c", "#92600a", "#0e6c8a"];
 
 function label(category: string) {
   return CATEGORY_LABELS[category] || category.charAt(0) + category.slice(1).toLowerCase().replace(/_/g, " ");

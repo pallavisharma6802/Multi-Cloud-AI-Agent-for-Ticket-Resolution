@@ -21,24 +21,24 @@ import { Card, PageHeading, StatCard, Button } from "@/components/ui";
 import TicketRow from "@/components/TicketRow";
 
 const GRAFANA_URL = process.env.NEXT_PUBLIC_GRAFANA_URL || "http://localhost:3001";
-const OUTCOME_COLORS = ["#e3a655", "#e78fa3", "#2dd4bf", "#8f766c"];
+const OUTCOME_COLORS = ["#cb8a2e", "#b03f5c", "#0d9488", "#9c8a81"];
 const PRIORITY_COLORS: Record<string, string> = {
-  urgent: "#f87171",
-  high: "#fb923c",
-  medium: "#f2b84b",
-  low: "#22d3ee",
+  urgent: "#dc2626",
+  high: "#b45309",
+  medium: "#92600a",
+  low: "#0e6c8a",
 };
-const CHART_LINE = "#3c2f29";
-const CHART_TICK = { fill: "#cdb3a8", fontSize: 12 };
+const CHART_LINE = "#ece2d8";
+const CHART_TICK = { fill: "#6b5a52", fontSize: 12 };
 const CHART_TOOLTIP_STYLE = {
-  background: "#2a211d",
-  border: "1px solid #3c2f29",
+  background: "#ffffff",
+  border: "1px solid #ece2d8",
   borderRadius: 10,
-  color: "#f6ebe3",
+  color: "#241b17",
   fontSize: 13,
-  boxShadow: "0 8px 24px rgba(0,0,0,0.35)",
+  boxShadow: "0 8px 24px rgba(36,27,23,0.12)",
 };
-const CHART_TOOLTIP_LABEL_STYLE = { color: "#cdb3a8" };
+const CHART_TOOLTIP_LABEL_STYLE = { color: "#6b5a52" };
 
 const DASHBOARDS = [
   { uid: "ticket-trends", title: "Ticket Trends" },
@@ -131,15 +131,15 @@ export default function Home() {
               <AreaChart data={trendData}>
                 <defs>
                   <linearGradient id="vol" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#e3a655" stopOpacity={0.3} />
-                    <stop offset="100%" stopColor="#e3a655" stopOpacity={0} />
+                    <stop offset="0%" stopColor="#cb8a2e" stopOpacity={0.25} />
+                    <stop offset="100%" stopColor="#cb8a2e" stopOpacity={0} />
                   </linearGradient>
                 </defs>
                 <CartesianGrid strokeDasharray="3 3" stroke={CHART_LINE} vertical={false} />
                 <XAxis dataKey="date" tick={{ ...CHART_TICK, fontSize: 11 }} tickLine={false} axisLine={{ stroke: CHART_LINE }} />
                 <YAxis tick={CHART_TICK} tickLine={false} axisLine={false} allowDecimals={false} />
                 <Tooltip contentStyle={CHART_TOOLTIP_STYLE} labelStyle={CHART_TOOLTIP_LABEL_STYLE} />
-                <Area type="monotone" dataKey="total" stroke="#e3a655" strokeWidth={2} fill="url(#vol)" />
+                <Area type="monotone" dataKey="total" stroke="#cb8a2e" strokeWidth={2} fill="url(#vol)" />
               </AreaChart>
             </ResponsiveContainer>
           </div>
