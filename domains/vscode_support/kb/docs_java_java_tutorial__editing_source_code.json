@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Editing source code\n\nYou can use code snippets to scaffold your classes and methods. {% data variables.product.prodname_vscode_shortname %} also provides IntelliSense for code completion, and various refactor methods.\n\n<video src=\"images/java-tutorial/edit-code.mp4\" autoplay loop muted playsinline controls title=\"Editing source code\">\n</video>\n\nTo learn more about editing Java, see [Java Editing](/docs/java/java-editing.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-tutorial.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-tutorial.md"
 }

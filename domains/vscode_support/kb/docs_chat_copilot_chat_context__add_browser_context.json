@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Add browser context\n\nUse the [integrated browser](/docs/debugtest/integrated-browser.md) to preview web pages and attach information from the current page to a prompt.\n\nThe browser toolbar has an **Add to Chat** split button with actions that let you attach different types of context from the current page to your chat prompt:\n\n* **Add Element to Chat**: select HTML elements from the page to add as context, including their CSS styles and screenshots.\n* **Add Screenshot to Chat**: capture a screenshot of the current browser viewport and attach it as an image.\n* **Add Console Logs to Chat**: capture console output from the page and attach it as context for debugging runtime errors.\n\nLearn how to [add browser context to chat](/docs/debugtest/integrated-browser.md#add-context-to-ai-chat). To let an agent interact with a page instead of attaching it as prompt context, see [browser tools for agents](/docs/debugtest/integrated-browser.md#browser-tools-for-agents).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/chat/copilot-chat-context.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/chat/copilot-chat-context.md"
 }

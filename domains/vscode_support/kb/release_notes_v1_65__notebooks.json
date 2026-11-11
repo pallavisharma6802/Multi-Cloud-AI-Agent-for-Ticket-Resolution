@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notebooks\n\n### Built-in output renderers update\n\nWe moved the text, image, HTML and code renderers from the VS Code core to a built-in output renderer extension. With this change, VS Code can now search text on these output types.\n\nIn the short video below, searching for `item` initially has 3 results for the code cell, but can be filtered to also include the cell output.\n\n<video src=\"images/1_65/notebook-search-in-text-output.mp4\" autoplay loop controls muted title=\"Search keyword 'item' in code cell then also in cell output\"></video>\n\n### Sticky scrolling notebook cell buttons\n\nThe **Run** button and cell toolbar will now stick to the top of the screen when scrolling down a code cell. This makes them more accessible when working in a long code cell.\n\n<video src=\"images/1_65/sticky-scroll.mp4\" autoplay loop controls muted title=\"Notebook cell button and toolbar remain visible during scrolling\"></video>\n\n_Theme: [Dracula](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)_",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_65.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_65.md"
 }

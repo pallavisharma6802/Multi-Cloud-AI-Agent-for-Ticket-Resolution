@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable fixes\n\n* [26425](https://github.com/microsoft/vscode/issues/26425): Open changes button should not show when no changes exist\n* [100815](https://github.com/microsoft/vscode/issues/100815): External Terminal broken when connected to remote WSL\n* [106981](https://github.com/microsoft/vscode/issues/106981): Terminal Cursor Ghosting When Window Zoom Set To -1\n* [127959](https://github.com/microsoft/vscode/issues/127959): Debug Pane Opens When Debugger Pauses\n* [129059](https://github.com/microsoft/vscode/issues/129059): Object widget in settings editor doesn't render description\n* [129070](https://github.com/microsoft/vscode/issues/129070): Unable to correct dropdown setting value by only pressing OK button\n* [129415](https://github.com/microsoft/vscode/issues/129415): User tasks can't be run in single file mode",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_59.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_59.md"
 }

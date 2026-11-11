@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Simple commands\n\nSimple commands that do not require parameters can be found in the Keyboard Shortcuts list in the default `keybindings.json` file. The unbound commands are listed in a comment block at the bottom of the file.\n\nTo review the default `keybindings.json`, run **Preferences: Open Default Keyboard Shortcuts (JSON)** from the Command Palette (`kb(workbench.action.showCommands)`).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/commands.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/commands.md"
 }

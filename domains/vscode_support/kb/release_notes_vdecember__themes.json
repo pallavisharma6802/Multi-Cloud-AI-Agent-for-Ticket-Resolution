@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Themes\n\nVarious fixes to the default light and dark theme. Due to the move to TextMate tokenizers in the last release, there were changes in the appearance of the default light and dark theme. Some themes got far more colorful, in particular JavaScript, while other languages lost colors, e.g. Jade and XML. The goal was to stay as close as possible to what we had in the 0.9.0 release so we use a few major colors: blue for keywords, green for comments and red for strings.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vDecember.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/vDecember.md"
 }

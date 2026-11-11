@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Questions or feedback\n\nIf you have questions, you can consult the GitHub Codespaces [Troubleshooting guide](https://docs.github.com/github/developing-online-with-codespaces/troubleshooting-your-codespace). If you'd like to provide feedback, you can enter issues in the GitHub Codespaces [Discussions](https://github.com/community/community/discussions/categories/codespaces).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/codespaces.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/remote/codespaces.md"
 }

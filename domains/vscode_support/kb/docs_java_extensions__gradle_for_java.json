@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Gradle for Java\n\n{% data variables.product.prodname_vscode %} offers support Gradle support via the [Gradle for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-gradle) extension. To learn more how to use this extension, visit the [Gradle section](/docs/java/java-build.md#gradle) on Build Tools page.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/extensions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/extensions.md"
 }

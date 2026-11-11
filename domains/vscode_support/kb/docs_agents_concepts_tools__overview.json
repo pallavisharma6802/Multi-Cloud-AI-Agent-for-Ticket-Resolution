@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Understand tools in AI agents\n\nA tool is a capability that lets an [agent](/docs/agents/concepts/agents.md) gather information or take an action. Without tools, a [language model](/docs/agents/concepts/language-models.md) can only generate text. With tools, an agent can read files, edit code, run terminal commands, search your codebase, and connect to external services.\n\nWhen the agent uses a tool, it makes a **tool call** with the inputs that the tool needs. The tool runs and returns **tool output**, which becomes part of the [context](/docs/agents/concepts/context.md) for the next step in the [agent loop](/docs/agents/concepts/agents.md#agent-loop).\n\nThis article explains how tools fit into the agent loop, the types of tools available in {% data variables.product.prodname_vscode_shortname %}, and how you control their use.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/tools.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/concepts/tools.md"
 }

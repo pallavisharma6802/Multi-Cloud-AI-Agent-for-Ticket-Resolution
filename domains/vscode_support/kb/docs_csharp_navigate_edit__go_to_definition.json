@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Go To Definition\n\nThe **Go To Definition** feature navigates to the source or file of a type or member, and opens the result in a new tab. If you are a keyboard user, place your text cursor somewhere inside the symbol name and press `kb(editor.action.revealDefinition)`. If you are a mouse user, either right-click the symbol name and select **Go To Definition** from the context menu or `kbstyle(Ctrl+click)` the symbol name.  You can also use `kbstyle(Ctrl+Alt+click)` to open the definition on the side.\n\n![Go to Definition example](images/navigate-edit/go-to-definition.gif)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/navigate-edit.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/navigate-edit.md"
 }

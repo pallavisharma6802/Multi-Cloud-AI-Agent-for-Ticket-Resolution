@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Running and debugging your program\n\nTo run and debug Java code, set a breakpoint, then either press `kb(workbench.action.debug.start)` on your keyboard or use the **Run** > **Start Debugging** menu item. You can also use the **Run|Debug** CodeLens option in the editor. After the code compiles, you can see all your variables and threads in the **Run and Debug** view.\n\n<video src=\"images/java-tutorial/run-debug.mp4\" autoplay loop muted playsinline controls title=\"Running and debugging your program\">\n</video>\n\nThe debugger also supports advanced features such as [Hot Code Replace](/docs/java/java-debugging.md#hot-code-replace) and conditional breakpoints.\n\nFor more information, see [Java Debugging](/docs/java/java-debugging.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-tutorial.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-tutorial.md"
 }

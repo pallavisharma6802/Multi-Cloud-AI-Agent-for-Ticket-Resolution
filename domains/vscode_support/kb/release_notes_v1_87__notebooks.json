@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notebooks\n\n### Indentation settings for notebooks\n\nWe now support notebook-specific indentation settings via the <code codesetting=\"notebook.editorOptionsCustomizations\">notebook.editorOptionsCustomizations</code> setting. This setting allows users to set a specific indentation style for notebooks, via the `editor.tabSize`, `editor.indentSize`, and `editor.insertSpaces` settings.\n\nUsers will also notice a status bar entry named **Notebook Indentation** that shows the current indentation settings for the notebook editor. This entry has a quick pick menu, which enables managing the indentation settings without having to open the Settings editor. This is the same quick pick menu that is also available in the editor.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_87.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_87.md"
 }

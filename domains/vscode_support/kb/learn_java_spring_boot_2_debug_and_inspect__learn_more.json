@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Learn more\n\n- [Java debugging in Visual Studio Code](https://code.visualstudio.com/docs/java/java-debugging) \u2014 launch configurations, stepping, and the Variables panel.\n- [Spring Boot Actuator](https://docs.spring.io/spring-boot/reference/actuator/index.html) \u2014 what the health endpoint reports and how to configure it.\n- [Spring Boot Tools extension](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-spring-boot) \u2014 the source of the inline URL hints and live data.\n- [vscode-java-debug#1585](https://github.com/microsoft/vscode-java-debug/issues/1585) \u2014 the open shutdown regression referenced above.\n- [Demo source on GitHub](https://github.com/microsoft/github-copilot-java-mcp-demo) \u2014 the sample used in every chapter.\n\n---\n\nChapter 2 of 4 \u00b7 Previous: [Build and Run Your First Spring Boot App](/learn/java-spring-boot/1-build-and-run) \u00b7 Next: [Expose Your Java Operations to Copilot with MCP](/learn/java-spring-boot/3-expose-tools-with-mcp)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/2-debug-and-inspect.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/java-spring-boot/2-debug-and-inspect.md"
 }

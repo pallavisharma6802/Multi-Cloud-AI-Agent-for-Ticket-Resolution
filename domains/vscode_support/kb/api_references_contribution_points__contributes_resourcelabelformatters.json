@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## contributes.resourceLabelFormatters\n\nContributes resource label formatters that specify how to display URIs everywhere in the workbench. For example here's how an extension could contribute a formatter for URIs with scheme `remotehub`:\n\n```json\n{\n  \"contributes\": {\n    \"resourceLabelFormatters\": [\n      {\n        \"scheme\": \"remotehub\",\n        \"formatting\": {\n          \"label\": \"${path}\",\n          \"separator\": \"/\",\n          \"workspaceSuffix\": \"GitHub\"\n        }\n      }\n    ]\n  }\n}\n```\n\nThis means that all URIs that have a scheme `remotehub` will get rendered by showing only the `path` segment of the URI and the separator will be `/`. Workspaces which have the `remotehub` URI will have the GitHub suffix in their label.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/contribution-points.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/contribution-points.md"
 }

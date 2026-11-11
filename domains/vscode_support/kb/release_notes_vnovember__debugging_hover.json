@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Debugging - Hover\nDebug hover behavior has been improved: it is now possible to hover over object properties or variables that are not in the top stack frame.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vNovember.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/vNovember.md"
 }

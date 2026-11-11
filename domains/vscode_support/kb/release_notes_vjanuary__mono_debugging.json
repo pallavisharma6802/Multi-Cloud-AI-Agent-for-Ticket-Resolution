@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Mono debugging\n\n### Support for VS Code Debug Console\n\nFor VS Code Mono debugging support, we've added an `externalConsole` attribute, which controls whether the Mono target application is launched in an external console or in the built-in Debug Console (the default). Please note that the built-in Debug Console does not support keyboard input for your application.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vJanuary.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/vJanuary.md"
 }

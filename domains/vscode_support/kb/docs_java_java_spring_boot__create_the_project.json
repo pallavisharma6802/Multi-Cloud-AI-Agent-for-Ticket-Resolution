@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Create the project\n\nThe [Spring Initializr](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-initializr) extension allows you to search for dependencies and generate new Spring Boot projects.\n\nTo install, launch {% data variables.product.prodname_vscode_shortname %} and from the Extensions view (`kb(workbench.view.extensions)`), search for `vscode-spring-initializr`.\n\nOnce you have the extension installed, open the **Command Palette** (`kb(workbench.action.showCommands)`) and type `Spring Initializr` to start generating a Maven or Gradle project and then follow the wizard.\n\n<video src=\"images/java-spring-boot/spring-initializr.mp4\" autoplay loop muted playsinline controls video=\"Create the project\">\n</video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-spring-boot.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-spring-boot.md"
 }

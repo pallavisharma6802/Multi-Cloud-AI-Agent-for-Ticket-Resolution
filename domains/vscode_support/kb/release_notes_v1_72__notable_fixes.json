@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable fixes\n\n* [27799](https://github.com/microsoft/vscode/issues/27799) macOS: OS services cannot pick up selected text from editor\n* [60821](https://github.com/microsoft/vscode/issues/60821) Improved syncing between open recent and the Getting Started page's recent list.\n* [156777](https://github.com/microsoft/vscode/issues/156777) 5MB/minute memory leak when keeping the process explorer open\n* [159862](https://github.com/microsoft/vscode/issues/159862) On macOS Catalina, when in full screen mode, the traffic light button display is misaligned\n* [161305](https://github.com/microsoft/vscode/issues/161305) \"Window: Title Bar Style\" link doesn't work when viewing other Window settings",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_72.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_72.md"
 }

@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "# MCP developer guide\n\nModel Context Protocol (MCP) is an open standard that enables AI models to interact with external tools and services through a unified interface. Visual Studio Code implements the full MCP specification, enabling you to create MCP servers that provide tools, prompts, and resources for extending the capabilities of AI agents in VS Code.\n\nMCP servers provide one of three types of tools available in VS Code, alongside built-in tools and extension-contributed tools. Learn more about [tool types](/docs/agents/concepts/tools.md#types-of-tools).\n\nThis guide covers everything you need to know to build MCP servers that work seamlessly with VS Code and other MCP clients.\n\n> [!TIP]\n> For information about using MCP servers as an end user, see [Use MCP servers in VS Code](/docs/agent-customization/mcp-servers.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/mcp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-guides/ai/mcp.md"
 }

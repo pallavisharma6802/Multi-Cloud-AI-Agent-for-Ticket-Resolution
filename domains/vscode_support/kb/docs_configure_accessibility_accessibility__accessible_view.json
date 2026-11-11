@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Accessible View\n\nRun the command **Open Accessible View** `kb(editor.action.accessibleView)` to display an Accessible View and inspect content character by character, line by line. The Accessible View is currently available for hovers, notifications, comments, notebook output, terminal output, chat responses, inline completions, debug console output, and more.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/accessibility/accessibility.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/accessibility/accessibility.md"
 }

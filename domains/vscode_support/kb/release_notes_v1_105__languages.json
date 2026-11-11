@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Languages\n\n### Python\n\n#### Copy test ID action\n\nThe run gutter icon context menu now includes a **Copy Test Id** command to copy the fully qualified pytest or unittest test identifier.\n\n<video src=\"images/1_105/py_copy_test_id.mp4\" title=\"Video showing the Copy Test Id command in the run gutter context menu.\" autoplay loop controls muted></video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_105.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_105.md"
 }

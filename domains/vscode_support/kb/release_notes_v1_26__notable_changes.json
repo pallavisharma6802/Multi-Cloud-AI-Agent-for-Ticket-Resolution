@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable Changes\n\n* [53532](https://github.com/microsoft/vscode/issues/53532): Editor: load changes to file in the background if file already loaded\n* [53586](https://github.com/microsoft/vscode/issues/53586): Node debug: auto attach mode is not remembered\n* [53022](https://github.com/microsoft/vscode/issues/53022): \"Read-only\" label in the editor tabs for files that are read only\n* [48275](https://github.com/microsoft/vscode/issues/48275): `resourceIsFile` context key is no longer supported",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_26.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_26.md"
 }

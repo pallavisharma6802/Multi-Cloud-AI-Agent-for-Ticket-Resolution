@@ -4,5 +4,5 @@
   "category": "DEBUGGING",
   "intent": "debugging",
   "content": "# Port Forwarding\n\nSupport for port forwarding is built into {% data variables.product.prodname_vscode %} via [Microsoft dev tunnels](https://learn.microsoft.com/azure/developer/dev-tunnels/overview), no extension required. When running a local web service, you can use the **Ports** view to make the service accessible to others over the internet.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/port-forwarding.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/debugtest/port-forwarding.md"
 }

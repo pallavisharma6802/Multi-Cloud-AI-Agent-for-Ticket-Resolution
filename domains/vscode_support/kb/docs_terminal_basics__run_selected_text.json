@@ -4,5 +4,5 @@
   "category": "TERMINAL",
   "intent": "terminal",
   "content": "## Run selected text\n\nTo use the `runSelectedText` command, select text in an editor and run the command **Terminal: Run Selected Text in Active Terminal** via the **Command Palette** (`kb(workbench.action.showCommands)`), the terminal will attempt to run the selected text. If no text is selected in the active editor, the entire line that the cursor is on will run in the terminal.\n\n> [!TIP]\n> Also run the active file using the command `workbench.action.terminal.runActiveFile`.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/basics.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/terminal/basics.md"
 }

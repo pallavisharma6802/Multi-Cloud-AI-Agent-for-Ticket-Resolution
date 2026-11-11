@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable fixes\n\n* [vscode#251722](https://github.com/microsoft/vscode/issues/251722): Inline actions on extension provided tree-view items withing the visible scroll area even when `\"workbench.list.horizontalScrolling\": true`",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_110.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_110.md"
 }

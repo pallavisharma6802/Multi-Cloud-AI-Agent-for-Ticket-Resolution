@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Debug\n\n### JavaScript debugger\n\n#### Support for the Fast Node (Version) Manager\n\nThe JavaScript debugger now supports the [Fast Node Manager](https://github.com/Schniz/fnm) (fnm) in its runtime version. Users of fnm can now set the `runtimeVersion` property of `launch.json` to select the Node.js version.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_81.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_81.md"
 }

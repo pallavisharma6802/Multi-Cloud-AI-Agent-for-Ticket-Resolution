@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Monitor agent usage with OpenTelemetry\n\nThis article describes how to enable and configure OpenTelemetry monitoring for Copilot Chat agent interactions in {% data variables.product.prodname_vscode_shortname %}.\n\nCopilot Chat can export traces, metrics, and events via [OpenTelemetry](https://opentelemetry.io/) (OTel), giving you visibility into agent interactions, LLM calls, tool executions, and token usage. All signal names and attributes follow the [OTel GenAI Semantic Conventions](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/gen-ai/), so the data works with any OTel-compatible backend.\n\n> [!TIP]\n> For an interactive view of the cache metrics without setting up an OTel backend, use the [Cache Explorer](/docs/agents/agent-troubleshooting/cache-explorer.md) to inspect prompt cache hit rates directly in {% data variables.product.prodname_vscode_shortname %}.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/monitoring-agents.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/monitoring-agents.md"
 }

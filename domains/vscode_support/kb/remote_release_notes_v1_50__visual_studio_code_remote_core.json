@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Visual Studio Code Remote Core\n\n### Notification for automatically forwarded ports\n\nDetecting ports for automatic forwarding was added in 1.49, but now there is a notification when a port is automatically forwarded so that you can notice when your remote port is accessible locally.\n\n![Port Forwarded Notification](images/1_50/port-forwarded-notification.png)\n\n### Install extensions without reloading\n\nIt is now possible to install/enable extensions when VS Code is connected to a remote. If an extension is not executing (i.e. its code is not executing), it can also be uninstalled/disabled without reloading VS Code.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_50.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_50.md"
 }

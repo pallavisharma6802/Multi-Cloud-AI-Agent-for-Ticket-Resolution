@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# Configuring C# debugging\n\nYou can configure the C# debugger in {% data variables.product.prodname_vscode %} with a `launch.json`, `launchSettings.json`, or your user `settings.json` file.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/debugger-settings.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/debugger-settings.md"
 }

@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Prompt examples\n\nThis article provides example prompts for chat in {% data variables.product.prodname_vscode %} across different scenarios and agents. Use these examples as inspiration to craft effective prompts for your own development tasks.\n\nIf you are new to using chat in {% data variables.product.prodname_vscode_shortname %}, learn more about [getting started with chat](/docs/chat/chat-overview.md) or review [best practices for prompt crafting](/docs/agents/best-practices.md).\n\n<div class=\"docs-action\" data-show-in-doc=\"false\" data-show-in-sidebar=\"true\" title=\"Get started with agents\">\nFollow a hands-on tutorial to build an app with AI agents in {% data variables.product.prodname_vscode_shortname %}.\n\n* [Start agentic coding tutorial](/docs/agents/agents-tutorial.md)\n\n</div>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/prompt-examples.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/prompt-examples.md"
 }

@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Learn more\n\n- [Playwright MCP server](https://github.com/microsoft/playwright-mcp) \u2014 the server installed in this chapter, and its tool list.\n- [Playwright documentation](https://playwright.dev/docs/intro) \u2014 locators, assertions, and the accessibility snapshot model.\n* [Add MCP servers](/docs/agent-customization/mcp-servers.md) to discover servers in the Customization Marketplace, complete setup, and verify their tools.\n- [Testing Java in Visual Studio Code](https://code.visualstudio.com/docs/java/java-testing) \u2014 the Testing view and test discovery.\n- [Demo source on GitHub](https://github.com/microsoft/github-copilot-java-mcp-demo) \u2014 the sample used in every chapter.\n\n---\n\nChapter 4 of 4 \u00b7 Previous: [Expose Your Java Operations to Copilot with MCP](/learn/java-spring-boot/3-expose-tools-with-mcp)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/4-test-with-playwright.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/java-spring-boot/4-test-with-playwright.md"
 }

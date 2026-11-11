@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Documentation\n\n### Data Science tutorials and topics\n\nThe Data Science tutorials and topics are now under their own section in the [https://code.visualstudio.com](https://code.visualstudio.com/docs/datascience) table of contents. You can find tutorials on using [Jupyter Notebooks](https://code.visualstudio.com/docs/datascience/jupyter-notebooks), the [Python Interactive window](https://code.visualstudio.com/docs/datascience/python-interactive), and even a [Data Science tutorial](https://code.visualstudio.com/docs/datascience/data-science-tutorial) analyzing passenger data from the Titanic.\n\n![Data Science table of contents on code.visualstudio.com](images/1_58/data-science-toc.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_58.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_58.md"
 }

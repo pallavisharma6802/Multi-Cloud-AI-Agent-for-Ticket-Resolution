@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Security and Privacy\n\nAll your code stays local \u2013 the model runs right on your computer - so there's no need to transmit code to a remote server for custom model training. This is enabled by our machine learning system design, which led to dramatically reduced memory footprint and improved inference speed.\n\nSince models powering IntelliCode features run on your local machine, this allows IntelliCode support to be available in offline and air gapped environments.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/intellicode.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/intellicode.md"
 }

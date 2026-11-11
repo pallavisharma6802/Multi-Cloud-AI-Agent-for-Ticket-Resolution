@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Using Scrapbook\n\nThe **DocumentDB Scrapbook** is one of the most powerful features of this extension. It allows you to write, run, and save MongoDB commands directly within a {% data variables.product.prodname_vscode_shortname %} editor, helping you prototype queries and scripts\n\n### Create a New Scrapbook\n1. In the DocumentDB Explorer, right-click the desired collection.\n\n1. From the menu, click **DocumentDB Scrapbook** and select **New DocumentDB Scrapbook**.\n\n![launch documentdb scrapbook](images/documentdb/create-scrapbook.png)\n\nIn a scrapbook, you can reference MongoDB entities and commands and you get rich IntelliSense as you type. Scrapbooks are useful for prototyping database operations and queries. Execute selected lines in the scrapbook queries with **Run Command**.\n\n![Run scrapbook queries](images/documentdb/run-scrapbook.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/mongodb.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/azure/mongodb.md"
 }

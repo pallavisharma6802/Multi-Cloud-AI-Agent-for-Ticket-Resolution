@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Add tracing\n\nUse traces when you need to understand which model or tool calls occurred, or investigate latency and failures. **Get Tracing Code Generation Best Practices** provides instrumentation guidance for supported language and SDK combinations.\n\nFor the same Python agent, ask:\n\n```prompt\nAdd local OpenTelemetry tracing to this Python Microsoft Agent Framework agent\nusing Foundry Toolkit tracing guidance. Explain how to start the Toolkit\ncollector and inspect the traces. Keep support-note content and credentials\nout of telemetry where possible.\n```\n\nReview the generated instrumentation, then follow [Collect local traces](/docs/intelligentapps/tracing.md#collect-local-traces) for collector setup and supported SDKs. Run the agent again to produce data and verify that traces arrive.\n\nLive Agent Inspector events, locally stored traces, and hosted-agent telemetry are separate data sources. For cloud telemetry and its access requirements, see [View hosted-agent traces](/docs/intelligentapps/tracing.md#view-hosted-agent-traces).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/copilot-tools.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/copilot-tools.md"
 }

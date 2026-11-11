@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Next steps\n\nRead on to find out more about:\n\n* [Java editing](/docs/java/java-editing.md) - Explore the editing features for Java in {% data variables.product.prodname_vscode_shortname %}.\n* [Java debugging](/docs/java/java-debugging.md) - Find out how to debug your Java project with {% data variables.product.prodname_vscode_shortname %}.\n* [Java testing](/docs/java/java-testing.md) - Use {% data variables.product.prodname_vscode_shortname %} for your JUnit and TestNG cases.\n* [Java extensions](/docs/java/extensions.md) - Learn about more useful Java extensions for {% data variables.product.prodname_vscode_shortname %}.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-build.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-build.md"
 }

@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## PHP extensions\n\nThere are many PHP language extensions available on the [{% data variables.product.prodname_vs_marketplace %}](https://marketplace.visualstudio.com/VSCode) and more are being created. You can search for PHP extensions from within {% data variables.product.prodname_vscode_shortname %} in the **Extensions** view (`kb(workbench.view.extensions)`) then filter the extensions dropdown list by typing 'php'.\n\n![Searching for PHP in the Extensions view](images/php/category-php.png)\n\n### Disable built-in PHP support\n\nTo disable the built-in PHP smart completions in favor of suggestions from an installed PHP extension, uncheck **PHP > Suggest: Basic**, which sets `setting(php.suggest.basic)` to false in your `settings.json` file.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/php.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/php.md"
 }

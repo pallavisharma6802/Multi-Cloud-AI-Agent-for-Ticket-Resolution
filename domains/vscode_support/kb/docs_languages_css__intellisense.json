@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## IntelliSense\n\n{% data variables.product.prodname_vscode_shortname %} has support for selectors, properties and values. Use `kb(editor.action.triggerSuggest)` to get a list of context specific options.\n\n![IntelliSense in CSS](images/css/intellisense.png)\n\nProposals contain extensive documentation, including a list of browsers that support the property. To see the full description text of the selected entry, use `kb(toggleSuggestionDetails)`.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/css.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/css.md"
 }

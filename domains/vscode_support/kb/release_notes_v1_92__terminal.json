@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Terminal\n\n### New scroll bar\n\nThe scroll bar in the terminal now looks just like the scroll bar in the editor:\n\n![The terminal scroll bar now looks just like the editor's scroll bar](images/1_92/terminal-scroll-bar.png)\n\nThe overview ruler is the same as before, with successful commands on left, find result in middle, failed commands on right. But now it perfectly aligns with the scroll bar slider.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_92.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_92.md"
 }

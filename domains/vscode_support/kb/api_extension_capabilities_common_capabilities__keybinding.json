@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Keybinding\n\nAn extension can add custom keybindings. Read more in the [`contributes.keybindings`](/api/references/contribution-points#contributes.keybindings) and [Key Bindings](/docs/getstarted/keybindings) topics.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-capabilities/common-capabilities.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-capabilities/common-capabilities.md"
 }

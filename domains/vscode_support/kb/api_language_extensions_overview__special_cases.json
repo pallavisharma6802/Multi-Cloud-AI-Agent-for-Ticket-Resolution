@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Special cases\n\n### Multi-root workspace support\n\nWhen the user opens a [multi-root workspace](/docs/editor/multi-root-workspaces), you might need to adapt your Language Server extensions accordingly. This topic discusses multiple approaches to supporting multi-root workspaces.\n\n### Embedded languages\n\nEmbedded languages are common in web development. For example, CSS/JavaScript inside HTML, and GraphQL inside JavaScript/TypeScript. The [Embedded languages](/api/language-extensions/embedded-languages) topic discusses how you can make language features available to embedded languages.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/language-extensions/overview.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/language-extensions/overview.md"
 }

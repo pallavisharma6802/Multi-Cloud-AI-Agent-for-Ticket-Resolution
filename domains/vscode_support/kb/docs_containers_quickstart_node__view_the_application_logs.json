@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## View the application logs\n\nYou can view the logs in {% data variables.product.prodname_vscode_shortname %} by using the **View Logs** command on the container:\n\n1. Navigate to the Container Explorer.\n1. In the **Containers** view, right-click on your container and choose **View Logs**.\n\n    ![Screenshot of logs in the terminal](images/quickstarts/node-view-logs-dark.png)\n\n1. The output will be displayed in the terminal.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/quickstart-node.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/containers/quickstart-node.md"
 }

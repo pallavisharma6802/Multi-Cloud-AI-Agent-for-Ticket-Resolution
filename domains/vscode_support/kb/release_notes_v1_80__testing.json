@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Testing\n\n### Terminal output support\n\nPreviously, test output shown in the **Test Results** view would always be shown in an embedded text editor. This stripped it of rich styling such as colors, styles, and symbols it may have had when run in a terminal. In this release, we show output in a real xterm.js terminal.\n\n![Results shown in the Tests Results panel with green checkmarks](images/1_80/testing-terminal.png)\n\n_Theme: [Codesong](https://marketplace.visualstudio.com/items?itemName=connor4312.codesong) (preview on [vscode.dev](https://vscode.dev/editor/theme/connor4312.codesong))_\n\nNow that the **Test Results** view is fully featured, the commands to **Show Test Output** have been redirected to open the Test Results view instead of creating a temporary terminal.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_80.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_80.md"
 }

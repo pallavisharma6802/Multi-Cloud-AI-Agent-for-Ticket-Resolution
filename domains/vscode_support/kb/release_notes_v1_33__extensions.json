@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Extensions\n\n### Install missing dependencies\n\nWe've improved the extension activation failure notification when VS Code detects a missing extension dependency and now provide an action to install the missing dependency.\n\n![Extension missing dependency warning](images/1_33/extension-dep-install.png)\n\nYou can also install all missing dependencies using the new **Extensions: Install Missing Dependencies** command.\n\n### Network proxy support for extensions\n\nWe now load the SSL/TLS certificates from the operating system and include them when validating `https` requests initiated by extensions. This supports proxies using their own SSL/TLS certificates and other setups with custom certificates.\n\nIn addition, `http`/`https` requests from extensions now honor the `NO_PROXY` environment variable, which lists the domain names separated by commas for which all proxy settings should be ignored.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_33.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_33.md"
 }

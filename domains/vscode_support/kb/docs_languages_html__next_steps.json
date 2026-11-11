@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Next steps\n\nRead on to find out about:\n\n* [CSS, SCSS, and Less](/docs/languages/css.md) - {% data variables.product.prodname_vscode_shortname %} has first class support for CSS including Less and SCSS.\n* [Emmet](/docs/languages/emmet.md) - Learn about {% data variables.product.prodname_vscode_shortname %}'s powerful built-in Emmet support.\n* [Emmet official documentation](https://docs.emmet.io/) - Emmet, the essential toolkit for web-developers.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/html.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/html.md"
 }

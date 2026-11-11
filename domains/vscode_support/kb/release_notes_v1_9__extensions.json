@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Extensions\n\n### Easily create an Extension Pack\n\n[Extension Packs](https://code.visualstudio.com/Docs/extensionAPI/extension-manifest#_extension-packs) allow you to bundle separate extensions together so that they can be installed together. We have added support to create an Extension Pack using the Code Yeoman generator.\n\n![extensionpackgenerator](images/1_9/extensionpack-generator.png)\n\nThe generator creates an Extension Pack extension. Optionally, it can also seed the pack with the set of extensions you have currently installed in your Code instance. In this way you can easily create an Extension Pack with your favorite extensions, publish it to the market place, and share it with others.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_9.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_9.md"
 }

@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Simple inline tryout link\n\nThe following inline tryout uses its authored text as the button label. Select Insiders to see **Try Smart Diff Layout (Insiders)**.\n\n`try(editor.smart-diff, Try Smart Diff Layout)`",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/action-card-samples.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/getting-started/action-card-samples.md"
 }

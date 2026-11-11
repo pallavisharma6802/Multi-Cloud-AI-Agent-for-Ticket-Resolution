@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Develop the application\n\nThe [Spring Boot Tools](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-spring-boot) extension includes rich language support for working with Spring Boot `application.properties`, `application.yml`, and `.java` files.\n\nThe extension supports the following features:\n\n* Quickly navigate to a Spring element in your workspace\n* Smart code completion for Spring specific components\n* Quick access to running Spring apps\n* Live application information\n* Code templates\n\nSimilar code completion and validation features are also available for `.properties` and `.yml` files.\n\nTo learn how to use these features, you can visit this [detailed usage guide](https://github.com/spring-projects/sts4/tree/main/vscode-extensions/vscode-spring-boot#usage).\n\nBelow is an example showing live application information.\n\n<video src=\"images/java-spring-boot/spring-live-info.mp4\" autoplay loop muted playsinline controls title=\"Live application information and metrics\">\n</video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-spring-boot.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-spring-boot.md"
 }

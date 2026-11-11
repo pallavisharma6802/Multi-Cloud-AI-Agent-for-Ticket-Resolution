@@ -4,5 +4,5 @@
   "category": "INSTALLATION",
   "intent": "installation",
   "content": "## {% data variables.product.prodname_vscode_shortname %} extensions\n\nYou can extend the {% data variables.product.prodname_vscode_shortname %} editor itself through [extensions](/docs/configure/extensions/extension-marketplace.md). The {% data variables.product.prodname_vscode_shortname %} community has built thousands of useful extensions available on the {% data variables.product.prodname_vscode_shortname %} [Marketplace](https://marketplace.visualstudio.com/VSCode).\n\nThe following list shows some of the popular extensions in the {% data variables.product.prodname_vs_marketplace %}. Select an extension tile to view the extension details.\n\n<div class=\"marketplace-extensions-top\"></div>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/additional-components.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/setup/additional-components.md"
 }

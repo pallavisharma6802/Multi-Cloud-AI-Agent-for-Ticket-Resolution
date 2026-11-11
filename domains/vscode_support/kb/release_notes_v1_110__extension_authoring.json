@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Extension Authoring\n\n### Webviews and Custom Editors can now use ThemeIcons for their icon path\n\n[Webview Panels](https://code.visualstudio.com/api/extension-guides/webview) and custom editors can now use a [`ThemeIcon`](https://microsoft.github.io/vscode-codicons/dist/codicon.html) as their editor tab icon:\n\n```ts\nwebviewPanel.iconPath = new vscode.ThemeIcon('octoface');\n```\n\n![Screenshot showing the 'octoface' theme icon used for a webview tab icon.](images/1_110/webview-icon.png)\n\n### Portable mode detection API finalized\n\nThe `env.isAppPortable` API is now stable and available to all extensions without requiring `enabledApiProposals`.\n\nUse this API to detect whether VS Code is running in [portable mode](https://code.visualstudio.com/docs/editor/portable), which is enabled when the app runs from a folder containing a `data` directory.\n\n```ts\nif (vscode.env.isAppPortable) {\n  // Running in portable mode - adjust behavior accordingly\n}\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_110.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_110.md"
 }

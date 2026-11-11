@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Private repositories\n\nTo use semantic search for private repositories, Copilot may need additional permission. If these permissions are not already granted, {% data variables.product.prodname_vscode_shortname %} asks for them at startup. Once granted, the session is securely stored for the future.\n\n![Modal window asking for additional authentication for a private repository.](../images/workspace-context/authentication.png)\n\nLearn more about security, privacy, and transparency in the [GitHub Copilot Trust Center](https://resources.github.com/copilot-trust-center/).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/workspace-context.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/reference/workspace-context.md"
 }

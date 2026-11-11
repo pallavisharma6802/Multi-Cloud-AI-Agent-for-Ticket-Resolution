@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Privacy and enterprise controls\n\n{% data variables.product.prodname_vscode_shortname %} provides controls over browser access:\n\n* You explicitly approve sharing a browser tab that you opened.\n* Agent-opened tabs use isolated ephemeral storage.\n* In untrusted workspaces, the integrated browser always uses ephemeral storage.\n* Administrators can turn off browser tools with the `BrowserChatTools` policy.\n* Administrators can use agent network filtering to restrict the domains that agent tools can reach.\n\nLearn more about [approvals and permissions](/docs/agents/run/approvals.md), [browser session storage](/docs/debugtest/integrated-browser.md#session-storage), and [enterprise controls for AI](/docs/enterprise/manage-ai-settings.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/browser-tools.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/browser-tools.md"
 }

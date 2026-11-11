@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## SSH\n\n### Notable Fixes\n\n* [1760](https://github.com/microsoft/vscode-remote-release/issues/1760): Panel \"check remote\" keeps popping out and interrupting my work\n* [2518](https://github.com/microsoft/vscode-remote-release/issues/2518): Remote SSH password keeps asking password (Installation already in progress)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_48.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_48.md"
 }

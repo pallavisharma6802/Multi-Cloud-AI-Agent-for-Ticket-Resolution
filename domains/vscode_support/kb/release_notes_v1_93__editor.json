@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Editor\n\n### Lightbulb improvements\n\nIn the previous milestone, we improved the location where the Code Actions lightbulb icon is shown. We've now decided to set <a href=\"vscode://settings/editor.lightbulb.enabled\" codesetting=\"true\">`editor.lightbulb.enabled`</a> to `onCode` by default. This means that the lightbulb icon is only shown when the cursor is on lines with source code and will show up less frequently.\n\n### Color theming for action lists\n\nThe color of the action list control, such as the Code Action menu, can be configured by themes with the `editorActionList.background`, `editorActionList.foreground`, `editorActionList.focusForeground`, and `editorActionList.focusBackground` keys. By default, the action list control theme matches that of the Quick Pick and Command Palette. Get more info about [customizing a color theme](https://code.visualstudio.com/docs/getstarted/themes#_customize-a-color-theme).\n\n<h2 id=\"github-copilot-override\"><div id=\"_github-copilot-override\"/></h2>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_93.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_93.md"
 }

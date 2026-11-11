@@ -4,5 +4,5 @@
   "category": "REFERENCE",
   "intent": "reference",
   "content": "## Set {% data variables.product.prodname_vscode_shortname %} as Unity's external editor\n\nOpen up **Unity Preferences**, **External Tools**, then select {% data variables.product.prodname_vscode %} as **External Script Editor**.\n\n![Unity Preferences](images/unity/unity-externaltools.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/other/unity.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/other/unity.md"
 }

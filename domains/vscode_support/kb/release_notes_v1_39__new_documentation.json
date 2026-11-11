@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## New documentation\n\n### Node.js deployment tutorials\n\nThe [Node.js deployment tutorials](https://code.visualstudio.com/docs/azure/deployment) have moved to the [Azure JavaScript Developer Center](https://learn.microsoft.com/azure/developer/javascript) on [learn.microsoft.com](https://learn.microsoft.com).\n\nThere you can find tutorials for using Visual Studio Code to:\n\n* [Deploy Azure Functions](https://learn.microsoft.com/azure/developer/javascript/tutorial/azure-function-cosmos-db-mongo-api)\n* [Deploy to Azure App Service](https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app)\n* [Deploy Docker containers](https://learn.microsoft.com/azure/developer/javascript/tutorial/tutorial-vscode-docker-node/tutorial-vscode-docker-node-01)\n* [Create a static website](https://learn.microsoft.com/azure/static-web-apps/getting-started)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_39.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_39.md"
 }

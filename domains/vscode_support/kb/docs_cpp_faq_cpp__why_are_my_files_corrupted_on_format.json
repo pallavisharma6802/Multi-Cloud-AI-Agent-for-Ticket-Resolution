@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Why are my files corrupted on format?\n\nFiles can be corrupted (and other features can fail) if a workspace folder is opened via a path with symlinks (issue [vscode-cpptools#5061](https://github.com/microsoft/vscode-cpptools/issues/5061)). The workaround is to open the workspace folder using a path that has the symlinks resolved to their target.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/faq-cpp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/faq-cpp.md"
 }

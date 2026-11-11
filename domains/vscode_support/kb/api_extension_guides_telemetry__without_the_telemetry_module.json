@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Without the telemetry module\n\nExtension authors who wish not to use Application Insights can utilize their own custom solution to send telemetry. In this case, it is still required that extension authors respect the user's choice by utilizing the `isTelemetryEnabled` and `onDidChangeTelemetryEnabled` API. By doing this, users will have one centralized place to control their telemetry settings.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/telemetry.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-guides/telemetry.md"
 }

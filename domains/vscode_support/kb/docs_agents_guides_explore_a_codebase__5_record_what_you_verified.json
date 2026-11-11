@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## 5. Record what you verified\n\nAsk for a concise summary you can use when planning your first change:\n\n```prompt\nSummarize what we verified about this behavior. Include the entry point,\nthe implementation path, relevant tests and commands, and unresolved\nquestions. Link each important claim to its source. Distinguish tests\nwe inspected from tests we ran. Do not create or edit files.\n```\n\nReview the summary yourself. You should be able to locate the implementation, explain one successful and one error or boundary path, and identify how you would validate a change. If an important connection remains uncertain, resolve it with a maintainer or further investigation before editing.\n\nKeep the verified summary with your task. Promote stable project knowledge to shared documentation only after review, rather than saving an unchecked agent-generated architecture description.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/explore-a-codebase.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/explore-a-codebase.md"
 }

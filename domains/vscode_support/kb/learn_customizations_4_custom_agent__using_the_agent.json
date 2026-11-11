@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Using the agent\n\n![Screenshot of the Copilot Chat view showing the arcade app builder agent selected from the dropdown](../images/customizations/ep-4-4-select-arcade-agent.png)\n\nOnce created, using a custom agent is simple. You select it from the dropdown or reference it directly in chat.\n\nWhen you ask it to build something, like a new calculator app, it applies all of its predefined rules and context automatically.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/4-custom-agent.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/4-custom-agent.md"
 }

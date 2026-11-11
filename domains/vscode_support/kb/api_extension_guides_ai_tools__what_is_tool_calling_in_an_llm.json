@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## What is tool calling in an LLM?\n\nA language model tool is a function that can be invoked as part of a language model request. For example, you might have a function that retrieves information from a database, performs some calculation, or calls an online API. When you contribute a tool in a VS Code extension, agent mode can then invoke the tool based on the context of the conversation.\n\nThe LLM never actually executes the tool itself, instead the LLM generates the parameters that are used to call your tool. It's important to clearly describe the tool's purpose, functionality, and input parameters so that the tool can be invoked in the right context.\n\nThe following diagram shows the tool-calling flow in agent mode in VS Code. See [Tool-calling flow](#tool-calling-flow) for details about the specific steps involved.\n\n![Diagram that shows the Copilot tool-calling flow](../images/ai/tools/copilot-tool-calling-flow.png)\n\nRead more about [function calling](https://platform.openai.com/docs/guides/function-calling) in the OpenAI documentation.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/tools.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-guides/ai/tools.md"
 }

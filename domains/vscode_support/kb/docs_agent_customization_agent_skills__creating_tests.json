@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Creating tests\n\n1. Review the [test template](./test-template.js) for the standard test structure\n2. Identify the user flow to test\n3. Create a new test file in the `tests/` directory\n4. Use Playwright's locators to find elements (prefer role-based selectors)\n5. Add assertions to verify expected behavior",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/agent-skills.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/agent-skills.md"
 }

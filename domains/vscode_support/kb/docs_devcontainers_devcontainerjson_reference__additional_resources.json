@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Additional resources\n\n[Create a development container](/docs/devcontainers/create-dev-container.md) has more information on configuring a dev container, or you can use the **Dev Containers: Add Dev Container Configuration Files...** or **Codespaces: Add Dev Container Configuration Files...** commands from the Command Palette (`kbstyle(F1)`) to add a wide variety of base configurations.\n\n> **Tip:** If you've already built a container and connected to it, be sure to run **Dev Containers: Rebuild Container** or **Codespaces: Rebuild Container** from the Command Palette (`kbstyle(F1)`) to pick up any changes you make.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/devcontainerjson-reference.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/devcontainers/devcontainerjson-reference.md"
 }

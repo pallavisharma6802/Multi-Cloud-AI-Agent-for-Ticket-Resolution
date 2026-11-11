@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Webview\n\nWebviews are highly customizable views built with HTML/CSS/JavaScript. They display next to text editors in the Editor Group areas. Read more about Webview in the [Webview guide](/api/extension-guides/webview).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-capabilities/extending-workbench.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-capabilities/extending-workbench.md"
 }

@@ -4,5 +4,5 @@
   "category": "INSTALLATION",
   "intent": "installation",
   "content": "## Next steps\n\nOnce you have installed {% data variables.product.prodname_vscode_shortname %}, these topics will help you learn more about it:\n\n* [Additional Components](/docs/setup/additional-components.md) - Learn how to install Git, Node.js, TypeScript, and tools like Yeoman.\n* [User Interface](/docs/editing/getting-started/userinterface.md) - A quick orientation to {% data variables.product.prodname_vscode_shortname %}.\n* [User/Workspace Settings](/docs/configure/settings.md) - Learn how to configure {% data variables.product.prodname_vscode_shortname %} to your preferences through settings.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/raspberry-pi.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/setup/raspberry-pi.md"
 }

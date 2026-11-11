@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Debug Adapter Protocol\n\nA couple notable changes were made to the [Debug Adapter Protocol](https://microsoft.github.io/debug-adapter-protocol):\n\n* Notation for return values by a new `Scope.presentationHint = returnValue` option.\n* Addition of a source location to `evaluate` requests. VS Code implements this and passes the location when evaluating hovers and inline values.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_91.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_91.md"
 }

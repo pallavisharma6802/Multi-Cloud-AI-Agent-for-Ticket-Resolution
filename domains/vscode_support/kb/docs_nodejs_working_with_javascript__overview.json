@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# Working with JavaScript\n\nThis topic describes some of the advanced JavaScript features supported by {% data variables.product.prodname_vscode %}. Using the TypeScript language service, {% data variables.product.prodname_vscode_shortname %} can provide smart completions (IntelliSense) as well as type checking for JavaScript.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/working-with-javascript.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/nodejs/working-with-javascript.md"
 }

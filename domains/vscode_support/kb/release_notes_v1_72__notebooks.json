@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notebooks\n\n### Notebook JavaScript output is now evaluated as a module\n\nJavaScript output in notebooks is now treated as a module. This means that variables declared inside the output will no longer leak into other outputs (and in the case of `const` variables, potentially even prevent other outputs with conflicting variable names from being run).\n\nThis also means you can now use `import` inside of JavaScript outputs:\n\n```js\n%%javascript\nimport { myFunction } from './myModules.js';\n\nconsole.log(myFunction());\n```\n\n### HTML headers supported in the notebook outline\n\nHTML headers in Markdown cells can now be detected and rendered in the notebook **Outline** view.\n\n![HTML headers in notebook Markdown cells](images/1_72/notebook-outline-html-headers.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_72.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_72.md"
 }

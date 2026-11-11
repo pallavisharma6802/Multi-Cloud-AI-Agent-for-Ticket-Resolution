@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Best Practices\n\nWhenever possible, you should exclude folders with JavaScript files that are not part of the source code for your project.\n\n>**Tip:** If you do not have a `jsconfig.json` in your workspace, {% data variables.product.prodname_vscode_shortname %} will by default exclude the `node_modules` folder.\n\nBelow is a table, mapping common project components to their installation folders that are recommended to exclude:\n\nComponent | folder to exclude\n----------|-----------\n`node` | exclude the `node_modules` folder\n`webpack`, `webpack-dev-server` | exclude the content folder, for example `dist`.\n`bower` | exclude the `bower_components` folder\n`ember` | exclude the `tmp` and `temp` folders\n`jspm` | exclude the `jspm_packages` folder\n\nWhen your JavaScript project is growing too large and performance slows, it is often because of library folders like `node_modules`. If {% data variables.product.prodname_vscode_shortname %} detects that your project is growing too large, it will prompt you to edit the `exclude` list.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/jsconfig.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/jsconfig.md"
 }

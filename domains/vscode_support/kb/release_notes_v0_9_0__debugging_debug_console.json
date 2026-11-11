@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Debugging - Debug Console\nWe have made many improvements to the Debug Console:\n* Text selection is now supported\n* Better colors for improved visibility\n* Richer context menus\n* Expansion of elements is preserved between sessions\n\n![Debug Console](images/0_9_0/debugconsole.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_9_0.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v0_9_0.md"
 }

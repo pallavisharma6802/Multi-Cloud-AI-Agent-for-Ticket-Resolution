@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Tasks\n\n### Disable faster Quick Pick\n\nWith version 1.44, we improved the task picker that shows when you run the **Tasks: Run Task** command by changing the layout and making it faster. However, the faster Quick Pick does make the task picker two levels deep depending on which task you want to run. If you want the previous UI, you can now disable the faster picker with the `task.quickOpen.showAll` setting.\n\n### Save on run\n\nPreviously, all dirty editors were always saved when a task is run. If you don't want to have your editors saved when you run a task, you can now configure that behavior with `task.saveBeforeRun`.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_45.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_45.md"
 }

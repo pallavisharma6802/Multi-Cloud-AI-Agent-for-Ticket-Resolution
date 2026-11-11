@@ -4,5 +4,5 @@
   "category": "TERMINAL",
   "intent": "terminal",
   "content": "# Terminal Shell Integration\n\n{% data variables.product.prodname_vscode %} has the ability to integrate with common shells, allowing the terminal to understand more about what's actually happening inside the shell. This additional information enables some useful features such as [working directory detection](#current-working-directory-detection) and command detection, [decorations](#command-decorations-and-the-overview-ruler), and [navigation](#command-navigation).\n\nSupported shells:\n\n- Linux/macOS: bash, fish, pwsh, zsh\n- Windows: Git Bash, pwsh",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/shell-integration.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/terminal/shell-integration.md"
 }

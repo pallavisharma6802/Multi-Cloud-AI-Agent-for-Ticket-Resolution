@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Overtype mode\n\nPrior to release 1.96, {% data variables.product.prodname_vscode_shortname %} only supported *insert* mode, where characters are inserted at the cursor position, unless you installed the Vim [keymap extension](/docs/configure/keybindings.md#keymap-extensions).\n\nAs of release 1.96, {% data variables.product.prodname_vscode_shortname %} supports *overtype* mode, which lets you overwrite existing characters instead of inserting characters at the cursor position. By default, overtype mode is off.\n\nTo switch between insert and overtype mode, run the **Toggle Overtype/Insert Mode** command in the Command Palette or press (`kb(editor.action.toggleOvertypeInsertMode)`). When you're in overtype mode, a Status Bar indicator shows `OVR`.\n\nYou can change the cursor style for overtype mode by configuring the `setting(editor.overtypeCursorStyle)` setting.\n\nUse the `setting(editor.overtypeOnPaste)` setting to overwrite text when pasting. You need to be in overtype mode for this setting to take effect.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/codebasics.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/codebasics.md"
 }

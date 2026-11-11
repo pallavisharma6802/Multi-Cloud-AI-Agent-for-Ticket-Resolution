@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Debugging\n\n### Debug Menu\n\nWe have added a top level debug menu with the most common debug commands:\n\n![Debug Menu](images/1_11/debug-menu.png)\n\n**Note**: There is a new command (**Install Additional Debuggers...**) to bring up the Extension view to search for debugger extensions.\n\n### Column Breakpoints Improvements\n\nIt is now possible to edit multiple breakpoints on a line directly from the glyph margin context menu. Apart from this, there were issues with multiple breakpoints on a line which are now fixed.\n\n![Editable Column Breakpoints](images/1_11/column-breakpoints.png)\n\n### More detailed exception experience\n\nThe editor's \"Peek UI\" has been enhanced to show additional information for thrown exceptions, For example, VS Code's built-in Node.js debugging now shows the stack trace:\n\n![Exception Peek UI show Stack Trace](images/1_11/exception-peekui.png)\n\nSince this feature requires some adoption effort by debugger extensions, do not expect to see additional exception information in other debugger extensions immediately.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_11.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_11.md"
 }

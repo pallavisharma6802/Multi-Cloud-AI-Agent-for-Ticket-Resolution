@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Using webpack aliases\n\nFor IntelliSense to work with webpack aliases, you need to specify the `paths` keys with a [glob pattern](/docs/editor/glob-patterns.md).\n\nFor example, for alias 'ClientApp':\n\n```json\n{\n  \"compilerOptions\": {\n    \"baseUrl\": \".\",\n    \"paths\": {\n      \"ClientApp/*\": [\"./ClientApp/*\"]\n    }\n  }\n}\n```\n\nand then to use the alias\n\n```js\nimport Something from 'ClientApp/foo'\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/jsconfig.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/jsconfig.md"
 }

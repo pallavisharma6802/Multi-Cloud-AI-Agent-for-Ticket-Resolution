@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Language Models\n\n### Install model providers from the Language Models editor\n\nBeyond Bring Your Own Key (BYOK) models, extensions can contribute their own model providers. Previously, to find such an extension, you needed to know the right tag (`language-models`) to search for in the Extensions view.\n\nNow the Language Models editor has an **Install Model Providers** button that opens the Extensions view filtered to extensions that contribute model providers, making it easier to discover and install them. After you install a provider, its models appear in the model picker alongside any others you have configured.\n\n<video src=\"images/1_125/install-model-provider.mp4\" title=\"Video showing the Install Model Providers button in the Language Models editor opening the Extensions view filtered to model provider extensions.\" autoplay loop controls muted></video>\n\nTo learn more, see the [language models documentation](https://code.visualstudio.com/docs/agent-customization/language-models).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_125.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_125.md"
 }

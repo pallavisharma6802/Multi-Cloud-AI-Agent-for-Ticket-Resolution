@@ -4,5 +4,5 @@
   "category": "REFERENCE",
   "intent": "reference",
   "content": "## Configuration variables\n\nTo reference {% data variables.product.prodname_vscode_shortname %} settings (_configurations_), use the **${config:Name}** syntax. For example, **${config:editor.fontSize}** references the `editor.fontSize` setting.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/reference/variables-reference.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/reference/variables-reference.md"
 }

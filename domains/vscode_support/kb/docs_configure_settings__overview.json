@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "# User and workspace settings\n\nYou can configure {% data variables.product.prodname_vscode %} to your liking through its various settings. Nearly every part of {% data variables.product.prodname_vscode_shortname %}'s editor, user interface, and functional behavior has options you can modify.\n\n{% data variables.product.prodname_vscode_shortname %} provides different scopes for settings:\n\n* **User settings** - Settings that apply globally to any instance of {% data variables.product.prodname_vscode_shortname %} you open.\n* **Workspace settings** - Settings stored inside your workspace and only apply when the workspace is opened.\n\n{% data variables.product.prodname_vscode_shortname %} stores setting values in a settings JSON file. You can change settings values either by editing the settings JSON file or by using the [Settings editor](#settings-editor), which provides a graphical interface to manage settings.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/settings.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/settings.md"
 }

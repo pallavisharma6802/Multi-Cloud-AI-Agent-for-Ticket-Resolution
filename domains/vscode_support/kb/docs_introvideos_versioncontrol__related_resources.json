@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Related resources\n\n* [Source Control](/docs/sourcecontrol/overview.md) - Read more about integrated Git support.\n* [Working with GitHub](/docs/sourcecontrol/github.md) - Create and manage GitHub issues and pull requests.\n* [Setup Overview](/docs/getstarted/overview.md) - Set up and start using {% data variables.product.prodname_vscode_shortname %}.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/introvideos/versioncontrol.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/introvideos/versioncontrol.md"
 }

@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Source File Map\n\nYou can optionally configure how source files are opened by providing a map using this form:\n\n```json\n    \"sourceFileMap\": {\n        \"C:\\\\foo\":\"/home/me/foo\"\n    }\n```\n\nIn this example:\n\n* `C:\\foo` is the original location for one or more source files (example: `program.cs`) when a module (example: MyCode.dll) was compiled. It can either be a directory that has source files under it, or a complete path to a source file (example: `c:\\foo\\program.cs`). It doesn't need to exist either on the computer running {% data variables.product.prodname_vscode %}, or if you are remote debugging, on the remote machine. The debugger reads the path to the source file from the `.pdb` (symbol) file, and transforms the path using this map.\n* `/home/me/foo` is the path where the source file can now be found by {% data variables.product.prodname_vscode %}.\n\n**Availability**\n\n* `launch.json` \u2714\ufe0f\n* `settings.json` \u2714\ufe0f as `csharp.debug.sourceFileMap`\n* `launchSettings.json` \u274c",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/debugger-settings.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/debugger-settings.md"
 }

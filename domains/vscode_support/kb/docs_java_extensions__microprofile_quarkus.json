@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## MicroProfile / Quarkus\n\nSupport for Eclipse MicroProfile and Quarkus are provided via the following extensions:\n\n* [Extension pack for MicroProfile](https://marketplace.visualstudio.com/items?itemName=MicroProfile-Community.vscode-microprofile-pack)\n* [Quarkus](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-quarkus)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/extensions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/extensions.md"
 }

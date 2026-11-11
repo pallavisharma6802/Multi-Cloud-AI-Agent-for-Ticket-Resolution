@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable fixes\n\n* [microsoft/vscode #303908](https://github.com/microsoft/vscode/issues/303908) Fix VS Code shortcuts taking precedence over page shortcuts in Integrated Browser\n* [microsoft/vscode #299777](https://github.com/microsoft/vscode/issues/299777) Fix \"Add Element to Chat\" not working while debugging is paused in the Integrated Browser",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_114.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_114.md"
 }

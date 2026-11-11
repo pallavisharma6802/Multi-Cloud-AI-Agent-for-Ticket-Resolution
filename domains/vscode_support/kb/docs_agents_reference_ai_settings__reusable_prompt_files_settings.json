@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Reusable prompt files settings\n\n| Setting and Description | Default |\n|------------------------|---------------|\n| `setting(chat.promptFilesLocations)` _(Deprecated)_<br/>Configure prompt file locations for the Local harness. Use [prompt file migration](/docs/agent-customization/migrate-customizations.md#convert-prompt-files-to-skills) to convert prompts to skills. | `{ \".github/prompts\": true }` |\n| `setting(chat.promptFilesRecommendations)` <br/>Enable or disable prompt file recommendations when opening a new chat session. List of key-value pairs of prompt file name and boolean or when clause. | `[]` |",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/ai-settings.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/reference/ai-settings.md"
 }

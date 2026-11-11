@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Related content\n\n- [Language Model API reference](/api/references/vscode-api#lm)\n- [Register an MCP server in a VS Code extension](/api/extension-guides/ai/mcp)\n- [Use MCP tools in agent mode](/docs/agent-customization/mcp-servers.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/tools.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-guides/ai/tools.md"
 }

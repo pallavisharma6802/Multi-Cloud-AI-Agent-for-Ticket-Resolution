@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Search settings with AI\n\nIf you don't know the exact name of a setting you want to change, you can use AI to help find the relevant settings based on your search query. For example, you can search for \"increase text size\" to find the setting that controls the editor font size.\n\nEnable this functionality with the `setting(workbench.settings.showAISearchToggle)` setting. In the Settings editor, you can then toggle the AI search results on or off with the **Search Settings with AI** button.\n\n![Screenshot that shows the Settings editor showing AI-generated suggestions for settings.](images/copilot-smart-actions/settings-suggestions.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/copilot-smart-actions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/copilot-smart-actions.md"
 }

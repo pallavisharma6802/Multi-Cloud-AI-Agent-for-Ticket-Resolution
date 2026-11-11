@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Hundreds of programming languages supported\n\nIn {% data variables.product.prodname_vscode %}, we have support for almost every major programming language. Several ship in the box, for example, JavaScript, TypeScript, CSS, and HTML but more rich language extensions can be found in the [{% data variables.product.prodname_vs_marketplace %}](https://marketplace.visualstudio.com/vscode/Languages).\n\nHere are eight of the most popular language extensions:\n\n<div class=\"marketplace-extensions-languages-curated\"></div>\n\nGo to the [Marketplace](https://marketplace.visualstudio.com/vscode) or use the integrated [Extensions view](/docs/configure/extensions/extension-marketplace.md) and search for your desired programming language to find snippets, code completion/IntelliSense providers, linters, debuggers, and more.\n\n>**Note**: If you want to change the display language of {% data variables.product.prodname_vscode_shortname %} (for example, to Chinese), see the [Display Language](/docs/configure/locales.md) topic.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/overview.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/overview.md"
 }

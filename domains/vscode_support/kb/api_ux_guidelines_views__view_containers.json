@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## View Containers\n\nView Containers, as the name implies, are the \"parent\" container in which Views are rendered. Extensions can contribute custom View Containers to the [Activity Bar](/api/ux-guidelines/activity-bar)/[Primary Sidebar](/api/ux-guidelines/sidebars) or to the Panel. Users can drag an entire View Container from the Activity Bar to the Panel (or vice versa) and can also move individual Views.\n\n![Example of a View Container](images/examples/view-container.png)\n\n*This is an example of a View Container placed in the Activity Bar/Primary Sidebar*\n\n![Example of a View Container in a Panel](images/examples/view-container-panel.png)\n\n*This is an example of a View Container placed in the Panel*",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/views.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/ux-guidelines/views.md"
 }

@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Available for macOS, Linux, and Windows\n\n{% data variables.product.prodname_vscode %} supports macOS, Linux, and Windows - so you can hit the ground running, no matter the platform.\n\n![{% data variables.product.prodname_vscode %} runs on macOS, Linux and Windows](images/whyvscode/macwinlinux2.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editor/whyvscode.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editor/whyvscode.md"
 }

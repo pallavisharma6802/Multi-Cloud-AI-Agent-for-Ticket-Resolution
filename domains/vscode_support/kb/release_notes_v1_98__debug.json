@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Debug\n\n### Debug inline values hover\n\nIf the setting `setting(debug.inlineValues)` is enabled, the inline value decorations now have an inline hover, making it easier to read longer values at a glance.\n\n![Screenshot that shows the cursor hovering above a dataframe object's inline decoration in an active debugging session. Rich value hover is shown.](images/1_98/debug-inline-values-rich-hover.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_98.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_98.md"
 }

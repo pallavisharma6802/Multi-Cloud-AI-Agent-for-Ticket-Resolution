@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# Swift in {% data variables.product.prodname_vscode %}\n\n[Swift](https://www.swift.org) is a general-purpose programming language that's approachable for newcomers and powerful for experts.\nIt is fast, modern, safe, and a joy to write. This topic goes into detail about setting up and using Swift within {% data variables.product.prodname_vscode %}, with the [swiftlang.swift-vscode](https://marketplace.visualstudio.com/items?itemName=swiftlang.swift-vscode) extension.\n\nThe Swift extension includes:\n\n- Syntax highlighting and code completion\n- Code navigation features such as Go to Definition and Find All References\n- Refactoring and quick fixes to code\n- Package management and tasks with support for Swift Package Manager\n- Rich support for debugging\n- Testing with XCTest or Swift Testing frameworks\n\nThe Swift extension is designed to support the following projects:\n\n- Swift Package Manager projects (e.g. using a `Package.swift`)\n- Projects that can generate a `compile_commands.json` (e.g. using CMake)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/swift.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/swift.md"
 }

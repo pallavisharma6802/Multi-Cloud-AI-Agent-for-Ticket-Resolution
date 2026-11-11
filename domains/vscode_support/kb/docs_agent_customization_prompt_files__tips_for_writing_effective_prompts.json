@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Tips for writing effective prompts\n\n* Clearly describe what the prompt should accomplish and what output format is expected.\n\n* Provide examples of the expected input and output to guide the AI's responses.\n\n* Use Markdown links to reference custom instructions rather than duplicating guidelines in each prompt.\n\n* Take advantage of built-in variables like `${selection}` and input variables to make prompts more flexible.\n\n* Use the editor play button to rerun the same task after changing a prompt.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/prompt-files.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/prompt-files.md"
 }

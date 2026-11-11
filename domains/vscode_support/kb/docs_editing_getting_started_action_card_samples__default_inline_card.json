@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Default inline card\n\nThis card omits the `display` attribute, so it appears in the article. Its actions demonstrate a documentation link and an external link.\n\n{% action-card title=\"Explore editor resources\" %}\nCompare an article action with an external action.\n\n* [Read about core editor features](/docs/editing/getting-started/overview.md)\n* [View the source repository](https://github.com/microsoft/vscode)\n{% /action-card %}",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/action-card-samples.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/getting-started/action-card-samples.md"
 }

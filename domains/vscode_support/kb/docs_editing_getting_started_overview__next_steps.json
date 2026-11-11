@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Next steps\n\n* Follow the [editor tutorial](/docs/editing/getting-started/editor-tutorial.md) for a guided introduction.\n* Review [editing tips and tricks](/docs/editing/getting-started/tips-and-tricks.md) to work more efficiently.\n* Learn how to develop on a [remote machine or in a container](/docs/remote/remote-overview.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/overview.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/getting-started/overview.md"
 }

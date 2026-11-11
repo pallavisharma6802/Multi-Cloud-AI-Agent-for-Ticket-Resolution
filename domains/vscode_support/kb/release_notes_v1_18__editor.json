@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Editor\n\n### Ctrl+D / Cmd+D improvements\n\nDue to [popular demand](https://github.com/microsoft/vscode/issues/8869), the **Add Selection to Next Find Match** (`kb(editor.action.addSelectionToNextFindMatch)`) action has been modified to behave differently when you start adding multiple cursors with no selected text. In this case, the action will temporarily ignore the Find widget search options and will always search for whole words and case sensitive matches.\n\n### Navigate to next / previous symbolic highlight\n\nThanks to [PR #35740](https://github.com/microsoft/vscode/pull/35740) from [Krzysztof Cie\u015blak](https://github.com/Krzysztof-Cieslak), it is now possible to navigate between highlighted symbols using `kbstyle(F7)` or `kbstyle(Shift+F7)` in languages where there is a semantic highlight provider. When you have a symbol selected, you can now quickly move to other instances of that symbol in your file.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_18.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_18.md"
 }

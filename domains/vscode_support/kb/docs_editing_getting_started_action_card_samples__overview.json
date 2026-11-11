@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "# Action card samples\n\nUse this unlisted page to compare action-card placements and link behaviors. Change the version on any product action to switch all version-aware links between Stable and Insiders. Insiders actions append **(Insiders)** to the button text.\n\n> [!NOTE]\n> Sidebar cards appear on desktop. At smaller viewport widths, use the inline cards to test the same actions.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/action-card-samples.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/getting-started/action-card-samples.md"
 }

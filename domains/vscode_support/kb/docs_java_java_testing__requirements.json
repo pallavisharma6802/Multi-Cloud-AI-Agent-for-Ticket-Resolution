@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Requirements\n\n- JDK (version 1.8 or later)\n- {% data variables.product.prodname_vscode %} (version 1.59.0 or later)\n- [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)\n\n<a class=\"install-extension-btn\" href=\"vscode:extension/vscjava.vscode-java-pack\">Install the Extension Pack for Java</a>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-testing.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-testing.md"
 }

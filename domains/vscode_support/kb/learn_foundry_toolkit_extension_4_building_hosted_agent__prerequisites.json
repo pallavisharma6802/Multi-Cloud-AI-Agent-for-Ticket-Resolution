@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Prerequisites\n\nBefore we start, make sure your environment can support both local debugging and hosted deployment. This chapter combines GitHub Copilot CLI, Foundry Toolkit, and Azure deployment assets, so missing setup usually slows things down in the middle.\n\nIf you validate these prerequisites first, the rest of the chapter stays focused on agent engineering, not environment troubleshooting.\n\n- **Editor and extension**: Visual Studio Code with Foundry Toolkit installed.\n- **GitHub Copilot access**: GitHub Copilot available in Visual Studio Code and terminal workflows.\n- **Cloud context**: An Azure subscription and Microsoft Foundry project.\n- **Model deployment**: A GPT-5 model instance already deployed in your project.\n- **CLI readiness**: [Azure Developer CLI](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/install-azd?tabs=winget-windows%2Cbrew-mac%2Cscript-linux&pivots=os-windows) and ability to sign in to Azure.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
 }

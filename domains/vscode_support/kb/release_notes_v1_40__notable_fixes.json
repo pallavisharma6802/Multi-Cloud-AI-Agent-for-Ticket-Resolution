@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable fixes\n\n* [78634](https://github.com/microsoft/vscode/issues/78634): Terminal content goes missing when resizing (powershell/conpty)\n* [25854](https://github.com/microsoft/vscode/issues/25854): Can't drag Markdown preview to start a new editor group\n* [81824](https://github.com/microsoft/vscode/issues/81824): Webview editor doesn't appear in Open Previous Editor From History command",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_40.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_40.md"
 }

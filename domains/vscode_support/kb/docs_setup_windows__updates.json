@@ -4,5 +4,5 @@
   "category": "INSTALLATION",
   "intent": "installation",
   "content": "## Updates\n\n{% data variables.product.prodname_vscode_shortname %} ships weekly [releases](/updates) and supports auto-update when a new release is available. When {% data variables.product.prodname_vscode_shortname %} prompts you for an update, accept the prompt to install the new version.\n\n> [!NOTE]\n> [Disable auto-update](/docs/supporting/faq.md#how-do-i-opt-out-of-vs-code-auto-updates) if you prefer to update {% data variables.product.prodname_vscode_shortname %} on your own schedule.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/windows.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/setup/windows.md"
 }

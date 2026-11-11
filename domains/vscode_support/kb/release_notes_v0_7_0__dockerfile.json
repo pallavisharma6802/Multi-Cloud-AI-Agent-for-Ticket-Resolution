@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Dockerfile\nWe added a new document that covers our [Docker](/docs/azure/docker.md) support.\n\nOur Docker support includes:\n* Dockerfile - Hovering over instructions\n* Docker-compose.yml - Hovering over keys and images, rule completion, image name completion",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_7_0.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v0_7_0.md"
 }

@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Markdown\n\n- `markdownAlert.note.foreground`: Foreground color for note alerts in markdown.\n- `markdownAlert.tip.foreground`: Foreground color for tip alerts in markdown.\n- `markdownAlert.important.foreground`: Foreground color for important alerts in markdown.\n- `markdownAlert.warning.foreground`: Foreground color for warning alerts in markdown.\n- `markdownAlert.caution.foreground`: Foreground color for caution alerts in markdown.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/theme-color.md"
 }

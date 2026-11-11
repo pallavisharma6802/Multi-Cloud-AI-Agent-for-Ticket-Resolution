@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Python commands\n\nPython commands can be accessed through the [Command Palette](/docs/editing/getting-started/userinterface.md#command-palette) (`kb(workbench.action.showCommands)`). From the Command Palette, you have access to various features from {% data variables.product.prodname_vscode_shortname %} and installed extensions. Enter **\u201cPython: \u201c** in the Command Palette to find the commands available through the Python extension.\n\n<video src=\"images/quick-start/cmd-plt-v2.mp4\" title=\"Video showing Gif demonstrating how to access Python commands in the Command Palette.\" autoplay loop controls muted></video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/python-quick-start.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/python/python-quick-start.md"
 }

@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## What the model project version means\n\nWhen recipes in the [olive-recipes](https://github.com/microsoft/olive-recipes) are updated, the version will be increased. The recipes could be updated multiple times between two Foundry Toolkit releases. So when you see the version, you may notice that the numbers are not continuous.\n\nFor the same reason, an update could impact one, all, or none of the workflows \u2014 sometimes it's just an inference sample update without any workflow changes. So in general, we suggest using the converted model in existing history if it still works well after the update.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/reference/UpdateModelProject.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/reference/UpdateModelProject.md"
 }

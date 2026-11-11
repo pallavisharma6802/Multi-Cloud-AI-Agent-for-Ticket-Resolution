@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Languages - TypeScript\nWe now ship with TypeScript 1.6.2.  You can learn more about the latest release of TypeScript at [Announcing TypeScript 1.6](https://devblogs.microsoft.com/typescript/announcing-typescript-1-6-2).\n\nWe simplified defining a task to run the TypeScript compiler in watch mode.\nYou can now configure the `watch` property in the `tsconfig.json` and then define a task as follows:\n\n```\n{\n\t\"version\": \"0.1.0\",\n\t\"command\": \"tsc\",\n\t\"isShellCommand\": true,\n\t// define the task to be a watching task\n\t\"isWatching\": true,\n\t// use the standard tsc in watch mode problem matcher to find compile problems in the output.\n\t\"problemMatcher\": \"$tsc-watch\"\n}\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_9_0.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v0_9_0.md"
 }

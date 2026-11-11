@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Guidelines for choosing a development environment\n\n1. Use the local environment when you are not concerned about:\n\n   - Using the same OS for development and inside the service container.\n   - Installing necessary tools and dependencies on top of your local environment.\n\n1. Consider using a [development container](/docs/devcontainers/containers.md) first, if you need a remote environment.\n\n    - On Windows, using [Windows Subsystem for Linux (WSL)](#windows-subsystem-for-linux) is good option.\n\n1. Debugging your service running in a container is possible, but brings additional complexity. Use normal debugging by default, and debugging in the container when you need it.\n\n> The Container Tools extension natively supports container debugging for .NET-, Node.js-, and Python-based services.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/choosing-dev-environment.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/containers/choosing-dev-environment.md"
 }

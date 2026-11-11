@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "# Editor Actions\n\n[Editor actions](/api/references/contribution-points#contributes.commands) can appear in the editor toolbar. You can either add an icon as a quick action or add menu item under the overflow menu (**...**).\n\n**\u2714\ufe0f Do**\n\n* Show only when contextually appropriate\n* Use icons from the icon library\n* Use the overflow menu for secondary actions\n\n\u274c Don't\n\n* Add more than one icon\n* Add custom colors\n* Use emojis\n\n![Editor Actions](images/examples/editor-actions.png)\n\n*This example from the GitHub Pull Requests and Issues extension opens a diff view and only shows on files with changes.*",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/editor-actions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/ux-guidelines/editor-actions.md"
 }

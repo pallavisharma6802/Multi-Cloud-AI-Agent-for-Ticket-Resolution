@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Glob pattern syntax\n\n{% data variables.product.prodname_vscode_shortname %} supports the following glob syntax:\n\n* `/` to separate path segments\n* `*` to match zero or more characters in a path segment\n* `?` to match on one character in a path segment\n* `**` to match any number of path segments, including none\n* `{}` to group conditions (for example `{**/*.html,**/*.txt}` matches all HTML and text files)\n* `[]` to **declare** a range of characters to match (`example.[0-9]` to match on `example.0`, `example.1`, \u2026)\n* `[!...]` to negate a range of characters to match (`example.[!0-9]` to match on `example.a`, `example.b`, but not `example.0`)\n\n**Note:** Paths are separated by `/` and not `\\` even on Windows. But when applied, glob patterns will match paths with both slash and backslashes.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editor/glob-patterns.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editor/glob-patterns.md"
 }

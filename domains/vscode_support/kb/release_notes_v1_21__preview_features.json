@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Preview Features\n\nPreview features are not ready for release but are functional enough to use. We welcome your early feedback while they are under development.\n\n### Horizontal search\n\nThis milestone we have added a configuration, `\"search.location\"`, to control the position of the Search view. To have more horizontal search results space, set `\"search.location\": \"panel\"`.\n\nThis feature is currently in preview since we plan to further improve the layout within the Search view to take advantage of the additional horizontal space. The work planned is captured in this [issue](https://github.com/microsoft/vscode/issues/45063) so feel free to provide feedback in the issue directly.\n\n![Horizontal Search](images/1_21/search.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_21.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_21.md"
 }

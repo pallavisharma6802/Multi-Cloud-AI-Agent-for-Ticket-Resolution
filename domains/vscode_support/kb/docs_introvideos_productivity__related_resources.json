@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Related resources\n\n* [Tips and Tricks](/docs/editing/getting-started/tips-and-tricks.md) - Learn more productivity tips and tricks.\n* [Code Editing](/docs/editing/codebasics.md) - Discover the full power of the {% data variables.product.prodname_vscode_shortname %} editor.\n* [IntelliSense](/docs/editing/intellisense.md) - Smart code completions and methods signatures.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/introvideos/productivity.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/introvideos/productivity.md"
 }

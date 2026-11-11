@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Prerequisites\n\nBefore you get started with Microsoft Fabric extensions for {% data variables.product.prodname_vscode_shortname %}, you need:\n\n* **{% data variables.product.prodname_vscode %}**: Install latest [{% data variables.product.prodname_vscode_shortname %}](https://code.visualstudio.com/) version.\n* **Microsoft Fabric account**: You need access to a Microsoft Fabric workspace. You can [sign up for a free trial](https://app.fabric.microsoft.com/?pbi_source=learn-vscodedocs-microsoft-fabric-quickstart) to get started.\n* **Python**: Install [Python 3.8 or later](https://python.org/downloads/) to work with [Notebooks](https://learn.microsoft.com/fabric/data-engineering/author-notebook-with-vs-code), [User data functions](https://learn.microsoft.com/fabric/data-engineering/user-data-functions/create-user-data-functions-vs-code) in {% data variables.product.prodname_vscode_shortname %}.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/microsoft-fabric-quickstart.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/datascience/microsoft-fabric-quickstart.md"
 }

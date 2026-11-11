@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## 2. Find the relevant code\n\nAsk the agent for a small map of the parts that answer your question:\n\n```prompt\nIdentify the entry point, implementation modules, configuration, and\ntests relevant to this request. Explain each file's role and why it\nbelongs in the investigation. Do not summarize unrelated directories\nor read secret values.\n```\n\nOpen the referenced files as you read the answer. Check that:\n\n* The route or other entry point is registered in the application you are investigating.\n* The cited functions exist in the current checkout.\n* The implementation is active code, not an unused example, generated copy, or test fixture.\n* Any configuration claim names the configuration source without exposing credentials.\n\nIf the repository contains multiple applications or implementations, identify which one you mean. Add the relevant files as [chat context](/docs/chat/copilot-chat-context.md) rather than asking the agent to search the entire repository again.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/explore-a-codebase.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/explore-a-codebase.md"
 }

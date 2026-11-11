@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Overview\n\nIf you are using the [Yeoman Generator](https://code.visualstudio.com/api/get-started/your-first-extension) to scaffold an extension, integration tests are already created for you.\n\nIn the generated extension, you can use `npm run test` or `yarn test` to run the integration tests that:\n\n- Downloads and unzips latest version of VS Code.\n- Runs the [Mocha](https://mochajs.org) tests specified by the extension test runner script.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/working-with-extensions/testing-extension.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/working-with-extensions/testing-extension.md"
 }

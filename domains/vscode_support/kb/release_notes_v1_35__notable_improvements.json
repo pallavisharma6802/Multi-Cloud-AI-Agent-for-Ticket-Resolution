@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable improvements\n\n* Collapse All list and tree command with `kb(list.collapseAll)` keyboard shortcut.\n* The history of the References view can now be cleared.\n* When running the **Format With...** command, the default formatter is now pre-selected.\n* When debugging is paused on a line, the whole line is read out by the screen reader.\n* Multiple item paste in the Explorer is run in parallel for improved performance.\n* The **Open Folder** button in an empty File Explorer is scoped to folder even on macOS.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_35.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_35.md"
 }

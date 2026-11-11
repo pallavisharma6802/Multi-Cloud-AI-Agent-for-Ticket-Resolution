@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "# Version control in {% data variables.product.prodname_vscode_shortname %}\n\nIn this tutorial, we will learn how to use the basics of Git version control in {% data variables.product.prodname_vscode %}. For more information about integrated Git support, including how to work with remote repositories, read on in the [related resources](/docs/introvideos/versioncontrol.md#related-resources) section below.\n\n[![Watch Using Git with {% data variables.product.prodname_vscode %} on YouTube (opens in new tab).](images/versioncontrol/youtube-i_23KUAEtUM.jpg)](https://www.youtube.com/watch?v=i_23KUAEtUM)\n\nHere's the next video we recommend: [Customize](/docs/introvideos/customize.md)\n\nPick another video from the list: [Introductory Videos](/docs/getstarted/introvideos.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/introvideos/versioncontrol.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/introvideos/versioncontrol.md"
 }

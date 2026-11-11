@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Languages\n\n### TypeScript 3.7.5\n\nWe've updated our bundled TypeScript version to 3.7.5. This minor update includes some important bugs fixes, including fixing IntelliSense for projects that are not stored on C: drives on Windows.\n\n### HTML Mirror Cursor off by default\n\nThe HTML [Mirror Cursor](https://code.visualstudio.com/updates/v1_41#_html-mirror-cursor) is now an opt-in feature. In the upcoming iteration, we'll continue to [improve its implementation](https://github.com/microsoft/vscode/issues/88424) to make this feature more easily understandable and available to more languages. You can still use this feature by turning on `html.mirrorCursorOnMatchingTag`.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_42.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_42.md"
 }

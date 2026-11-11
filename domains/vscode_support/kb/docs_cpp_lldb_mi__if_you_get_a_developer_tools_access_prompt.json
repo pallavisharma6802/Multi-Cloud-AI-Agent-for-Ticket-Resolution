@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## If you get a Developer Tools Access prompt\n\nYou may see a dialog saying \"Developer Tools Access needs to take control of another process for debugging to continue.\"\n\n![Developer Tool Access problem](images/debugger/DeveloperToolsAccess.png)\n\nIf you get this prompt, you will have to enter your username and password to allow debugging.\n\nIf you want to permanently dismiss this prompt, you can run the following command in a terminal:\n\n```bash\nsudo DevToolsSecurity --enable\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/lldb-mi.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/lldb-mi.md"
 }

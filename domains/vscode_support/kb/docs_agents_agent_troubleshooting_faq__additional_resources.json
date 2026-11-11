@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Additional resources\n\n* [GitHub Copilot Trust Center](https://resources.github.com/copilot-trust-center/)\n* [Security considerations for AI in {% data variables.product.prodname_vscode_shortname %}](/docs/agents/run/security.md)\n* [GitHub Copilot FAQ](https://github.com/features/copilot#faq) in the GitHub documentation",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/agent-troubleshooting/faq.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/agent-troubleshooting/faq.md"
 }

@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Problem Framing: Tools Beat Instructions\n\nYou can describe your API to an assistant in a prompt. It will then guess at URLs,\ninvent parameters, and confidently report success it cannot verify.\n\nA tool is different. It has a name, a description, a typed parameter list, and a real\nimplementation on your side of the wire. The assistant does not guess \u2014 it picks a tool\nand passes arguments, and your code decides what actually happens.\n\n### Try this\n\nLook at any operation in your own service layer that you would be comfortable letting an\nassistant call. If you can name it and describe one required parameter in a sentence, it\nis already most of the way to being an MCP tool.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/3-expose-tools-with-mcp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/java-spring-boot/3-expose-tools-with-mcp.md"
 }

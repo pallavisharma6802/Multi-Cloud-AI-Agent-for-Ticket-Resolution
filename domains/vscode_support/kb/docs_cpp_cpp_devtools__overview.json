@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# Using C++ Development Tools with GitHub Copilot Chat\n\nRefactoring and making updates in C++ code often requires tracking down edits across multiple files and having knowledge of your build configuration.\n\nGitHub Copilot Chat can use the C++ tools built into {% data variables.product.prodname_vscode_shortname %} to provide context-aware assistance for your C++ projects. By using code understanding and CMake tools, Copilot can understand your codebase structure, dependencies, and build configurations to give you more accurate, helpful, and fast responses.\n\nThis guide covers the available tools and how to use them effectively with AI agents to accomplish tasks such as:\n\n- Navigate and understand complex C++ codebases\n- Refactor code with full context awareness\n- Configure and build projects efficiently",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/cpp-devtools.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/cpp-devtools.md"
 }

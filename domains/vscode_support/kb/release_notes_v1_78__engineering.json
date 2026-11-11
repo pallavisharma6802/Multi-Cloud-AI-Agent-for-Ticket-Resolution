@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Engineering\n\n### Electron 22 update\n\nIn this milestone, we have finished our [experiment](https://code.visualstudio.com/updates/v1_77#_exploring-custom-memory-allocator-for-the-extension-host) with using a custom allocator for extension host and are ready to bundle Electron 22 into VS Code Desktop. We want to thank everyone involved with self-hosting on [Insiders builds](https://code.visualstudio.com/insiders) and provided early feedback. This update comes with Chromium `108.0.5359.215` and Node.js `16.17.1`.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_78.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_78.md"
 }

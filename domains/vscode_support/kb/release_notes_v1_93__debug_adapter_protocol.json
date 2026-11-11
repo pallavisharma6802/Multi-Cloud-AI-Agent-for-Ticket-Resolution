@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Debug Adapter Protocol\n\nWe added `locationReferences` to Variables and other data types in the [Debug Adapter Protocol](https://microsoft.github.io/debug-adapter-protocol), to enable associating a source location.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_93.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_93.md"
 }

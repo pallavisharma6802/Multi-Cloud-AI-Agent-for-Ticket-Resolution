@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Markdown\nWe added a full overview of [how to use VS Code with Markdown files](/docs/languages/markdown.md).\n\nWe now show you how to:\n* leverage built-in snippets\n* configure preview with custom CSS\n* use Auto Save for live updates\n* use tasks to compile to HTML",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_7_0.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v0_7_0.md"
 }

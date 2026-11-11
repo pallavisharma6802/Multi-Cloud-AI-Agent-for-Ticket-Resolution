@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Debugging dump files\n\nThe C/C++ extension enables debugging dump files on Windows and core dump files Linux and OS X.\n\n### dumpPath\n\nIf you want to debug a Windows dump file, set this to the path to the dump file to start debugging in the `launch` configuration.\n\n### coreDumpPath\n\nFull path to a core dump file to debug for the specified program. Set this to the path to the core dump file to start debugging in the `launch` configuration.\n_Note: core dump debugging is not supported with MinGw._",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/launch-json-reference.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/launch-json-reference.md"
 }

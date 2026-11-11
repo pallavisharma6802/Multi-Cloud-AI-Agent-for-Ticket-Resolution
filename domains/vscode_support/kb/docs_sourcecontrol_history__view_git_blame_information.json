@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "## View Git blame information\n\nGit blame information identifies the commit and author that last changed a line. {% data variables.product.prodname_vscode_shortname %} can show this information in the editor and in the Status Bar.\n\n<video src=\"images/staging-commits/git-blame.mp4\" title=\"Video showing Git blame information in the Status Bar and inline in the editor.\" autoplay muted loop controls></video>\n\n1. Open a tracked file and place the cursor on the line you want to inspect.\n\n1. If inline blame is hidden, run **Git: Toggle Git Blame Editor Decoration** from the Command Palette (`kb(workbench.action.showCommands)`). Use **Git: Toggle Git Blame Status Bar Item** to show or hide the Status Bar version.\n\n1. Hover over the blame decoration to view commit details.\n\nThe hover includes co-author trailers. If {% data variables.product.prodname_vscode_shortname %} adds [AI co-author attribution](/docs/sourcecontrol/staging-commits.md#ai-co-author-attribution) to a commit, the blame hover includes that attribution.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/history.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/history.md"
 }

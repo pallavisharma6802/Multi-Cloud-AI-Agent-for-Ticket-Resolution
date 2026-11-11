@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# C# Quick Actions and Refactorings\n\n{% data variables.product.prodname_vscode %} gives you many ways to refactor your source code as well as Quick Fixes to generate code and fix issues while you're coding. To access them, click on the 'light bulb' icon that appears or use the command **Quick Fix** command `kb(editor.action.quickFix)` to display a list of Quick Fixes and refactoring options.  You can also right-click the editor and select **Refactor** `kb(editor.action.refactor)` to only display refactoring options.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/refactoring.md"
 }

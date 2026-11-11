@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Related content\n\n- [VS Code API Reference](/api/references/vscode-api)\n- [Language Model API Guide](/api/extension-guides/ai/language-model)\n* [AI extensibility options](/api/extension-guides/ai/ai-extensibility-overview.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/language-model-chat-provider.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-guides/ai/language-model-chat-provider.md"
 }

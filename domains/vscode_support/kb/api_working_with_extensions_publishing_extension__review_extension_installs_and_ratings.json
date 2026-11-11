@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Review extension installs and ratings\n\nThe [Visual Studio Marketplace publisher management page](https://marketplace.visualstudio.com/manage) gives you access to each extension's Acquisition Trend over time, as well as Total Acquisition counts and Ratings & Reviews. To see the reports, click an extension or choose **More Actions > Reports**.\n\n![Marketplace extension report](images/publishing-extension/extension-report.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/working-with-extensions/publishing-extension.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/working-with-extensions/publishing-extension.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Remote-SSH\n\n### Security update\n\nVersion 0.61.0 of the Remote-SSH extension includes a fix for a security issue in the way that remote hostnames are parsed. Details are in [CVE-2020-17148](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2020-17148).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_51.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_51.md"
 }

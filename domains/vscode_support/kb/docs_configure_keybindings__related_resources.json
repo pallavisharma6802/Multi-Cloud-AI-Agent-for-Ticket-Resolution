@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Related resources\n\n* [{% data variables.product.prodname_vscode_shortname %} default keyboard shortcuts reference](/docs/reference/default-keybindings.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/keybindings.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/keybindings.md"
 }

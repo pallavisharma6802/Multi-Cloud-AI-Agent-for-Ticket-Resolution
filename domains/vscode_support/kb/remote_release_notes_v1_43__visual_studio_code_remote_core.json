@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Visual Studio Code Remote Core\n\n### Open remote workspaces via application links\n\nVS Code can now open a remote workspace via protocol links.\n\nThe syntax is as follows:\n\n```bash\nvscode://vscode-remote/<remoteName>+<resolverArguments>/<path>\nvscode-insiders://vscode-remote/<remoteName>+<resolverArguments>/<path>\n```\n\n### Recommendations for remote extensions\n\nWhen opening a link to a remote workspace, but the corresponding remote extension is not yet installed, a recommendation makes it easy to do so:\n\n![Remote extension recommendation](images/1_43/remote-recommendation.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_43.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_43.md"
 }

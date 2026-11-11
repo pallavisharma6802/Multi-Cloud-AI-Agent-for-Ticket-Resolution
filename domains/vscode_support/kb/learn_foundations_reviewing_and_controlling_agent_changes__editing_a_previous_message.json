@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Editing a previous message\n\nIf your original prompt was missing a requirement, edit the prompt directly instead of sending a chain of follow-up corrections.\n\nHover over any message in the chat and select the edit icon. Update the requirement and resend.\n\n![Editing a previous chat message in VS Code to update the original prompt](../images/foundations/edit-message.png)\n\nThe agent reruns from that point, replacing the conversation history after that message.\n\nThis keeps your prompt history clean. Instead of stacking several corrections, you end up with one clear instruction and a clean response.\n\nFor example, instead of sending a second message, rewrite the original prompt like this:\n\n```prompt\nUsing Python 3.13 and uv, implement a base62 encoder/decoder.\n\nAccept a number to encode or a base62 string to decode as a command-line argument.\n```\n\n![Edited previous chat message in VS Code showing an updated prompt requirement](../images/foundations/edited-message.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/reviewing-and-controlling-agent-changes.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundations/reviewing-and-controlling-agent-changes.md"
 }

@@ -4,5 +4,5 @@
   "category": "DEBUGGING",
   "intent": "debugging",
   "content": "## Launch versus attach configurations\n\nThe `request` property determines how the debugger connects to your application.\n\n| Request | Behavior | Use when |\n|---------|----------|----------|\n| `launch` | Starts the application and attaches the debugger to the new process. | You want {% data variables.product.prodname_vscode_shortname %} to manage application startup. |\n| `attach` | Connects the debugger to an application or process that is already running in debug mode. | Another tool starts the application, or you need to connect to a long-running or remote process. |\n\nDebugger extensions define the properties required for each request type. Use IntelliSense in `launch.json` or consult the debugger extension documentation for supported options.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/debugging-configuration.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/debugtest/debugging-configuration.md"
 }

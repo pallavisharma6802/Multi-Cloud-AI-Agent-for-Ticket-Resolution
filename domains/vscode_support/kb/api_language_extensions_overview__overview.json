@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "# Language Extensions Overview\n\nVisual Studio Code provides smart editing features for different programming languages through Language Extensions. VS Code doesn't provide built-in language support in the core editor but offers a set of APIs that enable rich language features.\n\nFor example, the [HTML](https://github.com/microsoft/vscode/tree/main/extensions/html) extension uses these APIs to show syntax highlighting for HTML files. Similarly, when you type `console.` and `log` shows up in IntelliSense, it is the [Typescript Language Features](https://github.com/microsoft/vscode/tree/main/extensions/typescript-language-features) extension at work.\n\nVS Code bundles some of these extensions with the editor to provide you with rich language support from the start.\n\nLanguage features can be roughly put into two categories:",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/language-extensions/overview.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/language-extensions/overview.md"
 }

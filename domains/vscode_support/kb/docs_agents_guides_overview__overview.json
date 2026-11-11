@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Agent tutorials and guides\n\nChoose a tutorial to learn with a sample project, or follow a guide to apply an agent workflow to your own codebase in {% data variables.product.prodname_vscode_shortname %}.\n\nStill choosing how to use AI? [Compare suggestions, collaboration alongside code, and agent orchestration](/docs/agents/overview.md#choose-how-you-work) before choosing a guide. You don't need to delegate a task to use AI.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/overview.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/overview.md"
 }

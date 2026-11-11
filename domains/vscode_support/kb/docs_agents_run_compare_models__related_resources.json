@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [Manage agent sessions](/docs/agents/run/sessions/manage-sessions.md)\n* [Use Git branches and worktrees](/docs/sourcecontrol/branches-worktrees.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/compare-models.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/compare-models.md"
 }

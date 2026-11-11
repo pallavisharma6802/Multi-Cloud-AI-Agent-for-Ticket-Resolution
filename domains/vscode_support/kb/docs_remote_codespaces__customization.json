@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Customization\n\nGitHub Codespaces are fully customizable on a per project basis. This is accomplished by including a `devcontainer.json` file in the project's repository, similar to {% data variables.product.prodname_vscode_shortname %} [Dev Containers](/docs/devcontainers/containers.md) development.\n\nExample customizations include:\n\n* Setting the Linux-based operating system to use.\n* Automatically installing various tools, runtimes, and frameworks.\n* Forwarding commonly used ports.\n* Setting environment variables.\n* Configuring editor settings and installing preferred extensions.\n\nSee the [Configuring Codespaces](https://docs.github.com/github/developing-online-with-codespaces/configuring-codespaces-for-your-project) documentation for codespace-specific `devcontainer.json` settings.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/codespaces.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/remote/codespaces.md"
 }

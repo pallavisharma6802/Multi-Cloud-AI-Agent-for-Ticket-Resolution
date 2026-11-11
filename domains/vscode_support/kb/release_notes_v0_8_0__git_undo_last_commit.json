@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Git - Undo Last Commit\nThere is a new `Undo Last Commit` action which will let you undo your previous commit, keeping the changes in the working folder.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_8_0.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v0_8_0.md"
 }

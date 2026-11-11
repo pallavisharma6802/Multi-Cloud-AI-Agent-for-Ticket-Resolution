@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Source Control\n\n### Close repository improvements\n\nIn the past, users could close a repository either using the **Git: Close Repository** command or the **Close Repository** action in the Source Control view but there were certain actions (for example, opening a file from the closed repository) that would reopen the closed repository. This milestone we have made some improvements so the fact that a repository is closed is now persisted per workspace. Users can reopen closed repositories using the **Git: Reopen Closed Repositories...** command.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_80.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_80.md"
 }

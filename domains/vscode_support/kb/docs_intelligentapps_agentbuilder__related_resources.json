@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [Agent development lifecycle in Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/development-lifecycle)\n* [Agent applications and publication](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/agent-applications)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/agentbuilder.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/agentbuilder.md"
 }

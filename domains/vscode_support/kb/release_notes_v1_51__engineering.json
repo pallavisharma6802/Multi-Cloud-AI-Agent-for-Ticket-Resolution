@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Engineering\n\n### Making VS Code Trusted Types compliant\n\nWe have continued the effort to make VS Code \"Trusted Types\" compliant. The goal is to prevent DOM-based cross site scripting vulnerabilities. You can learn more about trusted types at the web.dev [Trusted Types site](https://web.dev/trusted-types) and follow our progress in [issue #103699](https://github.com/microsoft/vscode/issues/103699).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_51.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_51.md"
 }

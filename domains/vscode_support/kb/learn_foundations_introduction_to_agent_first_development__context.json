@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Context\n\nContext is everything the agent uses to understand your codebase, files, conversation history, instructions, and search results. Models are trained on general information, but they need context about your codebase to do useful work.\n\nThe agent can gather context automatically by searching your workspace and reading files. You can also provide it yourself.\n\n* Select the `+` icon in the chat input to attach specific files or folders.\n* Type `#` to reference specific context sources such as `#codebase`, `#file`, or `#fetch`.\n\nContext is a balancing act. Too much information confuses the agent. Too little leaves out the specifics it needs. A dedicated guide covers [context strategies](/learn/foundations/reviewing-and-controlling-agent-changes.md) in more depth.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/introduction-to-agent-first-development.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundations/introduction-to-agent-first-development.md"
 }

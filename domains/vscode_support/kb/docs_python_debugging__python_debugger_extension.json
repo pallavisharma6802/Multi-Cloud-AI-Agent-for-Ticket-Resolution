@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Python Debugger Extension\n\nThe [Python Debugger extension](https://marketplace.visualstudio.com/items?itemName=ms-python.debugpy) is automatically installed along with the [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) for {% data variables.product.prodname_vscode_shortname %}. It offers debugging features with [debugpy](https://pypi.org/project/debugpy/) for several types of Python applications, including scripts, web apps, remote processes and more.\n\nTo verify it's installed, open the **Extensions** view (`kb(workbench.view.extensions)`) and search for `@installed python debugger`. You should see the Python Debugger extension listed in the results.\n\n![Python Debugger extension shown in installed extensions view in {% data variables.product.prodname_vscode_shortname %}.](images/shared/python-debugger-extension.png)\n\nYou can refer to the extension's [README](https://github.com/microsoft/vscode-python-debugger/blob/main/README.md) page for information on supported Python versions.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/debugging.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/python/debugging.md"
 }

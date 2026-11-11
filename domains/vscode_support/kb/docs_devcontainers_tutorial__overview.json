@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "# Dev Containers tutorial\n\nThis tutorial walks you through running {% data variables.product.prodname_vscode %} in a [Docker](https://www.docker.com/) container using the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension. You need no prior knowledge of Docker to complete this tutorial.\n\nRunning {% data variables.product.prodname_vscode_shortname %} **inside** a Docker container can be useful for many reasons, but in this walkthrough we'll focus on using a Docker container to set up a development environment that is separate from your local environment.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/tutorial.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/devcontainers/tutorial.md"
 }

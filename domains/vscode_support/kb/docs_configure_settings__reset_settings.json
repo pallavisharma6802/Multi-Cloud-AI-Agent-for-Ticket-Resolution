@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Reset settings\n\nYou can always reset a setting to the default value by hovering over a setting to show the gear icon, clicking on the gear icon, and then selecting the **Reset Setting** action.\n\nWhile you can reset settings individually via the Settings editor, you can reset all changed settings by opening `settings.json` and deleting the entries between the braces `{}`. Be careful since there is no way to recover your previous setting values.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/settings.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/settings.md"
 }

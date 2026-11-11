@@ -4,5 +4,5 @@
   "category": "DEBUGGING",
   "intent": "debugging",
   "content": "## Use with the Live Preview extension\n\nThe Live Preview extension can use the integrated browser for previewing web pages. Enable the `setting(livePreview.useIntegratedBrowser)` setting to use it as the default preview browser.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/integrated-browser.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/debugtest/integrated-browser.md"
 }

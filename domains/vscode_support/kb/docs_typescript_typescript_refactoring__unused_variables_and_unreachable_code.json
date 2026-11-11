@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Unused variables and unreachable code\n\nUnused TypeScript code, such as the `else` block of an `if` statement that is always true or an unreferenced import, is faded out in the editor:\n\n![Unreachable source code faded out](images/refactoring/unreachable.png)\n\nYou can quickly remove this unused code by placing the cursor on it and triggering the Quick Fix command (`kb(editor.action.quickFix)`) or clicking on the light bulb.\n\nTo disable fading out of unused code, set `\"editor.showUnused\"` to `false`. You can also disable fading of unused code only in TypeScript by setting:\n\n```json\n\"[typescript]\": {\n    \"editor.showUnused\":  false\n},\n\"[typescriptreact]\": {\n    \"editor.showUnused\":  false\n},\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/typescript/typescript-refactoring.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/typescript/typescript-refactoring.md"
 }

@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Inlay hints\n\nInlay hints are subtle annotations that appear inline in your code to provide additional context about your code elements. In C#, these hints can show parameter names at call sites, type information for variables, and other helpful details that make your code more readable without having to navigate to the definition. These hints can be particularly helpful when working with methods that have multiple parameters or when type inference makes it less obvious what type a variable is.\n\n![Inlay hints examples](images/navigate-edit/inlay-hints.png)\n\nTo change which inlay hints you want to enable or disable, view the `setting(csharp.inlayHints)` settings.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/navigate-edit.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/navigate-edit.md"
 }

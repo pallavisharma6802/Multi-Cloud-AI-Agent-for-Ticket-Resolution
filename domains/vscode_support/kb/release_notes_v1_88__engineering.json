@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Engineering\n\n### Electron 28 update\n\nIn this iteration, we are promoting the Electron 28 update to users on our stable release. This update comes with Chromium 120.0.6099.291 and Node.js 18.18.2. We want to thank everyone who self-hosted on Insiders builds and provided early feedback.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_88.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_88.md"
 }

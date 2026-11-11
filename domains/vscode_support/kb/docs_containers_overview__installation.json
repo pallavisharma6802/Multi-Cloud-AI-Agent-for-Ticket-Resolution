@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Installation\n\n[Install Docker](https://docs.docker.com/install/) on your machine and add it to the system path.\n\nOn Linux, you should also [enable Docker CLI for the non-root user account](https://docs.docker.com/install/linux/linux-postinstall/#manage-docker-as-a-non-root-user) that will be used to run {% data variables.product.prodname_vscode_shortname %}.\n\nTo install the extension, open the Extensions view (`kb(workbench.view.extensions)`), search for `container tools` to filter results and select the Container Tools extension authored by Microsoft.\n\n![Select Container Tools extension](images/overview/installation-extension-search.png) <!-- TODO: image needs updating -->",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/overview.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/containers/overview.md"
 }

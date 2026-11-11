@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Comments\n\n### comments.visible\n\nThe new setting `comments.visible` can be used to turn off editor commenting (the Comments bar and the in-editor Comments Peek view). The command **Comments: Toggle Editor Commenting** can still be used to toggle editor commenting on and off during a session. Selecting a comment in the **Comments** view will always toggle commenting on.\n\n### Comments view badge\n\nThe **Comments** view shows a badge for the count of unresolved comments.\n\n![Comments view badge](images/1_74/comments-view-badge.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_74.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_74.md"
 }

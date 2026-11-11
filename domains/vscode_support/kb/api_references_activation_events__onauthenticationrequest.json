@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## onAuthenticationRequest\n\nThis activation event is emitted and interested extensions will be activated whenever an extension requests an authentication session (via the `authentication.getSession()` API) with the matching `providerId`.\n\nFor example, the declaration of `onAuthenticationRequest` below:\n\n```json\n\"activationEvents\": [\n    \"onAuthenticationRequest:github\"\n]\n```\n\nwill cause the extension to be activated when VS Code needs retrieve an `AuthenticationSession` of type `github`.\n\n> **Note**: Beginning with VS Code 1.74.0, authentication providers contributed by your extension do not require a corresponding `onAuthenticationRequest` activation event declaration for your extension to be activated.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/activation-events.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/activation-events.md"
 }

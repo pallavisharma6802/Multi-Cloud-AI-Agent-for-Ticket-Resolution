@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Minimap\n\nA Minimap (code outline) gives you a high-level overview of your source code, which is useful for quick navigation and code understanding. A file's minimap is shown on the right side of the editor. You can select or drag the shaded area to quickly jump to different sections in your file.\n\nIf you have [folding markers](/docs/editing/codebasics.md#folding) in the editor, such as `//#region` comments, then the minimap shows the folding marker names. Folding markers are language-specific, so check which markers apply to your language.\n\n![minimap](../images/userinterface/minimap.png)\n\n> [!TIP]\n> You can move the minimap to the left hand side or disable it completely by respectively setting `\"editor.minimap.side\": \"left\"` or `\"editor.minimap.enabled\": false` in the user or workspace [settings](/docs/configure/settings.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/userinterface.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/getting-started/userinterface.md"
 }

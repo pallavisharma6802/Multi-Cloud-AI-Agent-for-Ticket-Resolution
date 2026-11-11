@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## MongoDB on Azure DocumentDB\n\nYou can easily create a managed MongoDB cluster on Azure for **Free** with [Azure DocumentDB](https://aka.ms/documentdb).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/mongodb.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/azure/mongodb.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## New Documentation\n\n### Website deployment tutorial using Azure Storage\n\nWe have a new [Deploy static website to Azure](https://code.visualstudio.com/tutorials/static-website/getting-started?utm_source=VsCode&utm_medium=ReleaseNotes) tutorial for creating and deploying a static website using [Azure Storage](https://learn.microsoft.com/azure/storage/).\n\n### VS Code blog posts\n\nThere were two recent posts on the VS Code [blog](https://code.visualstudio.com/blogs):\n\n* [Bing-powered settings search in VS Code](https://code.visualstudio.com/blogs/2018/04/25/bing-settings-search) - Improving settings search by using Bing's natural language services.\n* [Text Buffer Reimplementation](https://code.visualstudio.com/blogs/2018/03/23/text-buffer-reimplementation) - Read about the development of our optimized text buffer implementation.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_23.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_23.md"
 }

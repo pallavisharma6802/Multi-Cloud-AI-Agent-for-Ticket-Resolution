@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Extension authoring\n\n### Basic authentication for network proxies\n\nExtensions that use the `https` Node.js module can now use network proxies that require basic authentication.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_92.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_92.md"
 }

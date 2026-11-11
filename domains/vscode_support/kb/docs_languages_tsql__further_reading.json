@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Further Reading\n\n* [SQL Server documentation]\n* [SQL Server on Linux documentation]\n* [SQL Server Blog]\n\n[Build an app]: https://aka.ms/sqldev\n[Download {% data variables.product.prodname_vscode_shortname %}]: https://code.visualstudio.com/download\n[GitHub]: https://github.com/microsoft/vscode-mssql\n[GitHub Issue Tracker]: https://github.com/microsoft/vscode-mssql/issues\n[mssql]: https://aka.ms/mssql-marketplace\n[SQL Server 2017 Developer Edition]: https://www.microsoft.com/sql-server/sql-server-downloads\n[SQL Server Blog]: https://blogs.technet.microsoft.com/dataplatforminsider/\n[SQL Server documentation]: https://learn.microsoft.com/sql/sql-server\n[SQL Server on Linux documentation]: https://learn.microsoft.com/sql/linux/sql-server-linux-overview/\n[Transact-SQL]: https://learn.microsoft.com/sql/t-sql/language-reference",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/tsql.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/tsql.md"
 }

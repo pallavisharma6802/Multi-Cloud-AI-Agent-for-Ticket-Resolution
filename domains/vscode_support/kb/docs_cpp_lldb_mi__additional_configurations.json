@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Additional configurations\n\n### Using an LLDB.framework not installed via Xcode\n\nIf you want to use an LLDB.framework that is not installed with Xcode, you need to:\n\n1. Copy the `lldb-mi` executable in `~/.vscode/extensions/ms-vscode.cpptools-<version>/debugAdapters/lldb-mi/bin` to the folder where the `LLDB.framework` is located.\n\n2. Add the full path of `lldb-mi` to `miDebuggerPath` in your `launch.json` configuration.\n\nFor example, if you have the `LLDB.framework` folder located at `/Users/default/example/`, you would:\n\n1. Copy `~/.vscode/extensions/ms-vscode.cpptools-<version>/debugAdapters/lldb-mi/bin/lldb-mi` into  `/Users/default/example/`.\n\n2. Add the following to your existing configuration:\n\n   ```json\n   \"miDebuggerPath\": \"/Users/default/example/lldb-mi\"\n   ```\n\n### Using a custom-built lldb-mi\n\nIf you built your own `lldb-mi`, you can use it by setting `miDebuggerPath` to the full path of the executable.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/lldb-mi.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/lldb-mi.md"
 }

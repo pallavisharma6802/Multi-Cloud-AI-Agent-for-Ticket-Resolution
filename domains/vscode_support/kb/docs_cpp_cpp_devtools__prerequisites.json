@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Prerequisites\n\n- [C/C++ DevTools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpp-devtools) extension\n- [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) extension\n- [CMake Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools) extension\n\nThese extensions are available as part of the [C/C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack).\n\nYou can enable/disable any of these tools at any point by navigating to the `Tools` option in chat and selecting the respective tool you'd like to enable/disable.\n\n![Screenshot showing the list of cpp tools in the chat tools Quick Pick.](images/cpp-devtools/all-cpp-tools.png)\n\n> [!NOTE]\n> Only enable relevant tools to your development workflow to avoid context bloat. You can disable other tools, such as tools installed through MCP, via the same dialog.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/cpp-devtools.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/cpp-devtools.md"
 }

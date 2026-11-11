@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Debugging C# apps\n\nThis video shows you how to debug your C# application using C# Dev Kits debugger tools.\n\n[![Watch Debugging C# Apps in {% data variables.product.prodname_vscode_shortname %} on YouTube (opens in new tab).](images/introvideos-csharp/youtube-VuIOk3DqKgc.jpg)](https://www.youtube.com/watch?v=VuIOk3DqKgc)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/introvideos-csharp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/introvideos-csharp.md"
 }

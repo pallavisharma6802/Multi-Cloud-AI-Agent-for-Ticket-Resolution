@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## View and edit Markdown files\n\n`feature(markdown-editor)`\n\nThe {% data variables.copilot.agents_window %} supports Markdown Preview and the Markdown Editor for `.md` files. Which editor opens by default depends on `setting(workbench.editor.markdownDefaultEditorInAgentsWindow)`.\n\n* When enabled, `.md` files open with **Markdown Editor**.\n* When disabled, `.md` files open with **Markdown Preview**.\n\nThis setting changes the default only in the {% data variables.copilot.agents_window %}. Learn how to open and use the editor in any window in [Markdown Editor](/docs/languages/markdown.md#markdown-editor).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/agents-window-configuration.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/agents-window-configuration.md"
 }

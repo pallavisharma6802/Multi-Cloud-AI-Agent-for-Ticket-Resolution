@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Related resources\n\nKeep learning and exploring with the following resources:\n\n* [Azure Developer CLI documentation](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/)\n* [GitHub Copilot](https://github.com/features/copilot)\n* [Azure AI Studio](https://ai.azure.com/)\n* [{% data variables.product.prodname_vscode_shortname %} Dev Containers](https://containers.dev/)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/vscodeforweb.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/azure/vscodeforweb.md"
 }

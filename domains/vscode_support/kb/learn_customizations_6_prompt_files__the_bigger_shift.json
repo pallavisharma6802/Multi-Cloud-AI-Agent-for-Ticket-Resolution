@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## The bigger shift\n\nThe real value of prompt files is not just convenience.\n\nIt\u2019s the shift from:\n\n**one-off prompting \u2192 reusable systems**\n\nInstead of rewriting instructions every time, you define them once and reuse them across your workflow.\n\nThis leads to faster development and more consistent AI behavior.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/6-prompt-files.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/6-prompt-files.md"
 }

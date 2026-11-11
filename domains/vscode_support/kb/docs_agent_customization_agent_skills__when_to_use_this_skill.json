@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## When to use this skill\n\nUse this skill when you need to:\n- Create new Playwright tests for web applications\n- Debug failing browser tests\n- Set up test infrastructure for a new project",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/agent-skills.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/agent-skills.md"
 }

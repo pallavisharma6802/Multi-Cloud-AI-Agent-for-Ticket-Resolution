@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Formatting\n\nThe CSS Languages Features extension also provides a formatter. The formatter works with CSS, LESS and SCSS. It is implemented by the [JS Beautify library](https://github.com/beautify-web/js-beautify) and comes with the following settings:\n\n* `setting(css.format.enable)` - Enable/disable default CSS formatter.\n* `setting(css.format.newlineBetweenRules)` - Separate rulesets by a blank line.\n* `setting(css.format.newlineBetweenSelectors)` - Separate selectors with a new line.\n* `setting(css.format.spaceAroundSelectorSeparator)` - Ensure a space character around selector separators '>', '+', '~' (for example, `a > b`).\n\nThe same settings also exist for `less` and `scss`.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/css.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/css.md"
 }

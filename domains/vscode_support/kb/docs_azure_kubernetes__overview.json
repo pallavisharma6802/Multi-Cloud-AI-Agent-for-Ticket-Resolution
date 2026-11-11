@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "# Working with Kubernetes in {% data variables.product.prodname_vscode_shortname %}\n\nThis document will walk you through the process of deploying an application to [Kubernetes](https://kubernetes.io/) with {% data variables.product.prodname_vscode %}. [Kubernetes](https://kubernetes.io/) is an open-source system for automating deployment, scaling, and management of containerized applications. We will show you how to create a Kubernetes cluster, write a Kubernetes manifest file (usually written in YAML), which tells Kubernetes everything it needs to know about the application, and then finally deploy the application to the Kubernetes cluster.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/kubernetes.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/azure/kubernetes.md"
 }

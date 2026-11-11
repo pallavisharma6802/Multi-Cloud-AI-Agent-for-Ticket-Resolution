@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Syntax Verification & Linting\n\nThere is support for CSS version <= 2.1, Sass version <= 3.2 and Less version <= 2.3.\n\n>**Note:** You can disable {% data variables.product.prodname_vscode_shortname %}'s default CSS, Sass or Less validation by setting the corresponding `.validate` User or Workspace [setting](/docs/configure/settings.md) to false.\n>```json\n>\"css.validate\": false\n>```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/css.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/css.md"
 }

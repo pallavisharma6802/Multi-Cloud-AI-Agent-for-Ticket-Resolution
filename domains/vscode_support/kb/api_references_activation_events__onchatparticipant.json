@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## onChatParticipant\n\nAn activation event emitted when the specified chat participant is invoked.\n\nChat participants are deprecated and are not supported in the Copilot harness. This event remains relevant for Local harness compatibility. See [Replace chat participants](/docs/agent-customization/migrate-customizations.md#replace-chat-participants).\n\n```json\n\"activationEvents\": [\n    \"onChatParticipant:my-chat-participant\"\n]\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/activation-events.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/activation-events.md"
 }

@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Use artifacts\n\nWhen artifacts are available, the artifacts panel appears alongside the conversation. Artifacts are organized in groups based on their source.\n\n* Select an artifact to open the corresponding resource. For example, selecting an image artifact shows a preview, while selecting a document artifact opens the file in the editor.\n* Artifacts from the agent replace the previous agent list each time the agent updates them.\n* Each subagent's artifacts are shown in a separate group. You can clear a specific subagent's artifacts independently.\n* Rules-based artifacts update automatically as the conversation progresses. If you change the rule settings, the artifacts panel reflects the updated rules.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/artifacts.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/artifacts.md"
 }

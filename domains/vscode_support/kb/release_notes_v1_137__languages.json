@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Languages\n\n### GitHub links in the Markdown editor (Experimental)\n\n**Settings**: `setting(markdown.experimental.richLinks.enabled)`, `setting(chat.experimental.richLinks.enabled)`\n\nGitHub issue and pull request links in the Markdown editor show the current title and state, so you can understand each reference without opening it first. The link updates when its issue or pull request state changes, including CI updates.\n\n![Screenshot showing GitHub pull requests rendered as rich links with live status indicators in the Markdown editor.](images/1_137/markdown-github-rich-links.webp)\n\nTo use the same link rendering in chat, set `setting(chat.experimental.richLinks.enabled)` to `true`.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_137.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_137.md"
 }

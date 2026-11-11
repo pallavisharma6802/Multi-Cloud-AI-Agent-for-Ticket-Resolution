@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable fixes\n\n* [41356](https://github.com/microsoft/vscode/issues/41356): hotkey to move to next/previous error should not move NVDA's focus outside the editor\n* [45515](https://github.com/microsoft/vscode/issues/45515): Uri#parse can break path-component\n* [54084](https://github.com/microsoft/vscode/issues/54084): Do not change debug touchbar buttons position when stepping\n* [70248](https://github.com/microsoft/vscode/issues/70248): The cls command doesn't clear the terminal (Windows 10 1903, ConPTY)\n* [74710](https://github.com/microsoft/vscode/issues/74710): Image preview should only draw \"transparent\" checkered background for the size of the image\n* [75359](https://github.com/microsoft/vscode/issues/75359): Variables pane does not update after changing value via debug console\n* [41085](https://github.com/microsoft/vscode/issues/41085): Git: File events don't work if .git is outside the opened folder",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_36.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_36.md"
 }

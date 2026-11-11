@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable fixes\n\n* [vscode#304257](https://github.com/microsoft/vscode/issues/304257) - terminal restart for integrated pwsh can cause cursor to go to wrong location\n* [vscode#304679](https://github.com/microsoft/vscode/issues/304679) - Caps Lock key inserts raw escape sequence \"[57358u\" in Claude Code inside VS Code terminal",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_115.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_115.md"
 }

@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Problem Framing: Model Selection Is a Risk-Reduction Process\n\nIt helps to treat model selection as risk reduction, not preference testing. You are not trying to find a universally \"best\" model. You are trying to find the most reliable fit for your workload, constraints, and region.\n\nThat framing changes how you evaluate results, because consistency and deployability matter just as much as output style.\n\nPretty output is nice. Deployable output wins.\n\nA simple way to apply this is to score each candidate against four practical checks: capability fit, regional availability, cost profile, and behavior quality under the same prompts. When a model wins across those checks, your choice is easier to defend to both engineering and product stakeholders.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/2-exploring-models.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundry-toolkit-extension/2-exploring-models.md"
 }

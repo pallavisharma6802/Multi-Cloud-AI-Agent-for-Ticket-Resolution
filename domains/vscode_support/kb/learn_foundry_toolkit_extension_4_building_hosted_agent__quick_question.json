@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Quick Question\n\nIf local runs look correct but hosted responses drift, what should you check first: prompt wording, tool calls, or runtime/deployment configuration?",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
 }

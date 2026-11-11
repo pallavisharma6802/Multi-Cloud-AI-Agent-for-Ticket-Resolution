@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Install T-SQL support\n\nAdd T-SQL language support to {% data variables.product.prodname_vscode_shortname %} by installing the [mssql] extension from the {% data variables.product.prodname_vs_marketplace %} as follows:\n\n1. Open the **Extensions** view from {% data variables.product.prodname_vscode_shortname %} Side Bar (`kb(workbench.view.extensions)`).\n2. Type \"mssql\" in the search bar, click **Install**, and reload {% data variables.product.prodname_vscode_shortname %} when prompted.\n\n![install mssql extension](images/tsql/install-mssql.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/tsql.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/tsql.md"
 }

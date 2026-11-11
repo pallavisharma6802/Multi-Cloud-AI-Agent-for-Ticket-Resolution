@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "# Markdown Extension\n\nMarkdown extensions allow you to extend and enhance Visual Studio Code's built-in Markdown support. You can change the look of the Markdown preview, add support for new Markdown syntax, and contribute interactive editors for fenced code blocks.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/markdown-extension.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-guides/markdown-extension.md"
 }

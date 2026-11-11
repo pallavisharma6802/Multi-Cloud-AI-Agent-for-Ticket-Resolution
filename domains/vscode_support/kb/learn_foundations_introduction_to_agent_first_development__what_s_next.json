@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## What's next\n\nYou now have the mental model for what drives great agent results, harness, model, context, tools, and prompt. The agent is already capable of building real things - now it's about learning how to direct it well.\n\nIn the [next guide](/learn/foundations/approvals-autonomy-and-context-budget.md), we'll cover the approval system in depth, look at how to control agent autonomy, and understand how to monitor your context budget as a session runs.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/introduction-to-agent-first-development.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundations/introduction-to-agent-first-development.md"
 }

@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Step 4: Add MCP Tools for Grounded Context\n\nA reliable content agent should not rely only on base-model memory. In this workflow, MCP connects the agent to authoritative Microsoft documentation through the Microsoft Learn MCP server.\n\nFor this scenario, grounding matters whenever campaign text references product capabilities, release details, or platform behavior.\n\n1. In the Tool section, click \"+\" and select MCP Server\n\n   ![Add MCP Server](../images/foundry-toolkit/ch3-mcp-server.png)\n\n   **Fig 04: Select MCP Server in Tools**\n\n   Next, we will need to select which MCP Server.\n\n2. Select the Microsoft Learn MCP server from the list of available servers.\n\n   ![MCP tool setup](../images/foundry-toolkit/ch3-mcp.png)\n\n   **Fig 05: Add MCP server tools to the agent for grounded responses.**\n\nAdding tools alone is not enough, so the next step is teaching the agent when to use them.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/3-building-social-media-agent.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundry-toolkit-extension/3-building-social-media-agent.md"
 }

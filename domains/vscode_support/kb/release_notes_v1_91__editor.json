@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Editor\n\n### Code Actions on Save\n\nWith the <code codesetting=\"editor.codeActionsOnSave\">editor.codeActionsOnSave</code> setting, you can configure a set of Code Actions that are automatically applied when you save a file, for example to organize imports. We improved the IntelliSense for configuring this setting by providing a list of available Code Actions based on your workspace files and the active extensions.\n\n> **Note**: be aware that although `true` and `false` are still valid configurations at the moment, they will be deprecated in favor of `explicit`, `always`, and `never`. See [Code Actions on Save Docs](https://code.visualstudio.com/docs/typescript/typescript-refactoring#_code-actions-on-save) for examples.\n\n### Quickly turn off read-only file status\n\nIf you have configured a file as read-only through the `files.readonlyInclude` setting, you can now quickly toggle off the read-only status of the file from the read-only editor message.\n\n![Read-only editor message enabling you to toggle the read-only status.](images/1_91/quick-toggle-readonly.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_91.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_91.md"
 }

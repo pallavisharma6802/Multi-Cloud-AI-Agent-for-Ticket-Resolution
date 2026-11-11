@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Next steps\n\n* Follow a complete workflow to [fix an API bug with an agent](/docs/agents/guides/fix-a-bug-with-agents.md).\n* For a Local-harness example, set up a test-first workflow with [TDD custom agents and handoffs](/docs/agents/guides/test-driven-development-guide.md).\n* Try [testing web apps with browser agent tools](/docs/agents/guides/browser-agent-testing-guide.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/test-code-with-ai.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/test-code-with-ai.md"
 }

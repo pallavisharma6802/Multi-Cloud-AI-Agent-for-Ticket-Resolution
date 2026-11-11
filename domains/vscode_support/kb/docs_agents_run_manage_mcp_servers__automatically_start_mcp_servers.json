@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Automatically start MCP servers\n\n`feature(mcp-autostart)`\n\nWhen you submit a chat message, {% data variables.product.prodname_vscode_shortname %} can start servers to discover their tools. The `setting(chat.mcp.autostart)` setting controls this editor autostart pass:\n\n* `never`: Don't start servers during this pass.\n* `onlyNew`: Start servers that have never run.\n* `newAndOutdated` (default): Start servers that have never run or whose configuration has changed.\n\nDisabled servers and servers in an error state are excluded.\n\n> [!IMPORTANT]\n> Setting `setting(chat.mcp.autostart)` to `never` doesn't prevent the {% data variables.product.prodname_copilot_short %} harness from starting its own configured MCP servers independently. To prevent a server from starting, [disable it](#enable-or-disable-mcp-servers).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/manage-mcp-servers.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/manage-mcp-servers.md"
 }

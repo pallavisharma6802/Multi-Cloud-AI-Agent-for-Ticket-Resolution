@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Alternate ways to install Docker\n\nYou can use Docker with the Dev Containers extension in a few ways, including:\n\n* Docker installed locally.\n* Docker installed on a remote environment.\n* Other Docker compliant CLIs, installed locally or remotely.\n  * While other CLIs may work, they are not officially supported. Note that [attaching to a Kubernetes cluster](/docs/devcontainers/attach-container.md#attach-to-a-container-in-a-kubernetes-cluster) only requires a properly configured [kubectl CLI](https://kubernetes.io/docs/reference/kubectl/overview/).\n\nYou can learn more in the [alternative Docker options doc](/remote/advancedcontainers/docker-options.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/tips-and-tricks.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/devcontainers/tips-and-tricks.md"
 }

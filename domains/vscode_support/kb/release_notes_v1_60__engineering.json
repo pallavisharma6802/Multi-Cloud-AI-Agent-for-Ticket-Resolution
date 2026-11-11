@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Engineering\n\n### Fix support for RHEL7 and Centos7 distros\n\nIn VS Code version 1.53, we updated our build images to consume newer Electron versions causing a change in CXXABI requirements for native modules that broke our rpm packages in some distros [issue #115784](https://github.com/microsoft/vscode/issues/115784). With update to Electron v13, we are now able to build our native modules with the same compiler toolchain as the runtime, specifically we now use Clang and statically link the libcxx from the runtime. This allows us to bypass the CXXABI requirements for only a small increase in binary size ~10 MB and bring back support for these distros. Thanks for your patience and help with testing on Insiders.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_60.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_60.md"
 }

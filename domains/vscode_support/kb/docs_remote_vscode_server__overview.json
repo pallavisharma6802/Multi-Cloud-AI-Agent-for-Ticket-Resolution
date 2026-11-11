@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "# {% data variables.product.prodname_vscode %} Server\n\nThe {% data variables.product.prodname_vscode %} Server is a service you can run on a remote development machine, like your desktop PC or a virtual machine (VM). It allows you to securely connect to that remote machine from anywhere through a local {% data variables.product.prodname_vscode_shortname %} client, without the requirement of SSH.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/vscode-server.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/remote/vscode-server.md"
 }

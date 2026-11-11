@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Understand sessions and chats\n\nA session is the unit of work with an agent in {% data variables.product.prodname_vscode %}. It brings together the workspace and code changes for a task. A chat is a conversation within that session, and a session can contain multiple chats when the harness supports them.\n\nThis article helps you choose between starting a new chat, forking a conversation, and creating a new session. It explains what chats share, how to finish individual conversations, and how to continue work across surfaces or hand it off to another agent.\n\nTo create and organize sessions, see [Manage agent sessions](/docs/agents/run/sessions/manage-sessions.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/sessions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/concepts/sessions.md"
 }

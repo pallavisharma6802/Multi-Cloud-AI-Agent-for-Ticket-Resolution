@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Create an automation from chat\n\nYou can also create an automation by asking in a normal chat in the {% data variables.copilot.agents_window %}. Describe the task, where it should run, and its schedule. For example:\n\n```prompt\nCreate a local automation for this workspace that runs daily at 9:00 AM.\nSummarize commits from the last 24 hours, grouped by feature, fix, and maintenance.\nReturn the summary in the session. Do not modify files.\nSave the automation disabled so I can review it before enabling scheduled runs.\n```\n\nThe agent creates the automation through the normal tool-approval flow. Review any approval request before allowing creation. Then open **Automations** to review the saved prompt, execution environment, schedule, and permissions before enabling scheduled runs.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/automations.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/automations.md"
 }

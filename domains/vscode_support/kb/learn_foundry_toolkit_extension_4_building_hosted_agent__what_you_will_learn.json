@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## What You Will Learn\n\nIn this chapter, you create a code-based social campaign assistant for developer-focused content creation. Unlike a prompt-only prototype, this version is source-controlled, inspectable, and deployable as a hosted agent.\n\nThink of it as the bridge between experimentation and production-ready team workflows.\n\nYou will learn how to:\n\n- **Scaffold an agent project**: Generate a coded project with GitHub Copilot CLI prompts.\n- **Attach reusable tools**: Configure a Foundry toolbox with Microsoft Learn MCP and web search.\n- **Run a local runtime loop**: Use an HTTP-based local agent service for invoke and debug cycles.\n- **Deploy to a hosted target**: Publish to a managed hosted agent in Foundry.\n\nBefore we get hands-on, it helps to anchor the practical reason teams choose this model.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
 }

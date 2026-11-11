@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Bring your own key for Copilot Business and Enterprise\n\nTeams often need specific models for compliance, performance, or cost reasons, but switching between tools to use them slows developers down. Bring your own language model key (BYOK) lets Copilot Business and Enterprise users connect their own API keys for providers like OpenRouter, Ollama, Google, OpenAI, and more, so they can use those models directly in VS Code chat.\n\nBy default, BYOK is enabled and administrators can disable it with the **Bring Your Own Language Model Key** policy in the [Copilot policy settings](https://github.com/settings/copilot/features) on GitHub.com. This gives administrators control over which model providers are available to their organization while keeping developers in their existing workflow.\n\nAfter the policy is enabled, organization members can [add models from built-in providers](https://code.visualstudio.com/docs/agent-customization/language-models#_bring-your-own-language-model-key) or install language model provider extensions.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_117.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_117.md"
 }

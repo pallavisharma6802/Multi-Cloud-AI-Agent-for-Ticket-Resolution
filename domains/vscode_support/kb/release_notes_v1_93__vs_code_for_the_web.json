@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## VS Code for the Web\n\nThe <a href=\"vscode://settings/git.openDiffOnClick\" codesetting=\"true\">`git.openDiffOnClick`</a> setting is now honored when browsing a GitHub repository on [https://vscode.dev](https://vscode.dev) or on the desktop with the [GitHub Repositories extension](https://marketplace.visualstudio.com/items?itemName=GitHub.remotehub).\n\n![Open diff by selecting Open Changes for changed resources.](images/1_93/git-diff-click.gif)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_93.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_93.md"
 }

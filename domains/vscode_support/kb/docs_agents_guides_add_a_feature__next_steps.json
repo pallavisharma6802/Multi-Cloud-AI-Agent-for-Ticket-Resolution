@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Next steps\n\n* [Adapt agents to your project with instructions and skills](/docs/agents/guides/customize-copilot-guide.md).\n* [Run independent tasks in separate worktrees](/docs/agents/guides/delegate-two-tasks.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/add-a-feature.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/add-a-feature.md"
 }

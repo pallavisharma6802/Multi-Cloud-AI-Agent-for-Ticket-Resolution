@@ -4,5 +4,5 @@
   "category": "DEBUGGING",
   "intent": "debugging",
   "content": "## Related\n\n* [Browser debugging in {% data variables.product.prodname_vscode_shortname %}](/docs/nodejs/browser-debugging.md)\n* [Use browser tools with agents](/docs/agents/run/browser-tools.md)\n* [Build and validate a web app with browser tools](/docs/agents/guides/browser-agent-testing-guide.md)\n* [Add context to AI chat](/docs/chat/copilot-chat-context.md)\n* [Port forwarding](/docs/debugtest/port-forwarding.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/integrated-browser.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/debugtest/integrated-browser.md"
 }

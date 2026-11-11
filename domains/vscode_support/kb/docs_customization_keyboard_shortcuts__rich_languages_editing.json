@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Rich Languages Editing\n\nKey|Command\n---|---\n`kb(editor.action.triggerSuggest)`|Trigger suggestion\n`kb(editor.action.triggerParameterHints)`|Trigger parameter hints\n`kb(editor.action.formatDocument)`|Format document\n`kb(editor.action.formatSelection)`|Format selection\n`kb(editor.action.revealDefinition)`|Go to Definition\n`kb(editor.action.peekDefinition)`|Peek Definition\n`kb(editor.action.revealDefinitionAside)`|Open Definition to the side\n`kb(editor.action.quickFix)`|Quick Fix\n`kb(editor.action.goToReferences)`|Go to References\n`kb(editor.action.rename)`|Rename Symbol\n`kb(editor.action.inPlaceReplace.down)`|Replace with next value\n`kb(editor.action.inPlaceReplace.up)`|Replace with previous value\n`kb(editor.action.trimTrailingWhitespace)`|Trim trailing whitespace\n`kb(workbench.action.editor.changeLanguageMode)`|Change file language",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/customization/keyboard-shortcuts.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/customization/keyboard-shortcuts.md"
 }

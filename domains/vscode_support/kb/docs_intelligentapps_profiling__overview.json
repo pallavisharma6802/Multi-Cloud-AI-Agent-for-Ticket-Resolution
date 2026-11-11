@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Profiling an app using Windows Machine Learning\n\nProfiling is a tool designed to help developers and AI engineers to diagnose CPU, GPU, and NPU resource usage of processes, profile ONNX models on different execution providers, and capture Windows ML events.\n\nIn this article, you learn how to start profiling and how to inspect the resource usage view and the events view.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/profiling.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/profiling.md"
 }

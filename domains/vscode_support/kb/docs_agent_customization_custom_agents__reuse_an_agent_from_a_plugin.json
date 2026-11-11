@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Reuse an agent from a plugin\n\nBefore creating a custom agent, [browse customization marketplaces](/docs/agent-customization/overview.md#discover-and-install-existing-customizations-preview) for a plugin that includes the role you need.\n\n1. Select a plugin and review its included agents, instructions, tools, and setup requirements. Confirm that it supports your intended harness.\n1. [Install the plugin](/docs/agent-customization/agent-plugins.md#install-a-plugin-from-a-marketplace) and complete its setup.\n1. [Select the agent in chat](#use-a-custom-agent) if it supports user invocation, or use it as a [subagent](/docs/agents/run/subagents.md#run-a-custom-agent-as-a-subagent) as intended by the publisher.\n1. Try a representative task and review the agent's response and tool calls before relying on it.\n\nManage the installation through the [Plugins section](/docs/agent-customization/agent-plugins.md#view-installed-plugins). Create your own agent when you need a role or configuration that the available plugins don't provide.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/custom-agents.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/custom-agents.md"
 }

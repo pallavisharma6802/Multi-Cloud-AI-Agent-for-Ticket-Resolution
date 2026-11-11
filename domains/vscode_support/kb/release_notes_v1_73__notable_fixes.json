@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable fixes\n\n* [151019](https://github.com/microsoft/vscode/issues/151019) Debug hover is hiding when hovered\n* [153852](https://github.com/microsoft/vscode/issues/153852) Proposal: Remove ES5 Class Compatibility to speed up Extension APIs\n* [156104](https://github.com/microsoft/vscode/issues/156104) Don't auto-forward port on url link click, if it's already statically forwarded\n* [158921](https://github.com/microsoft/vscode/issues/158921) Settings Modified Elsewhere indicator hover content overflows",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_73.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_73.md"
 }

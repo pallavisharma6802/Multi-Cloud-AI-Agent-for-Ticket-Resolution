@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Develop a web extension\n\nThankfully, tools like TypeScript and webpack can hide many of the browser runtime constraints and allow you to write web extensions the same way as regular extensions. Both a web extension and a regular extension can often be generated from the same source code.\n\nFor example, the `Hello Web Extension` created by the `yo code` [generator](https://www.npmjs.com/package/generator-code) only differs in the build scripts. You can run and debug the generated extension just like traditional Node.js extensions by using the provided launch configurations accessible using the **Debug: Select and Start Debugging** command.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/web-extensions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-guides/web-extensions.md"
 }

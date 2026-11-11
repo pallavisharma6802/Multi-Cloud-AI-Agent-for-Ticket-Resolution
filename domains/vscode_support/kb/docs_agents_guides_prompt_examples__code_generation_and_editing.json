@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Code generation and editing\n\nUse **Agent** for multi-file creation and **inline chat** (`kb(inlinechat.start)`) for targeted, in-place edits.\n\nFor complete workflows in an existing project, see [Add a feature](/docs/agents/guides/add-a-feature.md) and [Refactor without changing behavior](/docs/agents/guides/refactor-safely.md).\n\n```prompt\nAdd a login button and style it based on #styles.css\n```\n\n```prompt\nCreate a meal-planning web app using React and Node.js\n```\n\n```prompt\nRefactor this code to use async/await\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/prompt-examples.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/prompt-examples.md"
 }

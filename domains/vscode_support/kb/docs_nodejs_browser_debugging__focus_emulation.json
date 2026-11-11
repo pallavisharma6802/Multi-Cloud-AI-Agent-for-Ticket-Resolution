@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Focus emulation\n\nWhen you debug a web application and switch focus to {% data variables.product.prodname_vscode_shortname %}, the browser page loses focus. This causes `:focus` CSS styles to disappear, `document.hasFocus()` to return `false`, and focus event handlers to stop firing as expected.\n\nDuring a browser debug session, the **Debug Options** panel in the **Run and Debug** view provides an **Emulate a focused page** option. When you enable this option, the page behaves as if it still has focus, even when {% data variables.product.prodname_vscode_shortname %} is in the foreground. The setting persists across debug sessions.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/browser-debugging.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/nodejs/browser-debugging.md"
 }

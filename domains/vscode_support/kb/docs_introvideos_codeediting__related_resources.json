@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Related resources\n\n* [Basic Editing](/docs/editing/codebasics.md) - Learn about the powerful {% data variables.product.prodname_vscode_shortname %} editor.\n* [Code Navigation](/docs/editing/editingevolved.md) - Move quickly through your source code.\n* [Emmet Snippets](/docs/languages/html.md#emmet-snippets) - Use Emmet Snippets.\n* [Tasks](/docs/debugtest/tasks.md) - Create tasks to use external tools inside {% data variables.product.prodname_vscode_shortname %}.\n* [JavaScript Linters](/docs/languages/javascript.md#linters) - Install linters for JavaScript.\n* [Code Folding](/docs/editing/codebasics.md#folding) - See the details of source code folding.\n* [Tips and Tricks](/docs/editing/getting-started/tips-and-tricks.md) - Helpful tips and tricks for {% data variables.product.prodname_vscode_shortname %}.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/introvideos/codeediting.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/introvideos/codeediting.md"
 }

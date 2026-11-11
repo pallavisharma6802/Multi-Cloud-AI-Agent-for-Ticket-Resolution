@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## AI CLI profile group in terminal dropdown (Experimental)\n\n**Setting**: `setting(terminal.integrated.experimental.aiProfileGrouping)`\n\nAI CLI terminal profiles, such as GitHub Copilot CLI, are now displayed in a dedicated group at the top of the terminal profile dropdown for improved discoverability. To enable this feature, turn on the `setting(terminal.integrated.experimental.aiProfileGrouping)` setting.\n\n![Screenshot of the terminal profile dropdown showing the new AI CLI profile group.](images/1_111/ai-cli-profile-group.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_111.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_111.md"
 }

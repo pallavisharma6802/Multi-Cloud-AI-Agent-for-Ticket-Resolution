@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Engineering\n\n### New CDN\n\nWe're rolling out the deployment to a new CDN endpoint: `vscode.download.prss.microsoft.com`. For system administrators, make sure to configure network rules to allow traffic from this endpoint.\n\n### macOS 10.13 and 10.14 support has ended\n\nVS Code `1.85` is the last release that supports macOS 10.13 (macOS High Sierra) and 10.14 (macOS Mojave). Refer to our [FAQ](https://code.visualstudio.com/docs/supporting/faq#_can-i-run-vs-code-on-old-macos-versions) for additional information.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_85.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_85.md"
 }

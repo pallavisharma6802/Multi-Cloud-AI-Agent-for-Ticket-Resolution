@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Next steps\n\n- Learn about all the [C++ editing features](/docs/cpp/cpp-ide.md) available in {% data variables.product.prodname_vscode_shortname %}.\n- Check out the Hello World tutorials for getting started with C++ for your toolset and platform:\n  - [GCC on Windows](/docs/cpp/config-mingw.md)\n  - [Microsoft C++ on Windows](/docs/cpp/config-msvc.md)\n  - [GCC on Linux](/docs/cpp/config-linux.md)\n  - [GCC on Windows Subsystem For Linux](/docs/cpp/config-wsl.md)\n  - [Clang/LLVM on macOS](/docs/cpp/config-clang-mac.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/introvideos-cpp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/introvideos-cpp.md"
 }

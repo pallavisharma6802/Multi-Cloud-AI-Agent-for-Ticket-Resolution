@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Creating a reference you can reuse\n\nOnce you have summaries, comparisons, and examples, you can take it one step further and consolidate everything into a single reference.\n\nFor example, you can ask Copilot to generate an HTML file that includes:\n\n- feature explanations\n- comparison charts\n- key differences\n- quizzes\n\nThis gives you a reusable resource you can revisit anytime.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/7-customization-features-explained.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/7-customization-features-explained.md"
 }

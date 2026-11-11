@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Integrated Terminal\n\n### Dragging files to the terminal to paste path\n\nYou can now drag files and folder from the File Explorer and files from your OS file manager to paste the path name into the terminal.\n\n### Unicode character width improvements\n\nUnicode characters in the Integrated Terminal are now sized explicitly which means that applications like [vtop](https://www.npmjs.com/package/vtop) which make extensive use of these characters should now render correctly.\n\nBefore:\n\n![Better unicode width before](images/1_13/terminal-vtop-before.png)\n\nAfter:\n\n![Better unicode width after](images/1_13/terminal-vtop-after.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_13.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_13.md"
 }

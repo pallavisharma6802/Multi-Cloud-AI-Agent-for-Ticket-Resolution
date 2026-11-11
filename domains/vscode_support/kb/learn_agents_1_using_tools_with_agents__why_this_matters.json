@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Why this matters\n\nThe right tool mix keeps agents focused. Tool sets make good workflows repeatable. Custom agents make tool boundaries part of a role. Approvals and sandboxing help you stay in control when the agent can make changes or reach outside the workspace.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/1-using-tools-with-agents.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/agents/1-using-tools-with-agents.md"
 }

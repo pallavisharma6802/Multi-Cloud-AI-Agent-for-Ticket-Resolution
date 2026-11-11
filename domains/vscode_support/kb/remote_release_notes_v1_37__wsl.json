@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## WSL\n\n### Experimental Alpine Linux support\n\nThe WSL extension now supports the Alpine WSL distribution on VS Code Insiders.\n\nTo use an Alpine distro:\n\n- You need to be on Windows 10, May 2019 Update (1903).\n- Install **Alpine WSL** from the Microsoft Store.\n- Install the latest WSL extension in a [VS Code Insiders](https://code.visualstudio.com/insiders/) build.\n- The WSL extension will prompt you to install `libstdc++` inside Alpine. To do that, open an Alpine WSL shell and run `su -c 'apk update && apk add libstdc++'`.\n\nTo bring up the WSL window (instance) either:\n\n- Run `code-insiders .` from the WSL shell.\n- Invoke the **WSL: New Window using Distro** command and pick **Alpine**.\n\n![Running the Alpine distribution](images/1_37/alpine.png)\n\n**Note**: We are holding this back from the Stable release to allow extension authors to catch up with the additional platform. See [Supporting Remote Development](https://code.visualstudio.com/api/advanced-topics/remote-extensions) for details.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_37.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_37.md"
 }

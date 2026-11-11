@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Explore extensions (optional)\n\nExtensions add languages, debuggers, and other tools to {% data variables.product.prodname_vscode_shortname %}. You don't need to install any extensions for this sample, but you can explore tools for other projects:\n\n1. Select the **Extensions** view in the Activity Bar.\n\n1. Search for a language or tool, and then select an extension to read its features and requirements.\n\nLearn more about [finding and managing extensions](/docs/configure/extensions/extensions.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/editor-tutorial.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/getting-started/editor-tutorial.md"
 }

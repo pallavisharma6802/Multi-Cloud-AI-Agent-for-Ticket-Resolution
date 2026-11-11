@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "# Debugging in {% data variables.product.prodname_vscode %}\n\nDebugging is a core feature of {% data variables.product.prodname_vscode %}. In this tutorial, we will show you how to run and debug a program in {% data variables.product.prodname_vscode_shortname %}. We'll take a tour of the **Run and Debug** view, explore some debugging features, and end by setting a breakpoint.\n\n> **Tip:** To use the debugging features demonstrated in this video for Node.js, you will need to first install [Node.js](https://nodejs.org). To follow along with the Python portion of the video, you'll need to install [Python](https://www.python.org/downloads/).\n\n[![Watch Getting started with debugging in {% data variables.product.prodname_vscode_shortname %} on YouTube (opens in new tab).](images/debugging/youtube-3HiLLByBWkg.jpg)](https://www.youtube.com/watch?v=3HiLLByBWkg)\n\nHere's the next video we recommend: [Version Control](/docs/introvideos/versioncontrol.md)\n\nPick another video from the list: [Introductory Videos](/docs/getstarted/introvideos.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/introvideos/debugging.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/introvideos/debugging.md"
 }

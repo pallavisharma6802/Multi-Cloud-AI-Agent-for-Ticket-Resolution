@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Status bar accessibility\n\nOnce focus is in the Status bar via **Focus Next Part** (`kb(workbench.action.focusNextPart)`), you can use arrow navigation to move focus between Status bar entries.\n\n### Diff editor accessibility\n\nThere is an Accessible Diff Viewer in the Diff editor that presents changes in a unified patch format. You can navigate between changes with **Go to Next Difference** (`kb(editor.action.accessibleDiffViewer.next)`) and **Go to Previous Difference** (`kb(editor.action.accessibleDiffViewer.prev)`). Navigate lines with the arrow keys and press `kbstyle(Enter)` to jump back in the Diff editor and the selected line.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/accessibility/accessibility.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/accessibility/accessibility.md"
 }

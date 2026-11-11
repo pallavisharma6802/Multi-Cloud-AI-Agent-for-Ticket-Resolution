@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## contributes.semanticTokenScopes\n\nContributes mapping between semantic token types & modifiers and scopes either as a fallback or to support language-specific themes.\n\n```json\n{\n  \"contributes\": {\n    \"semanticTokenScopes\": [\n      {\n        \"language\": \"typescript\",\n        \"scopes\": {\n          \"property.readonly\": [\"variable.other.constant.property.ts\"]\n        }\n      }\n    ]\n  }\n}\n```\n\nSee the [Semantic Highlighting Guide](/api/language-extensions/semantic-highlight-guide) to read more about semantic highlighting.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/contribution-points.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/contribution-points.md"
 }

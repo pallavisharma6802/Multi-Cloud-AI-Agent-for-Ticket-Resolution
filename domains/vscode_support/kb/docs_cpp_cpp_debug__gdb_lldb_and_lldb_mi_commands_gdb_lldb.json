@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## GDB, LLDB, and LLDB-MI Commands (GDB/LLDB)\n\nFor the `C++ (GDB/LLDB)` debugging environment, you can execute GDB, LLDB and LLDB-MI commands directly through the debug console with the `-exec` command, but be careful, executing commands directly in the debug console is untested and might crash {% data variables.product.prodname_vscode_shortname %} in some cases.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/cpp-debug.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/cpp-debug.md"
 }

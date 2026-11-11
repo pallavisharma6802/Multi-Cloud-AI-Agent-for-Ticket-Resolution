@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Common questions\n\n### Can I use the version of TypeScript that ships with VS 2022?\n\nNo, the TypeScript language service that ships with Visual Studio 2019 and 2022 isn't compatible with {% data variables.product.prodname_vscode_shortname %}. You will need to install a separate version of TypeScript from [npm](https://www.npmjs.com/package/typescript).\n\n### How can I use the latest TypeScript beta with {% data variables.product.prodname_vscode_shortname %}?\n\nThe simplest way to try out the latest TypeScript features in {% data variables.product.prodname_vscode_shortname %} is to install the [JavaScript and TypeScript Nightly extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next).\n\nYou can also [configure {% data variables.product.prodname_vscode_shortname %} to use a specific TypeScript version](/docs/typescript/typescript-transpiling.md#using-newer-typescript-versions).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/typescript.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/typescript.md"
 }

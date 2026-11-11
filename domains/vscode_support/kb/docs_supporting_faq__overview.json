@@ -4,5 +4,5 @@
   "category": "REFERENCE",
   "intent": "reference",
   "content": "# {% data variables.product.prodname_vscode %} FAQ\n\nOur docs contain a **Common questions** section as needed for specific topics. We've captured items here that don't fit in the other topics.\n\nIf you don't see an answer to your question here, check our previously [reported issues on GitHub](https://github.com/microsoft/vscode/issues) and our [release notes](/updates).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/supporting/faq.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/supporting/faq.md"
 }

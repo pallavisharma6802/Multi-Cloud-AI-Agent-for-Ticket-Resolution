@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Language Server Protocol\n\nThe 3.15 version of the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/specifications/specification-current/) is now available. We also released the corresponding npm modules for the [VS Code LSP client](https://www.npmjs.com/package/vscode-languageclient) and for [LSP servers](https://www.npmjs.com/package/vscode-languageserver) written in Node.js. The latest version of the libraries contains a proposed specification and implementation for semantic tokens.\n\nThe LSP Web site now hosts a preliminary version of the [Language Server Index Format specification](https://microsoft.github.io/language-server-protocol/specifications/lsif/0.4.0/specification/) as well as a corresponding [LSIF overview](https://microsoft.github.io/language-server-protocol/overviews/lsif/overview/).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_42.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_42.md"
 }

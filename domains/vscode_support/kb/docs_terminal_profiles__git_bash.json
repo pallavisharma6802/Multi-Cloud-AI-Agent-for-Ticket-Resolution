@@ -4,5 +4,5 @@
   "category": "TERMINAL",
   "intent": "terminal",
   "content": "## Git Bash\n\nA [limitation of Git Bash](https://github.com/microsoft/vscode/issues/85831#issuecomment-943403803) when {% data variables.product.prodname_vscode_shortname %} uses bash.exe (the shell) as opposed to git-bash.exe (the terminal) is that history will not be retained across shell sessions. You can work around this by adding the following to your `~/.bashrc` or `~/.bash_profile` files:\n\n```bash\nexport PROMPT_COMMAND='history -a'\n```\n\nThis will cause the shell to call `history -a` whenever the prompt is printed which flushes the session's current session commands to the backing history file.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/profiles.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/terminal/profiles.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Chat\n\n### Sandboxing for terminal commands on macOS and Linux\n\nApproving every agent-invoked terminal command quickly becomes tedious. Starting with this release, we're rolling out sandboxing for terminal commands on macOS and Linux: commands run with network access blocked and filesystem access restricted, letting the agent work with fewer prompts.\n\nThe agent only asks for approval when a command needs to elevate and run outside the sandbox. To learn more, see [Agent sandboxing](https://code.visualstudio.com/docs/agents/concepts/trust-and-safety#_agent-sandboxing).\n\nYou can turn this off via the Permissions drop-down:\n\n![Screenshot showing the sandboxing toggle available in the Default Approvals mode.](images/1_127/sandboxing-toggle.webp)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_127.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_127.md"
 }

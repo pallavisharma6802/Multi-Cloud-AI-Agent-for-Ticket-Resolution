@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Workflows and routines\n\n* **Workflows:** Coordinate multiple steps, decisions, or agents. For new code-based orchestration, use Microsoft Agent Framework through the sample or Copilot route.\n* **Routines (Preview):** Invoke an existing agent when a trigger fires, for example, for a daily summary. See [Routines in Foundry Agent Service](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/routines).\n\n> [!IMPORTANT]\n> Declarative workflows in Microsoft Foundry are in preview and retire on December 1, 2026. This does not affect code-based orchestration in hosted agents. See the [Foundry workflow migration guidance](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/workflow).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/create-agents.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/create-agents.md"
 }

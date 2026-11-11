@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Problem Framing: Why the Tooling Comes First\n\nA Java project is not self-describing. The `pom.xml` knows the dependencies, the JDK\nknows how to compile, and Spring Boot knows how to start \u2014 but none of that is visible\nuntil an extension reads it and puts it on screen.\n\nInstall the tooling first and the project explains itself. Skip it, and you end up\nreading build files by hand to work out what should have been a button.\n\n### Try this\n\nCompare two ways of starting. In the first, you open a terminal, guess at a Maven\ncommand, and read a wall of log output. In the second, you install two packs, and the\neditor tells you the runtime it picked, the goals it can run, and the app it can start.\nThe second one scales to a team, because the next person sees exactly the same surfaces.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/1-build-and-run.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/java-spring-boot/1-build-and-run.md"
 }

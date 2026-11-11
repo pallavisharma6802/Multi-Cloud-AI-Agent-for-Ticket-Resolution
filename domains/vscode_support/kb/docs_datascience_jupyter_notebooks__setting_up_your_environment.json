@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Setting up your environment\n\nTo work with Python in Jupyter Notebooks, you must activate an Anaconda environment in {% data variables.product.prodname_vscode_shortname %}, or another Python environment in which you've installed the [Jupyter package](https://pypi.org/project/jupyter/). To select an environment, use the **Python: Select Interpreter** command from the Command Palette (`kb(workbench.action.showCommands)`).\n\nOnce the appropriate environment is activated, you can create and open a Jupyter Notebook, connect to a remote Jupyter server for running code cells, and export a Jupyter Notebook as a Python file.\n\n### Environment variables\n\nEnvironment variables are loaded from a `.env` file. See [.env file support in the Python environments documentation](/docs/python/environments.md#env-file-support).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/jupyter-notebooks.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/datascience/jupyter-notebooks.md"
 }

@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "## A commit fails because user.name or user.email is missing\n\nThe error 'Make sure you configure your \"user.name\" and \"user.email\" in git' means Git doesn't have the author identity needed to create a commit. Signing in to your Git hosting service doesn't configure this identity.\n\n1. In a terminal opened in the repository folder, check the effective values:\n\n    ```bash\n    git config --get user.name\n    git config --get user.email\n    ```\n\n1. Set any missing or incorrect values for this repository:\n\n    ```bash\n    git config user.name \"<your-name>\"\n    git config user.email \"<your-email>\"\n    ```\n\n    These commands affect only the current repository. To use the same identity across repositories, follow the [global configuration steps](/docs/sourcecontrol/quickstart.md#prerequisites).\n\n1. Retry the commit. The new commit uses the configured name and email. This doesn't change existing commits.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/troubleshooting.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/troubleshooting.md"
 }

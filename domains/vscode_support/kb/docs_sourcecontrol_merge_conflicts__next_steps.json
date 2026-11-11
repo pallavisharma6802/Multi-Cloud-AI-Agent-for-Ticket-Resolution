@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "## Next steps\n\n* [Inspect the resulting history](/docs/sourcecontrol/history.md) before sharing your changes.\n* [Push your commits](/docs/sourcecontrol/repos-remotes.md#push-commits) after reviewing and testing the result.\n* [Troubleshoot Git errors](/docs/sourcecontrol/troubleshooting.md) if the operation still cannot finish.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/merge-conflicts.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/merge-conflicts.md"
 }

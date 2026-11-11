@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Next steps\n\nRead on to find out about:\n\n- [Debugging](/docs/debugtest/debugging.md) - Find out how to use the debugger in {% data variables.product.prodname_vscode_shortname %} with your project for any language.\n\nAnd for Java:\n\n- [Java testing](/docs/java/java-testing.md) - Test Java within {% data variables.product.prodname_vscode_shortname %} with the Java Test Runner extension.\n- [Java extensions](/docs/java/extensions.md) - Learn about more useful Java extensions for {% data variables.product.prodname_vscode_shortname %}.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-debugging.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-debugging.md"
 }

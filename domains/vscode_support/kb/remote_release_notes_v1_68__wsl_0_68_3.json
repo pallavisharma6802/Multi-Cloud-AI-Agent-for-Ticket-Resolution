@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## WSL (0.68.3)\n\n### Localization\n\nThe [WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) extension 0.68.3 and newer now come with translated labels for Czech, German, Spanish, French, Italian, Japanese, Korean, Polish, Brazilian Portuguese, Russian, Turkish and Simplified and Traditional Chinese.\n\nConfigure your display language in VS Code with the **Configure Display Language** command.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_68.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_68.md"
 }

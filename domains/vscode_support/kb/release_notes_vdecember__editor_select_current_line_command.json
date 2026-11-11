@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Editor - Select Current Line Command\n\nNew select current line command (`kb(expandLineSelection)`) thanks to a [community contribution](https://github.com/microsoft/vscode/pull/961).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vDecember.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/vDecember.md"
 }

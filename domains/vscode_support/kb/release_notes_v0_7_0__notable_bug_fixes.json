@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable Bug Fixes\nAs always we fixed many issues.\n\nHere are a few of the notable ones from the public bug tracker:\n\n* [17915](/Issues/Detail/17915): VS Code crashes with large emberjs/es6/amd project\n* [17427](/Issues/Detail/17427): Git cannot be found if installed into a non-default location\n* [17947](/Issues/Detail/17947): Open with encoding Windows 866 doesn't work\n* [18094](/Issues/Detail/18094): Wrong \"duplicate identifier\" error in node files when using \"exports\"*",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_7_0.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v0_7_0.md"
 }

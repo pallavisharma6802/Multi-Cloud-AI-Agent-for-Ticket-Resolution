@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## What are agent skills?\n\n[Agent skills](https://code.visualstudio.com/docs/agent-customization/agent-skills) are structured bundles that include instructions, scripts, and supporting resources. Instead of relying on one-off prompts, skills package everything needed to perform a task into a reusable system.\n\nWhen relevant, GitHub Copilot automatically loads these skills to execute specialized workflows. They\u2019re also designed as an open standard, meaning they can work across multiple AI environments, not just VS Code.\n\nAt a high level, a skill typically includes:\n\n- a description of what the skill does\n- rules for how it should behave\n- references to related workflows or dependencies\n\n![Diagram of the agent skill file structure showing description, rules, and dependencies](../images/customizations/ep-3-0-skill-structure.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/3-skills.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/3-skills.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable fixes\n\n* [vscode-copilot-release#6073](https://github.com/microsoft/vscode-copilot-release/issues/6073) - Agent should not suggest `&&` in Windows PowerShell",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_102.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_102.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Debug\n\n### Support for new `BreakpointMode`\n\nVS Code supports a new addition to the Debug Adapter Protocol (DAP) that allows you to set different 'modes' of breakpoints. This functionality might commonly be used by debuggers of native code, for example, to set hardware versus software breakpoints. The mode of a breakpoint can be changed with the **Edit Mode** action in its context menu.\n\n![Breakpoint context menu now has an 'Edit Mode...' option to change the breakpoint mode](./images/1_87/bp-modes.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_87.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_87.md"
 }

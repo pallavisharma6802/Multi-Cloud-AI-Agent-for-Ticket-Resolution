@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Reverse for statement\n\n**What:** Lets you invert a `for` statement.\n\n**When:** Use when you want to reverse the meaning of a `for` statement and how it iterates.\n\n**Why:** Inverting a `for` statement by hand can take much longer and possibly introduce errors. This code fix helps you do this refactoring automatically.\n\n**How-to:**\n\n1. Place your cursor in the `for` statement.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select **Reverse `for` statement**.\n\n![Reverse `for` statements example](images/refactoring/reverse-for-statement.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/refactoring.md"
 }

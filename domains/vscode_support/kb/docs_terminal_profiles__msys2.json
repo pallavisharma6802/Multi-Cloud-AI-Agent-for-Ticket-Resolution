@@ -4,5 +4,5 @@
   "category": "TERMINAL",
   "intent": "terminal",
   "content": "## MSYS2\n\nMSYS2's bash shell can be configured with the following profile:\n\n```json\n{\n  \"terminal.integrated.profiles.windows\": {\n    \"bash (MSYS2)\": {\n      \"path\": \"C:\\\\msys64\\\\usr\\\\bin\\\\bash.exe\",\n      \"args\": [\n        \"--login\",\n        \"-i\"\n      ],\n      \"env\": { \"CHERE_INVOKING\": \"1\" }\n    }\n  }\n}\n```\n\nThe [`CHERE_INVOKING` environment variable](https://www.msys2.org/wiki/Launchers/#the-idea) is used to tell the login initialization script to preserve the working directory, instead of opening at `$HOME`.\n\nThis profile should be detected automatically as an [unsafe profile](#unsafe-profile-detection) when installed at the default path `C:\\\\msys64`.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/profiles.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/terminal/profiles.md"
 }

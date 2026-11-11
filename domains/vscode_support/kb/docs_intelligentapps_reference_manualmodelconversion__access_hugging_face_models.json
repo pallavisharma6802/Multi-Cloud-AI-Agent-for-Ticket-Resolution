@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Access Hugging Face models\n\nThere are multiple ways to access Hugging Face models. In this tutorial, we use the `huggingface_hub` CLI as an example to demonstrate managing a model repository.\n\n> Note: Ensure your Python environment is properly set up before proceeding.\n\nTo download models from Hugging Face:\n\n1. [Install the CLI](https://huggingface.co/docs/huggingface_hub/main/en/guides/cli#getting-started):\n\n    ```powershell\n    pip install -U \"huggingface_hub[cli]\"\n    ```\n\n2. [Download the model repository](https://huggingface.co/docs/huggingface_hub/main/en/guides/cli#download-an-entire-repository).\n\n3. All files in the downloaded repository will be used during conversion.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/reference/ManualModelConversion.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/reference/ManualModelConversion.md"
 }

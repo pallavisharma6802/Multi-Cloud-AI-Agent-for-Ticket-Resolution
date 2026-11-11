@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Additional Themes\nVS Code is now able to apply TextMate syntax color themes (.tmTheme). We picked some themes from (https://colorsublime.github.io/) and made them available under `File | Preferences | Color Theme`. In one of the next releases, users will be able to extend this list with their own favorite themes.\n\nOpen the Color Theme picker with `File | Preferences | Color Theme` and use the up and down keys to change the selection and preview the themes.\n\n![Color Themes](images/0_8_0/colorthemes.gif)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_8_0.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v0_8_0.md"
 }

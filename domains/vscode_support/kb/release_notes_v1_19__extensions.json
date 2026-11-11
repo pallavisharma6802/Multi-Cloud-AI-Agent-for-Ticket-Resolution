@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Extensions\n\n### Enable extensions per workspace\n\nVS Code has had support for disabling extensions globally or per workspace. However, there was also demand for enabling extensions per workspace. With this release, you can configure extensions to run only for specific workspaces.\n\n![Enable extensions per workspace](images/1_19/enable-extensions.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_19.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_19.md"
 }

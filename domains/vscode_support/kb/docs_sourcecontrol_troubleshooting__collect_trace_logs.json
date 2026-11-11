@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "## Collect trace logs\n\nEnable trace logging when the regular Git output doesn't contain enough information:\n\n1. Open the Git Output window.\n\n1. Select the gear icon in the Output panel header.\n\n1. Select **Trace**.\n\n    ![Screenshot showing the trace log level selected in the Git Output window.](images/troubleshooting/git-output-log-level.png)\n\n1. Reproduce the problem and review the new log entries.\n\nTrace logs can contain repository paths, remote URLs, branch names, and other development information. Review the output and remove sensitive information before you share it.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/troubleshooting.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/troubleshooting.md"
 }

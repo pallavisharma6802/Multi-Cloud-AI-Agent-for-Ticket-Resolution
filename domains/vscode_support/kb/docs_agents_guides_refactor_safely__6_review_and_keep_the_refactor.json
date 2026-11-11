@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## 6. Review and keep the refactor\n\n[Review the complete diff](/docs/agents/run/review-code-edits.md) against the goal and preserved behavior. Check for unrelated formatting, dependency changes, weakened tests, or accidental changes to defaults and error handling.\n\nAsk for a concise summary of the structural change, callers checked, tests run, and remaining uncertainty. Verify that summary against the diff and command output before committing the intended changes.\n\nIf behavior changed unexpectedly, stop and investigate. Use your version-control baseline or the [agent recovery workflow](/docs/agents/guides/get-agent-back-on-track.md) to recover unwanted edits without discarding unrelated work.\n\nYou finish with a smaller or clearer implementation and evidence that the behavior you set out to preserve still holds.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/refactor-safely.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/refactor-safely.md"
 }

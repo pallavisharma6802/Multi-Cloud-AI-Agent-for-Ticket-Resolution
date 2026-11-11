@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Related resources\n\n* [{% data variables.product.prodname_vscode_shortname %} default settings reference](/docs/reference/default-settings.md)\n* [Synchronize settings across machines](/docs/configure/settings-sync.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/settings.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/settings.md"
 }

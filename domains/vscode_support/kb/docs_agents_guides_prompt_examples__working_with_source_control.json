@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Working with source control\n\nUse chat to work with your pending changes and generate release documentation.\n\n```prompt\nSummarize the #changes\n```\n\n```prompt\nGenerate release notes based on the #changes\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/prompt-examples.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/prompt-examples.md"
 }

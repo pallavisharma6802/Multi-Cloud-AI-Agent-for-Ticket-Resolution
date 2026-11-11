@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Checkpoints and restore\n\nEvery agent response in the chat is a checkpoint. Hover over any response to find **Restore Checkpoint**.\n\nRestoring a checkpoint rolls your workspace back to the state it was in at that point in the conversation. The code reverts and the conversation history rolls back as if you never sent those subsequent messages. No manual cleanup, no `git stash` - it's a clean rollback.\n\n![Restore Checkpoint control in VS Code chat for rolling back an agent session to an earlier state](../images/foundations/checkpoint.png)\n\nThis is your safety net. You can try something, see where it goes, and if it's not the direction you wanted, walk it back completely.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/reviewing-and-controlling-agent-changes.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundations/reviewing-and-controlling-agent-changes.md"
 }

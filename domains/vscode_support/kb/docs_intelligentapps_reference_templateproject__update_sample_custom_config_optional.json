@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Update sample.custom.config (optional)\nThis file is used to render the `Run` panel and `Re-evaluate` panel.\nYou could remove or add parameters to match your `sample.json`. Path update may be needed if you change the json property name.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/reference/TemplateProject.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/reference/TemplateProject.md"
 }

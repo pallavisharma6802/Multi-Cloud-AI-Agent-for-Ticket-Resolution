@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Types of telemetry data\n\n{% data variables.product.prodname_vscode_shortname %} and this page refer to three different types of data with respect to telemetry.\n\n**Crash Reports** - Crash reports collect diagnostic information when {% data variables.product.prodname_vscode_shortname %} crashes and sends it to Microsoft to help understand why the crash occurred and what changes are needed to prevent the crash in the future.\n\n**Error Telemetry** - Error telemetry collects information about errors that do not crash the application but are unexpected.\n\n**Usage Data** - Usage data collects information about how features are used and perform in {% data variables.product.prodname_vscode_shortname %} which helps us prioritize future product improvements.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/telemetry.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/telemetry.md"
 }

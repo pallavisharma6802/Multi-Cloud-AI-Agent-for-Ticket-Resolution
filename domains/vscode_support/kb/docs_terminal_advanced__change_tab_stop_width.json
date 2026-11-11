@@ -4,5 +4,5 @@
   "category": "TERMINAL",
   "intent": "terminal",
   "content": "## Change tab stop width\n\nThe `setting(terminal.integrated.tabStopWidth)` setting allows configuring the tab stop width when a program running in the terminal outputs `\\t`. This should typically not be needed as programs will often move the cursor instead of using the `kbstyle(Tab)` character, but may be useful in some situations.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/advanced.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/terminal/advanced.md"
 }

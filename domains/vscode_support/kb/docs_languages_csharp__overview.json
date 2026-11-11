@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# Working with C&#35;\n\nThe C# support in {% data variables.product.prodname_vscode %} is optimized for cross-platform .NET development (see [working with .NET and {% data variables.product.prodname_vscode_shortname %}](/docs/languages/dotnet.md) for another relevant article). Our focus with {% data variables.product.prodname_vscode_shortname %} is to be a great editor for cross-platform C# development by providing a rich C# editing experience, AI-powered development, solution management, and integrated testing experiences\n\n![C# language within {% data variables.product.prodname_vscode_shortname %}](images/csharp/csharp-hero.png)\n\n{% data variables.product.prodname_vscode_shortname %} supports debugging of C# applications running on either .NET or Mono.\n\nFor detailed instructions on:\n\n* .NET debugging - see the [C# Dev Kit debugging documentation](/docs/csharp/debugging.md).\n* Mono debugging - see the [Mono Debug extension's README](https://marketplace.visualstudio.com/items?itemName=ms-vscode.mono-debug).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/csharp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/csharp.md"
 }

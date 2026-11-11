@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Quick Diff\n\nVS Code also supports displaying **quick diff** editor gutter decorations. Clicking those decorations will reveal an inline diff experience, to which you can contribute contextual commands:\n\n![SCM quick diff](images/scm-provider/quickdiff.png)\n\nThese decorations are computed by VS Code itself. All you need to do is provide VS Code with the original contents of any given file.\n\n```ts\nexport interface SourceControl {\n  quickDiffProvider?: QuickDiffProvider;\n}\n```\n\nUsing a `QuickDiffProvider`'s `provideOriginalResource` method, your implementation is able to tell VS Code the `Uri` of the original resource that matches the resource whose `Uri` is provided as an argument to the method.\n\nCombine this API with the [`registerTextDocumentContentProvider` method in the `workspace` namespace](/api/references/vscode-api#workspace), which lets you provide contents for arbitrary resources, given a [`Uri`](/api/references/vscode-api#Uri) matching the custom `scheme` that it registered for.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/scm-provider.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-guides/scm-provider.md"
 }

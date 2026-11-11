@@ -4,5 +4,5 @@
   "category": "TERMINAL",
   "intent": "terminal",
   "content": "## Terminals in new windows\n\nOpening a terminal in a new {% data variables.product.prodname_vscode_shortname %} window is possible in a few different ways:\n\n* Use `kb(workbench.action.terminal.newInNewWindow)`\n* Right-click the terminal tab if you have multiple terminals, or left-click the tab if you only have a single terminal opened. Then select **Move Terminal to New Window**\n* Select the **New Terminal Window** entry that's available in several different menus",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/basics.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/terminal/basics.md"
 }

@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Themes\n\nColors can be associated using the existing support for theming and color customization in {% data variables.product.prodname_vscode_shortname %}.  See the [{% data variables.product.prodname_vscode_shortname %} Themes documentation](/docs/configure/themes.md) for more information.\n\nColors are associated with [semantic tokens](https://code.visualstudio.com/api/extension-guides/color-theme#semantic-colors) as well as [TextMate scopes](https://macromates.com/manual/en/language_grammars#naming_conventions).\n\n### C/C++ Themes Extension\n\nWe've created a set of {% data variables.product.prodname_vscode_shortname %} themes that closely resemble the default Light and Dark themes in Visual Studio, and include colors for semantic tokens.  These themes can be found [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-themes).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/colorization-cpp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/colorization-cpp.md"
 }

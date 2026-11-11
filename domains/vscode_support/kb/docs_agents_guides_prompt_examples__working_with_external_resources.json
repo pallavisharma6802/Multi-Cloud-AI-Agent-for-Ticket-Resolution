@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Working with external resources\n\nUse `#fetch` to reference content from the web or use the GitHub MCP server to search for code examples in public GitHub repositories.\n\n```prompt\nHow do I use the 'useState' hook in react 18? #fetch https://18.react.dev/reference/react/useState#usage\n```\n\n```prompt\nBuild an API endpoint to fetch address info, use the template from GitHub repo contoso/api-templates\n```\n\n```prompt\nWhat are the top #extensions for this workspace?\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/prompt-examples.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/prompt-examples.md"
 }

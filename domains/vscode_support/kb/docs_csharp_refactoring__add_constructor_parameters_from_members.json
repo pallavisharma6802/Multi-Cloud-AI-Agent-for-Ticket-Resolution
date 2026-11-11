@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Add constructor parameters from members\n\n**What:** Generate a new constructor with parameters based on selected class members.\n\n**When:** You introduce a new constructor and want to properly declare it automatically with all the correct parameters.\n\n**Why:** You could declare the constructor before using it, however this feature generates it automatically.\n\n**How-to:**\n\n1. Highlight the class members you want to add as parameters in the constructor.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select **Generate constructor &lt;classname&gt;(&lt;membertype&gt;, &lt;membertype&gt;, &lt;etc.&gt;)**.\n\n![Add constructor parameters from members example](images/refactoring/add-constructor-parameters-from-members.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/refactoring.md"
 }

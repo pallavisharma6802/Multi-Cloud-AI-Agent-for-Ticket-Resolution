@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable fixes\n\n* [xtermjs/xterm.js #5737](https://github.com/xtermjs/xterm.js/pull/5737): Fix ^C not working to end for newer fish + kitty keyboard protocol\n* [microsoft/vscode-python #25849](https://github.com/microsoft/vscode-python/pull/25849): Prevent double/triple activation from two extensions",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_112.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_112.md"
 }

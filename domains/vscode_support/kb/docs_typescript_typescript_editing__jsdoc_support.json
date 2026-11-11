@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## JSDoc support\n\n{% data variables.product.prodname_vscode_shortname %}'s TypeScript IntelliSense understands many standard [JSDoc](https://jsdoc.app) annotations, and uses them to show typing information and documentation in [suggestions](#intellisense), [hover information](#hover-information), and [signature help](#signature-help).\n\n![TypeScript language within {% data variables.product.prodname_vscode_shortname %}](images/editing/jsdocs.png)\n\nKeep in mind that when using JSDoc for TypeScript code, you should not include type annotations. The TypeScript compiler only uses TypeScript type annotations and ignores those from JSDoc.\n\n<video src=\"images/editing/jsdoc-autofill.mp4\" placeholder=\"images/editing/jsdoc-autofill-placeholder.png\" autoplay loop controls muted>\n    Sorry, your browser doesn't support HTML 5 video.\n</video>\n\nTo disable JSDoc comment suggestions in TypeScript, set `\"js/ts.suggest.completeJSDocs\": false`.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/typescript/typescript-editing.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/typescript/typescript-editing.md"
 }

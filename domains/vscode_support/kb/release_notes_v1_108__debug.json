@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Debug\n\n### Organize breakpoints by file\n\n**Setting**: `setting(debug.breakpointsView.presentation:tree)`\n\nBreakpoints can now be shown as a tree, grouped by their file. Enable this by setting `setting(debug.breakpointsView.presentation)` to `tree`.\n\n![Screenshot showing the Debug view with breakpoints organized in a tree by file.](./images/1_108/debug-bp-tree.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_108.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_108.md"
 }

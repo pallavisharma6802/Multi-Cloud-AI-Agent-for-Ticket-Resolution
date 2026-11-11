@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Inline chat and Quick Chat\n\nInline chat and Quick Chat provide lightweight ways to interact with AI without opening the full {% data variables.copilot.chat_view %}. Use inline chat to generate code or make edits directly in the editor, or to get help with shell commands in the integrated terminal. Use Quick Chat for short questions and interactions.\n\nUse inline chat when you want to make quick, targeted edits within the visible code context. For multi-step tasks, multi-file changes, or broader codebase exploration, use the [{% data variables.copilot.chat_view %}](/docs/agents/run/chat-view.md) instead.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/chat/inline-chat.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/chat/inline-chat.md"
 }

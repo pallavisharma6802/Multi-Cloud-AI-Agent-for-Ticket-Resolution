@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Resource Usage view\n\nIn the main window, the plot on the top shows usage of CPU, GPU, NPU, and memory. The usage is updated every second, and is kept for 10 minutes. You can use the tools on the top right to navigate the timeline by zooming in, zooming out, and panning.\n\n![Screenshot that shows the resource usage view](./images/profiling/resource-usage-view.png)\n\n> [!NOTE]\n> This feature uses performance counters. To achieve higher accuracy, you could also try [Windows Performance Recorder](https://learn.microsoft.com/en-us/windows-hardware/test/wpt/windows-performance-recorder).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/profiling.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/profiling.md"
 }

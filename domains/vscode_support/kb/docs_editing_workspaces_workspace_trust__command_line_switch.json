@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Command-line switch\n\nYou can disable Workspace Trust via the {% data variables.product.prodname_vscode_shortname %} command line by passing `--disable-workspace-trust`. This switch only affects the current session.\n\n<!-- ## Special configurations\n\n### Remote extensions\n\nSSH - paths are relative to the remote machine\n\nWSL - paths are relative to WSL instance (/mnt/) (might map to already trusted local path)\n\nContainers\n\n### Codespaces (move to docs/remote/codespaces?)\n\nPaths a little weird\n\n-->",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/workspaces/workspace-trust.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/workspaces/workspace-trust.md"
 }

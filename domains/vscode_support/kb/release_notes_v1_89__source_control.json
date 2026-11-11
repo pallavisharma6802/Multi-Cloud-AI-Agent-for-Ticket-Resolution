@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Source Control\n\n### Save/restore open editors when switching branches\n\nThis milestone, we have addressed a long-standing feature request to save and restore editors when switching between source control branches. Use the <code codesetting=\"scm.workingSets.enabled:true\">scm.workingSets.enabled</code> setting to enable this feature.\n\nTo control the open editors when switching to a branch for the first time, you can use the <code codesetting=\"scm.workingSets.default\">scm.workingSets.default</code> setting. You select to have no open editors (`empty`), or to use the currently opened editors (`current`, the default value).\n\n### Dedicated commands for viewing changes\n\nTo make it easier to view specific types of changes in the multi-file diff editor, we have added a set of new commands to the command palette: **Git: View Staged Changes**, **Git: View Changes**, and **Git: View Untracked Changes**.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_89.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_89.md"
 }

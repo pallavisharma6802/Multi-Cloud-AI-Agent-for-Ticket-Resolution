@@ -4,5 +4,5 @@
   "category": "TERMINAL",
   "intent": "terminal",
   "content": "## Terminals in editor area\n\nYou can open terminals in the editor area (terminal editors) with the **Terminal: Create New Terminal in Editor Area** command, the **Terminal: Create New Terminal in Editor Area to the Side** command, or by dragging a terminal from the terminal view into the editor area. Terminal editors are presented like regular editor tabs:\n\n![Terminal editors are presented like regular text file tabs](images/basics/terminal-editor.png)\n\nYou can have terminal editors on either side or arranged in multiple dimensions using the editor group layout system, e.g. PowerShell and WSL terminals stacked to the right of file editors:\n\n![Terminal editors are can be laid out using the editor group layout system, for example 2 terminals could sit to the right of a text editor](images/basics/terminal-editor-grid.png)\n\nThe `setting(terminal.integrated.defaultLocation)` setting can change the default `view` or `editor` area terminal location.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/basics.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/terminal/basics.md"
 }

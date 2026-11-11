@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Start a Codex session\n\nUse Codex when you want OpenAI Codex agent behavior for a coding task. Cloud Codex sessions use the cloud partner flow. Local Codex sessions require the [OpenAI Codex](https://marketplace.visualstudio.com/items?itemName=openai.chatgpt) extension and a Copilot Pro+ subscription for authentication.\n\n1. Open the Chat view.\n\n1. Select **New Chat**.\n\n1. For a local session, choose **Codex** from the **Session Type** dropdown.\n\n1. For a cloud session, choose **Cloud** from the **Session Type** dropdown, then choose **Codex** from the **Partner Agent** dropdown.\n\n1. Send a focused coding task.\n\n```prompt\nFind one failing or missing test around the current change, add the smallest useful test, and explain how to validate it.\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/4-using-third-party-agents-in-vs-code.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/agents/4-using-third-party-agents-in-vs-code.md"
 }

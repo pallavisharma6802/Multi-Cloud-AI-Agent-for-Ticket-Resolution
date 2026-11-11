@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Debug Adapter Protocol\n\nThere are several new properties added to the [Debug Adapter Protocol](https://microsoft.github.io/debug-adapter-protocol).\n\n* The new boolean property `lazy` was added to the `VariablePresentationHint`. Clients can use the optional flag to present the variable with a UI that supports a specific gesture to fetch its value.\n* The new optional string property `detail` was added to the `CompletionItem`. With this human-readable string, a client can show additional information about the item, such as type or symbol information. Note that this property is not yet supported by VS Code.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_65.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_65.md"
 }

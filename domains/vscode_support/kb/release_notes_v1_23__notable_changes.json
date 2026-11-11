@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable Changes\n\n* [10663](https://github.com/microsoft/vscode/issues/10663): Preserve view state when switching tabs on compare view\n* [24634](https://github.com/microsoft/vscode/issues/24634): macOS: Add a setting to enable acceptsFirstMouse for window\n* [29549](https://github.com/microsoft/vscode/issues/29549): Multi thread debugging should support stopping thread\n* [46785](https://github.com/microsoft/vscode/issues/46785): With no file in focus, \"Reveal in Finder\" should open the workspace's folder\n* [47274](https://github.com/microsoft/vscode/issues/47274): Node Logpoints shows up as the VM source in Debug Console\n* [47478](https://github.com/microsoft/vscode/issues/47478): Detect incomplete installed extensions\n* [48733](https://github.com/microsoft/vscode/issues/48733): Introduce an option debug.enableAllHovers to enable calls to hover providers while debugging\n* [46414](https://github.com/microsoft/vscode/issues/46414): Debugging Node.js process in a terminal no longer shows output in the Debug Console",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_23.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_23.md"
 }

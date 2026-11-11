@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Command Center colors\n\n- `commandCenter.foreground`: Foreground color of the Command Center.\n- `commandCenter.activeForeground`: Active foreground color of the Command Center.\n- `commandCenter.background`: Background color of the Command Center.\n- `commandCenter.activeBackground`: Active background color of the Command Center.\n- `commandCenter.border`: Border color of the Command Center.\n- `commandCenter.inactiveForeground`: Foreground color of the Command Center when the window is inactive.\n- `commandCenter.inactiveBorder`: Border color of the Command Center when the window is inactive.\n- `commandCenter.activeBorder`: Active border color of the Command Center.\n- `commandCenter.debuggingBackground`: Command Center background color when a program is being debugged.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/theme-color.md"
 }

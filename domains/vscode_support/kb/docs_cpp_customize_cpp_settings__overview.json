@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# C++ extension settings reference\n\nThe C++ extension settings are highly configurable. This article explains the schema for the `c_cpp_properties.json` file. For general information about settings in {% data variables.product.prodname_vscode_shortname %}, refer to [Configure settings](/docs/getstarted/personalize-vscode.md#configure-settings), as well as the [Variables reference](/docs/reference/variables-reference.md) and [Default {% data variables.product.prodname_vscode_shortname %} Settings](/docs/reference/default-settings.md).\n\nLooking to get started with configuring your C++ project? Begin with [configure Intellisense](/docs/cpp/configure-intellisense.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/customize-cpp-settings.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/customize-cpp-settings.md"
 }

@@ -4,5 +4,5 @@
   "category": "ENTERPRISE",
   "intent": "enterprise",
   "content": "## Related resources\n\n* [{% data variables.product.prodname_vscode_shortname %} enterprise policy reference](/docs/enterprise/policies.md)\n* [Get started with {% data variables.product.prodname_copilot_short %} enterprise-managed settings](https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/get-started)\n* [{% data variables.product.prodname_copilot_short %} enterprise-managed settings reference](https://docs.github.com/en/copilot/reference/enterprise-administrators/enterprise-managed-settings)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/enterprise/manage-ai-settings.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/enterprise/manage-ai-settings.md"
 }

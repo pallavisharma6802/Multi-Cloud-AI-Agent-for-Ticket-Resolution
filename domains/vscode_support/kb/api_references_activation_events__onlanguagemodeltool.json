@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## onLanguageModelTool\n\nAn activation event emitted when the specified language model tool is invoked.\n\n```json\n\"activationEvents\": [\n    \"onLanguageModelTool:my-language-model-tool\"\n]\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/activation-events.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/activation-events.md"
 }

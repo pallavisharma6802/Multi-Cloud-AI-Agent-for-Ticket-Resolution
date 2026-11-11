@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Node Debugging\n\n### Loaded Scripts Explorer\n\nFor the last few VS Code releases, it has been possible to search and open loaded scripts via the **Open Loaded Script** command, which used a simple [Quick Pick UI](https://code.visualstudio.com/updates/v1_11#_access-loaded-scripts).\n\nIn this release, we've added an Explorer to the Debug view that provides direct access to all scripts and updates automatically as more scripts are loaded by the runtime:\n\n<video src=\"images/1_15/loaded-scripts-explorer.mp4\" title=\"Video showing Loaded Scripts Explorer.\" autoplay loop controls muted></video>\n\nIn contrast to the limited Quick Pick UI, the Explorer supports concurrent debug sessions and the scripts are grouped according to folders if used in a multi-root workspace.\n\nA second advantage of the Loaded Scripts Explorer is that it was implemented as an extension and shows a real world example of the new debug API and how to contribute to a tree view.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_15.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_15.md"
 }

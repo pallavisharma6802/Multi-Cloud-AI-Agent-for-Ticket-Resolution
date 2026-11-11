@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Your extension folder\n\nTo load an extension, you need to copy the files to your VS Code extensions folder `.vscode/extensions`. Depending on your operating system, this folder has a different location:\n\n- **Windows:** `%USERPROFILE%\\.vscode\\extensions`\n- **macOS:** `~/.vscode/extensions`\n- **Linux:** `~/.vscode/extensions`",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/working-with-extensions/publishing-extension.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/working-with-extensions/publishing-extension.md"
 }

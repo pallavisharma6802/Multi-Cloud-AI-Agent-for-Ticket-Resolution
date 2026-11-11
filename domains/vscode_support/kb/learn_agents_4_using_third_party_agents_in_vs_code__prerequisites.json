@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Prerequisites\n\nBefore you start, install VS Code, enable AI features, and sign in to GitHub Copilot. For cloud partner agents, follow the GitHub documentation to enable third-party coding agents for your account. You do not need the provider's VS Code extension for cloud partner agents. For local Codex sessions, install the OpenAI Codex extension.\n\n* [Download VS Code](https://code.visualstudio.com/)\n* [Set up GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview#_step-1-set-up-copilot)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/4-using-third-party-agents-in-vs-code.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/agents/4-using-third-party-agents-in-vs-code.md"
 }

@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Debug the application\n\nSet a breakpoint (`kb(editor.debug.action.toggleBreakpoint)`) in the application source code, and reload your browser to hit the breakpoint.\n\n![Debug Application](images/java-webapp/debugging.png)\n\nIf you would like to learn more about debugging Java with {% data variables.product.prodname_vscode_shortname %}, you can read [Java Debugging](/docs/java/java-debugging.md).\n\nCongratulations, you have your first Spring Boot web app running locally! Read on to learn how to host it in the cloud.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-spring-apps.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-spring-apps.md"
 }

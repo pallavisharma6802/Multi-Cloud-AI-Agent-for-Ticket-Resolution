@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Core\n\n### Install additional built-in extensions via VSIX\n\nVS Code Server now supports installing additional built-in extensions via VSIX. This is useful if the remote setup has VSIX files already available and you want to install them without having to reach out to the Marketplace, thereby improving the startup time. This helped GitHub Codespaces startup to be faster by ~125%.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_77.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_77.md"
 }

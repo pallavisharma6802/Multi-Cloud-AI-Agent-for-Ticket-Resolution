@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Agent Session colors\n- `agentSessionReadIndicator.foreground`: Foreground color for the read indicator in an agent session.\n- `agentSessionSelectedBadge.border`: Border color for the badges in selected agent session items.\n- `agentSessionSelectedUnfocusedBadge.border`: Border color for the badges in selected agent session items when the view is unfocused.\n- `agentStatusIndicator.background`: Background color of the agent status indicator in the titlebar.\n- `aiCustomizationManagement.sashBorder`: The color of the Chat Customization Management editor splitview sash border.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/theme-color.md"
 }

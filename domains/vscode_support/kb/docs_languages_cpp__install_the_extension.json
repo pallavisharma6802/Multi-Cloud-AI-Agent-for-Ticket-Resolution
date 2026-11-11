@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Install the extension\n\n1. Open {% data variables.product.prodname_vscode_shortname %}.\n1. Select the Extensions view icon on the Activity Bar or use the keyboard shortcut (`kb(workbench.view.extensions)`).\n1. Search for `'C++'`.\n1. Select **Install**.\n\n![C/C++ extension](images/cpp/cpp-extension.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/cpp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/cpp.md"
 }

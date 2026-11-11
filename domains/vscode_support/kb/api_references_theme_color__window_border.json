@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Window border\n\nThe theme colors for VS Code window border.\n\n- `window.activeBorder`: Border color for the active (focused) window.\n- `window.inactiveBorder`: Border color for the inactive (unfocused) windows.\n\nThe window border colors are only supported on macOS and Linux (not Windows) and only when the custom title bar is enabled (`\"window.titleBarStyle\": \"custom\"`).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/theme-color.md"
 }

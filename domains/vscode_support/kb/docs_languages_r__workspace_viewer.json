@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Workspace viewer\n\nThe workspace viewer is located in the side bar in {% data variables.product.prodname_vscode_shortname %} and contains the packages in use and global variables in the active R session. Select the R icon in the Activity bar and the workspace viewer and help pages viewer will show up. It is a convenient way to view the R workspace, preview existing R objects, find help topics, and read help pages interactively.\n\n<video src=\"images/r/workspace-viewer.mp4\" title=\"Video showing Workspace Viewer.\" autoplay loop controls muted></video>\n\nBesides the workspace viewer, there is also a data viewer, a plot viewer, and a widget viewer. Read [Interactive viewers](https://github.com/REditorSupport/vscode-R/wiki/Interactive-viewers) for more details.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/r.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/r.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Extension samples\n\nIf you'd rather start your extension by modifying a working example, you can find [extension samples](/docs/extensions/samples/.md) as well as the source code for many extensions on GitHub ([Go Language Support](https://github.com/golang/vscode-go)).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vNovember.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/vNovember.md"
 }

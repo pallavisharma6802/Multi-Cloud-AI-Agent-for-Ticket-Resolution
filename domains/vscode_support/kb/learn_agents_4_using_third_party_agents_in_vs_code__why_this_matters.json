@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Why this matters\n\nThird-party agents let you keep your coding workflow in one place while still using provider-specific capabilities. The practical choice is not \"which agent is best,\" but which session type fits the work, risk, and amount of review you want.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/4-using-third-party-agents-in-vs-code.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/agents/4-using-third-party-agents-in-vs-code.md"
 }

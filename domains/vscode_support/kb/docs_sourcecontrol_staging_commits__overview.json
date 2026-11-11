@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "# Staging and committing changes\n\nUse the Source Control view in {% data variables.product.prodname_vscode_shortname %} to choose exactly which changes go into a commit. This guide covers reviewing files, staging individual changes, committing, and choosing an undo action.\n\nNew to Git? Follow the [first-commit quickstart](/docs/sourcecontrol/quickstart.md) to set up a practice repository and configure your commit identity.\n\nFor a specific task, jump to [partial staging](#stage-specific-lines-or-code-blocks), [committing](#commit-your-changes), or [undo and discard options](#undo-or-discard-changes).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/staging-commits.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/staging-commits.md"
 }

@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Working with Java source files\n\nYou can use {% data variables.product.prodname_vscode_shortname %} to read, write, run, and debug Java source file(s) without creating a project. {% data variables.product.prodname_vscode_shortname %} for Java supports two modes, lightweight and standard. Lightweight mode is ideal for scenarios that only deal with source file(s). If you want to work with a full-scale project, standard mode will be required. You can easily switch from lightweight mode to standard mode, when needed. To learn more, see [Lightweight Mode](/docs/java/java-project.md#lightweight-mode).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/java.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/java.md"
 }

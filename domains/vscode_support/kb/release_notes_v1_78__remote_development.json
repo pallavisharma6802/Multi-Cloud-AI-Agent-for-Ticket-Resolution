@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Remote Development\n\nThe [Remote Development extensions](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack), allow you to use a [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers), remote machine via SSH or [Remote Tunnels](https://code.visualstudio.com/docs/remote/tunnels), or the [Windows Subsystem for Linux](https://learn.microsoft.com/windows/wsl) (WSL) as a full-featured development environment.\n\nYou can learn about new extension features and bug fixes in the [Remote Development release notes](https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_78.md).\n\nAnd check out the [Develop Anywhere with VS Code](https://www.youtube.com/watch?v=c0L85sFHF2I&list=PLj6YeMhvp2S7hWnmPEcxsSPEB0FLHqi0j&index=11) VS Code Day session.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_78.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_78.md"
 }

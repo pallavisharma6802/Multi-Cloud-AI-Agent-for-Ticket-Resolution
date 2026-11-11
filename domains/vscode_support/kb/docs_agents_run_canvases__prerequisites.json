@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Prerequisites\n\nCanvases work in the {% data variables.product.prodname_vscode_shortname %} desktop app in local sessions that use the {% data variables.product.prodname_copilot_short %} harness. You can use them in both the [{% data variables.copilot.chat_view %}](/docs/agents/run/chat-view.md) and the [{% data variables.copilot.agents_window %}](/docs/agents/run/agents-window.md).\n\n1. Turn on `setting(chat.canvases.enabled)`.\n\n1. Start a new session and [select the {% data variables.product.prodname_copilot_short %} harness](/docs/agents/run/agent-harnesses.md#select-a-harness). Changes to the canvas setting apply to newly created sessions.\n\n1. Send your first message to initialize the session before opening the canvas menus or managing canvas extensions.\n\n> [!NOTE]\n> Canvases aren't supported in Claude, Codex, extension-host Local sessions, remote Agent Host sessions, browser clients, or auxiliary windows.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/canvases.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/canvases.md"
 }

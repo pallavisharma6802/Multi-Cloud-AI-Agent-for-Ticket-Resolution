@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Languages - TypeScript 1.6 Support\n\n>**Note:** At this time, TypeScript 1.6 should be considered experimental so proceed at your own risk. :)\n\nVS Code uses TypeScript 1.5 in the box. If you want to use a newer version of TypeScript, you can define the `typescript.tsdk` setting. The value of this setting is the absolute path to the `lib` folder of a TypeScript installation. This folder contains the file `tsserver.js` and the corresponding `lib.*.d.ts` files. Refer to this [blog post](https://devblogs.microsoft.com/typescript/introducing-typescript-npm-nightlies-2) for how to install the nightly builds of TypeScript.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_8_0.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v0_8_0.md"
 }

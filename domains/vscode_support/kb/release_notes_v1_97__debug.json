@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Debug\n\n### Filter and search on values\n\nYou can now search within a view (`kb(list.find)`) in the Variables and Watch views to filter on variable and expression values, rather than just names.\n\n![Screenshot that shows the search control in the Variables view when debugging.](images/1_97/debug-search-values.png)\n\n### Select in the Debug Console\n\nThe Debug Console now supports longer and more reliable content selection, allowing easier copy and paste.\n\n### JavaScript debugger\n\nScripts can now be _pretty printed_ by using the **Debug: Pretty print for debugging** command from the command palette or editor actions, even when they are not the source the debugger is currently paused in.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_97.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_97.md"
 }

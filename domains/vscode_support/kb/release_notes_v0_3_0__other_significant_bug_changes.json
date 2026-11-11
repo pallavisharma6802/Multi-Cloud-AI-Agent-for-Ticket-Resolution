@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Other significant bug changes\nWe also fixed the following items.\n\n* [16481](https://code.visualstudio.com/issues/Detail/16481): Opening files from a UNC folder\n* [16457](https://code.visualstudio.com/issues/Detail/16457): Chinese characters not properly rendered on Linux\n* [16574](https://code.visualstudio.com/issues/Detail/16574): Encoding issues\n* [16500](https://code.visualstudio.com/issues/Detail/16500): $scope auto completes to $$scope\n* [16514](https://code.visualstudio.com/issues/Detail/16514): HTML tags are incorrectly auto completed\n* [16573](https://code.visualstudio.com/issues/Detail/16573): \"CFBundleIdentifier\" of \"Visual Studio Code.app\" should be changed from \"com.github.atom-shell\" to another unique identifier.\n\nFor a list of currently known issues, see our [FAQ](/docs/supporting/faq.md). You can view or report new issues [here](/issues).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_3_0.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v0_3_0.md"
 }

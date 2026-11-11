@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Reference a tool explicitly\n\nType `#` in the chat input to reference an available tool. Use an explicit reference when you want to direct the agent to a particular capability instead of letting it choose. Tool names depend on the harness.\n\nFor example, use the `#web/fetch` tool to retrieve a specific web page:\n\n```prompt\nSummarize the latest release notes at code.visualstudio.com/updates with #web/fetch.\n```\n\nThe `#` menu also contains context items, such as files, folders, and editor selections. Context items provide information for the request, while tools give the agent capabilities to gather information or take actions. Learn more about [adding context to chat prompts](/docs/chat/chat-overview.md#add-context-to-your-prompts).\n\n> [!NOTE]\n> User-defined tool sets are deprecated and are not supported in the Copilot harness. For a reusable tool selection, configure a custom agent. See [Replace tool sets](/docs/agent-customization/migrate-customizations.md#replace-tool-sets).\n\n<a name=\"select-tools-for-a-request\"></a>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/tools.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/tools.md"
 }

@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Debugging\n\nYou can debug client side Vue.js code with the built-in JavaScript debugger. Follow this [conversation](https://github.com/vitejs/vite/discussions/4065#discussioncomment-1359932) to use Vite/Vue.js 3 project with {% data variables.product.prodname_vscode_shortname %} using Microsoft Edge.\n\nFor Vue CLI, which is [now in maintenance mode](https://vuejs.org/guide/scaling-up/tooling#vue-cli), check out [Vue.js debugging in {% data variables.product.prodname_vscode_shortname %}](https://github.com/microsoft/vscode-recipes/tree/main/vuejs-cli) recipe on the {% data variables.product.prodname_vscode_shortname %} debugging [recipes](https://github.com/microsoft/vscode-recipes) site to learn more.\n\nAnother popular tool for debugging Vue.js is the [vue-devtools](https://devtools.vuejs.org/) plug-in, which can be used regardless of the environment.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/vuejs-tutorial.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/nodejs/vuejs-tutorial.md"
 }

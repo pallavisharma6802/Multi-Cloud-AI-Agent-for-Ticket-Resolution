@@ -4,5 +4,5 @@
   "category": "ENTERPRISE",
   "intent": "enterprise",
   "content": "## Extension telemetry\n\n{% data variables.product.prodname_vscode_shortname %} extensions might collect their own telemetry data. The `setting(telemetry.telemetryLevel)` setting affects first-party Microsoft extensions and participating third-party extensions. However, some extensions might not respect this setting and might have their own telemetry configuration.\n\nReview the documentation of extensions used in your organization to understand their telemetry practices.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/enterprise/telemetry.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/enterprise/telemetry.md"
 }

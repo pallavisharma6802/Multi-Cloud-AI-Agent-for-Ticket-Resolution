@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Require exact source\n\nThe debugger requires the pdb and source code to be exactly the same. To change this and disable the sources to be the same add:\n\n```json\n    \"requireExactSource\": false\n```\n\n**Availability**\n\n* `launch.json` \u2714\ufe0f\n* `settings.json` \u2714\ufe0f as `csharp.debug.requireExactSource`\n* `launchSettings.json` \u274c",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/debugger-settings.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/debugger-settings.md"
 }

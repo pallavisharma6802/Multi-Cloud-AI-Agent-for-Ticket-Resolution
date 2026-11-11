@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Next video\n\n* [Customize](/docs/introvideos/customize.md) - Customize {% data variables.product.prodname_vscode_shortname %} with settings and keyboard shortcuts.\n* [Introductory Videos](/docs/getstarted/introvideos.md) - Review the entire list of videos.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/introvideos/versioncontrol.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/introvideos/versioncontrol.md"
 }

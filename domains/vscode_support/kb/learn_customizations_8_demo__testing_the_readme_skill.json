@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Testing the README skill\n\nNext, the **Update README** skill is tested.\n\nWhen the app is created, we can add a readme.\n\n> **Prompt**\n> Create a README for this project.\n\nLater, if features are added or removed, the skill updates the README to reflect those changes.\n\nFor example, you can confirm the dark/light mode feature is mentioned in the README. After removing this feature causes the README to update automatically so it no longer references that functionality.\n\n> **Prompt**\n> Remove the dark mode / light mode feature from the app.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/8-demo.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/8-demo.md"
 }

@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Inference with the Phi Silica LoRA adapter\n\n> [!IMPORTANT]\n> The Phi Silica APIs are part of a Limited Access Feature (see [LimitedAccessFeatures class](https://learn.microsoft.com/uwp/api/windows.applicationmodel.limitedaccessfeatures)). For more information or to request an unlock token, please use the [LAF Access Token Request Form](https://go.microsoft.com/fwlink/?linkid=2271232&c1cid=04x409).\n\n> [!NOTE]\n> Inference with the Phi Silica LoRA adapter is currently supported only on Copilot+ PCs with ARM processors.\n\nUse Windows AI APIs to inference: [Phi Silica with LoRA adapter](https://github.com/MicrosoftDocs/windows-ai-docs/blob/docs/docs/apis/phi-silica-lora.md#c)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/finetune.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/finetune.md"
 }

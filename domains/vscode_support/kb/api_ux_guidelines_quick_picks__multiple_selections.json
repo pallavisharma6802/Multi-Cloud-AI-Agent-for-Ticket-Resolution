@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Multiple selections\n\nUse a multi-select quick pick for closely-related selections that need to be selected in one step.\n\n![Multi-step Quick Pick example](images/examples/quick-pick-multi-select.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/quick-picks.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/ux-guidelines/quick-picks.md"
 }

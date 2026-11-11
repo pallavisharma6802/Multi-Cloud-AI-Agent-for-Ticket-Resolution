@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Integrated Terminal\n\n### True color support\n\nThe terminal now supports programs that use true color (24-bit) escape sequences, rendering the correct color instead of the previous approximation of it.\n\nBefore:\n\n![Integrated Terminal 256 color approximation](images/1_35/true-color-before.png)\n\nAfter:\n\n![Integrated Terminal true color](images/1_35/true-color-after.png)\n\n### Improved surfacing of shell selector on Windows\n\nFor some time, there has been a command to select the default shell on Windows. This release makes the command more discoverable as a shortcut available in the terminal selector dropdown.\n\n![Integrated Terminal shell selector](images/1_35/shell-selector.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_35.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_35.md"
 }

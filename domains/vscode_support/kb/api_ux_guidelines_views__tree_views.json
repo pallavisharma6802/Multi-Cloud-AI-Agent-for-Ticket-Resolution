@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Tree Views\n\nTree Views are a powerful and flexible format to display content in a View. Extensions can add everything from simple flat lists to deeply nested trees.\n\n* Use descriptive labels to give context to items (if applicable)\n* Use product icons to distinguish between item types (if applicable)\n\n**\u274c Don't**\n\n* Use Tree View Items as buttons to fire Commands\n* Avoid deep nesting unless necessary. A few levels of folders/items is a good balance for most situations.\n* Add more than three actions to an item\n\n![Example of a Tree View](images/examples/tree-view.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/views.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/ux-guidelines/views.md"
 }

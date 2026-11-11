@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## onTerminal\n\n`onTerminal:shellType` is emitted when a specific terminal with the given shell type is opened.\n\n```json\n\"activationEvents\": [\n  \"onTerminal:bash\"\n]\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/activation-events.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/activation-events.md"
 }

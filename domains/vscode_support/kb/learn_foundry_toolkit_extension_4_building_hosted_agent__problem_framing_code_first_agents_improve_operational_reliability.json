@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Problem Framing: Code-First Agents Improve Operational Reliability\n\nThe biggest shift in this chapter is not just writing code instead of prompts, it is moving to an operationally reliable lifecycle. In low-code mode, behavior can be validated quickly, but deployment shape, tooling integration, and debugging depth are often constrained.\n\nIn code-first mode, you gain repeatability: the same repo defines runtime behavior, tool wiring, and deployment flow.\n\nOne repo. One source of truth. Fewer surprises.\n\nAn easy way to see the value is to compare how issues are diagnosed. In a code-first workflow, traces, config, and source changes can be reviewed together, which usually shortens time-to-fix when behavior drifts in hosted environments.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
 }

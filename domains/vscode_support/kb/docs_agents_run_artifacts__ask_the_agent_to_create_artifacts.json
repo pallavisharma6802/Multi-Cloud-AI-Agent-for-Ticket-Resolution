@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Ask the agent to create artifacts\n\nYou can ask the agent to store something as an artifact by describing what you want in your prompt. For example:\n\n* \"Take a screenshot of my app and set it as an artifact\"\n* \"Write a project plan and set it as an artifact\"\n* \"Save these links as artifacts\"\n\nThe agent then uses the `#artifacts` tool to add the resource to the artifacts panel. You don't need to reference the tool directly. Just describe what you want to keep, and the agent determines when to surface it as an artifact.\n\nThe agent can also use the `#artifactRules` tool to override the extraction rules for the current session. This replaces any settings-based rules for the duration of the session.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/artifacts.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/artifacts.md"
 }

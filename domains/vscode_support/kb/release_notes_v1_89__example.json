@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Example\n...\n```\n\nThe two `## Example` headers have the same text but can each be linked to individually by using a unique ID (`#example` and `#example-1`). Previously, if you renamed the first `## Example` header to `## First Example`, the `#example` link would be correctly changed to `#first-example` but the `#example-1` link would not be changed. However, `#example-1` is no longer a valid link after the rename because there are no longer duplicated `## Example` headers.\n\nWe now correctly handle this scenario. If you rename the first `## Example` header to `## First Example` in the document above for instance, the new document will be:\n\n```md\n# Readme\n- [Example 1](#first-example)\n- [Example 2](#example)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_89.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_89.md"
 }

@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## How do I enable debug symbols?\n\nEnabling debug symbols is dependent on the type of compiler you are using. Below are some of the compilers and the compiler options necessary to enable debug symbols.\n\nWhen in doubt, please check your compiler's documentation for the options necessary to include debug symbols in the output. This may be some variant of `-g` or `--debug`.\n\n### Clang (C++)\n\n- If you invoke the compiler manually, add the `--debug` option.\n- If you're using a script, make sure the `CXXFLAGS` environment variable is set. For example, `export CXXFLAGS=\"${CXXFLAGS} --debug\"`.\n- If you're using CMake, make sure the `CMAKE_CXX_FLAGS` is set. For example, `export CMAKE_CXX_FLAGS=${CXXFLAGS}`.\n\n### Clang (C)\n\nSee Clang C++ but use `CFLAGS` instead of `CXXFLAGS`.\n\n### gcc or g++\n\nIf you invoke the compiler manually, add the `-g` option.\n\n### cl.exe\n\nSymbols are located in the `*.pdb` file.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/faq-cpp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/faq-cpp.md"
 }

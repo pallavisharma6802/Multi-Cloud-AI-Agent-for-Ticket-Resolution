@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "# Language Model Chat Provider API\n\nThe Language Model Chat Provider API enables you to contribute your own language models to chat in Visual Studio Code.\n\n> [!NOTE]\n> If you are a Copilot Business or Enterprise user, your administrator can disable the **Bring Your Own Language Model Key** policy in the [Copilot policy settings](https://github.com/settings/copilot/features) on GitHub.com for models provided through this API.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/language-model-chat-provider.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-guides/ai/language-model-chat-provider.md"
 }

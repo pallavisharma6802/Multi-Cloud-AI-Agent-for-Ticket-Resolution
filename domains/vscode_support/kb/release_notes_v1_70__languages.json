@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Languages\n\n### Keep newlines when formatting JSON\n\nYou can now keep the initial line position when formatting a line in a JSON documents. For example, an array containing values on one line will still keep these values on the same line after formatting. Extra line breaks (newlines) in JSON files are also preserved. To enable this feature, set the option **JSON > Format: Keep Lines** in the Setting editor.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_70.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_70.md"
 }

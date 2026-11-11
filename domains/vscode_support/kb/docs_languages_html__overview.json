@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# HTML in {% data variables.product.prodname_vscode %}\n\n{% data variables.product.prodname_vscode %} provides basic support for HTML programming out of the box. There is syntax highlighting, smart completions with IntelliSense, and customizable formatting. {% data variables.product.prodname_vscode_shortname %} also includes great Emmet support.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/html.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/html.md"
 }

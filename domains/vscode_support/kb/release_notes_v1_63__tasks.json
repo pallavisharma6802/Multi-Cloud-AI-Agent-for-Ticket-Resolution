@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Tasks\n\n### automationProfile setting\n\nThe old settings `terminal.integrated.automationShell.*` have been deprecated and new `terminal.integrated.automationProfile.*` settings have been added. This allows for greater freedom in specifying properties of terminals used for tasks, including shell, icon, color, and shell argument.\n\n### gulpfile.ts support\n\nThe built-in gulp extension now supports detecting tasks from `gulpfile.ts` files.\n\n### NPM Scripts view improvements\n\nThe NPM scripts view shows more details about the scripts.\n\n![NPM Scripts view with script details](images/1_63/npm-scripts-view.png)\n\nThere is also a new setting `npm.scriptExplorerExclude`, which allows you to specify scripts to exclude from the NPM Scripts view.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_63.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_63.md"
 }

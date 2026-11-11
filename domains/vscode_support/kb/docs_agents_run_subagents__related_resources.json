@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [Custom agents](/docs/agent-customization/custom-agents.md): extend the examples with your own instructions and tools.\n* [Optimize AI credit usage](/docs/agents/guides/optimize-usage.md): balance model choice, context, and cost.\n* [Agent sessions](/docs/agents/run/sessions/manage-sessions.md): organize your conversations and manage context.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/subagents.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/subagents.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Core\n\n### serve-web CLI command\n\nA standalone VS Code server can be started using the `serve-web` command on the VS Code CLI. By default, it'll serve a web experience on your localhost.\n\nNote that in order to access the server on non-localhost origins, you will need to serve the UI over TLS using a reverse proxy server such as [Caddy](https://caddyserver.com/).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_82.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_82.md"
 }

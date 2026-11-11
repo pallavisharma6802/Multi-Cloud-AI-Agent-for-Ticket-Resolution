@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "## Add a remote\n\nTo add a new remote to your repository:\n\n1. In the Source Control view (`kb(workbench.view.scm)`), select **More Actions** (**...**) > **Remotes** > **Add Remote**.\n\n    Alternatively, run the **Git: Add Remote** command from the Command Palette (`kb(workbench.action.showCommands)`).\n\n1. Enter the remote URL.\n\n1. Enter a name for the remote (for example, `origin` for your first remote or `upstream` for the original repository of a fork).\n\nYour repository now has a remote that you can fetch from or push to. Adding a remote doesn't upload commits or set an upstream branch. Use [Push](#push-commits) to publish a local branch when you're ready to share it.\n\nUse **Git: Remove Remote** to remove the connection from your local repository. Removing a remote doesn't delete the hosted repository or your local commits.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/repos-remotes.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/repos-remotes.md"
 }

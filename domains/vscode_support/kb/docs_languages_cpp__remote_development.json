@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Remote Development\n\n{% data variables.product.prodname_vscode_shortname %} and the C++ extension support [Remote Development](/docs/remote/remote-overview.md) allowing you to work over SSH on a remote machine or VM, inside a Docker container, or in the [Windows Subsystem for Linux](https://learn.microsoft.com/windows/wsl) (WSL).\n\nTo install support for Remote Development:\n\n1. Install the {% data variables.product.prodname_vscode_shortname %} [Remote Development Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack).\n1. If the remote source files are hosted in WSL, use the **WSL** extension.\n1. If you are connecting to a remote machine with SSH, use the **Remote - SSH** extension.\n1. If the remote source files are hosted in a container (for example, Docker), use the **Dev Containers** extension.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/cpp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/cpp.md"
 }

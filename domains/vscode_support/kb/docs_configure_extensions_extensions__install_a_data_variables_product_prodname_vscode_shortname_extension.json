@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Install a {% data variables.product.prodname_vscode_shortname %} extension\n\nYou can install an extension directly from the Extensions view in {% data variables.product.prodname_vscode_shortname %}. Alternatively, you can install an extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vscode) website.\n\n1. Open the Extensions view (`kb(workbench.view.extensions)`).\n1. Select the **Install** button on the extension's tile.\n\n    ![Screenshot of the Extensions view, highlighting the install button.](images/extensions/todo-extension-install.png)\n\n1. You can also select the **Install** button on the extension's details view.\n\n> [!TIP]\n> If you have to switch between different technology stacks, use [{% data variables.product.prodname_vscode_shortname %} profiles](/docs/configure/profiles.md) to only install the extensions you need for a given workload. For example, you can install extensions for web development in one profile and extensions for data science in another profile.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/extensions/extensions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/extensions/extensions.md"
 }

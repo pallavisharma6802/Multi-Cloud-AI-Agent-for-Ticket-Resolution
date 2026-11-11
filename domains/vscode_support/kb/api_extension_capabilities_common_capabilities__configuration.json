@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Configuration\n\nAn extension can contribute extension-specific settings with the [`contributes.configuration`](/api/references/contribution-points#contributes.configuration) Contribution Point and read them using the [`workspace.getConfiguration`](/api/references/vscode-api#workspace.getConfiguration) API.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-capabilities/common-capabilities.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-capabilities/common-capabilities.md"
 }

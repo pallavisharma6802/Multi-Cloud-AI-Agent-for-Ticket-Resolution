@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Explore a codebase with an agent\n\nBefore you change an unfamiliar project, you need to know where its behavior is implemented and how to verify it. An agent can help you find entry points, follow calls across files, and locate relevant tests. Treat its explanation as a starting point to check against the code, not as an authoritative description of the project.\n\nIn this guide, you investigate one behavior in an existing repository without editing it. You finish with a map of the relevant code, supporting source references, and a list of questions to resolve before making a change.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/explore-a-codebase.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/explore-a-codebase.md"
 }

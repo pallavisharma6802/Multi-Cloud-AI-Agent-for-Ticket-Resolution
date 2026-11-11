@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Source Control\n\n### GitHub authentication for GitHub repositories\n\nVS Code now has automatic GitHub authentication against GitHub repositories. You can now clone, pull, push to and from public and private repositories without configuring any credential manager in your system. Even Git commands invoked in the Integrated Terminal, for example `git push`, are now automatically authenticated against your GitHub account.\n\nYou can disable GitHub authentication with the `git.githubAuthentication` setting. You can also disable the terminal authentication integration with the `git.terminalAuthentication` setting.\n\n### Hide Git commit input box\n\nA new setting `git.showCommitInput` allows you to hide the commit input box for Git repositories.\n\n### Inline diff is now editable\n\nYou can now edit inside the quick diff editor, when previewing changes in a file.\n\n<video src=\"images/1_45/quickdiff.mp4\" title=\"Video showing Editable inline diff.\" autoplay loop controls muted></video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_45.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_45.md"
 }

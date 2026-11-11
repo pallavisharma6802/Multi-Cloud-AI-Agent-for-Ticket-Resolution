@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Available locales\n\nDisplay Language | Locale\n-----------------|-------\nEnglish (US) | `en`\nSimplified Chinese | `zh-cn`\nTraditional Chinese | `zh-tw`\nFrench | `fr`\nGerman | `de`\nItalian | `it`\nSpanish | `es`\nJapanese | `ja`\nKorean | `ko`\nRussian | `ru`\nPortuguese (Brazil) | `pt-br`\nTurkish | `tr`\nPolish | `pl`\nCzech | `cs`\nHungarian | `hu`",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/locales.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/locales.md"
 }

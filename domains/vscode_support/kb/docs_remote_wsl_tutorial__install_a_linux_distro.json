@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Install a Linux distro\n\nYou install Linux distributions for WSL from the Microsoft Store. You can use the store app, or search for a Linux distro in the Windows search bar. Choose the Linux distribution you want to install (for example Ubuntu) and follow the prompts.\n\n![select Ubuntu distro](images/wsl-tutorial/select-distro.png)\n\nSelect **Install**.\n\n![install Ubuntu](images/wsl-tutorial/install-ubuntu.png)\n\nAnd when done, select **Launch** to get started. This will open a Linux terminal and complete the installation.  You'll need to create a user ID and password since you are setting up a full Linux instance. You are now running Linux on Windows.\n\n![Linux terminal](images/wsl-tutorial/linux-terminal.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/wsl-tutorial.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/remote/wsl-tutorial.md"
 }

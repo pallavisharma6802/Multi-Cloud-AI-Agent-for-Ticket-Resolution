@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Create your own Color Theme\n\nCreating and publishing a theme extension is easy. Customize your colors in your user settings then generate a theme definition file with the **Developer: Generate Color Theme From Current Settings** command.\n\n{% data variables.product.prodname_vscode_shortname %}'s Yeoman [extension generator](/api/get-started/your-first-extension.md) helps you generate the rest of the extension.\n\nSee the [Create a new Color Theme](/api/extension-guides/color-theme.md#create-a-new-color-theme) article in our Extension API section to learn more.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/themes.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/themes.md"
 }

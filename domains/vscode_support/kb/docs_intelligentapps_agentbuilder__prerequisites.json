@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Prerequisites\n\nFor the Foundry prompt-agent path, you need:\n\n* [{% data variables.product.prodname_vscode %}](/download) and the [Foundry Toolkit extension](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio).\n* Access to a Microsoft Foundry project and permission to create agents and use its models and tools.\n* A model deployment in that project. See [Set up Microsoft Foundry resources](https://learn.microsoft.com/en-us/azure/foundry/tutorials/quickstart-create-foundry-resources).\n\nSelect your Foundry project in the Toolkit before you start. For extension and project setup, see the [Foundry Toolkit overview](/docs/intelligentapps/overview.md). Local prompt development does not require a Foundry project unless you use Foundry resources.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/agentbuilder.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/agentbuilder.md"
 }

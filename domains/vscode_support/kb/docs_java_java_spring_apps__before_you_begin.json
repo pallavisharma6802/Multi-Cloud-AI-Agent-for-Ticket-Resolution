@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Before you begin\n\nBefore running and deploying this sample, you must have the Java SE Development Kit (JDK) version 11 or above and Apache Maven build tools on your local development environment. If you don't already have them, install these tools first.\n\nDownload and install the [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack).\n\n>**Note**: The `JAVA_HOME` environment variable must be set to the install location of the JDK to complete this tutorial.\n\nDownload Apache Maven version 3 or greater:\n\n<a class=\"install-extension-btn\" href=\"https://maven.apache.org/download.cgi\" target=\"_blank\" style=\"background-color:#68217A\">Download Apache Maven</a>\n\nInstall Apache Maven for your local development environment:\n\n<a class=\"install-extension-btn\" href=\"https://maven.apache.org/install\" target=\"_blank\" style=\"background-color:#68217A\">Install Apache Maven</a>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-spring-apps.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-spring-apps.md"
 }

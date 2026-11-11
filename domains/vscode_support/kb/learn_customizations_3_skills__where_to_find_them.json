@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Where to find them\n\n![Screenshot of the chat icon and gear icon in the VS Code title bar](../images/shared/chat-icon-gear.png)\n\nAgent skills live in the Agent Customizations view alongside prompts and instructions. You can access them by opening Copilot Chat, selecting the gear icon, and navigating to the Skills section.\n\n![Screenshot of the Agent Customizations view showing the Skills section with built-in and custom skills](../images/customizations/ep-3-2-skills-cust-ui.png)\n\nFrom here, you\u2019ll see built-in skills, extension-provided skills, and any custom skills you create, all in one centralized place.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/3-skills.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/3-skills.md"
 }

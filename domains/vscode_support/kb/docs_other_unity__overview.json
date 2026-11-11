@@ -4,5 +4,5 @@
   "category": "REFERENCE",
   "intent": "reference",
   "content": "# Unity Development with {% data variables.product.prodname_vscode_shortname %}\n\n{% data variables.product.prodname_vscode %} makes it easy to write and debug your C# scripts for Unity.\n\n[![Unity Overview](images/unity/unity-overview.png)](/assets/docs/other/unity/unity-overview.png)\n\nThis guide will help you make Unity and {% data variables.product.prodname_vscode %} work together. If you're looking for resources to learn C#, check out our C# curriculum.\n\n<a class=\"install-extension-btn\" href=\"https://aka.ms/selfguidedcsharp\">Learn C# Curriculum</a>\n\nIf you're looking for resources to learn Unity, check out the learning section of the Unity website.\n\n<a class=\"install-extension-btn\" href=\"https://unity.com/learn\">Learn Unity</a>\n\nRead on to find out how to configure Unity and your project to get the best possible experience.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/other/unity.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/other/unity.md"
 }

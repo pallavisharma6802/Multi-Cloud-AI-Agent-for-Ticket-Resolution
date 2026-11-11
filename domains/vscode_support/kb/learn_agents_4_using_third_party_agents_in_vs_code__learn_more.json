@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Learn more\n\n* [Third-party agents in Visual Studio Code](https://code.visualstudio.com/docs/copilot/agents/third-party-agents)\n* [Agents overview](https://code.visualstudio.com/docs/copilot/agents/overview)\n* [Security considerations](https://code.visualstudio.com/docs/copilot/security)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/4-using-third-party-agents-in-vs-code.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/agents/4-using-third-party-agents-in-vs-code.md"
 }

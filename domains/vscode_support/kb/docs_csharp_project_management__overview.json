@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# Project management\n\nWhen you create a C# application in {% data variables.product.prodname_vscode %}, you start with a **project**. A project contains all files (such as source code, images, etc.) that are compiled into an executable, library, or website.  All of your related projects can then be stored in a container called a **solution**.  This article shows you how you can maintain all your projects and their respective files via the **Solution Explorer** view.\n\n>**Note**: The [C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) is required to use the Solution Explorer view in {% data variables.product.prodname_vscode_shortname %}.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/project-management.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/project-management.md"
 }

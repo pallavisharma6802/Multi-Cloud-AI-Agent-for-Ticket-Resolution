@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Open Link command\n\nThe simplest way to debug a webpage is through the **Debug: Open Link** command found in the Command Palette (`kb(workbench.action.showCommands)`). When you run this command, you'll be prompted for a URL to open, and the debugger will be attached.\n\n![Using the Open Link command to attach to a URL](images/browser-debugging/debug-open-link.gif)\n\nIf your default browser is Edge, {% data variables.product.prodname_vscode_shortname %} will use it to open the page. Otherwise, it will try to find an installation of Chrome on your system instead.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/browser-debugging.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/nodejs/browser-debugging.md"
 }

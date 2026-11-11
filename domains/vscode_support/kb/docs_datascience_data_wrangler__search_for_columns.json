@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Search for columns\n\nTo find a specific column in your dataset, select **Go to column** from the Data Wrangler toolbar and search for the respective column.\n\n![a screenshot of the search for columns feature](images/data-wrangler/go-to-column.gif)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/data-wrangler.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/datascience/data-wrangler.md"
 }

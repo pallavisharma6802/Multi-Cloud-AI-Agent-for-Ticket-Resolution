@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Agent Skills standard\n\nAgent Skills is an open standard that enables portability across different AI agents. Skills you create in {% data variables.product.prodname_vscode_shortname %} work with multiple agents, including:\n\n* **GitHub Copilot in {% data variables.product.prodname_vscode_shortname %}**: Available in chat and agent mode\n* **{% data variables.copilot.copilot_cli %}**: Accessible when working in the terminal\n* **{% data variables.copilot.github_copilot_app %}**: Available in the dedicated desktop experience.\n* **{% data variables.product.prodname_openai_codex %} integration (Experimental)**: Discovers workspace skills in `.github/skills/` after you [set up the integration](/docs/agents/run/agent-harnesses.md#codex).\n\nLearn more about the Agent Skills standard at [agentskills.io](https://agentskills.io).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/agent-skills.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/agent-skills.md"
 }

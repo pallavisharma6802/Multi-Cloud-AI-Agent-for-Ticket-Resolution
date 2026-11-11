@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Walkthrough\n\n- If needed, create a .NET project with `dotnet new`.\n- Open the project folder in {% data variables.product.prodname_vscode_shortname %}.\n- Optionally, set a breakpoint.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/debug-netcore.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/containers/debug-netcore.md"
 }

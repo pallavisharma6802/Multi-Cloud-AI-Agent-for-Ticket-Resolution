@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Run anywhere\n\nSimilar to [GitHub Codespaces](/docs/remote/codespaces.md), {% data variables.product.prodname_vscode_shortname %} for the Web can run on tablets, like iPads.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/vscode-web.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/remote/vscode-web.md"
 }

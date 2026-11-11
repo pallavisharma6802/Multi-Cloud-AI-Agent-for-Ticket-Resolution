@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "# Authoring Python Extensions\n\n>**Note**: If you are new to VS Code extension authoring, you may want to read the [Your First Extension](/api/get-started/your-first-extension) tutorial first and try creating a simple Hello World extension.\n\nThe [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) extension provides APIs for other extensions to work with Python environments available on the user's machine. Check out [@vscode/python-extension](https://www.npmjs.com/package/@vscode/python-extension) npm module that includes types and helper utilities to access these APIs from your extension.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/advanced-topics/python-extension-template.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/advanced-topics/python-extension-template.md"
 }

@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Can I connect to multiple containers at once?\n\nA {% data variables.product.prodname_vscode_shortname %} window can only connect to one window currently, but you can open a new window and [attach](/docs/devcontainers/attach-container.md) to an already running container or [use a common Docker Compose file with multiple `devcontainer.json` files](/remote/advancedcontainers/connect-multiple-containers.md) to automate the process a bit more.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/faq.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/devcontainers/faq.md"
 }

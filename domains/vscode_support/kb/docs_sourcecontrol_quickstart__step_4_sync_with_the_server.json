@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "## Step 4: Sync with the server\n\nThis step is optional and requires a {% data variables.product.prodname_github %} account. Publishing creates a repository in your account and uploads your local commits.\n\n1. Open the Command Palette (`kb(workbench.action.showCommands)`) and run **Publish to GitHub**.\n\n1. Sign in when prompted and return to {% data variables.product.prodname_vscode_shortname %}.\n\n1. Enter an available repository name, such as `git-practice`, and choose a **private** repository for this exercise.\n\n1. When publishing finishes, open the repository on {% data variables.product.prodname_github %}. Verify that it contains `README.md` and your commit.\n\nAfter publishing, future commits are still local until you push them. In the Source Control view, select **More Actions** (**...**) > **Push** to upload commits. **Sync Changes** does more: it pulls remote changes before pushing your commits.\n\nIf a push fails, don't repeatedly sync or force-push. Use [source control troubleshooting](/docs/sourcecontrol/troubleshooting.md) to identify the cause.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/quickstart.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/quickstart.md"
 }

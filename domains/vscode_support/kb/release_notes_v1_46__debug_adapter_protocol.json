@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Debug Adapter Protocol\n\n### New instruction breakpoints\n\nThere is a new \"instruction\" breakpoint type, which makes it possible to break on an instruction at a memory address. Memory addresses are specified in symbolic form that is optionally available from `evaluate`, `variables`, `stackTrace`, and `gotoTargets` requests. A corresponding capability `supportsInstructionBreakpoints` indicates whether a debug adapter supports instruction breakpoints.\n\n### Support for \"stepping granularity\"\n\nA new optional `granularity` argument has been added to the stepping requests `next`, `stepIn`, `stepOut`, `stepBack` to control whether the request steps a \"statement\", a \"line\", or an \"instruction\". A corresponding capability `supportsSteppingGranularity` indicates whether a debug adapter supports the feature.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_46.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_46.md"
 }

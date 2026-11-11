@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Iterating on a working app\n\nOnce the core app works, iterate with a targeted follow-up prompt.\n\n```prompt\nAdd a lookup section to the frontend and a GET /lookup/{code} endpoint that returns the original URL as JSON instead of redirecting. The frontend should have a second form where I paste a short code and see the original URL displayed below it.\n```\n\nThe agent should update only the relevant files instead of rebuilding the entire project.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/build-your-first-app-with-agent-mode.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundations/build-your-first-app-with-agent-mode.md"
 }

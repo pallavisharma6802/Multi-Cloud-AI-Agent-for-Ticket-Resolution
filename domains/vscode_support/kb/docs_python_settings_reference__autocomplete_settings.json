@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## AutoComplete settings\n\n| Setting (python.autoComplete.) | Default | Description | See also |\n| --- | --- | --- | --- |\n| extraPaths | `[]` | Specifies locations of additional packages for which to load autocomplete data. | [Editing](/docs/python/editing.md#autocomplete-and-intellisense) |",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/settings-reference.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/python/settings-reference.md"
 }

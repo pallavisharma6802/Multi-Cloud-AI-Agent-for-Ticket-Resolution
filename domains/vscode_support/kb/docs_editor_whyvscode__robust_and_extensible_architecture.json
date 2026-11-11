@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Robust and extensible architecture\n\nArchitecturally, {% data variables.product.prodname_vscode %} combines the best of web, native, and language-specific technologies. Using [Electron](https://github.com/electron/electron), {% data variables.product.prodname_vscode_shortname %} combines web technologies such as JavaScript and Node.js with the speed and flexibility of native apps. {% data variables.product.prodname_vscode_shortname %} uses a newer, faster version of the same industrial-strength HTML-based editor that has powered the \"Monaco\" cloud editor, Internet Explorer's F12 Tools, and other projects. Additionally, {% data variables.product.prodname_vscode_shortname %} uses a tools service architecture that enables it to integrate with many of the same technologies that power Visual Studio, including Roslyn for .NET, TypeScript, the Visual Studio debugging engine, and more.\n\n{% data variables.product.prodname_vscode %} includes a public extensibility model that lets developers build and use extensions, and richly customize their edit-build-debug experience.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editor/whyvscode.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editor/whyvscode.md"
 }

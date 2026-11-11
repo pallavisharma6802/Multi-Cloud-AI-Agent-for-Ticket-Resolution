@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Refactor code without changing behavior\n\nA refactor changes how code is organized without changing what it does. An agent can help find repeated logic, propose a smaller structure, and update callers, but a cleaner-looking diff doesn't prove that the behavior is preserved.\n\nIn this guide, you define a bounded refactor in your own repository, establish regression coverage, make the change in reviewable steps, and verify that existing callers still work. The example extracts repeated query validation into a shared helper.\n\nFor a symbol rename or a supported method extraction, prefer the editor's [language-aware refactoring actions](/docs/editing/refactoring.md). Use an agent when the task also needs investigation, design decisions, or coordinated edits that those actions don't cover.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/refactor-safely.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/refactor-safely.md"
 }

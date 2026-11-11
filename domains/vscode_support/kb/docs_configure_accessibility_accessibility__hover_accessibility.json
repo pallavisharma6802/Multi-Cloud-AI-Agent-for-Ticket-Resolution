@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Hover accessibility\n\nSome hovers cannot be hovered normally, which makes them hard to use with screen magnifiers. To work around this, hold the `kbstyle(Alt)` or `kbstyle(Option)` key while a hover is active to \"lock\" it in place so that it won't hide when hovered. Release the key to unlock the hover.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/accessibility/accessibility.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/accessibility/accessibility.md"
 }

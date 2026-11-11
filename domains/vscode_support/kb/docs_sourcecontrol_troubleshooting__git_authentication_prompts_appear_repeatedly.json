@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "## Git authentication prompts appear repeatedly\n\nIf `setting(git.autofetch)` is on, background fetches can trigger repeated authentication prompts even when you haven't selected a Git action. Automatic fetching is off by default in the editor window and on by default in the {% data variables.copilot.agents_window %}.\n\nCheck the Git Output window to see which command triggered the prompt. Configure a [Git credential helper](https://docs.github.com/get-started/getting-started-with-git/caching-your-github-credentials-in-git) to store valid credentials for the remote. If you don't want background fetches, turn off `setting(git.autofetch)`. This stops those fetches but doesn't fix credentials needed for manual fetch, pull, or push operations.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/troubleshooting.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/troubleshooting.md"
 }

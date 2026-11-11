@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "# Workspace Trust\n\n{% data variables.product.prodname_vscode %} takes security seriously and wants to help you safely browse and edit code no matter the source or original authors. The Workspace Trust feature lets you decide whether code in your project folder can be executed by {% data variables.product.prodname_vscode_shortname %} and extensions without your explicit approval.\n\n![Trust this folder dialog](images/workspace-trust/workspace-trust-dialog.png)\n\n>**Note**: When in doubt, leave a folder in [Restricted Mode](#restricted-mode). You can always [enable trust](#trusting-a-workspace) later.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/workspaces/workspace-trust.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/workspaces/workspace-trust.md"
 }

@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Update sample.json\nTo make the sample work, you need to fill in the following properties. For example:\n- `MODEL_PATH: Intel/bert-base-uncased-mrpc`\n- `MODEL_TASK: text-classification`\n- `DS_NAME: glue`\n- `DS_SUBSET: mrpc`\n- `DS_SPLIT: validation`\n- `DATA_COLS: [ \"sentence1\", \"sentence2\" ]`\n- `FIXED_PARAMS: [ \"batch_size\", \"sequence_length\" ]`\n- `FIXED_VALUES: [ 1, 128 ]`\n\nYou could also adjust other parameters to suit your need:\n\n- `execution_providers: [ \"CPUExecutionProvider\" ]`: To other providers like QNNExecutionProvider. You need to run it on the matched device\n- `max_length: 128` / `batch_size: 1`: For static quantization, the input size should be fixed. Adjust these to match `FIXED_VALUES`\n- `max_samples: 100`: The number of samples used.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/reference/TemplateProject.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/reference/TemplateProject.md"
 }

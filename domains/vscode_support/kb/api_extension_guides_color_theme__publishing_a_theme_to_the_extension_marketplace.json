@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Publishing a Theme to the Extension Marketplace\n\nIf you'd like to share your new theme with the community, you can publish it to the [Extension Marketplace](/docs/configure/extensions/extension-marketplace). Use the [vsce publishing tool](/api/working-with-extensions/publishing-extension) to package your theme and publish it to the VS Code Marketplace.\n\n> **Tip:** To make it easy for users to find your theme, include the word \"theme\" in the extension description and set the `Category` to `Themes` in your `package.json`.\n\nWe also have recommendations on how to make your extension look great on the VS Code Marketplace, see [Marketplace Presentation Tips](/api/references/extension-manifest#marketplace-presentation-tips).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/color-theme.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-guides/color-theme.md"
 }

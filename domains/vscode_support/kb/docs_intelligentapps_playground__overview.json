@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Model playground in Foundry Toolkit\n\nUse the Foundry Toolkit playgrounds to test chat prompts or generate images before you integrate a model into an application. Configure model-specific parameters, compare chat responses, create image assets, and generate a client code sample.\n\nThe playground sends inference requests to a selected model. It does not create an agent resource or deploy your application code. To test an agent that runs your own logic and calls tools, use [Agent Inspector](/docs/intelligentapps/agent-inspector.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/playground.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/playground.md"
 }

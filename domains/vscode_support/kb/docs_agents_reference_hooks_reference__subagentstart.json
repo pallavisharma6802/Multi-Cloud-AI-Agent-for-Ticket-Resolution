@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## `SubagentStart`\n\nThe `SubagentStart` hook fires when the agent starts a subagent.\n\n### Input\n\nIn addition to the [common input](#common-input), the hook receives:\n\n```json\n{\n  \"agent_id\": \"subagent-456\",\n  \"agent_type\": \"Plan\"\n}\n```\n\n| Field | Type | Description |\n|-------|------|-------------|\n| `agent_id` | string | Identifier for the subagent. |\n| `agent_type` | string | Agent name, such as `\"Plan\"` or a custom agent name. |\n\n### Output\n\nThe hook can add context to the subagent:\n\n```json\n{\n  \"hookSpecificOutput\": {\n    \"hookEventName\": \"SubagentStart\",\n    \"additionalContext\": \"Follow the project coding guidelines.\"\n  }\n}\n```\n\n| Field | Values or type | Description |\n|-------|----------------|-------------|\n| `hookEventName` | `\"SubagentStart\"` | Identifies the event-specific output. |\n| `additionalContext` | string | Context added to the subagent conversation. |",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/hooks-reference.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/reference/hooks-reference.md"
 }

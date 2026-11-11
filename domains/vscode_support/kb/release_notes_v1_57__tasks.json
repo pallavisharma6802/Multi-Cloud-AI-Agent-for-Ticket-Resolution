@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Tasks\n\n### Task status on terminal tab\n\nThe status of a task is now shown in its terminal tab. For background tasks, the status is only shown when there is an associated problem matcher.\n\n![Task status on a terminal tab](images/1_57/terminal-task-status.png)\n\n### Automatically close task terminals\n\nThe task `presentation` property has a new `close` property. Setting `close` to `true` will cause the terminal to close when the task exits.\n\n```json\n{\n  \"type\": \"shell\",\n  \"command\": \"node build/lib/preLaunch.js\",\n  \"label\": \"Ensure Prelaunch Dependencies\",\n  \"presentation\": {\n    \"reveal\": \"silent\",\n    \"close\": true\n  }\n}\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_57.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_57.md"
 }

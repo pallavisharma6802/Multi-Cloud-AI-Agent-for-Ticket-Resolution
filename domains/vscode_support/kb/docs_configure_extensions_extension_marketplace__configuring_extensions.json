@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Configuring extensions\n\n{% data variables.product.prodname_vscode_shortname %} extensions might have very different configurations and requirements. Some extensions contribute [settings](/docs/configure/settings.md) to {% data variables.product.prodname_vscode_shortname %}, which can be modified in the Settings editor. Other extensions might have their own configuration files. Extensions might also require installation and setup of additional components like compilers, debuggers, and command-line tools. Consult the extension's README (visible in the Extensions view details page) or go to the extension page on the [{% data variables.product.prodname_vs_marketplace %}](https://marketplace.visualstudio.com/VSCode) by selecting the extension name in the details page. Many extensions are open source and have a link to their repository on their Marketplace page.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/extensions/extension-marketplace.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/extensions/extension-marketplace.md"
 }

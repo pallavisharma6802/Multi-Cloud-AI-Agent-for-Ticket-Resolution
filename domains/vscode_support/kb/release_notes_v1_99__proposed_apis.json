@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Proposed APIs\n\n### Task problem matcher status\n\nWe've added [proposed API](https://github.com/microsoft/vscode/blob/c98092f1caaad64e18be5b3f8761a09c24c7669c/src/vscode-dts/vscode.proposed.taskProblemMatcherStatus.d.ts#L9-L40), so that extensions can monitor when a task's problem matchers start and finish processing lines. Enable it with `taskProblemMatcherStatus`.\n\n### Send images to LLM\n\nThis iteration, we've added a [proposed API](https://github.com/microsoft/vscode/blob/main/src/vscode-dts/vscode.proposed.languageModelDataPart.d.ts), so that extensions can attach images and send vision requests to the language model. Attachments must be the raw, non base64-encoded binary data of the image (`Uint8Array`). Maximum image size is 5MB.\n\nCheck out [this API proposal issue](https://github.com/microsoft/vscode/issues/245104) to see a usage example and to stay up to date with the status of this API.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_99.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_99.md"
 }

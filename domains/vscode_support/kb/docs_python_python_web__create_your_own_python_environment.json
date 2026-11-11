@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Create your own Python environment\n\nThe extension uses a pre-configured Python environment based on the [CPython WebAssembly builds](https://github.com/tiran/cpython-wasm-test/releases). The build used is `Python-3.11.0-wasm32-wasi-16.zip`.\n\nYou can create your own Python environment, including source wheel Python packages, following these steps:\n\n* Create a new GitHub repository.\n* Download a wasm-wasi-16 build from [cpython-wasm-test/releases](https://github.com/tiran/cpython-wasm-test/releases) and expand it into the root of the repository.\n* To add source wheel packages, do the following:\n  * Create a `site-packages` folder in the root.\n  * Install the package using the following command `pip install my_package --target ./site-packages`. Note that you need to have a Python installation in your OS including pip.\n* Commit the changes.\n* Change the `python.wasm.runtime` setting to point to your GitHub repository. For example:\n\n  ```json\n  {\n    \"python.wasm.runtime\": \"https://github.com/dbaeumer/python-3.11.0\"\n  }\n  ```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/python-web.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/python/python-web.md"
 }

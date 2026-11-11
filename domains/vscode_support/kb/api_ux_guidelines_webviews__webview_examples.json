@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Webview examples\n\n**Simple Browser**\n\nThis extension opens a browser preview for the editor to the side.\n\n![Weview sample - Browser](images/examples/webview-browser.png)\n\n*This example shows VS Code Web being developed right inside VS Code. A Webview panel is used to render a browser-like window.*\n\n**Pull Request**\n\nThis extension shows pull requests for the repository of the workspace in a custom tree view and then uses a webview for a detail view of the pull request.\n\n![Webview sample - Pull Request](images/examples/webview-pull-request.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/webviews.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/ux-guidelines/webviews.md"
 }

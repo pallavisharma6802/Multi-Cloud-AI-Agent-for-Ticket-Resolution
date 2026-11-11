@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Languages\n\n### JS/TS Chat Features extension (Preview)\n\n**Setting**: `setting(jsts-chat-features.skills.enabled:true)`\n\nThe new builtin JS/TS Chat Features extension enhances Copilot's skills to work with TypeScript and JavaScript. For this first release, the extension contributes skills for setting up modern TypeScript projects. We plan to enhance and expand its functionality in a future release.\n\nTo try these skills today, enable the `setting(jsts-chat-features.skills.enabled:true)` setting.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_116.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_116.md"
 }

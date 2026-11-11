@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Feedback and Support\n\nCreate issues in our [GitHub repository](https://github.com/microsoft/vscode-dev-azure) as you find them while using vscode.dev/azure. The more detail the better. If possible, include logs from the \"{% data variables.product.prodname_vscode_shortname %} for the Web - Azure\" output channel.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/vscodeforweb.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/azure/vscodeforweb.md"
 }

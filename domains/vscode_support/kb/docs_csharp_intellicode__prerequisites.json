@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Prerequisites\n\nIn order to use this extension, you must have both the C# Dev Kit and .NET 6 installed and enabled on your machine. This extension supports the following platforms and operating systems:\n\n* **Windows**: x64 and ARM\n  * x64 & ARM tested on Windows 11 22H2\n* **macOS**: x64 and ARM.\n  * x64 tested on OS X Monterey v12.6.5\n  * ARM tested on OS X v PENDING\n* **Linux**: x64 and ARM.\n  * x64 Tested on Ubuntu 22.04",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/intellicode.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/intellicode.md"
 }

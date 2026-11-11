@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## What you built\n\nYou built a working URL shortener through agent-first development.\n\n* Model picker with high thinking effort for a multi-file project.\n* Plan agent to outline architecture before coding.\n* Autopilot to build the application without interruptions.\n* Agent Debug Logs to inspect what happened.\n* Context window indicator to monitor budget.\n* Files changed view to review and accept edits.\n* Follow-up prompts to extend the app.\n* Fork to branch into a test suite without losing feature work.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/build-your-first-app-with-agent-mode.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundations/build-your-first-app-with-agent-mode.md"
 }

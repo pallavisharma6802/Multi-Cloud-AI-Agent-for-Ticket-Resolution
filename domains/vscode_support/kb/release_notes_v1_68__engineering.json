@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Engineering\n\n### Using pull requests\n\nWe have moved away from pushing changes directly to the vscode repository `main` branch and are now pushing all changes to VS Code exclusively using pull requests (PR). We require that each PR gets at least one approval from another team member. Taking advantage of this, we now also require that some basic checks pass before a PR can be merged. These are tasks like TypeScript compilation, formatting rules, unit tests and integration tests, which typically don't take longer than 10 minutes. Switching to this flow has reduced the number of times our Insiders build was broken due to a programming mistake.\n\n### VS Code OSS build\n\nWe have a new public [Code OSS build](https://dev.azure.com/vscode/VSCode/_build?definitionId=46&_a=summary) that is reusing the same build definitions as our production builds. This build now runs in under 30 minutes on each PR and we plan to continue investing in speeding it up.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_68.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_68.md"
 }

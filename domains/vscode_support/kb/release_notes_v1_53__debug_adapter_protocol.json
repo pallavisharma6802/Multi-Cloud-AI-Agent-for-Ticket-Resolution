@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Debug Adapter Protocol\n\n**Value dataBreakpoint from VariablePresentationHint.kind is deprecated**\n\nCurrently, we can detect whether an object has a data breakpoint by checking for the `dataBreakpoint` kind from `VariablePresentationHint`. However, the variable `kind` is generally used to identify the actual type of the object - that is, if it's an interface, a method, or a derived class. Data breakpoint tracking, which is used for UI purposes, should be declared as an `attribute` instead, since that can be set alongside other attributes and variable kinds.\n\nSo, we have deprecated the value `dataBreakpoint` from the `kind` property of the `VariablePresentationHint` and added a new value `hasDataBreakpoint` for the `attribute` property of the `VariablePresentationHint`.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_53.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_53.md"
 }

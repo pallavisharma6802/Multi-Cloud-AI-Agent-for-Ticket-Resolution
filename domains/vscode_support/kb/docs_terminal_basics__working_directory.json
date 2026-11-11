@@ -4,5 +4,5 @@
   "category": "TERMINAL",
   "intent": "terminal",
   "content": "## Working directory\n\nBy default, the terminal will open at the folder that is opened in the Explorer. The `setting(terminal.integrated.cwd)` setting allows specifying a custom path to open instead:\n\n```json\n{\n    \"terminal.integrated.cwd\": \"/home/user\"\n}\n```\n\nSplit terminals on Windows will start in the directory that the parent terminal started with. On macOS and Linux, split terminals will inherit the current working directory of the parent terminal. This behavior can be changed using the `setting(terminal.integrated.splitCwd)` setting:\n\n```json\n{\n    \"terminal.integrated.splitCwd\": \"workspaceRoot\"\n}\n```\n\nThere are also extensions available that give more options such as [Terminal Here](https://marketplace.visualstudio.com/items?itemName=Tyriar.vscode-terminal-here).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/basics.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/terminal/basics.md"
 }

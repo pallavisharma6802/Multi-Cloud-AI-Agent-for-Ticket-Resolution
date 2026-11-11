@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Move user agents and instructions\n\nThe Copilot harness does not read custom agents and instructions stored in {% data variables.product.prodname_vscode_shortname %} profile user data. User customization migration copies agents to `~/.copilot/agents` and instructions to `~/.copilot/instructions` without changing their names, types, or contents.\n\nTo move user customizations:\n\n1. Expand **User Data** under **Your profile**.\n1. Select the custom agents and instructions to move.\n1. Review the user destination shown for the group.\n1. Select **Migrate**.\n\nThe migrated files are not included in [Settings Sync](/docs/configure/settings-sync.md).\n\nAfter migration, start a Copilot harness session and verify that the agents and instructions are available. See [custom agent locations](/docs/agents/reference/custom-agent-file-reference.md#custom-agent-file-locations) and [instruction file locations](/docs/agents/reference/custom-instructions-reference.md#user-instructions) for the supported destinations.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/migrate-customizations.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/migrate-customizations.md"
 }

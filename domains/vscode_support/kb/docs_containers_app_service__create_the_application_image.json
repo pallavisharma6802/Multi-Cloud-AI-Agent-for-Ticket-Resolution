@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Create the application image\n\nIf you already have an image, skip this step and proceed to [Push the image to a container registry](#push-the-image-to-a-container-registry) step.\n\n1. Open the application folder in {% data variables.product.prodname_vscode_shortname %}.\n\n2. Open Command Palette (`kb(workbench.action.showCommands)`) and use **Container Images: Build Image...** command to build the image.\n\n    ![Build container image](images/app-service/command-build-image.png)\n\n    You can find the image name in the output of the Build Image command, the same can be found in the Images pane of the Container Explorer.\n\n    ![Build image output](images/app-service/terminal-output-build-image.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/app-service.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/containers/app-service.md"
 }

@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# Azure Machine Learning in {% data variables.product.prodname_vscode_shortname %}\n\nAzure Machine Learning is a cloud-based environment you can use to train, deploy, automate, manage, and track machine learning models. For more information on Azure Machine Learning, see [What is Azure Machine Learning?](https://learn.microsoft.com/azure/machine-learning/overview-what-is-azure-machine-learning)\n\nThe [Azure Machine Learning](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vscode-ai) {% data variables.product.prodname_vscode_shortname %} extension lets you use the features you're used to in {% data variables.product.prodname_vscode %} for developing your machine learning applications.\n\n![Azure Machine Learning {% data variables.product.prodname_vscode %} extension view](images/azure-machine-learning/azure-machine-learning-vscode-extension.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/azure-machine-learning.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/datascience/azure-machine-learning.md"
 }

@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Are these Java extensions open source?\n\nYes. All the [Java Extensions](/docs/java/extensions.md) provided by Red Hat, Microsoft, and VMware are open source, as well as most extensions supported by the community. You can find their corresponding repositories on GitHub from the Marketplace pages.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-faq.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-faq.md"
 }

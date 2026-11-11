@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Output channel for telemetry events\n\nTo review the telemetry events in {% data variables.product.prodname_vscode_shortname %} as they are sent, run the **Developer: Show Telemetry** command from the Command Palette (`kb(workbench.action.showTelemetry)`). This command enables tracing for telemetry events and opens the **Telemetry** output channel in the Output panel (`kb(workbench.action.output.toggleOutput)`). As telemetry events are sent, the output channel shows the event details.\n\n![output panel log telemetry](images/telemetry/output-log-telemetry.png)\n\nWhen tracing telemetry events, the events are also logged to a local file `telemetry.log`, which you can view using the **Developer: Open Log...** command and choosing **Telemetry** from the dropdown.\n\n![open telemetry log file](images/telemetry/open-telemetry-log.png)\n\nTo disable tracing telemetry events, reload the {% data variables.product.prodname_vscode_shortname %} window (**Developer: Reload Window** command).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/telemetry.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/telemetry.md"
 }

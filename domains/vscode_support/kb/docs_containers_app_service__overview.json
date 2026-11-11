@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "# Deploy a containerized app to Azure\n\nIn this guide you will learn how to:\n\n- Create a container image for your application.\n- Push the image to a container registry.\n- Deploy the image to Azure App Service or Azure Container Apps.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/app-service.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/containers/app-service.md"
 }

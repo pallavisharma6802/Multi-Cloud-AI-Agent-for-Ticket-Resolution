@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Inline method\n\n**What:** Inline method refactoring.\n\n**When:** You want to replace usages of a static, instance, and extension method within a single statement body with an option to remove the original method declaration.\n\n**Why:** This refactoring provides a clearer syntax.\n\n**How-to:**\n\n1. Place your caret on the usage of the method.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select from one of the following options:\n\nSelect **Inline &lt;QualifiedMethodName&gt;** to remove the inline method declaration:\n\n![Inline method example](images/refactoring/inline-method.png)\n\nSelect **Inline and keep &lt;QualifiedMethodName&gt;** to preserve the original method declaration:\n\n![Inline and keep method example](images/refactoring/inline-method-keep.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/refactoring.md"
 }

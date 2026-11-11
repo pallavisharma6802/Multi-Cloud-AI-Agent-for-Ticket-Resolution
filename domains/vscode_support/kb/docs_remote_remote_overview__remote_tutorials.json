@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Remote tutorials\n\nThe tutorials below will walk you through running {% data variables.product.prodname_vscode %} with the Remote Development extensions.\n\nTutorial | Description\n--- | ---\n[Remote via SSH](/docs/remote/ssh-tutorial.md) | Connect to remote and virtual machines with {% data variables.product.prodname_vscode %} via SSH.\n[Work in WSL](/docs/remote/wsl-tutorial.md) | Run {% data variables.product.prodname_vscode %} in Windows Subsystem for Linux.\n[Develop in Containers](/docs/devcontainers/tutorial.md) | Run {% data variables.product.prodname_vscode %} in a Docker Container.\n[GitHub Codespaces](https://docs.github.com/github/developing-online-with-codespaces/using-codespaces-in-visual-studio-code) | Connect to a codespace with {% data variables.product.prodname_vscode %}.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/remote-overview.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/remote/remote-overview.md"
 }

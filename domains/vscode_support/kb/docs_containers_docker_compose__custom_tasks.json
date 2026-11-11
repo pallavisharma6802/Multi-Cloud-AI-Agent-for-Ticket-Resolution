@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Custom tasks\n\nRather than use command customization, you can also define a task like the following to invoke a `docker-compose` command. Please refer [custom task](/docs/debugtest/tasks.md#custom-tasks) for more detail on this option.\n\n```json\n{\n    \"type\": \"shell\",\n    \"label\": \"compose-up-dev\",\n    \"command\": \"docker-compose -f docker-compose.yml -f docker-compose.Common.yml -f docker-compose.dev.yml up -d --build\",\n    \"presentation\": {\n        \"reveal\": \"always\",\n        \"panel\": \"new\"\n    }\n}\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/docker-compose.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/containers/docker-compose.md"
 }

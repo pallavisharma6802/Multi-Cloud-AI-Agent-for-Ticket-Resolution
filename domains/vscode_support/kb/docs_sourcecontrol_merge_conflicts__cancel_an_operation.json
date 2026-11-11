@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "## Cancel an operation\n\nTo abandon the operation rather than resolve its conflicts, open the Command Palette (`kb(workbench.action.showCommands)`) and choose the matching command:\n\n* **Git: Abort Merge** for a merge.\n* **Git: Abort Rebase** for a rebase.\n* **Git: Abort Cherry Pick** for a cherry-pick.\n\n> [!CAUTION]\n> Aborting removes the conflict-resolution work for that operation. Copy any edits you want to keep first. Git attempts to restore the pre-operation state, but might not be able to reconstruct uncommitted changes that existed before the operation.\n\nThese abort commands do not undo a stash restore. For stashed changes, inspect the working files and stash list before using [undo or discard actions](/docs/sourcecontrol/staging-commits.md#undo-or-discard-changes).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/merge-conflicts.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/merge-conflicts.md"
 }

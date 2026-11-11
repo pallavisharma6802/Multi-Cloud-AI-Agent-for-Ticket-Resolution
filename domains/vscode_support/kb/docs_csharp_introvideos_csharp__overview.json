@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# Introductory Videos for C# in {% data variables.product.prodname_vscode_shortname %}\n\nGet started with C# in {% data variables.product.prodname_vscode %} by watching these introductory videos! These videos are designed to help you set up [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) and build and debug C# projects in {% data variables.product.prodname_vscode_shortname %}. After watching these quick tutorials, you'll be able to enjoy {% data variables.product.prodname_vscode_shortname %}'s rich C# feature set.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/introvideos-csharp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/introvideos-csharp.md"
 }

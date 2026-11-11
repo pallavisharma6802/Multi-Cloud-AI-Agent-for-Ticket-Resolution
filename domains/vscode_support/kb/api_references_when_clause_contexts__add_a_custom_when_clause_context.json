@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Add a custom when clause context\n\nIf you are authoring your own VS Code extension and need to enable/disable commands, menus, or views using a when clause context and none of the existing keys suit your needs, you can add your own context key with the `setContext` command.\n\nThe first example below sets the key `myExtension.showMyCommand` to true, which you can use in enablement of commands or with the `when` property. The second example stores a value that you could use with a when clause to check if the number of cool open things is greater than 2.\n\n```js\nvscode.commands.executeCommand('setContext', 'myExtension.showMyCommand', true);\n\nvscode.commands.executeCommand('setContext', 'myExtension.numberOfCoolOpenThings', 4);\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/when-clause-contexts.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/when-clause-contexts.md"
 }

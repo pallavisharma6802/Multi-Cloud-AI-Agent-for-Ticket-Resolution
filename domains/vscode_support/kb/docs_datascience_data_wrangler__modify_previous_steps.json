@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Modify previous steps\n\nEach step of the generated code can be modified through the **Cleaning Steps** panel. First, select the step you want to modify. Then, as you make changes to the operation (either via code or the operation panel), the effects of your changes on the data are highlighted in the grid view.\n\n![a screenshot showing how to modify previous steps](images/data-wrangler/update-previous-step.gif)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/data-wrangler.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/datascience/data-wrangler.md"
 }

@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Learn more\n\n- [Customize AI in Visual Studio Code](https://code.visualstudio.com/docs/agent-customization/overview)\n- [Use custom instructions in VS Code](https://code.visualstudio.com/docs/agent-customization/custom-instructions)\n- [Community contributed customization features](https://github.com/github/awesome-copilot)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/2-instructions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/2-instructions.md"
 }

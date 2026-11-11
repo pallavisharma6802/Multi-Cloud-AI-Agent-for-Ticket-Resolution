@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Next steps\n\n* [Use chat in {% data variables.product.prodname_vscode_shortname %}](/docs/chat/chat-overview.md) - send and steer requests, add context, and navigate conversations.\n* [Manage agent sessions](/docs/agents/run/sessions/manage-sessions.md) - organize, fork, archive, and export sessions.\n* [Review AI-generated code edits](/docs/agents/run/review-code-edits.md) - inspect, revise, and integrate agent changes.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/agents-window.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/agents-window.md"
 }

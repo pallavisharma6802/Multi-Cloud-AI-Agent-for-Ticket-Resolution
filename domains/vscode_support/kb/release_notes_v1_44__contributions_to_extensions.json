@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Contributions to extensions\n\n### Remote Development\n\nWork continues on the [Remote Development extensions](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack), which allow you to use a container, remote machine, or the [Windows Subsystem for Linux](https://learn.microsoft.com/windows/wsl) (WSL) as a full-featured development environment.\n\nFeature highlights in 1.44 include:\n\n* Dev Containers: Check out a PR directly into a container.\n* Dev Containers: Kubernetes container attach support.\n* Dev Containers: Experimental WSL 2 Docker engine support.\n\nYou can learn about new extension features and bug fixes in the [Remote Development release notes](https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_44.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_44.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_44.md"
 }

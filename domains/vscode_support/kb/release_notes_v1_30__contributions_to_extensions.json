@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Contributions to Extensions\n\nOur team maintains or contributes to a number of VS Code extensions. Most notably this month:\n\n### GitHub Pull Requests\n\nThis milestone we worked on improvements to the [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) extension.\n\nBelow are some of the new features:\n\n* Create pull requests directly from your local branch.\n* Suggest a series of source code changes on a checked out pull request.\n* View status check information on the pull request description page.\n\nYou can read the full release notes for the extension at [vscode-pull-request-github releases](https://github.com/microsoft/vscode-pull-request-github/releases).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_30.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_30.md"
 }

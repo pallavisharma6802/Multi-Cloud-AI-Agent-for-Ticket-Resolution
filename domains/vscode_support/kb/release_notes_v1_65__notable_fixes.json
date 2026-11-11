@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable fixes\n\n* [107748](https://github.com/microsoft/vscode/issues/107748) Voice over does not read that a setting is ignored to sync\n* [123399](https://github.com/microsoft/vscode/issues/123399) Emmet doesn't add the class with tag A in jsx and html files.\n* [141680](https://github.com/microsoft/vscode/issues/141680) Searching for @tags in settings is slow\n* [141977](https://github.com/microsoft/vscode/issues/141977) Settings editor: Folder action item not handling keyup properly\n* [142040](https://github.com/microsoft/vscode/issues/142040) Improve Install Another Version action for extensions supporting pre-release.\n* [142462](https://github.com/microsoft/vscode/issues/142462) File writes can hang when write locks are not cleared up\n* [142641](https://github.com/microsoft/vscode/issues/142641) ts-node debugger not working properly in v1.64",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_65.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_65.md"
 }

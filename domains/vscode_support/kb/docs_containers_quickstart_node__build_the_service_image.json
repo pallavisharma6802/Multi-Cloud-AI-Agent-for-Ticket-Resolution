@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Build the service image\n\n1. Open the Command Palette (`kb(workbench.action.showCommands)`) and select the **Container Images: Build Image...** command.\n1. Open the Container Explorer and verify that the new image is visible in the Images view:\n\n   ![Verify Docker image exists](images/quickstarts/node-verify-image-dark.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/quickstart-node.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/containers/quickstart-node.md"
 }

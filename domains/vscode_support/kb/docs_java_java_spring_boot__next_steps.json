@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Next steps\n\n* [Java Spring profile template](/docs/configure/profiles.md#java-spring-profile-template) - Create a new [profile](/docs/configure/profiles) with a curated set of extensions, settings, and snippets.\n* To deploy your web app, see [Java Web Apps with {% data variables.product.prodname_vscode_shortname %}](/docs/java/java-webapp.md).\n* To containerize a web app and deploy as a Docker container, check out [Docker in {% data variables.product.prodname_vscode_shortname %}](/docs/containers/overview.md).\n* To learn more about Java debugging features, see [Running and debugging Java](/docs/java/java-debugging.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-spring-boot.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-spring-boot.md"
 }

@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Create a new Swift project\n\nTo create a new Swift project, you can use the `Swift: Create New Project...` command in\nthe Swift extension to guide you through the process. You can find this command by opening\nthe Command Palette and following the instructions below.\n\n- For macOS: `kbstyle(CMD+Shift+P)`\n- Other platforms: `kbstyle(Ctrl+Shift+P)`\n\n![Create New Project command showing available project templates](images/swift/select-project-template.png)\n\n1. Choose the type of project you'd like to create from the list of templates.\n2. Choose the directory where the project will be stored.\n3. Give your project a name.\n4. Open the newly created project. You will be prompted to open the project in\n   the current window, a new window, or add it to the current workspace. The\n   default behavior can be configured by using the\n   `swift.openAfterCreateNewProject` setting.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/swift.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/swift.md"
 }

@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Example: refactoring code\n\nA prompt file can also be used to improve code quality.\n\nFor example:\n\n- reduce bloated code\n- simplify logic\n- explain optimizations\n\nWhen executed, the AI not only updates the code but also explains what was changed and why.\n\nThis makes it easier to evaluate different models and approaches based on efficiency and clarity.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/6-prompt-files.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/6-prompt-files.md"
 }

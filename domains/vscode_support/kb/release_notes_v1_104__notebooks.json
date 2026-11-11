@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notebooks\n\n### Improved NES suggestions (Experimental)\n\n**Setting**: `setting(github.copilot.chat.notebook.enhancedNextEditSuggestions.enabled)`\n\nWe are experimenting with improving the quality of next edit suggestions for notebooks. Currently, the language model has access to the contents of the active cell when generating suggestions. With the `setting(github.copilot.chat.notebook.enhancedNextEditSuggestions.enabled)` setting enabled, the language model has access to the entire notebook, enabling it to generate more accurate and higher-quality next edit suggestions.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_104.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_104.md"
 }

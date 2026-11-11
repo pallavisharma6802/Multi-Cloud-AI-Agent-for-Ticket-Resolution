@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Languages - JavaScript Linting as you Type\nVS Code now provides support for [ESlint](https://eslint.org/) and [JSHint](https://jshint.com/). If enabled, the JavaScript code is validated as you type and reported problems can be navigated to and fixed inside VS Code.\n\nTo enable one of the linters do the following:\n\n* Install the corresponding linter globally or inside the workspace folder that contains the JavaScript code to be validated. For example using the command lines: `npm install eslint --save-dev` or `npm install jshint --save-dev`, respectively.\n* Enable eslint or jshint via the corresponding VS Code settings `\"eslint.enable\": true` or `\"jshint.enable\": true`, respectively.\n* Optionally disable VS Code's built-in JavaScript validation via the setting `\"javascript.validate.enable\": false`.\n\nTry it out by opening a JavaScript file and adding a problem that should be detected by the enabled linter. VS Code shows problems inside the editor and in the status bar.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_8_0.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v0_8_0.md"
 }

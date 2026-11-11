@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [Use tools with agents](/docs/agents/run/tools.md)\n* [Manage approvals and permissions](/docs/agents/run/approvals.md)\n* [Add MCP servers](/docs/agent-customization/mcp-servers.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/tools.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/concepts/tools.md"
 }

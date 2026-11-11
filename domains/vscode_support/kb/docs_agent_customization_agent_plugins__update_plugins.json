@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Update plugins\n\nIn the Agent Customizations editor, select **Plugins**, then select **Check for and Apply Updates** (the refresh icon) next to an installed-plugin group. Alternatively, run **Chat: Update Plugins** from the Command Palette.\n\nUpdating pulls down changes from cloned marketplace repositories and checks for new versions of externally sourced plugins.\n\nPlugins can also update automatically when `setting(extensions.autoUpdate)` is enabled. Plugins sourced from npm or PyPI never update automatically. Use the update action in the Agent Customizations editor and review the confirmation prompt before the install command runs.\n\nConsider this update behavior when deciding whether to trust a plugin. Review changes to its bundled tools, hooks, and setup requirements when adopting an update. Disable a plugin you no longer trust rather than leaving its components available.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/agent-plugins.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/agent-plugins.md"
 }

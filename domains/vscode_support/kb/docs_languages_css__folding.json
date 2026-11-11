@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Folding\n\nYou can fold regions of source code using the folding icons on the gutter between line numbers and line start. Folding regions are available for all declarations (for example, rule declarations) and for multiline comments in the source code.\n\nAdditionally you can use the following region markers to define a folding region:\n`/*#region*/` and `/*#endregion*/` in CSS/SCSS/Less or `// #region` and `// #endregion` In SCSS/Less.\n\nIf you prefer to switch to indentation based folding for CSS, Less and SCSS, use:\n\n```json\n\"[css]\": {\n    \"editor.foldingStrategy\": \"indentation\"\n},\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/css.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/css.md"
 }

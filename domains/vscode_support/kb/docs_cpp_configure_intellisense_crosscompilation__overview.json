@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# IntelliSense for cross-compiling\n\nThis article is about configuring the C/C++ extension to provide proper IntelliSense (e.g. code completions) in {% data variables.product.prodname_vscode %} when you compile for a different architecture than your development host machine. For example, when your host machine is x64 but you are compiling for Arm.\n\nThe C/C++ extension isn't a compiler -- it provides rich language features such as syntax highlighting and IntelliSense. For the extension to provide correct IntelliSense suggestions and to reflect the right sizes of data types, you need to configure the C++ extension to emulate the target architecture.\n\nThese configuration settings are stored in your project's `c_cpp_properties.json` file. To edit this file, in {% data variables.product.prodname_vscode_shortname %}, select **C/C++: Edit Configurations (UI)** from the Command Palette (`kb(workbench.action.showCommands)`):\n\n![Command Palette](images/cpp/command-palette.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/configure-intellisense-crosscompilation.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/configure-intellisense-crosscompilation.md"
 }

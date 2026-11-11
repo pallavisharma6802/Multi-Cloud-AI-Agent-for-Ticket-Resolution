@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Terminal\n\n### Automatic shell integration for fish shell\n\n[Shell integration](https://code.visualstudio.com/docs/terminal/shell-integration) and its enhanced user experience will now automatically activate for fish shell. You may need to update fish for this to work.\n\n![Shell integration in fish enables several features](images/1_79/terminal-fish-si.png)\n\n### Overline support\n\nThe overline escape sequences (`SGR 53`, `SGR 55`) specified in ECMA-48 are now supported in the terminal. The most common use of this sequence is to add a line above an app's \"status bar\" on the bottom row of the terminal.\n\n![The overline feature is similar to underline but will draw a line on top of the text](images/1_79/terminal-overline.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_79.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_79.md"
 }

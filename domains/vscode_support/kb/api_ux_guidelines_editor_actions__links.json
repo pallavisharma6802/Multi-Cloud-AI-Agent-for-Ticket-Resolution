@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Links\n\n* [Custom Editor extension guide](/api/extension-guides/custom-editors)\n* [Custom Editor API reference](/api/references/contribution-points#contributes.customEditors)\n* [Custom Editor extension sample](https://github.com/microsoft/vscode-extension-samples/tree/main/custom-editor-sample)\n* [Webview extension guide](/api/extension-guides/webview)\n* [Webview extension sample](https://github.com/microsoft/vscode-extension-samples/blob/main/webview-sample)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/editor-actions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/ux-guidelines/editor-actions.md"
 }

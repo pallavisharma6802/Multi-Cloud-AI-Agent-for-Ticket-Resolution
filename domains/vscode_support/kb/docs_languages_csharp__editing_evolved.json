@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Editing Evolved\n\nThere is a lot to discover with C# and the editor, such as format on type, IntelliSense, the rename-refactoring, etc.\n\n![Right-click Menu](images/csharp/editingevolved.png)\n\nFor more information on the C# Dev Kit editing features, go to the [Navigate and Edit documentation](/docs/csharp/navigate-edit.md). For a full description of {% data variables.product.prodname_vscode_shortname %} editing features, go to the [Basic Editing](/docs/editing/codebasics.md) and [Code Navigation](/docs/editing/editingevolved.md) documentation.\n\nHere are a few highlights...",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/csharp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/csharp.md"
 }

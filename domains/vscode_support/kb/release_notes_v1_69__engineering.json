@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Engineering\n\n### Electron 18 update\n\nIn this milestone, we finished the exploration to bundle Electron 18 into VS Code desktop and we want to thank everyone involved with self-hosting on Insiders. This update comes with Chromium `100.0.4896.160` and Node.js `16.13.2`.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_69.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_69.md"
 }

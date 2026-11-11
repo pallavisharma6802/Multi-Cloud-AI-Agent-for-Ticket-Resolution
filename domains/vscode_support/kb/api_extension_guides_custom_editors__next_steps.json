@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Next steps\n\nIf you'd like to learn more about VS Code extensibility, try these topics:\n\n- [Extension API](/api) - Learn about the full VS Code Extension API.\n- [Extension Capabilities](/api/extension-capabilities/overview) - Take a look at other ways to extend VS Code.\n\n[sample]: https://github.com/microsoft/vscode-extension-samples/tree/main/custom-editor-sample",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/custom-editors.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-guides/custom-editors.md"
 }

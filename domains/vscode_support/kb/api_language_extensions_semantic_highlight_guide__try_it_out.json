@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Try it out\n\nWe have a [Semantic Tokens sample](https://github.com/microsoft/vscode-extension-samples/tree/main/semantic-tokens-sample) that illustrates how to create a semantic token provider.\n\nThe [scope inspector](/api/language-extensions/syntax-highlight-guide#scope-inspector) tool allows you to explore what semantic tokens are present in a source file and what theme rules they match to. To see semantic token, use a built-in theme (for example, Dark+) on a TypeScript file.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/language-extensions/semantic-highlight-guide.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/language-extensions/semantic-highlight-guide.md"
 }

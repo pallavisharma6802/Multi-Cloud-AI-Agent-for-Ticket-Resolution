@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Sync user prompt files across devices\n\n{% data variables.product.prodname_vscode_shortname %} can sync your user prompt files across multiple devices by using [Settings Sync](/docs/configure/settings-sync.md).\n\nTo sync your user prompt files, enable Settings Sync and run **Settings Sync: Configure** from the Command Palette (`kb(workbench.action.showCommands)`). Select **Prompts and Instructions** from the list of settings to sync.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/prompt-files.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/prompt-files.md"
 }

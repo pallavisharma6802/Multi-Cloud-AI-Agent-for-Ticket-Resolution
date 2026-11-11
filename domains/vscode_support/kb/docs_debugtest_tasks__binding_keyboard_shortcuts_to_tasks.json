@@ -4,5 +4,5 @@
   "category": "DEBUGGING",
   "intent": "debugging",
   "content": "## Binding keyboard shortcuts to tasks\n\nIf you need to run a task frequently, you can define a keyboard shortcut for the task.\n\nFor example, to bind `Ctrl+H` to the **Run tests** task from above, add the following to your `keybindings.json` file:\n\n```json\n{\n    \"key\": \"ctrl+h\",\n    \"command\": \"workbench.action.tasks.runTask\",\n    \"args\": \"Run tests\"\n}\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/tasks.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/debugtest/tasks.md"
 }

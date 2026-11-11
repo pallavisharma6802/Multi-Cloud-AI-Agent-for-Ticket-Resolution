@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## How to contribute to C# in {% data variables.product.prodname_vscode_shortname %}\n\nThis video explains about how you can contribute to a better C# experience in {% data variables.product.prodname_vscode_shortname %}.\n\n[![Watch How to Contribute to C# in {% data variables.product.prodname_vscode_shortname %} on YouTube (opens in new tab).](images/introvideos-csharp/youtube-jF9ltwBK2Wk.jpg)](https://www.youtube.com/watch?v=jF9ltwBK2Wk)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/introvideos-csharp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/introvideos-csharp.md"
 }

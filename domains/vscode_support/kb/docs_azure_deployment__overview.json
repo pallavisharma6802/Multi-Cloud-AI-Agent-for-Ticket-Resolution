@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "# Deploying Applications to Azure\n\n{% data variables.product.prodname_vscode %} makes it easy to deploy your applications to the cloud with Azure and we've created walkthroughs to help you get started.\n\nWhether you're a fullstack, backend, API developer, or DevOps engineer,  you'll find the deployment steps you need.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/deployment.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/azure/deployment.md"
 }

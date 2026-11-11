@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Core\n\n### Setting to control use of local proxy configuration\n\nThe new `setting(http.useLocalProxyConfiguration)` setting controls whether or not remote extensions use the local proxy configuration. The default is to use the local configuration for WSL and local Dev Containers and to not use it for Remote-SSH, Remote-Tunnels and remote Dev Containers. The defaults are the same as the existing behavior.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_97.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_97.md"
 }

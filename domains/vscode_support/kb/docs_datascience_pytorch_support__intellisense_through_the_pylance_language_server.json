@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## IntelliSense through the Pylance language server\n\nThe Python editing experience in {% data variables.product.prodname_vscode_shortname %}, enhanced with the power of Pylance, provides completions and other rich features for PyTorch. For the best experience, update PyTorch to 1.10.1 to get improved completions for submodules, such as nn, cuda, and optim.\n\n![Pylance support for PyTorch](images/pytorch-support/pytorch-pylance.gif)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/pytorch-support.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/datascience/pytorch-support.md"
 }

@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Use the integrated terminal\n\nThe [integrated terminal](/docs/terminal/basics.md) runs a full shell inside the workbench, so you can use the same command-line tools and workflows you use in an external terminal. New terminals start in the context of your workspace, and you can keep multiple terminals open, split them, or move them into the editor area.\n\nChoose and configure your preferred shell with [terminal profiles](/docs/terminal/profiles.md). [Shell integration](/docs/terminal/shell-integration.md) adds awareness of commands and their output for navigation, command status, and other editor features. You can also personalize the [terminal appearance](/docs/terminal/appearance.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/overview.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/getting-started/overview.md"
 }

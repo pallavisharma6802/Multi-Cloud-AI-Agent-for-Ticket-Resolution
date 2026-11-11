@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Step 2: Explore the Model Catalog\n\nModel Catalog is your central discovery surface in Foundry Toolkit. You can use it to compare models from multiple providers, check capabilities, and validate deployment constraints before you commit to a candidate.\n\nNext, let's open the catalog and see how we can reduce the candidate set to a manageable number for deeper inspection.\n\n1. Open Foundry Toolkit.\n2. Go to Developer Tools.\n3. Select Model Catalog before reviewing any specific model.\n\nNow you should see a list of models that includes multiple providers and hosting paths, something like the below image:\n\n![Model Catalog in Foundry Toolkit](../images/foundry-toolkit/ch2-model-catalog.png)\n\n**Fig 3: Model Catalog in Foundry Toolkit.**\n\nIn the next step, we will apply filters to narrow this list to a manageable set of candidates.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/2-exploring-models.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundry-toolkit-extension/2-exploring-models.md"
 }

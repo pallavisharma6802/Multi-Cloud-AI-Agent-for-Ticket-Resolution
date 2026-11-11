@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Debug chat interactions\n\nWhen an agent behaves unexpectedly, inspect the evidence from the affected chat session before changing your prompt or configuration. This article helps you select a diagnostic view, trace what happened, and verify whether a change resolves the issue.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/agent-troubleshooting/chat-debug-view.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/agent-troubleshooting/chat-debug-view.md"
 }

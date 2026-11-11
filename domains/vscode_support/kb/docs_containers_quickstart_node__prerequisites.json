@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Prerequisites\n\n- Both Docker and the {% data variables.product.prodname_vscode_shortname %} Container Tools extension must be installed as described in the [overview](/docs/containers/overview.md#installation)\n- [Node.js](https://nodejs.org/) version 10 or later",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/quickstart-node.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/containers/quickstart-node.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Debugging\n\n### Auto-expand lazy variables\n\nA couple months ago, we added support for clicking a button to expand \"lazy\" variables in the debugger Variables view. There is a new setting, `debug.autoExpandLazyVariables`, to automatically expand lazy variables without a click.\n\n### New button for lazy variables\n\nWe've updated the text link button to a real button with the \"eye\" codicon. The \"eye\" codicon was also updated to look more eye-like.\n\n![A button to expand a lazy variable](images/1_67/lazy-var-button.png)\n\n### Shift-click to disable breakpoints\n\nYou can now `Shift+Click` on a breakpoint (or conditional breakpoint, or logpoint) to disable it, and to re-enable it.\n\n<video src=\"images/1_67/disable-breakpoints.mp4\" autoplay loop controls muted title=\"Shift clicking on breakpoints to disable and re-enable them\"></video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_67.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_67.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Core\n\n### Alternate server download for extended support distros\n\nWe now have a separate server download for [extended support distros](https://aka.ms/vscode-remote/faq/old-linux) that have a dependency on glibc >= 2.17 and libstdc++ >= 3.4.19. For other distro connections, a server with a dependency of glibc >= 2.28 and libstdc++ >= 3.4.25 is downloaded.\n\n### Port forwarding in query\n\nExternal URIs that have a string that matches `host:port` in the query portion of the URI have that `port` forwarded. This is useful for URLs that include a redirect URI to a server running on `localhost` on the remote.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_88.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_88.md"
 }

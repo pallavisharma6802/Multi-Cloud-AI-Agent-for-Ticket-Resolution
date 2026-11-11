@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Learn more\n\n* [Add and manage MCP servers in VS Code](https://code.visualstudio.com/docs/copilot/customization/mcp-servers)\n* [MCP configuration reference](https://code.visualstudio.com/docs/copilot/reference/mcp-configuration)\n* [MCP sandbox configuration](https://code.visualstudio.com/docs/copilot/reference/mcp-configuration#sandbox-configuration)\n* [Use tools with agents](https://code.visualstudio.com/docs/agents/run/tools)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/2-extending-agents-with-mcp-servers.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/agents/2-extending-agents-with-mcp-servers.md"
 }

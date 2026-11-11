@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Next steps\n\nRead on to find out about:\n\n* [Configure Tasks](/docs/debugtest/tasks.md) - Dig into Tasks to help you transpile your SCSS and Less to CSS.\n* [Basic Editing](/docs/editing/codebasics.md) - Learn about the powerful {% data variables.product.prodname_vscode_shortname %} editor.\n* [Code Navigation](/docs/editing/editingevolved.md) - Move quickly through your source code.\n* [HTML](/docs/languages/html.md) - CSS is just the start, HTML is also very well supported in {% data variables.product.prodname_vscode_shortname %}.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/css.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/css.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Languages\n\n### TypeScript 5.0\n\nVS Code now ships with TypeScript 5.0.2. This major update brings new TypeScript language features, improved performance, and many important improvements and bug fixes. You can read about TypeScript 5.0 on the [TypeScript blog](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0).\n\n### Switch case completions for JavaScript and TypeScript\n\nVS Code can now help scaffold out switch statements over literal types in JavaScript or TypeScript:\n\n<video src=\"images/1_77/ts-case-completions.mp4\" placeholder=\"images/1_77/ts-case-completions.mp4\" autoplay loop controls muted title=\"Completing the cases of a switch statement\">\n    Sorry, your browser doesn't support HTML 5 video.\n</video>\n\nType `case` inside of the switch statement and accept the suggestion for `case ...`. This will automatically insert cases for all values of this type. Note that this only works when the value being switched over is a union or literal type.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_77.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_77.md"
 }

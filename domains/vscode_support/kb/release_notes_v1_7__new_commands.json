@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## New Commands\n\nKey|Command|Command id\n---|-------|----------\n`kb(workbench.action.toggleEditorGroupLayout)`|Toggle editor group layout|`workbench.action.toggleEditorGroupLayout`\n`unassigned`|Toggle Maximized Panel|`workbench.action.toggleMaximizedPanel`\nFormatting||\n`kb(editor.action.formatDocument)`|Format document|`editor.action.formatDocument`\n`kb(editor.action.formatSelection)`|Format selection|`editor.action.formatSelection`\nIntegrated Terminal||\n`kb(workbench.action.terminal.scrollToTop)`|Scroll to top|`workbench.action.terminal.scrollToTop`\n`kb(workbench.action.terminal.scrollToBottom)`|Scroll to bottom|`workbench.action.terminal.scrollToBottom`",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_7.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_7.md"
 }

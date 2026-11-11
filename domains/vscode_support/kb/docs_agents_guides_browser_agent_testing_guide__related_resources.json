@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [Use browser tools with agents](/docs/agents/run/browser-tools.md)\n* [Integrated browser](/docs/debugtest/integrated-browser.md)\n* [Core concepts of AI in {% data variables.product.prodname_vscode_shortname %}](/docs/agents/concepts/agents.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/browser-agent-testing-guide.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/browser-agent-testing-guide.md"
 }

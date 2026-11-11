@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Accessibility\n\n### Code Action accessibility signals\n\nSome code actions can take a long time to complete, for example a quick fix that calls an external service to generate image alt text. It might not be obvious when they were triggered or when they're fully applied. Therefore, we added accessibility signals to indicate that a code action was triggered or applied.\n\nYou can enable these signals with the `setting(accessibility.signals.codeActionTriggered)` and `setting(accessibility.signals.codeActionApplied)` settings.\n\n### Automatic focus management in the REPL\n\nWe introduced a new setting to improve accessibility when working in the REPL. With `setting(accessibility.replEditor.autoFocusReplExecution)`, you can now specify whether focus remains unchanged (`none`), moves to the input box (`input`), or shifts to the most recently executed cell (`lastExecution`) whenever code is executed. By default, the focus moves to the input box.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_96.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_96.md"
 }

@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "# {% data variables.product.prodname_settings_sync %}\n\n{% data variables.product.prodname_settings_sync %} keeps your {% data variables.product.prodname_vscode %} preferences consistent across devices. Use this article to turn on synchronization, choose which data to sync, restore or delete synced data, and troubleshoot synchronization and credential-storage issues.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/settings-sync.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/settings-sync.md"
 }

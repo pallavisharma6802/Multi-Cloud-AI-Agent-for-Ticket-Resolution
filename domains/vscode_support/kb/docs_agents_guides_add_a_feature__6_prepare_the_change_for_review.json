@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## 6. Prepare the change for review\n\n[Review the complete diff](/docs/agents/run/review-code-edits.md), including tests, documentation, and untracked files. Confirm that every change supports the approved feature and that no unrelated work is included.\n\nAsk the agent for a review summary:\n\n```prompt\nSummarize this change for a pull request. Explain the user-visible\nbehavior, how compatibility is preserved, and the validation performed.\nList checks that were not run and any remaining limitations. Base the\nsummary on the actual diff and command output, not only the plan.\nDo not commit or publish anything.\n```\n\nReview the summary, commit the intended changes, and open a pull request through your team's normal process. Address review feedback with the same scope and acceptance criteria, then rerun the affected checks.\n\nYou now have a feature whose implementation, tests, and review summary can be compared with an explicit set of requirements.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/add-a-feature.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/add-a-feature.md"
 }

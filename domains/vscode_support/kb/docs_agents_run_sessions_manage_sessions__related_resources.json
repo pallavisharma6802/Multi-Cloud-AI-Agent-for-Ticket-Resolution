@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [Understand sessions and chats](/docs/agents/concepts/sessions.md)\n* [Use chat to send and steer requests](/docs/chat/chat-overview.md)\n* [Delegate two tasks without mixing their changes](/docs/agents/guides/delegate-two-tasks.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/sessions/manage-sessions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/sessions/manage-sessions.md"
 }

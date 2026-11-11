@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Prerequisites\n\nBefore we install anything, let's do a quick readiness check. Most first-run friction comes from environment gaps, not product complexity.\n\nIf you validate these now, you avoid the annoying detours later.\n\n- **Visual Studio Code**: Installed and updated so extension installation and commands work as expected.\n- **Extensions access**: You can open the Extensions view and install marketplace extensions.\n- **Cloud account**: A Microsoft account and Azure subscription if you want to create Foundry resources in the cloud.\n- **GitHub Copilot**: Optional, but highly recommended if you want guided prompts and setup automation.\n\nWith that baseline in place, we can look at what Foundry Toolkit actually gives you.\n\nQuick confidence check: if you can open Extensions, install tooling, and sign in when prompted, you are already through the hardest part.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/1-get-started.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundry-toolkit-extension/1-get-started.md"
 }

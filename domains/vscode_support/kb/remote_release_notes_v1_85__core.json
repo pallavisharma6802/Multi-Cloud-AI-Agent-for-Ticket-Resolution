@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Core\n\n### Load certificates in WSL and local Dev Containers\n\nFor WSL and local Dev Containers sessions, the local machine's certificates are now also loaded for extensions running in the remote environment. This enables extensions to use HTTPS in scenarios where, for example, a self-signed certificate for development or a corporate proxy with a custom certificate authority is used.\n\n### Automatically change to `hybrid` port source\n\nThe `remote.autoForwardPortsSource` is `process` and more than 20 ports have already been auto-forwarded, the port source will automatically switch to `hybrid`. This should result in fewer cases where unneeded ports are unnecessarily forwarded.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_85.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_85.md"
 }

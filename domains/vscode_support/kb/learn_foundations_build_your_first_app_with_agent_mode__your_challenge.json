@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Your challenge\n\nCreate the URL shortener we built in this series, leverage the prompts we've used (or come up with your own!) and then extend it.\n\nIdeas:\n\n* Custom slugs so users can choose their own short codes.\n* Expiration dates that disable old links automatically.\n* An analytics page that shows the top URLs by click count.\n\nUse the plan agent to scope the work, Agent mode to build it, and check your Agent Debug Logs to understand what the agent did.\n\nWhen you finish, open the context window indicator and review the session stats so you can see how the work affected your context budget.\n\nThat's the foundation of agent-first development. Harness, model, context, tools, prompt. Five things, working together. The more you practice, the better your results get.\n\nWatch for future sections covering MCP, custom instructions and skills, and more advanced agent patterns. Happy coding!",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/build-your-first-app-with-agent-mode.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundations/build-your-first-app-with-agent-mode.md"
 }

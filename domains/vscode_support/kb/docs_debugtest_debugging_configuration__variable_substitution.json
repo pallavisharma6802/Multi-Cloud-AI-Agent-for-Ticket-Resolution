@@ -4,5 +4,5 @@
   "category": "DEBUGGING",
   "intent": "debugging",
   "content": "## Variable substitution\n\nUse variables in `launch.json` to avoid hard-coded paths and values. For example:\n\n* `${workspaceFolder}`: the path of the workspace folder.\n* `${file}`: the file in the active editor.\n* `${env:Name}`: the value of the `Name` environment variable.\n\nThe following configuration passes a workspace-relative path as one argument:\n\n```json\n{\n    \"type\": \"node\",\n    \"request\": \"launch\",\n    \"name\": \"Launch Program\",\n    \"program\": \"${workspaceFolder}/app.js\",\n    \"cwd\": \"${workspaceFolder}\",\n    \"args\": [\n        \"--input\",\n        \"${workspaceFolder}/data folder/input.txt\"\n    ]\n}\n```\n\nEach element in an array such as `args` remains one argument after variable substitution, even when the resolved value contains spaces. Do not add escaped quotes around a variable only to handle spaces.\n\nFor the full list of variables, see the [Variables reference](/docs/reference/variables-reference.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/debugging-configuration.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/debugtest/debugging-configuration.md"
 }

@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Go to Definition\n\nIf a [language](/docs/languages/overview.md) supports it, you can go to the definition of a symbol by pressing `kb(editor.action.revealDefinition)`.\n\nIf you press `kbstyle(Ctrl)` and hover over a symbol, a preview of the declaration will appear:\n\n![Ctrl Hover](images/editingevolved/ctrlhover.png)\n\n> **Tip:** You can jump to the definition with `kbstyle(Ctrl+Click)` or open the definition to the side with `kbstyle(Ctrl+Alt+Click)`.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/editingevolved.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/editingevolved.md"
 }

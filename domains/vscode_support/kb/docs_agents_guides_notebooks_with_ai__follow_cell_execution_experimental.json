@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Follow cell execution (Experimental)\n\nTo keep the cell that an agent is running in view, enable the `setting(github.copilot.chat.notebook.followCellExecution.enabled)` setting. After the agent starts to run cells, use the pin action in the notebook toolbar to pause or resume following the current execution.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/notebooks-with-ai.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/notebooks-with-ai.md"
 }

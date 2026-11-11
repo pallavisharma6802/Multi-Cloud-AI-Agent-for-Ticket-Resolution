@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [Measure local model resource usage](/docs/intelligentapps/profiling.md).\n* [Call Foundry models with the Responses API](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/generate-responses).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/models.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/models.md"
 }

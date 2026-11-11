@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Where to find them\n\nCustom instructions can easily be accessed inside the Agent Customizations view.\n\nTo access them:\n\n1. Open the Chat view (select the chat icon in the VS Code title bar).\n2. Select the Configure (gear) icon in the Chat view header.\n3. Navigate to Instructions\n\n![Screenshot of the chat icon and gear icon in the VS Code title bar](../images/shared/chat-icon-gear.png)\n\n![Screenshot of the Agent Customizations view showing the Instructions section](../images/customizations/ep-2-1-cust-ui.png)\n\nFrom here, you can view, edit, and manage all instruction files tied to your workflow.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/2-instructions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/2-instructions.md"
 }

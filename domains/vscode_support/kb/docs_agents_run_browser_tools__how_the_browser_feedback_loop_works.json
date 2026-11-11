@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## How the browser feedback loop works\n\nWhen an agent uses browser tools, it can complete and verify a web development task in a continuous loop:\n\n1. The agent changes the application code.\n1. The agent starts the development server or locates the running application.\n1. Browser tools open the application and interact with it.\n1. The agent analyzes page content, screenshots, console errors, and interaction results.\n1. The agent fixes any problems and repeats the checks.\n\nThe agent reports what it tested and the result. Review its code changes and verification results before you keep the changes.\n\n![Diagram showing the browser feedback loop](../images/browser-tools/browser-feedback-loop.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/browser-tools.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/browser-tools.md"
 }

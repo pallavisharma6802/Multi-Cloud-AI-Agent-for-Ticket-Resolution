@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## @-mentions\n\nChat participants invoked with `@name` are deprecated and are not supported in the Copilot harness. They remain available for Local harness compatibility.\n\nAsk Copilot directly about your code, terminal output, or editor settings and attach the relevant context. For domain-specific integrations, use plugins with skills and MCP tools, or extension tools when editor context is required. See [Replace chat participants](/docs/agent-customization/migrate-customizations.md#replace-chat-participants).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/chat/copilot-chat-context.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/chat/copilot-chat-context.md"
 }

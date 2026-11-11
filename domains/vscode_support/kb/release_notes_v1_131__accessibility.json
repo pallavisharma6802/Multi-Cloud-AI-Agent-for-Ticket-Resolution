@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Accessibility\n\n### More control over terminal screen reader updates\n\n**Setting**: `setting(terminal.integrated.accessibleViewPreserveCursorPosition)`\n\nScreen reader users can read terminal output at their own pace while commands continue to produce output. Set `setting(terminal.integrated.accessibleViewPreserveCursorPosition)` to `always` to preserve the cursor position in the terminal [Accessible View](https://code.visualstudio.com/docs/configure/accessibility/accessibility#_accessible-view), including when new content arrives. Existing `true` and `false` values continue to work.\n\nTerminal live updates also use a non-interrupting ARIA status announcement instead of an assertive alert. Output remains available to screen readers without repeatedly interrupting other speech.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_131.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_131.md"
 }

@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Invert conditional expressions and logical operations\n\n**What:** Lets you invert a conditional expression or a conditional `and` \\ `or` operator.\n\n**When:** You have a conditional expression or conditional `and` \\ `or` operator that would be better understood if inverted.\n\n**Why:** Inverting an expression or conditional `and` \\ `or` operator by hand can take much longer and possibly introduce errors. This code fix helps you do this refactoring automatically.\n\n**How-to:**\n\n1. Place your cursor in a conditional expression or a conditional `and` \\ `or` operator.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select **Invert conditional** or **Replace `&&` with `||`**\n\n![Invert conditional example](images/refactoring/invert-conditional.png)\n\n![Replace `&&` with `||` example](images/refactoring/replace-and-with-or.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/refactoring.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## VS Code Remote Core\n\n### Install an extension from VSIX from remote machine\n\nYou can now install an extension from a packaged VSIX that is located in the remote machine.\n\n### Remote Explorer\n\nWe generalized the SSH Explorer and moved it into VS Code core as the Remote Explorer. Remote extensions can contribute available remote targets, connection details, and help information into the Remote Explorer. The Remote Explorer will group and sort the views based on the sections they are contributing to.\n\n### Reconnect Now command\n\nPreviously, if you were disconnected from a remote session for some reason, you had to wait for a timer to count down before reconnection would occur. Now, you can run the **Reconnect Now** action to get right back to work.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_38.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_38.md"
 }

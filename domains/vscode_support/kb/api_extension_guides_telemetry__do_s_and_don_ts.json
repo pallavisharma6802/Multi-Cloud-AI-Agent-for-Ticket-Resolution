@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Do's and Don'ts\n\n\u2714\ufe0f Do\n\n* Use the [@vscode/extension-telemetry](https://www.npmjs.com/package/@vscode/extension-telemetry) npm module if using application insights works for you.\n* Otherwise, respect the `isTelemetryEnabled` and `onDidChangeTelemetryEnabled` API.\n* Tag your custom telemetry setting with `telemetry` and `usesOnlineServices` if you have one.\n* Collect as little telemetry as possible.\n* Be as transparent as possible to your users about what you collect.\n\n\u274c Don't\n\n* Introduce a custom telemetry collection solution that does not ask for user consent.\n* Collect Personally identifiable information (PII).\n* Collect more telemetry than necessary.\n* Use just the `telemetry.telemetryLevel` setting, as it can sometimes be incorrect compared to `isTelemetryEnabled`.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/telemetry.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-guides/telemetry.md"
 }

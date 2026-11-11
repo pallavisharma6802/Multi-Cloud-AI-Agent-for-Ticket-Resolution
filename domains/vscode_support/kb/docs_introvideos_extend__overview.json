@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "# Using extensions in {% data variables.product.prodname_vscode %}\n\nUse {% data variables.product.prodname_vscode %} extensions to add new features, themes and more. In this tutorial, we will show you how to find extensions, install the ones you like, and disable extensions you don't want to use all the time.\n\n[![Watch Using extensions in {% data variables.product.prodname_vscode %} on YouTube (opens in new tab).](images/extend/youtube-SKcZ3cwX8lA.jpg)](https://www.youtube.com/watch?v=SKcZ3cwX8lA)\n\nHere's the next video we recommend: [Debugging](/docs/introvideos/debugging.md)\n\nPick another video from the list: [Introductory Videos](/docs/getstarted/introvideos.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/introvideos/extend.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/introvideos/extend.md"
 }

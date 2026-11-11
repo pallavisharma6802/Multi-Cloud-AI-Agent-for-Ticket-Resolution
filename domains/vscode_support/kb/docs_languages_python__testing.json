@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Testing\n\nThe Python extension supports [testing](/docs/python/testing.md) with Python's built-in unittest framework and pytest.\n\nIn order to run tests, you must enable one of the supported testing frameworks in the settings of your project. Each framework has its own specific settings, such as arguments for identifying the paths and patterns for test discovery.\n\nOnce the tests have been discovered, {% data variables.product.prodname_vscode_shortname %} provides a variety of commands (on the Status Bar, the Command Palette, and elsewhere) to run and debug tests. These commands also allow you to run individual test files and methods",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/python.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/python.md"
 }

@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Using TextMate snippets\n\nYou can also use existing TextMate snippets (.tmSnippets) with {% data variables.product.prodname_vscode_shortname %}. See the [Using TextMate Snippets](/api/language-extensions/snippet-guide.md#using-textmate-snippets) topic in our Extension API section to learn more.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/userdefinedsnippets.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/userdefinedsnippets.md"
 }

@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Opening a project\n\nBy navigating to [https://vscode.dev](https://vscode.dev), you can create a new local file or project, work on an existing local project, or access source code repositories hosted elsewhere, such as on GitHub and Azure Repos (part of Azure DevOps).\n\nYou can create a new local file in the web just as you would in a {% data variables.product.prodname_vscode_shortname %} Desktop environment, using **File** > **New File** from the Command Palette (`kbstyle(F1)`).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/vscode-web.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/remote/vscode-web.md"
 }

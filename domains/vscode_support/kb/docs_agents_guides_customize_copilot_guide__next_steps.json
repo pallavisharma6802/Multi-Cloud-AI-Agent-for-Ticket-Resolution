@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Next steps\n\n* [Create and manage customizations](/docs/agent-customization/overview.md) from the Agent Customizations editor.\n* Add [MCP servers](/docs/agent-customization/mcp-servers.md) to connect the agent to external tools and services.\n* Set up [hooks](/docs/agent-customization/hooks.md) when an action must run at a specific point in the agent's workflow, such as before a tool runs.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/customize-copilot-guide.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/customize-copilot-guide.md"
 }

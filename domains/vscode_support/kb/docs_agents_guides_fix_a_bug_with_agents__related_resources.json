@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* Explore more ways to [test with GitHub Copilot](/docs/agents/guides/test-code-with-ai.md).\n* Review how to [inspect, revise, and revert agent changes](/docs/agents/run/review-code-edits.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/fix-a-bug-with-agents.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/fix-a-bug-with-agents.md"
 }

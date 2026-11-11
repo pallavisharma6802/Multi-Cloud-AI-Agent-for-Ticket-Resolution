@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Language Server Protocol\n\nSupport for notebooks and pull diagnostics has been moved out of the proposed state to be ready to ship the 3.17 release. New versions of the corresponding client and server libraries have been published to npm.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_67.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_67.md"
 }

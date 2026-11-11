@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Handing off to Agent mode\n\nAfter reviewing the plan, you can choose one of three options.\n\n| Option | What it does |\n| --- | --- |\n| Start Implementation | Starts the build with default approvals. |\n| Start with Autopilot | Starts the build with Autopilot. |\n| Open in Editor | Saves the plan as a file for manual reference. |\n\nFor a well-scoped plan that you already reviewed, Autopilot is often the right choice.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/build-your-first-app-with-agent-mode.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundations/build-your-first-app-with-agent-mode.md"
 }

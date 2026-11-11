@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Start with a task\n\nImagine you want the agent to explain how authentication works in a repository and then suggest one small test to add. That task needs repository context, but it probably does not need terminal access, web access, or external services at the start.\n\nUse this prompt in an agent session:\n\n```prompt\nExplain the authentication flow in this project. Find the main files involved, then suggest one focused test I should add next.\n```\n\nBefore you send it, decide which tools the agent should have. VS Code supports three kinds of tools:\n\n* Built-in tools, such as read, edit, search, execute, and web.\n* MCP tools from installed Model Context Protocol servers.\n* Extension tools contributed by VS Code extensions.\n\nThe agent selects from the enabled tools based on your prompt and context. Your job is to give it enough capability to finish the task without giving it a noisy list of unrelated options.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/1-using-tools-with-agents.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/agents/1-using-tools-with-agents.md"
 }

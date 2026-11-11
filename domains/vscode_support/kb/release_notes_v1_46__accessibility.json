@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Accessibility\n\nThis milestone we again received helpful feedback from our community, which let us identify and tackle many [accessibility issues](https://github.com/microsoft/vscode/issues?q=label%3Aaccessibility+milestone%3A%22May+2020%22+is%3Aclosed).\n\n* The Status bar now supports keyboard navigation. When focus is in the Status bar via **Focus Next Part** (`kb(workbench.action.focusNextPart)`), arrow navigation moves between Status bar entries.\n* To make it easier to start and end selection using the keyboard, there are four new commands:\n  * **Set Selection Anchor** (`kb(editor.action.setSelectionAnchor)`)\n  * **Select From Anchor to Cursor** (`kb(editor.action.selectFromAnchorToCursor)`)\n  * **Cancel Selection Anchor** (`kb(editor.action.cancelSelectionAnchor)`)\n  * **Go to Selection Anchor**\n* Activity bar entries now have a `tab` role and set the appropriate `aria-expanded` state.\n* Aria labels of editors now properly convey the following editor states: `pinned`, `preview`, and `readonly`.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_46.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_46.md"
 }

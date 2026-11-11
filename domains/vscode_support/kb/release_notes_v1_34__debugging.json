@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Debugging\n\n### debug.showSubSessionsInToolBar\n\nWe have introduced the setting `debug.showSubSessionsInToolBar` which controls whether the debug sub-sessions are shown in the debug tool bar. When this setting is false, the stop command on a sub-session will also stop the parent session. This setting default is false.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_34.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_34.md"
 }

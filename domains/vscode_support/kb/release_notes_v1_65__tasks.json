@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Tasks\n\nThere's a new platform independent `userHome` variable that you can use in tasks.\n\n```json\n{\n    \"label\": \"Test Home\",\n    \"type\": \"shell\",\n    \"command\": \"ls ${userHome}\"\n}\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_65.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_65.md"
 }

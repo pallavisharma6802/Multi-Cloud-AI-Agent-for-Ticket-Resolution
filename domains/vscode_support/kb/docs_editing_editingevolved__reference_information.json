@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Reference information\n\nSome languages like C# support inline reference information, that is updated live. This allows you to quickly analyze the impact of your edit or the popularity of your specific method or property throughout your project:\n\n![Reference information](images/editingevolved/referenceinfo.png)\n\n> **Tip:** Directly invoke the **Peek References** action by clicking on these annotations.\n\n> **Tip:** Reference information shown in CodeLens can be turned on or off through the `setting(editor.codeLens)` [setting](/docs/configure/settings.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/editingevolved.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/editingevolved.md"
 }

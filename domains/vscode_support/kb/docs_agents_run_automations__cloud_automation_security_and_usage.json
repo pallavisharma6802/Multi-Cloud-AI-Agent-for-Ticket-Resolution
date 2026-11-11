@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Cloud automation security and usage\n\nCloud automations perform unattended work with the tools you allow. Grant only the tools the task needs, use narrowly scoped prompts and event filters, and review a manual run before enabling recurring work. Don't assume that local approval or sandbox settings apply to GitHub's execution environment.\n\nAn **Only me** automation is private, but its run sessions and logs can be visible to people with repository access. Don't put secrets in prompts. Use the repository's supported secret configuration and review [GitHub automation security and safety](https://docs.github.com/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/about-automations#security-and-safety).\n\nScheduled runs, event-triggered runs, and follow-ups can consume service usage. Check [GitHub automation billing](https://docs.github.com/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/about-automations#billing) and your organization's policies before enabling frequent triggers.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/automations.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/automations.md"
 }

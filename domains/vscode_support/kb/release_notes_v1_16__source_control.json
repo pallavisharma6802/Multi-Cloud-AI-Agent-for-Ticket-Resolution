@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Source control\n\nThere is now support for having multiple source control providers simultaneously. This feature aligns with the work for  multi-root workspaces as multiple projects may have different SCM providers.\n\n![Multiple source control providers](images/1_16/scm-multiroot.png)\n\nYou can now work on multiple Git repositories at once or even mix and match with other [source control providers](https://marketplace.visualstudio.com/search?target=VSCode&category=SCM%20Providers&sortBy=Downloads), all in a single workbench window.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_16.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_16.md"
 }

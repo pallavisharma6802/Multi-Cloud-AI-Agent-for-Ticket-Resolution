@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Debugging\n\n### Debug Console messages show source location\n\nOutput messages in the Debug Console now optionally show the originating source location on the right hand side:\n\n<video src=\"images/1_17/console_messages.mp4\" title=\"Video showing Output message show their source location.\" autoplay loop controls muted></video>\n\nClicking on this origin opens the source file in the editor.\n\n**Note**: The following debuggers already support this feature:\n\n* Node.js - \"inspector\" protocol only\n* Extension Host debugging\n* [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) extension\n\nWe expect more debug extensions to adopt this feature soon.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_17.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_17.md"
 }

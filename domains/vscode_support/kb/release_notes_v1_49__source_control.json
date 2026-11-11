@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Source Control\n\n### Source Control Repositories view\n\nThe Source Control Repositories view (formerly known as Source Control Providers view) was reintroduced to allow finer grain control over which source control repositories should be visible in the Source Control view. As before, this view supports multiple selection so you can have multiple repositories visible at the same time.\n\n<video src=\"images/1_49/scm-repositories.mp4\" title=\"Video showing Source Control repository view.\" autoplay loop controls muted></video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_49.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_49.md"
 }

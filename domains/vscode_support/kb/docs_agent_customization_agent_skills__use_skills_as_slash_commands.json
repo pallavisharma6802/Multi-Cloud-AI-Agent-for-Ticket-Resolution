@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Use skills as slash commands\n\nSkills can appear as slash commands in chat and can be loaded automatically when the request matches their description. Type `/` in the chat input field to see available skills and prompts, and select a skill to invoke it. You can add context after the command, such as `/test-changes for the authentication update`.\n\nUse the `user-invocable` and `disable-model-invocation` frontmatter properties to control how each skill is accessed:\n\n| Configuration | Slash command | Auto-loaded by Copilot | Use case |\n|---|---|---|---|\n| Default (both properties omitted) | Yes | Yes | General-purpose skills |\n| `user-invocable: false` | No | Yes | Background knowledge skills that the model loads when relevant |\n| `disable-model-invocation: true` | Yes | No | Skills you only want to run on demand |\n| Both set | No | No | Disabled skills |",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/agent-skills.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/agent-skills.md"
 }

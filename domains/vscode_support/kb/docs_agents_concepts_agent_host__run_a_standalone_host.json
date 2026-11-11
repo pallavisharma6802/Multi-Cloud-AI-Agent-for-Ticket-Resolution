@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Run a standalone host\n\nTo run your own standalone Agent Host, use `code agent host`. By default, the command starts a server on localhost and protects it with a connection token. Use the `--tunnel` option to expose it through a dev tunnel.\n\n<a name=\"behavior-on-the-extension-host\"></a>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/agent-host.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/concepts/agent-host.md"
 }

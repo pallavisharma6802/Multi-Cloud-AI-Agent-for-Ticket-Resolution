@@ -4,5 +4,5 @@
   "category": "DEBUGGING",
   "intent": "debugging",
   "content": "# Integrated browser\n\nThe integrated browser enables you to open and interact with web pages directly inside {% data variables.product.prodname_vscode_shortname %}. Use it to preview web applications, test authentication flows, and comment on page elements to give agents precise feedback.\n\n![Screenshot of the integrated browser in {% data variables.product.prodname_vscode_shortname %} displaying a web page.](images/integrated-browser/integrated-browser.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/integrated-browser.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/debugtest/integrated-browser.md"
 }

@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## 1. Create a project folder\n\nStart by creating an empty folder for the quickstart app. In the next section, you open this folder in {% data variables.product.prodname_vscode_shortname %} and ask an agent to build the app.\n\nRun the following command in your terminal to create the folder:\n\n```bash\nmkdir agent-quickstart\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/quickstart.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/quickstart.md"
 }

@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Generate documentation\n\nUse AI to generate code documentation for multiple languages.\n\n1. Open your application code file.\n1. Optionally, select the code you want to document.\n1. Right-click and select **Generate Code** > **Generate Docs**.\n\n    ![Inline chat /doc example to generate documentation code comments for a calculator class](images/copilot-smart-actions/inline-chat-doc-example.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/copilot-smart-actions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/copilot-smart-actions.md"
 }

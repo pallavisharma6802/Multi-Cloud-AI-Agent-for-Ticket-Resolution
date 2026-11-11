@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Languages\n\n### CSS Variables\n\n[Variable support in CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables) is a new standards proposal currently in [draft](https://drafts.csswg.org/css-variables/) form. VS Code now supports rich code completion (IntelliSense) for CSS variables as well as Go To Definition, Peek Definition, and Find All Occurrences for variables in the same file.\n\nFor example, here we Peek (`kb(editor.action.peekDefinition)`) at the definition of `--bg-color`:\n\n![css peek definition](images/May_2016/css-peek-definition.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/May_2016.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/May_2016.md"
 }

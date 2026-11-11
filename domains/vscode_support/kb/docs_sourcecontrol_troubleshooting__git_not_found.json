@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "## Git not found\n\nIf {% data variables.product.prodname_vscode_shortname %} reports 'Git not found', it can't locate a Git executable in the environment where your repository is open.\n\n1. Run `git --version` in a terminal in that environment. For a remote workspace, check the remote environment, not only your local machine.\n\n1. If the command isn't found, follow the [Git installation prerequisites](/docs/sourcecontrol/quickstart.md#prerequisites), then restart {% data variables.product.prodname_vscode_shortname %}.\n\n1. If Git works in the terminal but not in {% data variables.product.prodname_vscode_shortname %}, check the [Git Output window](#open-the-git-output-window) for the executable paths it tried. If needed, set `setting(git.path)` to the full path of the Git executable, then restart {% data variables.product.prodname_vscode_shortname %}.\n\nWhen detection succeeds, the Git Output window shows the Git executable and version, and the Source Control view can open your repository.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/troubleshooting.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/troubleshooting.md"
 }

@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Avoid setting up Git in a container when using Docker Compose\n\nSee [Sharing Git credentials with your container](/remote/advancedcontainers/sharing-git-credentials.md) in the main containers article for information on resolving this issue.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/tips-and-tricks.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/devcontainers/tips-and-tricks.md"
 }

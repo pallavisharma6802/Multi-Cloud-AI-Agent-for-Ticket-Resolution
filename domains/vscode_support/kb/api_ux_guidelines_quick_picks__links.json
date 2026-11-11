@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Links\n\n* [Quick Pick API reference](/api/references/vscode-api#QuickPick)\n* [Quick Pick Item API reference](/api/references/vscode-api#QuickPickItem)\n* [Quick Pick extension sample](https://github.com/microsoft/vscode-extension-samples/tree/main/quickinput-sample)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/quick-picks.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/ux-guidelines/quick-picks.md"
 }

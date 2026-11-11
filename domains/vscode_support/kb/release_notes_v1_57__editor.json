@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Editor\n\n### Suggestion preview\n\nWith the new setting `editor.suggest.preview` enabled, a preview of the selected suggestion or snippet is shown at the cursor position.\n\n<video src=\"images/1_57/suggest-preview.mp4\" title=\"Video showing Suggestion preview showing smart completions for the letter 'i'.\" autoplay loop controls muted></video>\n\n*Theme: Dark+ (default dark)*\n\n### Hide deprecated suggestions\n\nThere is a new setting `editor.suggest.showDeprecated`, which defaults to `on`, but when turned `off`, suggestions will not show items that are marked as deprecated.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_57.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_57.md"
 }

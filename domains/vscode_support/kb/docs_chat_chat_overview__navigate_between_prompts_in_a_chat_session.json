@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Navigate between prompts in a chat session\n\nUse the following keyboard shortcuts to navigate between prompts in a chat session:\n\n* `kb(workbench.action.chat.previousUserPrompt)`: Go to the previous prompt in the chat session.\n* `kb(workbench.action.chat.nextUserPrompt)`: Go to the next prompt in the chat session.\n* `kb(workbench.action.chat.previousCodeBlock)`: Go to the previous code block in the chat session.\n* `kb(workbench.action.chat.nextCodeBlock)`: Go to the next code block in the chat session.\n\nTo inspect a chat response character by character or line by line with a keyboard or screen reader, run **Open Accessible View** (`kb(editor.action.accessibleView)`). Learn more about the [Accessible View](/docs/configure/accessibility/accessibility.md#accessible-view).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/chat/chat-overview.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/chat/chat-overview.md"
 }

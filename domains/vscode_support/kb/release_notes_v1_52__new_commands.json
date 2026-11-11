@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## New commands\n\n| Key                                               | Command                                       | Command ID                                    |\n| ------------------------------------------------- | --------------------------------------------- | --------------------------------------------- |\n| `kb(workbench.action.compareEditor.focusPrimarySide)`  | Focus Primary Side in Diff Editor | `workbench.action.compareEditor.focusPrimarySide`  |\n| `kb(workbench.action.compareEditor.focusSecondarySide)` | Focus Secondary Side in Diff Editor | `workbench.action.compareEditor.focusSecondarySide` |\n| `kb(workbench.action.compareEditor.focusOtherSide)` | Focus Other Side in Diff Editor | `workbench.action.compareEditor.focusOtherSide` |",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_52.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_52.md"
 }

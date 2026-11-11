@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Logging for Visual C++ debugger\n\nThe logging block for the Visual C++ debugger with its default configuration in `launch.json` is as follows:\n\n```json\n\"logging\": {\n    \"engineLogging\": false\n}\n```\n\nThe Visual C++ debugger logging will show only the communication to and from {% data variables.product.prodname_vscode_shortname %} as all communication to the debugger is done internally to the process and is not visible through logging.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/enable-logging-cpp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/enable-logging-cpp.md"
 }

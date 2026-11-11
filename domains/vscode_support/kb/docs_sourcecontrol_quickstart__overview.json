@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "# Quickstart: use source control in {% data variables.product.prodname_vscode_shortname %}\n\nCreate a small practice repository, save a file in Git history, and verify your first commit in {% data variables.product.prodname_vscode %}. You don't need a hosting account or an existing project. Publishing your work online is an optional final step.\n\n<a name=\"option-a-clone-a-repository-locally\"></a>\n\nIf you want to work on an existing project instead, [clone a repository](/docs/sourcecontrol/repos-remotes.md#clone-repositories), then follow [staging and committing changes](/docs/sourcecontrol/staging-commits.md). Choose a repository you can push to, or [fork it first](https://docs.github.com/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) if you plan to contribute changes.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/quickstart.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/quickstart.md"
 }

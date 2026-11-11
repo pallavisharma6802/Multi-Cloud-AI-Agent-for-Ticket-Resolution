@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Choosing the right session target\n\n| Situation | Best choice |\n| --- | --- |\n| Interactive, hands-on development | Local |\n| Several independent tasks in parallel | Copilot |\n| Well-scoped task to hand off as a pull request | Cloud |\n| Exploratory work where you want to stay in the loop | Local |\n| Async work to review later | Cloud |",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/agent-sessions-and-where-agents-run.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundations/agent-sessions-and-where-agents-run.md"
 }

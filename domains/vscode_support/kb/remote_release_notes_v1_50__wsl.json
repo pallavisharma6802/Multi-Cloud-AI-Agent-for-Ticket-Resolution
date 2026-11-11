@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## WSL\n\n### Inherit environment from process where `code .` is executed\n\nThe WSL window now inherits environment from the WSL shell where `code .` is executed.\n\n![Inherit Environment](images/1_50/wsl-inherit-env.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_50.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_50.md"
 }

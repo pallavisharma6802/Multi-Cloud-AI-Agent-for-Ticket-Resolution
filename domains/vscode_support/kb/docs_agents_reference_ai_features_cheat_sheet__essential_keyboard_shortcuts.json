@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Essential keyboard shortcuts\n\n| Action | Shortcut |\n|---|---|\n| Open the {% data variables.copilot.chat_view %} | `kb(workbench.action.chat.open)` |\n| Start a new chat | `kb(workbench.action.chat.newChat)` |\n| Open editor inline chat | `kb(inlineChat.start)` |\n| Open [terminal inline chat](/docs/chat/inline-chat.md#use-terminal-inline-chat) | `kb(workbench.action.terminal.chat.start)` |\n| Open [Quick Chat](/docs/chat/inline-chat.md#use-quick-chat) | `kb(workbench.action.quickchat.toggle)` |\n| Accept an inline suggestion | `kb(editor.action.inlineSuggest.commit)` |\n| Dismiss an inline suggestion | `kb(editor.action.inlineSuggest.hide)` |\n\nFor spoken interaction, see [Voice Mode](/docs/configure/accessibility/voice.md#use-voice-mode) `feature(voice-mode)` and [built-in dictation](/docs/configure/accessibility/voice.md#use-built-in-dictation) `feature(built-in-dictation)`.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/ai-features-cheat-sheet.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/reference/ai-features-cheat-sheet.md"
 }

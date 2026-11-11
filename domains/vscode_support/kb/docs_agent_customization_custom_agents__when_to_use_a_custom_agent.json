@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## When to use a custom agent\n\nCreate a custom agent when a recurring role needs its own instructions, tools, or output format. For example:\n\n* Review code against your team's criteria with reading and search tools.\n* Investigate how a feature works and return findings with file references.\n* Produce implementation plans that follow your team's required structure.\n\nYou don't need a custom agent for every task. Use the [built-in planning workflow](/docs/agents/run/planning.md) if it already meets your needs. Put project-wide conventions in [custom instructions](/docs/agent-customization/custom-instructions.md), and put one-time requirements in your prompt. For reusable workflows with supporting scripts or resources, consider an [agent skill](/docs/agent-customization/agent-skills.md).\n\nSee the [customization comparison](/docs/agents/concepts/customization.md#customization-options-at-a-glance) if you're unsure which option fits.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/custom-agents.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/custom-agents.md"
 }

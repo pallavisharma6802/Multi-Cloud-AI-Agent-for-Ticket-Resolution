@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Engineering\n\n### Playwright VS Code MCP server\n\nWe further explored using an MCP server that can control a local build of VS Code to help in the development loop for VS Code. While we had mixed results on model comprehension for parsing screenshots, orchestration for subagents using the `#executePrompt` tool (which can be enabled with `setting(github.copilot.chat.executePrompt.enabled)`) was effective at not polluting context.\n\nWe plan to explore this further in future releases, so stay tuned!\n\nTo try this MCP Server, you can find it [in the test/mcp folder](https://github.com/microsoft/vscode/tree/main/test/mcp) of the vscode repo. It's very easy to get started:\n\n1. Follow the [Contribution Guidelines](https://github.com/microsoft/vscode/wiki/How-to-Contribute) for getting a local version of Code OSS running.\n2. Use [our trivial (for now) prompt file](https://github.com/microsoft/vscode/blob/cd7de11f65cd5ff6a491f04fc013e363780bde31/.github/prompts/playwright.prompt.md) in agent mode to ask a question: `/playwright <your question here>`.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_105.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_105.md"
 }

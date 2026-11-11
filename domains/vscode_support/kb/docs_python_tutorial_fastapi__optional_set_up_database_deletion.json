@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Optional: Set up database deletion\n\nWith the data now persisted by Redis, you might want to create a script to erase all testing data. To do so, create a new file called `flushdb.py` with the following content:\n\n```python\nimport redis\n\nredis_client = redis.StrictRedis(host='0.0.0.0', port=6379, db=0, decode_responses=True)\nredis_client.flushdb()\n\n```\n\nThen when you want to reset the database, you can open the `flushdb.py` file in {% data variables.product.prodname_vscode_shortname %} and select the **Run** button on the top-right corner of the editor, or run the **Python: Run Python File in Terminal** command from the Command Palette.\n\nNote that this should be done with caution because it will delete all the keys in the current database, which could lead to data loss if done in production.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/tutorial-fastapi.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/python/tutorial-fastapi.md"
 }

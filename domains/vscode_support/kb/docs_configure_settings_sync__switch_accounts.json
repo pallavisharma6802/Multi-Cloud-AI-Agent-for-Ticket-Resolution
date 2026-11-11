@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Switch accounts\n\nTo synchronize your data with a different account, run the **Settings Sync: Turn Off** command, and then turn on {% data variables.product.prodname_settings_sync %} with the other account.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/settings-sync.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/settings-sync.md"
 }

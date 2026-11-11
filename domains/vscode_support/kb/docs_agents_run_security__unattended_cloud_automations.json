@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Unattended cloud automations\n\n[Cloud automations](/docs/agents/run/automations.md#create-an-automation) `feature(cloud-automations)` run saved tasks on GitHub when a schedule or supported repository event triggers them. Restrict their allowed tools, test the prompt with a manual run, and use event filters and **Require write access to trigger** to limit which events can start work. Local approval and sandbox settings don't configure the cloud service.\n\nKeep secrets out of automation prompts. An **Only me** automation definition is private, but its run sessions and logs can be visible to people with repository access. Review [cloud automation security and usage](/docs/agents/run/automations.md#cloud-automation-security-and-usage) before enabling unattended work.\n\nClosing the application or turning off cloud controls doesn't disable GitHub triggers. Disable the automation to prevent future runs, and use **Stop** separately to request cancellation of an active run. Neither action reverses completed changes.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/security.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/security.md"
 }

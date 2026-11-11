@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Common questions\n\n### When I try to attach to the server, I get \"cannot connect to runtime process (timeout after 5000 ms)\"?\n\nYou will see this timeout error if the server isn't running when you try to attach the debugger. The client starts the language server so make sure you have started the client in order to have a running server. You may also need to disable your client breakpoints if they are interfering with starting the server.\n\n### I have read through this guide and the [LSP Specification](https://microsoft.github.io/language-server-protocol/), but I still have unresolved questions. Where can I get help?\n\nPlease open an issue at [https://github.com/microsoft/language-server-protocol](https://github.com/microsoft/language-server-protocol).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/language-extensions/language-server-extension-guide.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/language-extensions/language-server-extension-guide.md"
 }

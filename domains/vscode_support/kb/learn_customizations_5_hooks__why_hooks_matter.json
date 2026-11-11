@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Why hooks matter\n\nHooks take automation to another level.\n\nUnlike prompts, instructions, or even skills, hooks don\u2019t require you to explicitly trigger them. They run automatically when the right conditions are met.\n\nThis changes how you work:\n\n- tasks happen in the background\n- consistency is enforced automatically\n- workflows become seamless\n\nHooks represent a shift from:\n\n**manual execution \u2192 event-driven automation**\n\nInstead of asking the AI to do something, you define when it should happen and let the system take care of it.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/5-hooks.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/5-hooks.md"
 }

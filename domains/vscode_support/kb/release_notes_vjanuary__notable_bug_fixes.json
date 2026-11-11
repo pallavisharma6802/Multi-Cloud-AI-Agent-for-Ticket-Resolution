@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable Bug Fixes\n\n* [69](https://github.com/microsoft/vscode/issues/69): Proxy support for extension gallery\n* [1032](https://github.com/microsoft/vscode/issues/1032): Please don't lock the tsconfig.json file\n* [1485](https://github.com/microsoft/vscode/issues/1485): Windows 7: Deleting always fails with error message\n* [1687](https://github.com/microsoft/vscode/issues/1687): VSC 10.6 does not allow to attach debugger to running Electron app\n* [1923](https://github.com/microsoft/vscode/issues/1923): IntelliSense filtering has become slow again in huge lists\n* [1962](https://github.com/microsoft/vscode/issues/1962): Debugger fails when offline\n\nThese are the [closed bugs](https://github.com/microsoft/vscode/issues?q=is%3Aissue+label%3Abug+milestone%3A%22Jan+2016%22+is%3Aclosed) and these are the [closed feature requests](https://github.com/microsoft/vscode/issues?q=is%3Aissue+milestone%3A%22Jan+2016%22+is%3Aclosed+label%3Afeature-request) for the January update.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vJanuary.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/vJanuary.md"
 }

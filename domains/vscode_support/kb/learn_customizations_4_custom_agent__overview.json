@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "# Introduction to custom agents\n\n[![Watch Let's Build a Custom Agent! on YouTube (opens in new tab).](images/4-custom-agent/youtube-Y7MPeZTIgqo.jpg)](https://www.youtube.com/watch?v=Y7MPeZTIgqo)\n\nAre custom agents really that powerful?\n\nShort answer: yes, but only if you understand what they actually are and how to use them properly.\n\nThis guide breaks down what custom agents are, how they work, and how to use them in a real workflow by building one from scratch.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/4-custom-agent.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/4-custom-agent.md"
 }

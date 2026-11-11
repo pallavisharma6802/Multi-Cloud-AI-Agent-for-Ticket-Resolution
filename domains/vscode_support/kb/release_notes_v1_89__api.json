@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## API\n\n### Improved support for language features in comment input editors\n\nWhen writing a new comment, VS Code creates a stripped down text editor, which is backed by a `TextDocument`, just like the main editors in VS Code are. This iteration, we've enabled some additional API features in these comment text editors. This includes:\n\n- Support for workspace edits.\n- Support for diagnostics.\n- Support for the paste-as proposed API.\n\nComment text documents can be identified by a URI that has the `comment` scheme.\n\nWe're looking forward to seeing what extensions build with this new functionality!\n\n### Finalized Window Activity API\n\nThe [window activity API](https://github.com/microsoft/vscode/issues/181569) has been finalized. This API provides a simple additional `WindowState.active` boolean that extensions can use to determine if the window has recently been interacted with.\n\n```js\nvscode.window.onDidChangeWindowState(e => console.log('Is the user active?', e.active))\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_89.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_89.md"
 }

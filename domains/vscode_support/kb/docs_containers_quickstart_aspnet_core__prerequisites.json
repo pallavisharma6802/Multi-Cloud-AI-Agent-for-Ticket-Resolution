@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Prerequisites\n\n- Docker and the {% data variables.product.prodname_vscode_shortname %} Container Tools extension must be installed as described on the [overview](/docs/containers/overview.md#installation).\n- For .NET development, install [.NET SDK](https://dotnet.microsoft.com/download).\n- Microsoft [C# for {% data variables.product.prodname_vscode %}](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) extension.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/quickstart-aspnet-core.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/containers/quickstart-aspnet-core.md"
 }

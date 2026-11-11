@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Preview Features\n\nPreview features are not ready for release but are functional enough to use. We welcome your early feedback while they are under development.\n\n### Electron 3.0 exploration\n\nDuring this milestone, we explored bundling Electron 3.0.0 into VS Code. This is a major Electron release and comes with Chrome 66 and Node.js 10.x (a major leap forward compared to our current version that has Chrome 61 and Node.js 8.x). We plan to push out the update to our Insiders users in the near future to gather additional feedback. If you are interested in helping out, make sure to install VS Code [Insiders](https://code.visualstudio.com/insiders).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_27.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_27.md"
 }

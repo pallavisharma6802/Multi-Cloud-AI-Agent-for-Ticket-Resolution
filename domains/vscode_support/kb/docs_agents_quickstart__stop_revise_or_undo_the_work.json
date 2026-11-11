@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Stop, revise, or undo the work\n\nIf you're not satisfied with the agent's actions or the results, you have several options:\n\n* **Stop or redirect the current request**: while a request is running, use the **Send** dropdown to choose **Steer with Message** or **Stop and Send**. Stopping doesn't undo actions that already completed.\n\n* **Revise the result**: send a follow-up prompt. In a diff, you can select code and provide focused feedback when the interface offers that action.\n\n* **Undo file changes from a request**: hover over an earlier request and select **Restore Checkpoint**. This restores affected workspace files and chat history. It doesn't reverse terminal commands, network requests, deployments, or changes to external services. Learn more about [reviewing and reverting agent changes](/docs/agents/run/review-code-edits.md).\n\nIf a follow-up doesn't resolve the problem, use [Get an agent back on track](/docs/agents/guides/get-agent-back-on-track.md) to choose your next recovery action.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/quickstart.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/quickstart.md"
 }

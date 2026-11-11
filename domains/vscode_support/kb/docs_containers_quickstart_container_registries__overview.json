@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "# Using container registries\n\nA container registry is a storage and content delivery system, holding named container images, available in different tagged versions.\n\nUsers can connect to container registries from the following sources:\n\n- [Azure Container Registry](https://learn.microsoft.com/azure/container-registry)\n- [Docker Hub](https://hub.docker.com/)\n- [GitHub](https://github.com) container registry\n- Any generic private registry that supports the [Docker V2 api](https://docs.docker.com/registry/spec/api/)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/quickstart-container-registries.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/containers/quickstart-container-registries.md"
 }

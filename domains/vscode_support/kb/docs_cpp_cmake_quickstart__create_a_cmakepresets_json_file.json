@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Create a CMakePresets.json file\n\nNext, continue with the CMake Quick Start to create a `CMakePresets.json` file.\n\n1. Select **Add a New Preset** and **Create from Compilers**.\n\n    The extension automatically scans for kits on your computer and creates a list of compilers found on your system.\n\n1. Select the compiler you want to use.\n\n    For example, depending on the compilers you have installed, you might see something like this:\n\n    ![Add a new preset](images/cpp/cmake-quickstart-selectkit.png)\n\n1. Enter a name for this new preset.\n\n    The name for the preset will be written to `CMakePresets.json`.\n\nAfter completing these steps, you should now have a complete hello world CMake project that contains the following files: `main.cpp`, `CMakeLists.txt`, and `CMakePresets.json`.\n\n![Add a new preset](images/cpp/cmake-quickstart-projcontents.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/cmake-quickstart.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/cmake-quickstart.md"
 }

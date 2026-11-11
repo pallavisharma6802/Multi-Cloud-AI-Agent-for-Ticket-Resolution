@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Impact on model history\n\nAfter updating, histories from the previous version are grayed out because they're outdated.\n\n![Screenshot showing that histories are outdated](../images/modelconversion/history-outdated.png)\n\nThe models and inference samples in histories are still valid to use. Or you could re-run the workflow to generate a new one. If the workflows are not changed much, it will be fast because previous results are cached.\n\nThe UX for showing the parameters may not work. In this case, you could check `olive_config.json` inside the history folder for your parameters.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/reference/UpdateModelProject.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/reference/UpdateModelProject.md"
 }

@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Go to Super Implementation\n\nYou can keep track of class implementations and overriding methods by clicking the **Go to Super Implementation** link on hover.\n\n![Spring Navigation](images/java-editing/goto-super.png)\n\n<video src=\"images/java-editing/goto-super-implementation.mp4\" autoplay loop muted playsinline controls title=\"Go to super implementation\">\n</video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-editing.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-editing.md"
 }

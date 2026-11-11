@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Example: quiz your codebase\n\nOne practical use of prompt files is learning or reviewing code.\n\nIn this example, a prompt file was created to quiz you on the currently open files in your project.\n\n![Prompt files section in the Agent Customizations view in VS Code](../images/customizations/agent-customizations.png)\nThis prompt file:\n\n- analyzes the current code context\n- generates multiple choice questions\n- helps reinforce understanding of unfamiliar code\n\nOnce created, you can trigger it directly from chat using `/quiz-open-files`.\n\n![Screenshot of the Copilot Chat view showing the /quiz-open-files prompt file triggered from chat](../images/customizations/ep-6-2-prompt-file-from-chat.png)\n\nInstead of manually writing a long prompt every time, the logic is already defined and ready to reuse.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/6-prompt-files.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/6-prompt-files.md"
 }

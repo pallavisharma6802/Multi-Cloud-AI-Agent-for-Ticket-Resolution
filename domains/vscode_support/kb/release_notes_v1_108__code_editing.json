@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Code Editing\n\n### New snippet transformations\n\nThere are two new snippet transformations available: `snakecase` and `kebabcase`. This is how you can use them:\n\nFor snake_case transformation:\n\n```text\n${TM_FILENAME/(.*)/${1:/snakecase}/}\n```\n\nThis transforms the filename to snake-case format. For example, from `MyFileName.txt` it makes `my_file_name.txt`. The kebab-case transformation would be `my-file-name.txt`.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_108.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_108.md"
 }

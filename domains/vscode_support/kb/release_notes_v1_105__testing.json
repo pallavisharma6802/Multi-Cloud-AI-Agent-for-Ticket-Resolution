@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Testing\n\n### Run tests with code coverage\n\nIf you have a testing extension installed for your code, the `runTests` tool in chat enables the agent to run tests in your codebase by using the [VS Code testing integration](https://code.visualstudio.com/docs/debugtest/testing) rather than running them from the command line.\n\nIn this release, the `runTests` tool now also reports test code coverage to the agent. This enables the agent to generate and verify tests that cover the entirety of your code.\n\n### Swap test result column\n\nYou can change the side on which the result tree is displayed in the Test Results view by using the new swap \u2194\ufe0f button in the view's title menu.\n\n![Screenshot of the Test Results view with the swap button highlighted.](images/1_105/swap-test-result-column.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_105.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_105.md"
 }

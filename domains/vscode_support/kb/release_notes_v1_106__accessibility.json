@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Accessibility\n\n### Speech timeout is disabled by default\n\nThe configuration `setting(accessibility.voice.speechTimeout)` has changed to be `0` by default. This means, a voice session no longer ends automatically after a certain delay (e.g. a Chat request would not be triggered automatically if you pause). We feel this is a better default experience, but you can always change back to the previous default (`2500`).\n\n### Chat input improvements\n\nThe chat input now announces the active agent and model in a clearer order so screen reader users hear the most relevant context first. The chat accessibility help also calls out that you can press **Delete** to remove attached context items, making attachment management fully keyboard-accessible.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_106.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_106.md"
 }

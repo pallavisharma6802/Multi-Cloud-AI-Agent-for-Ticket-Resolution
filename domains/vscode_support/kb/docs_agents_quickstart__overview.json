@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Quickstart: Complete your first task with an agent\n\nIn this quickstart, you use an AI agent in {% data variables.product.prodname_vscode %} to build a small web app from a natural-language prompt. You then review the generated code, let the agent validate the app with browser tools, and verify the result yourself.\n\n{% action-card title=\"Build a complete app with agents\" display=\"sidebar\" %}\nFollow a hands-on tutorial to build and refine an app with agents in {% data variables.product.prodname_vscode_shortname %}.\n\n* [Start agents tutorial](/docs/agents/agents-tutorial.md)\n\n{% /action-card %}",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/quickstart.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/quickstart.md"
 }

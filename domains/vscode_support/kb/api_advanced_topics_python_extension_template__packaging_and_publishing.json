@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Packaging and publishing\n\nBefore publishing your extension, you'll need to update the extension `package.json` fields (such as `publisher` and `license`) for your specific extension. You also want to update the auxiliary Markdown files (`CODE_OF_CONDUCT.md`, `CHANGELOG.md`, etc.).\n\nOnce your extension is ready to publish, there is a `nox` `build-package` task to create a `.vsix` file, which you can then upload to your extension [management page](https://marketplace.visualstudio.com/manage).\n\nIf you are new to creating and publishing VS Code extensions, we recommend you follow best practices outlined in the main VS Code [extension authoring](/api/working-with-extensions/publishing-extension#advanced-usage) topics. Here you'll find guidance to help make your extension look great on the Marketplace and how to become a verified publisher so that the users feel confident installing your extension.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/advanced-topics/python-extension-template.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/advanced-topics/python-extension-template.md"
 }

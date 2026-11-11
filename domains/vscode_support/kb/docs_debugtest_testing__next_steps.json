@@ -4,5 +4,5 @@
   "category": "DEBUGGING",
   "intent": "debugging",
   "content": "## Next steps\n\n* Get started with testing in [Python](/docs/python/testing.md), [Java](/docs/java/java-testing.md), [C#](/docs/csharp/testing.md), or [Ruby](/docs/languages/ruby.md#run-and-debug-tests)\n\n* Follow the workflow to [add and validate tests with an agent](/docs/agents/guides/test-code-with-ai.md)\n\n* Learn more about [using and configuring Tasks](/docs/debugtest/tasks.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/testing.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/debugtest/testing.md"
 }

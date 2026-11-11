@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## What other resources are there that may be able to answer my question?\n\nThe following articles may help answer your question:\n\n* [Advanced container configuration](/remote/advancedcontainers/overview.md) or [Tips and Tricks](/docs/devcontainers/tips-and-tricks.md)\n* [Dockerfile reference](https://docs.docker.com/engine/reference/builder/)\n* [Docker Compose file reference](https://docs.docker.com/compose/compose-file/)\n* [Docker Desktop for Windows troubleshooting guide](https://docs.docker.com/docker-for-windows/troubleshoot) and [FAQ](https://docs.docker.com/docker-for-windows/faqs/)\n* [Docker Desktop for Mac troubleshooting guide](https://docs.docker.com/docker-for-mac/troubleshoot) and [FAQ](https://docs.docker.com/docker-for-mac/faqs/)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/faq.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/devcontainers/faq.md"
 }

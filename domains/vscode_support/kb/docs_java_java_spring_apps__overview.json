@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# Java on Azure Spring Apps\n\n> **Note**: Azure Spring Apps is the new name for the Azure Spring Cloud service.\n\nThis tutorial shows you how to create a Java web application with {% data variables.product.prodname_vscode %}. You'll learn how to run, debug, and edit the Java web app locally and then on a fully managed Microservices platform built for Java workloads: [Azure Spring Apps](https://azure.microsoft.com/services/spring-cloud/).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-spring-apps.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-spring-apps.md"
 }

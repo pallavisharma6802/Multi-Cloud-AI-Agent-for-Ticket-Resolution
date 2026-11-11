@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Linting\n\nLinters analyze your source code and can warn you about potential problems before you run your application. The Vue ESLint plugin ([eslint-plugin-vue](https://eslint.vuejs.org/)) checks for Vue.js specific syntax errors, which are shown in the editor as red squiggles and are also displayed in the **Problems** panel (**View** > **Problems** `kb(workbench.actions.view.problems)`).\n\nBelow you can see an error when the Vue linter detects more than one root element in a template:\n\n![Vue linting](images/vuejs/vue-linting.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/vuejs-tutorial.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/nodejs/vuejs-tutorial.md"
 }

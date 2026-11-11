@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## JSON Schema Contributions\n\nExtensions can now contribute JSON schema associations. The `jsonValidation` contribution point takes a file pattern and the URL of the JSON schema.\n\n```json\n    \"contributes\": {\n        \"jsonValidation\": [{\n            \"fileMatch\": \".jshintrc\",\n            \"url\": \"https://json.schemastore.org/jshintrc\"\n        }]\n    }\n```\n\nAlternatively, extensions can also give the path to a schema file in the extension folder:\n\n```json\n    \"contributes\": {\n        \"jsonValidation\": [{\n            \"fileMatch\": \".htmlhintrc\",\n            \"url\": \"./schemas/htmlhintrc.schema.json\"\n        }]\n    }\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vDecember.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/vDecember.md"
 }

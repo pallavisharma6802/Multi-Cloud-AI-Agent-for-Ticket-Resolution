@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Tutorials\n\nGet started with C++ and {% data variables.product.prodname_vscode_shortname %} with tutorials for your environment:\n\n- [GCC on Windows via MinGW](/docs/cpp/config-mingw.md)\n- [Microsoft C++ on Windows](/docs/cpp/config-msvc.md)\n- [GCC on Linux](/docs/cpp/config-linux.md)\n- [GCC on Windows Subsystem For Linux](/docs/cpp/config-wsl.md)\n- [Clang/LLVM on macOS](/docs/cpp/config-clang-mac.md)\n- [CMake Tools on Linux](/docs/cpp/cmake-linux.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/cpp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/cpp.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Debug Adapter Protocol\n\nWe have addressed several documentation issues of the [Debug Adapter Protocol](https://microsoft.github.io/debug-adapter-protocol):\n\n* In order to disambiguate the [terminate](https://microsoft.github.io/debug-adapter-protocol/specification#Requests_Terminate) and [disconnect](https://microsoft.github.io/debug-adapter-protocol/specification#Requests_Disconnect) requests, we have improved their documentation.\n* The value `variables` has been documented for the `context` argument of the `evaluate` request. VS Code was using this undocumented value whenever the `evaluate` request was called in the context of the **VARIABLES** view. No changes are required for clients and debug adapters because the `context` argument is of type `string` and the `variables` value is only mentioned in the documentation.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_66.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_66.md"
 }

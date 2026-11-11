@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## contributes.terminal\n\nContribute a terminal profile to VS Code, allowing extensions to handle the creation of the profiles. When defined, the profile should appear when creating the terminal profile\n\n```json\n{\n  \"activationEvents\": [\n    \"onTerminalProfile:my-ext.terminal-profile\"\n  ],\n  \"contributes\": {\n    \"terminal\": {\n      \"profiles\": [\n        {\n          \"title\": \"Profile from extension\",\n          \"id\": \"my-ext.terminal-profile\"\n        }\n      ]\n    },\n  }\n}\n```\n\nWhen defined, the profile will show up in the terminal profile selector. When activated, handle the creation of the profile by returning terminal options:\n\n```ts\nvscode.window.registerTerminalProfileProvider('my-ext.terminal-profile', {\n  provideTerminalProfile(token: vscode.CancellationToken): vscode.ProviderResult<vscode.TerminalOptions | vscode.ExtensionTerminalOptions> {\n    return { name: 'Profile from extension', shellPath: 'bash' };\n  }\n});\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/contribution-points.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/contribution-points.md"
 }

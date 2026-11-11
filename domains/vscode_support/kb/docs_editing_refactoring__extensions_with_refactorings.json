@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Extensions with refactorings\n\nYou can find extensions that support refactoring by looking in the {% data variables.product.prodname_vscode_shortname %} [Marketplace](https://marketplace.visualstudio.com/vscode). You can go to the Extensions view (`kb(workbench.view.extensions)`) and type 'refactor' in the search box. You can then sort by install count or ratings to see which extensions are popular.\n\n<div class=\"marketplace-extensions-refactor\"></div>\n\n> **Tip**: The extensions shown above are dynamically queried. Select an extension tile above to read the description and reviews to decide which extension is best for you.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/refactoring.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/refactoring.md"
 }

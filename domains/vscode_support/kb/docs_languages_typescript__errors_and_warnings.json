@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Errors and warnings\n\nThe TypeScript language service will analyze your program for coding problems and report errors and warnings:\n\n* In the Status bar, there is a summary of all errors and warnings counts.\n* You can click on the summary or press `kb(workbench.actions.view.problems)` to display the **PROBLEMS** panel with a list of all current errors.\n* If you open a file that has errors or warnings, they will be rendered inline with the text and in the overview ruler.\n\n![Error in the editor and Problems panel](images/typescript/ts-error.png)\n\nTo loop through errors or warnings in the current file, you can press `kb(editor.action.marker.nextInFiles)` or `kb(editor.action.marker.prevInFiles)` which will show an inline zone detailing the problem and possible Code Actions (if available):\n\n![Error inline in the editor](images/typescript/ts-error-inline.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/typescript.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/typescript.md"
 }

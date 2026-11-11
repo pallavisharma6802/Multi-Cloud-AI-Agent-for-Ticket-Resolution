@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## What You Will Learn\n\nBefore we jump in, let's set a concrete target. This is not a random feature tour. It is a practical build path to a workspace you can trust for the rest of the series.\n\nIn this chapter, you will learn to:\n\n- **Set up a ready workspace**: Install Foundry Toolkit and confirm key surfaces are visible.\n- **Connect a cloud project**: Attach a Foundry project so you can move from local exploration to real cloud assets.\n- **Run a repeatable first flow**: Follow a sequence your team can reuse for future contributors.\n\nNow that the destination is clear, here is the one idea that makes everything else click.\n\nA quick map helps you see the chapter flow before we zoom in. Think of it as your \"you are here\" sign while you move through setup.\n\n![Chapter 1 journey diagram](../images/foundry-toolkit/ch1-fig01-journey.png)\n\n**Fig 01: Chapter 1 journey from first install to model-ready workspace.**",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/1-get-started.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundry-toolkit-extension/1-get-started.md"
 }

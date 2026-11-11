@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## New documentation\n\n### Docker Compose\n\nThere is a new [Docker Compose](https://code.visualstudio.com/docs/containers/docker-compose) topic explaining how the Microsoft [Docker extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) can help you add Docker Compose files to your projects to work easily with multiple Docker containers.\n\n### Java topics\n\nThe Java topics have been updated and include new topics on [Linting](https://code.visualstudio.com/docs/java/java-linting) and [Refactoring](https://code.visualstudio.com/docs/java/java-refactoring) Java source code using the [Java extensions](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack).\n\n### GitHub\n\nWith the expanded GitHub integration, there is a new [Working with GitHub](https://code.visualstudio.com/docs/sourcecontrol/github) topic that shows how you can use GitHub from within VS Code.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_45.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_45.md"
 }

@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "## Filter and search Git logs\n\nUse the Output panel filters to reduce the amount of log information:\n\n* Select a log level such as `trace`, `debug`, `info`, `warning`, or `error`. The default level is `info`.\n* Select a category such as `git` or `repository`. Select `git` to focus on commands executed by Git.\n\n![Screenshot showing log level and category filters in the Git Output window.](images/troubleshooting/git-output-filters.png)\n\nUse the search box (`kb(actions.find)`) to find a command, repository path, or error. The search box supports regular expressions.\n\n![Screenshot showing search results in the Git Output window.](images/troubleshooting/git-output-search.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/troubleshooting.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/troubleshooting.md"
 }

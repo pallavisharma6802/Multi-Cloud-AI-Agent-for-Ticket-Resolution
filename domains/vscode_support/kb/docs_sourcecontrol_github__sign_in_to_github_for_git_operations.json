@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "## Sign in to GitHub for Git operations\n\nYou don't need an extension to authenticate Git operations with GitHub. When you clone a private repository or push to a GitHub repository, {% data variables.product.prodname_vscode_shortname %} prompts you to sign in. Follow the browser prompts, then return to {% data variables.product.prodname_vscode_shortname %}.\n\n![Screenshot showing the GitHub authentication prompt in {% data variables.product.prodname_vscode_shortname %}.](images/github/auth-prompt.png)\n\nPersonal access token authentication is supported for GitHub Enterprise Server. To use a personal access token, cancel the browser sign-in prompts until {% data variables.product.prodname_vscode_shortname %} asks for a token. For other authentication options, see [GitHub authentication methods](https://docs.github.com/authentication/keeping-your-account-and-data-secure/about-authentication-to-github).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/github.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/github.md"
 }

@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "## Configure Source Control actions\n\nThese settings affect the Source Control view and notifications, not the Status Bar indicators:\n\n* `setting(git.showActionButton)`: control whether commit, publish, and sync action buttons appear in the Source Control view.\n* `setting(git.showCommitInput)`: show or hide the commit message input in the Source Control view.\n* `setting(git.showPushSuccessNotification)`: show a notification after a successful push.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/repos-remotes.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/repos-remotes.md"
 }

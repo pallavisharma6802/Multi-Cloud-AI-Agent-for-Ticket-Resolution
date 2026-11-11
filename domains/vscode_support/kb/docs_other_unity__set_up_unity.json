@@ -4,5 +4,5 @@
   "category": "REFERENCE",
   "intent": "reference",
   "content": "## Set up Unity\n\n### Update the Visual Studio Package\n\nThe Unity extension for {% data variables.product.prodname_vscode %} depends on the `Visual Studio Editor` Unity Package. In Unity, open up **Windows**, **Packages**. Make sure the `Visual Studio Editor` package is upgraded to `2.0.20` or above.\n\n![Unity Package Manager](images/unity/unity-packagemanager.png)\n\n> **Note**: The `{% data variables.product.prodname_vscode %} Editor` package published by Unity is a legacy package from Unity that is not maintained anymore.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/other/unity.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/other/unity.md"
 }

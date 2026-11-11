@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable fixes\n\n* [55084](https://github.com/microsoft/vscode/issues/55084): Allow to create/open file names containing backslash\n* [68204](https://github.com/microsoft/vscode/issues/68204): New file doesn't show in explorer after creating from path like 'folder/subfolder/file.txt'\n* [68316](https://github.com/microsoft/vscode/issues/68316): New workbench explorer treeview fails to update properly\n* [68616](https://github.com/microsoft/vscode/issues/68616): Debug points getting hit but no visual indication when debugging nodejs (mocha tests)\n* [68691](https://github.com/microsoft/vscode/issues/68691): No input box to create new file in Explorer\n* [68627](https://github.com/microsoft/vscode/issues/68627): 'Reveal in sidebar` does not work\n* [67970](https://github.com/microsoft/vscode/issues/67970): New explorer: switching editors should clear focus\n\nThis release also include a security update for Microsoft Security Response Center CVE-2019-5786, which you can read about in this [Electron blog post](https://electronjs.org/blog/filereader-fix).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_32.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_32.md"
 }

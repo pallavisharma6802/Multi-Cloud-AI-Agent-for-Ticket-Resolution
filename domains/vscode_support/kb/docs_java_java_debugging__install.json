@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Install\n\nTo get the complete Java language support in {% data variables.product.prodname_vscode %}, you can install the [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack), which includes the Debugger for Java extension.\n\n<a class=\"install-extension-btn\" href=\"vscode:extension/vscjava.vscode-java-pack\">Install the Extension Pack for Java</a>\n\n>For details on how to get started with the extension pack, you can review the [Getting Started with Java](/docs/java/java-tutorial.md) tutorial.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-debugging.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-debugging.md"
 }

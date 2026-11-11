@@ -4,5 +4,5 @@
   "category": "TERMINAL",
   "intent": "terminal",
   "content": "## Terminal cursor\n\nThe terminal cursor style and whether it blinks can be customized with the following settings:\n\n- `setting(terminal.integrated.cursorStyle)`: Defines the shape of the cursor, can be block, line or underline.\n- `setting(terminal.integrated.cursorWidth)`: How wide in pixels the cursor should be when the cursor style is set to `line`.\n- `setting(terminal.integrated.cursorBlinking)`: Whether the cursor should blink when the terminal is focused.\n- `setting(terminal.integrated.cursorStyleInactive)`: Defines the shape of the cursor, can be outline, block, line, underline or none.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/appearance.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/terminal/appearance.md"
 }

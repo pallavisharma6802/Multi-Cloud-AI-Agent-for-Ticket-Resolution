@@ -4,5 +4,5 @@
   "category": "INSTALLATION",
   "intent": "installation",
   "content": "## Legacy proxy server support\n\nExtensions don't benefit yet from the same proxy support that {% data variables.product.prodname_vscode_shortname %} supports. You can follow this issue's development in [GitHub](https://github.com/microsoft/vscode/issues/12588).\n\nSimilarly to extensions, a few other {% data variables.product.prodname_vscode_shortname %} features don't yet fully support proxy networking, namely the CLI interface. The CLI interface is what you get when running `code --install-extension vscodevim.vim` from a command prompt or terminal. You can follow this issue's development in [GitHub](https://github.com/microsoft/vscode/issues/29910).\n\nDue to both of these constraints, the `setting(http.proxy)`, `setting(http.proxyStrictSSL)` and `setting(http.proxyAuthorization)` variables are still part of {% data variables.product.prodname_vscode_shortname %}'s settings, yet they are only respected in these two scenarios.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/network.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/setup/network.md"
 }

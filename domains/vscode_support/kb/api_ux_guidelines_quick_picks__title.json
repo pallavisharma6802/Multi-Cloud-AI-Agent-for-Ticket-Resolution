@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Title\n\nQuick Picks can also be configured to show a title bar above the main input and selection UI. Use a title when the user needs more context for the selection being made. Avoid using a title that uses a label already used in the Quick Pick's input placeholder.\n\n![Multi-step Quick Pick example](images/examples/quick-pick-title.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/quick-picks.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/ux-guidelines/quick-picks.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Accessibility\n\n### Chat agent mode improvements\n\nYou are now notified when manual action is required during a tool invocation, such as \"Run command in terminal.\" This information is also included in the ARIA label for the relevant chat response, enhancing accessibility for screen reader users.\n\nAdditionally, a new accessibility help dialog is available in [agent mode](https://code.visualstudio.com/docs/chat/copilot-chat), explaining what users can expect from the feature and how to navigate it effectively.\n\n### Accessibility Signals for chat edit actions\n\nVS Code now provides auditory signals when you keep or undo AI-generated edits. These signals are configurable via `setting(accessibility.signals.editsKept)` and `setting(accessibility.signals.editsUndone)`.\n\n### Improved ARIA labels for suggest control\n\nARIA labels for suggest control items now include richer and descriptive information, such as the type of suggestion (for example, method or variable). This information was previously only available to sighted users via icons.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_99.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_99.md"
 }

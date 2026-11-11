@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Prerequisites\n\nTo successfully complete this tutorial, you must do the following steps:\n\n1. Install [{% data variables.product.prodname_vscode %} on macOS](/docs/setup/mac.md).\n\n1. Install the [C++ extension for {% data variables.product.prodname_vscode_shortname %}](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools). You can install the C/C++ extension by searching for 'C++' in the Extensions view (`kb(workbench.view.extensions)`).\n\n    ![C/C++ extension](images/cpp/cpp-extension.png)\n\n### Ensure Clang is installed\n\nClang might already be installed on your Mac. To verify that it is, open a macOS Terminal window and enter the following command:\n\n```bash\nclang --version\n```\n\nIf Clang isn't installed, enter the following command to install the command line developer tools, which include Clang:\n\n```bash\nxcode-select --install\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/config-clang-mac.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/config-clang-mac.md"
 }

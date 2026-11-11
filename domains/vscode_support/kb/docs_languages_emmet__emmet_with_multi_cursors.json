@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Emmet with multi-cursors\n\nYou can use most of the Emmet actions with multi-cursors as well:\n\n<video src=\"images/emmet/emmet-multi-cursor.mp4\" title=\"Video showing Emmet with multi cursors.\" autoplay loop controls muted></video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/emmet.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/emmet.md"
 }

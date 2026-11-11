@@ -4,5 +4,5 @@
   "category": "INSTALLATION",
   "intent": "installation",
   "content": "## Update Portable {% data variables.product.prodname_vscode_shortname %}\n\nOn **Windows** and **Linux**, you can update {% data variables.product.prodname_vscode_shortname %} by copying the `data` folder over to a more recent version of {% data variables.product.prodname_vscode_shortname %}.\n\nOn **macOS**, automatic updates should work as always, no extra work needed.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/portable.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/setup/portable.md"
 }

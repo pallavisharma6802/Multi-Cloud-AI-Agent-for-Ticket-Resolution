@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [Chat overview](/docs/chat/chat-overview.md)\n* [Add context to your chat prompt](/docs/chat/copilot-chat-context.md)\n* [Inline chat](/docs/chat/inline-chat.md)\n* [Copilot Chat Cookbook](https://docs.github.com/en/copilot/example-prompts-for-github-copilot-chat) in the GitHub documentation",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/prompt-examples.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/prompt-examples.md"
 }

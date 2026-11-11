@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Use custom instructions in {% data variables.product.prodname_vscode_shortname %}\n\nCustom instructions give an agent reusable guidance about your project, such as where to add code, which libraries to use, and which tests to run. Store this guidance in Markdown files instead of repeating it in every prompt, and share project instructions through source control.\n\nStart with one convention the agent repeatedly misses. Create instructions in the [Agent Customizations editor](/docs/agent-customization/overview.md#agent-customizations-editor), then test their effect in a new chat before adding more targeted guidance. For supported locations, file syntax, and settings, see the [Custom instructions reference](/docs/agents/reference/custom-instructions-reference.md).\n\nInstructions guide the model. They don't guarantee compliance or replace tests, code review, or security controls. They don't apply to [inline suggestions](/docs/editing/ai-powered-suggestions.md) as you type.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/custom-instructions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/custom-instructions.md"
 }

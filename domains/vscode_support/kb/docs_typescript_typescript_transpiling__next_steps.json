@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Next steps\n\nRead on to find out about:\n\n* [Editing TypeScript](/docs/typescript/typescript-editing.md) - Specific editing features for TypeScript.\n* [Refactoring TypeScript](/docs/typescript/typescript-refactoring.md) - Useful refactorings from the TypeScript language service.\n* [Debugging TypeScript](/docs/typescript/typescript-debugging.md) - Configure the debugger for your TypeScript project.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/typescript/typescript-transpiling.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/typescript/typescript-transpiling.md"
 }

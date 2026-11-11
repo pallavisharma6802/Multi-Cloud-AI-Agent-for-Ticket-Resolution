@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## How do I get the new IntelliSense to work with the Windows Subsystem for Linux?\n\nSee [Get Started with C++ and Windows Subsystem for Linux in {% data variables.product.prodname_vscode %}](/docs/cpp/config-wsl.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/faq-cpp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/faq-cpp.md"
 }

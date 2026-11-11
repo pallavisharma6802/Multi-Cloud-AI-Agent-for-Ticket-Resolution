@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Contributions to Extensions\n\nOur team maintains or contributes to a number of VS Code extensions. Most notably this month:\n\n* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint): Performance improvements to lower CPU load when linting large JavaScript files with lots of code actions.\n* [VSCodeVim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim): We [refactored](https://github.com/VSCodeVim/Vim/pull/1642) the source code to make it easier to contribute to the project.\n* [PHP language server](https://github.com/felixfbecker/php-language-server): We are getting close to merging the [pull request](https://github.com/felixfbecker/php-language-server/pull/357) to adopt the [tolerant PHP parser](https://github.com/microsoft/tolerant-php-parser).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_13.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_13.md"
 }

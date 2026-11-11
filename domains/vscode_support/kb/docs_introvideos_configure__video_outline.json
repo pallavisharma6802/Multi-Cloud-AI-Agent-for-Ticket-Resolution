@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Video outline\n\n* Change your Color Theme.\n* Install a new Color Theme from the {% data variables.product.prodname_vscode_shortname %} Extension Marketplace.\n* Change your File Icon Theme.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/introvideos/configure.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/introvideos/configure.md"
 }

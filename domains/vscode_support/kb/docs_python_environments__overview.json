@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# Python environments in {% data variables.product.prodname_vscode_shortname %}\n\nThe Python Environments extension brings environment and package management into {% data variables.product.prodname_vscode %}'s UI. The extension provides a unified interface for creating environments, installing packages, and switching interpreters, regardless whether you're using `venv`, `uv`, `conda`, `pyenv`, `poetry`, or `pipenv`.\n\nCore features:\n\n* Creating, deleting, and switching between environments\n* Installing and managing packages\n* Activated Python in terminals\n* Assigning environments to specific files or folders (called \"Python projects\")\n\nThe extension works alongside the [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) and requires no setup to get started.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/environments.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/python/environments.md"
 }

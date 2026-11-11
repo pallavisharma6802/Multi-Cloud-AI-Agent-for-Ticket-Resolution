@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Tasks\n\n### Task rerun action\n\nWe have a new **rerun** task action for terminals, `kb(workbench.action.tasks.rerunForActiveTerminal)`. The action appears on the terminal tab's inline toolbar and in the terminal's context menu.\n\n<video src=\"images/1_98/terminal-rerun-task.mp4\" title=\"Video that shows the terminal rerun task.\" autoplay loop controls muted></video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_98.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_98.md"
 }

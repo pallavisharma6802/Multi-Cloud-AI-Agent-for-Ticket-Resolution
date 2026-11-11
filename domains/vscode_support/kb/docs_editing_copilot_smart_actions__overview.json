@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "# AI smart actions in {% data variables.product.prodname_vscode %}\n\nFor several common scenarios, you can use _smart actions_ to get help from AI without having to write a prompt. Examples of these smart actions are generating commit messages, generating documentation, explaining or fixing code, or performing a code review. These smart actions are available throughout the {% data variables.product.prodname_vscode_shortname %} UI.\n\n<div class=\"docs-action\" data-show-in-doc=\"false\" data-show-in-sidebar=\"true\" title=\"Get started with AI\">\nFollow a hands-on tutorial to build your first app with AI in {% data variables.product.prodname_vscode_shortname %}.\n\n* [Start tutorial](/docs/agents/agents-tutorial.md)\n\n</div>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/copilot-smart-actions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/copilot-smart-actions.md"
 }

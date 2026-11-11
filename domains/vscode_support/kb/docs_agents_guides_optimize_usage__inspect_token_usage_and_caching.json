@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Inspect token usage and caching\n\nUse the [Agent Debug Logs](/docs/agents/agent-troubleshooting/chat-debug-view.md) to understand what is consuming credits in a session:\n\n* The **Summary view** shows aggregate token usage for the session, including total tool calls and overall duration.\n* The **[Cache Explorer view](/docs/agents/agent-troubleshooting/cache-explorer.md)** shows prompt cache hit rates and how many input tokens were reused. Prompt caching lets model providers reuse the prefix of a request that matches a previous one, which reduces latency and token costs.\n\nUse these measurements as an optimization loop:\n\n1. Run a representative task and record its quality, reliability, credits, tokens, duration, tool calls, and errors.\n1. Change one variable, such as the model, available tools, delegation strategy, or grounding source.\n1. Repeat the task and compare the results.\n1. Keep the configuration that meets your quality threshold at the lowest cost.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/optimize-usage.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/optimize-usage.md"
 }

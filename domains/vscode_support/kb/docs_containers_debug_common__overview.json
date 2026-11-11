@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "# Debug containerized apps\n\nThe Container Tools extension provides more support for debugging applications within containers, such as scaffolding `launch.json` configurations for attaching a debugger to applications running within a container.\n\nThe Container Tools extension provides a `docker` debug configuration provider that manages how {% data variables.product.prodname_vscode_shortname %} will launch an application and/or attach a debugger to the application in a running container. This provider is configured via entries within `launch.json`, with configuration being specific to each application platform supported by the provider.\n\nThe Container Tools extension currently supports debugging [Node.js](#nodejs), [Python](#python), and [.NET](#net) applications within containers.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/debug-common.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/containers/debug-common.md"
 }

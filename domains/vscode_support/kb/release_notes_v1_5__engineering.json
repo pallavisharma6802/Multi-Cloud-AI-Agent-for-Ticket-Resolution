@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Engineering\n\nOriginally started with [PR #9791](https://github.com/microsoft/vscode/pull/9791) from [Manoj Patel (@nojvek)](https://github.com/nojvek), we now have [test coverage](https://coveralls.io/github/Microsoft/vscode?branch=master) for our TypeScript files updated on each build.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_5.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_5.md"
 }

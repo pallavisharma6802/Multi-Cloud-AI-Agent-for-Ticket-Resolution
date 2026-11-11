@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "## Git actions are unavailable after initializing a repository\n\nPush, pull, and sync require a remote repository. Initializing a local repository doesn't create a remote. To connect to an existing hosted repository, [add a remote](/docs/sourcecontrol/repos-remotes.md#add-a-remote). To create a new {% data variables.product.prodname_github %} repository, use [Publish to GitHub](/docs/sourcecontrol/repos-remotes.md#publish-to-github).\n\nAfter adding a remote, [push your committed branch](/docs/sourcecontrol/repos-remotes.md#push-commits) and accept the prompt to publish it if it has no upstream. The branch then has an upstream for synchronization. Local actions, such as staging and committing, don't require a remote.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/troubleshooting.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/troubleshooting.md"
 }

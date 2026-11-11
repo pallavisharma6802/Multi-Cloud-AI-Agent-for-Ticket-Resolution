@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Debug\n\nKey|Command\n---|---\n`kb(editor.debug.action.toggleBreakpoint)`|Toggle breakpoint\n`kb(workbench.action.debug.start)`|Start\n`kb(workbench.action.debug.continue)`|Continue\n`kb(workbench.action.debug.stepInto)`|Step into\n`kb(workbench.action.debug.stepOut)`|Step out\n`kb(workbench.action.debug.stepOver)`|Step over\n`kb(workbench.action.debug.stop)`|Stop\n`kb(editor.action.showHover)`|Show hover",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/customization/keyboard-shortcuts.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/customization/keyboard-shortcuts.md"
 }

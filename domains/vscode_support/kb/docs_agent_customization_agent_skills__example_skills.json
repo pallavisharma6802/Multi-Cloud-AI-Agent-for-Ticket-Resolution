@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Example skills\n\nThe following examples demonstrate different types of skills you can create.\n\n<details>\n<summary>Example: Web application testing skill</summary>\n\n````markdown\n---\nname: webapp-testing\ndescription: Guide for testing web applications using Playwright. Use this when asked to create or run browser-based tests.\n---\n\n# Web Application Testing with Playwright\n\nThis skill helps you create and run browser-based tests for web applications using Playwright.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/agent-skills.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/agent-skills.md"
 }

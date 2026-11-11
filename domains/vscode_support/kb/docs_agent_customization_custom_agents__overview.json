@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Custom agents in {% data variables.product.prodname_vscode_shortname %}\n\nCustom agents combine instructions, tools, and an optional language model into a reusable configuration for a specific role, such as planning or code review. Switch to a custom agent instead of repeating the same instructions and selecting tools for every conversation.\n\nStart with one recurring task where the default agent needs more specific guidance. This article walks through creating a code review agent, checking its results, and refining it before sharing it with your team. For file locations, syntax, and harness-specific options, see the [Custom agent file reference](/docs/agents/reference/custom-agent-file-reference.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/custom-agents.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/custom-agents.md"
 }

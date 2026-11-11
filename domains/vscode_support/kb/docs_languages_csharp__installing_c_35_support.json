@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Installing C&#35; support\n\nC# language support is provided with the [C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit). You can install it from within {% data variables.product.prodname_vscode_shortname %} by searching for 'C# Dev Kit' in the **Extensions** view (`kb(workbench.view.extensions)`) or if you already have a project with C# files, {% data variables.product.prodname_vscode_shortname %} will prompt you to install the extension as soon as you open a C# file.\n\nFor more information about the C# Dev Kit extension, see the [C# documentation](/docs/csharp/get-started.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/csharp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/csharp.md"
 }

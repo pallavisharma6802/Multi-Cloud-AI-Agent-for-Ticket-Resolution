@@ -4,5 +4,5 @@
   "category": "TERMINAL",
   "intent": "terminal",
   "content": "## Select all\n\nThere is a **Terminal: Select All** command, which is bound to `kbstyle(Cmd+A)` on macOS, but does not have a default keyboard shortcut on Windows and Linux as it may conflict with shell hotkeys. To use `kbstyle(Ctrl+A)` to select all, add this custom keyboard shortcut:\n\n```json\n{\n  \"key\": \"ctrl+a\",\n  \"command\": \"workbench.action.terminal.selectAll\",\n  \"when\": \"terminalFocus && !isMac\"\n},\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/basics.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/terminal/basics.md"
 }

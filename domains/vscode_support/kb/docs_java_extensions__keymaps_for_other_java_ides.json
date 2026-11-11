@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Keymaps for other Java IDEs\n\nThere are some extensions from the community for developers who might be used to the keyboard shortcuts from other Java IDEs.\n\n* [Eclipse Keymap](https://marketplace.visualstudio.com/items?itemName=alphabotsec.vscode-eclipse-keybindings)\n* [IntelliJ IDEA keyboard shortcuts](https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings)\n\nKeymap extensions apply keyboard shortcuts from other IDEs or editors on to {% data variables.product.prodname_vscode_shortname %} so you don't have to retrain your fingers to new keyboard shortcuts.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/extensions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/extensions.md"
 }

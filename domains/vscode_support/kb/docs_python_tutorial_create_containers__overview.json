@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# Create containers for Python\n\nThis page is redirected to /docs/containers/quickstart-python.md and only exists to keep the \"Create containers\" TOC item.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/tutorial-create-containers.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/python/tutorial-create-containers.md"
 }

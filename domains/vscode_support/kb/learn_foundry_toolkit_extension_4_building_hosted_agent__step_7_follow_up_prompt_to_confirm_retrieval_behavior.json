@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Step 7: Follow up prompt to confirm retrieval behavior\n\nAt this point, the Agent is started and it's asking you follow up questions. Now we want to answer something back while also ensuring the agent is actually using the retrieval tools we configured.\n\nType a prompt like so:\n\n```text\nHighlight the mobile chat feature, drive installs, general dev audience, technical tone, #github copilot\n```\n\nNow you should see tools being invoked and a response being produced like so:\n\n![Follow-up prompt response](../images/foundry-toolkit/ch4-follow-up.png)\n\n**Fig 05: Follow-up prompt response with tool invocation and structured output.**",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
 }

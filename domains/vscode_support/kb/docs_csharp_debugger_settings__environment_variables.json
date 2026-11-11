@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Environment variables\n\nEnvironment variables may be passed to your program using this schema:\n\n```json\n    \"env\": {\n        \"myVariableName\":\"theValueGoesHere\"\n    }\n```\n\n**Availability**\n\n* `launch.json` \u2714\ufe0f\n* `settings.json` \u274c\n* `launchSettings.json` \u2714\ufe0f as `environmentVariables`",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/debugger-settings.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/debugger-settings.md"
 }

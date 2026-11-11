@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Combine instruction sources\n\nThere is no precedence rule that applies across all harnesses.\n\n* {% data variables.product.prodname_copilot_short %} combines applicable user and repository instructions without a general precedence order between instruction files.\n* Local can include multiple applicable instruction files. Avoid contradictory rules rather than relying on their order.\n* Codex combines project instructions from the root toward the working directory, with more specific guidance later in the chain. Its native configuration also supports override files.\n* Claude uses its own loading rules for user, project, and directory guidance.\n\nFor details, use the native documentation linked in [supported formats](#supported-formats-and-locations). To resolve conflicting rules, change their sources and [repeat a representative task](/docs/agent-customization/custom-instructions.md#resolve-conflicting-instructions).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/custom-instructions-reference.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/reference/custom-instructions-reference.md"
 }

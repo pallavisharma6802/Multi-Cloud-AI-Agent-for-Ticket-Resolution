@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Individual vs team impact\n\nCustom instructions are powerful for individuals, but even more impactful for teams.\n\nAcross a team, they ensure:\n\n- consistent naming conventions\n- consistent formatting\n- consistent architecture\n\nInstead of reviewing and correcting inconsistencies later, everything is aligned from the start.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/2-instructions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/2-instructions.md"
 }

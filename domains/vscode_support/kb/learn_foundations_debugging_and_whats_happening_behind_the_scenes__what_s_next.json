@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## What's next\n\nThe Agent Debug Log panel and Chat Debug view give you complete visibility into what the agent is doing: the Logs view for the timeline, the Summary for the numbers, the Flow Chart for the structure, and the Chat Debug view for the raw payloads. And when you need to ask questions about a session in plain language, `#debugEventsSnapshot` and `/troubleshoot` let you do exactly that.\n\nThat's the full foundation: harness, model, context, tools, prompt, sessions, and the debugging layer. In the [final guide](/learn/foundations/build-your-first-app-with-agent-mode.md), you will put everything together and build a real application from scratch.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/debugging-and-whats-happening-behind-the-scenes.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundations/debugging-and-whats-happening-behind-the-scenes.md"
 }

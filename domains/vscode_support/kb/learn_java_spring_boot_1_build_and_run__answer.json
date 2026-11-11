@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Answer\n\nThose are two separate answers. `package` is the honest build check: it compiles, runs\nthe tests, and produces the artifact, so a green result means the project is sound and\nnot merely syntactically valid \u2014 a `Run` that starts is a much weaker signal. The\nDashboard matters for a different reason: it launches the process through Visual Studio\nCode, which is what lets the editor attach a debugger and populate live views such as\n**Properties** and **Memory**. An app started from a plain terminal runs perfectly well\nbut stays invisible to those views, and that difference shows up as soon as you want to\ninspect a running request.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/1-build-and-run.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/java-spring-boot/1-build-and-run.md"
 }

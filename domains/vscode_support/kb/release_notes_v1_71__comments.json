@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Comments\n\n### Filtering\n\nThe Comments view has a new filter where you can filter by comment text and by resolved/unresolved state.\n\n<video src=\"images/1_71/comments-filtering.mp4\" autoplay loop controls muted title=\"Comments filtering\"></video>\n\n### Editor decoration\n\nThe Comments editor gutter decoration now uses codicons and has new styling.\n\n<video src=\"images/1_71/comments-editor-decoration.mp4\" autoplay loop controls muted title=\"Comments editor gutter decoration\"></video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_71.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_71.md"
 }

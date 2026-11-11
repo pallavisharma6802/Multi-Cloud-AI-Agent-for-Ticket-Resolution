@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## How to sign in to your Azure account\n\nThe Azure Resources extension uses the built-in {% data variables.product.prodname_vscode_shortname %} Microsoft authentication provider to authenticate with Azure.\nSign in by selecting the **Sign in to Azure\u2026** item in the Azure Resources view.\n\n![Screenshot that shows where to sign in to your Azure account](images/extensions/signInView.png)\n\nYou can also sign in using the **Azure: Sign in** command contributed by the Azure Resources extension.\n\n![Screenshot that shows where to sign in to an Azure account from the command palette](images/extensions/signInCommandPallete.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/resourcesextension.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/azure/resourcesextension.md"
 }

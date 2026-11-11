@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "# Customization features in practice\n\n[![Watch Customization Features in Practice on YouTube (opens in new tab).](images/8-demo/youtube-Bb45ZoKfJf0.jpg)](https://www.youtube.com/watch?v=Bb45ZoKfJf0)\n\nYou may have seen quite a few videos about customization features in VS Code.\n\nThings like prompt files, custom instructions, agent skills, custom agents, and hooks can make sense individually. But the best way to truly understand them is to see them working together in a real project.\n\nIn this guide, we\u2019ll build an app from scratch and use multiple customization features throughout the workflow.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/8-demo.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/8-demo.md"
 }

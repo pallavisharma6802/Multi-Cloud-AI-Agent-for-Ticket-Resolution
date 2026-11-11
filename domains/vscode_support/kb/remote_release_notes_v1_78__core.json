@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Core\n\n### Hybrid port source\n\nThe new `\"hybrid\"` value for the setting `\"remote.autoForwardPortsSource\"` discovers ports by watching terminal and debug output, in the same way that the existing `\"output\"` setting value does. However, process watching is still used so that when a process that listens on a port exits, the port is no longer forwarded. This allows you to narrow the number of ports discovered for forwarding while still getting the additional features of process-based port forwarding.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_78.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_78.md"
 }

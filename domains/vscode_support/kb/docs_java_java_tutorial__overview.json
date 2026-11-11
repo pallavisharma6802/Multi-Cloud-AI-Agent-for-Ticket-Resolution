@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# Getting Started with Java in {% data variables.product.prodname_vscode_shortname %}\n\nThis tutorial shows you how to write and run Hello World program in Java with {% data variables.product.prodname_vscode %}. It also covers a few advanced features, which you can explore by reading other documents in this section.\n\nFor an overview of the features available for Java in {% data variables.product.prodname_vscode_shortname %}, see [Java Language Overview](/docs/languages/java.md).\n\nIf you run into any issues when following this tutorial, you can contact us by entering an [issue](https://github.com/microsoft/vscode-java-pack/issues).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-tutorial.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-tutorial.md"
 }

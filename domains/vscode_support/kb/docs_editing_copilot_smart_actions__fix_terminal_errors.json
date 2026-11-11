@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Fix terminal errors\n\nWhen a command fails to run in the terminal, {% data variables.product.prodname_vscode_shortname %} displays a sparkle in the gutter that offers a Quick Fix to explain what happened.\n\n![Fix with Copilot option in the terminal after a failed terminal command.](images/copilot-smart-actions/terminal-command-explanation.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/copilot-smart-actions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/copilot-smart-actions.md"
 }

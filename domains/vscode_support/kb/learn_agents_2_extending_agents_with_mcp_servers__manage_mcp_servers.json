@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Manage MCP servers\n\nUse **Chat: Open Customizations** > **MCP Servers** to manage servers for the selected harness. Select **Browse** to discover and install additional servers.\n\nOther management surfaces remain available:\n\n* The **MCP Servers - Installed** section in the Extensions view.\n* The configuration file editor.\n* The Command Palette, including **MCP: List Servers**.\n\nWith marketplace discovery enabled, searching for `@mcp` in Extensions shows **Find MCP Servers in Customizations**. Select **Browse MCP Servers** to continue in the Customizations editor rather than installing from the Extensions view.\n\n![Screenshot showing the actions for an MCP server in the Command Palette.](../images/agents/mcp-list-servers-actions.png)\n\nTo debug a server, select **Show Output** from the server's actions to see logs from every request the server handles.\n\n![Screenshot showing the MCP server output panel with logs.](../images/agents/mcp-server-error-output.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/2-extending-agents-with-mcp-servers.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/agents/2-extending-agents-with-mcp-servers.md"
 }

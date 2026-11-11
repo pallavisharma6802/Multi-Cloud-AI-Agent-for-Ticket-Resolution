@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Learn more\n\n* [Download VS Code](https://code.visualstudio.com)\n* [Set up GitHub Copilot in VS Code](https://code.visualstudio.com/docs/setup/copilot)\n* [Copilot Chat panel docs](https://code.visualstudio.com/docs/chat/chat-overview)\n* [Choosing an AI model for Copilot Chat](https://docs.github.com/copilot/using-github-copilot/ai-models/changing-the-ai-model-for-copilot-chat)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/introduction-to-agent-first-development.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundations/introduction-to-agent-first-development.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Editor\n\n### Refactoring with Preview\n\nPreviously, there was no way to review changes that would have been applied by a refactoring. To improve the refactoring experience, there is now a **Refactor with Preview** command that can be accessed from the Command Palette. **Refactor with Preview...** works just like the **Refactor...** command, but will open up a refactor preview panel. Users can select a refactor preview to open up a larger view of the refactoring preview in the editor. This iteration primarily focused on previewing code changes from refactorings, with future features and a custom Code Action menu control to follow.\n\n![Refactor preview panel showing a refactoring that results in two changes](images/1_69/refactor-preview.png)\n\n**Refactor with Preview...** opening a pane in the workbench and opening the refactor preview editor view.\n\n<video src=\"images/1_69/refactoring-editor.mp4\" autoplay loop controls muted title=\"Selecting a refactor preview that opens an editor diff view\"></video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_69.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_69.md"
 }

@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "# File Icon Theme\n\nVisual Studio Code displays icons next to filenames throughout its UI, and extensions can contribute new sets of file icons that users can choose from.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/file-icon-theme.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-guides/file-icon-theme.md"
 }

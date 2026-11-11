@@ -4,5 +4,5 @@
   "category": "INSTALLATION",
   "intent": "installation",
   "content": "## Develop on Linux with WSL\n\nAnother option for Linux development with {% data variables.product.prodname_vscode_shortname %} is to use a Windows machine with the [Windows Subsystem for Linux](https://learn.microsoft.com/windows/wsl/install) (WSL).\n\nWith WSL, install and run Linux distributions on Windows to develop and test source code on Linux while working locally on a Windows machine. WSL supports Linux distributions such as Ubuntu, Debian, SUSE, and Alpine from the Microsoft Store.\n\nWhen paired with the [WSL extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl), {% data variables.product.prodname_vscode_shortname %} provides editing and debugging support while running in the context of a Linux distro on WSL.\n\nSee the [Developing in WSL](/docs/remote/wsl.md) documentation to learn more, or try the [Working in WSL](/docs/remote/wsl-tutorial.md) introductory tutorial.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/linux.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/setup/linux.md"
 }

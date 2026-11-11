@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Preview features\n\n### Extensible Markdown renderers for notebooks\n\nThis iteration, we explored making the Markdown renderer for notebook cells extensible. In the screenshot below, for example, we've extended VS Code's Markdown renderer to support showing math formula in notebook cells:\n\n![A math formula being rendered in a notebook cell](images/1_54/notebook-math.png)\n\nIn order to make our Markdown renderer extensible, we explored using [Markdown It](https://github.com/markdown-it/markdown-it) to render all notebook Markdown. We also explored moving the rendered Markdown into the backlayer webview of the notebook.\n\nWhile we aren't yet ready to open up an official API for this, we plan on continuing this exploration in March. You can also try out the new extensible Markdown renderers today with the undocumented `notebook.experimental.useMarkdownRenderer: true` setting.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_54.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_54.md"
 }

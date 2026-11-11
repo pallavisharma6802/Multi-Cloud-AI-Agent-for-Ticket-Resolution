@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## SSH\n\n### Stabilized support for Windows hosts\n\nWe have had experimental support for Windows hosts in VS Code Insiders for a few months, but we are now ready to add this support to the VS Code Stable release!\n\n### Support for macOS hosts\n\nThere is now support for connecting to macOS hosts. You don't need to do anything - when you connect to the host, VS Code will automatically detect which platform you are connecting to. And it is already available in the Stable version of VS Code.\n\n### Connection sharing mode enabled by default\n\n[A few months ago](https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_39.md#ssh-connection-sharing), we added a new connection mode for Remote - SSH that creates a single SSH connection per host and can be shared between windows and across window reloads. Connection sharing reduces the time it takes to open a new window and the number of times you need to enter your password. It has been available behind a setting but this mode is now enabled by default.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_43.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_43.md"
 }

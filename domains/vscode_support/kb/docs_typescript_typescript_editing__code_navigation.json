@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Code navigation\n\nCode navigation lets you quickly navigate TypeScript projects.\n\n* **Go to Definition** `kb(editor.action.revealDefinition)` - Go to the source code of a symbol definition.\n* **Peek Definition** `kb(editor.action.peekDefinition)` - Bring up a Peek window that shows the definition of a symbol.\n* **Go to References** `kb(editor.action.goToReferences)` - Show all references to a symbol.\n* **Go to Type Definition** - Go to the type that defines a symbol. For an instance of a class, this will reveal the class itself instead of where the instance is defined.\n* **Go to Implementation** `kb(editor.action.goToImplementation)` - Go to the implementations of an interface or abstract method.\n\nYou can navigate via symbol search using the **Go to Symbol** commands from the **Command Palette** (`kb(workbench.action.showCommands)`).\n\n* **Go to Symbol in File** `kb(workbench.action.gotoSymbol)`\n* **Go to Symbol in Workspace** `kb(workbench.action.showAllSymbols)`",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/typescript/typescript-editing.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/typescript/typescript-editing.md"
 }

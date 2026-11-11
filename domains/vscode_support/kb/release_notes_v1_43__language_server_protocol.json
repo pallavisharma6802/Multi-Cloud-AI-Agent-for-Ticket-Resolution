@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Language Server Protocol\n\nWork started on version 3.16 of the Language Server Protocol.\n\nIncluded in the new version is proposed support for:\n\n* Insert / Replace edits for completion items.\n* Structural codes on diagnostics (for example link support).\n* Tag support for symbol information and document symbols.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_43.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_43.md"
 }

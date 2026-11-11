@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Features of the template\n\nAfter creating your extension via the template, it will include the following extension contributions. Assume `<pytool-module>` was replaced with `mytool`, and `<pytool-display-name>` with`My Tool`:\n\n1. A command **My Tool: Restart Server** (command ID: `mytool.restart`).\n1. Following settings:\n    * `mytool.logLevel`\n    * `mytool.args`\n    * `mytool.path`\n    * `mytool.importStrategy`\n    * `mytool.interpreter`\n    * `mytool.showNotification`\n1. Following triggers for extension activation:\n    * On Language `python`.\n    * On File with `.py` extension found in the opened workspace.\n    * On Command `mytool.restart`.\n1. Output channel for logging **Output** > **My Tool**.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/advanced-topics/python-extension-template.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/advanced-topics/python-extension-template.md"
 }

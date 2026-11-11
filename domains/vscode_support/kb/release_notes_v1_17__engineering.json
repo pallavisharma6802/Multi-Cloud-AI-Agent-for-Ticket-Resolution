@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Engineering\n\n### Issue management automation\n\nWe have extended the use of our [Probot](https://github.com/probot/probot) instance beyond our main repository and now use it for automatic issue assignment and closing of stale \"needs more info\" issues in our extension and other repositories.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_17.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_17.md"
 }

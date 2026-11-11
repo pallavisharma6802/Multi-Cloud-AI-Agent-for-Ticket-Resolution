@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Access Loaded Scripts\n\nIf you need to set a breakpoint in a script that is not part of your workspace and therefore cannot be easily located and opened through normal {% data variables.product.prodname_vscode_shortname %} file browsing, you can access the loaded scripts via the **LOADED SCRIPTS** view in the **Run and Debug** view:\n\n![Loaded Scripts Explorer](images/nodejs-debugging/loaded-scripts-explorer.gif)\n\nThe **LOADED SCRIPTS** view lets you quickly select the script by typing its name or filter the list when **Enable Filter on Type** is on.\n\nScripts are loaded into a read-only editor where you can set breakpoints. These breakpoints are remembered across debug sessions but you only have access to the script content while a debug session is running.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/nodejs-debugging.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/nodejs/nodejs-debugging.md"
 }

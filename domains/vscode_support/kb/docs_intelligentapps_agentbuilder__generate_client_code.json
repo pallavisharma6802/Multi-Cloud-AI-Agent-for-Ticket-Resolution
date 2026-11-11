@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Generate client code\n\nAfter you save a Foundry agent, use the **View Code** menu to integrate it into an application:\n\n| Action | Output |\n| --- | --- |\n| **View Code** | A Python project that calls the existing Foundry prompt agent. Choose a folder, then follow the generated `README.md` for dependencies, configuration, and authentication. |\n| **View Snippets** | A Python code snippet in an editor that calls the existing Foundry prompt agent. |\n\nBoth outputs reference the selected saved version. Save your edits before generating code if you want the application to use the revised configuration.\n\nGenerating client code does not convert the prompt agent into a hosted agent. To create and call a prompt agent directly with a supported SDK, see the [Microsoft Learn prompt-agent quickstart](https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/prompt-agent?tabs=python).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/agentbuilder.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/agentbuilder.md"
 }

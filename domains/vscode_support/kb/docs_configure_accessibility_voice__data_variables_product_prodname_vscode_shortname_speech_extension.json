@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## {% data variables.product.prodname_vscode_shortname %} Speech extension\n\nBuilt-in dictation is not available on these desktop platforms:\n\n* Intel-based Mac computers.\n* 32-bit and Arm32 systems.\n* Linux distributions that use musl, such as Alpine Linux.\n\nOn these platforms, install the [{% data variables.product.prodname_vscode_shortname %} Speech extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-speech). The extension also provides voice chat, text-to-speech for chat responses, and the \"Hey Code\" keyword activation feature.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/accessibility/voice.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/accessibility/voice.md"
 }

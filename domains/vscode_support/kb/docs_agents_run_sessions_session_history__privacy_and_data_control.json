@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Privacy and data control\n\n* Sessions are private to you by default. Synced sessions are tied to your personal GitHub account and are accessible only to you unless you explicitly share them.\n* Before syncing, {% data variables.product.prodname_vscode_shortname %} filters detected secrets by matching known patterns and secret values. This can redact tokens, API keys, and credentials, but it might not detect every secret.\n* You can turn off sync at any time by setting `setting(chat.sessionSync.enabled)` to `false`. Existing synced sessions remain on GitHub.com until you delete them.\n\n> [!IMPORTANT]\n> Avoid including secrets in prompts and tool output, and review session contents before sharing. Do not rely on secret filtering to remove every sensitive value.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/sessions/session-history.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/sessions/session-history.md"
 }

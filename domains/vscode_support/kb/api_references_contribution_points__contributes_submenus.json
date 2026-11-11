@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## contributes.submenus\n\nContribute a submenu as a placeholder onto which menu items can be contributed. A submenu requires a `label` to be shown in the parent menu.\n\nIn addition to a title, commands can also define icons that VS Code will show in the editor title menu bar.\n\n### submenu example\n\n```json\n{\n  \"contributes\": {\n    \"submenus\": [\n      {\n        \"id\": \"git.commit\",\n        \"label\": \"Commit\"\n      }\n    ]\n  }\n}\n```\n\n![submenus extension point example](images/contribution-points/submenucontrib.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/contribution-points.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/contribution-points.md"
 }

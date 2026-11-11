@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Extension settings\n\nInstalled {% data variables.product.prodname_vscode_shortname %} extensions can also contribute their own settings, which you can review under the **Extensions** section of the Settings editor.\n\n![C++ extension settings in the Settings editor](images/settings/cpp-extension-settings.png)\n\nYou can also review an extension's settings from the Extensions view (`kb(workbench.view.extensions)`) by selecting the extension and reviewing the **Feature Contributions** tab.\n\n![Python extension Settings list under Feature Contributions tab](images/settings/python-feature-contributions.png)\n\nExtension authors can learn more about adding custom settings in the [configuration contribution point documentation](/api/references/contribution-points.md#contributes.configuration).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/settings.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/settings.md"
 }

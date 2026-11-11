@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Icon contribution point\n\nThe icon contribution point allow extensions to define additional icons by ID, along with a default icon. The icon ID can then be used by the extension (or any other extensions that depend on the extension) in labels (`$(iconId)`) or at all places where a `ThemeIcon` can be used (`new ThemeIcon(\"iconId\")`).\n\n```json\n\"contributes\": {\n  \"icons\": {\n        \"distro-ubuntu\": {\n            \"description\": \"Ubuntu icon\",\n            \"default\": {\n                \"fontPath\": \"./distroicons.woff\",\n                \"fontCharacter\": \"\\\\E001\"\n            }\n        },\n        \"distro-fedora\": {\n            \"description\": \"Ubuntu icon\",\n            \"default\": {\n                \"fontPath\": \"./distroicons.woff\",\n                \"fontCharacter\": \"\\\\E002\"\n            }\n        }\n    }\n}\n```\n\nProduct icon themes can redefine the icon (if they know about the icon ID).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/icons-in-labels.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/icons-in-labels.md"
 }

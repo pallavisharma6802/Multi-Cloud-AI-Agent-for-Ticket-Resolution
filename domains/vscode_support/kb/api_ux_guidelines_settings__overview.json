@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "# Settings\n\n[Settings](/api/references/contribution-points#contributes.configuration) are how a user can configure your extension. Settings can be input boxes, booleans, dropdowns, lists, key/value pairs. If your extension requires the user to configure specific settings, you can open the Settings UI and query your extension setting via the setting ID.\n\n**\u2714\ufe0f Do**\n\n* Add default values to each setting\n* Add clear descriptions to each setting\n* Link to documentation for complicated settings\n* Link to additional settings that are related\n* Link to setting IDs when needing the user to configure specific settings\n\n\u274c Don't\n\n* Create your own settings page/webview\n* Create long descriptions\n\n![Settings](images/examples/settings.png)\n\n*This example links to a specific setting using the setting ID.*",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/settings.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/ux-guidelines/settings.md"
 }

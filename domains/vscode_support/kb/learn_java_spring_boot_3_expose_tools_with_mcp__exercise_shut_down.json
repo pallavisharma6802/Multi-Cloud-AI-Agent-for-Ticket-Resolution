@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Exercise - shut down\n\n1. Select **Stop** for `todo-mcp` in `.vscode/mcp.json`, while the server is still running.\n2. Select **Stop** for **springboot-mcp-demo** in the Spring Boot Dashboard.\n3. Confirm it is no longer running, and that port 8080 is free.\n\nBecause the repository is in memory, stopping the process clears the todo created during\nthis chapter.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/3-expose-tools-with-mcp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/java-spring-boot/3-expose-tools-with-mcp.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable fixes\n\n* Loses text when maximizing the integrated terminal [#134448](https://github.com/microsoft/vscode/issues/134448)\n* Support fish shell integration automatic injection [#139400](https://github.com/microsoft/vscode/issues/139400)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_80.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_80.md"
 }

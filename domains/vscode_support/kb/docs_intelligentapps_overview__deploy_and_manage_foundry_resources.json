@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Deploy and manage Foundry resources\n\nSelect a Foundry project to work with its models, agents, tools, knowledge, and evaluations from Toolkit. The project provides the cloud context for resource operations, so confirm the target before creating or changing resources.\n\nFor code-based agents, use [hosted-agent deployment](/docs/intelligentapps/hosted-agents.md#deploy-your-hosted-agent) to deploy source code or a container image. After deployment, use the Hosted Agent Playground to test the remote agent and inspect its behavior. Local test results do not replace verification of the deployed version and its access to dependencies.\n\nSaving a prompt-agent version, deploying hosted-agent code, and publishing an agent application are separate operations. Follow the [Foundry agent lifecycle](https://learn.microsoft.com/azure/foundry/agents/concepts/development-lifecycle) for service identity, permissions, publication, and production operations.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/overview.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/overview.md"
 }

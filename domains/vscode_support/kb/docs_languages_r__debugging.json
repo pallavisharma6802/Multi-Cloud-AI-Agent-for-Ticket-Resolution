@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Debugging\n\nThe R debugging capabilities are provided by [R Debugger](https://marketplace.visualstudio.com/items?itemName=RDebugger.r-debugger) extension. It supports debugging R code or an R project by launching a new R process or attaching to a running one.\n\nWhen a breakpoint is hit, you can view or alter the variables of the currently selected stack frame, or evaluate an expression in the debug console in the stack frame.\n\nRead the project [README](https://github.com/ManuelHentschel/VSCode-R-Debugger) for more details.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/r.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/r.md"
 }

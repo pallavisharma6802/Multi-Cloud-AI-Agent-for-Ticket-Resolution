@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## New Documentation\n\n### Deploy Python tutorials\n\nThere are two new Python tutorials showing how to deploy Python web applications with VS Code.\n\n* [Deploy Python using Docker containers](https://code.visualstudio.com/docs/python/tutorial-deploy-containers)\n* [Deploy Python using Azure App Service](https://code.visualstudio.com/docs/python/tutorial-deploy-app-service-on-linux)\n\n### Debugging recipes\n\nThere are new VS Code debugging [recipes](https://github.com/microsoft/vscode-recipes) for [PHP](https://github.com/microsoft/vscode-recipes/tree/main/PHP), [Python](https://github.com/microsoft/vscode-recipes/tree/main/debugging%20python), and [Ruby on Rails](https://github.com/microsoft/vscode-recipes/tree/main/debugging-Ruby-on-Rails).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_29.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_29.md"
 }

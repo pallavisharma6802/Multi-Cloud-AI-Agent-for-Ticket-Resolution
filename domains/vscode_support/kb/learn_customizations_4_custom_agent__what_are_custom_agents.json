@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## What are custom agents?\n\n[Custom agents](https://code.visualstudio.com/docs/agent-customization/custom-agents) allow you to configure AI to take on specific roles.\n\nInstead of a generic assistant, you define a persona with a clear purpose, behavior, and scope. This could be something like a security reviewer, planner, or solution architect.\n\nEach agent can have its own:\n\n- instructions and behavior\n- access to tools\n- understanding of your project\n\nThis transforms the AI from a general assistant into a role-specific collaborator.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/4-custom-agent.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/4-custom-agent.md"
 }

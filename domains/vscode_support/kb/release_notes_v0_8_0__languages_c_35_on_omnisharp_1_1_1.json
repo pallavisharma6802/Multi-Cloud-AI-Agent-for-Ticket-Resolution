@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Languages - C&#35; on Omnisharp 1.1.1\nWe have moved to the OmniSharp version 1.1.1 [(OmniSharp releases)](https://github.com/OmniSharp/omnisharp-roslyn/releases). This version of OmniSharp will happily work with DNX Beta7 but note that on Linux and Mac there is not yet support for using [CoreCLR](https://github.com/OmniSharp/omnisharp-roslyn/issues/294) as a development platform.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_8_0.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v0_8_0.md"
 }

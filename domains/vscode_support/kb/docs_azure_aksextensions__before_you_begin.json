@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Before you begin\n\nThe [AKS {% data variables.product.prodname_vscode_shortname %} Extension](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-aks-tools) has parent dependency on [Kubernetes {% data variables.product.prodname_vscode_shortname %} extension](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools).\n\nYou will need to download the [Kubernetes {% data variables.product.prodname_vscode_shortname %} extension](https://code.visualstudio.com/docs/azure/kubernetes).\n\nYou can follow this guide on an existing AKS cluster or you can [create AKS cluster](https://learn.microsoft.com/azure/aks/learn/quick-kubernetes-deploy-portal).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/aksextensions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/azure/aksextensions.md"
 }

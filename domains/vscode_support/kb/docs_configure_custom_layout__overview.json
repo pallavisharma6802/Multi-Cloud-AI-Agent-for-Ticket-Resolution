@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "# Custom Layout\n\n{% data variables.product.prodname_vscode %} comes with a simple user interface and convenient default layout. At the same time, {% data variables.product.prodname_vscode_shortname %} provides options and settings to let you customize the UI layout to suit your preferences and work style. In this topic, we'll highlight various UI customizations so you can display views, editors, and panels in the way that's most productive for you.\n\nThis article starts by discussing [Workbench](#workbench) customizations to rearrange UI elements such as the side bars, views, and panels. Later in the article, we'll cover customization of the [Editor](#editor) region with editor groups, split editors, and editor tabs.\n\n> [!NOTE]\n> If you are new to {% data variables.product.prodname_vscode_shortname %}, you may want to start with the [user interface overview](/docs/editing/getting-started/userinterface.md) or take a look at the [Tips and Tricks](/docs/editing/getting-started/tips-and-tricks.md) article.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/custom-layout.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/custom-layout.md"
 }

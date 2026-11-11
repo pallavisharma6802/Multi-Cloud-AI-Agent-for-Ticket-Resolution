@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Video outline\n\n* Double Shift\n\n  * Assign the double `kbstyle(Shift)` keyboard shortcut for often-used commands in the Keyboard Shortcuts editor (**Preferences: Open Keyboard Shortcuts** command)\n\n* Side Bar focus with keyboard shortcuts\n\n  * Press `kb(workbench.action.focusSideBar)` to put the focus in the Primary Side Bar\n  * Press `kb(workbench.action.focusFirstEditorGroup)` to put the focus back in the editor\n\n* Copy Paste\n\n  * Press `kb(editor.action.clipboardCopyAction)` to copy the entire line\n  * Press `kb(editor.action.clipboardPasteAction)` to paste the entire line\n\n* Multiple cursors\n\n  * Press `kb(editor.action.insertCursorAtEndOfEachLineSelected)` to add a cursor to the end of each selected line\n\n* Multiple terminal windows\n\n  * Drag terminal windows in the editor\n  * Switch between open terminals in the editor with `kb(workbench.action.quickOpen)`",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/introvideos/productivity.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/introvideos/productivity.md"
 }

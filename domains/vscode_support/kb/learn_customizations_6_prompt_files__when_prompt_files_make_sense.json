@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## When prompt files make sense\n\nPrompt files are most useful when:\n\n- you repeat the same task multiple times\n- the prompt contains detailed instructions\n- you want consistent results across files or projects\n\nIf something is only done once, a prompt file may not be necessary.\n\nBut for repeated workflows, they become extremely valuable.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/6-prompt-files.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/6-prompt-files.md"
 }

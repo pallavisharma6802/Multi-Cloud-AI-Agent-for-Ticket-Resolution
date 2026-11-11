@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Customization migration settings\n\n| Setting and Description | Default |\n|------------------------|---------------|\n| `setting(chat.customizations.migration.enabled)` _(Experimental)_<br/>Show migration actions, hints, compatibility badges, and compatibility details for customizations that the selected harness can't use in their current location or format. | `true` |\n\nLearn how to [migrate agent customizations](/docs/agent-customization/migrate-customizations.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/ai-settings.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/reference/ai-settings.md"
 }

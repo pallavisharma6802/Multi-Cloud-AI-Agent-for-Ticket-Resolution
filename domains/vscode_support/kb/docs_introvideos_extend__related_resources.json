@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Related resources\n\n* [Extension Marketplace Documentation](/docs/configure/extensions/extension-marketplace.md) - Official documentation for the {% data variables.product.prodname_vscode_shortname %} Extension Marketplace.\n* [Marketplace](https://marketplace.visualstudio.com/) - Browse extensions online.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/introvideos/extend.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/introvideos/extend.md"
 }

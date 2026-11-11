@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# Using Clang in {% data variables.product.prodname_vscode %}\n\nIn this tutorial, you configure {% data variables.product.prodname_vscode %} on macOS to use the Clang/LLVM compiler and debugger.\n\nAfter configuring {% data variables.product.prodname_vscode_shortname %}, you will compile and debug a C++ program in {% data variables.product.prodname_vscode_shortname %}. This tutorial does not teach you about Clang or the C++ language. For those subjects, there are many good resources available on the Web.\n\nIf you have any trouble, feel free to file an issue for this tutorial in the [{% data variables.product.prodname_vscode_shortname %} documentation repository](https://github.com/microsoft/vscode-docs/issues).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/config-clang-mac.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/config-clang-mac.md"
 }

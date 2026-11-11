@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Source Control\n\n### Commit action button improvements\n\nUsers can globally control the secondary action (for example, `pull`, `sync`) that is being executed following a successful commit operation using the `git.postCommitCommand` setting. This milestone we have added a new setting `git.rememberPostCommitCommand` that can be enabled to remember the last executed secondary action per repository.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_71.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_71.md"
 }

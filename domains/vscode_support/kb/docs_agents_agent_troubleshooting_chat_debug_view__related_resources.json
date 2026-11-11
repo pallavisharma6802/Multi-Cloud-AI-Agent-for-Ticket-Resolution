@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [Troubleshoot AI in {% data variables.product.prodname_vscode_shortname %}](/docs/agents/agent-troubleshooting/troubleshooting.md)\n* [Add context to chat](/docs/chat/copilot-chat-context.md)\n* [Security considerations for using AI](/docs/agents/run/security.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/agent-troubleshooting/chat-debug-view.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/agent-troubleshooting/chat-debug-view.md"
 }

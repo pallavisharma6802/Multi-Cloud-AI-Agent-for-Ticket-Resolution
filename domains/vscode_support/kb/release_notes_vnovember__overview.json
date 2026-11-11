@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "# November 2015 (0.10.3 - Beta 2015)\n\nHi,\n\nWith this release, we mark our official Beta milestone and the big news is that VS Code now supports extensions (plug-ins) and is open source!\n\nDownloads: [Windows](https://az764295.vo.msecnd.net/public/0.10.3/VSCodeSetup.exe) | [OS X](https://az764295.vo.msecnd.net/public/0.10.3/VSCode-darwin.zip) | [Linux 32-bit](https://az764295.vo.msecnd.net/public/0.10.3/VSCode-linux32.zip) | [Linux 64-bit](https://az764295.vo.msecnd.net/public/0.10.3/VSCode-linux64.zip)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vNovember.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/vNovember.md"
 }

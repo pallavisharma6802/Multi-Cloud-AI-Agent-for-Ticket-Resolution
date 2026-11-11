@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Languages - C&#35;\n\nC# language support is now an optional [install from the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp). You can install it from within VS Code by searching for 'C#':\n\n![Installing C# extension](images/February/ext-csharp.png)\n\nor if you already have a project with C# files, VS Code will prompt you to install the extension as soon as you open a C# file.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vFebruary.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/vFebruary.md"
 }

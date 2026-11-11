@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Rename symbols\n\nWhen you rename a symbol in your code, get AI-generated suggestions for a new name based on the context of the symbol and the codebase.\n\n![Inline chat suggesting a new name for a symbol in a Python file](images/copilot-smart-actions/copilot-inline-chat-rename-suggestion.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/copilot-smart-actions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/copilot-smart-actions.md"
 }

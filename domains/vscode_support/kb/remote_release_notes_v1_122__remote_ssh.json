@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Remote - SSH\n\n### EOL for 32-bit ARM Linux hosts\n\nVS Code release 1.122 is the last release that supports running the prebuilt servers on 32-bit ARM Linux hosts. Starting with VS Code release 1.123, you need to use a supported x86_64 or ARM64 Linux host for remote development. For more information, see the [Remote Development FAQ](https://code.visualstudio.com/docs/remote/faq#_can-i-run-vs-code-server-on-32bit-arm-linux-hosts).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_122.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_122.md"
 }

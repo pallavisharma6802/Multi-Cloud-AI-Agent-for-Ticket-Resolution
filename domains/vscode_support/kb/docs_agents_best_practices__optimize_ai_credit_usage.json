@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Optimize AI credit usage\n\nMany of the practices in this article also help you control cost. More capable models, large contexts, and throwaway work all consume [AI credits](/docs/agents/concepts/language-models.md#ai-credits-and-model-costs). A few levers have the biggest impact:\n\n* **Match the model to the task.** Use faster, cheaper models for simple work and reserve premium models for planning, debugging, and architectural decisions. Auto model selection balances quality and cost for you.\n\n* **Keep context lean.** Send only relevant context, [compact](/docs/agents/run/sessions/manage-sessions.md#compact-conversation-context) long conversations, and start fresh sessions for unrelated tasks to avoid paying for irrelevant history on every request.\n\n* **Plan before you implement.** Separating planning from implementation avoids spending credits on code you throw away.\n\nFor a complete set of techniques, see [optimize AI credit usage](/docs/agents/guides/optimize-usage.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/best-practices.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/best-practices.md"
 }

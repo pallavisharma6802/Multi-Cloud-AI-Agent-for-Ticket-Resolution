@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Next steps\n\n- [Linting](/docs/python/linting.md) - Enable, configure, and apply various Python linters.\n- [Debugging](/docs/python/debugging.md) - Learn to debug Python both locally and remotely.\n- [Testing](/docs/python/testing.md) - Configure test environments and discover, run, and debug tests.\n- [Basic Editing](/docs/editing/codebasics.md) - Learn about the powerful {% data variables.product.prodname_vscode_shortname %} editor.\n- [Code Navigation](/docs/editing/editingevolved.md) - Move quickly through your source code.\n- [IntelliSense](/docs/editing/intellisense.md) - Learn about IntelliSense features.\n- [Jupyter Support](/docs/datascience/jupyter-notebooks.md) - Learn how to get started with Jupyter Notebooks.\n- [Python Extension Template](/api/advanced-topics/python-extension-template.md) - Create an extension to integrate your favorite Python tools.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/editing.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/python/editing.md"
 }

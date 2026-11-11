@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Languages\n\n### Markdown preview typographer support\n\nThe new `markdown.preview.typographer` setting lets you enabled smart quotes and simple [typographic replacements](https://github.com/markdown-it/markdown-it/blob/master/lib/rules_core/replacements.js) in the built-in Markdown preview.\n\nIn the example below, Markdown text such as `(c)` gets automatically replaced by copyright symbol `\u00a9` in the preview:\n\n![Smart quotes and text replacement in the Markdown preview](images/1_56/markdown-typographer.png)\n\nThe `markdown.preview.typographer` setting is disabled by default.\n\n### More files recognized as shellscript\n\nFiles with the `.xsession` and `.xprofile` filename extensions will be automatically recognized as shellscript.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_56.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_56.md"
 }

@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Next steps\n\n* [Manage cloud sessions](/docs/agents/run/cloud-sandbox-sessions.md) to learn about reconnecting, reviewing work, and finishing a session.\n* [Create an automation](/docs/agents/run/automations.md) for recurring work such as a repository digest. An automation starts new runs from a saved prompt rather than keeping this interactive session running.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/cloud-continuity-tutorial.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/cloud-continuity-tutorial.md"
 }

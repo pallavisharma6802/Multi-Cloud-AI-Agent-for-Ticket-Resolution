@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Serviceability\n\nYou can now file issues on extensions from within VS Code. The issue reporter now includes a dropdown to choose whether you are reporting an issue on VS Code itself or an extension. If the extension has a repository on GitHub, the similar issue search and **Preview on GitHub** submission button will use that repository.\n\n![report on extensions](images/1_22/report-on-extensions.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_22.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_22.md"
 }

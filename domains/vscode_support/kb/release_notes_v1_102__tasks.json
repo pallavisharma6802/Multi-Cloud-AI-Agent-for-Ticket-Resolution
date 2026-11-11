@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Tasks\n\n### Rerun all running tasks\n\nYou can now quickly rerun all currently running tasks with the new `Tasks: Rerun All Running Tasks command`. This is useful for workflows that involve multiple concurrent tasks, allowing you to restart them all at once without stopping and rerunning each individually.\n\n### Restart task reloads updated tasks.json\n\nThe **Restart Task** command now reloads your `tasks.json` before restarting, ensuring that any recent changes are respected. Previously, task configuration changes were not picked up when restarting a task, which could lead to confusion or outdated task behavior.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_102.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_102.md"
 }

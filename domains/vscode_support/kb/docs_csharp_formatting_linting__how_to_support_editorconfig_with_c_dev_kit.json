@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## How to support EditorConfig with C# Dev Kit\n\n**EditorConfig (.editorconfig) files** are supported with the [EditorConfig for {% data variables.product.prodname_vscode_shortname %} extension](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig), letting you customize formatting options in your C# project.  These files are also used to override the user/workspace settings with the settings you specify in them.\n\n![Editorconfig file example](images/formatting-linting/editorconfig-example.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/formatting-linting.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/formatting-linting.md"
 }

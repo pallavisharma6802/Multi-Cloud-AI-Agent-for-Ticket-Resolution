@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Deprecated features and settings\n\n### GitHub Enterprise URI setting\n\nThe `github-enterprise.uri` setting is deprecated in favor of `setting(github-enterprise.uris)`, which accepts multiple GHE.com and GitHub Enterprise Server instances. VS Code still reads `github-enterprise.uri` when `setting(github-enterprise.uris)` isn't configured.\n\n### Legacy VS Code sandbox settings and device policies\n\nLegacy VS Code sandbox settings and device policies are deprecated. `ChatAgentSandboxEnabled` now supplies an overridable default rather than a mandatory requirement in Agent Host. Local behavior is unchanged.\n\n<!-- RELEASE_THANK_YOU_START -->",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_141.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_141.md"
 }

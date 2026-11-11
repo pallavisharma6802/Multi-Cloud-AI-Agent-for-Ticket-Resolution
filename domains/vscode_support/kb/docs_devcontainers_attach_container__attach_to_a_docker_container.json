@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Attach to a Docker container\n\nTo attach to a Docker container, either select **Dev Containers: Attach to Running Container...** from the Command Palette (`kbstyle(F1)`) or use the **Remote Explorer** in the Activity Bar and from the **Containers** view, select the **Attach to Container** inline action on the container you want to connect to.\n\n![Containers Explorer screenshot](images/attach-container/containers-attach.png)\n\n> **Note:** When using Alpine Linux containers, some extensions may not work due to `glibc` dependencies in native code inside the extension.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/attach-container.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/devcontainers/attach-container.md"
 }

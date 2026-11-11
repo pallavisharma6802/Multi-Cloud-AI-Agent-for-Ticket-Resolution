@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Next steps\n\nYou've covered the basic user interface - there is a lot more to {% data variables.product.prodname_vscode_shortname %}.  Read on to find out about:\n\n* [Intro Video - Setup and Basics](/docs/introvideos/basics.md) - Watch a tutorial on the basics of {% data variables.product.prodname_vscode_shortname %}.\n* [User/Workspace Settings](/docs/configure/settings.md) - Learn how to configure {% data variables.product.prodname_vscode_shortname %} to your preferences through user and workspace settings.\n* [Code Navigation](/docs/editing/editingevolved.md) - Peek and Goto Definition, and more.\n* [Integrated Terminal](/docs/terminal/basics.md) - Learn about the integrated terminal for quickly performing command-line tasks from within {% data variables.product.prodname_vscode_shortname %}.\n* [IntelliSense](/docs/editing/intellisense.md) - {% data variables.product.prodname_vscode_shortname %} brings smart code completions.\n* [Debugging](/docs/debugtest/debugging.md) - This is where {% data variables.product.prodname_vscode_shortname %} really shines.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/codebasics.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/codebasics.md"
 }

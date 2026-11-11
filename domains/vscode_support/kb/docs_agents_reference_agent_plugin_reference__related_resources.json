@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [Create agent skills](/docs/agent-customization/agent-skills.md)\n* [Create custom agents](/docs/agent-customization/custom-agents.md)\n* [Configure agent hooks](/docs/agent-customization/hooks.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/agent-plugin-reference.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/reference/agent-plugin-reference.md"
 }

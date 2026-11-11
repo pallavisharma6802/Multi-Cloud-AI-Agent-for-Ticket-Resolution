@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Containers (version 0.234.x)\n\n### Move settings and extensions properties to \"vscode\" namespace\n\nWe are moving the VS Code-specific properties to a `vscode` property under `customizations` in preparation for the open specification for `devcontainer.json`.\n\n```jsonc\n{\n    \"customizations\": {\n        \"vscode\": {\n            \"settings\": { /*...*/ },\n            \"extensions\": [ /*...*/ ]\n        }\n    }\n}\n```\n\n### Refactoring to extract reference implementation\n\nWork is being done behind the scenes to extract a reference implementation for the dev container configuration. This will be released as a CLI that can build and start a dev container from a `devcontainer.json`. The CLI will be independent of VS Code and also support running in continuous integration (CI) builds.\n\nExpect more details on this effort to become available as we make progress with our open specification effort.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_67.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_67.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Accessibility\n\n### Multi-cursor support\n\nWe have added initial screen reader support for [multiple cursors](https://code.visualstudio.com/docs/editing/codebasics#_multiple-selections-multicursor). Whenever a new cursor is added, VS Code now announces it along with the cursor line and column position. VS Code also announces when secondary cursors have been removed. We plan to further improve multi-cursor accessibility as we receive more feedback.\n\n### Increased limit to 1000 lines for screen reader\n\nThanks to upstream issues being fixed, we have increased the number of lines that a \"Say All\" command can read. Previously, we had a hard limit of 100 lines that could be announced by a screen reader at one time, and we have now increased this limit to 1000. Further upstream fixes are needed in order for us to not have any limit at all.\n\nDue to this change, the setting `editor.accessibilityPageSize` is now deprecated. We will still support this setting in the next couple of releases, however we plan to fully drop it in the future.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_55.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_55.md"
 }

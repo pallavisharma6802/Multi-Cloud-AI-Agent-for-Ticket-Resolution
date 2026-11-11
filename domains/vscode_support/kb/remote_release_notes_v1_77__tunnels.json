@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Tunnels\n\n### Continue Working on in Desktop\n\nWhen connected to a tunnel in vscode.dev, you can continue in VS Code Desktop with the **Continue Working in VS Code Desktop** command. The command can be found in the remote menu and the Command Palette.\n\n![Continue Working in VS Code Desktop](images/1_77/tunnel-open-in-desktop.png)\n\n### Singleton tunnel instances\n\nMultiple instances of tunnels running on a machine will be deduplicated. Additional requests to **Turn on Tunnel Access** in the VS Code UI, or running `code tunnel` on the command line, monitor any existing running tunnel. These monitoring processes still allow you to stop or restart the tunnel by entering \"x\" or \"r\" respectively.\n\n![Screenshot of terminal showing the output of the \"monitoring\" process](images/1_77/remote-tunnel-singleton.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_77.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_77.md"
 }

@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Extensions and telemetry\n\n{% data variables.product.prodname_vscode_shortname %} lets you add features to the product by installing Microsoft and third-party extensions. These extensions may be collecting their own usage data and are not controlled by the `setting(telemetry.telemetryLevel)` setting. Consult the specific extension's documentation to learn about its telemetry reporting and whether it can be disabled.\n\nExtension authors may refer to the [\"For Extension Authors\"](#for-extension-authors) section for guidance on implementing telemetry best practices within their extension.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/telemetry.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/telemetry.md"
 }

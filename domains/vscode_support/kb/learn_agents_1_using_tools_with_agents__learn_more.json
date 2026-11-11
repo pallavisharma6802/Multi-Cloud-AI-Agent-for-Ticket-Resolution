@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Learn more\n\n* [Use tools with agents](https://code.visualstudio.com/docs/agents/run/tools)\n* [Tools concepts](https://code.visualstudio.com/docs/copilot/concepts/tools)\n* [Agent sandboxing](https://code.visualstudio.com/docs/copilot/concepts/trust-and-safety#agent-sandboxing)\n* [Agent approvals and permissions](https://code.visualstudio.com/docs/agents/run/approvals#permission-levels)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/1-using-tools-with-agents.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/agents/1-using-tools-with-agents.md"
 }

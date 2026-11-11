@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Data and telemetry\n\nThe Microsoft Data Wrangler extension for {% data variables.product.prodname_vscode %} collects usage data and sends it to Microsoft to help improve our products and services. Read our [privacy statement](https://go.microsoft.com/fwlink/?LinkId=521839) to learn more. This extension respects the `telemetry.telemetryLevel` setting which you can learn more about at https://code.visualstudio.com/docs/configure/telemetry.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/data-wrangler.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/datascience/data-wrangler.md"
 }

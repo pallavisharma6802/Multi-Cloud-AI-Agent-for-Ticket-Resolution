@@ -4,5 +4,5 @@
   "category": "INSTALLATION",
   "intent": "installation",
   "content": "## Next steps\n\n* [Setup overview](/docs/getstarted/overview.md) - General information about {% data variables.product.prodname_vscode_shortname %} setup and updates.\n* [Windows setup](/docs/setup/windows.md) - Details and common questions about installing {% data variables.product.prodname_vscode_shortname %} on Windows.\n* [macOS setup](/docs/setup/mac.md) - {% data variables.product.prodname_vscode_shortname %} is available for both Intel and Apple silicon macOS machines.\n* [Linux setup](/docs/setup/linux.md) - Learn about the different {% data variables.product.prodname_vscode_shortname %} packages available for Linux.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/uninstall.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/setup/uninstall.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Contributions to extensions\n\n### GitHub Pull Requests\n\nThere has been more progress on the [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) extension, which enables you to work on, create, and manage pull requests and issues. New features include:\n\n* The `#openPullRequest` tool recognizes open PR diffs and PR files as being the \"open pull request\".\n* The setting `setting(githubIssues.issueAvatarDisplay)` can be used to control whether the first assignee's avatar or the author's avatar is shown in the Issues view.\n* Instead of always running the pull request queries that back the Pull Requests view when refreshing, we now check to see if there are new PRs in the repo before running the queries. This should reduce API usage when there are no new PRs.\n\nReview the [changelog for the 0.120.0](https://github.com/microsoft/vscode-pull-request-github/blob/main/CHANGELOG.md#01200) release of the extension to learn about everything in the release.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_105.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_105.md"
 }

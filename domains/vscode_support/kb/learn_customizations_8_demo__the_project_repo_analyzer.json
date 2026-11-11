@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## The project: Repo Analyzer\n\nThe app we\u2019re building is called **Repo Analyzer**.\n\nIts purpose is simple: take in the URL of a GitHub repository, analyze the codebase, and grade the quality of the project on a scale from 1 to 10.\n\nIt also provides recommendations to improve the score, helping developers understand what changes could make the project stronger.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/8-demo.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/8-demo.md"
 }

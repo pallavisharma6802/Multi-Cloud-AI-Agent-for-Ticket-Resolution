@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [Create custom instructions](/docs/agent-customization/custom-instructions.md)\n* [Configure agent tools](/docs/agents/run/tools.md)\n* [Community contributed instructions, prompts, and custom agents](https://github.com/github/awesome-copilot)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/prompt-files.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/prompt-files.md"
 }

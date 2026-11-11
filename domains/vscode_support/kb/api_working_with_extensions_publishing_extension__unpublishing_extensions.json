@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Unpublishing extensions\n\nYou can unpublish an extension from the [Visual Studio Marketplace publisher management page](https://marketplace.visualstudio.com/manage) by clicking **More Actions > Unpublish**:\n\n![Unpublish the extension via the Marketplace management page](images/publishing-extension/unpublish-extension.png)\n\nOnce unpublished, the extension's Availability status is changed to **Unpublished** and it will no longer be available for download from both the Marketplace and Visual Studio Code:\n\n![Unpublished extension](images/publishing-extension/unpublished-extension.png)\n\n> [!NOTE]\n> When you unpublish an extension, the Marketplace preserves the extension statistics. The extension remains publicly discoverable and available via an existing API.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/working-with-extensions/publishing-extension.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/working-with-extensions/publishing-extension.md"
 }

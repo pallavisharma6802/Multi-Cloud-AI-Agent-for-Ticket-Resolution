@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Engineering\n\n### Faster VS Code start-up by using asar\n\nWe are now packaging the core `node_modules` into an Electron Archive ([asar](https://github.com/electron/asar)) for faster start-ups by up to 5%. The file count on disk for a VS Code installation also gets reduced by approximately 25%.\n\n### Duplicate issue detection\n\nThe issue bot and the Issue Reporter UI run the new issue through duplicate detection and suggest candidates of existing issues.\n\n![Duplicate Detection by Issue Bot](images/1_21/issue-bot-duplicate-detection.png)\n\n### Issue bot configuration by development phase\n\nThe issue bot changes its configuration depending on the current development phase (development, release, etc.). The change between development phases is set up ahead of time in the vscode repository at `.github/calendar.yml` ([example](https://github.com/microsoft/vscode/blob/main/.github/calendar.yml)).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_21.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_21.md"
 }

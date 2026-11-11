@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Next video\n\n* [Personalize {% data variables.product.prodname_vscode %}](/docs/introvideos/configure.md) - Learn how to personalize {% data variables.product.prodname_vscode_shortname %} to your work style with themes.\n* [Introductory Videos](/docs/getstarted/introvideos.md) - Review the entire list of videos.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/introvideos/productivity.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/introvideos/productivity.md"
 }

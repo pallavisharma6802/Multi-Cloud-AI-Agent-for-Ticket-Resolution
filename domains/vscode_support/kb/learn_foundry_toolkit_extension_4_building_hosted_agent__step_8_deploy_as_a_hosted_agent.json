@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Step 8: Deploy as a Hosted Agent\n\nNext, deploy the agent to a hosted environment. This step uses the same project assets you just debugged locally, so you can be confident that behavior will be consistent.\n\n1. Click Deploy button in the Agent Inspector in top right corner.\n\n   You should see the following screen:\n\n   ![Deploy via Agent Inspector](../images/foundry-toolkit/ch4-deploy.png)\n\n   **Fig 06: Deploy via Agent Inspector.**\n\n2. Click Next.\n3. In Review and Deploy, choose Select Existing Dockerfile and locate it in your computer. Finally click Deploy to start the deployment process.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
 }

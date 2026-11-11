@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## {% data variables.product.prodname_vscode %} Marketplace\n\nThere are many {% data variables.product.prodname_vscode_shortname %} extensions on the [Marketplace](https://marketplace.visualstudio.com/search?term=azure&target=VSCode&category=All%20categories&sortBy=Relevance) that make it easy to build and host applications on Azure.\n\n<div class=\"marketplace-extensions-azure-curated\"></div>\n\n> **Tip:** Click on an extension tile above to read the description and reviews in the Marketplace.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/overview.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/azure/overview.md"
 }

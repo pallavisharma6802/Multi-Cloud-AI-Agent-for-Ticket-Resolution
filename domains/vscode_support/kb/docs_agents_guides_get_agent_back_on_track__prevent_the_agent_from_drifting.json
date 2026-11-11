@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Prevent the agent from drifting\n\nReduce the need for recovery by making the intended outcome observable:\n\n* Define the task boundary, constraints, and files or systems that must not change.\n* Include acceptance criteria, expected output, or test commands.\n* Ask for a plan before implementation when the task spans several components or contains significant risk.\n* Commit a known-good starting point with Git before a large change.\n* Keep **Manual permissions** selected for unfamiliar repositories, tools, and workflows.\n* Review the first meaningful result instead of waiting until the entire task is complete.\n* Start a new session when you switch to an unrelated task.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/get-agent-back-on-track.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/get-agent-back-on-track.md"
 }

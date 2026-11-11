@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable Changes\n\n* [35361](https://github.com/microsoft/vscode/issues/35361): Limited native window tabs functionality in macOS high sierra\n* [40158](https://github.com/microsoft/vscode/issues/40158): Fix breakpoint verification UI for the multi session case\n* [42726](https://github.com/microsoft/vscode/issues/42726): Open File: unable to open a file with spaces in name if absolute path is provided\n* [49591](https://github.com/microsoft/vscode/issues/49591): Have a \"Close All\" button as editor action in the toolbar\n* [51200](https://github.com/microsoft/vscode/issues/51200): Process monitor on Linux shows wrong process load\n* [51440](https://github.com/microsoft/vscode/issues/51440): Allow closing notifications with middle mouse button",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_25.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_25.md"
 }

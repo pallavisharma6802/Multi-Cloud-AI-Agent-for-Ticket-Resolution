@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Language Server Protocol\n\nThere is now proposed support for the [call hierarchy](https://github.com/microsoft/vscode-languageserver-node/blob/dbaeumer/moreIntegrationTests/protocol/src/protocol.callHierarchy.proposed.ts#L1) view via LSP.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_41.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_41.md"
 }

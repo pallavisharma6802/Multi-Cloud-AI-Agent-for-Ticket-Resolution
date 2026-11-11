@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Why do I see red squiggles under Standard Library types?\n\nThe most common reason for this is missing include paths and defines. The easiest way to fix this is to set `compilerPath` in **c_cpp_properties.json** to the path to your compiler.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/faq-cpp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/faq-cpp.md"
 }

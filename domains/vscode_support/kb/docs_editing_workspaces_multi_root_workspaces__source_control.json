@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Source Control\n\nWith multi-root workspaces, there is a **SOURCE CONTROL PROVIDERS** section that gives you an overview when you have multiple active repositories. These can be contributed by several SCM providers; for example, you can have Git repositories side-by-side with Azure DevOps Server workspaces. As you select repositories in this view, you can see the source control details below.\n\n![multiple scm providers](images/multi-root-workspaces/multiple-scm-providers.png)\n\nYou can use `kbstyle(Ctrl+Click)` or `kbstyle(Shift+Click)` to select multiple repositories. Their details will appear as separate regions underneath.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/workspaces/multi-root-workspaces.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/workspaces/multi-root-workspaces.md"
 }

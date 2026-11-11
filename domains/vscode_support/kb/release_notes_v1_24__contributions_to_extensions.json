@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Contributions to Extensions\n\nOur team maintains or contributes to a number of VS Code extensions. Most notably this month:\n\n### Vetur\n\nDuring this milestone, the [Vetur](https://github.com/vuejs/vetur) Vue.js extension started taking advantage of VS Code's file watcher. As a result:\n\n* Vetur now consumes less CPU / memory usage.\n* The new file watching mechanism correctly updates TS/JS files imported in Vue files and provides precise completions.\n\nMeanwhile, Vetur now has End-To-End test coverage and centralized file system access. These changes ensure Vetur's stability and unblocks cross-file and cross-section language features, such as completion for CSS class names in Vue's HTML template or HTML template interpolation.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_24.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_24.md"
 }

@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Marketplace Language Packs\n\nAs described above, {% data variables.product.prodname_vscode_shortname %} ships with English as the default display language, but other languages are available through [Marketplace Language Packs](https://marketplace.visualstudio.com/search?target=VSCode&category=Language%20Packs&sortBy=Installs).\n\nYou can also search for Language Packs in the Extensions view (`kb(workbench.view.extensions)`) by typing the language you are looking for along with `category:\"Language Packs\"`.\n\n![German Language Pack](images/locales/German-language-pack.png)\n\nYou can have multiple Language Packs installed and select the current display language with the **Configure Display Language** command.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/locales.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/locales.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Tasks\n\n### Removal of Tasks 0.1.0 with upgrade\n\nTasks 2.0.0 has been available and working well for over three years, and tasks 0.1.0 has been deprecated throughout that time. In light of our [Node.js-free renderer](https://github.com/microsoft/vscode/issues/92164) goal, tasks 0.1.0 has been deleted rather than brought into the Node.js-free world. When you open a folder that contains 0.1.0 tasks, they will be automatically upgraded to version 2.0.0 for you.\n\n![Tasks upgrade notification](images/1_56/tasks-upgrade.png)\n\n### No \"Task\" prefix in terminal tabs\n\nWhen using the new [Terminal tabs](#terminal-tabs) feature, the \"Task\" prefix will no longer be added to the terminal name. Instead, tasks are indicated by the \"tools\" icon to make better use of the available space.\n\n![Tasks as terminal tabs](images/1_56/tasks-terminal-tabs.png)\n\n### Better matching with eslint-stylish\n\nThe `$eslint-stylish` problem matcher matches multiline problems more accurately.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_56.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_56.md"
 }

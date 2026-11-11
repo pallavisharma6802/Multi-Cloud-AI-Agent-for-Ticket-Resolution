@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Next steps\n\n* [Command Line](/docs/configure/command-line.md) - {% data variables.product.prodname_vscode_shortname %} has a rich command-line interface to open or diff files and install extensions.\n* [Extension API](/api) - Learn about other ways to extend {% data variables.product.prodname_vscode_shortname %}.\n* [Snippet Guide](/api/language-extensions/snippet-guide.md) - You can package snippets for use in {% data variables.product.prodname_vscode_shortname %}.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/userdefinedsnippets.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/userdefinedsnippets.md"
 }

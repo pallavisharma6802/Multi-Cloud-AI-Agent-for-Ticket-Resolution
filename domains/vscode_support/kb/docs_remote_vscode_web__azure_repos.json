@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Azure Repos\n\nYou can open Azure Repos just like Github repos in {% data variables.product.prodname_vscode_shortname %} for the Web.\n\nWhen you navigate to a URL with the schema `https://vscode.dev/azurerepos/<organization>/<project>/<repo>`, you will be able to read, search the files in the repo, and commit your changes to Azure Repos. You can fetch, pull, and sync changes, and view branches.\n\nYou can open any repository, branch, or tag from Azure Repos in {% data variables.product.prodname_vscode_shortname %} for the Web by prefixing `vscode.dev` to the Azure Repos URL.\n\nAlternatively, when you are on an Azure DevOps repository or pull request, you can press (`kbstyle(.)`) to open it in {% data variables.product.prodname_vscode_shortname %} for the Web.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/vscode-web.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/remote/vscode-web.md"
 }

@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [Migrate hooks to the Copilot harness](/docs/agent-customization/migrate-customizations.md#migrate-hooks)\n* [GitHub Copilot hooks reference](https://docs.github.com/en/copilot/reference/hooks-reference)\n* [Security considerations for AI agents](/docs/agents/run/security.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/hooks.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/hooks.md"
 }

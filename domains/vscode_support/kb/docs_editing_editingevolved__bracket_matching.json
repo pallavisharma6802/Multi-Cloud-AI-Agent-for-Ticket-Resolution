@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Bracket matching\n\nMatching brackets will be highlighted as soon as the cursor is near one of them.\n\n![Bracket Matching](images/editingevolved/brackets.png)\n\n> **Tip:** You can jump to the matching bracket with `kb(editor.action.jumpToBracket)`\n\n### Bracket Pair Colorization\n\nMatching bracket pairs can also be colorized by setting `setting(editor.bracketPairColorization.enabled)` to `true`.\n\n![Bracket Pair Colorization](images/editingevolved/bracket-pair-colorization-on-off.drawio.png)\n\nAll colors are themeable and up to six colors can be configured.\n\nYou can use `setting(workbench.colorCustomizations)` to override these theme-contributed colors in your settings:\n\n```json\n\"workbench.colorCustomizations\": {\n    \"editorBracketHighlight.foreground1\": \"#FFD700\",\n    \"editorBracketHighlight.foreground2\": \"#DA70D6\",\n    \"editorBracketHighlight.foreground3\": \"#179fff\",\n},\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/editingevolved.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/editingevolved.md"
 }

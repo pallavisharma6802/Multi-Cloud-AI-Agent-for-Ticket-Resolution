@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Docker example\n\nThe `pipeTransport` can also be used to debug a process in a Docker container. For an attach, **launch.json** will include:\n\n```json\n\"pipeTransport\": {\n    \"pipeCwd\": \"${workspaceFolder}\",\n    \"pipeProgram\": \"docker\",\n    \"pipeArgs\": [\n        \"exec\",\n        \"-i\",\n        \"hello_gdb\",\n        \"sh\",\n        \"-c\"\n    ],\n    \"debuggerPath\": \"/usr/bin/gdb\"\n},\n```\n\nWhere `hello_gdb` is the name of your container.\n\nLaunch process by starting a container and then using the same `pipeTransport` to launch additional processes in the container. See this [launch.json](https://github.com/andyneff/hello-world-gdb/blob/master/.vscode/launch.json) for a [full example](https://github.com/andyneff/hello-world-gdb/).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/pipe-transport.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/pipe-transport.md"
 }

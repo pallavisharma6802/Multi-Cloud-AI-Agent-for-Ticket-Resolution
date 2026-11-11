@@ -4,5 +4,5 @@
   "category": "TERMINAL",
   "intent": "terminal",
   "content": "## Enhanced accessibility\n\nThe information that shell integration provides to {% data variables.product.prodname_vscode_shortname %} is used to improve [accessibility in the terminal](/docs/configure/accessibility/accessibility.md#terminal-accessibility). Some examples of enhancements are:\n\n- Navigation through detected commands in the accessible buffer (`kb(workbench.action.terminal.focusAccessibleBuffer)`)\n- An [audio cue](/docs/configure/accessibility/accessibility.md#accessibility-signals) plays when a command fails.\n- Underlying text box synchronizing such that using the arrow and backspace keys behave more correctly.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/shell-integration.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/terminal/shell-integration.md"
 }

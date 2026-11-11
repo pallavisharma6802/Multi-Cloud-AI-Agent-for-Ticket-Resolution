@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Feature availability and telemetry\n\n{% data variables.product.prodname_vscode_shortname %} uses an A/B experimentation system to roll out new features to a subset of users before making them generally available. This helps us validate that a new feature is working as expected across a diverse set of users before rolling it out to everyone. By participating in experimentation, you help us improve the quality of {% data variables.product.prodname_vscode_shortname %} and can help shape the future of the product through early feedback.\n\nTo enable this experimentation system, {% data variables.product.prodname_vscode_shortname %} uses the usage telemetry data to determine which users should receive the new feature and to validate how the feature is used. If you disable usage data telemetry by setting `setting(telemetry.telemetryLevel)` to `error`, `crash`, or `off`, we can't evaluate the feature's usage and therefore experimentation is disabled for you. As a result, the rollout of new features to you might be delayed until the feature is generally available.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/telemetry.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/telemetry.md"
 }

@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Popular extensions\n\n{% data variables.product.prodname_vscode_shortname %} ships with excellent support for JavaScript but you can additionally install debuggers, snippets, linters, and other JavaScript tools through [extensions](/docs/configure/extensions/extension-marketplace.md).\n\n<div class=\"marketplace-extensions-javascript-curated\"></div>\n\n> [!TIP]\n> The extensions shown above are dynamically queried. Click on an extension tile above to read the description and reviews to decide which extension is best for you. See more in the [Marketplace](https://marketplace.visualstudio.com).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/javascript.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/javascript.md"
 }

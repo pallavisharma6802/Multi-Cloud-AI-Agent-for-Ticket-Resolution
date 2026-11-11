@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "# Custom Data Extension\n\n[Custom Data format](https://github.com/microsoft/vscode-custom-data) allows extension authors to easily extend VS Code's HTML / CSS language support without having to write code.\n\nThe two [Contribution Points](/api/references/contribution-points) for using custom data in an extension are:\n\n- `contributes.html.customData`\n- `contributes.css.customData`\n\nFor example, by including this section in an extension's `package.json`:\n\n```json\n{\n  \"contributes\": {\n    \"html\": {\n      \"customData\": [\"./html.html-data.json\"]\n    },\n    \"css\": {\n      \"customData\": [\"./css.css-data.json\"]\n    }\n  }\n}\n```\n\nVS Code will load the HTML/CSS entities defined in both files and provide language support such as auto-completion and hover information for those entities.\n\nYou can find the [custom-data-sample](https://github.com/microsoft/vscode-extension-samples/tree/main/custom-data-sample) at [microsoft/vscode-extension-samples](https://github.com/microsoft/vscode-extension-samples).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/custom-data-extension.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-guides/custom-data-extension.md"
 }

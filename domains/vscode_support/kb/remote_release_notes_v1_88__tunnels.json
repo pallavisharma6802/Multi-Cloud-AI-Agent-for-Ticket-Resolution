@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Tunnels\n\nWindows administrators can now restrict access to Dev Tunnels and port forwarding via group policies. Read more on [Microsoft Learn](https://learn.microsoft.com/en-us/azure/developer/dev-tunnels/policies).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_88.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_88.md"
 }

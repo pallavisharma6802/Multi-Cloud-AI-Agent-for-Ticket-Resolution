@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Verifying custom instructions\n\n![Screenshot of Copilot Chat confirming that SOLID principles were applied during code generation](../images/customizations/ep-8-4-solid.png)\n\nDuring development, custom instructions are applied automatically.\n\nWithout being explicitly prompted, Copilot confirms that it followed:\n\n- SOLID principles\n\nThis ensures the app is being built according to the standards you\u2019ve already defined.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/8-demo.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/8-demo.md"
 }

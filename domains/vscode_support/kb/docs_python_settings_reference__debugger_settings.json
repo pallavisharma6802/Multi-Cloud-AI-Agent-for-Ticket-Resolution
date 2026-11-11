@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Debugger Settings\n\n### General debugging\n\n| Setting (python.debugpy.) | Default | Description | See also |\n| --- | --- | --- | --- |\n| debugJustMyCode | `true` | Specifies whether the debugger should only step through user-written code. Disabling allows you to step through library code as well. | [Debugging](/docs/python/debugging.md) |",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/settings-reference.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/python/settings-reference.md"
 }

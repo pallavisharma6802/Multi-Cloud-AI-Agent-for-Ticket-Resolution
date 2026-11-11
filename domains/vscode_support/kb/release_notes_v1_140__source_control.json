@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Source Control\n\n### Reuse ignored folders across worktrees (Experimental)\n\n**Setting**: `setting(git.worktreeSymlinkFolders)`\n\nAvoid reinstalling dependencies or duplicating large build artifacts in each [Git worktree](https://code.visualstudio.com/docs/sourcecontrol/branches-worktrees#_understanding-worktrees). Configure `setting(git.worktreeSymlinkFolders)` with `.gitignore`-style patterns for ignored folders, such as `node_modules`. When VS Code creates a new worktree, including for an agent session, it creates symlinks to matching folders in the current checkout.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_140.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_140.md"
 }

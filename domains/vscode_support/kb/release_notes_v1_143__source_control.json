@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Source Control\n\n### Multi-file diff editor file list (Experimental)\n\n**Setting**: `setting(multiDiffEditor.experimental.fileList)`\n\nNavigate changes from commits, stashes, and agent sessions with a file list beside the multi-file diff view. Enable `setting(multiDiffEditor.experimental.fileList)` to try it.\n\nEach file in the list has a status letter: A (added), M (modified), D (deleted), or R (renamed). As you scroll, the list highlights the file you're viewing. Select a file in the list to jump to its diff. Open **Files View & Position** in the editor toolbar's **More Actions** (**...**) menu to choose **View as List** or **View as Tree**, and to place the files **On the Left** or **On the Right** of the diffs.\n\n![Screenshot showing the multi-file diff editor file list with status letters for each changed file.](images/1_143/multi-file-diff-editor-file-list.webp)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_143.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_143.md"
 }

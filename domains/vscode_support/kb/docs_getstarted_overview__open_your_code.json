@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Open your code\n\nIn {% data variables.product.prodname_vscode_shortname %}, a folder that contains your project files is called a *workspace*. Opening a folder gives the editor, terminal, source control, debugger, and AI agents access to the same project context.\n\n1. Open {% data variables.product.prodname_vscode_shortname %} and select **File** > **Open Folder...**.\n\n1. Select an existing project folder. To start a new project, create a folder in the dialog and then open it.\n\n1. If the Workspace Trust dialog appears, review the folder contents and choose whether you trust its authors.\n\n    Only trust code from sources you know. You can safely browse unfamiliar code in Restricted Mode. Learn more about [Workspace Trust](/docs/editing/workspaces/workspace-trust.md).\n\nWhen the folder name and files appear in the Explorer view, you're ready to start working. You can also [clone a GitHub repository](/docs/sourcecontrol/github.md#cloning-a-repository) directly from {% data variables.product.prodname_vscode_shortname %}.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/getstarted/overview.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/getstarted/overview.md"
 }

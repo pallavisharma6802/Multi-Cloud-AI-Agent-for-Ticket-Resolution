@@ -4,5 +4,5 @@
   "category": "TERMINAL",
   "intent": "terminal",
   "content": "## Configuring the task/debug profile\n\nBy default, the task/debug features will use the default profile. This may not be ideal if your default has a heavy PowerShell startup script or a non-POSIX compliant shell for example. To configure a profile to be used only in the debug/tasks features, use the `terminal.integrated.automationProfile.<platform>` setting:\n\n```jsonc\n{\n  \"terminal.integrated.defaultProfile.osx\": \"fish\",\n  // Use a fully POSIX-compatible shell and avoid running a complex ~/.config/fish/config.fish\n  // for tasks and debug\n  \"terminal.integrated.automationProfile.osx\": {\n    \"path\": \"/bin/sh\"\n  }\n}\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/profiles.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/terminal/profiles.md"
 }

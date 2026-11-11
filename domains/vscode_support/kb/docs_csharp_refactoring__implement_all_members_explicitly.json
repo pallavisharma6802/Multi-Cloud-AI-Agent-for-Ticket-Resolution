@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Implement all members explicitly\n\n**What:** Define your interface's methods explicitly in a class.  An explicit interface implementation is a class member that is only called through the specified interface.\n\n**When:** Use when:\n\n* You don't want the same implementation to be called for multiple interfaces.\n* You want to resolve cases where two interfaces each declare different members of the same name such as a property and a method.\n\n**How-to:**\n\n1. Place your cursor on an interface being implemented in a class.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select **Implement all members explicitly**:\n\n![Implement all members explicitly example](images/refactoring/implement-all-members-explicitly.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/refactoring.md"
 }

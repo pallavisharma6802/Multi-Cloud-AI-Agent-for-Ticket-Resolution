@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## New documentation\n\n### Remote Development topics\n\nThe VS Code Remote Development extensions are still in preview but there is extensive [documentation](https://code.visualstudio.com/docs/remote/remote-overview) to help you get started.\n\nThere are specific topics for each Remote Development extension:\n\n* [Remote - SSH](https://code.visualstudio.com/docs/remote/ssh) - Connect to any location by opening folders on a remote machine/VM using SSH.\n* [Dev Containers](https://code.visualstudio.com/docs/devcontainers/containers) - Work with a sandboxed toolchain or container-based application inside (or mounted into) a container.\n* [WSL](https://code.visualstudio.com/docs/remote/wsl) - Get a Linux-powered development experience in the Windows Subsystem for Linux.\n\nUnder the [Remote](https://code.visualstudio.com/docs/remote) table of contents, you will also find a [Tips and Tricks](https://code.visualstudio.com/docs/remote/troubleshooting) guide as well as [FAQ](https://code.visualstudio.com/docs/remote/faq).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_35.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_35.md"
 }

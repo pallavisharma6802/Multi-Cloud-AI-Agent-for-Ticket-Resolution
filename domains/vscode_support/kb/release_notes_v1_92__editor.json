@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Editor\n\n### Lightbulb control improvements\n\nAt times, the lightbulb control might block code in the editor. To address this, we introduced an improved heuristic for the lightbulb control, which displays the lightbulb in the gutter when there is no space, instead of blocking code in the editor.\n\n![Lightbulb overlaps with code (left) versus positioned in the gutter (right).](images/1_92/lightbulb-positioning.png)\n\nYou can toggle the lightbulb control in the editor with the <a href=\"vscode://settings/editor.lightbulb.enabled\" codesetting=\"true\">`editor.lightbulb.enabled`</a> setting.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_92.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_92.md"
 }

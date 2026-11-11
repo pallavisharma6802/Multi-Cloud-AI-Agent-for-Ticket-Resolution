@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Accessibility\n\n### User action required sound\n\nWe\u2019ve added an accessibility signal to indicate when chat requires user action. This is opt-in as we fine tune the sound. You can configure this behavior with `setting(accessibility.signals.chatUserActionRequired)`.\n\n### New code action sounds\n\nWe\u2019ve introduced distinct sounds for:\n\n* when a code action is triggered: `setting(accessibility.signals.codeActionTriggered)`\n* when a code action is applied: `setting(accessibility.signals.codeActionApplied)`\n\n### Agent mode accessibility improvements\n\nWe now include rich information about confirmation dialogs in the accessible view, covering past tool runs, the current tool run, and any pending confirmations. This includes the inputs that will be used.\n\nWhen a confirmation dialog appears in a response, the action\u2019s title is now included in the ARIA label of the corresponding code block, the response\u2019s ARIA label, and the live alert to provide better context for screen reader users.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_101.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_101.md"
 }

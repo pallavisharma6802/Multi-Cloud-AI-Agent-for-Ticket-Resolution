@@ -4,5 +4,5 @@
   "category": "DEBUGGING",
   "intent": "debugging",
   "content": "## Next steps\n\nThat was tasks - let's keep going...\n\n* [tasks.json Schema](/docs/reference/tasks-appendix.md) - You can review the full `tasks.json` schema and descriptions.\n* [Basic Editing](/docs/editing/codebasics.md) - Learn about the powerful {% data variables.product.prodname_vscode_shortname %} editor.\n* [Code Navigation](/docs/editing/editingevolved.md) - Move quickly through your source code.\n* [Language Support](/docs/languages/overview.md) - Learn about our supported programming languages, both shipped with {% data variables.product.prodname_vscode_shortname %} and through community extensions.\n* [Debugging](/docs/debugtest/debugging.md) - Debug your source code directly in the {% data variables.product.prodname_vscode_shortname %} editor.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/tasks.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/debugtest/tasks.md"
 }

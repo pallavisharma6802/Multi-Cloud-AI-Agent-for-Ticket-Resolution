@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Containers (version 0.191.x)\n\n### Rebuild without cache\n\nA dev container can now be rebuilt without using Docker's image layer cache. When connected to a dev container, there is the additional **Rebuild Without Cache** command. When a local folder with a dev container configuration is open, there is the additional **Rebuild Without Cache and Reopen in Container** command.\n\n### devcontainer CLI\n\nThere is now a `devcontainer` Command Line Interface (CLI) that can be installed. This allows you to [open a folder within a dev container](https://code.visualstudio.com/docs/devcontainers/devcontainer-cli#_opening-a-folder-directly-within-a-dev-container), and to [build the dev container image](https://code.visualstudio.com/docs/devcontainers/devcontainer-cli#_building-a-dev-container-image) from your terminal.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_59.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_59.md"
 }

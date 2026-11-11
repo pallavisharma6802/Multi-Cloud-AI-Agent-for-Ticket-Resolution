@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Engineering\n\n### Insiders available in the yum repository\n\nThe Insiders build is now available in the yum repository and is automatically published just like with the apt repository. Follow the [instructions on the website](https://code.visualstudio.com/docs/setup/linux#_rhel-fedora-and-centos-based-distributions) to set up the repo and install using `sudo dnf install code-insiders`.\n\n### Continuous build for Monaco Editor\n\nThis iteration we added [continuous build and a test pipeline](https://github.com/microsoft/monaco-editor/issues/1668) for the Monaco Editor. We build the Monaco Editor core from the VS Code repository main branch and perform sanity testing to catch potential bugs or unexpected breaking changes as early as possible.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_41.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_41.md"
 }

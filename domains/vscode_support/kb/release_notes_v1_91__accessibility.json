@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Accessibility\n\n### Accessible View for editor hover\n\nTo improve accessibility when coding, the [Accessible View](https://code.visualstudio.com/docs/configure/accessibility/accessibility#_accessible-view) and [accessibility help menu](https://code.visualstudio.com/docs/configure/accessibility/accessibility#_accessibility-help) can now present the content of the editor hover information. Depending on the focused part of the hover, they show information about the focused part or the entire hover content.\n\n![Accessible View showing the contents of the editor hover information.](images/1_91/accessible-view-hover.png)\n\n### Link underlines\n\nTo make links easier to distinguish from regular text in the workbench, you can enable the setting <code codesetting=\"accessibility.underlineLinks\">accessibility.underlineLinks</code> to underline links.\n\n![The run and debug view showing a mix of regular text and underlined links.](images/1_91/underline-links.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_91.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_91.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Terminal\n\n### Search the workspace by selecting text in the terminal\n\nThe standard shortcut for searching the workspace `kb(workbench.action.terminal.searchWorkspace)` will now use the terminal's selection if it's focused.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_50.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_50.md"
 }

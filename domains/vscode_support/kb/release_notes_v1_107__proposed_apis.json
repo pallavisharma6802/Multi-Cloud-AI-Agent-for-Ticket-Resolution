@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Proposed APIs\n\n### Contributed Chat Context\n\nWe have a new API proposal to let extensions contribute context providers for chat. This enables extensions to provide rich context from their own domain to be used in chat sessions. For example, the GitHub Pull Request extension provides the following context:\n\n* Workspace context, with information about the current repository, branch, and pull request.\n* Implicit pull request and issue context when a pull request or issue webview is active.\n* Explicit pull request and issue context when the user adds them via \"Add Context\".\n\nThe API is still in the early stages, so expect changes to come. We'd love to get feedback on what parts of the proposal will solve extension authors' needs. You can find the proposal here: [vscode.proposed.chatContextProvider.d.ts](https://github.com/microsoft/vscode/blob/615abcc4ae680ef1950fe607c3b3532d3ee0a576/src/vscode-dts/vscode.proposed.chatContextProvider.d.ts).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_107.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_107.md"
 }

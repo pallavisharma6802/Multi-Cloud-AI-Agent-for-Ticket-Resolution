@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Integrated Terminal\n\n### ConPTY turned on by default on Windows build 18309+\n\nFor supporting versions of Windows 10 Insiders, the new terminal back-end ConPTY will be turned on by default. This should result in a more stable experience closer to the native terminal and adds 256 color support. If you experience issues, please let [us](https://github.com/microsoft/vscode/issues) or the [Windows Console team](https://github.com/microsoft/console/issues) know. You can always opt out with this setting:\n\n```json\n{\n  \"terminal.integrated.windowsEnableConpty\": false\n}\n```\n\n### Data parsing capped to 12 ms\n\nPreviously, the amount of data parsed by the terminal was not being capped properly. This meant that on less powerful hardware, the amount of time parsing data and rendering would far exceed the ideal time to render a frame, resulting in laggy UI or a full lock up for commands that generated a lot of output. There is now a cap in place, which prevents this from exceeding approximately 12 ms, which should avoid these issues.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_33.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_33.md"
 }

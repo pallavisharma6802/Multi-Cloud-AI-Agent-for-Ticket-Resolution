@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Example: creating a prompt (using a skill)\n\n![Screenshot of Copilot Chat showing the result of the /create-skill command](../images/customizations/ep-3-3-create-skill.png)\n\nWhen you run a command like `/create`, you\u2019re not just issuing a prompt \u2014 you\u2019re activating a skill.\n\nThat skill handles the entire workflow for you. Instead of manually thinking through each step, it:\n\n- interprets your request\n- asks clarifying questions when needed\n- generates the final output in the correct format\n\nThis is a great example of how skills operate behind the scenes to simplify complex workflows.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/3-skills.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/3-skills.md"
 }

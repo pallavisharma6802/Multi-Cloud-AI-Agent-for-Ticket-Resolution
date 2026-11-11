@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Containers (version 0.217.x)\n\n### Always run feature entrypoints\n\nContainer features can now run their own entrypoint, for example, to start a daemon process like `sshd`, or when you choose to not override your container's entrypoint (`\"overrideCommand\": false` in the devcontainer.json, which is the default for Docker Compose).\n\n### Container definition documentation links\n\nContainer definitions now have an inline action to open documentation on the definition in the browser.\n\n### Pre-release versions\n\nThe Dev Containers extension is now using the pre-release feature for extensions, making it simple to switch between release and pre-release versions.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_64.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_64.md"
 }

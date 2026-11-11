@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Find References/Peek Definition\n\nYou can click on the references of an object to find the locations of its use in place without losing context. This same experience works in reverse where you can Peek the definition of an object and see it inline without leaving your location. For information on Peek Definition in C# Dev Kit, go to the [Navigate and Edit documentation](/docs/csharp/navigate-edit.md).\n\n![Peek](images/csharp/peek.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/csharp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/csharp.md"
 }

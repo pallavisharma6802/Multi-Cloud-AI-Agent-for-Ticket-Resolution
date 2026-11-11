@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable fixes\n\n* [226401](https://github.com/microsoft/vscode/issues/226401) fileWatcher keeps consuming CPU at 200%+\n* [10054](https://github.com/microsoft/vscode-remote-release/issues/10054) [WSL]: Ports tab incorrectly reports Ports in WSL being forwarded to local when `localhostForwarding = false`",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_94.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_94.md"
 }

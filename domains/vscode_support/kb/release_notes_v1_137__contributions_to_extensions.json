@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Contributions to extensions\n\n### GitHub Pull Requests\n\nThere has been more progress on the [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) extension, which enables you to work on, create, and manage pull requests and issues. New features include:\n\n* Faster opening of the pull request webview\n* All github.com links in VS Code will be opened with the extension (can be disabled with `githubPullRequests.openPullLinks`)\n\nReview the [changelog for the 0.166.0](https://github.com/microsoft/vscode-pull-request-github/blob/main/CHANGELOG.md#01660) release of the extension to learn about everything in the release.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_137.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_137.md"
 }

@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## How to create and open a Python project or file\n\nIf you have an existing Python project you wish to work on in {% data variables.product.prodname_vscode_shortname %}, you can begin by opening your folder or file from the {% data variables.product.prodname_vscode_shortname %} Welcome page or File Explorer view, or by selecting **File > Open Folder** (`kb(workbench.action.files.openFolder)`) or **File > Open File** (`kb(workbench.action.files.openFile)`).\n\nYou can create a new Python file by selecting **New File** on the {% data variables.product.prodname_vscode_shortname %} Welcome page and then selecting **Python file**, or by navigating to **File > New File** (`kb(workbench.action.files.newFile)`).\n\n> **Tip:** If you already have a workspace folder open in {% data variables.product.prodname_vscode_shortname %}, you can add new files or folders directly into your existing project. You can create new folders and files by using the corresponding **New Folder** or **New File** icons on the top level folder in the File Explorer view.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/python-quick-start.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/python/python-quick-start.md"
 }

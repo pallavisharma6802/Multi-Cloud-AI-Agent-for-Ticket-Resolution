@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Debugging\n\n### JavaScript debugging\n\nThe JavaScript debugger now supports collecting and visualizing heap profiles. Heap profiles allow you to see where and how much memory is allocated over time. These have been added as an option in the **Debug: Take Performance Profile** command, which is also accessible via a record \u23fa button in the CALL STACK view.\n\n![Example of the Flame Chart visualizer showing a memory profile for vscode. One cell is hovered over, showing that 33KB of memory was allocated in \"ipc.ts\".](images/1_66/js-debug-memory-profile.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_66.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_66.md"
 }

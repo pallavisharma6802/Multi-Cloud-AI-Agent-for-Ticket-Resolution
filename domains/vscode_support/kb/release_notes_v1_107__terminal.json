@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Terminal\n\n### Terminal suggest rolled out to stable\n\nTerminal Suggest is now enabled for stable users, offering inline completions and contextual hints while you type shell commands. Suggestions now group related argument values together, so option flags and their parameters stay organized in the list.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_107.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_107.md"
 }

@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Questions or feedback\n\n- See [Tips and Tricks](/docs/remote/troubleshooting.md) or the [FAQ](/docs/remote/faq.md).\n- Search on [Stack Overflow](https://stackoverflow.com/questions/tagged/vscode-remote).\n- Add a [feature request](https://aka.ms/vscode-remote/feature-requests) or [report a problem](https://aka.ms/vscode-remote/issues/new).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/remote-overview.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/remote/remote-overview.md"
 }

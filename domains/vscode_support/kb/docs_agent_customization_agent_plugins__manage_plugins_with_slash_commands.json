@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Manage plugins with slash commands\n\nAs an alternative to the Agent Customizations editor, enter `/plugin ` in a {% data variables.product.prodname_copilot_short %} harness session to view completions for plugin and marketplace operations. Use the interface where you installed the plugin, because its inventory is separate from the editor's. For the command catalog and limitations, see [plugin management commands](/docs/agents/reference/agent-plugin-reference.md#plugin-management-commands).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/agent-plugins.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/agent-plugins.md"
 }

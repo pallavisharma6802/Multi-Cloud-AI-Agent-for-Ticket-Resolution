@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## VS Code for the Web\n\n### Set Display Language\n\nYou can now set the display language of the browser using the **Set Display Language** button available on the language pack extension in the Extensions view.\n\n![Set Display Language button on a language pack in the Extensions view](images/1_70/set-display-language.png)\n\nOnce set, you can clear the display language by using the **Clear Display Language** button on the currently set language pack extension.\n\n![Clear Display Language button on the current language pack in the Extensions view](images/1_70/clear-display-language.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_70.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_70.md"
 }

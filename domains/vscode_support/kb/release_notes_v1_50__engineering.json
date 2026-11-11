@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Engineering\n\n### Building VS Code with TypeScript 4.1 beta\n\nWe now use the TypeScript 4.1 nightly builds to build VS Code. TypeScript 4.1 adds a few new strictness checks, including [more strict types for `resolve` in promises](https://devblogs.microsoft.com/typescript/announcing-typescript-4-1-beta/#resolves-parameters-are-no-longer-optional-in-promises). This improved type checking helped us to identify and fix potential bugs in our code.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_50.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_50.md"
 }

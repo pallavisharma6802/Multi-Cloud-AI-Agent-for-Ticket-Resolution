@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Convert anonymous type to class\n\n**What:** Convert an anonymous type to class.\n\n**When:** You have an anonymous type that you want to continue to build on in a class.\n\n**Why:** Anonymous types are useful if you're only using them locally. As your code grows, it's nice to have an easy way to promote them to a class.\n\n**How-to:**\n\n1. Place your cursor in an anonymous (`var`) type.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select **Convert to class**.\n\n![Convert anonymous type to class example](images/refactoring/convert-anonymous-type-to-class-result.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/refactoring.md"
 }

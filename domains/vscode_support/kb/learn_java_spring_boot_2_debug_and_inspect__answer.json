@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Answer\n\nBecause they are reading a live JMX connection into the running JVM, not static project\nmetadata. When Visual Studio Code launches a Spring Boot project, Spring Boot Tools\ninjects JMX and Spring admin options into the launch, and the Dashboard connects to that\nport to stream properties and heap statistics. An application started from a plain\nterminal has no such connection, so those sections stay hidden. It also explains the\nshutdown trap: a process left alive after a failed stop keeps that JMX port bound, which\nis why the next launch complains about a port you never configured.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/2-debug-and-inspect.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/java-spring-boot/2-debug-and-inspect.md"
 }

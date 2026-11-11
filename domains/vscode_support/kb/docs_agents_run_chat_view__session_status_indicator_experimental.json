@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Session status indicator (Experimental)\n\nUse `setting(chat.agentsControl.enabled)` to show a session status indicator in the title-bar command center. It provides access to sessions without switching views.\n\n![Screenshot showing the session status indicator in the command center with unread and in-progress badges.](../images/agents-overview/agent-status-indicator-v2.png)\n\n* Select the **unread sessions badge** to filter the sessions list to conversations with new messages.\n* Select the **in-progress sessions badge** to filter to sessions with running agents.\n* Select the **sparkle icon** for chat and session management options.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/chat-view.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/chat-view.md"
 }

@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## contributes.authentication\n\nContributes an authentication provider. This will set up an activation event for your provider and display it in your extension's features.\n\n```json\n{\n  \"contributes\": {\n    \"authentication\": [\n      {\n        \"label\": \"Azure DevOps\",\n        \"id\": \"azuredevops\"\n      }\n    ]\n  }\n}\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/contribution-points.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/contribution-points.md"
 }

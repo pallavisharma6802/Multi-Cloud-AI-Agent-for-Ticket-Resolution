@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Integrated browser\n\n### Spell check suggestions\n\nRight-click a misspelled word in an editable field to select a suggested correction. In sessions that use persistent data storage, you can also select **Add to Dictionary**.\n\n![Screenshot showing spelling suggestions and Add to Dictionary in the integrated browser context menu.](images/1_136/spell-check.webp)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_136.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_136.md"
 }

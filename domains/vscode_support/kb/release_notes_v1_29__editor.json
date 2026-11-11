@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Editor\n\n### File and folder icons in IntelliSense\n\nThe IntelliSense widget now shows file and folder icons for file completions based on your File Icon theme. This provides a unified look and helps you quickly identify different file types.\n\n![File Icons in IntelliSense](images/1_29/completion-file-icons.png)\n\n### Format Selection\n\nTo speed up small formatting operations, the **Format Selection** command without an editor selection will now format the current line.\n\n### Show error codes\n\nThe editor now shows the error code of a problem if an error code is defined. The error code is displayed at the end of the line in square brackets.\n\nBelow you can see that TypeScript is displaying the error code '2339':\n\n![error codes](images/1_29/error-code.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_29.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_29.md"
 }

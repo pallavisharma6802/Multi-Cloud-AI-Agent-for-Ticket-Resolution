@@ -4,5 +4,5 @@
   "category": "TERMINAL",
   "intent": "terminal",
   "content": "## Customizing your prompt\n\nMost shells allow extensive customization of the terminal prompt. This is done by configuring your shell outside {% data variables.product.prodname_vscode_shortname %}, typically by modifying the `$PS1` variable, setting a `$PROMPT_COMMAND` or installing a plugin.\n\nSome prompts like [Starship](https://starship.rs/) and [oh-my-posh](https://ohmyposh.dev/) show things like git status and work with most shells, so they're a good choice when starting out.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/appearance.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/terminal/appearance.md"
 }

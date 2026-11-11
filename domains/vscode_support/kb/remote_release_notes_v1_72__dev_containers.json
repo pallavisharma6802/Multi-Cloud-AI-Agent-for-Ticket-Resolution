@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Dev Containers\n\n### Dev Container image metadata\n\nA Dev Container image can now include additional configuration (like VS Code extensions and settings) that is applied when the container is created, so a `devcontainer.json` can now look as simple as:\n\n```json\n{\n    \"image\": \"mcr.microsoft.com/devcontainers/rust:1\"\n}\n```\n\nWhen building a Dev Container image with the [Dev Container CLI](https://github.com/devcontainers/cli) configuration from the `devcontainer.json` and the configured features are included in the image. This configuration is then applied when the Dev Container is created and run. For additional details, see the proposal in the [Dev Container Specification](https://github.com/devcontainers/spec/blob/main/proposals/image-metadata.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_72.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_72.md"
 }

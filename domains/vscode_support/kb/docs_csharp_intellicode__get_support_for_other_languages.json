@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Get support for other languages\n\nTo get IntelliCode whole-line autocompletions for Python, JavaScript, and TypeScript in {% data variables.product.prodname_vscode_shortname %}, install the general [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) extension. The general extension also ranks methods and properties in the IntelliSense list with stars for Python and SQL, in addition to the languages supported for whole-line autocomplete.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/intellicode.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/intellicode.md"
 }

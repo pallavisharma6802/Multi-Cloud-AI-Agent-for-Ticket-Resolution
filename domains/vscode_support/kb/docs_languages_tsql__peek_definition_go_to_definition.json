@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Peek Definition/Go to Definition\n\nUse **Peek Definition** or **Go to Definition** to quickly browse the definition of schema objects in your database such as tables, functions, and procedures while typing T-SQL code.\n\n<video src=\"images/tsql/peekdefinition.mp4\" title=\"Video showing tsql peek definition.\" autoplay loop controls muted></video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/tsql.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/tsql.md"
 }

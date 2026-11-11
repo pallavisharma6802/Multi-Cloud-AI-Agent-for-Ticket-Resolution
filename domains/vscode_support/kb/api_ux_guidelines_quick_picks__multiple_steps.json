@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Multiple steps\n\nQuick Picks can be configured to feature multiple steps. Use these when you need to capture related-but-separate selections in a single flow. Avoid using quick picks for long flows with many steps\u2014they aren't well suited to function as a wizard or similarly complex experience.\n\n![Multi-step Quick Pick example](images/examples/quick-pick-multi-step.png)\n\n*Note the \"1/3\" text in the Quick Pick title that indicates the current and total number of steps in the flow.*",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/quick-picks.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/ux-guidelines/quick-picks.md"
 }

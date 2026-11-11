@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Implement all members implicitly\n\n**What:** Define your interface's methods implicitly in a class.  An implicit interface implementation is when an interface's methods and properties are directly added to the class as public methods.\n\n**How-to:**\n\n1. Place your cursor on an interface being implemented in a class.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select **Implement interface**:\n\n![Implement all members implicitly](images/refactoring/implement-all-members-implicitly.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/refactoring.md"
 }

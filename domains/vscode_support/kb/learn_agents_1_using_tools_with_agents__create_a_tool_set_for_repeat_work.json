@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Create a tool set for repeat work\n\nIn this step, create a reusable tool set for repository cleanup work.\n\n1. Open the Command Palette.\n\n1. Run **Chat: Configure Tool Sets** and select **Create new tool sets file**.\n\n1. In the `.jsonc` file that opens, add the tools you use for the cleanup workflow, such as search, edit, and test tools, plus a `description` and `icon`.\n\n1. Save the file.\n\n1. Return to Chat and select the tool set from **Configure Tools**, or reference it in a prompt by typing `#` followed by the tool set name.\n\nNow try a prompt that uses the saved setup:\n\n```prompt\nFind one small cleanup opportunity in this repository, make the change, and run the focused validation for it.\n```\n\nTool sets solve the problem of repeatedly rebuilding the same tool selection. They also make reviews easier because the saved file shows which tools are expected for a workflow.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/1-using-tools-with-agents.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/agents/1-using-tools-with-agents.md"
 }

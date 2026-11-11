@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "# Extension Marketplace\n\nExtensions add languages, debuggers, and tools to {% data variables.product.prodname_vscode %} to support your development workflow. Learn how to find, install, and manage extensions from the [{% data variables.product.prodname_vs_marketplace %}](https://marketplace.visualstudio.com/VSCode).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/extensions/extension-marketplace.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/extensions/extension-marketplace.md"
 }

@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Debugging single files\n\nIn addition to support for debugging Java projects managed by build tools, {% data variables.product.prodname_vscode_shortname %} also supports for debugging single Java files without any project.\n\n<video src=\"images/java-debugging/single-file-debugging.mp4\" autoplay loop muted playsinline controls title=\"Debugging a single Main.java file\">\n</video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-debugging.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-debugging.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Command line args\nYou can now create a new file from the command line. For a file that doesn't exist yet, append the file path to create it. VS Code will open it as a dirty (modified but not yet saved) file in the editor.\n\n`code mynewfile.js`\n\nYou can open multiple folders and/or files from the command line. Just append multiple folder and/or file paths to open multiple sessions of VS Code.\n\n`code c:\\myfolder1 c:\\myfolder2 c:\\myapp\\program.cs`\n\n\nYou can also open a new session instead of restoring the previous session.  Use a new switch, `-n` or `--new-window`, if you want to start VS Code without restoring the previous session.\n\n`code -n`",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_3_0.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v0_3_0.md"
 }

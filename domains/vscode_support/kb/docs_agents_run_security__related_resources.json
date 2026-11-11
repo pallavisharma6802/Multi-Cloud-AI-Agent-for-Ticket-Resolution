@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [{% data variables.product.prodname_vscode_shortname %} enterprise support](/docs/enterprise/overview.md)\n* [GitHub Copilot Trust Center](https://resources.github.com/copilot-trust-center/)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/security.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/security.md"
 }

@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## See also\n\n- [How to manually setup GPU conversion](/docs/intelligentapps/reference/ManualConversionOnGPU.md)\n- [How to manually setup environment](/docs/intelligentapps/reference/SetupWithoutAITK.md)\n- [How to customize model template](/docs/intelligentapps/reference/TemplateProject.md)\n- [How to update a model project](/docs/intelligentapps/reference/UpdateModelProject.md)\n- [Conversion file structure](/docs/intelligentapps/reference/FileStructure.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/modelconversion.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/modelconversion.md"
 }

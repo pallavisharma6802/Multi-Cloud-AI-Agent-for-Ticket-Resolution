@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Visual Studio Code Remote Core\n\n### Piping to VS Code\n\nPiping content to the `code` launch command now also works in the Integrated Terminal of remote windows:\n\n```bash\n    `ps aux | code -`\n```\n\n### Unified port forwarding experience\n\nThe Remote Explorer has a single port forwarding view that the SSH and Containers extensions have adopted. From the **Forwarded Ports** section, you can see the ports you have currently forwarded through VS Code, forward additional ports, label forwarded ports, and copy the local address. You can also see suggested ports to forward based on what processes are currently running.\n\nIf you want to have your forwarded ports restored when you open the same folder or workspace again, set the `remote.restoreForwardedPorts` setting to `true`.\n\n![Forwarded Ports view](images/1_42/forwarded-ports.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_42.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_42.md"
 }

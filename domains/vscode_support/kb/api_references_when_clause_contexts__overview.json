@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "# when clause contexts\n\nVisual Studio Code sets various context keys and specific values depending on what elements are visible and active in the VS Code UI. These contexts can be used to selectively enable or disable extension commands and UI elements, such as menus and views.\n\nFor example, VS Code uses when clauses to enable or disable command keybindings, which you can see in the Default Keybindings JSON (**Preferences: Open Default Keyboard Shortcuts (JSON)**):\n\n```json\n{ \"key\": \"f5\",  \"command\": \"workbench.action.debug.start\",\n                   \"when\": \"debuggersAvailable && !inDebugMode\" },\n```\n\nAbove, the built-in **Start Debugging** command has the keyboard shortcut `kb(workbench.action.debug.start)`, which is only enabled when there is an appropriate debugger available (context key `debuggersAvailable` is true) and the editor isn't in debug mode (context key `inDebugMode` is false).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/when-clause-contexts.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/when-clause-contexts.md"
 }

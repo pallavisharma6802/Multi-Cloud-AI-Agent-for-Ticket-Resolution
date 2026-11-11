@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Source Control\n\n### AI co-author attribution for commits\n\n**Setting**: `setting(git.addAICoAuthor)`\n\nVS Code can automatically append a `Co-authored-by:` trailer when you commit code that includes AI-generated contributions. Additionally, Git blame hover tooltips now show co-authors from commit trailers, including non-AI `Co-authored-by` entries.\n\nConfigure `setting(git.addAICoAuthor)` with one of these values:\n\n* `off` (default): does not add a co-author trailer\n* `chatAndAgent`: adds the trailer for code generated with Copilot Chat or agent mode\n* `all`: adds the trailer for all AI-generated code, including inline completions\n\nVS Code only adds co-author trailers for commits you make from within VS Code. This setting does not modify commits made in external Git tools or the command line.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_110.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_110.md"
 }

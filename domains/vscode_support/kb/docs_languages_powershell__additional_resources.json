@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Additional resources\n\nThere are more detailed articles in the PowerShell documentation. Start with [Using {% data variables.product.prodname_vscode_shortname %}][27].\n\nCheck out the [troubleshooting guide][21] for answers to common questions.\n\nFor more information on debugging, check out the _Hey, Scripting Guy!_ two-part blog post series\nwritten by [@keithHill][35] on debugging with the PowerShell extension:\n\n- [Debugging PowerShell script in {% data variables.product.prodname_vscode %} - Part 1][15]\n- [Debugging PowerShell script in {% data variables.product.prodname_vscode %} - Part 2][16]",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/powershell.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/powershell.md"
 }

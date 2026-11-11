@@ -4,5 +4,5 @@
   "category": "ENTERPRISE",
   "intent": "enterprise",
   "content": "# Manage AI settings in enterprise environments\n\nOrganizations can govern AI features in {% data variables.product.prodname_vscode_shortname %} through three management solutions: {% data variables.product.prodname_copilot_short %} enterprise-managed settings, {% data variables.product.prodname_vscode_shortname %} device policies, and GitHub organization or enterprise settings.\n\nThese solutions control different layers of the AI experience. An organization might use all three, but should configure an overlapping control in only one system.\n\n> [!NOTE]\n> If you're a developer and an agent, model, or tool is unavailable, first check the [AI troubleshooting guidance](/docs/agents/agent-troubleshooting/troubleshooting.md#start-with-basic-checks). For an organization-managed restriction, ask your administrator which capabilities are approved.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/enterprise/manage-ai-settings.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/enterprise/manage-ai-settings.md"
 }

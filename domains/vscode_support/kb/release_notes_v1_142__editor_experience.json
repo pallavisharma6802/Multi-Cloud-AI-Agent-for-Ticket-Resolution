@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Editor experience\n\n### Merging document highlights from different providers\n\n**Setting**: `setting(editor.occurrencesHighlightFromAllProviders)`\n\nEnable `setting(editor.occurrencesHighlightFromAllProviders)` to merge document highlights from all providers. By default, VS Code uses highlights only from the highest-priority provider.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_142.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_142.md"
 }

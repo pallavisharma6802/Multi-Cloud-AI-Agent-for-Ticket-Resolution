@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Custom agent file reference\n\nThis article describes custom agent file locations, syntax, frontmatter fields, and harness-specific configuration in {% data variables.product.prodname_vscode_shortname %}. For a step-by-step creation and verification workflow, see [Create and use custom agents](/docs/agent-customization/custom-agents.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/custom-agent-file-reference.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/reference/custom-agent-file-reference.md"
 }

@@ -4,5 +4,5 @@
   "category": "DEBUGGING",
   "intent": "debugging",
   "content": "## Global launch configuration\n\nTo reuse a launch configuration across workspaces, add it to the `setting(launch)` user setting:\n\n```json\n\"launch\": {\n    \"version\": \"0.2.0\",\n    \"configurations\": [\n        {\n            \"type\": \"node\",\n            \"request\": \"launch\",\n            \"name\": \"Launch Active File\",\n            \"program\": \"${file}\"\n        }\n    ]\n}\n```\n\nUse a workspace `launch.json` file when a configuration depends on project files, tasks, or shared environment details. Workspace configurations can be versioned with the project and used by other contributors.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/debugging-configuration.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/debugtest/debugging-configuration.md"
 }

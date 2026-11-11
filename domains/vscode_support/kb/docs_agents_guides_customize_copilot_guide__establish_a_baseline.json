@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Establish a baseline\n\nChoose one project-specific problem that occurs repeatedly, such as using the wrong test command, placing files in the wrong directory, or selecting a library that your project doesn't use. A one-time requirement belongs in the current request rather than in shared project configuration.\n\nDefine a small representative task with a clear success criterion. Record the current result or use evidence from a recent task:\n\n* Which files the agent creates or changes.\n* Which project patterns and libraries it follows.\n* Which commands and tests it runs, including failures or skipped checks.\n* Which corrections you have to provide.\n\nIf the result already meets your success criterion, stop. You don't need a customization for that behavior. For a coding task, see the [add a feature guide](/docs/agents/guides/add-a-feature.md) for guidance on establishing baseline tests and verifying the outcome.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/customize-copilot-guide.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/customize-copilot-guide.md"
 }

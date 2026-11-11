@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Spring Boot extensions\n\nSpring Boot is an open source, microservice-based Java web framework that is very popular among Java developers. There are great extensions provided by VMware and Microsoft for Spring Boot development.\n\nWe recommend installing the [Spring Boot Extension Pack](https://marketplace.visualstudio.com/items?itemName=vvmware.vscode-boot-dev-pack) that contains the following extensions:\n\n1. [Spring Boot Tools](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-spring-boot)\n2. [Spring Initializr Java Support](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-initializr)\n3. [Spring Boot Dashboard](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-boot-dashboard)\n\n<a class=\"install-extension-btn\" href=\"vscode:extension/vmware.vscode-boot-dev-pack\">Install the Spring Boot Extension Pack</a>\n\nMore Spring Boot related information can be found at the [Spring Boot](/docs/java/java-spring-boot.md) page.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/extensions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/extensions.md"
 }

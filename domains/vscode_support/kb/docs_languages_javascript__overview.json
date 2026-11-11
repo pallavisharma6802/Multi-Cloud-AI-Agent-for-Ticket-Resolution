@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# JavaScript in {% data variables.product.prodname_vscode %}\n\n{% data variables.product.prodname_vscode %} includes built-in JavaScript IntelliSense, debugging, formatting, code navigation, refactorings, and many other advanced language features.\n\n![Working with JavaScript in {% data variables.product.prodname_vscode %}](images/javascript/overview.png)\n\nMost of these features just work out of the box, while some may require basic configuration to get the best experience. This page summarizes the JavaScript features that {% data variables.product.prodname_vscode_shortname %} ships with. Extensions from the [{% data variables.product.prodname_vs_marketplace %}](https://marketplace.visualstudio.com) can augment or change most of these built-in features. For a more in-depth guide on how these features work and can be configured, see [Working with JavaScript](/docs/nodejs/working-with-javascript.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/javascript.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/javascript.md"
 }

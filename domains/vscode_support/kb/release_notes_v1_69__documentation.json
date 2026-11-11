@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Documentation\n\n### TypeScript editing and refactoring\n\nThere are two new topics focusing on TypeScript [Editing](https://code.visualstudio.com/docs/typescript/typescript-editing) and [Refactoring](https://code.visualstudio.com/docs/typescript/typescript-refactoring) in VS Code. There you'll learn about specific features such as [Inlay hints](https://code.visualstudio.com/docs/typescript/typescript-editing#_inlay-hints), [CodeLens](https://code.visualstudio.com/docs/typescript/typescript-editing#_references-codelens), and [formatting](https://code.visualstudio.com/docs/typescript/typescript-editing#_formatting) options specific to TypeScript as well as the available code [refactorings](https://code.visualstudio.com/docs/typescript/typescript-refactoring#_refactoring).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_69.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_69.md"
 }

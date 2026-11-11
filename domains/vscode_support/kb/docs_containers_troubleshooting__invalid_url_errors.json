@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Invalid URL errors\n\nIf you have a need to connect to a remote Docker daemon, we recommend using Docker contexts instead of a `containers.environment` attribute in the settings. Check out this guide to learn how to [create and use a context](https://docs.docker.com/engine/context/working-with-contexts/) to communicate with a remote Docker daemon.\n\nIf you still need to override the Docker context you are currently using, make sure your `DOCKER_HOST` environment variable or `containers.environment.DOCKER_HOST` attribute includes a protocol in the URL (for example, `ssh://myuser@mymachine` or `tcp://1.2.3.4`).\n\n> **Note:** Keep in mind that your `containers.environment.DOCKER_HOST` attribute will override your Docker context and the `DOCKER_HOST` environment variable will override both the `containers.environment.DOCKER_HOST` attribute and your Docker context.\n\n> **Tip**: In Powershell you can change your Docker environment variable with `$ENV:DOCKER_HOST = 'ssh://username@1.2.3.4'`",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/troubleshooting.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/containers/troubleshooting.md"
 }

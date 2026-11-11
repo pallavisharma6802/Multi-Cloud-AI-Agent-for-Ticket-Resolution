@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Monaco Editor 0.6.0\n\nWe will create monthly releases of the \"Monaco\" Editor, in the same rhythm with VS Code. You can see the change log [here](https://github.com/microsoft/monaco-editor/blob/main/CHANGELOG.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_5.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_5.md"
 }

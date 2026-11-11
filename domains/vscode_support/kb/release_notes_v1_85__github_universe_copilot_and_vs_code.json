@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## GitHub Universe, Copilot, and VS Code\n\nIf you were able to watch or attend [GitHub Universe](https://githubuniverse.com/) this year, you saw that [GitHub Copilot](https://github.com/features/copilot) was center stage. Copilot was featured in the [Opening Keynote](https://www.youtube.com/watch?v=NrQkdDVupQE) and breakout sessions such as [GitHub Copilot: the AI pair programmer for today and tomorrow](https://www.youtube.com/watch?v=AAT4zCfzsHI).\n\nThe VS Code team has been working hard to integrate Copilot into the editor and you can learn more about the team's progress leading up to GitHub Universe in the recent [Pursuit of \"wicked smartness\" in VS Code](https://code.visualstudio.com/blogs/2023/11/13/vscode-copilot-smarter) blog post. The post details the development of Copilot Chat **agents**, that behave as subject matter experts on code bases and technologies, and describes how extension authors will be able to contribute their own custom agents to VS Code.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_85.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_85.md"
 }

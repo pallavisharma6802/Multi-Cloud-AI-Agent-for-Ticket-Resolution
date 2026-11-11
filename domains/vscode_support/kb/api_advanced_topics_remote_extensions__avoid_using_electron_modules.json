@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Avoid using Electron modules\n\nWhile it can be convenient to rely on built-in Electron or VS Code modules not exposed by the extension API, it's important to note that VS Code Server runs a standard (non-Electron) version of Node.js. These modules will be missing when running remotely. There are a few exceptions, where there is specific code in place to make them work.\n\nUse base Node.js modules or modules in your extension VSIX to avoid these problems. If you absolutely have to use an Electron module, be sure to have a fallback if the module is missing.\n\nThe example below will use the Electron `original-fs` node module if found, and fall back to the base Node.js `fs` module if not.\n\n```typescript\nfunction requireWithFallback(electronModule: string, nodeModule: string) {\n    try {\n        return require(electronModule);\n    }\n    catch (err) { }\n    return require(nodeModule);\n}\n\nconst fs = requireWithFallback('original-fs', 'fs');\n```\n\nTry to avoid these situations whenever possible.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/advanced-topics/remote-extensions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/advanced-topics/remote-extensions.md"
 }

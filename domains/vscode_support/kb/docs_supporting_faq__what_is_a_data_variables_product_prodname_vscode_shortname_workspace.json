@@ -4,5 +4,5 @@
   "category": "REFERENCE",
   "intent": "reference",
   "content": "## What is a {% data variables.product.prodname_vscode_shortname %} \"workspace\"?\n\nA {% data variables.product.prodname_vscode_shortname %} \"workspace\" is usually just your project root folder. {% data variables.product.prodname_vscode_shortname %} uses the \"workspace\" concept in order to scope project configurations such as project-specific [settings](/docs/configure/settings.md) as well as config files for [debugging](/docs/debugtest/debugging.md) and [tasks](/docs/debugtest/tasks.md). Workspace files are stored at the project root in a `.vscode` folder. You can also have more than one root folder in a {% data variables.product.prodname_vscode_shortname %} workspace through a feature called [Multi-root workspaces](/docs/editing/workspaces/multi-root-workspaces.md).\n\nYou can learn more in the [What is a {% data variables.product.prodname_vscode_shortname %} \"workspace\"?](/docs/editing/workspaces/workspaces.md) article.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/supporting/faq.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/supporting/faq.md"
 }

@@ -4,5 +4,5 @@
   "category": "INSTALLATION",
   "intent": "installation",
   "content": "## Linux\n\nTo uninstall {% data variables.product.prodname_vscode_shortname %} on Linux, you should use your package manager's uninstall or remove option. The exact command line will differ depending on which package manager you used (for example, `apt-get`, `rpn`, `dnf`, `yum`, etc.).\n\nThe names for the {% data variables.product.prodname_vscode_shortname %} packages are:\n\n* `code` - {% data variables.product.prodname_vscode_shortname %} Stable release\n* `code-insiders` - {% data variables.product.prodname_vscode_shortname %} [Insiders](/insiders) release\n\nFor example, if you installed {% data variables.product.prodname_vscode_shortname %} via the Debian package (`.deb`) and `apt-get` package manager, you would run:\n\n```bash\nsudo apt-get remove code\n```\n\nwhere `code` is the name of the {% data variables.product.prodname_vscode_shortname %} Debian package.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/uninstall.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/setup/uninstall.md"
 }

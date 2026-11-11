@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Get started in three steps\n\n1. **Install {% data variables.product.prodname_vscode_shortname %}.** Download the installer for your platform and follow the [installation steps](#install-vs-code).\n\n1. **Open your code.** Open an existing folder, clone a repository, or create a folder for a new project.\n\n1. **Complete your first task.** Follow the [editor tutorial](/docs/editing/getting-started/editor-tutorial.md) to learn the basics, [choose how to work with AI](/docs/agents/overview.md#choose-how-you-work), or use the [agents quickstart](/docs/agents/quickstart.md) to build an app from a natural-language prompt.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/getstarted/overview.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/getstarted/overview.md"
 }

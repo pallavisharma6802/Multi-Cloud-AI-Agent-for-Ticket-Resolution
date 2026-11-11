@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Related resources\n\n* Learn how to install and manage extensions in [{% data variables.product.prodname_vscode %}](/docs/configure/extensions/extension-marketplace.md).\n\n* Use [Workspace Trust](/docs/editing/workspaces/workspace-trust.md) to decide whether code in a project folder can be executed by {% data variables.product.prodname_vscode_shortname %} and extensions without explicit approval. This adds an extra layer of security when working with unfamiliar code.\n\n* Configure [allowed extensions in {% data variables.product.prodname_vscode_shortname %}](/docs/enterprise/extensions.md#configure-allowed-extensions) to enforce which extensions are allowed to be used in your organization.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/extensions/extension-runtime-security.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/extensions/extension-runtime-security.md"
 }

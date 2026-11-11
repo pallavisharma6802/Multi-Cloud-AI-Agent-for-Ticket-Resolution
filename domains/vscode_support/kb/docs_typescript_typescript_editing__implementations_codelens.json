@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Implementations CodeLens\n\nThe TypeScript implementations CodeLens displays the number of implementors of an interface:\n\n![TypeScript implementations CodeLens](images/editing/ts-implementations-code-lens.png)\n\nYou can enable this by setting `\"js/ts.implementationsCodeLens.enabled\": true`.\n\nAs with the references CodeLens, you can click on the implementation count to quickly browse a list of all implementations.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/typescript/typescript-editing.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/typescript/typescript-editing.md"
 }

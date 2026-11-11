@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "# Debug and inspect a Spring Boot request in Visual Studio Code\n\n[![Watch Debugging your Java App in VS Code on YouTube (opens in new tab).](images/2-debug-and-inspect/youtube-y8SdqmjEqq8.jpg)](https://www.youtube.com/watch?v=y8SdqmjEqq8)\n\nA web app that works is not the same as a web app you understand. The page says the item\nwas added. It does not say which method received the title, where the id came from, or\nwhether the process is healthy while it does all that.\n\nPrint statements can answer some of that. They also change the code, get committed by\naccident, and tell you nothing about memory.\n\nIn this chapter, we'll do it properly: pause the running application on the exact line\nwhere the web layer hands off to the service, walk the call in and back out, and watch a\nvalue appear that no log line would have shown.\n\nThen, with the debugger still attached, we'll ask the process how it is doing.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/2-debug-and-inspect.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/java-spring-boot/2-debug-and-inspect.md"
 }

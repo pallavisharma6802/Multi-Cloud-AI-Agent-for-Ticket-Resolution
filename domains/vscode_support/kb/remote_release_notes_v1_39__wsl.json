@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## WSL\n\n### Remote Explorer\n\nThe WSL extension has joined Containers and SSH in the Remote Explorer. You can see all your installed Linux distributions, connect to a specific distro, set your default distro, and see the folders you've opened on a Linux distro in the Remote Explorer.\n\n![WSL Remote Explorer](images/1_39/wsl-remote-explorer.png)\n\n### Environment setup script\n\nYou can now make changes to the environment where the VS Code Remote is started and run additional services. To do so, create a script `~/.vscode-server/server-env-setup` (Insiders: `~/.vscode-server-insiders/server-env-setup`). If present, the script is processed before the server is started.\n\nThe script needs to be a valid Bourne shell (sh) script. Be aware that an invalid script will prevent the server from starting up.\n\nCheck the WSL log (**WSL: Show Log**) for output and errors.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_39.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_39.md"
 }

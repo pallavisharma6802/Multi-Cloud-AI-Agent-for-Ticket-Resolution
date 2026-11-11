@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "# Syntax Highlight Guide\n\nSyntax highlighting determines the color and style of source code displayed in the Visual Studio Code editor. It is responsible for colorizing keywords like `if` or `for` in JavaScript differently than strings and comments and variable names.\n\nThere are two components to syntax highlighting:\n\n- [Tokenization](#tokenization): Breaking text into a list of tokens\n- [Theming](#theming): Using themes or user settings to map the tokens to specific colors and styles\n\nBefore diving into the details, a good start is to play with the [scope inspector](#scope-inspector) tool and explore what tokens are present in a source file and what theme rules they match to. To see both semantic and syntax token, use a built-in theme (for example, Dark+) on a TypeScript file.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/language-extensions/syntax-highlight-guide.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/language-extensions/syntax-highlight-guide.md"
 }

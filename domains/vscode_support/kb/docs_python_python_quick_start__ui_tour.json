@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## UI tour\n\nWhen you launch {% data variables.product.prodname_vscode_shortname %} for the very first time, you will need to install the Python extension to get Python-specific features and UI. Let\u2019s look at the UI after installing the Python extension:\n\n![Image of the Python UI highlights in {% data variables.product.prodname_vscode_shortname %}.](images/quick-start/ui-tour.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/python-quick-start.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/python/python-quick-start.md"
 }

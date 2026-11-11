@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## What's Next\n\nYou can now stop a Spring Boot request mid-flight, follow it across a class boundary,\nread the values it produces, and check the health and memory of the process that produced\nthem.\n\nIn [Chapter 3, Expose Your Java Operations to Copilot with MCP](/learn/java-spring-boot/3-expose-tools-with-mcp),\nthe same `TodoService` gets a second caller. Instead of a browser form, GitHub Copilot\ncalls it \u2014 the app publishes its operations as Model Context Protocol tools, and a todo\ncreated from a chat prompt shows up on the very page you have been debugging.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/2-debug-and-inspect.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/java-spring-boot/2-debug-and-inspect.md"
 }

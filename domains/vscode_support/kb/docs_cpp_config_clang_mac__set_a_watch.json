@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Set a watch\n\nYou might want to keep track of the value of a variable as your program executes. You can do this by setting a **watch** on the variable.\n\n1. In the **Watch** window, select the plus sign and type `word` in the text box. This is the name of the loop variable. Now view the **Watch** window as you step through the loop.\n\n   ![Watch window](images/cpp/watch-window.png)\n\n    **Note**: the value of the watch variable is only available when the program execution is within the scope of the variable. For example, for a loop variable, the value is only available when the program is executing the loop.\n\n1. Add another watch by adding this statement before the loop: `int i = 0;`. Then, inside the loop, add this statement: `++i;`. Now add a watch for `i` as you did in the previous step.\n\n1. You can hover over any variable with the mouse pointer while execution is paused to quickly view its value.\n\n   ![Mouse hover](images/cpp/mouse-hover.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/config-clang-mac.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/config-clang-mac.md"
 }

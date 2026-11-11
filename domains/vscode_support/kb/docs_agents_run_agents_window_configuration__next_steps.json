@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Next steps\n\n* [Choose an agent harness](/docs/agents/run/agent-harnesses.md) - compare options, select a harness, and review its setup requirements.\n* [Use the {% data variables.copilot.agents_window %}](/docs/agents/run/agents-window.md) - start, monitor, review, and finish agent sessions across workspaces.\n* [AI settings reference](/docs/agents/reference/ai-settings.md) - review settings for agents and chat.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/agents-window-configuration.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/agents-window-configuration.md"
 }

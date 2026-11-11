@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Terminal\n\n### New default keybindings for special characters\n\nThe following keybindings were added that are typically supported in other terminals:\n\n* `ctrl+shift+2`: Inputs the null character (`0x00`).\n* `ctrl+shift+6`: Inputs the record separator character (`0x1E`).\n* `ctrl+/`: Inputs the unit separator character (`0x1F`).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_62.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_62.md"
 }

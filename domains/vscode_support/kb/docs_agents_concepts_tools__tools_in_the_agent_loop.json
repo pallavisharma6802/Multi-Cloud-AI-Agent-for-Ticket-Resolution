@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Tools in the agent loop\n\nFor example, when you ask an agent to fix a failing test, it might:\n\n1. Call search and file-reading tools to find the test and related code.\n1. Use the returned file contents to decide what to change.\n1. Call an editing tool to apply the change.\n1. Call the terminal tool to run the test.\n1. Use the test output to decide whether the task is complete or another change is needed.\n\nEach call gives the agent new information or changes the development environment. Depending on your [permission level](/docs/agents/run/approvals.md#permission-levels), {% data variables.product.prodname_vscode_shortname %} might ask you to approve a tool call before it runs.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/tools.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/concepts/tools.md"
 }

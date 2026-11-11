@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## contributes.grammars\n\nContribute a TextMate grammar to a language. You must provide the `language` this grammar applies to, the TextMate `scopeName` for the grammar and the file path.\n\n> **Note:** The file containing the grammar can be in JSON (filenames ending in .json) or in XML plist format (all other files).\n\n### grammar example\n\n```json\n{\n  \"contributes\": {\n    \"grammars\": [\n      {\n        \"language\": \"markdown\",\n        \"scopeName\": \"text.html.markdown\",\n        \"path\": \"./syntaxes/markdown.tmLanguage.json\",\n        \"embeddedLanguages\": {\n          \"meta.embedded.block.frontmatter\": \"yaml\"\n        }\n      }\n    ]\n  }\n}\n```\n\nSee the [Syntax Highlight Guide](/api/language-extensions/syntax-highlight-guide) to learn more about how to register TextMate grammars associated with a language to receive syntax highlighting.\n\n![grammars extension point example](images/contribution-points/grammars.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/contribution-points.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/contribution-points.md"
 }

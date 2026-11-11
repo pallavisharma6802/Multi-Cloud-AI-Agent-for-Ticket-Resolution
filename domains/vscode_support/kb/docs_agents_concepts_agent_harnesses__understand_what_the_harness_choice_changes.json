@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Understand what the harness choice changes\n\nThe selected harness defines the agent implementation. Depending on the harness and your configuration, this choice affects:\n\n* **Tools and capabilities**: which built-in, extension-provided, [MCP](/docs/agent-customization/mcp-servers.md), or provider-specific tool integrations the agent supports, and how the harness routes tool calls.\n* **Model options**: which language models the harness offers and how it configures requests to them.\n* **Agent workflows**: which provider-specific commands, customizations, and session features are available.\n* **Permissions**: which approval modes and tool permission settings the harness supports.\n\nThe harness choice does not by itself determine where the language model runs or whether code changes go into a folder or worktree. Those choices depend on the models, execution environments, and isolation options that the harness supports.\n\n<a name=\"map-session-targets-to-harnesses\"></a>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/agent-harnesses.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/concepts/agent-harnesses.md"
 }

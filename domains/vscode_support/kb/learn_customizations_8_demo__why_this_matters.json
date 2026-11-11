@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Why this matters\n\nThis demo shows the full picture.\n\nInstead of manually asking Copilot to follow standards, update docs, format files, or simplify code every time, these systems work together automatically.\n\nThe result is:\n\n- faster workflows\n- less repetitive prompting\n- more consistent outputs\n\nThis represents a shift from:\n\n**single prompts \u2192 integrated workflows**\n\nYou\u2019re no longer using AI one request at a time.\n\nYou\u2019re building an environment where multiple AI systems collaborate automatically during development.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/8-demo.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/8-demo.md"
 }

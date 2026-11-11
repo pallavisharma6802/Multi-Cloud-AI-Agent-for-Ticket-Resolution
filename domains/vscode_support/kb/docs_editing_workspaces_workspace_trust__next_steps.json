@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Next steps\n\nLearn more at:\n\n* [Workspace Trust Extension Guide](/api/extension-guides/workspace-trust.md) - Learn how extension authors can support Workspace Trust.\n* [What is a {% data variables.product.prodname_vscode_shortname %} \"workspace\"?](/docs/editing/workspaces/workspaces.md) - Find out more details about the {% data variables.product.prodname_vscode_shortname %} \"workspace\" concept.\n* [GitHub Repositories extension](/docs/sourcecontrol/github.md#github-repositories-extension) - Work directly on a repository without cloning the source code to your local machine.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/workspaces/workspace-trust.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/workspaces/workspace-trust.md"
 }

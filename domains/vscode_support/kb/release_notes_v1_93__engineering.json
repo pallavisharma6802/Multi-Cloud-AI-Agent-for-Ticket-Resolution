@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Engineering\n\n### Progress on using ESM for VS Code\n\nDuring this milestone, we completed most of the work to adopt ESM for VS Code Core. Our goal is to use ECMAScript Modules (ESM) loading and drop AMD entirely. We will start to release ESM-enabled Insider builds in September and plan to ship ESM to Stable for our next release in October.\n\nOur plan for releasing ESM is captured in https://github.com/microsoft/vscode/issues/226260.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_93.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_93.md"
 }

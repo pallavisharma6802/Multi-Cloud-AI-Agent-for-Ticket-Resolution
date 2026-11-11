@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable fixes\n\n* [75932](https://github.com/microsoft/vscode/issues/75932): Debug failed to load: Process picker failed (your 131072x1 screen size is bogus, expect trouble)\n* [84271](https://github.com/microsoft/vscode/issues/84271): Add \"x\" to remove a file from recently opened (quick pick)\n* [89658](https://github.com/microsoft/vscode/issues/89658): No debug adapter found\n* [92381](https://github.com/microsoft/vscode/issues/92381): \"Add folder to workspace\" prompt duplicates itself if you add and then remove a folder from the workspace repeatedly\n* [93344](https://github.com/microsoft/vscode/issues/93344): Welcome view should scroll\n* [93634](https://github.com/microsoft/vscode/issues/93634): Progress: let window progress turn into silent notification progress",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_44.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_44.md"
 }

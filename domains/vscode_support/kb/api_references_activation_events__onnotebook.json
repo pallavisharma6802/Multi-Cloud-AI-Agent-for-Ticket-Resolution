@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## onNotebook\n\n`onNotebook:type` is emitted when the specified notebook document type is opened.\n\n```json\n\"activationEvents\": [\n    \"onNotebook:jupyter-notebook\",\n    \"onNotebook:interactive\"\n]\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/activation-events.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/activation-events.md"
 }

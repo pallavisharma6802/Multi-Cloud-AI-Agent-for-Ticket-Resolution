@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## View logs for GitHub Copilot\n\nThe GitHub Copilot output channels record connection failures, extension errors, and other runtime information. Increase the log level only while you reproduce an issue because trace logging produces detailed output.\n\n1. Open the Command Palette (`kb(workbench.action.showCommands)`).\n1. Run **Developer: Set Log Level** and set the GitHub Copilot and {% data variables.copilot.copilot_chat %} extensions to **Trace**.\n1. Reproduce the issue.\n1. Run **Output: Show Output Channels** and select **GitHub Copilot** or **{% data variables.copilot.copilot_chat %}**.\n1. Review errors and warnings around the time of the failed action.\n1. Run **Developer: Set Log Level** again and restore the previous log levels.\n\nTo switch output channels, use the dropdown on the right side of the Output panel.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/agent-troubleshooting/troubleshooting.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/agent-troubleshooting/troubleshooting.md"
 }

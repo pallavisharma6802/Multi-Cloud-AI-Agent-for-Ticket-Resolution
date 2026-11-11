@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Single-folder workspaces\n\nYou don't have to do anything for a folder to become a {% data variables.product.prodname_vscode_shortname %} workspace other than open the folder with {% data variables.product.prodname_vscode_shortname %}. Once you open a folder, {% data variables.product.prodname_vscode_shortname %} automatically keeps track of configuration, such as your open files or editor layout. When you reopen that folder in {% data variables.product.prodname_vscode_shortname %}, the editor will be as you left it previously.\n\nYou can also add other folder-specific configurations, such as workspace-specific [settings](/docs/configure/settings.md) (versus global user settings), [task definitions](/docs/debugtest/tasks.md), and [debugging launch](/docs/debugtest/debugging.md) files (see below in the [workspace settings](#workspace-settings) section).\n\n![Single-folder workspace](images/workspaces/single-folder-workspace.png)\n\n*A single-folder workspace opened inside {% data variables.product.prodname_vscode_shortname %}*",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/workspaces/workspaces.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/workspaces/workspaces.md"
 }

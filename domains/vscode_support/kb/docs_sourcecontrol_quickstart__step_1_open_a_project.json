@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "## Step 1: Open a project\n\n1. Create an empty folder named `git-practice` outside any existing Git repository.\n\n1. Open the folder in {% data variables.product.prodname_vscode_shortname %} with **File** > **Open Folder...**.\n\n    If prompted, confirm that you trust this folder you created. Only trust other projects when you know their source. Learn about [Workspace Trust](/docs/editing/workspaces/workspace-trust.md).\n\n1. Open the **Source Control** view (`kb(workbench.view.scm)`) and select **Initialize Repository**.\n\n    ![Screenshot showing the Initialize Repository button in the Source Control view.](images/quickstart/initialize-repository.png)\n\n    If the button isn't visible, open the Command Palette (`kb(workbench.action.showCommands)`) and run **Git: Initialize Repository**.\n\nYour folder is now a local Git repository. It has no commits yet, and nothing has been uploaded.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/quickstart.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/quickstart.md"
 }

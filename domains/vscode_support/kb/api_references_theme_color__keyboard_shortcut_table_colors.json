@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Keyboard shortcut table colors\n\n- `keybindingTable.headerBackground`: Background color for the keyboard shortcuts table header.\n- `keybindingTable.rowsBackground`: Background color for the keyboard shortcuts table alternating rows.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/theme-color.md"
 }

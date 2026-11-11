@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## New Commands\n\nKey|Command|Command id\n---|-------|----------\n`kb(workbench.action.openPreviousRecentlyUsedEditor)`|Open Previous Recently Used Editor|`workbench.action.openPreviousRecentlyUsedEditor`\n`kb(workbench.action.openNextRecentlyUsedEditor)`|Open Next Recently Used Editor|`workbench.action.openNextRecentlyUsedEditor`\n`kb(workbench.action.openGlobalKeybindingsFile)`|Open Keyboard Shortcuts File|`workbench.action.openGlobalKeybindingsFile`",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_12.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_12.md"
 }

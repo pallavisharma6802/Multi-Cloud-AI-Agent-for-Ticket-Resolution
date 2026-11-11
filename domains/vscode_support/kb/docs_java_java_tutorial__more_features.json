@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## More features\n\nThe editor also has many more capabilities to assist with your Java workload.\n\n* [Editing Java](/docs/java/java-editing.md) explains how to navigate and edit Java in more details\n* [Debugging](/docs/java/java-debugging.md) illustrates all the key features of the Java Debugger\n* [Testing](/docs/java/java-testing.md) provides comprehensive support for JUnit and TestNG framework\n* [Java Project Management](/docs/java/java-project.md) shows you how to use a project view and work with Maven\n* [Spring Boot](/docs/java/java-spring-boot.md) and [Tomcat and Jetty](/docs/java/java-tomcat-jetty.md) demonstrate great framework support\n* [Java Web Apps](/docs/java/java-webapp.md) shows how to work with Java Web App in {% data variables.product.prodname_vscode_shortname %}",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-tutorial.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-tutorial.md"
 }

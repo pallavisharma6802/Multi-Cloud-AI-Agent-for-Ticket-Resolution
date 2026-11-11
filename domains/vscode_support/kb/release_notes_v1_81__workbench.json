@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Workbench\n\n### Release notes for upcoming update\n\nWhenever a monthly stable update is ready to be installed, you can now preview the release notes via the **Show Update Release Notes** command in the **Manage** menu (gear button) at the bottom of the Activity bar.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_81.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_81.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## File Compare\n**File Compare** applies to files in **Working Files** now too. A new global action, **Files: Compare Opened File With**, has been added to the Command Palette.\n\n![File Compare](images/0_3_0/compare.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_3_0.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v0_3_0.md"
 }

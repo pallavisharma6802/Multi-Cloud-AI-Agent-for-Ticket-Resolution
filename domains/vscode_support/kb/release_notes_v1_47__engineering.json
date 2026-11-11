@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Engineering\n\n### Using TypeScript 4.0 to build VS Code\n\nVS Code is now built using a [nightly build](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next) of TypeScript 4.0.\n\nThis new TypeScript version helped us catch a few [potential bugs around accessors](https://devblogs.microsoft.com/typescript/announcing-typescript-4-0-beta/#breaking-changes) and also helps us test the upcoming TypeScript release.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_47.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_47.md"
 }

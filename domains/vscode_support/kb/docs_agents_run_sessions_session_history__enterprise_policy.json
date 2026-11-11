@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Enterprise policy\n\nFor {% data variables.copilot.copilot_business_short %} and {% data variables.copilot.copilot_enterprise_short %} users, two policies control session sync:\n\n* **GitHub.com enterprise policy** (\"Store local sessions in the Cloud\"): enterprise and organization owners configure this on GitHub.com to enable or disable cloud sync for their users.\n* **{% data variables.product.prodname_vscode_shortname %} group policy** (`CopilotSessionSync`): when disabled, the `setting(chat.sessionSync.enabled)` setting is forced to `false` and sessions stay local only.\n\n> [!IMPORTANT]\n> Enabling the policy does not give administrators access to your session data. Synced sessions are tied to your personal account and are accessible only to you by default.\n\nWhen disabled by policy, the session sync status shows **Disabled by policy** and users cannot override the setting.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/sessions/session-history.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/sessions/session-history.md"
 }

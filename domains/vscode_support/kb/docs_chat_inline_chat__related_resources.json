@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [Use chat in {% data variables.product.prodname_vscode_shortname %}](/docs/chat/chat-overview.md)\n* [Add context to your chat prompt](/docs/chat/copilot-chat-context.md)\n* [Review AI-generated code edits](/docs/agents/run/review-code-edits.md)\n* [AI language models in {% data variables.product.prodname_vscode_shortname %}](/docs/agent-customization/language-models.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/chat/inline-chat.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/chat/inline-chat.md"
 }

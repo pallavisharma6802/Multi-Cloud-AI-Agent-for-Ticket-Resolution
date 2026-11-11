@@ -4,5 +4,5 @@
   "category": "DEBUGGING",
   "intent": "debugging",
   "content": "# Debug code with {% data variables.product.prodname_vscode %}\n\nUse the debugger in {% data variables.product.prodname_vscode %} to pause your application, inspect its state, and step through code to find the cause of a problem. This article guides you through your first debugging session and introduces the tools you use to investigate issues.\n\n{% data variables.product.prodname_vscode_shortname %} includes a debugger for JavaScript, TypeScript, and Node.js. For other languages and runtimes, install a [debugger extension](#debugger-extensions).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/debugging.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/debugtest/debugging.md"
 }

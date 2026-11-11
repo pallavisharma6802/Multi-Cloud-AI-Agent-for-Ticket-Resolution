@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Agent scoped hooks (Preview)\n\n**Setting**: `setting(chat.useCustomAgentHooks)`\n\nCustom agent frontmatter now supports agent-scoped hooks that are only run when you select the specific agent or when it's invoked via `runSubagent`. This lets you attach pre- and post-processing logic to specific agents without affecting other chat interactions.\n\nTo create an agent-scoped hook, define it in the `hooks` section of the YAML frontmatter of your `.agent.md` file.\n\nTo try this feature, enable the `setting(chat.useCustomAgentHooks)` setting. For more information, see [Agent-scoped hooks](https://code.visualstudio.com/docs/agent-customization/hooks#_agentscoped-hooks) in our documentation.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_111.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_111.md"
 }

@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Exercise - shut down\n\n1. Close the Playwright browser window.\n2. Return to the Spring Boot Dashboard, select **Stop** for **springboot-mcp-demo**, and confirm it is no longer running.\n3. Leave the Playwright MCP server installed in the Visual Studio Code user profile \u2014 it stays available for future Chat sessions in any workspace.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/4-test-with-playwright.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/java-spring-boot/4-test-with-playwright.md"
 }

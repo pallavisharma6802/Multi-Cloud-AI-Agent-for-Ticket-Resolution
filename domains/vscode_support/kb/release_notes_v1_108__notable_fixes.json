@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable fixes\n\n* [vscode#283356](https://github.com/microsoft/vscode/issues/283356) - Fixed regression causing jumping around while scrolling past some chat output",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_108.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_108.md"
 }

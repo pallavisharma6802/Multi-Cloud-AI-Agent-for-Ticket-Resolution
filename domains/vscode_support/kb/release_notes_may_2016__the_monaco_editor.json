@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## The Monaco Editor\n\nAt the heart of VS Code is the \"Monaco\" code editor. You can find the \"Monaco\" editor across many Microsoft properties such as OneDrive, Azure, the TypeScript playground, and even in the F12 tools in IE and Edge.\n\nOur goal is to enable anyone to consume the \"Monaco\" editor and host it in any browser. The challenge we have today is that the editor is embedded in the `vscode` repository and the language service extensions have dependencies on client (non browser) technologies.\n\nThe first step towards releasing the editor is [an exploration](https://github.com/alexandrudima/monaco-typescript) where the TypeScript language service has been extracted from VS Code's sources and can run on top of the standalone editor API.\n\nIn the upcoming weeks we will continue to refine the API and automate the packaging with the goal of making the \"Monaco\" editor public with the June release of VS Code.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/May_2016.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/May_2016.md"
 }

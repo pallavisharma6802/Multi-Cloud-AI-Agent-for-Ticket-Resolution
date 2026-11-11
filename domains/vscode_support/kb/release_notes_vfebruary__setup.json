@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Setup\n\n### OS X Shell Command\n\nIn OS X, two new commands were added to install the VS Code shell command in the `$PATH` environment variable list. This makes the previous alias in `~/.bash_profile` deprecated and we **recommend you to remove it** and use this command instead.\n\n![OS X Shell Commands](images/February/shell-command.png)\n\n### Telemetry Opt Out\n\nUsers now can opt out of usage telemetry via the `telemetry.enableTelemetry` setting.\n\n### Improved Command Line Interaction\n\nThe command line interface for code has been unified across all platforms and now supports a few arguments such as `--help` and `--version`.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vFebruary.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/vFebruary.md"
 }

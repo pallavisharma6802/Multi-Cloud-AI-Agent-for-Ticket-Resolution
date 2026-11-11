@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "# Glob Patterns Reference\n\n{% data variables.product.prodname_vscode %} uses glob patterns in many components. Examples include setting file and folder includes/excludes in features such as [Search](/docs/editing/codebasics.md#advanced-search-options), hiding files from the File Explorer or marking them readonly, and setting up programming language-specific file associations.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editor/glob-patterns.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editor/glob-patterns.md"
 }

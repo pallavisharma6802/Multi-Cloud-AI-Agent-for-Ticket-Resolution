@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Refactoring\n\nSelect the area for refactoring (for example variable, function body, etc.). Click on the Code Action light bulb icon that appears in the selected area, or select **Refactoring...** or **Rename Symbol** (`kb(editor.action.rename)`) from the {% data variables.product.prodname_vscode_shortname %} context menu.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/go.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/go.md"
 }

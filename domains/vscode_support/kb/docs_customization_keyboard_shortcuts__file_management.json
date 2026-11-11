@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## File Management\n\nKey|Command\n---|---\n`kb(workbench.action.files.newUntitledfile)`|New File\n`kb(workbench.action.files.openfile)`|Open File...\n`kb(workbench.action.files.openFileFolder)`|Open File... (macOS)\n`kb(workbench.action.files.save)`|Save\n`kb(workbench.action.files.saveAs)`|Save As...\n`kb(saveAll)`|Save All\n`kb(workbench.action.closeActiveEditor)`|Close\n`kb(workbench.action.closeAllEditors)`|Close All\n`kb(workbench.action.reopenClosedEditor)`|Reopen closed editor\n`kb(workbench.action.keepEditor)`|Keep Open\n`kb(workbench.action.opennextRecentlyUsedEditorInGroup)`|Open next\n`kb(workbench.action.openpreviousRecentlyUsedEditorInGroup)`|Open previous\n`kb(workbench.action.files.copyPathOfActivefile)`|Copy path of active file\n`kb(workbench.action.files.revealActivefileInWindows)`|Reveal active file in Explorer\n`kb(workbench.action.files.showOpenedfileInNewWindow)`|Show active file in new window/instance",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/customization/keyboard-shortcuts.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/customization/keyboard-shortcuts.md"
 }

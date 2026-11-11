@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Batch repetitive operations\n\nRepeated submit, poll, and retrieve tool calls add intermediate results to the model context. For deterministic or bulk workflows, use a script or command-line tool to run the loop outside the agent conversation and return only the final result.\n\nFor example, instead of asking the agent to issue and inspect many similar database queries one at a time, use a reviewed script that runs the query batch and produces a concise summary. Run the script with the terminal tool, then give the summary to the model for analysis. Benchmark the scripted and interactive versions of your workflow because the savings depend on the tools, results, and task.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/optimize-usage.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/optimize-usage.md"
 }

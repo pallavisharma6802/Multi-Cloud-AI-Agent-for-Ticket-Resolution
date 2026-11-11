@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Core\n\n### New openBrowserOnce option for onAutoForward setting\n\nThe `remote.portsAttributes` setting now allows a new option for `onAutoForward`: `openBrowserOnce`. This option will open the browser only the first time the port is detected during a \"session\", where a \"session\" is reset by reloading or closing the folder. This option is useful if you have a watch task that frequently causes the process that your port is listening on to be killed and restarted.\n\n```json\n{\n  \"remote.portsAttributes\": {\n    \"4000\": {\n      \"onAutoForward\": \"openBrowserOnce\"\n    }\n  }\n}\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_58.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_58.md"
 }

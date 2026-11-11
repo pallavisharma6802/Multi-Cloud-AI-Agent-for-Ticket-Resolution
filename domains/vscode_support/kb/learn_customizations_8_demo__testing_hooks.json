@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Testing hooks\n\nHooks run in the background when files are modified.\n\nFor example, after changing the README title, the hook automatically formats the file without any extra steps.\n\n> **Prompt**\n> Can you go ahead and modify the README so that the name is not just Repo Analyzer, but it says Fantastic Repo Analyzer.\n\nThis keeps files clean and consistent as changes are made.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/8-demo.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/8-demo.md"
 }

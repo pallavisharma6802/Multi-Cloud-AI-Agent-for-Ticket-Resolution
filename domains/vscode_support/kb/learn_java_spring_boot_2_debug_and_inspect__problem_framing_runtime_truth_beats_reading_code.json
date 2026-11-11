@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Problem Framing: Runtime Truth Beats Reading Code\n\nReading source tells you what should happen. A debugger tells you what did. Those two\ndiverge more often than anyone likes to admit \u2014 a trimmed string, a null that was\nsupposed to be filled in later, an id assigned somewhere you did not expect.\n\nThe useful habit is not \"debug when something breaks\". It is \"step through a working path\nonce, so you know what normal looks like\".\n\n### Try this\n\nPick any request in your own project and stop on the line where your web layer calls your\nbusiness layer. Step in, step out, and read the return value. If anything surprises you,\nthat surprise is a bug waiting for a bad day.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/2-debug-and-inspect.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/java-spring-boot/2-debug-and-inspect.md"
 }

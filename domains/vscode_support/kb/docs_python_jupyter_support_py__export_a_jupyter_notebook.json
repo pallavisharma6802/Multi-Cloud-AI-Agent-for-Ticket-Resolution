@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Export a Jupyter notebook\n\nIn addition to opening a Jupyter notebook, you can also use one of the following commands from the Command Palette (`kb(workbench.action.showCommands)`) to export content from a Python file in {% data variables.product.prodname_vscode_shortname %} to a Jupyter notebook (with the `.ipynb` extension).\n\n- **Jupyter: Export Current Python File as Jupyter Notebook**: creates a Jupyter notebook from the contents of the current file, using the `# %%` and `# %% [markdown]` delimiters to specify their respective cell types.\n- **Jupyter: Export Current Python File and Output as Jupyter Notebook**: creates a Jupyter notebook from the contents of the current file and includes output from code cells.\n- **Jupyter: Export Interactive Window as Jupyter Notebook**: creates a Jupyter notebook from the contents of the Python Interactive window.\n\nAfter exporting the contents, {% data variables.product.prodname_vscode_shortname %} displays a prompt through which you can open the notebook in a browser.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/jupyter-support-py.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/python/jupyter-support-py.md"
 }

@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "## Publish to GitHub\n\nIf you have a local repository that isn't connected to a remote, you can publish it directly to GitHub from {% data variables.product.prodname_vscode_shortname %}.\n\nTo publish a repository to GitHub:\n\n1. Open the Command Palette (`kb(workbench.action.showCommands)`) and run **Publish to GitHub**.\n\n1. Sign in to GitHub if prompted.\n\n1. Enter an available repository name and choose whether to create a public or private repository.\n\n1. If prompted, select which files to include in the initial commit.\n\n{% data variables.product.prodname_vscode_shortname %} creates a new repository on GitHub, adds it as a remote, and pushes your commits.\n\n> [!NOTE]\n> **Publish to GitHub** creates a new hosted repository. **Publish Branch** uploads a branch to an existing remote and sets its upstream. If the hosted repository already exists, [add it as a remote](#add-a-remote) instead of creating another repository.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/repos-remotes.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/repos-remotes.md"
 }

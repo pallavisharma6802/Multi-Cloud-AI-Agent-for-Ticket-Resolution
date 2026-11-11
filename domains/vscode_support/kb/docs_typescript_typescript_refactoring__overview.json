@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# Refactoring TypeScript\n\n[Source code refactoring](https://en.wikipedia.org/wiki/Code_refactoring) can improve the quality and maintainability of your project by restructuring your code while not modifying the runtime behavior. {% data variables.product.prodname_vscode %} supports refactoring operations (refactorings) such as [Extract Method](https://refactoring.com/catalog/extractMethod.html) and [Extract Variable](https://refactoring.com/catalog/extractVariable.html) to improve your code base from within your editor.\n\n{% data variables.product.prodname_vscode %} has built-in support for TypeScript refactoring through the [TypeScript](https://www.typescriptlang.org/) language service and in this topic we'll demonstrate refactoring support with the TypeScript language service.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/typescript/typescript-refactoring.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/typescript/typescript-refactoring.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Extensions\n\n### Enable / Disable commands\n\nThere are two new commands in the **Extensions** view context menu to help quickly manage your extensions:\n\n* Enable / Disable All Installed Extensions\n* Enable / Disable Auto Updating Extensions\n\n![Extensions actions](images/1_13/extensions-actions.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_13.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_13.md"
 }

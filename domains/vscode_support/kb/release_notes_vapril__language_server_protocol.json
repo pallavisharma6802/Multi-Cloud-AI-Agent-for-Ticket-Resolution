@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Language Server Protocol\n\nVersion 2.x of the [language server protocol](https://microsoft.github.io/language-server-protocol) was released together with a corresponding [client library](https://github.com/microsoft/vscode-languageserver-node) to be used in extensions and a [server library](https://github.com/microsoft/vscode-languageserver-node) for Node.js.\n\nThe major changes are:\n\n- Alignment of the protocol with the VS Code extension API.\n- Consistent support for language identifiers. This means that the language ID is passed to the server via the open notification.\n- Support for version numbers on documents.\n- Text document save notifications.\n- Support for request cancellation.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vApril.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/vApril.md"
 }

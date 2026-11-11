@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## How can I use it behind a corporate proxy?\n\nWhen using the Java Language Support (redhat.java) extension behind a corporate proxy, you might need to let the Java Language server know how to connect to the Internet, in order to download build runtimes, Java dependencies, and their sources through that proxy.\n\nThis is done by configuring the `java.jdt.ls.vmargs` setting in {% data variables.product.prodname_vscode_shortname %} preferences (all on one line):\n\n```json\n{\n\"java.jdt.ls.vmargs\": \"-Dhttp.proxyHost=webproxy.corp.net -Dhttp.proxyPort=proxyport -Dhttp.proxyUser=user -Dhttp.proxyPassword=password -Dhttps.proxyHost=webproxy.corp.net -Dhttps.proxyPort=proxyport -Dhttps.proxyUser=user -Dhttps.proxyPassword=password\"\n}\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-faq.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-faq.md"
 }

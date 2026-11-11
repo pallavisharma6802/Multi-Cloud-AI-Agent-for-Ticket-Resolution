@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Links\n\n- [Walkthroughs contribution point](/api/references/contribution-points#contributes.walkthroughs)\n- [SVG with Theme Color CSS variable example](https://github.com/microsoft/vscode/blob/a28eab68734e629c61590fae8c4b231c91f0eaaa/src/vs/workbench/contrib/welcomeGettingStarted/common/media/commandPalette.svg?short_path=52f2d6f#L11)\n- [Visual Studio Code Color Mapper](https://www.figma.com/community/plugin/1218260433851630449)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/walkthroughs.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/ux-guidelines/walkthroughs.md"
 }

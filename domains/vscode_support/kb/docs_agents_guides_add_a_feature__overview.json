@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Add a feature to an existing project\n\nAdding a feature means more than generating new code. The change needs to fit the project's structure, preserve existing behavior, and have evidence that it works.\n\nIn this guide, you use an agent to research a small feature in your own repository, review its plan, implement the change, and prepare the verified result for a pull request. You don't need to create custom agents or instructions first.\n\nThe example adds an optional title filter to a paginated issues API. Adapt the prompts and acceptance criteria to a feature in your project. No particular framework or sample project is required.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/add-a-feature.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/add-a-feature.md"
 }

@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Next steps\n\n- Learn about all the [C# Editing Experience](/docs/languages/csharp.md) available in {% data variables.product.prodname_vscode_shortname %}.\n- [Get Started with C#](/docs/csharp/get-started.md) in {% data variables.product.prodname_vscode_shortname %}.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/introvideos-csharp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/introvideos-csharp.md"
 }

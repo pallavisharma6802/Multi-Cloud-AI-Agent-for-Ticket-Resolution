@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Terminal\n\n### Start dictation exposed\n\nWe added the **Start dictation** action to the terminal overflow menu. This action enables you to use voice dictation to input text into the terminal.\nA corresponding **Stop dictation** action appears when relevant.\n\n![Screenshot of the terminal overflow menu with a Start Dictation option.](images/1_105/start-dictation-terminal.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_105.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_105.md"
 }

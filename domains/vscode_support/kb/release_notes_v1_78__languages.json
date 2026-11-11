@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Languages\n\n### Drag and drop videos into Markdown files\n\nWant to insert a video into your Markdown? Just drag it into the editor and then hold `kbstyle(Shift)` to drop it into the file:\n\n<video src=\"images/1_78/md-video-insert.mp4\" autoplay loop controls muted title=\"Inserting a video using drag and drop\"></video>\n\nThis inserts a `<video>` tag pointing to the video file. You can drag videos from VS Code's Explorer or from your local operating system.\n\n### Strict nulls for JavaScript script blocks in HTML\n\nYou can now use the `js/ts.implicitProjectConfig.strictNullChecks` setting to enable strict nulls for JavaScript in HTML script blocks:\n\n![Strict nulls in a script block](images/1_78/html-strict-null.png)\n\nWith strict nulls enabled, hovers and other IntelliSense features show when a type can be nullable. For example, notice how `el` now has a type of `HTMLElement | null`. This is because `document.getElementById` returns null if it can't find an element with that ID.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_78.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_78.md"
 }

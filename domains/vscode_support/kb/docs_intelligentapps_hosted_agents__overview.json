@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Create and deploy a hosted agent in Foundry Toolkit for {% data variables.product.prodname_vscode_shortname %}\n\nHosted agents run your agent code in Microsoft Foundry Agent Service. Choose a hosted agent when you need custom logic, code-based orchestration, or control over dependencies that a prompt-agent definition doesn't provide. You maintain and test the code and its dependencies. Foundry manages the hosting infrastructure and scaling. For a comparison with prompt agents, see [Choose an agent type](/docs/intelligentapps/create-agents.md#choose-an-agent-type).\n\nIn this article, you use Foundry Toolkit for {% data variables.product.prodname_vscode %} to create a Python Agent Framework sample, test it locally with [Agent Inspector](/docs/intelligentapps/agent-inspector.md), and deploy its source code to Foundry. The sample uses the Responses protocol for conversational requests. After deployment, you test the remote agent and inspect its status, versions, and logs.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/hosted-agents.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/hosted-agents.md"
 }

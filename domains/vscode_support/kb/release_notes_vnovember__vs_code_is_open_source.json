@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## VS Code is Open Source!\n\nYou spoke and we listened.  With this release, VS Code development is now open source on [GitHub](https://github.com/microsoft/vscode).\n\n![hello code](images/0_10_0/hello-code.png)\n\nYou can now contribute to VS Code:\n* Submit [bugs](https://github.com/microsoft/vscode/issues) and help us verify fixes as they are checked in.\n* Review the source code changes.\n* Contribute bug fixes through pull requests.\n* Update and add to the [documentation](https://github.com/microsoft/vscode-docs).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vNovember.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/vNovember.md"
 }

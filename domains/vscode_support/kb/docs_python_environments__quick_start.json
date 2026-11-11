@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Quick start\n\n**Most users don't need to configure anything.** The extension automatically discovers your Python environments and uses them when running code.\n\nIf you have a basic setup, such as one environment for your whole workspace:\n\n1. Open a Python file\n2. Check the Status Bar to see which environment is active\n3. To switch environments, select the environment control in the Status Bar\n\n**Need to create an environment?** Open the Python sidebar, expand **Environment Managers**, and select the **+** button. The extension walks you through the different steps.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/environments.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/python/environments.md"
 }

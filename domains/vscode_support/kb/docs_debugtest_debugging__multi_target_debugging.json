@@ -4,5 +4,5 @@
   "category": "DEBUGGING",
   "intent": "debugging",
   "content": "## Multi-target debugging\n\nFor applications with multiple processes, such as a client and a server, start one debug session and then start another. When more than one session is active:\n\n* Each session appears as a top-level item in the **CALL STACK** section.\n* The Debug toolbar shows the active session and provides a dropdown for switching sessions.\n* Debug actions apply to the active session.\n\nFor a repeatable setup that starts multiple debug configurations together, create a [compound launch configuration](/docs/debugtest/debugging-configuration.md#compound-launch-configurations).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/debugging.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/debugtest/debugging.md"
 }

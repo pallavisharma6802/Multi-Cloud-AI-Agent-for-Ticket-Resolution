@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Prerequisites\n\n* Sign in with the {% data variables.product.prodname_github %} account that has access to the cloud service and the repository you want to use. Availability depends on your account and organization.\n* Turn on the `setting(chat.agentHost.cloudSandbox.enabled)` setting to create and discover cloud sessions. In the {% data variables.copilot.agents_window %}, this replaces the {% data variables.copilot.copilot_cloud_agent %} workflow on {% data variables.product.prodname_github %} Actions for new **Cloud** sessions.\n* For the repository workflow below, choose a repository hosted on GitHub.com that your account can access.\n\nTo prevent this client from connecting to remote agent hosts, including those for cloud sessions, turn off `setting(chat.remoteAgentHostsEnabled)`.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/cloud-sandbox-sessions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/cloud-sandbox-sessions.md"
 }

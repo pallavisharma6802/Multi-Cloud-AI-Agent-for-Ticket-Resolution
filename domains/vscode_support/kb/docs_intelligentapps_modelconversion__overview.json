@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Convert a model with Foundry Toolkit for {% data variables.product.prodname_vscode_shortname %}\n\nModel conversion is an integrated development environment designed to help developers and AI engineers to convert, quantize, optimize and evaluate the pre-built machine learning models on your local Windows platform. It offers a streamlined, end-to-end experience for models converted from sources like Hugging Face, optimizing them and enabling inference on local devices powered by NPUs, GPUs, and CPUs.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/modelconversion.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/modelconversion.md"
 }

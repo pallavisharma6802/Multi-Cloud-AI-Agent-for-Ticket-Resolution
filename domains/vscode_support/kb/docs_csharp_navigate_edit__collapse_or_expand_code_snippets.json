@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Collapse or expand code snippets\n\nTo better view the source code, hover over the editor gutter to collapse or expand code snippets using the caret that appears.\n\n![Collapse or expand code snippet example](images/navigate-edit/collapse-or-expand-code-snippets.gif)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/navigate-edit.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/navigate-edit.md"
 }

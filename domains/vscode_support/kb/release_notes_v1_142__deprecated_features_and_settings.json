@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Deprecated features and settings\n\n### New deprecations in this release\n\n* [Windows sandboxing for Local harness is no longer supported](#windows-sandboxing-for-local-harness-is-no-longer-supported)\n\n\n<!-- RELEASE_THANK_YOU_START -->",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_142.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_142.md"
 }

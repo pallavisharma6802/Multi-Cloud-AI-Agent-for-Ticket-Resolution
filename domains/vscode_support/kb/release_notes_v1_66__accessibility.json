@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Accessibility\n\nThe team works hard to make VS Code one of the most accessible editors available. This release contains several improvements to help usability and accessibility:\n\n* **[Reduce motion mode](#reduce-motion-mode)** - Limit animations used in the VS Code UI.\n* **[More visible source control decorators](#updated-source-control-decorators)** - Higher visibility using patterns and color contrast.\n* **[Audio cues volume control](#audio-cue-improvements)** - You can now adjust the editor audio cue volume.\n* **[Comment UI accessibility](#comment-accessibility-improvements)** - New commands and keyboard shortcuts.\n* **[High Contrast Light color theme](#high-contrast-light-theme-for-color-contributions)** - Theme authors can now contribute colors to High Contrast Light.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_66.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_66.md"
 }

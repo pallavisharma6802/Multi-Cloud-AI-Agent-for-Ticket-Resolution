@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Resolving hangs when doing a Git push or sync from a Container\n\nIf you clone a Git repository using SSH and your SSH key has a passphrase, {% data variables.product.prodname_vscode_shortname %}'s pull and sync features may hang when running remotely.\n\nEither use an SSH key without a passphrase, clone using HTTPS, or run `git push` from the command line to work around the issue.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/tips-and-tricks.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/devcontainers/tips-and-tricks.md"
 }

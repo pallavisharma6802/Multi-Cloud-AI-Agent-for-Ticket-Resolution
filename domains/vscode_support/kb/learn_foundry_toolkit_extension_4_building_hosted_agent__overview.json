@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "# Building a Hosted Agent with GitHub Copilot and Microsoft Foundry\n\n[![Watch Chapter 4 Video on YouTube (opens in new tab).](images/4-building-hosted-agent/youtube-pxG-9Lh_a44.jpg)](https://www.youtube.com/watch?v=pxG-9Lh_a44)\n\nLow-code agents are great for proving behavior quickly, but most teams eventually need stronger control over code, deployment, and integration. In this chapter, we move into a code-first workflow and build a hosted agent that can be developed locally, debugged with tooling, and deployed into Microsoft Foundry.\n\nBy the end, you will have a practical blueprint for going from prompt idea to production-oriented hosted execution.\n\nThis is where agent development starts to feel like real engineering.\n\nEvery part of this flow is useful on its own.\nThe real magic happens when scaffold, debug, tools, and deploy all connect into one repeatable system.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
 }

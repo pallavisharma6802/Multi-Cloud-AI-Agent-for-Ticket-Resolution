@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Testing C# apps\n\nThis video shows you how to test your C# application using C# Dev Kit.\n\n[![Watch Testing C# Apps in {% data variables.product.prodname_vscode_shortname %} on YouTube (opens in new tab).](images/introvideos-csharp/youtube-TGM386ZzeOc.jpg)](https://www.youtube.com/watch?v=TGM386ZzeOc)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/introvideos-csharp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/introvideos-csharp.md"
 }

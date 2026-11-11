@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Contributions to Extensions\n\nOur team maintains or contributes to a number of VS Code extensions. Most notably this month:\n\n### Sublime Text Keymap extension\n\n[The Sublime Text Keymap extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings) is now able to import settings from Sublime.\n\nThe first time the extension is launched, a prompt is shown that displays all your importable Sublime settings. If you want to import your settings at a later time, use the **Sublime Text Keymap: Import Sublime Text Settings** command from the **Command Palette** (`kb(workbench.action.showCommands)`).\n\n<video src=\"images/1_23/SublimeSettingsImporter.mp4\" title=\"Video showing Sublime Settings Importer.\" autoplay loop controls muted></video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_23.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_23.md"
 }

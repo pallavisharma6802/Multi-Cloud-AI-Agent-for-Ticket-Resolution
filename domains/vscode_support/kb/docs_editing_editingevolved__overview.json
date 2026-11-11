@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "# Code Navigation\n\n{% data variables.product.prodname_vscode %} has a high productivity code editor which, when combined with programming language services, gives you the power of an IDE and the speed of a text editor. In this topic, we'll first describe {% data variables.product.prodname_vscode_shortname %}'s language intelligence features (suggestions, parameter hints, smart code navigation) and then show the power of the core text editor.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/editingevolved.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/editingevolved.md"
 }

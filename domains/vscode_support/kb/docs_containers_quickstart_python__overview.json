@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "# Python in a container\n\nIn this tutorial, you will learn how to:\n\n- Create a `Dockerfile` file describing a simple Python container.\n- Build, run, and verify the functionality of a [Django](https://www.djangoproject.com/), [Flask](https://flask.palletsprojects.com/en/stable/), or General Python app.\n- Debug the app running in a container.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/quickstart-python.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/containers/quickstart-python.md"
 }

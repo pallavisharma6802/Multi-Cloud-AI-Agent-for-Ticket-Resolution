@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Editor Experience\n\n### Delayed extension auto-updates\n\nVS Code now applies a two-hour delay before automatically updating extensions to a newly published version. When automatic updates are enabled, new versions are auto-updated two hours after they are published, adding an extra layer of protection against problematic or potentially compromised releases.\n\nThis never gets in your way, as you can still update any extension immediately at any time by using the **Update** button. While an update is waiting, the extension's details view explains why it hasn't updated yet and when the automatic update will happen.\n\n> **Note**: This delay does not apply to extensions from trusted publishers such as Microsoft, GitHub, and OpenAI. These extensions continue to update immediately.\n\n![Screenshot of the extension showing the delay information and update schedule.](images/1_123/extension-delayed-autoupdate.webp)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_123.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_123.md"
 }

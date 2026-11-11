@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## About extension runtime permissions\n\nThe [extension host](/api/advanced-topics/extension-host.md) is responsible for running extensions in {% data variables.product.prodname_vscode_shortname %}. The extension host has the same permissions as {% data variables.product.prodname_vscode_shortname %} itself. This means that any action that {% data variables.product.prodname_vscode_shortname %} can perform, an extension can also perform through the extension host.\n\nFor example, an extension can read and write files on your machine, make network requests, run external processes, and modify workspace settings.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/extensions/extension-runtime-security.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/extensions/extension-runtime-security.md"
 }

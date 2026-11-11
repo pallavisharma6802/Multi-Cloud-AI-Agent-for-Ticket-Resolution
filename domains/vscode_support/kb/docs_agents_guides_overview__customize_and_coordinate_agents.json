@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Customize and coordinate agents\n\n* [Adapt agents to your project](/docs/agents/guides/customize-copilot-guide.md): share project instructions with your team, then add skills or specialized agents where needed. **Use your own repository.**\n\n* [Set up a context engineering workflow](/docs/agents/guides/context-engineering-guide.md): curate project context and connect planning to implementation with instructions, custom agents, and prompt files. **Use your own repository and the Local harness in the {% data variables.copilot.chat_view %}.**\n\n* [Run independent tasks in parallel](/docs/agents/guides/delegate-two-tasks.md): work in separate Git worktrees, review each result, then integrate and retest the changes. **Use your own Git repository with {% data variables.product.prodname_copilot_short %} in the {% data variables.copilot.agents_window %}, after completing a single agent task.**",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/overview.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/overview.md"
 }

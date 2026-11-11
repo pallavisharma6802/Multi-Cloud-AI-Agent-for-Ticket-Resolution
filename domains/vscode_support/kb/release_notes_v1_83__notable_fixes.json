@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable fixes\n\n* [190679](https://github.com/microsoft/vscode/issues/190679) Theme color icon.foreground is inconsistent and does not work with `.svg`",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_83.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_83.md"
 }

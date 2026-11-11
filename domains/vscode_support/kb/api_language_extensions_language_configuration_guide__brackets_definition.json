@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Brackets definition\n\nWhen you move the cursor to a bracket defined here, VS Code will highlight that bracket together with its matching pair.\n\n```json\n{\n  \"brackets\": [[\"{\", \"}\"], [\"[\", \"]\"], [\"(\", \")\"]]\n}\n```\n\nMoreover, when you run **Go to Bracket** or **Select to Bracket**, VS Code will use the definition above to find the nearest bracket and its matching pair.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/language-extensions/language-configuration-guide.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/language-extensions/language-configuration-guide.md"
 }

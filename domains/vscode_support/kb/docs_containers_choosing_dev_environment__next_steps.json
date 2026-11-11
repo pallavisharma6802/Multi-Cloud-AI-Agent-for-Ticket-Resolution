@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Next steps\n\nRead on to learn more about\n\n- [Build and run a Node.js app in a container](/docs/containers/quickstart-node.md)\n- [Build and run a ASP.NET Core app in a container](/docs/containers/quickstart-aspnet-core.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/choosing-dev-environment.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/containers/choosing-dev-environment.md"
 }

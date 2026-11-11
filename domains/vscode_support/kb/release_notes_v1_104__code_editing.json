@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Code Editing\n\n### Configurable inline suggestion delay\n\n**Setting**: `setting(editor.inlineSuggest.minShowDelay)`\n\nA new setting `setting(editor.inlineSuggest.minShowDelay)` enables you to configure how quickly inline suggestions can appear after you type. This can be useful if you find that suggestions are appearing too quickly and getting in the way of your typing.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_104.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_104.md"
 }

@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Require approval before sensitive edits\n\nSensitive-file approval happens before the agent saves an edit, rather than during review. Use `setting(chat.tools.edits.autoApprove)` with glob patterns to require a diff and approval for edits to sensitive files.\n\nThis example automatically approves edits except to JSON files in the `.vscode` folder and files named `.env`:\n\n```json\n\"chat.tools.edits.autoApprove\": {\n  \"**/*\": true,\n  \"**/.vscode/*.json\": false,\n  \"**/.env\": false\n}\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/review-code-edits.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/review-code-edits.md"
 }

@@ -4,5 +4,5 @@
   "category": "ENTERPRISE",
   "intent": "enterprise",
   "content": "# Manage updates in enterprise environments\n\n{% data variables.product.prodname_vscode_shortname %} releases weekly updates with new features, bug fixes, and security patches. Organizations can centrally manage how {% data variables.product.prodname_vscode_shortname %} updates are handled across their development teams.\n\nThis article covers how IT admins can configure automatic updates through [enterprise policies](/docs/enterprise/policies.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/enterprise/updates.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/enterprise/updates.md"
 }

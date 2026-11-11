@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "# Profiles in {% data variables.product.prodname_vscode %}\n\n{% data variables.product.prodname_vscode %} has hundreds of [settings](/docs/configure/settings.md), thousands of [extensions](/docs/configure/extensions/extension-marketplace.md), and innumerable ways to adjust the UI layout to customize the editor. {% data variables.product.prodname_vscode_shortname %} **Profiles** let you create sets of customizations and quickly switch between them or share them with others. This topic explains how to create, modify, export, and import profiles by using the **Profiles editor**.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/profiles.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/profiles.md"
 }

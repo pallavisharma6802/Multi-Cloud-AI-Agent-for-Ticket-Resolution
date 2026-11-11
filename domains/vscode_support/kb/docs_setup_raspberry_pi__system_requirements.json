@@ -4,5 +4,5 @@
   "category": "INSTALLATION",
   "intent": "installation",
   "content": "## System requirements\n\n{% data variables.product.prodname_vscode_shortname %} is not officially supported on Raspberry Pi. Check our [community discussions](https://github.com/microsoft/vscode-discussions/discussions/2379) for information on platforms that are known to work.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/raspberry-pi.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/setup/raspberry-pi.md"
 }

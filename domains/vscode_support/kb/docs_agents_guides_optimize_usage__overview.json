@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Optimize AI credit usage in {% data variables.product.prodname_vscode_shortname %}\n\nEach GitHub Copilot plan includes a monthly allowance of [AI credits](https://docs.github.com/en/copilot/concepts/billing/usage-based-billing-for-individuals). Different actions consume credits at different rates, based on the model and the number of tokens processed. This guide covers practical ways to get the most out of your AI credits in {% data variables.product.prodname_vscode %}.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/optimize-usage.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/optimize-usage.md"
 }

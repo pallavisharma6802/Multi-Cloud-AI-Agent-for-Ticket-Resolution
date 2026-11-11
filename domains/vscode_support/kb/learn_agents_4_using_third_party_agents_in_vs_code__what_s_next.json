@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## What's next\n\nYou now have the four course topics covered. Review the tool choices, MCP server setup, plugin packaging, and third-party agent session types, then apply the smallest setup that fits your next real task.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/4-using-third-party-agents-in-vs-code.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/agents/4-using-third-party-agents-in-vs-code.md"
 }

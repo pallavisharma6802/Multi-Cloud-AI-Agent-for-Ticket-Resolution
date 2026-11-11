@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Links\n\n* [Status Bar Item API reference](/api/references/vscode-api#StatusBarItem)\n* [Status Bar extension sample](https://github.com/microsoft/vscode-extension-samples/tree/main/statusbar-sample)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/status-bar.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/ux-guidelines/status-bar.md"
 }

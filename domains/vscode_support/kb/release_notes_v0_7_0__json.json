@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## JSON\nWe improved the JSON formatter, specifically formatting with comments and formatting ranges.\n\nIn the [JSON documentation](/docs/languages/json.md) we now include examples of:\n* Working with JSON comments\n* IntelliSense and Schema validation\n* Quick navigation\n* Hovers and Toggle Values\n* Configuring JSON Schemas",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_7_0.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v0_7_0.md"
 }

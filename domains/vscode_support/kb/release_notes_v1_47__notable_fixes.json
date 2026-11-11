@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable fixes\n\n* [71291](https://github.com/microsoft/vscode/issues/71291): Horizontal scroll breaks rendering in tree\n* [93230](https://github.com/microsoft/vscode/issues/93230): Local variables are collapsed in annoying ways\n* [98309](https://github.com/microsoft/vscode/issues/98309): Support multiple files in working copy file service\n* [99061](https://github.com/microsoft/vscode/issues/99061): Allow to reopen closed diff editors\n* [99290](https://github.com/microsoft/vscode/issues/99290): Git: Restore diff editors on reload\n* [99704](https://github.com/microsoft/vscode/issues/99704): Top debug session row says \"paused\" when not paused\n* [99786](https://github.com/microsoft/vscode/issues/99786): Unable to start additional session when Debug Tool Bar Location docked\n* [100524](https://github.com/microsoft/vscode/issues/100524): SCM Decorations missing\n* [101132](https://github.com/microsoft/vscode/issues/101132): Release notes can never be opened after you try to open them when offline",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_47.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_47.md"
 }

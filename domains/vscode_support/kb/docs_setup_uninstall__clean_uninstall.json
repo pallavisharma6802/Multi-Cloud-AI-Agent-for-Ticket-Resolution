@@ -4,5 +4,5 @@
   "category": "INSTALLATION",
   "intent": "installation",
   "content": "## Clean uninstall\n\nIf you want to remove all user data after uninstalling {% data variables.product.prodname_vscode_shortname %}, you can delete the user data folders `Code`, `.vscode-shared`, and `.vscode`. This will return you to the state before you installed {% data variables.product.prodname_vscode_shortname %}. This can also be used to reset all settings if you don't want to uninstall {% data variables.product.prodname_vscode_shortname %}.\n\nThe folder locations will vary depending on your platform:\n\n* **Windows** - Delete `%APPDATA%\\Code`, `%USERPROFILE%.vscode-shared`, and `%USERPROFILE%\\.vscode`.\n* **macOS** - Delete `$HOME/Library/Application Support/Code`, `~/.vscode-shared`, and `~/.vscode`.\n* **Linux** - Delete `$HOME/.config/Code`, `~/.vscode-shared`, and `~/.vscode`.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/uninstall.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/setup/uninstall.md"
 }

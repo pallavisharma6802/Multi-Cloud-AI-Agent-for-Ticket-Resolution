@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Understand prompt caching\n\nPrompt caching is provider and model dependent. When it is supported, the provider might reuse the beginning of a request that matches cached content. A change early in the request can reduce how much of that prefix is reusable.\n\nThe Cache Explorer shows a diff between consecutive requests and identifies their first divergence. The diff helps explain a reported cache metric, but it does not prove how the model provider processed or billed the request.\n\n> [!IMPORTANT]\n> Do not remove necessary instructions, tools, or context only to increase cache reuse. Response quality and task correctness take priority over the cache metric.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/agent-troubleshooting/cache-explorer.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/agent-troubleshooting/cache-explorer.md"
 }

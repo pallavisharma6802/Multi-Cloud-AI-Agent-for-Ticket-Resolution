@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Integrated Terminal\n\n### Performance Improvements\n\nThe Integrated Terminal's parser was re-written from the ground up for enhanced ANSI compliance and boosting the rate at which incoming data is processed by approximately 30%. This came in as an upstream community contribution to [xterm.js](https://github.com/xtermjs/xterm.js/pull/1399).\n\n### Bold text bright color setting\n\nThe terminal currently converts all bold text to use the bright color variant. This is a little inconsistent across terminal emulators and is mostly around for legacy reasons. You can now turn this automatic conversion off to allow the use of non-bright colors for bold text.\n\n```json\n{\n  \"terminal.integrated.drawBoldTextInBrightColors\": false\n}\n```\n\nThis came in as an upstream community contribution to [xterm.js](https://github.com/xtermjs/xterm.js/pull/1391).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_25.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_25.md"
 }

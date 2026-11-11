@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Example: hook in action\n\n![Screenshot of a hook configuration that runs Prettier automatically after a tool completes](../images/customizations/ep-5-1-prettier-hook.png)\n\nAfter creating the hook, you might need to reload your environment to activate it. Once it's active, it runs automatically when its configured event occurs.\n\n![Screenshot of a README file before the Prettier hook formats it](../images/customizations/ep-5-2-before-hook.png)\n\nWhen you make a change, like updating text in a README file, the hook is triggered in the background.\n\n![Screenshot of the README file after the Prettier hook automatically formats it](../images/customizations/ep-5-3-after-hook.png)\n\nThe result is immediate: the file is updated and formatted without any additional input. The hook quietly handles the work for you.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/5-hooks.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/5-hooks.md"
 }

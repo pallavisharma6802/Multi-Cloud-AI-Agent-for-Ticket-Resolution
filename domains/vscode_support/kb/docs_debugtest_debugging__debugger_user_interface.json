@@ -4,5 +4,5 @@
   "category": "DEBUGGING",
   "intent": "debugging",
   "content": "## Debugger user interface\n\nDuring a debugging session, use these areas of the interface:\n\n* **Run and Debug view**: inspect variables and expressions, manage breakpoints, and navigate the call stack.\n* **Editor**: see the current execution line, set breakpoints, and inspect values inline or by hovering over code.\n* **Debug toolbar**: control the flow of the application.\n* **Debug Console**: view debugger output and evaluate expressions.\n* **Debug status**: select the active debug configuration from the Status Bar.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/debugging.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/debugtest/debugging.md"
 }

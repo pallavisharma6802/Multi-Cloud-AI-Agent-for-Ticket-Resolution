@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Tutorial: Fix an API bug with an agent\n\nMost software work starts with existing code and a bug report, not an empty project. In this tutorial, you use an AI agent in {% data variables.product.prodname_vscode %} to investigate why a paginated API skips records, add a regression test that proves the bug, implement a focused fix, and verify the result.\n\n> [!NOTE]\n> The sample API fits in one file and uses only built-in Node.js modules, so you can focus on the debugging workflow. The same process applies when request handling, application logic, and tests are spread across a larger project.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/fix-a-bug-with-agents.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/fix-a-bug-with-agents.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable Changes\n\n* [49103](https://github.com/microsoft/vscode/issues/49103): Make composite bar primary and context menu actions to be consistent in order\n* [24396](https://github.com/microsoft/vscode/issues/24396): Show existing commands with same keybinding in Keyboard definition dialog\n* [12013](https://github.com/microsoft/vscode/issues/12013): Explorer should not trim leading or trailing whitespaces",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_24.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_24.md"
 }

@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Local agents\n\nLocal is the default agent type. The agent runs interactively inside VS Code with access to your workspace, tools, and terminal.\n\nUse Local when you want to:\n\n* Work hands-on and iterate quickly.\n* Stay in control of each decision.\n* Do interactive debugging or exploratory development.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/agent-sessions-and-where-agents-run.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundations/agent-sessions-and-where-agents-run.md"
 }

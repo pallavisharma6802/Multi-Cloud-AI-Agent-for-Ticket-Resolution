@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## onSearch\n\n`onSearch:scheme` is emitted when a search is started in the folder with the given scheme.\n\n```json\n\"activationEvents\": [\n    \"onSearch:file\"\n]\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/activation-events.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/activation-events.md"
 }

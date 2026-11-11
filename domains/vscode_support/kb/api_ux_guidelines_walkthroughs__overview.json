@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "# Walkthroughs\n\nWalkthroughs provide a consistent experience for onboarding users to an extension via a multi-step checklist featuring rich content.\n\n**\u2714\ufe0f Do**\n\n- Use helpful images to add context to the current Walkthrough step.\n- Make sure images work across different color themes. Use SVGs with VS Code's [Theme Colors](/api/references/theme-color) if possible. The [Visual Studio Code Color Mapper](https://www.figma.com/community/plugin/1218260433851630449) Figma plugin enables easy theming of SVGs.\n- Provide actions (for example, View all Commands) for each step. Use verbs where possible.\n\n\u274c Don't\n\n- Add an excessive number of steps in a single walkthrough\n- Add multiple walkthroughs unless absolutely necessary\n\n![Example of walkthrough](images/examples/walkthrough.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/walkthroughs.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/ux-guidelines/walkthroughs.md"
 }

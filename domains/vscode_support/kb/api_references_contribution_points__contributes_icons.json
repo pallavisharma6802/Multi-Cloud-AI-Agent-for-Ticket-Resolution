@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## contributes.icons\n\nContribute a new icon by ID, along with a default icon. The icon ID can then be used by the extension (or any other extensions that depend on the extension) anywhere a `ThemeIcon` can be used `new ThemeIcon(\"iconId\")`, in [Markdown strings](/api/references/icons-in-labels#icon-in-labels) (`$(iconId)`), and as icons in certain contribution points.\n\n```json\n{\n  \"contributes\": {\n    \"icons\": {\n      \"distro-ubuntu\": {\n        \"description\": \"Ubuntu icon\",\n        \"default\": {\n          \"fontPath\": \"./distroicons.woff\",\n          \"fontCharacter\": \"\\\\E001\"\n        }\n      },\n      \"distro-fedora\": {\n        \"description\": \"Ubuntu icon\",\n        \"default\": {\n          \"fontPath\": \"./distroicons.woff\",\n          \"fontCharacter\": \"\\\\E002\"\n        }\n      }\n    }\n  }\n}\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/contribution-points.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/contribution-points.md"
 }

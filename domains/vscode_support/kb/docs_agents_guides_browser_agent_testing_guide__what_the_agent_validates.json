@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## What the agent validates\n\nBefore you ask the agent to test the calculator, define observable acceptance criteria:\n\n* Each digit button enters the correct value.\n* Addition, subtraction, multiplication, and division return the expected result.\n* **Clear** resets the calculator.\n* Dividing by zero shows an error instead of an invalid numeric result.\n\nThese criteria give the agent a clear definition of success and make its final verification report easier to review.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/browser-agent-testing-guide.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/browser-agent-testing-guide.md"
 }

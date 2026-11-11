@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Requirements\n\nScaffolding or pasting a launch configuration into `launch.json` is **not sufficient** to build and debug a container. To successfully run a container launch configuration, you must have:\n\n- A Dockerfile.\n- `docker-build` and `docker-run` tasks in `tasks.json`.\n- A launch configuration that invokes these tasks.\n\nWe recommend using the **Containers: Add Docker Files to Workspace...** command to create these items, if none of these assets already exist. If you already have a functional Dockerfile, we recommend using the **Containers: Initialize for container debugging** command to scaffold a launch configuration and container-related tasks.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/debug-common.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/containers/debug-common.md"
 }

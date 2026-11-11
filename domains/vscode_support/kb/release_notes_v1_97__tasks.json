@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Tasks\n\n### Column number variable\n\nThe new `${columnNumber}` variable can be used in [`tasks.json`](https://code.visualstudio.com/docs/debugtest/tasks) and [`launch.json`](https://code.visualstudio.com/docs/debugtest/debugging#_launch-configurations) to refer to the column number of the cursor position. See the full list of [variables](https://code.visualstudio.com/docs/editor/variables-reference) in the VS Code documentation.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_97.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_97.md"
 }

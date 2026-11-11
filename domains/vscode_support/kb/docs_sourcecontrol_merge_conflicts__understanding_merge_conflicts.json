@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "## Understanding merge conflicts\n\nA merge conflict happens when Git encounters competing changes that it cannot automatically resolve. Common scenarios include:\n\n* Two branches modify the same lines in a file\n* One branch deletes a file that another branch modifies\n* Two branches add different content at the same location\n\nConflicts can occur during a merge, pull, rebase, cherry-pick, or stash restore. The file resolution tools are similar, but the meaning of each side and the steps to finish depend on the operation.\n\n> [!TIP]\n> Learn more about [creating and managing branches](/docs/sourcecontrol/branches-worktrees.md) to organize your development work and minimize merge conflicts.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/merge-conflicts.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/merge-conflicts.md"
 }

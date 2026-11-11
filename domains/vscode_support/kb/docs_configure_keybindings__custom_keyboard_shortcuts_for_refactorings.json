@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Custom keyboard shortcuts for refactorings\n\nThe `editor.action.codeAction` command lets you configure keyboard shortcuts for specific [Refactorings](/docs/editing/refactoring.md) (Code Actions). For example, the keyboard shortcut below triggers the **Extract function** refactoring Code Action:\n\n```json\n{\n  \"key\": \"ctrl+shift+r ctrl+e\",\n  \"command\": \"editor.action.codeAction\",\n  \"args\": {\n    \"kind\": \"refactor.extract.function\"\n  }\n}\n```\n\nThis is covered in depth in the [Refactoring](/docs/editing/refactoring.md#keyboard-shortcuts-for-code-actions) article, where you can learn about different kinds of Code Actions and how to prioritize them in the case of multiple possible refactorings.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/keybindings.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/keybindings.md"
 }

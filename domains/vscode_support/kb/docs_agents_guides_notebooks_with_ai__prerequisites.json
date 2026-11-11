@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Prerequisites\n\n* Set up [{% data variables.product.prodname_copilot %} in {% data variables.product.prodname_vscode_shortname %}](/docs/setup/copilot.md).\n\n* Install the [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter). To learn how to configure a Python environment and select a kernel, see [Jupyter notebooks in {% data variables.product.prodname_vscode_shortname %}](/docs/datascience/jupyter-notebooks.md).\n\n* Open a [workspace that you trust](/docs/editing/workspaces/workspace-trust.md). Running a notebook cell executes code in the selected kernel and can access workspace files.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/notebooks-with-ai.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/notebooks-with-ai.md"
 }

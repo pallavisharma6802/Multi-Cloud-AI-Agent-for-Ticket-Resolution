@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "# Advanced Container Configuration\n\nThis page is redirected to /remote/advancedcontainers/overview.md and only exists to keep the \"Advanced Containers\" TOC item.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/containers-advanced.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/devcontainers/containers-advanced.md"
 }

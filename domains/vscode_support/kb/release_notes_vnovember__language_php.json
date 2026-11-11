@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Language - PHP\nVS Code is now using the official PHP linter (`php -l`) for PHP language diagnostics. VS Code will now stay current with PHP linter improvements.\n\nThere are two new settings to control the PHP linter:\n* _php.validate.executablePath_: points to the PHP executable on disk. Set this if the PHP executable is not on the system path.\n* _php.validate.run_: controls whether the validation is triggered on save (value: \"onSave\") or on type (value: \"onType\"). Default is on save.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vNovember.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/vNovember.md"
 }

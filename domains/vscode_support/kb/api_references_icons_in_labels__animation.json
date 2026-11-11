@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Animation\n\nYou can apply a spinning animation to the following icons by appending `~spin` to the icon name:\n\n- `sync`\n- `loading`\n- `gear`\n\n```ts\n$(sync~spin)\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/icons-in-labels.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/icons-in-labels.md"
 }

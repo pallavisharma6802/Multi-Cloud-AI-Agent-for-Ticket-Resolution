@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Source Control\n\n### Diff editor management\n\nThis milestone we have made changes that should help with managing diff editors. There is a new command **Git: Close All Diff Editors** in the Command Palette that can be used to close all open diff editors. There is also a new setting, `git.closeDiffOnOperation` to automatically close diff editors when changes are stashed, committed, discarded, staged, or unstaged.\n\n### Git command output logging\n\nWhen executing a git command, the contents of `stderr` are logged in the [Git output window](https://code.visualstudio.com/docs/sourcecontrol/overview#_git-output-window). There is a new setting, `git.commandsToLog`, to specify a list of Git commands that will have the contents of `stdout` logged in the [Git output window](https://code.visualstudio.com/docs/sourcecontrol/overview#_git-output-window).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_65.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_65.md"
 }

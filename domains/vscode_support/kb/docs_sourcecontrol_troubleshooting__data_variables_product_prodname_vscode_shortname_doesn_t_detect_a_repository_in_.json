@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "## {% data variables.product.prodname_vscode_shortname %} doesn't detect a repository in a parent folder\n\n{% data variables.product.prodname_vscode_shortname %} doesn't automatically open Git repositories in parent folders because doing so can expose changes outside the folder you intended to work with.\n\nWhen {% data variables.product.prodname_vscode_shortname %} detects a repository in a parent folder, use the notification or Source Control welcome view to open it. To always open repositories in parent folders, set the `setting(git.openRepositoryInParentFolders)` setting to `always`.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/troubleshooting.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/troubleshooting.md"
 }

@@ -4,5 +4,5 @@
   "category": "ENTERPRISE",
   "intent": "enterprise",
   "content": "## {% data variables.product.prodname_vscode_shortname %} enterprise policy reference\n\nThe following table lists all available enterprise policies in {% data variables.product.prodname_vscode_shortname %}.\n\n{$ Content $}\n\n> [!NOTE]\n> If you want to enact more policies, open an issue in the [{% data variables.product.prodname_vscode_shortname %} GitHub repository](https://github.com/microsoft/vscode/issues). The team will determine if there is already a corresponding setting for the behavior or if a new setting and policy should be created.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/enterprise/policies.template.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/enterprise/policies.template.md"
 }

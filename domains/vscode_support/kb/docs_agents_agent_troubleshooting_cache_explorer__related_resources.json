@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [Debug chat interactions](/docs/agents/agent-troubleshooting/chat-debug-view.md)\n* [Optimize your AI usage](/docs/agents/guides/optimize-usage.md)\n* [Context engineering guide](/docs/agents/guides/context-engineering-guide.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/agent-troubleshooting/cache-explorer.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/agent-troubleshooting/cache-explorer.md"
 }

@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Use canvases with agents\n\nCanvases are interactive visual surfaces that you and an agent use together in {% data variables.product.prodname_vscode %}. For example, plan work on a Kanban board, inspect a diagram that the agent updates, or adjust controls whose values flow back to the agent. You interact directly with the canvas instead of describing every change in chat.\n\nEvery canvas is provided by a canvas extension. This guide shows you how to find a canvas, open it in a {% data variables.product.prodname_copilot_short %} session, and manage its extension.\n\n![Screenshot showing a Kanban canvas with tasks and columns beside an agent conversation.](../images/agent-harnesses/kanban-canvas.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/canvases.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/canvases.md"
 }

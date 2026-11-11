@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [Create and manage custom agents](/docs/agent-customization/custom-agents.md)\n* [Use subagents](/docs/agents/run/subagents.md)\n* [Configure agent hooks](/docs/agent-customization/hooks.md)\n* [Compare agent harnesses](/docs/agents/run/agent-harnesses.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/custom-agent-file-reference.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/reference/custom-agent-file-reference.md"
 }

@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Related content\n\n- [Contribute a language model tool](/api/extension-guides/ai/tools)\n- [Use MCP tools in agent mode](/docs/agent-customization/mcp-servers.md)\n- [VS Code curated list of MCP servers](https://code.visualstudio.com/mcp)\n- [Model Context Protocol Documentation](https://modelcontextprotocol.io/)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/mcp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-guides/ai/mcp.md"
 }

@@ -4,5 +4,5 @@
   "category": "DEBUGGING",
   "intent": "debugging",
   "content": "## Permissions\n\nThe integrated browser supports per-site permissions, similar to a traditional browser. When a page requests a permission, {% data variables.product.prodname_vscode_shortname %} prompts you to allow or deny the request for the current site.\n\nPages can request access to web APIs such as:\n\n* Geolocation.\n* Camera and microphone.\n* Sensors, such as the accelerometer.\n* Clipboard.\n* Devices, such as Bluetooth, USB, Serial, and HID devices.\n\nTo manage permissions for the current site, select the browser toolbar menu, and then select **Site Permissions**.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/integrated-browser.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/debugtest/integrated-browser.md"
 }

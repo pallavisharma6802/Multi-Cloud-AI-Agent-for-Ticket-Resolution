@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## What's Next\n\nAfter validating a prompt-based social content assistant, the next step is deeper agent engineering. You can expand into richer tool orchestration, stronger datasets, and production-focused deployment and monitoring workflows.\n\nThe next chapter builds on this foundation so behavior quality stays strong as complexity increases.\n\nYou are building reliability now, not patching it later.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/3-building-social-media-agent.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundry-toolkit-extension/3-building-social-media-agent.md"
 }

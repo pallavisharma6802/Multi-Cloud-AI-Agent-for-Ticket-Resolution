@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "# Develop with Kubernetes\n\nThis page is redirected to https://learn.microsoft.com/visualstudio/bridge/bridge-to-kubernetes-vs-code and only exists to keep the \"Develop with Kubernetes\" TOC item.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/bridge-to-kubernetes.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/containers/bridge-to-kubernetes.md"
 }

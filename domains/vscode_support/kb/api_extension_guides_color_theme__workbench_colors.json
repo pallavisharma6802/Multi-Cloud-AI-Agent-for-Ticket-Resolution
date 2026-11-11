@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Workbench colors\n\nThe easiest way to create a new workbench color theme is to start with an existing color theme and customize it. First switch to the color theme that you want to modify, then open your [settings](/docs/configure/settings) and make changes to the `workbench.colorCustomizations` setting. Changes are applied live to your VS Code instance.\n\nThe following, for example, would change the background color of the title bar:\n\n```json\n{\n  \"workbench.colorCustomizations\": {\n    \"titleBar.activeBackground\": \"#ff0000\"\n  }\n}\n```\n\nA complete list of all themable colors can be found in the [color reference](/api/references/theme-color).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/color-theme.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-guides/color-theme.md"
 }

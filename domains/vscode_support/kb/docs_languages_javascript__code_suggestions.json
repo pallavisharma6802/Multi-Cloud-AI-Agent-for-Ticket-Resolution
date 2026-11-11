@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Code suggestions\n\n{% data variables.product.prodname_vscode_shortname %} automatically suggests some common code simplifications such as converting a chain of `.then` calls on a promise to use `async` and `await`\n\n<video src=\"images/javascript/code-suggestions-convert-async.mp4\" placeholder=\"images/javascript/code-suggestions-convert-async-placeholder.png\" autoplay loop controls muted>\n    Sorry, your browser doesn't support HTML 5 video.\n</video>\n\nSet `\"js/ts.suggestionActions.enabled\"` to `false` to disable suggestions.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/javascript.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/javascript.md"
 }

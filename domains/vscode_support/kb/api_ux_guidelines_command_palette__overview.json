@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "# Command Palette\n\nThe [Command Palette](/api/references/contribution-points#contributes.commands) is where all Commands are found. It's important that your command names are labeled appropriately so users can easily find them.\n\n**\u2714\ufe0f Do**\n\n* Add keyboard shortcuts where appropriate\n* Use clear names for commands\n* Group commands together in the same category\n\n\u274c Don't\n\n* Overwrite existing keyboard shortcuts\n* Use emojis in command names\n\n![Command Palette](images/examples/command-palette.png)\n\n*This example features commands each displaying a clear `category` prefix, for example \"GitHub Issues\".*",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/command-palette.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/ux-guidelines/command-palette.md"
 }

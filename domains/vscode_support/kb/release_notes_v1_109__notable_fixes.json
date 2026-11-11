@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable fixes\n\n* [vscode#276558](https://github.com/microsoft/vscode/issues/276558) - Fixed hover not triggering immediately when pressing modifier key with `editor.hover.enabled` set to `onModifierKeyPressed`\n* [vscode#58814](https://github.com/microsoft/vscode/issues/58814) - Leaking file descriptors into terminal process",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_109.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_109.md"
 }

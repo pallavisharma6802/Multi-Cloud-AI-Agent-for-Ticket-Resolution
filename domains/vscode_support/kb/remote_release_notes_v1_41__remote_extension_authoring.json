@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Remote extension authoring\n\n### Multi extensionKind support\n\nVS Code now supports running extensions defined with multiple extension kinds.\n\nThe following table shows given the extension with extensionKind(s), where VS Code enables/installs the extension.\n\n| Extension Kind \\ Location   | Local (Only) | Remote (Only)     | Both |\n| :---        |    :----:   |          :----:   | :---   |\n|    [\"ui\"]  |  \u2705        | \u274c    | \u2705 (Local) |\n| [\"workspace\"]   | \u274c        | \u2705     | \u2705 (Remote) |\n| [\"ui\", \"workspace\"]   | \u2705       | \u2705     | \u2705 (Local) |\n| [\"workspace\", \"ui\"]   | \u2705       | \u2705     | \u2705 (Remote) |\n\nSee the [Supporting Remote Development documentation](https://code.visualstudio.com/api/advanced-topics/remote-extensions#incorrect-execution-location) for more information.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_41.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_41.md"
 }

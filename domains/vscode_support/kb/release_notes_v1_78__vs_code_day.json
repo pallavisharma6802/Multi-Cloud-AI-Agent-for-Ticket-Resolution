@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## VS Code Day\n\nYou can catch up on all the highlights from VS Code Day with the [VS Code Day 2023](https://www.youtube.com/playlist?list=PLj6YeMhvp2S7hWnmPEcxsSPEB0FLHqi0j) YouTube playlist. There you will find sessions on topics such as [GitHub Copilot](https://www.youtube.com/watch?v=9ZQ4yMl7rHw&list=PLj6YeMhvp2S7hWnmPEcxsSPEB0FLHqi0j&index=3), [Data Science](https://www.youtube.com/watch?v=3JvIS2lvkqQ&list=PLj6YeMhvp2S7hWnmPEcxsSPEB0FLHqi0j&index=8), and [TypeScript](https://www.youtube.com/watch?v=HalycM9tSNM&list=PLj6YeMhvp2S7hWnmPEcxsSPEB0FLHqi0j&index=4), as well as the [Keynote](https://www.youtube.com/watch?v=sBzLV8GJSJ4&list=PLj6YeMhvp2S7hWnmPEcxsSPEB0FLHqi0j&index=2) by Erich Gamma and Kai Maetzel, where they explain how the team builds and ships VS Code.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_78.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_78.md"
 }

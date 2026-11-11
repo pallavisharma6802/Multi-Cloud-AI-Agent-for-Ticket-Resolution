@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Delegate two tasks without mixing their changes\n\nWhen two coding tasks are independent, you can assign each to an agent and let both run while you review their progress. Separate conversations keep instructions focused, but they don't necessarily keep file changes separate.\n\nIn this guide, you choose two changes in your own repository, run them in separate Git worktrees, review each result, and integrate and retest the combined change. You define the tasks and their acceptance criteria first, then use them throughout the workflow. No sample project is required.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/delegate-two-tasks.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/delegate-two-tasks.md"
 }

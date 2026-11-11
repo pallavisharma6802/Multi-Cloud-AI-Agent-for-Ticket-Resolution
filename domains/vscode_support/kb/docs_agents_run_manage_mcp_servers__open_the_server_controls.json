@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Open the server controls\n\n1. In the {% data variables.copilot.chat_view %}, select the agent harness whose servers you want to manage.\n\n1. Select **Open Customizations** in the title bar, or run **Chat: Open Customizations** from the Command Palette (`kb(workbench.action.showCommands)`).\n\n1. Select **MCP Servers**. Select a server to edit its configuration, use its toggle to change its enabled state, or open its ellipsis (**...**) menu for server actions.\n\n![Screenshot showing the MCP Servers section in the Agent Customizations editor, with a server's enabled-state toggle and open actions menu.](../../agent-customization/images/mcp-servers/mcp-servers-section.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/manage-mcp-servers.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/manage-mcp-servers.md"
 }

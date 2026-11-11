@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable fixes\n\n* [174690](https://github.com/microsoft/vscode/issues/174690) Comments API - How can author.iconPath reference a file bundled with the extension?\n* [175805](https://github.com/microsoft/vscode/issues/175805) VS Code does not auto-detect IPv6 Processes for port forwarding",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_77.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_77.md"
 }

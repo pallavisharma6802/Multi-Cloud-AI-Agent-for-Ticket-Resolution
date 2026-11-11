@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Hot Reload\n\n### Hot Reload icon not appearing after I started debugging\n\nThe debugger only starts a Hot Reload session if the option for Hot Reload is enabled in the C# Dev Kit [debugger settings](/docs/csharp/debugging.md#user-settings). If the option is enabled, it is expected that the Hot Reload icon appears in the status bar while debugging:\n\n![Hot Reload icon in the bottom bar](images/debugging/hotreload-statusbar.png)\n\nYou can either click on the Hot Reload icon or can see diagnostic information by opening the **C# Hot Reload** Output window. If you don't see either of those, the project may not be supported by C# Dev Kit extension, see [Hot Reload supported projects](/docs/csharp/debugging.md#supported-projects-and-scenarios).\n\n### What types of edits are supported with Hot Reload?\n\nSee [Supported code changes](https://learn.microsoft.com/visualstudio/debugger/supported-code-changes-csharp?view=vs-2022) for a list of the supported C# code changes with Hot Reload.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/cs-dev-kit-faq.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/cs-dev-kit-faq.md"
 }

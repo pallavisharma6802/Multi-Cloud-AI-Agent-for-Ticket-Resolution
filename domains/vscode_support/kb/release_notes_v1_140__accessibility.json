@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Accessibility\n\n### Hear when confetti appears\n\n**Setting**: `setting(accessibility.signals.confetti)`\n\nThe new **Confetti** accessibility signal provides the same celebratory feedback when you cannot see the animation. The joyful sound plays when chat thumbs-up confetti appears and when you successfully mark a session as done in the Agents window.\n\n<video src=\"images/1_140/accessible-confetti.mp4\" title=\"Video showing the Confetti accessibility signal playing when the Mark as Done action displays confetti.\" autoplay loop controls muted></video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_140.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_140.md"
 }

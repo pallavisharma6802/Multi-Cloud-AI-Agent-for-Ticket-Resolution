@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Using separators\n\nQuick Pick items can be grouped into clear sections using Quick Pick separators. These feature a divider and label to clearly show the section. Use separators if the extension features a quick pick containing multiple obvious groups of selections.\n\n![Quick Pick with separators](images/examples/quick-pick-separators.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/quick-picks.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/ux-guidelines/quick-picks.md"
 }

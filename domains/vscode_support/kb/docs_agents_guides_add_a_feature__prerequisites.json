@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Prerequisites\n\n* [Set up {% data variables.product.prodname_copilot %}](/docs/setup/copilot.md).\n* Open a trusted repository with a working development environment and existing tests.\n* Choose a small feature with an observable result. If you're unfamiliar with the implementation, [explore the codebase](/docs/agents/guides/explore-a-codebase.md) first.\n* Preserve unrelated work and create a [development branch](/docs/sourcecontrol/branches-worktrees.md) using your team's normal workflow.\n\nFor this guide, work in the current folder on that branch. Review the [recommended security baseline](/docs/agents/run/security.md#recommended-security-baseline) before letting an agent work in an existing project.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/add-a-feature.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/add-a-feature.md"
 }

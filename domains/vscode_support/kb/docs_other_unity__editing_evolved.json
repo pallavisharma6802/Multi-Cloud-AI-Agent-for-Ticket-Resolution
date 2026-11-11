@@ -4,5 +4,5 @@
   "category": "REFERENCE",
   "intent": "reference",
   "content": "## Editing Evolved\n\nYou are now ready to start editing with {% data variables.product.prodname_vscode %}. Double-clicking on a C# script in Unity will open {% data variables.product.prodname_vscode %}. Here is a list of some of the things you can expect:\n\n* Syntax Highlighting\n* Bracket matching\n* IntelliSense\n* Snippets\n* CodeLens\n* Peek\n* Go-to Definition\n* Code Actions/Lightbulbs\n* Go to symbol\n* Hover\n\nTwo topics that will help you are [Basic Editing](/docs/editing/codebasics.md) and [C#](/docs/languages/csharp.md). In the image below, you can see {% data variables.product.prodname_vscode_shortname %} showing hover context, peeking references, and more.\n\n![editing evolved example](images/unity/peekreferences.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/other/unity.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/other/unity.md"
 }

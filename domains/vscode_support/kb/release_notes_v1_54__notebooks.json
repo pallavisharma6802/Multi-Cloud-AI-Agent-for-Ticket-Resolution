@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notebooks\n\n### Automatically reload notebooks\n\nNotebooks now automatically reload when their file changes on disk and when they don't have unsaved changes. This should make it much simpler to work with notebooks that are under version control.\n\n### Improved focus for large cells\n\nWhen a large notebook cell is focused, you can now better tell which cell is focused when the top and bottom of the cells are out of view. We now show a border on the left and right side of the focused cell.\n\n<video src=\"./images/1_54/notebook-focus.mp4\" title=\"Video showing Notebook focus for a large cell.\" autoplay loop controls muted></video>\n\n### Hovers in CSS/LESS/SCSS and HTML\n\nYou can now fine-tune the content of hovers in HTML and CSS to:\n\n* Not show the documentation from MDN\n* Not show the link to the MDN page\n\nUse the settings `css.hover.documentation` and `css.hover.references` to change the hovers for CSS. Replace `css` with `html`, `css`, `scss` or `less` to change the settings for those languages.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_54.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_54.md"
 }

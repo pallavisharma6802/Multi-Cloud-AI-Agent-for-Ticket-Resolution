@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Engineering\n\n### Rewritten filesystem provider for local files\n\nExtensions have been able to provide their own filesystem implementations for custom resources ([read more here](https://code.visualstudio.com/updates/v1_23#_filesystem-providers)). However, VS Code's own implementation for local files was not implemented with the same extension APIs. This resulted in subtle differences when dealing with local file resources compared to resources coming from extensions. Over the last two milestones, we [rewrote our local file system provider](https://github.com/microsoft/vscode/blob/main/src/vs/workbench/services/files/node/diskFileSystemProvider.ts) to use the extension APIs for consistency.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_34.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_34.md"
 }

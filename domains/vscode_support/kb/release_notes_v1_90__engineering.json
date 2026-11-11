@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Engineering\n\n### Tracking memory efficiency on startup\n\nWe measure startup performance of VS Code insiders every day across Windows, macOS and Linux. Our main interest is how fast startup is until a text file is opened.\n\nThis month we added another metric that we plan to improve to make startup even faster: how much memory do we consume and how much of that memory ends up being garbage collected by V8. If we can bring that number down, startup time will be less affected by V8 garbage collection runs.\n\n![Memory consumption statistics for VS Code](images/1_90/memory-perf.png)\n\n### Electron 29 update\n\nIn this milestone, we are promoting the Electron 29 update to users on our stable release. This update comes with Chromium 122.0.6261.156 and Node.js 20.9.0. We want to thank everyone who self-hosted on Insiders builds and provided early feedback.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_90.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_90.md"
 }

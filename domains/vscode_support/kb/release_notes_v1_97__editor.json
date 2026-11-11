@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Editor\n\n### Persist find and replace history\n\nLast milestone, we introduced history persistence to the editor find control. In this milestone, we are extending that further to the replace input control, so that you can maintain both separately across multiple sessions. The replace history is stored per workspace and can be disabled via the `setting(editor.find.replaceHistory)` setting.\n\n<video src=\"images/1_97/replace-history.mp4\" title=\"Video showing the persistence of editor replace history across VS Code reloads.\" autoplay loop controls muted></video>\n\n### Comments\n\n#### Confirmation when closing an un-submitted comment\n\nA confirmation dialog will show when you `esc` or otherwise close a comment control that has un-submitted comments. You can disable this confirmation with the setting `setting(comments.thread.confirmOnCollapse)`.\n\n#### Quick actions in the comment editor\n\nQuick actions can be used from the comments editor.\n\n![Screenshot that shows Quick actions in the Comments editor.](images/1_97/quick-actions-in-comment.gif)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_97.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_97.md"
 }

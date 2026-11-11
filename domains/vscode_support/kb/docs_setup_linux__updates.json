@@ -4,5 +4,5 @@
   "category": "INSTALLATION",
   "intent": "installation",
   "content": "## Updates\n\n{% data variables.product.prodname_vscode_shortname %} ships weekly [releases](/updates). If the {% data variables.product.prodname_vscode_shortname %} repository is installed correctly, the system package manager handles auto-update the same way it handles other packages on the system.\n\n> [!NOTE]\n> Updates are automatic and run in the background for the [Snap package](#snap-package).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/linux.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/setup/linux.md"
 }

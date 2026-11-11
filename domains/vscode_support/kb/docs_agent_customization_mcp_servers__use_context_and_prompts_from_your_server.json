@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Use context and prompts from your server\n\nServers can provide more than tools. Available capabilities depend on the server and your session:\n\n* **Resources:** attach server-provided data to a request from **Add Context** > **MCP Resources**, or run **MCP: Browse Resources**.\n\n* **Prompts:** use a server's prompt template by typing `/<server>.<prompt>` in chat.\n\n* **MCP Apps (Experimental):** supported servers can display interactive forms or visualizations in chat. See [MCP Apps support](https://code.visualstudio.com/blogs/2026/01/26/mcp-apps-support).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/mcp-servers.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/mcp-servers.md"
 }

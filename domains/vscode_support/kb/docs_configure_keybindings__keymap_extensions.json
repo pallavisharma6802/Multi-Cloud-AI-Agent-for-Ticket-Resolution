@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Keymap extensions\n\nKeymap extensions modify the {% data variables.product.prodname_vscode_shortname %} shortcuts to match those of other editors, so you don't need to learn new keyboard shortcuts.\n\nSelect the **File** > **Preferences** > **Migrate Keyboard Shortcuts from...** menu to get a list of popular keymap extensions. There is also a [Keymaps category](https://marketplace.visualstudio.com/search?target=VSCode&category=Keymaps&sortBy=Installs) of extensions in the Marketplace.\n\n<div class=\"marketplace-extensions-curated-keymaps\"></div>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/keybindings.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/keybindings.md"
 }

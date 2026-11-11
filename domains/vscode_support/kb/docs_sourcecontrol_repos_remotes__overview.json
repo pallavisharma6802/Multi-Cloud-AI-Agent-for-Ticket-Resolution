@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "# Working with repositories and remotes\n\nUse {% data variables.product.prodname_vscode_shortname %} to connect a local Git repository to a remote, review incoming commits, and share your work. Choose the task that matches your repository:\n\n| Task | Start here |\n|------|------------|\n| Get a local copy of an existing remote repository | [Clone repositories](#clone-repositories) |\n| Create a {% data variables.product.prodname_github %} repository for a local project | [Publish to GitHub](#publish-to-github) |\n| Connect a local repository to an existing remote | [Add a remote](#add-a-remote) |\n| Download or upload commits | [Choose between fetch, pull, push, and sync](#push-pull-and-sync) |\n| Choose which repository an action applies to | [Working with repositories](#working-with-repositories) |\n\nIf you haven't set up Git yet, start with the [source control quickstart](/docs/sourcecontrol/quickstart.md). If an operation fails, see [source control troubleshooting](/docs/sourcecontrol/troubleshooting.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/repos-remotes.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/repos-remotes.md"
 }

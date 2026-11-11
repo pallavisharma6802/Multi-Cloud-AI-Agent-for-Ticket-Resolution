@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# Debugging TypeScript\n\n{% data variables.product.prodname_vscode %} supports TypeScript debugging through its built-in [Node.js debugger](/docs/nodejs/nodejs-debugging.md) and [Edge and Chrome debugger](/docs/nodejs/browser-debugging.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/typescript/typescript-debugging.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/typescript/typescript-debugging.md"
 }

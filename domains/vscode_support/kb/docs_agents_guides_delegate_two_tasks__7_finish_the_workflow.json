@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## 7. Finish the workflow\n\nBefore you mark either session done, confirm:\n\n* Each task stayed within its agreed scope, or you explicitly approved a scope change.\n* You reviewed and committed each result separately.\n* Both results are present on the intended destination branch.\n* The combined tests and manual checks pass.\n* Any integration fixes are committed.\n\nContinue with your team's normal pull request or review process. Only then mark the sessions done. Don't delete a session or its worktree while it contains work that hasn't been preserved.\n\nYou now have one tested change assembled from two independently reviewed tasks, with each task's history retained.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/delegate-two-tasks.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/delegate-two-tasks.md"
 }

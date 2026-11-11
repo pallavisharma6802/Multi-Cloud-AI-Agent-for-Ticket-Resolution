@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Deprecated features and settings\n\n### New deprecations in this release\n\n* `chat.agentSessions.backgroundImageLayout` is replaced by `setting(chat.agentSessions.preferredDarkBackgroundImageLayout)` and `setting(chat.agentSessions.preferredLightBackgroundImageLayout)`, so that the Agents window chat background layout can be set separately for dark and light color themes.\n* **Chat: Clear Background** is removed. Choose **No Background** in **Chat: Set Background...** to clear the background for the current color theme.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_138.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_138.md"
 }

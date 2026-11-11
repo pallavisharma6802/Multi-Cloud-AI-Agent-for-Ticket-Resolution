@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Next steps\n\nYou created, edited, previewed, versioned, and debugged a local web app. Continue learning manual editor workflows:\n\n* [Learn editing basics and keyboard shortcuts](/docs/editing/codebasics.md).\n* [Explore source control workflows](/docs/sourcecontrol/overview.md).\n* [Learn more about running and debugging code](/docs/debugtest/debugging.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/editor-tutorial.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/getting-started/editor-tutorial.md"
 }

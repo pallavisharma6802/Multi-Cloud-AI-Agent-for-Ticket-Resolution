@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Open the {% data variables.copilot.chat_view %}\n\nThe {% data variables.copilot.chat_view %} opens in the Secondary Side Bar, next to your editor. To open the {% data variables.copilot.chat_view %}, use one of the following methods:\n\n* Select the **Chat** menu in the {% data variables.product.prodname_vscode_shortname %} title bar, and then select **Open Chat**.\n\n* Use the keyboard shortcut `kb(workbench.action.chat.open)`.\n\n* Run `code chat` from the command line to start chat from outside {% data variables.product.prodname_vscode_shortname %}. Learn more about [starting chat from the command line](/docs/configure/command-line.md#start-chat-from-the-command-line).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/chat-view.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/chat-view.md"
 }

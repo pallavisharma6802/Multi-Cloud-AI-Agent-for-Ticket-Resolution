@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Encapsulate field\n\n**What:** Lets you turn a field into a property, and update all usages of that field to use the newly created property.\n\n**When:** You want to move a field into a property, and update all references to that field.\n\n**Why:** You want to give other classes access to a field, but don't want those classes to have direct access. By wrapping the field in a property, you could write code to verify the value being assigned, for example.\n\n**How-to:**\n\n1. Place your cursor inside the name of the field to encapsulate.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select one of the following:\n\nSelect **Encapsulate field: &lt;fieldname&gt; (and use property)**.\n\n![Encapsulate field and use property example](images/refactoring/encapsulate-field-use-property.png)\n\nSelect **Encapsulate field: &lt;fieldname&gt; (but still use field)**.\n\n![Encapsulate field but still use field example](images/refactoring/encapsulate-field-still-use-field.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/refactoring.md"
 }

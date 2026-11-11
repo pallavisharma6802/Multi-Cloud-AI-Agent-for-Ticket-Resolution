@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# AI language models in {% data variables.product.prodname_vscode_shortname %}\n\n{% data variables.product.prodname_vscode %} gives you access to multiple built-in language models, each optimized for different tasks. You can switch models for chat, inline suggestions, and utility tasks, and you can add more models by bringing your own API key.\n\nFor background on how language models work, their characteristics, and how to choose the right model, see [Language models concepts](/docs/agents/concepts/language-models.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/language-models.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/language-models.md"
 }

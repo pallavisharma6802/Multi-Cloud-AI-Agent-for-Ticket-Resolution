@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "## Next steps\n\n* [Stage selected changes](/docs/sourcecontrol/staging-commits.md#stage-specific-lines-or-code-blocks) to make focused commits.\n* [Create a branch](/docs/sourcecontrol/branches-worktrees.md#create-new-branches) to work on a separate feature.\n* [Fetch, pull, and push](/docs/sourcecontrol/repos-remotes.md#push-pull-and-sync) when collaborating with others.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/quickstart.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/quickstart.md"
 }

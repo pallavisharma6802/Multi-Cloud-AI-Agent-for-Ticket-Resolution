@@ -4,5 +4,5 @@
   "category": "TERMINAL",
   "intent": "terminal",
   "content": "## WSL\n\nWhen running {% data variables.product.prodname_vscode_shortname %} on your local machine, Windows Subsystem for Linux shells should be automatically detected. Depending on your setup, this may be a nuisance if you have a lot of distros installed. For finer control over the WSL profiles the automatic detection can be disabled with the `setting(terminal.integrated.useWslProfiles)` setting, then here's an example of how to manually configure a WSL shell:\n\n```jsonc\n{\n  \"terminal.integrated.profiles.windows\": {\n    \"Debian (WSL)\": {\n      \"path\": \"C:\\\\WINDOWS\\\\System32\\\\wsl.exe\",\n      \"args\": [\n        \"-d\",\n        \"Debian\"\n      ]\n    }\n  }\n}\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/profiles.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/terminal/profiles.md"
 }

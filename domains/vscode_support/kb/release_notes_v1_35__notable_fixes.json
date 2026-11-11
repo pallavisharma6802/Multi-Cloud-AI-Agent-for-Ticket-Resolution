@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable fixes\n\n* [15749](https://github.com/microsoft/vscode/issues/15749): Potential data loss for files that changed on disk meanwhile after a backup was made\n* [17115](https://github.com/microsoft/vscode/issues/17115): Preserve picked language for files across restarts\n* [74446](https://github.com/microsoft/vscode/issues/74446): Completion providers with resolve methods leak memory\n* [74457](https://github.com/microsoft/vscode/issues/74457): URI: Should invalidate cached _fsPath when crossing platforms\n* [73783](https://github.com/microsoft/vscode/issues/73783): Make workbench.dialogs.useSimplified a real setting\n* [68793](https://github.com/microsoft/vscode/issues/68793): Clicking anywhere on the \"debug console\" pane should \"focus\" on input box\n* [73457](https://github.com/microsoft/vscode/issues/73457): Breakpoint lines are not correct when saving the source file after modifying the file\n* [68812](https://github.com/microsoft/vscode/issues/68812): Typescript task detection is now cross-platform",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_35.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_35.md"
 }

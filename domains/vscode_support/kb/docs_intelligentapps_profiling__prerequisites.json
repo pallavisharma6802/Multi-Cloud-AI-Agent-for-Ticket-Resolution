@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Prerequisites\n\n- Install the latest version of [{% data variables.product.prodname_vscode %}](/download).\n- Install the Foundry Toolkit {% data variables.product.prodname_vscode_shortname %} extension. For more information, see [install Foundry Toolkit](/docs/intelligentapps/overview.md#install-and-setup).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/profiling.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/profiling.md"
 }

@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## contributes.breakpoints\n\nUsually a debugger extension will also have a `contributes.breakpoints` entry where the extension lists the language file types for which setting breakpoints will be enabled.\n\n```json\n{\n  \"contributes\": {\n    \"breakpoints\": [\n      {\n        \"language\": \"javascript\"\n      },\n      {\n        \"language\": \"javascriptreact\"\n      }\n    ]\n  }\n}\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/contribution-points.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/contribution-points.md"
 }

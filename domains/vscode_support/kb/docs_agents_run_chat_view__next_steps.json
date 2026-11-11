@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Next steps\n\n* [Chat interaction controls](/docs/chat/chat-overview.md) - send and steer requests, add context, and navigate a conversation.\n* [Manage agent sessions](/docs/agents/run/sessions/manage-sessions.md) - organize, archive, and fork sessions.\n* [Use the {% data variables.copilot.agents_window %}](/docs/agents/run/agents-window.md) - work with agents across multiple projects.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/chat-view.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/chat-view.md"
 }

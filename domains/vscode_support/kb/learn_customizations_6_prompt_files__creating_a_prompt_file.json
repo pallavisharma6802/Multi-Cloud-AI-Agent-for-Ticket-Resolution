@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Creating a prompt file\n\nYou can create prompt files directly from the chat interface.\n\n![Screenshot of Copilot Chat showing the command to create a new prompt file](../images/customizations/ep-6-3-prompt-to-create.png)\n\nStart by triggering the create command and defining your intent.\n\nFor example, you might create a prompt to:\n\n- simplify and reduce bloated code\n- explain what changes were made\n- apply only to open files\n\nOnce created, the prompt file is stored and can be reused instantly.\n\nYou can review and modify it at any time from the Agent Customizations view.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/6-prompt-files.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/6-prompt-files.md"
 }

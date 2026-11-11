@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# Testing with C# Dev Kit\n\nTesting in C# in {% data variables.product.prodname_vscode %} is enabled by the C# Dev Kit extension. It's a lightweight extension to enhance your C# development experience.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/testing.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/testing.md"
 }

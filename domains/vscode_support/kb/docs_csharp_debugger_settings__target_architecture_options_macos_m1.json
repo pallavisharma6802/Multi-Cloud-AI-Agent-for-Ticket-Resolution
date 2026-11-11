@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Target Architecture options (macOS M1)\n\n.NET on Apple M1 supports both x86_64 and ARM64. When debugging, the architecture of the process the debugger is attaching to and the debugger must match. If they do not match, it may result in `Unknown Error: 0x80131c3c`.\n\nThe extension tries to resolve `targetArchitecture` based on the output of `dotnet --info` in the PATH, else it tries to use the same architecture as {% data variables.product.prodname_vscode_shortname %}.\n\nYou can override this behavior by setting `targetArchitecture` in your `launch.json`.\n\nExample:\n\n```json\n    \"targetArchitecture\": \"arm64\"\n```\n\n**Availability**\n\n* `launch.json` \u2714\ufe0f\n* `settings.json` \u274c\n* `launchSettings.json` \u274c",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/debugger-settings.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/debugger-settings.md"
 }

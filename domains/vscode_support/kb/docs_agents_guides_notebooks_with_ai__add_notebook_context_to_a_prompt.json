@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Add notebook context to a prompt\n\nGive the agent notebook-specific context when a request depends on the current kernel state or a cell result.\n\n### Add a kernel variable\n\nWith the notebook active, type `#` in the chat input and select a kernel variable from the suggestions. The selected variable becomes available as context for your request.\n\nFor example, add the `df` variable and enter:\n\n```prompt\nCheck this DataFrame for missing values and recommend a cleaning strategy.\n```\n\n### Add a cell output\n\nFrom the cell output toolbar, select **Add Cell Output to Chat** to attach a supported output. You can then ask the agent to explain a chart, diagnose an error, or update the notebook based on the result.\n\n```prompt\nExplain the outliers in this chart and update the analysis to investigate them.\n```\n\n<!-- TODO: Add a screenshot showing Add Cell Output to Chat in the current notebook UI. -->",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/notebooks-with-ai.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/notebooks-with-ai.md"
 }

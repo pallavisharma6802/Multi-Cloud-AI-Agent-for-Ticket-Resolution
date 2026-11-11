@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Navigation\n\nKey|Command\n---|---\n`kb(workbench.action.showAllSymbols)`|Show all Symbols\n`kb(workbench.action.gotoline)`|Go to Line...\n`kb(workbench.action.quickOpen)`|Go to File...\n`kb(workbench.action.gotoSymbol)`|Go to Symbol...\n`kb(workbench.actions.view.problems)`|Show Problems panel\n`kb(editor.action.marker.nextInFiles)`|Go to next error or warning\n`kb(editor.action.marker.prevInFiles)`|Go to previous error or warning\n`kb(workbench.action.openpreviousRecentlyUsedEditorInGroup)`|Navigate editor group history\n`kb(workbench.action.navigateBack)`|Go back\n`kb(workbench.action.quickInputBack)`|Go back to previous step, when in the QuickInput UI\n`kb(workbench.action.navigateForward)`|Go forward\n`kb(editor.action.toggleTabFocusMode)`|Toggle Tab moves focus",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/customization/keyboard-shortcuts.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/customization/keyboard-shortcuts.md"
 }

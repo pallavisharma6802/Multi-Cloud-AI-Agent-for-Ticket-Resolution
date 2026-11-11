@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Finding extensions\n\nYou can find JavaScript extensions by typing `JavaScript` in the Extension view search bar. Alternatively, you can find JavaScript extensions using tags: \"tag:javascript\". Search for more extensions in {% data variables.product.prodname_vscode_shortname %} or in the [Marketplace](https://marketplace.visualstudio.com/vscode).\n\n<div class=\"marketplace-extensions-javascript-curated\"></div>\n\nIn addition you can search for `Node.js` extensions.\n\n<div class=\"marketplace-extensions-node-curated\"></div>\n\n> Tip: The extensions shown above are dynamically queried. Click on an extension tile above to read the description and reviews to decide which extension is best for you. See more in the [Marketplace](https://marketplace.visualstudio.com/vscode).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/extensions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/nodejs/extensions.md"
 }

@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# R in {% data variables.product.prodname_vscode %}\n\nThe [R programming language](https://www.r-project.org/) is a dynamic language built for statistical computing and graphics. R is commonly used in statistical analysis, scientific computing, machine learning, and data visualization.\n\nThe [R extension](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r) for {% data variables.product.prodname_vscode %} supports extended syntax highlighting, code completion, linting, formatting, interacting with R terminals, viewing data, plots, workspace variables, help pages, managing packages and working with [R Markdown](https://github.com/REditorSupport/vscode-R/wiki/R-Markdown) documents.\n\n[![Overview](images/r/overview.png)](/assets/docs/languages/r/overview.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/r.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/r.md"
 }

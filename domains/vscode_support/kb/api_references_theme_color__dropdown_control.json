@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Dropdown control\n\nA set of colors for all Dropdown widgets such as in the Integrated Terminal or the Output panel. Note that the\nDropdown control is not used on macOS currently.\n\n![dropdown control](images/theme-color/dropdown.png)\n\n- `dropdown.background`: Dropdown background.\n- `dropdown.listBackground`: Dropdown list background.\n- `dropdown.border`: Dropdown border.\n- `dropdown.foreground`: Dropdown foreground.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/theme-color.md"
 }

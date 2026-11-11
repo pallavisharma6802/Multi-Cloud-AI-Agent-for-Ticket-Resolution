@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Common input\n\nEvery hook receives a JSON object on standard input (stdin). The object contains these common fields in addition to the fields for the event:\n\n| Field | Type | Description |\n|-------|------|-------------|\n| `timestamp` | string | ISO 8601 timestamp for when the hook fired. |\n| `cwd` | string | Optional working directory for the agent execution. |\n| `session_id` | string | Optional identifier for the current agent session. |\n| `hook_event_name` | string | Hook event name, such as `PreToolUse`. |\n| `transcript_path` | string | Optional absolute path to a file that contains the conversation transcript. |\n\n> [!NOTE]\n> The transcript file format is not a stable hook API and might change between {% data variables.product.prodname_vscode_shortname %} releases. Use documented event fields such as `tool_name`, `tool_input`, or `prompt` when possible.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/hooks-reference.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/reference/hooks-reference.md"
 }

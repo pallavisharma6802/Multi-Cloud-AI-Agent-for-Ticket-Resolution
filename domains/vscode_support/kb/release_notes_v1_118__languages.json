@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Languages\n\n### TypeScript 7.0 Beta support\n\nWe've continued working with the TypeScript team to improve VS Code's support for [TypeScript 7](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0-beta/). TypeScript 7 is a complete rewrite in native code and offers dramatically better performance.\n\nThe TypeScript 7.0 beta continues to improve language features and also includes a number of editor quality-of-life improvements. We've also made it even easier to try out TS 7.0 and switch back and forth between it and the current stable TS 6.0 release.\n\nTo try TS 7.0 in VS Code, you only have to install the [TypeScript Native preview extension](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0-beta/#editor-experience).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_118.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_118.md"
 }

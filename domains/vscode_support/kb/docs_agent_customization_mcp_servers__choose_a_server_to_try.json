@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Choose a server to try\n\nFor a concrete local example, use the [Playwright MCP server](https://github.com/microsoft/playwright-mcp). It requires **Node.js 18 or newer**, with `npx` available. Check your installation in a terminal:\n\n```bash\nnode --version\nnpx --version\n```\n\nThe walkthrough uses Playwright to demonstrate connecting an external tool provider. For everyday browser interaction, try the [built-in browser tools](/docs/agents/run/browser-tools.md) first: they don't require an MCP server.\n\nTo try a remote documentation server instead, follow the [Context7 setup requirements](https://context7.com/docs/resources/all-clients) for its current authentication requirements and service limits. Use the HTTP endpoint `https://mcp.context7.com/mcp` in the connection steps below. A remote server doesn't require a local Node.js installation.\n\n<a name=\"add-an-mcp-server\"></a>\n<a name=\"add-a-server-from-the-agent-customizations-editor\"></a>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/mcp-servers.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/mcp-servers.md"
 }

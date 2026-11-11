@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# C/C++ extension logging\n\nLogging information is available for the language server and the debug adapter. If you are experiencing a problem that we are unable to diagnose based on information in your issue report, we might ask you to enable logging and send us your logs.\n\nLogging information is delivered directly to the Output panel for the language server and to the Debug Console for the debug adapter.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/enable-logging-cpp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/enable-logging-cpp.md"
 }

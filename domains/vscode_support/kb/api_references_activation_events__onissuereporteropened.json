@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## onIssueReporterOpened\n\nThis activation event is emitted when the issue reporter is opened (for example, by using **Help: Report Issue**).\n\n```json\n\"activationEvents\": [\n    \"onIssueReporterOpened\"\n]\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/activation-events.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/activation-events.md"
 }

@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Can I work with containers on a remote host?\n\nYes, see the sections on [opening a folder on a remote SSH host](/docs/remote/ssh.md#open-a-folder-on-a-remote-ssh-host-in-a-container) or [Remote Tunnels host in a container](/docs/remote/tunnels.md#open-a-folder-on-a-remote-tunnels-host-in-a-container) for information.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/faq.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/devcontainers/faq.md"
 }

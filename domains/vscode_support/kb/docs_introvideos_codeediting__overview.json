@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "# Code editing in {% data variables.product.prodname_vscode %}\n\nIn this {% data variables.product.prodname_vscode %} tutorial, we cover how to edit and run a small piece of code, including the features outlined below. After viewing this overview, read on in the [Related Resources](/docs/introvideos/codeediting.md#related-resources) section to see more features.\n\n[![Watch Code editing in {% data variables.product.prodname_vscode %} on YouTube (opens in new tab).](images/codeediting/youtube-MNBwGGwvvKE.jpg)](https://www.youtube.com/watch?v=MNBwGGwvvKE)\n\nHere's the next video we recommend: [Productivity Tips](/docs/introvideos/productivity.md)\n\nPick another video from the list: [Introductory Videos](/docs/getstarted/introvideos.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/introvideos/codeediting.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/introvideos/codeediting.md"
 }

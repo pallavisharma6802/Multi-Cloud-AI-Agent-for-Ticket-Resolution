@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Inspect Context Keys utility\n\nIf you would like to see all currently active context keys at runtime, you can use the **Developer: Inspect Context Keys** command from the Command Palette (`kb(workbench.action.showCommands)`). **Inspect Context Keys** will display context keys and their values in the VS Code Developer Tools **Console** tab (**Help** > **Toggle Developer Tools**).\n\nWhen you run **Developer: Inspect Context Keys**, your cursor will highlight elements in the VS Code UI and when you click on an element, the current context keys and their states will be output as an object to the Console.\n\n![Inspect Context Keys output](images/when-clause-contexts/inspect-context-keys.png)\n\nThe list of active context keys is extensive and may contain [custom context keys](#add-a-custom-when-clause-context) from extensions you have installed.\n\n>**Note**: Some context keys are for VS Code internal use and may change in the future.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/when-clause-contexts.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/when-clause-contexts.md"
 }

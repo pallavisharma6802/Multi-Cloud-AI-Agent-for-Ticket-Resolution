@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Dev Containers\n\n### Connect to Dev Containers over Tunnels\n\nSimilar to SSH, you can now connect to Dev Containers over Tunnels. Only the Tunnel machine needs Docker installed, the Dev Container will be built and run on the Tunnel's target machine where the workspace folder needs to be located. Currently the Tunnel machine needs to run Linux for Dev Containers to work, we will remove this limitation in a future milestone.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_83.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_83.md"
 }

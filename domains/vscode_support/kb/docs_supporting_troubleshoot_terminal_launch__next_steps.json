@@ -4,5 +4,5 @@
   "category": "REFERENCE",
   "intent": "reference",
   "content": "## Next steps\n\n* [Terminal basics](/docs/terminal/basics.md): Learn how to create and manage terminals.\n* [Remote development troubleshooting](/docs/remote/troubleshooting.md): Diagnose connection and remote environment problems.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/supporting/troubleshoot-terminal-launch.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/supporting/troubleshoot-terminal-launch.md"
 }

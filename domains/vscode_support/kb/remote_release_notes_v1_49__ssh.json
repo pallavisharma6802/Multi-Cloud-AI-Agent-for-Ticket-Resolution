@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## SSH\n\n### SSH Welcome view\n\nWhen you have no SSH hosts configured, the Remote Explorer shows information with a more noticeable link to prompt you to set up SSH hosts.\n\n![Welcome SSH](images/1_49/welcome-ssh.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_49.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_49.md"
 }

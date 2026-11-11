@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Container Explorer\n\nThe Container Tools extension contributes a Container Explorer view to {% data variables.product.prodname_vscode_shortname %}. The Container Explorer lets you examine and manage container assets: containers, images, volumes, networks, and container registries. If you are signed in to your Microsoft account and it has access to Azure subscriptions, you can browse your Azure Container Registries as well.\n\nThe right-click menu provides access to commonly used commands for each type of asset.\n\n![Container Explorer context menu](images/overview/docker-view-context-menu.gif)\n\nYou can rearrange the Container Explorer panes by dragging them up or down with a mouse and use the context menu to hide or show them.\n\n![Customize Container Explorer](images/overview/docker-view-rearrange.gif)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/overview.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/containers/overview.md"
 }

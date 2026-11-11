@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable Fixes\n\n* [54214](https://github.com/microsoft/vscode/issues/54214): startDebugging method in vscode still return true even when the build fails\n* [57289](https://github.com/microsoft/vscode/issues/57289): Settings UI should remember its search on reload\n* [57321](https://github.com/microsoft/vscode/issues/57321): Show \"Clear Search\" and \"Clear Filters\" buttons when settings search returns no results\n* [59305](https://github.com/microsoft/vscode/issues/59305): Show a \"Open Workspace\" button in .code-workspace files\n* [59430](https://github.com/microsoft/vscode/issues/59430): Can no longer break in node internals files\n* [61711](https://github.com/microsoft/vscode/issues/61711): All breakpoints are unverified\n* [62085](https://github.com/microsoft/vscode/issues/62085): PauseRequest not being received by the debugAdapter\n* [62346](https://github.com/microsoft/vscode/issues/62346): Can't cancel a debug session while it's initializing\n* [62354](https://github.com/microsoft/vscode/issues/62354): Remote debugging issues after Node 10.12",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_29.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_29.md"
 }

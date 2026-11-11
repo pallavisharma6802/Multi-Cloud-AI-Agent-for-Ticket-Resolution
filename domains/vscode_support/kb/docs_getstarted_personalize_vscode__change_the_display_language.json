@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Change the display language\n\n{% data variables.product.prodname_vscode %} ships by default with English as the display language. You can change the display language by installing a Language Pack extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VSCode&category=Language%20Packs&sortBy=Installs).\n\n{% data variables.product.prodname_vscode_shortname %} detects the operating system's UI language and prompts you to install the appropriate Language Pack, if available on the Marketplace.\n\nTo change the current display language:\n\n1. Open the Command Palette  (`kb(workbench.action.showCommands)`).\n1. Select the **Configure Display Language** command.\n1. Select your preferred language from the list.\n1. Restart {% data variables.product.prodname_vscode_shortname %} when prompted.\n\nGet more details about [changing the display language in {% data variables.product.prodname_vscode_shortname %}](/docs/configure/locales.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/getstarted/personalize-vscode.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/getstarted/personalize-vscode.md"
 }

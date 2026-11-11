@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Troubleshooting\n\n### Unable to write file (NoPermissions (FileSystemError))\n\nYou might encounter this issue when you run dev containers in the following configuration:\n\n* Docker Desktop running with Windows Subsystem for Linux (WSL) backend\n* [Enhanced Container Isolation](https://docs.docker.com/security/for-admins/hardened-desktop/enhanced-container-isolation/) (ECI) enabled\n\nCheck [issue #8278](https://github.com/microsoft/vscode-docs/issues/8278) for a potential workaround.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/containers.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/devcontainers/containers.md"
 }

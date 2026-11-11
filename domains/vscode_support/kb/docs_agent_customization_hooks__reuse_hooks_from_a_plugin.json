@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Reuse hooks from a plugin\n\nFor an existing automation workflow, [browse customization marketplaces](/docs/agent-customization/overview.md#discover-and-install-existing-customizations-preview) for a plugin that includes hooks and their supporting scripts.\n\nBefore installing, review the scripts, required executables, and supported harness. Hooks can run when their configured events occur without the model requesting them. A marketplace listing doesn't establish that a hook's event format or commands are compatible with your session.\n\nFollow the [plugin installation steps](/docs/agent-customization/agent-plugins.md#install-a-plugin-from-a-marketplace), complete the publisher's setup, and verify the hook's execution in the intended environment. Check for [duplicate hook sources](#choose-a-hook-source) before also adding a standalone copy. If execution differs from your expectations, follow [hook troubleshooting](#troubleshoot-hooks).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/hooks.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/hooks.md"
 }

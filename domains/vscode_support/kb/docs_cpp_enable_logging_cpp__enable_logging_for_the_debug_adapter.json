@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Enable logging for the debug adapter\n\nEnabling logging for the debug adapter will show communication information between {% data variables.product.prodname_vscode_shortname %} and our extension and between our extension and the debug adapter.\n\nLogging configuration for the debug adapter is configured in `launch.json`.\n\n### Logging for LLDB-MI debuggers\n\nThe logging block for macOS LLDB-MI debuggers, along with its default configuration, is in `launch.json`:\n\n```json\n\"logging\": {\n    \"trace\": false,\n    \"traceResponse\": false,\n    \"engineLogging\": false\n}\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/enable-logging-cpp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/enable-logging-cpp.md"
 }

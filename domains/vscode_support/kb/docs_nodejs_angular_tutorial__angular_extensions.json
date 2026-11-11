@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Angular Extensions\n\nIn addition to the features {% data variables.product.prodname_vscode_shortname %} provides out of the box, you can install {% data variables.product.prodname_vscode_shortname %} extensions for greater functionality.\n\n<div class=\"marketplace-extensions-angular-curated\"></div>\n\nClick on an extension tile above to read the description and reviews on the [Marketplace](https://marketplace.visualstudio.com).\n\nTo find other Angular extensions, open the Extensions view (`kb(workbench.view.extensions)`) and type 'angular' to see a filtered list of Angular extensions.\n\n![angular extensions](images/angular/angular-extensions.png)\n\nThe community has also created \"Extension Packs\" which bundle useful extensions together (for example, a linter, debugger, and snippets) into a single download. To see available Angular extension packs, add the \"extension packs\" category to your filter (angular @category:\"extension packs\").",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/angular-tutorial.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/nodejs/angular-tutorial.md"
 }

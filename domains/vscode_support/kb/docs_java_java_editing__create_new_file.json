@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Create new file\n\n{% data variables.product.prodname_vscode_shortname %} supports applying templates when you create a Java source file. When you create a `.java` file in the File Explorer, the language server will automatically generate the class body, and fill the package info for you:\n\n<video src=\"images/java-editing/create-new-file.mp4\" autoplay loop muted playsinline controls title=\"Create new file\">\n</video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-editing.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-editing.md"
 }

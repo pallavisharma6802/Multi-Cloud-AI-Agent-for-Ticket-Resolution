@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable Bug Fixes\n\n- [2116](https://github.com/microsoft/vscode/issues/2116): Inconsistent de-indentation behavior while closing html tags using Autocomplete\n- [2808](https://github.com/microsoft/vscode/issues/2808): Make it easier to add more file extensions to an existing colorizer/language\n- [2912](https://github.com/microsoft/vscode/issues/2912) Html code returned from a TextDocumentContentProvider can now embed JavaScript code.\n\nHere are the [closed bugs](https://github.com/microsoft/vscode/issues?q=milestone%3A%22March+2016%22+is%3Aclosed) and the [closed feature requests](https://github.com/microsoft/vscode/issues?q=is%3Aissue+milestone%3A%22March+2016%22+is%3Aclosed+label%3Afeature-request) for the March update.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vMarch.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/vMarch.md"
 }

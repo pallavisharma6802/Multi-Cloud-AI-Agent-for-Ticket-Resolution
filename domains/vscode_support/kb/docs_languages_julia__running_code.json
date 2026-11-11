@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Running code\n\nThere are several ways to run Julia code within {% data variables.product.prodname_vscode_shortname %}. You can run a Julia file (via `kb(workbench.action.debug.run)`, which will run whatever Julia file you have open and active), execute Julia commands via the REPL, or even execute a specific block of code from a file you have open. To learn more about these options, head to [Julia in {% data variables.product.prodname_vscode_shortname %} - Running Code](https://www.julia-vscode.org/docs/stable/userguide/runningcode/).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/julia.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/julia.md"
 }

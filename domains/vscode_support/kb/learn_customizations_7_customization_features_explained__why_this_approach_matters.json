@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Why this approach matters\n\nInstead of switching between documentation pages, you\u2019re using Copilot as an active learning tool.\n\nThis approach helps you:\n\n- understand concepts faster\n- see how features relate to each other\n- build your own reference materials\n\nIt turns learning into something interactive instead of passive.\n\nThis represents a shift from:\n\n**reading documentation \u2192 learning with AI**\n\nYou\u2019re not just consuming information. You\u2019re generating explanations, comparisons, and examples tailored to your understanding.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/7-customization-features-explained.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/7-customization-features-explained.md"
 }

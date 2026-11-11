@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Cloud automation limitations\n\nCloud automation support in {% data variables.product.prodname_vscode_shortname %} currently has these limitations:\n\n* Available repositories, event types, filters, models, and tools depend on GitHub service support and your account's permissions.\n* A cloud automation uses the cloud model and tool configuration. It doesn't accept local mode or approval settings, custom agents, or local MCP configuration.\n* Unsupported trigger configuration must be managed on GitHub. It isn't replaced when you edit other supported fields.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/automations.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/automations.md"
 }

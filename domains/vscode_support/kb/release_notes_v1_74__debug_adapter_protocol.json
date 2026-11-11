@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Debug Adapter Protocol\n\nSeveral clarifications and a new property were added to the [Debug Adapter Protocol](https://microsoft.github.io/debug-adapter-protocol).\n\n* The `DataBreakpointInfo` request has a new optional `frameId` property. Clients can use this flag to specify which stack frame contains a `name` variable.\n* End-of-file behavior is now specified for the `readMemory` request.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_74.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_74.md"
 }

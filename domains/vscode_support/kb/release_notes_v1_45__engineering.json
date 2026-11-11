@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Engineering\n\n### Native iterators\n\nWe're now using native ES6 iterators to speed up performance. You can find more details in [issue #94540](https://github.com/microsoft/vscode/pull/94540).\n\n### Compilation daemon\n\nThanks to the [deemon](https://github.com/joaomoreno/deemon) utility, we now run our selfhost compilation task as a background process: it stays running even if VS Code is restarted.\n\n### Automated issue classification\n\nContinuing with our work in moving our issue triaging flow over to GitHub Actions, we have created Actions for automatic issue classification. These Actions work by automatically downloading all of our issues and generating Machine Learning models to classify issues into feature-areas on a scheduled basis. The full implementation of all our Actions is in our [GitHub Triage Actions](https://github.com/microsoft/vscode-github-triage-actions/) repository.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_45.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_45.md"
 }

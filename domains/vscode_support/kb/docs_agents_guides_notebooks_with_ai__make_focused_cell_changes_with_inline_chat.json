@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Make focused cell changes with inline chat\n\nUse inline chat when you want to change one cell without starting a broader agent workflow.\n\n1. Place the cursor in a cell or select the code you want to change.\n\n1. Press `kb(inlinechat.start)` and describe the change.\n\n1. Review the suggested diff. Select **Accept and Run** to apply the change and execute the cell in one step.\n\nTo generate a new cell, select **Generate** between cells or press `kb(notebook.cell.chat.start)` when a cell editor is not focused. The **Generate** action is experimental and is controlled by the `setting(notebook.experimental.generate)` setting.\n\n<!-- TODO: Add a screenshot showing inline chat editing an existing notebook cell in the current UI. -->",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/notebooks-with-ai.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/notebooks-with-ai.md"
 }

@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Run your extension against a virtual workspace\n\nInstall the [GitHub Repositories](https://marketplace.visualstudio.com/items?itemName=GitHub.remotehub) extension and run the **Open GitHub Repository...** command from the Command Palette. The command shows a Quick Pick dropdown and you can paste in any GitHub URL, or choose to search for a specific repository or pull request.\n\nThis opens a VS Code window for a virtual workspace where all resources are virtual.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/virtual-workspaces.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-guides/virtual-workspaces.md"
 }

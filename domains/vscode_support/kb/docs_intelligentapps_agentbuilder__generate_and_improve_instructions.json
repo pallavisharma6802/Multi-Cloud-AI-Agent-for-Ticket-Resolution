@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Generate and improve instructions\n\nUse **Generate** to draft instructions from a task description, or **Improve** to revise existing instructions. If you need a starting idea, select a model and use **Inspire me** while the Instructions field is empty.\n\n1. Select a model that supports instruction generation.\n2. Under **Instructions**, select **Generate** if the field is empty, or **Improve** if it already contains instructions.\n3. Describe the task or the change you want. For an existing Foundry agent, improvement suggestions are optional.\n4. Select **Generate** or **Improve** in the dialog.\n5. Review the revised instructions and test the agent with representative requests.\n6. Select **Save to Foundry** to keep the new configuration.\n\nFor Foundry agents, these actions use Foundry Prompt Optimizer. If its optimization API does not support the selected model, the Toolkit falls back to standard prompt generation when supported. This instruction-editing flow is separate from a hosted-agent optimization job.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/agentbuilder.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/agentbuilder.md"
 }

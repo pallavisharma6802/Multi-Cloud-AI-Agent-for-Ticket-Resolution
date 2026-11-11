@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Add an environment variable to the image\n\nThe Container Tools extension helps you author Dockerfiles by using [IntelliSense](/docs/editing/intellisense.md) to provide auto-completions and contextual help. To see this feature in action, add an environment variable to your service image by following these steps:\n\n1. Open the `Dockerfile` file.\n1. Use `ENV` instruction to add an environment variable to the service container image.\n\n   ![Add an environment variable to Docker image](images/quickstarts/nodejs-intellisense-env.png)\n\n   Note how the Container Tools extension lists all available Dockerfile instructions and describes the syntax.\n\n   > The Container Tools extension uses the `base` stage of the `Dockerfile` to create a debug version of the container image for your service. Put the environment variable definition in the `base` stage to have this variable available in both debug and release versions of the container image.\n1. Save the `Dockerfile` file.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/quickstart-node.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/containers/quickstart-node.md"
 }

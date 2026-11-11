@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Documentation\n\n### Updated version control video\n\nThe [Using Git with Visual Studio](https://code.visualstudio.com/docs/introvideos/versioncontrol) introductory video has been redone to help you get started using the Git integration built into VS Code.\n\nYou can also find other great videos on the [VS Code YouTube](https://www.youtube.com/c/Code) channel.\n\n### vscode.dev on code.visualstudio.com\n\nWant to use VS Code for the Web but forgot the URL? [vscode.dev](https://vscode.dev) is now displayed prominently on the VS Code [Download](https://code.visualstudio.com/download) page so you can quickly start VS Code running in your browser.\n\n![vscode.dev on the code.visualstudio.com download page](images/1_68/vscode-dev-download.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_68.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_68.md"
 }

@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Reviewing the files changed\n\nAfter the build completes, the files changed bar shows every file the agent created or modified.\n\nReview each file carefully.\n\n* `base62.py`, encode and decode extracted cleanly from the original file.\n* `app.py`, FastAPI app with `POST /shorten`, `GET /{code}`, and `GET /`.\n* `database.py`, `sqlite3` helpers for storing and looking up URLs.\n* `static/index.html`, form, results section, and JavaScript.\n\nUse the arrow controls to move through edits. Undo individual changes when needed, or select **Keep All** when everything looks correct.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/build-your-first-app-with-agent-mode.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundations/build-your-first-app-with-agent-mode.md"
 }

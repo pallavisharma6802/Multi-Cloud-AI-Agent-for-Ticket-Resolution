@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Close a chat or finish work\n\nClosing, marking done, and deleting serve different purposes:\n\n* **Close a chat tab**: hide the chat from the chat area without deleting its conversation. You can reopen it later.\n* **Mark a chat as done**: remove a completed conversation from the active sessions list while retaining its title and history. Restore it when you want to continue.\n* **Delete a chat**: permanently remove the conversation. Unlike closing or marking done, deletion can't be undone.\n\nIn the {% data variables.copilot.agents_window %}, supported additional chats can be marked as done independently. This doesn't mark the main chat, other chats, or the owning session as done. Main chats, side chats, and subagent chats don't support being marked as done independently.\n\nFor the steps and available actions, see [Manage chats within a session](/docs/agents/run/sessions/manage-sessions.md#run-multiple-chats-in-a-session) and [Mark an individual chat as done](/docs/agents/run/sessions/manage-sessions.md#mark-an-individual-chat-as-done).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/sessions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/concepts/sessions.md"
 }

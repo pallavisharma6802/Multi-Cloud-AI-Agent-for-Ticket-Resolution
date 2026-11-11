@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Why custom instructions matter\n\nWithout custom instructions:\n\n- you repeat standards manually\n- outputs vary across interactions\n- enforcement happens after the fact\n\nWith custom instructions:\n\n- rules are applied automatically\n- outputs stay consistent\n- quality is built in from the start\n\nInstead of correcting AI output later, you guide it upfront.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/2-instructions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/2-instructions.md"
 }

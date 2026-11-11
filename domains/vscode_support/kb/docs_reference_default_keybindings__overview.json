@@ -4,5 +4,5 @@
   "category": "REFERENCE",
   "intent": "reference",
   "content": "# Default keyboard shortcuts reference\n\n{% data variables.product.prodname_vscode_shortname %} comes with a set of default keyboard shortcuts. This article lists common default keyboard shortcuts in {% data variables.product.prodname_vscode_shortname %}.\n\nFor a full list of keyboard shortcuts, use either of these options within {% data variables.product.prodname_vscode_shortname %}:\n\n* Select **Preferences: Open Default Keyboard Shortcuts (JSON)** in the Command Palette.\n* Open the Keyboard Shortcuts editor, and then select **Show System Keybindings** in the **More Actions** (**...**) menu.\n\n> [!NOTE]\n> The following keys are rendered assuming a standard US keyboard layout. Get more information about using a different [keyboard layout](/docs/configure/keybindings.md#keyboard-layouts).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/reference/default-keybindings.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/reference/default-keybindings.md"
 }

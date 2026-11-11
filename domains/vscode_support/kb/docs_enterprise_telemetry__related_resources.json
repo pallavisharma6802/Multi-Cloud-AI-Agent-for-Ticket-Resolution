@@ -4,5 +4,5 @@
   "category": "ENTERPRISE",
   "intent": "enterprise",
   "content": "## Related resources\n\n* [Enterprise policies reference](/docs/enterprise/policies.md) - Complete list of enterprise policies\n* [Telemetry in {% data variables.product.prodname_vscode_shortname %}](/docs/configure/telemetry.md) - Learn about telemetry data collection\n* [Privacy statement](https://go.microsoft.com/fwlink/?LinkID=528096&clcid=0x409) - Microsoft privacy statement",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/enterprise/telemetry.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/enterprise/telemetry.md"
 }

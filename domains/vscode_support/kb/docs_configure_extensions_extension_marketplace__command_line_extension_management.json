@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Command line extension management\n\nTo make it easier to automate and configure {% data variables.product.prodname_vscode_shortname %}, it is possible to list, install, and uninstall extensions from the [command line](/docs/configure/command-line.md). When identifying an extension, provide the full name of the form `publisher.extension`, for example `ms-python.python`.\n\nFor example, use these commands:\n\n* `code --list-extensions`: List installed extensions.\n* `code --list-extensions --show-versions`: Include the version of each installed extension.\n* `code --install-extension ms-python.python`: Install an extension by its ID.\n* `code --uninstall-extension ms-python.python`: Uninstall an extension by its ID.\n* `code --extensions-dir <directory>`: Set the root path for extensions.\n\nYou can see the extension ID on the extension details page under the Marketplace Info.\n\n![Screenshot showing the extension identifier on the extension details page.](images/extension-marketplace/extension-identifier.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/extensions/extension-marketplace.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/extensions/extension-marketplace.md"
 }

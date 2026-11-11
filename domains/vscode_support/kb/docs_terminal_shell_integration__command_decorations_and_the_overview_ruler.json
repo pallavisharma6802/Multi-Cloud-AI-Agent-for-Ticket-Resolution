@@ -4,5 +4,5 @@
   "category": "TERMINAL",
   "intent": "terminal",
   "content": "## Command decorations and the overview ruler\n\nOne of the things that shell integration enables is the ability to get the exit codes of the commands run within the terminal. Using this information, decorations are added to the left of the line to indicate whether the command succeeded or failed. These decorations also show up in the relatively new overview ruler in the scroll bar, just like in the editor.\n\n![Blue circles appear next to successful commands, red circles with crosses appear next to failed commands. The color of the circles appears in the scroll bar](images/shell-integration/decorations.png)\n\nThe decorations can be interacted with to give some contextual actions like re-running the command:\n\n![Clicking a successful command decoration shows a context menu containing items: Copy Output, Copy Output as HTML, Rerun Command and How does this work?](images/shell-integration/decoration-menu.png)\n\nThe command and overview ruler decorations can be configured with the `setting(terminal.integrated.shellIntegration.decorationsEnabled)` setting.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/shell-integration.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/terminal/shell-integration.md"
 }

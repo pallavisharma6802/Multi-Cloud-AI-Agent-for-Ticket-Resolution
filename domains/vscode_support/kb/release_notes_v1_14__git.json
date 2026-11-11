@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Git\n\n### Pull from specific remote\n\nThanks to [@BugraC](https://github.com/BugraC), [@matthewshirley](https://github.com/matthewshirley), [@Krzysztof-Cieslak](https://github.com/Krzysztof-Cieslak), it's now possible to pull changes from a specific branch in a remote repository with the **Pull from...** command.\n\n### Manage your .gitignore file\n\n[@BugraC](https://github.com/BugraC) also provided a change so that you can now add files to your `.gitignore` right from the context menu of the Source Control view or via the global **Git: Add File to .gitignore** command.\n\n<video src=\"images/1_14/gitignore.mp4\" title=\"Video showing Tasks Global Menu.\" autoplay loop controls muted></video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_14.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_14.md"
 }

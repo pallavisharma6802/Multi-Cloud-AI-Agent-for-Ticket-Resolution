@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Code navigation\n\nCode navigation features are available in the context menu in the editor.\n\n* **Go to Definition** `kb(editor.action.revealDefinition)` - Go to the source code of the type definition.\n* **Peek Definition** `kb(editor.action.peekDefinition)` - Bring up a Peek window with the type definition.\n* **Go to References** `kb(editor.action.goToReferences)` - Show all references for the type.\n* **Show Call Hierarchy** `kb(editor.showCallHierarchy)` - Show all calls from or to a function.\n\nYou can navigate via symbol search using the **Go to Symbol** commands from the **Command Palette** (`kb(workbench.action.showCommands)`).\n\n* Go to Symbol in File - `kb(workbench.action.gotoSymbol)`\n* Go to Symbol in Workspace - `kb(workbench.action.showAllSymbols)`",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/rust.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/rust.md"
 }

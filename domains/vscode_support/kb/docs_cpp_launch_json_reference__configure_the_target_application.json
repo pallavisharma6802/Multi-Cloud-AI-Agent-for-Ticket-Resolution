@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Configure the target application\n\nThe following options enable you to modify the state of the target application when it is launched:\n\n### args\n\nJSON array of command-line arguments to pass to the program when it is launched. Example `[\"arg1\", \"arg2\"]`. If you are escaping characters, you will need to double escape them. For example, `[\"{\\\\\\\"arg1\\\\\\\": true}\"]` will send `{\"arg1\": true}` to your application.\n\n### cwd\n\nSets the working directory of the application launched by the debugger.\n\n### environment\n\nEnvironment variables to add to the environment for the program. Example: `[ { \"name\": \"config\", \"value\": \"Debug\" } ]`, not `[ { \"config\": \"Debug\" } ]`.\n\n**Example:**\n\n```json\n{\n   \"name\": \"C++ Launch\",\n   \"type\": \"cppdbg\",\n   \"request\": \"launch\",\n   \"program\": \"${workspaceFolder}/a.out\",\n   \"args\": [\"arg1\", \"arg2\"],\n   \"environment\": [{\"name\": \"config\", \"value\": \"Debug\"}],\n   \"cwd\": \"${workspaceFolder}\"\n}\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/launch-json-reference.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/launch-json-reference.md"
 }

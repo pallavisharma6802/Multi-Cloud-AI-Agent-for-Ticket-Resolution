@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Housekeeping\n\n**In previous release notes, the team reported on our housekeeping efforts and we wanted to do the same here.**\n\nAs we had announced back in November 2022, we used December for housekeeping our GitHub issues and pull requests (see our [issue cleanup guide](https://github.com/microsoft/vscode/wiki/Issue-Grooming)). Across all of our repositories, we achieved a net reduction of 3637 open issues and pull requests. Unsurprisingly, the lion share of the reduction happened in our top 5 repositories: microsoft/vscode (2520), microsoft/vscode-jupyter (374), microsoft/vscode-remote-release (278), microsoft/vscode-python (220), and microsoft/vscode-pull-request-github (160).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_75.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_75.md"
 }

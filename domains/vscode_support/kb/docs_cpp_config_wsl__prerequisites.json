@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Prerequisites\n\nTo successfully complete this tutorial, you must do the following steps:\n\n1. Install [{% data variables.product.prodname_vscode %}](/download).\n\n1. Install the [WSL extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl).\n\n1. Install [Windows Subsystem for Linux](https://learn.microsoft.com/windows/wsl/install) and then use the links on that same page to install your Linux distribution of choice. This tutorial uses Ubuntu. During installation, remember your Linux user password because you'll need it to install additional software.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/config-wsl.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/config-wsl.md"
 }

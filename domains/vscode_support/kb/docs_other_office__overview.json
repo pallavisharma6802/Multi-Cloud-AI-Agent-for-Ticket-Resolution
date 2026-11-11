@@ -4,5 +4,5 @@
   "category": "REFERENCE",
   "intent": "reference",
   "content": "# Office Add-ins with {% data variables.product.prodname_vscode %}\n\n[Office Add-ins](https://learn.microsoft.com/office/dev/add-ins/overview/office-add-ins) run inside an Office application and can interact with contents of the Office document using the rich [JavaScript API](https://learn.microsoft.com/office/dev/add-ins/develop/understanding-the-javascript-api-for-office).\n\n![An Office add-in is composed of a manifest.xml file and your web app.](images/office/officeaddinoverview.png)\n\nUnder the hood, an Office Add-in is just a web app that you can host anywhere. Using a `manifest.xml` file, you tell the Office application where your web app is located and how you want it to appear. The Office application takes care of hosting it within Office.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/other/office.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/other/office.md"
 }

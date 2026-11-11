@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Example: auto-formatting with Prettier\n\nOne of the most practical examples of hooks is automatically formatting code.\n\nIn this case, a hook is configured to run Prettier after every file edit. Instead of manually formatting files, the system ensures that everything stays consistent automatically.\n\nThe key idea is simple: once the action is defined, it runs every time without needing to ask.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/5-hooks.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/5-hooks.md"
 }

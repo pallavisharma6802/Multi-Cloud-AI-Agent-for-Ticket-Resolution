@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Containers (version 0.194.x)\n\n### Offer to add CLI to system path on macOS\n\nThe **Dev Containers: Install devcontainer CLI** command now offers to add the CLI to the `/usr/local/bin` folder. Previously the CLI was only added to `~/bin` or `~/.local/bin` if one of these folders existed and was on the `PATH`.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_60.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_60.md"
 }

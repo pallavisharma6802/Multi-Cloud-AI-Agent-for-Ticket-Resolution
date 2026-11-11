@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Why this matters\n\nPlugins turn a set of related customizations into one package. That makes a workflow easier to discover, install, review, disable, and recommend to teammates.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/3-agent-plugins.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/agents/3-agent-plugins.md"
 }

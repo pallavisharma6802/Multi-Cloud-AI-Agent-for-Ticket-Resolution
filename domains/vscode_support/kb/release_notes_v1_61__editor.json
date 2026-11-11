@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Editor\n\n### Bracket pair guides\n\nThe editor now supports rudimentary bracket pair guides. Bracket pair guides use the same colors and the same algorithms as the bracket pair colorization feature. The bracket pair matching algorithms are described in detail in the recent [\"Bracket pair colorization 10,000x faster\"](https://code.visualstudio.com/blogs/2021/09/29/bracket-pair-colorization) blog post.\n\nSimilar to indentation guides, the active bracket pair guide is highlighted.\n\n![Bracket pair guides shown in the editor](images/1_61/bracket-pair-guides.png)\n\nBracket pair guides can be enabled by configuring the `editor.guides.bracketPairs` setting (defaults to `false`).\nWe will continue iterating on this feature and explore vertical guides in the next release.\n\n### Indentation guides settings\n\nThe `editor.renderIndentGuides` and `editor.highlightActiveIndentGuide` settings have been deprecated in favor of `editor.guides.indentation` and `editor.guides.highlightActiveIndentation`.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_61.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_61.md"
 }

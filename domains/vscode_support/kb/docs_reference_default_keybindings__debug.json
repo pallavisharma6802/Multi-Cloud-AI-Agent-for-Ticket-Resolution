@@ -4,5 +4,5 @@
   "category": "REFERENCE",
   "intent": "reference",
   "content": "## Debug\n\nCommand|Key|Command id\n-------|---|----------\nToggle Breakpoint|`kb(editor.debug.action.toggleBreakpoint)`|`editor.debug.action.toggleBreakpoint`\nStart|`kb(workbench.action.debug.start)`|`workbench.action.debug.start`\nContinue|`kb(workbench.action.debug.continue)`|`workbench.action.debug.continue`\nStart (without debugging)|`kb(workbench.action.debug.run)`|`workbench.action.debug.run`\nPause|`kb(workbench.action.debug.pause)`|`workbench.action.debug.pause`\nStep Into|`kb(workbench.action.debug.stepInto)`|`workbench.action.debug.stepInto`",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/reference/default-keybindings.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/reference/default-keybindings.md"
 }

@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## What's Next\n\nAfter shipping a hosted code-based agent, the next step is hardening the lifecycle for ongoing releases. Focus on stronger evaluation pipelines, tracing-driven debugging practices, and automation for deployment and regression checks as agent scope grows.\n\nThe next chapter should feel like an extension of this workflow, not a reset.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
 }

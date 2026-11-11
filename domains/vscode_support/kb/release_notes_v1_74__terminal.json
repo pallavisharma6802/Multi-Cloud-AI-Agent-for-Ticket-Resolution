@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Terminal\n\n### Terminal Quick Fix improvements\n\nTerminal Quick Fixes are now presented in a Code Action control to align with the experience in the editor.\n\n![A Quick Fix is triggered in the terminal and a menu is presented with a play button to the left of the action's label](images/1_74/terminal-action-widget.png)\n\n### Task actions in the terminal dropdown\n\nThe **Run Task** and **Configure Tasks** commands appear in the terminal dropdown for increased discoverability and ease of access.\n\n![The last section of the terminal dropdown menu contains Run Task and Configure Tasks commands](images/1_74/task-action-dropdown.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_74.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_74.md"
 }

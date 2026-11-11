@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Monitor sessions from the application icon (Preview)\n\nEnable `setting(sessions.showApplicationBadge)` to show how many unarchived sessions need attention on the macOS dock, Linux launcher, or Windows taskbar icon. The setting defaults to `true` in Insiders and `false` in Stable.\n\n![Screenshot showing the {% data variables.product.prodname_vscode_shortname %} application icon with a badge count of one in the Windows taskbar.](../images/agents-overview/application-icon-session-badge.png)\n\nThe badge counts sessions that:\n\n* Have unread results and are no longer in progress.\n* Are waiting for input.\n* Have failing CI checks on an open, non-draft pull request and are no longer in progress.\n\nUnread sessions still in progress aren't counted. Reading or archiving a session removes it from the count when it no longer needs attention.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/agents-window-configuration.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/agents-window-configuration.md"
 }

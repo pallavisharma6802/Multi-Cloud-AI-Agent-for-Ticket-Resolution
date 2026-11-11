@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## IntelliSense for your programming language\n\n{% data variables.product.prodname_vscode %} IntelliSense is provided for JavaScript, TypeScript, JSON, HTML, CSS, SCSS, and Less out of the box. {% data variables.product.prodname_vscode_shortname %} supports word-based completions for any programming language but can also be configured to have richer IntelliSense by installing a language extension.\n\nBelow are the most popular language extensions in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vscode). Select an extension tile below to read the description and reviews to decide which extension is best for you.\n\n<div class=\"marketplace-extensions-languages-curated\"></div>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/intellisense.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/intellisense.md"
 }

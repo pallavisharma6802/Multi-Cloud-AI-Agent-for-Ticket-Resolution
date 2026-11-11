@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Enable cloud partner agents\n\nBefore you can use cloud partner agents, enable third-party coding agents for your GitHub Copilot account by following the GitHub documentation.\n\nAfter third-party coding agents are enabled for your account, return to VS Code and start a session with Claude or Codex from the chat agent picker.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/4-using-third-party-agents-in-vs-code.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/agents/4-using-third-party-agents-in-vs-code.md"
 }

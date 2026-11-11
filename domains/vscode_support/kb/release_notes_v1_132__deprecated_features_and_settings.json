@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Deprecated features and settings\n\n### New deprecations in this release\n\n* Agent host policy\n\n  The `ChatAgentHostEnabled` policy is removed, so administrators can no longer centrally disable the agent host through policy. Developers can continue to use `setting(chat.agentHost.enabled)` to choose whether agents run in the separate agent host process.\n\n### Upcoming deprecations\n\nThere are no upcoming deprecations.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_132.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_132.md"
 }

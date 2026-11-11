@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# Rust in {% data variables.product.prodname_vscode %}\n\n[Rust](https://www.rust-lang.org) is a powerful programming language, often used for systems programming where performance and correctness are high priorities. If you are new to Rust and want to learn more, [The Rust Programming Language](https://doc.rust-lang.org/book) online book is a great place to start. This topic goes into detail about setting up and using Rust within {% data variables.product.prodname_vscode %}, with the [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer) extension.\n\n![Rust extension banner](images/rust/rust-analyzer-extension.png)\n\n> [!NOTE]\n> There is also another popular Rust extension in the {% data variables.product.prodname_vs_marketplace %} (extension ID: rust-lang.rust) but this extension is deprecated and rust-analyzer is the recommended {% data variables.product.prodname_vscode_shortname %} Rust extension by rust-lang.org.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/rust.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/rust.md"
 }

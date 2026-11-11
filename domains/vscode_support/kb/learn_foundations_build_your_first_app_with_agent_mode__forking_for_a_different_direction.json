@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Forking for a different direction\n\nAfter adding the lookup feature, fork the session before exploring a test suite.\n\nUse a prompt such as this in the forked session.\n\n```prompt\nAdd a test suite using pytest. Test the base62 encode/decode functions and the API endpoints including /lookup/{code}, using FastAPI TestClient. Use uv to add pytest and httpx as dev dependencies.\n```\n\nThe original session is untouched in the Agent Sessions sidebar. Two branches: one for features, one for tests.\n\nIn practice, this is a strong use of forking. It separates concerns: feature work in one branch of the conversation and tests in another, each starting from the same known-good checkpoint.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/build-your-first-app-with-agent-mode.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundations/build-your-first-app-with-agent-mode.md"
 }

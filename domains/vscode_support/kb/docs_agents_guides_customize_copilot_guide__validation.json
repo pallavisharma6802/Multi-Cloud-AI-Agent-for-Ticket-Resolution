@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Validation\n\n* Run the unit tests for the changed package.\n* Run the linter before completing a code change.\n* Add or update tests for every behavior change.\n```\n\nLearn more about writing effective [custom instructions](/docs/agent-customization/custom-instructions.md).\n\n<a name=\"step-3-verify-the-improvement\"></a>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/customize-copilot-guide.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/customize-copilot-guide.md"
 }

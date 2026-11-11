@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Troubleshooting\n\n| Problem | What to check |\n|---------|---------------|\n| A canvas menu doesn't appear | Check that `setting(chat.canvases.enabled)` is on, start a new local {% data variables.product.prodname_copilot_short %} session, and send a message. Install a canvas extension if none are available. |\n| **Canvases are only available inside a session** appears | Select an active local {% data variables.product.prodname_copilot_short %} session, then reopen the Agent Customizations editor. |\n| A canvas is marked **Requires Input** | Ask the agent to open it and provide the required information. It can't be opened directly from the list. |\n| An extension is listed but its canvases won't open | Check whether the extension is turned off. Last-known entries can remain visible after an extension is turned off. |",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/canvases.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/canvases.md"
 }

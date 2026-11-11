@@ -4,5 +4,5 @@
   "category": "REFERENCE",
   "intent": "reference",
   "content": "## Platforms\n\n{% data variables.product.prodname_vscode_shortname %} is supported on the following platforms:\n\n* [Supported versions of Windows client](https://learn.microsoft.com/en-us/windows/release-health/supported-versions-windows-client) (64-bit).\n* macOS versions with Apple security update support. This is typically the latest release and the two previous versions.\n* Linux (Debian): Ubuntu Desktop 20.04, Debian 10\n* Linux (Red Hat): Red Hat Enterprise Linux 8, Fedora 36\n\nRunning {% data variables.product.prodname_vscode_shortname %} with the [Dev Containers](/docs/devcontainers/containers.md) extension is supported. When using the Dev Containers extension, {% data variables.product.prodname_vscode_shortname %} server is running in the container while the {% data variables.product.prodname_vscode_shortname %} client is on the desktop.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/supporting/requirements.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/supporting/requirements.md"
 }

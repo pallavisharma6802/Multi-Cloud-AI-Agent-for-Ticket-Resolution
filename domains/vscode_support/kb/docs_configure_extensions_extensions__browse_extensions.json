@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Browse extensions\n\nThe Extensions view in {% data variables.product.prodname_vscode_shortname %} enables you to browse and install extensions from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vscode).\n\nTo browse the extension Marketplace from within {% data variables.product.prodname_vscode_shortname %}:\n\n1. Open the Extensions view by selecting the Extensions icon in the Activity Bar, or use the `kb(workbench.view.extensions)` keyboard shortcut.\n\n    ![Screenshot of the Extensions view, filtered by 'todo', highlighting the Activity Bar icon.](images/extensions/search-for-todo-extension.png)\n\n1. Optionally, search for an extension by using the search box or use one of the filters. For example, to filter by extension category.\n\n1. Select an extension to view its details, such as its description, publisher, install count, user rating, and more.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/extensions/extensions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/extensions/extensions.md"
 }

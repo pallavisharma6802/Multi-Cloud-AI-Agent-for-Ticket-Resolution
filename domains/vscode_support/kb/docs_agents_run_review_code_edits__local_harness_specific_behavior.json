@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Local harness-specific behavior\n\nLocal harness sessions and existing extension-host sessions use the [shared review process](#review-pending-edits-with-the-working-set). In these sessions, discarding changes in Source Control also discards their pending edits.\n\n### Auto-accept edits\n\nFor Local harness sessions, use `setting(chat.editing.autoAcceptDelay)` to automatically keep pending edits after a configurable delay. Hover over the editor overlay controls to stop the countdown.\n\n> [!IMPORTANT]\n> If you automatically keep all edits, review the changes before you commit them in Source Control. Learn more about the [security considerations of using AI in {% data variables.product.prodname_vscode_shortname %}](/docs/agents/run/security.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/review-code-edits.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/review-code-edits.md"
 }

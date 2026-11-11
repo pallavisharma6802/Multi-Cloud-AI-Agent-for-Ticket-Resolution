@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Windows debugging with GDB\n\nYou can debug Windows applications created using Cygwin or MinGW by using {% data variables.product.prodname_vscode_shortname %}. To use Cygwin or MinGW debugging features, the debugger path must be set manually in the launch configuration (`launch.json`). To debug your Cygwin or MinGW application, add the `miDebuggerPath` property and set its value to the location of the corresponding gdb.exe for your Cygwin or MinGW environment.\n\nFor example:\n\n```json\n    \"miDebuggerPath\": \"c:\\\\mingw\\\\bin\\\\gdb.exe\"\n```\n\nCygwin/MinGW debugging on Windows supports both attach and launch debugging scenarios.\n\nTo learn more, see [Configure C/C++ debugging](/docs/cpp/launch-json-reference.md).\n\nIf you are debugging with GDB on Windows, see [Windows Debugging with MinGW64](/docs/cpp/config-mingw.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/cpp-debug.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/cpp-debug.md"
 }

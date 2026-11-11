@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Jupyter Kernels\n\nThe **Jupyter Kernels** category lists all Jupyter kernels that {% data variables.product.prodname_vscode_shortname %} detects in the context of the compute system it's operating in (your desktop, [GitHub Codespaces](https://github.com/features/codespaces), remote server, etc.). Each Jupyter kernel has a Jupyter [kernel specification](https://jupyter-client.readthedocs.io/en/stable/kernels.html#kernel-specs), or Jupyter kernelspec, which contains a JSON file (`kernel.json`) with details about the kernel\u2014name, description, and CLI information required to launch a process as a kernel.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/jupyter-kernel-management.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/datascience/jupyter-kernel-management.md"
 }

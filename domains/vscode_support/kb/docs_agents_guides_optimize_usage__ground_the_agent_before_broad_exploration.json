@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Ground the agent before broad exploration\n\nRelevant context helps an agent avoid failed searches, unnecessary tool calls, and incorrect changes. Before broad exploration:\n\n* Make sure the [workspace semantic index](/docs/agents/reference/workspace-context.md#semantic-search) is available, and use `#codebase` when you want to explicitly ground a request in the indexed codebase.\n* Provide the relevant files, errors, constraints, and success criteria in the prompt.\n* Use symbol-aware search and focused MCP or command-line tools for authoritative project and organization data.\n* Add stable project conventions to [custom instructions](/docs/agent-customization/custom-instructions.md) so the agent does not rediscover them in every session.\n\nGrounding should narrow the search space, not preload every available source. Include the smallest set of authoritative context that lets the agent complete the task.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/optimize-usage.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/optimize-usage.md"
 }

@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Autocomplete and IntelliSense\n\nThe Python extension supports code completion and IntelliSense using the currently selected interpreter. [IntelliSense](/docs/editing/intellisense.md) is a general term for a number of features, including intelligent code completion (in-context method and variable suggestions) across all your files and for built-in and third-party modules.\n\nIntelliSense quickly shows methods, class members, and documentation as you type. You can also trigger completions at any time with `kb(editor.action.triggerSuggest)`. Hovering over identifiers will show more information about them.\n\n<video src=\"images/python/python-editing.mp4\" title=\"Video showing IntelliSense and autocomplete for Python code.\" autoplay loop controls muted></video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/python.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/python.md"
 }

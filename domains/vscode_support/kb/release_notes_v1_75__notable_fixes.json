@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable fixes\n\n* [99878](https://github.com/microsoft/vscode/issues/99878) Prepending PATH env var with environmentVariableCollection doesn't work on macOS\n* [153786](https://github.com/microsoft/vscode/issues/153786) Have a command to open either side of a diff editor\n* [165123](https://github.com/microsoft/vscode/issues/165123) Allow to open a diff editor with two untitled sides\n* [167004](https://github.com/microsoft/vscode/issues/167004) **Output: Show Output Channels** A command to show an output channel\n* [167528](https://github.com/microsoft/vscode/issues/167528) Log level of an extension output channel persists after reloading the window",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_75.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_75.md"
 }

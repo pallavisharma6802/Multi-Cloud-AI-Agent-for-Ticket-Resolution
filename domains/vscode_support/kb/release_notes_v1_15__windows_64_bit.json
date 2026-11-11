@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Windows 64 bit\n\nVisual Studio Code 64-bit builds are now available on Windows for the Stable release! They come in the usual Setup Installer format as well as a ZIP archive. We will show a message box to guide you to install the 64-bit version on Windows. Below are the download links:\n\nStable Windows 64-bit: [Installer](https://go.microsoft.com/fwlink/?linkid=852157) | [ZIP archive](https://go.microsoft.com/fwlink/?linkid=850641)\n\nInsiders Windows 64-bit: [Installer](https://go.microsoft.com/fwlink/?linkid=852155) | [ZIP archive](https://go.microsoft.com/fwlink/?linkid=850640)\n\n**Note:** If you are using the Setup Installer, you'll need to uninstall the 32-bit version before you install the 64-bit build.\n\n**Note:** All your settings and extensions will be preserved when you upgrade to the 64-bit version.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_15.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_15.md"
 }

@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Tools and context reference\n\nLook up common tool names and context references for chat prompts in {% data variables.product.prodname_vscode %}. For instructions on selecting tools, invoking them, and managing approvals, see [Use tools with agents](/docs/agents/run/tools.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/tools-reference.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/reference/tools-reference.md"
 }

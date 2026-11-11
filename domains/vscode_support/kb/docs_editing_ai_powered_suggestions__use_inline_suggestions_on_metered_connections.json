@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Use inline suggestions on metered connections\n\nWhen {% data variables.product.prodname_vscode_shortname %} treats your network connection as metered, {% data variables.product.prodname_copilot %} does not start new automatic ghost text or next edit suggestion requests. Requests already in progress continue.\n\nYou can still request a suggestion explicitly. Run the **Trigger Inline Suggestion** command from the Command Palette.\n\nThis behavior applies only to the built-in {% data variables.product.prodname_copilot_short %} provider. It does not change how local-only or third-party completion providers behave.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/ai-powered-suggestions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/ai-powered-suggestions.md"
 }

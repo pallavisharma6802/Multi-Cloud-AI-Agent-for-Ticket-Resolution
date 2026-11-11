@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Synchronize Stable and Insiders\n\nBy default, the {% data variables.product.prodname_vscode_shortname %} Stable and [Insiders](/insiders) builds use separate {% data variables.product.prodname_settings_sync %} services and do not share data. To share data between the builds, select the Stable sync service when you turn on {% data variables.product.prodname_settings_sync %} in {% data variables.product.prodname_vscode_shortname %} Insiders.\n\n![Screenshot showing the sync service options in VS Code Insiders.](images/settings-sync/settings-sync-switch.png)\n\n> [!NOTE]\n> Synchronizing Stable and Insiders can cause data incompatibility because Insiders is newer than Stable. If this occurs, {% data variables.product.prodname_settings_sync %} turns off automatically in Stable. Update Stable to a compatible version before you turn on sync again.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/settings-sync.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/settings-sync.md"
 }

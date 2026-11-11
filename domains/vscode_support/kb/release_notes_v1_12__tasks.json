@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Tasks\n\n### Grunt task auto-detection\n\nGrunt auto-detection has been implemented for the new terminal task runner. With the new terminal runner, tasks are now detected for both [Grunt](https://gruntjs.com) and [Gulp](https://gulpjs.com/) if both corresponding files (`Gruntfile.js`, `gulpfile.js`) are present in a workspace.\n\nIn addition, the proposed task API has been polished. If you had already started to use it, you might encounter some minor breaking changes.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_12.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_12.md"
 }

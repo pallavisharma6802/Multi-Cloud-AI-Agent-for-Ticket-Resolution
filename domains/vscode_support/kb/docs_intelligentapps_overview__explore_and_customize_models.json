@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Explore and customize models\n\nUse [Model Catalog](/docs/intelligentapps/models.md) to find and deploy Foundry models, connect provider-hosted endpoints, or add supported local models. The source you choose determines where inference runs and which credentials, deployments, or runtime components you maintain.\n\nIn [Model Playground](/docs/intelligentapps/playground.md), test prompts and model-specific parameters, compare chat responses, or generate images with a supported image-generation deployment. Use its client code samples to integrate a model into an application. A client sample is not a complete agent project or a deployed service.\n\nFor specialized model work, Toolkit also provides [fine-tuning](/docs/intelligentapps/finetune.md), [model conversion](/docs/intelligentapps/modelconversion.md), and [Model Profiling (Preview)](/docs/intelligentapps/profiling.md). These experiences have model-specific, runtime-specific, and hardware-specific requirements.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/overview.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/overview.md"
 }

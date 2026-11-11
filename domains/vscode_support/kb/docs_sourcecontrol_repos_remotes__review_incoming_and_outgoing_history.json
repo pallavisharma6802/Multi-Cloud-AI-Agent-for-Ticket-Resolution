@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "## Review incoming and outgoing history\n\nThe Source Control Graph shows how your current branch differs from its upstream branch. Use it to inspect incoming commits before you pull and outgoing commits before you push.\n\nLearn more about [viewing commits and branch history in the Source Control Graph](/docs/sourcecontrol/history.md#view-branch-and-commit-history).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/repos-remotes.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/repos-remotes.md"
 }

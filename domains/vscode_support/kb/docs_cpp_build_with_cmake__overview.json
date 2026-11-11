@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# Build with CMake\n\nThis page redirects to https://github.com/microsoft/vscode-cmake-tools/blob/main/docs/README.md and only exists to present the \"Build with CMake\" TOC entry.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/build-with-cmake.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/build-with-cmake.md"
 }

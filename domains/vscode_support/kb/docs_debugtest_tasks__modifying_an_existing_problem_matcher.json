@@ -4,5 +4,5 @@
   "category": "DEBUGGING",
   "intent": "debugging",
   "content": "## Modifying an existing problem matcher\n\nIf an existing problem matcher is close to what you need, you can modify it in your `tasks.json` task. For example, the `$tsc-watch` problem matcher only applies to closed documents. If you want to have it apply to all documents you can modify it:\n\n```json\n{\n    \"type\": \"npm\",\n    \"script\": \"watch\",\n    \"problemMatcher\": {\n        \"base\": \"$tsc-watch\",\n        \"applyTo\": \"allDocuments\"\n    },\n    \"isBackground\": true,\n}\n```\n\nOther modifiable problem matcher properties include `background`, `fileLocation`, `owner`, `pattern`, `severity`, and `source`.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/tasks.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/debugtest/tasks.md"
 }

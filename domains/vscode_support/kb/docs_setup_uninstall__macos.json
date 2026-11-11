@@ -4,5 +4,5 @@
   "category": "INSTALLATION",
   "intent": "installation",
   "content": "## macOS\n\nTo uninstall {% data variables.product.prodname_vscode_shortname %} on macOS, open **Finder** and go to **Applications**. Right-click on the {% data variables.product.prodname_vscode %} application and select **Move to Trash**.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/uninstall.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/setup/uninstall.md"
 }

@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Changing the look of the Markdown preview with CSS\n\nExtensions can contribute CSS to change the look or layout of the Markdown preview. Stylesheets are registered using the `markdown.previewStyles` [Contribution Point](/api/references/contribution-points) in the extension's `package.json`:\n\n```json\n\"contributes\": {\n    \"markdown.previewStyles\": [\n        \"./style.css\"\n    ]\n}\n```\n\n`\"markdown.previewStyles\"` is a list of files relative to the extension's root folder.\n\nContributed styles are added after the built-in Markdown preview styles but before a user's `\"markdown.styles\"`.\n\nThe [Markdown Preview GitHub Styling](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles) extension is a good example that demonstrates using a stylesheet to make the Markdown preview look like GitHub's rendered Markdown. You can review the extension's source code on [GitHub](https://github.com/mjbvz/vscode-github-markdown-preview-style).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/markdown-extension.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-guides/markdown-extension.md"
 }

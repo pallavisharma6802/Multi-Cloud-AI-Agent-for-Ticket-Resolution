@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Tasks - echoCommand Property\nA new property `echoCommand` has been added to the global and task specific sections of the `tasks.json` file. If set to `true`, the executed command is echoed to the task's output view. This is useful when you are configuring tasks and you want to see the full command VS Code is running.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_8_0.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v0_8_0.md"
 }

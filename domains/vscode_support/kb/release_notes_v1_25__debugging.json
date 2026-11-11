@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Debugging\n\n### Floating debug toolbar\n\nIn the previous milestone, we have introduced a new setting to dock the debug toolbar in the Debug view (`\"debug.toolBarLocation\": \"docked\"`). In this milestone, we reviewed user feedback and tried to improve the floating toolbar behavior as well (`\"debug.toolBarLocation\": \"floating\"`).\n\nThe [consensus](https://github.com/microsoft/vscode/issues/52490) from feedback was that the toolbar should always be visible (independent from which view is active) and that it should not hide anything (for instance the editor tabs). Therefore, we've \"unchained\" the floating toolbar by allowing it to be dragged to the editor area. This should help users that heavily use editor tabs but also want to see the debug toolbar at all times.\n\n<video src=\"images/1_25/debugtoolbar.mp4\" title=\"Video showing debug toolbar.\" autoplay loop controls muted></video>\n\nSince the existing `debug.hideActionBar` setting is handled by the value `hidden` with the `debug.toolBarLocation` setting, we are now **removing** `debug.hideActionBar`.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_25.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_25.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Accessibility\n\n### Suggest widget improvements\n\nThe suggestions widget now no longer uses ARIA alerts and properly indicates to the screen reader that it is focused. This should prevent the screen reader from accidentally getting in the way.\n\n### editor.accessibilityPageSize set to 160 when screen reader detected\n\nThe `editor.accessibilityPageSize` setting controls the number of lines in the editor that can be read out by a screen reader at one time. However, there are performance implications when using a large value. We have decided to automatically set the value to 160 lines when we detect a screen reader (and not more, due to an NVDA bug).\n\n### Linux accessibility with Orca\n\nWe have started looking into making VS Code accessible on Linux with the Orca screen reader. However, since this work requires Electron 7, we expect to make more progress in the next stable release. In the meantime, for Linux accessibility you can use our [Insiders](https://code.visualstudio.com/insiders) version and provide feedback.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_42.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_42.md"
 }

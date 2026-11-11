@@ -4,5 +4,5 @@
   "category": "ENTERPRISE",
   "intent": "enterprise",
   "content": "## Network requirements\n\n{% data variables.product.prodname_vscode_shortname %} downloads updates from Microsoft servers. If your network has restricted access, ensure the following hostname is allowed:\n\n* `update.code.visualstudio.com` - {% data variables.product.prodname_vscode_shortname %} download and update server\n\nSee the [network documentation](/docs/setup/network.md#common-hostnames) for a complete list of hostnames.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/enterprise/updates.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/enterprise/updates.md"
 }

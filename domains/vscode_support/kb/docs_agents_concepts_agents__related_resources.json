@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [Tools](/docs/agents/concepts/tools.md)\n* [Agent harnesses and execution environments](/docs/agents/concepts/agent-harnesses.md)\n* [Trust and safety](/docs/agents/concepts/trust-and-safety.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/agents.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/concepts/agents.md"
 }

@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Sign in with a Microsoft or organizational account\n\n1. Launch {% data variables.product.prodname_vscode %}.  When the C# Dev Kit extension is activated for the first time, you'll be asked to sign in via a toast notification.\n\n  ![Sign-in notification](images/signing-in/sign-in-notification.png)\n\n  Alternatively, you can also go to the **Accounts** button in the Activity bar to sign in.\n\n  ![Sign-in with the Account button](images/signing-in/account-button-sign-in.png)\n\n2. Once you start the sign in process, the browser will open, and you'll be able to use your Microsoft or your organizational (Work or School) account to sign in.\n\n>**Note**: While sign in is not required or enforced by the extension, you might need to sign in using your Visual Studio account to comply with the EULA requirements for the C# Dev Kit extension.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/signing-in.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/signing-in.md"
 }

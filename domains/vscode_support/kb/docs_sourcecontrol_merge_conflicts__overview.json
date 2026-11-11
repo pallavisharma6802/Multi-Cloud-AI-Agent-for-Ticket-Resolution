@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "# Resolve merge conflicts in {% data variables.product.prodname_vscode_shortname %}\n\nWhen Git stops because it cannot combine changes automatically, use {% data variables.product.prodname_vscode_shortname %} to resolve the conflicting files, review the result, and finish the operation.\n\nUse [inline actions](#resolve-conflicts-with-inline-actions) for a small conflict or the [3-way merge editor](#use-the-3-way-merge-editor) to compare both sides. If you already resolved the files, go to [complete the operation](#complete-the-merge-operation). To stop instead, see [cancel an operation](#cancel-an-operation).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/merge-conflicts.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/merge-conflicts.md"
 }

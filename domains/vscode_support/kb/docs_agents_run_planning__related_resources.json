@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [Review AI-generated code edits](/docs/agents/run/review-code-edits.md)\n* [Write effective prompts](/docs/agents/best-practices.md#write-effective-prompts)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/planning.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/planning.md"
 }

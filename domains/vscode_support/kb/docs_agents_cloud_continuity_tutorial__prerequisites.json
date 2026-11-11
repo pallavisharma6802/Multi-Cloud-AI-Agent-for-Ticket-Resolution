@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Prerequisites\n\n* [Install {% data variables.product.prodname_vscode_shortname %}](/download) and [set up {% data variables.product.prodname_copilot %}](/docs/setup/copilot.md).\n* Use a {% data variables.product.prodname_github %} account with access to cloud sessions. Availability depends on your account and organization.\n* Have an existing repository on GitHub.com.\n* Ensure the `setting(chat.agentHost.cloudSandbox.enabled)` setting is on in {% data variables.product.prodname_vscode_shortname %}.\n* [Install the latest {% data variables.copilot.copilot_cli_short %}](https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/install-copilot-cli). Choose a native installation option if you don't already have Node.js. Your account and organization must allow CLI access and cloud connections.\n\n> [!NOTE]\n> Requests use your {% data variables.product.prodname_copilot_short %} plan's allowance. Review [AI credits and model costs](/docs/agents/concepts/language-models.md#ai-credits-and-model-costs) before starting.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/cloud-continuity-tutorial.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/cloud-continuity-tutorial.md"
 }

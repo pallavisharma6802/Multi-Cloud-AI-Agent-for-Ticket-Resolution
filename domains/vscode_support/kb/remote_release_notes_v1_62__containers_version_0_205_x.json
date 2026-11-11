@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Containers (version 0.205.x)\n\nDev Containers releases for VS Code 1.62.x with versions 0.205.x. (Issue grooming milestone.)\n\n### New configuration videos\n\nNew advanced container configuration videos to help you:\n\n* [Persist bash history](https://code.visualstudio.com/remote/advancedcontainers/persist-bash-history) in your container.\n* [Work with monorepos](https://code.visualstudio.com/remote/advancedcontainers/change-default-source-mount) that contain multiple independent projects.\n* [Run npm install](https://code.visualstudio.com/remote/advancedcontainers/start-processes) when a container is created.\n* [Add a local folder](https://code.visualstudio.com/remote/advancedcontainers/add-local-file-mount) to your dev container.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_62.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_62.md"
 }

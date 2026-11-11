@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Language models\n\n### Deprecation of the built-in Ollama provider\n\nModel providers can contribute models for the VS Code chat experience via an extension. By using an extension, providers can give you faster support for new models and capabilities than a built-in provider could offer.\n\nOllama now has an [official VS Code extension](https://marketplace.visualstudio.com/publishers/Ollama), which is the recommended way to use local Ollama models in chat.\n\nAs a result, the built-in Ollama provider is now deprecated. If you're using the built-in provider to run local models with [Bring Your Own Key (BYOK)](https://code.visualstudio.com/docs/copilot/customization/language-models#_bring-your-own-language-model-key), install the official extension and remove the built-in provider to continue using your Ollama models without interruption. The following video shows how to remove the deprecated provider.\n\n<video src=\"images/1_127/ollama-deprecation.mp4\" title=\"Video showing how to remove the deprecated built-in Ollama provider.\" autoplay controls muted></video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_127.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_127.md"
 }

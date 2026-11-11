@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Modify the Azure subscription and resource group\n\nIf you want to modify the Azure subscription and resource group that were previously set, you can update or remove them in the `<your_project_path>/model_lab.workspace.provision.config` file.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/finetune.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/finetune.md"
 }

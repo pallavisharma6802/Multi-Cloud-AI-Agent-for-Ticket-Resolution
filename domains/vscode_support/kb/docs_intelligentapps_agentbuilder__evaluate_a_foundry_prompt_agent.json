@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Evaluate a Foundry prompt agent\n\nSave the agent version that you want to evaluate, then select **Evaluation**.\n\n* Select **Scaffold Evaluation Code** to generate a local Python evaluation project. Follow its generated instructions to configure and run the evaluation.\n* Select the **Foundry** link for guided evaluation setup.\n\nThe Foundry agent's Evaluation tab is not the local prompt dataset grid. For service-side evaluation concepts and procedures, see [Evaluate your AI agents](https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/evaluate-agent).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/agentbuilder.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/agentbuilder.md"
 }

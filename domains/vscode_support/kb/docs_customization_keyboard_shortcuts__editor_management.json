@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Editor Management\n\nKey|Command\n---|---\n`kb(workbench.action.closeActiveEditor)`, `kbstyle(Ctrl+W)`|Close editor\n`kb(workbench.action.closeFolder)`|Close folder\n`kb(workbench.action.splitEditor)`|Split editor\n`kb(workbench.action.focusFirstEditorGroup)`|Focus into first editor group\n`kb(workbench.action.focusSecondEditorGroup)`|Focus into second editor group\n`kb(workbench.action.focusThirdEditorGroup)`|Focus into third editor group\n`kb(workbench.action.moveEditorLeftInGroup)`| Move editor left\n`kb(workbench.action.moveEditorRightInGroup)`| Move editor right\n`kb(workbench.action.moveActiveEditorGroupLeft)`|Move active editor group left/up\n`kb(workbench.action.moveActiveEditorGroupRight)`|Move active editor group right/down",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/customization/keyboard-shortcuts.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/customization/keyboard-shortcuts.md"
 }

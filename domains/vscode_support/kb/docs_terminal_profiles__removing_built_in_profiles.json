@@ -4,5 +4,5 @@
   "category": "TERMINAL",
   "intent": "terminal",
   "content": "## Removing built-in profiles\n\nTo remove a built-in profile and prevent it from showing up in the new terminal dropdown, set the name of the profile to `null`. For example, to remove the `Git Bash` profile on Windows, use this setting:\n\n```json\n{\n  \"terminal.integrated.profiles.windows\": {\n    \"Git Bash\": null\n  }\n}\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/profiles.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/terminal/profiles.md"
 }

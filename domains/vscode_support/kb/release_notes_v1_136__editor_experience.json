@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Editor experience\n\n### Layout density for the editor window (Experimental)\n\n**Settings**: `setting(workbench.experimental.modernUI)`, `setting(window.density.layout)`\n\nFit more content in the editor window with the **Compact** layout density. When `setting(workbench.experimental.modernUI)` is enabled, you can choose between two layout densities:\n\n* **Default** layout density is the same as the current editor window layout.\n* **Compact** layout density removes the spacing between panels and reduces inner panel spacing.\n\nThis setting is available in the **Layout Density** section of the Settings menu and can also be set using `setting(window.density.layout)`.\n\n<video src=\"images/1_136/compact-layout-setting.mp4\" title=\"Video of the compact layout setting in the editor window.\" autoplay loop controls muted></video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_136.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_136.md"
 }

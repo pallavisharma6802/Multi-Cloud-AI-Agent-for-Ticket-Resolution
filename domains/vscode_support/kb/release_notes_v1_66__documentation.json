@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Documentation\n\n### R in VS Code\n\nThere is a new [R in Visual Studio Code](https://code.visualstudio.com/docs/languages/r) topic describing [R programming language](https://www.r-project.org) support in VS Code with the [R extension](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r). The R extension includes rich language features such as code completions and linting as well as integrated R terminals and dedicated workspace, data, and plot viewers.\n\n![R Extension for Visual Studio Code details pane](images/1_66/r-extension.png)\n\n### Development containers blog post\n\nIn case you missed Burke Holland's recent blog post on using dev containers to create easy to use programming environments, check out [\"The problem with tutorials\"](https://code.visualstudio.com/blogs/2022/03/08/the-tutorial-problem). The blog post describes how [Laravel](https://laravel.com) uses pre-configured Docker containers to provide the runtime and dependencies for their PHP framework tutorials.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_66.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_66.md"
 }

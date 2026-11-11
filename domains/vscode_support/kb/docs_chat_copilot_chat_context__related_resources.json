@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [Use the {% data variables.copilot.chat_view %}](/docs/agents/run/chat-view.md)\n* [Manage agent sessions](/docs/agents/run/sessions/manage-sessions.md)\n* [Prompt examples](/docs/agents/guides/prompt-examples.md)\n* [Prompt engineering guide](/docs/agents/best-practices.md)\n* [Debug chat interactions](/docs/agents/agent-troubleshooting/chat-debug-view.md)\n* [Diagnose prompt caching with the Cache Explorer](/docs/agents/agent-troubleshooting/cache-explorer.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/chat/copilot-chat-context.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/chat/copilot-chat-context.md"
 }

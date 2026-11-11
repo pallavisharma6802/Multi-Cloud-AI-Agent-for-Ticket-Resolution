@@ -4,5 +4,5 @@
   "category": "TERMINAL",
   "intent": "terminal",
   "content": "## Unicode and emoji support\n\nThe terminal has both Unicode and emoji support. When these characters are used in the terminal, there are some caveats to that support:\n\n* Some Unicode symbols have ambiguous width that may change between Unicode versions. Currently we support Unicode version 6 and 11 widths, which can be configured with the `setting(terminal.integrated.unicodeVersion)` setting. The version specified should match the Unicode version used by the shell/operating system, otherwise there could be rendering issues. Note that the Unicode version of the shell/OS may not match the font's actual width.\n* Some emojis comprised of multiple characters may not render correctly, for example, skin tone modifiers.\n* Emoji support is limited on Windows.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/advanced.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/terminal/advanced.md"
 }

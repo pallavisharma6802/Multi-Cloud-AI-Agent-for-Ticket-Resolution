@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Common questions\n\n### Is {% data variables.product.prodname_settings_sync %} the same as the Settings Sync extension?\n\nNo. The [Settings Sync extension](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) by [Shan Khan](https://marketplace.visualstudio.com/publishers/Shan) uses a private GitHub Gist to share settings. It is unrelated to the built-in {% data variables.product.prodname_settings_sync %} feature.\n\n### What accounts can I use?\n\n{% data variables.product.prodname_settings_sync %} supports Microsoft and GitHub accounts. GitHub Enterprise Server accounts are not supported.\n\n> [!NOTE]\n> {% data variables.product.prodname_settings_sync %} does not support [Microsoft Sovereign Cloud](https://www.microsoft.com/en-us/industry/sovereignty/cloud) accounts.\n\n### Can I use a different backend or service?\n\nNo. {% data variables.product.prodname_settings_sync %} uses a dedicated service to store data and coordinate updates. Custom backends are not supported.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/settings-sync.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/settings-sync.md"
 }

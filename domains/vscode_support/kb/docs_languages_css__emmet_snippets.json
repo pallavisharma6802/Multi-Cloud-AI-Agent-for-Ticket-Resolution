@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Emmet snippets\n\n[Emmet abbreviation support](/docs/languages/emmet.md) is built into {% data variables.product.prodname_vscode_shortname %}, suggestions are listed along with other suggestions and snippets in the editor auto-completion list.\n\n>**Tip:** See the CSS section of the [Emmet cheat sheet](https://docs.emmet.io/cheat-sheet) for valid abbreviations.\n\n{% data variables.product.prodname_vscode_shortname %} also supports [User Defined Snippets](/docs/editing/userdefinedsnippets.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/css.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/css.md"
 }

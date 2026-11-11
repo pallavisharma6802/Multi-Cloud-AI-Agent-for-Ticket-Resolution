@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Edit code\n\nThe editor combines general text-editing features with language-aware assistance. Use [basic editing](/docs/editing/codebasics.md) features such as multiple cursors, search and replace, and automatic save in any text file. For supported programming languages, [IntelliSense](/docs/editing/intellisense.md) uses information about your code to provide completions, parameter information, and inline documentation.\n\n[Code navigation](/docs/editing/editingevolved.md) helps you move between definitions, references, and symbols across a project. You can transform code with language-aware [refactoring tools](/docs/editing/refactoring.md) and reuse common code with [snippets](/docs/editing/userdefinedsnippets.md). These capabilities come from built-in language support and extensions, so the exact features vary by language. Visit the [language documentation](/docs/languages/overview.md) to set up support for your technology stack.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/overview.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/getting-started/overview.md"
 }

@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Settings reference\n\n| Setting | Default | Description |\n|---------|---------|-------------|\n| `setting(github.copilot.chat.localIndex.enabled)` | `true` | Enable local session tracking (prerequisite for sync) |\n| `setting(chat.sessionSync.enabled)` | `false` | Sync sessions to your GitHub account (Experimental) |\n| `setting(chat.sessionSync.excludeRepositories)` | `[]` | Repository patterns to exclude from sync (Experimental) |",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/sessions/session-history.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/sessions/session-history.md"
 }

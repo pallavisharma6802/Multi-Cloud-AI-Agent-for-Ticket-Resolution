@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Smart Selection\n\nWith [Smart Selection](/updates/v1_33.md#smart-select-api) (semantic selection), you can expand or shrink the selection range based on the semantic information of the caret position in your source code.\n\n* To expand the selection, use `kb(editor.action.smartSelect.expand)`.\n* To shrink the selection, use `kb(editor.action.smartSelect.shrink)`.\n\n<video src=\"images/java-editing/smart-selection.mp4\" autoplay loop muted playsinline controls title=\"Smart selections\">\n</video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-editing.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-editing.md"
 }

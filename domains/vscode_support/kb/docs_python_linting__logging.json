@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Logging\n\nLogs for linters are available in the **Output** panel (`kb(workbench.action.output.toggleOutput)`) when you select `<linter name>` from the drop down menu.\n\nYou can change the log level for a linter extension by running the **Developer: Set Log Level** command from the Command Palette (`kb(workbench.action.showCommands)`). Select the extension from the **Extension Logs** group, and then select the desired log level.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/linting.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/python/linting.md"
 }

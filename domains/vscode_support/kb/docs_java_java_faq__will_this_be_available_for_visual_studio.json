@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Will this be available for Visual Studio?\n\nCurrently we don't plan to extend the Java support to Visual Studio. There are already great IDEs for Java and we're focusing on {% data variables.product.prodname_vscode_shortname %} to provide a lightweight experience in a polyglot editor.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-faq.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-faq.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Tasks\n\n### Task Quick Pick updates\n\nThe task Quick Pick, shown when the **Run Task** command is executed, has been updated to show you which task providers are still running. If you don't need tasks from that provider, the **Stop Detecting** button will immediately show you the tasks that have been detected so far, so you don't have to wait for any slow task providers.\n\n<video src=\"images/1_43/tasks_stop_detecting.mp4\" title=\"Video showing Tasks Stop Detecting.\" autoplay loop controls muted></video>\n*Theme: [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme), Font: [Fira Code](https://github.com/tonsky/FiraCode)*\n\n### Task instance limit\n\nThe tasks `\"runOptions\"` now includes an `\"instanceLimit\"`, which specifies the number of instances of a task that are permitted. The default `\"instanceLimit\"` is 1.\n\n### promptString password input\n\nThe `\"promptString\"` user input type can have `\"password\": true`, which will cause the dropdown input box to obscure the typed content like a password.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_43.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_43.md"
 }

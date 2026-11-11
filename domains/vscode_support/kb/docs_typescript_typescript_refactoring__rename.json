@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Rename\n\nOne of the simplest refactorings is to rename a method or variable. Press `kb(editor.action.rename)` to rename the symbol under the cursor across your TypeScript project:\n\n![Renaming a method](images/refactoring/rename.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/typescript/typescript-refactoring.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/typescript/typescript-refactoring.md"
 }

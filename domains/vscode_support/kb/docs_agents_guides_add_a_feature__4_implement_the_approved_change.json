@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## 4. Implement the approved change\n\nAsk the agent to implement only the agreed scope:\n\n```prompt\nImplement the approved plan using this project's existing patterns.\nAdd tests for the agreed acceptance criteria and update the API\ndocumentation. Do not add dependencies or refactor unrelated code.\n\nRun the targeted tests, then the related suite. Report the commands,\npass and fail counts, and any checks that were skipped or could not run.\nIf the plan needs to change, explain why and wait for my decision.\n```\n\nReview tool requests and the changing files as the agent works. If it discovers a shared dependency or proposes a broader API change, revisit the plan rather than letting the scope expand implicitly.\n\nIf the agent changes unrelated behavior, send a focused correction. For repeated failures or unwanted changes, use the [agent recovery guide](/docs/agents/guides/get-agent-back-on-track.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/add-a-feature.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/add-a-feature.md"
 }

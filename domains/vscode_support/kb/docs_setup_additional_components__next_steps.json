@@ -4,5 +4,5 @@
   "category": "INSTALLATION",
   "intent": "installation",
   "content": "## Next steps\n\n* [User Interface](/docs/editing/getting-started/userinterface.md) - A quick orientation around {% data variables.product.prodname_vscode_shortname %}.\n* [User/Workspace Settings](/docs/configure/settings.md) - Learn how to configure {% data variables.product.prodname_vscode_shortname %} to your preferences through settings.\n* [Languages](/docs/languages/overview.md) - {% data variables.product.prodname_vscode_shortname %} supports many programming languages out-of-the-box as well as many more through community created extensions.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/additional-components.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/setup/additional-components.md"
 }

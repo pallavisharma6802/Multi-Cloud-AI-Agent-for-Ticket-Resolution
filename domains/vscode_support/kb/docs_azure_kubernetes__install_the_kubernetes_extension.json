@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Install the Kubernetes extension\n\nFor a fully integrated Kubernetes experience, you can install the [Kubernetes Tools](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools) extension, which lets you quickly develop Kubernetes manifests and HELM charts. With the extension, you can also deploy containerized micro-service based applications to local or Azure Kubernetes clusters and debug your live applications running in containers on Kubernetes clusters. It also makes it easy to browse and manage your Kubernetes clusters in {% data variables.product.prodname_vscode_shortname %} and provides seamless integration with [Draft](https://draft.sh/) to streamline Kubernetes development.\n\nTo install the Kubernetes extension, open the Extensions view (`kb(workbench.view.extensions)`) and search for \"kubernetes\". Select the Microsoft [Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools) extension.\n\n![Install Kubernetes](images/kubernetes/install-kubernetes.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/kubernetes.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/azure/kubernetes.md"
 }

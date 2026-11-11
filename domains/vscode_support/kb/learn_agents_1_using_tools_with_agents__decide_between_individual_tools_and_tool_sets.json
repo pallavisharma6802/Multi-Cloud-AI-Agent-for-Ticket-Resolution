@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Decide between individual tools and tool sets\n\nIndividual tools work well for one-off requests. Tool sets work better when you repeat the same setup.\n\n| Use | Good fit | Example |\n| --- | --- | --- |\n| Individual tools | A short task with one clear source of context. | Explain a file with `#codebase` and no terminal access. |\n| Tool set | A repeated workflow that needs the same group of tools. | A Python maintenance workflow with search, edit, testing, and Python language tools. |\n| Custom agent tools | A role that should always run with the same boundaries. | A planning agent with search and web tools, but no edit or terminal tools. |",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/1-using-tools-with-agents.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/agents/1-using-tools-with-agents.md"
 }

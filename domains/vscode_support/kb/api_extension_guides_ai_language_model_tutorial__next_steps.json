@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Next Steps\n\nIn this tutorial, you learned how to create a VS Code extension that integrates AI into the editor with the language model API. You used the VS Code extension API to get the code from the current tab, sent it to the model with a custom prompt, and then parsed and displayed the model result right in the editor using decorators.\n\nTo add a conversational teaching workflow, [package a code-tutor plugin with skills, MCP tools, and MCP Apps](/docs/agent-customization/migrate-customizations.md#example-migrate-a-code-tutor-to-a-plugin). Keep editor-specific functionality, such as annotations and diagnostics, in the extension and expose it through [extension tools](/api/extension-guides/ai/tools.md) when the agent needs it.\n\nYou can find the complete source code for this tutorial in the [vscode-extensions-sample repository](https://github.com/microsoft/vscode-extension-samples/tree/main/lm-api-tutorial).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/language-model-tutorial.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-guides/ai/language-model-tutorial.md"
 }

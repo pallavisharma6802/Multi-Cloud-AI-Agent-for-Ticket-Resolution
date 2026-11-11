@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "# Multi-root Workspaces\n\nYou can work with multiple project folders in {% data variables.product.prodname_vscode %} with multi-root workspaces. This can be helpful when you are working on several related projects at one time. For example, you might have a repository with a product's documentation that you like to keep current when you update the product source code.\n\n![multi-root hero](images/multi-root-workspaces/hero.png)\n\n>**Note**: If you'd like to learn more about the {% data variables.product.prodname_vscode_shortname %} \"workspace\" concept, you can review [What is a {% data variables.product.prodname_vscode_shortname %} \"workspace\"?](/docs/editing/workspaces/workspaces.md) Unless you are explicitly creating a multi-root workspace, a \"workspace\" is just your project's single root folder.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/workspaces/multi-root-workspaces.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/workspaces/multi-root-workspaces.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Containers (version 0.158.x)\n\n### Support for SSH connection with password entry\n\nIf you connect to Docker using SSH, we now support prompting for a password (and passphrase) when required.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_53.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_53.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Editor - Scroll Viewport Commands\n\nThanks to a [community contribution](https://github.com/microsoft/vscode/pull/1051), VS Code has improved editor scroll support:\n\n* Scroll by one line up (`kb(scrollLineUp)`) / down (`kb(scrollLineDown)`)\n* Scroll by one page up (`kb(scrollPageUp)`) / down (`kb(scrollPageDown)`)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vDecember.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/vDecember.md"
 }

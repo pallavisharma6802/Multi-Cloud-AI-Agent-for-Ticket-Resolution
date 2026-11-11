@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Contributions to Extensions\n\nOur team maintains or contributes to a number of VS Code extensions. Most notably:\n\n* [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)\n* [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)\n* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)\n* [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)\n* [VSCodeVim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_6.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_6.md"
 }

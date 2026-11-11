@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## What are hooks?\n\n[Hooks](/docs/agent-customization/hooks.md) run custom shell commands at specific points in the agent's workflow, such as before or after a tool runs.\n\nInstead of manually running tasks, hooks let you define actions that happen automatically in response to events. This makes them ideal for automation, validation, and enforcing consistency across your workflow.\n\nAt a high level, hooks are commonly used to:\n\n- automate repetitive tasks\n- enforce security or coding standards\n- validate changes before or after execution\n- integrate with external tools",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/5-hooks.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/5-hooks.md"
 }

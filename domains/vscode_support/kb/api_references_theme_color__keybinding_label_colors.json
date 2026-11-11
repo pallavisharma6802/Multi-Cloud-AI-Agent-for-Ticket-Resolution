@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Keybinding label colors\n\nKeybinding labels are shown when there is a keybinding associated with a command. An example of the keybinding label can be seen in the Command Palette:\n\n![Keybinding label](images/theme-color/keybinding-label.png)\n\nUsages of the keybinding label include (but are not limited to):\n\n- The Command Palette\n- The Keyboard Shortcuts editor\n- The Keyboard Shortcuts recorder modal\n- The \"feature contribution\" section of an extension's marketplace page\n\nThe following customizations are available:\n\n- `keybindingLabel.background`: Keybinding label background color. The keybinding label is used to represent a keyboard shortcut.\n- `keybindingLabel.foreground`: Keybinding label foreground color. The keybinding label is used to represent a keyboard shortcut.\n- `keybindingLabel.border`: Keybinding label border color. The keybinding label is used to represent a keyboard shortcut.\n- `keybindingLabel.bottomBorder`: Keybinding label border bottom color. The keybinding label is used to represent a keyboard shortcut.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/theme-color.md"
 }

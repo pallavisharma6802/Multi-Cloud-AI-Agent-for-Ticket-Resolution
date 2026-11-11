@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# Testing Java with {% data variables.product.prodname_vscode %}\n\nTesting Java in {% data variables.product.prodname_vscode %} is enabled by the [Test Runner for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-test) extension. It's a lightweight extension to run and debug Java test cases.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-testing.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-testing.md"
 }

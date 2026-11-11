@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Editor\n\n### Inlay hint improvements\n\nWe have added the `setting(editor.inlayHints.maximumLength)` setting, which controls after how many characters inlay hints are truncated.\n\nWe have also revised the updating strategy for inlay hints and now, while typing, they should update sooner but not cause any horizontal movements of your cursor.\n\n### Experimental Edit Context\n\nThis milestone, we introduced a new experimental setting `setting(editor.experimentalEditContextEnabled)`. This setting enables the [EditContext API](https://www.w3.org/TR/edit-context/) to power the editing experience in VS Code. The adoption of the [EditContext API](https://www.w3.org/TR/edit-context/) has enabled us to fix certain IME composition bugs. Generally we believe it will improve the editing experience in the long term, and ultimately it will be enabled by default.\n\nMake sure to reload your VS Code window after enabling this setting to take advantage of it.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_94.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_94.md"
 }

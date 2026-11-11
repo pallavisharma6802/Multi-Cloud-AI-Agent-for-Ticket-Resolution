@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# Spring Boot in {% data variables.product.prodname_vscode %}\n\n{% data variables.product.prodname_vscode %} is an ideal lightweight development environment for Spring Boot application developers and there are several useful {% data variables.product.prodname_vscode_shortname %} extensions including:\n\n* [Spring Boot Tools](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-spring-boot)\n* [Spring Initializr](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-initializr)\n* [Spring Boot Dashboard](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-boot-dashboard)\n\nWe recommend installing the [Spring Boot Extension Pack](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-boot-dev-pack) that includes all of the extensions above.\n\nIf you run into any issues when using the features below, you can contact us by [opening an issue](https://github.com/microsoft/vscode-java-pack/issues).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-spring-boot.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-spring-boot.md"
 }

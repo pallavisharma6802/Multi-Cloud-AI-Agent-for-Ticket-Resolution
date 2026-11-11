@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "# Why agent customization matters\n\n<!-- IMAGE PLACEHOLDER - YouTube thumbnail embed showing the Customization UI -->\n[![Watch The Agent Customizations UI Nobody Knows About on YouTube (opens in new tab).](images/1-why-customization-matter/youtube-AZzCk-WGks4.jpg)](https://www.youtube.com/watch?v=AZzCk-WGks4)\n\nMost developers are using VS Code the same way: open chat, type something, and hope for a good result. Sometimes it works. Sometimes it doesn't.\n\nBut here's the problem. They never configure it.\n\nVS Code is no longer just an editor. It's an environment where you can define how AI works across your entire workflow. And if you're not doing that, you're essentially starting from scratch every time.\n\nThis guide covers what agent customization is, why it matters, and how to use the Agent Customizations view in VS Code.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/1-why-customization-matter.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/1-why-customization-matter.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Search\n\n### Results displayed as a tree view\n\nYou can now view search results in a tree! Just toggle between the list and tree view by clicking on the list/tree icon in the top corner of the Search view.\n\n![Search results shown as a tree view](images/1_72/search-tree-view.gif)\n\n_Theme: [Night Owl Light](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl) (preview on [vscode.dev](https://vscode.dev/editor/theme/sdras.night-owl))_\n\n### File decoration settings\n\nIn search results, the filename badges and colors that reflect file statuses can now be toggled on and off. The settings are **Search > Decorations: Badges** (`search.decorations.badges`) and **Search > Decorations: Colors** (`search.decorations.colors`).\n\n![Search results file decoration settings](images/1_72/search-file-decoration-settings.png)\n\n_Theme: [Night Owl Light](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl)  (preview on [vscode.dev](https://vscode.dev/editor/theme/sdras.night-owl))_",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_72.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_72.md"
 }

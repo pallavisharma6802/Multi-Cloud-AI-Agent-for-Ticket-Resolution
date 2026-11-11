@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Answer\n\nStart with runtime and deployment configuration plus tool-call traces, then revisit prompt wording. Hosted drift often comes from environment or integration differences that are invisible in prompt text alone. Once runtime parity is confirmed, prompt refinements become much more reliable.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
 }

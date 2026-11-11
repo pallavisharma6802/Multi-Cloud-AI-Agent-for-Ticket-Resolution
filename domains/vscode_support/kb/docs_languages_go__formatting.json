@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Formatting\n\nYou can format your Go file using `kb(editor.action.formatDocument)` or by running the **Format Document** command from the Command Palette or the context menu in the editor.\n\nBy default, formatting is run when you save your Go file. You can disable this behavior by setting `setting(editor.formatOnSave)` to `false` for the `[go]` language identifier. You can change this using your JSON setting files.\n\n```json\n\"[go]\": {\n        \"editor.formatOnSave\": false\n}\n```\n\nWhen you have multiple formatters activated for Go files, you can select the Go extension as the default formatter.\n\n```json\n\"[go]\": {\n    \"editor.defaultFormatter\": \"golang.go\"\n}\n```\n\nFormatting is provided by `gopls`. If you want `gofumpt`-style formatting, you can configure `gopls` to use `gofumpt`.\n\n```json\n\"gopls\": {\n    \"formatting.gofumpt\": true\n}\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/go.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/go.md"
 }

@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "## Status Bar sync actions\n\nThe Status Bar provides quick access to common repository and remote operations without opening the Source Control view.\n\n### Branch indicator\n\nThe lower-left corner contains the branch indicator and a separate sync or publish action:\n\n* **Current branch name**: select to switch branches.\n* **Sync status**: shows incoming (\u2193) and outgoing (\u2191) counts. Select the sync action to pull, then push.\n* **Publishing state**: shows **Publish Branch** when the current branch has no upstream. Select it to publish the branch.\n\n![Screenshot showing the branch indicator and sync status in the Status Bar.](images/repos-remotes/git-status-bar-sync.png)\n\nThe sync icon (rotating arrows) runs both operations. For push-only or pull-only actions, use the Source Control view or Command Palette instead.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/repos-remotes.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/repos-remotes.md"
 }

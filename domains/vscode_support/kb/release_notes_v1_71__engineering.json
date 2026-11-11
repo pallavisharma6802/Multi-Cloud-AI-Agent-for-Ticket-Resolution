@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Engineering\n\n### Electron 19 update\n\nIn this milestone, we finished the exploration to bundle Electron 19 into VS Code desktop and we want to thank everyone involved with self-hosting on Insiders. This update comes with Chromium `102.0.5005.167` and Node.js `16.14.2`.\n\n### Windows 7 support has ended\n\nMicrosoft [ended support for Windows 7](https://learn.microsoft.com/lifecycle/products/windows-7) in January 2020. However, Electron continued to support Windows 7 by patching the `libuv` library. With the Electron 19 update, the `libuv` patch [no longer works](https://github.com/electron/electron/issues/35219) and we recommend users update to a newer Windows version in order to use the VS Code desktop version. VS Code will no longer provide product updates and security fixes on Windows 7. You can learn more about upgrading Windows at [support.microsoft.com](https://support.microsoft.com/windows/windows-7-support-ended-on-january-14-2020-b75d4580-2cc7-895a-2c9c-1466d9a53962).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_71.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_71.md"
 }

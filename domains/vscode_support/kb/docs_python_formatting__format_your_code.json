@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Format your code\n\nYou can format your code by right-clicking on the editor and selecting **Format Document**, or by using the `kb(editor.action.formatDocument)` keyboard shortcut.\n\nYou can also add the following setting to your User `settings.json` file to enable formatting on save for your code:\n\n```json\n  \"[python]\": {\n    \"editor.formatOnSave\": true\n  }\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/formatting.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/python/formatting.md"
 }

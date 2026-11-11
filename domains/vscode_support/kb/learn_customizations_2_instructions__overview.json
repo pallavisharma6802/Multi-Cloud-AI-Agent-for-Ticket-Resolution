@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "# Introduction to custom instructions\n\n[![Watch Custom Instructions: How I Really Made Copilot Listen! on YouTube (opens in new tab).](images/2-instructions/youtube-dk2biPguo_E.jpg)](https://www.youtube.com/watch?v=dk2biPguo_E)\n\nYou\u2019ve probably been lied to about custom instructions.\n\nIf you\u2019re not using them properly, they\u2019re far more powerful than most people think.\n\nThis guide breaks down what custom instructions really are, how they\u2019re meant to be used, and how they can transform your workflow in VS Code.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/2-instructions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/2-instructions.md"
 }

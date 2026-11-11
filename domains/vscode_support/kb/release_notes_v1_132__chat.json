@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Chat\n\n### Terminal output reflow\n\nExpanded terminal output in Chat reflows to the available width as the view is resized. Previously, output used a fixed width, which caused lines to wrap too early and left unused space in wider views.\n\n<video src=\"images/1_132/terminal-output-reflow.mp4\" title=\"Video showing terminal output in Chat reflowing to the available width as the view is resized.\" autoplay loop controls muted></video>\n\nThis improvement applies to terminal output from both the Local agent harness and the Copilot harness running on the [agent host](#agent-host).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_132.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_132.md"
 }

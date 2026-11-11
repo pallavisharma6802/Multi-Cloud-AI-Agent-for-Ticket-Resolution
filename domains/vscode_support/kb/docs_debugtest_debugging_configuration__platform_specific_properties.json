@@ -4,5 +4,5 @@
   "category": "DEBUGGING",
   "intent": "debugging",
   "content": "## Platform-specific properties\n\nUse `windows`, `linux`, or `osx` sections to override properties for a specific operating system:\n\n```json\n{\n    \"version\": \"0.2.0\",\n    \"configurations\": [\n        {\n            \"type\": \"node\",\n            \"request\": \"launch\",\n            \"name\": \"Launch Program\",\n            \"program\": \"${workspaceFolder}/app.js\",\n            \"args\": [\"scripts/start.js\"],\n            \"windows\": {\n                \"args\": [\"scripts\\\\start.js\"]\n            }\n        }\n    ]\n}\n```\n\nProperties in an operating system section override properties at the configuration level. The `type` property cannot be platform-specific because it determines which debugger runs the configuration, including in remote debugging scenarios.\n\nYou can also put `presentation` in an operating system section to control where the configuration appears on each platform.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/debugging-configuration.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/debugtest/debugging-configuration.md"
 }

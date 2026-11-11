@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Built with love for the Web\n\n{% data variables.product.prodname_vscode_shortname %} includes enriched built-in support for Node.js development with JavaScript and TypeScript, powered by the same underlying technologies that drive Visual Studio. {% data variables.product.prodname_vscode_shortname %} also includes great tooling for web technologies such as JSX/React, HTML, CSS, SCSS, Less, and JSON.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editor/whyvscode.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editor/whyvscode.md"
 }

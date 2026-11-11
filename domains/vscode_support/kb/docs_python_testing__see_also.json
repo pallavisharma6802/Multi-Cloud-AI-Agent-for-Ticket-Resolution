@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## See also\n\n- [Python environments](/docs/python/environments.md) - Control which Python interpreter is used for editing and debugging.\n- [Settings reference](/docs/python/settings-reference.md) - Explore the full range of Python-related settings in {% data variables.product.prodname_vscode_shortname %}.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/testing.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/python/testing.md"
 }

@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# TypeScript tutorial in {% data variables.product.prodname_vscode %}\n\n[TypeScript](https://www.typescriptlang.org) is a typed superset of JavaScript that compiles to plain JavaScript. It offers classes, modules, and interfaces to help you build robust components.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/typescript/typescript-tutorial.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/typescript/typescript-tutorial.md"
 }

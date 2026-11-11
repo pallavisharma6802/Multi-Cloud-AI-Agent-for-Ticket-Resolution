@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Remote development and container support\n\nWe'd also like to recommend a couple of other extensions that are useful for remote and container development scenarios.\n\n* The [Remote Development](/docs/remote/remote-overview.md) extensions let you use {% data variables.product.prodname_vscode_shortname %} to access a container, a remote machine, or the Windows Subsystem for Linux.\n* You can use the [Container Tools](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-containers) extension to build docker images and work with image registries.\n* [Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools) extension provides an Explorer view to manage clusters and the nodes inside. It also provides advanced syntax support for editing Kubernetes manifest files.\n* [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) is a great tool to use when you need to collaborate with someone else on the same code base.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/extensions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/extensions.md"
 }

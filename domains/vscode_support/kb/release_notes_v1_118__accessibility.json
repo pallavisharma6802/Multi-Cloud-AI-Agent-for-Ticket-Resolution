@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Accessibility\n\n### Keyboard shortcut to focus terminal from question carousel\n\n**Setting**: `setting(accessibility.verbosity.chatQuestionCarousel)`\n\nWhen Copilot asks a question via the question carousel triggered by a terminal interaction, you can now press `kb(workbench.action.chat.focusQuestionCarouselTerminal)` to quickly return focus to the terminal. Previously, the only way to navigate back was by selecting the **Focus Terminal** button.\n\nThe button's aria label now also includes the keybinding hint to make it more discoverable for screen reader users. You can control whether navigation hints appear in the carousel's aria label with the `setting(accessibility.verbosity.chatQuestionCarousel)` setting.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_118.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_118.md"
 }

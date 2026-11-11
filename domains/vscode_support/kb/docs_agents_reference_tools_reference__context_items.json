@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Context items\n\nType `#` followed by a file, folder, or symbol name, then select the item from the picker. The placeholders below represent the name of the item you want to attach.\n\n| Reference | Context supplied |\n|---|---|\n| `#<file>` | A file selected from the context picker. |\n| `#<folder>` | A folder selected from the context picker. |\n| `#<symbol>` | A code symbol. Open the file containing the symbol first. |\n| `#selection` | The current editor selection, available when text is selected. |\n\nUse **Add Context** or drag items into chat to attach other context, such as images, errors, or GitHub issues. See [Add context to chat](/docs/chat/copilot-chat-context.md) for supported sources and attachment methods.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/tools-reference.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/reference/tools-reference.md"
 }

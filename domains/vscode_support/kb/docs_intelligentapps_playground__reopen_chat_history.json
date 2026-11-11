@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Reopen chat history\n\nFoundry Toolkit saves completed chat turns locally as YAML files in `.aitk\\chats` under the extension host user's home directory. If you use a remote extension host, the files are stored under that host user's home directory.\n\nSelect **History** to reopen, rename, or delete a saved chat. Select **New Playground** to start another chat.\n\nHistory contains successfully completed turns. It does not preserve an unsent draft or guarantee recovery of a stopped, failed, or incomplete request. The files are local history, not Foundry portal history, cloud versions, or published agents.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/playground.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/playground.md"
 }

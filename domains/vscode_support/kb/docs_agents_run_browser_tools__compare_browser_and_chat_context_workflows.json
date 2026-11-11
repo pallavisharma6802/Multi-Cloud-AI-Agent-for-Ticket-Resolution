@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Compare browser and chat context workflows\n\nBrowser tools are different from manually adding browser content to a chat prompt:\n\n| Workflow | Who controls the browser | Best for |\n|----------|--------------------------|----------|\n| Browser tools | The agent navigates and interacts autonomously. | End-to-end validation and iterative fixes. |\n| Add to Chat | You select elements, screenshots, or console logs to attach to a prompt. | Pointing out a specific visual or runtime issue. |\n| Share with Agent | You grant the agent access to an existing browser tab. | Authenticated or stateful browser sessions. |\n\nUse the **Add to Chat** actions when you want to choose the exact browser context yourself. Learn more about [adding browser context to chat](/docs/debugtest/integrated-browser.md#add-context-to-ai-chat).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/browser-tools.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/browser-tools.md"
 }

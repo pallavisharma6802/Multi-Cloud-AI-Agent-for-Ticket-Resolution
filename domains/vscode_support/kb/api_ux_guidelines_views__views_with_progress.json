@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Views With Progress\n\nYou can also [show progress in a view](/api/references/vscode-api#ProgressLocation) by referencing the view's ID.\n\n![View with progress](images/examples/view-with-progress.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/views.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/ux-guidelines/views.md"
 }

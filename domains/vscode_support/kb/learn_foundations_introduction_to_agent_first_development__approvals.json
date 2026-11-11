@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Approvals\n\nWhen the agent wants to run a terminal command for the first time, it pauses and asks for permission. The agent does not run commands on your machine without asking first.\n\n![Approval prompt in VS Code chat asking permission before running a terminal command.](../images/foundations/approvals.png)\n\nReview the command and select **Allow** if it looks right. If something looks off, select **Skip** and correct the direction.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/introduction-to-agent-first-development.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundations/introduction-to-agent-first-development.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Dev Containers\n\n### GPG keyboxd support\n\nThe GPG forwarding for Dev Containers now supports the use of GPG's new `keyboxd` service for public keys by the local machine, the container, or both.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_92.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_92.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "{\n  \"markdown\": \"\",\n  \"title\": \"New in VS Code 1.121\",\n  \"features\": [\n    {\n      \"icon\": \"hubot\",\n      \"title\": \"Agents window (preview)\",\n      \"description\": \"The Agents window is built for agent-driven development across multiple projects and sessions.\"\n    },\n    {\n      \"icon\": \"markdown\",\n      \"title\": \"Built-in Mermaid diagrams\",\n      \"description\": \"Mermaid diagrams now render natively in the Markdown preview, notebook Markdown cells, and chat.\"\n    }\n  ],\n  \"buttons\": [\n    {\n      \"label\": \"Open Agents Window\",\n      \"commandId\": \"workbench.action.openAgentsWindow\",\n      \"style\": \"primary\"\n    },\n    {\n      \"label\": \"Show Release Notes\",\n      \"commandId\": \"update.showCurrentReleaseNotes\",\n      \"style\": \"secondary\",\n      \"args\": [\"1.121.0\"]\n    }\n  ]\n}",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_121_update.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_121_update.md"
 }

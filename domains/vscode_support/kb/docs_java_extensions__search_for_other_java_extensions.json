@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Search for other Java extensions\n\nIf the extensions above do not meet your requirement, you can also search for other Java related extensions within {% data variables.product.prodname_vscode %}. Here are the steps:\n\n1. Go to the **Extensions** view (`kb(workbench.view.extensions)`).\n2. Filter the extensions list by typing \"java\".\n\n![Java Extensions](images/extensions/extensions.png)\n\nWe also appreciate contributions to any of our existing extensions and we hope you'll create new Java extensions if you don't find what you're looking for in the Marketplace.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/extensions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/extensions.md"
 }

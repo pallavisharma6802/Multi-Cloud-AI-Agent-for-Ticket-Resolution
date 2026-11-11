@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Settings\nThe JSON parser is now more fault tolerant.  For example, if you have a trailing comma in **settings.json**, VS Code will no longer silently fail to apply your customized settings.  We'll still provide a visual indicator that there is an issue with the JSON. This example displays a red squiggly line on the last bracket, and a red box to the far right of Line 5.\n\n![JSON settings errors](images/0_3_0/settingserrors.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_3_0.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v0_3_0.md"
 }

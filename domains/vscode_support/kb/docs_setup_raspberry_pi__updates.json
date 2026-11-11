@@ -4,5 +4,5 @@
   "category": "INSTALLATION",
   "intent": "installation",
   "content": "## Updates\n\nYour Raspberry Pi should handle updating {% data variables.product.prodname_vscode_shortname %} in the same way as other packages on the system:\n\n```bash\nsudo apt update\nsudo apt upgrade code\n```\n\nYou can always check when a new release is available in our [Updates](/updates) page.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/raspberry-pi.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/setup/raspberry-pi.md"
 }

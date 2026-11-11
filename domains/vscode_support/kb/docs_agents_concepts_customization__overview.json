@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Understand agent customization\n\nAI models have broad knowledge, but that knowledge isn't a substitute for your project's current requirements or your organization's internal practices. Agent customization adapts an agent to your environment by adding persistent context, repeatable workflows, specialized roles, external tools, and deterministic controls.\n\nThis article explains how customization types differ, when they apply, and what they can and can't control. Use it to choose the right building blocks for your workflow. To install, create, and verify a customization, see [Customize agents for your workflow](/docs/agent-customization/overview.md).\n\n<div class=\"docs-action\" data-show-in-doc=\"false\" data-show-in-sidebar=\"true\" title=\"Get started with customizations\">\nFollow a hands-on tutorial to discover the customization options and configure them for your project.\n\n* [Customize AI for your project](/docs/agents/guides/customize-copilot-guide.md)\n\n</div>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/customization.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/concepts/customization.md"
 }

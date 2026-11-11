@@ -4,5 +4,5 @@
   "category": "DEBUGGING",
   "intent": "debugging",
   "content": "## Tab placement\n\nUse the `setting(workbench.browser.newTabPlacement)` setting to control where new browser tabs open, so you can keep browser tabs separate from your code editors. The setting supports the following values:\n\n| Value | Description |\n|-------|-------------|\n| `activeGroup` | Browser tabs open in the active editor group. This is the default. |\n| `sideGroup` | Browser tabs open in a dedicated group to the side. This group is locked so that only browser tabs open there. |\n| `window` | Browser tabs open in a dedicated auxiliary window. This window group is also locked to only browser tabs. |\n\nYou can still reorganize tabs as needed. Pages opened from an existing tab, for example by selecting a link with `kbstyle(Ctrl+click)`, open in the same group as the parent tab.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/integrated-browser.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/debugtest/integrated-browser.md"
 }

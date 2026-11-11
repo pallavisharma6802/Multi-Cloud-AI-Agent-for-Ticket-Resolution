@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Installer\n\nThe Debian package now prompts you to confirm whether you want to add the [packages.microsoft.com](https://packages.microsoft.com) repository. This enables you to update the package afterwards by using apt.\n\n![Terminal showing the prompt for adding the Microsoft packages repo during the install.](images/1_93/debian-debconf-pmc-ask.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_93.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_93.md"
 }

@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "# Understanding VS Code customization features together\n\n[![Watch Instructions vs Skills vs Hooks & More Explained By Copilot Itself on YouTube (opens in new tab).](images/7-customization-features-explained/youtube-oyMMotLlcgQ.jpg)](https://www.youtube.com/watch?v=oyMMotLlcgQ)\n\nThere are quite a few customization options in VS Code.\n\nAnd it\u2019s easy to get them confused.\n\nThis guide breaks down how features like custom instructions, prompt files, agent skills, custom agents, and hooks all fit together \u2014 and shows how you can use Copilot itself to understand the differences.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/7-customization-features-explained.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/7-customization-features-explained.md"
 }

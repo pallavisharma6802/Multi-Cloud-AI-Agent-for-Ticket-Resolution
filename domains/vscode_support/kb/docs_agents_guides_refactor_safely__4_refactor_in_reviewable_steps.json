@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## 4. Refactor in reviewable steps\n\nAfter approving the plan, start with one small step:\n\n```prompt\nImplement the first approved step and run its targeted tests.\nPreserve the baseline assertions and public behavior. Stop after this\nstep so I can review the diff before you update the remaining callers.\nReport any unexpected behavior or required plan change.\n```\n\nInspect the diff and test output. Continue with the next step only after the current one is understood and validated.\n\nKeep the tests that exercise behavior through existing public entry points. New unit tests for a helper are useful, but they don't replace evidence that the original callers still work.\n\nIf tests depend on private implementation details that the refactor removes, review any necessary test updates separately. Preserve the observable expectations instead of rewriting the tests to match the new code automatically.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/refactor-safely.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/refactor-safely.md"
 }

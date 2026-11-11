@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Copy Path\nTo copy the path of any file or folder in the Explorer, right-click it and choose **Copy Path**.\n\n![Copy Path](images/0_3_0/CopyPath.gif)\n\nA new global action, **Files: Copy Path of the Active File**, has been added to the Command Palette.\n\n![Palette Copy Path](images/0_3_0/CopyPathPalette.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_3_0.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v0_3_0.md"
 }

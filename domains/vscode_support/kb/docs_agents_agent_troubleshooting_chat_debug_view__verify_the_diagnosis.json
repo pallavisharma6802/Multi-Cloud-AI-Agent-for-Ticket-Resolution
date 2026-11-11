@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Verify the diagnosis\n\nAfter you identify a likely cause:\n\n1. Change one relevant condition, such as a file pattern, server configuration, context attachment, or tool selection.\n1. Repeat a comparable request.\n1. Inspect the same event or request section.\n1. Confirm that both the diagnostic evidence and the user-visible result changed as expected.\n\nIf the evidence does not change, restore the previous configuration and investigate the next likely cause.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/agent-troubleshooting/chat-debug-view.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/agent-troubleshooting/chat-debug-view.md"
 }

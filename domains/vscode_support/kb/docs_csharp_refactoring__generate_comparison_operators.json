@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Generate comparison operators\n\n**What:** Lets you generate Comparison operators for types that implement `IComparable`.\n\n**When:** You have a type that implements `IComparable` we will automatically add the comparison operators.\n\n**Why:** If you are implementing a value type, you should consider overriding the `Equals` method to gain increased performance over the default implementation of the `Equals` method on `ValueType`.\n\n**How-to:**\n\n1. Place your cursor either inside the class or on the IComparable keyword.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select **Generate comparison operators** from the drop-down menu.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/refactoring.md"
 }

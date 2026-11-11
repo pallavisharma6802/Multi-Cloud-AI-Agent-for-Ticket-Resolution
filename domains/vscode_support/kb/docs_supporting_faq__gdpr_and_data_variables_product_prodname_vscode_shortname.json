@@ -4,5 +4,5 @@
   "category": "REFERENCE",
   "intent": "reference",
   "content": "## GDPR and {% data variables.product.prodname_vscode_shortname %}\n\nNow that the General Data Protection Regulation (GDPR) is in effect, we want to take this opportunity to reiterate that we take privacy very seriously. That's both for Microsoft as a company and specifically within the {% data variables.product.prodname_vscode_shortname %} team.\n\nTo support GDPR:\n\n* The {% data variables.product.prodname_vscode_shortname %} product notifies all users that they can opt out of telemetry collection.\n* The team actively reviews and classifies all telemetry sent (documented in [our OSS codebase](https://github.com/microsoft/vscode/pull/34997)).\n* There are valid data retention policies in place for any data collected, for example crash dumps.\n\nYou can learn more about {% data variables.product.prodname_vscode_shortname %}'s GDPR compliance in the [telemetry documentation](/docs/configure/telemetry.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/supporting/faq.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/supporting/faq.md"
 }

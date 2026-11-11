@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Source Control\n\n### Editor change navigation\n\nTwo new actions let you navigate between active changes in the current file:\n\n* **Move to Next Change**: `kb(workbench.action.editor.nextChange)`\n* **Move to Previous Change**: `kb(workbench.action.editor.previousChange)`",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_21.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_21.md"
 }

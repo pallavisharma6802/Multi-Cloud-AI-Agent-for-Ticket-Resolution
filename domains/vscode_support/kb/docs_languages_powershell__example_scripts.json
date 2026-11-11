@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Example scripts\n\nExample scripts are included with the extension and can be found at the following path.\n\n`~/.vscode/extensions/ms-vscode.PowerShell-<version>/examples`\n\nTo open or view the examples in {% data variables.product.prodname_vscode_shortname %}, run the following from your PowerShell command prompt:\n\n```powershell\ncode (Get-ChildItem ~\\.vscode\\extensions\\ms-vscode.PowerShell-*\\examples)[-1]\n```\n\nYou can also open the examples from the Command Palette (`kb(workbench.action.showCommands)`) with\nthe **PowerShell: Open Examples Folder** command.\n\n![Open PowerShell Examples][43]",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/powershell.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/powershell.md"
 }

@@ -4,5 +4,5 @@
   "category": "TERMINAL",
   "intent": "terminal",
   "content": "## Next steps\n\nThe basics of the terminal have been covered in this document. Read on to find out more about:\n\n* [Terminal inline chat](/docs/chat/inline-chat.md#use-terminal-inline-chat) - AI-powered suggestions right in your terminal.\n* [Tasks](/docs/debugtest/tasks.md) - Tasks let you integrate with external tools and leverage the terminal heavily.\n* [Mastering {% data variables.product.prodname_vscode_shortname %}'s Terminal](https://www.growingwiththeweb.com/2017/03/mastering-vscodes-terminal.html) - An external blog with plenty of power user tips for the terminal.\n* Explore terminal commands by browsing the keyboard shortcuts within {% data variables.product.prodname_vscode_shortname %} (**Preferences: Open Keyboard Shortcuts** then search on 'terminal').",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/terminal/basics.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/terminal/basics.md"
 }

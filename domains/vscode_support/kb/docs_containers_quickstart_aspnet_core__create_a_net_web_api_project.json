@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Create a .NET Web API project\n\n1. Create a folder for the project.\n1. Open developer command prompt in the project folder and initialize the project:\n\n   ```bash\n   dotnet new webapi --no-https\n   ```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/quickstart-aspnet-core.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/containers/quickstart-aspnet-core.md"
 }

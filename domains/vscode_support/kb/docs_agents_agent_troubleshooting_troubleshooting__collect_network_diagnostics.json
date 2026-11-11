@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Collect network diagnostics\n\nIf Copilot cannot connect, collect diagnostics to identify failed connectivity checks and relevant proxy or network configuration.\n\n1. Open the Command Palette (`kb(workbench.action.showCommands)`).\n1. Run **GitHub Copilot: Chat Diagnostics**.\n1. Review the diagnostic report that opens in an editor.\n\nIf a check fails, compare the result with your firewall, proxy, and VPN configuration. A report without failed checks rules out only the connections covered by the report, so continue with the Copilot output channels if the problem persists.\n\nFor required domains and network-specific guidance, see [Network and firewall configuration for Copilot](/docs/agents/agent-troubleshooting/faq.md#network-and-firewall-configuration-for-copilot).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/agent-troubleshooting/troubleshooting.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/agent-troubleshooting/troubleshooting.md"
 }

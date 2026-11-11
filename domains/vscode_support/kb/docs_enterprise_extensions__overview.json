@@ -4,5 +4,5 @@
   "category": "ENTERPRISE",
   "intent": "enterprise",
   "content": "# Manage extensions in enterprise environments\n\nAs an IT admin, you can configure extension installation and enablement in {% data variables.product.prodname_vscode %}, host a private marketplace, and preinstall extensions for your development teams.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/enterprise/extensions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/enterprise/extensions.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Improved Documentation\nWith this release we updated almost all of our documentation to help you get more out of VS Code.\n\nWe broke down the content into four sections:\n* [Overview](/docs) - A quick summary of all the documentation including a video overview\n* [Editor](/docs/editing/codebasics.md) - An introduction to VS Code itself from editing all the way to debugging and tasks\n* [Languages](/docs/languages/overview.md) - Walkthroughs on how to get the best out of VS Code when using specific languages e.g. JavaScript\n\n![Updated docs for VS Code](images/0_7_0/docsUpdate.png)\n\n>**Tip:** You can search our site via the search box in the header.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_7_0.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v0_7_0.md"
 }

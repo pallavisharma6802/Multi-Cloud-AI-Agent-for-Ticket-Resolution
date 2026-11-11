@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Debug Adapter Development\n\nFor Node.js based debug adapter development, we've made the debug adapter test support available as an npm module [vscode-debugadapter-testsupport](https://www.npmjs.com/package/vscode-debugadapter-testsupport).\n\nThe source for this module lives in the GitHub repository [vscode-debugadapter-node](https://github.com/microsoft/vscode-debugadapter-node).\n\nYou can find examples of how to use the module here:\n\n* [Node Debug](https://github.com/microsoft/vscode-node-debug/blob/main/src/tests/adapter.test.ts)\n* [Mono Debug](https://github.com/microsoft/vscode-mono-debug/blob/main/src/typescript/tests/adapter.test.ts)\n* [Mock Debug](https://github.com/microsoft/vscode-mock-debug/blob/main/src/tests/adapter.test.ts)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vApril.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/vApril.md"
 }

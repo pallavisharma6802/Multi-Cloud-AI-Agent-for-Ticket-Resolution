@@ -4,5 +4,5 @@
   "category": "INSTALLATION",
   "intent": "installation",
   "content": "# Installing {% data variables.product.prodname_vscode %} on Windows\n\n{% data variables.product.prodname_vscode %} is available for Windows through a user installer, a system installer, and a ZIP archive. The User setup is the recommended installation for most people because it does not require administrator permissions and supports smoother background updates.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/windows.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/setup/windows.md"
 }

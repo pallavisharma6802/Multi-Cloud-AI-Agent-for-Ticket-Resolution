@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Extension Authoring\n\n### Allow opening files when using `vscode.openFolder` command\n\nExtensions that call the `vscode.openFolder` command can now pass `filesToOpen?: UriComponents[]` as options to select files to open in the workspace window that opens.\n\nExample:\n\n```ts\nvscode.commands.executeCommand('vscode.openFolder', <folder uri>, { filesToOpen: [ /* files to open */]});\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_102.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_102.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Cost management\n\n### Subagent credits\n\nWhen an agent delegates work to a subagent, it can be difficult to know the cost of the delegated work. To make this more transparent, you can now hover over a subagent section in the chat response to see the AI credits used by that subagent.\n\n![Screenshot showing the credit usage hover for a subagent section in a chat response.](images/1_127/subagent_cost_hover.webp)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_127.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_127.md"
 }

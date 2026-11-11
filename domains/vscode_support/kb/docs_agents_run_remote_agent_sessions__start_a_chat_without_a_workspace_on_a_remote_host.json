@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Start a chat without a workspace on a remote host\n\nUse a chat without a workspace when a task needs the resources or environment of a remote host but doesn't need a repository. First, connect the host over SSH or a dev tunnel.\n\nTo start a chat without a workspace:\n\n1. Select **New** or press `kb(workbench.action.chat.newChat)` to start a new agent session.\n\n1. In the workspace picker, select the **Chat** entry for a connected remote host without choosing a folder. The entry identifies the host where the chat runs.\n\n1. Choose an agent harness, enter your prompt, and press `kbstyle(Enter)`.\n\nThe main workspace picker also shows folders from connected remote hosts alongside local folders. Select a remote folder there when the task needs an existing workspace.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/remote-agent-sessions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/remote-agent-sessions.md"
 }

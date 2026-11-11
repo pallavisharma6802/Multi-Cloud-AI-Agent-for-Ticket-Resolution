@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## New identifier guidelines\n\nWhen defining a new language identifier, use the following guidelines:\n\n- Use the lowercased programming language name.\n- Search for other extensions in the Marketplace to find out if a language identifier has already been used.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/identifiers.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/identifiers.md"
 }

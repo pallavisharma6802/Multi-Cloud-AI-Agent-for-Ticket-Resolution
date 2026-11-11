@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Configure C++ IntelliSense\n\nThis video walks you through the steps to configure C++ IntelliSense for your project.\n\n[![Watch Configure C++ IntelliSense in {% data variables.product.prodname_vscode %} on Microsoft Learn (opens in new tab).](images/introvideos-cpp/video-configure-cpp-intellisense.jpg)](https://learn.microsoft.com/shows/one-dev-minute/configure-c-intellisense-in-visual-studio-code)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/introvideos-cpp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/introvideos-cpp.md"
 }

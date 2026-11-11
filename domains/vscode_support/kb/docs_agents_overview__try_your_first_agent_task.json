@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Try your first agent task\n\n{% action-card title=\"Build your first app with an agent\" %}\nBuild and validate a small app, then review the result. The quickstart uses the {% data variables.product.prodname_copilot %} harness with recommended defaults, so you don't need to configure every option first.\n\n* [Start the agents quickstart](/docs/agents/quickstart.md)\n\n{% /action-card %}\n\n* **Already use agents:** Follow the [experienced-agent fast track](/docs/agents/guides/overview.md#experienced-agent-fast-track) in your own repository.\n* **New to {% data variables.product.prodname_vscode_shortname %}:** First [install the editor and open a workspace](/docs/getstarted/overview.md).\n\n<video src=\"images/agents-overview/build-with-ai-overview.mp4\" title=\"Video overview of building with AI in VS Code, showing inline suggestions, collaboration alongside code, and task orchestration in the Agents window.\" autoplay loop controls muted></video>\n\n<a name=\"what-you-can-do-with-ai\"></a>\n<a name=\"ways-to-work-with-agents\"></a>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/overview.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/overview.md"
 }

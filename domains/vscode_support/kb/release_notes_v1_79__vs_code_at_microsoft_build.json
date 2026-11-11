@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## VS Code at Microsoft Build\n\nIf you didn't get a chance to watch [Microsoft Build 2023](https://news.microsoft.com/build-2023) live, you can catch up on the keynotes and sessions on the [Microsoft Developer](https://www.youtube.com/@MicrosoftDeveloper/videos) YouTube channel.\n\nSome sessions of particular interest to VS Code users include:\n\n* [Next generation AI for developers with the Microsoft Cloud](https://www.youtube.com/watch?v=KMOV1Zy8YeM)\n* [Develop from anywhere with Visual Studio Code](https://www.youtube.com/watch?v=CYObXaSjj78)\n* [Pragmatic techniques to get the most out of GitHub Copilot](https://www.youtube.com/watch?v=CwAzIpc4AnA)\n* [Inject the power of the cloud and AI into your development workflow](https://www.youtube.com/watch?v=jl8-7AJb98g)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_79.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_79.md"
 }

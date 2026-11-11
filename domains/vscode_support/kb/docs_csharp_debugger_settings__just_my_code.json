@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Just My Code\n\nYou can optionally disable `justMyCode` by setting it to \"false\". You should disable Just My Code when you are trying to debug into a library that you pulled down that doesn't have symbols or is optimized.\n\n```json\n    \"justMyCode\":false\n```\n\nJust My Code is a set of features that makes it easier to focus on debugging your code by hiding some of the details of optimized libraries that you might be using, like the .NET Framework itself. The most important sub parts of this feature are --\n\n* User-unhandled exceptions: automatically stop the debugger just before exceptions are about to be caught by the framework\n* Just My Code stepping: when stepping, if framework code calls back to user code, automatically stop.\n\n**Availability**\n\n* `launch.json` \u2714\ufe0f\n* `settings.json` \u2714\ufe0f as `csharp.debug.justMyCode`\n* `launchSettings.json` \u274c",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/debugger-settings.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/debugger-settings.md"
 }

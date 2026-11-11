@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Semantic Highlighting\n\nSyntax highlighting is an important feature that allows you to read code more efficiently. With the help of [Semantic Highlighting](https://github.com/microsoft/vscode/wiki/Semantic-Highlighting-Overview), {% data variables.product.prodname_vscode_shortname %} can provide more accurate source code coloring based on symbol information from the Java language service.\n\nBelow is just one example, left is the behavior after enabling semantic highlighting and right is the one with only syntax highlighting.\n\n![Semantic Highlighting](images/java-editing/semantic-highlighting.png)\n\nYou can learn more about the details of Java semantic highlighting on the [Java Language Support extension wiki](https://github.com/redhat-developer/vscode-java/wiki/Semantic-Highlighting).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-editing.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-editing.md"
 }

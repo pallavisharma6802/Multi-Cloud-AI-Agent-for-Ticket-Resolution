@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## What are custom instructions?\n\nA [custom instruction](https://code.visualstudio.com/docs/agent-customization/custom-instructions) is like a rulebook for your AI.\n\nIt\u2019s a Markdown file where you define:\n\n- coding style\n- conventions\n- preferences\n\nOnce defined, the AI automatically follows these rules in every interaction.\n\nInstead of repeating expectations in every prompt, you define them once and let the system enforce them.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/2-instructions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/2-instructions.md"
 }

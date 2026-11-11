@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Important log persistence note\n\nLog data is not persisted across VS Code sessions. The Agent Debug Log panel and Chat Debug view only show data from your current VS Code session, and the Chat Debug view only captures LLM requests made during the active window. Use these tools while you're actively working - they won't be available after you restart VS Code.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/debugging-and-whats-happening-behind-the-scenes.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundations/debugging-and-whats-happening-behind-the-scenes.md"
 }

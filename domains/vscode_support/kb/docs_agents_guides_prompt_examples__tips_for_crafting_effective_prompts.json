@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Tips for crafting effective prompts\n\n* **Be specific**: Include details about what you want to accomplish, the technologies to use, and the expected output format.\n* **Add context**: Use #-mentions to reference files, symbols, or context variables like `#codebase`, `#changes`, or `#problems`.\n* **Iterate**: Start with a simple prompt and refine it based on the response. Ask follow-up questions to improve the results.\n* **Break down complex tasks**: Instead of asking for everything at once, break large tasks into smaller, manageable steps.\n\nLearn more about [best practices for crafting prompts](/docs/agents/best-practices.md) and [adding context to your prompts](/docs/chat/copilot-chat-context.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/prompt-examples.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/prompt-examples.md"
 }

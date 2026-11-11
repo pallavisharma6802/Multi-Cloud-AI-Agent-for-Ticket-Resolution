@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Debugging\n\nThere is support for debugging Python files on the Web and it uses the same UI as {% data variables.product.prodname_vscode_shortname %} Desktop [debugging](/docs/python/debugging.md). The features currently supported are:\n\n* Set breakpoints\n* Step into and out of functions\n* Debug across modules\n* Evaluate variables in the Debug Console\n* Debug the program in the Integrated Terminal\n\nThe screenshot below shows an active debug session. The files are hosted directly on GitHub on this [sample repository](https://github.com/dbaeumer/python-sample).\n\n![Debugging a Python program](images/web/debug.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/python-web.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/python/python-web.md"
 }

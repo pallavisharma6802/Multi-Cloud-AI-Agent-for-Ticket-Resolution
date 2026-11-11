@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Languages\n\n### TypeScript 3.9.6\n\nVS Code now bundles TypeScript 3.9.6. This minor update fixes a few bugs, including one that could cause the TypeScript server to crash on certain source code patterns.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_47.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_47.md"
 }

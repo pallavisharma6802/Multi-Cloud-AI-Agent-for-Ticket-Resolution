@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Dev Containers\n\n### GPU host requirement\n\nIn the `devcontainer.json` file, you can now specify that a GPU is required:\n\n```json\n{\n    \"image\": \"mcr.microsoft.com/devcontainers/base:bullseye\",\n    \"hostRequirements\": {\n        \"gpu\": true\n    }\n}\n```\n\nThe container will be started with GPU enabled (if one is detected).\n\n### Improved `ssh-agent` and `gpg-agent` forwarding\n\nWe now also support forwarding to local SSH and GPG agents listening on MINGW and Cygwin socket paths.\n\n### Bundled `@devcontainer/cli` NPM package\n\nThe JavaScript in the [@devcontainer/cli](https://www.npmjs.com/package/@devcontainers/cli) NPM package is now bundled in a single minified JavaScript file.\n\n### Improved Create Dev Container command UI\n\nThe **Dev Containers: Create Dev Container** command UI now let you pick a name for the Dev Container and offers a shortcut avoiding additional options:\n\n![Create Dev Container command name input](images/1_74/create-dev-container.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_74.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_74.md"
 }

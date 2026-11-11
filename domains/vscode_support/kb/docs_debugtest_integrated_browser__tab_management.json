@@ -4,5 +4,5 @@
   "category": "DEBUGGING",
   "intent": "debugging",
   "content": "## Tab management\n\nUse the **Browser: Quick Open Browser Tab...** command (`kb(workbench.action.browser.quickOpen)`) to quickly switch between open browser tabs. The Quick Pick lists all open tabs grouped by editor group, and you can type to filter by tab name or URL.\n\nFrom the Quick Pick, you can:\n\n* Select a tab to switch to it\n* Select **New Integrated Browser Tab** to open a new browser tab\n* Select the close button on a tab to close it\n* Select the **Close All** button to close all browser tabs\n\nYou can also close browser tabs with the following commands:\n\n| Command | Description |\n|---------|-------------|\n| **Browser: Close All Browser Tabs** | Close all browser tabs across all editor groups. |\n| **Browser: Close All Browser Tabs in Group** | Close all browser tabs in the current editor group. |\n\nThe **Close All Browser Tabs** option is also available in the right-click context menu on browser editor tabs.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/integrated-browser.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/debugtest/integrated-browser.md"
 }

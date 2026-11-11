@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## 1. Choose a repository\n\nChoose a repository from your own projects that is available for cloud sessions. Pick a small project or focus on one feature to keep the exploration manageable.\n\nThe task only reads repository files and returns its findings in the conversation. You don't need to install dependencies or run the project for this walkthrough.\n\nThe cloud session works with the code available on GitHub.com. Uncommitted changes, local dependencies, and files that exist only on your computer aren't copied to the cloud environment.\n\n<a name=\"2-start-the-task-in-a-cloud-sandbox\"></a>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/cloud-continuity-tutorial.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/cloud-continuity-tutorial.md"
 }

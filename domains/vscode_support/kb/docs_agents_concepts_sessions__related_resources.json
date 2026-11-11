@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [Manage agent sessions](/docs/agents/run/sessions/manage-sessions.md)\n* [Agent harnesses](/docs/agents/concepts/agent-harnesses.md)\n* [Agents](/docs/agents/concepts/agents.md)\n* [{% data variables.product.prodname_vscode_shortname %} Agent Host architecture](/docs/agents/concepts/agent-host.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/sessions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/concepts/sessions.md"
 }

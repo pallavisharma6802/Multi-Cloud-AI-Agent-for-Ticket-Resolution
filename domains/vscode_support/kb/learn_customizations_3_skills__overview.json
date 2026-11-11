@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "# Introduction to agent skills\n\n[![Watch Agent Skills Explained in 5 Minutes on YouTube (opens in new tab).](images/3-skills/youtube-mPjTZviv23s.jpg)](https://www.youtube.com/watch?v=mPjTZviv23s)\n\nMost developers are either using agent skills wrong\u2026 or not at all.\n\nAnd that\u2019s a problem, because skills are one of the most powerful ways to extend how AI works in your workflow.\n\nThis guide breaks down what agent skills are, how they work, and how to use them effectively in VS Code.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/3-skills.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/3-skills.md"
 }

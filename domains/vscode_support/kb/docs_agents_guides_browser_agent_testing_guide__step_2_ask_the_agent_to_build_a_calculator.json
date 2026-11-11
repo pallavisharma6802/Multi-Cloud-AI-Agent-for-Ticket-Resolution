@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Step 2: Ask the agent to build a calculator\n\nWith browser tools enabled, ask the agent to create a simple calculator application.\n\n1. Create a new project folder and open it in {% data variables.product.prodname_vscode_shortname %}.\n\n1. In the {% data variables.copilot.chat_view %}, enter the following prompt:\n\n    ```prompt\n    Create a calculator with buttons for digits 0-9, operations (add, subtract, multiply, divide), clear, and equals. Use HTML, CSS, and JavaScript. Style it with a clean, modern design.\n    ```\n\n1. Review the generated files as the agent creates `index.html`, `styles.css`, and `script.js`.\n\n1. [Review the saved changes](/docs/agents/run/review-code-edits.md). If edits are pending review, select **Keep** to retain them or **Undo** to revert them. **Keep** clears pending review; the files are already saved to your workspace.\n\nThe agent has built the basic structure of the calculator application.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/browser-agent-testing-guide.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/browser-agent-testing-guide.md"
 }

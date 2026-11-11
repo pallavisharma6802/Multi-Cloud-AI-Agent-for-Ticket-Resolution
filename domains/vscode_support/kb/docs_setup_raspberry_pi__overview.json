@@ -4,5 +4,5 @@
   "category": "INSTALLATION",
   "intent": "installation",
   "content": "# {% data variables.product.prodname_vscode %} on Raspberry Pi\n\nAlthough it's not officially supported, you can run {% data variables.product.prodname_vscode %} on [Raspberry Pi](https://www.raspberrypi.org) devices.\n\n[![Raspberry Pi Logo](images/raspberry-pi-os/RPi-Logo-Landscape-Reg-SCREEN.png)](https://www.raspberrypi.org)\n\nBy downloading and using {% data variables.product.prodname_vscode %}, you agree to the [license terms](https://code.visualstudio.com/license) and [privacy statement](https://go.microsoft.com/fwlink/?LinkID=528096&clcid=0x409).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/raspberry-pi.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/setup/raspberry-pi.md"
 }

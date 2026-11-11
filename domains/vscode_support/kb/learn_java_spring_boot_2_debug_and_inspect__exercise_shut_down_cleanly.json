@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Exercise - shut down cleanly\n\nBecause of the debugger regression noted in the prerequisites, ending the process takes\none deliberate step rather than a **Stop** click.\n\n1. Open the **Terminal** panel and select the app's terminal.\n2. Select its **Kill Terminal** trash icon. The Java process goes down with the shell and gives up port 8080.\n3. Confirm the Dashboard no longer reports the app as running, and that port 8080 is free.\n\nLeaving that check out is the single most common way to lose ten minutes at the start of\nthe next session, because the failure it causes names the wrong port.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/2-debug-and-inspect.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/java-spring-boot/2-debug-and-inspect.md"
 }

@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Custom telemetry setting\n\nExtension may wish to give user control for extension specific telemetry independent of VS Code telemetry. In this case, we suggest that you introduce a specific extension setting. It is recommended that custom telemetry settings be tagged with `telemetry` and `usesOnlineServices` so that users can more easily query them in the Settings UI. Adding a custom telemetry setting is not an exemption from respecting a user's decision and the `isTelemetryEnabled` and `onDidChangeTelemetryEnabled` flag must always be respected. If `isTelemetryEnabled` reports false, even if your setting is enabled, telemetry must not be sent.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/telemetry.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-guides/telemetry.md"
 }

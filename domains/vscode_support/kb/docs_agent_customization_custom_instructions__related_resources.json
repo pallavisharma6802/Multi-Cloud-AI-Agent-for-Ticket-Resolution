@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [Configure AI for your codebase](/docs/agents/guides/customize-copilot-guide.md) for a measured create, verify, and share workflow.\n* [Custom instructions reference](/docs/agents/reference/custom-instructions-reference.md) for syntax and harness-specific behavior.\n* [Agent customization concepts](/docs/agents/concepts/customization.md) to choose between instructions, skills, and other customizations.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/custom-instructions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/custom-instructions.md"
 }

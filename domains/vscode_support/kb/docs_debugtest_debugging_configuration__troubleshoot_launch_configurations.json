@@ -4,5 +4,5 @@
   "category": "DEBUGGING",
   "intent": "debugging",
   "content": "## Troubleshoot launch configurations\n\n### No configurations appear\n\nCheck that:\n\n* A folder or workspace is open.\n* `.vscode/launch.json` contains a valid `configurations` array.\n* The debugger extension for the configuration's `type` is installed and active.\n* The configuration does not set `presentation.hidden` to `true`.\n\n### A configuration has red squiggles\n\nHover over the highlighted property to view the validation message. Confirm that the property is supported for the selected `type` and `request`. Properties from one debugger do not automatically work with another debugger.\n\n### A configuration does not start the expected application\n\nVerify the `program`, `cwd`, `args`, environment variables, and any `preLaunchTask`. For an attach configuration, confirm that the target process is already running in debug mode and that connection details such as the port match.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/debugging-configuration.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/debugtest/debugging-configuration.md"
 }

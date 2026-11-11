@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# Ruby in {% data variables.product.prodname_vscode %}\n\n[Ruby](https://www.ruby-lang.org) is a dynamic, open-source programming language known for its simplicity and productivity. With an expressive and elegant syntax, part of the Ruby philosophy is to make developers happy. It is often used for web development with a range of different frameworks, and for scripting, allowing for fast iterations when building prototypes.\n\nThis topic goes into detail about setting up and using Ruby within {% data variables.product.prodname_vscode %}, with the\n[Ruby LSP](https://marketplace.visualstudio.com/items?itemName=Shopify.ruby-lsp) extension.\n\n![Ruby extension banner](images/ruby/ruby_lsp_extension.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/ruby.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/ruby.md"
 }

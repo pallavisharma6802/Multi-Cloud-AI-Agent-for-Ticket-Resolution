@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Work with Jupyter notebooks using AI in {% data variables.product.prodname_vscode_shortname %}\n\nUse AI throughout your notebook workflow. An agent can create a Jupyter notebook, edit and run cells, inspect outputs, and iterate on errors. For focused changes, use inline chat directly in a notebook cell.\n\nThis guide shows how to use AI for data analysis in a Jupyter notebook while you review the generated code and control when it runs.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/notebooks-with-ai.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/notebooks-with-ai.md"
 }

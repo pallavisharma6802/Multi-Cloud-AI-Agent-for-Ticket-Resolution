@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Expression evaluation\n\nThe debugger also lets you evaluate expressions in the **WATCH** window as well as the Debug Console.\n\n<video src=\"images/java-debugging/expression-evaluation.mp4\" autoplay loop muted playsinline controls title=\"Add an expression to the WATCH window to display the owner object\">\n</video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-debugging.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-debugging.md"
 }

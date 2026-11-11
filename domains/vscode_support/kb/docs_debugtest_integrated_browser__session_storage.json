@@ -4,5 +4,5 @@
   "category": "DEBUGGING",
   "intent": "debugging",
   "content": "## Session storage\n\nControl how the integrated browser stores session data such as cookies, logins, localStorage, and cache with the `setting(workbench.browser.dataStorage)` setting.\n\n| Mode | Description |\n|------|-------------|\n| `global` | Data persists and is shared across all browser tabs and workspaces. |\n| `workspace` | Data persists within a workspace but is isolated between workspaces. |\n| `ephemeral` | Data is not shared between tabs or persisted. Similar to incognito mode. |\n\nTo clear stored data, select the menu in the browser toolbar and choose **Clear Storage (Global)** or **Clear Storage (Workspace)** depending on your current storage mode. Reload the browser tab after clearing storage to apply the changes.\n\n> [!NOTE]\n> In untrusted workspaces, the browser always uses ephemeral mode regardless of the setting, to protect your data.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/debugtest/integrated-browser.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/debugtest/integrated-browser.md"
 }

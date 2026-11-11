@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Configure the {% data variables.copilot.agents_window %}\n\nYou can personalize chat, adjust the window layout, configure settings and extensions, and choose how Markdown files open. See [Configure the {% data variables.copilot.agents_window %}](/docs/agents/run/agents-window-configuration.md) for all window-specific options.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/agents-window.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/agents-window.md"
 }

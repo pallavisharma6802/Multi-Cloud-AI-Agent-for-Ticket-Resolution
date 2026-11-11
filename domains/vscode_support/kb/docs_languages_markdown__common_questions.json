@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Common questions\n\n### Is there spell checking?\n\nNot installed with {% data variables.product.prodname_vscode_shortname %} but there are spell checking extensions. Check the [{% data variables.product.prodname_vs_marketplace %}](https://marketplace.visualstudio.com/vscode) to look for useful extensions to help with your workflow.\n\n### Does {% data variables.product.prodname_vscode_shortname %} support GitHub Flavored Markdown?\n\nNo, {% data variables.product.prodname_vscode_shortname %} targets the [CommonMark](https://commonmark.org) Markdown specification using the [markdown-it](https://github.com/markdown-it/markdown-it) library. GitHub is moving toward the CommonMark specification, which you can read about in this [update](https://github.blog/2017-03-14-a-formal-spec-for-github-markdown/).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/markdown.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/markdown.md"
 }

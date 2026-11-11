@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Create a notebook with an agent\n\nStart with the outcome you want instead of specifying individual cells. The agent plans the notebook, creates Markdown and code cells, and can run the code to validate the result.\n\n1. Open the [{% data variables.copilot.chat_view %}](/docs/agents/run/chat-view.md) (`kb(workbench.action.chat.open)`) and start a **Local** agent session.\n\n1. Add your data file as context, then describe the analysis and output you want.\n\n    ```prompt\n    Create a Jupyter notebook that uses pandas and seaborn to analyze #housing.csv. Clean the data, summarize key metrics, and visualize the price distribution.\n    ```\n\n1. Review any requested tool and command approvals before you continue. If the notebook does not have a kernel, follow the prompts to select or create a Python environment.\n\nThe agent creates an `.ipynb` file that you can continue to refine in the same session. You can also start your prompt with `/newNotebook` to explicitly request a new Jupyter notebook.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/notebooks-with-ai.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/notebooks-with-ai.md"
 }

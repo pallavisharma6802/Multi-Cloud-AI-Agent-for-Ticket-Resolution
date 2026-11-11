@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Why custom agents matter\n\nWithout custom agents, you\u2019re relying on a single, general-purpose assistant for everything.\n\nWith custom agents, you can switch between specialized roles depending on the task. This leads to:\n\n- more focused and relevant outputs\n- better alignment with specific tasks\n- clearer structure in responses\n\nInstead of constantly re-explaining context, you select the right agent and let it handle the task.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/4-custom-agent.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/4-custom-agent.md"
 }

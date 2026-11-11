@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "# Troubleshoot source control\n\nUse this article to resolve common Git problems in {% data variables.product.prodname_vscode %}. Start with the symptom that matches your problem, then use the Git Output window to collect more information if the suggested fix doesn't resolve it.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/troubleshooting.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/troubleshooting.md"
 }

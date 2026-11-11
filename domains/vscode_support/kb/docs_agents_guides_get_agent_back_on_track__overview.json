@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Get an agent back on track\n\nAn AI agent might misunderstand the goal, repeat an unsuccessful action, change more files than expected, or lose track of an earlier decision. Intervene as soon as you recognize a mismatch. Early corrections preserve useful work and reduce the number of changes you need to review or undo.\n\nThis guide helps you choose the least disruptive recovery action. You learn how to redirect a running request, correct completed work, recover unwanted changes, reset conversation context, and diagnose repeated failures.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/get-agent-back-on-track.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/get-agent-back-on-track.md"
 }

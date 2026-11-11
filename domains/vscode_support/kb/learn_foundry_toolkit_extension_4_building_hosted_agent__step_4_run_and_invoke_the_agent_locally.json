@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Step 4: Run and Invoke the Agent Locally\n\nBefore deploying, validate local behavior from terminal-based commands. This gives you a fast feedback loop and catches instruction or runtime issues before cloud resources are involved.\n\nIn the chapter flow, local invoke confirms expected clarifying-question behavior.\n\n1. Run `azd ai agent run` from the project root.\n\n   This command installs needed dependencies, starts the local runtime, and serves the agent as an HTTP service.\n\n2. Wait until the local runtime reports it is ready and then open a new terminal to invoke the agent.\n3. Run the agent in a separate terminal with `azd ai agent invoke` and a realistic campaign prompt.\n\n   You should see a result similar to:\n\n   ![Local agent run](../images/foundry-toolkit/ch4-local-invoke.png)\n\n   **Fig 03: Local agent run and prompt invocation.**",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
 }

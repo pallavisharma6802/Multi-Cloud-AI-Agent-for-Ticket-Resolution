@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Compare file with the clipboard\n\nKeyboard Shortcut: `kb(workbench.files.action.compareWithClipboard)`\n\nQuickly compare the active file with the contents of the clipboard with the **File: Compare Active File with Clipboard** command in the Command Palette (`kb(workbench.action.showCommands)`).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/tips-and-tricks.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/getting-started/tips-and-tricks.md"
 }

@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Testing prompt files\n\nFinally, the **Simplify Code** prompt file is used.\n\nThis prompt analyzes the currently open file and looks for:\n\n- bloated or verbose code\n- dead code\n- opportunities for simplification\n\nIt then explains exactly what changes were made and why.\n\n> **Prompt**\n> Simplify code for open files.\n\nThis is especially useful because code simplification is something you may do repeatedly across multiple files.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/8-demo.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/8-demo.md"
 }

@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Read the manifest\n\nWhen you inspect a plugin repository, start with `plugin.json`. The manifest defines the plugin identity, and the folders beside it hold the skills, agents, hooks, and MCP server definitions.\n\nA plugin that follows the [Agent Plugins standard](https://agent-plugins.org/) declares the schema it targets:\n\n```json\n{\n    \"$schema\": \"https://agent-plugins.org/schemas/1.0.0/plugin.schema.json\",\n    \"name\": \"team-review-tools\",\n    \"description\": \"Review workflow for the team repository\"\n}\n```\n\nComponents sit in fixed locations rather than manifest fields: skills in `skills/`, MCP servers in `mcp.json`, and Copilot-specific parts such as agents and hooks under `com.github.copilot/`. Older Copilot and Claude plugins instead list component paths in the manifest with fields like `skills`, `agents`, `hooks`, and `mcpServers`.\n\nThis step matters because plugins can run hooks and MCP servers on your machine. The manifest and these folders tell you where to inspect the behavior before you trust it.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/3-agent-plugins.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/agents/3-agent-plugins.md"
 }

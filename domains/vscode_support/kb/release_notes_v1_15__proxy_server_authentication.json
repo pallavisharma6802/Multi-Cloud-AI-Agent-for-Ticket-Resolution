@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Proxy server authentication\n\nAuthenticated proxies should work seamlessly within VS Code with the addition of [PR #22369](https://github.com/microsoft/vscode/pull/22369).\n\nThe authentication methods supported are:\n\n* Basic\n* Digest\n* NTLM\n* Negotiate\n\nWhen using VS Code behind an authenticated HTTP proxy, the following authentication popup will appear:\n\n![proxy authentication](images/1_15/proxy-authentication.png)\n\nNote that SOCKS5 proxy authentication support isn't implemented yet; you can follow the [issue in Chromium's issue tracker](https://bugs.chromium.org/p/chromium/issues/detail?id=256785).\n\nYou can learn more about proxy server support and how VS Code uses the Chromium network stack in the new [Network Connections in VS Code](https://code.visualstudio.com/docs/setup/network) topic.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_15.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_15.md"
 }

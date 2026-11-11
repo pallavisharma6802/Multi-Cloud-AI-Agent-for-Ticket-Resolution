@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Using TextMate snippets\n\nYou can also add TextMate snippets (.tmSnippets) to your VS Code installation using the [yo code](/api/get-started/your-first-extension) extension generator. The generator has an option `New Code Snippets` which lets you point to a folder containing multiple .tmSnippets files and they will be packaged into a VS Code snippet extension. The generator also supports Sublime snippets (.sublime-snippets).\n\nThe final generator output has two files: an extension manifest `package.json` which has metadata to integrate the snippets into VS Code and a `snippets.json` file which includes the snippets converted to the VS Code snippet format.\n\n```bash\n.\n\u251c\u2500\u2500 snippets                    // VS Code integration\n\u2502\u00a0\u00a0 \u2514\u2500\u2500 snippets.json           // The JSON file w/ the snippets\n\u2514\u2500\u2500 package.json                // extension's manifest\n```\n\nCopy the generated snippets folder to a new folder under your `.vscode/extensions` folder and restart VS Code.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/language-extensions/snippet-guide.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/language-extensions/snippet-guide.md"
 }

@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "# Extension API\n\nVisual Studio Code is built with extensibility in mind. From the UI to the editing experience, almost every part of VS Code can be customized and enhanced through the Extension API. In fact, many core features of VS Code are built as [extensions](https://github.com/microsoft/vscode/tree/main/extensions) and use the same Extension API.\n\nThis documentation describes:\n\n* How to build, run, debug, test, and publish an extension\n* How to take advantage of VS Code's rich Extension API\n* Where to find [guides](https://code.visualstudio.com/api/extension-guides/overview) and [code samples](https://github.com/microsoft/vscode-extension-samples) to help get you started\n* Following our [UX guidelines](/api/ux-guidelines/overview) for best practices\n\nCode samples are available at [Microsoft/vscode-extension-samples](https://github.com/microsoft/vscode-extension-samples).\n\nIf you are looking for published extensions, head to the [VS Code Extension Marketplace](https://marketplace.visualstudio.com/vscode).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/index.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/index.md"
 }

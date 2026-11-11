@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Core\n\n### Remote extension host process crashes\n\nPreviously, when the remote extension host process would crash, this would be presented incorrectly as a reconnection error and the only way to recover was to reload the window. Now, the remote extension host process is restarted automatically and a notification is shown only if it crashes 3 times within the past 5 minutes.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_66.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_66.md"
 }

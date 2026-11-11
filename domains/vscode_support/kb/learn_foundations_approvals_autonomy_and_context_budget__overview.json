@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "# Your first agent session\n\n[![Watch Video for approvals, autonomy, and context budget on YouTube (opens in new tab).](images/approvals-autonomy-and-context-budget/youtube-WcN74XvZGes.jpg)](https://www.youtube.com/watch?v=WcN74XvZGes)\n\nEvery action an agent takes on your machine, running a command, writing a file, or launching a server, happens through its tools. By default, terminal commands require explicit approval before they run. This guide covers how approvals work, how to set the right autonomy level for a session, and how to monitor context budget as work builds up.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/approvals-autonomy-and-context-budget.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundations/approvals-autonomy-and-context-budget.md"
 }

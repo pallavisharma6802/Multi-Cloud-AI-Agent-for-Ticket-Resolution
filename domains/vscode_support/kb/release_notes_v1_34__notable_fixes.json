@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable fixes\n\n* [48259](https://github.com/microsoft/vscode/issues/48259): Explorer Respects Trash Capability from FileSystemProvider\n* [68276](https://github.com/microsoft/vscode/issues/68276): Call Stack \"Paused On Breakpoint\" UI not visible for long thread names\n* [69603](https://github.com/microsoft/vscode/issues/69603): Terminal window crashes in Mac OS\n* [72110](https://github.com/microsoft/vscode/issues/72110): Debug Console render newlines unnecessary\n* [71737](https://github.com/microsoft/vscode/issues/71737): Scrolling in debug window is behaving strange\n* [71588](https://github.com/microsoft/vscode/issues/71588): Error revealing files in the explorer\n* [70492](https://github.com/microsoft/vscode/issues/70492): \u2018Report issue\u2019 button on \u2018Running extensions\u2019 causes tens of duplicate issues",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_34.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_34.md"
 }

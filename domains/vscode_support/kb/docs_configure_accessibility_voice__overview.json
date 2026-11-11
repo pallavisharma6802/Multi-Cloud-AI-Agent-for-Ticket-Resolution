@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "# Voice support\n\n{% data variables.product.prodname_vscode %} supports spoken agent conversations with Voice Mode and built-in dictation that converts your speech to text in chat, the {% data variables.copilot.agents_window %}, editors, and terminals.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/accessibility/voice.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/accessibility/voice.md"
 }

@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Opening a terminal on a remote host\n\nOpening a terminal on the remote host from {% data variables.product.prodname_vscode_shortname %} is simple. Once connected, **any terminal window** you open in {% data variables.product.prodname_vscode_shortname %} (**Terminal > New Terminal**) will automatically run on the remote host rather than locally.\n\nYou can also use the `code` command line from this same terminal window to perform a number of operations such as opening a new file or folder on the remote host. Type `code --help` to see all the options available from the command line.\n\n![Using the code CLI](images/ssh/code-command-in-terminal.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/ssh.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/remote/ssh.md"
 }

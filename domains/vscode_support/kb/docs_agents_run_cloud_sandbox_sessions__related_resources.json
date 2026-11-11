@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [Manage agent sessions](/docs/agents/run/sessions/manage-sessions.md)\n* [Connect to sessions on your own machines](/docs/agents/run/remote-agent-sessions.md)\n* [Secure AI-assisted development](/docs/agents/run/security.md#cloud-sessions)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/cloud-sandbox-sessions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/cloud-sandbox-sessions.md"
 }

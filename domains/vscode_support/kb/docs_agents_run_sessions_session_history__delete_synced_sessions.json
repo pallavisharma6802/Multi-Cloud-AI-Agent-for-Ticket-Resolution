@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Delete synced sessions\n\nTo delete synced session data, run the **Delete Session Sync Data** command (`github.copilot.sessionSync.deleteSessions`) from the Command Palette. The command shows a picker where you select which sessions to remove. After selecting sessions, you choose the deletion scope:\n\n* **Delete from local and cloud**: removes session data from your machine and from GitHub.com. This action cannot be undone.\n* **Delete from cloud only**: removes session data from GitHub.com but keeps local data intact.\n\nYou can also hide or delete individual synced sessions from the **Agents** tab on GitHub.com. Hiding a session removes it from your session index so it no longer appears in query results.\n\n> [!NOTE]\n> The **Delete Session Sync Data** command requires session sync to be enabled. If sync is off or disabled by policy, manage previously synced sessions from the **Agents** tab on GitHub.com instead.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/sessions/session-history.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/sessions/session-history.md"
 }

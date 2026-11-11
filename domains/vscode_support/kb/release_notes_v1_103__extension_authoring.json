@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Extension Authoring\n\n### Terminal activation events\n\nTwo new activation events are available for extensions:\n\n* `onTerminal`: Triggered when any terminal is opened.\n* `onTerminalShellIntegration`: Triggered when rich shell integration is activated for a terminal.\n\nYou can specify a `shellType` to target specific shells. For example, `onTerminalShellIntegration:bash` activates when shell integration is enabled for a Bash terminal.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_103.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_103.md"
 }

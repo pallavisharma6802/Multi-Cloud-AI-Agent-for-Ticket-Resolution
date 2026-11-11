@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Community Server Connectors\n\nThe [Community Server Connectors](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-community-server-connector) extension is published by Red Hat. It provides a Remote Server Protocol-based server connector, which can start, stop, publish to, and otherwise control community runtimes and servers like [Apache Felix](https://felix.apache.org/documentation/index.html), [Karaf](https://karaf.apache.org/), and [Tomcat](https://tomcat.apache.org/).\n\n<video src=\"images/java-tomcat-jetty/server-connector.mp4\" autoplay loop muted playsinline controls title=\"Community server connectors\">\n</video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-tomcat-jetty.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-tomcat-jetty.md"
 }

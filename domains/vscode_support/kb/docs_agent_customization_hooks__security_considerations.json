@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Security considerations\n\n> [!CAUTION]\n> Hook configuration and scripts are executable code. Review them before use, including hooks bundled in plugins or stored in a shared repository.\n\n* Validate event input before using it. Do not interpolate untrusted tool arguments into a shell command.\n* Give scripts only the filesystem and network access they need. A hook's `cwd` or `env` does not widen sandbox access.\n* Keep credentials out of configuration, scripts, output, logs, and agent context.\n* Protect the configuration and scripts against unintended changes.\n* Verify source restrictions, failure behavior, and event coverage in each destination. Hooks and instructions are not substitutes for enforced permissions, sandboxing, or enterprise controls.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/hooks.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/hooks.md"
 }

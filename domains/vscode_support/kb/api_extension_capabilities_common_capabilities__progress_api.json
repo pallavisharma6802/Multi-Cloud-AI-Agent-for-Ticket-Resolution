@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Progress API\n\nYou can use the [`vscode.Progress`](/api/references/vscode-api#Progress) API for reporting progress updates to the user.\n\nProgress can be shown in different locations using the [`ProgressLocation`](/api/references/vscode-api#ProgressLocation) option:\n\n- In the Notifications area\n- In the Source Control view\n- General progress in the VS Code window\n\nThe [Progress sample](https://github.com/microsoft/vscode-extension-samples/tree/main/progress-sample) illustrates this API.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-capabilities/common-capabilities.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-capabilities/common-capabilities.md"
 }

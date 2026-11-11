@@ -4,5 +4,5 @@
   "category": "ENTERPRISE",
   "intent": "enterprise",
   "content": "## Related resources\n\n* [Extension Marketplace](/docs/configure/extensions/extension-marketplace.md) - Learn about installing and managing extensions in {% data variables.product.prodname_vscode_shortname %}.\n* [Extension runtime security](/docs/configure/extensions/extension-runtime-security.md) - Learn about extension security in {% data variables.product.prodname_vscode_shortname %}.\n* [Enterprise policies](/docs/enterprise/policies.md) - Reference for all enterprise policies in {% data variables.product.prodname_vscode_shortname %}.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/enterprise/extensions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/enterprise/extensions.md"
 }

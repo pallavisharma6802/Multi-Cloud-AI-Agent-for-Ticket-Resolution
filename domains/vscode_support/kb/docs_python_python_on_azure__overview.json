@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# Deploy Python Web Apps\n\nThe [Azure Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) extensions for {% data variables.product.prodname_vscode %} make it easy to deploy Python applications (including containers) to [Azure App Service](https://azure.microsoft.com/services/app-service) and to deploy serverless code to [Azure Functions](https://azure.microsoft.com/services/functions).\n\n![Azure Tools extension](images/azure/azure-tools.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/python-on-azure.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/python/python-on-azure.md"
 }

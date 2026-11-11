@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Integrated Terminal\n\n### Open new terminals with custom working directories\n\nThere is a new command that allows the creation of terminals with a custom current working directory (cwd):\n\n```json\n{\n  \"key\": \"cmd+shift+h\",\n  \"command\": \"workbench.action.terminal.newWithCwd\",\n  \"args\": {\n    \"cwd\": \"${fileDirname}\"\n  }\n}\n```\n\nYou can create your own keyboard shortcuts to open new terminals in any number of handy working directories. The `cwd` value can either be a normal path or a [variable](https://code.visualstudio.com/docs/editor/variables-reference).\n\n### Better locale detection\n\nThe `terminal.integrated.setLocaleVariables` setting has been replaced with the new `terminal.integrated.detectLocale` setting. The default value is `auto`, which will set the `$LANG` variable in your terminal session to the detected language UTF-8 value but only when it has not been explicitly configured by the user. This better default should lead to fewer issues related to language and encoding in the terminal.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_39.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_39.md"
 }

@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Overview\n\nThe extension supports the following test frameworks:\n\n- [JUnit 4](https://junit.org/junit4/) (v4.8.0+)\n- [JUnit 5](https://junit.org/junit5/) (v5.1.0+)\n- [TestNG](https://testng.org/) (v6.9.13.3+)\n\nThe [Test Runner for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-test) works with the [Language Support for Java\u2122 by Red Hat](https://marketplace.visualstudio.com/items?itemName=redhat.java) and [Debugger for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug) extensions to provide the following features:\n\n- Run/Debug test cases\n- Customize test configurations\n- View test report\n- View tests in Testing Explorer",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-testing.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-testing.md"
 }

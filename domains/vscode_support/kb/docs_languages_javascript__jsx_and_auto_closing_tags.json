@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## JSX and auto closing tags\n\nAll of {% data variables.product.prodname_vscode_shortname %}'s JavaScript features also work with [JSX](https://reactjs.org/docs/introducing-jsx.html):\n\n![JSX IntelliSense](images/javascript/jsx.png)\n\nYou can use JSX syntax in both normal `*.js` files and in `*.jsx` files.\n\n{% data variables.product.prodname_vscode_shortname %} also includes JSX-specific features such as autoclosing of JSX tags:\n\n<video src=\"images/javascript/tag-complete.mp4\" placeholder=\"images/javascript/tag-complete-placeholder.png\" autoplay loop controls muted>\n    Sorry, your browser doesn't support HTML 5 video.\n</video>\n\nSet `\"js/ts.autoClosingTags\"` to `false` to disable JSX tag closing.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/javascript.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/javascript.md"
 }

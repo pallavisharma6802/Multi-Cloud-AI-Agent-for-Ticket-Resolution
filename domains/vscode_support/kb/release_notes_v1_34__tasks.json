@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Tasks\n\n### Terminate all tasks\n\nThe **Tasks: Terminate Task** command has a new option to terminate all tasks if there are multiple tasks running. If this is an action you do often, you can create a keyboard shortcut for the command with the `terminateAll` argument.\n\n```json\n{\n  \"key\": \"ctrl+k t\",\n  \"command\": \"workbench.action.tasks.terminate\",\n  \"args\": \"terminateAll\"\n}\n```\n\n### Automatically show Problems panel\n\nThe new `revealProblems` task property allows you to automatically show the Problems panel. The property values are `always`, `never`, and `onProblem`.\n\n```json\n{\n  \"version\": \"2.0.0\",\n  \"tasks\": [\n    {\n      \"type\": \"npm\",\n      \"script\": \"watch\",\n      \"problemMatcher\": \"$tsc-watch\",\n      \"isBackground\": true,\n      \"presentation\": {\n        \"reveal\": \"always\",\n        \"revealProblems\": \"onProblem\"\n      }\n    }\n  ]\n}\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_34.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_34.md"
 }

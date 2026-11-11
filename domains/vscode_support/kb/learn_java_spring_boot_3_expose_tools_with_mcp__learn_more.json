@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Learn more\n\n- [Model Context Protocol](https://modelcontextprotocol.io) \u2014 the specification and its core concepts.\n- [MCP servers in Visual Studio Code](https://code.visualstudio.com/docs/copilot/chat/mcp-servers) \u2014 configuration, trust, and tool management.\n- [Spring AI reference documentation](https://docs.spring.io/spring-ai/reference/) \u2014 the MCP server starter and its annotations.\n- [Use agent mode in Visual Studio Code](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode) \u2014 how tool selection and confirmation work.\n- [Demo source on GitHub](https://github.com/microsoft/github-copilot-java-mcp-demo) \u2014 the sample used in every chapter.\n\n---\n\nChapter 3 of 4 \u00b7 Previous: [Debug and Inspect a Spring Boot Request](/learn/java-spring-boot/2-debug-and-inspect) \u00b7 Next: [Let Copilot Test Your App with Playwright](/learn/java-spring-boot/4-test-with-playwright)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/3-expose-tools-with-mcp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/java-spring-boot/3-expose-tools-with-mcp.md"
 }

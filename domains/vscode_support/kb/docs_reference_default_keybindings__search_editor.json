@@ -4,5 +4,5 @@
   "category": "REFERENCE",
   "intent": "reference",
   "content": "## Search Editor\n\nCommand|Key|Command id\n-------|---|----------\nOpen Results In Editor|`kb(search.action.openInEditor)`|`search.action.openInEditor`\nFocus Search Editor Input|`kb(search.action.focusQueryEditorWidget)`|`search.action.focusQueryEditorWidget`\nSearch Again|`kb(rerunSearchEditorSearch)`|`rerunSearchEditorSearch`\nDelete File Results|`kb(search.searchEditor.action.deleteFileResults)`|`search.searchEditor.action.deleteFileResults`",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/reference/default-keybindings.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/reference/default-keybindings.md"
 }

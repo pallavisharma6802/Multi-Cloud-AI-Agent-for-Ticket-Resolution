@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## The files changed bar\n\nAfter every agent response that includes file edits, a files changed bar appears above the chat input. It lists every file the agent touched in that response. This is your starting point for reviewing what happened.\n\n![Files changed bar showing the list of agent-edited files in chat](../images/foundations/files-changed.png)\n\nSelect any file in the list to open the inline diff. Removals are highlighted in red and additions in green, shown inline in the same editor view so you can read exactly what changed.\n\nRemember: nothing is permanent yet. The agent has proposed these changes, but they are not saved until you explicitly accept them.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/reviewing-and-controlling-agent-changes.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundations/reviewing-and-controlling-agent-changes.md"
 }

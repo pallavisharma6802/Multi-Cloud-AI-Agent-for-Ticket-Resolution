@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## onTerminalProfile\n\n`onTerminalProfile:id` is emitted when a specific terminal profile is launched.\n\n```json\n\"activationEvents\": [\n    \"onTerminalProfile:terminalTest.terminal-profile\"\n]\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/activation-events.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/activation-events.md"
 }

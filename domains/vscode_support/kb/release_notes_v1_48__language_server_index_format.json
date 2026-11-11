@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Language Server Index Format\n\nThe [TypeScript LSIF generator](https://github.com/microsoft/lsif-node) added support for multi project setups. In addition, memory consumption was optimized, especially around symbols exported via explicit export statements.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_48.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_48.md"
 }

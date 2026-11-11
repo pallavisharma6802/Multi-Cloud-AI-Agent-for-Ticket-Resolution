@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Extensions\n\n### Improved extension recommendations notification\n\nThe extension recommendations notification now shows the publisher of the recommended extension. This helps you make a more informed decision before installing the extension. The following images show the new notification when there are recommendations for both a single extension and multiple extensions.\n\n![Extension recommendations notification with a single recommendation](images/1_78/extension-recommendations-notification-single.png)\n![Extension recommendations notification with multiple recommendations](images/1_78/extension-recommendations-notification-multiple.png)\n\n### Informing about installed deprecated extensions\n\nIf you have an extension installed that has been deprecated, you will now receive a notification informing you about it and suggesting alternatives. This is shown only once per deprecated extension.\n\n![Notification about deprecated extension](images/1_78/deprecated-extension-notification.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_78.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_78.md"
 }

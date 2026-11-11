@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Language Server Protocol\n\nA new next version of the [Language Server Protocol](https://microsoft.github.io/language-server-protocol), together with the corresponding npm modules, has been published. The version contains a proposed implementation for notebook documents. The specification part can be read [here](https://github.dev/microsoft/vscode-languageserver-node/blob/f50f66b6766d3c9ca9aebca132dd543537f26da4/protocol/src/common/proposed.notebooks.md#L1).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_64.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_64.md"
 }

@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Create an MCP installation URL\n\nVS Code provides a URL handler for installing an MCP server from a link: `vscode:mcp/install?{json-configuration}` (Insiders: `vscode-insiders:mcp/install?{json-configuration}`).\n\nProvide the JSON server configuration in the form `{\\\"name\\\":\\\"server-name\\\",\\\"command\\\":...}` and then perform a JSON-stringify and URL encode on it. For example, use the following logic to create the installation URL:\n\n```typescript\n// For Insiders, use `vscode-insiders` instead of `code`\nconst link = `vscode:mcp/install?${encodeURIComponent(JSON.stringify(obj))}`;\n```\n\nThis link can be used in a browser, or opened on the command line, for example via `xdg-open $LINK` on Linux.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/ai/mcp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-guides/ai/mcp.md"
 }

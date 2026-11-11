@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "# IntelliSense\n\nIntelliSense is a general term for various code editing features including: code completion, parameter info, quick info, and member lists. IntelliSense features are sometimes called by other names such as \"code completion\", \"content assist\", and \"code hinting.\"\n\n<video src=\"images/intellisense/intellisense.mp4\" title=\"Video that shows IntelliSense in action. When typing 'app' for an Express app, suggestions are shown, such as '_router'.\" autoplay loop controls muted></video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/intellisense.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/intellisense.md"
 }

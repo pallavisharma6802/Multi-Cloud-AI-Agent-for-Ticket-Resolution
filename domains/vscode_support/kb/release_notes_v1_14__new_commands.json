@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## New Commands\n\nKey|Command|Command id\n---|-------|----------\n`kb(workbench.action.closeUnmodifiedEditors)`|Close unmodified editors of the currently active editor group|`workbench.action.closeUnmodifiedEditors`\n`kb(workbench.action.quickSwitchWindow)`|Quickly switch between opened windows (instances)|`workbench.action.quickSwitchWindow`\n`kb(workbench.action.quickOpenRecent)`|Quickly switch between recently opened folders and files|`workbench.action.quickOpenRecent`\n`kb(workbench.action.terminal.focusFind)`|Integrated Terminal Find|`workbench.action.terminal.focusFind`\n`kb(workbench.action.terminal.selectAll)`|Integrated Terminal Select All|`workbench.action.terminal.selectAll`\n`kb(workbench.action.terminal.rename)`|Integrated Terminal Rename|`workbench.action.terminal.rename`\n`kb(editor.action.diffReview.next)`|Diff Editor Next Change|`editor.action.diffReview.next`\n`kb(editor.action.diffReview.prev)`|Diff Editor Previous Change|`editor.action.diffReview.prev`",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_14.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_14.md"
 }

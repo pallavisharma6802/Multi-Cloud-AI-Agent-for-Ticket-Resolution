@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Disable linting\n\nLinters, if installed, are enabled by default. You can disable them by [disabling the extension](/docs/configure/extensions/extension-marketplace.md#disable-an-extension) per workspace.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/linting.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/python/linting.md"
 }

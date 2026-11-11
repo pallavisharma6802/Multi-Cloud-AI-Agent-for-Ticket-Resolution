@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Scenarios\n\nThe {% data variables.product.prodname_vscode_shortname %} Server allows you to use {% data variables.product.prodname_vscode_shortname %} in new ways, such as:\n\n* Developing on a remote machine where SSH support may be limited, or you need web-based access.\n* Developing on a machine that doesn't support the installation of {% data variables.product.prodname_vscode_shortname %} desktop, such as an iPad / tablet or Chromebook.\n* Experiencing the client-side security benefit that all code can be executed in the browser sandbox.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/vscode-server.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/remote/vscode-server.md"
 }

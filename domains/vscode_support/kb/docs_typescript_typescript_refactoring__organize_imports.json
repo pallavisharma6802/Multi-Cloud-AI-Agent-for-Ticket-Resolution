@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Organize Imports\n\nThe **Organize Imports** source code action sorts the imports in a TypeScript file and removes unused imports:\n\n<video src=\"images/refactoring/organize-imports.mp4\" placeholder=\"images/refactoring/organize-imports-placeholder.png\" autoplay loop controls muted>\n    Sorry, your browser doesn't support HTML 5 video.\n</video>\n\nYou can run **Organize Imports** from the **Source Action** context menu or with the `kb(editor.action.organizeImports)` keyboard shortcut.\n\nOrganize imports can also be done automatically when you save a TypeScript file by setting:\n\n```json\n\"editor.codeActionsOnSave\": {\n    \"source.organizeImports\": \"explicit\"\n}\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/typescript/typescript-refactoring.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/typescript/typescript-refactoring.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## macOS: Keychain access moved to a different process\n\nSome changes in this release around how the macOS Keychain is accessed from VS Code will require you to acknowledge the following prompt for keychain access on macOS, even if you've previously allowed keychain access:\n\n![Keychain Access prompt](images/1_50/keychain.png)\n\nDetails: VS Code previously accessed the macOS keychain from the window process itself, but now accesses it from the main process. As such, for macOS it prompts for approval like a new application is requesting access, because the process is a different one from before.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_50.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_50.md"
 }

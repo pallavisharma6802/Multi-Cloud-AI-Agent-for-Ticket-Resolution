@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Running R code\n\nRunning R code is simply sending code to the R terminal. Before running R code, you could create an R terminal via command **R: Create R terminal** in the Command Palette.\n\nOnce an R terminal is ready, you could either select the code or put the cursor at the beginning or ending of the code you want to run, press `(Ctrl+Enter)`, and then code will be sent to the active R terminal.\n\nIf you want to run an entire R file, open the file in the editor, and press `Ctrl+Shift+S` and the file will be sourced in the active R terminal.\n\nFor more advanced usage such as running multiple R terminals or self-managed R terminals, you can read [Interacting with R terminals](https://github.com/REditorSupport/vscode-R/wiki/Interacting-with-R-terminals).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/r.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/r.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Debugging - Debug Console\nIn this release, we included a preview of the Debug Console for easy evaluation of expressions. The Debug Console can be opened using the `Open Console` action at the top of the Debug view or using the `Debug: Open Console` action in the Command Palette.\n\n![Debug Console](images/0_8_0/debugconsole.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v0_8_0.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v0_8_0.md"
 }

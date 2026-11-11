@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Instruction formats and settings\n\nUse the [Custom instructions reference](/docs/agents/reference/custom-instructions-reference.md) to look up:\n\n* [File formats, locations, and frontmatter](/docs/agents/reference/custom-instructions-reference.md#supported-formats-and-locations).\n* [Discovery, patterns, and nested instructions](/docs/agents/reference/custom-instructions-reference.md#discovery-and-activation).\n* [Personal instructions and Settings Sync](/docs/agents/reference/custom-instructions-reference.md#user-instructions).\n* [Organization instructions](/docs/agents/reference/custom-instructions-reference.md#organization-instructions).\n* [Settings for instructions and generated content](/docs/agents/reference/custom-instructions-reference.md#settings).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/custom-instructions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/custom-instructions.md"
 }

@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# Emmet in {% data variables.product.prodname_vscode %}\n\nSupport for [Emmet](https://emmet.io/) snippets and expansion is built right into {% data variables.product.prodname_vscode %}, **no extension required**. [Emmet 2.0](https://code.visualstudio.com/blogs/2017/08/07/emmet) has support for the majority of the [Emmet Actions](https://docs.emmet.io/actions/) including expanding [Emmet abbreviations and snippets](https://docs.emmet.io/cheat-sheet/).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/emmet.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/emmet.md"
 }

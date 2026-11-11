@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Integrated Terminal\n\n### Improved link support\n\nThe Integrated Terminal link preview from last month has replaced the old implementation. The new links implementation now enables:\n\n* Improved web and `file://` link detection, by using the editor's link detection.\n* Folder link support, either opening the folder in the Explorer or opening a new VS Code window.\n* Different link actions for different link types, falling back to \"word\" links that search the workspace (based on the `terminal.integrated.wordSeparators` setting).\n* Similar link highlighting and hover experience to the editor.\n\n<video src=\"images/1_45/terminal-links.mp4\" title=\"Video showing Terminal with various links.\" autoplay loop controls muted></video>\n\n*Theme: [Topaz (Dim)](https://marketplace.visualstudio.com/items?itemName=Tyriar.theme-topaz)*",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_46.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_46.md"
 }

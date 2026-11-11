@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Adding Kernel Options\n\nIf you do not have any Jupyter kernel or Python environment on your machine, {% data variables.product.prodname_vscode_shortname %} can help you set up: go to the Command Palette (`kb(workbench.action.showCommands)`), select **Python: Create Environment**, and follow the prompts. You can also add additional ways to select kernels, by installing additional extensions like [Azure Machine Learning](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vscode-ai).\n\n![More Kernel Sources](images/jupyter-kernel-management/more-kernel-sources.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/jupyter-kernel-management.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/datascience/jupyter-kernel-management.md"
 }

@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "# Use extensions in {% data variables.product.prodname_vscode %}\n\n{% data variables.product.prodname_vscode %} extensions let you add languages, debuggers, and tools to your installation to support your development workflow. When you use {% data variables.product.prodname_vscode_shortname %}, you can install extensions directly from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vscode) and take advantage of automatic updates to always have the latest features. In this article, you learn how to browse and install extensions in {% data variables.product.prodname_vscode_shortname %}.\n\nThe Visual Studio Marketplace hosts thousands of extensions across a wide range of categories. To protect you from malicious extensions, it employs several mechanisms, like publisher trust, malware scanning, and more. Learn more about [extension runtime security](/docs/configure/extensions/extension-runtime-security.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/extensions/extensions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/extensions/extensions.md"
 }

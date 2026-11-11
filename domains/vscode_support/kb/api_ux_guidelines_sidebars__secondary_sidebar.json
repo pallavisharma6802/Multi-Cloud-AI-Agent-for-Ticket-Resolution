@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Secondary Sidebar\n\nAs the name implies, the Secondary Sidebar is normally considered a auxiliary location for Views. While extensions cannot contribute Views directly to it by default, users can drag Views from the Primary Sidebar or the Panel to customize their layout.\n\n![Example of the secondary sidebar](images/examples/secondary-sidebar.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/sidebars.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/ux-guidelines/sidebars.md"
 }

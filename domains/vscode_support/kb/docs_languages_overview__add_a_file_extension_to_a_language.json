@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Add a file extension to a language\n\nYou can add new file extensions to an existing language with the `setting(files.associations)` [setting](/docs/configure/settings.md).\n\nFor example, the setting below adds the `.myphp` file extension to the `php` language identifier:\n\n```json\n    \"files.associations\": {\n        \"*.myphp\": \"php\"\n    }\n```\n\nIntelliSense (`kb(editor.action.triggerSuggest)`) will show you the available language identifiers.\n\n![Language ID IntelliSense](images/overview/language-id-intellisense.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/overview.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/overview.md"
 }

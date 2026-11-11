@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "# Work with GitHub in {% data variables.product.prodname_vscode_shortname %}\n\n{% data variables.product.prodname_vscode %} provides several ways to work with repositories, pull requests, and issues on [GitHub](https://github.com). Basic GitHub authentication and Git operations are built into {% data variables.product.prodname_vscode_shortname %}. Extensions add pull request, issue, and virtual repository workflows.\n\nChoose an integration below, or go directly to [creating a pull request](#creating-pull-requests), [reviewing a pull request](#reviewing), or [working on an issue](#working-on-issues).\n\n> [!TIP]\n> New to Git in the editor? Complete the [source control quickstart](/docs/sourcecontrol/quickstart.md) before starting a collaboration workflow.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/github.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/github.md"
 }

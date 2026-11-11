@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Write Code\n\nSave time with these features: efficiently create and manage Azure resources, organize files and deploy easier, customize to align with your workflow, and seamlessly create Azure resources from installed extensions directly within {% data variables.product.prodname_vscode_shortname %}.\n\n**Resource and Workspace views** Use the Resources explorer to create and manage Azure resources. Use the Workspace explorer to create files and deploy.\n\n**Grouping** Change the way resources are grouped to fit your workflow.\n\n**Create Resources** Create an Azure resource from your installed extensions directly in {% data variables.product.prodname_vscode_shortname %}.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/gettingstarted.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/azure/gettingstarted.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## MCP\n\n### Support for server instructions\n\nVS Code now reads MCP server instructions and will include them in its base prompt.\n\n### MCP auto discovery disabled by default\n\n**Setting**: `setting(chat.mcp.discovery.enabled)`\n\nVS Code supports [automatic discovery of MCP servers](https://code.visualstudio.com/docs/agent-customization/mcp-servers#_add-an-mcp-server) installed in other apps like Claude Code. As MCP support has matured in VS Code, auto-discovery is now disabled by default, but you can re-enable it using the `setting(chat.mcp.discovery.enabled)` setting.\n\n### Enable MCP\n\n**Setting**: `setting(chat.mcp.access)`\n\nThe `chat.mcp.enabled` setting that previously controlled whether MCP servers could run in VS Code has been migrated to a new `setting(chat.mcp.access)` setting with more descriptive options:\n\n* `all`: allow all MCP servers to run (equivalent to the previous `true` value)\n* `none`: disable MCP support entirely (equivalent to the previous `false` value)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_104.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_104.md"
 }

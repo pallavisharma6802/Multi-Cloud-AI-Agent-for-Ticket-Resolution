@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Engineering\n\n### Progress for Electron sandbox support\n\nThis milestone we continued to make the VS Code window ready for enabling Electron's [sandbox](https://www.electronjs.org/docs/tutorial/sandbox) and [context isolation](https://www.electronjs.org/docs/tutorial/context-isolation) features.\n\nSpecifically:\n\n* We removed Node.js dependencies from more code that is used in the renderer.\n* We continued investigating dropping `webview` usage entirely and switching to `iframe` for our custom views and editors.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_57.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_57.md"
 }

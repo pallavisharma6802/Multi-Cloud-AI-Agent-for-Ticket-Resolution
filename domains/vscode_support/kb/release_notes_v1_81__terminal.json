@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Terminal\n\n### Custom hover in inline terminal tab\n\nThe panel inline terminal tab that shows when there is a single terminal now uses the custom hover for a more consistent appearance and to support embedded links.\n\n![Hovering the inline terminal tab will show information about the terminal](images/1_81/terminal-hover.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_81.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_81.md"
 }

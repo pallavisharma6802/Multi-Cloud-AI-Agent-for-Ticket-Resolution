@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [Debug chat interactions](/docs/agents/agent-troubleshooting/chat-debug-view.md)\n* [GitHub Copilot frequently asked questions](/docs/agents/agent-troubleshooting/faq.md)\n* [Troubleshooting GitHub Copilot](https://docs.github.com/en/copilot/troubleshooting-github-copilot)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/agent-troubleshooting/troubleshooting.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/agent-troubleshooting/troubleshooting.md"
 }

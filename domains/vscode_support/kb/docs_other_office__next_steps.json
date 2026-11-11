@@ -4,5 +4,5 @@
   "category": "REFERENCE",
   "intent": "reference",
   "content": "## Next steps\n\nCheck out the other pages on the {% data variables.product.prodname_vscode_shortname %} site to find out how you can use more capabilities of the editor when creating custom Office Add-ins:\n\n- [Language Overview](/docs/languages/overview.md) - You can write Office Add-ins in many languages. Find out what {% data variables.product.prodname_vscode_shortname %} has to offer.\n- [User Interface](/docs/editing/getting-started/userinterface.md) - Just starting out with {% data variables.product.prodname_vscode_shortname %}? This is worth reviewing.\n- [Basic Editing](/docs/editing/codebasics.md) - Learn about the powerful {% data variables.product.prodname_vscode_shortname %} editor.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/other/office.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/other/office.md"
 }

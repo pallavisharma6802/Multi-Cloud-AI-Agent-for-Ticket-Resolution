@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "## Next steps\n\n* [Create a branch](/docs/sourcecontrol/branches-worktrees.md#create-new-branches) to keep your next change separate from other work.\n* [Create a {% data variables.product.prodname_github %} pull request](/docs/sourcecontrol/github.md#creating-pull-requests) to get feedback on a published branch.\n* [Troubleshoot source control](/docs/sourcecontrol/troubleshooting.md) if a remote operation fails or stalls.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/repos-remotes.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/repos-remotes.md"
 }

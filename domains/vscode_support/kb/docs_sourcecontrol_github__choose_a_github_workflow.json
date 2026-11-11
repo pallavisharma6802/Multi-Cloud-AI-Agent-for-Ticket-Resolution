@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "## Choose a GitHub workflow\n\nChoose an integration based on what you want to do:\n\n| Goal | Capability | Requirement |\n|------|------------|-------------|\n| [Clone, fetch, pull, and push](/docs/sourcecontrol/repos-remotes.md) | Built-in Git support | Install [Git](https://git-scm.com/download) and sign in when prompted. |\n| [Create and review pull requests](#pull-requests) or [manage issues](#issues) | [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) extension | Install the extension and sign in. |\n| [Browse and edit without cloning](#github-repositories-extension) | [GitHub Repositories](https://marketplace.visualstudio.com/items?itemName=github.remotehub) extension | Install the extension and sign in. Terminal, build, and debugging workflows require a different environment. |\n\nThe GitHub Pull Requests and Issues and GitHub Repositories extensions are separate. Install only the extension that supports your workflow.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/github.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/github.md"
 }

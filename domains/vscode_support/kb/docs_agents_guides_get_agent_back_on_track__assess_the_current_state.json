@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Assess the current state\n\nBefore you ask the agent to continue, identify what happened and what you want to preserve:\n\n1. Check whether the agent is waiting for an answer or approval, or is tracking a terminal command that is still running.\n1. Find the earliest point where the agent's work diverged from your intent.\n1. Review the changed files, recent tool calls, terminal output, and error messages.\n1. Separate correct work from changes that need revision or removal.\n1. Check whether completed actions affected only workspace files or also affected the terminal, network, deployments, or external services.\n1. Write down the expected result, constraints, and validation that the agent missed.\n\nUse these facts in your correction. Avoid prompts such as \"try again\" or \"fix it,\" which don't tell the agent what needs to change.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/get-agent-back-on-track.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/get-agent-back-on-track.md"
 }

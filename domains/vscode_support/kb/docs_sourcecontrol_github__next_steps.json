@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "## Next steps\n\n* [Resolve merge conflicts](/docs/sourcecontrol/merge-conflicts.md) when branches contain competing changes.\n* [Troubleshoot authentication and push failures](/docs/sourcecontrol/troubleshooting.md) when remote operations fail.\n* [Manage branches and worktrees](/docs/sourcecontrol/branches-worktrees.md) for parallel pull request work.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/github.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/github.md"
 }

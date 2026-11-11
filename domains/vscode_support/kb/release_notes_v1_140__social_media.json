@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Social media\n\nVS Code is now on Instagram! Follow [@vscode](https://www.instagram.com/vscode) for VS Code updates, new features, tips, and more.\n\n<!-- <video src=\"images/1_140/vscodeig.mp4\" title=\"Video showing all VS Code social channels and the new Instagram account.\" autoplay loop controls muted></video> -->",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_140.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_140.md"
 }

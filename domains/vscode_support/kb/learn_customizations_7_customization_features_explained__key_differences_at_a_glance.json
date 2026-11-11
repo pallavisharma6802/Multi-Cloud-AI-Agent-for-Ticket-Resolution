@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Key differences at a glance\n\nCopilot can also highlight the differences between commonly confused features.\n\nFor example:\n\n- Instructions vs Prompt Files\n- Instructions vs Custom Agents\n- Custom Agents vs Skills\n- Hooks vs everything else\n\n![Screenshot of Copilot Chat highlighting key differences between custom instructions, agents, skills, and hooks](../images/customizations/ep-7-3-key-differences-by-copilot.png)\n\nThese comparisons help clarify how each feature behaves and when it should be used.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/7-customization-features-explained.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/7-customization-features-explained.md"
 }

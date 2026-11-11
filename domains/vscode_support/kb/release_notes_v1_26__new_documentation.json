@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## New Documentation\n\n### Logpoints blog post\n\nYou can read Kenneth's recent [blog post](https://code.visualstudio.com/blogs/2018/07/12/introducing-logpoints-and-auto-attach) to learn about Node.js debugging Logpoints and auto-attach. [Logpoints](https://code.visualstudio.com/docs/debugtest/debugging#_logpoints) let you quickly output logging information without changing source code or interrupting your debugging session.\n\n### IntelliCode FAQ\n\nIf you are a Python developer, have a look at [IntelliCode](https://learn.microsoft.com/visualstudio/intellicode/FAQ), a new tool that enhances software development using artificial intelligence (AI). The [IntelliCode extension](https://go.microsoft.com/fwlink/?linkid=2006060) provides a set of AI-assisted capabilities for IntelliSense in Python, such as inferring the most relevant auto-completions based on the current source code context.\n\n![IntelliCode extension](images/1_26/intellicode-extension.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_26.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_26.md"
 }

@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [Use the {% data variables.copilot.agents_window %}](/docs/agents/run/agents-window.md) - agent-first workflows across multiple projects.\n* [Developing with Remote Tunnels](/docs/remote/tunnels.md) - set up and manage dev tunnels.\n* [Agent Host architecture](/docs/agents/concepts/agent-host.md) - technical details about remote connections and session execution.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/remote-agent-sessions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/remote-agent-sessions.md"
 }

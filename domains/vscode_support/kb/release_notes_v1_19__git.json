@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Git\n\n### Image diffing\n\nYou can now view changes in your images, side by side, directly from your Git repository:\n\n![side by side image diff](images/1_19/image-diff.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_19.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_19.md"
 }

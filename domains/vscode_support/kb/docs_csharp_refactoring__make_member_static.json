@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Make member static\n\n**What:** Make a member static.\n\n**When:** You want a non-static member to be static.\n\n**Why:** Static members improve readability: knowing that specific code is isolated makes it easier to understand, reread, and reuse.\n\n**How-to:**\n\n1. Place your caret on the member name.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select **Make static**.\n\n![Make member static example](images/refactoring/make-member-static.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/refactoring.md"
 }

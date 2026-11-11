@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Troubleshoot a connection\n\n| What you observe | Next step |\n|------------------|-----------|\n| Connectors don't appear in **Browse** | Check that the **Copilot** harness is selected, both discovery settings are on, and your account and administrator policies permit access. |\n| The status stays at **Connecting** | Select **Cancel**, then select **Connect** and complete authorization in the browser. |\n| Service sign-in fails or access is denied | Review the requested permissions and check whether a service administrator needs to approve MCP access before retrying. |\n| The connector is connected, but no tool is called | Check that the session uses the **Copilot** harness, name the service explicitly in your prompt, and inspect the tool call. See [tool availability and invocation](/docs/agents/agent-troubleshooting/chat-debug-view.md#an-mcp-tool-is-not-being-invoked). |",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agent-customization/copilot-connectors.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/copilot-connectors.md"
 }

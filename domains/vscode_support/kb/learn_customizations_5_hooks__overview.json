@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "# Introduction to hooks\n\n[![Watch Hooks: The Underestimated Feature on YouTube (opens in new tab).](images/5-hooks/youtube-ZsyiRa91XZg.jpg)](https://www.youtube.com/watch?v=ZsyiRa91XZg)\n\nIt seems like nobody talks enough about hooks.\n\nBut they might be one of the most powerful features in VS Code right now.\n\nThis guide breaks down what hooks are, how they work, and how to use them to automate your workflow.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/5-hooks.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/5-hooks.md"
 }

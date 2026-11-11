@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Next steps\n\n* Explore more powerful features of [Azure Spring Apps with Microservices](https://learn.microsoft.com/azure/spring-apps/quickstart-sample-app-introduction?pivots=programming-language-java&tabs=basic-standard-tier).\n* To learn more about Java Debugging features, read the [Java Debugging Tutorial](/docs/java/java-debugging.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-spring-apps.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-spring-apps.md"
 }

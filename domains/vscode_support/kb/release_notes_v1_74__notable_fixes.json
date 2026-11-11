@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable fixes\n\n* [166171](https://github.com/microsoft/vscode/issues/166171) Remove the default scroll bar in the extensions' tip modal.\n* [microsoft/vscode-jupyter#11745](https://github.com/microsoft/vscode-jupyter/issues/11745) Variables viewer causes slowness and instability",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_74.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_74.md"
 }

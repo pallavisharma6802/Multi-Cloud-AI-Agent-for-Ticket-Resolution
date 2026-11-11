@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Move type to matching file\n\n**What:** Lets you move the selected type to a separate file with the same name.\n\n**When:** You have multiple classes, structs, interfaces, etc. in the same file that you want to separate.\n\n**Why:** Placing multiple types in the same file can make it difficult to find these types. By moving types to files with the same name, code becomes more readable and easier to navigate.\n\n**How-to:**\n\n1. Place the cursor inside the name of the type where it is defined.\n2. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n3. Select **Move type to &lt;typename&gt;.cs**.\n\n![Move type to matching file example](images/refactoring/move-type-to-matching-file.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/refactoring.md"
 }

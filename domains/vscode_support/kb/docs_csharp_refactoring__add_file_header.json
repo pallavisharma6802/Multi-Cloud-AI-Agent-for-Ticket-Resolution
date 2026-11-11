@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Add file header\n\n**What:** Add file headers to existing files, projects, and solutions using an [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig).\n\n**When:** You want to easily add a file header to files, projects, and solutions.\n\n**Why:** Your team requires you to include a file header for copyright purposes.\n\n**How-to:**\n\n1. Add an [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) to a project or solution if you do not already have one.\n2. Add the following rule to your EditorConfig file: `file_header_template`.\n3. Set the value of the rule to equal the header text you would like applied. You can use `{fileName}` as a placeholder for the file name.\n4. Place your caret on the first line of any C# file.\n5. Press `kb(editor.action.quickFix)`to trigger the **Quick Actions and Refactorings** menu.\n6. Select **Add file header**.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/refactoring.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/refactoring.md"
 }

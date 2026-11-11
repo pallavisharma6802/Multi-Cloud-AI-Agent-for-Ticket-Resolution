@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## MCP\n\n### Add MCP servers to portable configuration files\n\nYou can add MCP servers to portable configuration files from the **MCP: Add Server** flow, so you can use the same server configuration across compatible Copilot tools without editing JSON manually.\n\nFor global servers, choose **Copilot Global** to save the server to `$COPILOT_HOME/mcp-config.json`, or `~/.copilot/mcp-config.json` when `COPILOT_HOME` is not set.\n\n![Screenshot showing Copilot Global and the deprecated user configuration as global MCP server destinations.](images/1_140/mcp-global-configuration.webp)\n\nFor workspace servers, choose `.mcp.json` to save the server at the workspace root.\n\n![Screenshot showing workspace-root .mcp.json and the deprecated .vscode/mcp.json as workspace MCP server destinations.](images/1_140/mcp-workspace-configuration.webp)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_140.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_140.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Debug\n\n### JavaScript Debugger\n\n#### WebAssembly debugging\n\nThe JavaScript debugger will now automatically decompile WebAssembly modules to the WebAssembly Text Format, and allow you to step through and set breakpoints in the decompiled modules.\n\n![Breakpoint hit during a WebAssembly debug session](images/1_82/js-debug-wat.png)\n\n_Theme: [Codesong](https://marketplace.visualstudio.com/items?itemName=connor4312.codesong) (preview on [vscode.dev](https://vscode.dev/editor/theme/connor4312.codesong))_\n\n#### Source map loading improvements\n\nWe made many improvements to the way source maps are loaded in this release:\n\n* Source maps in some common cases, like in applications compiled with the `tsc` command line, are loaded 3-5x faster.\n* Hot module reloading from the [Vite](https://vitejs.dev) dev server is now supported.\n* Source maps can now be automatically loaded from authenticated endpoints.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_82.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_82.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Debug Adapter Protocol\n\nWe formalized how text can be colorized and styled in the display of variables and output in the [Debug Adapter Protocol](https://microsoft.github.io/debug-adapter-protocol). Colorization works via ANSI control sequences and require that both the client and debug adapter `supportsANSIStyling` in their initialize request and capabilities, respectively.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_94.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_94.md"
 }

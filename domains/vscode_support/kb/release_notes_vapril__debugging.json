@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Debugging\n\n### Call Stack Paging\n\nVS Code debugging now supports arbitrarily deep call stacks. For performance reasons, we only load twenty frames initially but there is now a button at the bottom for loading the next set of frames:\n\n![Load More Stack Frames button](images/April/call-stack-paging.png)\n\n### Improved thread support\n\nDebugging multi-threaded programs has been improved. The currently debugged thread is now automatically expanded and several issues were fixed to make debugging multiple threads a smoother experience.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vApril.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/vApril.md"
 }

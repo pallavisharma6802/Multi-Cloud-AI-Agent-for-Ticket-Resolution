@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Enhance completions with AI\n\nGitHub Copilot can give you AI-powered inline suggestions that help you write code faster and smarter. GitHub Copilot provides suggestions for numerous languages and a wide variety of frameworks, and it works especially well for Python, JavaScript, TypeScript, Ruby, Go, C# and C++.Learn more about how to [get started with Copilot in {% data variables.product.prodname_vscode_shortname %}](/docs/agents/agents-tutorial.md).\n\nCreate a new file - you can use the **File: New File** command in the Command Palette (`kbstyle(F1)`).\n\nIn the JavaScript file, type the following function header:\n\n```js\nfunction calculateDaysBetweenDates(begin, end) {\n```\n\nCopilot will provide a suggestion like the following - use `kbstyle(Tab)` to accept the suggestion:\n\n![Copilot JavaScript ghost text suggestion](images/javascript/js-suggest.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/javascript.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/javascript.md"
 }

@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Clean up resources\n\nWhen you no longer need the app, run these steps to clean up your local resources:\n\n* Close the `agent-quickstart` folder in {% data variables.product.prodname_vscode_shortname %}.\n* Delete the `agent-quickstart` folder from your computer.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/quickstart.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/quickstart.md"
 }

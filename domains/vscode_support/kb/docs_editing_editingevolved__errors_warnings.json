@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Errors & warnings\n\nWarnings or Errors can be generated either via [configured tasks](/docs/debugtest/tasks.md), by rich language services, or by linters, that constantly analyze your code in the background. Since we love bug-free code, warnings and errors show up in multiple places:\n\n* In the Status Bar, there is a summary of all errors and warnings counts.\n* You can click on the summary or press `kb(workbench.actions.view.problems)` to display the **PROBLEMS** panel with a list of all current errors.\n* If you open a file that has errors or warnings, they will be rendered inline with the text and in the overview ruler.\n\n![errors in problems panel](images/editingevolved/errors.png)\n\n> **Tip:** To loop through errors or warnings in the current file, you can press `kb(editor.action.marker.next)` or `kb(editor.action.marker.prev)` which will show an inline zone detailing the problem and possible Code Actions (if available):\n\n![Errors and Warnings Inline](images/editingevolved/errorsinline.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/editingevolved.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/editingevolved.md"
 }

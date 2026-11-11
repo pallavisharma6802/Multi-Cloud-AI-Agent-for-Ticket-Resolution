@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable fixes\n\n* [165933](https://github.com/microsoft/vscode/issues/165933) \\[emmet\\] http-equiv=\"X-UA-Compatible\" in 2023\n* [181889](https://github.com/microsoft/vscode/issues/181889) treeView.reveal with expand: 3 only expands the first level 3 folder",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_79.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_79.md"
 }

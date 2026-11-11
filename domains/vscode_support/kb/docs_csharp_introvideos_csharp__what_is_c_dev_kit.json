@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## What is C# Dev Kit?\n\nThis video explains how {% data variables.product.prodname_vscode_shortname %} together with the C# Dev Kit extension provide a productive and powerful C# development environment.\n\n[![Watch What is {% data variables.product.prodname_vscode_shortname %} and C# Dev Kit? on YouTube (opens in new tab).](images/introvideos-csharp/youtube-tFCZw-wZVtg.jpg)](https://www.youtube.com/watch?v=tFCZw-wZVtg)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/introvideos-csharp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/introvideos-csharp.md"
 }

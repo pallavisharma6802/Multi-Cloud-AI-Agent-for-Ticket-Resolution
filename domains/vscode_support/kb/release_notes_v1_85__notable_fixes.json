@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Notable fixes\n\n* [195796](https://github.com/microsoft/vscode/issues/195796) Searching for text after localization is not supported in the Settings editor\n* [197319](https://github.com/microsoft/vscode/issues/197319) vscode://file// links no longer working\n* [194094](https://github.com/microsoft/vscode/issues/194094) Do not dismiss Profiles Icon picker when moving mouse outside of the picker\n* [197070](https://github.com/microsoft/vscode/pull/197070) Support positioning debug toolbar on custom title bar",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_85.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_85.md"
 }

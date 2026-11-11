@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Learn more\n\nExplore all the features the C# extension has to offer by looking for **.NET** in the Command Palette. For more information on these features, refer to the other documentation pages.\n\nFor learning materials on C# and .NET, check out the following resources:\n\n1. [Learn to program using C#](https://aka.ms/selfguidedcsharp)\n1. [Learn to build with .NET in {% data variables.product.prodname_vscode_shortname %}](https://learn.microsoft.com/training/paths/build-dotnet-applications-csharp/)\n1. [Learn to build web applications](https://learn.microsoft.com/training/paths/build-web-apps-with-blazor/)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/get-started.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/get-started.md"
 }

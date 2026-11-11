@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Contributions to Extensions\n\n* [GitHub Issues and PRs](https://marketplace.visualstudio.com/items?itemName=ms-vscode.github-issues-prs): We have published an extension showing issues and PRs assigned to the current user and milestones.\n\n<video src=\"images/1_14/github-issues-and-prs.mp4\" title=\"Video showing GitHub view showing issues and PRs.\" autoplay loop controls muted></video>\n\n* [Git Lens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens): We added a stash explorer (Pull requests: [#94](https://github.com/eamodio/vscode-gitlens/pull/94), [#102](https://github.com/eamodio/vscode-gitlens/pull/102)) to Git Lens, which allows you to see the content change of local stashes in VS Code Diff Editor.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_14.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_14.md"
 }

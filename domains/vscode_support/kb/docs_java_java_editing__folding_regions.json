@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Folding regions\n\nFolding regions allows you to fold or unfold code snippet to better view the source code.\n\n<video src=\"images/java-editing/folding-range.mp4\" autoplay loop muted playsinline controls title=\"Folding regions\">\n</video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/java/java-editing.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/java/java-editing.md"
 }

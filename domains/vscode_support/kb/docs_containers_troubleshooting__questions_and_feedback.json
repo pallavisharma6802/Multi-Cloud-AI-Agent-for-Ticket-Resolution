@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Questions and feedback\n\nWe love your feedback! If you have any ideas or suggestions, [report an issue](https://github.com/microsoft/vscode-containers/issues/new).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/troubleshooting.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/containers/troubleshooting.md"
 }

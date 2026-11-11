@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Troubleshoot the playground\n\n* **A chat capability is unavailable:** Check the model's capability warning and try a model that supports the input. Changing to **Use All AI Features** does not add unsupported model capabilities.\n* **Image generation fails:** Confirm that you selected a configured image-generation deployment, not a chat model with image input. Check the model's supported parameter values, image formats, and reference-image limits.\n* **A remote request fails:** Verify the deployment endpoint, credentials, region availability, and quota. Review [Foundry model endpoints](https://learn.microsoft.com/azure/foundry/foundry-models/concepts/endpoints).\n* **Local resource usage is missing:** Confirm that you are on Windows and use a supported local provider. Then review the [Model Profiling prerequisites](/docs/intelligentapps/profiling.md).\n* **A chat is missing from History:** Check `.aitk\\chats` on the extension host and confirm that the request completed successfully.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/playground.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/playground.md"
 }

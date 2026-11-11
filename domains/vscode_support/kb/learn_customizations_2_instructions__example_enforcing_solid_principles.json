@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Example: enforcing SOLID principles\n\n![Screenshot of a custom instruction file enforcing SOLID principles](../images/customizations/ep-2-3-solid.png)\n\nOne example of custom instructions is enforcing coding principles like SOLID.\n\nIn this setup, an instruction file defines rules that ensure:\n\n- code follows SOLID principles\n- refactoring aligns with best practices\n- confirmations are shown when rules are applied\n\nWhen the AI is asked to refactor code, it automatically:\n\n- analyzes the code against SOLID principles\n- explains what changes are needed\n- applies those changes\n\n<img src=\"/assets/learn/customizations/ep-2-4-solid-applied.png\" alt=\"SOLID applied\" width=\"80%\">\n\nThe key benefit is consistency.\n\nYou don\u2019t need to remember to ask for best practices every time. The system enforces them automatically.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/2-instructions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/2-instructions.md"
 }

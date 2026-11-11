@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Extensibility\n\nThe Python Environments extension is designed to be extensible. Any environment or package manager can build an extension that plugs into the Python sidebar, appearing alongside the built-in managers. This means the ecosystem can grow to support new tools without waiting for updates to this extension.\n\nCommunity members are building extensions for additional environment managers like the [Pixi Extension](https://marketplace.visualstudio.com/items?itemName=renan-r-santos.pixi-code).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/environments.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/python/environments.md"
 }

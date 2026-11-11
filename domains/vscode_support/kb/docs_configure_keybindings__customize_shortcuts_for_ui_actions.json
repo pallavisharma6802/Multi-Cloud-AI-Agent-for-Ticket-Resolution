@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Customize shortcuts for UI actions\n\nTo customize a keyboard shortcut for a UI action, right-click on any action item in your workbench, and select **Configure Keybinding**. This opens the Keyboard Shortcuts editor, filtered to the corresponding command. If the action has a `when` clause, it's automatically included, making it easier to set up your keyboard shortcuts just the way you need them.\n\n<video src=\"images/keybinding/customize-keybinding.mp4\" title=\"Video that shows how to customize the keyboard shortcut for the split editor action.\" autoplay loop controls muted></video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/keybindings.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/keybindings.md"
 }

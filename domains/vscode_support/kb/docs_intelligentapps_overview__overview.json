@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "# Foundry Toolkit for {% data variables.product.prodname_vscode %}\n\nFoundry Toolkit is an extension for building, testing, deploying, evaluating, and monitoring AI applications and agents in {% data variables.product.prodname_vscode %}. It brings local development tools and access to Microsoft Foundry resources into one workspace.\n\nUse Toolkit to create agents, connect tools and knowledge, experiment with models, and investigate application behavior. This overview helps you choose a starting point and find the guide for your task, whether you are exploring an idea or working on an existing application.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/overview.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/overview.md"
 }

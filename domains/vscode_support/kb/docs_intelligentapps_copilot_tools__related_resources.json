@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [Choose an agent type and creation route](/docs/intelligentapps/create-agents.md).\n* [Use tools with agents](/docs/agents/run/tools.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/copilot-tools.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/copilot-tools.md"
 }

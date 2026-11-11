@@ -4,5 +4,5 @@
   "category": "REFERENCE",
   "intent": "reference",
   "content": "## Can I use {% data variables.product.prodname_vscode_shortname %} without signing in?\n\nYes. You don't need an account to install {% data variables.product.prodname_vscode_shortname %} or use its core editor features.\n\nSigning in with GitHub connects {% data variables.product.prodname_vscode_shortname %} to your GitHub Copilot plan and gives you access to the AI features, models, and usage allowances included with that plan. If you don't want to sign in, you can still use chat with a [bring-your-own-key model](/docs/agent-customization/language-models.md#bring-your-own-language-model-key) without a GitHub account or Copilot plan. Features that depend on the GitHub Copilot service, such as inline suggestions, semantic search, and embeddings, aren't available through bring-your-own-key models.\n\nYou can also use {% data variables.product.prodname_vscode_shortname %} without AI features. To hide the built-in AI features, see [Remove AI features from {% data variables.product.prodname_vscode_shortname %}](/docs/setup/copilot.md#remove-ai-features-from-vs-code).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/supporting/faq.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/supporting/faq.md"
 }

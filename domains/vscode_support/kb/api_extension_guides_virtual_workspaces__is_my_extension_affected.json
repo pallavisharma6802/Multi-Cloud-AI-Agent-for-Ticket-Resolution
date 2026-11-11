@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Is my extension affected?\n\nWhen an extension has no executable code but is purely declarative like themes, keybindings, snippets, or grammar extensions, it can run in a virtual workspace and no modification is necessary.\n\nExtensions with code, meaning extensions that define a `main` entry point, require inspection and, possibly, modification.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/virtual-workspaces.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-guides/virtual-workspaces.md"
 }

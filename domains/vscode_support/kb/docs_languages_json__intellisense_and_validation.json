@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## IntelliSense and validation\n\nFor properties and values, both for JSON data with or without a schema, we offer up suggestions as you type with IntelliSense. You can also manually see suggestions with the **Trigger Suggestions** command (`kb(editor.action.triggerSuggest)`).\n\nWe also perform structural and value verification based on an associated JSON schema giving you red squiggles. To disable validation, use the `setting(json.validate.enable)` [setting](/docs/configure/settings.md).\n\n![IntelliSense](images/json/intellisense.png)\n\n### Package and project dependencies\n\nWe also offer IntelliSense for specific value sets such as package and project dependencies in `package.json`, `project.json`, and `bower.json`.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/json.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/json.md"
 }

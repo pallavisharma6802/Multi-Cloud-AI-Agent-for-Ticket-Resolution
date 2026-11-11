@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Miscellaneous\n\n### Electron update\n\nIn this release, we updated from Electron 1.7.12 to 2.0.5. This brings in a Chromium update from version 58 to 61 and Node.js from 7.9 to 8.9.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_26.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_26.md"
 }

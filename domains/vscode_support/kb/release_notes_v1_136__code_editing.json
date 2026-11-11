@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Code editing\n\n### Word wrapping improvements\n\nInjected text no longer pushes wrapped lines outside the editor viewport. Word wrapping takes the visual width of color decorators, inlay hint spacing, inline progress indicators, and breakpoint placeholders into account. Please have a look below for the before and after screenshots. On the picture above you can see that rgba is slightly cropped. While on the second picture it isn't.\n\n![Screenshot showing a wrapped CSS line cropped at the edge of the editor viewport.](images/1_136/word-wrapping-before.jpg)\n\n![Screenshot showing the wrapped CSS line fitting within the editor viewport.](images/1_136/word-wrapping-after.jpg)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_136.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_136.md"
 }

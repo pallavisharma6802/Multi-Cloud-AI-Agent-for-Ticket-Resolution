@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Can I use dev containers outside of {% data variables.product.prodname_vscode_shortname %}?\n\nAs containerizing production workloads becomes commonplace, dev containers have become useful for scenarios beyond {% data variables.product.prodname_vscode_shortname %}. We're creating the [Development Container Specification](https://containers.dev/implementors/spec) to empower anyone in any tool to configure a consistent development environment. It seeks to find ways to enrich existing formats with common development specific settings, tools, and configurations while still providing a simplified, un-orchestrated single container option \u2013 so that they can be used as coding environments or for continuous integration and testing.\n\nYou can learn more and review the specification at [containers.dev](https://containers.dev), and you can review active proposals and contribute to the specification in the [devcontainers/spec](https://github.com/devcontainers/spec) repository on GitHub.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/faq.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/devcontainers/faq.md"
 }

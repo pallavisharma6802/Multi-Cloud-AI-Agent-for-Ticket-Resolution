@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "# Agent plugins\n\n<!-- IMAGE PLACEHOLDER - YouTube thumbnail embed showing the Customization UI -->\n[![Watch Agent Plugins on YouTube (opens in new tab).](images/3-agent-plugins/youtube-9lonfxt7dqU.jpg)](https://www.youtube.com/watch?v=9lonfxt7dqU)\n\nAgent plugins bundle multiple customizations into one installable package. In this guide, you will inspect a plugin before installing it, use a plugin-provided command, and decide when a plugin is a better fit than separate local customizations.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/3-agent-plugins.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/agents/3-agent-plugins.md"
 }

@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Watching Autopilot work\n\nEven in Autopilot, every action shows up as a tool call in the chat panel.\n\nA typical build sequence looks like this.\n\n1. Create a todo list to track progress.\n1. Run `uv add fastapi uvicorn[standard]` to install dependencies.\n1. Rename `main.py` to `base62.py` and keep only encode and decode logic.\n1. Create `database.py`, `app.py`, `static/index.html`, and `.gitignore` in parallel.\n1. Start the server in the background.\n1. Run a verification script that tests the endpoints end to end.\n\nAutopilot shines during multi-step setup because the agent can install dependencies, create files, start services, and verify results without pausing for each approval. That verification step is important. A strong agent run does not stop at writing files. It verifies the app end to end before marking the task complete.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/build-your-first-app-with-agent-mode.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundations/build-your-first-app-with-agent-mode.md"
 }

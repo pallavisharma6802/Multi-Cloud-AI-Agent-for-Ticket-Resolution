@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Debugger accessibility\n\nThe {% data variables.product.prodname_vscode_shortname %} debugger UI is user accessible and has the following features:\n\n* Debug state changes are read out (for example, 'started', 'breakpoint hit', 'terminated', ...).\n* All debug actions are keyboard accessible.\n* Both the Run and Debug view and Debug Console support Tab navigation.\n* Debug hover is keyboard accessible (`kb(editor.action.showHover)`).\n* Keyboard shortcuts can be created to set focus to each debugger area.\n* While debugging and with the focus in an editor, invoking the **Debug: Add to Watch** command announces the variable's value.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/accessibility/accessibility.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/accessibility/accessibility.md"
 }

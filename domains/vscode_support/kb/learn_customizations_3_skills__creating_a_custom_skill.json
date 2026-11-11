@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Creating a custom skill\n\nYou can create your own skills to automate workflows specific to your project.\n\nFor example, you might want a skill that updates documentation automatically whenever a new feature is added. Instead of doing this manually, you define the behavior once and let the system handle it moving forward.\n\nCopilot can guide this process by generating the initial version of the skill, which you can then review and refine.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/3-skills.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/3-skills.md"
 }

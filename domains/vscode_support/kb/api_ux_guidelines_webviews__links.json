@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Links\n\n* [Webview extension guide](/api/extension-guides/webview)\n* [Webview extension sample](https://github.com/Microsoft/vscode-extension-samples/tree/main/webview-sample)\n* [Webview View extension sample](https://github.com/microsoft/vscode-extension-samples/tree/main/webview-view-sample)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/ux-guidelines/webviews.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/ux-guidelines/webviews.md"
 }

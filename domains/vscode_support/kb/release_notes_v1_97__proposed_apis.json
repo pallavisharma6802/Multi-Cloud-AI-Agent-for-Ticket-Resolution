@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Proposed APIs\n\n### Terminal completion provider\n\nYou can now [register a terminal completion provider](https://github.com/microsoft/vscode/blob/8d5f6f0050af2abde8c9977f1a269ef6eade6915/src/vscode-dts/vscode.proposed.terminalCompletionProvider.d.ts#L79-L87) and let us know what you think [in this GitHub issue](https://github.com/microsoft/vscode/issues/226562).\n\nAn example of this can be found in our terminal suggest extension, which provides completions when enabled via `setting(terminal.integrated.suggest.enabled)`.\n\n### Terminal shell type\n\nExtensions will be able to [access currently active shell type information](https://github.com/microsoft/vscode/blob/8d5f6f0050af2abde8c9977f1a269ef6eade6915/src/vscode-dts/vscode.proposed.terminalShellType.d.ts).\nThe `shellType` field will be part of `TerminalState`.\n\nUse this shell type information to perform shell-specific operations that you need.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_97.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_97.md"
 }

@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## contributes.jsonValidation\n\nContribute a validation schema for a specific type of `json` file. The `url` value can be either a local path to a schema file included in the extension or a remote server URL such as a [json schema store](https://www.schemastore.org/).\n\n```json\n{\n  \"contributes\": {\n    \"jsonValidation\": [\n      {\n        \"fileMatch\": \".jshintrc\",\n        \"url\": \"https://json.schemastore.org/jshintrc\"\n      }\n    ]\n  }\n}\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/contribution-points.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/contribution-points.md"
 }

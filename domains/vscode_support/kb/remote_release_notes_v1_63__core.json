@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Core\n\n### Forwarded port security\n\nFor forwarded ports, when choosing a random port for the local port (for example, when the desired local port is already in use) we now attempt to avoid unsafe ports.\n\n### Connection resilience\n\nThe remote connection is now more resilient in cases of poor network connectivity (high latency, high packet loss, etc.) and will enter reconnection less often.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_63.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_63.md"
 }

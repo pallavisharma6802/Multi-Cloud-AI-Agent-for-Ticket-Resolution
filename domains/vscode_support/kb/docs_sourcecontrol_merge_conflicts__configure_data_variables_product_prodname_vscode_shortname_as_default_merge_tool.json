@@ -4,5 +4,5 @@
   "category": "GIT",
   "intent": "git",
   "content": "## Configure {% data variables.product.prodname_vscode_shortname %} as default merge tool\n\nTo resolve conflicts from a terminal workflow, configure Git to use the {% data variables.product.prodname_vscode_shortname %} 3-way merge editor. First, make sure the [`code` command is available](/docs/configure/command-line.md).\n\nRun these commands in a Bash-compatible terminal:\n\n```bash\ngit config --global merge.tool vscode\ngit config --global mergetool.vscode.cmd 'code --wait --merge \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\"'\n```\n\nAfter a Git operation reports conflicts, run `git mergetool` to launch the editor. Git does not launch it automatically when the conflict occurs.\n\nTo configure the diff tool in the same terminal, run:\n\n```bash\ngit config --global diff.tool vscode\ngit config --global difftool.vscode.cmd 'code --wait --diff \"$LOCAL\" \"$REMOTE\"'\n```\n\nRun `git difftool` to compare changes with this tool.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/sourcecontrol/merge-conflicts.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/sourcecontrol/merge-conflicts.md"
 }

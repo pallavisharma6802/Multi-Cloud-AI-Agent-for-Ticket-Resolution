@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "# Remote development over SSH\n\nThis tutorial walks you through creating and connecting to a virtual machine (VM) on Azure using the {% data variables.product.prodname_vscode %} [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) extension. You'll create a Node.js Express web app to show how you can edit and debug on a remote machine with {% data variables.product.prodname_vscode_shortname %} just like you could if the source code was local.\n\n> **Note**: Your Linux VM can be hosted anywhere - on your local host, on premise, in Azure, or in any other cloud, as long as the chosen Linux distribution meets these [prerequisites](/docs/remote/linux.md#local-linux-prerequisites).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/ssh-tutorial.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/remote/ssh-tutorial.md"
 }

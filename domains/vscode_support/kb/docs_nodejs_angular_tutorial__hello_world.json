@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Hello World\n\nLet's update the sample application to \"Hello World\". Go back to the `app.component.ts` file and change the `title` string in `AppComponent` to \"Hello World\".\n\n```ts\nimport { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.css']\n})\nexport class AppComponent {\n  title = 'Hello World';\n}\n```\n\nOnce you save the `app.component.ts` file, the running instance of the server will update the web page and you'll see \"Welcome to Hello World!!\".\n\n>**Tip**: {% data variables.product.prodname_vscode_shortname %} supports Auto Save, which by default saves your files after a delay. Check the **Auto Save** option in the **File** menu to turn on Auto Save or directly configure the `files.autoSave` user [setting](/docs/configure/settings.md).\n\n![hello world](images/angular/hello-world.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/nodejs/angular-tutorial.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/nodejs/angular-tutorial.md"
 }

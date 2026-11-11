@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Git integration\n\nMicrosoft Fabric supports Git integration that enables version control and collaboration across data and analytics projects. You can connect a Fabric workspace to Git repositories, primarily Azure DevOps or GitHub, and only supported items are synced. This integration also supports CI/CD workflow to enable teams to manage releases efficiently and maintain high-quality analytics environments.\n\n![GIF that shows how to use Git integration with User data functions](./images/microsoft-fabric/fabric-git-integration.gif)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/datascience/microsoft-fabric-quickstart.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/datascience/microsoft-fabric-quickstart.md"
 }

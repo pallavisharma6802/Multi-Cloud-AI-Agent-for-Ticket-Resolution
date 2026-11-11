@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Why is debugging not working?\n\n### My breakpoints aren't being hit\n\nWhen you start debugging, if your breakpoints aren't bound (solid red circle) or they are not being hit, you may need to enable [debug symbols](#how-do-i-enable-debug-symbols) during compilation.\n\n### Debugging starts but all the lines in my stack trace are grey\n\nIf your debugger is showing a grey stack trace, won't stop at a breakpoint, or the symbols in the call stack are grey, then your executable was compiled without [debug symbols](#how-do-i-enable-debug-symbols).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/faq-cpp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/faq-cpp.md"
 }

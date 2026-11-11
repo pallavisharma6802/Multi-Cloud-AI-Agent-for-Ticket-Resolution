@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Terminal\n\n### Better dictation for terminal commands\n\nTerminal dictation applies shell-aware cleanup, so spoken commands preserve shell syntax. For example, saying \"git commit dash m hello world\" produces `git commit -m \"Hello World\"` instead of inserting the words literally.\n\nSelect the active microphone button to stop recording.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_132.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_132.md"
 }

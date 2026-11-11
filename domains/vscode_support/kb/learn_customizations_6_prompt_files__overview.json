@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "# Introduction to prompt files\n\n[![Watch Stop Prompting So Much. Do This Instead! on YouTube (opens in new tab).](images/6-prompt-files/youtube-d37Y28uU2JY.jpg)](https://www.youtube.com/watch?v=d37Y28uU2JY)\n\nIf you\u2019re constantly repeating prompts, you\u2019re doing too much.\n\nMost developers still rely on typing instructions over and over in chat. It works sometimes, but it\u2019s inefficient and inconsistent. There\u2019s a better way to handle repeatable workflows.\n\nThis guide covers what prompt files are, why they matter, and how to use them effectively in VS Code.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/6-prompt-files.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/6-prompt-files.md"
 }

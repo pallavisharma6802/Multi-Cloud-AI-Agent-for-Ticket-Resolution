@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Enterprise\n\n### Native MDM delivery for managed Copilot settings\n\nAdministrators can now deliver managed GitHub Copilot settings through native device management (MDM) channels on Windows and macOS, in addition to the account-based enterprise settings file. This builds on the [enterprise-managed Copilot plugin policies](https://code.visualstudio.com/updates/v1_124#_enterprise) and lets organizations enforce Copilot configuration using their existing device management tooling, without depending on per-user sign-in to apply policy.\n\nFor developers, settings delivered through MDM appear as policy-enforced in VS Code and cannot be overridden locally. Future updates expand the set of supported policy keys across Copilot surfaces.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_125.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_125.md"
 }

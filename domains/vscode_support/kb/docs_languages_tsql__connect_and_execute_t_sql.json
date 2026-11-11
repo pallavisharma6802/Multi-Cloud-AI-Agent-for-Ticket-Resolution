@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Connect and Execute T-SQL\n\nEasily connect to SQL Server running on-premises, in any cloud, Azure SQL Database, and Azure SQL Data Warehouse. Then, execute your T-SQL statements and batches to view results and messages - all within {% data variables.product.prodname_vscode_shortname %}. Your recent connections are saved across sessions, so you can quickly connect to your databases again.\n\n<video src=\"images/tsql/execute.mp4\" title=\"Video showing Execute T-SQL.\" autoplay loop controls muted></video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/tsql.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/tsql.md"
 }

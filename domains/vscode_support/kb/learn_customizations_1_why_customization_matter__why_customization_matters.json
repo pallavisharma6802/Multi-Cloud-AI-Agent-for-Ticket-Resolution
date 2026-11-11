@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Why customization matters\n\nYou may ask yourself: Is customization really needed? Why not just jump into doing the work without it? Without customization, every interaction looks like this:\n\n- You restate context\n- You restate expectations\n- You restate how you want things done\n\nThis leads to:\n\n- Inconsistent results\n- More effort\n- More trial and error\n\nCustomization changes that. It allows you to:\n\n- Define behavior once\n- Reuse it across your workflow\n- Get consistent, higher-quality outputs\n\nInstead of prompting better, you're building a system that works for you.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/1-why-customization-matter.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/1-why-customization-matter.md"
 }

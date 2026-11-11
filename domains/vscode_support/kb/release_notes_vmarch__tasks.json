@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Tasks\n\n### Tasks.json Creation\n\nConfiguring the task runner now offers you a list of templates to choose from. Tasks defined for Gulp and Grunt are still auto detected.\n\n![](images/March/tasks.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/vMarch.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/vMarch.md"
 }

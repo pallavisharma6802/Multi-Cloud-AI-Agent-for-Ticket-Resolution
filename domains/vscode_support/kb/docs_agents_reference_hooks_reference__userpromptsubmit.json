@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## `UserPromptSubmit`\n\nThe `UserPromptSubmit` hook fires when the user submits a prompt.\n\n### Input\n\nIn addition to the [common input](#common-input), the hook receives:\n\n```json\n{\n  \"prompt\": \"Add input validation to the sign-up form.\"\n}\n```\n\n| Field | Type | Description |\n|-------|------|-------------|\n| `prompt` | string | Text submitted by the user. |\n\nThe hook supports the [common output](#common-output).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/reference/hooks-reference.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/reference/hooks-reference.md"
 }

@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Next steps\n\nRead on to find out about:\n\n* [Extension Marketplace](/docs/configure/extensions/extension-marketplace.md) - Browse the extensions others have shared\n* [Debugging](/docs/debugtest/debugging.md) - Learn more about {% data variables.product.prodname_vscode_shortname %} debugging",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/php.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/php.md"
 }

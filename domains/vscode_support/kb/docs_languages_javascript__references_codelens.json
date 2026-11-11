@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## References CodeLens\n\nThe JavaScript references CodeLens displays an inline count of reference for classes, methods, properties, and exported objects:\n\n![JavaScript references CodeLens](images/javascript/references-codelens.png)\n\nTo enable the references CodeLens, set `\"js/ts.referencesCodeLens.enabled\"` to `true`.\n\nClick on the reference count to quickly browse a list of references:\n\n![JavaScript references CodeLens peek](images/javascript/references-codelens-peek.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/javascript.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/javascript.md"
 }

@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\nLearn more about testing and AI customization in {% data variables.product.prodname_vscode_shortname %}:\n\n* [Testing with AI](/docs/agents/guides/test-code-with-ai.md)\n* [Custom agents](/docs/agent-customization/custom-agents.md)\n* [Custom instructions](/docs/agent-customization/custom-instructions.md)\n* [Running tests with {% data variables.product.prodname_vscode_shortname %}](/docs/debugtest/testing.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/test-driven-development-guide.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/test-driven-development-guide.md"
 }

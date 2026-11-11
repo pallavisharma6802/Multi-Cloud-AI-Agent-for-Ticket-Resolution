@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Share a session\n\nSessions are not shared by default. On GitHub.com, you can share a synced session for view-only access to anyone who has access to the repository:\n\n1. Open the **Agents** tab on GitHub.com.\n1. Select a session and open **Sharing settings** from the `...` menu.\n1. Enable sharing to give repository collaborators view-only access.\n\nRecipients can view the session's prompts, responses, and file changes, but cannot steer or modify the session. Shared sessions are not indexed for other users' session queries.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/sessions/session-history.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/sessions/session-history.md"
 }

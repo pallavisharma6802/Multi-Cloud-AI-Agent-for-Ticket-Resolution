@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Accessibility\n\n### Shell integration for pwsh on Windows support for screen readers\n\nPSReadLine has historically been disabled when a screen reader is detected to avoid overwhelming users with excessive auditory feedback. Since our terminal's shell integration relies on PSReadLine support, we now activate a streamlined version of PSReadLine in screen reader mode. This ensures shell integration and its features work for screen reader users.\n\n### Chat improvements\n\n**Setting**: `setting(accessibility.verboseChatProgressUpdates)`\n\nA new setting, `setting(accessibility.verboseChatProgressUpdates)`, enables more detailed announcements for screen reader users about chat activity.\n\nFrom the chat input, users can focus the last focused chat response item `kb(workbench.chat.action.focusLastFocused)`.\n\n### Accessible view persistence\n\nWhen switching between VS Code and other windows, we now maintain the user's position in the Accessible view for a seamless workflow.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_105.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_105.md"
 }

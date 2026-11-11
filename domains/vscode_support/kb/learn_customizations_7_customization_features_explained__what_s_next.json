@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## What\u2019s next\n\nNow that you understand how these features fit together, the next step is applying them in a real project.\n\nThere\u2019s no better way to reinforce this than building something and using each feature in context.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/7-customization-features-explained.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/7-customization-features-explained.md"
 }

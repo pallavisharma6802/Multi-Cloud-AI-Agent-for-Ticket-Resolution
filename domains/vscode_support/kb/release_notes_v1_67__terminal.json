@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Terminal\n\n### Find result count\n\nWhen searching in the terminal, the result count and currently selected match index are now displayed in the Find control.\n\n![Text is searched for in the terminal and the Find control is labeled match 12 of 14 to indicate that match 12 is currently selected](images/1_67/terminal-find-count.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_67.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_67.md"
 }

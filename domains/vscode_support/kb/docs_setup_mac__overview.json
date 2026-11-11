@@ -4,5 +4,5 @@
   "category": "INSTALLATION",
   "intent": "installation",
   "content": "# Installing {% data variables.product.prodname_vscode %} on macOS\n\n{% data variables.product.prodname_vscode %} is available for macOS through a downloadable disk image. {% data variables.product.prodname_vscode_shortname %} supports Intel-based Macs and Macs with Apple silicon.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/setup/mac.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/setup/mac.md"
 }

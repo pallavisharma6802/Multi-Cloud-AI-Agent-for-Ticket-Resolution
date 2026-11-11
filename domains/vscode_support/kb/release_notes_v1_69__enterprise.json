@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Enterprise\n\n### UpdateMode Group Policy on Windows\n\nVS Code now has support for [Windows Registry-based Group Policy](https://learn.microsoft.com/previous-versions/windows/desktop/policy/implementing-registry-based-policy), which allows system administrators to create and deploy policies on machines they manage.\n\nThe first VS Code policy supported is `UpdateMode`, which overrides the `update.mode` setting and controls whether VS Code automatically updates when a new version is released.\n\nRefer to Group Policy on Windows in the [Enterprise](https://code.visualstudio.com/docs/setup/enterprise#_group-policy-on-windows) documentation to learn more.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_69.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_69.md"
 }

@@ -4,5 +4,5 @@
   "category": "SETTINGS",
   "intent": "settings",
   "content": "## Removing a keyboard shortcut\n\nTo remove a keyboard shortcut, right-click on the entry in the Keyboard Shortcuts editor, and select **Remove Keybinding**.\n\nTo remove a keyboard shortcut by using the `keybindings.json` file, add a `-` to the `command` and the rule will be a removal rule.\n\nHere is an example:\n\n```json\n// In Default Keyboard Shortcuts\n...\n{ \"key\": \"tab\", \"command\": \"tab\", \"when\": ... },\n{ \"key\": \"tab\", \"command\": \"jumpToNextSnippetPlaceholder\", \"when\": ... },\n{ \"key\": \"tab\", \"command\": \"acceptSelectedSuggestion\", \"when\": ... },\n...\n\n// To remove the second rule, for example, add in keybindings.json:\n{ \"key\": \"tab\", \"command\": \"-jumpToNextSnippetPlaceholder\" }\n\n```\n\nTo override a specific keyboard shortcut rule with an empty action, you can specify an empty command:\n\n```json\n// To override and disable any `tab` keyboard shortcut, for example, add in keybindings.json:\n{ \"key\": \"tab\", \"command\": \"\" }\n```",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/configure/keybindings.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/configure/keybindings.md"
 }

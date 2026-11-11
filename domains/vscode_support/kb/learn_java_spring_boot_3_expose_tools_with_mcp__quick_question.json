@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Quick Question\n\nThe MCP tools and the web page produce the same result. If you were adding a sixth\noperation to this application, where would you implement it, and what would you have to\nchange in `TodoTools`?",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/3-expose-tools-with-mcp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/java-spring-boot/3-expose-tools-with-mcp.md"
 }

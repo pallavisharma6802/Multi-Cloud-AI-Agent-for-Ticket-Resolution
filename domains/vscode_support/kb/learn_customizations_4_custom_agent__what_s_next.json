@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## What\u2019s next\n\nCustom agents give you structured, role-based control over AI.\n\nIf you want to take it even further and trigger behavior automatically without prompting, the next step is exploring hooks.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/4-custom-agent.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/4-custom-agent.md"
 }

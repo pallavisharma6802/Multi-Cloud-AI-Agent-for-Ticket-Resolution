@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Tool calls\n\nEvery action the agent takes shows up in the chat panel as a tool call. A tool call is simply the agent using one of its available tools.\n\nThe agent decides which tools to use based on your prompt and gathered context. You can also reference tools explicitly in your prompt with `#`.\n\n* `#fetch`, pull in a specific web page.\n* `#codebase`, search across your project.\n* `#file`, attach a specific file.\n\nType `#` in the chat input to see the full list of context sources and tools available in the current session.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundations/approvals-autonomy-and-context-budget.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundations/approvals-autonomy-and-context-budget.md"
 }

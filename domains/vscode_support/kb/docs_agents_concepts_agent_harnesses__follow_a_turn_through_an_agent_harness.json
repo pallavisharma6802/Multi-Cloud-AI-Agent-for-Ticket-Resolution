@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Follow a turn through an agent harness\n\nWhen you submit a prompt, the harness coordinates each step of the turn:\n\n1. The harness receives your request and the current session state. It prepares the instructions, context, and available tool definitions for the language model.\n1. The language model reasons over that information and returns either a response or a request to call a tool.\n1. For a tool request, the harness applies the configured permission and approval rules, routes the call to the environment where the tool runs, and captures the result.\n1. The harness returns the tool result to the model. The model decides whether to call another tool, ask for input, or finish the task.\n1. The harness associates the messages, tool calls, results, and code changes with the session, and presents the current status in {% data variables.product.prodname_vscode_shortname %}.\n\nThe model chooses the actions, while the harness coordinates the system that carries them out.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/concepts/agent-harnesses.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/concepts/agent-harnesses.md"
 }

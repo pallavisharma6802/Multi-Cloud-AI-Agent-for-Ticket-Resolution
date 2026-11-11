@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Tasks\n\n### Pin run task entries\n\nTasks can be pinned in the **Tasks: Run Task** list for faster and easier access.\n\n![Pinned items are the top category in the Run Task list](images/1_72/pinned-tasks.png)\n\n### Task completion sound\n\nTasks play a sound when they finish to enable multi-tasking and improve accessibility. Configure the audio cue via the `audioCues.taskCompleted` setting.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_72.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_72.md"
 }

@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Debugging\n\n### JavaScript debugging\n\n#### Improved Node.js Startup Performance\n\nThe 'breakpoint predictor' used for Node.js debugging has been rewritten and improved to dramatically increase speed for large projects. For example, startup time overhead when debugging unit tests in the TypeScript repo was reduced by 62%, and the overhead to debug and start a build in the VS Code repo was reduced by 80%.\n\nIf you run into problems such as breakpoints not being hit, please [file an issue](https://github.com/microsoft/vscode-js-debug/issues/new). You can disable the new behavior by setting `\"enableTurboSourcemaps\": false` in your `launch.json`, however this option will eventually be removed as we gain confidence.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_75.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_75.md"
 }

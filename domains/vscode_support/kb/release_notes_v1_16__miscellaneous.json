@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Miscellaneous\n\n### Electron update\n\nIn this release, we updated from Electron 1.6.6 to 1.7.3. This brings a Chrome update from version 56 to 58 and Node.js from 7.4 to 7.9.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_16.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_16.md"
 }

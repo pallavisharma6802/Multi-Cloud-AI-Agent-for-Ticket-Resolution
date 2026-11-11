@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Requirements\n\n- [.NET 6.0 SDK or later](https://dotnet.microsoft.com/download)\n- {% data variables.product.prodname_vscode %} (version 1.58.0 or later)\n- [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/csharp/testing.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/csharp/testing.md"
 }

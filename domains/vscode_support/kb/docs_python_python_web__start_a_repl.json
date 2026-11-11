@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Start a REPL\n\nThe extension comes with an integrated Python REPL. To activate it, run the command **Python WASM: Start REPL**.\n\n![Start Python Repl](images/web/repl.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/python-web.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/python/python-web.md"
 }

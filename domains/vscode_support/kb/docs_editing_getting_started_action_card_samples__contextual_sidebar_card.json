@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Contextual sidebar card\n\nOn desktop, the following card appears in the **Related** sidebar while this section is active. Its product link opens the settings editor with the selected Stable or Insiders scheme.\n\n{% action-card title=\"Open editor settings\" display=\"sidebar\" %}\nOpen a specific setting in your preferred {% data variables.product.prodname_vscode_shortname %} edition.\n\n* [Open font size settings](vscode://settings/editor.fontSize)\n{% /action-card %}\n\nScroll between this section and the next section to see the contextual sidebar card change.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/getting-started/action-card-samples.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/getting-started/action-card-samples.md"
 }

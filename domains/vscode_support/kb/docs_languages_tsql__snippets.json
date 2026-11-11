@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Snippets\n\nT-SQL snippets provide code templates for commonly used T-SQL statements. Type \"sql\" to get the list of T-SQL snippets.\n\n<video src=\"images/tsql/snippets.mp4\" title=\"Video showing tsql snippets.\" autoplay loop controls muted></video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/tsql.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/tsql.md"
 }

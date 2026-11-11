@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Links\n\n- [Custom Editor sample][sample]\n\n### VS Code API Usage\n\n- [`window.registerCustomEditorProvider`](/api/references/vscode-api#window.registerCustomEditorProvider)\n- [`CustomTextEditorProvider`](/api/references/vscode-api#CustomTextEditorProvider)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/extension-guides/custom-editors.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/extension-guides/custom-editors.md"
 }

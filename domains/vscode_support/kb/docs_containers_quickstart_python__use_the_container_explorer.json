@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Use the Container Explorer\n\nThe Container Explorer provides an interactive experience to examine and manage container assets such as containers, images, and so on. To see an example:\n\n1. Navigate to the Container Explorer.\n1. In the **Containers** tab, right-click on your container and choose **View Logs**.\n\n    ![Viewing the logs of a container](images/quickstarts/python-view-logs.png)\n\n1. The output will be displayed in the terminal.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/containers/quickstart-python.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/containers/quickstart-python.md"
 }

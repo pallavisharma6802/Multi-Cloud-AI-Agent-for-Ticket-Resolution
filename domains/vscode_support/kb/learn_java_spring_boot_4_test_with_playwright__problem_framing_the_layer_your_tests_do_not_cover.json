@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Problem Framing: The Layer Your Tests Do Not Cover\n\nThe sample already has unit tests for `TodoService` and an integration test for the Spring\nweb flow. Both are valuable, and neither clicks anything. They exercise the code beneath\nthe page, so a broken form attribute, a mislabelled control, or a row that renders but\ncannot be selected passes every one of them.\n\nBrowser tests close that gap. Historically they cost enough to write that teams skipped\nthem, which is exactly the kind of cost an assistant with the right tools can absorb.\n\n### Try this\n\nLook at your own most recent UI change and ask what would have failed if the button had\nrendered with the wrong handler. If the answer is \"nothing until someone noticed\", that is\nthe layer this chapter covers.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/4-test-with-playwright.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/java-spring-boot/4-test-with-playwright.md"
 }

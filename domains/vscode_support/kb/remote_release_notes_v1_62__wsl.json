@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## WSL\n\nThe hover over the Remote indicator now shows you whether the current Linux distribution is a WSL 1 or WSL 2 distro:\n\n![WSL Remote indicator hover](images/1_62/wsl-remote-indicator-hover.png)\n\nAdditionally, the distro pickers and the Remote Explorer put a label (\"wsl1\") after the WSL 1 distros:\n\n![Distro picker](images/1_62/distro-picker.png)\n\nWe recommend using WSL 2 for better performance.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_62.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_62.md"
 }

@@ -4,5 +4,5 @@
   "category": "EDITOR",
   "intent": "editor",
   "content": "## Generate tests\n\nTo generate tests for your application code without writing a prompt, you can use the editor smart actions.\n\n1. Open your application code file.\n1. Optionally, select the code you want to test.\n1. Right-click and select **Generate Code** > **Generate Tests**.\n\n    {% data variables.product.prodname_vscode_shortname %} generates test code in an existing test file, or creates a new test file if one doesn't exist.\n\n1. Optionally, refine the generated tests by providing additional context in the Inline Chat prompt.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/editing/copilot-smart-actions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/editing/copilot-smart-actions.md"
 }

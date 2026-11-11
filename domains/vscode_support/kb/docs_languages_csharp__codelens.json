@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## CodeLens\n\nAnother cool feature is the ability to see the number of references to a method directly above the method. Click on the reference info to see the references in the Peek view. This reference information updates as you type.\n\n>**Note:** Methods defined in `object`, such as `equals` and `hashCode` do not get reference information due to performance reasons.\n\n![CodeLens](images/csharp/codelens.png)\n\n>**Tip:** You can turn off references information displayed in CodeLens with the `setting(editor.codeLens)` [setting](/docs/configure/settings.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/csharp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/csharp.md"
 }

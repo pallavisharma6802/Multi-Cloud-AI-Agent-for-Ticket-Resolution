@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Quick Fixes/Code Actions\n\nThe C/C++ extension provides C/C++ specific suggestions for how to fix and improve your C++ code based on your code context. View these suggestions either by hovering over a symbol and selecting the **QuickFix** link, or by selecting a code action (light bulb) as it appears next to your code. For example, if a section of code can be extracted to a method, selecting the light bulb icon shows Extract to method. Other than the features mentioned above, the C/C++ extension provides quick fixes/code actions in the following situations:\n\n### Add missing header files\n\nIf there is an unknown symbol in your C++ code and the C/C++ Extension identifies the correct header file in your workspace, there is now a quick fix available. Select the quick fix and the necessary header file include will be added to the top of your current C++ file.\n\n![Add Missing Include in code using a code action](images/refactoring/quick-fix-add-missing-includes.gif)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/cpp/cpp-refactoring.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/cpp/cpp-refactoring.md"
 }

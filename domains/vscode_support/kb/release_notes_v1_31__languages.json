@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Languages\n\n### TypeScript 3.3\n\nWe now ship with [TypeScript 3.3.1](https://devblogs.microsoft.com/typescript/announcing-typescript-3-3/). This TypeScript update brings some important bug fixes and polish.\n\n### Removing the markdown.previewFrontMatter setting\n\nThe `markdown.previewFrontMatter` setting has been removed. The Markdown preview now always hides YAML frontmatter (this was the default setting for `markdown.previewFrontMatter`).\n\nMarkdown extensions such as [Markdown yaml Preamble](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-yaml-preamble) and [GitHub Markdown Preview](https://marketplace.visualstudio.com/items?itemName=bierner.github-markdown-preview) render frontmatter as a table in the preview.\n\n### Semantic selection\n\nSemantic selection is now available for HTML, CSS/LESS/SCSS, and JSON:\n\n<video src=\"images/1_31/html-css-json-selection.mp4\" title=\"Video showing HTML, CSS, and JSON semantic selection.\" autoplay loop controls muted></video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_31.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_31.md"
 }

@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Schedule recurring tasks\n\nAutomations run agent tasks from a saved prompt and configuration. Local automations run in your development environment on your computer. Cloud automations `feature(cloud-automations)` run remotely in GitHub on a schedule or in response to supported repository events, even when your computer is off.\n\nSelect **Automations** in the sidebar to get started. For cloud execution, select **Run in the Cloud** when creating the automation. Start with a manual run and review its session before enabling a recurring trigger.\n\nLearn how to [choose where an automation runs, create an automation, and review its results](/docs/agents/run/automations.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/agents-window.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/agents-window.md"
 }

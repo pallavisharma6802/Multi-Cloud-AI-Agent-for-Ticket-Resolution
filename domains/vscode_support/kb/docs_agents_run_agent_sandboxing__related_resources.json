@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [Manage approvals and permissions](/docs/agents/run/approvals.md)\n* [Understand trust and safety for AI agents](/docs/agents/concepts/trust-and-safety.md)\n* [Review AI settings](/docs/agents/reference/ai-settings.md#sandboxing-and-network-access)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/agent-sandboxing.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/agent-sandboxing.md"
 }

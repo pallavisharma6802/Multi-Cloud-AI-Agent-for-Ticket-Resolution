@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Tasks\n\n### npm\n\nThe built-in npm extension's setting `npm.packageManager` has a new default value: `auto`. The `auto` value will cause the package manager to be automatically detected based the `.lock` files and which package manager was used to install dependencies in the workspace. When there are multiple `.lock` files detected, a package manager will still be chosen, and a warning will indicate that there was a conflict.\n\n### Remove recent tasks\n\nThe tasks Quick Pick has always had a **Recent Tasks** section at the top. Since this is a valuable location, you can now better curate your recent tasks by removing them from the Quick Pick with the **Remove Recently Used Task** button on the right.\n\n<video src=\"images/1_52/remove-recent-task.mp4\" title=\"Video showing Remove recent task from Quick Pick menu.\" autoplay loop controls muted></video>",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_52.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_52.md"
 }

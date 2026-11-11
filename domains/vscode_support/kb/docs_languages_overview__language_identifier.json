@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "## Language identifier\n\n{% data variables.product.prodname_vscode_shortname %} associates a language mode with a specific language identifier so that various {% data variables.product.prodname_vscode_shortname %} features can be enabled based on the current language mode.\n\nA language identifier is often (but not always) the lowercased programming language name. Note that casing matters for exact identifier matching ('Markdown' != 'markdown'). Unknown language files have the language identifier `plaintext`.\n\nYou can see the list of currently installed languages and their identifiers in the **Change Language Mode** (`kb(workbench.action.editor.changeLanguageMode)`) dropdown.\n\n![language identifiers](images/overview/language-identifiers.png)\n\nYou can find a list of known identifiers in the [language identifier reference](/docs/languages/identifiers.md).",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/languages/overview.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/languages/overview.md"
 }

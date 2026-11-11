@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Engineering\n\n### Extensions and webpack\n\nWe have continued our [webpack](https://webpack.js.org) effort and now most of the bundled extensions are webpack'ed. As a re-fresher: this helps to reduce the startup time for extensions because there are fewer files to load and less source code to parse. It also helps to reduce the install time because fewer files need to be extracted and written to disk.\n\nThis milestone we have trimmed the bundle by another 2803 files. In July we started with 9000 files, by August we were down to 4650, and in September we have 1847!",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_28.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_28.md"
 }

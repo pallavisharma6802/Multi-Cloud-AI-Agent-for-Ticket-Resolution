@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Next steps\n\n* [Azure Extensions](/docs/azure/extensions.md) - The {% data variables.product.prodname_vs_marketplace %} has hundreds of extensions for Azure and the cloud.\n* [Azure Kubernetes Service Diagnostics (preview) overview](https://learn.microsoft.com/azure/aks/concepts-diagnostics)\n* [Azure Service Operator](https://azure.github.io/azure-service-operator/#azure-service-operator-v2) - Learn about Azure Service Operator.\n* [AKS Periscope](https://github.com/azure/aks-periscope)\n* [GitHub AKS Starter Workflow](https://github.com/actions/starter-workflows)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/azure/aksextensions.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/azure/aksextensions.md"
 }

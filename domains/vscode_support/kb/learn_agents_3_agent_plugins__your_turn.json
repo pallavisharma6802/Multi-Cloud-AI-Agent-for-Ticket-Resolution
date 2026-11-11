@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Your turn\n\nChoose one workflow you repeat in your team or personal projects. Then decide how you would package it.\n\n1. If it needs one instruction set, write down the skill you would create.\n\n1. If it needs a role with a fixed tool boundary, write down the custom agent you would create.\n\n1. If it needs several customizations working together, sketch a plugin manifest.\n\nYou do not need to publish a plugin for this exercise. The goal is to practice identifying when a bundle is useful.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/3-agent-plugins.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/agents/3-agent-plugins.md"
 }

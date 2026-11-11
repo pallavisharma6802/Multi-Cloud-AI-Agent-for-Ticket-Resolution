@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Title Bar colors\n\n- `titleBar.activeBackground`: Title Bar background when the window is active.\n- `titleBar.activeForeground`: Title Bar foreground when the window is active.\n- `titleBar.inactiveBackground`: Title Bar background when the window is inactive.\n- `titleBar.inactiveForeground`: Title Bar foreground when the window is inactive.\n- `titleBar.border`: Title bar border color.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/theme-color.md"
 }

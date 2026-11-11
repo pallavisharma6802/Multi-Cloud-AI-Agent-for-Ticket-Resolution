@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "# devcontainer.json reference\n\n**TL;DR - This document has moved to the [Development Containers Specification](https://containers.dev/implementors/json_reference) site! This page now exists as a redirect to the specification site, which contains the latest information.**",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/devcontainers/devcontainerjson-reference.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/devcontainers/devcontainerjson-reference.md"
 }

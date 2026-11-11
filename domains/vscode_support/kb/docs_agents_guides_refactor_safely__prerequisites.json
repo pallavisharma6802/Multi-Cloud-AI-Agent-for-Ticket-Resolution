@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Prerequisites\n\n* [Set up {% data variables.product.prodname_copilot %}](/docs/setup/copilot.md).\n* Open a trusted repository with a working development environment.\n* Identify a small area to improve and a concrete goal, such as removing duplicate validation while preserving API responses.\n* Preserve unrelated work and create a [development branch](/docs/sourcecontrol/branches-worktrees.md) for the refactor.\n\nWork in the current folder on that branch. If the existing behavior is unclear, [trace it through the codebase](/docs/agents/guides/explore-a-codebase.md) before changing its structure.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/guides/refactor-safely.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/guides/refactor-safely.md"
 }

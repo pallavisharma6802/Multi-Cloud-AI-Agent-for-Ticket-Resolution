@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [Microsoft Foundry evaluation and observability concepts](https://learn.microsoft.com/en-us/azure/foundry/concepts/observability)\n* [Configure agents and their tools](/docs/intelligentapps/agentbuilder.md)\n* [Optimize models, prompts, and agents](/docs/intelligentapps/optimizations.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/intelligentapps/evaluation.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/intelligentapps/evaluation.md"
 }

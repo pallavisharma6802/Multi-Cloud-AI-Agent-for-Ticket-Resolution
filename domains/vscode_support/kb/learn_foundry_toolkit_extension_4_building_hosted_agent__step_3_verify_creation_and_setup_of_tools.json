@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Step 3: Verify Creation and Setup of Tools\n\nNow that you saw what was scaffolded at high level, let's dive into the tools that were setup as part of the scaffold.\n\nIn your open project, open the `toolbox.yaml` file and confirm that at least two tools were created: one for Microsoft Learn MCP and one for web search.\n\nHere's what they will do for us:\n\n- **Web Search**: Retrieve current web context for time-sensitive or trending information.\n- **Microsoft Learn MCP**: Retrieve trusted product facts and documentation context.\n\nSee below how these tools are configured:\n\n![Foundry Toolbox configuration](../images/foundry-toolkit/ch4-toolbox-configuration.png)\n\n**Fig 02: Foundry Toolbox configuration.**\n\nWith tools attached, spend a minute reading the generated assets so you can predict behavior before you execute anything.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/foundry-toolkit-extension/4-building-hosted-agent.md"
 }

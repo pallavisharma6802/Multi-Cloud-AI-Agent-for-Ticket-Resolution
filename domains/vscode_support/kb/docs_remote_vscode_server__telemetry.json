@@ -4,5 +4,5 @@
   "category": "REMOTE_CLOUD",
   "intent": "remote_cloud",
   "content": "## Telemetry\n\nIf you want to disable telemetry, you can pass in `--disable-telemetry` when launching the {% data variables.product.prodname_vscode_shortname %} Server: `code tunnel --disable-telemetry`. Alternatively, if you would like to specify an initial telemetry level, such as only collecting errors, you can pass in `--telemetry-level` followed by the level (for example, `error`).\n\nIf telemetry is not disabled via the CLI, the {% data variables.product.prodname_vscode_shortname %} Server will begin respecting the client telemetry settings (your telemetry setting in vscode.dev or desktop) upon successful connection.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/remote/vscode-server.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/remote/vscode-server.md"
 }

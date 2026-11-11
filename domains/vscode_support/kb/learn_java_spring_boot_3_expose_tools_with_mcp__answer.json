@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Answer\n\nImplement it in `TodoService`, once. `TodoTools` then needs a method that delegates to it,\nannotated with `@McpTool` and a description written for a model rather than a developer \u2014\nplus `@McpToolParam` on each input. Nothing else changes: no transport configuration, no\nregistration list, no client-side edit, because the annotation scanner discovers the\nmethod at startup and the log's tool count goes from five to six. The reason this stays so\ncheap is that the tool layer holds no logic of its own; the moment it starts validating or\nstoring anything, you have two implementations to keep in step.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/java-spring-boot/3-expose-tools-with-mcp.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/java-spring-boot/3-expose-tools-with-mcp.md"
 }

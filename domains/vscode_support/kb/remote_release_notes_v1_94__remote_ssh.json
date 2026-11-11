@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Remote - SSH\n\n### Baseline Test Configurations\n\nThis iteration we began developing a collection of public [remote configurations](https://github.com/microsoft/vscode-remote-release/tree/main/ssh).  Our internal release pipeline has been configured to utilize these configurations as a baseline regression testing gate.\n\nIn the next iterations we will continue to add configurations with the goal of increased compatibility and reliability of the Remote - SSH extension.\n\n### Honor `ConnectTimeout` SSH configuration setting\n\nPreviously the Remote - SSH extension would not honor the `ConnectTimeout` SSH configuration option.\n\nNow, the `ConnectTimeout` option is preferred per host, followed by the existing <a href=\"vscode://settings/remote.SSH.connectTimeout\" codesetting=\"15\">`remote.SSH.connectTimeout`</a> setting. A `ConnectTimeout` of `0` indicates a maximum timeout internal.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/remote-release-notes/v1_94.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_94.md"
 }

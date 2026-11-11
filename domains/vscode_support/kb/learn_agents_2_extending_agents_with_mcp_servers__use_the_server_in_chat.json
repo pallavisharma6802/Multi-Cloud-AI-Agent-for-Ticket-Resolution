@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Use the server in chat\n\nNow give the agent a task that actually needs browser access.\n\n1. Open the {% data variables.copilot.chat_view %} with the same **Copilot** harness selected.\n\n1. Select **Agent**.\n\n1. Open **Chat: Open Customizations** and select **Tools**.\n\n1. Enable the Playwright tools.\n\n1. Return to chat and send this prompt:\n\n    ```prompt\n    Go to code.visualstudio.com, decline the cookie banner if it appears, and describe the main navigation items on the homepage.\n    ```\n\nThe agent should call the Playwright MCP tools because the task requires browser interaction. If it asks for approval before a tool call, review the action and approve it when it matches the task.\n\n![Screenshot showing an MCP tool invocation in chat with the input and output shown.](../images/agents/chat-agent-mode-tool-invocation.png)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/agents/2-extending-agents-with-mcp-servers.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/agents/2-extending-agents-with-mcp-servers.md"
 }

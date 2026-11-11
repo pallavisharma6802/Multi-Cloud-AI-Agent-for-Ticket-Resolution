@@ -4,5 +4,5 @@
   "category": "GETTING_STARTED",
   "intent": "getting_started",
   "content": "## Why this matters\n\nCustom agents go beyond simple automation.\n\nThey allow you to define reusable roles that carry context, behavior, and intent across tasks. This means you\u2019re no longer starting from scratch each time.\n\nInstead, you\u2019re working with systems that understand your project and apply that understanding consistently.\n\nCustom agents represent a shift from:\n\n**single assistant \u2192 team of specialists**\n\nInstead of one AI doing everything, you create multiple agents, each optimized for a specific role.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/learn/customizations/4-custom-agent.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/learn/customizations/4-custom-agent.md"
 }

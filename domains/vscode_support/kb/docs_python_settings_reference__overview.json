@@ -4,5 +4,5 @@
   "category": "LANGUAGES",
   "intent": "languages",
   "content": "# Python settings reference\n\nThe Python Extension for {% data variables.product.prodname_vscode %} is highly configurable. This page describes the key settings you can work with.\n\nFor general information about working with settings in {% data variables.product.prodname_vscode_shortname %}, refer to [User and workspace settings](/docs/configure/settings.md), as well as the [Variables reference](/docs/reference/variables-reference.md) for information about predefined variable support.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/python/settings-reference.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/python/settings-reference.md"
 }

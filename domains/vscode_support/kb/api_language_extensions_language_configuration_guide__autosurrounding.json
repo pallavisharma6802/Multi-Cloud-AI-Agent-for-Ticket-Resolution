@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Autosurrounding\n\nWhen you select a range in VS Code and enter an opening bracket, VS Code surrounds the selected content with a pair of brackets. This feature is called Autosurrounding, and here you can define the autosurrounding pairs for a specific language:\n\n```json\n{\n  \"surroundingPairs\": [\n    [\"{\", \"}\"],\n    [\"[\", \"]\"],\n    [\"(\", \")\"],\n    [\"'\", \"'\"],\n    [\"\\\"\", \"\\\"\"],\n    [\"`\", \"`\"]\n  ]\n}\n```\n\nUsers can tweak the autosurrounding behavior with the `editor.autoSurround` setting.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/language-extensions/language-configuration-guide.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/language-extensions/language-configuration-guide.md"
 }

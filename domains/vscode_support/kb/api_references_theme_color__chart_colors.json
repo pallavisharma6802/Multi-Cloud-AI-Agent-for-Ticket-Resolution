@@ -4,5 +4,5 @@
   "category": "API_REFERENCE",
   "intent": "api_reference",
   "content": "## Chart colors\n\n- `charts.foreground`: Contrast color for text in charts.\n- `charts.lines`: Color for lines in charts.\n- `charts.red`: Color for red elements in charts.\n- `charts.blue`: Color for blue elements in charts.\n- `charts.yellow`: Color for yellow elements in charts.\n- `charts.orange`: Color for orange elements in charts.\n- `charts.green`: Color for green elements in charts.\n- `charts.purple`: Color for purple elements in charts.\n- `chart.line`: Line color for the chart.\n- `chart.axis`: Axis color for the chart.\n- `chart.guide`: Guide line for the chart.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/api/references/theme-color.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/api/references/theme-color.md"
 }

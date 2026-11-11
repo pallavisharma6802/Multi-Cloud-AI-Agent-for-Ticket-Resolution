@@ -4,5 +4,5 @@
   "category": "RELEASE_NOTES",
   "intent": "release_notes",
   "content": "## Terminal\n\n### Reduced delay when running commands\n\nTerminal commands executed by extensions no longer incur an unnecessary delay when shell integration is ready under certain timing conditions. Users of the JavaScript debugger who hit this case will no longer experience a five-second delay when starting their programs.",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/release-notes/v1_136.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/release-notes/v1_136.md"
 }

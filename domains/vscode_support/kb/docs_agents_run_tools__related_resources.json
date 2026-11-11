@@ -4,5 +4,5 @@
   "category": "AI_FEATURES",
   "intent": "ai_features",
   "content": "## Related resources\n\n* [AI features cheat sheet](/docs/agents/reference/ai-features-cheat-sheet.md)\n* [Migrate existing customizations](/docs/agent-customization/migrate-customizations.md)\n* [Security considerations for using AI in {% data variables.product.prodname_vscode_shortname %}](/docs/agents/run/security.md)",
-  "source": "https://github.com/microsoft/vscode-docs/blob/b997976670611bc45544c85e05aacb6ceabaafb0/docs/agents/run/tools.md"
+  "source": "https://github.com/microsoft/vscode-docs/blob/main/docs/agents/run/tools.md"
 }
