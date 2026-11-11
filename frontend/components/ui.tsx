@@ -9,7 +9,7 @@ export function Card({
   className?: string;
 }) {
   return (
-    <div className={`rounded-2xl border border-line bg-surface shadow-card ${className}`}>
+    <div className={`rounded-xl border border-line bg-surface shadow-card ${className}`}>
       {children}
     </div>
   );
@@ -28,34 +28,34 @@ export function StatCard({
   tone?: "default" | "brand" | "teal" | "amber" | "purple";
   icon?: LucideIcon;
 }) {
-  // Flat KPI-tile style: neutral card, solid-colored icon badge carries the
-  // color -- not the whole card -- so a row of these reads as a real support
-  // dashboard (distinct colors per metric) rather than one wash.
+  // Neutral KPI tile: one accent color reserved for the single metric that
+  // matters most (brand); everything else stays grayscale so the numbers
+  // carry the weight, not the color.
   const iconBg: Record<string, string> = {
-    default: "bg-ink-faint/15 text-ink-soft",
+    default: "bg-ink-faint/10 text-ink-soft",
     brand: "bg-brand-100 text-brand-700",
-    teal: "bg-[#0d9488]/10 text-[#0d9488]",
-    amber: "bg-priority-medium/15 text-[#92600a]",
-    purple: "bg-[#7c3aed]/10 text-[#7c3aed]",
+    teal: "bg-ink-faint/10 text-ink-soft",
+    amber: "bg-ink-faint/10 text-ink-soft",
+    purple: "bg-ink-faint/10 text-ink-soft",
   };
   const valueTone: Record<string, string> = {
     default: "text-ink",
     brand: "text-brand-700",
-    teal: "text-[#0d9488]",
-    amber: "text-[#92600a]",
-    purple: "text-[#7c3aed]",
+    teal: "text-ink",
+    amber: "text-ink",
+    purple: "text-ink",
   };
   return (
     <Card className="p-5">
       <div className="flex items-center justify-between">
         <div className="font-mono text-[11px] font-medium uppercase tracking-wide text-ink-faint">{label}</div>
         {Icon && (
-          <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl ${iconBg[tone]}`}>
+          <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-lg ${iconBg[tone]}`}>
             <Icon size={17} strokeWidth={2.25} />
           </span>
         )}
       </div>
-      <div className={`mt-3 font-serif text-3xl font-semibold tracking-tight ${valueTone[tone]}`}>{value}</div>
+      <div className={`mt-3 text-3xl font-semibold tracking-tight ${valueTone[tone]}`}>{value}</div>
       {foot && <div className="mt-1 text-xs text-ink-faint">{foot}</div>}
     </Card>
   );
@@ -72,7 +72,7 @@ export function PriorityBadge({ priority }: { priority: string }) {
   const key = (priority || "").toLowerCase();
   return (
     <span
-      className={`inline-flex items-center rounded-full px-2.5 py-1 font-mono text-[11px] font-medium uppercase tracking-wide ${
+      className={`inline-flex items-center rounded-md px-2 py-0.5 font-mono text-[11px] font-medium uppercase tracking-wide ${
         PRIORITY_STYLES[key] || "bg-line/60 text-ink-soft"
       }`}
     >
@@ -100,7 +100,7 @@ export function StatusBadge({ status }: { status: string }) {
   const key = (status || "").toLowerCase();
   return (
     <span
-      className={`inline-flex items-center rounded-full px-2.5 py-1 font-mono text-[11px] font-medium uppercase tracking-wide ${
+      className={`inline-flex items-center rounded-md px-2 py-0.5 font-mono text-[11px] font-medium uppercase tracking-wide ${
         STATUS_STYLES[key] || "bg-line/60 text-ink-soft"
       }`}
     >
@@ -118,13 +118,13 @@ export function Button({
   variant?: "primary" | "secondary" | "ghost";
 }) {
   const variants: Record<string, string> = {
-    primary: "bg-brand-500 text-[#fff8ec] hover:bg-brand-600 shadow-card",
-    secondary: "bg-transparent border-2 border-line text-ink hover:border-brand-500 hover:text-brand-700",
+    primary: "bg-brand-500 text-white hover:bg-brand-600 shadow-card",
+    secondary: "bg-surface border border-line text-ink hover:border-ink-faint",
     ghost: "text-ink-soft hover:bg-line/60",
   };
   return (
     <button
-      className={`inline-flex items-center justify-center gap-2 rounded-full px-4 py-2.5 font-mono text-xs font-medium uppercase tracking-wide transition disabled:cursor-wait disabled:opacity-50 ${variants[variant]} ${className}`}
+      className={`inline-flex items-center justify-center gap-2 rounded-lg px-3.5 py-2 text-sm font-medium transition disabled:cursor-wait disabled:opacity-50 ${variants[variant]} ${className}`}
       {...rest}
     >
       {children}
@@ -147,11 +147,11 @@ export function PageHeading({
     <div className="mb-8 flex flex-wrap items-start justify-between gap-4">
       <div className="max-w-2xl">
         {eyebrow && (
-          <div className="mb-2 font-mono text-[11px] font-semibold uppercase tracking-wider text-brand-700">
+          <div className="mb-2 font-mono text-[11px] font-semibold uppercase tracking-wider text-ink-faint">
             {eyebrow}
           </div>
         )}
-        <h1 className="font-serif text-3xl font-semibold tracking-tight text-ink sm:text-4xl">{title}</h1>
+        <h1 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">{title}</h1>
         {description && <p className="mt-3 text-base leading-relaxed text-ink-soft">{description}</p>}
       </div>
       {action}

@@ -14,13 +14,12 @@ import {
   Columns3,
 } from "lucide-react";
 import { API_BASE_URL } from "@/lib/api";
-import Mascot from "./Mascot";
 
 const links = [
-  { href: "/overview", label: "Overview", icon: LayoutGrid, color: "#8a5c1c", tint: "rgba(203,138,46,0.12)" },
-  { href: "/triage", label: "Inbox", icon: Inbox, color: "#6d28d9", tint: "rgba(124,58,237,0.1)" },
-  { href: "/review", label: "Review board", icon: Columns3, color: "#b45309", tint: "rgba(217,119,6,0.1)" },
-  { href: "/knowledge", label: "Knowledge base", icon: BookOpen, color: "#0d7a70", tint: "rgba(13,148,136,0.1)" },
+  { href: "/overview", label: "Overview", icon: LayoutGrid },
+  { href: "/triage", label: "Inbox", icon: Inbox },
+  { href: "/review", label: "Review board", icon: Columns3 },
+  { href: "/knowledge", label: "Knowledge base", icon: BookOpen },
 ];
 
 const titles: Record<string, string> = {
@@ -55,9 +54,9 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex min-h-screen">
       <aside className="fixed inset-y-0 left-0 z-30 flex w-64 flex-col border-r border-line bg-surface px-4 py-6 text-ink-soft">
-        <Link href="/" className="flex items-center gap-2 px-2 font-serif text-xl font-semibold tracking-tight text-ink">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-gradient text-[#fff8ec] shadow-glow">
-            <Sparkles size={15} strokeWidth={2.5} />
+        <Link href="/" className="flex items-center gap-2 px-2 text-lg font-semibold tracking-tight text-ink">
+          <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-brand-500 text-white">
+            <Sparkles size={14} strokeWidth={2.5} />
           </span>
           resolve
         </Link>
@@ -67,7 +66,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
         <Link
           href="/submit"
-          className="mt-6 flex items-center justify-center gap-2 rounded-full bg-brand-500 px-4 py-2.5 font-mono text-xs font-medium uppercase tracking-wide text-[#fff8ec] shadow-card transition hover:bg-brand-600"
+          className="mt-6 flex items-center justify-center gap-2 rounded-lg bg-brand-500 px-3.5 py-2 text-sm font-medium text-white shadow-card transition hover:bg-brand-600"
         >
           <Plus size={16} /> New ticket
         </Link>
@@ -83,16 +82,11 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               <Link
                 key={l.href}
                 href={l.href}
-                className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition ${
-                  active ? "bg-line/60 text-ink shadow-card" : "text-ink-soft hover:bg-line/40 hover:text-ink"
+                className={`flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition ${
+                  active ? "bg-brand-50 text-brand-700" : "text-ink-soft hover:bg-line/50 hover:text-ink"
                 }`}
               >
-                <span
-                  className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg"
-                  style={{ background: l.tint, color: l.color }}
-                >
-                  <LinkIcon size={15} strokeWidth={2.25} />
-                </span>
+                <LinkIcon size={16} strokeWidth={2} />
                 {l.label}
               </Link>
             );
@@ -152,7 +146,6 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
         </header>
         <main className="flex-1 px-8 py-8">{children}</main>
       </div>
-      <Mascot />
     </div>
   );
 }

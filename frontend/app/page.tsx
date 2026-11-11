@@ -16,14 +16,14 @@ import {
 import { Card, Button } from "@/components/ui";
 
 const AGENTS = [
-  { icon: SearchCheck, title: "Intent & priority", body: "Classifies what the ticket is actually asking for and how urgent it is.", bg: "rgba(203,138,46,0.12)", fg: "#8a5c1c" },
-  { icon: FileSearch, title: "Retrieval", body: "Pulls the knowledge-base passages that are relevant to the request.", bg: "rgba(124,58,237,0.1)", fg: "#6d28d9" },
-  { icon: FileCheck2, title: "Document grader (CRAG)", body: "Scores each retrieved passage and drops anything that doesn't apply.", bg: "rgba(13,148,136,0.1)", fg: "#0d7a70" },
-  { icon: Sparkles, title: "Drafting", body: "Writes a response grounded only in the passages that passed grading.", bg: "rgba(217,119,6,0.1)", fg: "#b45309" },
-  { icon: ShieldCheck, title: "Judge (self-RAG)", body: "Checks the draft's faithfulness and relevance, escalating to a human when it can't be sure.", bg: "rgba(214,90,120,0.1)", fg: "#b03f5c" },
-  { icon: Repeat, title: "Continuation", body: "Decides whether the draft needs another retrieval/drafting pass.", bg: "rgba(202,138,4,0.1)", fg: "#92600a" },
-  { icon: Lock, title: "Security", body: "Screens for sensitive or risky content that shouldn't go out unreviewed.", bg: "rgba(220,38,38,0.1)", fg: "#b91c1c" },
-  { icon: SmilePlus, title: "Sentiment", body: "Reads tone, so frustrated or urgent requests get flagged accordingly.", bg: "rgba(8,145,178,0.1)", fg: "#0e6c8a" },
+  { icon: SearchCheck, title: "Intent & priority", body: "Classifies what the ticket is actually asking for and how urgent it is." },
+  { icon: FileSearch, title: "Retrieval", body: "Pulls the knowledge-base passages that are relevant to the request." },
+  { icon: FileCheck2, title: "Document grader (CRAG)", body: "Scores each retrieved passage and drops anything that doesn't apply." },
+  { icon: Sparkles, title: "Drafting", body: "Writes a response grounded only in the passages that passed grading." },
+  { icon: ShieldCheck, title: "Judge (self-RAG)", body: "Checks the draft's faithfulness and relevance, escalating to a human when it can't be sure." },
+  { icon: Repeat, title: "Continuation", body: "Decides whether the draft needs another retrieval/drafting pass." },
+  { icon: Lock, title: "Security", body: "Screens for sensitive or risky content that shouldn't go out unreviewed." },
+  { icon: SmilePlus, title: "Sentiment", body: "Reads tone, so frustrated or urgent requests get flagged accordingly." },
 ];
 
 const WORDMARK = "resolve".split("");
@@ -51,20 +51,20 @@ export default function HomePage() {
   return (
     <div>
       <section className="flex flex-col items-center justify-center py-10 text-center">
-        <span className="inline-flex items-center gap-1.5 rounded-full border-2 border-brand-500 px-3 py-1 font-mono text-[10px] uppercase tracking-wide text-brand-700">
+        <span className="inline-flex items-center gap-1.5 rounded-md border border-line px-2.5 py-1 font-mono text-[10px] uppercase tracking-wide text-ink-soft">
           <Sparkles size={11} /> Example build
         </span>
 
-        <h1 className="mt-5 flex font-serif text-6xl font-semibold tracking-tight text-ink sm:text-7xl">
+        <h1 className="mt-5 flex text-5xl font-semibold tracking-tight text-ink sm:text-6xl">
           {WORDMARK.map((letter, i) => (
             <span key={i} ref={(el) => void (letterRefs.current[i] = el)} className="inline-block">
               {letter}
             </span>
           ))}
         </h1>
-        <span ref={underlineRef} className="mt-1 block h-1 w-28 rounded-full bg-brand-gradient" />
+        <span ref={underlineRef} className="mt-2 block h-0.5 w-20 rounded-full bg-brand-500" />
 
-        <p ref={taglineRef} className="mt-6 max-w-xl text-xl font-medium text-ink">
+        <p ref={taglineRef} className="mt-6 max-w-xl text-lg font-medium text-ink">
           AI support for your organization.
         </p>
         <p ref={subRef} className="mt-2 max-w-lg text-sm text-ink-soft">
@@ -86,7 +86,7 @@ export default function HomePage() {
 
       <section className="mt-2 mb-6">
         <div className="mx-auto max-w-xl text-center">
-          <h2 className="font-serif text-2xl font-semibold tracking-tight text-ink sm:text-3xl">How it works</h2>
+          <h2 className="text-xl font-semibold tracking-tight text-ink sm:text-2xl">How it works</h2>
           <p className="mt-2 text-sm text-ink-soft">Eight agents, one pipeline, every step logged.</p>
         </div>
 
@@ -94,11 +94,8 @@ export default function HomePage() {
           {AGENTS.map((a, i) => (
             <div key={a.title} className="flex gap-4">
               <div className="flex flex-col items-center">
-                <span
-                  className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full"
-                  style={{ background: a.bg, color: a.fg }}
-                >
-                  <a.icon size={16} />
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-700">
+                  <a.icon size={15} />
                 </span>
                 {i < AGENTS.length - 1 && <span className="my-1 w-px flex-1 bg-line" />}
               </div>

@@ -5,62 +5,61 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
+        // One sans everywhere (headings included). Mono reserved for
+        // badges, IDs, timestamps -- not a second display typeface.
         sans: ["var(--font-inter)", "ui-sans-serif", "system-ui", "sans-serif"],
-        serif: ["var(--font-fraunces)", "ui-serif", "Georgia", "serif"],
+        serif: ["var(--font-inter)", "ui-sans-serif", "system-ui", "sans-serif"],
         mono: ["var(--font-mono)", "ui-monospace", "SFMono-Regular", "monospace"],
       },
       colors: {
-        // Warm light help-desk theme: cream/white background, espresso ink,
-        // gold + rose accents reserved for labels/icons/CTAs -- not washed
-        // across whole surfaces.
-        canvas: "#faf6f1",
+        // Neutral gray-scale base, white surfaces, single indigo accent.
+        // Color is reserved for the primary action and status/severity --
+        // not decoration.
+        canvas: "#f6f7f9",
         surface: "#ffffff",
         ink: {
-          DEFAULT: "#241b17",
-          soft: "#6b5a52",
-          faint: "#9c8a81",
+          DEFAULT: "#111418",
+          soft: "#5b6472",
+          faint: "#9aa3af",
         },
-        line: "#ece2d8",
+        line: "#e5e7eb",
         brand: {
-          50: "rgba(203,138,46,0.08)",
-          100: "rgba(203,138,46,0.14)",
-          500: "#cb8a2e",
-          600: "#a66f22",
-          700: "#8a5c1c",
-          900: "#15100d",
+          50: "rgba(79,70,229,0.06)",
+          100: "rgba(79,70,229,0.12)",
+          500: "#4f46e5",
+          600: "#4338ca",
+          700: "#3730a3",
+          900: "#1e1b4b",
         },
+        // Legacy token names kept so existing component code keeps working;
+        // both now resolve to the same neutral/indigo system (no separate
+        // rose/teal brand hues).
         rose: {
-          50: "rgba(214,90,120,0.08)",
-          500: "#d65a78",
-          700: "#b03f5c",
+          50: "rgba(220,38,38,0.06)",
+          500: "#dc2626",
+          700: "#991b1b",
         },
         teal: {
-          100: "rgba(203,138,46,0.14)",
-          400: "#cb8a2e",
-          500: "#8a5c1c",
+          100: "rgba(22,163,74,0.12)",
+          400: "#16a34a",
+          500: "#15803d",
         },
         priority: {
-          low: "#22d3ee",
-          medium: "#f2b84b",
-          high: "#fb923c",
-          urgent: "#f87171",
+          low: "#5b6472",
+          medium: "#b45309",
+          high: "#c2410c",
+          urgent: "#dc2626",
         },
-        // Extra accent family so sections of the app (sidebar nav, step
-        // flows, category bars) can each carry their own color instead of
-        // the whole site reading as one gold wash.
+        // Reduced to a single functional accent family -- every section
+        // uses this same indigo instead of a different hue each.
         accent: {
-          purple: { 50: "rgba(167,139,250,0.12)", 500: "#a78bfa", 700: "#c4b5fd" },
-          teal: { 50: "rgba(45,212,191,0.12)", 500: "#2dd4bf", 700: "#5eead4" },
-          orange: { 50: "rgba(251,146,60,0.12)", 500: "#fb923c", 700: "#fdba74" },
-          pink: { 50: "rgba(231,143,163,0.12)", 500: "#e78fa3", 700: "#f3b6c4" },
-          yellow: { 50: "rgba(242,184,75,0.12)", 500: "#f2b84b", 700: "#facc15" },
+          purple: { 50: "rgba(79,70,229,0.06)", 500: "#4f46e5", 700: "#3730a3" },
+          teal: { 50: "rgba(79,70,229,0.06)", 500: "#4f46e5", 700: "#3730a3" },
+          orange: { 50: "rgba(79,70,229,0.06)", 500: "#4f46e5", 700: "#3730a3" },
+          pink: { 50: "rgba(79,70,229,0.06)", 500: "#4f46e5", 700: "#3730a3" },
+          yellow: { 50: "rgba(79,70,229,0.06)", 500: "#4f46e5", 700: "#3730a3" },
         },
       },
-      // Site-wide type bump -- every text-xs/sm/base/etc now resolves bigger.
-      // A previous pass over-corrected "too small" into "too big", especially
-      // at the heading/stat sizes (4xl went to 42px). Pulled back down,
-      // closer to Tailwind's own defaults, with just a slight bump on body
-      // text (xs/sm/base) since plain defaults did read a little small.
       fontSize: {
         xs: ["11px", { lineHeight: "1.45" }],
         sm: ["12.5px", { lineHeight: "1.5" }],
@@ -72,16 +71,16 @@ const config: Config = {
         "4xl": ["28px", { lineHeight: "1.15" }],
       },
       borderRadius: {
-        xl: "14px",
-        "2xl": "18px",
+        xl: "10px",
+        "2xl": "12px",
       },
       boxShadow: {
-        card: "0 1px 2px rgba(36,27,23,0.05), 0 8px 24px rgba(36,27,23,0.08)",
-        glow: "0 0 0 1px rgba(203,138,46,0.25), 0 10px 24px rgba(203,138,46,0.16)",
+        card: "0 1px 2px rgba(17,20,24,0.04), 0 1px 8px rgba(17,20,24,0.05)",
+        glow: "0 0 0 1px rgba(79,70,229,0.2)",
       },
       backgroundImage: {
-        "brand-gradient": "linear-gradient(135deg, #cb8a2e 0%, #d65a78 100%)",
-        "teal-gradient": "linear-gradient(135deg, #cb8a2e 0%, #a66f22 100%)",
+        "brand-gradient": "linear-gradient(135deg, #4f46e5 0%, #4338ca 100%)",
+        "teal-gradient": "linear-gradient(135deg, #4f46e5 0%, #4338ca 100%)",
       },
     },
   },
