@@ -56,39 +56,32 @@ export default function HomePage() {
       <section className="mt-12 mb-6">
         <div className="mx-auto max-w-xl text-center">
           <h2 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">How it works</h2>
-          <p className="mt-2 text-sm text-ink-soft">Eight agents, one pipeline, every step logged.</p>
+          <p className="mt-2 text-sm text-ink-soft">Eight agents, one pipeline. Scroll to follow a ticket through it.</p>
         </div>
 
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-x-2 gap-y-6">
-          {AGENTS.map((a, i) => (
-            <div key={a.title} className="flex items-center gap-2">
-              <div className="flex w-32 flex-col items-center gap-2 text-center">
-                <span className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-50 text-brand-700">
-                  <a.icon size={16} />
-                  <span className="absolute -right-1.5 -top-1.5 flex h-5 w-5 items-center justify-center rounded-full border-2 border-surface bg-brand-500 text-[10px] font-bold text-white">
-                    {i + 1}
-                  </span>
-                </span>
-                <span className="text-xs font-semibold leading-tight text-ink">{a.title}</span>
-              </div>
-              {i < AGENTS.length - 1 && <ArrowRight size={16} className="shrink-0 text-ink-faint" />}
-            </div>
-          ))}
-        </div>
+        <div className="relative mt-10">
+          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-10 bg-gradient-to-r from-canvas to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-10 bg-gradient-to-l from-canvas to-transparent" />
 
-        <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {AGENTS.map((a, i) => (
-            <Card key={a.title} className="flex flex-col gap-3 p-5">
-              <div className="flex items-center gap-2">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-700">
-                  <a.icon size={16} />
-                </span>
-                <span className="text-xs font-semibold text-ink-faint">Step {i + 1}</span>
+          <div className="flex snap-x snap-mandatory gap-5 overflow-x-auto px-6 pb-4" style={{ scrollbarWidth: "thin" }}>
+            {AGENTS.map((a, i) => (
+              <div key={a.title} className="flex shrink-0 snap-center items-center">
+                <Card className="flex h-44 w-56 shrink-0 flex-col gap-2 p-5">
+                  <div className="flex items-center gap-2">
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-700">
+                      <a.icon size={16} />
+                    </span>
+                    <span className="text-xs font-semibold text-ink-faint">Step {i + 1} of {AGENTS.length}</span>
+                  </div>
+                  <div className="text-sm font-semibold text-ink">{a.title}</div>
+                  <p className="text-xs leading-relaxed text-ink-soft">{a.body}</p>
+                </Card>
+                {i < AGENTS.length - 1 && (
+                  <ArrowRight size={18} className="mx-2 shrink-0 text-ink-faint" />
+                )}
               </div>
-              <div className="text-sm font-semibold text-ink">{a.title}</div>
-              <p className="text-xs leading-relaxed text-ink-soft">{a.body}</p>
-            </Card>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
     </div>
