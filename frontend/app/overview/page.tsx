@@ -93,7 +93,7 @@ export default function Home() {
     return Object.entries(counts).map(([priority, count]) => ({ priority, count }));
   }, [tickets]);
 
-  const grafanaFull = `${GRAFANA_URL}/d/${dashboard}/${dashboard}?orgId=1&from=now-${days}d&to=now&theme=dark&kiosk=tv`;
+  const grafanaFull = `${GRAFANA_URL}/d/${dashboard}/${dashboard}?orgId=1&from=now-${days}d&to=now&theme=light&kiosk=tv`;
 
   return (
     <div>

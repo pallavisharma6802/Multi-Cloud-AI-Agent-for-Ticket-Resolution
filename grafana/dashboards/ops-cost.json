@@ -45,7 +45,15 @@
           "rawQuery": true,
           "editorMode": "code"
         }
-      ]
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "fixed",
+            "fixedColor": "#4f46e5"
+          }
+        }
+      }
     },
     {
       "id": 2,
@@ -64,7 +72,11 @@
       },
       "fieldConfig": {
         "defaults": {
-          "unit": "short"
+          "unit": "short",
+          "color": {
+            "mode": "fixed",
+            "fixedColor": "#4f46e5"
+          }
         },
         "overrides": []
       },
@@ -110,7 +122,11 @@
       },
       "fieldConfig": {
         "defaults": {
-          "unit": "ms"
+          "unit": "ms",
+          "color": {
+            "mode": "fixed",
+            "fixedColor": "#4f46e5"
+          }
         },
         "overrides": []
       },
@@ -150,11 +166,11 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
+                "color": "#15803d",
                 "value": null
               },
               {
-                "color": "red",
+                "color": "#dc2626",
                 "value": 1
               }
             ]

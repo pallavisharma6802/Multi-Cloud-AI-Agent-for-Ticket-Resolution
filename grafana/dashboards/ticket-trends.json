@@ -34,7 +34,11 @@
       },
       "fieldConfig": {
         "defaults": {
-          "unit": "short"
+          "unit": "short",
+          "color": {
+            "mode": "fixed",
+            "fixedColor": "#4f46e5"
+          }
         },
         "overrides": []
       },
@@ -68,7 +72,11 @@
       },
       "fieldConfig": {
         "defaults": {
-          "unit": "short"
+          "unit": "short",
+          "color": {
+            "mode": "fixed",
+            "fixedColor": "#4f46e5"
+          }
         },
         "overrides": []
       },
@@ -102,7 +110,11 @@
       },
       "fieldConfig": {
         "defaults": {
-          "unit": "short"
+          "unit": "short",
+          "color": {
+            "mode": "fixed",
+            "fixedColor": "#4f46e5"
+          }
         },
         "overrides": []
       },
@@ -139,7 +151,11 @@
         "defaults": {
           "unit": "percentunit",
           "max": 1,
-          "min": 0
+          "min": 0,
+          "color": {
+            "mode": "fixed",
+            "fixedColor": "#4f46e5"
+          }
         },
         "overrides": []
       },
