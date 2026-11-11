@@ -35,7 +35,7 @@ export function StatCard({
     default: "bg-ink-faint/20 text-ink-soft",
     brand: "bg-brand-500 text-white",
     teal: "bg-[#2fb66a] text-white",
-    amber: "bg-priority-medium text-[#2b2008]",
+    amber: "bg-priority-medium text-white",
     purple: "bg-[#8b5cf6] text-white",
   };
   return (
@@ -55,10 +55,10 @@ export function StatCard({
 }
 
 const PRIORITY_STYLES: Record<string, string> = {
-  low: "bg-[#0f2e1c] text-[#4ade80]",
-  medium: "bg-[#2b2008] text-priority-medium",
-  high: "bg-[#2b1708] text-priority-high",
-  urgent: "bg-[#2b0d12] text-priority-urgent",
+  low: "bg-[#e0f2fe] text-[#0369a1]",
+  medium: "bg-[#fef3c7] text-priority-medium",
+  high: "bg-[#ffe4d5] text-priority-high",
+  urgent: "bg-[#fee2e2] text-priority-urgent",
 };
 
 export function PriorityBadge({ priority }: { priority: string }) {
@@ -80,8 +80,8 @@ export function PriorityBadge({ priority }: { priority: string }) {
 // requires_human_review is true) -- there is no separate "needs_review" status.
 const STATUS_STYLES: Record<string, string> = {
   open: "bg-line/60 text-ink-soft",
-  in_progress: "bg-[#2b2008] text-priority-medium",
-  resolved: "bg-[#0f2e1c] text-[#4ade80]",
+  in_progress: "bg-[#fef3c7] text-priority-medium",
+  resolved: "bg-[#dcfce7] text-[#15803d]",
   closed: "bg-line/60 text-ink-soft",
 };
 

@@ -8,34 +8,38 @@ const config: Config = {
         sans: ["var(--font-inter)", "ui-sans-serif", "system-ui", "sans-serif"],
       },
       colors: {
-        // Resolve identity: midnight ink, azure blue (primary accent),
-        // vermilion orange (single secondary highlight, used sparingly).
-        canvas: "#080f1b",
-        surface: "#0e1726",
+        // Light workspace: white content area, dark navy sidebar (kept dark
+        // for the same reason real support-tool dashboards do it -- a fixed
+        // nav rail reads calmer dark while the working content stays light).
+        // Azure blue primary accent, vermilion orange secondary, both now
+        // tuned as light-mode chip/text pairs (light fill + dark-enough text
+        // for contrast on white) instead of the dark-mode dark-fill pairs.
+        canvas: "#f3f5f9",
+        surface: "#ffffff",
         ink: {
-          DEFAULT: "#f2f5fa",
-          soft: "#9fb0c6",
-          faint: "#5f7489",
+          DEFAULT: "#1a2436",
+          soft: "#64748b",
+          faint: "#94a3b8",
         },
-        line: "#1b2840",
+        line: "#e2e8f0",
         brand: {
-          50: "#112a3d",
-          100: "#16374f",
+          50: "#eaf4fb",
+          100: "#d3e9f7",
           500: "#329dd2",
-          600: "#4db2e3",
+          600: "#2b87b8",
           700: "#1f6b93",
-          900: "#0b2030",
+          900: "#0f1a2e",
         },
         teal: {
-          100: "#3a1710",
+          100: "#fde8e0",
           400: "#ff7a52",
-          500: "#ff4c2b",
+          500: "#c2410c",
         },
         priority: {
-          low: "#4db2e3",
-          medium: "#f5b942",
-          high: "#ff7a52",
-          urgent: "#ff4c2b",
+          low: "#0891b2",
+          medium: "#b45309",
+          high: "#c2410c",
+          urgent: "#dc2626",
         },
       },
       // Site-wide type bump -- every text-xs/sm/base/etc now resolves bigger.
@@ -58,12 +62,12 @@ const config: Config = {
         "2xl": "18px",
       },
       boxShadow: {
-        card: "0 1px 2px rgba(0,0,0,0.3), 0 10px 30px rgba(0,0,0,0.4)",
-        glow: "0 0 0 1px rgba(50,157,210,0.25), 0 12px 32px rgba(50,157,210,0.22)",
+        card: "0 1px 2px rgba(15,23,42,0.04), 0 8px 24px rgba(15,23,42,0.08)",
+        glow: "0 0 0 1px rgba(50,157,210,0.18), 0 10px 24px rgba(50,157,210,0.16)",
       },
       backgroundImage: {
-        "brand-gradient": "linear-gradient(135deg, #329dd2 0%, #1f6b93 55%, #0b2030 100%)",
-        "teal-gradient": "linear-gradient(135deg, #ff7a52 0%, #ff4c2b 100%)",
+        "brand-gradient": "linear-gradient(135deg, #329dd2 0%, #1f6b93 55%, #0f1a2e 100%)",
+        "teal-gradient": "linear-gradient(135deg, #ff7a52 0%, #c2410c 100%)",
       },
     },
   },

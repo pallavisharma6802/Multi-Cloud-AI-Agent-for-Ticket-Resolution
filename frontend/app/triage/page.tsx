@@ -83,7 +83,7 @@ export default function Inbox() {
       </div>
 
       {error && (
-        <Card className="mt-6 border-[#5c1a26] bg-[#2b0d12] p-4 text-sm text-priority-urgent">
+        <Card className="mt-6 border-[#fecaca] bg-[#fef2f2] p-4 text-sm text-priority-urgent">
           {error}{" "}
           <button className="font-semibold underline" onClick={load}>
             Retry

@@ -51,7 +51,7 @@ export default function Knowledge() {
       )}
 
       {error && (
-        <Card className="border-[#5c1a26] bg-[#2b0d12] p-4 text-sm text-priority-urgent">
+        <Card className="border-[#fecaca] bg-[#fef2f2] p-4 text-sm text-priority-urgent">
           Couldn&apos;t load the knowledge base: {error}
         </Card>
       )}

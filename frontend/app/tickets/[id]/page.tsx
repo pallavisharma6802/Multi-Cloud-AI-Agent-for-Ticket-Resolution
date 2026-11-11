@@ -49,7 +49,7 @@ export default function TicketDetail() {
 
   if (error)
     return (
-      <Card className="border-[#5c1a26] bg-[#2b0d12] p-5 text-sm text-priority-urgent">
+      <Card className="border-[#fecaca] bg-[#fef2f2] p-5 text-sm text-priority-urgent">
         {error}
         <Link href="/triage" className="ml-3 font-semibold underline">
           Back to inbox
@@ -91,7 +91,7 @@ export default function TicketDetail() {
         <StatusBadge status={t.status} />
       </div>
 
-      {actionError && <Card className="mb-5 border-[#5c1a26] bg-[#2b0d12] p-4 text-sm text-priority-urgent">{actionError}</Card>}
+      {actionError && <Card className="mb-5 border-[#fecaca] bg-[#fef2f2] p-4 text-sm text-priority-urgent">{actionError}</Card>}
 
       {t.status === "open" && (
         <Card className="mb-6 flex items-center gap-3 border-brand-100 bg-brand-50 p-4 text-sm text-brand-700">
@@ -103,7 +103,7 @@ export default function TicketDetail() {
         </Card>
       )}
       {t.status === "in_progress" && (
-        <Card className="mb-6 flex items-center gap-3 border-[#5c4a1a] bg-[#2b2008] p-4 text-sm text-priority-medium">
+        <Card className="mb-6 flex items-center gap-3 border-[#fde68a] bg-[#fef3c7] p-4 text-sm text-priority-medium">
           <ShieldCheck size={16} />
           <span>Needs your team&apos;s review. After checking the response, mark it resolved.</span>
           <Button className="ml-auto" disabled={working} onClick={() => act("resolve")}>
@@ -210,7 +210,7 @@ export default function TicketDetail() {
                       <details key={d.doc_id} className="rounded-xl border border-line p-4" open>
                         <summary className="flex cursor-pointer list-none items-center justify-between text-sm">
                           <span className="truncate text-ink-soft">{String(d.metadata?.source || d.doc_id)}</span>
-                          <span className="shrink-0 rounded-full bg-[#0f2e1c] px-2 py-0.5 text-xs font-semibold text-[#4ade80]">
+                          <span className="shrink-0 rounded-full bg-[#dcfce7] px-2 py-0.5 text-xs font-semibold text-[#15803d]">
                             {Math.round(d.similarity_score * 100)}% match
                           </span>
                         </summary>
@@ -228,7 +228,7 @@ export default function TicketDetail() {
                       <div key={i} className="mt-3">
                         <span
                           className={`rounded-full px-2 py-0.5 text-xs font-semibold ${
-                            d.relevant ? "bg-[#0f2e1c] text-[#4ade80]" : "bg-[#2b2008] text-priority-medium"
+                            d.relevant ? "bg-[#dcfce7] text-[#15803d]" : "bg-[#fef3c7] text-priority-medium"
                           }`}
                         >
                           {d.relevant ? "Relevant" : "Excluded"}
@@ -247,7 +247,7 @@ export default function TicketDetail() {
                       <div key={i} className="border-t border-line pt-4 first:border-0 first:pt-0">
                         <div className="flex flex-wrap gap-2">
                           <span className="rounded-full bg-line/60 px-2 py-0.5 text-xs font-semibold text-ink-soft">Review {i + 1}</span>
-                          <span className="rounded-full bg-[#0f2e1c] px-2 py-0.5 text-xs font-semibold text-[#4ade80]">
+                          <span className="rounded-full bg-[#dcfce7] px-2 py-0.5 text-xs font-semibold text-[#15803d]">
                             {Math.round((j.faithfulness_score || 0) * 100)}% faithful
                           </span>
                           <span className="rounded-full bg-brand-50 px-2 py-0.5 text-xs font-semibold text-brand-500">
@@ -256,7 +256,7 @@ export default function TicketDetail() {
                         </div>
                         <p className="mt-2 text-sm text-ink-soft">{j.rationale}</p>
                         {j.unsupported_claims?.length > 0 && (
-                          <div className="mt-2 rounded-xl bg-[#2b0d12] px-3 py-2 text-xs text-priority-urgent">
+                          <div className="mt-2 rounded-xl bg-[#fef2f2] px-3 py-2 text-xs text-priority-urgent">
                             Claims to check: {j.unsupported_claims.join("; ")}
                           </div>
                         )}
@@ -319,7 +319,7 @@ export default function TicketDetail() {
             </div>
           </Card>
 
-          <Card className="flex items-center gap-3 border-[#0f2e1c] bg-[#0f2e1c]/40 p-4 text-sm text-[#4ade80]">
+          <Card className="flex items-center gap-3 border-[#bbf7d0] bg-[#f0fdf4] p-4 text-sm text-[#15803d]">
             <ShieldCheck size={18} />
             <span>Decision trail recorded with this ticket.</span>
           </Card>

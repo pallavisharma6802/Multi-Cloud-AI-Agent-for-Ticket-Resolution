@@ -8,13 +8,22 @@ function initials(email: string) {
   return name.slice(0, 2).toUpperCase();
 }
 
+const BAR_COLORS: Record<string, string> = {
+  resolved: "#22c55e",
+  in_progress: "#f59e0b",
+  closed: "#94a3b8",
+  open: "#329dd2",
+};
+
 export default function TicketRow({ ticket }: { ticket: TicketSummary }) {
   const needsReview = ticket.status?.toLowerCase() === "in_progress";
+  const barColor = BAR_COLORS[ticket.status?.toLowerCase()] || BAR_COLORS.open;
   return (
     <Link
       href={`/tickets/${ticket.ticket_id}`}
+      style={{ borderLeft: `3px solid ${barColor}` }}
       className={`flex items-center gap-4 border-b border-line px-5 py-4 transition hover:bg-line/30 ${
-        needsReview ? "bg-[#2b2008]/40" : ""
+        needsReview ? "bg-[#fef3c7]/50" : ""
       }`}
     >
       <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-50 text-xs font-semibold text-brand-700">

@@ -5,27 +5,27 @@ import { useEffect, useState } from "react";
 import {
   LayoutGrid,
   Inbox,
-  BarChart3,
   Sparkles,
   Plus,
   ShieldCheck,
   ArrowUpRight,
   UserRound,
   BookOpen,
+  Columns3,
 } from "lucide-react";
 import { API_BASE_URL } from "@/lib/api";
 
 const links = [
   { href: "/", label: "Overview", icon: LayoutGrid },
   { href: "/triage", label: "Inbox", icon: Inbox },
-  { href: "/analytics", label: "Analytics", icon: BarChart3 },
+  { href: "/review", label: "Review board", icon: Columns3 },
   { href: "/knowledge", label: "Knowledge base", icon: BookOpen },
 ];
 
 const titles: Record<string, string> = {
   "/": "Overview",
   "/triage": "Inbox",
-  "/analytics": "Analytics",
+  "/review": "Review board",
   "/submit": "New ticket",
   "/knowledge": "Knowledge base",
 };
@@ -52,14 +52,14 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="flex min-h-screen">
-      <aside className="fixed inset-y-0 left-0 z-30 flex w-64 flex-col bg-brand-900 bg-[radial-gradient(ellipse_400px_280px_at_0%_0%,rgba(50,157,210,0.3),transparent)] px-4 py-6 text-ink-soft">
+      <aside className="fixed inset-y-0 left-0 z-30 flex w-64 flex-col bg-brand-900 bg-[radial-gradient(ellipse_400px_280px_at_0%_0%,rgba(50,157,210,0.3),transparent)] px-4 py-6 text-white/65">
         <Link href="/" className="flex items-center gap-2 px-2 text-lg font-bold tracking-tight text-white">
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-gradient text-white shadow-glow">
             <Sparkles size={15} strokeWidth={2.5} />
           </span>
           resolve
         </Link>
-        <span className="mt-1.5 px-2 text-[11px] font-semibold uppercase tracking-wider text-ink-faint">
+        <span className="mt-1.5 px-2 text-[11px] font-semibold uppercase tracking-wider text-white/40">
           Example build · VS Code support
         </span>
 
@@ -70,7 +70,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
           <Plus size={16} /> New ticket
         </Link>
 
-        <div className="mt-8 px-2 text-xs font-semibold uppercase tracking-wider text-ink-faint">
+        <div className="mt-8 px-2 text-xs font-semibold uppercase tracking-wider text-white/40">
           Workspace
         </div>
         <nav className="mt-2 flex flex-col gap-1">
@@ -84,7 +84,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                 className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition ${
                   active
                     ? "bg-brand-500 text-white shadow-card"
-                    : "text-ink-soft hover:bg-white/5 hover:text-white"
+                    : "text-white/65 hover:bg-white/5 hover:text-white"
                 }`}
               >
                 <LinkIcon size={18} strokeWidth={2} />
@@ -100,7 +100,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               <ShieldCheck size={16} className="text-brand-500" />
               AI with accountability
             </div>
-            <p className="mt-2 text-xs leading-relaxed text-ink-soft">
+            <p className="mt-2 text-xs leading-relaxed text-white/65">
               Every resolution ships with evidence and a decision trail.
             </p>
             <Link
@@ -111,15 +111,15 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
             </Link>
           </div>
           <div className="flex items-center gap-3 border-t border-white/10 pt-4">
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-ink">
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-white">
               <UserRound size={16} />
             </span>
             <div className="text-sm">
               <div className="font-medium text-white">Anonymous workspace</div>
-              <div className="text-xs text-ink-faint">No sign-in, single shared demo</div>
+              <div className="text-xs text-white/40">No sign-in, single shared demo</div>
             </div>
           </div>
-          <p className="text-[11px] leading-relaxed text-ink-faint/70">
+          <p className="text-[11px] leading-relaxed text-white/30">
             No accounts or profile pages. This is a single-tenant demo of the resolution
             pipeline, not a multi-user product. Each ticket already carries its own
             submitter email.
@@ -136,7 +136,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-2 text-xs font-medium text-ink-soft">
               <i
-                className={`h-2 w-2 rounded-full ${online ? "bg-teal-500" : "bg-amber-400"}`}
+                className={`h-2 w-2 rounded-full ${online ? "bg-[#22c55e]" : "bg-priority-medium"}`}
               />
               {online ? "API connected" : "Connecting to API"}
             </span>

@@ -14,11 +14,7 @@ body {
 
 body {
   @apply text-ink font-sans antialiased;
-  background:
-    radial-gradient(ellipse 900px 500px at 100% -10%, rgba(50, 157, 210, 0.14), transparent 60%),
-    radial-gradient(ellipse 700px 500px at -10% 20%, rgba(255, 76, 43, 0.04), transparent 55%),
-    #080f1b;
-  background-attachment: fixed;
+  background: #f3f5f9;
 }
 
 ::selection {

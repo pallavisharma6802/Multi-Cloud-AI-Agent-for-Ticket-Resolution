@@ -1,36 +1,48 @@
 "use client";
 import Link from "next/link";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import {
   PieChart,
   Pie,
   Cell,
   AreaChart,
   Area,
+  BarChart,
+  Bar,
   XAxis,
   YAxis,
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import { Plus, RefreshCw, Ticket, Sparkles, ShieldCheck, CheckCircle2, ArrowRight } from "lucide-react";
-import { getOverview, Overview } from "@/lib/api";
+import { Plus, RefreshCw, Ticket, Sparkles, ShieldCheck, CheckCircle2, ArrowRight, ExternalLink } from "lucide-react";
+import { getOverview, listTickets, Overview, TicketSummary } from "@/lib/api";
 import { Card, PageHeading, StatCard, Button } from "@/components/ui";
 import TicketRow from "@/components/TicketRow";
 
-const OUTCOME_COLORS = ["#329dd2", "#8b5cf6", "#f5b942", "#3d4f66"];
-const CHART_LINE = "#1b2840";
-const CHART_TICK = { fill: "#9fb0c6", fontSize: 12 };
-const CHART_TOOLTIP_STYLE = {
-  background: "#0e1726",
-  border: "1px solid #1b2840",
-  borderRadius: 10,
-  color: "#f2f5fa",
-  fontSize: 13,
+const GRAFANA_URL = process.env.NEXT_PUBLIC_GRAFANA_URL || "http://localhost:3001";
+const OUTCOME_COLORS = ["#329dd2", "#ff4c2b", "#f5b942", "#94a3b8"];
+const PRIORITY_COLORS: Record<string, string> = {
+  urgent: "#dc2626",
+  high: "#c2410c",
+  medium: "#b45309",
+  low: "#0891b2",
 };
+const CHART_LINE = "#e2e8f0";
+const CHART_TICK = { fill: "#64748b", fontSize: 12 };
+const CHART_TOOLTIP_STYLE = {
+  background: "#ffffff",
+  border: "1px solid #e2e8f0",
+  borderRadius: 10,
+  color: "#1a2436",
+  fontSize: 13,
+  boxShadow: "0 8px 24px rgba(15,23,42,0.08)",
+};
+const CHART_TOOLTIP_LABEL_STYLE = { color: "#64748b" };
 
 export default function Home() {
   const [data, setData] = useState<Overview | null>(null);
+  const [tickets, setTickets] = useState<TicketSummary[]>([]);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
   const [days] = useState(30);
@@ -44,6 +56,7 @@ export default function Home() {
       })
       .catch((e) => setError(e.message))
       .finally(() => setLoading(false));
+    listTickets({ limit: 500 }).then(setTickets).catch(() => {});
   }, [days]);
 
   useEffect(() => {
@@ -60,22 +73,33 @@ export default function Home() {
   ];
   const trendData = (data?.daily || []).map((d) => ({ date: d.date.slice(5), total: d.total, resolved: d.resolved }));
 
+  const priorityData = useMemo(() => {
+    const counts: Record<string, number> = { urgent: 0, high: 0, medium: 0, low: 0 };
+    tickets.forEach((t) => {
+      const p = (t.priority || "").toLowerCase();
+      if (p in counts) counts[p] += 1;
+    });
+    return Object.entries(counts).map(([priority, count]) => ({ priority, count }));
+  }, [tickets]);
+
+  const grafanaUrl = `${GRAFANA_URL}/d/ticket-trends/ticket-trends?orgId=1&from=now-${days}d&to=now&theme=light&kiosk=tv`;
+
   return (
     <div>
-      <PageHeading
-        title="Support overview"
-        description="Live ticket volume and outcomes for the VS Code support workspace."
-        action={
-          <Link href="/submit">
-            <Button>
-              <Plus size={15} /> New ticket
-            </Button>
-          </Link>
-        }
-      />
+      <div className="mb-6 flex flex-wrap items-start justify-between gap-4">
+        <div>
+          <h1 className="text-3xl font-semibold tracking-tight text-ink sm:text-4xl">AI support for your organization</h1>
+          <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-brand-500">VS Code support demo</p>
+        </div>
+        <Link href="/submit">
+          <Button>
+            <Plus size={15} /> New ticket
+          </Button>
+        </Link>
+      </div>
 
       {error && (
-        <Card className="mb-6 border-[#5c1a26] bg-[#2b0d12] p-4 text-sm text-priority-urgent">
+        <Card className="mb-6 border-[#fecaca] bg-[#fef2f2] p-4 text-sm text-priority-urgent">
           Couldn&apos;t refresh the workspace: {error}{" "}
           <button onClick={load} className="font-semibold underline">
             Try again
@@ -99,15 +123,15 @@ export default function Home() {
               <AreaChart data={trendData}>
                 <defs>
                   <linearGradient id="vol" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#329dd2" stopOpacity={0.45} />
+                    <stop offset="0%" stopColor="#329dd2" stopOpacity={0.3} />
                     <stop offset="100%" stopColor="#329dd2" stopOpacity={0} />
                   </linearGradient>
                 </defs>
                 <CartesianGrid strokeDasharray="3 3" stroke={CHART_LINE} vertical={false} />
                 <XAxis dataKey="date" tick={{ ...CHART_TICK, fontSize: 11 }} tickLine={false} axisLine={{ stroke: CHART_LINE }} />
                 <YAxis tick={CHART_TICK} tickLine={false} axisLine={false} allowDecimals={false} />
-                <Tooltip contentStyle={CHART_TOOLTIP_STYLE} labelStyle={{ color: "#9fb0c6" }} />
-                <Area type="monotone" dataKey="total" stroke="#4db2e3" strokeWidth={2} fill="url(#vol)" />
+                <Tooltip contentStyle={CHART_TOOLTIP_STYLE} labelStyle={CHART_TOOLTIP_LABEL_STYLE} />
+                <Area type="monotone" dataKey="total" stroke="#329dd2" strokeWidth={2} fill="url(#vol)" />
               </AreaChart>
             </ResponsiveContainer>
           </div>
@@ -116,7 +140,7 @@ export default function Home() {
         <Card className="p-6">
           <h3 className="text-sm font-semibold text-ink">Ticket outcomes</h3>
           <p className="text-xs text-ink-soft">{data?.total ?? 0} tickets in this period</p>
-          <div className="mt-2 h-64 w-full">
+          <div className="mt-2 h-56 w-full">
             <ResponsiveContainer>
               <PieChart>
                 <Pie data={outcomeData} dataKey="value" nameKey="name" innerRadius={50} outerRadius={80} paddingAngle={3} stroke="none">
@@ -124,7 +148,7 @@ export default function Home() {
                     <Cell key={i} fill={OUTCOME_COLORS[i % OUTCOME_COLORS.length]} />
                   ))}
                 </Pie>
-                <Tooltip contentStyle={CHART_TOOLTIP_STYLE} labelStyle={{ color: "#9fb0c6" }} />
+                <Tooltip contentStyle={CHART_TOOLTIP_STYLE} labelStyle={CHART_TOOLTIP_LABEL_STYLE} />
               </PieChart>
             </ResponsiveContainer>
           </div>
@@ -136,6 +160,47 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </Card>
+      </div>
+
+      <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-3">
+        <Card className="p-6 lg:col-span-1">
+          <h3 className="text-sm font-semibold text-ink">Volume by priority</h3>
+          <p className="text-xs text-ink-soft">Across all tickets in the inbox</p>
+          <div className="mt-4 h-56 w-full">
+            <ResponsiveContainer>
+              <BarChart data={priorityData}>
+                <CartesianGrid strokeDasharray="3 3" stroke={CHART_LINE} vertical={false} />
+                <XAxis dataKey="priority" tick={CHART_TICK} tickLine={false} axisLine={{ stroke: CHART_LINE }} />
+                <YAxis tick={CHART_TICK} tickLine={false} axisLine={false} allowDecimals={false} />
+                <Tooltip contentStyle={CHART_TOOLTIP_STYLE} labelStyle={CHART_TOOLTIP_LABEL_STYLE} cursor={{ fill: "#32455210" }} />
+                <Bar dataKey="count" radius={[8, 8, 0, 0]}>
+                  {priorityData.map((d, i) => (
+                    <Cell key={i} fill={PRIORITY_COLORS[d.priority]} />
+                  ))}
+                </Bar>
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </Card>
+
+        <Card className="flex flex-col justify-between p-6 lg:col-span-2">
+          <div>
+            <h3 className="text-sm font-semibold text-ink">Model &amp; retrieval diagnostics</h3>
+            <p className="mt-1 text-xs text-ink-soft">
+              Confidence distributions, latency percentiles, and faithfulness/relevance trends are computed in
+              Grafana straight from the BigQuery fact table, real histograms and percentiles that don&apos;t
+              belong in a hand-rolled chart.
+            </p>
+          </div>
+          <a
+            href={grafanaUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-4 inline-flex w-fit items-center gap-1.5 rounded-xl border border-line bg-surface px-4 py-2 text-sm font-semibold text-brand-500 hover:border-brand-500/40"
+          >
+            Open Grafana dashboards <ExternalLink size={14} />
+          </a>
         </Card>
       </div>
 
