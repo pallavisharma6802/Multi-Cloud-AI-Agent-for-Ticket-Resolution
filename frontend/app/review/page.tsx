@@ -9,7 +9,6 @@ const COLUMNS: Array<{ key: string; label: string; accent: string }> = [
   { key: "open", label: "Ticket opened", accent: "#329dd2" },
   { key: "urgent", label: "Urgent", accent: "#dc2626" },
   { key: "in_progress", label: "On hold · needs review", accent: "#f59e0b" },
-  { key: "resolved", label: "Resolved", accent: "#22c55e" },
 ];
 
 function timeAgo(iso: string) {
@@ -70,12 +69,12 @@ export default function ReviewBoard() {
   }, []);
 
   const grouped = useMemo(() => {
-    const map: Record<string, TicketSummary[]> = { open: [], urgent: [], in_progress: [], resolved: [] };
+    const map: Record<string, TicketSummary[]> = { open: [], urgent: [], in_progress: [] };
     tickets.forEach((t) => {
       const status = (t.status || "").toLowerCase();
       const priority = (t.priority || "").toLowerCase();
-      if (status === "resolved" || status === "closed") map.resolved.push(t);
-      else if (priority === "urgent") map.urgent.push(t);
+      if (status === "resolved" || status === "closed") return;
+      if (priority === "urgent") map.urgent.push(t);
       else if (status === "in_progress") map.in_progress.push(t);
       else map.open.push(t);
     });
@@ -101,7 +100,7 @@ export default function ReviewBoard() {
       {loading && !tickets.length ? (
         <div className="py-14 text-center text-sm text-ink-soft">Loading board…</div>
       ) : (
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
           {COLUMNS.map((col) => {
             const items = grouped[col.key] || [];
             return (
