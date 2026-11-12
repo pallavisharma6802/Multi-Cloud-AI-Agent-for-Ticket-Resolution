@@ -50,7 +50,9 @@ usage volume growing a lot — and even then that's still metered by actual use,
 
 ## Live deployment
 
-This app is deployed and publicly reachable right now:
+This app is deployed and publicly reachable right now: **[multi-cloud-ai-agent-for-ticket-res.vercel.app](https://multi-cloud-ai-agent-for-ticket-res.vercel.app/)**
+
+[![Resolve — live demo](docs/screenshot.png)](https://multi-cloud-ai-agent-for-ticket-res.vercel.app/)
 
 - **Frontend** (Vercel): the Next.js UI.
 - **Backend** (Render, `ticket-resolution-backend`): FastAPI + the LangGraph pipeline. `render.yaml` at the repo
